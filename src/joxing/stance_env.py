@@ -299,18 +299,76 @@ class StanceEnv(gym.Env):
             "initial_hands",
             "previous_action",
         }
-        for k, v in snapshot["application"].items():
-            setattr(self, k, np.array(v) if k in array_keys else copy.deepcopy(v))
-        self.monitor = SupportMonitor(**snapshot["monitor"])
-        self.np_random.bit_generator.state = copy.deepcopy(snapshot["rng"])
-        self.data = mujoco.MjData(self.model)
+        state = np.asarray(snapshot["state"], dtype=float)
+        expected = mujoco.mj_stateSize(self.model, mujoco.mjtState.mjSTATE_INTEGRATION)
+        if state.shape != (expected,) or not np.isfinite(state).all():
+            raise ValueError("Invalid snapshot engine state")
+        application = snapshot["application"]
+        expected_keys = {
+            "tick",
+            "done",
+            "failure",
+            "loads",
+            "push_Ns",
+            "push_direction",
+            "push_delivered",
+            "stable_s",
+            "max_tilt",
+            "last_outside_s",
+            "scenario_id",
+            "trace",
+            "initial_qpos",
+            "initial_pelvis",
+            "initial_hands",
+            "previous_action",
+            "reset_audit",
+        }
+        if set(application) != expected_keys:
+            raise ValueError("Unknown or missing snapshot application field")
+        shapes = {
+            "push_delivered": (3,),
+            "initial_qpos": (self.model.nq,),
+            "initial_pelvis": (3,),
+            "initial_hands": (2, 3),
+            "previous_action": (138,),
+        }
+        for key, shape in shapes.items():
+            value = np.asarray(application[key], dtype=float)
+            if value.shape != shape or not np.isfinite(value).all():
+                raise ValueError(f"Invalid snapshot {key}")
+        tick = application["tick"]
+        if (
+            type(tick) is not int
+            or tick < 0
+            or abs(state[0] - tick * self.config.dt_s) > 1e-9
+        ):
+            raise ValueError("Invalid snapshot clock")
+        if (
+            set(application["loads"]) != {"right", "left", "nonfoot"}
+            or not np.isfinite(list(application["loads"].values())).all()
+        ):
+            raise ValueError("Invalid snapshot support channels")
+        monitor = SupportMonitor(**snapshot["monitor"])
+        if (
+            not np.isfinite(list(monitor.snapshot().values())).all()
+            or min(monitor.snapshot().values()) < 0
+        ):
+            raise ValueError("Invalid snapshot persistence")
+        rng = np.random.default_rng()
+        rng.bit_generator.state = copy.deepcopy(snapshot["rng"])
+        candidate = mujoco.MjData(self.model)
         mujoco.mj_setState(
             self.model,
-            self.data,
-            np.asarray(snapshot["state"]),
+            candidate,
+            state,
             mujoco.mjtState.mjSTATE_INTEGRATION,
         )
-        mujoco.mj_forward(self.model, self.data)
+        mujoco.mj_forward(self.model, candidate)
+        for k, v in application.items():
+            setattr(self, k, np.array(v) if k in array_keys else copy.deepcopy(v))
+        self.monitor = monitor
+        self.np_random.bit_generator.state = rng.bit_generator.state
+        self.data = candidate
 
     def specification(self):
         return {

@@ -66,6 +66,20 @@ def main():
         actual = np.asarray(env.snapshot()["state"])
         reference = np.asarray(record["final_state"])
         error = float(np.max(abs(actual - reference)))
+        # INTEGRATION includes solver warmstart accelerations; report physical
+        # coordinates separately without loosening the declared full-state test.
+        qpos_error = float(
+            np.max(abs(actual[1 : 1 + env.model.nq] - reference[1 : 1 + env.model.nq]))
+        )
+        qvel_start = 1 + env.model.nq
+        qvel_error = float(
+            np.max(
+                abs(
+                    actual[qvel_start : qvel_start + env.model.nv]
+                    - reference[qvel_start : qvel_start + env.model.nv]
+                )
+            )
+        )
         statuses = (
             env.result()["reason"] == record["result"]["reason"]
             and env.tick == record["result"]["physics_steps"]
@@ -80,6 +94,8 @@ def main():
             {
                 "policy": name,
                 "cross_host_integration_state_max_error": error,
+                "cross_host_qpos_max_error": qpos_error,
+                "cross_host_qvel_max_error": qvel_error,
                 "same_host_restore_max_error": same_host,
                 "outcome_tick_matches": statuses,
                 "passed": same_host < 1e-9 and statuses and error < 1e-5,

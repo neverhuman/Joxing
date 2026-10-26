@@ -1,6 +1,6 @@
 # Implementation and handoff plan
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current next iteration is v0.0.3: follow the [training sequence](TRAINING.md) and [exact v0.0.3 handoff](V0.0.3_PLAN.md) for its bounded root/support/stance slice. The P0–P5 sections below describe the broader program; they are not all required for this next release. [Documentation index](README.md).
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current implemented iteration is v0.0.4: follow its [execution plan](V0.0.4_PLAN.md) and [training sequence](TRAINING.md). v0.0.3 was a [planning milestone](V0.0.3_PLAN.md), carried into v0.0.4's executable root/support/stance slice. The P0–P5 sections below describe the broader program; they are not all delivered by this release. [Documentation index](README.md).
 
 ## Objective, scope and completion
 

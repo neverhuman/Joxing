@@ -225,3 +225,21 @@ def test_json_key_order_cannot_change_observation_semantics(env):
     snapshot = json.loads(json.dumps(env.snapshot(), sort_keys=True))
     env.restore(snapshot)
     assert env.observe() == pytest.approx(before, abs=1e-9)
+
+
+@pytest.mark.parametrize("corruption", ["nonfinite", "shape", "unknown_field", "clock"])
+def test_malformed_snapshot_is_rejected_before_mutating_environment(env, corruption):
+    env.reset(options={"scenario_id": 30000})
+    snapshot = json.loads(json.dumps(env.snapshot()))
+    before = env.data.qpos.copy()
+    if corruption == "nonfinite":
+        snapshot["state"][0] = float("nan")
+    elif corruption == "shape":
+        snapshot["application"]["initial_hands"] = [0]
+    elif corruption == "unknown_field":
+        snapshot["application"]["rig"] = "bad"
+    else:
+        snapshot["application"]["tick"] = 12
+    with pytest.raises(ValueError):
+        env.restore(snapshot)
+    assert np.array_equal(before, env.data.qpos)
