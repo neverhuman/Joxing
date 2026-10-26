@@ -114,7 +114,8 @@ class StanceEnv(gym.Env):
             "pelvis_up": up,
             "relative_pelvis": self.data.xpos[self.rig.pelvis] - self.initial_pelvis,
             "hand_error": (self.data.xpos[self.hand_ids] - self.initial_hands).ravel(),
-            "support": np.array(list(self.loads.values())) / self.rig.weight_N,
+            "support": np.array([self.loads[k] for k in ("right", "left", "nonfoot")])
+            / self.rig.weight_N,
             "previous_action": self.previous_action,
         }
         self.obs_slices = {}
@@ -130,7 +131,9 @@ class StanceEnv(gym.Env):
     def step(self, action):
         if self.done:
             raise RuntimeError("Reset required after motor episode ends")
-        if not np.array_equal(self.model.opt.gravity, [0., 0., -9.81]) or np.any(self.model.body_gravcomp):
+        if not np.array_equal(self.model.opt.gravity, [0.0, 0.0, -9.81]) or np.any(
+            self.model.body_gravcomp
+        ):
             raise RuntimeError("Unexpected gravity assistance")
         ctrl = self.groups.expand(action)
         self.data.ctrl[:] = ctrl
@@ -199,7 +202,7 @@ class StanceEnv(gym.Env):
                 self.data.time,
                 tilt,
                 drift,
-                *self.loads.values(),
+                *(self.loads[k] for k in ("right", "left", "nonfoot")),
                 float(np.linalg.norm(self.push_delivered)),
             ]
         )

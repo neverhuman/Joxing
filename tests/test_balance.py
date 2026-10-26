@@ -67,11 +67,11 @@ def test_observations_are_real_and_control_cadence_has_no_pose_overwrite(env):
     assert np.isfinite(reward) and not term and not trunc
 
 
-def test_snapshot_replays_between_motor_ticks_and_rng(env):
+def test_snapshot_replays_at_control_boundary_and_rng(env):
     env.reset(seed=81, options={"scenario_id": 30000})
     for _ in range(8):
         env.step(np.zeros(138))
-    snapshot = json.loads(json.dumps(env.snapshot()))
+    snapshot = json.loads(json.dumps(env.snapshot(), sort_keys=True))
     reference = env.step(np.full(138, -0.3))
     reference_state = env.snapshot()
     env.restore(snapshot)
@@ -216,3 +216,12 @@ def test_invalid_and_incomplete_evaluations_never_enter_summary():
             [{"scenario_id": 1, "invalid": True, "status": "invalid"}],
             [{"scenario_id": 1, "invalid": False, "status": "not_run"}],
         )
+
+
+def test_json_key_order_cannot_change_observation_semantics(env):
+    env.reset(options={"scenario_id": 30000})
+    env.step(np.zeros(138))
+    before = env.observe().copy()
+    snapshot = json.loads(json.dumps(env.snapshot(), sort_keys=True))
+    env.restore(snapshot)
+    assert env.observe() == pytest.approx(before, abs=1e-9)
