@@ -1,0 +1,15 @@
+{
+  "schema": "joxing-inference-numerics-0.0.9",
+  "scope": "Diagnostic localization of retained H0 two-row scalar/batched float32 fault; no backend promotion, physics or training.",
+  "fault_sha256": "905a4e0d18af57af10733768f23d5121b89544b7b3b46eb7042aba4800b7c595",
+  "model_sha256": "0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829",
+  "normalizer_sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086",
+  "variants": ["default_float32", "mkldnn_disabled_float32"],
+  "original_h0_action_max_error": 0.000001,
+  "dtype": "float32",
+  "device": "cpu",
+  "thread_environment": ["OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS", "NUMEXPR_NUM_THREADS", "VECLIB_MAXIMUM_THREADS"],
+  "caps": {"wall_s": 120, "raw_bytes": 67108864, "physics_steps": 0, "threads": 1, "minimum_disk_bytes": 10737418240, "minimum_memory_bytes": 4294967296},
+  "criteria": ["default unhooked actions reproduce saved scalar and batched outputs bitwise", "normalization equal before tracing", "all actual named actor module outputs cloned in call order", "hooked and before/after unhooked actions bitwise identical", "actor and normalizer unchanged", "all planned variants retained"],
+  "stop": "First input/hash mismatch, nonfinite or unknown shape/module/order, baseline mutation or resource cap. Future cases not_run. Original H0 result/gate remains frozen. No timing speedup claim from this diagnostic."
+}
