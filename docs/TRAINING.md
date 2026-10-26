@@ -1,6 +1,6 @@
 # Training sequence and test gates
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. **Current implemented iteration: v0.0.4.** It carries v0.0.3's planning into a native-gravity feedback environment and bounded SAC development pilot. Read the [v0.0.4 execution plan](V0.0.4_PLAN.md) for exact delivered scope and [STATUS.md](STATUS.md) for measurements. The [historical v0.0.3 plan](V0.0.3_PLAN.md) and later stages below describe the larger formal motor proof, which remains gated.
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. **Current implemented iteration: v0.0.5; the expanded wave is being finalized.** It extends v0.0.4’s native-gravity feedback platform with controlled objective/throughput experiments. The paragraph below and later formal targets preserve the earlier pilot context. Read the [v0.0.4 execution plan](V0.0.4_PLAN.md) for exact delivered scope and [STATUS.md](STATUS.md) for measurements. The [historical v0.0.3 plan](V0.0.3_PLAN.md) and later stages below describe the larger formal motor proof, which remains gated.
 
 **Measured outcome:** the v0.0.4 pilot stopped at 39,040 transitions under its wall cap. All 64 development evaluations completed with zero invalids; mean survival changed 1.018 -> 1.023 seconds, with an interval including zero. Five-second survivors were 0/32, so the larger proof remains blocked. See [full results](V0.0.4_RESULTS.md). Next development must address measured learner throughput and reward/entropy scaling before spending the formal training budget.
 
@@ -20,6 +20,22 @@ uv run python scripts/report_wave.py --run runs/v0.0.5/reproduction --out artifa
 ```
 
 Output directories must be fresh. The source checkout stays frozen during execution. The journal, registry, per-experiment descriptions, every evaluation row, actor bundles and raw/scaled reward counters are retained. Actor-only bundles support inference, not exact training resume. The legacy `train-stance` command retains v0.0.4 settings and is not the v0.0.5 factorial runner. CPU Torch is intentional; no GPU speedup is claimed.
+
+## Authorized larger-budget extension
+
+A [separately registered extension](V0.0.5_BUDGET_ADDENDUM.md) raises each trial to 160,000 transitions / 2,700 seconds, first limit. Four independent learners run concurrently with four simulation workers each, 16 total. It retains the common learner/update ratio and all physical/observation/action contracts. Screen seed 547 uses starts 64000–64031; a qualified candidate is compared with reference A on fresh seeds 761/983 and starts 65000–65031. Read the results for actual outcomes and the constant-baseline timing limitation. Initial/final learner-policy confirmation evaluations are deferred until final actor save.
+
+To reproduce the two-stage workflow, first complete the original runner into a **fresh** parent directory as above, then immediately run:
+
+```bash
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 uv run python scripts/run_wave_extension.py --protocol experiments/v0.0.5/extension-protocol.json --original runs/v0.0.5/reproduction --out runs/v0.0.5/reproduction-extension
+uv run python scripts/verify_wave_extension.py --run runs/v0.0.5/reproduction-extension --original runs/v0.0.5/reproduction --out runs/v0.0.5/reproduction-extension-audit.json
+uv run python scripts/report_wave.py --run runs/v0.0.5/reproduction-extension --out artifacts/generated/v0.0.5-reproduction-extension --video
+```
+
+The extension intentionally inherits a four-hour deadline from the parent's provenance timestamp. Using the archived October 26 parent for a new training run after that deadline fails with `Combined wall cap already reached`; do not edit the old timestamp to bypass it. Offline verification/reporting against archived evidence remains valid. Both runner directories must be fresh and their executing source stays frozen. The released evidence retains the original source commits; a reproduction from another source revision records its own provenance.
+
+The [state/history audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) explains the difference between present feedback and the missing temporal opponent/game loop. The [upstream motor-transfer plan](UPSTREAM_MOTOR_TRANSFER_PLAN.md) is proposed development work, not an additional completed trial or a new self-play command.
 
 ## What the next proof establishes
 
@@ -43,7 +59,7 @@ The objective is a reproducible test platform plus an honest measurement of lear
 
 Read-first files, module/class names, editable paths and forbidden/generated zones are specified in the [detailed plan](V0.0.3_PLAN.md). Execute with one integration owner. Third-party submodules, supplied reference plans and v0.0.2 evidence remain read-only. If the native root is defective, a separately hashed free-root diagnostic must pass equivalence tests before being selected on development evidence.
 
-## Learner and budgets
+## Historical v0.0.4 pilot defaults and formal-proof budgets
 
 Use SAC for feedback muscle control, through the pinned upstream 138-group muscle partition converted to names. Preserve the upstream normalized-action excitation transform. Begin with two 256-unit hidden layers, learning rate 3e-4, batch 256, gamma .99, tau .005, automatic entropy, 10,000-transition warmup and one optimizer update per admitted control transition after warmup. Lock dependency versions and measure replay storage before launch. These are starting pilot settings, not established optimal parameters.
 
@@ -54,7 +70,7 @@ The motor reward integrates upright posture, position and guard-target tracking,
 | Development pilot | Seed 73; 100,000 control transitions, at most 1 million physics substeps or 30 minutes |
 | Formal training | Seeds 103, 211, 307; at most 500,000 control transitions / 5 million physics substeps / 60 minutes per seed |
 | Entire compute experiment | At most 40 million physics substeps, four wall hours and 10 GiB raw artifacts, including pilot, benchmarks, diagnostics, failures and evaluation |
-| Shared CPU resources | At most four simulation workers total, one OpenMP/BLAS thread per process; seeds run sequentially |
+| Original v0.0.4 shared CPU resources | Four simulation workers total, one OpenMP/BLAS thread per process; seeds sequential. The authorized v0.0.5 extension above uses 16 workers across four independent trials. |
 
 Stop at the first applicable cap. A control transition is one world's 10 ms policy step; four workers do not make one transition count as four or multiply the global budget. Formal training uses the scheduled final checkpoint; an earlier resource stop is reported as incomplete, with remaining planned attempts marked not_run. Never select a checkpoint using final evaluation scores.
 
