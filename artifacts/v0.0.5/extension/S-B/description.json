@@ -1,0 +1,86 @@
+{
+  "arm": "B",
+  "evaluation_ids": [
+    64000,
+    64001,
+    64002,
+    64003,
+    64004,
+    64005,
+    64006,
+    64007,
+    64008,
+    64009,
+    64010,
+    64011,
+    64012,
+    64013,
+    64014,
+    64015,
+    64016,
+    64017,
+    64018,
+    64019,
+    64020,
+    64021,
+    64022,
+    64023,
+    64024,
+    64025,
+    64026,
+    64027,
+    64028,
+    64029,
+    64030,
+    64031
+  ],
+  "learner": {
+    "batch_size": 64,
+    "buffer_size": 50000,
+    "gamma": 0.99,
+    "gradient_steps": 1,
+    "learning_rate": 0.0003,
+    "learning_starts": 2000,
+    "net_arch": [
+      128,
+      128
+    ],
+    "steps": 160000,
+    "tau": 0.005,
+    "workers": 4
+  },
+  "provenance": {
+    "aggregate_simulation_workers": 16,
+    "code_commit": "76f6e5ce47f9966d9896f08a03652c20dcc9db31",
+    "cuda_available": false,
+    "device": "cpu",
+    "host": "xbabe1",
+    "mujoco": "3.8.0",
+    "numpy": "2.5.4",
+    "parallel_trials": 4,
+    "parent_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+    "parent_protocol_hash": "7a4ca4a6b841ca39ca8141db83d1e0e05b01d49054408d71197ac28ecff97fe5",
+    "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+    "protocol_hash": "0ec47e01e39823a7f68188a1ee179eb4cfc907d61922ec814afdb450f0016f47",
+    "python": "3.12.3",
+    "resources": {
+      "available_memory_bytes": 50702352384,
+      "disk_free_bytes": 346846179328
+    },
+    "schema": "joxing-run-v1",
+    "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+    "stable_baselines3": "2.9.2",
+    "torch": "2.14.1+cpu",
+    "upstream": {
+      "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+      "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+    },
+    "utc": "2026-10-26T19:46:44.495877+00:00"
+  },
+  "seed": 547,
+  "setting": {
+    "entropy": 0.0001,
+    "reward_scale": 1.0
+  },
+  "training_contract_hash": "89397ee581251bfdcf7fe1eb04c943e203d471ab2dd08faa0bf819b507436c2c"
+}

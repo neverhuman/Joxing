@@ -1,6 +1,7 @@
 """Curate all experiment records and produce fixed-scenario evidence."""
 
 import argparse
+import csv
 import json
 import shutil
 from pathlib import Path
@@ -200,6 +201,47 @@ def plot(run, out):
     plt.close(fig)
 
 
+def training_plot(run, out):
+    """All stochastic episodes, with an explicitly approximate duration axis."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    plt.style.use("dark_background")
+    fig, axes = plt.subplots(2, 2, figsize=(12, 7), sharex=True, sharey=True)
+    for arm, axis in zip("ABCD", axes.flat):
+        episodes = []
+        for path in (run / f"S-{arm}").glob("*.monitor.csv"):
+            with path.open() as f:
+                episodes.extend(csv.DictReader(x for x in f if not x.startswith("#")))
+        episodes.sort(key=lambda x: float(x["t"]))
+        times = np.array([float(x["t"]) for x in episodes])
+        durations = np.array([int(x["l"]) * 0.01 for x in episodes])
+        axis.scatter(
+            times, durations, s=3, alpha=0.15, color="#8896ab", label="All episodes"
+        )
+        if len(times) >= 64:
+            axis.plot(
+                times[63:],
+                np.convolve(durations, np.ones(64) / 64, mode="valid"),
+                color="#72daca",
+                label="64-episode mean",
+            )
+        axis.set(
+            title=f"Arm {arm}",
+            xlabel="Worker wall seconds",
+            ylabel="Control steps × 0.01 seconds",
+        )
+        axis.legend(fontsize=8)
+    fig.suptitle(
+        "Stochastic training episode duration | control-step approximation, not evaluation survival"
+    )
+    fig.tight_layout()
+    fig.savefig(out / "wave-training-durations.png", dpi=160)
+    plt.close(fig)
+
+
 def video(run, out):
     import imageio.v2 as imageio
     import mujoco
@@ -285,7 +327,7 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     for path in args.run.rglob("*"):
         if path.is_file() and (
-            path.suffix in {".json", ".jsonl", ".pt", ".npz", ".csv"}
+            path.suffix in {".json", ".jsonl", ".pt", ".npz", ".csv", ".txt"}
         ):
             target = args.out / path.relative_to(args.run)
             if target.exists() and target.read_bytes() != path.read_bytes():
@@ -294,6 +336,7 @@ def main():
             shutil.copyfile(path, target)
     write_json(args.out / "conclusion.json", conclusions(args.run))
     plot(args.run, args.out)
+    training_plot(args.run, args.out)
     if args.video:
         video(args.run, args.out)
     write_json(

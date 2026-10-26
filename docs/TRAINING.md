@@ -4,6 +4,23 @@ Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. *
 
 **Measured outcome:** the v0.0.4 pilot stopped at 39,040 transitions under its wall cap. All 64 development evaluations completed with zero invalids; mean survival changed 1.018 -> 1.023 seconds, with an interval including zero. Five-second survivors were 0/32, so the larger proof remains blocked. See [full results](V0.0.4_RESULTS.md). Next development must address measured learner throughput and reward/entropy scaling before spending the formal training budget.
 
+## v0.0.5 controlled motor wave
+
+The [v0.0.5 plan](V0.0.5_PLAN.md) and [experiment book](../experiments/v0.0.5/README.md) replace another undirected pilot with a registered experiment: constant muscle controls, real optimizer profiling, a matched reward-scale/temperature factorial and conditional fresh-seed confirmation. [Results](V0.0.5_RESULTS.md) retain all outcomes and the reason each conditional run did or did not execute. The earlier formal stance/recovery targets below remain gated.
+
+All four screen arms use the same seed149, initial actor, 128×128 network, batch64, 2,000-transition warmup and one optimizer update per four transitions. Temperature is auto or0.0001; reward multiplier is1 or1000. Each run ends at40,000transitions or900seconds. Raw physical survival on32paired starts is the common outcome. Altering training reward units does not alter boxing points or physics.
+
+Replication requires a complete valid screen, at least0.25s gain over the selected actor’s initial policy and, for a non-reference selection, at least0.10s over reference A. Confirmation uses fresh seeds263/431 and unseen reset IDs61000–61031, opened only after final actors are frozen. Scenario bootstrap intervals do not capture uncertainty across training seeds. The unchanged five-second continuation gate still requires16/32 survivors, zero invalids; it does not establish the full motor proof.
+
+```bash
+uv sync --extra dev --extra viz --extra motor
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 uv run python scripts/run_wave.py --protocol experiments/v0.0.5/protocol.json --out runs/v0.0.5/reproduction
+uv run python scripts/verify_wave.py --run runs/v0.0.5/reproduction --out runs/v0.0.5/reproduction-audit.json
+uv run python scripts/report_wave.py --run runs/v0.0.5/reproduction --out artifacts/generated/v0.0.5-reproduction --video
+```
+
+Output directories must be fresh. The source checkout stays frozen during execution. The journal, registry, per-experiment descriptions, every evaluation row, actor bundles and raw/scaled reward counters are retained. Actor-only bundles support inference, not exact training resume. The legacy `train-stance` command retains v0.0.4 settings and is not the v0.0.5 factorial runner. CPU Torch is intentional; no GPU speedup is claimed.
+
 ## What the next proof establishes
 
 Train one MS-Human-700 athlete to maintain a local standing posture under normal gravity, then qualify recovery from small, measured horizontal pushes. Keep all 700 muscles, physical floor contact and explicit glove inertia. The policy observes the moving body and updates muscle excitation at 100 Hz; CPU physics advances at 1 kHz. v0.0.4 implements this platform and the development balance pilot; the three-seed stance/recovery proof follows only if the pilot gate passes.
