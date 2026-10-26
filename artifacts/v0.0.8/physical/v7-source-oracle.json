@@ -1,0 +1,29 @@
+{
+  "findings": [
+    {
+      "controls": 222,
+      "max_state_feature_reward_action_error": 0.0,
+      "original_tracking_failure_s": 4.439999999999733,
+      "passed": true,
+      "physical_failure": null,
+      "seed": 72000,
+      "source_actions_sha256": "ee432f6afc17c4c3bccf9ee386cad61d2a4f9d1af1b8143549feeb85bd4ab094",
+      "source_replay_sha256": "b779a9e7c8401dca8d0e71c8a0ef50ff08a71a50816bfd839ad919436bb6d164",
+      "variant": "native_2ms"
+    },
+    {
+      "controls": 228,
+      "max_state_feature_reward_action_error": 0.0,
+      "original_tracking_failure_s": 4.5599999999998575,
+      "passed": true,
+      "physical_failure": null,
+      "seed": 72000,
+      "source_actions_sha256": "e5f7358d67227f84b34a7c5d2ff87a2a87890daefd69f7bc608903e4f18ed614",
+      "source_replay_sha256": "5f426487404f0e78eaab92ed1a4edefba342f4f479c530007e9bac480b3226ef",
+      "variant": "gloves_1ms"
+    }
+  ],
+  "passed": true,
+  "physics_steps": 13560,
+  "v7_audit_sha256": "0817a357a94e4eb49b4e028c41427b8985597e0d70ab7c004ff092dc0132fd1a"
+}

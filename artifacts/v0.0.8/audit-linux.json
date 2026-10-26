@@ -1,0 +1,434 @@
+{
+  "accounting_passed": true,
+  "attempts": 40,
+  "audit_physics_steps": 46662,
+  "audit_wall_s": 68.11010804399848,
+  "auditor_sha256": "55e6bbd07a58274cbc1fde180ed5d3bdc4847297c7c593c59272b37faf31623e",
+  "code_commit": "565942db98f6c3a38378d4dab5069d83571d88bb",
+  "diagnostic_physics_steps": 16200,
+  "findings": [
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "physics_steps": 2600,
+      "snapshot": "boundary",
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "physics_steps": 2600,
+      "snapshot": "boundary",
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "physics_steps": 2600,
+      "snapshot": "boundary",
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "physics_steps": 2597,
+      "snapshot": "mid_control",
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "physics_steps": 2597,
+      "snapshot": "mid_control",
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "physics_steps": 2597,
+      "snapshot": "mid_control",
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "physics_steps": 5180,
+      "snapshot": "boundary",
+      "status": "completed",
+      "variant": "gloves_1ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "physics_steps": 5180,
+      "snapshot": "boundary",
+      "status": "completed",
+      "variant": "gloves_1ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "physics_steps": 5180,
+      "snapshot": "boundary",
+      "status": "completed",
+      "variant": "gloves_1ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "physics_steps": 5177,
+      "snapshot": "mid_control",
+      "status": "completed",
+      "variant": "gloves_1ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "physics_steps": 5177,
+      "snapshot": "mid_control",
+      "status": "completed",
+      "variant": "gloves_1ms"
+    },
+    {
+      "application_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "physics_steps": 5177,
+      "snapshot": "mid_control",
+      "status": "completed",
+      "variant": "gloves_1ms"
+    }
+  ],
+  "formal_physics_steps": 150850,
+  "host": "xbabe1",
+  "mujoco": "3.8.0",
+  "normalizer_unchanged": true,
+  "numpy": "2.4.2",
+  "passed": true,
+  "physical_completion_threshold_met": false,
+  "physical_diagnostic_passed": false,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "reference_replay_passed": true,
+  "row_audits": [
+    {
+      "attempt_id": "native_2ms:74000",
+      "latch_s": 5.393999999999628,
+      "manifold_rows": 11043,
+      "physical_failure": "excess_tilt",
+      "substeps": 2700
+    },
+    {
+      "attempt_id": "native_2ms:74001",
+      "latch_s": 4.953999999999676,
+      "manifold_rows": 10046,
+      "physical_failure": "excess_tilt",
+      "substeps": 2480
+    },
+    {
+      "attempt_id": "native_2ms:74002",
+      "latch_s": 5.097999999999661,
+      "manifold_rows": 10381,
+      "physical_failure": "excess_tilt",
+      "substeps": 2550
+    },
+    {
+      "attempt_id": "native_2ms:74003",
+      "latch_s": 4.953999999999676,
+      "manifold_rows": 9906,
+      "physical_failure": "excess_tilt",
+      "substeps": 2480
+    },
+    {
+      "attempt_id": "native_2ms:74004",
+      "latch_s": 5.5159999999996145,
+      "manifold_rows": 12115,
+      "physical_failure": "excess_tilt",
+      "substeps": 2760
+    },
+    {
+      "attempt_id": "native_2ms:74005",
+      "latch_s": 5.503999999999616,
+      "manifold_rows": 11565,
+      "physical_failure": "excess_tilt",
+      "substeps": 2760
+    },
+    {
+      "attempt_id": "native_2ms:74006",
+      "latch_s": 4.391999999999738,
+      "manifold_rows": 8972,
+      "physical_failure": "excess_tilt",
+      "substeps": 2200
+    },
+    {
+      "attempt_id": "native_2ms:74007",
+      "latch_s": 4.687999999999706,
+      "manifold_rows": 9503,
+      "physical_failure": "excess_tilt",
+      "substeps": 2350
+    },
+    {
+      "attempt_id": "native_2ms:74008",
+      "latch_s": 4.953999999999676,
+      "manifold_rows": 10122,
+      "physical_failure": "excess_tilt",
+      "substeps": 2480
+    },
+    {
+      "attempt_id": "native_2ms:74009",
+      "latch_s": 4.543999999999722,
+      "manifold_rows": 9142,
+      "physical_failure": "excess_tilt",
+      "substeps": 2280
+    },
+    {
+      "attempt_id": "native_2ms:74010",
+      "latch_s": 4.605999999999715,
+      "manifold_rows": 8775,
+      "physical_failure": "excess_tilt",
+      "substeps": 2310
+    },
+    {
+      "attempt_id": "native_2ms:74011",
+      "latch_s": 5.435999999999623,
+      "manifold_rows": 11085,
+      "physical_failure": "excess_tilt",
+      "substeps": 2720
+    },
+    {
+      "attempt_id": "native_2ms:74012",
+      "latch_s": 5.01599999999967,
+      "manifold_rows": 9947,
+      "physical_failure": "excess_tilt",
+      "substeps": 2510
+    },
+    {
+      "attempt_id": "native_2ms:74013",
+      "latch_s": 5.4259999999996245,
+      "manifold_rows": 11165,
+      "physical_failure": "excess_tilt",
+      "substeps": 2720
+    },
+    {
+      "attempt_id": "native_2ms:74014",
+      "latch_s": 5.2079999999996485,
+      "manifold_rows": 10709,
+      "physical_failure": "excess_tilt",
+      "substeps": 2610
+    },
+    {
+      "attempt_id": "native_2ms:74015",
+      "latch_s": 4.531999999999723,
+      "manifold_rows": 9065,
+      "physical_failure": "excess_tilt",
+      "substeps": 2270
+    },
+    {
+      "attempt_id": "native_2ms:74016",
+      "latch_s": 5.383999999999629,
+      "manifold_rows": 11334,
+      "physical_failure": "excess_tilt",
+      "substeps": 2700
+    },
+    {
+      "attempt_id": "native_2ms:74017",
+      "latch_s": 5.4259999999996245,
+      "manifold_rows": 11151,
+      "physical_failure": "excess_tilt",
+      "substeps": 2720
+    },
+    {
+      "attempt_id": "native_2ms:74018",
+      "latch_s": 4.897999999999683,
+      "manifold_rows": 9790,
+      "physical_failure": "excess_tilt",
+      "substeps": 2450
+    },
+    {
+      "attempt_id": "native_2ms:74019",
+      "latch_s": 4.549999999999721,
+      "manifold_rows": 9182,
+      "physical_failure": "excess_tilt",
+      "substeps": 2280
+    },
+    {
+      "attempt_id": "gloves_1ms:74000",
+      "latch_s": 5.37600000000013,
+      "manifold_rows": 21975,
+      "physical_failure": "excess_tilt",
+      "substeps": 5380
+    },
+    {
+      "attempt_id": "gloves_1ms:74001",
+      "latch_s": 4.892999999999969,
+      "manifold_rows": 19850,
+      "physical_failure": "excess_tilt",
+      "substeps": 4900
+    },
+    {
+      "attempt_id": "gloves_1ms:74002",
+      "latch_s": 5.0510000000000215,
+      "manifold_rows": 20522,
+      "physical_failure": "excess_tilt",
+      "substeps": 5060
+    },
+    {
+      "attempt_id": "gloves_1ms:74003",
+      "latch_s": 4.958999999999991,
+      "manifold_rows": 19802,
+      "physical_failure": "excess_tilt",
+      "substeps": 4960
+    },
+    {
+      "attempt_id": "gloves_1ms:74004",
+      "latch_s": 5.487000000000167,
+      "manifold_rows": 22720,
+      "physical_failure": "excess_tilt",
+      "substeps": 5500
+    },
+    {
+      "attempt_id": "gloves_1ms:74005",
+      "latch_s": 5.6020000000002055,
+      "manifold_rows": 22900,
+      "physical_failure": "excess_tilt",
+      "substeps": 5620
+    },
+    {
+      "attempt_id": "gloves_1ms:74006",
+      "latch_s": 4.414999999999809,
+      "manifold_rows": 17802,
+      "physical_failure": "excess_tilt",
+      "substeps": 4420
+    },
+    {
+      "attempt_id": "gloves_1ms:74007",
+      "latch_s": 4.670999999999895,
+      "manifold_rows": 18707,
+      "physical_failure": "excess_tilt",
+      "substeps": 4680
+    },
+    {
+      "attempt_id": "gloves_1ms:74008",
+      "latch_s": 4.942999999999985,
+      "manifold_rows": 20069,
+      "physical_failure": "excess_tilt",
+      "substeps": 4960
+    },
+    {
+      "attempt_id": "gloves_1ms:74009",
+      "latch_s": 4.44799999999982,
+      "manifold_rows": 17887,
+      "physical_failure": "excess_tilt",
+      "substeps": 4460
+    },
+    {
+      "attempt_id": "gloves_1ms:74010",
+      "latch_s": 4.605999999999873,
+      "manifold_rows": 17871,
+      "physical_failure": "excess_tilt",
+      "substeps": 4620
+    },
+    {
+      "attempt_id": "gloves_1ms:74011",
+      "latch_s": 5.450000000000155,
+      "manifold_rows": 22215,
+      "physical_failure": "excess_tilt",
+      "substeps": 5460
+    },
+    {
+      "attempt_id": "gloves_1ms:74012",
+      "latch_s": 5.0510000000000215,
+      "manifold_rows": 20622,
+      "physical_failure": "excess_tilt",
+      "substeps": 5060
+    },
+    {
+      "attempt_id": "gloves_1ms:74013",
+      "latch_s": 5.417000000000144,
+      "manifold_rows": 21877,
+      "physical_failure": "excess_tilt",
+      "substeps": 5420
+    },
+    {
+      "attempt_id": "gloves_1ms:74014",
+      "latch_s": 5.199000000000071,
+      "manifold_rows": 21627,
+      "physical_failure": "excess_tilt",
+      "substeps": 5200
+    },
+    {
+      "attempt_id": "gloves_1ms:74015",
+      "latch_s": 4.5269999999998465,
+      "manifold_rows": 18488,
+      "physical_failure": "excess_tilt",
+      "substeps": 4540
+    },
+    {
+      "attempt_id": "gloves_1ms:74016",
+      "latch_s": 5.453000000000156,
+      "manifold_rows": 21779,
+      "physical_failure": "excess_tilt",
+      "substeps": 5460
+    },
+    {
+      "attempt_id": "gloves_1ms:74017",
+      "latch_s": 5.40600000000014,
+      "manifold_rows": 21864,
+      "physical_failure": "excess_tilt",
+      "substeps": 5420
+    },
+    {
+      "attempt_id": "gloves_1ms:74018",
+      "latch_s": 4.86699999999996,
+      "manifold_rows": 19523,
+      "physical_failure": "excess_tilt",
+      "substeps": 4880
+    },
+    {
+      "attempt_id": "gloves_1ms:74019",
+      "latch_s": 4.5029999999998385,
+      "manifold_rows": 18129,
+      "physical_failure": "excess_tilt",
+      "substeps": 4520
+    }
+  ],
+  "run_protocol_hash": "8c5f14240ec58048fe257bf49af7a07ed138474633096a84f8624553954b20e4",
+  "schema": "joxing-run-v1",
+  "scope": "Frozen muscle motor continuation; no stationary stance, learning or boxing claim.",
+  "source_hash": "6e2579711ac7806777db42c83971b028fd1046f2f2fffa13792bd978601bc8a7",
+  "source_run_commit": "565942db98f6c3a38378d4dab5069d83571d88bb",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T23:20:02.567980+00:00"
+}

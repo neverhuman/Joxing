@@ -1,0 +1,46 @@
+{
+  "all_attempts_completed": true,
+  "attempts": 40,
+  "boxing_or_stance_qualified": false,
+  "diagnostic_physics_steps": 16200,
+  "inputs_unchanged": true,
+  "invalid": 0,
+  "new_training": false,
+  "physical_completion_threshold_met": false,
+  "physics_steps": 167050,
+  "qualification_pending_replay_audit": true,
+  "source_unchanged": true,
+  "variants": {
+    "gloves_1ms": {
+      "completed": 20,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 5.026000000000013,
+      "not_run": 0,
+      "physical_horizon_completions": 0,
+      "planned": 20
+    },
+    "native_2ms": {
+      "completed": 20,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 5.032999999999667,
+      "not_run": 0,
+      "physical_horizon_completions": 0,
+      "planned": 20
+    }
+  },
+  "wall_s": 205.3108809068799,
+  "worker_results": [
+    {
+      "physics_steps": 50330,
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "physics_steps": 100520,
+      "status": "completed",
+      "variant": "gloves_1ms"
+    }
+  ]
+}

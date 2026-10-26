@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "physics_steps": 240,
+  "variants": [
+    {
+      "controls": 4,
+      "max_feature_error": 0.0,
+      "max_reward_error": 0.0,
+      "max_state_error": 0.0,
+      "old_task_done": true,
+      "passed": true,
+      "physical_task_done": false,
+      "variant": "native_2ms"
+    },
+    {
+      "controls": 4,
+      "max_feature_error": 0.0,
+      "max_reward_error": 0.0,
+      "max_state_error": 0.0,
+      "old_task_done": true,
+      "passed": true,
+      "physical_task_done": false,
+      "variant": "gloves_1ms"
+    }
+  ]
+}

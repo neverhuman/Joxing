@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.0.8 — 2026-10-26
+
+- Add signed every-substep physical evidence and scratch end-posture telemetry while preserving native dynamics/cached policy features exactly.
+- Separate original tracking failure from physical failure; all40 attempts valid, both conditions0/20 physical20s completions, all failures excess tilt around5s.
+- Pass all12 boundary/mid-command fixed-action/policy/repeat replays exactly and127 Mac/Linux tests. Retain development failures, every outcome, full public raw archive, plot/video and actual process exits.
+- Record70.33/130.16 control TPS at one/two workers with optimizer/referee excluded; register v9 profiling/batched-inference work and a worker-ready route to meaningful historical-opponent self-play.
+
+See [results](docs/V0.0.8_RESULTS.md), [book](experiments/v0.0.8/README.md), [evidence](artifacts/v0.0.8/), [next mission](docs/V0.0.9_MISSION.md) and [self-play/HPC plan](docs/SELF_PLAY_HPC_PLAN.md).
+
 ## v0.0.7 — 2026-10-26
 
 - Add canonical-reference/live-body mapping for both observations and rewards after glove insertion; preserve all 700 muscles, native inertias and fixed 20ms control cadence across 1ms/2ms physics.

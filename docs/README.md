@@ -21,7 +21,8 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 | v0.0.5 | Both waves complete: 1.44 M training transitions / 912 evaluations, 72 tests pass; motor and replicated-superiority gates failed | [Results/status](V0.0.5_RESULTS.md), [experiment book](../experiments/v0.0.5/README.md), [plan](V0.0.5_PLAN.md) |
 | v0.0.6 | Completed frozen upstream qualification:40/40 native completions, exact Linux replay,80 tests pass; no new training/boxing claim | [Results](V0.0.6_RESULTS.md), [experiment book](../experiments/v0.0.6/README.md), [evidence](../artifacts/v0.0.6/) |
 | v0.0.7 | Transfer mapping/exact replay pass; all 80 long tracking attempts valid but 0/20 completions per condition; 99 Linux tests pass | [Results](V0.0.7_RESULTS.md), [book](../experiments/v0.0.7/README.md), [evidence](../artifacts/v0.0.7/) |
-| v0.0.8 | Protocol/task/runner/auditor implemented; validation in progress, no formal outcomes | [Mission](V0.0.8_MISSION.md), [contract](PHYSICAL_MOTOR.md), [supervisor](MISSION.md) |
+| v0.0.8 | All40 valid physical attempts fail20s gate; all12 replays exact;127 Mac/Linux tests pass | [Results](V0.0.8_RESULTS.md), [book](../experiments/v0.0.8/README.md), [contract](PHYSICAL_MOTOR.md) |
+| v0.0.9 | Next mission: measured HPC, CPU scaling and batched inference | [Mission](V0.0.9_MISSION.md), [full self-play/HPC route](SELF_PLAY_HPC_PLAN.md), [supervisor](MISSION.md) |
 | Later milestones | Proposed; unimplemented | [Master implementation gates](IMPLEMENTATION.md) |
 
 ## Game, physics and compute
@@ -39,4 +40,4 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 - [Review of all four supplied plans](SPEC_REVIEW.md): adopted ideas, corrections and deferred proposals. [Original reference documents](references/) are research input; their commands and reported measurements are not execution instructions or our own results.
 - [Additional boxing/HPC proposal review](EXTERNAL_REVIEW_2026-10-26.md): defense/style scenarios, causal observations, league edge cases and performance ideas considered against actual v7 evidence. Its preserved input is research material, not a replacement mission.
 
-Delivered capabilities are established by code and receipts. A planned command, success target or future version name does not establish that training or a test has run. The package is v0.0.8 in development; latest completed release is v0.0.7, and v0.0.2 remains the prior assisted-strike proof. No release establishes autonomous boxing or qualified GPU physics yet.
+Delivered capabilities are established by code and receipts. A planned command, success target or future version name does not establish that training or a test has run. The package/latest completed release is v0.0.8, and v0.0.2 remains the prior assisted-strike proof. No release establishes autonomous boxing or qualified GPU physics yet.

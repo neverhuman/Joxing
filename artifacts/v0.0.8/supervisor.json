@@ -1,0 +1,107 @@
+{
+  "pid": 1392737,
+  "cwd": "/home/ubuntu/joxing/v008-20261026",
+  "started_utc": "2026-10-26T23:13:01.152317+00:00",
+  "source_commit": "565942db98f6c3a38378d4dab5069d83571d88bb",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.8/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 1392739,
+      "wall_s": 1.0153855215758085,
+      "returncode": 0
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.8/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "pid": 1392874,
+      "wall_s": 213.52109368517995,
+      "returncode": 0
+    },
+    {
+      "stage": "physical",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.8/runtime",
+        "--locked",
+        "python",
+        "scripts/run_physical_motor.py",
+        "--protocol",
+        "experiments/v0.0.8/protocol.json",
+        "--archive",
+        "/home/ubuntu/joxing/downloads/LocomotionFull-2b2f0f10.zip",
+        "--out",
+        "runs/v0.0.8/physical-01"
+      ],
+      "status": "completed",
+      "pid": 1435811,
+      "wall_s": 206.55769753456116,
+      "returncode": 0
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.8/runtime",
+        "--locked",
+        "python",
+        "scripts/verify_physical_motor.py",
+        "--run",
+        "runs/v0.0.8/physical-01",
+        "--out",
+        "runs/v0.0.8/audit-linux.json"
+      ],
+      "status": "completed",
+      "pid": 1467121,
+      "wall_s": 69.34825645014644,
+      "returncode": 0
+    },
+    {
+      "stage": "report",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.8/runtime",
+        "--locked",
+        "python",
+        "scripts/report_physical_motor.py",
+        "--run",
+        "runs/v0.0.8/physical-01",
+        "--audit",
+        "runs/v0.0.8/audit-linux.json",
+        "--out",
+        "runs/v0.0.8/report",
+        "--video"
+      ],
+      "status": "completed",
+      "pid": 1474700,
+      "wall_s": 22.452824791893363,
+      "returncode": 0
+    }
+  ],
+  "simulation_workers_cap": 2,
+  "threads": 1,
+  "finished_utc": "2026-10-26T23:21:34.086634+00:00"
+}

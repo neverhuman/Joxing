@@ -1,0 +1,55 @@
+{
+  "source_commit": "565942db98f6c3a38378d4dab5069d83571d88bb",
+  "formal_physics_steps": 150850,
+  "runner_physics_steps": 167050,
+  "audit_physics_steps": 46662,
+  "render_physics_steps": 8080,
+  "mission_total_physics_steps": 221792,
+  "runner_wall_s": 205.3108809068799,
+  "audit_wall_s": 68.11010804399848,
+  "render_wall_s": 21.05148459225893,
+  "all_40_valid": true,
+  "replay_paths": 12,
+  "all_replays_exact": true,
+  "physical_completion_threshold_met": false,
+  "raw_files_verified": 184,
+  "curated_raw_files_verified": 70,
+  "full_raw_archive": {
+    "filename": "joxing-v0.0.8-raw.tar.gz",
+    "bytes": 47279704,
+    "sha256": "5b5dbacf4f113f04551616eb4c2498bd5357c86fc49f340981ba4a440a5b60ab",
+    "url": "https://github.com/neverhuman/Joxing/releases/download/v0.0.8/joxing-v0.0.8-raw.tar.gz"
+  },
+  "benchmark": {
+    "1": {
+      "median_loop_control_TPS": 70.33091998591148,
+      "median_startup_inclusive_control_TPS": 5.2599070655198314
+    },
+    "2": {
+      "median_loop_control_TPS": 130.1594592706063,
+      "median_startup_inclusive_control_TPS": 9.917469127546504
+    }
+  },
+  "variants": {
+    "native_2ms": {
+      "attempts": 20,
+      "physical_horizons": 0,
+      "mean_physical_boundary_s": 5.032999999999667,
+      "mean_tracking_failure_s": 4.184999999999761,
+      "mean_tracking_to_latch_s": 0.8389999999999077,
+      "physical_reasons": {
+        "excess_tilt": 20
+      }
+    },
+    "gloves_1ms": {
+      "attempts": 20,
+      "physical_horizons": 0,
+      "mean_physical_boundary_s": 5.026000000000013,
+      "mean_tracking_failure_s": 4.202999999999772,
+      "mean_tracking_to_latch_s": 0.8132000000002378,
+      "physical_reasons": {
+        "excess_tilt": 20
+      }
+    }
+  }
+}

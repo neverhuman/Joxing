@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-26T23:34:07.599377+00:00",
+  "kind": "read_only_shared_host_inventory",
+  "reservation": false,
+  "current_simulation_worker_ceiling": 16,
+  "hosts": [
+    {
+      "host": "xbabe1",
+      "logical_cpus": 128,
+      "load": [
+        4.314453125,
+        4.68408203125,
+        5.30322265625
+      ],
+      "available_memory_bytes": 50603106304,
+      "disk_free_bytes": 341362438144,
+      "gpu": "RTX 4090",
+      "gpu_total_MiB": 24564,
+      "gpu_used_MiB": 9,
+      "gpu_utilization_percent": 0,
+      "driver": "570.153.02"
+    },
+    {
+      "host": "xbabe2",
+      "logical_cpus": 128,
+      "load": [
+        28.5400390625,
+        39.669921875,
+        50.99609375
+      ],
+      "available_memory_bytes": 70568943616,
+      "disk_free_bytes": 459131551744,
+      "gpu": "RTX 3090",
+      "gpu_total_MiB": 24576,
+      "gpu_used_MiB": 1,
+      "gpu_utilization_percent": 0,
+      "driver": "595.99.02"
+    },
+    {
+      "host": "xbabe3",
+      "logical_cpus": 128,
+      "load": [
+        9.25390625,
+        9.60791015625,
+        10.671875
+      ],
+      "available_memory_bytes": 104794701824,
+      "disk_free_bytes": 50204209152,
+      "gpu": "RTX 3090",
+      "gpu_total_MiB": 24576,
+      "gpu_used_MiB": 1,
+      "gpu_utilization_percent": 0,
+      "driver": "580.126.09"
+    },
+    {
+      "host": "xbabe4",
+      "logical_cpus": 32,
+      "load": [
+        4.005859375,
+        4.2080078125,
+        4.25732421875
+      ],
+      "physical_memory_bytes": 549755813888,
+      "available_memory_bytes": null,
+      "disk_free_bytes": 704877150208,
+      "note": "Native macOS; physical RAM is not free RAM."
+    }
+  ],
+  "no_services_or_drivers_changed": true
+}
