@@ -90,6 +90,7 @@ Python 3.12+, MuJoCo 3.8.0. On headless NVIDIA Linux use `MUJOCO_GL=egl` for ren
 
 - [Game rules and how RL earns reward](docs/GAME.md)
 - [Review of all four supplied specs](docs/SPEC_REVIEW.md)
+- [Additional boxing/HPC proposal review](docs/EXTERNAL_REVIEW_2026-10-26.md): useful defense scenarios, opponent sampling and profiling ideas, with explicit limits on model/rules changes.
 - [Actual compute inventory and HPC strategy](docs/COMPUTE.md)
 - [Implementation gates and worker-ready handoff](docs/IMPLEMENTATION.md)
 - [Delivered status, commands and evidence](docs/STATUS.md)

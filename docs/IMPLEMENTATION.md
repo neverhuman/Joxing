@@ -52,6 +52,8 @@ Edit `scene.py`; create `geometry.py`, `config.py`, `fixtures.py`, `tests/test_g
 5. Reproduce native-root side-fall singularity claim. If confirmed, add a named free-root variant and equivalence tests, then consciously choose reference. Do not silently replace qpos layout.
 6. Save simulation calibration with units, scene/solver hashes, impulse convergence (<5% candidate), force-peak sensitivity and unknown empirical calibration clearly labeled. Resolve production config only after reviewed tests.
 
+Additional acceptance cases from the [external proposal review](EXTERNAL_REVIEW_2026-10-26.md): front/wide/body guards, moving parry, evasion, guard-then-direct-target and moving/rotating target fast passes. Verify measured contact ordering and direct impulse rather than assumed percentage damage reduction. Actor-exchange tests must specify spatial/vector/action transforms and any left/right anatomical permutations. These remain proposed engine fixtures, not delivered learned defenses.
+
 Validation: engine collision fixtures must prove guards/self-contact block traversal; no warning/nonfinite/overflow; no unreported fast pass; staged forces/poses agree. Compile success alone fails P1.
 
 ### P2: Authoritative game and replay
@@ -82,6 +84,8 @@ Benchmark CPU process counts 1/2/4/8 and exact-model Warp worlds 8/32/128/512 su
 
 Run end-to-end simulation+inference+referee+reset+optimizer throughput, warmup separate. Report world transitions, substeps, learner samples, wall and simulated seconds, GPU memory/utilization, faults and disk use. Initial resource cap four CPU workers; expansions require current load check. Keep xbabe4 native CPU unless a measured alternative warrants Docker.
 
+Profile observation assembly, IPC/transfer and synchronization separately before selecting buffer reuse, batched inference or native-code work. The [additional proposal's](EXTERNAL_REVIEW_2026-10-26.md) simplified-engine throughput targets are not exact-model benchmarks or launch requirements. Any future surrogate retains a separate model identity and cannot pass native motor/backend gates.
+
 ### P5: Self-play and visible proof
 
 Create `rl/{actor,critic,ppo,rollout}.py`, `league.py`, `evaluation.py`, `report.py`, tests `test_ppo.py`, `test_league.py`, `test_evaluation.py`.
@@ -89,6 +93,8 @@ Create `rl/{actor,critic,ppo,rollout}.py`, `league.py`, `evaluation.py`, `report
 Recurrent tactical actor samples tanh-squashed Gaussian latents with exact stable likelihood, detached behavior logp/advantages, padded sequence masks and burn-in/full-history checks. Separate bootstrap and trace masks. Freeze behavior bundle per rollout; reconstruct hidden state on new weights or keep version through match. Historical opponent retains actor+decoder+normalizers+timing+RNG contract.
 
 Start shared learner versus scripted styles and immutable snapshots. Add historical/PFSP mixture with uniform floor, frozen evaluation panel and payoff matrix. Elo comes from evaluation, never the changing training distribution. Candidate promotion: preregister 200 paired scenarios, swapped sides, lower 95% paired panel-score improvement bound >0, no critical regression/fault. Five independent seeds for method comparisons; one debug seed never proves general improvement.
+
+Include shell/counter, jab/move and close-range hook baselines once valid motor controllers exist. Record misses, blocks, direct hits, counters/combinations and engagement distance as defined diagnostics, without changing canonical points. `test_league.py` must cover empty pools, all-zero/all-one win rates, sparse evidence, uniform-floor/fallback behavior and fixed-seed sampling. Freeze EMA-derived opponents at match reset; never mutate an active opponent bundle. Monotonic Elo and bot mastery alone do not establish improvement. See the [additional review](EXTERNAL_REVIEW_2026-10-26.md) for rationale and input provenance.
 
 Replay UI overlays clock, points, location, force/impulse, event reason, actor and decoder hashes. Learning report plots panel strength versus wall hours and simulation budget, confidence and invalid rate. Show initial/intermediate/final policies on identical scenarios. Camera polish does not replace these metrics.
 

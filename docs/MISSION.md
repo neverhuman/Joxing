@@ -4,6 +4,8 @@ Current mission: **v0.0.8 — substep physical evidence and tracking-independent
 
 Value: distinguish native tracking failure from physical collapse before another learning sweep. Follow [V0.0.8_MISSION.md](V0.0.8_MISSION.md) for exact read-first files, implementation, tests, ownership, budgets, stops and handoff. Preserve the failed v7 tracking gate; walking does not pass stationary guard or competition.
 
+The [additional user-supplied boxing/HPC proposal](EXTERNAL_REVIEW_2026-10-26.md) has been reviewed and preserved. Useful defense/style fixtures, causal schema checks and league edge cases are carried into master P1/P2/P4/P5. It does not replace this mission, native muscles, game rules or registered protocol. No additional training job was launched for that review.
+
 ## Ownership and health
 
 The user authorized continuing small version missions and a check every 20 minutes. Active app heartbeat: `advance-joxing-every-20-minutes`, attached to this chat. On each wake read this file and STATUS, inspect actual job/process/progress/faults and Git before acting. Do not launch duplicate work or change an executing checkout. Active development in this chat is work in progress; a running external task must list its host, dedicated path, PID, exact command, progress file, source hash, caps and last meaningful progress. Update this file on each phase transition.

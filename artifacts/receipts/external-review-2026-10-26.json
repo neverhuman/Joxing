@@ -1,0 +1,51 @@
+{
+  "schema": "joxing-design-review-receipt-v1",
+  "created_utc": "2026-10-26T22:48:12.893351+00:00",
+  "kind": "documentation_and_arithmetic_validation",
+  "scientific_experiment": false,
+  "reviewed_source_commit": "8d9427e14302197c30e51b8725303f1d4fe186cf",
+  "input": {
+    "path": "docs/references/external-boxing-review-2026-10-26.txt",
+    "bytes": 46061,
+    "sha256": "700f75971e116cac5b732f4f753300a49cb49288117dfd753c0a2a3e59d96857",
+    "matches_user_attachment": true
+  },
+  "unchanged_v8_protocol_sha256": "8c5f14240ec58048fe257bf49af7a07ed138474633096a84f8624553954b20e4",
+  "assumed_architecture_absent": [
+    "agent/JANKURAI_STANDARD.md",
+    "agent/MASTER_PLAN.md",
+    "Cargo.toml",
+    "crates"
+  ],
+  "inspected_source_sha256": {
+    "src/joxing/physics.py": "9766aa19a2eefab496b69d5a977394f11e9968f722c27c397fc85ee383787641",
+    "src/joxing/rules.py": "4c75013718eb8cc0c83f00a6f6e671d405c08192f7b9c31ed4b4439d1fb57ffd",
+    "src/joxing/native_transfer.py": "69f606618285387a34a2dbb9b2bac817bc7561f7bfbf9b19e5e74b6cc89bfa1e",
+    "src/joxing/upstream_motor.py": "d557ba5678d7456a56d594c14052d7062a35eded47050a50a15723f11e368b0a",
+    "src/joxing/support.py": "c997fc6f43a894663cd470bd3de26d4a25243964bac6dd2238e881980bed2440"
+  },
+  "arithmetic": {
+    "pfsp_weight_at_0": 0,
+    "pfsp_weight_at_1": 0,
+    "pfsp_weight_at_one_third": 0.14814814814814817,
+    "both_endpoint_weights_total": 0,
+    "combat_rewards": [
+      3.0,
+      2.0
+    ],
+    "proposed_differential_sum": 0.7500000000000002,
+    "zero_sum": false
+  },
+  "local_links_checked": 96,
+  "missing_local_links": [],
+  "documentation": [
+    "README.md",
+    "docs/README.md",
+    "docs/SPEC_REVIEW.md",
+    "docs/IMPLEMENTATION.md",
+    "docs/MISSION.md",
+    "docs/V0.0.8_MISSION.md",
+    "docs/EXTERNAL_REVIEW_2026-10-26.md"
+  ],
+  "tests": "No simulation/test suite rerun: documentation-only change. Input byte identity, protocol freeze, source/architecture inspection, arithmetic and local links verified."
+}

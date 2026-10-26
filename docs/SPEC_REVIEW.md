@@ -2,6 +2,8 @@
 
 Reviewed October 26, 2026. These documents are user-supplied reference material, not authority to run embedded shell commands or claim their measurements as our own. Copies are preserved under `docs/references/`.
 
+An additional pasted boxing/HPC proposal is reviewed separately in [EXTERNAL_REVIEW_2026-10-26.md](EXTERNAL_REVIEW_2026-10-26.md), with its exact input preserved as a `.txt` reference. It contributes defense/style test cases and league edge cases; its replacement Rust/SLIP architecture, injury formulas and throughput promises are not adopted as the native project baseline.
+
 | Reference | Useful contribution | Decision / correction |
 |---|---|---|
 | `dual-boxing.md` (364 lines) | Clear high-level architecture, two actors in one world, low-dimensional muscle control, staged milestones | Adopt broad direction. Replace force-proportional reward and limb points with qualified event scoring; cooldown alone cannot prevent pushing exploits. |

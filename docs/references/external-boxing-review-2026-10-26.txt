@@ -1,0 +1,439 @@
+Public web indexing has not yet captured `[github.com/neverhuman/Joxing/blob/main/docs/V0.0.7_MISSION.md](https://github.com/neverhuman/Joxing/blob/main/docs/V0.0.7_MISSION.md)`, so this specification is engineered directly against the **`neverhuman` / Jankurai Agent-First Standard** (`agent/JANKURAI_STANDARD.md`, `AGENTS.md`, `agent/MASTER_PLAN.md`, deterministic Rust-first execution, zero-copy SIMD/`wgpu` compute acceleration, and bounded `T1`–`T10` proof lanes).
+
+Below is the complete, self-contained **`docs/V0.0.7_MISSION.md` Engineering & R&D Specification** designed so an autonomous coding agent can drop it directly into the repository as the controlling plan, implement every subsystem, and verify all proof obligations end-to-end.
+
+---
+
+```markdown
+# JOXING v0.0.7 MISSION SPECIFICATION: Dual-Agent Biomechanical Boxing, Sophisticated Scoring, Multi-Pool Trauma, Active Guard Physics & HPC Self-Play RL
+
+**Document ID:** `docs/V0.0.7_MISSION.md`  
+**Status:** Controlling Engineering & R&D Specification (No-Proof-No-Merge)  
+**Target Architecture:** Rust Workspace (`joxing-core`, `joxing-sim`, `joxing-rl`, `joxing-gpu`, `joxing-cli`)  
+**Determinism Contract:** Bitwise-reproducible fixed-seed rollouts on CPU (`f32` IEEE-754 strict) and bounded $\epsilon \le 10^{-5}$ parity on GPU (`wgpu` / CUDA).
+
+---
+
+## 1. Executive Mission & Baseline Audit (`v0.0.6` $\to$ `v0.0.7`)
+
+### 1.1 What We Have Done vs. What `v0.0.7` Must Solve
+Prior iterations established the foundational arena geometry, basic boxer kinematics, and initial strike collision primitives. However, naive RL boxing environments fail due to four classic pathologies:
+1. **Rock-'Em-Sock-'Em Flailing Collapse:** Without physical stamina costs on whiffed punches, rotational chin torque, and guard-break dynamics, policies converge to high-frequency mutual button-mashing at point-blank range.
+2. **Boolean Guard Exploitation:** Treating blocking as a binary damage multiplier allows agents to hold a permanent "shield" without accounting for physical glove/forearm occlusion vectors, leaving no geometric distinction between a high earmuff guard, a tight peek-a-boo shell, or a low body guard.
+3. **Single-Scalar HP Myopia:** A single hit-point bar cannot distinguish between acute concussive stun (flash knockdowns on the chin while off-balance), cumulative visceral body trauma (liver/solar-plexus shots that erode maximum aerobic capacity), and localized arm fatigue.
+4. **CPU-Python IPC Bottlenecks:** Stepping individual environments at $60\text{ Hz}$ across process boundaries starves the learner at $<5,000$ Steps Per Second (SPS), whereas true emergent footwork, slipping, parrying, and counter-punching require $10^8$–$10^9$ environment frames ($>200,000$ SPS on CPU SIMD; $>1,000,000$ SPS on GPU).
+
+### 1.2 Core `v0.0.7` Deliverables
+* **Canonical Dual-Spawn Arena:** Red Boxer ($B_0$) and Blue Boxer ($B_1$) spawn deterministically at mirrored starting coordinates at the start of every bout and post-knockdown reset, inside a $6.10\text{ m} \times 6.10\text{ m}$ elastic-rope ring.
+* **Hybrid SLIP-Base + 3D Articulated Upper-Body Physics:** Lower-body Zero-Moment-Point (ZMP) / Spring-Loaded Inverted Pendulum (SLIP) footwork base coupled to a 14-capsule articulated upper body (pelvis, abdomen, thorax, neck/cranium, shoulders, upper arms, forearms, gloves) solved at $f_{\text{phys}} = 240\text{ Hz}$ ($4$ substeps per $f_{\text{RL}} = 60\text{ Hz}$ policy decision).
+* **5-Pool Physiological & Biomechanical Damage Engine:** Separate state differential equations for Acute Cranial Stun ($S_{\text{stun}}$), Cumulative Cranial Trauma ($D_{\text{head}}$), Visceral/Thoracic Body Damage & Liver Shock ($D_{\text{body}}, S_{\text{liver}}$), Dual-Arm Guard Integrity ($G_L, G_R$), and Two-Compartment Stamina ($E_{\text{fast}}, E_{\max}$).
+* **3D Swept-Capsule Active Defense System:** Continuous Collision Detection (CCD) resolving glove-on-forearm, glove-on-glove, and glove-on-shoulder intersections with three mechanical regimes: **Braced Shell Absorption**, **Timed Vector Parry/Deflection**, and **Slip/Weave Near-Miss Evasion**.
+* **Professional 10-Point Must + Quantitative CompuBox Judge Ledger:** Decouples official bout judging (clean effective punching, defense/evasion, counter-punching, ring generalship) from the dense, zero-sum/general-sum RL shaping reward.
+* **Prioritized Fictitious Self-Play (PFSP) League + HPC Vectorized Engine:** Ego-centric symmetry-canonicalized observation space ($\mathbb{R}^{108}$), continuous/hybrid PD action space ($\mathbb{R}^{18}$), Asymmetric Recurrent PPO, and SoA SIMD / `wgpu` mega-kernel execution.
+
+---
+
+## 2. Arena Geometry, Starting Points & Biomechanical Topology
+
+### 2.1 Ring Coordinate Frame & Canonical Spawn Invariant
+The boxing ring is centered at the world origin $(0, 0, 0)$ with inner rope bounds $(x, y) \in [-3.05\text{ m}, +3.05\text{ m}]^2$ ($20\text{ ft} \times 20\text{ ft}$ championship ring).
+
+| Parameter | Red Boxer ($B_0$) | Blue Boxer ($B_1$) | Notes |
+| :--- | :--- | :--- | :--- |
+| **Start Position $(x_0, y_0, z_0)$** | $(-1.50\text{ m}, 0.00\text{ m}, 0.92\text{ m})$ | $(+1.50\text{ m}, 0.00\text{ m}, 0.92\text{ m})$ | $3.00\text{ m}$ initial center-to-center separation |
+| **Start Heading $(\psi_0)$** | $0.0\text{ rad}$ (facing $+x$) | $\pi\text{ rad}$ (facing $-x$) | Exact mirror symmetry along $x = 0$ plane |
+| **Corner Assign $(x_c, y_c)$** | $(-2.85\text{ m}, -2.85\text{ m})$ | $(+2.85\text{ m}, +2.85\text{ m})$ | Neutral corners at $(-2.85, +2.85)$ and $(+2.85, -2.85)$ |
+| **Guard Stance Init** | High Orthodox (`lead = Left`, `rear = Right`) | High Orthodox (`lead = Left`, `rear = Right`) | Stance switchable via footwork yaw/step state |
+
+* **Rope Boundary Physics:** When a boxer's pelvis cylinder ($r_{\text{pelvis}} = 0.22\text{ m}$) exceeds $\vert{}x\vert{} > 3.05 - r_{\text{pelvis}}$ or $\vert{}y\vert{} > 3.05 - r_{\text{pelvis}}$, the ropes exert a non-linear Kelvin-Voigt restoring force:
+  $$\mathbf{F}_{\text{rope}} = -k_{\text{rope}} \delta_{\text{pen}}^{1.5} \mathbf{n}_{\text{inward}} - c_{\text{rope}} \max(0, -\mathbf{v} \cdot \mathbf{n}_{\text{inward}}) \mathbf{n}_{\text{inward}}$$
+  where $k_{\text{rope}} = 4500\text{ N/m}^{1.5}$ and $c_{\text{rope}} = 320\text{ N}\cdot\text{s/m}$. Boxers pinned against the ropes suffer restricted backward mobility and $1.15\times$ increased body-shot impulse transfer due to lost backward torso compliance.
+
+### 2.2 Articulated Boxer Kinematic & Collision Hierarchy
+To prevent RL agents from wasting millions of steps learning bipedal ankle balancing while preserving realistic boxing biomechanics, each boxer uses a **Coupled SLIP Stance Base + 14-Link 3D Articulated Upper Body**:
+
+1. **Lower-Body Footwork Base (SLIP / ZMP Controller):**
+   * Tracks Lead Foot $\mathbf{p}_{\text{foot},L} \in \mathbb{R}^2$, Rear Foot $\mathbf{p}_{\text{foot},R} \in \mathbb{R}^2$, and Pelvis Center of Mass $\mathbf{p}_{\text{pelvis}} \in \mathbb{R}^3$.
+   * **Postural Balance Scalar ($\mathcal{B}_t \in [0, 1]$):** Defined by the support polygon width $w_{\text{stance}} = \Vert{}\mathbf{p}_{\text{foot},L} - \mathbf{p}_{\text{foot},R}\Vert{}$ (optimal $w_{\text{opt}} = 0.48\text{ m}$) and the projection of the Ground-Reaction-Force-adjusted CoM onto the foot support segment:
+     $$\mathcal{B}_t = \text{clip}\left(1.0 - \frac{\|\mathbf{p}_{\text{CoM},\perp} - \mathbf{p}_{\text{support\_center}}\|^2}{r_{\text{support}}^2} - 0.35 \frac{(w_{\text{stance}} - w_{\text{opt}})^2}{w_{\text{opt}}^2},\; 0.05,\; 1.0\right)$$
+   * Stepping, dashing, or lunging temporarily lowers $\mathcal{B}_t \in [0.35, 0.70]$, increasing knockdown susceptibility if counter-punched mid-step.
+
+2. **Upper-Body Articulated Links & Hitbox Capsules:**
+
+| Link ID | Anatomical Segment | Primitive Type | Radius ($r$) | Half-Length ($L/2$) | Role & Vulnerability Multiplier ($\mu_{\text{zone}}$) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `0` | **Pelvis / Root** | Capsule | $0.16\text{ m}$ | $0.10\text{ m}$ | Kinematic/Dynamic base; belt-line foul boundary |
+| `1` | **Lower Torso (Abdomen)** | Capsule | $0.15\text{ m}$ | $0.12\text{ m}$ | Body target ($\mu_{\text{ribs}} = 1.0\times$) |
+| `2` | **Liver Sub-Volume** | Sphere (Right-Lower `1`) | $0.08\text{ m}$ | — | Critical visceral hitbox ($\mu_{\text{liver}} = 1.45\times$) |
+| `3` | **Solar Plexus Sub-Volume**| Sphere (Center-Front `1`)| $0.07\text{ m}$ | — | Stamina-shock hitbox ($\mu_{\text{solar}} = 1.35\times$) |
+| `4` | **Upper Torso (Thorax)** | Capsule | $0.17\text{ m}$ | $0.14\text{ m}$ | Chest/clavicle ($\mu_{\text{chest}} = 0.75\times$); anchors shoulders |
+| `5` | **Cranium (Upper Head)** | Sphere | $0.105\text{ m}$ | — | Forehead/Temple ($\mu_{\text{temple}} = 1.45\times$ lateral, $0.85\times$ frontal) |
+| `6` | **Mandible (Chin/Jaw)** | Sphere (Lower-Front `5`) | $0.065\text{ m}$ | — | High-leverage torque target ($\mu_{\text{chin}} = 1.65\times$, lever arm $r_{\text{chin}} = 0.11\text{ m}$) |
+| `7, 8` | **Shoulders (L/R)** | Sphere | $0.08\text{ m}$ | — | Deflection surfaces (Philly-shell shoulder roll) |
+| `9, 10` | **Upper Arms (L/R)** | Capsule | $0.06\text{ m}$ | $0.14\text{ m}$ | 3-DOF Shoulder joint ($\tau_{\max} = 110\text{ N}\cdot\text{m}$) |
+| `11, 12`| **Forearms (L/R)** | Capsule | $0.055\text{ m}$ | $0.13\text{ m}$ | Primary **Guard Shield** occluder; 1-DOF Elbow + 1-DOF Pronation |
+| `13, 14`| **Gloves (L/R, 10 oz)** | Sphere/Capsule | $0.085\text{ m}$ | $0.04\text{ m}$ | Primary **Striking Surface** & **Active Parry** collider |
+
+---
+
+## 3. Biomechanical Damage Tracking & 5-Pool Physiological Engine
+
+Health is **never** represented as a single scalar. Each boxer maintains a deterministic physiological state struct `PhysiologyState` updated at $240\text{ Hz}$.
+
+### 3.1 Effective Impact Impulse Calculation
+When Boxer $A$'s glove (`13` or `14`) collides with Boxer $B$'s target surface at contact point $\mathbf{p}_c$ with contact normal $\mathbf{n}_c$:
+1. **Relative Closure Velocity:** $\mathbf{v}_{\text{rel}} = \mathbf{v}_{\text{glove},A}(\mathbf{p}_c) - \mathbf{v}_{\text{target},B}(\mathbf{p}_c)$. Only approaching contacts ($v_n = -\mathbf{v}_{\text{rel}} \cdot \mathbf{n}_c > v_{\min} = 1.2\text{ m/s}$) register as strikes (pushing/clinching below $1.2\text{ m/s}$ generates zero strike damage).
+2. **Effective Kinetic Mass ($m_{\text{eff}}$):** A boxer who plants their feet ($\mathcal{B}_{t,A} > 0.8$) and rotates the trunk ($\omega_{\text{trunk},A}$ aligned with punch direction) couples torso mass into the glove:
+   $$m_{\text{eff}} = m_{\text{arm}} + \kappa_{\text{chain}} \cdot \mathcal{B}_{t,A} \cdot \sigma(\hat{\mathbf{v}}_{\text{glove}} \cdot (\boldsymbol{\omega}_{\text{trunk},A} \times \mathbf{r}_{\text{shoulder}})) \cdot m_{\text{torso}}$$
+   where $m_{\text{arm}} = 4.2\text{ kg}$, $m_{\text{torso}} = 38.0\text{ kg}$, and $\kappa_{\text{chain}} = 0.22$. Arm-punches thrown while retreating have low $m_{\text{eff}}$; planted hooks/crosses carry high $m_{\text{eff}}$.
+3. **Raw Normal & Tangential Impulse:**
+   $$J_n = (1 + e_{\text{glove}}) \frac{m_{\text{eff}} m_{\text{target}}}{m_{\text{eff}} + m_{\text{target}}} v_n, \qquad \mathbf{J}_t = -\min(\mu_f J_n, m_{\text{eff}} \|\mathbf{v}_{\text{rel},t}\|) \hat{\mathbf{v}}_{\text{rel},t}$$
+   Strikes below the noise floor $J_n < J_{\text{min}} = 3.5\text{ N}\cdot\text{s}$ are discarded as light touches.
+
+### 3.2 Pool 1: Cranial Concussive Trauma & Rotational Stun ($S_{\text{stun}}, D_{\text{head}}$)
+Cranial trauma depends on both linear impulse $J_n$ and **cervical rotational torque** around the neck pivot $\mathbf{p}_{\text{neck}}$:
+$$\mathcal{T}_{\text{cranial}} = J_n \cdot \mu_{\text{zone}} \cdot \left(1.0 + \lambda_{\text{rot}} \frac{\|(\mathbf{p}_c - \mathbf{p}_{\text{neck}}) \times \mathbf{J}\|}{r_{\text{chin}} J_n}\right) \cdot \left(1.0 + 0.5(1.0 - \mathcal{B}_{t,B})\right) \cdot (1.0 - \eta_{\text{guard}})$$
+where $\lambda_{\text{rot}} = 0.85$ rewards lateral hooks to the jaw/temple that twist the head, and $\eta_{\text{guard}} \in [0, 0.92]$ is the active guard attenuation factor (Section 4).
+
+* **Cumulative Head Damage ($D_{\text{head}} \in [0, 100]$):**
+  $$D_{\text{head}}(t + \Delta t) = \min\left(100.0,\; D_{\text{head}}(t) + c_{\text{head\_cum}} \mathcal{T}_{\text{cranial}}\right)$$
+* **Acute Stun / Concussion Gauge ($S_{\text{stun}} \in [0, 100]$):**
+  $$S_{\text{stun}}(t + \Delta t) = \max\left(0.0,\; S_{\text{stun}}(t) - k_{\text{recov}}(D_{\text{head}}, E_{\text{fast}}) \Delta t + c_{\text{stun}} \mathcal{T}_{\text{cranial}}\right)$$
+  where recovery rate degrades as cumulative head trauma increases ("chin erosion"):
+  $$k_{\text{recov}}(D_{\text{head}}, E_{\text{fast}}) = k_{\text{recov},0} \cdot \left(1.0 - 0.65 \frac{D_{\text{head}}}{100.0}\right) \cdot \left(0.4 + 0.6 \frac{E_{\text{fast}}}{E_{\max}}\right)$$
+* **Knockdown Trigger Condition:**
+  A cranial knockdown is triggered immediately if:
+  1. **Concussive Overload:** $S_{\text{stun}} \ge 100.0$, OR
+  2. **Flash Off-Balance Knockdown:** $\mathcal{T}_{\text{cranial}} \ge \mathcal{T}_{\text{flash}}$ while $\mathcal{B}_{t,B} < 0.38$ and $S_{\text{stun}} \ge 65.0$.
+
+### 3.3 Pool 2: Visceral/Thoracic Body Trauma & Liver Shock ($D_{\text{body}}, S_{\text{liver}}$)
+Body punches invest in long-term attrition and acute visceral paralysis:
+$$\mathcal{T}_{\text{body}} = J_n \cdot \mu_{\text{zone}} \cdot \left(1.0 + 0.40 \cdot \mathbb{I}[\text{target\_committing\_punch}]\right) \cdot (1.0 - \eta_{\text{guard}})$$
+*(Note: Catching an opponent on the liver or solar plexus while they are mid-punch adds a $+40\%$ diaphragm-relaxed multiplier).*
+
+* **Cumulative Body Trauma ($D_{\text{body}} \in [0, 100]$) & Maximum Stamina Ceiling Decay:**
+  $$D_{\text{body}}(t + \Delta t) = \min\left(100.0,\; D_{\text{body}}(t) + c_{\text{body\_cum}} \mathcal{T}_{\text{body}}\right)$$
+  $$E_{\max}(t) = E_{\max,0} \cdot \max\left(0.35,\; \exp\left(-0.011 \cdot D_{\text{body}}(t)\right)\right)$$
+* **Acute Visceral / Liver Shock ($S_{\text{liver}} \in [0, 100]$):**
+  Hits to the `Liver` (`2`) or `Solar Plexus` (`3`) spheres increment $S_{\text{liver}}$, which decays at $8.0\text{ units/s}$.
+  * While $S_{\text{liver}} > 50.0$: Stamina regeneration is frozen ($0\text{ units/s}$) and footwork surge/strafe speed is reduced by $35\%$.
+  * If $S_{\text{liver}} \ge 100.0$: Triggers a **Delayed Body-Shot Knockdown** (fighter drops to one knee after a $0.35\text{ s}$ autonomic lag).
+
+### 3.4 Pool 3: Dual-Arm Guard Structural Integrity ($G_L, G_R \in [0, 100]$)
+Each arm has its own guard integrity pool initialized to $100.0$.
+* When a forearm/glove absorbs an incoming impulse $J_n$, the defending arm's integrity drops by:
+  $$\Delta G_{\text{arm}} = -c_{\text{guard\_wear}} J_n \cdot \left(1.25 - 0.50 \cdot u_{\text{guard}}\right) + k_{\text{guard\_regen}} \cdot \mathbb{I}[\text{no\_block\_for } 1.0\text{ s}] \Delta t$$
+* **Guard Break Mechanics:** When $G_{\text{arm}} < 30.0$, the arm's maximum PD joint stiffness $k_p$ scales down linearly to $40\%$ of nominal, and guard bleed-through increases from $\xi_{\text{bleed}} = 0.08$ up to $0.45$. If $G_{\text{arm}} = 0.0$, a heavy strike triggers a **Guard-Break Stagger** ($250\text{ ms}$ forced guard opening).
+
+### 3.5 Pool 4: Two-Compartment Bioenergetic Stamina ($E_{\text{fast}} \in [0, E_{\max}(t)]$)
+* **Stamina Drain Differential Equation:**
+  $$\frac{dE_{\text{fast}}}{dt} = -P_{\text{strike}} - P_{\text{whiff}} - P_{\text{loco}} - P_{\text{brace}} + R_{\text{aerobic}}$$
+  * **Strike Commitment Cost ($P_{\text{strike}}$):** Proportional to integrated squared actuator torque $\sum_{\text{arm}} \tau_i^2$.
+  * **Eccentric Whiff Penalty ($P_{\text{whiff}}$):** If a committed punch ($v_{\text{glove}} > 4.5\text{ m/s}$) reaches full extension without making any contact (clean hit, block, or parry), the boxer pays an immediate **$1.45\times$ eccentric deceleration stamina surcharge** and a $140\text{ ms}$ recovery lag. This single biomechanically grounded rule eliminates RL punch-spamming.
+  * **Brace Cost ($P_{\text{brace}}$):** Holding maximum guard brace tension ($u_{\text{guard}} > 0.8$) reduces passive stamina regeneration by $60\%$ (preventing permanent braced turtling).
+* **Gassed-Out Regime ($E_{\text{fast}} < 25.0$):** Peak shoulder/elbow actuator torque scales by $\sqrt{\max(0.20, E_{\text{fast}} / 25.0)}$, slowing hand speed and guard recovery.
+
+### 3.6 Knockdown Recovery & TKO / KO State Machine
+When a knockdown occurs:
+1. Both fighters freeze combat; the standing fighter is routed to the furthest neutral corner.
+2. The downed fighter enters an 8-to-10 second recovery mini-process governed by cumulative trauma:
+   $$T_{\text{rise}} = 3.0 + 0.045 D_{\text{head}} + 0.025 D_{\text{body}} + 1.8 \cdot N_{\text{KD\_total}} - 2.2 \left(\frac{E_{\text{fast}}}{E_{\max,0}}\right)$$
+3. **KO:** If $T_{\text{rise}} \ge 9.95\text{ s}$, the fight ends immediately by **Knockout (KO)**.
+4. **3-Knockdown TKO Rule:** Three knockdowns in the same round (or 4 across the bout) immediately end the fight by **Technical Knockout (TKO)**.
+5. **Post-Knockdown Continuation:** If $T_{\text{rise}} < 9.95\text{ s}$ (mandatory 8-count minimum), the downed boxer rises with $S_{\text{stun}}$ reset to $35.0 + 0.3 D_{\text{head}}$, and both fighters resume from their current ring positions (or canonical spawn if between rounds).
+
+---
+
+## 4. How Blocking, Parrying & Evasion Work (3D Swept-Capsule Mechanics)
+
+Blocking in Joxing is **purely geometric and mechanical**—there is no global "block state" that magically protects uncovered hitboxes.
+
+### 4.1 Continuous Collision Detection (CCD) Occlusion Ordering
+During each $240\text{ Hz}$ physics substep ($\Delta t = 4.167\text{ ms}$), each attacking glove (`13`, `14`) sweeps a capsule from $\mathbf{x}_{\text{glove}}(t)$ to $\mathbf{x}_{\text{glove}}(t + \Delta t)$.
+We compute the earliest time-of-impact $t_{\text{TOI}} \in [0, 1]$ against all candidate colliders on the defender:
+$$\mathcal{C}_{\text{def}} = \{\text{Glove}_{L/R},\; \text{Forearm}_{L/R},\; \text{Shoulder}_{L/R},\; \text{Cranium},\; \text{Mandible},\; \text{UpperTorso},\; \text{LowerTorso},\; \text{Liver},\; \text{SolarPlexus}\}$$
+
+### 4.2 Three Defensive Regimes
+
+
+```
+
+Incoming Glove Trajectory (v_rel)
+│
+├─► 1. No Intersection (d_min in [r_hit, r_hit + 0.12m] & v_head_evade > 0.4 m/s)
+│         └──► CLEAN SLIP / WEAVE EVASION (0% damage, +Counter Window, +Defense Score)
+│
+├─► 2. First Contact = Defender Glove/Forearm OUTSIDE Brace Zone (d_body > 0.18m)
+│     AND Defender Lateral Intercept Velocity (v_def_perp > 1.5 m/s, Δt_active < 120ms)
+│         └──► ACTIVE VECTOR PARRY / DEFLECTION
+│              • Redirects attacker glove velocity laterally: v'_att = v_att - (1+e)v_n + J_parry/m_arm
+│              • 96% damage negation, 0 guard wear, inflicts 180ms Off-Balance Recovery on Attacker
+│
+├─► 3. First Contact = Defender Forearm/Glove/Shoulder INSIDE Brace Zone (d_body <= 0.18m)
+│         └──► BRACED SHELL BLOCK (High Guard / Peek-a-Boo / Philly Shell)
+│              • Attenuation factor: η_guard = clip(0.72 + 0.20 * u_guard * (G_arm / 100), 0.55, 0.92)
+│              • Bleed-through damage = (1 - η_guard) * RawImpact
+│              • Rotational chin torque reduced by 90% (forearm bridges momentum into thorax)
+│
+└─► 4. First Contact = Unoccluded Cranium / Mandible / Torso / Liver
+└──► CLEAN OR GRAZING HIT
+• Clean factor η_clean = |v_rel · n_c| / ||v_rel||
+• Full impulse applied to Cranial or Visceral damage pool
+
+```
+
+### 4.3 Why No Single Guard Position Is Invulnerable (Tactical Geometry)
+Because forearms are finite capsules ($r = 0.055\text{ m}$, $L = 0.26\text{ m}$) and gloves are finite spheres ($r = 0.085\text{ m}$):
+* **High Front Guard (Peek-a-Boo):** Forearms vertical and parallel in front of nose/chin. Blocks straight jabs (`lead`) and crosses (`rear`) completely, but leaves lateral temples (`5`) open to wide hooks and lower ribs/liver (`1, 2`) exposed to body hooks.
+* **High Wide Guard (Earmuff):** Forearms framing the sides of the cranium. Blocks left/right hooks to the jaw/temple, but leaves a $0.14\text{ m}$ central vertical seam vulnerable to straight split-jabs and uppercuts, plus an open midsection.
+* **Cross-Arm / Philly Shell Guard:** Lead forearm draped horizontally across the abdomen/liver (`1, 2, 3`), lead shoulder (`7`) elevated to shield the left chin (`6`), rear glove (`14`) braced against the right jaw. Protects the body and deflects straight crosses via shoulder roll, but requires active trunk yaw and leaves the high lead-side temple vulnerable to overhand rights and lead hooks if mistimed.
+
+---
+
+## 5. Sophisticated Point System & Dual-Layer Scoring Architecture
+
+Joxing separates the **Official Championship Judging System** (which decides rounds, decisions, and fighter ratings) from the **Dense RL Shaping Reward** (which guides policy gradients every $16.67\text{ ms}$).
+
+### 5.1 Layer A: Quantitative CompuBox + 10-Point Must Judge Ledger
+During each round $r \in \{1, \dots, N_{\text{rounds}}\}$ ($T_{\text{round}} = 60.0\text{ s}$ simulated combat time, configurable up to $180.0\text{ s}$), the referee engine accumulates four sub-scores for each boxer $i \in \{0, 1\}$:
+
+1. **Clean Effective Punching Score ($S_{\text{clean},i}$):**
+   Every strike $k$ landing on the opponent's head or body with $\eta_{\text{guard}} < 0.35$ contributes:
+   $$s_{\text{hit},k} = \left(\frac{J_{n,k}}{J_{\text{ref}}}\right)^{1.15} \cdot \mu_{\text{zone},k} \cdot (1.0 - \eta_{\text{guard},k}) \cdot M_{\text{counter},k} \cdot M_{\text{combo},k}$$
+   * **Counter-Punch Multiplier ($M_{\text{counter},k}$):** Equals $1.35$ if the opponent was in an active punch commitment or whiff-recovery state within the last $180\text{ ms}$; otherwise $1.0$.
+   * **Combination Multiplier ($M_{\text{combo},k}$):** If landed within $0.80\text{ s}$ of a previous clean hit by the *other* hand or to a *different* target level (Head $\leftrightarrow$ Body), $M_{\text{combo},k} = 1.0 + 0.12 \min(n_{\text{chain}} - 1, 3)$. Consecutive identical single-hand spam receives $M_{\text{combo},k} = 0.85$.
+
+2. **Trauma & Significant Strike Impact Score ($S_{\text{impact},i}$):**
+   Rewards visibly staggering or hurting the opponent:
+   $$S_{\text{impact},i} = 0.45 \Delta D_{\text{head},\text{opp}} + 0.35 \Delta D_{\text{body},\text{opp}} + 4.0 \cdot N_{\text{stagger},\text{opp}}$$
+   where a stagger event triggers whenever a single strike spikes $S_{\text{stun},\text{opp}}$ by $\ge 28.0$ or $S_{\text{liver},\text{opp}}$ by $\ge 35.0$.
+
+3. **Defensive Craft & Neutralization Score ($S_{\text{def},i}$):**
+   $$S_{\text{def},i} = \sum_{m \in \text{Evaded}} 1.80 \cdot \left(\frac{v_{\text{opp\_glove},m}}{v_{\text{ref}}}\right) + \sum_{p \in \text{Parried}} 2.10 + \sum_{b \in \text{BracedBlock}} 0.35 \cdot \eta_{\text{guard},b}$$
+   *(Note: Slipping/weaving and active parrying score $>5\times$ higher than passive shell blocking, incentivizing slick defensive mastery).*
+
+4. **Ring Generalship & Effective Aggression ($S_{\text{ring},i}$):**
+    Evaluated at $10\text{ Hz}$ only when the distance between fighters is within tactical engagement range ($d_{AB} \in [0.65\text{ m}, 2.10\text{ m}]$):
+   $$S_{\text{ring},i} = \frac{1}{T_{\text{round}}} \int_0^{T_{\text{round}}} \mathbb{I}[d_{AB}(t) \le 2.1\text{ m}] \left(0.60 \frac{r_{\text{rope},\text{opp}}(t) - r_{\text{rope},i}(t)}{3.05} + 0.40 (\hat{\mathbf{v}}_i \cdot \hat{\mathbf{d}}_{i \to \text{opp}}) \cdot \mathbb{I}[\text{landing\_rate}_i > 0.25]\right) dt$$
+   *(Coming forward while missing everything yields zero Effective Aggression; cutting off the ring and backing the opponent toward the ropes while landing $\ge 25\%$ of thrown strikes scores positive Ring Generalship).*
+
+#### Round Dominance Index & 10-Point Must Mapping
+At the end of round $r$, compute the Round Dominance Differential $\Delta \mathcal{D}_r = \mathcal{D}_{r,0} - \mathcal{D}_{r,1}$ where:
+$$\mathcal{D}_{r,i} = 0.45 S_{\text{clean},i} + 0.25 S_{\text{impact},i} + 0.18 S_{\text{def},i} + 0.12 S_{\text{ring},i}$$
+Let $\text{RelDiff}_r = \frac{\Delta \mathcal{D}_r}{\max(10.0, \mathcal{D}_{r,0} + \mathcal{D}_{r,1})}$. Before knockdown deductions:
+* $\vert{}\text{RelDiff}_r\vert{} < 0.04 \implies 10\text{–}10$ (Even Round)
+* $0.04 \le \vert{}\text{RelDiff}_r\vert{} < 0.38 \implies 10\text{–}9$ for the round winner
+* $\vert{}\text{RelDiff}_r\vert{} \ge 0.38 \text{ and } S_{\text{impact},\text{winner}} \ge 15.0 \implies 10\text{–}8$ (Dominant Round without KD)
+* **Knockdown Deductions:** Each knockdown suffered by boxer $i$ in round $r$ subtracts $1$ point from boxer $i$'s score for that round (capped at $10\text{–}6$).
+
+---
+
+## 6. Multi-Agent Reinforcement Learning (MARL) Self-Play Architecture
+
+### 6.1 Ego-Centric Symmetry-Canonicalized Observation Space ($\mathcal{O} \in \mathbb{R}^{108}$)
+Both Red ($B_0$) and Blue ($B_1$) execute the **exact same neural architecture** by transforming all world-space vectors into the boxer's local **Pelvis Ego-Frame** ($\mathbf{R}_{\text{ego}}$: origin at $\mathbf{p}_{\text{pelvis},i}$, $+x$ pointing along boxer's facing direction, $+y$ left, $+z$ up).
+
+| Offset | Dim | Feature Group | Normalization / Bounds |
+| :--- | :--- | :--- | :--- |
+| `0..18` | `18` | **Ego Arm Kinematics:** Shoulder/elbow angles & angular velocities, glove 3D positions & 3D velocities in ego frame | Angles $\div \pi$, Pos $\div 1.2\text{ m}$, Vel $\div 12.0\text{ m/s}$ |
+| `18..28`| `10` | **Ego Trunk & Footwork:** Trunk pitch/roll/yaw & rates, foot separation vector, CoM balance $\mathcal{B}_t$, pelvis height $z$ | $\text{clip}[-1, 1]$ |
+| `28..38`| `10` | **Ego Physiology (Full Self-Awareness):** $E_{\text{fast}}/100$, $E_{\max}/100$, $S_{\text{stun}}/100$, $D_{\text{head}}/100$, $D_{\text{body}}/100$, $S_{\text{liver}}/100$, $G_L/100$, $G_R/100$, left/right whiff recovery timers | $[0, 1]$ |
+| `38..68`| `30` | **Opponent Observable Kinematics (Ego-Relative):** Relative pelvis pos/vel/yaw, relative cranium/chin pos/vel, relative thorax pos/orientation, **opponent shoulder angular velocities** (telegraph cue!), opponent forearm centers & orientations, opponent glove 3D positions & 3D velocities | Pos $\div 4.0\text{ m}$, Vel $\div 12.0\text{ m/s}$ |
+| `68..74`| `6` | **Opponent Observable Visual Cues (Partial Observability):** Visible opponent posture slump (noisy proxy for $E_{\text{fast},\text{opp}}$), visible wobble/stagger indicator, opponent guard brace indicator $(u_{\text{guard},L}, u_{\text{guard},R})$, opponent balance $\mathcal{B}_{t,\text{opp}}$ | $[0, 1]$ (exact hidden meters go ONLY to Asymmetric Critic!) |
+| `74..86`| `12` | **Ring Spatial Awareness:** Signed distances to North/South/East/West ropes in ego frame, vector to ring center $(0,0)$, vector to nearest corner, round clock remaining $t_{\text{rem}}/T_{\text{round}}$, current round index | $\div 6.10\text{ m}$ |
+| `86..90`| `4` | **Style Conditioning Vector ($\mathbf{w}_{\text{style}}$):** One-hot or continuous weight vector `[Balanced, Swarmer, OutBoxer, CounterSpecialist]` | $[0, 1]^4$ |
+| `90..108`| `18`| **Previous Action ($a_{t-1}$):** Action applied on the last $60\text{ Hz}$ control tick for action-smoothness regularization | $[-1, 1]^{18}$ |
+
+### 6.2 Continuous PD + Biomechanical Action Space ($\mathcal{A} \in [-1, 1]^{18}$)
+Sampled at $f_{\text{RL}} = 60\text{ Hz}$ and held/interpolated across $4$ physics substeps ($240\text{ Hz}$):
+* `a[0..3]` **Footwork Velocity & Yaw:** Target surge speed $v_x \in [-2.4, +3.0]\text{ m/s}$, strafe speed $v_y \in [-2.5, +2.5]\text{ m/s}$, yaw rate $\omega_z \in [-4.5, +4.5]\text{ rad/s}$.
+* `a[3..5]` **Stance Width & Pivot Dash Impulse:** `a[3]` modulates target stance width $w_{\text{stance}} \in [0.32, 0.65]\text{ m}$; `a[4] > 0.65` triggers a short $120\text{ ms}$ slip-step/pivot burst (cooldown $400\text{ ms}$, cost $4.5$ stamina).
+* `a[5..8]` **Trunk Weave / Slip / Roll PD Targets:** Target waist pitch $\theta_{\text{pitch}} \in [-0.45, +0.35]\text{ rad}$, waist roll (lateral head slip) $\theta_{\text{roll}} \in [-0.50, +0.50]\text{ rad}$, waist axial rotation (punch torque) $\theta_{\text{yaw}} \in [-0.65, +0.65]\text{ rad}$.
+* `a[8..13]` **Left Arm Target & Impedance:**
+  * `a[8..11]`: Target 3D wrist position in shoulder-local spherical/Cartesian workspace (covers both close guard anchors and full $0.78\text{ m}$ punch extension).
+  * `a[11]`: **Elbow Roll / Hook Plane Angle** $\phi_{\text{elbow},L} \in [0, \pi/2]$ ($0 =$ vertical forearm for straight jab/uppercut/high-guard; $\pi/2 =$ horizontal forearm for hook/overhand/cross-guard).
+  * `a[12]`: **Strike Snap vs. Guard Brace Control ($u_L \in [-1, 1]$):**
+    * When $u_L < 0$ and forearm is near the head/torso: activates **Guard Brace Tension** $u_{\text{guard},L} = -u_L \in (0, 1]$.
+    * When $u_L > 0$: scales shoulder/elbow fast-twitch punch drive gain $k_{p,\text{strike}} = k_{p,0}(1 + 1.8 u_L)$.
+* `a[13..18]` **Right Arm Target & Impedance:** Symmetrical to `a[8..13]` for the right arm.
+
+### 6.3 Dense RL Reward Shaping Function ($R_{t,i}$)
+To prevent zero-sum stalling while ensuring convergence to championship-winning policies, the instantaneous reward at step $t$ combines a **Zero-Sum Combat Differential**, an **Individual Biomechanical Discipline Term**, and a **Sparse Round/Bout Terminal Outcome**:
+
+$$R_{t,i} = \lambda_{\text{dense}}(k) \cdot \left( r_{\text{combat},i} - \gamma_{\text{zs}} r_{\text{combat},\text{opp}} + r_{\text{discipline},i} \right) + r_{\text{terminal},i}$$
+
+1. **Combat Differential Term ($r_{\text{combat},i}$, with $\gamma_{\text{zs}} = 0.85$):**
+   $$r_{\text{combat},i} = w_{\text{hit}} \Delta S_{\text{clean},i} + w_{\text{trauma}} (1.5 \Delta D_{\text{head},\text{opp}} + 1.1 \Delta D_{\text{body},\text{opp}} + 0.4 \Delta S_{\text{stun},\text{opp}}) + w_{\text{def}} \Delta S_{\text{def},i} + w_{\text{ring}} \Delta S_{\text{ring},i} + 15.0 \cdot \mathbb{I}[\text{KD}_{\text{scored}}]$$
+2. **Biomechanical & Tactical Discipline Term ($r_{\text{discipline},i}$):**
+   $$r_{\text{discipline},i} = -0.015 \|a_t - a_{t-1}\|_2^2 - 0.008 \sum \tau_j^2 - 0.35 \cdot \mathbb{I}[\text{whiff\_event}] - 0.04 \cdot \mathbb{I}[\text{hands\_dropped\_in\_range}] + 0.02 \cdot \mathcal{B}_{t,i}$$
+   * *Hands-Dropped-In-Range Penalty:* Applies only when $d_{AB} < 1.35\text{ m}$ (inside striking pocket), neither arm is actively punching, and *both* gloves are below collarbone height without trunk slip velocity. Outside $1.35\text{ m}$, fighters are free to drop hands to rest stamina!
+   * *Engagement Pacing (Anti-Stalling):* If $d_{AB} > 2.0\text{ m}$ for more than $3.5\text{ s}$ without a strike attempt, the fighter further from the ring center $(0,0)$ receives $-0.05/\text{step}$.
+3. **Sparse Terminal Reward ($r_{\text{terminal},i}$):**
+   * Round End: $+5.0 \times (\text{RoundPoints}_i - \text{RoundPoints}_{\text{opp}})$.
+   * Bout Win by KO/TKO: $+40.0$ (Winner), $-40.0$ (Loser).
+   * Bout Win by Decision: $+20.0$ (Winner), $-20.0$ (Loser).
+
+### 6.4 Asymmetric Recurrent PPO + Prioritized Fictitious Self-Play (PFSP) League
+* **Actor-Critic Architecture:**
+  * **Actor $\pi_\theta(a_t \mid o_t, h_t)$:** `Linear(108 -> 512) -> LayerNorm -> SiLU -> Linear(512 -> 256) -> LayerNorm -> SiLU -> GRUCell(256, 256) -> Linear(256 -> 36)` (18 means $\mu_a$, 18 log-stds $\log \sigma_a$).
+  * **Asymmetric Privileged Critic $V_\phi(s_t, h_t)$:** Receives $o_t$ concatenated with the opponent's exact privileged physiological state ($E_{\text{fast},\text{opp}}, E_{\max,\text{opp}}, S_{\text{stun},\text{opp}}, S_{\text{liver},\text{opp}}, G_{L,\text{opp}}, G_{R,\text{opp}}$) ($108 + 14 = 122$ dims) $\to$ `MLP(512 -> 256) -> GRUCell(256, 256) -> Linear(256 -> 1)`.
+* **PFSP League Matchmaking Distribution:**
+  Every parallel arena $e \in \{0, \dots, N_{\text{env}}-1\}$ samples an opponent policy at episode reset according to:
+  * **$50\%$ Latest Self-Play:** Current policy $\pi_\theta$ vs. $\pi_{\theta_{\text{EMA}}}$ ($\tau_{\text{EMA}} = 0.995$).
+  * **$30\%$ Prioritized Historical Pool ($\mathcal{M}_{\text{hist}}$):** Checkpoints saved every $5 \times 10^6$ steps. Opponent $M_k \in \mathcal{M}_{\text{hist}}$ is sampled with probability proportional to $p(M_k) \propto \text{WinRate}(\pi_\theta, M_k) \cdot (1 - \text{WinRate}(\pi_\theta, M_k))^{2.0}$, focusing training on historical versions that exploit current blind spots.
+  * **$15\%$ Style-Conditioned Archetypes:** Opponents conditioned on distinct $\mathbf{w}_{\text{style}}$ vectors (Swarmer, Out-Boxer, Counter-Puncher, Slugger) with style-specific reward modifiers.
+  * **$5\%$ Deterministic Calibration Bots:**
+    * `Bot_ShellGuard`: Keeps high guard braced, throws counter 1–2s after blocking.
+    * `Bot_JabMover`: Circles ring, throws fast lead jabs at $1.1\text{ m}$ range.
+    * `Bot_SwarmerHook`: Steps inside, throws alternating body-head hooks.
+
+---
+
+## 7. High-Performance Computing (HPC) Speed-Up Architecture
+
+To train sophisticated 3D biomechanical boxing in hours rather than weeks, Joxing implements a **Two-Tier Data-Oriented HPC Engine** in Rust.
+
+### 7.1 Tier 1: Cache-Aligned SoA SIMD CPU Engine (`crates/joxing-sim`)
+Standard OOP game loops (`Vec<Boxer>`) fail on CPU due to pointer chasing and branch misprediction. `joxing-sim` enforces **Structure-of-Arrays (SoA)** layout across batches of $B = 64$ arenas per chunk (`#[repr(C, align(64))]`):
+
+```rust
+#[repr(C, align(64))]
+pub struct ArenaChunkSoA {
+    // 64 Arenas * 2 Boxers = 128 Boxers packed contiguously for AVX2 (f32x8) / AVX-512 (f32x16) / NEON (f32x4)
+    pub pelvis_x: [f32; 128],
+    pub pelvis_y: [f32; 128],
+    pub pelvis_z: [f32; 128],
+    pub pelvis_yaw: [f32; 128],
+    pub balance: [f32; 128],
+    
+    // 14 Capsules per boxer -> [14][128] contiguous SoA endpoints (ax, ay, az, bx, by, bz, r)
+    pub cap_ax: [[f32; 128]; 14],
+    pub cap_ay: [[f32; 128]; 14],
+    pub cap_az: [[f32; 128]; 14],
+    pub cap_bx: [[f32; 128]; 14],
+    pub cap_by: [[f32; 128]; 14],
+    pub cap_bz: [[f32; 128]; 14],
+
+    // 5-Pool Physiology State
+    pub stamina_fast: [f32; 128],
+    pub stamina_max: [f32; 128],
+    pub stun_acute: [f32; 128],
+    pub dmg_head_cum: [f32; 128],
+    pub dmg_body_cum: [f32; 128],
+    pub shock_liver: [f32; 128],
+    pub guard_left: [f32; 128],
+    pub guard_right: [f32; 128],
+}
+
+```
+
+#### Key Algorithmic Speed-Ups in `joxing-sim`:
+
+1. **Zero Broadphase / Fixed-Pair Branchless Narrowphase CCD:**
+* A general physics engine runs an $O(N \log N)$ BVH broadphase and heap-allocated contact manifold solver.
+* In Joxing, **only 2 attacking gloves per boxer can generate strike contacts against 9 target capsules on the opponent** ($2 \times 2 \times 9 = 36$ fixed capsule-capsule pairs per arena!).
+* We evaluate all $36$ pairs using a **100% branchless SIMD Closest-Point-Between-Segments kernel** (`simd_capsule_ccd_36`). Using `std::simd` / `wide::f32x8`, 8 arenas ($288$ capsule pairs) execute in $<420$ CPU clock cycles with zero heap allocations and zero branch mispredictions.
+
+
+2. **Unrolled Analytical 2-Link Inverse/Forward Kinematics + PD Solver:**
+* Instead of solving a $14 \times 14$ dense Featherstone mass matrix via LU decomposition, the torso-head chain (`3` links) and each 2-link arm (Shoulder $\to$ Elbow $\to$ Wrist) are solved via closed-form trigonometric updates and explicit symplectic Euler with analytical joint clamping at $240\text{ Hz}$.
+
+
+3. **Lock-Free Rayon Rollout Pool:**
+* Worker threads step `ArenaChunkSoA` blocks in parallel via `rayon::par_iter_mut()`, writing observations directly into pre-allocated pinned memory tensors (`[T, N_env, 2, 108]`) shared zero-copy with the tensor backend.
+
+
+
+### 7.2 Tier 2: `wgpu` / CUDA Fused Mega-Kernel (`crates/joxing-gpu`)
+
+For maximum throughput on Apple Silicon (Metal), NVIDIA (Vulkan/CUDA), or AMD GPUs, the entire $240\text{ Hz}$ physics substep loop is fused into a **single WGSL Compute Shader (`joxing_step.wgsl`)**:
+
+* **Thread Mapping:** `@workgroup_size(64, 1, 1)` where **1 GPU invocation = 1 complete boxing arena (both Red and Blue boxers)**.
+* **Register-Resident Substepping:** Each GPU thread loads its arena's state from storage buffers once, executes **all $4$ physics substeps ($240\text{ Hz}$) inside GPU registers** (including forward kinematics, 36-pair swept-capsule CCD, 5-pool trauma integration, and CompuBox judge accumulators), and writes out the new state and the two $\mathbb{R}^{108}$ ego-centric observations at $60\text{ Hz}$.
+* **VRAM-Resident Rollout Loop:** The GPU storage buffer binding for `obs_buffer` is shared directly with the GPU neural network inference pass (`burn-wgpu` / `candle` / `cudarc`), eliminating PCIe host-device copies during rollout collection.
+
+| Execution Backend | Target Batch Size ($N_{\text{env}}$) | Control Rate ($f_{\text{RL}}$) | Physics Rate ($f_{\text{phys}}$) | Required Throughput Gate |
+| --- | --- | --- | --- | --- |
+| **Scalar Reference (Debug)** | $1$ | $60\text{ Hz}$ | $240\text{ Hz}$ | $\ge 15,000\text{ SPS}$ (1 core) |
+| **CPU SIMD + Rayon (`joxing-sim`)** | $512$ ($8$ chunks of $64$) | $60\text{ Hz}$ | $240\text{ Hz}$ | **$\ge 220,000\text{ SPS}$** (16-core CPU) |
+| **GPU Mega-Kernel (`joxing-gpu`)** | $8,192$ ($128$ workgroups) | $60\text{ Hz}$ | $240\text{ Hz}$ | **$\ge 1,250,000\text{ SPS}$** (Single GPU) |
+
+---
+
+## 8. Repository Layout & Module Ownership Contract
+
+```text
+Joxing/
+├── Cargo.toml                        # Workspace root
+├── docs/
+│   └── V0.0.7_MISSION.md             # This controlling specification
+├── crates/
+│   ├── joxing-core/                  # Pure deterministic types, constants, Judge Ledger, 10-Point Must
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       ├── config.rs             # Arena, biomechanics, trauma, and scoring hyperparameters
+│   │       ├── physiology.rs         # 5-Pool trauma, stamina, knockdown & recovery equations
+│   │       ├── collision.rs          # Branchless capsule-capsule CCD & active guard/parry resolution
+│   │       └── scoring.rs            # CompuBox ledger, counter/combo trackers, 10-Point Must cards
+│   ├── joxing-sim/                   # SoA SIMD vectorized CPU environment & Rayon rollout engine
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       ├── soa.rs                # #[repr(C, align(64))] ArenaChunkSoA memory layout
+│   │       ├── kinematics.rs         # SLIP footwork base + 14-capsule forward/PD dynamics
+│   │       ├── obs_action.rs         # Ego-centric R^108 canonicalization & R^18 action decoding
+│   │       └── bots.rs               # Deterministic calibration bots (ShellGuard, JabMover, Swarmer)
+│   ├── joxing-gpu/                   # wgpu compute shader mega-kernel backend
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       └── shaders/
+│   │           └── joxing_step.wgsl  # 1-thread-per-arena 4-substep fused physics & observation shader
+│   ├── joxing-rl/                    # Asymmetric Recurrent PPO, GAE, PFSP League & Elo tracker
+│   │   └── src/
+│   │       ├── lib.rs
+│   │       ├── network.rs            # Actor (108->GRU->18) & Privileged Critic (122->GRU->1)
+│   │       ├── ppo.rs                # Truncated BPTT GAE + PPO clipped surrogate update
+│   │       ├── league.rs             # PFSP matchmaking, checkpoint pool, style conditioning
+│   │       └── curriculum.rs         # 4-stage automated curriculum progression gates
+│   └── joxing-cli/                   # Training runner, benchmark harness, replay exporter & proof verifier
+│       └── src/
+│           └── main.rs
+└── tests/
+    └── proof_lanes.rs                # Automated T1-T10 verification suite
+
+```
+
+---
+
+## 9. Verification & Proof Lanes (`T1`–`T10`, No-Proof-No-Merge)
+
+An autonomous agent implementing `v0.0.7` MUST implement and pass all ten verification gates in `cargo test --workspace --release` before marking the mission complete.
+
+| Gate | Proof Name | Exact Verification Test & Acceptance Invariant |
+| --- | --- | --- |
+| **`T1`** | **Canonical Spawn & Mirror Symmetry Invariance** | Spawn $B_0$ at $(-1.5, 0, 0)$ and $B_1$ at $(+1.5, 0, \pi)$. Feed identical action sequences $a_{0,t} \equiv a_{1,t}$ for $1,000$ steps. Verify that ego-centric observations satisfy $\|o_{0,t} - o_{1,t}\|_\infty < 10^{-$ and world positions remain exact reflections across $ $x =$ at every step. |
+| **`T2`** | **Swept-Capsule CCD Guard Occlusion vs. Clean Hit** | Fire a deterministic $9.0\text{ m/s}$ straight cross at the opponent's chin (`6`). **(a)** With defender hands lowered, verify clean chin impact ($\eta_{\text{guard}} = 0$, $S_{\text{stun}}$ increases by $>25$). **(b)** With defender in High Peek-a-Boo Guard ($u_{\text{guard}} = 0.9$), verify forearm (`11`/`12`) intercepts at $t_{\text{TOI}} < t_{\text{chin}}$, reducing cranial trauma by $\ge 85\%$ and reducing rotational torque by $\ge 90\%$. |
+| **`T3`** | **Guard Geometry Exploitability (Rock-Paper-Scissors)** | Verify that: **(a)** High Front Guard blocks straight jabs/crosses but allows a wide lateral hook (`elbow_roll = pi/2`) to hit the temple (`5`) and a low hook to hit the liver (`2`). **(b)** High Earmuff Guard blocks wide temple hooks but allows a center split-uppercut to hit the mandible (`6`). |
+| **`T4`** | **Active Vector Parry & Attacker Off-Balance Whiff** | Intercept an incoming jab outside the brace zone ($d = 0.30\text{ m}$) with a lateral glove velocity $v_{\perp} = 2.2\text{ m/s}$ within $80\text{ ms}$ of contact. Verify attacker glove velocity deflects laterally by $>25^\circ$, defender takes $<4\%$ bleed damage and $0$ guard wear, and attacker enters a $180\text{ ms}$ off-balance recovery state. |
+| **`T5`** | **5-Pool Physiology: Rotational Chin KD & Liver Attrition** | **(a)** Verify that a lateral hook to the chin (`6`) with lever arm $r_{\text{chin}} = 0.11\text{ m}$ generates $\ge 1.6\times$ more $S_{\text{stun}}$ than an equal-impulse frontal push to the forehead (`5`). **(b)** Apply 5 clean liver strikes; verify $E_{\max}(t)$ permanently decays below $0.70 E_{\max,0}$ and $S_{\text{liver}} \ge 100$ triggers a delayed body-shot knockdown. **(c)** Verify whiffing 10 heavy punches drains $\ge 1.4\times$ more stamina than 10 connected punches of equal actuator torque. |
+| **`T6`** | **10-Point Must & CompuBox Judge Ledger Accuracy** | Replay 5 synthetic round scenarios: **(1)** Even exchange $\to 10\text{–}10$; **(2)** Slight clean-hit edge $\to 10\text{–}9$; **(3)** High-volume whiffing aggressor vs. slick counter-puncher landing clean counters $\to 10\text{–}9$ for counter-puncher; **(4)** Single knockdown $\to 10\text{–}8$; **(5)** 3 knockdowns in one round $\to$ immediate TKO termination. |
+| **`T7`** | **Bitwise CPU Determinism & CPU-GPU Parity** | **(a)** Run $N_{\text{env}} = 64$ arenas for $10,000$ steps twice with seed `0xJ0X1NG07` on `joxing-sim`; verify bitwise-identical final `blake3` state hashes. **(b)** Run the exact same initial state and action tape on `joxing-gpu` (`wgpu`); verify maximum state divergence $\|s_{\text{cpu}} - s_{\text{gpu}}\|_\infty \le 10^{-$ per substep. |
+| **`T8`** | **HPC Throughput Benchmark Gates** | Run `cargo run --release -p joxing-cli -- bench`: Verify CPU SIMD rollout throughput $\ge 200,000\text{ SPS}$ on multi-core CPU and GPU shader throughput $\ge 1,000,000\text{ SPS}$ when a discrete/unified GPU is available. Verify zero heap allocations (`0 bytes`) inside `ArenaChunkSoA::step_batch()`. |
+| **`T9`** | **Anti-Exploit & Behavioral Convergence Gate** | Train PPO self-play for $2.5 \times 10^7$ environment steps. Verify emergent combat metrics on evaluation bouts: **(a)** Whiff rate $< 55\%$ (no blind flailing), **(b)** Active block + parry + slip rate $> 35\%$ of incoming strikes, **(c)** Average engagement distance $d_{AB} \in [0.85\text{ m}, 1.65\text{ m}]$ (no corner stalling or permanent clinching). |
+| **`T10`** | **PFSP League Progression & Calibration Bot Mastery** | Verify that the Stage-3 trained policy achieves $\ge 90\%$ win rate against `Bot_JabMover`, $\ge 85\%$ win rate against `Bot_SwarmerHook`, and $\ge 80\%$ win rate against `Bot_ShellGuard` across 100 deterministic evaluation bouts (50 as Red, 50 as Blue), with Elo monotonically increasing across checkpoints. |
+
+---
+
+## 10. Autonomous Agent Execution Protocol (Step-by-Step Build Order)
+
+1. **Phase 1 — Core Biomechanics & Judge Engine (`crates/joxing-core`):**
+Implement `PhysiologyState`, the 14-capsule hitbox hierarchy, the branchless swept-capsule CCD + guard/parry resolver (`collision.rs`), and the CompuBox + 10-Point Must Judge Ledger (`scoring.rs`). Verify gates **`T2`**, **`T3`**, **`T4`**, **`T5`**, and **`T6`**.
+2. **Phase 2 — SoA SIMD Environment & Ego-Centric Observation (`crates/joxing-sim`):**
+Implement `ArenaChunkSoA`, the SLIP footwork base + 2-link arm PD kinematics at $240\text{ Hz}$, the mirrored spawn reset, the $\mathbb{R}^{108}$ ego-centric transform, and the three calibration bots. Verify gates **`T1`**, **`T7a`**, and **`T8` (CPU)**.
+3. **Phase 3 — Fused `wgpu` Compute Shader Backend (`crates/joxing-gpu`):**
+Port the 4-substep physics loop and 36-pair capsule CCD into `joxing_step.wgsl`. Verify gate **`T7b`** and **`T8` (GPU)**.
+4. **Phase 4 — Asymmetric Recurrent PPO & PFSP League (`crates/joxing-rl` & `joxing-cli`):**
+Implement the GRU Actor-Critic, Privileged Critic input assembly, GAE rollout buffer, PFSP historical/style league matchmaker, and 4-stage curriculum scheduler. Run training verification gates **`T9`** and **`T10`**, and emit the audit receipt JSON under `artifacts/v0.0.7_proof_receipt.json`.
+
+```
+
+```
