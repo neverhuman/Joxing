@@ -1,0 +1,59 @@
+{
+  "code_commit": "b0f377294a1142d5bb3d814811a73c62e3058758",
+  "dimensions": {
+    "na": 1400,
+    "nbody": 165,
+    "neq": 84,
+    "ngeom": 715,
+    "nq": 170,
+    "ntendon": 1400,
+    "nu": 1400,
+    "nv": 170
+  },
+  "host": "xbabe1",
+  "limitations": [
+    "simulator-only",
+    "one world",
+    "reset every 50 ms",
+    "not contact-heavy boxing",
+    "no inference, referee or optimizer"
+  ],
+  "median_physics_substeps_per_s": 534.197081459049,
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "physics_dt_s": 0.001,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "profile": "short-reset-composition-throughput",
+  "python": "3.12.3",
+  "samples": [
+    {
+      "contact_samples": 5000,
+      "physics_substeps_per_s": 533.1942137143576,
+      "repeat": 0,
+      "steps": 500,
+      "wall_s": 0.9377446100115776
+    },
+    {
+      "contact_samples": 5000,
+      "physics_substeps_per_s": 547.9284712790594,
+      "repeat": 1,
+      "steps": 500,
+      "wall_s": 0.9125278685241938
+    },
+    {
+      "contact_samples": 5000,
+      "physics_substeps_per_s": 534.197081459049,
+      "repeat": 2,
+      "steps": 500,
+      "wall_s": 0.9359841477125883
+    }
+  ],
+  "scene_hash": "d31ab28092832ba5bdb21cc89c62fd8b6f85286f380dd401fb30723c3d93ed0d",
+  "schema": "joxing-run-v1",
+  "source_hash": "7c36742ad19a9d9ed9a54a64486b5f0120e6fb6d167e30da297a1a71a260246e",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T11:34:15.885719+00:00"
+}

@@ -4,10 +4,10 @@ Read-only SSH inventory taken October 26, 2026 at approximately 05:13 America/De
 
 | Host | Hardware / availability at inspection | Initial role |
 |---|---|---|
-| xbabe1 | Linux, 128 logical CPUs, 62 GiB RAM / 40 GiB available; RTX 4090 24 GiB, idle; 334 GB free disk; load ~15 | First bounded CPU physics/motor experiments; preferred first GPU learner/feature spike |
-| xbabe2 | Linux, 128 logical CPUs, 125 GiB RAM / 74 GiB available; RTX 3090 24 GiB, idle; 487 GB free disk but filesystem 94% used; load ~44 | Later capped rollout/evaluation workers; credentials available if needed, never copied into repository |
-| xbabe3 | Linux, 128 logical CPUs, 125 GiB RAM / 99 GiB available; RTX 3090 24 GiB, idle; 63 GB free disk, 94% used; load ~9 | Later capped CPU rollout/seed experiments; keep artifacts small |
-| xbabe4 | Apple Silicon Mac Studio, 32 logical CPUs, 512 GiB unified RAM; 667 GiB free disk; load ~28 | CPU reference, large-memory analysis, replay/render; native Python first |
+| xbabe1 | Threadripper PRO 3995WX, 64 physical / 128 logical cores; 62 GiB RAM / 40 GiB available; RTX 4090 24 GiB, idle; 334 GB free disk; load ~15 | First bounded CPU physics/motor experiments; preferred first GPU learner/feature spike |
+| xbabe2 | Threadripper PRO 3995WX, 64 physical / 128 logical cores; 125 GiB RAM / 74 GiB available; RTX 3090 24 GiB, idle; 487 GB free disk but filesystem 94% used; load ~44 | Later capped rollout/evaluation workers; credentials available if needed, never copied into repository |
+| xbabe3 | Threadripper PRO 3995WX, 64 physical / 128 logical cores; 125 GiB RAM / 99 GiB available; RTX 3090 24 GiB, idle; 63 GB free disk, 94% used; load ~9 | Later capped CPU rollout/seed experiments; keep artifacts small |
+| xbabe4 | Apple M3 Ultra Mac Studio, 32 logical CPUs, 512 GiB unified RAM; 667 GiB free disk; load ~28 | CPU reference, large-memory analysis, replay/render; native Python first |
 | Local laptop | Apple Silicon, 14 logical CPUs, 36 GiB RAM, 75 GiB disk available | Development, tests, inspection and reporting |
 
 Linux hosts have Docker. xbabe1 and xbabe4 have uv; xbabe2/3 have Python. Docker was not on xbabe4's inspected PATH. macOS Docker cannot provide an NVIDIA CUDA device; it is not the route to Warp GPU physics. Native CPU MuJoCo on Apple Silicon avoids VM overhead. Recheck GPU support before considering Metal-specific alternatives.
@@ -33,5 +33,7 @@ Stop on unexpected warnings/engine resets, nonfinite state, contact loss/overflo
 ## Measured GPU spike
 
 Actual probes are in `artifacts/receipts/gpu-probe-*.json`; see RESULTS.md. `mujoco-warp==3.8.0` with `warp-lang==1.12.0` detects xbabe1's 4090 on driver 570.153.02. Auto-resolved Warp 1.18 requires a newer CUDA driver, so the Linux `gpu` extra now pins 1.12. The exact reference scene is rejected due to mesh-margin/MULTICCD support. An explicit MULTICCD-disabled variant executes eight worlds but fails the declared short-state parity tolerance. GPU physics remains unqualified; no speedup is claimed.
+
+Driver follow-up: xbabe2 reports 595.99.02 and xbabe3 580.126.09, both newer than xbabe1. These hosts are alternative candidates for newer CUDA/Warp investigations without touching xbabe1's driver. Driver compatibility alone cannot resolve scene support or physics parity. They were inventoried, not used for the first training job.
 
 Reproduce on Linux with `uv sync --extra dev --extra viz --extra gpu`, then `uv run python scripts/gpu_probe.py --worlds 8 --out runs/gpu-exact.json`. The deliberate variant uses `--disable-multiccd` and receives a distinct physics hash. These are diagnostic commands, not a production backend. [Official MuJoCo 3.8 Warp documentation](https://mujoco.readthedocs.io/en/3.8.0/mjwarp/index.html) distinguishes high-throughput batching from single-world latency and requires explicit contact/constraint capacity tuning.

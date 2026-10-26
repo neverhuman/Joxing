@@ -1,0 +1,59 @@
+{
+  "code_commit": "464ff5b983ccd9655478d0893c9a702b565200dc",
+  "dimensions": {
+    "na": 1400,
+    "nbody": 165,
+    "neq": 84,
+    "ngeom": 715,
+    "nq": 170,
+    "ntendon": 1400,
+    "nu": 1400,
+    "nv": 170
+  },
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "limitations": [
+    "simulator-only",
+    "one world",
+    "reset every 50 ms",
+    "not contact-heavy boxing",
+    "no inference, referee or optimizer"
+  ],
+  "median_physics_substeps_per_s": 876.703938562519,
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "physics_dt_s": 0.001,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "profile": "short-reset-composition-throughput",
+  "python": "3.12.12",
+  "samples": [
+    {
+      "contact_samples": 5000,
+      "physics_substeps_per_s": 874.0320272310978,
+      "repeat": 0,
+      "steps": 500,
+      "wall_s": 0.572061416998622
+    },
+    {
+      "contact_samples": 5000,
+      "physics_substeps_per_s": 879.9908779348556,
+      "repeat": 1,
+      "steps": 500,
+      "wall_s": 0.5681877080060076
+    },
+    {
+      "contact_samples": 5000,
+      "physics_substeps_per_s": 876.703938562519,
+      "repeat": 2,
+      "steps": 500,
+      "wall_s": 0.5703179579868447
+    }
+  ],
+  "scene_hash": "d31ab28092832ba5bdb21cc89c62fd8b6f85286f380dd401fb30723c3d93ed0d",
+  "schema": "joxing-run-v1",
+  "source_hash": "93385e99cd7db1503449ad615a41d62f69e25a80ec0a22522160aada3d88b5fe",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T11:25:54.262676+00:00"
+}

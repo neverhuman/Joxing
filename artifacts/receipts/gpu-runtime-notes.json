@@ -1,0 +1,22 @@
+{
+  "attempts": [
+    {
+      "result": "CUDA device unavailable; minimum CUDA driver API 13.0 reported by Warp",
+      "warp": "1.18.0"
+    },
+    {
+      "result": "CUDA device available; exact-model upload rejects nonzero mesh margin with MULTICCD",
+      "warp": "1.12.0"
+    },
+    {
+      "result": "8 worlds execute with finite states, short qpos parity tolerance failed",
+      "variant": "MULTICCD disabled",
+      "warp": "1.12.0"
+    }
+  ],
+  "cuda_driver_api": "12.8",
+  "driver": "570.153.02",
+  "gpu": "RTX 4090 24 GiB",
+  "host": "xbabe1",
+  "host_driver_changed": false
+}

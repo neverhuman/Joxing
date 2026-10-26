@@ -1,0 +1,34 @@
+{
+  "code_commit": "6a1ee0655bea95cd362d2224818604a064a8821d",
+  "dimensions": {
+    "na": 1400,
+    "nbody": 165,
+    "neq": 84,
+    "ngeom": 715,
+    "nq": 170,
+    "ntendon": 1400,
+    "nu": 1400,
+    "nv": 170
+  },
+  "experiment": "exact-dual-model-gpu-feature-spike",
+  "failure": "Invalid device identifier: cuda:0",
+  "failure_type": "ValueError",
+  "host": "xbabe1",
+  "mujoco": "3.8.0",
+  "mujoco_warp": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": false,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "scene_hash": "d31ab28092832ba5bdb21cc89c62fd8b6f85286f380dd401fb30723c3d93ed0d",
+  "schema": "joxing-run-v1",
+  "source_hash": "85fde3c5ae86ccdda523027c3a410ddd8a3a2260bd2e9825cdb2fb2047bff878",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T11:27:25.199921+00:00",
+  "wall_s": 7.421579951420426,
+  "warp_lang": "1.18.0",
+  "worlds": 8
+}

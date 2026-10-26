@@ -1,0 +1,45 @@
+{
+  "code_commit": "1c0c58c9d8d89a67d1515ba0ecd93f80940280f6",
+  "dimensions": {
+    "na": 1400,
+    "nbody": 165,
+    "neq": 84,
+    "ngeom": 715,
+    "nq": 170,
+    "ntendon": 1400,
+    "nu": 1400,
+    "nv": 170
+  },
+  "experiment": "exact-dual-model-gpu-feature-spike",
+  "finite": true,
+  "first_step_compile_wall_s": 184.00500375404954,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "host": "xbabe1",
+  "limitations": [
+    "10 steps only",
+    "8-world candidate capacity, not a scaling sweep",
+    "no force/event/referee parity",
+    "no end-to-end RL throughput"
+  ],
+  "mujoco": "3.8.0",
+  "mujoco_warp": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": false,
+  "physics_hash": "44bedd2e7a87f9728fcd7a44a1517c10b8300ab9b034cfc24f7a3e13880beb3d",
+  "physics_variant": "multiccd-disabled-spike",
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "scene_hash": "d31ab28092832ba5bdb21cc89c62fd8b6f85286f380dd401fb30723c3d93ed0d",
+  "schema": "joxing-run-v1",
+  "source_hash": "85fde3c5ae86ccdda523027c3a410ddd8a3a2260bd2e9825cdb2fb2047bff878",
+  "ten_step_qpos_max_error": 0.0006492474779165262,
+  "uploaded": true,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T11:29:50.676328+00:00",
+  "wall_s": 198.8074250034988,
+  "warp_lang": "1.12.0",
+  "worlds": 8
+}

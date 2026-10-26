@@ -1,0 +1,22 @@
+{
+  "code_commit": "b0f377294a1142d5bb3d814811a73c62e3058758",
+  "experiment": "linux-to-apple-silicon-controlled-reach-replay",
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "max_trace_difference": 1.5543122344752192e-15,
+  "model_hash_matches": true,
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": true,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "policy_hash": "0aa0f07a084e614405dab961498bd85b2f569b6c223fd75c5214b96920b50b51",
+  "python": "3.12.12",
+  "schema": "joxing-run-v1",
+  "source_hash": "7c36742ad19a9d9ed9a54a64486b5f0120e6fb6d167e30da297a1a71a260246e",
+  "tolerance": 1e-10,
+  "training_result_code": "6a1ee0655bea95cd362d2224818604a064a8821d",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T11:36:36.482764+00:00"
+}
