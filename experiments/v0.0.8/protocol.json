@@ -1,0 +1,157 @@
+{
+  "schema": "joxing-physical-motor-0.0.8",
+  "description": "Named tracking-independent-motor-continuation diagnostic. Frozen upstream policy; per-substep force evidence and end-posture scratch kinematics. Preserve first native tracking failure. No optimization, stance, boxing, anatomy or reward retuning.",
+  "archive_sha256": "2b2f0f1007d530db76463e7d3d5fb309b52c7b2a53649920ddfd9cf8a6880c57",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "runtime": {
+    "gymnasium": "1.2.3",
+    "mujoco": "3.8.0",
+    "numpy": "2.4.2",
+    "stable-baselines3": "2.7.1",
+    "torch": "2.10.0"
+  },
+  "seeds": [
+    74000,
+    74001,
+    74002,
+    74003,
+    74004,
+    74005,
+    74006,
+    74007,
+    74008,
+    74009,
+    74010,
+    74011,
+    74012,
+    74013,
+    74014,
+    74015,
+    74016,
+    74017,
+    74018,
+    74019
+  ],
+  "variants": [
+    {
+      "id": "native_2ms",
+      "physics_dt_s": 0.002,
+      "gloves": false
+    },
+    {
+      "id": "gloves_1ms",
+      "physics_dt_s": 0.001,
+      "gloves": true
+    }
+  ],
+  "environment": {
+    "gait_cycles": 18,
+    "kinematic_play": false,
+    "qpos_diff_th": 0.06,
+    "random_init": true,
+    "reset_noise_scale": 0.001,
+    "reward_dict": {
+      "w_energy": 0.1,
+      "w_healthy": 100,
+      "w_pelvis": 100,
+      "w_qpos": 50,
+      "w_xpos": 50
+    },
+    "skip_frames": 10
+  },
+  "control_dt_s": 0.02,
+  "decoder_amplitude": 0.075,
+  "physical": {
+    "task_variant": "tracking-independent-motor-continuation",
+    "horizon_s": 20.0,
+    "nonfoot_weight_fraction": 0.1,
+    "nonfoot_persistence_s": 0.05,
+    "tilt_rad": 1.0471975511965976,
+    "tilt_persistence_s": 0.1,
+    "drop_m": 0.3,
+    "drop_persistence_s": 0.1,
+    "finish_held_control_interval_after_latch": true,
+    "integrator": "Euler",
+    "pose_measurement": "end-of-substep qpos in scratch mj_kinematics; live force cache belongs to interval start",
+    "contact_columns": [
+      "geom1",
+      "geom2",
+      "role_code",
+      "force_on_owned_x_N",
+      "force_on_owned_y_N",
+      "force_on_owned_z_N",
+      "contact_x_m",
+      "contact_y_m",
+      "contact_z_m"
+    ]
+  },
+  "criteria": {
+    "physical_horizon_completions_per_variant": 16,
+    "attempts_per_variant": 20,
+    "invalid_allowed": 0,
+    "source_host_replay_max_error": 1e-09,
+    "native_feature_oracle_max_error": 0.0,
+    "paired_kinematics_phase_rng_exact": true,
+    "normalizer_immutable": true
+  },
+  "caps": {
+    "wall_s": 900,
+    "physics_steps": 700000,
+    "mission_physics_steps_with_audit_video": 950000,
+    "raw_bytes": 1073741824,
+    "minimum_disk_bytes": 10737418240,
+    "minimum_memory_bytes": 4294967296,
+    "simulation_workers": 2,
+    "threads": 1
+  },
+  "benchmark": {
+    "workers": [
+      1,
+      2
+    ],
+    "repeats": 2,
+    "control_steps_per_world": 40,
+    "seed_base": 75000,
+    "variant": "native_2ms",
+    "no_optimization": true
+  },
+  "replay": {
+    "seed": 74000,
+    "snapshot_control_step": 10,
+    "mid_control_action_index": 10,
+    "mid_control_substep": 3,
+    "paths": [
+      "recorded_actions",
+      "closed_loop",
+      "closed_loop_repeat"
+    ],
+    "first_scenario_only": true
+  },
+  "prerequisite": {
+    "oracle_seed": 75091,
+    "oracle_control_steps": 6,
+    "v7_run": "/home/ubuntu/joxing/v007-20261026/runs/v0.0.7/transfer-01",
+    "require_v7_linux_audit": true
+  },
+  "experiments": [
+    {
+      "id": "T0",
+      "hypothesis": "Unbatched physical evidence leaves native dynamics, cached observations and policy commands exactly unchanged before original tracking termination, including actual first-seed v7 continuations."
+    },
+    {
+      "id": "H1",
+      "hypothesis": "Measure the full evidence+policy loop and startup at1and2workers, counting every benchmark attempt and physics step."
+    },
+    {
+      "id": "T1",
+      "hypothesis": "At least16/20physically supported20s native tasks per variant; native tracking first-failure and physical failure remain separate. All40attempts retained."
+    },
+    {
+      "id": "R1",
+      "hypothesis": "Boundary and held-action mid-control snapshots reproduce physics, cached observations, monitor durations, tracking/physical first-failure and done exactly on source host."
+    }
+  ]
+}

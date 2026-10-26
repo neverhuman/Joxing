@@ -1,6 +1,6 @@
 # Current Joxing mission
 
-Current mission: **v0.0.8 — substep physical evidence and tracking-independent motor continuation**. Status: ready after v0.0.7 publication; unimplemented, no v8 run started. One integration owner in this chat. v7 is concluded/audited; all owned jobs exited.
+Current mission: **v0.0.8 — substep physical evidence and tracking-independent motor continuation**. Status: implementation and development validation in progress; no formal v8 run started. One integration owner in this chat. v7 is concluded/audited; all owned jobs exited.
 
 Value: distinguish native tracking failure from physical collapse before another learning sweep. Follow [V0.0.8_MISSION.md](V0.0.8_MISSION.md) for exact read-first files, implementation, tests, ownership, budgets, stops and handoff. Preserve the failed v7 tracking gate; walking does not pass stationary guard or competition.
 

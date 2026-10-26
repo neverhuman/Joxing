@@ -1,0 +1,9 @@
+# v0.0.8 experiment book
+
+Status: preregistered, implementation/development validation in progress; no formal outcome. [Mission](../../docs/V0.0.8_MISSION.md), [protocol](protocol.json), [ownership](../../docs/MISSION.md).
+
+T0 requires exact native action/state/cache equivalence before old tracking failure, including actual v7first scenarios. H1 measures one/two-worker full evidence throughput and startup. T1 retains all40fresh paired attempts (74000–74019 ×native2ms/gloves1ms),20seconds each, frozen weights/normalizer, no optimization. Native tracking failure is retained as telemetry while a newly named task terminates on persistent physical motor failure or its20s horizon. This does not change old tracking results or boxing rules.
+
+R1 replays firstseed74000 in both conditions from control boundary10 and substep3of held action11; no new decision is made while resuming a pending command. Per-substep contact/frame/force and scratch end-pose timing are explicit. Physical latch time differs from the final held-action boundary, at most20ms later. The diagnostic threshold is>=16/20physical completions per condition, zero invalids and strict source-host replay; walking is not stationary stance or boxing.
+
+Finite limits:2workers/one thread,900s/700k runner physics/1GiB raw;250kadditional audit/video reserve, total<=950k. All samples/faults/stops stay visible. Parent alone owns shared stop/registry and flushes final progress. Small outcomes/maps/first scenarios stay in Git; full compressed substep/action histories are published as a hashed public release archive if large. No checkpoint ZIP/pickle or credentials are committed. Freeze source before formal outcomes.

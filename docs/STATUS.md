@@ -224,3 +224,8 @@ Updated results, experiment book, adapter contract, README/docs and next worker-
 ### v0.0.7 publication verified
 
 Pushed completed source/evidence commit `4cad56ddcb4fa83b053d8be3571d2ae601d81023` and annotated tag `v0.0.7`; created the public GitHub release and full raw archive asset. GitHub metadata confirms private=false/visibility=public. Anonymous tagged README/results/next mission/release-summary match local bytes. Anonymous full 22,225,280-byte archive download returns 200 and exactly matches its committed SHA256. Remote annotated tag resolves to the completed scientific commit. Receipt: `artifacts/receipts/v0.0.7-publication.json`. The 20-minute heartbeat remains ACTIVE and reads the current v8 mission. All owned jobs exited; no v8 outcome is claimed. Main adds this verification after the immutable release tag.
+
+
+## v0.0.8 preregistration and implementation
+
+Heartbeat verified clean Git/no Joxing Python jobs. xbabe1 load3.64/128logical,~47.7GiBavailable RAM and318.7GiBfree disk. Registered40fresh paired physical-continuation attempts and boundary/mid-control replay before outcomes. Code inspection verifies Gym assigns controls, batches mj_step, then calls mj_rnePostConstraint. Native Euler live pose/contact caches can describe interval start; end posture will use scratch kinematics without changing live policy caches. Exact equivalence is required before any formal trial. No source/physics/reward/game gate changes to previous runs.
