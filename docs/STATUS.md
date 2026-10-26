@@ -190,3 +190,8 @@ Full 80 tests pass Mac 64.41 s/Linux 94.03 s, final 8 target Mac checks 8.45 s. 
 ### v0.0.6 publication verified
 
 Pushed final source/evidence commit `bd48f96913b7184121034d54500667cff1e3b4f0` and annotated tag `v0.0.6` atomically. GitHub repository metadata confirms private=false/visibility=public; anonymous tagged README/results/next mission/release-summary reads return200 and match local bytes. Remote annotated tag resolves to the completed release commit. Post-push receipt: `artifacts/receipts/v0.0.6-publication.json`. Main adds this verification after the immutable scientific tag. The 20-minute heartbeat remains ACTIVE, verified from saved configuration, with v0.0.7 as its next bounded mission. No owned simulation job remains active.
+
+
+## v0.0.7 preregistration and implementation
+
+Heartbeat inspected clean Git and actual /proc ownership: no Joxing Python jobs. xbabe1 load8.31/128logical,~29.6GiBavailable RAM and311GiBfree disk. Registered four variants and80paired long-task attempts before outcomes in experiments/v0.0.7/protocol.json. Native body-ID/reference-index mismatch confirmed by reading both observation and reward paths; implement explicit canonical-name map and exact native oracle first. Maximum4worlds/one thread,1800s/1.7Mrunner physics/1GiBraw plus0.3Mreserved audit/video; no competitive learning or reward changes. Sole integration owner in this chat; third_party and previous evidence remain read-only.
