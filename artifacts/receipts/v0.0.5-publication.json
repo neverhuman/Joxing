@@ -1,0 +1,49 @@
+{
+  "annotated_tag_object": "ee3e06b0ce1991b015bab26246f493149f6a9355",
+  "anonymous_requests": true,
+  "code_commit": "f737dcb494f87825447937904619251978896bf5",
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "private": false,
+  "python": "3.12.12",
+  "repository_url": "https://github.com/neverhuman/Joxing",
+  "schema": "joxing-run-v1",
+  "scope": "Post-push anonymous GitHub API and raw tag access; this publication receipt is added to main after the immutable scientific release tag.",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "tag": "v0.0.5",
+  "tag_target_commit": "f737dcb494f87825447937904619251978896bf5",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:57:17.984042+00:00",
+  "verified_raw_files": [
+    {
+      "path": "README.md",
+      "sha256": "45c5cc70be183334ee6824eebb781cda546d6b44e70fcea9aa881d3f5f6c1bf2",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/neverhuman/Joxing/v0.0.5/README.md"
+    },
+    {
+      "path": "docs/V0.0.5_RESULTS.md",
+      "sha256": "248352851e4ccc5d8e333abf61f8d32f2396db518945daa68eb68a29004f4eda",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/neverhuman/Joxing/v0.0.5/docs/V0.0.5_RESULTS.md"
+    },
+    {
+      "path": "docs/STATE_HISTORY_SELF_PLAY_AUDIT.md",
+      "sha256": "2cbb375390111b30b8a6b4f750463b2c9fde60148874a027f7c2600898129383",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/neverhuman/Joxing/v0.0.5/docs/STATE_HISTORY_SELF_PLAY_AUDIT.md"
+    },
+    {
+      "path": "artifacts/v0.0.5/release-summary.json",
+      "sha256": "1bf743c4968a8de3677b594d46c95ee5ce7254a3d27696d50d8791a192e35b65",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/neverhuman/Joxing/v0.0.5/artifacts/v0.0.5/release-summary.json"
+    }
+  ],
+  "visibility": "public"
+}
