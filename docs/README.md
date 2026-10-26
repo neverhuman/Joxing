@@ -18,14 +18,17 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 | v0.0.2 | Delivered three-seed assisted strike/withdrawal proof | [Results](V0.0.2_RESULTS.md), [plan](V0.0.2_PLAN.md), [evidence](../artifacts/v0.0.2/) |
 | v0.0.3 | Planning milestone; no implemented release | [Historical plan](V0.0.3_PLAN.md) |
 | v0.0.4 | Delivered gravity/feedback platform, 63 passing Mac/Linux tests and bounded pilot; five-second motor gate failed | [Results](V0.0.4_RESULTS.md), [evidence/policies](../artifacts/v0.0.4/), [plan](V0.0.4_PLAN.md) |
-| v0.0.5 | Both waves complete: 1.44M training transitions / 912 evaluations, 72 tests pass; motor and replicated-superiority gates failed | [Results/status](V0.0.5_RESULTS.md), [experiment book](../experiments/v0.0.5/README.md), [plan](V0.0.5_PLAN.md) |
+| v0.0.5 | Both waves complete: 1.44 M training transitions / 912 evaluations, 72 tests pass; motor and replicated-superiority gates failed | [Results/status](V0.0.5_RESULTS.md), [experiment book](../experiments/v0.0.5/README.md), [plan](V0.0.5_PLAN.md) |
 | v0.0.6 | Completed frozen upstream qualification:40/40 native completions, exact Linux replay,80 tests pass; no new training/boxing claim | [Results](V0.0.6_RESULTS.md), [experiment book](../experiments/v0.0.6/README.md), [evidence](../artifacts/v0.0.6/) |
-| v0.0.7 | Next mission ready to implement; no outcomes | [Glove/timestep transfer mission](V0.0.7_MISSION.md), [supervisor state](MISSION.md) |
+| v0.0.7 | Transfer mapping/exact replay pass; all 80 long tracking attempts valid but 0/20 completions per condition; 99 Linux tests pass | [Results](V0.0.7_RESULTS.md), [book](../experiments/v0.0.7/README.md), [evidence](../artifacts/v0.0.7/) |
+| v0.0.8 | Ready, unimplemented; physical continuation after native tracking failure | [Mission](V0.0.8_MISSION.md), [supervisor](MISSION.md) |
 | Later milestones | Proposed; unimplemented | [Master implementation gates](IMPLEMENTATION.md) |
 
 ## Game, physics and compute
 
-- [Upstream motor-teacher transfer plan](UPSTREAM_MOTOR_TRANSFER_PLAN.md): inspected release metadata, incompatible interfaces, decoder-load issue and ordered qualification tests. Native qualification completed in v0.0.6; glove/stance transfer remains proposed.
+- [Native transfer implementation contract](NATIVE_TRANSFER.md): named reference mapping, fixed cadence, full snapshots, bounded workers and source-host commands.
+
+- [Upstream motor-teacher transfer plan](UPSTREAM_MOTOR_TRANSFER_PLAN.md): inspected release metadata, incompatible interfaces, decoder-load issue and ordered qualification tests. Native qualification completed in v0.0.6; v 7 glove/timestep mapping and replay pass but longer tracking fails; stationary transfer remains proposed.
 
 - [State/history/self-play code audit](STATE_HISTORY_SELF_PLAY_AUDIT.md): delivered feedback loop, missing opponent/memory/timing/game integration, measured command variation and implementation handoff.
 
@@ -34,4 +37,4 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 - [Master implementation plan](IMPLEMENTATION.md): full geometry, authoritative game, motor teacher/codec, HPC and self-play gates.
 - [Review of all four supplied plans](SPEC_REVIEW.md): adopted ideas, corrections and deferred proposals. [Original reference documents](references/) are research input; their commands and reported measurements are not execution instructions or our own results.
 
-Delivered capabilities are established by code and receipts. A planned command, success target or future version name does not establish that training or a test has run. The package/release is v0.0.6; v0.0.2 remains the prior assisted-strike proof. No release establishes autonomous boxing or qualified GPU physics yet.
+Delivered capabilities are established by code and receipts. A planned command, success target or future version name does not establish that training or a test has run. The package/release is v0.0.7; v0.0.2 remains the prior assisted-strike proof. No release establishes autonomous boxing or qualified GPU physics yet.

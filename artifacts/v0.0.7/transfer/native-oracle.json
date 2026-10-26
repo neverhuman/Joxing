@@ -1,0 +1,18 @@
+{
+  "feature_oracle": {
+    "max_feature_error": 0.0,
+    "passed": true,
+    "physics_steps": 140,
+    "scope": "Complete feature/state/reward/native termination equivalence; bounded synthetic action probe.",
+    "seed": 73091,
+    "steps_compared": 7
+  },
+  "v6_actual_continuation": {
+    "max_reference_state_error": 0.0,
+    "observation_error": 0,
+    "passed": true,
+    "physics_steps": 3320,
+    "source_snapshot_sha256": "2f9af2c6e30e8ca5d17551e9a8e90a2c7f02d282e8655af9d27d3b5fed242752",
+    "v6_audit_sha256": "3b97b910fa1162537eddb7f650a9522b0a3c4aeba0593cf81edeab56cc2d3249"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "local_markdown_targets_checked": 163,
+  "missing_targets": [],
+  "posthoc_script_matches_executed_hash": true,
+  "archive_excludes_weights_and_pickle": true,
+  "visuals_inspected": [
+    "transfer/transfer.png",
+    "transfer/replay-preview.png"
+  ],
+  "raw_config_whitespace": "Original upstream config has two trailing spaces, preserved bytewise; exclude only transfer/inputs/config.json in staged whitespace check.",
+  "link_correction": "Repaired an older incorrectly spaced reach-seed7 receipt link; all checked local targets resolve.",
+  "full_test_logs": "Mac98full+27final target; Linux99full. Posthoc script validated by actual complete source-host execution; no physics implementation changed after freeze."
+}

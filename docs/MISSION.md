@@ -1,8 +1,8 @@
 # Current Joxing mission
 
-Current mission: **v0.0.7 — observation-correct glove/timestep transfer and longer native motion**. Status: implementation/development validation in progress; no formal v7 run has started. One integration owner in this chat. The preceding v0.0.6 qualification is complete/audited, and all owned jobs exited.
+Current mission: **v0.0.8 — substep physical evidence and tracking-independent motor continuation**. Status: ready after v0.0.7 publication; unimplemented, no v 8 run started. One integration owner in this chat. v 7 is concluded/audited; all owned jobs exited.
 
-Value: transfer the qualified frozen motor controller toward actual equipment and finer physics while preserving every native observation's meaning. Follow [V0.0.7_MISSION.md](V0.0.7_MISSION.md) for worker-ready read-first files, ownership, exact code/tests, budgets, stops and evidence. Native walking qualifies a useful dependency; stationary guard/reach and competitive-learning gates remain unresolved.
+Value: distinguish native tracking failure from physical collapse before another learning sweep. Follow [V0.0.8_MISSION.md](V0.0.8_MISSION.md) for exact read-first files, implementation, tests, ownership, budgets, stops and handoff. Preserve the failed v 7 tracking gate; walking does not pass stationary guard or competition.
 
 ## Ownership and health
 
@@ -10,10 +10,9 @@ The user authorized continuing small version missions and a check every 20 minut
 
 State handling: healthy running task → inspect progress and advance independent work; completed task → audit every attempt, conclude honestly, publish; idle → commit a small next-version mission/protocol then implement/start it; blocked → preserve evidence, diagnose/continue independent work and request only the smallest genuinely necessary user decision. Report meaningful changes; remain quiet on unchanged healthy state. Never manufacture a scientific win or loosen a gate to keep version numbers moving.
 
-Current job: registered v0.0.7 qualification on xbabe1, `/home/ubuntu/joxing/v007-20261026`, frozen source `9e3ee335c3995c860b40237bf6f00ba155d5d62d`. Wrapper PID972834; actual Python PID972838. LaunchedUTC2026-10-26T22:12:19 after all99Linux tests passed (151.18s) and fresh capacity checked (41.4GiBavailable RAM,318GiBfree disk,load14.90/128logical). Exact command/capacity: `artifacts/v0.0.7/launch.json`. Active files: `runs/v0.0.7/transfer-01/{process,progress,evaluations,result,fault}.json`, `events.jsonl`; parent log `runs/v0.0.7/qualification-output.txt`. Per-variant worker process/progress and raw attempts live in disjoint subdirectories. First prerequisites are exact v6source-host continuation and one/four-worker throughput. Previous v6checkouts/evidence remain unchanged.
+Current job: none. v7 source `9e3ee335c3995c860b40237bf6f00ba155d5d62d` ran in xbabe1`/home/ubuntu/joxing/v007-20261026`; all 80 longer tracking attempts completed with zero invalids but 0/20 horizon completions in every condition. Native equivalence, body-reference mapping and exact replay pass; no new training occurred. [Results](V0.0.7_RESULTS.md), [owned process exits](../artifacts/v0.0.7/process-exit.json). Preserve old checkouts/raw outcomes. No process needs resuming or duplicating.
 
-
-Next action: inspect actual run progress/events/faults and owned processes; diagnose any failure without editing executing source. Once launched verify growing physics/completed-attempt counts, audit all80outcomes and first-seed continuations, curate small evidence plus a complete public raw archive, conclude/publish v0.0.7 honestly, then choose the next bounded motor-learning mission from results. Limits: four workers/one thread,1,800seconds/1.7Mrunner physics/1GiBraw plus0.3Mreserved audit/video, total<=2M. Do not duplicate this task or start unchanged stance training. [Adapter contract and commands](NATIVE_TRANSFER.md).
+Next action: inspect actual Git/ownership/capacity, read v 8 mission, implement per-substep physical evidence and an explicit tracking-independent diagnostic. Prove exact equivalence to v 7 before its tracking failure, then preregister/freeze/run the bounded 40 attempts after tests pass. Proposed limits:2 workers/one thread,900 seconds/700 k runner physics/1 GiB raw plus 250 k audit/video reserve, total<=950 k. Keep native tracking failures visible and game/stance gates unchanged. If substep reads alter dynamics/cached observations, preserve that failure and diagnose before outcomes. The next actual motor-learning mission must follow the physical diagnostic, with feasible resets and frozen evaluation.
 
 ## Route to the final destination
 

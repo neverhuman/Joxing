@@ -4,9 +4,11 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Latest release: v0.0.6.** The frozen upstream muscle controller completed **40/40 native walking trials, zero invalids**, with exact Linux closed-loop replay and 80 passing Mac/Linux tests. We reproduced and repaired lost decoder schedule state on checkpoint loading. Both default/restored modes finished 20/20; no performance advantage or new training improvement is claimed. [Results](docs/V0.0.6_RESULTS.md) · [Experiment book](experiments/v0.0.6/README.md) · [Walking replay](artifacts/v0.0.6/native/native-controller.mp4).
+**Latest release: v0.0.7.** Observation-correct glove/timestep transfer and exact Linux replay pass. **All 80 longer native tracking trials completed with zero invalids, but none reached the horizon**; even the unchanged native baseline stopped around 4.1 seconds. No new training or boxing competence is claimed. All 99 Linux tests pass; Mac full 98 plus final 27 targeted checks pass. [Results](docs/V0.0.7_RESULTS.md) · [Experiment book](experiments/v0.0.7/README.md) · [Four-condition replay](artifacts/v0.0.7/transfer/native-transfer.mp4).
 
-**Continuing every 20 minutes:** the active supervisor checks real progress/faults, audits finished work, and advances the [current mission](docs/MISSION.md). The next bounded mission is [v0.0.7: longer motion and observation-correct glove/timestep transfer](docs/V0.0.7_MISSION.md), implementation and validation in progress. It retains all 700 muscles and existing game/motor gates.
+**Continuing every 20 minutes:** the supervisor checks actual progress/faults, audits completion and advances the [current mission](docs/MISSION.md). [v0.0.8](docs/V0.0.8_MISSION.md) is ready: substep physical evidence and an explicit continuation diagnostic that separates native tracking failure from physical collapse. Existing stance/game gates remain in force.
+
+**Prior v0.0.6 qualification:** the frozen upstream controller completed 40/40 short native walking tasks with exact Linux replay. Decoder schedule state lost on load was reproduced and repaired; no new optimization occurred. [Results](docs/V0.0.6_RESULTS.md).
 
 **Prior training result, v0.0.5:** 1.44 million transitions and 912 new evaluations, zero invalids. Candidate B improved against its initial policy on two fresh seeds but lost to reference A on one. Replicated superiority and the five-second motor gate failed; every final policy had 0/32 five-second survivors. [Results](docs/V0.0.5_RESULTS.md).
 
@@ -111,7 +113,7 @@ On xbabe1, four CPU workers completed 384 CEM muscle-reach training episodes in 
 
 ![Measured reach learning](artifacts/reach-learning.png)
 
-[Before/after replay](artifacts/reach-before-after.mp4) · [Run receipt](artifacts/receipts/reach-seed 7.json) · [Results and limitations](docs/RESULTS.md)
+[Before/after replay](artifacts/reach-before-after.mp4) · [Run receipt](artifacts/receipts/reach-seed7.json) · [Results and limitations](docs/RESULTS.md)
 
 Native teacher reproduction uses the separate locked runtime and commands in the [v0.0.6 results](docs/V0.0.6_RESULTS.md#reproduce-the-bounded-native-qualification); its 3,601 feature interface differs from the stance rig. Mac native compiled-contract portability remains unqualified.
 

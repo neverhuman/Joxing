@@ -1,0 +1,141 @@
+{
+  "accounting_passed": true,
+  "attempts": 80,
+  "audit_physics_steps": 38730,
+  "audit_wall_s": 45.36404825001955,
+  "auditor_sha256": "458fdcf813b66197da62de84c0254155942c6f2b1acd3ceb805c75217ee37640",
+  "code_commit": "9e3ee335c3995c860b40237bf6f00ba155d5d62d",
+  "completion_thresholds_met": false,
+  "diagnostic_physics_steps": 7460,
+  "findings": [
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "gloves_2ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "gloves_2ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "gloves_2ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "native_1ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "native_1ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "native_1ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "gloves_1ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "gloves_1ms"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "sampled_failure_matches": true,
+      "status": "completed",
+      "variant": "gloves_1ms"
+    }
+  ],
+  "formal_physics_steps": 249460,
+  "host": "xbabe1",
+  "invalid": 0,
+  "mujoco": "3.8.0",
+  "native_transfer_diagnostic_passed": false,
+  "normalizer_unchanged": true,
+  "numpy": "2.4.2",
+  "passed": true,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "reference_replay_passed": true,
+  "run_protocol_hash": "cd07fccb4d600d67b0f97c5f557430a2613b688280e7bf26bb0dd2b27fb94d83",
+  "schema": "joxing-run-v1",
+  "scope": "Source-host frozen native equipment/timestep transfer; no new learning or boxing claim.",
+  "source_hash": "dcf500479fdd24217200322ab9cb4d98fc110801bb53e847ec0e53516dd872fa",
+  "source_run_commit": "9e3ee335c3995c860b40237bf6f00ba155d5d62d",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T22:16:43.058145+00:00"
+}

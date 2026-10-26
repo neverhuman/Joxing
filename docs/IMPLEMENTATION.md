@@ -1,8 +1,8 @@
 # Implementation and handoff plan
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current implemented iteration is v0.0.6: [frozen upstream native qualification](V0.0.6_RESULTS.md) completed40/40 attempts with exact Linux replay and 80 passing tests. No new optimization or boxing competence is claimed. The prior [v0.0.5 results](V0.0.5_RESULTS.md) retain failed motor/replicated-superiority gates. The P0–P5 sections below describe the broader program; they are not all delivered. [Documentation index](README.md), [current mission](MISSION.md).
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current implemented iteration is v0.0.7: [transfer mapping and exact replay pass, longer native tracking fails](V0.0.7_RESULTS.md). All 80 attempts are valid, every condition 0/20 horizon completions; 99 Linux tests pass. [v0.0.8](V0.0.8_MISSION.md) separates tracking from physical failure using substep evidence before another motor-learning wave. No new optimization or boxing competence is claimed. The P0–P5 sections describe the broader program, not delivered features. [Index](README.md), [current mission](MISSION.md).
 
-The [upstream motor-teacher roadmap](UPSTREAM_MOTOR_TRANSFER_PLAN.md) has completed its native loader/normalizer/replay qualification in v0.0.6. Next P3 work is the [v0.0.7 glove/timestep transfer mission](V0.0.7_MISSION.md), not yet implemented. Native walking does not satisfy stationary stance, guard, reach/return or competitive gates.
+The [upstream motor-teacher roadmap](UPSTREAM_MOTOR_TRANSFER_PLAN.md) has completed its native loader/normalizer/replay qualification in v0.0.6. The [v0.0.7 glove/timestep transfer](V0.0.7_RESULTS.md) preserves interfaces and exact replay, but fails long native tracking. Next is the [v8 physical motor evidence mission](V0.0.8_MISSION.md). Native walking does not satisfy stationary stance, guard, reach/return or competitive gates.
 
 ## Objective, scope and completion
 

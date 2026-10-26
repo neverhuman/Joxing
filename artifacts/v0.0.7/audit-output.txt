@@ -1,0 +1,43 @@
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+{
+  "schema": "joxing-run-v1",
+  "utc": "2026-10-26T22:16:43.058145+00:00",
+  "code_commit": "9e3ee335c3995c860b40237bf6f00ba155d5d62d",
+  "source_hash": "dcf500479fdd24217200322ab9cb4d98fc110801bb53e847ec0e53516dd872fa",
+  "python": "3.12.3",
+  "mujoco": "3.8.0",
+  "numpy": "2.4.2",
+  "host": "xbabe1",
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "accounting_passed": true,
+  "attempts": 80,
+  "invalid": 0,
+  "formal_physics_steps": 249460,
+  "diagnostic_physics_steps": 7460,
+  "audit_physics_steps": 38730,
+  "audit_wall_s": 45.36404825001955,
+  "reference_replay_passed": true,
+  "passed": true,
+  "completion_thresholds_met": false,
+  "native_transfer_diagnostic_passed": false,
+  "normalizer_unchanged": true,
+  "auditor_sha256": "458fdcf813b66197da62de84c0254155942c6f2b1acd3ceb805c75217ee37640",
+  "source_run_commit": "9e3ee335c3995c860b40237bf6f00ba155d5d62d",
+  "run_protocol_hash": "cd07fccb4d600d67b0f97c5f557430a2613b688280e7bf26bb0dd2b27fb94d83",
+  "scope": "Source-host frozen native equipment/timestep transfer; no new learning or boxing claim."
+}

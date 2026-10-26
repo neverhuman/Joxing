@@ -1,0 +1,160 @@
+{
+  "cases": [
+    {
+      "all_status": "completed",
+      "concurrent_loop_steps_per_s": 92.66114549602909,
+      "end_to_end_steps_per_s": 4.682617808464133,
+      "parent_wall_s": 8.542230358347297,
+      "physics_steps": 400,
+      "repeat": 0,
+      "samples": [
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.4316803961992264,
+          "physics_steps": 400,
+          "pid": 974773,
+          "reset_attempts": 1,
+          "seed": 73000,
+          "startup_s": 6.741699265316129,
+          "status": "completed"
+        }
+      ],
+      "workers": 1
+    },
+    {
+      "all_status": "completed",
+      "concurrent_loop_steps_per_s": 254.32340398154759,
+      "end_to_end_steps_per_s": 15.384600414032874,
+      "parent_wall_s": 10.400010120123625,
+      "physics_steps": 1600,
+      "repeat": 0,
+      "samples": [
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.593036824837327,
+          "physics_steps": 400,
+          "pid": 982949,
+          "reset_attempts": 1,
+          "seed": 73000,
+          "startup_s": 7.536534681916237,
+          "status": "completed"
+        },
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.49147127009928226,
+          "physics_steps": 400,
+          "pid": 982948,
+          "reset_attempts": 1,
+          "seed": 73001,
+          "startup_s": 8.159275470301509,
+          "status": "completed"
+        },
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.5397886205464602,
+          "physics_steps": 400,
+          "pid": 982947,
+          "reset_attempts": 1,
+          "seed": 73002,
+          "startup_s": 8.205625565722585,
+          "status": "completed"
+        },
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.6291202362626791,
+          "physics_steps": 400,
+          "pid": 982943,
+          "reset_attempts": 1,
+          "seed": 73003,
+          "startup_s": 7.705411743372679,
+          "status": "completed"
+        }
+      ],
+      "workers": 4
+    },
+    {
+      "all_status": "completed",
+      "concurrent_loop_steps_per_s": 89.81839256116861,
+      "end_to_end_steps_per_s": 4.596801444611262,
+      "parent_wall_s": 8.701702799648046,
+      "physics_steps": 400,
+      "repeat": 1,
+      "samples": [
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.4453430846333504,
+          "physics_steps": 400,
+          "pid": 994210,
+          "reset_attempts": 1,
+          "seed": 73100,
+          "startup_s": 6.874547438696027,
+          "status": "completed"
+        }
+      ],
+      "workers": 1
+    },
+    {
+      "all_status": "completed",
+      "concurrent_loop_steps_per_s": 258.67735322846147,
+      "end_to_end_steps_per_s": 15.676800087790749,
+      "parent_wall_s": 10.20616446621716,
+      "physics_steps": 1600,
+      "repeat": 1,
+      "samples": [
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.5407894384115934,
+          "physics_steps": 400,
+          "pid": 995383,
+          "reset_attempts": 1,
+          "seed": 73100,
+          "startup_s": 7.813396571204066,
+          "status": "completed"
+        },
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.618531147018075,
+          "physics_steps": 400,
+          "pid": 995387,
+          "reset_attempts": 1,
+          "seed": 73101,
+          "startup_s": 7.923079019412398,
+          "status": "completed"
+        },
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.5417946092784405,
+          "physics_steps": 400,
+          "pid": 995388,
+          "reset_attempts": 1,
+          "seed": 73102,
+          "startup_s": 7.953253703191876,
+          "status": "completed"
+        },
+        {
+          "control_steps": 40,
+          "invalid": 0,
+          "loop_s": 0.541608015075326,
+          "physics_steps": 400,
+          "pid": 995386,
+          "reset_attempts": 1,
+          "seed": 73103,
+          "startup_s": 7.879224030300975,
+          "status": "completed"
+        }
+      ],
+      "workers": 4
+    }
+  ],
+  "physics_steps": 4000,
+  "scope": "Policy+normalization+CPU physics+sampled support+snapshot; optimizer/referee absent. Loop TPS excludes construction/disk output; parent TPS includes process construction/shutdown."
+}

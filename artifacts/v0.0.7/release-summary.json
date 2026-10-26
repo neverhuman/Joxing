@@ -1,0 +1,112 @@
+{
+  "schema": "joxing-release-v0.0.7",
+  "version": "0.0.7",
+  "repository": "https://github.com/neverhuman/Joxing",
+  "status": "completed_negative_motor_result",
+  "source_run_commit": "9e3ee335c3995c860b40237bf6f00ba155d5d62d",
+  "protocol_sha256": "cd07fccb4d600d67b0f97c5f557430a2613b688280e7bf26bb0dd2b27fb94d83",
+  "source_sha256": "dcf500479fdd24217200322ab9cb4d98fc110801bb53e847ec0e53516dd872fa",
+  "formal": {
+    "all_attempts_completed": true,
+    "attempts": 80,
+    "completion_thresholds_met": false,
+    "diagnostic_physics_steps": 7460,
+    "inputs_unchanged": true,
+    "invalid": 0,
+    "physics_steps": 256920,
+    "qualification_pending_replay_audit": true,
+    "scope": "Frozen long native locomotion; no training, stance, guard or boxing qualification.",
+    "source_unchanged": true,
+    "variants": {
+      "gloves_1ms": {
+        "completed": 20,
+        "horizon_completions": 0,
+        "incomplete": 0,
+        "invalid": 0,
+        "mean_elapsed_sim_s": 4.17799999999977,
+        "not_run": 0,
+        "planned": 20,
+        "sampled_support_failure_episodes": 0
+      },
+      "gloves_2ms": {
+        "completed": 20,
+        "horizon_completions": 0,
+        "incomplete": 0,
+        "invalid": 0,
+        "mean_elapsed_sim_s": 4.170999999999762,
+        "not_run": 0,
+        "planned": 20,
+        "sampled_support_failure_episodes": 0
+      },
+      "native_1ms": {
+        "completed": 20,
+        "horizon_completions": 0,
+        "incomplete": 0,
+        "invalid": 0,
+        "mean_elapsed_sim_s": 4.14499999999976,
+        "not_run": 0,
+        "planned": 20,
+        "sampled_support_failure_episodes": 0
+      },
+      "native_2ms": {
+        "completed": 20,
+        "horizon_completions": 0,
+        "incomplete": 0,
+        "invalid": 0,
+        "mean_elapsed_sim_s": 4.128999999999768,
+        "not_run": 0,
+        "planned": 20,
+        "sampled_support_failure_episodes": 0
+      }
+    },
+    "wall_s": 141.44187525101006,
+    "worker_results": [
+      {
+        "physics_steps": 41290,
+        "status": "completed",
+        "variant": "native_2ms"
+      },
+      {
+        "physics_steps": 41710,
+        "status": "completed",
+        "variant": "gloves_2ms"
+      },
+      {
+        "physics_steps": 82900,
+        "status": "completed",
+        "variant": "native_1ms"
+      },
+      {
+        "physics_steps": 83560,
+        "status": "completed",
+        "variant": "gloves_1ms"
+      }
+    ]
+  },
+  "source_host_replay_passed": true,
+  "accounting_passed": true,
+  "audit_physics_steps": 38730,
+  "render_physics_steps": 13510,
+  "posthoc_diagnostic_physics_steps": 13510,
+  "total_counted_mission_physics_steps": 322670,
+  "new_training_transitions": 0,
+  "new_optimization_updates": 0,
+  "tests": {
+    "mac_full": {
+      "passed": 98,
+      "wall_s": 126.46
+    },
+    "mac_final_target": {
+      "passed": 27,
+      "wall_s": 47.07
+    },
+    "linux_full": {
+      "passed": 99,
+      "wall_s": 151.18
+    }
+  },
+  "owned_jobs_exited": true,
+  "scope": "Correct body-reference mapping and exact source-host replay pass. All80long native tracking tasks fail; even unchanged native baseline0/20. This is not proof of a glove effect, physical collapse, quiet stance or boxing.",
+  "next_mission": "docs/V0.0.8_MISSION.md",
+  "raw_archive": "raw-archive.json"
+}

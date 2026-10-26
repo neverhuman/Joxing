@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.7 — 2026-10-26
+
+- Add canonical-reference/live-body mapping for both observations and rewards after glove insertion; preserve all 700 muscles, native inertias and fixed 20ms control cadence across 1ms/2ms physics.
+- Pass exact native feature/reward/state and actual v6 continuation oracles; independently audit all 80 paired trials and all 12 first-seed action/policy/repeat replays with zero error.
+- Complete the frozen longer-horizon factorial: every condition 0/20 native tracking completions, zero invalids. Native baseline also fails; no glove-only cause or learned improvement established.
+- Retain post-hoc joint/force/velocity evidence: tracking stops with sampled foot support still present. Publish all outcomes, full public raw archive, hashes, plot/video and exited processes.
+- Pass 99 Linux tests and Mac full 98 plus final 27 targeted checks; measure full-policy CPU throughput and startup cost. Register the bounded v8 substep physical-continuation mission.
+
+See [results](docs/V0.0.7_RESULTS.md), [book](experiments/v0.0.7/README.md), [adapter](docs/NATIVE_TRANSFER.md) and [next mission](docs/V0.0.8_MISSION.md).
+
 ## v0.0.6 — 2026-10-26
 
 - Qualify the frozen upstream DynSyn-SAC walking controller on40 paired native attempts:40 horizon completions, zero invalid/incomplete/not_run; no optimization.

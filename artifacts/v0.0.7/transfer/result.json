@@ -1,0 +1,77 @@
+{
+  "all_attempts_completed": true,
+  "attempts": 80,
+  "completion_thresholds_met": false,
+  "diagnostic_physics_steps": 7460,
+  "inputs_unchanged": true,
+  "invalid": 0,
+  "physics_steps": 256920,
+  "qualification_pending_replay_audit": true,
+  "scope": "Frozen long native locomotion; no training, stance, guard or boxing qualification.",
+  "source_unchanged": true,
+  "variants": {
+    "gloves_1ms": {
+      "completed": 20,
+      "horizon_completions": 0,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 4.17799999999977,
+      "not_run": 0,
+      "planned": 20,
+      "sampled_support_failure_episodes": 0
+    },
+    "gloves_2ms": {
+      "completed": 20,
+      "horizon_completions": 0,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 4.170999999999762,
+      "not_run": 0,
+      "planned": 20,
+      "sampled_support_failure_episodes": 0
+    },
+    "native_1ms": {
+      "completed": 20,
+      "horizon_completions": 0,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 4.14499999999976,
+      "not_run": 0,
+      "planned": 20,
+      "sampled_support_failure_episodes": 0
+    },
+    "native_2ms": {
+      "completed": 20,
+      "horizon_completions": 0,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 4.128999999999768,
+      "not_run": 0,
+      "planned": 20,
+      "sampled_support_failure_episodes": 0
+    }
+  },
+  "wall_s": 141.44187525101006,
+  "worker_results": [
+    {
+      "physics_steps": 41290,
+      "status": "completed",
+      "variant": "native_2ms"
+    },
+    {
+      "physics_steps": 41710,
+      "status": "completed",
+      "variant": "gloves_2ms"
+    },
+    {
+      "physics_steps": 82900,
+      "status": "completed",
+      "variant": "native_1ms"
+    },
+    {
+      "physics_steps": 83560,
+      "status": "completed",
+      "variant": "gloves_1ms"
+    }
+  ]
+}

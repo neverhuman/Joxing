@@ -1,0 +1,131 @@
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+{
+  "variants": {
+    "native_2ms": {
+      "planned": 20,
+      "completed": 20,
+      "invalid": 0,
+      "incomplete": 0,
+      "not_run": 0,
+      "horizon_completions": 0,
+      "mean_elapsed_sim_s": 4.128999999999768,
+      "sampled_support_failure_episodes": 0
+    },
+    "gloves_2ms": {
+      "planned": 20,
+      "completed": 20,
+      "invalid": 0,
+      "incomplete": 0,
+      "not_run": 0,
+      "horizon_completions": 0,
+      "mean_elapsed_sim_s": 4.170999999999762,
+      "sampled_support_failure_episodes": 0
+    },
+    "native_1ms": {
+      "planned": 20,
+      "completed": 20,
+      "invalid": 0,
+      "incomplete": 0,
+      "not_run": 0,
+      "horizon_completions": 0,
+      "mean_elapsed_sim_s": 4.14499999999976,
+      "sampled_support_failure_episodes": 0
+    },
+    "gloves_1ms": {
+      "planned": 20,
+      "completed": 20,
+      "invalid": 0,
+      "incomplete": 0,
+      "not_run": 0,
+      "horizon_completions": 0,
+      "mean_elapsed_sim_s": 4.17799999999977,
+      "sampled_support_failure_episodes": 0
+    }
+  },
+  "attempts": 80,
+  "invalid": 0,
+  "all_attempts_completed": true,
+  "completion_thresholds_met": false,
+  "scope": "Frozen long native locomotion; no training, stance, guard or boxing qualification.",
+  "wall_s": 141.44187525101006,
+  "physics_steps": 256920,
+  "diagnostic_physics_steps": 7460,
+  "worker_results": [
+    {
+      "variant": "native_2ms",
+      "status": "completed",
+      "physics_steps": 41290
+    },
+    {
+      "variant": "gloves_2ms",
+      "status": "completed",
+      "physics_steps": 41710
+    },
+    {
+      "variant": "native_1ms",
+      "status": "completed",
+      "physics_steps": 82900
+    },
+    {
+      "variant": "gloves_1ms",
+      "status": "completed",
+      "physics_steps": 83560
+    }
+  ],
+  "source_unchanged": true,
+  "inputs_unchanged": true,
+  "qualification_pending_replay_audit": true
+}

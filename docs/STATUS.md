@@ -208,3 +208,14 @@ Timing clarification: bundled117frames at100Hz gives1.17s per cycle and21.06s fo
 ### v0.0.7 formal launch
 
 Frozen source9e3ee335c3995c860b40237bf6f00ba155d5d62d passed99Linux tests/151.18s. Validation wrapper955614completed and launched finite qualification UTC22:12:19,wrapper972834/Python972838 in dedicatedv007checkout. Fresh load14.90/128logical,41.4GiBavailable RAM and318GiBfree disk. Source/protocol were committed and pushed before outcomes; no executing source is changed. Prerequisite oracle and H1precede T1. Sourcehost command/capacity and final tests retained.
+
+
+## v0.0.7 completed and audited
+
+All 80 registered long native tasks completed in 141.4419 s with 0 invalid/incomplete/not_run. Native 2 ms/gloves 2 ms/native 1 ms/gloves 1 ms all 0/20 horizon completions; means 4.129/4.171/4.145/4.178 s versus 21.06 s threshold. Original native baseline also fails; no glove-only causal failure or new training gain is established. T 0 native feature/state/reward and actual v 6 continuation are exact. H 1 median 1/4 worker loops 91.24/256.50 TPS, startup-inclusive 4.64/15.53 TPS. Linux independent audit all 80 pairing/actions/hashes/metrics/physics passes, all 12 first-seed replay paths have 0 state/observation error; completion diagnostic remains false.
+
+Post-hoc firstseed 72000 replay ends at native mean joint error 0.06027–0.06139, with foot support, 0 nonfoot load,10.2–11.9 degree tilt and 2.1–3.2 cm drop. Knee/ankle/shoulder deviations and body spatial velocities retained; actual predicted commands match recorded actions exactly. These are sampled tracking failures, not demonstrated physical falls or long physical survival. No gate/reference/reward/normalizer/anatomy was changed.
+
+Counted physics:249,460 formal+7,460 prerequisite/benchmark+38,730 audit+13,510 video+13,510 posthoc=322,670, within 2 Mcap. No optimizer/GPUphysics. All owned PIDs exited and dedicated checkout has no Python jobs. Full 98 Mac tests plus final 27 target,99 Linux tests pass. Plot/video preview inspected. Every outcome and first scenario stays in Git; complete trajectories prepared in 22,225,280 byte public archive with SHA/full manifest. Copy initially lacked local parent, then unchanged rsync passed. Last periodic progress 79/80 is historical; final 80/80 registry/result is audited and preserved.
+
+Updated results, experiment book, adapter contract, README/docs and next worker-ready v0.0.8 mission: substep physical motor evidence and explicitly named continuation after original tracking failure. It will determine the next bounded muscle-learning/reset mission without pretending that walking passes quiet stance or game gates. No v 8 job/outcome yet. Public push/tag/release-asset verification follows this conclusion.
