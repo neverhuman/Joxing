@@ -200,3 +200,11 @@ Heartbeat inspected clean Git and actual /proc ownership: no Joxing Python jobs.
 ### v0.0.7 development validation
 
 All four MjSpec variants compile with700muscles/85qpos/85qvel, unchanged native masses/inertias/joint/actuator/tendon/equality ordering and explicitly separate0.566kg glove equipment. Reference body-name mapping handles shifted IDs in observations AND reward; native feature/state/reward oracle is exact. Development smoke is retained; no formal72000bank opened. Mac full98tests passed in126.46s. Final targeted checks add parent-only shared-stop ownership after review caught a potential concurrent temporary-file rename race; parent raw-byte sampling now tolerates atomic receipt renames. No scientific thresholds changed. Separate checkpoint-compatible v7runtime locked. Source freeze/Linux full regressions and real v6snapshot continuation remain launch prerequisites.
+
+
+Timing clarification: bundled117frames at100Hz gives1.17s per cycle and21.06s for18cycles, not the plan's approximate21.12s (which multiplied rounded v6endpoints). Protocol18cycles and native termination remain unchanged. Report sampled endpoint/timestep rounding explicitly; do not change a gate to align durations. This was inspected from saved v6reset metadata before interpreting v7long outcomes.
+
+
+### v0.0.7 formal launch
+
+Frozen source9e3ee335c3995c860b40237bf6f00ba155d5d62d passed99Linux tests/151.18s. Validation wrapper955614completed and launched finite qualification UTC22:12:19,wrapper972834/Python972838 in dedicatedv007checkout. Fresh load14.90/128logical,41.4GiBavailable RAM and318GiBfree disk. Source/protocol were committed and pushed before outcomes; no executing source is changed. Prerequisite oracle and H1precede T1. Sourcehost command/capacity and final tests retained.

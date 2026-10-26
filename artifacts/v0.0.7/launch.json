@@ -1,0 +1,29 @@
+{
+  "host": "xbabe1",
+  "checkout": "/home/ubuntu/joxing/v007-20261026",
+  "utc": "2026-10-26T22:12:19.818264+00:00",
+  "command": [
+    "/home/ubuntu/.local/bin/uv",
+    "run",
+    "--project",
+    "experiments/v0.0.7/runtime",
+    "python",
+    "scripts/run_native_transfer.py",
+    "--protocol",
+    "experiments/v0.0.7/protocol.json",
+    "--archive",
+    "/home/ubuntu/joxing/downloads/LocomotionFull-2b2f0f10.zip",
+    "--out",
+    "runs/v0.0.7/transfer-01"
+  ],
+  "wrapper_pid": 972834,
+  "source_commit": "9e3ee335c3995c860b40237bf6f00ba155d5d62d",
+  "load": [
+    14.90478515625,
+    8.74658203125,
+    6.71630859375
+  ],
+  "available_memory_bytes": 44502859776,
+  "free_disk_bytes": 341522812928,
+  "limits": "4worlds/one thread;1800s/1.7Mrunner physics/1GiBraw;0.3Maudit/video reserve"
+}
