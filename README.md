@@ -6,7 +6,7 @@ Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGro
 
 **Latest release: v0.0.6.** The frozen upstream muscle controller completed **40/40 native walking trials, zero invalids**, with exact Linux closed-loop replay and 80 passing Mac/Linux tests. We reproduced and repaired lost decoder schedule state on checkpoint loading. Both default/restored modes finished 20/20; no performance advantage or new training improvement is claimed. [Results](docs/V0.0.6_RESULTS.md) · [Experiment book](experiments/v0.0.6/README.md) · [Walking replay](artifacts/v0.0.6/native/native-controller.mp4).
 
-**Continuing every 20 minutes:** the active supervisor checks real progress/faults, audits finished work, and advances the [current mission](docs/MISSION.md). The next bounded mission is [v0.0.7: longer motion and observation-correct glove/timestep transfer](docs/V0.0.7_MISSION.md), ready to implement. It retains all 700 muscles and existing game/motor gates.
+**Continuing every 20 minutes:** the active supervisor checks real progress/faults, audits finished work, and advances the [current mission](docs/MISSION.md). The next bounded mission is [v0.0.7: longer motion and observation-correct glove/timestep transfer](docs/V0.0.7_MISSION.md), implementation and validation in progress. It retains all 700 muscles and existing game/motor gates.
 
 **Prior training result, v0.0.5:** 1.44 million transitions and 912 new evaluations, zero invalids. Candidate B improved against its initial policy on two fresh seeds but lost to reference A on one. Replicated superiority and the five-second motor gate failed; every final policy had 0/32 five-second survivors. [Results](docs/V0.0.5_RESULTS.md).
 

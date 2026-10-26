@@ -195,3 +195,8 @@ Pushed final source/evidence commit `bd48f96913b7184121034d54500667cff1e3b4f0` a
 ## v0.0.7 preregistration and implementation
 
 Heartbeat inspected clean Git and actual /proc ownership: no Joxing Python jobs. xbabe1 load8.31/128logical,~29.6GiBavailable RAM and311GiBfree disk. Registered four variants and80paired long-task attempts before outcomes in experiments/v0.0.7/protocol.json. Native body-ID/reference-index mismatch confirmed by reading both observation and reward paths; implement explicit canonical-name map and exact native oracle first. Maximum4worlds/one thread,1800s/1.7Mrunner physics/1GiBraw plus0.3Mreserved audit/video; no competitive learning or reward changes. Sole integration owner in this chat; third_party and previous evidence remain read-only.
+
+
+### v0.0.7 development validation
+
+All four MjSpec variants compile with700muscles/85qpos/85qvel, unchanged native masses/inertias/joint/actuator/tendon/equality ordering and explicitly separate0.566kg glove equipment. Reference body-name mapping handles shifted IDs in observations AND reward; native feature/state/reward oracle is exact. Development smoke is retained; no formal72000bank opened. Mac full98tests passed in126.46s. Final targeted checks add parent-only shared-stop ownership after review caught a potential concurrent temporary-file rename race; parent raw-byte sampling now tolerates atomic receipt renames. No scientific thresholds changed. Separate checkpoint-compatible v7runtime locked. Source freeze/Linux full regressions and real v6snapshot continuation remain launch prerequisites.

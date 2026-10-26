@@ -1,0 +1,12 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.7/runtime",
+    "pytest",
+    "-q"
+  ],
+  "exit_code": 0,
+  "wall_s": 127.67614004100324
+}

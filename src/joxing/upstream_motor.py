@@ -313,20 +313,27 @@ def loader_oracle(folder):
 
 
 class NativeTask:
-    def __init__(self, config):
-        module = pinned_import("msgym.envs.locomotionFull_v1")
-        # Only file lookup is adapted; no upstream files or model options change.
-        with patch.object(
-            module, "get_ms_human_model_path", lambda name: str(MODEL_ROOT / name)
-        ):
-            self.env = module.LocomotionFullEnvV1(**config)
+    def __init__(self, config, *, environment=None, physics_dt=0.002):
+        if environment is None:
+            module = pinned_import("msgym.envs.locomotionFull_v1")
+            # Default v6 path remains the unchanged native environment.
+            with patch.object(
+                module, "get_ms_human_model_path", lambda name: str(MODEL_ROOT / name)
+            ):
+                self.env = module.LocomotionFullEnvV1(**config)
+        else:
+            self.env = environment
         self.physics_total = 0
         self.last_obs = None
         self.model = self.env.model
         m = self.model
         if (m.nq, m.nv, m.nu, m.na) != (85, 85, 700, 700):
             raise ValueError("Unknown native anatomy")
-        if m.opt.timestep != 0.002 or self.env.dt != 0.02:
+        if (
+            physics_dt not in (0.001, 0.002)
+            or m.opt.timestep != physics_dt
+            or self.env.dt != 0.02
+        ):
             raise ValueError("Unknown native cadence")
         self.floor = m.geom("floor").id
         self.pelvis = m.body("pelvis").id
@@ -512,7 +519,10 @@ class NativeTask:
         app = s["application"]
         for key, shape in (
             ("qpos_ref", (85,)),
-            ("xpos_ref", (self.model.nbody, 3)),
+            (
+                "xpos_ref",
+                (getattr(self.env, "reference_body_count", self.model.nbody), 3),
+            ),
             ("qpos_ref_future", (5, 85)),
         ):
             value = np.asarray(app[key])

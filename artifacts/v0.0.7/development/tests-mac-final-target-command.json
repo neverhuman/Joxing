@@ -1,0 +1,14 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.7/runtime",
+    "pytest",
+    "-q",
+    "tests/test_native_transfer.py",
+    "tests/test_upstream_motor.py"
+  ],
+  "exit_code": 0,
+  "wall_s": 47.956266167006106
+}
