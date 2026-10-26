@@ -1,6 +1,6 @@
 # Current Joxing mission
 
-Current mission: **v0.0.7 — observation-correct glove/timestep transfer and longer native motion**. Status: ready to implement after v0.0.6 publication; no v7 run started. One integration owner in this chat. The preceding v0.0.6 qualification is complete/audited, and all owned jobs exited.
+Current mission: **v0.0.7 — observation-correct glove/timestep transfer and longer native motion**. Status: ready to implement; v0.0.6 is published and no v7 run has started. One integration owner in this chat. The preceding v0.0.6 qualification is complete/audited, and all owned jobs exited.
 
 Value: transfer the qualified frozen motor controller toward actual equipment and finer physics while preserving every native observation's meaning. Follow [V 0.0.7_MISSION.md](V0.0.7_MISSION.md) for worker-ready read-first files, ownership, exact code/tests, budgets, stops and evidence. Native walking qualifies a useful dependency; stationary guard/reach and competitive-learning gates remain unresolved.
 

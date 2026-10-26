@@ -1,0 +1,43 @@
+{
+  "schema": "joxing-publication-v1",
+  "utc": "2026-10-26T21:52:56.753875+00:00",
+  "repository": "https://github.com/neverhuman/Joxing",
+  "visibility": "public",
+  "private": false,
+  "tag": "v0.0.6",
+  "tag_object": "f8c11c2df7714849f8a72de4229edc7718198160",
+  "release_commit": "bd48f96913b7184121034d54500667cff1e3b4f0",
+  "verified_remote_tag_commit": "bd48f96913b7184121034d54500667cff1e3b4f0",
+  "anonymous_reads": [
+    {
+      "path": "README.md",
+      "anonymous_http_status": 200,
+      "sha256": "45dbba3e7a4c5b3d6f7d873a7bee380040e46e42aa12deff8301108cab0ec60f",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "docs/V0.0.6_RESULTS.md",
+      "anonymous_http_status": 200,
+      "sha256": "9ca4fd1588cedfc4b0c21101cfaa86106caf4e7c971c20ed9ae3fedb583a4288",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "docs/V0.0.7_MISSION.md",
+      "anonymous_http_status": 200,
+      "sha256": "6d470711558331c055f8587314f024bba3b5bed4e8cec4bf61a7fc7b3e09e2fa",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "artifacts/v0.0.6/release-summary.json",
+      "anonymous_http_status": 200,
+      "sha256": "fe724d67a517164a574027af9233ab122d5f3adbf9f2b965487289b5d203e821",
+      "matches_local_bytes": true
+    }
+  ],
+  "anonymous_repository_api": {
+    "http_status": 200,
+    "private": false,
+    "visibility": "public"
+  },
+  "scope": "Public release visibility and bytewise access verification; no credentials persisted. Main may add this post-publication receipt after the immutable completed release tag."
+}
