@@ -1,6 +1,6 @@
 # Current Joxing mission
 
-Current mission: **v0.0.9 — measured HPC, CPU scaling and batched inference**. Status: H0 protocol/source implemented; seven targeted tests/Ruff pass; freeze/push/deploy for bounded timing next. No simulation job is running. One integration owner in this chat, no agents. Read [V0.0.9_MISSION.md](V0.0.9_MISSION.md) and [SELF_PLAY_HPC_PLAN.md](SELF_PLAY_HPC_PLAN.md).
+Current mission: **v0.0.9 — measured HPC, CPU scaling and batched inference**. Status: H0 attempted and stopped on its registered action-parity gate; numerical diagnosis and full-loop profiling are ready next. No job is running. One integration owner in this chat, no agents. Read [V0.0.9_MISSION.md](V0.0.9_MISSION.md), [next packet](V0.0.9_H0_NUMERICS.md) and [SELF_PLAY_HPC_PLAN.md](SELF_PLAY_HPC_PLAN.md).
 
 ## Completed dependency and current priority
 
@@ -10,7 +10,9 @@ The user explicitly prioritizes proper stateful historical-opponent RL and thous
 
 ## Next action and ownership
 
-H0 isolated inference source is `scripts/benchmark_inference.py`; frozen protocol/book/runtime are in `experiments/v0.0.9/`. Use eight retained observations, batches1–128, scalar/batched calls, two repeats/32 cases, one thread, float32 action tolerance1e-6 and exact self-repeat. Caps120s/64MiB/zero physics; exclusive writer lease. Preserve all samples and parity/failure rows. Freeze/push source and run the exact book command in a fresh dedicated v009 checkout, never modify v008. Then preregister/profile the actual full loop and choose the measured bottleneck before building an actor service or scaling blindly. H0 is not game throughput or completion of the entire v9 mission.
+H0 ran frozen source `6a32a1dc872c0cfcf03eea4ce4990355231d155c` in `/home/ubuntu/joxing/v009-20261026`, wrapper1595614. Seven Linux helper tests pass. All32 cases remain visible:3 completed,1 invalid qualification case,28 not_run. Batch2 action difference7.152557373046875e-6 exceeds registered1e-6; do not change that limit or claim a batching win. The attempt used9.66s, zero physics/games and about790MiB peak RSS. [Independent audit](../artifacts/v0.0.9/H0-audit.json) passes accounting; backend qualification fails. [Exited processes](../artifacts/v0.0.9/process-exit.json) confirm no Joxing jobs and no source diff. Preserve v009 and every result/protocol unchanged.
+
+Next action: implement/register [V0.0.9_H0_NUMERICS.md](V0.0.9_H0_NUMERICS.md) in a fresh checkout before outcomes. Locate the first scalar/batched tensor divergence without modifying output, baseline or normalizer. Independently preregister H1's full-loop/RSS profiler and bounded CPU scaling, then optimize the measured bottleneck. Shared scalar inference can reduce policy duplication while retaining arithmetic; a new numerical backend requires its own explicit qualification. GPU inference/learning is still a candidate; GPU physics remains unqualified. H0 is not game throughput or completion of the whole v9 mission.
 
 Fresh [four-host inventory](../artifacts/receipts/hpc-inventory-2026-10-26.json): xbabe1/2/3 have idle4090/3090 GPUs, xbabe4 has low CPU load; recheck before launch. Current ceiling is16 aggregate owned simulation workers with one computational thread each, subject to tighter registered caps. No other service/job/driver changes, purchases or new agents. Keep node-local inference first and move compact trajectories/bundles across hosts only after measuring transport. Use dedicated ~/joxing checkouts and an exclusive writer/runner lease. No duplicate run.
 

@@ -1,0 +1,68 @@
+{
+  "pid": 1595614,
+  "source_commit": "6a32a1dc872c0cfcf03eea4ce4990355231d155c",
+  "status": "failed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 1595652,
+      "returncode": 0,
+      "wall_s": 1.0662087332457304
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "tests/test_inference.py"
+      ],
+      "status": "completed",
+      "pid": 1597087,
+      "returncode": 0,
+      "wall_s": 1.0158024728298187
+    },
+    {
+      "stage": "H0",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "python",
+        "scripts/benchmark_inference.py",
+        "--protocol",
+        "experiments/v0.0.9/protocol.json",
+        "--v8-run",
+        "/home/ubuntu/joxing/v008-20261026/runs/v0.0.8/physical-01",
+        "--v7-run",
+        "/home/ubuntu/joxing/v007-20261026/runs/v0.0.7/transfer-01",
+        "--out",
+        "runs/v0.0.9/inference-01"
+      ],
+      "status": "failed",
+      "pid": 1598351,
+      "returncode": 1,
+      "wall_s": 11.483091678470373
+    }
+  ],
+  "started_utc": "2026-10-26T23:41:36.768205+00:00",
+  "physics_budget": 0,
+  "threads": 1,
+  "error": "H0 returned 1",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/joxing/v009-20261026/runs/v0.0.9/supervise.py\", line 19, in <module>\n    if rc:raise RuntimeError(name+' returned '+str(rc))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: H0 returned 1\n",
+  "finished_utc": "2026-10-26T23:41:50.339973+00:00"
+}

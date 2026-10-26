@@ -1,0 +1,442 @@
+{
+  "boxing_games": 0,
+  "cases": [
+    {
+      "batch": 1,
+      "case_id": "0:1:scalar",
+      "milliseconds": [
+        5.058367,
+        4.844904,
+        4.983495,
+        5.096108,
+        5.256531,
+        5.035704,
+        4.636039,
+        4.825206,
+        5.075519,
+        4.707755,
+        5.646397,
+        5.016698,
+        5.505872,
+        5.506312,
+        5.234369,
+        5.134019,
+        4.889057,
+        4.996559,
+        5.151232,
+        4.573961
+      ],
+      "mode": "scalar",
+      "observations_per_s": 198.13611376420872,
+      "p50_ms": 5.0470355,
+      "p95_ms": 5.513316250000001,
+      "repeat": 0,
+      "scalar_reference_max_action_error": 0.0,
+      "self_repeat_exact": true,
+      "status": "completed"
+    },
+    {
+      "batch": 1,
+      "case_id": "0:1:batched",
+      "milliseconds": [
+        4.921107,
+        4.810939,
+        5.030494,
+        4.773748,
+        4.712914,
+        5.139941,
+        5.071502,
+        4.717552,
+        4.635227,
+        5.031857,
+        4.712112,
+        4.648783,
+        4.987583,
+        4.679381,
+        4.68457,
+        4.841607,
+        4.756877,
+        4.501023,
+        5.121366,
+        4.786022
+      ],
+      "mode": "batched",
+      "observations_per_s": 209.21005421678555,
+      "p50_ms": 4.779885,
+      "p95_ms": 5.12229475,
+      "repeat": 0,
+      "scalar_reference_max_action_error": 0.0,
+      "self_repeat_exact": true,
+      "status": "completed"
+    },
+    {
+      "batch": 2,
+      "case_id": "0:2:scalar",
+      "milliseconds": [
+        10.204509,
+        9.936212,
+        9.978462,
+        10.22113,
+        9.871229,
+        9.872201,
+        9.895204,
+        10.249494,
+        10.634391,
+        11.086215,
+        13.20611,
+        12.210378,
+        12.781457,
+        11.524372,
+        12.354101,
+        11.972059,
+        11.331097,
+        12.996103,
+        13.20076,
+        12.253631
+      ],
+      "mode": "scalar",
+      "observations_per_s": 178.43352494714802,
+      "p50_ms": 11.208656,
+      "p95_ms": 13.2010275,
+      "repeat": 0,
+      "scalar_reference_max_action_error": 0.0,
+      "self_repeat_exact": true,
+      "status": "completed"
+    },
+    {
+      "batch": 2,
+      "case_id": "0:2:batched",
+      "mode": "batched",
+      "reason": "Registered scalar/batched action parity failed",
+      "repeat": 0,
+      "scalar_reference_max_action_error": 7.152557373046875e-06,
+      "status": "invalid"
+    },
+    {
+      "batch": 4,
+      "case_id": "0:4:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 4,
+      "case_id": "0:4:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 8,
+      "case_id": "0:8:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 8,
+      "case_id": "0:8:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 16,
+      "case_id": "0:16:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 16,
+      "case_id": "0:16:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 32,
+      "case_id": "0:32:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 32,
+      "case_id": "0:32:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 64,
+      "case_id": "0:64:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 64,
+      "case_id": "0:64:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 128,
+      "case_id": "0:128:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 128,
+      "case_id": "0:128:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 0,
+      "status": "not_run"
+    },
+    {
+      "batch": 128,
+      "case_id": "1:128:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 128,
+      "case_id": "1:128:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 64,
+      "case_id": "1:64:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 64,
+      "case_id": "1:64:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 32,
+      "case_id": "1:32:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 32,
+      "case_id": "1:32:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 16,
+      "case_id": "1:16:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 16,
+      "case_id": "1:16:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 8,
+      "case_id": "1:8:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 8,
+      "case_id": "1:8:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 4,
+      "case_id": "1:4:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 4,
+      "case_id": "1:4:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 2,
+      "case_id": "1:2:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 2,
+      "case_id": "1:2:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 1,
+      "case_id": "1:1:scalar",
+      "mode": "scalar",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    },
+    {
+      "batch": 1,
+      "case_id": "1:1:batched",
+      "mode": "batched",
+      "reason": "halted_before_case",
+      "repeat": 1,
+      "status": "not_run"
+    }
+  ],
+  "code_commit": "6a32a1dc872c0cfcf03eea4ce4990355231d155c",
+  "completed": 3,
+  "device": "cpu",
+  "error": "Registered scalar/batched action parity failed",
+  "host": "xbabe1",
+  "max_rss_native_units": 808396,
+  "mujoco": "3.8.0",
+  "normalizer_stats_hash": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+  "numpy": "2.4.2",
+  "observation_file_sha256": "7976549203421f3866290b1333c75f24c008add632c9f54cea12b5984646b6b5",
+  "observation_sources": [
+    {
+      "file_sha256": "6532162caaae9c5e2b010ea11fc8dd0a67f9faf80c38e2a97b339cf634112a7c",
+      "keys": [
+        "last_raw_observation"
+      ],
+      "path": "native_2ms/starts/74000.json",
+      "run": "v8"
+    },
+    {
+      "file_sha256": "e306cc2a6a9a05736d87611ae888208d9a7ad761545eb2f1da400c4e4aebd375",
+      "keys": [
+        "snapshot",
+        "last_raw_observation"
+      ],
+      "path": "native_2ms/replay.json",
+      "run": "v8"
+    },
+    {
+      "file_sha256": "e306cc2a6a9a05736d87611ae888208d9a7ad761545eb2f1da400c4e4aebd375",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ],
+      "path": "native_2ms/replay.json",
+      "run": "v8"
+    },
+    {
+      "file_sha256": "d3d24bca23c00a0b7363b54d88b04eb2d6cbe5fd39605fd0c4c28ba191187b0b",
+      "keys": [
+        "last_raw_observation"
+      ],
+      "path": "gloves_1ms/starts/74000.json",
+      "run": "v8"
+    },
+    {
+      "file_sha256": "6e111cc27f787d37f33a3ac85dcbd042ceb26213241dff1353104b15e55c04e0",
+      "keys": [
+        "snapshot",
+        "last_raw_observation"
+      ],
+      "path": "gloves_1ms/replay.json",
+      "run": "v8"
+    },
+    {
+      "file_sha256": "6e111cc27f787d37f33a3ac85dcbd042ceb26213241dff1353104b15e55c04e0",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ],
+      "path": "gloves_1ms/replay.json",
+      "run": "v8"
+    },
+    {
+      "file_sha256": "b779a9e7c8401dca8d0e71c8a0ef50ff08a71a50816bfd839ad919436bb6d164",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ],
+      "path": "native_2ms/replay.json",
+      "run": "v7"
+    },
+    {
+      "file_sha256": "5f426487404f0e78eaab92ed1a4edefba342f4f479c530007e9bac480b3226ef",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ],
+      "path": "gloves_1ms/replay.json",
+      "run": "v7"
+    }
+  ],
+  "physics_steps": 0,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "protocol_sha256": "2386db6977460ed338770839bc66ddb64ecd028286a0794a6d1485a9a17e8040",
+  "python": "3.12.3",
+  "rss_units": "KiB on Linux, bytes on macOS",
+  "schema": "joxing-run-v1",
+  "scope": "Isolated actual frozen actor normalization+CPU inference; no physics/IPC/referee/optimizer/games",
+  "script_sha256": "4d457c5cc52942415c43e4ccb14649fa6d7ce94b740d37d7d83624b9ab5366b9",
+  "source_hash": "6e2579711ac7806777db42c83971b028fd1046f2f2fffa13792bd978601bc8a7",
+  "startup_s": 9.074952313676476,
+  "status": "halted",
+  "threads": 1,
+  "torch": "2.10.0+cpu",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/joxing/v009-20261026/scripts/benchmark_inference.py\", line 151, in run\n    raise RuntimeError(\"Registered scalar/batched action parity failed\")\nRuntimeError: Registered scalar/batched action parity failed\n",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T23:41:39.087796+00:00",
+  "wall_s": 9.65849761851132
+}

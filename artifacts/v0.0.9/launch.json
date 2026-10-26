@@ -1,0 +1,20 @@
+{
+  "source_commit": "6a32a1dc872c0cfcf03eea4ce4990355231d155c",
+  "cwd": "/home/ubuntu/joxing/v009-20261026",
+  "wrapper_pid": 1595614,
+  "command": [
+    "python3",
+    "/home/ubuntu/joxing/v009-20261026/runs/v0.0.9/supervise.py"
+  ],
+  "capacity": {
+    "load": [
+      3.556640625,
+      3.74462890625,
+      4.314453125
+    ],
+    "available_memory_bytes": 45208944640,
+    "disk_free_bytes": 340964188160,
+    "other_owned_jobs": []
+  },
+  "physics_steps": 0
+}

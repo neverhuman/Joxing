@@ -22,7 +22,7 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 | v0.0.6 | Completed frozen upstream qualification:40/40 native completions, exact Linux replay,80 tests pass; no new training/boxing claim | [Results](V0.0.6_RESULTS.md), [experiment book](../experiments/v0.0.6/README.md), [evidence](../artifacts/v0.0.6/) |
 | v0.0.7 | Transfer mapping/exact replay pass; all 80 long tracking attempts valid but 0/20 completions per condition; 99 Linux tests pass | [Results](V0.0.7_RESULTS.md), [book](../experiments/v0.0.7/README.md), [evidence](../artifacts/v0.0.7/) |
 | v0.0.8 | All40 valid physical attempts fail20s gate; all12 replays exact;127 Mac/Linux tests pass | [Results](V0.0.8_RESULTS.md), [book](../experiments/v0.0.8/README.md), [contract](PHYSICAL_MOTOR.md) |
-| v0.0.9 | Next mission: measured HPC, CPU scaling and batched inference | [Mission](V0.0.9_MISSION.md), [full self-play/HPC route](SELF_PLAY_HPC_PLAN.md), [supervisor](MISSION.md) |
+| v0.0.9 | In progress: H0 batch2 parity gate failed; numerical/full-loop profiling next | [Mission](V0.0.9_MISSION.md), [next packet](V0.0.9_H0_NUMERICS.md), [full self-play/HPC route](SELF_PLAY_HPC_PLAN.md) |
 | Later milestones | Proposed; unimplemented | [Master implementation gates](IMPLEMENTATION.md) |
 
 ## Game, physics and compute

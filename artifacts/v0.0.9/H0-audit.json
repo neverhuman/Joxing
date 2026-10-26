@@ -1,0 +1,22 @@
+{
+  "scope": "Independent H0 case/sample/parity accounting; no simulation or timing rerun",
+  "passed": true,
+  "backend_qualified": false,
+  "case_counts": {
+    "completed": 3,
+    "invalid": 1,
+    "incomplete": 0,
+    "not_run": 28
+  },
+  "max_action_error": 7.152557373046875e-06,
+  "registered_action_limit": 1e-06,
+  "observations_shape": [
+    8,
+    3601
+  ],
+  "physics_steps": 0,
+  "boxing_games": 0,
+  "wall_s": 9.65849761851132,
+  "max_rss_KiB": 808396,
+  "reason": "Scalar/batched qualification failed; preserve the gate and investigate numerics before claiming a batching speedup."
+}
