@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-26T21:46:16.318113+00:00",
+  "host": "xbabe1",
+  "source_checkout": "/home/ubuntu/joxing/v006-20261026",
+  "frozen_source_commit": "97565e90012b59bb16db8c45e4aa7f095a905c3c",
+  "report_script": "runs/v0.0.6/report_final.py",
+  "report_script_sha256": "1ac2fff56ea6ff36e892518a5b5cbdc204cc8c7ae3307c5a24c35d2940b13937",
+  "command": [
+    "env",
+    "MUJOCO_GL=egl",
+    "OMP_NUM_THREADS=1",
+    "OPENBLAS_NUM_THREADS=1",
+    "MKL_NUM_THREADS=1",
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.6/runtime",
+    "python",
+    "runs/v0.0.6/report_final.py",
+    "--run",
+    "runs/v0.0.6/native-01",
+    "--out",
+    "runs/v0.0.6/report",
+    "--video"
+  ],
+  "scenario": 71000,
+  "modes": [
+    "serialized_default",
+    "scheduled_restored"
+  ],
+  "render_backend": "EGL rendering; CPU MuJoCo physics",
+  "display_only_repair": "Explicit640x360framebuffer after Gym resets it; original failure retained in development/render-failure.json. FFmpeg macroblock display resize440to448height.",
+  "replayed_physics_steps": 3520,
+  "preview_frame": 40,
+  "visually_inspected": "All-attempt figure and fixed scenario video frame show physical walking, no fall hidden by selection.",
+  "scope": "Recorded-action replay, native3.52simseconds; no optimization, gloves or boxing."
+}

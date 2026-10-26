@@ -1,8 +1,8 @@
 # Implementation and handoff plan
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current implemented iteration is v0.0.5: both controlled motor waves are complete; follow the [results](V0.0.5_RESULTS.md), [execution plan](V0.0.5_PLAN.md) and [training sequence](TRAINING.md). Motor and replicated-superiority gates failed. v0.0.3 was a [planning milestone](V0.0.3_PLAN.md), carried into v0.0.4's executable root/support/stance slice. The P0–P5 sections below describe the broader program; they are not all delivered by this release. [Documentation index](README.md).
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current implemented iteration is v0.0.6: [frozen upstream native qualification](V0.0.6_RESULTS.md) completed40/40 attempts with exact Linux replay and 80 passing tests. No new optimization or boxing competence is claimed. The prior [v0.0.5 results](V0.0.5_RESULTS.md) retain failed motor/replicated-superiority gates. The P0–P5 sections below describe the broader program; they are not all delivered. [Documentation index](README.md), [current mission](MISSION.md).
 
-The proposed [upstream motor-teacher transfer plan](UPSTREAM_MOTOR_TRANSFER_PLAN.md) refines the next P3 work with inspected checkpoint metadata and compatibility/load tests. It has not been executed.
+The [upstream motor-teacher roadmap](UPSTREAM_MOTOR_TRANSFER_PLAN.md) has completed its native loader/normalizer/replay qualification in v0.0.6. Next P3 work is the [v0.0.7 glove/timestep transfer mission](V0.0.7_MISSION.md), not yet implemented. Native walking does not satisfy stationary stance, guard, reach/return or competitive gates.
 
 ## Objective, scope and completion
 

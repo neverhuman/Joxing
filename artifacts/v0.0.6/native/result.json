@@ -1,0 +1,33 @@
+{
+  "all_attempts_completed": true,
+  "inputs_unchanged": true,
+  "invalid": 0,
+  "modes": {
+    "scheduled_restored": {
+      "completed": 20,
+      "horizon_completions": 20,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 3.519999999999834,
+      "not_run": 0,
+      "planned": 20,
+      "sampled_support_failure_episodes": 0
+    },
+    "serialized_default": {
+      "completed": 20,
+      "horizon_completions": 20,
+      "incomplete": 0,
+      "invalid": 0,
+      "mean_elapsed_sim_s": 3.519999999999834,
+      "not_run": 0,
+      "planned": 20,
+      "sampled_support_failure_episodes": 0
+    }
+  },
+  "native_task_completion_threshold_met": true,
+  "physics_steps": 70400,
+  "qualification_pending_replay_audit": true,
+  "scope": "Frozen native locomotion diagnostic; not Joxing stance, boxing, self-play or a training-improvement proof.",
+  "source_unchanged": true,
+  "wall_s": 77.22941365838051
+}

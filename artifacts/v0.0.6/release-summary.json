@@ -1,0 +1,154 @@
+{
+  "schema": "joxing-release-v0.0.6",
+  "utc": "2026-10-26T21:49:43.439349+00:00",
+  "version": "0.0.6",
+  "status": "completed_source_host_qualified",
+  "repository": "https://github.com/neverhuman/Joxing",
+  "preregister_commit": "75e9a18",
+  "execution_commit": "97565e90012b59bb16db8c45e4aa7f095a905c3c",
+  "source_sha256": "880ff9eecb52b4507ec1cd4e9b6cbb63eb5ffefd06dc36345bb2c54dea19211a",
+  "protocol_sha256": "cfea7b6cbbb31580d90ea26463512a756af03498a6251bce46d32e3038ac5554",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "native_qualification": {
+    "all_attempts_completed": true,
+    "inputs_unchanged": true,
+    "invalid": 0,
+    "modes": {
+      "scheduled_restored": {
+        "completed": 20,
+        "horizon_completions": 20,
+        "incomplete": 0,
+        "invalid": 0,
+        "mean_elapsed_sim_s": 3.519999999999834,
+        "not_run": 0,
+        "planned": 20,
+        "sampled_support_failure_episodes": 0
+      },
+      "serialized_default": {
+        "completed": 20,
+        "horizon_completions": 20,
+        "incomplete": 0,
+        "invalid": 0,
+        "mean_elapsed_sim_s": 3.519999999999834,
+        "not_run": 0,
+        "planned": 20,
+        "sampled_support_failure_episodes": 0
+      }
+    },
+    "native_task_completion_threshold_met": true,
+    "physics_steps": 70400,
+    "qualification_pending_replay_audit": true,
+    "scope": "Frozen native locomotion diagnostic; not Joxing stance, boxing, self-play or a training-improvement proof.",
+    "source_unchanged": true,
+    "wall_s": 77.22941365838051
+  },
+  "linux_replay": {
+    "passed": true,
+    "accounting_passed": true,
+    "findings": [
+      {
+        "done_matches": true,
+        "integration_state_max_error": 0.0,
+        "mode": "serialized_default",
+        "observation_max_error": 0.0,
+        "path": "recorded_actions",
+        "sampled_failure_matches": true,
+        "status": "completed"
+      },
+      {
+        "done_matches": true,
+        "integration_state_max_error": 0.0,
+        "mode": "serialized_default",
+        "observation_max_error": 0.0,
+        "path": "closed_loop",
+        "sampled_failure_matches": true,
+        "status": "completed"
+      },
+      {
+        "done_matches": true,
+        "integration_state_max_error": 0.0,
+        "mode": "serialized_default",
+        "observation_max_error": 0.0,
+        "path": "closed_loop_repeat",
+        "sampled_failure_matches": true,
+        "status": "completed"
+      },
+      {
+        "done_matches": true,
+        "integration_state_max_error": 0.0,
+        "mode": "scheduled_restored",
+        "observation_max_error": 0.0,
+        "path": "recorded_actions",
+        "sampled_failure_matches": true,
+        "status": "completed"
+      },
+      {
+        "done_matches": true,
+        "integration_state_max_error": 0.0,
+        "mode": "scheduled_restored",
+        "observation_max_error": 0.0,
+        "path": "closed_loop",
+        "sampled_failure_matches": true,
+        "status": "completed"
+      },
+      {
+        "done_matches": true,
+        "integration_state_max_error": 0.0,
+        "mode": "scheduled_restored",
+        "observation_max_error": 0.0,
+        "path": "closed_loop_repeat",
+        "sampled_failure_matches": true,
+        "status": "completed"
+      }
+    ],
+    "physics_steps": 9960
+  },
+  "loader": {
+    "canonical_actor_hash": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+    "default_layer_amplitude": null,
+    "default_load_omits_schedule": true,
+    "model_sha256": "0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829",
+    "normalizer_sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086",
+    "normalizer_stats_hash": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+    "probe_file_sha256": "8cb07b1037d392e42375187a54575e4f4638b4f27ddd267d1f1d872f71b092d5",
+    "probe_max_absolute_action_difference": 0.07440078258514404,
+    "probe_mean_absolute_action_difference": 0.03090282902121544,
+    "probe_shape": [
+      3,
+      3601
+    ],
+    "restored_amplitude": 0.075,
+    "restored_model_sha256": "b349d1e5b0267e68434ac264c964187e381eb22f4ac173f7f0e503da4d1d575f",
+    "roundtrip_max_action_error": 0.0
+  },
+  "mac_portability": "failed_compiled_contract_before_reference_replay",
+  "new_training_transitions": 0,
+  "new_optimization_updates": 0,
+  "tests": {
+    "mac_full": {
+      "passed": 80,
+      "wall_s": 64.41
+    },
+    "linux_full": {
+      "passed": 80,
+      "wall_s": 94.03
+    },
+    "mac_final_target": {
+      "passed": 8,
+      "wall_s": 8.45
+    }
+  },
+  "render_physics_steps": 3520,
+  "owned_jobs_exited": true,
+  "next_mission": "docs/V0.0.7_MISSION.md",
+  "next_mission_status": "ready_to_implement_not_executed",
+  "supervisor": {
+    "id": "advance-joxing-every-20-minutes",
+    "interval_minutes": 20,
+    "status": "ACTIVE"
+  },
+  "scope": "Frozen upstream native three-cycle walking diagnostic. Both modes20/20: no completion advantage established. No new learned improvement, stationary stance/guard, glove transfer, boxing, temporal opponent state or self-play claim."
+}

@@ -78,6 +78,10 @@ def video(run, out):
         task.restore(read(run / f"starts/{mode}-{seed}.json"))
         task.model.vis.quality.shadowsize = 2048
         task.model.vis.quality.offsamples = 4
+        # Gym's renderer constructor changes the framebuffer to its default480px.
+        # This display-only override does not alter native dynamics or snapshots.
+        task.model.vis.global_.offwidth = 640
+        task.model.vis.global_.offheight = 360
         renderer = mujoco.Renderer(task.model, height=360, width=640)
         cam = mujoco.MjvCamera()
         cam.type = mujoco.mjtCamera.mjCAMERA_TRACKING

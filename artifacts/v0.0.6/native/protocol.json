@@ -1,0 +1,104 @@
+{
+  "archive_sha256": "2b2f0f1007d530db76463e7d3d5fb309b52c7b2a53649920ddfd9cf8a6880c57",
+  "caps": {
+    "minimum_disk_bytes": 10737418240,
+    "minimum_memory_bytes": 4294967296,
+    "physics_steps": 1000000,
+    "raw_bytes": 1073741824,
+    "simulation_workers": 1,
+    "threads": 1,
+    "wall_s": 900
+  },
+  "criteria": {
+    "attempts_per_mode": 20,
+    "invalid_allowed": 0,
+    "native_teacher_diagnostic_min_horizon_completions_restored": 16,
+    "normalizer_immutable": true,
+    "reset_pairing_exact": true,
+    "same_host_replay_max_error": 1e-09
+  },
+  "description": "Preregistered frozen upstream motor qualification. No optimization, transfer, anatomy or reward changes. Twenty paired native starts compare released default decoder load with restored training-step schedule; all40attempts retained.",
+  "environment": {
+    "gait_cycles": 3,
+    "kinematic_play": false,
+    "qpos_diff_th": 0.06,
+    "random_init": true,
+    "reset_noise_scale": 0.001,
+    "reward_dict": {
+      "w_energy": 0.1,
+      "w_healthy": 100,
+      "w_pelvis": 100,
+      "w_qpos": 50,
+      "w_xpos": 50
+    },
+    "skip_frames": 10
+  },
+  "expected": {
+    "control_dt_s": 0.02,
+    "groups": 138,
+    "na": 700,
+    "nq": 85,
+    "nu": 700,
+    "nv": 85,
+    "observation": 3601,
+    "physics_dt_s": 0.002,
+    "scheduled_amplitude": 0.075
+  },
+  "experiments": [
+    {
+      "description": "Verify archive/source/assets/interfaces, reproduce decoder load amplitude, normalize frozen observations, test explicit amplitude save/load and alias restoration.",
+      "hypothesis": "Default loading omits scheduled decoder amplitude; explicit restoration is reproducible.",
+      "id": "L0"
+    },
+    {
+      "description": "Forty deterministic native task evaluations on20paired seeds,20default and20restored, no training or action filtering. Native time horizon and task health remain upstream criteria; post-control support telemetry is diagnostic only.",
+      "hypothesis": "The restored frozen upstream controller can complete at least16/20native three-cycle tasks without numerical invalidity.",
+      "id": "N0"
+    },
+    {
+      "description": "First seed71000both modes: full engine/application/observation/normalizer snapshot, recorded-action and closed-loop continuation; first-scenario video after evaluation.",
+      "hypothesis": "Restoring controller inputs and native state reproduces the continuation on the source host.",
+      "id": "R0"
+    }
+  ],
+  "modes": [
+    "serialized_default",
+    "scheduled_restored"
+  ],
+  "replay_control_step": 10,
+  "replay_seed": 71000,
+  "runtime": {
+    "gymnasium": "1.2.3",
+    "mujoco": "3.8.0",
+    "numpy": "2.4.2",
+    "stable-baselines3": "2.7.1",
+    "torch": "2.10.0"
+  },
+  "schema": "joxing-upstream-motor-0.0.6",
+  "seeds": [
+    71000,
+    71001,
+    71002,
+    71003,
+    71004,
+    71005,
+    71006,
+    71007,
+    71008,
+    71009,
+    71010,
+    71011,
+    71012,
+    71013,
+    71014,
+    71015,
+    71016,
+    71017,
+    71018,
+    71019
+  ],
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  }
+}

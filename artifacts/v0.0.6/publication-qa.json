@@ -1,0 +1,9 @@
+{
+  "ruff": "passed: uvx ruff check src scripts tests",
+  "whitespace": "Code/docs check passes. Staged raw upstream inputs/config.json contains two original trailing spaces (lines28/31); retained byte-for-byte to preserve release/source hashes. git diff --cached --check excludes exactly that immutable raw file.",
+  "local_markdown_targets_checked": 159,
+  "missing_targets": [],
+  "report_script_matches_executed_source_host_copy": true,
+  "tests": "Existing full80Mac/Linux and final8target logs retained; only display-only report script changed after tests, actual repaired rendering succeeded.",
+  "scope": "Publication QA; scientific raw results are immutable."
+}

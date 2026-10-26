@@ -1,0 +1,86 @@
+{
+  "accounting_passed": true,
+  "attempts": 40,
+  "audit_physics_steps": 9960,
+  "auditor_sha256": "1da98b22e76c6c548ad1c10c655354ea8d663cce0a2909a4bf9e826178c62c20",
+  "code_commit": "97565e90012b59bb16db8c45e4aa7f095a905c3c",
+  "findings": [
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "mode": "serialized_default",
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "sampled_failure_matches": true,
+      "status": "completed"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "mode": "serialized_default",
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "sampled_failure_matches": true,
+      "status": "completed"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "mode": "serialized_default",
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "sampled_failure_matches": true,
+      "status": "completed"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "mode": "scheduled_restored",
+      "observation_max_error": 0.0,
+      "path": "recorded_actions",
+      "sampled_failure_matches": true,
+      "status": "completed"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "mode": "scheduled_restored",
+      "observation_max_error": 0.0,
+      "path": "closed_loop",
+      "sampled_failure_matches": true,
+      "status": "completed"
+    },
+    {
+      "done_matches": true,
+      "integration_state_max_error": 0.0,
+      "mode": "scheduled_restored",
+      "observation_max_error": 0.0,
+      "path": "closed_loop_repeat",
+      "sampled_failure_matches": true,
+      "status": "completed"
+    }
+  ],
+  "host": "xbabe1",
+  "invalid": 0,
+  "mujoco": "3.8.0",
+  "native_task_completion_threshold_met": true,
+  "native_teacher_diagnostic_passed": true,
+  "normalizer_unchanged": true,
+  "numpy": "2.4.2",
+  "passed": true,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "recomputed_physics_steps": 70400,
+  "reference_replay_passed": true,
+  "run_protocol_hash": "cfea7b6cbbb31580d90ea26463512a756af03498a6251bce46d32e3038ac5554",
+  "schema": "joxing-run-v1",
+  "scope": "Source-host qualification requires strict replay; native locomotion is separate from Joxing stance/boxing.",
+  "source_hash": "880ff9eecb52b4507ec1cd4e9b6cbb63eb5ffefd06dc36345bb2c54dea19211a",
+  "source_host": "xbabe1",
+  "source_run_commit": "97565e90012b59bb16db8c45e4aa7f095a905c3c",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T21:33:47.742919+00:00"
+}

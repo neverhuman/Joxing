@@ -1,16 +1,16 @@
 # Training sequence and test gates
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. **Current implemented iteration: v0.0.5; both waves are complete.** It extends v0.0.4’s native-gravity feedback platform with controlled objective/throughput experiments. The paragraph below and later formal targets preserve the earlier pilot context. Read the [v0.0.4 execution plan](V0.0.4_PLAN.md) for exact delivered scope and [STATUS.md](STATUS.md) for measurements. The [historical v0.0.3 plan](V0.0.3_PLAN.md) and later stages below describe the larger formal motor proof, which remains gated.
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. **Current implemented iteration: v0.0.6, completed native upstream controller qualification.** Forty native walking attempts completed with exact source-host replay, zero invalids and zero new training. Read [v0.0.6 results/reproduction](V0.0.6_RESULTS.md), [current mission/supervision](MISSION.md) and the ready [v0.0.7 transfer mission](V0.0.7_MISSION.md). The earlier motor training and formal targets below remain preserved and gated; native walking does not pass them.
 
 **Historical v0.0.4 outcome:** the pilot stopped at 39,040 transitions under its wall cap. All 64 development evaluations completed with zero invalids; mean survival changed 1.018 -> 1.023 seconds, with an interval including zero. Five-second survivors were 0/32, so the larger proof remains blocked. See [full results](V0.0.4_RESULTS.md). The v0.0.5 controlled wave below addresses those throughput/objective questions; its motor result still blocks the formal budget.
 
-**Latest outcome:** 1.44 million training transitions and 912 new evaluations, zero invalids. Candidate B improved versus its initial policy on both fresh seeds but lost to A on seed 983, so registered superiority did not replicate. Every final policy had 0/32 five-second survivors. The formal proof remains gated. All owned jobs exited; [complete v0.0.5 results](V0.0.5_RESULTS.md).
+**Prior v0.0.5 training outcome:** 1.44 million training transitions and 912 new evaluations, zero invalids. Candidate B improved versus its initial policy on both fresh seeds but lost to A on seed 983, so registered superiority did not replicate. Every final policy had 0/32 five-second survivors. The formal proof remains gated. All owned jobs exited; [complete v0.0.5 results](V0.0.5_RESULTS.md).
 
 ## v0.0.5 controlled motor wave
 
 The [v0.0.5 plan](V0.0.5_PLAN.md) and [experiment book](../experiments/v0.0.5/README.md) replace another undirected pilot with a registered experiment: constant muscle controls, real optimizer profiling, a matched reward-scale/temperature factorial and conditional fresh-seed confirmation. [Results](V0.0.5_RESULTS.md) retain all outcomes and the reason each conditional run did or did not execute. The earlier formal stance/recovery targets below remain gated.
 
-All four screen arms use the same seed149, initial actor, 128×128 network, batch64, 2,000-transition warmup and one optimizer update per four transitions. Temperature is auto or0.0001; reward multiplier is1 or1000. Each run ends at40,000transitions or900seconds. Raw physical survival on32paired starts is the common outcome. Altering training reward units does not alter boxing points or physics.
+All four screen arms use the same seed 149, initial actor, 128×128 network, batch64, 2,000-transition warmup and one optimizer update per four transitions. Temperature is auto or0.0001; reward multiplier is1 or1000. Each run ends at 40,000 transitions or900 seconds. Raw physical survival on32 paired starts is the common outcome. Altering training reward units does not alter boxing points or physics.
 
 Replication requires a complete valid screen, at least0.25s gain over the selected actor’s initial policy and, for a non-reference selection, at least0.10s over reference A. Confirmation uses fresh seeds263/431 and unseen reset IDs61000–61031, opened only after final actors are frozen. Scenario bootstrap intervals do not capture uncertainty across training seeds. The unchanged five-second continuation gate still requires16/32 survivors, zero invalids; it does not establish the full motor proof.
 
@@ -37,7 +37,7 @@ uv run python scripts/report_wave.py --run runs/v0.0.5/reproduction-extension --
 
 The extension intentionally inherits a four-hour deadline from the parent's provenance timestamp. Using the archived October 26 parent for a new training run after that deadline fails with `Combined wall cap already reached`; do not edit the old timestamp to bypass it. Offline verification/reporting against archived evidence remains valid. Both runner directories must be fresh and their executing source stays frozen. The released evidence retains the original source commits; a reproduction from another source revision records its own provenance.
 
-The [state/history audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) explains the difference between present feedback and the missing temporal opponent/game loop. The [upstream motor-transfer plan](UPSTREAM_MOTOR_TRANSFER_PLAN.md) is proposed development work, not an additional completed trial or a new self-play command.
+The [state/history audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) explains the difference between present feedback and the missing temporal opponent/game loop. The [upstream motor-transfer roadmap](UPSTREAM_MOTOR_TRANSFER_PLAN.md) now has completed native qualification; equipment/stance/reach transfer is still proposed. The teacher has3,601 features and 50 Hzcontrol and cannot be substituted into the1,023feature100 Hzstance rig. No self-play command exists.
 
 ## What the next proof establishes
 

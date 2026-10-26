@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.6 — 2026-10-26
+
+- Qualify the frozen upstream DynSyn-SAC walking controller on40 paired native attempts:40 horizon completions, zero invalid/incomplete/not_run; no optimization.
+- Reproduce decoder schedule loss on checkpoint load; restore the scheduled0.075 attribute, preserve immutable normalization and prove corrected save/load predictions match exactly.
+- Add native full-state/reference/RNG/cached-observation snapshots and independent source-host fixed-action/closed-loop replay: zero errors on both modes.
+- Pass80 tests on Mac/Linux in a separate locked checkpoint-compatible runtime. Preserve failed Mac compiled-contract portability and every deployment/test/render failure.
+- Publish all attempts, traces, hashes, audits, plot/video and owned PID exit. Schedule active20-minute health/mission supervision and register the next bounded glove/timestep transfer mission.
+
+See [results](docs/V0.0.6_RESULTS.md), [experiment book](experiments/v0.0.6/README.md), [evidence](artifacts/v0.0.6/) and [next mission](docs/V0.0.7_MISSION.md).
+
 ## v0.0.5 — 2026-10-26
 
 - Add preregistered constant-control, real-optimizer profiling and matched reward/entropy SAC experiments, then a separately authorized fourfold-budget extension with 16 simulation workers across four learners.

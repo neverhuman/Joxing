@@ -1,0 +1,35 @@
+{
+  "accounting_checks_before_failure": "All40rows, summaries, pairing, action dimensions/range, physics totals, actor and normalizer hashes passed before the strict contract assertion.",
+  "code_commit": "054f228e84c7ec27fca2bc45a0ceab04931cf2db",
+  "compiled_contract_differences": {
+    "body_inertia": {
+      "max_absolute_error": 9.75781955236954e-19,
+      "shape": [
+        81,
+        3
+      ]
+    },
+    "body_mass": {
+      "max_absolute_error": 5.551115123125783e-17,
+      "shape": [
+        81
+      ]
+    }
+  },
+  "error": "Strict compiled native contract differs from Linux specification; original auditor assertion preserved.",
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.4.2",
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "python": "3.12.12",
+  "reference_replay": "not_run because contract gate failed; no hash/tolerance relaxed.",
+  "schema": "joxing-run-v1",
+  "scope": "Mac portability remains unqualified. Linux source-host audit separately passes exact replay and native task qualification.",
+  "source_hash": "880ff9eecb52b4507ec1cd4e9b6cbb63eb5ffefd06dc36345bb2c54dea19211a",
+  "status": "failed_before_reference_replay",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T21:39:45.199474+00:00"
+}

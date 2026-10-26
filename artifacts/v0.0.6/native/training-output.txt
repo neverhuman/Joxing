@@ -1,0 +1,36 @@
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+{
+  "modes": {
+    "serialized_default": {
+      "planned": 20,
+      "completed": 20,
+      "invalid": 0,
+      "not_run": 0,
+      "incomplete": 0,
+      "horizon_completions": 20,
+      "mean_elapsed_sim_s": 3.519999999999834,
+      "sampled_support_failure_episodes": 0
+    },
+    "scheduled_restored": {
+      "planned": 20,
+      "completed": 20,
+      "invalid": 0,
+      "not_run": 0,
+      "incomplete": 0,
+      "horizon_completions": 20,
+      "mean_elapsed_sim_s": 3.519999999999834,
+      "sampled_support_failure_episodes": 0
+    }
+  },
+  "all_attempts_completed": true,
+  "invalid": 0,
+  "native_task_completion_threshold_met": true,
+  "scope": "Frozen native locomotion diagnostic; not Joxing stance, boxing, self-play or a training-improvement proof.",
+  "physics_steps": 70400,
+  "wall_s": 77.22941365838051,
+  "source_unchanged": true,
+  "inputs_unchanged": true,
+  "qualification_pending_replay_audit": true
+}

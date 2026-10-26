@@ -4,11 +4,13 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**v0.0.6 is running:** [native motor-controller qualification](docs/V0.0.6_PLAN.md), with [current mission and 20-minute supervision](docs/MISSION.md). The loader/normalizer/replay platform passes 80 Mac/Linux tests; formal motor outcomes are pending.
+**Latest release: v0.0.6.** The frozen upstream muscle controller completed **40/40 native walking trials, zero invalids**, with exact Linux closed-loop replay and 80 passing Mac/Linux tests. We reproduced and repaired lost decoder schedule state on checkpoint loading. Both default/restored modes finished 20/20; no performance advantage or new training improvement is claimed. [Results](docs/V0.0.6_RESULTS.md) · [Experiment book](experiments/v0.0.6/README.md) · [Walking replay](artifacts/v0.0.6/native/native-controller.mp4).
 
-**Latest release: v0.0.5.** Both controlled motor waves are complete: **1.44 million training transitions, 912 new evaluation attempts, zero invalids; 72 tests pass on Mac and Linux.** The larger-budget candidate improved over its initial policy on two fresh seeds, but beat reference A on only one. Registered replicated superiority and the five-second motor gate failed: every final policy had **0/32 five-second survivors**. All experiments, negative results, actor bundles, histories and audits are in Git. [Results](docs/V0.0.5_RESULTS.md) · [Experiment book](experiments/v0.0.5/README.md) · [Source-host replay](artifacts/v0.0.5/extension/wave-before-after-linux.mp4).
+**Continuing every 20 minutes:** the active supervisor checks real progress/faults, audits finished work, and advances the [current mission](docs/MISSION.md). The next bounded mission is [v0.0.7: longer motion and observation-correct glove/timestep transfer](docs/V0.0.7_MISSION.md), ready to implement. It retains all 700 muscles and existing game/motor gates.
 
-The [state/history code audit](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md) addresses opponent motion, temporal memory, responsive muscles and jitter. Current SAC observes its own velocity/activation and changes muscle commands at 100 Hz **simulated time**. Opponent observations, recurrent acting memory, a connected match referee and self-play league remain missing. The [next motor-teacher plan](docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md) qualifies the released upstream controller before a new transfer experiment.
+**Prior training result, v0.0.5:** 1.44 million transitions and 912 new evaluations, zero invalids. Candidate B improved against its initial policy on two fresh seeds but lost to reference A on one. Replicated superiority and the five-second motor gate failed; every final policy had 0/32 five-second survivors. [Results](docs/V0.0.5_RESULTS.md).
+
+The [state/history code audit](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md) addresses opponent motion, temporal memory, responsive muscles and jitter. Current SAC observes its own velocity/activation and changes muscle commands at 100 Hz **simulated time**. Opponent observations, recurrent acting memory, a connected match referee and self-play league remain missing. The [motor-teacher roadmap](docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md) now has native qualification evidence; glove and stationary/reach transfer remain next work.
 
 **Current stage: executable foundation, not trained autonomous boxing.** The project preserves 700 muscles per actor, defines an auditable points game, tests contact accounting and anti-farming scoring, and includes a small constrained motor-learning experiment. Full-body stance, punching, self-play and GPU physics remain gated work.
 
@@ -109,6 +111,8 @@ On xbabe1, four CPU workers completed 384 CEM muscle-reach training episodes in 
 
 ![Measured reach learning](artifacts/reach-learning.png)
 
-[Before/after replay](artifacts/reach-before-after.mp4) · [Run receipt](artifacts/receipts/reach-seed7.json) · [Results and limitations](docs/RESULTS.md)
+[Before/after replay](artifacts/reach-before-after.mp4) · [Run receipt](artifacts/receipts/reach-seed 7.json) · [Results and limitations](docs/RESULTS.md)
+
+Native teacher reproduction uses the separate locked runtime and commands in the [v0.0.6 results](docs/V0.0.6_RESULTS.md#reproduce-the-bounded-native-qualification); its 3,601 feature interface differs from the stance rig. Mac native compiled-contract portability remains unqualified.
 
 Joxing code is Apache-2.0. Upstream submodules retain their licenses. Supplied engineering documents under `docs/references` retain their original authorship; their inclusion is project reference material, not a separate license grant for third-party datasets. No additional motion-capture corpus is bundled by Joxing; the pinned msgym submodule includes its upstream sample trajectory, whose provenance must be checked before teacher transfer.
