@@ -1,0 +1,27 @@
+{
+  "backend_qualified": false,
+  "completed": 2,
+  "findings": [
+    {
+      "first_divergent_module": "latent_pi.0#0",
+      "max_action_error": 7.152557373046875e-06,
+      "old_h0_gate_met": false,
+      "variant": "default_float32"
+    },
+    {
+      "first_divergent_module": "latent_pi.0#0",
+      "max_action_error": 7.152557373046875e-06,
+      "old_h0_gate_met": false,
+      "variant": "mkldnn_disabled_float32"
+    }
+  ],
+  "incomplete": 0,
+  "invalid": 0,
+  "not_run": 0,
+  "passed": true,
+  "physics_steps": 0,
+  "protocol_sha256": "1e5ddb681c9d05b594ff79714a64e575386ce95e19016524d05fc5f32ee9f00e",
+  "result_sha256": "cdeaca9ce1486e0617d53ad3e93bd86e143b44f9ea0624cc5cd6204a74ee0d42",
+  "scope": "Independent saved-array/hash/accounting audit; not another actor run or backend qualification.",
+  "source_commit": "615c02a3641069e5820f16b88afd03f5545866d8"
+}

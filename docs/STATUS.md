@@ -275,3 +275,9 @@ Retained raw inputs/fault arrays/timings, source/protocol hashes, launch/supervi
 ### v9 N1 preregistration —2026-10-26
 
 Numerical localization implemented as a standalone script with two frozen float32 variants (default/MKLDNN disabled), exact saved-fault reproduction, output-preserving hooks and unchanged actor/normalizer checks.11 targeted Mac tests pass; initial import-order lint corrected. Source/protocol will be pushed before Linux outcomes. Caps120s/64MiB/zero physics, one thread. No rollout source changed, no H0 tolerance relaxation or batching win. H1 full-loop profiler remains next independent implementation.
+
+### v9 N1 complete; H1 source/protocol preregistered —2026-10-26
+
+N1 source615c02a:2/2completed diagnostic rows,0physics/8.219s,11Linux tests, independent saved-array/hash audit passes. First divergence is first MLP linear `latent_pi.0`; identical normalization/features, same7.152557373046875e-6 action error with/without MKLDNN. Hooks output-preserving, model/normalizer unchanged; neither backend passes H0. All owned PIDs exited, no source diff. Evidence/artifact manifest in artifacts/v0.0.9/N1. No low-level kernel-cause claim.
+
+H1 complete scalar physical pipeline profiler implemented/preregistered:6paired cases/3development seeds/300controls each, strict state/features/actions/telemetry equality, CPU1thread/native2ms/all700. Caps180s/30kphysics/128MiB,1simulation worker+zero-physics IPC helper. Separate startup/reset/RSS/cProfile attribution/serialization/disk and diagnostic IPC; no actor-service or game-throughput claim.15targeted Mac tests and Ruff pass; source push precedes physical outcomes. Next: fresh shared capacity scan, dedicated checkout, Linux tests, bounded H1 run, independent paired-array audit and choose one measured bottleneck for H2/H3.

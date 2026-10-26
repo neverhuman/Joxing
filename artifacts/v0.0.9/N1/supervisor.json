@@ -1,0 +1,67 @@
+{
+  "pid": 1690329,
+  "source_commit": "615c02a3641069e5820f16b88afd03f5545866d8",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 1690331,
+      "returncode": 0,
+      "wall_s": 1.0664005801081657
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "tests/test_inference.py",
+        "tests/test_inference_numerics.py"
+      ],
+      "status": "completed",
+      "pid": 1690483,
+      "returncode": 0,
+      "wall_s": 3.7204529494047165
+    },
+    {
+      "stage": "N1",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "python",
+        "scripts/diagnose_inference_numerics.py",
+        "--protocol",
+        "experiments/v0.0.9/numerics-protocol.json",
+        "--inputs",
+        "/home/ubuntu/joxing/v008-20261026/runs/v0.0.8/physical-01/inputs",
+        "--fault",
+        "artifacts/v0.0.9/H0/parity-fault.npz",
+        "--out",
+        "runs/v0.0.9/numerics-01"
+      ],
+      "status": "completed",
+      "pid": 1690597,
+      "returncode": 0,
+      "wall_s": 9.481406042352319
+    }
+  ],
+  "started_utc": "2026-10-26T23:53:21.549499+00:00",
+  "physics_budget": 0,
+  "threads": 1,
+  "finished_utc": "2026-10-26T23:53:35.820950+00:00"
+}
