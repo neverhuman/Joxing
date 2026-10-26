@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-26T23:39:32.520659+00:00",
+  "repository": {
+    "isPrivate": false,
+    "url": "https://github.com/neverhuman/Joxing",
+    "visibility": "PUBLIC"
+  },
+  "tag": "v0.0.8",
+  "tag_commit": "f30fa4a68372d36db9d5c8341ae0e69bf68b62ec",
+  "remote_tag_matches": true,
+  "anonymous_tagged_reads": [
+    {
+      "path": "README.md",
+      "status": 200,
+      "sha256": "7653bfd6ed743f9abfefe41527b90dc360e18e853ff11e3df83397bb3bb43bd7"
+    },
+    {
+      "path": "docs/V0.0.8_RESULTS.md",
+      "status": 200,
+      "sha256": "4d11b29e1c1e5d85beaee9e873368aab388ac8b943d17050eb642ce78477a6f2"
+    },
+    {
+      "path": "docs/SELF_PLAY_HPC_PLAN.md",
+      "status": 200,
+      "sha256": "8a565dde772a0111148dc4a2b3eecbe788720c69be1d4c49b2dbb393d31c3437"
+    },
+    {
+      "path": "artifacts/v0.0.8/release-summary.json",
+      "status": 200,
+      "sha256": "fb6bf27acbdd18a43954c789adde2020413656963b9ebbc7f16c25e358978ba8"
+    }
+  ],
+  "anonymous_archive": {
+    "status": 200,
+    "bytes": 47279704,
+    "sha256": "5b5dbacf4f113f04551616eb4c2498bd5357c86fc49f340981ba4a440a5b60ab",
+    "url": "https://github.com/neverhuman/Joxing/releases/download/v0.0.8/joxing-v0.0.8-raw.tar.gz"
+  }
+}

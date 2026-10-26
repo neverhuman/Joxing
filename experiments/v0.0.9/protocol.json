@@ -1,0 +1,100 @@
+{
+  "schema": "joxing-hpc-h0-0.0.9",
+  "scope": "Isolated actual frozen actor normalization+CPU inference; no physics/IPC/referee/optimizer/games",
+  "observation_sources": [
+    {
+      "run": "v8",
+      "path": "native_2ms/starts/74000.json",
+      "keys": [
+        "last_raw_observation"
+      ]
+    },
+    {
+      "run": "v8",
+      "path": "native_2ms/replay.json",
+      "keys": [
+        "snapshot",
+        "last_raw_observation"
+      ]
+    },
+    {
+      "run": "v8",
+      "path": "native_2ms/replay.json",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ]
+    },
+    {
+      "run": "v8",
+      "path": "gloves_1ms/starts/74000.json",
+      "keys": [
+        "last_raw_observation"
+      ]
+    },
+    {
+      "run": "v8",
+      "path": "gloves_1ms/replay.json",
+      "keys": [
+        "snapshot",
+        "last_raw_observation"
+      ]
+    },
+    {
+      "run": "v8",
+      "path": "gloves_1ms/replay.json",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ]
+    },
+    {
+      "run": "v7",
+      "path": "native_2ms/replay.json",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ]
+    },
+    {
+      "run": "v7",
+      "path": "gloves_1ms/replay.json",
+      "keys": [
+        "final_snapshot",
+        "last_raw_observation"
+      ]
+    }
+  ],
+  "batches": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "modes": [
+    "scalar",
+    "batched"
+  ],
+  "repeats": 2,
+  "warmup_calls": 3,
+  "timed_calls": 20,
+  "action_max_error": 1e-06,
+  "self_repeat_exact": true,
+  "dtype": "float32",
+  "threads": 1,
+  "caps": {
+    "wall_s": 120,
+    "raw_bytes": 67108864,
+    "physics_steps": 0,
+    "minimum_memory_bytes": 8589934592,
+    "minimum_disk_bytes": 10737418240
+  },
+  "v8_audit_sha256": "16194c75e76b48d2b612fb3c111ae937e66be8ea982dfe040022374678c7a5f3",
+  "normalizer_sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086",
+  "decoder_amplitude": 0.075,
+  "stop_on_first_fault": true
+}

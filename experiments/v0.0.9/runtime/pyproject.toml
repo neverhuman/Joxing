@@ -1,0 +1,24 @@
+[project]
+name = "joxing-hpc-runtime"
+version = "0.0.9"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "joxing",
+  "mujoco==3.8.0",
+  "numpy==2.4.2",
+  "gymnasium==1.2.3",
+  "stable-baselines3==2.7.1",
+  "torch==2.10.0",
+  "pytest>=8,<10",
+  "imageio>=2.36",
+  "imageio-ffmpeg>=0.6",
+]
+
+[tool.uv.sources]
+joxing = {path = "../../..", editable = true}
+torch = [{index = "pytorch-cpu", marker = "sys_platform == 'linux'"}]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
