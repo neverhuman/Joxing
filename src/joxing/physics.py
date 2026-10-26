@@ -18,15 +18,19 @@ class Contact:
     normal_force_N: float
     approach_mps: float
     penetration_m: float
+    velocity1_at_contact: np.ndarray
+    velocity2_at_contact: np.ndarray
 
 
-def point_velocity(model, data, body_id, point):
+def point_velocity(model, data, body_id, point, qvel=None):
     jacp, jacr = np.zeros((3, model.nv)), np.zeros((3, model.nv))
     mujoco.mj_jac(model, data, jacp, jacr, point, body_id)
-    return jacp @ data.qvel
+    return jacp @ (data.qvel if qvel is None else qvel)
 
 
-def step_contacts(model, data) -> list[Contact]:
+def step_contacts(
+    model, data, include_geom_ids: set[int] | None = None
+) -> list[Contact]:
     """Controls already held. Save geometry/velocities before solve, wrenches after."""
     if model.opt.integrator not in (
         mujoco.mjtIntegrator.mjINT_EULER,
@@ -36,19 +40,29 @@ def step_contacts(model, data) -> list[Contact]:
     time_before = data.time
     warning_before = np.array([w.number for w in data.warning])
     mujoco.mj_step1(model, data)
+    count_before = data.ncon
     pre = []
-    for c in data.contact:
+    for slot, c in enumerate(data.contact):
+        if (
+            include_geom_ids is not None
+            and c.geom1 not in include_geom_ids
+            and c.geom2 not in include_geom_ids
+        ):
+            continue
         point, normal = c.pos.copy(), c.frame[:3].copy()
         v1 = point_velocity(model, data, model.geom_bodyid[c.geom1], point)
         v2 = point_velocity(model, data, model.geom_bodyid[c.geom2], point)
         pre.append(
             (
+                slot,
                 int(c.geom1),
                 int(c.geom2),
                 point,
                 normal,
                 float(np.dot(v1 - v2, normal)),
                 float(c.dist),
+                v1.copy(),
+                v2.copy(),
             )
         )
     mujoco.mj_step2(model, data)
@@ -59,17 +73,17 @@ def step_contacts(model, data) -> list[Contact]:
         or np.any(np.array([w.number for w in data.warning]) > warning_before)
     ):
         raise RuntimeError("Invalid physics substep: quarantine episode")
-    if data.ncon != len(pre):
+    if data.ncon != count_before:
         raise RuntimeError("Contact staging identity changed")
     result = []
-    for i, (g1, g2, p, n, v, dist) in enumerate(pre):
-        c = data.contact[i]
+    for slot, g1, g2, p, n, v, dist, v1, v2 in pre:
+        c = data.contact[slot]
         if (c.geom1, c.geom2) != (g1, g2):
             raise RuntimeError("Contact staging order changed")
         if c.efc_address < 0:
             continue
         wrench = np.zeros(6)
-        mujoco.mj_contactForce(model, data, i, wrench)
+        mujoco.mj_contactForce(model, data, slot, wrench)
         if not np.isfinite(wrench).all():
             raise RuntimeError("Nonfinite contact wrench")
         result.append(
@@ -82,6 +96,8 @@ def step_contacts(model, data) -> list[Contact]:
                 max(0.0, float(wrench[0])),
                 v,
                 max(0.0, -dist),
+                v1,
+                v2,
             )
         )
     return result

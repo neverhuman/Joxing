@@ -85,6 +85,16 @@ def main():
     train.add_argument("--generations", type=int, default=16)
     train.add_argument("--population", type=int, default=24)
     train.add_argument("--seed", type=int, default=7)
+    for name in ("strike-pilot", "train-strike"):
+        strike = sub.add_parser(name)
+        strike.add_argument("--out", type=Path, required=True)
+        strike.add_argument("--workers", type=int, default=4)
+        strike.add_argument(
+            "--generations", type=int, default=8 if name == "strike-pilot" else 24
+        )
+        strike.add_argument(
+            "--population", type=int, default=16 if name == "strike-pilot" else 32
+        )
     render = sub.add_parser("render")
     render.add_argument(
         "--out", type=Path, default=Path("artifacts/generated/scene.png")
@@ -122,6 +132,19 @@ def main():
                 seed=args.seed,
             ),
             args.out,
+        )
+    elif args.command in ("strike-pilot", "train-strike"):
+        from .strike import train_strike_suite
+
+        pilot = args.command == "strike-pilot"
+        result = train_strike_suite(
+            args.out,
+            workers=args.workers,
+            generations=args.generations,
+            population=args.population,
+            seeds=(7,) if pilot else (7, 19, 41),
+            eval_count=8 if pilot else 64,
+            pilot=pilot,
         )
     else:
         import imageio.v3 as iio

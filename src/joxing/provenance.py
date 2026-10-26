@@ -80,4 +80,7 @@ def manifest() -> dict:
 
 def write_json(path: Path, value: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n")
+    encoded = json.dumps(value, indent=2, sort_keys=True, allow_nan=False) + "\n"
+    temporary = path.with_name(path.name + ".tmp")
+    temporary.write_text(encoded)
+    temporary.replace(path)
