@@ -107,6 +107,14 @@ def main():
         "accounting_passed": True,
         "evaluation_attempts": result["evaluation_attempts"],
         "policies": findings,
+        "same_host_restore_passed": all(
+            f["same_host_restore_max_error"] < 1e-9 for f in findings
+        ),
+        "cross_host_policy_parity_passed": all(
+            f["cross_host_integration_state_max_error"] < 1e-5
+            and f["outcome_tick_matches"]
+            for f in findings
+        ),
         "passed": all(x["passed"] for x in findings),
         "tolerances": {"same_host_state": 1e-9, "cross_host_closed_loop_state": 1e-5},
         "scope": "closed-loop development-policy continuation; does not prove unassisted motor competence",

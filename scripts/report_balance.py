@@ -87,7 +87,15 @@ def main():
     for checkpoint in ("initial", "final"):
         policy = SAC.load(args.run / f"{checkpoint}.zip", device="cpu")
         obs, _ = env.reset(options={"scenario_id": protocol["eval_ids"][0]})
-        states = [(env.data.qpos.copy(), env.data.time, 0.0, None)]
+        states = [
+            (
+                env.data.qpos.copy(),
+                env.data.time,
+                env.kinematics()[1],
+                None,
+                env.loads.copy(),
+            )
+        ]
         while not env.done:
             action, _ = policy.predict(obs, deterministic=True)
             obs, _, _, _, info = env.step(action)
@@ -97,6 +105,7 @@ def main():
                     env.data.time,
                     info["max_tilt_rad"],
                     info["reason"],
+                    env.loads.copy(),
                 )
             )
         recordings.append(states)
@@ -118,13 +127,13 @@ def main():
             frames = []
             for label, states in zip(("INITIAL", "TRAINED"), recordings):
                 index = min(tick, len(states) - 1)
-                qpos, time_s, tilt, reason = states[index]
+                qpos, time_s, tilt, reason, loads = states[index]
                 env.data.qpos[:] = qpos
                 mujoco.mj_forward(env.model, env.data)
                 renderer.update_scene(env.data, camera=camera, scene_option=option)
                 panel = Image.fromarray(renderer.render())
                 draw = ImageDraw.Draw(panel)
-                draw.rectangle((0, 0, 640, 72), fill=(15, 22, 34))
+                draw.rectangle((0, 0, 640, 89), fill=(15, 22, 34))
                 draw.text(
                     (12, 10),
                     f"{label} | scenario {protocol['eval_ids'][0]} | t={time_s:.2f}s",
@@ -140,6 +149,11 @@ def main():
                     f"Max pelvis tilt {np.rad2deg(tilt):.1f} deg | {reason or 'running'}"
                     + (" | ENDED, FRAME HELD" if tick >= len(states) else ""),
                     fill="#ffd58a",
+                )
+                draw.text(
+                    (12, 67),
+                    f"Foot support R {loads['right']:.0f} N / L {loads['left']:.0f} N | non-foot {loads['nonfoot']:.0f} N",
+                    fill="white",
                 )
                 frames.append(np.asarray(panel))
             writer.append_data(np.concatenate(frames, axis=1))
