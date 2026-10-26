@@ -1,0 +1,55 @@
+{
+  "checkpoint_model_pin": "c049488734dab9f44d67dde0836324b77ae2d07f",
+  "joxing_model_pin": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+  "model_diff": [
+    {
+      "path": "README.md",
+      "old": "82f365893982779e8f33ddb0d1c3d5d1068a850b",
+      "new": "f5d21838ba6ad06b07e3f8573c40964d724a412f"
+    }
+  ],
+  "physical_asset_changes": [],
+  "msgym_source_changes": [
+    {
+      "path": ".gitmodules",
+      "status": "modified"
+    },
+    {
+      "path": "DynSyn-SAC/configs/locomotionFull_100.json",
+      "status": "modified"
+    },
+    {
+      "path": "MS-Human-700",
+      "status": "removed"
+    },
+    {
+      "path": "README.md",
+      "status": "modified"
+    },
+    {
+      "path": "msgym/MS-Human-700",
+      "status": "added"
+    },
+    {
+      "path": "msgym/envs/locomotionFull_v1.py",
+      "status": "modified"
+    },
+    {
+      "path": "msgym/envs/locomotionLegs_v1.py",
+      "status": "modified"
+    },
+    {
+      "path": "msgym/envs/manipulation_v1.py",
+      "status": "modified"
+    },
+    {
+      "path": "msgym/envs/utils.py",
+      "status": "modified"
+    },
+    {
+      "path": "pyproject.toml",
+      "status": "modified"
+    }
+  ],
+  "model_trees_truncated": false
+}

@@ -1,0 +1,22 @@
+{
+  "initial_anonymous_attempt": "HTTP403rate_limit_exceeded; retried authenticated read without persisting credentials",
+  "release_tag": {
+    "ref": "refs/tags/Checkpoints",
+    "node_id": "REF_kwDORYZiLLVyZWZzL3RhZ3MvQ2hlY2twb2ludHM",
+    "url": "https://api.github.com/repos/LNSGroup/msgym/git/refs/tags/Checkpoints",
+    "object": {
+      "sha": "1c9dfe6542353a4512e89adb1fd5cc6459e266c6",
+      "type": "commit",
+      "url": "https://api.github.com/repos/LNSGroup/msgym/git/commits/1c9dfe6542353a4512e89adb1fd5cc6459e266c6"
+    }
+  },
+  "release_source_commit": "1c9dfe6542353a4512e89adb1fd5cc6459e266c6",
+  "submodule_entries": [
+    {
+      "path": "MS-Human-700",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "c049488734dab9f44d67dde0836324b77ae2d07f"
+    }
+  ]
+}

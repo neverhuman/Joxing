@@ -1,0 +1,8 @@
+{
+  "command": "uv run --project experiments/v0.0.6/runtime pytest -q tests/test_upstream_motor.py",
+  "failed": 1,
+  "failure": "Replay toy controller reached a valid native tracking termination; test incorrectly attempted another step. Fix loop to preserve/compare real termination, not alter physical criteria.",
+  "passed": 7,
+  "scope": "Development harness failure; no formal qualification attempted.",
+  "wall_s": 17.75
+}

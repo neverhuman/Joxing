@@ -162,3 +162,10 @@ Pushed final evidence commit `f737dcb494f87825447937904619251978896bf5` and anno
 ## v0.0.6 mission started
 
 User authorized the next value-add phase and continuing20-minute progress checks. Created active heartbeat `advance-joxing-every-20-minutes` in this chat after checking no matching Joxing automation existed. Current mission/ownership/state transitions are in docs/MISSION.md. Registered v0.0.6 loader/normalizer/native-task qualification protocol before loading the released checkpoint or running its motor trajectories:20paired seeds71000–71019,default/restored decoder conditions,40attempts,one CPU world,900s/1Mphysics/1GiBraw first limit. Separate runtime targets checkpoint SB3/Torch/Gym/NumPy versions; root runtime remains separate. xbabe1 preflight load5.80/128logical,~40GiBavailable RAM,~318GiBfree disk. No v6job has launched yet.
+
+
+### v0.0.6 implementation/preflight
+
+Separate checkpoint-compatible runtime locked and installed. Native path-only adapter preserves source timing/options and700muscles; global SAC alias restoration, immutable normalizer, explicit decoder schedule and corrected save/load are implemented. Eight target tests pass; initial full pinned-runtime Mac suite80passed/64.41s. Initial7pass/1fail was a toy replay harness stepping after valid termination; preserve receipt and correct loop, no physics threshold changes. Float32 action arithmetic is checked against the actual pinned upstream wrapper. Native snapshots retain the real last actor observation and trajectory/RNG state in addition to engine integration state.
+
+Release-source check initially hit anonymous GitHub API rate limit; authenticated read succeeded without storing credentials. Release modelpin c049 differs from Joxing2d, but complete trees differ only in README; no physical asset changed. Native environment patch only changes model-file lookup. Receipts are curated. No large-scale upstream training, native formal evaluation or transfer has launched yet. Current phase is source freeze and Linux deployment/test.
