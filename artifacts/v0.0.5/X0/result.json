@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "physics_substeps": 3660,
+  "policies": [
+    {
+      "legacy_reference_error": 0.0,
+      "passed": true,
+      "policy": "initial",
+      "same_host_action_replay_error": 0.0
+    },
+    {
+      "legacy_reference_error": 0.0,
+      "passed": true,
+      "policy": "trained",
+      "same_host_action_replay_error": 0.0
+    }
+  ],
+  "preparation_substeps": 200
+}

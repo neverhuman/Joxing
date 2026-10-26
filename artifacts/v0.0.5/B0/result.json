@@ -1,0 +1,31 @@
+{
+  "chosen_excitation": 0.05,
+  "diagnostic_means": [
+    {
+      "excitation": 0.005,
+      "mean_survival_s": 0.5690000000000001
+    },
+    {
+      "excitation": 0.02,
+      "mean_survival_s": 0.65875
+    },
+    {
+      "excitation": 0.05,
+      "mean_survival_s": 1.0408749999999998
+    },
+    {
+      "excitation": 0.1,
+      "mean_survival_s": 1.012125
+    },
+    {
+      "excitation": 0.2,
+      "mean_survival_s": 0.9488749999999999
+    },
+    {
+      "excitation": 0.4,
+      "mean_survival_s": 0.9417500000000001
+    }
+  ],
+  "physics_substeps": 74696,
+  "preparation_substeps": 8200
+}

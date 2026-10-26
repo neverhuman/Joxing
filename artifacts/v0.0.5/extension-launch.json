@@ -1,0 +1,42 @@
+{
+  "aggregate_workers": 16,
+  "available_memory_bytes": 50274336768,
+  "code_commit": "76f6e5ce47f9966d9896f08a03652c20dcc9db31",
+  "command": [
+    "uv",
+    "run",
+    "python",
+    "scripts/run_wave_extension.py",
+    "--protocol",
+    "experiments/v0.0.5/extension-protocol.json",
+    "--original",
+    "/home/ubuntu/joxing/bootstrap-20261026/runs/v0.0.5/wave-01",
+    "--out",
+    "runs/v0.0.5/extension-01"
+  ],
+  "deployment_note": "Initial clone FETCH_HEAD checkout failed before execution; explicit committed SHA checkout succeeded. No experiment was attempted by that failed deployment command.",
+  "disk_free_bytes": 346846191616,
+  "host": "xbabe1",
+  "load": [
+    4.42578125,
+    5.55322265625,
+    6.21533203125
+  ],
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "original_run": "/home/ubuntu/joxing/bootstrap-20261026/runs/v0.0.5/wave-01",
+  "parallel_trials": 4,
+  "physics_action_observation_contract_matches_original": true,
+  "pid": 4172953,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "schema": "joxing-run-v1",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "threads_per_process": 1,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T19:46:43.386946+00:00",
+  "workers_per_trial": 4
+}

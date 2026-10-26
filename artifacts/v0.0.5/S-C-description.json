@@ -1,0 +1,9 @@
+{
+  "description": "ArmC: {'entropy': 'auto', 'reward_scale': 1000.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+  "hypothesis": "Larger reward units help auto-temperature SAC.",
+  "id": "S-C",
+  "protocol_hash": "7a4ca4a6b841ca39ca8141db83d1e0e05b01d49054408d71197ac28ecff97fe5",
+  "reason": "dependencies_passed",
+  "source_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "status": "running"
+}

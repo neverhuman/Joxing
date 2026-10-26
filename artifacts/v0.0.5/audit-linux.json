@@ -1,0 +1,180 @@
+{
+  "accounting_passed": true,
+  "auditor_script_sha256": "e1053cfdc17633aae63c3228ef03ca2f1c31d366b8d1d2ebb438792eaaeba036",
+  "code_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "cross_host_reference_parity_passed": true,
+  "evaluation_attempts": 336,
+  "findings": [
+    {
+      "experiment": "S-A",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-A",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-B",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-B",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-C",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-C",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-D",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-D",
+      "integration_state_max_error": 0.0,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "recorded_action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "X0",
+      "integration_state_max_error": 0.0,
+      "mode": "recorded_actions",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "X0",
+      "integration_state_max_error": 0.0,
+      "mode": "recorded_actions",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 0.0,
+      "qvel_max_error": 0.0,
+      "same_host_repeat_error": 0.0
+    }
+  ],
+  "host": "xbabe1",
+  "invalid_evaluation_attempts": 0,
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": true,
+  "planned_evaluation_attempts_under_selection": 336,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "protocol_hash": "7a4ca4a6b841ca39ca8141db83d1e0e05b01d49054408d71197ac28ecff97fe5",
+  "python": "3.12.3",
+  "recomputed_physics_substeps": 2148064,
+  "same_host_repeat_passed": true,
+  "schema": "joxing-run-v1",
+  "source_hash": "8b45216daf642dc2ec9e76b37d0e76533310666d26d7c8943e6e9bf33ba20ba0",
+  "source_run_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "tolerances": {
+    "cross_host_full_state": 1e-05,
+    "same_host_repeat": 1e-09
+  },
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T19:43:18.260317+00:00"
+}

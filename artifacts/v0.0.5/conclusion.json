@@ -1,0 +1,203 @@
+{
+  "comparisons": {
+    "S-A": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.04140625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.03606328125000003,
+          -0.024250000000000015
+        ],
+        "paired_survival_gain_s": -0.02984375000000001,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0115625000000001
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.01775,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.010531250000000002,
+          -0.001937500000000012
+        ],
+        "paired_survival_gain_s": -0.006187500000000016,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0115625000000001
+      },
+      "transitions_per_s_including_evaluation": 72.25854354144384,
+      "updates_per_optimizer_s": 71.62677186664216,
+      "wall_s": 553.5677587669343
+    },
+    "S-B": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.04140625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.037717968749999976,
+          0.060968750000000016
+        ],
+        "paired_survival_gain_s": 0.049531250000000006,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0909375
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.01775,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.06840625,
+          0.07765625
+        ],
+        "paired_survival_gain_s": 0.07318749999999999,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0909375
+      },
+      "transitions_per_s_including_evaluation": 72.6405632680353,
+      "updates_per_optimizer_s": 74.14846230740403,
+      "wall_s": 550.6565230283886
+    },
+    "S-C": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.04140625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.24603124999999998,
+          -0.23225
+        ],
+        "paired_survival_gain_s": -0.23909375,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 0.8023125000000001
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.01775,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.21943828125,
+          -0.21128124999999998
+        ],
+        "paired_survival_gain_s": -0.2154375,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 0.8023125000000001
+      },
+      "transitions_per_s_including_evaluation": 73.08476985451125,
+      "updates_per_optimizer_s": 71.03403094865922,
+      "wall_s": 547.309652607888
+    },
+    "S-D": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.04140625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.06293750000000004,
+          0.09353125000000004
+        ],
+        "paired_survival_gain_s": 0.07875000000000001,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.12015625
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.01775,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.08400000000000005,
+          0.12046875
+        ],
+        "paired_survival_gain_s": 0.10240625,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.12015625
+      },
+      "transitions_per_s_including_evaluation": 75.75574367860742,
+      "updates_per_optimizer_s": 79.14483344143525,
+      "wall_s": 528.0127691663802
+    }
+  },
+  "exploratory_factorial_contrasts": {
+    "fixed_minus_auto_raw": {
+      "mean_survival_difference_s": 0.07937500000000001,
+      "paired_reset_95ci_s": [
+        0.07278125000000003,
+        0.08606250000000004
+      ]
+    },
+    "fixed_minus_auto_scaled": {
+      "mean_survival_difference_s": 0.31784375,
+      "paired_reset_95ci_s": [
+        0.30090625000000004,
+        0.33421953125
+      ]
+    },
+    "interaction_D_minus_C_minus_B_plus_A": {
+      "mean_survival_difference_s": 0.23846875,
+      "paired_reset_95ci_s": [
+        0.21777890625,
+        0.25884375
+      ]
+    },
+    "scaled_minus_raw_auto": {
+      "mean_survival_difference_s": -0.20925,
+      "paired_reset_95ci_s": [
+        -0.21490625000000002,
+        -0.20353046874999994
+      ]
+    },
+    "scaled_minus_raw_fixed": {
+      "mean_survival_difference_s": 0.029218750000000016,
+      "paired_reset_95ci_s": [
+        0.00821875000000001,
+        0.050312499999999996
+      ]
+    }
+  },
+  "limited_replicated_improvement": false,
+  "motor_gate_passed": false,
+  "reset_motion": {
+    "initial_pelvis_tilt_degrees_min_max": [
+      8.21211695559629,
+      9.18712583216389
+    ],
+    "initial_pelvis_tilt_velocity_rad_s_min_max": [
+      1.1002883282681128,
+      1.1136469620321654
+    ],
+    "interpretation": "Accepted starts are already moving after gravity preparation; this is initial-fall recovery, not stationary quiet stance. No reset dynamics were changed during the wave.",
+    "native_root_dof_order": [
+      "pelvis_tz",
+      "pelvis_ty",
+      "pelvis_tx",
+      "pelvis_tilt",
+      "pelvis_list",
+      "pelvis_rotation"
+    ],
+    "source": "B0/exc-0.05-evaluations.json"
+  },
+  "scope": "Exploratory screen; two-seed confirmation only when qualified. Reset bootstrap is not training-seed uncertainty. No boxing/self-play claim.",
+  "selection": {
+    "arm": "D",
+    "gain_s": 0.10240625,
+    "over_A_s": 0.10859374999999982,
+    "qualified": false,
+    "reason": "no_meaningful_screen_gain"
+  }
+}

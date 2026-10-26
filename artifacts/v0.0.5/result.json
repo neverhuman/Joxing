@@ -1,0 +1,106 @@
+{
+  "accounted_physics_substeps": 2148064,
+  "registry": {
+    "B0": {
+      "accounted_physics_substeps": 82896,
+      "description": "48 diagnostic episodes, six constants x eight starts; select strongest mean, ties smaller; freeze and evaluate on screen32.",
+      "hypothesis": "Simple muscle excitation can reveal a weak neural reference or reset motion.",
+      "id": "B0",
+      "reason": "finished",
+      "result": "B0/result.json",
+      "status": "completed"
+    },
+    "P0": {
+      "accounted_physics_substeps": 85838,
+      "description": "Same256 real transitions; 20warmup/100timed updates, three repeats of each network/batch; finite changed actor required.",
+      "hypothesis": "Smaller common learner yields at least twice the optimizer throughput.",
+      "id": "P0",
+      "reason": "finished",
+      "result": "P0/result.json",
+      "status": "completed"
+    },
+    "R-A-263": {
+      "description": "Conditional on declared screen rule; seed263,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+      "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+      "id": "R-A-263",
+      "reason": "no_meaningful_screen_gain",
+      "status": "not_run"
+    },
+    "R-A-431": {
+      "description": "Conditional on declared screen rule; seed431,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+      "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+      "id": "R-A-431",
+      "reason": "no_meaningful_screen_gain",
+      "status": "not_run"
+    },
+    "R-W-263": {
+      "description": "Conditional on declared screen rule; seed263,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+      "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+      "id": "R-W-263",
+      "reason": "no_meaningful_screen_gain",
+      "status": "not_run"
+    },
+    "R-W-431": {
+      "description": "Conditional on declared screen rule; seed431,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+      "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+      "id": "R-W-431",
+      "reason": "no_meaningful_screen_gain",
+      "status": "not_run"
+    },
+    "S-A": {
+      "accounted_physics_substeps": 600209,
+      "description": "ArmA: {'entropy': 'auto', 'reward_scale': 1.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+      "hypothesis": "Reference small-network SAC establishes within-wave control.",
+      "id": "S-A",
+      "reason": "finished",
+      "result": "S-A/result.json",
+      "status": "completed"
+    },
+    "S-B": {
+      "accounted_physics_substeps": 1116831,
+      "description": "ArmB: {'entropy': 0.0001, 'reward_scale': 1.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+      "hypothesis": "Lower temperature helps the raw-scale motor objective.",
+      "id": "S-B",
+      "reason": "finished",
+      "result": "S-B/result.json",
+      "status": "completed"
+    },
+    "S-C": {
+      "accounted_physics_substeps": 1624495,
+      "description": "ArmC: {'entropy': 'auto', 'reward_scale': 1000.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+      "hypothesis": "Larger reward units help auto-temperature SAC.",
+      "id": "S-C",
+      "reason": "finished",
+      "result": "S-C/result.json",
+      "status": "completed"
+    },
+    "S-D": {
+      "accounted_physics_substeps": 2144204,
+      "description": "ArmD: {'entropy': 0.0001, 'reward_scale': 1000.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+      "hypothesis": "Reward units and low temperature interact.",
+      "id": "S-D",
+      "reason": "finished",
+      "result": "S-D/result.json",
+      "status": "completed"
+    },
+    "X0": {
+      "accounted_physics_substeps": 2148064,
+      "description": "Export preselected v4 initial/final snapshots and Linux action sequences; samehost1e-9/crosshost1e-5 unchanged, outcomes and qpos/qvel separately.",
+      "hypothesis": "Recorded actions distinguish engine divergence from closed-loop policy divergence.",
+      "id": "X0",
+      "reason": "finished",
+      "result": "X0/result.json",
+      "status": "completed"
+    }
+  },
+  "scope": "motor objective calibration, no boxing or self-play",
+  "selection": {
+    "arm": "D",
+    "gain_s": 0.10240625,
+    "over_A_s": 0.10859374999999982,
+    "qualified": false,
+    "reason": "no_meaningful_screen_gain"
+  },
+  "source_unchanged": true,
+  "wall_s": 2358.383006501943
+}

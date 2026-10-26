@@ -1,0 +1,180 @@
+{
+  "accounting_passed": true,
+  "auditor_script_sha256": "e1053cfdc17633aae63c3228ef03ca2f1c31d366b8d1d2ebb438792eaaeba036",
+  "code_commit": "ca61a388b7467cc16be051de76dce87769db1811",
+  "cross_host_reference_parity_passed": false,
+  "evaluation_attempts": 336,
+  "findings": [
+    {
+      "experiment": "S-A",
+      "integration_state_max_error": 3.584615798857271e-05,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 2.054518688510143e-08,
+      "qvel_max_error": 8.705572336342726e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.383426706524915e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 2.9976021664879227e-15,
+        "qvel_max_error": 1.1579626146840383e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-A",
+      "integration_state_max_error": 0.0009205163837577857,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 1.6317808038124326e-07,
+      "qvel_max_error": 4.151029706189746e-06,
+      "recorded_action_replay": {
+        "integration_state_max_error": 6.275724384607884e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.43908929112402e-14,
+        "qvel_max_error": 7.638334409421077e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-B",
+      "integration_state_max_error": 3.584615798857271e-05,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 2.054518688510143e-08,
+      "qvel_max_error": 8.705572336342726e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.383426706524915e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 2.9976021664879227e-15,
+        "qvel_max_error": 1.1579626146840383e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-B",
+      "integration_state_max_error": 0.00071345809004697,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 1.6624793830466444e-07,
+      "qvel_max_error": 1.2934626001381844e-06,
+      "recorded_action_replay": {
+        "integration_state_max_error": 4.75210981676355e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 1.2656542480726785e-14,
+        "qvel_max_error": 5.559996907322784e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-C",
+      "integration_state_max_error": 3.584615798857271e-05,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 2.054518688510143e-08,
+      "qvel_max_error": 8.705572336342726e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.383426706524915e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 2.9976021664879227e-15,
+        "qvel_max_error": 1.1579626146840383e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-C",
+      "integration_state_max_error": 0.0006506461959361332,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 9.055232593480067e-07,
+      "qvel_max_error": 4.221261223680273e-06,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.1641532182693481e-10,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 6.514233596988106e-14,
+        "qvel_max_error": 3.252011290463819e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-D",
+      "integration_state_max_error": 3.584615798857271e-05,
+      "mode": "closed_loop",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 2.054518688510143e-08,
+      "qvel_max_error": 8.705572336342726e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.383426706524915e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 2.9976021664879227e-15,
+        "qvel_max_error": 1.1579626146840383e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-D",
+      "integration_state_max_error": 258.07240116107135,
+      "mode": "closed_loop",
+      "outcome_tick_matches": false,
+      "policy": "trained",
+      "qpos_max_error": 0.09358335647866423,
+      "qvel_max_error": 2.4879769104890315,
+      "recorded_action_replay": {
+        "integration_state_max_error": 4.75282035949931e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 1.3988810110276972e-14,
+        "qvel_max_error": 5.3290705182007514e-14
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "X0",
+      "integration_state_max_error": 1.20561338690095e-10,
+      "mode": "recorded_actions",
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 1.1213252548714081e-14,
+      "qvel_max_error": 2.2792878695554464e-13,
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "X0",
+      "integration_state_max_error": 1.801581106519734e-11,
+      "mode": "recorded_actions",
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 2.19824158875781e-14,
+      "qvel_max_error": 2.4202861936828413e-13,
+      "same_host_repeat_error": 0.0
+    }
+  ],
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "invalid_evaluation_attempts": 0,
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": false,
+  "planned_evaluation_attempts_under_selection": 336,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "protocol_hash": "7a4ca4a6b841ca39ca8141db83d1e0e05b01d49054408d71197ac28ecff97fe5",
+  "python": "3.12.12",
+  "recomputed_physics_substeps": 2148064,
+  "same_host_repeat_passed": true,
+  "schema": "joxing-run-v1",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "source_run_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "tolerances": {
+    "cross_host_full_state": 1e-05,
+    "same_host_repeat": 1e-09
+  },
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T19:41:28.308398+00:00"
+}

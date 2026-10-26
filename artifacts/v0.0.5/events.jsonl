@@ -1,0 +1,18 @@
+{"experiment": "B0", "status": "running", "wall_s": 0.02089095301926136, "reason": "dependencies_passed"}
+{"experiment": "B0", "status": "completed", "wall_s": 135.3424309361726, "result": "B0/result.json", "reason": "finished", "accounted_physics_substeps": 82896}
+{"experiment": "P0", "status": "running", "wall_s": 135.342957502231, "reason": "dependencies_passed"}
+{"experiment": "P0", "status": "completed", "wall_s": 166.4306385666132, "result": "P0/result.json", "reason": "finished", "accounted_physics_substeps": 85838}
+{"experiment": "S-A", "status": "running", "wall_s": 166.43129125982523, "reason": "dependencies_passed"}
+{"experiment": "S-A", "status": "completed", "wall_s": 720.830520760268, "result": "S-A/result.json", "reason": "finished", "accounted_physics_substeps": 600209}
+{"experiment": "S-B", "status": "running", "wall_s": 720.8317760135978, "reason": "dependencies_passed"}
+{"experiment": "S-B", "status": "completed", "wall_s": 1272.4517405387014, "result": "S-B/result.json", "reason": "finished", "accounted_physics_substeps": 1116831}
+{"experiment": "S-C", "status": "running", "wall_s": 1272.4528277534992, "reason": "dependencies_passed"}
+{"experiment": "S-C", "status": "completed", "wall_s": 1820.7527640238404, "result": "S-C/result.json", "reason": "finished", "accounted_physics_substeps": 1624495}
+{"experiment": "S-D", "status": "running", "wall_s": 1820.7540159802884, "reason": "dependencies_passed"}
+{"experiment": "S-D", "status": "completed", "wall_s": 2349.4307231083512, "result": "S-D/result.json", "reason": "finished", "accounted_physics_substeps": 2144204}
+{"experiment": "X0", "status": "running", "wall_s": 2349.4321593437344, "reason": "dependencies_passed"}
+{"experiment": "X0", "status": "completed", "wall_s": 2358.38202595897, "result": "X0/result.json", "reason": "finished", "accounted_physics_substeps": 2148064}
+{"experiment": "R-A-263", "status": "not_run", "wall_s": 2358.3822886757553, "reason": "no_meaningful_screen_gain"}
+{"experiment": "R-W-263", "status": "not_run", "wall_s": 2358.382524892688, "reason": "no_meaningful_screen_gain"}
+{"experiment": "R-A-431", "status": "not_run", "wall_s": 2358.382761530578, "reason": "no_meaningful_screen_gain"}
+{"experiment": "R-W-431", "status": "not_run", "wall_s": 2358.3829909339547, "reason": "no_meaningful_screen_gain"}
