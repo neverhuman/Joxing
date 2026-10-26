@@ -56,7 +56,7 @@ Define typed `ContactSample`, `ScoreEvent`, `ActorObs`, `CriticState`, `ReplaySn
 
 Both actions use one completed state; scatter muscles via semantic ownership; decoder every 10 ticks, strategy every 20 candidate ticks. Capture every physics substep. Pure collector cuts preserve state; real bell terminates, external truncation bootstraps final observation, numerical failures quarantine. Actors get visible kinematics only; critic-only hidden state cannot affect them.
 
-Replay engine with `mjSTATE_INTEGRATION` plus all application state: phase/clocks, scorer/ledger/onset histories, controls/latents, normalizers, recurrent states, delay/filter queues, randomization/model draws and RNGs. Require restore during contact, between motor updates and before bell reproduces event IDs/scores. Add physical fixture-to-referee end-to-end test (currently missing); scorer synthetic tests alone do not pass this gate.
+Replay engine with `mjSTATE_INTEGRATION` plus all application state: phase/clocks, scorer/ledger/onset histories, controls/latents, normalizers, recurrent states, delay/filter queues, randomization/model draws and RNGs. Require restore during contact, between motor updates and before bell reproduces event IDs/scores. Extend existing physical sphere-to-referee tests to fitted dual-human surfaces, guard bypass and semantic ownership; the isolated rigs alone do not pass this gate.
 
 ### P3: Fast motor learning and latent codec
 

@@ -29,3 +29,9 @@ Use `/home/ubuntu/joxing/bootstrap-20261026` on xbabe1. Start at four CPU worker
 Report physics substeps/s, simultaneous world transitions/s, admitted learner samples/s, simulated seconds/wall second, optimizer updates/s, memory, GPU utilization, reset/contact invalid rates, and evaluation strength per wall hour. Include compile/warmup, transport and optimization costs in end-to-end runs. A two-player world step is not automatically two on-policy learner samples.
 
 Stop on unexpected warnings/engine resets, nonfinite state, contact loss/overflow, unexplained score parity failures, disk below the run's reserved budget, or sustained interference with shared-host capacity. Preserve last valid engine state, held controls and referee state before investigation. No cloud GPU purchase or host service changes are required for this first slice.
+
+## Measured GPU spike
+
+Actual probes are in `artifacts/receipts/gpu-probe-*.json`; see RESULTS.md. `mujoco-warp==3.8.0` with `warp-lang==1.12.0` detects xbabe1's 4090 on driver 570.153.02. Auto-resolved Warp 1.18 requires a newer CUDA driver, so the Linux `gpu` extra now pins 1.12. The exact reference scene is rejected due to mesh-margin/MULTICCD support. An explicit MULTICCD-disabled variant executes eight worlds but fails the declared short-state parity tolerance. GPU physics remains unqualified; no speedup is claimed.
+
+Reproduce on Linux with `uv sync --extra dev --extra viz --extra gpu`, then `uv run python scripts/gpu_probe.py --worlds 8 --out runs/gpu-exact.json`. The deliberate variant uses `--disable-multiccd` and receives a distinct physics hash. These are diagnostic commands, not a production backend. [Official MuJoCo 3.8 Warp documentation](https://mujoco.readthedocs.io/en/3.8.0/mjwarp/index.html) distinguishes high-throughput batching from single-world latency and requires explicit contact/constraint capacity tuning.

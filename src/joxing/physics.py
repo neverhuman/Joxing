@@ -146,7 +146,7 @@ def scoring_fixture(zone="head") -> dict:
       </mujoco>""")
     data = mujoco.MjData(model)
     data.qvel[0] = 2.0
-    tracker = HitTracker("physical-fixture", "A/right")
+    tracker = HitTracker(f"physical-fixture-{zone}", "A/right")
     glove = model.geom("glove").id
     target = model.geom("target").id
     for k in range(250):
