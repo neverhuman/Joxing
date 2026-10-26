@@ -19,6 +19,9 @@ def digest(value: object) -> str:
 
 
 def revision(path: Path) -> str:
+    top = subprocess.run(["git", "-C", str(path), "rev-parse", "--show-toplevel"],capture_output=True,text=True)
+    if top.returncode != 0 or Path(top.stdout.strip()).resolve() != path.resolve():
+        return "uncommitted"
     result = subprocess.run(["git", "-C", str(path), "rev-parse", "HEAD"], capture_output=True, text=True)
     return result.stdout.strip() if result.returncode == 0 else "uncommitted"
 
