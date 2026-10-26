@@ -157,3 +157,8 @@ Updated README, documentation index, game/master implementation/training/compute
 ### v0.0.5 publication verified
 
 Pushed final evidence commit `f737dcb494f87825447937904619251978896bf5` and annotated tag `v0.0.5` atomically to `neverhuman/Joxing`. Anonymous GitHub API confirms `private=false`, `visibility=public`; anonymous raw reads of the tagged README, results, state/history audit and release-summary match local bytes. Tag target was independently resolved and checked. `artifacts/receipts/v0.0.5-publication.json` records this post-push verification; main adds only that receipt/status after the immutable scientific release tag. All requested experiments are concluded, all owned jobs exited, and no follow-up training is running.
+
+
+## v0.0.6 mission started
+
+User authorized the next value-add phase and continuing20-minute progress checks. Created active heartbeat `advance-joxing-every-20-minutes` in this chat after checking no matching Joxing automation existed. Current mission/ownership/state transitions are in docs/MISSION.md. Registered v0.0.6 loader/normalizer/native-task qualification protocol before loading the released checkpoint or running its motor trajectories:20paired seeds71000–71019,default/restored decoder conditions,40attempts,one CPU world,900s/1Mphysics/1GiBraw first limit. Separate runtime targets checkpoint SB3/Torch/Gym/NumPy versions; root runtime remains separate. xbabe1 preflight load5.80/128logical,~40GiBavailable RAM,~318GiBfree disk. No v6job has launched yet.
