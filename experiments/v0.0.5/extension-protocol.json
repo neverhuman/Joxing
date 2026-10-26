@@ -1,0 +1,134 @@
+{
+  "confirmation_ids": [
+    65000,
+    65001,
+    65002,
+    65003,
+    65004,
+    65005,
+    65006,
+    65007,
+    65008,
+    65009,
+    65010,
+    65011,
+    65012,
+    65013,
+    65014,
+    65015,
+    65016,
+    65017,
+    65018,
+    65019,
+    65020,
+    65021,
+    65022,
+    65023,
+    65024,
+    65025,
+    65026,
+    65027,
+    65028,
+    65029,
+    65030,
+    65031
+  ],
+  "confirmation_seeds": [
+    761,
+    983
+  ],
+  "description": "Explicit user authorization: increase workers and training budgets. Fresh development screen; preserve original wave. Four independent SAC trials concurrently, 16 simulation workers total. No algorithm/rules/model intervention beyond longer budget.",
+  "experiments": [
+    {
+      "description": "Reuse the original selected excitation and eight diagnostic rows without recounting them; evaluate32new screen starts. No reselection.",
+      "hypothesis": "Frozen constant baseline remains a meaningful comparator on new starts.",
+      "id": "B0"
+    },
+    {
+      "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+      "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+      "id": "S-A"
+    },
+    {
+      "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+      "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+      "id": "S-B"
+    },
+    {
+      "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+      "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+      "id": "S-C"
+    },
+    {
+      "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+      "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+      "id": "S-D"
+    },
+    {
+      "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+      "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+      "id": "R-A-761"
+    },
+    {
+      "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+      "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+      "id": "R-W-761"
+    },
+    {
+      "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+      "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+      "id": "R-A-983"
+    },
+    {
+      "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+      "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+      "id": "R-W-983"
+    }
+  ],
+  "parallel_trials": 4,
+  "parent_protocol_hash": "7a4ca4a6b841ca39ca8141db83d1e0e05b01d49054408d71197ac28ecff97fe5",
+  "run_wall_s": 2700,
+  "schema": "joxing-wave-extension-0.0.5",
+  "screen_ids": [
+    64000,
+    64001,
+    64002,
+    64003,
+    64004,
+    64005,
+    64006,
+    64007,
+    64008,
+    64009,
+    64010,
+    64011,
+    64012,
+    64013,
+    64014,
+    64015,
+    64016,
+    64017,
+    64018,
+    64019,
+    64020,
+    64021,
+    64022,
+    64023,
+    64024,
+    64025,
+    64026,
+    64027,
+    64028,
+    64029,
+    64030,
+    64031
+  ],
+  "screen_seed": 547,
+  "selection": {
+    "bootstrap_seed": 61005,
+    "gain_s": 0.25,
+    "over_A_s": 0.1
+  },
+  "steps": 160000,
+  "workers_per_trial": 4
+}

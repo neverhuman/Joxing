@@ -368,7 +368,17 @@ def check_resources(out, caps, start=False):
     return {"disk_free_bytes": free, "available_memory_bytes": memory}
 
 
-def train_run(out, protocol, arm, seed, ids, provenance, budget_check):
+def train_run(
+    out,
+    protocol,
+    arm,
+    seed,
+    ids,
+    provenance,
+    budget_check,
+    *,
+    defer_initial_evaluation=False,
+):
     import torch
     from stable_baselines3.common.callbacks import BaseCallback
     from stable_baselines3.common.vec_env import SubprocVecEnv
@@ -473,7 +483,7 @@ def train_run(out, protocol, arm, seed, ids, provenance, budget_check):
         model.actor.save(out / "initial-actor.pt")
         # Confirmation scenarios stay unopened until the scheduled final actor
         # is frozen. The initial actor was fixed before any learning.
-        confirmation = ids == SPLITS["confirmation"]
+        confirmation = defer_initial_evaluation or ids == SPLITS["confirmation"]
         before = (
             None
             if confirmation
@@ -528,6 +538,14 @@ def train_run(out, protocol, arm, seed, ids, provenance, budget_check):
                 "invalid_run": True,
             },
         )
+        try:
+            model.save(out / "fault-checkpoint.zip")
+            write_json(
+                out / "fault-states.json",
+                {"last_valid_workers": vec.env_method("snapshot")},
+            )
+        except Exception as capture_error:  # noqa: BLE001 -- preserve original fault
+            write_json(out / "fault-capture-error.json", {"error": str(capture_error)})
         raise
     finally:
         vec.close()

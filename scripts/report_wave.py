@@ -17,9 +17,19 @@ def read(path):
 
 
 def conclusions(run):
+    protocol = read(run / "protocol.json")
     wave = read(run / "result.json")
     selection = wave["selection"]
     comparison = {}
+    screen_survival = {}
+    baseline_result = read(run / "B0/result.json")
+    diagnostic_name = baseline_result.get(
+        "diagnostic_source",
+        f"exc-{baseline_result['chosen_excitation']}-evaluations.json",
+    )
+    diagnostic_rows = read(run / "B0" / diagnostic_name)
+    tilts = np.rad2deg([r["initial_tilt_rad"] for r in diagnostic_rows])
+    tilt_velocities = [r["initial_root_qvel"][3] for r in diagnostic_rows]
     screen_constant = read(run / "B0/screen-constant-evaluations.json")
     for arm in "ABCD":
         folder = run / f"S-{arm}"
@@ -27,6 +37,7 @@ def conclusions(run):
             continue
         result = read(folder / "result.json")
         rows = read(folder / "trained-evaluations.json")
+        screen_survival[arm] = np.array([x["elapsed_sim_s"] for x in rows])
         comparison[f"S-{arm}"] = {
             "initial_to_final": result["summary"],
             "constant_to_final": bootstrap_pair(screen_constant, rows),
@@ -38,7 +49,9 @@ def conclusions(run):
     replicated = []
     if selection["qualified"]:
         baseline = read(run / "B0/confirmation-constant-evaluations.json")
-        for seed in (263, 431):
+        for seed in protocol.get(
+            "confirmation_seeds", protocol.get("seeds", {}).get("confirmation", [])
+        ):
             reference = run / f"R-A-{seed}"
             selected = reference if selection["arm"] == "A" else run / f"R-W-{seed}"
             a = read(reference / "trained-evaluations.json")
@@ -58,7 +71,47 @@ def conclusions(run):
                     or contrast["paired_reset_bootstrap_95ci_s"][0] > 0
                 )
             )
+    factorial = {}
+    if set(screen_survival) == set("ABCD"):
+        a, b, c, d = [screen_survival[k] for k in "ABCD"]
+        for name, delta in {
+            "fixed_minus_auto_raw": b - a,
+            "fixed_minus_auto_scaled": d - c,
+            "scaled_minus_raw_auto": c - a,
+            "scaled_minus_raw_fixed": d - b,
+            "interaction_D_minus_C_minus_B_plus_A": d - c - b + a,
+        }.items():
+            draws = (
+                np.random.default_rng(61005)
+                .choice(delta, (10000, len(delta)))
+                .mean(axis=1)
+            )
+            factorial[name] = {
+                "mean_survival_difference_s": float(delta.mean()),
+                "paired_reset_95ci_s": np.quantile(draws, [0.025, 0.975]).tolist(),
+            }
     return {
+        "exploratory_factorial_contrasts": factorial,
+        "reset_motion": {
+            "source": f"B0/{diagnostic_name}",
+            "native_root_dof_order": [
+                "pelvis_tz",
+                "pelvis_ty",
+                "pelvis_tx",
+                "pelvis_tilt",
+                "pelvis_list",
+                "pelvis_rotation",
+            ],
+            "initial_pelvis_tilt_degrees_min_max": [
+                float(min(tilts)),
+                float(max(tilts)),
+            ],
+            "initial_pelvis_tilt_velocity_rad_s_min_max": [
+                float(min(tilt_velocities)),
+                float(max(tilt_velocities)),
+            ],
+            "interpretation": "Accepted starts are already moving after gravity preparation; this is initial-fall recovery, not stationary quiet stance. No reset dynamics were changed during the wave.",
+        },
         "selection": selection,
         "comparisons": comparison,
         "limited_replicated_improvement": len(replicated) == 2 and all(replicated),
@@ -158,6 +211,10 @@ def video(run, out):
 
     torch.set_num_threads(1)
     selection = read(run / "selection.json")
+    protocol = read(run / "protocol.json")
+    scenario = protocol.get(
+        "screen_ids", protocol.get("splits", {}).get("screen", [60000])
+    )[0]
     arm = selection.get("arm") or "A"
     folder = run / f"S-{arm}"
     if not folder.exists():
@@ -166,7 +223,7 @@ def video(run, out):
     recordings = []
     for checkpoint in ("initial", "final"):
         actor = Actor.load(folder / f"{checkpoint}-actor.pt", device="cpu")
-        obs, _ = env.reset(options={"scenario_id": 60000})
+        obs, _ = env.reset(options={"scenario_id": scenario})
         states = [(env.data.qpos.copy(), 0.0, None)]
         while not env.done:
             action, _ = actor.predict(obs, deterministic=True)
@@ -196,7 +253,7 @@ def video(run, out):
                 draw.rectangle((0, 0, 640, 90), fill=(15, 22, 34))
                 draw.text(
                     (12, 10),
-                    f"v0.0.5 SCREEN {arm} {label} | fixed scenario60000 | t={seconds:.2f}s",
+                    f"v0.0.5 SCREEN {arm} {label} | fixed scenario{scenario} | t={seconds:.2f}s",
                     fill="white",
                 )
                 draw.text(

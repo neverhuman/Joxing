@@ -112,7 +112,18 @@ def verify(run):
             continue
         if key == "P0":
             assert file_hash(folder / "common-transitions.npz") == r["dataset_sha256"]
-            assert r["speedup"] == r["medians"]["optimized"] / r["medians"]["reference"]
+            samples = read(folder / "samples.json")
+            assert samples == r["samples"] and len(samples) == 6
+            medians = {}
+            for label in ("reference", "optimized"):
+                subset = [x for x in samples if x["label"] == label]
+                assert [x["repeat"] for x in subset] == [0, 1, 2]
+                for x in subset:
+                    assert x["timed_updates"] == 100
+                    assert x["updates_per_s"] == 100 / x["wall_s"]
+                medians[label] = float(np.median([x["updates_per_s"] for x in subset]))
+            assert medians == r["medians"]
+            assert r["speedup"] == medians["optimized"] / medians["reference"]
             assert r["passed"] == (
                 r["speedup"] >= 2
                 and all(x["finite"] and x["actor_changed"] for x in r["samples"])
@@ -148,6 +159,23 @@ def verify(run):
             == expected_ids
         )
         assert bootstrap_pair(before, after) == r["summary"]
+        scale = protocol["arms"][r["arm"]]["reward_scale"]
+        assert np.isclose(
+            r["counts"]["scaled_reward_sum"],
+            r["counts"]["raw_reward_sum"] * scale,
+            rtol=1e-12,
+        )
+        assert all(x["actor_hash"] == r["initial_actor_hash"] for x in before)
+        assert all(x["actor_hash"] == r["final_actor_hash"] for x in after)
+        assert item["status"] == (
+            "completed" if r["scheduled_training_complete"] else "incomplete"
+        )
+        if r["scheduled_training_complete"]:
+            assert r["training_transitions"] == protocol["learner"]["steps"]
+            expected_updates = (
+                protocol["learner"]["steps"] - protocol["learner"]["learning_starts"]
+            ) // 4
+            assert r["updates"] == expected_updates
         assert all(
             x["reset_audit"]["projected_equality_error"] < 1e-8
             and x["reset_audit"]["max_penetration_m"] <= 0.002
@@ -211,6 +239,7 @@ def verify(run):
     )
     assert attempts == expected_attempts
     return manifest() | {
+        "auditor_script_sha256": file_hash(Path(__file__)),
         "source_run_commit": provenance["code_commit"],
         "protocol_hash": provenance["protocol_hash"],
         "accounting_passed": True,

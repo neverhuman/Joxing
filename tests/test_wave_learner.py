@@ -13,6 +13,75 @@ from joxing.stance_env import StanceEnv
 from joxing.wave import canonical_actor_hash, diagnostic, timed_sac_class
 
 
+def test_parallel_extension_trials_defer_initial_evaluation(tmp_path):
+    import json
+    import multiprocessing
+    from concurrent.futures import ProcessPoolExecutor
+
+    from joxing.provenance import ROOT, manifest
+    from joxing.wave_extension import child_trial, extension_config
+
+    protocol = json.loads(
+        (ROOT / "experiments/v0.0.5/extension-protocol.json").read_text()
+    )
+    config = extension_config(protocol)
+    config["learner"].update(steps=64, learning_starts=16)
+    config["caps"]["run_wall_s"] = 120
+    context = multiprocessing.get_context("spawn")
+    with context.Manager() as manager:
+        stop, counts = manager.Event(), manager.dict()
+        jobs = [
+            (
+                str(tmp_path / f"R-{arm}"),
+                f"R-{arm}",
+                config,
+                arm,
+                1097,
+                [67010],
+                manifest(),
+                stop,
+                counts,
+                0,
+                1e12,
+            )
+            for arm in ("A", "B")
+        ]
+        with ProcessPoolExecutor(max_workers=2, mp_context=context) as pool:
+            results = list(pool.map(child_trial, jobs))
+        assert results[0]["initial_actor_hash"] == results[1]["initial_actor_hash"]
+        for arm, result in zip(("A", "B"), results):
+            folder = tmp_path / f"R-{arm}"
+            assert result["scheduled_training_complete"] and result["updates"] == 12
+            assert (folder / "final-actor.pt").stat().st_mtime_ns <= (
+                folder / "initial-replay.json"
+            ).stat().st_mtime_ns
+        stop.set()
+        job = (
+            str(tmp_path / "R-stop"),
+            "R-stop",
+            config,
+            "B",
+            1097,
+            [67010],
+            manifest(),
+            stop,
+            counts,
+            0,
+            1e12,
+        )
+        with pytest.raises(RuntimeError, match="peer trial fault"):
+            child_trial(job)
+        assert (tmp_path / "R-stop/fault.json").exists()
+        assert (
+            len(
+                json.loads((tmp_path / "R-stop/fault-states.json").read_text())[
+                    "last_valid_workers"
+                ]
+            )
+            == 4
+        )
+
+
 def test_real_update_actor_export_seed_and_rng(tmp_path):
     torch.set_num_threads(1)
     env = StanceEnv()
