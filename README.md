@@ -6,7 +6,7 @@ Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGro
 
 **Latest release: v0.0.7.** Observation-correct glove/timestep transfer and exact Linux replay pass. **All 80 longer native tracking trials completed with zero invalids, but none reached the horizon**; even the unchanged native baseline stopped around 4.1 seconds. No new training or boxing competence is claimed. All 99 Linux tests pass; Mac full 98 plus final 27 targeted checks pass. [Results](docs/V0.0.7_RESULTS.md) · [Experiment book](experiments/v0.0.7/README.md) · [Four-condition replay](artifacts/v0.0.7/transfer/native-transfer.mp4).
 
-**Continuing every 20 minutes:** the supervisor checks actual progress/faults, audits completion and advances the [current mission](docs/MISSION.md). [v0.0.8](docs/V0.0.8_MISSION.md) is ready: substep physical evidence and an explicit continuation diagnostic that separates native tracking failure from physical collapse. Existing stance/game gates remain in force.
+**Continuing every 20 minutes:** the supervisor checks actual progress/faults, audits completion and advances the [current mission](docs/MISSION.md). [v0.0.8](docs/V0.0.8_MISSION.md) implements substep physical evidence and an explicit continuation diagnostic that separates native tracking failure from physical collapse; validation is in progress, with no formal outcome yet. [Execution contract](docs/PHYSICAL_MOTOR.md). Existing stance/game gates remain in force.
 
 **Prior v0.0.6 qualification:** the frozen upstream controller completed 40/40 short native walking tasks with exact Linux replay. Decoder schedule state lost on load was reproduced and repaired; no new optimization occurred. [Results](docs/V0.0.6_RESULTS.md).
 

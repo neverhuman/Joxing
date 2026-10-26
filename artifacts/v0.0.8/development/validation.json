@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-26T23:11:59.914675+00:00",
+  "kind": "development_validation_not_formal_trials",
+  "final_source_hash": "6e2579711ac7806777db42c83971b028fd1046f2f2fffa13792bd978601bc8a7",
+  "protocol_sha256": "8c5f14240ec58048fe257bf49af7a07ed138474633096a84f8624553954b20e4",
+  "runtime": {
+    "gymnasium": "1.2.3",
+    "mujoco": "3.8.0",
+    "numpy": "2.4.2",
+    "stable-baselines3": "2.7.1",
+    "torch": "2.10.0"
+  },
+  "full_mac_tests": {
+    "passed": 127,
+    "failed": 0,
+    "elapsed_s": 147.35
+  },
+  "test_history": [
+    {
+      "attempt": "01",
+      "passed": 20,
+      "failed": 1,
+      "cause": "incorrect test arithmetic expectation; no threshold change"
+    },
+    {
+      "attempt": "02",
+      "passed": 40,
+      "failed": 0
+    },
+    {
+      "attempt": "03",
+      "passed": 123,
+      "failed": 2,
+      "cause": "fresh environment lacks init_time before reset; restore isolation now preserves missing attributes"
+    },
+    {
+      "attempt": "04",
+      "passed": 28,
+      "failed": 0
+    },
+    {
+      "attempt": "05",
+      "passed": 127,
+      "failed": 0
+    }
+  ],
+  "limitation": "Earlier development attempts used evolving uncommitted source; exact initial source snapshots were not retained. Final source hash is recorded and source will be committed before any formal scenario. Logs and failures are retained.",
+  "files": {
+    "full-03.json": "10dbc528333e3d97320ab01a2ed8ad5ea56bb0363ea1cd860bf9ff1ac326e4a7",
+    "full-03.txt": "6d6f55f6f8c9030e735074311d94358d90625c9a0ed8c8a49c15c329ad631433",
+    "full-05.json": "9f74e002853499202b8dd8d8dd6c2ab8cf4680061b243bd4c6e182936d766e5b",
+    "full-05.txt": "2b030ad121ecd2782ae2e1484c08db55d0cce75b58c6375695e54aad5aaa3590",
+    "targeted-02.json": "8ae8ad5d91b73e54b2c938c88b395245b64224693b9845559ffb482fd4c501cf",
+    "targeted-02.txt": "29eacab7bd1cba6c22865e6bc69363cb862d5669e49695c7d90d9ce3d98839b3",
+    "targeted-04.json": "e751b2339df6ee390df0cba863b6f8c6f291c7715829a9819265eb8362efd190",
+    "targeted-04.txt": "df939bf579ee98733e43619e310debc62e11043bc6ae297d844096a999c0fb8f",
+    "test-attempt-01.json": "a8b3adbae187a0ae34922da4d14016671bc71c272d1fd70e769bfe358605af3d"
+  }
+}

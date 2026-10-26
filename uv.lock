@@ -304,7 +304,7 @@ wheels = [
 
 [[package]]
 name = "joxing"
-version = "0.0.7"
+version = "0.0.8"
 source = { editable = "." }
 dependencies = [
     { name = "gymnasium" },

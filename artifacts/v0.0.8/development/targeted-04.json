@@ -1,0 +1,13 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.8/runtime",
+    "pytest",
+    "-q",
+    "tests/test_physical_motor.py"
+  ],
+  "returncode": 0,
+  "wall_s": 42.08759925000777
+}

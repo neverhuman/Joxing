@@ -200,7 +200,7 @@ def mapped_observation(env, mapping):
     return np.concatenate(list(blocks.values())).astype(np.float32, copy=False), blocks
 
 
-def make_environment(config, variant, model, mapping):
+def make_environment(config, variant, model, mapping, *, environment_mixin=None):
     module = pinned_import("msgym.envs.locomotionFull_v1")
 
     class MappedEnv(module.LocomotionFullEnvV1):
@@ -275,14 +275,21 @@ def make_environment(config, variant, model, mapping):
         ),
         patch.object(module, "get_render_fps", lambda *_: 50),
     ):
-        return MappedEnv(**cfg)
+        environment_type = (
+            MappedEnv
+            if environment_mixin is None
+            else type("InstrumentedMappedEnv", (environment_mixin, MappedEnv), {})
+        )
+        return environment_type(**cfg)
 
 
 class TransferTask(NativeTask):
-    def __init__(self, config, variant):
+    def __init__(self, config, variant, *, environment_mixin=None):
         self.variant = copy.deepcopy(variant)
         model, self.mapping, self.invariants, self.xml = build_variant(variant)
-        env = make_environment(config, variant, model, self.mapping)
+        env = make_environment(
+            config, variant, model, self.mapping, environment_mixin=environment_mixin
+        )
         super().__init__(config, environment=env, physics_dt=variant["physics_dt_s"])
 
     def specification(self):
@@ -442,6 +449,14 @@ def predict(model, normalizer, obs):
     return action, float(np.mean(abs(normalized) >= normalizer.normalizer.clip_obs))
 
 
+def motor_task(p, variant):
+    if p["schema"] == "joxing-physical-motor-0.0.8":
+        from .physical_motor import PhysicalMotorTask
+
+        return PhysicalMotorTask(p["environment"], variant)
+    return TransferTask(p["environment"], variant)
+
+
 def source_host_oracle(p):
     old = Path(p["prerequisite"]["v6_run"])
     audit = json.loads((old.parent / "audit-linux.json").read_text())
@@ -499,7 +514,7 @@ def benchmark_worker(inputs, p, seed):
     task = None
     try:
         model, normalizer = load_controller(Path(inputs))
-        task = TransferTask(p["environment"], p["variants"][0])
+        task = motor_task(p, p["variants"][0])
         task.reset(seed)
         startup = time.perf_counter() - loaded
         started = time.perf_counter()
@@ -559,7 +574,7 @@ def benchmark(inputs, p, out):
         return {
             "cases": rows,
             "physics_steps": sum(r["physics_steps"] for r in rows),
-            "scope": "Policy+normalization+CPU physics+sampled support+snapshot; optimizer/referee absent. Loop TPS excludes construction/disk output; parent TPS includes process construction/shutdown.",
+            "scope": "Policy+normalization+CPU physics+support+snapshot; v8 includes every-substep evidence/scratch posture. Optimizer/referee absent. Loop TPS excludes construction/disk output; parent TPS includes process construction/shutdown.",
         }
 
     write_json(out / "benchmark.json", result())
@@ -634,6 +649,7 @@ def variant_worker(inputs, p, variant, out, deadline, physics_allowance):
     started = time.perf_counter()
     last_progress = -10
     previous_action = None
+    trial_physics_start = 0
 
     def progress(force=False):
         nonlocal last_progress
@@ -653,7 +669,8 @@ def variant_worker(inputs, p, variant, out, deadline, physics_allowance):
 
     try:
         model, n = load_controller(Path(inputs))
-        task = TransferTask(p["environment"], variant)
+        task = motor_task(p, variant)
+        physical = p["schema"] == "joxing-physical-motor-0.0.8"
         write_json(out / "specification.json", task.contract)
         (out / "model.xml").write_text(task.xml)
         for row in rows:
@@ -663,7 +680,10 @@ def variant_worker(inputs, p, variant, out, deadline, physics_allowance):
             last_valid = None
             action = None
             previous_action = None
+            trial_physics_start = task.physics_total
             task.reset(row["seed"])
+            if physical:
+                task.capture_mid_snapshot = row["seed"] == p["replay"]["seed"]
             initial = task.snapshot()
             paired = task.paired_fields()
             write_json(out / f"starts/{row['seed']}.json", initial)
@@ -732,6 +752,18 @@ def variant_worker(inputs, p, variant, out, deadline, physics_allowance):
                     np.mean([t["native_qpos_mean_error"] for t in trace])
                 ),
             )
+            if physical:
+                row.update(
+                    reason="physical_horizon" if truncated else task.physical_failure,
+                    horizon_reached=bool(truncated),
+                    first_native_tracking_failure_s=task.first_tracking_failure_s,
+                    physical_failure=task.physical_failure,
+                    physical_failure_s=task.physical_failure_s,
+                    physical_terminated=bool(terminated),
+                    physical_truncated=bool(truncated),
+                )
+                del row["native_terminated"], row["native_truncated"]
+                task.dump_substeps(out / f"substeps-{row['seed']}.npz")
             np.savez_compressed(
                 out / f"actions-{row['seed']}.npz", actions=np.asarray(actions)
             )
@@ -744,6 +776,11 @@ def variant_worker(inputs, p, variant, out, deadline, physics_allowance):
                         "final_snapshot": task.snapshot(),
                         "actions_file": f"actions-{row['seed']}.npz",
                         "continuation_start": p["replay"]["snapshot_control_step"],
+                        **(
+                            {"mid_snapshot": task.registered_mid_snapshot}
+                            if physical
+                            else {}
+                        ),
                         "reason": None
                         if replay is not None
                         and len(actions) > p["replay"]["snapshot_control_step"]
@@ -762,9 +799,12 @@ def variant_worker(inputs, p, variant, out, deadline, physics_allowance):
             active.update(
                 status="incomplete" if isinstance(error, TimeoutError) else "invalid",
                 reason=str(error),
-                partial_physics_steps=len(actions)
-                * (task.env.frame_skip if task else 0),
+                partial_physics_steps=(task.physics_total - trial_physics_start)
+                if task
+                else 0,
             )
+            if task and p["schema"] == "joxing-physical-motor-0.0.8":
+                task.dump_substeps(out / f"partial-substeps-{active['seed']}.npz")
             np.savez_compressed(
                 out / f"partial-actions-{active['seed']}.npz",
                 actions=np.asarray(actions),
@@ -799,7 +839,7 @@ def variant_worker(inputs, p, variant, out, deadline, physics_allowance):
             task.close()
 
 
-def run_transfer(protocol_path, archive, out):
+def run_motor_experiment(p, protocol_path, archive, out):
     import fcntl
     import importlib.metadata
     import multiprocessing as mp
@@ -812,7 +852,13 @@ def run_transfer(protocol_path, archive, out):
     from .upstream_motor import RUNTIME, extract_archive, input_hashes
     from .wave import check_resources
 
-    p = validate_protocol(json.loads(Path(protocol_path).read_text()))
+    physical = p["schema"] == "joxing-physical-motor-0.0.8"
+    if physical:
+        from .physical_motor import validate_protocol as validate_physical_protocol
+
+        p = validate_physical_protocol(p)
+    else:
+        p = validate_protocol(p)
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     lease = (out.parent / ".native-transfer.lock").open("a+")
@@ -908,7 +954,9 @@ def run_transfer(protocol_path, archive, out):
             input_hashes=inputs,
             runtime=versions,
             command=[
-                "scripts/run_native_transfer.py",
+                "scripts/run_physical_motor.py"
+                if physical
+                else "scripts/run_native_transfer.py",
                 "--protocol",
                 str(protocol_path),
                 "--archive",
@@ -924,14 +972,38 @@ def run_transfer(protocol_path, archive, out):
         write_json(out / "normalizer.json", n.export())
         del model, n
         event("T0", "running")
-        oracle = feature_oracle(p["environment"])
-        diagnostic_steps += oracle["physics_steps"]
-        actual = source_host_oracle(p)
-        diagnostic_steps += actual["physics_steps"]
-        write_json(
-            out / "native-oracle.json",
-            {"feature_oracle": oracle, "v6_actual_continuation": actual},
-        )
+        if physical:
+            from .physical_motor import (
+                equivalence_oracle,
+            )
+            from .physical_motor import (
+                source_host_oracle as physical_source_oracle,
+            )
+
+            oracle = equivalence_oracle(
+                p["environment"],
+                p["variants"],
+                p["prerequisite"]["oracle_seed"],
+                p["prerequisite"]["oracle_control_steps"],
+            )
+            diagnostic_steps += oracle["physics_steps"]
+            write_json(out / "substep-oracle.json", oracle)
+            if not oracle["passed"]:
+                raise RuntimeError("Substep equivalence oracle failed")
+            actual = physical_source_oracle(p, out / "inputs")
+            diagnostic_steps += actual["physics_steps"]
+            write_json(out / "v7-source-oracle.json", actual)
+            if not actual["passed"]:
+                raise RuntimeError("Actual v7 source-host oracle failed")
+        else:
+            oracle = feature_oracle(p["environment"])
+            diagnostic_steps += oracle["physics_steps"]
+            actual = source_host_oracle(p)
+            diagnostic_steps += actual["physics_steps"]
+            write_json(
+                out / "native-oracle.json",
+                {"feature_oracle": oracle, "v6_actual_continuation": actual},
+            )
         event("T0", "completed")
         health()
         event("H1", "running")
@@ -944,14 +1016,14 @@ def run_transfer(protocol_path, archive, out):
         health()
         event("T1", "running")
         with ProcessPoolExecutor(
-            max_workers=4, mp_context=mp.get_context("spawn")
+            max_workers=p["caps"]["simulation_workers"],
+            mp_context=mp.get_context("spawn"),
         ) as pool:
             futures = []
             remaining = p["caps"]["physics_steps"] - diagnostic_steps
+            total_weight = sum(0.002 / v["physics_dt_s"] for v in p["variants"])
             for v in p["variants"]:
-                allowance = int(
-                    remaining * (1 if v["physics_dt_s"] == 0.002 else 2) / 6
-                )
+                allowance = int(remaining * (0.002 / v["physics_dt_s"]) / total_weight)
                 futures.append(
                     pool.submit(
                         variant_worker,
@@ -1000,7 +1072,13 @@ def run_transfer(protocol_path, archive, out):
             if row["status"] == "not_run":
                 row["reason"] = "halted_before_attempt"
         write_json(out / "evaluations.json", rows)
-        result = summarize(rows) | {
+        if physical:
+            from .physical_motor import summarize as physical_summary
+
+            summary = physical_summary(rows)
+        else:
+            summary = summarize(rows)
+        result = summary | {
             "wall_s": time.perf_counter() - started,
             "physics_steps": physics,
             "diagnostic_physics_steps": diagnostic_steps,
@@ -1010,6 +1088,18 @@ def run_transfer(protocol_path, archive, out):
             "qualification_pending_replay_audit": True,
         }
         write_json(out / "result.json", result)
+        # A final receipt derives from the completed registry even if the last
+        # periodic heartbeat preceded the last worker's row flush.
+        write_json(
+            out / "progress.json",
+            {
+                "wall_s": result["wall_s"],
+                "physics_steps": physics,
+                "completed": sum(r["status"] == "completed" for r in rows),
+                "planned": len(rows),
+                "status": "finished",
+            },
+        )
         write_json(
             out / "process.json",
             {"pid": os.getpid(), "status": "finished", "run": str(out)},
@@ -1017,3 +1107,8 @@ def run_transfer(protocol_path, archive, out):
         journal.close()
         lease.close()
     return result
+
+
+def run_transfer(protocol_path, archive, out):
+    p = validate_protocol(json.loads(Path(protocol_path).read_text()))
+    return run_motor_experiment(p, protocol_path, archive, out)

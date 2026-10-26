@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-26T22:57:48.559530+00:00",
+  "command": "rtk proxy uv run --project experiments/v0.0.8/runtime pytest -q tests/test_physical_motor.py",
+  "status": "failed",
+  "passed": 20,
+  "failed": 1,
+  "elapsed_s": 27.79,
+  "failure": "test_monitor_latch_is_substep_time_and_finishes_held_interval[0]",
+  "actual_latch_s": 0.004,
+  "incorrect_test_expectation_s": 0.002,
+  "cause": "Fixture starts at .047s accumulated nonfoot duration; first 2ms reaches .049s, second reaches .051s. Existing .05s threshold correctly latches on second substep.",
+  "correction": "Expect two substeps for both registered timesteps; no physical threshold/source change.",
+  "formal_attempt": false
+}
