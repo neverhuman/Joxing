@@ -1,0 +1,37 @@
+{
+  "actor_sha256": "353b72894c123a4518589e0eef5d815969cf39e6256b1859a439228cce322e2b",
+  "addendum_sha256": "939ce3bf9c9e52f7f5514054bb5efd1f14293d11ef9b34b0b2b7ae517f928dea",
+  "code_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "concurrent_workers": 4,
+  "experiment": "H0",
+  "host": "xbabe1",
+  "load": [
+    6.1162109375,
+    5.96826171875,
+    5.43212890625
+  ],
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "repeats": 3,
+  "resource_check": {
+    "available_memory_bytes": 37665067008,
+    "disk_free_bytes": 350179594240
+  },
+  "schema": "joxing-run-v1",
+  "scope": "rollout/inference/support/reset; excludes optimizer; shared-host timing",
+  "script_sha256": "e82569b0db2cef4ddc55a6d20e5a8d7dc2c8897d4d586e1bdeffd97ed9d6c69a",
+  "source_hash": "8b45216daf642dc2ec9e76b37d0e76533310666d26d7c8943e6e9bf33ba20ba0",
+  "steps_per_worker_repeat": 200,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T19:11:04.747935+00:00",
+  "workers": [
+    4,
+    8,
+    12
+  ]
+}

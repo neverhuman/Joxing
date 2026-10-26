@@ -1,0 +1,1147 @@
+{
+  "actor_sha256": "353b72894c123a4518589e0eef5d815969cf39e6256b1859a439228cce322e2b",
+  "addendum_sha256": "939ce3bf9c9e52f7f5514054bb5efd1f14293d11ef9b34b0b2b7ae517f928dea",
+  "code_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "complete": true,
+  "concurrent_workers": 4,
+  "experiment": "H0",
+  "host": "xbabe1",
+  "invalids": 0,
+  "load": [
+    6.1162109375,
+    5.96826171875,
+    5.43212890625
+  ],
+  "median_transitions_per_s": {
+    "12": 646.7939866103741,
+    "4": 220.48052904707325,
+    "8": 436.01025032271514
+  },
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "physics_substeps": 143892,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "preparation_substeps": 20000,
+  "python": "3.12.3",
+  "repeats": 3,
+  "resource_check": {
+    "available_memory_bytes": 37665067008,
+    "disk_free_bytes": 350179594240
+  },
+  "samples": [
+    {
+      "load": [
+        6.40625,
+        6.03564453125,
+        5.46044921875
+      ],
+      "repeat": 0,
+      "resource_check": {
+        "available_memory_bytes": 34043359232,
+        "disk_free_bytes": 350179545088
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2010,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 2000,
+          "pid": 3901077,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.2770087849348783,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2001,
+          "lifetime_preparation_substeps": 400,
+          "physics_substeps": 1991,
+          "pid": 3901075,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.2643378153443336,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2004,
+          "lifetime_preparation_substeps": 400,
+          "physics_substeps": 1994,
+          "pid": 3901072,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.3094188272953033,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2004,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1994,
+          "pid": 3901076,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.2643443290144205,
+          "worker": 3
+        }
+      ],
+      "setup_s": 5.453492570668459,
+      "transitions_per_s": 223.11649798727515,
+      "wall_s": 3.5855707991868258,
+      "workers": 4
+    },
+    {
+      "load": [
+        6.6142578125,
+        6.0849609375,
+        5.4794921875
+      ],
+      "repeat": 1,
+      "resource_check": {
+        "available_memory_bytes": 34042081280,
+        "disk_free_bytes": 350179512320
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4001,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 2000,
+          "pid": 3901075,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.3152480348944664,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3995,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1991,
+          "pid": 3901072,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.282995393499732,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3998,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3901076,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.283359218388796,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4004,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1994,
+          "pid": 3901077,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.2786016780883074,
+          "worker": 3
+        }
+      ],
+      "setup_s": 5.453492570668459,
+      "transitions_per_s": 220.48052904707325,
+      "wall_s": 3.6284383181482553,
+      "workers": 4
+    },
+    {
+      "load": [
+        6.7255859375,
+        6.1171875,
+        5.4931640625
+      ],
+      "repeat": 2,
+      "resource_check": {
+        "available_memory_bytes": 34201264128,
+        "disk_free_bytes": 350179487744
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 6004,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 2000,
+          "pid": 3901077,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.300289621576667,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5989,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1991,
+          "pid": 3901076,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.283053133636713,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5989,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1994,
+          "pid": 3901072,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.3135859351605177,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5995,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3901075,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.304885460063815,
+          "worker": 3
+        }
+      ],
+      "setup_s": 5.453492570668459,
+      "transitions_per_s": 220.352934034766,
+      "wall_s": 3.630539359524846,
+      "workers": 4
+    },
+    {
+      "load": [
+        7.9853515625,
+        6.40966796875,
+        5.59521484375
+      ],
+      "repeat": 0,
+      "resource_check": {
+        "available_memory_bytes": 30749978624,
+        "disk_free_bytes": 350180773888
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2010,
+          "lifetime_preparation_substeps": 400,
+          "physics_substeps": 2000,
+          "pid": 3905591,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.317038293927908,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2001,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1991,
+          "pid": 3905594,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.287780212238431,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2004,
+          "lifetime_preparation_substeps": 400,
+          "physics_substeps": 1994,
+          "pid": 3905593,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.3232480995357037,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2004,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1994,
+          "pid": 3905585,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.290089236572385,
+          "worker": 3
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2005,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1995,
+          "pid": 3905592,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63004,
+          "transitions": 200,
+          "wall_s": 3.2793648466467857,
+          "worker": 4
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2009,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1999,
+          "pid": 3905596,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63005,
+          "transitions": 200,
+          "wall_s": 3.313136227428913,
+          "worker": 5
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2003,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1993,
+          "pid": 3905597,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63006,
+          "transitions": 200,
+          "wall_s": 3.355533916503191,
+          "worker": 6
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2006,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1996,
+          "pid": 3905599,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63007,
+          "transitions": 200,
+          "wall_s": 3.3139517810195684,
+          "worker": 7
+        }
+      ],
+      "setup_s": 6.752485394477844,
+      "transitions_per_s": 436.01025032271514,
+      "wall_s": 3.6696384977549314,
+      "workers": 8
+    },
+    {
+      "load": [
+        8.30712890625,
+        6.5029296875,
+        5.6298828125
+      ],
+      "repeat": 1,
+      "resource_check": {
+        "available_memory_bytes": 30933078016,
+        "disk_free_bytes": 350180741120
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4010,
+          "lifetime_preparation_substeps": 400,
+          "physics_substeps": 2000,
+          "pid": 3905591,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.3794024121016264,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3995,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1991,
+          "pid": 3905593,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.306963061913848,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3999,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3905592,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.3164350166916847,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3995,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3905594,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.303504766896367,
+          "worker": 3
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3999,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1995,
+          "pid": 3905585,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63004,
+          "transitions": 200,
+          "wall_s": 3.282762410119176,
+          "worker": 4
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4005,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1999,
+          "pid": 3905599,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63005,
+          "transitions": 200,
+          "wall_s": 3.3200074583292007,
+          "worker": 5
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4002,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1993,
+          "pid": 3905596,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63006,
+          "transitions": 200,
+          "wall_s": 3.320756433531642,
+          "worker": 6
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3999,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1996,
+          "pid": 3905597,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63007,
+          "transitions": 200,
+          "wall_s": 3.349533125758171,
+          "worker": 7
+        }
+      ],
+      "setup_s": 6.752485394477844,
+      "transitions_per_s": 432.7867936314115,
+      "wall_s": 3.6969704795628786,
+      "workers": 8
+    },
+    {
+      "load": [
+        8.30712890625,
+        6.5029296875,
+        5.6298828125
+      ],
+      "repeat": 2,
+      "resource_check": {
+        "available_memory_bytes": 31049940992,
+        "disk_free_bytes": 350180716544
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 6010,
+          "lifetime_preparation_substeps": 400,
+          "physics_substeps": 2000,
+          "pid": 3905591,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.352410674095154,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5990,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1991,
+          "pid": 3905585,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.304134748876095,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5989,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1994,
+          "pid": 3905593,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.3557781614363194,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5996,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3905596,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.323005646467209,
+          "worker": 3
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5990,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1995,
+          "pid": 3905594,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63004,
+          "transitions": 200,
+          "wall_s": 3.291886428371072,
+          "worker": 4
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5998,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1999,
+          "pid": 3905592,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63005,
+          "transitions": 200,
+          "wall_s": 3.308981416746974,
+          "worker": 5
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5998,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1993,
+          "pid": 3905599,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63006,
+          "transitions": 200,
+          "wall_s": 3.3333728797733784,
+          "worker": 6
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5995,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1996,
+          "pid": 3905597,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63007,
+          "transitions": 200,
+          "wall_s": 3.3337740004062653,
+          "worker": 7
+        }
+      ],
+      "setup_s": 6.752485394477844,
+      "transitions_per_s": 438.4612610316717,
+      "wall_s": 3.6491251159459352,
+      "workers": 8
+    },
+    {
+      "load": [
+        10.25048828125,
+        7.0185546875,
+        5.81298828125
+      ],
+      "repeat": 0,
+      "resource_check": {
+        "available_memory_bytes": 29279162368,
+        "disk_free_bytes": 350179835904
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2010,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 2000,
+          "pid": 3911320,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.3212706428021193,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2001,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1991,
+          "pid": 3911321,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.3189270310103893,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2004,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1994,
+          "pid": 3911314,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.321585586294532,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2004,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1994,
+          "pid": 3911310,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.3098427429795265,
+          "worker": 3
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2005,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1995,
+          "pid": 3911322,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63004,
+          "transitions": 200,
+          "wall_s": 3.3029608950018883,
+          "worker": 4
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2009,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1999,
+          "pid": 3911317,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63005,
+          "transitions": 200,
+          "wall_s": 3.374250391498208,
+          "worker": 5
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2003,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1993,
+          "pid": 3911313,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63006,
+          "transitions": 200,
+          "wall_s": 3.3868867848068476,
+          "worker": 6
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2006,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1996,
+          "pid": 3911323,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63007,
+          "transitions": 200,
+          "wall_s": 3.3246925808489323,
+          "worker": 7
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2009,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1999,
+          "pid": 3911319,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63008,
+          "transitions": 200,
+          "wall_s": 3.3576633390039206,
+          "worker": 8
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2005,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1995,
+          "pid": 3911315,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63009,
+          "transitions": 200,
+          "wall_s": 3.3634577430784702,
+          "worker": 9
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2000,
+          "lifetime_preparation_substeps": 400,
+          "physics_substeps": 1990,
+          "pid": 3911318,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63010,
+          "transitions": 200,
+          "wall_s": 3.319479115307331,
+          "worker": 10
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 2007,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1997,
+          "pid": 3911316,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63011,
+          "transitions": 200,
+          "wall_s": 3.3395641185343266,
+          "worker": 11
+        }
+      ],
+      "setup_s": 9.215525142848492,
+      "transitions_per_s": 646.7939866103741,
+      "wall_s": 3.7106096372008324,
+      "workers": 12
+    },
+    {
+      "load": [
+        10.7109375,
+        7.16796875,
+        5.8681640625
+      ],
+      "repeat": 1,
+      "resource_check": {
+        "available_memory_bytes": 29090222080,
+        "disk_free_bytes": 350179323904
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4000,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 2000,
+          "pid": 3911318,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.33281671628356,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3996,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1991,
+          "pid": 3911322,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.3183814622461796,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3998,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3911310,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.317830501124263,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3995,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3911321,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.297739926725626,
+          "worker": 3
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3999,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1995,
+          "pid": 3911314,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63004,
+          "transitions": 200,
+          "wall_s": 3.2783752847462893,
+          "worker": 4
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4009,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1999,
+          "pid": 3911320,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63005,
+          "transitions": 200,
+          "wall_s": 3.293418649584055,
+          "worker": 5
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3999,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1993,
+          "pid": 3911323,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63006,
+          "transitions": 200,
+          "wall_s": 3.318132221698761,
+          "worker": 6
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4003,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1996,
+          "pid": 3911316,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63007,
+          "transitions": 200,
+          "wall_s": 3.3260231148451567,
+          "worker": 7
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4008,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1999,
+          "pid": 3911319,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63008,
+          "transitions": 200,
+          "wall_s": 3.308418869972229,
+          "worker": 8
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4000,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1995,
+          "pid": 3911315,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63009,
+          "transitions": 200,
+          "wall_s": 3.3088533133268356,
+          "worker": 9
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 3999,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1990,
+          "pid": 3911317,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63010,
+          "transitions": 200,
+          "wall_s": 3.356620389968157,
+          "worker": 10
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 4000,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1997,
+          "pid": 3911313,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63011,
+          "transitions": 200,
+          "wall_s": 3.3624367117881775,
+          "worker": 11
+        }
+      ],
+      "setup_s": 9.215525142848492,
+      "transitions_per_s": 651.7776888238484,
+      "wall_s": 3.682237120345235,
+      "workers": 12
+    },
+    {
+      "load": [
+        11.294921875,
+        7.34814453125,
+        5.93359375
+      ],
+      "repeat": 2,
+      "resource_check": {
+        "available_memory_bytes": 31102746624,
+        "disk_free_bytes": 350179270656
+      },
+      "rows": [
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 6008,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 2000,
+          "pid": 3911319,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63000,
+          "transitions": 200,
+          "wall_s": 3.400054946541786,
+          "worker": 0
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5991,
+          "lifetime_preparation_substeps": 600,
+          "physics_substeps": 1991,
+          "pid": 3911315,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63001,
+          "transitions": 200,
+          "wall_s": 3.3355870954692364,
+          "worker": 1
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5997,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1994,
+          "pid": 3911316,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63002,
+          "transitions": 200,
+          "wall_s": 3.3834587670862675,
+          "worker": 2
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5993,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1994,
+          "pid": 3911314,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63003,
+          "transitions": 200,
+          "wall_s": 3.307531787082553,
+          "worker": 3
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 6004,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1995,
+          "pid": 3911320,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63004,
+          "transitions": 200,
+          "wall_s": 3.3316750302910805,
+          "worker": 4
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5994,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1999,
+          "pid": 3911321,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63005,
+          "transitions": 200,
+          "wall_s": 3.3330956138670444,
+          "worker": 5
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5991,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1993,
+          "pid": 3911310,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63006,
+          "transitions": 200,
+          "wall_s": 3.344037337228656,
+          "worker": 6
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5992,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1996,
+          "pid": 3911322,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63007,
+          "transitions": 200,
+          "wall_s": 3.3542413134127855,
+          "worker": 7
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5998,
+          "lifetime_preparation_substeps": 1000,
+          "physics_substeps": 1999,
+          "pid": 3911323,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63008,
+          "transitions": 200,
+          "wall_s": 3.3375387247651815,
+          "worker": 8
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5995,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1995,
+          "pid": 3911318,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63009,
+          "transitions": 200,
+          "wall_s": 3.3322484642267227,
+          "worker": 9
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5989,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1990,
+          "pid": 3911317,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "scenario_id": 63010,
+          "transitions": 200,
+          "wall_s": 3.392250545322895,
+          "worker": 10
+        },
+        {
+          "invalid": false,
+          "lifetime_physics_substeps": 5997,
+          "lifetime_preparation_substeps": 800,
+          "physics_substeps": 1997,
+          "pid": 3911313,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "scenario_id": 63011,
+          "transitions": 200,
+          "wall_s": 3.410172773525119,
+          "worker": 11
+        }
+      ],
+      "setup_s": 9.215525142848492,
+      "transitions_per_s": 644.2819779325317,
+      "wall_s": 3.725077034905553,
+      "workers": 12
+    }
+  ],
+  "schema": "joxing-run-v1",
+  "scope": "rollout/inference/support/reset; excludes optimizer; shared-host timing",
+  "script_sha256": "e82569b0db2cef4ddc55a6d20e5a8d7dc2c8897d4d586e1bdeffd97ed9d6c69a",
+  "source_hash": "8b45216daf642dc2ec9e76b37d0e76533310666d26d7c8943e6e9bf33ba20ba0",
+  "steps_per_worker_repeat": 200,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T19:11:04.747935+00:00",
+  "wall_s": 57.40438610687852,
+  "workers": [
+    4,
+    8,
+    12
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "available_memory_bytes": 44523847680,
+  "code_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 uv run python scripts/run_wave.py --protocol experiments/v0.0.5/protocol.json --out runs/v0.0.5/wave-01",
+  "disk_free_bytes": 350387449856,
+  "gpu_used": false,
+  "host": "xbabe1",
+  "load": [
+    4.31884765625,
+    4.20849609375,
+    4.75732421875
+  ],
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "pid": 3802532,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "schema": "joxing-run-v1",
+  "source_hash": "8b45216daf642dc2ec9e76b37d0e76533310666d26d7c8943e6e9bf33ba20ba0",
+  "threads_per_process": 1,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T18:59:35.309951+00:00",
+  "workers": 4
+}

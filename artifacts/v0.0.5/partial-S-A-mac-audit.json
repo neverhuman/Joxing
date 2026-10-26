@@ -1,0 +1,57 @@
+{
+  "code_commit": "b3ec8725a63c1032ad43e503377f07fc49afdc8b",
+  "cross_host_full_state_passed": false,
+  "findings": [
+    {
+      "action_replay": {
+        "integration_state_max_error": 1.383426706524915e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 2.9976021664879227e-15,
+        "qvel_max_error": 1.1579626146840383e-13
+      },
+      "policy": "initial",
+      "policy_replay": {
+        "integration_state_max_error": 3.584615798857271e-05,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 2.054518688510143e-08,
+        "qvel_max_error": 8.705572336342726e-07
+      },
+      "repeat_error": 0.0
+    },
+    {
+      "action_replay": {
+        "integration_state_max_error": 6.275724384607884e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.43908929112402e-14,
+        "qvel_max_error": 7.638334409421077e-13
+      },
+      "policy": "trained",
+      "policy_replay": {
+        "integration_state_max_error": 0.0009205163837577857,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 1.6317808038124326e-07,
+        "qvel_max_error": 4.151029706189746e-06
+      },
+      "repeat_error": 0.0
+    }
+  ],
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "physics_substeps": 5505,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "preparation_substeps": 200,
+  "python": "3.12.12",
+  "same_host_repeat_passed": true,
+  "schema": "joxing-run-v1",
+  "source_hash": "8b45216daf642dc2ec9e76b37d0e76533310666d26d7c8943e6e9bf33ba20ba0",
+  "tolerances": {
+    "cross_host": 1e-05,
+    "same_host": 1e-09
+  },
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T19:16:19.946411+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "code_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+  "findings": [
+    {
+      "action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "policy": "initial",
+      "policy_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "repeat_error": 0.0
+    },
+    {
+      "action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "policy": "trained",
+      "policy_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "repeat_error": 0.0
+    }
+  ],
+  "host": "xbabe1",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": true,
+  "physics_substeps": 5505,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "preparation_substeps": 200,
+  "python": "3.12.3",
+  "schema": "joxing-run-v1",
+  "source_hash": "8b45216daf642dc2ec9e76b37d0e76533310666d26d7c8943e6e9bf33ba20ba0",
+  "tolerance": 1e-09,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T19:16:11.501365+00:00"
+}
