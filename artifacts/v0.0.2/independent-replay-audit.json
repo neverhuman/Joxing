@@ -1,0 +1,49 @@
+{
+  "code_commit": "aa7ee077c77964a170977f4778fade2d422039cc",
+  "experiment": "v0.0.2-independent-receipt-and-replay-audit",
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": true,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "proof_code_commit": "3f2be02023baf996a9d813e729ecd7648b779d91",
+  "protocol_hash": "36c229d690f79a60edeab302948529342980c2ae6fa766c40785a3512641848a",
+  "python": "3.12.12",
+  "schema": "joxing-run-v1",
+  "scope": "Controlled short task replay and receipt accounting, not general cross-platform boxing determinism",
+  "seeds": [
+    {
+      "event_identity_match": true,
+      "passed": true,
+      "qpos_max_error": 9.49684775264359e-13,
+      "restored_final_qpos_error": 9.51017042893909e-13,
+      "restored_score": 1,
+      "trace_max_error": 9.734435479913373e-12,
+      "training_seed": 7
+    },
+    {
+      "event_identity_match": true,
+      "passed": true,
+      "qpos_max_error": 8.815170815523743e-13,
+      "restored_final_qpos_error": 8.810729923425242e-13,
+      "restored_score": 1,
+      "trace_max_error": 1.233502189279534e-11,
+      "training_seed": 19
+    },
+    {
+      "event_identity_match": true,
+      "passed": true,
+      "qpos_max_error": 9.72111280361787e-13,
+      "restored_final_qpos_error": 9.725553695716371e-13,
+      "restored_score": 1,
+      "trace_max_error": 6.110667527536862e-12,
+      "training_seed": 41
+    }
+  ],
+  "source_hash": "76439d24b12e915bac5d5b428e7051d3ea2d0f06aeb1870eee07f3814746bdb7",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T13:49:56.714210+00:00"
+}

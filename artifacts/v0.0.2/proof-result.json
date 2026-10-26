@@ -1,0 +1,483 @@
+{
+  "code_commit": "3f2be02023baf996a9d813e729ecd7648b779d91",
+  "diagnostic_attempts": 21,
+  "evaluation_attempts": 384,
+  "host": "xbabe1",
+  "invalid_episodes": 0,
+  "limitations": [
+    "fixed pelvis and zero gravity",
+    "open-loop pulses",
+    "one spherical target neighborhood",
+    "simulation force predictions, no empirical calibration",
+    "not unassisted boxing or self-play"
+  ],
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": true,
+  "pilot": false,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "protocol_hash": "36c229d690f79a60edeab302948529342980c2ae6fa766c40785a3512641848a",
+  "python": "3.12.3",
+  "schema": "joxing-run-v1",
+  "seeds": [
+    {
+      "evaluation": {
+        "initial": {
+          "attempts": 64,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 5.498373212614301,
+          "mean_peak_force_N": 336.00630070355487,
+          "strike_withdrawal_success_rate": 0.0
+        },
+        "trained": {
+          "attempts": 64,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 2.733404595793842,
+          "mean_peak_force_N": 268.0581722298326,
+          "strike_withdrawal_success_rate": 1.0
+        }
+      },
+      "history": [
+        {
+          "best_reward": 8.99910730190126,
+          "episodes": 24,
+          "generation": 0,
+          "mean_hit_success": 0.4583333333333333,
+          "mean_reward": 4.029333956977964,
+          "mean_strike_withdrawal_success": 0.2916666666666667
+        },
+        {
+          "best_reward": 8.998899437837057,
+          "episodes": 48,
+          "generation": 1,
+          "mean_hit_success": 0.625,
+          "mean_reward": 4.9712031442000635,
+          "mean_strike_withdrawal_success": 0.2916666666666667
+        },
+        {
+          "best_reward": 8.999234288869072,
+          "episodes": 72,
+          "generation": 2,
+          "mean_hit_success": 0.9166666666666666,
+          "mean_reward": 7.044801162794944,
+          "mean_strike_withdrawal_success": 0.5416666666666666
+        },
+        {
+          "best_reward": 8.998958359131253,
+          "episodes": 96,
+          "generation": 3,
+          "mean_hit_success": 0.6666666666666666,
+          "mean_reward": 6.541401225980656,
+          "mean_strike_withdrawal_success": 0.625
+        },
+        {
+          "best_reward": 8.999112620874323,
+          "episodes": 120,
+          "generation": 4,
+          "mean_hit_success": 0.9583333333333334,
+          "mean_reward": 8.648437479763558,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        },
+        {
+          "best_reward": 8.999262979473883,
+          "episodes": 144,
+          "generation": 5,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.997892766700081,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999254909863154,
+          "episodes": 168,
+          "generation": 6,
+          "mean_hit_success": 0.8333333333333334,
+          "mean_reward": 7.981286912058645,
+          "mean_strike_withdrawal_success": 0.8333333333333334
+        },
+        {
+          "best_reward": 8.999284908137646,
+          "episodes": 192,
+          "generation": 7,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.982409675991233,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.99934207769574,
+          "episodes": 216,
+          "generation": 8,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.976341941582355,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999380414093716,
+          "episodes": 240,
+          "generation": 9,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.991137207274317,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.99944877582428,
+          "episodes": 264,
+          "generation": 10,
+          "mean_hit_success": 0.9166666666666666,
+          "mean_reward": 8.453597675393617,
+          "mean_strike_withdrawal_success": 0.9166666666666666
+        },
+        {
+          "best_reward": 8.999449293965036,
+          "episodes": 288,
+          "generation": 11,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.99603728229703,
+          "mean_strike_withdrawal_success": 1.0
+        }
+      ],
+      "model_hash": "bc83467c7c10253d0d204453b53c7fb5c5bad11678dd601d06dd1ad1107986ef",
+      "paired_task_success_improvement": 1.0,
+      "passed": true,
+      "policy_hash": "c488c009429e97a5af6b7a71bba4249c6ce9362dd8e6aac91e3d511cde1f667d",
+      "replay": {
+        "final_state_max_error": 0.0,
+        "ledger_equal": true,
+        "passed": true,
+        "snapshot_tick": 357
+      },
+      "role_controls": {
+        "guard": {
+          "expected_points": 0,
+          "passed": true,
+          "physical_impulse_Ns": 2.951948877136016,
+          "points": 0
+        },
+        "head": {
+          "expected_points": 2,
+          "passed": true,
+          "physical_impulse_Ns": 2.951948877136016,
+          "points": 2
+        },
+        "passive": {
+          "expected_points": 0,
+          "passed": true,
+          "points": 0
+        }
+      },
+      "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+      "task_hash": "b75ed6ef9a01757b37509cd0dc38825ff4f147b2bc314c34058770757ea8cc9c",
+      "training_seed": 7
+    },
+    {
+      "evaluation": {
+        "initial": {
+          "attempts": 64,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 5.498373212614301,
+          "mean_peak_force_N": 336.00630070355487,
+          "strike_withdrawal_success_rate": 0.0
+        },
+        "trained": {
+          "attempts": 64,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 2.805217988139094,
+          "mean_peak_force_N": 275.34412749919454,
+          "strike_withdrawal_success_rate": 1.0
+        }
+      },
+      "history": [
+        {
+          "best_reward": 8.80076634697494,
+          "episodes": 24,
+          "generation": 0,
+          "mean_hit_success": 0.3333333333333333,
+          "mean_reward": 2.7768725759387123,
+          "mean_strike_withdrawal_success": 0.08333333333333333
+        },
+        {
+          "best_reward": 8.997597828052333,
+          "episodes": 48,
+          "generation": 1,
+          "mean_hit_success": 0.6666666666666666,
+          "mean_reward": 5.09250566174315,
+          "mean_strike_withdrawal_success": 0.4166666666666667
+        },
+        {
+          "best_reward": 8.99896722186972,
+          "episodes": 72,
+          "generation": 2,
+          "mean_hit_success": 0.9166666666666666,
+          "mean_reward": 7.23150723716812,
+          "mean_strike_withdrawal_success": 0.6666666666666666
+        },
+        {
+          "best_reward": 8.998990123107626,
+          "episodes": 96,
+          "generation": 3,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.635490566932239,
+          "mean_strike_withdrawal_success": 0.9166666666666666
+        },
+        {
+          "best_reward": 8.999209954739209,
+          "episodes": 120,
+          "generation": 4,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.9988188748784,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999261946509522,
+          "episodes": 144,
+          "generation": 5,
+          "mean_hit_success": 0.9583333333333334,
+          "mean_reward": 8.69959827500021,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        },
+        {
+          "best_reward": 8.999378468596865,
+          "episodes": 168,
+          "generation": 6,
+          "mean_hit_success": 0.9583333333333334,
+          "mean_reward": 8.74287702955253,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        },
+        {
+          "best_reward": 8.999396834478253,
+          "episodes": 192,
+          "generation": 7,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.999313991427753,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999466844250543,
+          "episodes": 216,
+          "generation": 8,
+          "mean_hit_success": 0.9583333333333334,
+          "mean_reward": 8.749364255435774,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        },
+        {
+          "best_reward": 8.999528064633814,
+          "episodes": 240,
+          "generation": 9,
+          "mean_hit_success": 0.8333333333333334,
+          "mean_reward": 7.920681847296088,
+          "mean_strike_withdrawal_success": 0.8333333333333334
+        },
+        {
+          "best_reward": 8.999548631643293,
+          "episodes": 264,
+          "generation": 10,
+          "mean_hit_success": 0.9166666666666666,
+          "mean_reward": 8.499457394722446,
+          "mean_strike_withdrawal_success": 0.9166666666666666
+        },
+        {
+          "best_reward": 8.999576049526286,
+          "episodes": 288,
+          "generation": 11,
+          "mean_hit_success": 0.9583333333333334,
+          "mean_reward": 8.728377203708524,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        }
+      ],
+      "model_hash": "bc83467c7c10253d0d204453b53c7fb5c5bad11678dd601d06dd1ad1107986ef",
+      "paired_task_success_improvement": 1.0,
+      "passed": true,
+      "policy_hash": "aef92fedbf3732f0a2455066fe08712574f334a8b1bb31f888323b692e4d6aea",
+      "replay": {
+        "final_state_max_error": 0.0,
+        "ledger_equal": true,
+        "passed": true,
+        "snapshot_tick": 328
+      },
+      "role_controls": {
+        "guard": {
+          "expected_points": 0,
+          "passed": true,
+          "physical_impulse_Ns": 2.892219093581154,
+          "points": 0
+        },
+        "head": {
+          "expected_points": 2,
+          "passed": true,
+          "physical_impulse_Ns": 2.892219093581154,
+          "points": 2
+        },
+        "passive": {
+          "expected_points": 0,
+          "passed": true,
+          "points": 0
+        }
+      },
+      "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+      "task_hash": "b75ed6ef9a01757b37509cd0dc38825ff4f147b2bc314c34058770757ea8cc9c",
+      "training_seed": 19
+    },
+    {
+      "evaluation": {
+        "initial": {
+          "attempts": 64,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 5.498373212614301,
+          "mean_peak_force_N": 336.00630070355487,
+          "strike_withdrawal_success_rate": 0.0
+        },
+        "trained": {
+          "attempts": 64,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 3.6852274843710484,
+          "mean_peak_force_N": 318.6051761450471,
+          "strike_withdrawal_success_rate": 1.0
+        }
+      },
+      "history": [
+        {
+          "best_reward": 8.998405957936486,
+          "episodes": 24,
+          "generation": 0,
+          "mean_hit_success": 0.5416666666666666,
+          "mean_reward": 4.384169447985927,
+          "mean_strike_withdrawal_success": 0.375
+        },
+        {
+          "best_reward": 8.998610470137766,
+          "episodes": 48,
+          "generation": 1,
+          "mean_hit_success": 0.625,
+          "mean_reward": 4.878112204465054,
+          "mean_strike_withdrawal_success": 0.2916666666666667
+        },
+        {
+          "best_reward": 8.998772151594324,
+          "episodes": 72,
+          "generation": 2,
+          "mean_hit_success": 0.7916666666666666,
+          "mean_reward": 6.280278494235437,
+          "mean_strike_withdrawal_success": 0.5416666666666666
+        },
+        {
+          "best_reward": 8.999002420754321,
+          "episodes": 96,
+          "generation": 3,
+          "mean_hit_success": 0.875,
+          "mean_reward": 7.701315810013855,
+          "mean_strike_withdrawal_success": 0.7916666666666666
+        },
+        {
+          "best_reward": 8.999199611212058,
+          "episodes": 120,
+          "generation": 4,
+          "mean_hit_success": 0.8333333333333334,
+          "mean_reward": 7.862108308497629,
+          "mean_strike_withdrawal_success": 0.8333333333333334
+        },
+        {
+          "best_reward": 8.999177701339086,
+          "episodes": 144,
+          "generation": 5,
+          "mean_hit_success": 0.9583333333333334,
+          "mean_reward": 8.580747922126642,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        },
+        {
+          "best_reward": 8.999230894588948,
+          "episodes": 168,
+          "generation": 6,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.757270677205668,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        },
+        {
+          "best_reward": 8.999240678187158,
+          "episodes": 192,
+          "generation": 7,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.999130539719394,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999328672761264,
+          "episodes": 216,
+          "generation": 8,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.954568990945708,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999376499792037,
+          "episodes": 240,
+          "generation": 9,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.976812312590397,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.99944101177089,
+          "episodes": 264,
+          "generation": 10,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.992295625541624,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999519388288789,
+          "episodes": 288,
+          "generation": 11,
+          "mean_hit_success": 0.9583333333333334,
+          "mean_reward": 8.738980103036852,
+          "mean_strike_withdrawal_success": 0.9583333333333334
+        }
+      ],
+      "model_hash": "bc83467c7c10253d0d204453b53c7fb5c5bad11678dd601d06dd1ad1107986ef",
+      "paired_task_success_improvement": 1.0,
+      "passed": true,
+      "policy_hash": "81716b5bfbcba8de118c62b4e2932ede632d7fc21ec222a800e87e8ffa34ec7b",
+      "replay": {
+        "final_state_max_error": 0.0,
+        "ledger_equal": true,
+        "passed": true,
+        "snapshot_tick": 292
+      },
+      "role_controls": {
+        "guard": {
+          "expected_points": 0,
+          "passed": true,
+          "physical_impulse_Ns": 3.658862373422002,
+          "points": 0
+        },
+        "head": {
+          "expected_points": 2,
+          "passed": true,
+          "physical_impulse_Ns": 3.658862373422002,
+          "points": 2
+        },
+        "passive": {
+          "expected_points": 0,
+          "passed": true,
+          "points": 0
+        }
+      },
+      "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+      "task_hash": "b75ed6ef9a01757b37509cd0dc38825ff4f147b2bc314c34058770757ea8cc9c",
+      "training_seed": 41
+    }
+  ],
+  "source_hash": "76439d24b12e915bac5d5b428e7051d3ea2d0f06aeb1870eee07f3814746bdb7",
+  "training_episodes": 864,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T13:47:09.998617+00:00",
+  "version": "0.0.2",
+  "wall_s": 256.8134038876742
+}

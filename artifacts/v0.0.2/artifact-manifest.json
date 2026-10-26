@@ -1,0 +1,69 @@
+{
+  "all_gates_passed": true,
+  "code_commit": "767e764ed64468768d7a61796950cb9ab3b5cb37",
+  "compute_checkout": "xbabe1:/home/ubuntu/joxing/bootstrap-20261026",
+  "files": {
+    "independent-replay-audit.json": {
+      "bytes": 1707,
+      "sha256": "7a3dc7977ebdb3d68229d8f02fe5ab21e445cc8571d45c9dca3004cfe84d0763"
+    },
+    "lint.txt": {
+      "bytes": 19,
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    "linux-tests.txt": {
+      "bytes": 99,
+      "sha256": "fad1e78b08db7f89a57ba3ce73ab5e7f51999ba2907862b092c92c76316dd311"
+    },
+    "local-tests.txt": {
+      "bytes": 99,
+      "sha256": "16cb4e4f010e5faeb3fb83dcc18887635a8a194c0159fb762680264e9d49924e"
+    },
+    "pilot-result.json": {
+      "bytes": 4198,
+      "sha256": "5d70127ceb9c1ada20c7757eaea82f01b8739571227e182763ff3327eed90a9d"
+    },
+    "pilot-run.zip": {
+      "bytes": 1083499,
+      "sha256": "f7c357522f11e864a4a5083a03d362afee619f2c135b597d39c82942b42c1590"
+    },
+    "proof-result.json": {
+      "bytes": 15559,
+      "sha256": "99d4f80c47c38e9ecc84bf61dc230051800cafde2367f07707cdf8c87630574d"
+    },
+    "proof-run.zip": {
+      "bytes": 3389441,
+      "sha256": "57a10e5acc3196ac8153c6983ea54bcd1edb4bd85d42068deb817626b40fb698"
+    },
+    "proof.png": {
+      "bytes": 254361,
+      "sha256": "992d2df06ae06abfb0f88daf15b00d1e2af9a9895d9978907c7d11dd39853893"
+    },
+    "protocol.json": {
+      "bytes": 3124,
+      "sha256": "48788fcd758917ab81c80422260b063e5af49a6748a7ee5635f42a3ab8eb6bc0"
+    },
+    "strike-before-after.mp4": {
+      "bytes": 1391402,
+      "sha256": "cf376034ffe7fb90ac2f4070d6a486f8a9bbbc47ce5855182957c3afdcff8c3f"
+    }
+  },
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "pilot_data": "pilot-run.zip",
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "proof_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 .venv/bin/joxing train-strike --out runs/v0.0.2/proof-01 --workers 4",
+  "proof_source_commit": "3f2be02023baf996a9d813e729ecd7648b779d91",
+  "protocol_hash": "36c229d690f79a60edeab302948529342980c2ae6fa766c40785a3512641848a",
+  "python": "3.12.12",
+  "raw_data": "proof-run.zip",
+  "schema": "joxing-run-v1",
+  "source_hash": "76439d24b12e915bac5d5b428e7051d3ea2d0f06aeb1870eee07f3814746bdb7",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T13:56:04.100681+00:00",
+  "version": "0.0.2"
+}

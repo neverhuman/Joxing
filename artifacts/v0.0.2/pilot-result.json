@@ -1,0 +1,131 @@
+{
+  "code_commit": "0eba6fedc2480e65fbcd8b8cffdebd9d0836a75e",
+  "evaluation_attempts": 16,
+  "host": "xbabe1",
+  "invalid_episodes": 0,
+  "limitations": [
+    "fixed pelvis and zero gravity",
+    "open-loop pulses",
+    "one spherical target neighborhood",
+    "simulation force predictions, no empirical calibration",
+    "not unassisted boxing or self-play"
+  ],
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": true,
+  "pilot": true,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "protocol_hash": "7f52e76e5305dfb22db589d392cefa113fbd891b7029cdb46e0483c839c21b55",
+  "python": "3.12.3",
+  "schema": "joxing-run-v1",
+  "seeds": [
+    {
+      "evaluation": {
+        "initial": {
+          "attempts": 8,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 5.298522029852478,
+          "mean_peak_force_N": 336.08908460086246,
+          "strike_withdrawal_success_rate": 0.0
+        },
+        "trained": {
+          "attempts": 8,
+          "hit_success_rate": 1.0,
+          "invalid": 0,
+          "mean_normal_impulse_Ns": 2.890212543303897,
+          "mean_peak_force_N": 277.30801648042114,
+          "strike_withdrawal_success_rate": 1.0
+        }
+      },
+      "history": [
+        {
+          "best_reward": 8.99910730190126,
+          "episodes": 16,
+          "generation": 0,
+          "mean_hit_success": 0.375,
+          "mean_reward": 3.3415960649403402,
+          "mean_strike_withdrawal_success": 0.1875
+        },
+        {
+          "best_reward": 8.998575676273576,
+          "episodes": 32,
+          "generation": 1,
+          "mean_hit_success": 0.8125,
+          "mean_reward": 5.75587121591155,
+          "mean_strike_withdrawal_success": 0.4375
+        },
+        {
+          "best_reward": 8.999113012472757,
+          "episodes": 48,
+          "generation": 2,
+          "mean_hit_success": 1.0,
+          "mean_reward": 7.40673814441738,
+          "mean_strike_withdrawal_success": 0.6875
+        },
+        {
+          "best_reward": 8.999319059241884,
+          "episodes": 64,
+          "generation": 3,
+          "mean_hit_success": 0.9375,
+          "mean_reward": 8.3907334534873,
+          "mean_strike_withdrawal_success": 0.9375
+        },
+        {
+          "best_reward": 8.999299114746838,
+          "episodes": 80,
+          "generation": 4,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.994426136469649,
+          "mean_strike_withdrawal_success": 1.0
+        },
+        {
+          "best_reward": 8.999364689227509,
+          "episodes": 96,
+          "generation": 5,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.615233617045776,
+          "mean_strike_withdrawal_success": 0.9375
+        },
+        {
+          "best_reward": 8.999435570447844,
+          "episodes": 112,
+          "generation": 6,
+          "mean_hit_success": 0.75,
+          "mean_reward": 7.33589327018489,
+          "mean_strike_withdrawal_success": 0.75
+        },
+        {
+          "best_reward": 8.999511382950866,
+          "episodes": 128,
+          "generation": 7,
+          "mean_hit_success": 1.0,
+          "mean_reward": 8.996129844045438,
+          "mean_strike_withdrawal_success": 1.0
+        }
+      ],
+      "model_hash": "bc83467c7c10253d0d204453b53c7fb5c5bad11678dd601d06dd1ad1107986ef",
+      "paired_task_success_improvement": 1.0,
+      "passed": true,
+      "policy_hash": "baf00088d8c9a1a22e495cb674cc64807ebf7209b3f97e2e6c0c17c4d306f28d",
+      "replay": {
+        "final_state_max_error": 0.0,
+        "ledger_equal": true,
+        "passed": true,
+        "snapshot_tick": 368
+      },
+      "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+      "task_hash": "b75ed6ef9a01757b37509cd0dc38825ff4f147b2bc314c34058770757ea8cc9c",
+      "training_seed": 7
+    }
+  ],
+  "source_hash": "c11eb41bc39ba7dc5f503869269882a8a371b368a4ddfff75074db5d65266359",
+  "training_episodes": 128,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T13:40:01.287241+00:00",
+  "version": "0.0.2",
+  "wall_s": 34.80949470028281
+}
