@@ -1,0 +1,39 @@
+{
+  "pid": 1392737,
+  "cwd": "/home/ubuntu/joxing/v008-20261026",
+  "started_utc": "2026-10-26T23:13:01.152317+00:00",
+  "source_commit": "565942db98f6c3a38378d4dab5069d83571d88bb",
+  "status": "running",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.8/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 1392739,
+      "wall_s": 1.0153855215758085,
+      "returncode": 0
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.8/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "running",
+      "pid": 1392874
+    }
+  ],
+  "simulation_workers_cap": 2,
+  "threads": 1
+}
