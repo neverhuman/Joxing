@@ -54,3 +54,13 @@ Before proof launch, froze a smaller 12×24 training budget per seed based on pi
 - Final validation: 40 tests and Ruff pass. The added preservation test confirmed native actuator parameters, body masses and inertias remain unchanged. A missing test import was caught during development and corrected before final verification; no physics/rules change resulted.
 
 Read `docs/V0.0.2_RESULTS.md` for measured scope and reproduction commands. Next iteration should remove assistance through a validated stance/reset and balance gate, not jump directly into self-play. Existing Warp parity failure remains open.
+
+## v0.0.3 — test plan prepared
+
+User requested the next version of tests and a Git push. [V0.0.3_PLAN.md](V0.0.3_PLAN.md) defines the sequential implementation handoff against released source `88b76604e87e62e2681e2adc15af0651636183ac`: native-root stress tests, support/assistance audits, validated resets, a bounded full-body feedback learner, three-seed quiet-stance/push evaluation, replay and compute receipts.
+
+The plan separates a completed test platform from a passed motor gate and measured learning improvement. Formal targets are 61/64 quiet stance and 58/64 recovery successes per seed, zero invalids, with all attempts retained. Initial compute cap is four CPU simulation workers; total planned cap is 40 million physics substeps/four hours, subject to fresh host availability. GPU simulator parity remains unresolved.
+
+This delivery contains planning/documentation only. No v0.0.3 implementation, new physics measurement, training job or evaluation has started. Package/tag v0.0.2 and its evidence remain current. Next action is plan step 1, then the root/support/reset probe before learner work.
+
+Planning validation: `rtk proxy uv run python` checked all local Markdown links and balanced code fences in the four changed documents; passed. Confirmed 768 planned evaluation attempts and unchanged package version 0.0.2. The first link-check invocation used unavailable bare `python`; rerunning through the locked uv interpreter passed. `rtk proxy git diff --check` passed. No executable code changed; the prior 40-test result remains the latest physics/code verification. The planning commit is pushed to `origin/main`; its Git commit identifies this handoff, with no v0.0.3 release tag.

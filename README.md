@@ -8,6 +8,8 @@ Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGro
 
 [v0.0.2 results and receipts](docs/V0.0.2_RESULTS.md) · [Iteration plan](docs/V0.0.2_PLAN.md) · [Before/after video](artifacts/v0.0.2/strike-before-after.mp4)
 
+**Next planned iteration: [v0.0.3 gravity, balance and recovery tests](docs/V0.0.3_PLAN.md).** Test native-root falls, honest foot support and feasible resets, then run a bounded feedback-learning experiment under gravity. The plan defines held-out stance/push tests, replay, compute limits and separate test-platform and motor-competence gates. Implementation has not started.
+
 ![Two-human scene inspection; static, not a learned fight](artifacts/scene-inspection.png)
 
 ## Start

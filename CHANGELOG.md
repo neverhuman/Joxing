@@ -1,5 +1,12 @@
 # Changelog
 
+## Planned — v0.0.3
+
+- Define worker-ready gravity, root-fall, support/reset, stance-learning and push-recovery tests with frozen evaluation, replay and bounded compute requirements.
+- Separate test-platform delivery, motor competence and evidence of learned improvement. Implementation/results remain pending; released package remains v0.0.2.
+
+See [v0.0.3 test plan](docs/V0.0.3_PLAN.md).
+
 ## v0.0.2 — 2026-10-26
 
 - Connect actual MS-Human-700 muscle control to physical glove contact, geometry-derived onset/face/withdrawal evidence and the existing point referee.
