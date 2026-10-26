@@ -95,6 +95,20 @@ def main():
         strike.add_argument(
             "--population", type=int, default=16 if name == "strike-pilot" else 24
         )
+    balance = sub.add_parser(
+        "balance-probe", help="v0.0.4 native-gravity reset/root audit"
+    )
+    balance.add_argument("--out", type=Path, required=True)
+    stance = sub.add_parser(
+        "train-stance",
+        help="v0.0.4 bounded SAC development pilot, not formal motor proof",
+    )
+    stance.add_argument("--out", type=Path, required=True)
+    stance.add_argument("--steps", type=int, default=100000)
+    stance.add_argument("--workers", type=int, default=4)
+    stance.add_argument("--seed", type=int, default=73)
+    stance.add_argument("--wall-s", type=float, default=1800.0)
+    stance.add_argument("--eval-count", type=int, default=32)
     render = sub.add_parser("render")
     render.add_argument(
         "--out", type=Path, default=Path("artifacts/generated/scene.png")
@@ -145,6 +159,21 @@ def main():
             seeds=(7,) if pilot else (7, 19, 41),
             eval_count=8 if pilot else 64,
             pilot=pilot,
+        )
+    elif args.command == "balance-probe":
+        from .stance_train import balance_probe
+
+        result = balance_probe(args.out)
+    elif args.command == "train-stance":
+        from .stance_train import train_stance
+
+        result = train_stance(
+            args.out,
+            steps=args.steps,
+            workers=args.workers,
+            seed=args.seed,
+            wall_s=args.wall_s,
+            eval_count=args.eval_count,
         )
     else:
         import imageio.v3 as iio

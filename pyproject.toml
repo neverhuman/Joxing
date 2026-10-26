@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "joxing"
-version = "0.0.2"
+version = "0.0.4"
 description = "Auditable muscle-driven boxing research on MS-Human-700"
 requires-python = ">=3.12"
 license = "Apache-2.0"
@@ -17,6 +17,10 @@ gpu = [
     "mujoco-warp==3.8.0; sys_platform == 'linux' and platform_machine == 'x86_64'",
     "warp-lang==1.12.0; sys_platform == 'linux' and platform_machine == 'x86_64'",
 ]
+motor = [
+    "stable-baselines3>=2.7,<3",
+    "torch>=2.4,<3",
+]
 
 [project.scripts]
 joxing = "joxing.cli:main"
@@ -26,4 +30,12 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
 
