@@ -1,0 +1,20 @@
+{
+  "baseline_mean_survival_s": 1.01753125,
+  "code_commit": "675caf84457f8acd1cdf6c90430d142fe3a98c97",
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "outcome_matches": true,
+  "passed": false,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "python": "3.12.12",
+  "schema": "joxing-run-v1",
+  "scope": "initial policy Linux-to-Mac closed-loop snapshot continuation",
+  "source_hash": "9ab9857e80d05a512a44abcbff85577dea96f123a9cda2d1ece3a3ee22ea9b66",
+  "state_max_error": 0.00021150385609303157,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T16:51:31.352393+00:00"
+}

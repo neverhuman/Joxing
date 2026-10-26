@@ -1,0 +1,28 @@
+{
+  "absolute_entropy_term_vs_motor_reward_ceiling": 4285.711975097656,
+  "code_commit": "de2c09b2d8bdddf436c3ff7d4854ce2175fab086",
+  "control_transitions": 29424,
+  "entropy_coefficient": 0.46520495414733887,
+  "entropy_probe": "32 action samples at one prepared development reset; diagnostic, not an ablation",
+  "gradient_updates": 19420,
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "interpretation": "Entropy/reward scale and update cost warrant preregistered follow-up ablations; this sample does not establish causality.",
+  "learner_device": "cpu",
+  "mean_entropy_reward_term_at_reset": -107.1427993774414,
+  "mean_policy_log_probability_at_reset": 230.31312561035156,
+  "motor_reward_upper_bound_per_control_transition": 0.025,
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "parameter_count": 1852952,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "python": "3.12.12",
+  "schema": "joxing-run-v1",
+  "scope": "in-flight learner diagnostic; no evaluation or checkpoint selection",
+  "source_hash": "7c68b1556df93258f2f722d3555f7ef0d18cc97cac3014d694fb23c5752c8be9",
+  "target_entropy": -138.0,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T17:04:45.151888+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "checkpoint_hashes": {
+    "final": "34e1bbfe23fcccc6aa271517284ce662a3c4192f5d0b4857455f906d8d48074f",
+    "initial": "812cf72f7c9c28c17d985bd779f455143f9dc48b8c69a15c0313da761abb7444"
+  },
+  "code_commit": "92db82688ee9930ed40aae60d6510ef4b6d210a1",
+  "evaluation_attempts": 64,
+  "evaluation_physics_substeps": 65297,
+  "host": "xbabe1",
+  "invalid_attempts": 0,
+  "limitations": [
+    "development data only; no held-out motor proof",
+    "one training seed",
+    "incomplete boxing collision envelope",
+    "normal gravity, but reset-only preparation/projection",
+    "no self-play or qualified GPU physics"
+  ],
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "preparation_substeps": 42800,
+  "protocol_hash": "4591a775b84bb2a278df9a8699fb85edd46f8020e0452c6e58b61774844e0a9c",
+  "python": "3.12.3",
+  "scheduled_training_complete": false,
+  "schema": "joxing-run-v1",
+  "seed": 73,
+  "source_hash": "171ec6df0471ba5ca1ab832d1ee0cf008e24cb7cd187a17a3213ad9b82f20b29",
+  "stop_reason": "wall_cap",
+  "summary": {
+    "attempts": 64,
+    "initial_5s_survivors": 0,
+    "initial_mean_survival_s": 1.01753125,
+    "invalid": 0,
+    "motor_gate_passed": false,
+    "paired_reset_bootstrap_95ci_s": [
+      -0.00028125000000000383,
+      0.011624999999999986
+    ],
+    "paired_survival_gain_s": 0.0054687499999999875,
+    "pilot_continuation_gate": false,
+    "scope": "single-seed development pilot; reset CI is not training-seed uncertainty",
+    "trained_20s_successes": 0,
+    "trained_5s_survivors": 0,
+    "trained_mean_survival_s": 1.0230000000000001
+  },
+  "training_physics_substeps": 388573,
+  "training_transitions": 39040,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T17:14:21.298676+00:00",
+  "wall_s": 1848.366921102628
+}

@@ -1,0 +1,61 @@
+{
+  "config": {
+    "control_s": 0.01,
+    "dt_s": 0.001,
+    "episode_s": 20.0,
+    "max_reset_penetration_m": 0.002,
+    "preparation_s": 0.2
+  },
+  "glove_mass_increment_kg": 0.5660000000000025,
+  "gravity": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "limitations": [
+    "native colliders and exclusions; incomplete boxing envelope",
+    "reset-only equality projection before and after gravity preparation; not a stand-up skill",
+    "no motor competence established by model audit"
+  ],
+  "mass_kg": 60.782523060956436,
+  "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+  "na": 700,
+  "neq": 42,
+  "nq": 85,
+  "nu": 700,
+  "nv": 85,
+  "physical_surface_roles": {
+    "balance_glove_l": "nonfoot",
+    "balance_glove_r": "nonfoot",
+    "calcn_skin_1_l": "left",
+    "calcn_skin_1_r": "right",
+    "calcn_skin_2_l": "left",
+    "calcn_skin_2_r": "right",
+    "calcn_skin_3_l": "left",
+    "calcn_skin_3_r": "right",
+    "femur_skin_l": "nonfoot",
+    "femur_skin_r": "nonfoot",
+    "floor": "nonfoot",
+    "l_pelvis": "nonfoot",
+    "r_pelvis": "nonfoot",
+    "sacrum": "nonfoot",
+    "skull": "nonfoot",
+    "tibia_skin_l": "nonfoot",
+    "tibia_skin_r": "nonfoot",
+    "toes_skin_1_l": "left",
+    "toes_skin_1_r": "right",
+    "toes_skin_2_l": "left",
+    "toes_skin_2_r": "right"
+  },
+  "preserved_muscle_parameters": true,
+  "preserved_segment_mass_inertia": true,
+  "root_joint_names": [
+    "pelvis_tz",
+    "pelvis_ty",
+    "pelvis_tx",
+    "pelvis_tilt",
+    "pelvis_list",
+    "pelvis_rotation"
+  ],
+  "variant": "native-root-gravity-v0.0.4"
+}

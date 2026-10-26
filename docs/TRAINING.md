@@ -2,6 +2,8 @@
 
 Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. **Current implemented iteration: v0.0.4.** It carries v0.0.3's planning into a native-gravity feedback environment and bounded SAC development pilot. Read the [v0.0.4 execution plan](V0.0.4_PLAN.md) for exact delivered scope and [STATUS.md](STATUS.md) for measurements. The [historical v0.0.3 plan](V0.0.3_PLAN.md) and later stages below describe the larger formal motor proof, which remains gated.
 
+**Measured outcome:** the v0.0.4 pilot stopped at 39,040 transitions under its wall cap. All 64 development evaluations completed with zero invalids; mean survival changed 1.018 -> 1.023 seconds, with an interval including zero. Five-second survivors were 0/32, so the larger proof remains blocked. See [full results](V0.0.4_RESULTS.md). Next development must address measured learner throughput and reward/entropy scaling before spending the formal training budget.
+
 ## What the next proof establishes
 
 Train one MS-Human-700 athlete to maintain a local standing posture under normal gravity, then qualify recovery from small, measured horizontal pushes. Keep all 700 muscles, physical floor contact and explicit glove inertia. The policy observes the moving body and updates muscle excitation at 100 Hz; CPU physics advances at 1 kHz. v0.0.4 implements this platform and the development balance pilot; the three-seed stance/recovery proof follows only if the pilot gate passes.

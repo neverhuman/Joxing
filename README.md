@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**v0.0.4 implementation in progress:** native-root gravity, audited resets/support, 138-group whole-body feedback, replay and bounded SAC training are executable. [Scope and run plan](docs/V0.0.4_PLAN.md). v0.0.3 was planning only; measured v0.0.4 results will be published after the pilot and independent audit.
+**Latest release: v0.0.4.** Native-root gravity, audited resets/support, 138-group whole-body feedback and bounded SAC are implemented and tested. **63 tests pass on Mac and Linux.** The pilot reached 39,040 transitions before its 30-minute cap, then completed all 64 paired evaluations with zero invalids. Mean survival was 1.018 -> 1.023 seconds; the confidence interval includes zero and **0/32 reached five seconds**. This is a delivered research platform with a failed motor-learning gate. [Results and limitations](docs/V0.0.4_RESULTS.md) · [Before/after replay](artifacts/v0.0.4/balance-before-after.mp4) · [Evidence/policies](artifacts/v0.0.4/).
 
 **Current stage: executable foundation, not trained autonomous boxing.** The project preserves 700 muscles per actor, defines an auditable points game, tests contact accounting and anti-farming scoring, and includes a small constrained motor-learning experiment. Full-body stance, punching, self-play and GPU physics remain gated work.
 
@@ -28,7 +28,9 @@ This iteration implements the body/environment/pilot stages of the earlier v0.0.
 
 Each pilot evaluation lasts up to 20 seconds. Reset-only preparation/projection is logged; there is no fixed pelvis, gravity compensation or state overwrite during the evaluated trajectory. The initial hand position is a posture target, not a raised boxing guard. Report competence separately from measured learning. Use at most four CPU simulation workers with one BLAS/OpenMP/Torch thread each. GPU simulation remains gated by failed parity tests. The larger program retains a 40-million-substep/four-hour/10-GiB cap; these are limits, not promised training times.
 
-The [training guide](docs/TRAINING.md) distinguishes executable pilot commands from the still-planned formal proof and self-play. Full-body contact coverage, raised guard, reliable stance and sporting fall/foul attribution remain open.
+The [training guide](docs/TRAINING.md) distinguishes executable pilot commands from the still-planned formal proof and self-play. Full-body contact coverage, raised guard, reliable stance and sporting fall/foul attribution remain open. Linux snapshot continuation is exact; strict Linux-to-Mac closed-loop full-state parity misses tolerance and remains explicitly failed. The 1/2/4-worker inference/support/reset benchmark measured 65.7/131.8/240.5 control transitions per second, with optimizer work excluded.
+
+![v0.0.4 measured training and paired evaluation; motor gate failed](artifacts/v0.0.4/balance-learning.png)
 
 ![Two-human scene inspection; static, not a learned fight](artifacts/scene-inspection.png)
 

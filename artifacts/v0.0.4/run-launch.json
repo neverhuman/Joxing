@@ -1,0 +1,10 @@
+{
+  "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 uv run joxing train-stance --out runs/v0.0.4/pilot-01 --steps 100000 --workers 4 --seed 73 --wall-s 1800 --eval-count 32",
+  "host": "xbabe1",
+  "pid": 2868420,
+  "protocol_hash": "4591a775b84bb2a278df9a8699fb85edd46f8020e0452c6e58b61774844e0a9c",
+  "scope": "development pilot; not formal motor proof",
+  "source_commit": "92db82688ee9930ed40aae60d6510ef4b6d210a1",
+  "source_hash": "171ec6df0471ba5ca1ab832d1ee0cf008e24cb7cd187a17a3213ad9b82f20b29",
+  "utc": "2026-10-26T16:43:36.149455+00:00"
+}

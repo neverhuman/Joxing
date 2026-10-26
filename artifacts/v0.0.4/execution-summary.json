@@ -1,0 +1,22 @@
+{
+  "development_evaluation_attempted": 64,
+  "development_evaluation_invalid": 0,
+  "development_evaluation_planned": 64,
+  "development_evaluation_substeps": 65297,
+  "formal_blocker": "pilot five-second continuation gate failed",
+  "formal_evaluation_attempted": 0,
+  "formal_evaluation_not_run": 768,
+  "formal_evaluation_planned_if_qualified": 768,
+  "post_warmup_median_control_transitions_per_s": 17.75127883558467,
+  "scheduled_training_complete": false,
+  "scope": "v0.0.4 released research platform; no passed motor competence",
+  "step_accounting_note": "Evaluation reset preparation adds 32 cached preparations * 200 steps = 6400 (derived from fixed reset-bank IDs); test, root-probe, benchmark and audit steps are separate. No single counter is claimed as the exact total across all diagnostics.",
+  "stop_reason": "wall_cap",
+  "total_run_wall_s": 1848.366921102628,
+  "training_attempted": 39040,
+  "training_physics_substeps": 388573,
+  "training_remaining_not_run": 60960,
+  "training_requested": 100000,
+  "wall_cap_before_final_evaluation_s": 1800,
+  "worker_reset_preparation_substeps": 42800
+}

@@ -1,0 +1,41 @@
+{
+  "accounting_passed": true,
+  "code_commit": "92db82688ee9930ed40aae60d6510ef4b6d210a1",
+  "evaluation_attempts": 4,
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": false,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "policies": [
+    {
+      "cross_host_integration_state_max_error": 8.820392279099494,
+      "outcome_tick_matches": true,
+      "passed": false,
+      "policy": "initial",
+      "same_host_restore_max_error": 0.0
+    },
+    {
+      "cross_host_integration_state_max_error": 8.820392279099494,
+      "outcome_tick_matches": true,
+      "passed": false,
+      "policy": "trained",
+      "same_host_restore_max_error": 0.0
+    }
+  ],
+  "protocol_hash": "9cd4ba77fe6c35c28ed9e25e03f3a8e536bad58ec7f27a7aafb1f32dca455e59",
+  "python": "3.12.12",
+  "schema": "joxing-run-v1",
+  "scope": "closed-loop development-policy continuation; does not prove unassisted motor competence",
+  "source_hash": "171ec6df0471ba5ca1ab832d1ee0cf008e24cb7cd187a17a3213ad9b82f20b29",
+  "source_run_commit": "eed4aee990154d1ebc2b85669938ca7877640f07",
+  "tolerances": {
+    "cross_host_closed_loop_state": 1e-05,
+    "same_host_state": 1e-09
+  },
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T16:45:04.476040+00:00"
+}

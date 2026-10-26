@@ -1,0 +1,201 @@
+{
+  "code_commit": "92db82688ee9930ed40aae60d6510ef4b6d210a1",
+  "host": "xbabe1",
+  "model": {
+    "config": {
+      "control_s": 0.01,
+      "dt_s": 0.001,
+      "episode_s": 20.0,
+      "max_reset_penetration_m": 0.002,
+      "preparation_s": 0.2
+    },
+    "glove_mass_increment_kg": 0.5660000000000025,
+    "gravity": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "limitations": [
+      "native colliders and exclusions; incomplete boxing envelope",
+      "reset-only equality projection before and after gravity preparation; not a stand-up skill",
+      "no motor competence established by model audit"
+    ],
+    "mass_kg": 60.782523060956436,
+    "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+    "na": 700,
+    "neq": 42,
+    "nq": 85,
+    "nu": 700,
+    "nv": 85,
+    "physical_surface_roles": {
+      "balance_glove_l": "nonfoot",
+      "balance_glove_r": "nonfoot",
+      "calcn_skin_1_l": "left",
+      "calcn_skin_1_r": "right",
+      "calcn_skin_2_l": "left",
+      "calcn_skin_2_r": "right",
+      "calcn_skin_3_l": "left",
+      "calcn_skin_3_r": "right",
+      "femur_skin_l": "nonfoot",
+      "femur_skin_r": "nonfoot",
+      "floor": "nonfoot",
+      "l_pelvis": "nonfoot",
+      "r_pelvis": "nonfoot",
+      "sacrum": "nonfoot",
+      "skull": "nonfoot",
+      "tibia_skin_l": "nonfoot",
+      "tibia_skin_r": "nonfoot",
+      "toes_skin_1_l": "left",
+      "toes_skin_1_r": "right",
+      "toes_skin_2_l": "left",
+      "toes_skin_2_r": "right"
+    },
+    "preserved_muscle_parameters": true,
+    "preserved_segment_mass_inertia": true,
+    "root_joint_names": [
+      "pelvis_tz",
+      "pelvis_ty",
+      "pelvis_tx",
+      "pelvis_tilt",
+      "pelvis_list",
+      "pelvis_rotation"
+    ],
+    "variant": "native-root-gravity-v0.0.4"
+  },
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "root_probes": [
+    {
+      "direction": "forward",
+      "dt_s": 0.002,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 2.1326033703283063,
+      "min_root_jacobian_singular_value": 0.9334761575434345,
+      "model_hash": "6d3457156e515cbb1a19208b8300d348e2417d2c1b6d19d96d7f875a9fe77a21",
+      "peak_support_N": 6825.7455245497895,
+      "physics_steps": 400
+    },
+    {
+      "direction": "backward",
+      "dt_s": 0.002,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 0.8424848048854678,
+      "min_root_jacobian_singular_value": 0.9802497036160077,
+      "model_hash": "6d3457156e515cbb1a19208b8300d348e2417d2c1b6d19d96d7f875a9fe77a21",
+      "peak_support_N": 1187.611026807289,
+      "physics_steps": 400
+    },
+    {
+      "direction": "right",
+      "dt_s": 0.002,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 1.84809566314125,
+      "min_root_jacobian_singular_value": 0.7556219698738526,
+      "model_hash": "6d3457156e515cbb1a19208b8300d348e2417d2c1b6d19d96d7f875a9fe77a21",
+      "peak_support_N": 6057.888774598006,
+      "physics_steps": 400
+    },
+    {
+      "direction": "left",
+      "dt_s": 0.002,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 1.6974443950384712,
+      "min_root_jacobian_singular_value": 0.8013032004890955,
+      "model_hash": "6d3457156e515cbb1a19208b8300d348e2417d2c1b6d19d96d7f875a9fe77a21",
+      "peak_support_N": 6119.84891165102,
+      "physics_steps": 400
+    },
+    {
+      "direction": "forward",
+      "dt_s": 0.001,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 2.1358154837249144,
+      "min_root_jacobian_singular_value": 0.9337531069540629,
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "peak_support_N": 6733.732799046159,
+      "physics_steps": 800
+    },
+    {
+      "direction": "backward",
+      "dt_s": 0.001,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 0.8404266425475074,
+      "min_root_jacobian_singular_value": 0.9772118848885266,
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "peak_support_N": 1166.7263080324112,
+      "physics_steps": 800
+    },
+    {
+      "direction": "right",
+      "dt_s": 0.001,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 1.8372342879373356,
+      "min_root_jacobian_singular_value": 0.7613550784410936,
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "peak_support_N": 5852.609658726744,
+      "physics_steps": 800
+    },
+    {
+      "direction": "left",
+      "dt_s": 0.001,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 1.7065781801652278,
+      "min_root_jacobian_singular_value": 0.7948068268761587,
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "peak_support_N": 6156.9775065203185,
+      "physics_steps": 800
+    },
+    {
+      "direction": "forward",
+      "dt_s": 0.0005,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 2.133426954219562,
+      "min_root_jacobian_singular_value": 0.9339491430555853,
+      "model_hash": "52e4c4cb532334dd37ab424e69f4e3b6ccddaa1a5519d2c443a8abbf278b07d4",
+      "peak_support_N": 6628.190736195816,
+      "physics_steps": 1600
+    },
+    {
+      "direction": "backward",
+      "dt_s": 0.0005,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 0.8398652584287718,
+      "min_root_jacobian_singular_value": 0.9738976300363743,
+      "model_hash": "52e4c4cb532334dd37ab424e69f4e3b6ccddaa1a5519d2c443a8abbf278b07d4",
+      "peak_support_N": 1172.9713554243945,
+      "physics_steps": 1600
+    },
+    {
+      "direction": "right",
+      "dt_s": 0.0005,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 1.8414701022969258,
+      "min_root_jacobian_singular_value": 0.7565294009189457,
+      "model_hash": "52e4c4cb532334dd37ab424e69f4e3b6ccddaa1a5519d2c443a8abbf278b07d4",
+      "peak_support_N": 5883.405203547737,
+      "physics_steps": 1600
+    },
+    {
+      "direction": "left",
+      "dt_s": 0.0005,
+      "invalid": false,
+      "max_pelvis_tilt_rad": 1.7060200228098075,
+      "min_root_jacobian_singular_value": 0.7947831616826176,
+      "model_hash": "52e4c4cb532334dd37ab424e69f4e3b6ccddaa1a5519d2c443a8abbf278b07d4",
+      "peak_support_N": 5975.082289519516,
+      "physics_steps": 1600
+    }
+  ],
+  "schema": "joxing-run-v1",
+  "scope": "reset and finite root-stress diagnostics, not motor competence or full singularity exclusion",
+  "source_hash": "171ec6df0471ba5ca1ab832d1ee0cf008e24cb7cd187a17a3213ad9b82f20b29",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T16:43:09.206236+00:00",
+  "valid_resets": 32,
+  "wall_s": 38.28565529733896
+}

@@ -1,14 +1,15 @@
 # Changelog
 
-## v0.0.4 — implementation and bounded pilot
+## v0.0.4 — 2026-10-26
 
 - Implement ordinary-gravity native-root MS-Human-700 feedback control with all 700 muscles, 138 named action groups, 1,023 measured observations and audited reset-only preparation.
 - Add signed/persistent foot support, applied-force/gravity assistance guards, physical failure versus external truncation, bounded CPU SAC, atomic progress/policy checkpoints and raw paired development evaluations.
 - Add twelve root probes, 32-reset audit, complete control-boundary snapshots, malformed-state rejection and sorted-JSON channel-order regression.
 - Add independent checkpoint/receipt/replay audit, fixed-scenario plot/video and 1/2/4-worker workload benchmark tools. Linux installs CPU Torch wheels.
-- Mac suite currently passes 63 tests with the motor extra. Development/learning results and remaining gates are recorded in STATUS; a development pilot is not a formal stance/self-play proof.
+- 63 tests pass on both Mac and Linux with the motor extra. The wall-capped pilot completed 39,040 transitions and 64 paired evaluations, zero invalids; mean survival 1.018 -> 1.023 s, interval includes zero, five-second survivors 0/32. Motor continuation gate failed; larger proof was not launched.
+- Linux continuation is exact. Preserve the failed strict cross-platform full-state check and the caught/fixed development replay defect. Measured 1/2/4-worker inference/reset throughput: 65.71/131.81/240.52 control transitions/s, optimizer excluded.
 
-See [execution plan](docs/V0.0.4_PLAN.md) and [status](docs/STATUS.md). v0.0.3 was a planning milestone, carried into this implementation.
+See [results](docs/V0.0.4_RESULTS.md), [execution plan](docs/V0.0.4_PLAN.md) and [status](docs/STATUS.md). v0.0.3 was a planning milestone, carried into this implementation.
 
 ## Planned — v0.0.3
 

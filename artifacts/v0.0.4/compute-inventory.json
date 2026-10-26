@@ -1,0 +1,27 @@
+{
+  "disk_free_bytes": 349884170240,
+  "gpu_inventory": "NVIDIA GeForce RTX 4090, 9 MiB, 24564 MiB, 0 %",
+  "host": "xbabe1",
+  "learner_device": "cpu",
+  "load_average": [
+    6.81689453125,
+    7.86083984375,
+    7.22314453125
+  ],
+  "logical_cpus": 128,
+  "memory_bytes": {
+    "MemAvailable": 45783351296,
+    "MemTotal": 67197415424
+  },
+  "phase": "during bounded CPU SAC pilot",
+  "progress": {
+    "control_transitions": 23504,
+    "physics_substeps": 233985,
+    "preparation_substeps": 34600,
+    "wall_s": 935.3982260935009
+  },
+  "simulation_backend": "MuJoCo 3.8.0 CPU",
+  "simulation_workers": 4,
+  "threads_per_process": 1,
+  "utc": "2026-10-26T16:59:23.186286+00:00"
+}

@@ -1,0 +1,307 @@
+{
+  "code_commit": "91a2573b57dce0a966997d0aa12e3562ab7b7239",
+  "complete": true,
+  "host": "xbabe1",
+  "limitations": [
+    "optimizer excluded",
+    "no game referee",
+    "short development workload",
+    "cached reset states",
+    "no GPU physics"
+  ],
+  "median_transitions_per_s": {
+    "1": 65.70725764134228,
+    "2": 131.81059727069223,
+    "4": 240.5220880854639
+  },
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "profile": "native-gravity-closed-loop-support-and-cached-reset",
+  "python": "3.12.3",
+  "samples": [
+    {
+      "physics_substeps": 1992,
+      "physics_substeps_per_s": 655.5780106514487,
+      "repeat": 0,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.0329336561262608
+        }
+      ],
+      "setup_and_warmup_s": 4.981625858694315,
+      "transitions": 200,
+      "transitions_per_s": 65.82108540677196,
+      "wall_s": 3.0385399870574474,
+      "workers": 1
+    },
+    {
+      "physics_substeps": 1992,
+      "physics_substeps_per_s": 654.4442861077691,
+      "repeat": 1,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.0398674122989178
+        }
+      ],
+      "setup_and_warmup_s": 4.981625858694315,
+      "transitions": 200,
+      "transitions_per_s": 65.70725764134228,
+      "wall_s": 3.0438037924468517,
+      "workers": 1
+    },
+    {
+      "physics_substeps": 1992,
+      "physics_substeps_per_s": 653.8959294541112,
+      "repeat": 2,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.042472042143345
+        }
+      ],
+      "setup_and_warmup_s": 4.981625858694315,
+      "transitions": 200,
+      "transitions_per_s": 65.65220175242081,
+      "wall_s": 3.046356324106455,
+      "workers": 1
+    },
+    {
+      "physics_substeps": 3976,
+      "physics_substeps_per_s": 1310.1973368706808,
+      "repeat": 0,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.0277729015797377
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1984,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.0198387820273638
+        }
+      ],
+      "setup_and_warmup_s": 5.418100576847792,
+      "transitions": 400,
+      "transitions_per_s": 131.81059727069223,
+      "wall_s": 3.0346573665738106,
+      "workers": 2
+    },
+    {
+      "physics_substeps": 3976,
+      "physics_substeps_per_s": 1187.0550251677835,
+      "repeat": 1,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.0217208359390497
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1984,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.0333213564008474
+        }
+      ],
+      "setup_and_warmup_s": 5.418100576847792,
+      "transitions": 400,
+      "transitions_per_s": 119.42203472512912,
+      "wall_s": 3.349465623497963,
+      "workers": 2
+    },
+    {
+      "physics_substeps": 3976,
+      "physics_substeps_per_s": 1317.319725966751,
+      "repeat": 2,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.0139700789004564
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1984,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.006232101470232
+        }
+      ],
+      "setup_and_warmup_s": 5.418100576847792,
+      "transitions": 400,
+      "transitions_per_s": 132.5271354091299,
+      "wall_s": 3.018249800428748,
+      "workers": 2
+    },
+    {
+      "physics_substeps": 7944,
+      "physics_substeps_per_s": 2621.795051506129,
+      "repeat": 0,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.0204841904342175
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1984,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.0013411436229944
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1986,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.0126701202243567
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1982,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.0252513643354177
+        }
+      ],
+      "setup_and_warmup_s": 5.946022732183337,
+      "transitions": 800,
+      "transitions_per_s": 264.02769904392034,
+      "wall_s": 3.029985122382641,
+      "workers": 4
+    },
+    {
+      "physics_substeps": 7944,
+      "physics_substeps_per_s": 2374.538199419043,
+      "repeat": 1,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.049598928540945
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1984,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.0211451277136803
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1986,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.028640767559409
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1982,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.040773192420602
+        }
+      ],
+      "setup_and_warmup_s": 5.946022732183337,
+      "transitions": 800,
+      "transitions_per_s": 239.12771393948066,
+      "wall_s": 3.345492610707879,
+      "workers": 4
+    },
+    {
+      "physics_substeps": 7944,
+      "physics_substeps_per_s": 2388.3843346886565,
+      "repeat": 2,
+      "rows": [
+        {
+          "invalids": 0,
+          "physics_substeps": 1992,
+          "preparation_substeps": 0,
+          "resets": 1,
+          "transitions": 200,
+          "worker_wall_s": 3.0345535203814507
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1984,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.004195600748062
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1986,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.010678917169571
+        },
+        {
+          "invalids": 0,
+          "physics_substeps": 1982,
+          "preparation_substeps": 0,
+          "resets": 2,
+          "transitions": 200,
+          "worker_wall_s": 3.015555316582322
+        }
+      ],
+      "setup_and_warmup_s": 5.946022732183337,
+      "transitions": 800,
+      "transitions_per_s": 240.5220880854639,
+      "wall_s": 3.3260978497564793,
+      "workers": 4
+    }
+  ],
+  "schema": "joxing-run-v1",
+  "source_hash": "7c68b1556df93258f2f722d3555f7ef0d18cc97cac3014d694fb23c5752c8be9",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T17:16:39.123851+00:00"
+}

@@ -123,7 +123,7 @@ def main():
         ) as writer,
     ):
         # Shared simulated clock; ended policy holds its last frame with explicit label.
-        for tick in range(0, max(map(len, recordings)), 4):
+        for tick in range(0, max(map(len, recordings)) + 25, 4):
             frames = []
             for label, states in zip(("INITIAL", "TRAINED"), recordings):
                 index = min(tick, len(states) - 1)
