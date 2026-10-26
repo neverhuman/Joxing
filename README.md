@@ -4,6 +4,8 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
+**v0.0.6 is running:** [native motor-controller qualification](docs/V0.0.6_PLAN.md), with [current mission and 20-minute supervision](docs/MISSION.md). The loader/normalizer/replay platform passes 80 Mac/Linux tests; formal motor outcomes are pending.
+
 **Latest release: v0.0.5.** Both controlled motor waves are complete: **1.44 million training transitions, 912 new evaluation attempts, zero invalids; 72 tests pass on Mac and Linux.** The larger-budget candidate improved over its initial policy on two fresh seeds, but beat reference A on only one. Registered replicated superiority and the five-second motor gate failed: every final policy had **0/32 five-second survivors**. All experiments, negative results, actor bundles, histories and audits are in Git. [Results](docs/V0.0.5_RESULTS.md) · [Experiment book](experiments/v0.0.5/README.md) · [Source-host replay](artifacts/v0.0.5/extension/wave-before-after-linux.mp4).
 
 The [state/history code audit](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md) addresses opponent motion, temporal memory, responsive muscles and jitter. Current SAC observes its own velocity/activation and changes muscle commands at 100 Hz **simulated time**. Opponent observations, recurrent acting memory, a connected match referee and self-play league remain missing. The [next motor-teacher plan](docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md) qualifies the released upstream controller before a new transfer experiment.

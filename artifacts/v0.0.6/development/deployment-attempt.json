@@ -1,0 +1,5 @@
+{
+  "archive_upload": "Hash-pinned archive copied separately to~/joxing/downloads/LocomotionFull-2b2f0f10.zip; loader verifiesSHA before deserialization.",
+  "correction": "Set only the new v006 checkout origin to the public GitHub repository; fetchmain and checkoutexplicit97565e9. Earlier frozen checkouts unchanged.",
+  "first_attempt": "Clone from prior owned checkout succeeded; checkout97565e9 failed because its origin was the older local bootstrap, not GitHub, so the object had not been fetched. No runtime install/test/formal evaluation ran."
+}

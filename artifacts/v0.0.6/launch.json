@@ -1,0 +1,40 @@
+{
+  "available_memory_bytes": 49469788160,
+  "code_commit": "97565e90012b59bb16db8c45e4aa7f095a905c3c",
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.6/runtime",
+    "python",
+    "scripts/run_upstream_motor.py",
+    "--protocol",
+    "experiments/v0.0.6/protocol.json",
+    "--archive",
+    "/home/ubuntu/joxing/downloads/LocomotionFull-2b2f0f10.zip",
+    "--out",
+    "runs/v0.0.6/native-01"
+  ],
+  "free_disk_bytes": 342717988864,
+  "host": "xbabe1",
+  "load": [
+    4.85498046875,
+    4.55322265625,
+    5.06298828125
+  ],
+  "log": "runs/v0.0.6/native-output.txt",
+  "mujoco": "3.8.0",
+  "numpy": "2.4.2",
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "run": "runs/v0.0.6/native-01",
+  "schema": "joxing-run-v1",
+  "scope": "One native motor evaluation process, zero optimization, no unrelated jobs changed.",
+  "source_hash": "880ff9eecb52b4507ec1cd4e9b6cbb63eb5ffefd06dc36345bb2c54dea19211a",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T21:30:56.871878+00:00",
+  "wrapper_pid": 700993
+}
