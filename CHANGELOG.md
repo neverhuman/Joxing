@@ -2,6 +2,7 @@
 
 ## Planned — v0.0.3
 
+- Make `neverhuman/Joxing` public and verify repository/file access without credentials; add a documentation index and concise training/test guide.
 - Define worker-ready gravity, root-fall, support/reset, stance-learning and push-recovery tests with frozen evaluation, replay and bounded compute requirements.
 - Separate test-platform delivery, motor competence and evidence of learned improvement. Implementation/results remain pending; released package remains v0.0.2.
 

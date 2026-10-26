@@ -1,5 +1,7 @@
 # Implementation and handoff plan
 
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current next iteration is v0.0.3: follow the [training sequence](TRAINING.md) and [exact v0.0.3 handoff](V0.0.3_PLAN.md) for its bounded root/support/stance slice. The P0–P5 sections below describe the broader program; they are not all required for this next release. [Documentation index](README.md).
+
 ## Objective, scope and completion
 
 Produce a reproducible virtual boxing game in which two independently muscle-driven humans learn motor skills and improve tactics through self-play. Final completion requires stable unassisted motion, calibrated simulation-rule contact scoring, full replay, historical-opponent learning and paired fixed-panel evidence of improved match strength. The first delivery is the auditable CPU foundation plus a bounded learning-pipeline experiment.

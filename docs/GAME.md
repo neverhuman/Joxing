@@ -2,6 +2,8 @@
 
 Status: design selected for implementation; referee fixtures exist; full game is not yet playable.
 
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. The next [v0.0.3 training/test plan](TRAINING.md) measures one athlete's stance and push recovery before competitive play. Its motor rewards and failure criteria do not change the sporting points or resolve the provisional match fall/foul rules below.
+
 ## Objective and points
 
 Two identical MS-Human-700 athletes share one MuJoCo world. A live round lasts 60 seconds. Higher legal-hit points wins; exact ties draw. The virtual arena is 5 by 5 meters on a larger physical floor. Initial morphology, glove equipment and rules are symmetric. This is a virtual points sport, not professional or Olympic judging.

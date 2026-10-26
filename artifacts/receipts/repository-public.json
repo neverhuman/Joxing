@@ -1,0 +1,45 @@
+{
+  "schema": "joxing-repository-public-v1",
+  "verified_utc": "2026-10-26T16:26:41.773796+00:00",
+  "visibility_change": {
+    "repository": "neverhuman/Joxing",
+    "previous_visibility": "private",
+    "requested_visibility": "public",
+    "verified_visibility": "public"
+  },
+  "anonymous_repositories": [
+    {
+      "repository": "neverhuman/Joxing",
+      "url": "https://github.com/neverhuman/Joxing",
+      "private": false,
+      "visibility": "public",
+      "anonymous_http_status": 200
+    },
+    {
+      "repository": "LNSGroup/MS-Human-700",
+      "url": "https://github.com/LNSGroup/MS-Human-700",
+      "private": false,
+      "visibility": "public",
+      "anonymous_http_status": 200
+    },
+    {
+      "repository": "LNSGroup/msgym",
+      "url": "https://github.com/LNSGroup/msgym",
+      "private": false,
+      "visibility": "public",
+      "anonymous_http_status": 200
+    }
+  ],
+  "anonymous_readme_http_status": 200,
+  "anonymous_git_refs": [
+    {
+      "sha": "63d8db9f31aec776197540e9e886e4b77a032d33",
+      "ref": "HEAD"
+    },
+    {
+      "sha": "63d8db9f31aec776197540e9e886e4b77a032d33",
+      "ref": "refs/heads/main"
+    }
+  ],
+  "verification_scope": "GitHub repository metadata, README access, HTTPS Git ref discovery without a credential helper, and both upstream submodule repository visibilities. Git refs identify the documentation commit before this receipt is committed."
+}

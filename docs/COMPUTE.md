@@ -1,5 +1,7 @@
 # Compute inventory and HPC approach
 
+Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing). The next workload is the planned [v0.0.3 stance-training experiment](TRAINING.md): CPU MuJoCo, 1/2/4-worker benchmark, four simulation workers maximum, sequential training seeds and a total 40-million-substep/four-hour/10-GiB cap. These iteration-specific limits take precedence over the larger future sweeps below. No v0.0.3 compute run has started.
+
 Read-only SSH inventory taken October 26, 2026 at approximately 05:13 America/Denver. These are shared hosts: availability is transient, not a resource reservation. No unrelated process or service was changed. No credentials or raw SSH config are stored here.
 
 | Host | Hardware / availability at inspection | Initial role |
