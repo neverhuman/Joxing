@@ -8,3 +8,6 @@ dist/
 runs/
 artifacts/generated/
 .DS_Store
+*.log
+*.bundle
+.ruff_cache/
