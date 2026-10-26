@@ -1,0 +1,35 @@
+{
+  "findings": [
+    {
+      "action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "policy": "initial",
+      "policy_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      }
+    },
+    {
+      "action_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      },
+      "policy": "trained",
+      "policy_replay": {
+        "integration_state_max_error": 0.0,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 0.0,
+        "qvel_max_error": 0.0
+      }
+    }
+  ],
+  "passed": true
+}

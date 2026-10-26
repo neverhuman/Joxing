@@ -1,2 +1,3 @@
 # Preserve original SB3 CSV bytes for the evidence manifest; CRLF is valid CSV.
 artifacts/v0.0.4/pilot/*.monitor.csv -text whitespace=cr-at-eol
+artifacts/v0.0.5/*/*.monitor.csv -text whitespace=cr-at-eol

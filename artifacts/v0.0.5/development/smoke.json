@@ -1,0 +1,65 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": "FileNotFoundError: runs/v0.0.5 parent did not exist",
+      "fix": "create parents for fresh run, preserve refuse-overwrite",
+      "status": "failed_before_execution"
+    },
+    {
+      "attempt": 2,
+      "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 uv run python /tmp/joxing-wave-smoke.py",
+      "configuration": "armB,seed149,64transitions,warmup16,4workers,120s,IDs62010/62011",
+      "result": {
+        "actor_files": {
+          "final": "3515fd15925a2ba50f554324549234ac27f77e92204bfd3b22e48f2cb0ba17c1",
+          "initial": "08cfa4e7abcc51df45bc22f2ce24714d2777c80db19e47856aeb0efe6d5f55c1"
+        },
+        "arm": "B",
+        "counts": {
+          "available_memory_bytes": null,
+          "learner_maxrss_native_units": 1016233984,
+          "physics_substeps": 640,
+          "preparation_substeps": 1600,
+          "raw_reward_sum": 1.4492910573976054,
+          "reset_wall_s": 0.6608585419890005,
+          "scaled_reward_sum": 1.4492910573976054
+        },
+        "evaluation_physics_substeps": 3925,
+        "evaluation_preparation_substeps": 600,
+        "final_actor_hash": "0b05baca71e591e4b890d825159ff6d1ec57acb1d82b10d13368f711f63d8d5c",
+        "final_diagnostic": {
+          "alpha": 9.999999747378752e-05,
+          "entropy_reward_mean": 0.009479278698563576,
+          "mean_log_prob": -94.79279327392578
+        },
+        "inference_wall_s": 0.003665497963083908,
+        "initial_actor_hash": "f836b52c25462bae65b2e8ee94003f2e9be145fea687ee6c546cd002df190f9a",
+        "scheduled_training_complete": true,
+        "seed": 149,
+        "source_unchanged": true,
+        "stop_reason": null,
+        "summary": {
+          "attempts": 4,
+          "initial_mean_survival_s": 0.986,
+          "invalid": 0,
+          "motor_gate_passed": false,
+          "paired_reset_bootstrap_95ci_s": [
+            -0.010000000000000009,
+            -0.008999999999999897
+          ],
+          "paired_survival_gain_s": -0.009499999999999953,
+          "pilot_continuation_gate": false,
+          "trained_5s_survivors": 0,
+          "trained_mean_survival_s": 0.9765
+        },
+        "training_transitions": 64,
+        "update_wall_s": 0.07215854198148008,
+        "updates": 12,
+        "wall_s": 11.951876207996975
+      },
+      "status": "completed"
+    }
+  ],
+  "scope": "development orchestration, not formal wave"
+}
