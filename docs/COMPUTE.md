@@ -1,0 +1,31 @@
+# Compute inventory and HPC approach
+
+Read-only SSH inventory taken October 26, 2026 at approximately 05:13 America/Denver. These are shared hosts: availability is transient, not a resource reservation. No unrelated process or service was changed. No credentials or raw SSH config are stored here.
+
+| Host | Hardware / availability at inspection | Initial role |
+|---|---|---|
+| xbabe1 | Linux, 128 logical CPUs, 62 GiB RAM / 40 GiB available; RTX 4090 24 GiB, idle; 334 GB free disk; load ~15 | First bounded CPU physics/motor experiments; preferred first GPU learner/feature spike |
+| xbabe2 | Linux, 128 logical CPUs, 125 GiB RAM / 74 GiB available; RTX 3090 24 GiB, idle; 487 GB free disk but filesystem 94% used; load ~44 | Later capped rollout/evaluation workers; credentials available if needed, never copied into repository |
+| xbabe3 | Linux, 128 logical CPUs, 125 GiB RAM / 99 GiB available; RTX 3090 24 GiB, idle; 63 GB free disk, 94% used; load ~9 | Later capped CPU rollout/seed experiments; keep artifacts small |
+| xbabe4 | Apple Silicon Mac Studio, 32 logical CPUs, 512 GiB unified RAM; 667 GiB free disk; load ~28 | CPU reference, large-memory analysis, replay/render; native Python first |
+| Local laptop | Apple Silicon, 14 logical CPUs, 36 GiB RAM, 75 GiB disk available | Development, tests, inspection and reporting |
+
+Linux hosts have Docker. xbabe1 and xbabe4 have uv; xbabe2/3 have Python. Docker was not on xbabe4's inspected PATH. macOS Docker cannot provide an NVIDIA CUDA device; it is not the route to Warp GPU physics. Native CPU MuJoCo on Apple Silicon avoids VM overhead. Recheck GPU support before considering Metal-specific alternatives.
+
+## First actual workload
+
+Use `/home/ubuntu/joxing/bootstrap-20261026` on xbabe1. Start at four CPU workers, one thread per process (`OMP_NUM_THREADS=1`, `OPENBLAS_NUM_THREADS=1`). This is intentionally small relative to host count and leaves existing services alone. Simulation is CPU MuJoCo; do not claim RTX utilization from this workload. Store raw output under `runs`, copy small receipts to `artifacts/receipts` and stop the job after its explicit episode budget.
+
+## Fast learning path
+
+1. Establish contact correctness and CPU performance on the actual two-human model. Report compile time separately; benchmark medians and invalid runs. Current benchmark is a short-reset simulator diagnostic, not boxing throughput.
+2. Use a low-cost constrained muscle-reach experiment to verify optimization, worker orchestration, checkpoint persistence, held-out paired evaluation and replay. It is not the motor teacher or tactical learner.
+3. Build native stance/reach teacher with fixed muscle groups first. Use measured replay-memory cost `4*C*(2*O+A)` bytes plus metadata. Do not allocate giant replay buffers from an assumed observation dimension.
+4. Audit exact-model Warp support: spatial tendon wrapping, all muscle dynamics, equalities, collider primitives, staging, integrator and capacities. Lock compatible engine/Warp versions together. CPU full-anatomy parity precedes any GPU replacement. Generic GPU installation is not feature validation.
+5. Sweep CPU workers 1/2/4/8 before larger counts. Separately sweep GPU worlds 8/32/128/512 up to the measured 24 GiB budget, retaining 20% memory headroom for policy/optimizer/league. Never assume 2,048 or 4,096 worlds fit.
+6. Keep simulation state, inference and referee on GPU once parity passes; avoid Python contact loops and per-substep host sync. Keep video/render on separate evaluation workers. Benchmark with real contact/referee/reset/inference load.
+7. Use xbabe1 as first learner and xbabe2/3 for independent evaluation and additional seeds only after measuring LAN transfer and queue latency. Transfer compact transitions/bundles, not full engine state every substep. Freeze normalizers and bundle identity during each matchup.
+
+Report physics substeps/s, simultaneous world transitions/s, admitted learner samples/s, simulated seconds/wall second, optimizer updates/s, memory, GPU utilization, reset/contact invalid rates, and evaluation strength per wall hour. Include compile/warmup, transport and optimization costs in end-to-end runs. A two-player world step is not automatically two on-policy learner samples.
+
+Stop on unexpected warnings/engine resets, nonfinite state, contact loss/overflow, unexplained score parity failures, disk below the run's reserved budget, or sustained interference with shared-host capacity. Preserve last valid engine state, held controls and referee state before investigation. No cloud GPU purchase or host service changes are required for this first slice.
