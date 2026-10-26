@@ -22,6 +22,8 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 
 ## Game, physics and compute
 
+- [Upstream motor-teacher transfer plan](UPSTREAM_MOTOR_TRANSFER_PLAN.md): inspected release metadata, incompatible interfaces, decoder-load issue and ordered qualification tests. Proposed; no transfer result claimed.
+
 - [State/history/self-play code audit](STATE_HISTORY_SELF_PLAY_AUDIT.md): delivered feedback loop, missing opponent/memory/timing/game integration, measured command variation and implementation handoff.
 
 - [Game contract](GAME.md): head 2 / torso 1 / guard 0, hit qualification, terminal match utility and unresolved foul/fall rules.

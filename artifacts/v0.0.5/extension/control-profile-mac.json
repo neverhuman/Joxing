@@ -1,0 +1,2586 @@
+{
+  "code_commit": "36fe5b63b378eb7a4b6550eaf32e5d384cd5b710",
+  "functions": [
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.44898558800000005,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_step2>",
+      "line": 0,
+      "own_wall_s": 0.44898558800000005,
+      "primitive_calls": 1083,
+      "repeat": 0
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.20603526300000002,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_step1>",
+      "line": 0,
+      "own_wall_s": 0.20603526300000002,
+      "primitive_calls": 1083,
+      "repeat": 0
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.740142115,
+      "filename": "src/joxing/physics.py",
+      "function": "step_contacts",
+      "line": 31,
+      "own_wall_s": 0.056096158,
+      "primitive_calls": 1083,
+      "repeat": 0
+    },
+    {
+      "calls": 62130,
+      "cumulative_wall_s": 0.048627739,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "deepcopy",
+      "line": 118,
+      "own_wall_s": 0.022677419,
+      "primitive_calls": 1962,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.799323714,
+      "filename": "src/joxing/stance_env.py",
+      "function": "step",
+      "line": 131,
+      "own_wall_s": 0.012924701,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.012061123,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_kinematics>",
+      "line": 0,
+      "own_wall_s": 0.012061123,
+      "primitive_calls": 1083,
+      "repeat": 0
+    },
+    {
+      "calls": 7194,
+      "cumulative_wall_s": 0.042843912000000005,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_list",
+      "line": 191,
+      "own_wall_s": 0.008619303,
+      "primitive_calls": 218,
+      "repeat": 0
+    },
+    {
+      "calls": 124260,
+      "cumulative_wall_s": 0.00713979,
+      "filename": "~",
+      "function": "<method 'get' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.00713979,
+      "primitive_calls": 124260,
+      "repeat": 0
+    },
+    {
+      "calls": 6140,
+      "cumulative_wall_s": 0.015940671,
+      "filename": "src/joxing/physics.py",
+      "function": "point_velocity",
+      "line": 25,
+      "own_wall_s": 0.007055097000000001,
+      "primitive_calls": 6140,
+      "repeat": 0
+    },
+    {
+      "calls": 6140,
+      "cumulative_wall_s": 0.006836763,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_jac>",
+      "line": 0,
+      "own_wall_s": 0.006836763,
+      "primitive_calls": 6140,
+      "repeat": 0
+    },
+    {
+      "calls": 13471,
+      "cumulative_wall_s": 0.006069733000000001,
+      "filename": "~",
+      "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "line": 0,
+      "own_wall_s": 0.006069733000000001,
+      "primitive_calls": 13471,
+      "repeat": 0
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.009184368,
+      "filename": "src/joxing/stance_env.py",
+      "function": "kinematics",
+      "line": 97,
+      "own_wall_s": 0.003350862,
+      "primitive_calls": 1192,
+      "repeat": 0
+    },
+    {
+      "calls": 69251,
+      "cumulative_wall_s": 0.003295325,
+      "filename": "~",
+      "function": "<method 'append' of 'list' objects>",
+      "line": 0,
+      "own_wall_s": 0.003295325,
+      "primitive_calls": 69251,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.0035260810000000004,
+      "filename": "src/joxing/groups.py",
+      "function": "expand",
+      "line": 29,
+      "own_wall_s": 0.0032096980000000004,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.005736535,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "norm",
+      "line": 2615,
+      "own_wall_s": 0.003179654,
+      "primitive_calls": 2384,
+      "repeat": 0
+    },
+    {
+      "calls": 78916,
+      "cumulative_wall_s": 0.003170767,
+      "filename": "~",
+      "function": "<built-in method builtins.id>",
+      "line": 0,
+      "own_wall_s": 0.003170767,
+      "primitive_calls": 78916,
+      "repeat": 0
+    },
+    {
+      "calls": 16433,
+      "cumulative_wall_s": 0.002699496,
+      "filename": "~",
+      "function": "<built-in method numpy.zeros>",
+      "line": 0,
+      "own_wall_s": 0.002699496,
+      "primitive_calls": 16433,
+      "repeat": 0
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.006146068,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_mean",
+      "line": 115,
+      "own_wall_s": 0.0025978800000000003,
+      "primitive_calls": 2275,
+      "repeat": 0
+    },
+    {
+      "calls": 12389,
+      "cumulative_wall_s": 0.002570259,
+      "filename": "~",
+      "function": "<method 'copy' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.002570259,
+      "primitive_calls": 12389,
+      "repeat": 0
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.002038158,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_contactForce>",
+      "line": 0,
+      "own_wall_s": 0.002038158,
+      "primitive_calls": 3070,
+      "repeat": 0
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.0026146990000000003,
+      "filename": "src/joxing/support.py",
+      "function": "update",
+      "line": 14,
+      "own_wall_s": 0.001791,
+      "primitive_calls": 1083,
+      "repeat": 0
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.004450971000000001,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_wrapreduction_any_all",
+      "line": 86,
+      "own_wall_s": 0.0017775800000000002,
+      "primitive_calls": 3467,
+      "repeat": 0
+    },
+    {
+      "calls": 53955,
+      "cumulative_wall_s": 0.0017218910000000001,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_atomic",
+      "line": 172,
+      "own_wall_s": 0.0017218910000000001,
+      "primitive_calls": 53955,
+      "repeat": 0
+    },
+    {
+      "calls": 8175,
+      "cumulative_wall_s": 0.0025112660000000003,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_keep_alive",
+      "line": 231,
+      "own_wall_s": 0.00162549,
+      "primitive_calls": 8175,
+      "repeat": 0
+    },
+    {
+      "calls": 763,
+      "cumulative_wall_s": 0.001623166,
+      "filename": "~",
+      "function": "<method 'tolist' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.001623166,
+      "primitive_calls": 763,
+      "repeat": 0
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.001767845,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_count_reduce_items",
+      "line": 73,
+      "own_wall_s": 0.0015860660000000001,
+      "primitive_calls": 2275,
+      "repeat": 0
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.0014333470000000002,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_clip",
+      "line": 96,
+      "own_wall_s": 0.0014333470000000002,
+      "primitive_calls": 1192,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.052981878,
+      "filename": "src/joxing/stance_env.py",
+      "function": "snapshot",
+      "line": 245,
+      "own_wall_s": 0.0014178740000000002,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.002361373,
+      "filename": "src/joxing/stance_env.py",
+      "function": "observe",
+      "line": 108,
+      "own_wall_s": 0.001296019,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 6646,
+      "cumulative_wall_s": 0.004119028,
+      "filename": "~",
+      "function": "<method 'all' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.001251855,
+      "primitive_calls": 6646,
+      "repeat": 0
+    },
+    {
+      "calls": 9937,
+      "cumulative_wall_s": 0.001101661,
+      "filename": "~",
+      "function": "<built-in method builtins.max>",
+      "line": 0,
+      "own_wall_s": 0.001101661,
+      "primitive_calls": 9937,
+      "repeat": 0
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.007183606,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "mean",
+      "line": 3737,
+      "own_wall_s": 0.001037538,
+      "primitive_calls": 2275,
+      "repeat": 0
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.005414803,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "any",
+      "line": 2474,
+      "own_wall_s": 0.0009638320000000001,
+      "primitive_calls": 3467,
+      "repeat": 0
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.000922493,
+      "filename": "~",
+      "function": "<built-in method numpy.array>",
+      "line": 0,
+      "own_wall_s": 0.000922493,
+      "primitive_calls": 2275,
+      "repeat": 0
+    },
+    {
+      "calls": 6646,
+      "cumulative_wall_s": 0.002867173,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_all",
+      "line": 64,
+      "own_wall_s": 0.000892745,
+      "primitive_calls": 6646,
+      "repeat": 0
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.0011404450000000001,
+      "filename": "src/joxing/support.py",
+      "function": "floor_loads",
+      "line": 39,
+      "own_wall_s": 0.0008859880000000001,
+      "primitive_calls": 1083,
+      "repeat": 0
+    },
+    {
+      "calls": 4262,
+      "cumulative_wall_s": 0.0007879530000000001,
+      "filename": "~",
+      "function": "<method 'reshape' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.0007879530000000001,
+      "primitive_calls": 4262,
+      "repeat": 0
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 0.0034170050000000003,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_dict",
+      "line": 217,
+      "own_wall_s": 0.000654094,
+      "primitive_calls": 327,
+      "repeat": 0
+    },
+    {
+      "calls": 8780,
+      "cumulative_wall_s": 0.0006173890000000001,
+      "filename": "~",
+      "function": "<built-in method builtins.issubclass>",
+      "line": 0,
+      "own_wall_s": 0.0006173890000000001,
+      "primitive_calls": 8780,
+      "repeat": 0
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.003135099,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "clip",
+      "line": 2245,
+      "own_wall_s": 0.0006141730000000001,
+      "primitive_calls": 1192,
+      "repeat": 0
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.0020022430000000003,
+      "filename": "~",
+      "function": "<method 'clip' of 'numpy.generic' objects>",
+      "line": 0,
+      "own_wall_s": 0.000568896,
+      "primitive_calls": 1192,
+      "repeat": 0
+    },
+    {
+      "calls": 3038,
+      "cumulative_wall_s": 0.000563095,
+      "filename": "~",
+      "function": "<built-in method numpy.asarray>",
+      "line": 0,
+      "own_wall_s": 0.000563095,
+      "primitive_calls": 3038,
+      "repeat": 0
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.000513387,
+      "filename": "~",
+      "function": "<method 'dot' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000513387,
+      "primitive_calls": 1301,
+      "repeat": 0
+    },
+    {
+      "calls": 5211,
+      "cumulative_wall_s": 0.00046082100000000004,
+      "filename": "~",
+      "function": "<built-in method builtins.isinstance>",
+      "line": 0,
+      "own_wall_s": 0.00046082100000000004,
+      "primitive_calls": 5211,
+      "repeat": 0
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.002520926,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_wrapfunc",
+      "line": 48,
+      "own_wall_s": 0.00039737700000000003,
+      "primitive_calls": 1192,
+      "repeat": 0
+    },
+    {
+      "calls": 4026,
+      "cumulative_wall_s": 0.000389051,
+      "filename": "~",
+      "function": "<built-in method builtins.getattr>",
+      "line": 0,
+      "own_wall_s": 0.000389051,
+      "primitive_calls": 4026,
+      "repeat": 0
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.00037594,
+      "filename": "<string>",
+      "function": "__init__",
+      "line": 2,
+      "own_wall_s": 0.00037594,
+      "primitive_calls": 3070,
+      "repeat": 0
+    },
+    {
+      "calls": 4121,
+      "cumulative_wall_s": 0.00037334900000000003,
+      "filename": "~",
+      "function": "<method 'items' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.00037334900000000003,
+      "primitive_calls": 4121,
+      "repeat": 0
+    },
+    {
+      "calls": 3465,
+      "cumulative_wall_s": 0.000355252,
+      "filename": "~",
+      "function": "<built-in method builtins.round>",
+      "line": 0,
+      "own_wall_s": 0.000355252,
+      "primitive_calls": 3465,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.8525921270000001,
+      "filename": "src/joxing/stance_train.py",
+      "function": "step",
+      "line": 31,
+      "own_wall_s": 0.00028653500000000003,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 2493,
+      "cumulative_wall_s": 0.00024355800000000003,
+      "filename": "~",
+      "function": "<built-in method builtins.hasattr>",
+      "line": 0,
+      "own_wall_s": 0.00024355800000000003,
+      "primitive_calls": 2493,
+      "repeat": 0
+    },
+    {
+      "calls": 1410,
+      "cumulative_wall_s": 0.00022232300000000002,
+      "filename": "~",
+      "function": "<method 'ravel' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.00022232300000000002,
+      "primitive_calls": 1410,
+      "repeat": 0
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 0.00046790600000000003,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "_asdict_inner",
+      "line": 1332,
+      "own_wall_s": 0.000218857,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00021858,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_getState>",
+      "line": 0,
+      "own_wall_s": 0.00021858,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.00020711400000000002,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_any_dispatcher",
+      "line": 2469,
+      "own_wall_s": 0.00020711400000000002,
+      "primitive_calls": 3467,
+      "repeat": 0
+    },
+    {
+      "calls": 2827,
+      "cumulative_wall_s": 0.00019775100000000002,
+      "filename": "~",
+      "function": "<built-in method builtins.len>",
+      "line": 0,
+      "own_wall_s": 0.00019775100000000002,
+      "primitive_calls": 2827,
+      "repeat": 0
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.00019004700000000002,
+      "filename": "numpy/_core/multiarray.py",
+      "function": "dot",
+      "line": 751,
+      "own_wall_s": 0.00019004700000000002,
+      "primitive_calls": 3070,
+      "repeat": 0
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.00018177900000000002,
+      "filename": "~",
+      "function": "<built-in method numpy.lib.array_utils.normalize_axis_index>",
+      "line": 0,
+      "own_wall_s": 0.00018177900000000002,
+      "primitive_calls": 2275,
+      "repeat": 0
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.000172055,
+      "filename": "~",
+      "function": "<built-in method builtins.abs>",
+      "line": 0,
+      "own_wall_s": 0.000172055,
+      "primitive_calls": 1192,
+      "repeat": 0
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.00024826700000000004,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "isComplexType",
+      "line": 168,
+      "own_wall_s": 0.00016819100000000002,
+      "primitive_calls": 1301,
+      "repeat": 0
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.00016716000000000002,
+      "filename": "~",
+      "function": "<built-in method numpy.asanyarray>",
+      "line": 0,
+      "own_wall_s": 0.00016716000000000002,
+      "primitive_calls": 2384,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00031795900000000004,
+      "filename": "numpy/_core/numeric.py",
+      "function": "array_equal",
+      "line": 2471,
+      "own_wall_s": 0.000166545,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.000155417,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_mean_dispatcher",
+      "line": 3732,
+      "own_wall_s": 0.000155417,
+      "primitive_calls": 2275,
+      "repeat": 0
+    },
+    {
+      "calls": 545,
+      "cumulative_wall_s": 0.00015050100000000001,
+      "filename": "~",
+      "function": "<method '__deepcopy__' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.00015050100000000001,
+      "primitive_calls": 545,
+      "repeat": 0
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.000148548,
+      "filename": "~",
+      "function": "<method 'conj' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000148548,
+      "primitive_calls": 1083,
+      "repeat": 0
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.000143191,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "_norm_dispatcher",
+      "line": 2611,
+      "own_wall_s": 0.000143191,
+      "primitive_calls": 2384,
+      "repeat": 0
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.00013165600000000001,
+      "filename": "~",
+      "function": "<method 'values' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.00013165600000000001,
+      "primitive_calls": 1301,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000199836,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "fields",
+      "line": 1278,
+      "own_wall_s": 0.000129156,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00012803600000000002,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_stateSize>",
+      "line": 0,
+      "own_wall_s": 0.00012803600000000002,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00014321,
+      "filename": "src/joxing/stance_env.py",
+      "function": "result",
+      "line": 211,
+      "own_wall_s": 0.000117416,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 9.675700000000001e-05,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_clip_dispatcher",
+      "line": 2240,
+      "own_wall_s": 9.675700000000001e-05,
+      "primitive_calls": 1192,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 7.6958e-05,
+      "filename": "~",
+      "function": "<method 'astype' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 7.6958e-05,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.0005730020000000001,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "asdict",
+      "line": 1308,
+      "own_wall_s": 6.2221e-05,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 218,
+      "cumulative_wall_s": 6.1832e-05,
+      "filename": "~",
+      "function": "<built-in method numpy.empty>",
+      "line": 0,
+      "own_wall_s": 6.1832e-05,
+      "primitive_calls": 218,
+      "repeat": 0
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 4.6844e-05,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "<genexpr>",
+      "line": 1293,
+      "own_wall_s": 4.6844e-05,
+      "primitive_calls": 436,
+      "repeat": 0
+    },
+    {
+      "calls": 218,
+      "cumulative_wall_s": 6.7626e-05,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "_is_dataclass_instance",
+      "line": 1296,
+      "own_wall_s": 4.6549000000000004e-05,
+      "primitive_calls": 218,
+      "repeat": 0
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 4.0976e-05,
+      "filename": "src/joxing/stance_env.py",
+      "function": "<genexpr>",
+      "line": 205,
+      "own_wall_s": 4.0976e-05,
+      "primitive_calls": 436,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.0006136220000000001,
+      "filename": "src/joxing/support.py",
+      "function": "snapshot",
+      "line": 35,
+      "own_wall_s": 4.062e-05,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 2.1044e-05,
+      "filename": "gymnasium/core.py",
+      "function": "np_random",
+      "line": 238,
+      "own_wall_s": 2.1044e-05,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 1,
+      "cumulative_wall_s": 1.1542e-05,
+      "filename": "~",
+      "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "line": 0,
+      "own_wall_s": 1.1542e-05,
+      "primitive_calls": 1,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 7.667000000000001e-06,
+      "filename": "numpy/_core/numeric.py",
+      "function": "_array_equal_dispatcher",
+      "line": 2452,
+      "own_wall_s": 7.667000000000001e-06,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 7.174e-06,
+      "filename": "numpy/_core/multiarray.py",
+      "function": "concatenate",
+      "line": 197,
+      "own_wall_s": 7.174e-06,
+      "primitive_calls": 109,
+      "repeat": 0
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.458941335,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_step2>",
+      "line": 0,
+      "own_wall_s": 0.458941335,
+      "primitive_calls": 1083,
+      "repeat": 1
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.210767363,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_step1>",
+      "line": 0,
+      "own_wall_s": 0.210767363,
+      "primitive_calls": 1083,
+      "repeat": 1
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.7625182840000001,
+      "filename": "src/joxing/physics.py",
+      "function": "step_contacts",
+      "line": 31,
+      "own_wall_s": 0.059615114000000004,
+      "primitive_calls": 1083,
+      "repeat": 1
+    },
+    {
+      "calls": 62130,
+      "cumulative_wall_s": 0.050215268,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "deepcopy",
+      "line": 118,
+      "own_wall_s": 0.023816425000000002,
+      "primitive_calls": 1962,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.8260456660000001,
+      "filename": "src/joxing/stance_env.py",
+      "function": "step",
+      "line": 131,
+      "own_wall_s": 0.014301488000000001,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.012542194000000001,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_kinematics>",
+      "line": 0,
+      "own_wall_s": 0.012542194000000001,
+      "primitive_calls": 1083,
+      "repeat": 1
+    },
+    {
+      "calls": 7194,
+      "cumulative_wall_s": 0.044152128000000006,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_list",
+      "line": 191,
+      "own_wall_s": 0.00889766,
+      "primitive_calls": 218,
+      "repeat": 1
+    },
+    {
+      "calls": 6140,
+      "cumulative_wall_s": 0.016422182,
+      "filename": "src/joxing/physics.py",
+      "function": "point_velocity",
+      "line": 25,
+      "own_wall_s": 0.007284278000000001,
+      "primitive_calls": 6140,
+      "repeat": 1
+    },
+    {
+      "calls": 124260,
+      "cumulative_wall_s": 0.007268917000000001,
+      "filename": "~",
+      "function": "<method 'get' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.007268917000000001,
+      "primitive_calls": 124260,
+      "repeat": 1
+    },
+    {
+      "calls": 6140,
+      "cumulative_wall_s": 0.007000135,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_jac>",
+      "line": 0,
+      "own_wall_s": 0.007000135,
+      "primitive_calls": 6140,
+      "repeat": 1
+    },
+    {
+      "calls": 13471,
+      "cumulative_wall_s": 0.006496073000000001,
+      "filename": "~",
+      "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "line": 0,
+      "own_wall_s": 0.006496073000000001,
+      "primitive_calls": 13471,
+      "repeat": 1
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.009896568000000001,
+      "filename": "src/joxing/stance_env.py",
+      "function": "kinematics",
+      "line": 97,
+      "own_wall_s": 0.003592589,
+      "primitive_calls": 1192,
+      "repeat": 1
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.006190873,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "norm",
+      "line": 2615,
+      "own_wall_s": 0.003417058,
+      "primitive_calls": 2384,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.0036839670000000002,
+      "filename": "src/joxing/groups.py",
+      "function": "expand",
+      "line": 29,
+      "own_wall_s": 0.003362283,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 69251,
+      "cumulative_wall_s": 0.00326734,
+      "filename": "~",
+      "function": "<method 'append' of 'list' objects>",
+      "line": 0,
+      "own_wall_s": 0.00326734,
+      "primitive_calls": 69251,
+      "repeat": 1
+    },
+    {
+      "calls": 4262,
+      "cumulative_wall_s": 0.00320818,
+      "filename": "~",
+      "function": "<method 'reshape' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.00320818,
+      "primitive_calls": 4262,
+      "repeat": 1
+    },
+    {
+      "calls": 78916,
+      "cumulative_wall_s": 0.00313223,
+      "filename": "~",
+      "function": "<built-in method builtins.id>",
+      "line": 0,
+      "own_wall_s": 0.00313223,
+      "primitive_calls": 78916,
+      "repeat": 1
+    },
+    {
+      "calls": 16433,
+      "cumulative_wall_s": 0.0028330960000000002,
+      "filename": "~",
+      "function": "<built-in method numpy.zeros>",
+      "line": 0,
+      "own_wall_s": 0.0028330960000000002,
+      "primitive_calls": 16433,
+      "repeat": 1
+    },
+    {
+      "calls": 12389,
+      "cumulative_wall_s": 0.002778062,
+      "filename": "~",
+      "function": "<method 'copy' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.002778062,
+      "primitive_calls": 12389,
+      "repeat": 1
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.006523829,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_mean",
+      "line": 115,
+      "own_wall_s": 0.002701677,
+      "primitive_calls": 2275,
+      "repeat": 1
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.002196763,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_contactForce>",
+      "line": 0,
+      "own_wall_s": 0.002196763,
+      "primitive_calls": 3070,
+      "repeat": 1
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.0028109230000000003,
+      "filename": "src/joxing/support.py",
+      "function": "update",
+      "line": 14,
+      "own_wall_s": 0.001945784,
+      "primitive_calls": 1083,
+      "repeat": 1
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.004783141,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_wrapreduction_any_all",
+      "line": 86,
+      "own_wall_s": 0.0019039150000000002,
+      "primitive_calls": 3467,
+      "repeat": 1
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.0019578720000000003,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_count_reduce_items",
+      "line": 73,
+      "own_wall_s": 0.001757443,
+      "primitive_calls": 2275,
+      "repeat": 1
+    },
+    {
+      "calls": 763,
+      "cumulative_wall_s": 0.001735814,
+      "filename": "~",
+      "function": "<method 'tolist' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.001735814,
+      "primitive_calls": 763,
+      "repeat": 1
+    },
+    {
+      "calls": 53955,
+      "cumulative_wall_s": 0.001696673,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_atomic",
+      "line": 172,
+      "own_wall_s": 0.001696673,
+      "primitive_calls": 53955,
+      "repeat": 1
+    },
+    {
+      "calls": 8175,
+      "cumulative_wall_s": 0.002543042,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_keep_alive",
+      "line": 231,
+      "own_wall_s": 0.0016481260000000002,
+      "primitive_calls": 8175,
+      "repeat": 1
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.00157803,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_clip",
+      "line": 96,
+      "own_wall_s": 0.00157803,
+      "primitive_calls": 1192,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.054875921,
+      "filename": "src/joxing/stance_env.py",
+      "function": "snapshot",
+      "line": 245,
+      "own_wall_s": 0.00154623,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.0026413310000000002,
+      "filename": "src/joxing/stance_env.py",
+      "function": "observe",
+      "line": 108,
+      "own_wall_s": 0.0014712450000000001,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.006133606000000001,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "any",
+      "line": 2474,
+      "own_wall_s": 0.0013504650000000001,
+      "primitive_calls": 3467,
+      "repeat": 1
+    },
+    {
+      "calls": 6646,
+      "cumulative_wall_s": 0.004394971,
+      "filename": "~",
+      "function": "<method 'all' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.001343343,
+      "primitive_calls": 6646,
+      "repeat": 1
+    },
+    {
+      "calls": 9937,
+      "cumulative_wall_s": 0.0011810050000000002,
+      "filename": "~",
+      "function": "<built-in method builtins.max>",
+      "line": 0,
+      "own_wall_s": 0.0011810050000000002,
+      "primitive_calls": 9937,
+      "repeat": 1
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.007623716000000001,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "mean",
+      "line": 3737,
+      "own_wall_s": 0.0010998870000000001,
+      "primitive_calls": 2275,
+      "repeat": 1
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.00102019,
+      "filename": "~",
+      "function": "<built-in method numpy.array>",
+      "line": 0,
+      "own_wall_s": 0.00102019,
+      "primitive_calls": 2275,
+      "repeat": 1
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.0012078190000000002,
+      "filename": "src/joxing/support.py",
+      "function": "floor_loads",
+      "line": 39,
+      "own_wall_s": 0.0009396890000000001,
+      "primitive_calls": 1083,
+      "repeat": 1
+    },
+    {
+      "calls": 6646,
+      "cumulative_wall_s": 0.0030516280000000002,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_all",
+      "line": 64,
+      "own_wall_s": 0.0009236860000000001,
+      "primitive_calls": 6646,
+      "repeat": 1
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 0.0035717960000000003,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_dict",
+      "line": 217,
+      "own_wall_s": 0.0007279820000000001,
+      "primitive_calls": 327,
+      "repeat": 1
+    },
+    {
+      "calls": 3038,
+      "cumulative_wall_s": 0.0006815780000000001,
+      "filename": "~",
+      "function": "<built-in method numpy.asarray>",
+      "line": 0,
+      "own_wall_s": 0.0006815780000000001,
+      "primitive_calls": 3038,
+      "repeat": 1
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.003431529,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "clip",
+      "line": 2245,
+      "own_wall_s": 0.000662626,
+      "primitive_calls": 1192,
+      "repeat": 1
+    },
+    {
+      "calls": 8780,
+      "cumulative_wall_s": 0.0006465910000000001,
+      "filename": "~",
+      "function": "<built-in method builtins.issubclass>",
+      "line": 0,
+      "own_wall_s": 0.0006465910000000001,
+      "primitive_calls": 8780,
+      "repeat": 1
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.002214273,
+      "filename": "~",
+      "function": "<method 'clip' of 'numpy.generic' objects>",
+      "line": 0,
+      "own_wall_s": 0.000636243,
+      "primitive_calls": 1192,
+      "repeat": 1
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.000566911,
+      "filename": "~",
+      "function": "<method 'dot' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000566911,
+      "primitive_calls": 1301,
+      "repeat": 1
+    },
+    {
+      "calls": 5211,
+      "cumulative_wall_s": 0.00048432900000000003,
+      "filename": "~",
+      "function": "<built-in method builtins.isinstance>",
+      "line": 0,
+      "own_wall_s": 0.00048432900000000003,
+      "primitive_calls": 5211,
+      "repeat": 1
+    },
+    {
+      "calls": 4121,
+      "cumulative_wall_s": 0.000439638,
+      "filename": "~",
+      "function": "<method 'items' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.000439638,
+      "primitive_calls": 4121,
+      "repeat": 1
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.002768903,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_wrapfunc",
+      "line": 48,
+      "own_wall_s": 0.00041729500000000004,
+      "primitive_calls": 1192,
+      "repeat": 1
+    },
+    {
+      "calls": 4026,
+      "cumulative_wall_s": 0.000403263,
+      "filename": "~",
+      "function": "<built-in method builtins.getattr>",
+      "line": 0,
+      "own_wall_s": 0.000403263,
+      "primitive_calls": 4026,
+      "repeat": 1
+    },
+    {
+      "calls": 3465,
+      "cumulative_wall_s": 0.00038787800000000003,
+      "filename": "~",
+      "function": "<built-in method builtins.round>",
+      "line": 0,
+      "own_wall_s": 0.00038787800000000003,
+      "primitive_calls": 3465,
+      "repeat": 1
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.00034033100000000003,
+      "filename": "<string>",
+      "function": "__init__",
+      "line": 2,
+      "own_wall_s": 0.00034033100000000003,
+      "primitive_calls": 3070,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.8812466670000001,
+      "filename": "src/joxing/stance_train.py",
+      "function": "step",
+      "line": 31,
+      "own_wall_s": 0.00032508,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 2493,
+      "cumulative_wall_s": 0.00025586,
+      "filename": "~",
+      "function": "<built-in method builtins.hasattr>",
+      "line": 0,
+      "own_wall_s": 0.00025586,
+      "primitive_calls": 2493,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000244712,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_getState>",
+      "line": 0,
+      "own_wall_s": 0.000244712,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 1410,
+      "cumulative_wall_s": 0.000244602,
+      "filename": "~",
+      "function": "<method 'ravel' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000244602,
+      "primitive_calls": 1410,
+      "repeat": 1
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 0.000480455,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "_asdict_inner",
+      "line": 1332,
+      "own_wall_s": 0.00022383300000000002,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.000221257,
+      "filename": "~",
+      "function": "<built-in method builtins.abs>",
+      "line": 0,
+      "own_wall_s": 0.000221257,
+      "primitive_calls": 1192,
+      "repeat": 1
+    },
+    {
+      "calls": 2827,
+      "cumulative_wall_s": 0.00020664700000000002,
+      "filename": "~",
+      "function": "<built-in method builtins.len>",
+      "line": 0,
+      "own_wall_s": 0.00020664700000000002,
+      "primitive_calls": 2827,
+      "repeat": 1
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.00020042900000000002,
+      "filename": "~",
+      "function": "<built-in method numpy.lib.array_utils.normalize_axis_index>",
+      "line": 0,
+      "own_wall_s": 0.00020042900000000002,
+      "primitive_calls": 2275,
+      "repeat": 1
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.000200222,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_any_dispatcher",
+      "line": 2469,
+      "own_wall_s": 0.000200222,
+      "primitive_calls": 3467,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00044649500000000004,
+      "filename": "numpy/_core/numeric.py",
+      "function": "array_equal",
+      "line": 2471,
+      "own_wall_s": 0.000193988,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.000177911,
+      "filename": "numpy/_core/multiarray.py",
+      "function": "dot",
+      "line": 751,
+      "own_wall_s": 0.000177911,
+      "primitive_calls": 3070,
+      "repeat": 1
+    },
+    {
+      "calls": 545,
+      "cumulative_wall_s": 0.00017325,
+      "filename": "~",
+      "function": "<method '__deepcopy__' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.00017325,
+      "primitive_calls": 545,
+      "repeat": 1
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.000172928,
+      "filename": "~",
+      "function": "<built-in method numpy.asanyarray>",
+      "line": 0,
+      "own_wall_s": 0.000172928,
+      "primitive_calls": 2384,
+      "repeat": 1
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.000253867,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "isComplexType",
+      "line": 168,
+      "own_wall_s": 0.000172339,
+      "primitive_calls": 1301,
+      "repeat": 1
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.00015955800000000002,
+      "filename": "~",
+      "function": "<method 'conj' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.00015955800000000002,
+      "primitive_calls": 1083,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000154541,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_stateSize>",
+      "line": 0,
+      "own_wall_s": 0.000154541,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.000146198,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_mean_dispatcher",
+      "line": 3732,
+      "own_wall_s": 0.000146198,
+      "primitive_calls": 2275,
+      "repeat": 1
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.000145503,
+      "filename": "~",
+      "function": "<method 'values' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.000145503,
+      "primitive_calls": 1301,
+      "repeat": 1
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.00014437100000000002,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "_norm_dispatcher",
+      "line": 2611,
+      "own_wall_s": 0.00014437100000000002,
+      "primitive_calls": 2384,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00020817,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "fields",
+      "line": 1278,
+      "own_wall_s": 0.000135623,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000163119,
+      "filename": "src/joxing/stance_env.py",
+      "function": "result",
+      "line": 211,
+      "own_wall_s": 0.000132791,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.00010069600000000001,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_clip_dispatcher",
+      "line": 2240,
+      "own_wall_s": 0.00010069600000000001,
+      "primitive_calls": 1192,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 8.8003e-05,
+      "filename": "~",
+      "function": "<method 'astype' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 8.8003e-05,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.0005895970000000001,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "asdict",
+      "line": 1308,
+      "own_wall_s": 6.638400000000001e-05,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 218,
+      "cumulative_wall_s": 5.9010000000000006e-05,
+      "filename": "~",
+      "function": "<built-in method numpy.empty>",
+      "line": 0,
+      "own_wall_s": 5.9010000000000006e-05,
+      "primitive_calls": 218,
+      "repeat": 1
+    },
+    {
+      "calls": 218,
+      "cumulative_wall_s": 6.7773e-05,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "_is_dataclass_instance",
+      "line": 1296,
+      "own_wall_s": 4.9035e-05,
+      "primitive_calls": 218,
+      "repeat": 1
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 4.7749e-05,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "<genexpr>",
+      "line": 1293,
+      "own_wall_s": 4.7749e-05,
+      "primitive_calls": 436,
+      "repeat": 1
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 4.487e-05,
+      "filename": "src/joxing/stance_env.py",
+      "function": "<genexpr>",
+      "line": 205,
+      "own_wall_s": 4.487e-05,
+      "primitive_calls": 436,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000630503,
+      "filename": "src/joxing/support.py",
+      "function": "snapshot",
+      "line": 35,
+      "own_wall_s": 4.0906000000000004e-05,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 2.2459000000000003e-05,
+      "filename": "gymnasium/core.py",
+      "function": "np_random",
+      "line": 238,
+      "own_wall_s": 2.2459000000000003e-05,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 1,
+      "cumulative_wall_s": 1.2125e-05,
+      "filename": "~",
+      "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "line": 0,
+      "own_wall_s": 1.2125e-05,
+      "primitive_calls": 1,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 8.921e-06,
+      "filename": "numpy/_core/numeric.py",
+      "function": "_array_equal_dispatcher",
+      "line": 2452,
+      "own_wall_s": 8.921e-06,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 7.207000000000001e-06,
+      "filename": "numpy/_core/multiarray.py",
+      "function": "concatenate",
+      "line": 197,
+      "own_wall_s": 7.207000000000001e-06,
+      "primitive_calls": 109,
+      "repeat": 1
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.44846944000000005,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_step2>",
+      "line": 0,
+      "own_wall_s": 0.44846944000000005,
+      "primitive_calls": 1083,
+      "repeat": 2
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.206652947,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_step1>",
+      "line": 0,
+      "own_wall_s": 0.206652947,
+      "primitive_calls": 1083,
+      "repeat": 2
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.7394809910000001,
+      "filename": "src/joxing/physics.py",
+      "function": "step_contacts",
+      "line": 31,
+      "own_wall_s": 0.055457450000000005,
+      "primitive_calls": 1083,
+      "repeat": 2
+    },
+    {
+      "calls": 62130,
+      "cumulative_wall_s": 0.047867440000000004,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "deepcopy",
+      "line": 118,
+      "own_wall_s": 0.022407412,
+      "primitive_calls": 1962,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.7981568750000001,
+      "filename": "src/joxing/stance_env.py",
+      "function": "step",
+      "line": 131,
+      "own_wall_s": 0.012779301000000002,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.012115124000000001,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_kinematics>",
+      "line": 0,
+      "own_wall_s": 0.012115124000000001,
+      "primitive_calls": 1083,
+      "repeat": 2
+    },
+    {
+      "calls": 7194,
+      "cumulative_wall_s": 0.042213172,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_list",
+      "line": 191,
+      "own_wall_s": 0.008404421,
+      "primitive_calls": 218,
+      "repeat": 2
+    },
+    {
+      "calls": 124260,
+      "cumulative_wall_s": 0.007157833000000001,
+      "filename": "~",
+      "function": "<method 'get' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.007157833000000001,
+      "primitive_calls": 124260,
+      "repeat": 2
+    },
+    {
+      "calls": 6140,
+      "cumulative_wall_s": 0.015845682,
+      "filename": "src/joxing/physics.py",
+      "function": "point_velocity",
+      "line": 25,
+      "own_wall_s": 0.0069860750000000004,
+      "primitive_calls": 6140,
+      "repeat": 2
+    },
+    {
+      "calls": 6140,
+      "cumulative_wall_s": 0.006828428,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_jac>",
+      "line": 0,
+      "own_wall_s": 0.006828428,
+      "primitive_calls": 6140,
+      "repeat": 2
+    },
+    {
+      "calls": 13471,
+      "cumulative_wall_s": 0.0060407460000000005,
+      "filename": "~",
+      "function": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "line": 0,
+      "own_wall_s": 0.0060407460000000005,
+      "primitive_calls": 13471,
+      "repeat": 2
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.009104958,
+      "filename": "src/joxing/stance_env.py",
+      "function": "kinematics",
+      "line": 97,
+      "own_wall_s": 0.0033086810000000004,
+      "primitive_calls": 1192,
+      "repeat": 2
+    },
+    {
+      "calls": 69251,
+      "cumulative_wall_s": 0.003194942,
+      "filename": "~",
+      "function": "<method 'append' of 'list' objects>",
+      "line": 0,
+      "own_wall_s": 0.003194942,
+      "primitive_calls": 69251,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.003484412,
+      "filename": "src/joxing/groups.py",
+      "function": "expand",
+      "line": 29,
+      "own_wall_s": 0.0031835580000000004,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.0056951680000000005,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "norm",
+      "line": 2615,
+      "own_wall_s": 0.0031377130000000003,
+      "primitive_calls": 2384,
+      "repeat": 2
+    },
+    {
+      "calls": 78916,
+      "cumulative_wall_s": 0.0030503490000000004,
+      "filename": "~",
+      "function": "<built-in method builtins.id>",
+      "line": 0,
+      "own_wall_s": 0.0030503490000000004,
+      "primitive_calls": 78916,
+      "repeat": 2
+    },
+    {
+      "calls": 16433,
+      "cumulative_wall_s": 0.002679842,
+      "filename": "~",
+      "function": "<built-in method numpy.zeros>",
+      "line": 0,
+      "own_wall_s": 0.002679842,
+      "primitive_calls": 16433,
+      "repeat": 2
+    },
+    {
+      "calls": 12389,
+      "cumulative_wall_s": 0.002582289,
+      "filename": "~",
+      "function": "<method 'copy' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.002582289,
+      "primitive_calls": 12389,
+      "repeat": 2
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.006051,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_mean",
+      "line": 115,
+      "own_wall_s": 0.002565253,
+      "primitive_calls": 2275,
+      "repeat": 2
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.0020490390000000003,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_contactForce>",
+      "line": 0,
+      "own_wall_s": 0.0020490390000000003,
+      "primitive_calls": 3070,
+      "repeat": 2
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.0026110770000000003,
+      "filename": "src/joxing/support.py",
+      "function": "update",
+      "line": 14,
+      "own_wall_s": 0.001795776,
+      "primitive_calls": 1083,
+      "repeat": 2
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.004407261,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_wrapreduction_any_all",
+      "line": 86,
+      "own_wall_s": 0.0017497740000000002,
+      "primitive_calls": 3467,
+      "repeat": 2
+    },
+    {
+      "calls": 53955,
+      "cumulative_wall_s": 0.0016889740000000002,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_atomic",
+      "line": 172,
+      "own_wall_s": 0.0016889740000000002,
+      "primitive_calls": 53955,
+      "repeat": 2
+    },
+    {
+      "calls": 763,
+      "cumulative_wall_s": 0.001688671,
+      "filename": "~",
+      "function": "<method 'tolist' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.001688671,
+      "primitive_calls": 763,
+      "repeat": 2
+    },
+    {
+      "calls": 8175,
+      "cumulative_wall_s": 0.002440092,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_keep_alive",
+      "line": 231,
+      "own_wall_s": 0.0015832060000000002,
+      "primitive_calls": 8175,
+      "repeat": 2
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.001703274,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_count_reduce_items",
+      "line": 73,
+      "own_wall_s": 0.0015258860000000002,
+      "primitive_calls": 2275,
+      "repeat": 2
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.00143537,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_clip",
+      "line": 96,
+      "own_wall_s": 0.00143537,
+      "primitive_calls": 1192,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.052085131,
+      "filename": "src/joxing/stance_env.py",
+      "function": "snapshot",
+      "line": 245,
+      "own_wall_s": 0.0013216500000000002,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 6646,
+      "cumulative_wall_s": 0.004116717000000001,
+      "filename": "~",
+      "function": "<method 'all' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.001255594,
+      "primitive_calls": 6646,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.002289415,
+      "filename": "src/joxing/stance_env.py",
+      "function": "observe",
+      "line": 108,
+      "own_wall_s": 0.0012405200000000002,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 9937,
+      "cumulative_wall_s": 0.0011031320000000002,
+      "filename": "~",
+      "function": "<built-in method builtins.max>",
+      "line": 0,
+      "own_wall_s": 0.0011031320000000002,
+      "primitive_calls": 9937,
+      "repeat": 2
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.007080121000000001,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "mean",
+      "line": 3737,
+      "own_wall_s": 0.001029121,
+      "primitive_calls": 2275,
+      "repeat": 2
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.005365910000000001,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "any",
+      "line": 2474,
+      "own_wall_s": 0.0009586490000000001,
+      "primitive_calls": 3467,
+      "repeat": 2
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.000931811,
+      "filename": "~",
+      "function": "<built-in method numpy.array>",
+      "line": 0,
+      "own_wall_s": 0.000931811,
+      "primitive_calls": 2275,
+      "repeat": 2
+    },
+    {
+      "calls": 6646,
+      "cumulative_wall_s": 0.002861123,
+      "filename": "numpy/_core/_methods.py",
+      "function": "_all",
+      "line": 64,
+      "own_wall_s": 0.0008804860000000001,
+      "primitive_calls": 6646,
+      "repeat": 2
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.0011215930000000002,
+      "filename": "src/joxing/support.py",
+      "function": "floor_loads",
+      "line": 39,
+      "own_wall_s": 0.000867804,
+      "primitive_calls": 1083,
+      "repeat": 2
+    },
+    {
+      "calls": 4262,
+      "cumulative_wall_s": 0.000792998,
+      "filename": "~",
+      "function": "<method 'reshape' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000792998,
+      "primitive_calls": 4262,
+      "repeat": 2
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 0.003344292,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/copy.py",
+      "function": "_deepcopy_dict",
+      "line": 217,
+      "own_wall_s": 0.000644555,
+      "primitive_calls": 327,
+      "repeat": 2
+    },
+    {
+      "calls": 8780,
+      "cumulative_wall_s": 0.000626486,
+      "filename": "~",
+      "function": "<built-in method builtins.issubclass>",
+      "line": 0,
+      "own_wall_s": 0.000626486,
+      "primitive_calls": 8780,
+      "repeat": 2
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.003098173,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "clip",
+      "line": 2245,
+      "own_wall_s": 0.0006002560000000001,
+      "primitive_calls": 1192,
+      "repeat": 2
+    },
+    {
+      "calls": 3038,
+      "cumulative_wall_s": 0.0005588720000000001,
+      "filename": "~",
+      "function": "<built-in method numpy.asarray>",
+      "line": 0,
+      "own_wall_s": 0.0005588720000000001,
+      "primitive_calls": 3038,
+      "repeat": 2
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.001985396,
+      "filename": "~",
+      "function": "<method 'clip' of 'numpy.generic' objects>",
+      "line": 0,
+      "own_wall_s": 0.000550026,
+      "primitive_calls": 1192,
+      "repeat": 2
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.000508188,
+      "filename": "~",
+      "function": "<method 'dot' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000508188,
+      "primitive_calls": 1301,
+      "repeat": 2
+    },
+    {
+      "calls": 5211,
+      "cumulative_wall_s": 0.000458619,
+      "filename": "~",
+      "function": "<built-in method builtins.isinstance>",
+      "line": 0,
+      "own_wall_s": 0.000458619,
+      "primitive_calls": 5211,
+      "repeat": 2
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.002497917,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_wrapfunc",
+      "line": 48,
+      "own_wall_s": 0.00038885600000000003,
+      "primitive_calls": 1192,
+      "repeat": 2
+    },
+    {
+      "calls": 4121,
+      "cumulative_wall_s": 0.00038040800000000005,
+      "filename": "~",
+      "function": "<method 'items' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.00038040800000000005,
+      "primitive_calls": 4121,
+      "repeat": 2
+    },
+    {
+      "calls": 4026,
+      "cumulative_wall_s": 0.000370573,
+      "filename": "~",
+      "function": "<built-in method builtins.getattr>",
+      "line": 0,
+      "own_wall_s": 0.000370573,
+      "primitive_calls": 4026,
+      "repeat": 2
+    },
+    {
+      "calls": 3465,
+      "cumulative_wall_s": 0.00035424800000000004,
+      "filename": "~",
+      "function": "<built-in method builtins.round>",
+      "line": 0,
+      "own_wall_s": 0.00035424800000000004,
+      "primitive_calls": 3465,
+      "repeat": 2
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.000326617,
+      "filename": "<string>",
+      "function": "__init__",
+      "line": 2,
+      "own_wall_s": 0.000326617,
+      "primitive_calls": 3070,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.8505137920000001,
+      "filename": "src/joxing/stance_train.py",
+      "function": "step",
+      "line": 31,
+      "own_wall_s": 0.00027178600000000004,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 2493,
+      "cumulative_wall_s": 0.000241393,
+      "filename": "~",
+      "function": "<built-in method builtins.hasattr>",
+      "line": 0,
+      "own_wall_s": 0.000241393,
+      "primitive_calls": 2493,
+      "repeat": 2
+    },
+    {
+      "calls": 1410,
+      "cumulative_wall_s": 0.000222116,
+      "filename": "~",
+      "function": "<method 'ravel' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000222116,
+      "primitive_calls": 1410,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00020229000000000002,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_getState>",
+      "line": 0,
+      "own_wall_s": 0.00020229000000000002,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 3070,
+      "cumulative_wall_s": 0.00019701200000000002,
+      "filename": "numpy/_core/multiarray.py",
+      "function": "dot",
+      "line": 751,
+      "own_wall_s": 0.00019701200000000002,
+      "primitive_calls": 3070,
+      "repeat": 2
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 0.00043387600000000003,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "_asdict_inner",
+      "line": 1332,
+      "own_wall_s": 0.00019619,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 2827,
+      "cumulative_wall_s": 0.000191268,
+      "filename": "~",
+      "function": "<built-in method builtins.len>",
+      "line": 0,
+      "own_wall_s": 0.000191268,
+      "primitive_calls": 2827,
+      "repeat": 2
+    },
+    {
+      "calls": 3467,
+      "cumulative_wall_s": 0.000190793,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_any_dispatcher",
+      "line": 2469,
+      "own_wall_s": 0.000190793,
+      "primitive_calls": 3467,
+      "repeat": 2
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.000177388,
+      "filename": "~",
+      "function": "<built-in method numpy.lib.array_utils.normalize_axis_index>",
+      "line": 0,
+      "own_wall_s": 0.000177388,
+      "primitive_calls": 2275,
+      "repeat": 2
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 0.000168645,
+      "filename": "~",
+      "function": "<built-in method builtins.abs>",
+      "line": 0,
+      "own_wall_s": 0.000168645,
+      "primitive_calls": 1192,
+      "repeat": 2
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.000247355,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "isComplexType",
+      "line": 168,
+      "own_wall_s": 0.000168414,
+      "primitive_calls": 1301,
+      "repeat": 2
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.00016361700000000002,
+      "filename": "~",
+      "function": "<built-in method numpy.asanyarray>",
+      "line": 0,
+      "own_wall_s": 0.00016361700000000002,
+      "primitive_calls": 2384,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00031433400000000004,
+      "filename": "numpy/_core/numeric.py",
+      "function": "array_equal",
+      "line": 2471,
+      "own_wall_s": 0.000161275,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 545,
+      "cumulative_wall_s": 0.00015047000000000001,
+      "filename": "~",
+      "function": "<method '__deepcopy__' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.00015047000000000001,
+      "primitive_calls": 545,
+      "repeat": 2
+    },
+    {
+      "calls": 1083,
+      "cumulative_wall_s": 0.000150067,
+      "filename": "~",
+      "function": "<method 'conj' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 0.000150067,
+      "primitive_calls": 1083,
+      "repeat": 2
+    },
+    {
+      "calls": 2275,
+      "cumulative_wall_s": 0.00014486500000000002,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_mean_dispatcher",
+      "line": 3732,
+      "own_wall_s": 0.00014486500000000002,
+      "primitive_calls": 2275,
+      "repeat": 2
+    },
+    {
+      "calls": 2384,
+      "cumulative_wall_s": 0.00013817200000000002,
+      "filename": "numpy/linalg/_linalg.py",
+      "function": "_norm_dispatcher",
+      "line": 2611,
+      "own_wall_s": 0.00013817200000000002,
+      "primitive_calls": 2384,
+      "repeat": 2
+    },
+    {
+      "calls": 1301,
+      "cumulative_wall_s": 0.000128495,
+      "filename": "~",
+      "function": "<method 'values' of 'dict' objects>",
+      "line": 0,
+      "own_wall_s": 0.000128495,
+      "primitive_calls": 1301,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00019087700000000002,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "fields",
+      "line": 1278,
+      "own_wall_s": 0.000124045,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000121291,
+      "filename": "~",
+      "function": "<built-in method mujoco._functions.mj_stateSize>",
+      "line": 0,
+      "own_wall_s": 0.000121291,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.00013529200000000002,
+      "filename": "src/joxing/stance_env.py",
+      "function": "result",
+      "line": 211,
+      "own_wall_s": 0.000111377,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 1192,
+      "cumulative_wall_s": 9.397500000000001e-05,
+      "filename": "numpy/_core/fromnumeric.py",
+      "function": "_clip_dispatcher",
+      "line": 2240,
+      "own_wall_s": 9.397500000000001e-05,
+      "primitive_calls": 1192,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 6.783700000000001e-05,
+      "filename": "~",
+      "function": "<method 'astype' of 'numpy.ndarray' objects>",
+      "line": 0,
+      "own_wall_s": 6.783700000000001e-05,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 6.029300000000001e-05,
+      "filename": "src/joxing/stance_env.py",
+      "function": "<genexpr>",
+      "line": 205,
+      "own_wall_s": 6.029300000000001e-05,
+      "primitive_calls": 436,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000526594,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "asdict",
+      "line": 1308,
+      "own_wall_s": 5.4165e-05,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 218,
+      "cumulative_wall_s": 5.1263e-05,
+      "filename": "~",
+      "function": "<built-in method numpy.empty>",
+      "line": 0,
+      "own_wall_s": 5.1263e-05,
+      "primitive_calls": 218,
+      "repeat": 2
+    },
+    {
+      "calls": 218,
+      "cumulative_wall_s": 6.2056e-05,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "_is_dataclass_instance",
+      "line": 1296,
+      "own_wall_s": 4.4467e-05,
+      "primitive_calls": 218,
+      "repeat": 2
+    },
+    {
+      "calls": 436,
+      "cumulative_wall_s": 4.3289000000000005e-05,
+      "filename": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/dataclasses.py",
+      "function": "<genexpr>",
+      "line": 1293,
+      "own_wall_s": 4.3289000000000005e-05,
+      "primitive_calls": 436,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 0.000561416,
+      "filename": "src/joxing/support.py",
+      "function": "snapshot",
+      "line": 35,
+      "own_wall_s": 3.4822e-05,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 1.9289e-05,
+      "filename": "gymnasium/core.py",
+      "function": "np_random",
+      "line": 238,
+      "own_wall_s": 1.9289e-05,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 1,
+      "cumulative_wall_s": 1.1792e-05,
+      "filename": "~",
+      "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "line": 0,
+      "own_wall_s": 1.1792e-05,
+      "primitive_calls": 1,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 8.417000000000001e-06,
+      "filename": "numpy/_core/numeric.py",
+      "function": "_array_equal_dispatcher",
+      "line": 2452,
+      "own_wall_s": 8.417000000000001e-06,
+      "primitive_calls": 109,
+      "repeat": 2
+    },
+    {
+      "calls": 109,
+      "cumulative_wall_s": 7.498000000000001e-06,
+      "filename": "numpy/_core/multiarray.py",
+      "function": "concatenate",
+      "line": 197,
+      "own_wall_s": 7.498000000000001e-06,
+      "primitive_calls": 109,
+      "repeat": 2
+    }
+  ],
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "physics_steps_executed": 6498,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "preparation_steps_executed": 0,
+  "python": "3.12.12",
+  "record_sha256": "cbfd96864af33bb70e144e943d9edc23b98f8371b82d686e8fe2b6527251675f",
+  "samples": [
+    {
+      "control_steps": 109,
+      "control_steps_per_s": 139.85497311397816,
+      "physics_steps": 1083,
+      "profiled": false,
+      "recorded_reference_error": 1.9966250874858815e-11,
+      "repeat": 0,
+      "wall_s": 0.7793787919945316
+    },
+    {
+      "control_steps": 109,
+      "control_steps_per_s": 136.63251399315922,
+      "physics_steps": 1083,
+      "profiled": false,
+      "recorded_reference_error": 1.9966250874858815e-11,
+      "repeat": 1,
+      "wall_s": 0.7977603340114001
+    },
+    {
+      "control_steps": 109,
+      "control_steps_per_s": 139.64568862634073,
+      "physics_steps": 1083,
+      "profiled": false,
+      "recorded_reference_error": 1.9966250874858815e-11,
+      "repeat": 2,
+      "wall_s": 0.7805468330043368
+    },
+    {
+      "control_steps": 109,
+      "control_steps_per_s": 127.59832821601287,
+      "physics_steps": 1083,
+      "profiled": true,
+      "recorded_reference_error": 1.9966250874858815e-11,
+      "repeat": 0,
+      "wall_s": 0.8542431670066435
+    },
+    {
+      "control_steps": 109,
+      "control_steps_per_s": 123.4243229136255,
+      "physics_steps": 1083,
+      "profiled": true,
+      "recorded_reference_error": 1.9966250874858815e-11,
+      "repeat": 1,
+      "wall_s": 0.8831322500045644
+    },
+    {
+      "control_steps": 109,
+      "control_steps_per_s": 127.91665628612596,
+      "physics_steps": 1083,
+      "profiled": true,
+      "recorded_reference_error": 1.9966250874858815e-11,
+      "repeat": 2,
+      "wall_s": 0.8521173329936573
+    }
+  ],
+  "scenario_id": 64000,
+  "schema": "joxing-run-v1",
+  "scope": "One preselected recorded-action continuation, three unprofiled and three cProfile repeats on Mac; training FaultRecorder wrapper retained. No policy inference, IPC, reset, optimizer or production two-player game is timed. Profiling adds overhead; cumulative times overlap and must not be summed.",
+  "script_sha256": "8850377f88fe8c0fc1fa15d2d05c56f8b31f887d75333221004acea08e50dd4c",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "specification": {
+    "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+    "balance_config": {
+      "control_s": 0.01,
+      "dt_s": 0.001,
+      "episode_s": 20.0,
+      "max_reset_penetration_m": 0.002,
+      "preparation_s": 0.2
+    },
+    "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+    "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+    "observation_slices": {
+      "activation": [
+        170,
+        870
+      ],
+      "hand_error": [
+        876,
+        882
+      ],
+      "pelvis_up": [
+        870,
+        873
+      ],
+      "previous_action": [
+        885,
+        1023
+      ],
+      "relative_pelvis": [
+        873,
+        876
+      ],
+      "relative_qpos": [
+        0,
+        85
+      ],
+      "support": [
+        882,
+        885
+      ],
+      "velocity": [
+        85,
+        170
+      ]
+    }
+  },
+  "unprofiled_median_control_steps_per_s": 139.64568862634073,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:27:16.158489+00:00"
+}

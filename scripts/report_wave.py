@@ -242,6 +242,84 @@ def training_plot(run, out):
     plt.close(fig)
 
 
+def confirmation_plot(run, out):
+    """Show all fresh-seed comparisons, whether or not they confirm the screen."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    selection = read(run / "selection.json")
+    if not selection["qualified"]:
+        return
+    protocol = read(run / "protocol.json")
+    seeds = protocol.get(
+        "confirmation_seeds", protocol.get("seeds", {}).get("confirmation", [])
+    )
+    baseline = read(run / "B0/confirmation-constant-evaluations.json")
+    plt.style.use("dark_background")
+    fig, axes = plt.subplots(len(seeds), 2, figsize=(12, 4 * len(seeds)), squeeze=False)
+    for seed, (means, gains) in zip(seeds, axes):
+        reference = run / f"R-A-{seed}"
+        selected = reference if selection["arm"] == "A" else run / f"R-W-{seed}"
+        initial = read(selected / "initial-evaluations.json")
+        a = read(reference / "trained-evaluations.json")
+        b = read(selected / "trained-evaluations.json")
+        values = [initial, a, b, baseline]
+        means.bar(
+            range(4),
+            [np.mean([r["elapsed_sim_s"] for r in rows]) for rows in values],
+            color=["#8896ab", "#74a8ff", "#72daca", "#f6c45e"],
+        )
+        means.set(
+            title=f"Seed {seed}: all 32 paired starts",
+            ylabel="Mean physical survival (s)",
+            xticks=range(4),
+            xticklabels=[
+                "Initial",
+                "Reference A",
+                f"Selected {selection['arm']}",
+                "Constant",
+            ],
+        )
+        for i, rows in enumerate(values):
+            means.text(
+                i,
+                np.mean([r["elapsed_sim_s"] for r in rows]),
+                f"  {sum(r['elapsed_sim_s'] >= 5 for r in rows)}/32 ≥5s",
+                ha="center",
+                va="bottom",
+                fontsize=8,
+            )
+        means.margins(y=0.2)
+        for i, comparator in enumerate((initial, a, baseline)):
+            result = bootstrap_pair(comparator, b)
+            gain = result["paired_survival_gain_s"]
+            lo, hi = result["paired_reset_bootstrap_95ci_s"]
+            gains.errorbar(
+                i,
+                gain,
+                yerr=[[gain - lo], [hi - gain]],
+                fmt="o",
+                capsize=5,
+                color="#72daca" if lo > 0 else "#f6c45e",
+            )
+        gains.axhline(0, color="#8896ab")
+        gains.set(
+            title=f"Seed {seed}: selected-policy gain + 95% reset CI",
+            ylabel="Paired survival difference (s)",
+            xticks=range(3),
+            xticklabels=["vs own initial", "vs reference A", "vs constant"],
+        )
+    fig.suptitle(
+        "Fresh training seeds | both own-initial and reference bounds must exceed zero\n"
+        "Reset intervals do not quantify uncertainty across training seeds; motor gate is separate"
+    )
+    fig.tight_layout(rect=(0, 0, 1, 0.94))
+    fig.savefig(out / "wave-confirmation.png", dpi=160)
+    plt.close(fig)
+
+
 def video(run, out):
     import imageio.v2 as imageio
     import mujoco
@@ -337,6 +415,7 @@ def main():
     write_json(args.out / "conclusion.json", conclusions(args.run))
     plot(args.run, args.out)
     training_plot(args.run, args.out)
+    confirmation_plot(args.run, args.out)
     if args.video:
         video(args.run, args.out)
     write_json(
