@@ -90,10 +90,10 @@ def main():
         strike.add_argument("--out", type=Path, required=True)
         strike.add_argument("--workers", type=int, default=4)
         strike.add_argument(
-            "--generations", type=int, default=8 if name == "strike-pilot" else 24
+            "--generations", type=int, default=8 if name == "strike-pilot" else 12
         )
         strike.add_argument(
-            "--population", type=int, default=16 if name == "strike-pilot" else 32
+            "--population", type=int, default=16 if name == "strike-pilot" else 24
         )
     render = sub.add_parser("render")
     render.add_argument(

@@ -6,7 +6,7 @@ import copy
 import json
 import time
 from concurrent.futures import ProcessPoolExecutor
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from pathlib import Path
 
 import mujoco
@@ -421,8 +421,8 @@ def train_strike_suite(
     out: Path,
     *,
     workers=4,
-    generations=24,
-    population=32,
+    generations=12,
+    population=24,
     seeds=(7, 19, 41),
     eval_count=64,
     config=None,
@@ -451,7 +451,9 @@ def train_strike_suite(
         "generations": generations,
         "population": population,
         "training_seeds": seeds,
-        "eval_seeds": list(range(10000, 10000 + eval_count)),
+        "eval_seeds": list(
+            range(10000 if pilot else 20000, (10000 if pilot else 20000) + eval_count)
+        ),
         "pilot": pilot,
         "acceptance": {
             "hit_success_per_seed": 0.8,
@@ -463,6 +465,7 @@ def train_strike_suite(
         "policy": "four-phase open-loop muscle-group excitation pulses",
         "competitive_result": False,
         "selection": "final fitted mean; no held-out policy selection",
+        "diagnostic_scenario_seed": 10000 if pilot else 20000,
         "initial_policy": {
             "source": "artifacts/receipts/reach-checkpoint.npz",
             "conversion": "reach phases 1/2 followed by two low-excitation withdrawal phases",
@@ -561,10 +564,11 @@ def train_strike_suite(
                         np.mean([r["normal_impulse_Ns"] for r in rows])
                     ),
                 }
-            replay = _replay_contact(config, mean, 10000, seed_out)
+            diagnostic_seed = protocol["diagnostic_scenario_seed"]
+            replay = _replay_contact(config, mean, diagnostic_seed, seed_out)
             rig = StrikeRig(config)
             for name, params in (("initial", initial), ("trained", mean)):
-                episode = rig.rollout(params, 10000, record=True)
+                episode = rig.rollout(params, diagnostic_seed, record=True)
                 np.savez_compressed(
                     seed_out / f"{name}-replay.npz",
                     qpos=episode.pop("qpos"),
@@ -574,6 +578,24 @@ def train_strike_suite(
                 )
                 episode.pop("contact_snapshot")
                 write_json(seed_out / f"{name}-replay.json", episode)
+            role_controls = {}
+            for zone, expected in (("head", 2), ("guard", 0)):
+                control = StrikeRig(replace(config, target_zone=zone)).rollout(
+                    mean, diagnostic_seed
+                )
+                role_controls[zone] = {
+                    "points": control["points"],
+                    "expected_points": expected,
+                    "physical_impulse_Ns": control["normal_impulse_Ns"],
+                    "passed": control["points"] == expected,
+                }
+            passive = rig.rollout(np.full((4, len(GROUPS)), -12.0), diagnostic_seed)
+            role_controls["passive"] = {
+                "points": passive["points"],
+                "expected_points": 0,
+                "passed": passive["points"] == 0,
+            }
+            write_json(seed_out / "role-controls.json", role_controls)
             result = {
                 "training_seed": seed,
                 "policy_hash": digest(mean.tolist()),
@@ -582,6 +604,7 @@ def train_strike_suite(
                 "rules_hash": rig.rules.hash,
                 "evaluation": evaluation,
                 "replay": replay,
+                "role_controls": role_controls,
                 "history": history,
                 "paired_task_success_improvement": evaluation["trained"][
                     "strike_withdrawal_success_rate"
@@ -591,6 +614,7 @@ def train_strike_suite(
                     evaluation["trained"]["hit_success_rate"] >= 0.8
                     and evaluation["trained"]["strike_withdrawal_success_rate"] >= 0.75
                     and replay["passed"]
+                    and all(c["passed"] for c in role_controls.values())
                 ),
             }
             write_json(seed_out / "result.json", result)
@@ -607,6 +631,7 @@ def train_strike_suite(
         "wall_s": time.perf_counter() - started,
         "training_episodes": generations * population * len(seeds),
         "evaluation_attempts": 2 * eval_count * len(seeds),
+        "diagnostic_attempts": 7 * len(seeds),
         "invalid_episodes": 0,
         "limitations": [
             "fixed pelvis and zero gravity",
