@@ -1,0 +1,52 @@
+{
+  "schema": "joxing-publication-v1",
+  "utc": "2026-10-26T22:30:32.730185+00:00",
+  "repository": "https://github.com/neverhuman/Joxing",
+  "private": false,
+  "visibility": "public",
+  "release_url": "https://github.com/neverhuman/Joxing/releases/tag/v0.0.7",
+  "release_commit": "4cad56ddcb4fa83b053d8be3571d2ae601d81023",
+  "annotated_tag": "v0.0.7",
+  "tag_object": "1c021813859ee4a5cfed5f111b2bfe9e92d7d8e6",
+  "remote_tag_commit": "4cad56ddcb4fa83b053d8be3571d2ae601d81023",
+  "anonymous_tagged_file_checks": [
+    {
+      "path": "README.md",
+      "anonymous_http_status": 200,
+      "sha256": "7246e2de2c0f50154765855c0296aa2d2588e5df2bb36dc20c5a5cba2ad743c9",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "docs/V0.0.7_RESULTS.md",
+      "anonymous_http_status": 200,
+      "sha256": "945a4244635c73d0b6dbb52b7fe2e07f8053dfee6ff48b4e50759760aeaf6894",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "docs/V0.0.8_MISSION.md",
+      "anonymous_http_status": 200,
+      "sha256": "c74b8fc22147e0b086c12dc49dea273cd8e8ea3ffdb5c4d6b4ab98e371dd7279",
+      "matches_local_bytes": true
+    },
+    {
+      "path": "artifacts/v0.0.7/release-summary.json",
+      "anonymous_http_status": 200,
+      "sha256": "48c44c5a4714155ef6b26b35c5fec9b6167de206c70f82f15d939f0c13287fe3",
+      "matches_local_bytes": true
+    }
+  ],
+  "raw_asset": {
+    "url": "https://github.com/neverhuman/Joxing/releases/download/v0.0.7/joxing-v0.0.7-raw.tar.gz",
+    "anonymous_http_status": 200,
+    "bytes": 22225280,
+    "sha256": "2e4650dc098e2c80b83ce42824fa3ea38e6143c5d2f5ec7dfa3fd9f56cee7e7e",
+    "matches_committed_manifest": true
+  },
+  "supervisor": {
+    "id": "advance-joxing-every-20-minutes",
+    "status": "ACTIVE",
+    "interval_minutes": 20,
+    "next_mission": "docs/V0.0.8_MISSION.md"
+  },
+  "scope": "Post-publication verification, no credentials persisted; immutable scientific tag precedes this receipt."
+}

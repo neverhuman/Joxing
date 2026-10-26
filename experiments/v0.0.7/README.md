@@ -1,6 +1,6 @@
 # v0.0.7 experiment book
 
-Status: preregistered; implementation and development validation in progress. No formal v7 outcome yet. [Mission](../../docs/V0.0.7_MISSION.md), [immutable protocol](protocol.json), [current ownership](../../docs/MISSION.md).
+Status: **completed, independently audited and publicly released**. Body/reference mapping, native equivalence and exact Linux replay pass; longer native tracking fails in all four conditions. The registration and ordered experiment descriptions below are retained; the final conclusion and [results](../../docs/V0.0.7_RESULTS.md) supply measured outcomes.
 
 T0 must first prove native feature/action/reward/continuation equivalence and correct canonical-reference/body-name mapping with unchanged 700 muscles. H1 measures the full frozen-policy loop at one/four workers. T1 evaluates 20 fresh paired seeds 72000–72019 across native/gloves ×2 ms/1 ms physics (80 attempts), retaining 20 ms control timing, frozen scheduled decoder and normalizer,18 gait cycles (~21.12 s), zero optimization. R1 independently audits all attempts and replays firstseed 72000 in all four variants.
 
