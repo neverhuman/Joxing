@@ -92,9 +92,9 @@ def main():
         xticklabels=[str(s["training_seed"]) for s in seeds],
         xlabel="Independent training seed",
         ylabel="Strike + withdrawal success (%)",
-        ylim=(0, 112),
+        ylim=(0, 128),
     )
-    axes[0, 1].legend(frameon=False, loc="lower right")
+    axes[0, 1].legend(frameon=False, loc="upper center", ncol=2, fontsize=9)
     for name, color, archive in zip(
         ("Reach baseline", "v0.0.2"), ("#8397b5", "#64dec1"), replay
     ):

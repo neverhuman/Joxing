@@ -1,9 +1,11 @@
 import json
 from dataclasses import replace
 
+import mujoco
 import numpy as np
 import pytest
 
+from joxing.scene import SOURCE
 from joxing.strike import StrikeConfig, StrikeRig, initial_strike_policy
 
 
@@ -19,6 +21,23 @@ def test_rig_keeps_native_muscles_and_explicit_assistance(rig):
     assert rig.model.body("strike_glove").mass[0] == pytest.approx(0.283)
     groups = np.concatenate(rig.groups)
     assert len(groups) == len(set(groups))
+
+
+def test_added_glove_preserves_native_muscle_parameters_and_segment_inertia(rig):
+    source = mujoco.MjModel.from_xml_path(str(SOURCE))
+    ids = [rig.model.actuator(source.actuator(i).name).id for i in range(source.nu)]
+    for field in (
+        "actuator_dynprm",
+        "actuator_gainprm",
+        "actuator_biasprm",
+        "actuator_ctrlrange",
+    ):
+        assert np.array_equal(getattr(rig.model, field)[ids], getattr(source, field))
+    bodies = [rig.model.body(source.body(i).name).id for i in range(source.nbody)]
+    assert rig.model.body_mass[bodies] == pytest.approx(source.body_mass, abs=1e-12)
+    assert rig.model.body_inertia[bodies] == pytest.approx(
+        source.body_inertia, abs=1e-12
+    )
 
 
 def test_geometry_evidence_uses_hand_frame_and_engine_distance(rig):
