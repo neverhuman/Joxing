@@ -4,6 +4,8 @@ Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. C
 
 ## Objective, scope and completion
 
+The [state/history/self-play audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) refines P2/P3/P5 with exact delivered/missing mechanisms, causal observation/history/latency contracts and tests. The user-authorized current CPU allowance is16simulation workers total under the [v0.0.5 resource](V0.0.5_RESOURCE_ADDENDUM.md) and [budget](V0.0.5_BUDGET_ADDENDUM.md) addenda; earlier four-worker entries describe initial caps.
+
 Produce a reproducible virtual boxing game in which two independently muscle-driven humans learn motor skills and improve tactics through self-play. Final completion requires stable unassisted motion, calibrated simulation-rule contact scoring, full replay, historical-opponent learning and paired fixed-panel evidence of improved match strength. The first delivery is the auditable CPU foundation plus a bounded learning-pipeline experiment.
 
 Non-goals for v0: injury/concussion prediction, deformable organs/foam, photorealism, articulated fingers, official judging, mixed weight classes, real-human tracking and robotics transfer. No cloud hardware purchase is assumed.

@@ -17,9 +17,12 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 | v0.0.2 | Delivered three-seed assisted strike/withdrawal proof | [Results](V0.0.2_RESULTS.md), [plan](V0.0.2_PLAN.md), [evidence](../artifacts/v0.0.2/) |
 | v0.0.3 | Planning milestone; no implemented release | [Historical plan](V0.0.3_PLAN.md) |
 | v0.0.4 | Delivered gravity/feedback platform, 63 passing Mac/Linux tests and bounded pilot; five-second motor gate failed | [Results](V0.0.4_RESULTS.md), [evidence/policies](../artifacts/v0.0.4/), [plan](V0.0.4_PLAN.md) |
+| v0.0.5 | Original controlled wave completed; authorized longer-budget extension running,72tests pass | [Results/status](V0.0.5_RESULTS.md), [experiment book](../experiments/v0.0.5/README.md), [plan](V0.0.5_PLAN.md) |
 | Later milestones | Proposed; unimplemented | [Master implementation gates](IMPLEMENTATION.md) |
 
 ## Game, physics and compute
+
+- [State/history/self-play code audit](STATE_HISTORY_SELF_PLAY_AUDIT.md): delivered feedback loop, missing opponent/memory/timing/game integration, measured command variation and implementation handoff.
 
 - [Game contract](GAME.md): head 2 / torso 1 / guard 0, hit qualification, terminal match utility and unresolved foul/fall rules.
 - [Compute inventory and HPC strategy](COMPUTE.md): measured host inventory, CPU workload strategy and unresolved GPU simulator parity.

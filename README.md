@@ -65,6 +65,8 @@ Python 3.12+, MuJoCo 3.8.0. On headless NVIDIA Linux use `MUJOCO_GL=egl` for ren
 
 ## Read first
 
+- [Code audit: game state, motion history, jitter and repeated self-play](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md)
+
 - [Game rules and how RL earns reward](docs/GAME.md)
 - [Review of all four supplied specs](docs/SPEC_REVIEW.md)
 - [Actual compute inventory and HPC strategy](docs/COMPUTE.md)

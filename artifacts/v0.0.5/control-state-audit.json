@@ -1,0 +1,262 @@
+{
+  "audit_script_sha256": "993712dd8dde4d30ba7a043546101bd201cae5bc6c3e9884eb3cd99c08e85501",
+  "code_commit": "1bcada788a0ccb8237580dfc50cfc51705cabdae",
+  "control_sim_s": 0.01,
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "limitations": [
+    "One preselected recorded scenario per actor; variation is not stability or correct feedback.",
+    "Command differences are normalized action variation, not measured limb jerk or a causal jitter study.",
+    "Counterfactual input sensitivity does not establish useful motor response.",
+    "Replay buffers and logged traces are not policy recurrent memory.",
+    "No opponent observation, match state, temporal encoder, simulated delay or self-play exists in the current StanceEnv path."
+  ],
+  "mujoco": "3.8.0",
+  "native_muscles": 700,
+  "numpy": "2.5.4",
+  "observation_size": 1023,
+  "own_generalized_velocity_channels_verified": 85,
+  "physics_sim_s": 0.001,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "previous_action_channels": 138,
+  "python": "3.12.12",
+  "schema": "joxing-run-v1",
+  "scope": "offline observation/network/recorded-action review; no motor trial or self-play claim",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "specification": {
+    "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+    "balance_config": {
+      "control_s": 0.01,
+      "dt_s": 0.001,
+      "episode_s": 20.0,
+      "max_reset_penetration_m": 0.002,
+      "preparation_s": 0.2
+    },
+    "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+    "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+    "observation_slices": {
+      "activation": [
+        170,
+        870
+      ],
+      "hand_error": [
+        876,
+        882
+      ],
+      "pelvis_up": [
+        870,
+        873
+      ],
+      "previous_action": [
+        885,
+        1023
+      ],
+      "relative_pelvis": [
+        873,
+        876
+      ],
+      "relative_qpos": [
+        0,
+        85
+      ],
+      "support": [
+        882,
+        885
+      ],
+      "velocity": [
+        85,
+        170
+      ]
+    }
+  },
+  "traces": [
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "353b72894c123a4518589e0eef5d815969cf39e6256b1859a439228cce322e2b",
+      "arm": "A",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 0.00020662944007199258,
+      "groups_varying_std_above_1e_6": 138,
+      "mean_absolute_normalized_command_change": 0.00016172712395306872,
+      "policy": "initial",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 93,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.0,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "522d1d2b7eab7ab6d8bb93b43abb2001f1c6c080b75b7b3f6070f98825d5b19c"
+    },
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "f76e762e1a80e3c5f0aae24d03d6ad2cc0d050450ba4d17b4fb367ee1a2937cf",
+      "arm": "A",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 0.0006340871914289892,
+      "groups_varying_std_above_1e_6": 138,
+      "mean_absolute_normalized_command_change": 0.01674356493700802,
+      "policy": "trained",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 92,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.007010081915563957,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "03e5505aa5c562fd2b30ae6e042123295d0811e05a30f6f47ec75e421022c52d"
+    },
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "353b72894c123a4518589e0eef5d815969cf39e6256b1859a439228cce322e2b",
+      "arm": "B",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 0.00020662944007199258,
+      "groups_varying_std_above_1e_6": 138,
+      "mean_absolute_normalized_command_change": 0.00016172712395306872,
+      "policy": "initial",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 93,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.0,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "522d1d2b7eab7ab6d8bb93b43abb2001f1c6c080b75b7b3f6070f98825d5b19c"
+    },
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "e489c67ae650525d8a9771aa717636b895d4abbe2cf4bf15bd89275e0e699e5b",
+      "arm": "B",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 0.0012847906909883022,
+      "groups_varying_std_above_1e_6": 138,
+      "mean_absolute_normalized_command_change": 0.01790087231953101,
+      "policy": "trained",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 100,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.031231884057971015,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "dabe550366a5e060b59dc80061c9ee61915a47af09b9ce27960ef4e2c486a42d"
+    },
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "353b72894c123a4518589e0eef5d815969cf39e6256b1859a439228cce322e2b",
+      "arm": "C",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 0.00020662944007199258,
+      "groups_varying_std_above_1e_6": 138,
+      "mean_absolute_normalized_command_change": 0.00016172712395306872,
+      "policy": "initial",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 93,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.0,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "522d1d2b7eab7ab6d8bb93b43abb2001f1c6c080b75b7b3f6070f98825d5b19c"
+    },
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "e5085b91815f83131992a0e82c19dc159c55bdb5df0cf6844da3bcdff33a3906",
+      "arm": "C",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 0.0003853284870274365,
+      "groups_varying_std_above_1e_6": 138,
+      "mean_absolute_normalized_command_change": 0.3961458848395818,
+      "policy": "trained",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 72,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.1484500805152979,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "105bf7bb70795dd8f5b4d980a2d1d96041230648d6fb673595a19f107c272f09"
+    },
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "353b72894c123a4518589e0eef5d815969cf39e6256b1859a439228cce322e2b",
+      "arm": "D",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 0.00020662944007199258,
+      "groups_varying_std_above_1e_6": 138,
+      "mean_absolute_normalized_command_change": 0.00016172712395306872,
+      "policy": "initial",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 93,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.0,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "522d1d2b7eab7ab6d8bb93b43abb2001f1c6c080b75b7b3f6070f98825d5b19c"
+    },
+    {
+      "actor_module_types": [
+        "Actor",
+        "Flatten",
+        "FlattenExtractor",
+        "Linear",
+        "ReLU",
+        "Sequential"
+      ],
+      "actor_sha256": "f34e44877765adf12deb23a2dc40d11284d4f942b9950aeebc45e4cc3dfd854e",
+      "arm": "D",
+      "counterfactual_scope": "Only the offline observation channel changes (+1rad/s pelvis_tilt). No simulated trajectory or motor outcome is measured.",
+      "counterfactual_velocity_input_mean_action_change": 2.556952836130222e-07,
+      "groups_varying_std_above_1e_6": 11,
+      "mean_absolute_normalized_command_change": 0.05078423585162183,
+      "policy": "trained",
+      "predict_hidden_state": null,
+      "recorded_commands_after_snapshot": 98,
+      "saturated_normalized_action_fraction_abs_ge_0_99": 0.9917184265010351,
+      "scenario_id": 60000,
+      "snapshot_sim_s": 0.10000000000000007,
+      "trace_sha256": "997e08389596ea157d08478080b0569f7e7ea24821f7c02d9e91d07b696473af"
+    }
+  ],
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:04:01.304269+00:00"
+}

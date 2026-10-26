@@ -38,6 +38,8 @@ An independently valid sporting end terminates both actors. The task's 60-second
 
 ## Where RL appears
 
+[The executable-code audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) distinguishes current single-athlete feedback from the proposed opponent-aware temporal game below. It specifies missing state/history, timing-jitter, simultaneous action and league interfaces. The current policy observes its own velocities and muscle activation but has no opponent input or recurrent actor memory.
+
 1. **Motor training:** muscle commands learn stance, independent arm reach/return, footwork and perturbation recovery. Goals and imitation rewards may be dense. The first executable experiment is a separate fixed-pelvis, zero-gravity reach rig using all 700 native muscle actuators and learned right-arm excitation pulses. Its results do not count as boxing competence.
 2. **Skill compression:** distill competent motor behavior into a state-conditioned deterministic decoder; test 32/64/128 latent dimensions. Motor policy outputs remain muscle excitations, not torque or animation.
 3. **Tactical self-play:** a recurrent actor chooses latent actions at 50 Hz; decoder updates muscles at 100 Hz; validated physics advances at 1 kHz initially. Both players decide from the same state. The actor sees own proprioception, visible opponent kinematics and public game state. Privileged critic inputs stay separate.
