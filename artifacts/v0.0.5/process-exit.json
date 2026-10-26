@@ -1,0 +1,37 @@
+{
+  "all_owned_training_benchmark_and_audit_jobs_exited": true,
+  "code_commit": "76f6e5ce47f9966d9896f08a03652c20dcc9db31",
+  "extension_source_hash_unchanged": true,
+  "host": "xbabe1",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "owned_job_pids": {
+    "3802532": {
+      "job": "original",
+      "proc_exists": false
+    },
+    "3901039": {
+      "job": "concurrent_H0",
+      "proc_exists": false
+    },
+    "4126632": {
+      "job": "standalone_H0",
+      "proc_exists": false
+    },
+    "4172953": {
+      "job": "extension",
+      "proc_exists": false
+    }
+  },
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "remaining_owned_python_processes_excluding_this_receipt_writer": [],
+  "schema": "joxing-run-v1",
+  "scope": "Read-only /proc check of registered PIDs and Python processes whose cwd is either dedicated Joxing checkout; no unrelated job was signalled or modified.",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:51:46.097296+00:00"
+}

@@ -100,8 +100,10 @@ def main():
         "functions": sorted(
             functions, key=lambda row: (row["repeat"], -row["own_wall_s"])
         ),
-        "physics_steps_executed": sum(row["physics_steps"] for row in samples),
-        "preparation_steps_executed": 0,
+        "control_physics_steps_executed": sum(row["physics_steps"] for row in samples),
+        "preparation_steps_executed": env.preparation_total,
+        "total_physics_steps_executed": sum(row["physics_steps"] for row in samples)
+        + env.preparation_total,
         "unprofiled_median_control_steps_per_s": float(
             np.median([r["control_steps_per_s"] for r in samples if not r["profiled"]])
         ),

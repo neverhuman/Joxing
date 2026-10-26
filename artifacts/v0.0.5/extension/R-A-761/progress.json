@@ -1,0 +1,1433 @@
+[
+  {
+    "available_memory_bytes": 34541731840,
+    "diagnostic": {
+      "alpha": 0.980656087398529,
+      "entropy_reward_mean": 93.43899536132812,
+      "mean_log_prob": -95.2821273803711
+    },
+    "inference_wall_s": 0.035886114463210106,
+    "learner": {
+      "train/actor_loss": -136.75582885742188,
+      "train/critic_loss": 2477.7333984375,
+      "train/ent_coef": 0.9809510707855225,
+      "train/ent_coef_loss": -4.463407039642334,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 65.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 22546,
+    "preparation_substeps": 5800,
+    "raw_reward_sum": 28.992337197360786,
+    "reset_wall_s": 7.742342751473188,
+    "scaled_reward_sum": 28.992337197360786,
+    "transitions": 2264,
+    "update_wall_s": 0.8984153736382723,
+    "updates": 65,
+    "wall_s": 30.158509569242597
+  },
+  {
+    "available_memory_bytes": 34640715776,
+    "diagnostic": {
+      "alpha": 0.8127140402793884,
+      "entropy_reward_mean": 72.22550201416016,
+      "mean_log_prob": -88.86951446533203
+    },
+    "inference_wall_s": 0.38746487721800804,
+    "learner": {
+      "train/actor_loss": -324.69287109375,
+      "train/critic_loss": 175.35427856445312,
+      "train/ent_coef": 0.8129544258117676,
+      "train/ent_coef_loss": -46.756221771240234,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 695.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 47628,
+    "preparation_substeps": 10000,
+    "raw_reward_sum": 61.51876424957094,
+    "reset_wall_s": 14.253111639991403,
+    "scaled_reward_sum": 61.51876424957094,
+    "transitions": 4784,
+    "update_wall_s": 9.535927422344685,
+    "updates": 695,
+    "wall_s": 60.1685246527195
+  },
+  {
+    "available_memory_bytes": 34472431616,
+    "diagnostic": {
+      "alpha": 0.6802030801773071,
+      "entropy_reward_mean": 53.44097137451172,
+      "mean_log_prob": -78.56620025634766
+    },
+    "inference_wall_s": 0.7276622820645571,
+    "learner": {
+      "train/actor_loss": -467.84893798828125,
+      "train/critic_loss": 3890.28662109375,
+      "train/ent_coef": 0.6804046630859375,
+      "train/ent_coef_loss": -85.65879821777344,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 1297.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 71599,
+    "preparation_substeps": 14600,
+    "raw_reward_sum": 90.64282311357823,
+    "reset_wall_s": 21.442235555499792,
+    "scaled_reward_sum": 90.64282311357823,
+    "transitions": 7192,
+    "update_wall_s": 17.658753357827663,
+    "updates": 1297,
+    "wall_s": 90.1931920107454
+  },
+  {
+    "available_memory_bytes": 34501537792,
+    "diagnostic": {
+      "alpha": 0.5634040832519531,
+      "entropy_reward_mean": 43.642822265625,
+      "mean_log_prob": -77.46273803710938
+    },
+    "inference_wall_s": 1.0970465540885925,
+    "learner": {
+      "train/actor_loss": -613.17236328125,
+      "train/critic_loss": 3531.0439453125,
+      "train/ent_coef": 0.5635671615600586,
+      "train/ent_coef_loss": -123.140380859375,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 1942.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 97295,
+    "preparation_substeps": 18800,
+    "raw_reward_sum": 121.7038942164652,
+    "reset_wall_s": 27.972079722210765,
+    "scaled_reward_sum": 121.7038942164652,
+    "transitions": 9772,
+    "update_wall_s": 26.568065155297518,
+    "updates": 1942,
+    "wall_s": 120.2023035697639
+  },
+  {
+    "available_memory_bytes": 34267557888,
+    "diagnostic": {
+      "alpha": 0.464897483587265,
+      "entropy_reward_mean": 28.82916831970215,
+      "mean_log_prob": -62.01188659667969
+    },
+    "inference_wall_s": 1.463289087638259,
+    "learner": {
+      "train/actor_loss": -752.7158813476562,
+      "train/critic_loss": 359.52703857421875,
+      "train/ent_coef": 0.4650287330150604,
+      "train/ent_coef_loss": -155.97024536132812,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 2614.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 124055,
+    "preparation_substeps": 22200,
+    "raw_reward_sum": 154.21774105468145,
+    "reset_wall_s": 33.40011557005346,
+    "scaled_reward_sum": 154.21774105468145,
+    "transitions": 12460,
+    "update_wall_s": 35.40027132257819,
+    "updates": 2614,
+    "wall_s": 150.22576999478042
+  },
+  {
+    "available_memory_bytes": 34386931712,
+    "diagnostic": {
+      "alpha": 0.3879142701625824,
+      "entropy_reward_mean": 18.904794692993164,
+      "mean_log_prob": -48.73446273803711
+    },
+    "inference_wall_s": 1.8333717416971922,
+    "learner": {
+      "train/actor_loss": -840.1832885742188,
+      "train/critic_loss": 1132.5667724609375,
+      "train/ent_coef": 0.3880212903022766,
+      "train/ent_coef_loss": -177.4195556640625,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 3262.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 149830,
+    "preparation_substeps": 26000,
+    "raw_reward_sum": 185.01582261704294,
+    "reset_wall_s": 39.287266708910465,
+    "scaled_reward_sum": 185.01582261704294,
+    "transitions": 15052,
+    "update_wall_s": 44.296097362414,
+    "updates": 3262,
+    "wall_s": 180.2337687406689
+  },
+  {
+    "available_memory_bytes": 34035699712,
+    "diagnostic": {
+      "alpha": 0.3167532682418823,
+      "entropy_reward_mean": 12.14814281463623,
+      "mean_log_prob": -38.35206604003906
+    },
+    "inference_wall_s": 2.248995754867792,
+    "learner": {
+      "train/actor_loss": -937.3033447265625,
+      "train/critic_loss": 5440.3916015625,
+      "train/ent_coef": 0.3168414235115051,
+      "train/ent_coef_loss": -203.13401794433594,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 3999.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 179171,
+    "preparation_substeps": 28000,
+    "raw_reward_sum": 218.39688602067181,
+    "reset_wall_s": 42.45370722748339,
+    "scaled_reward_sum": 218.39688602067181,
+    "transitions": 18000,
+    "update_wall_s": 54.39156371541321,
+    "updates": 3999,
+    "wall_s": 210.24777477048337
+  },
+  {
+    "available_memory_bytes": 34057089024,
+    "diagnostic": {
+      "alpha": 0.2613838016986847,
+      "entropy_reward_mean": 9.823823928833008,
+      "mean_log_prob": -37.58390808105469
+    },
+    "inference_wall_s": 2.659921243786812,
+    "learner": {
+      "train/actor_loss": -982.3482055664062,
+      "train/critic_loss": 2930.37109375,
+      "train/ent_coef": 0.2614579200744629,
+      "train/ent_coef_loss": -228.3758087158203,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 4705.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 207312,
+    "preparation_substeps": 30400,
+    "raw_reward_sum": 252.28734505827646,
+    "reset_wall_s": 46.2307269833982,
+    "scaled_reward_sum": 252.28734505827646,
+    "transitions": 20824,
+    "update_wall_s": 64.34023319371045,
+    "updates": 4705,
+    "wall_s": 240.27516204677522
+  },
+  {
+    "available_memory_bytes": 34017034240,
+    "diagnostic": {
+      "alpha": 0.2159021943807602,
+      "entropy_reward_mean": 1.9759432077407837,
+      "mean_log_prob": -9.152029037475586
+    },
+    "inference_wall_s": 3.0579407420009375,
+    "learner": {
+      "train/actor_loss": -986.1908569335938,
+      "train/critic_loss": 962.15380859375,
+      "train/ent_coef": 0.21596118807792664,
+      "train/ent_coef_loss": -228.23904418945312,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 5406.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 235222,
+    "preparation_substeps": 32800,
+    "raw_reward_sum": 283.85466033206274,
+    "reset_wall_s": 50.02674311771989,
+    "scaled_reward_sum": 283.85466033206274,
+    "transitions": 23628,
+    "update_wall_s": 74.03345741517842,
+    "updates": 5406,
+    "wall_s": 270.3023642729968
+  },
+  {
+    "available_memory_bytes": 33937100800,
+    "diagnostic": {
+      "alpha": 0.1798403412103653,
+      "entropy_reward_mean": -0.85502028465271,
+      "mean_log_prob": 4.754329681396484
+    },
+    "inference_wall_s": 3.450873328372836,
+    "learner": {
+      "train/actor_loss": -1092.97509765625,
+      "train/critic_loss": 1993.1240234375,
+      "train/ent_coef": 0.17988814413547516,
+      "train/ent_coef_loss": -233.74761962890625,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 6090.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 262454,
+    "preparation_substeps": 34800,
+    "raw_reward_sum": 315.4887278297606,
+    "reset_wall_s": 53.41238343901932,
+    "scaled_reward_sum": 315.4887278297606,
+    "transitions": 26364,
+    "update_wall_s": 83.46493390202522,
+    "updates": 6090,
+    "wall_s": 300.3218557052314
+  },
+  {
+    "available_memory_bytes": 33795477504,
+    "diagnostic": {
+      "alpha": 0.14962658286094666,
+      "entropy_reward_mean": -1.1587823629379272,
+      "mean_log_prob": 7.744495391845703
+    },
+    "inference_wall_s": 3.850899849087,
+    "learner": {
+      "train/actor_loss": -944.990478515625,
+      "train/critic_loss": 811.6534423828125,
+      "train/ent_coef": 0.14966385066509247,
+      "train/ent_coef_loss": -227.6837158203125,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 6763.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 289244,
+    "preparation_substeps": 37000,
+    "raw_reward_sum": 344.90651569091574,
+    "reset_wall_s": 56.90200288593769,
+    "scaled_reward_sum": 344.90651569091574,
+    "transitions": 29056,
+    "update_wall_s": 92.91411916166544,
+    "updates": 6763,
+    "wall_s": 330.3470638599247
+  },
+  {
+    "available_memory_bytes": 33628094464,
+    "diagnostic": {
+      "alpha": 0.12539535760879517,
+      "entropy_reward_mean": -2.5797905921936035,
+      "mean_log_prob": 20.573253631591797
+    },
+    "inference_wall_s": 4.2613194938749075,
+    "learner": {
+      "train/actor_loss": -966.4890747070312,
+      "train/critic_loss": 567.427001953125,
+      "train/ent_coef": 0.1254287213087082,
+      "train/ent_coef_loss": -241.73370361328125,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 7469.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 317340,
+    "preparation_substeps": 38800,
+    "raw_reward_sum": 378.7517680968614,
+    "reset_wall_s": 59.813358925282955,
+    "scaled_reward_sum": 378.7517680968614,
+    "transitions": 31880,
+    "update_wall_s": 102.92527720332146,
+    "updates": 7469,
+    "wall_s": 360.5167206954211
+  },
+  {
+    "available_memory_bytes": 33353367552,
+    "diagnostic": {
+      "alpha": 0.10589396953582764,
+      "entropy_reward_mean": -1.962412714958191,
+      "mean_log_prob": 18.531864166259766
+    },
+    "inference_wall_s": 4.6670731864869595,
+    "learner": {
+      "train/actor_loss": -949.889892578125,
+      "train/critic_loss": 796.3565673828125,
+      "train/ent_coef": 0.10592427104711533,
+      "train/ent_coef_loss": -260.38848876953125,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 8140.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 344072,
+    "preparation_substeps": 40400,
+    "raw_reward_sum": 408.3573232263332,
+    "reset_wall_s": 62.41872154921293,
+    "scaled_reward_sum": 408.3573232263332,
+    "transitions": 34564,
+    "update_wall_s": 112.84684251435101,
+    "updates": 8140,
+    "wall_s": 390.52945379167795
+  },
+  {
+    "available_memory_bytes": 33389006848,
+    "diagnostic": {
+      "alpha": 0.08870799839496613,
+      "entropy_reward_mean": -4.8681488037109375,
+      "mean_log_prob": 54.87835693359375
+    },
+    "inference_wall_s": 5.107193944975734,
+    "learner": {
+      "train/actor_loss": -1039.8770751953125,
+      "train/critic_loss": 989.9359130859375,
+      "train/ent_coef": 0.0887317955493927,
+      "train/ent_coef_loss": -225.67657470703125,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 8886.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 373735,
+    "preparation_substeps": 41400,
+    "raw_reward_sum": 442.04676399671143,
+    "reset_wall_s": 64.09098082967103,
+    "scaled_reward_sum": 442.04676399671143,
+    "transitions": 37548,
+    "update_wall_s": 123.40207233279943,
+    "updates": 8886,
+    "wall_s": 420.6759917829186
+  },
+  {
+    "available_memory_bytes": 33477083136,
+    "diagnostic": {
+      "alpha": 0.07445723563432693,
+      "entropy_reward_mean": -3.5489768981933594,
+      "mean_log_prob": 47.664634704589844
+    },
+    "inference_wall_s": 5.532256739214063,
+    "learner": {
+      "train/actor_loss": -971.1707153320312,
+      "train/critic_loss": 437.71075439453125,
+      "train/ent_coef": 0.07447237521409988,
+      "train/ent_coef_loss": -200.57928466796875,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 9622.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 403025,
+    "preparation_substeps": 42600,
+    "raw_reward_sum": 475.8113586140995,
+    "reset_wall_s": 66.04377969168127,
+    "scaled_reward_sum": 475.8113586140995,
+    "transitions": 40492,
+    "update_wall_s": 133.62787268310785,
+    "updates": 9622,
+    "wall_s": 450.68078907579184
+  },
+  {
+    "available_memory_bytes": 33324871680,
+    "diagnostic": {
+      "alpha": 0.06545671075582504,
+      "entropy_reward_mean": -15.37529182434082,
+      "mean_log_prob": 234.89251708984375
+    },
+    "inference_wall_s": 5.982134444639087,
+    "learner": {
+      "train/actor_loss": -981.96240234375,
+      "train/critic_loss": 679.586181640625,
+      "train/ent_coef": 0.06546201556921005,
+      "train/ent_coef_loss": -45.15156936645508,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 10389.0
+    },
+    "learner_maxrss_native_units": 1248628,
+    "physics_substeps": 433559,
+    "preparation_substeps": 43200,
+    "raw_reward_sum": 511.14135347709106,
+    "reset_wall_s": 67.09585725702345,
+    "scaled_reward_sum": 511.14135347709106,
+    "transitions": 43560,
+    "update_wall_s": 144.58907978981733,
+    "updates": 10389,
+    "wall_s": 480.72171213291585
+  },
+  {
+    "available_memory_bytes": 32982786048,
+    "diagnostic": {
+      "alpha": 0.058899156749248505,
+      "entropy_reward_mean": -10.900469779968262,
+      "mean_log_prob": 185.07003784179688
+    },
+    "inference_wall_s": 6.442814812064171,
+    "learner": {
+      "train/actor_loss": -1130.8397216796875,
+      "train/critic_loss": 739.2976684570312,
+      "train/ent_coef": 0.05890648812055588,
+      "train/ent_coef_loss": -7.762630462646484,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 11144.0
+    },
+    "learner_maxrss_native_units": 1271728,
+    "physics_substeps": 463645,
+    "preparation_substeps": 43800,
+    "raw_reward_sum": 544.5205435800749,
+    "reset_wall_s": 68.14119430817664,
+    "scaled_reward_sum": 544.5205435800749,
+    "transitions": 46580,
+    "update_wall_s": 155.57769559323788,
+    "updates": 11144,
+    "wall_s": 510.7226099707186
+  },
+  {
+    "available_memory_bytes": 32700227584,
+    "diagnostic": {
+      "alpha": 0.054905444383621216,
+      "entropy_reward_mean": -13.641270637512207,
+      "mean_log_prob": 248.4502410888672
+    },
+    "inference_wall_s": 6.897232051938772,
+    "learner": {
+      "train/actor_loss": -1092.092529296875,
+      "train/critic_loss": 833.7728271484375,
+      "train/ent_coef": 0.054905325174331665,
+      "train/ent_coef_loss": 13.192132949829102,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 11957.0
+    },
+    "learner_maxrss_native_units": 1295280,
+    "physics_substeps": 496021,
+    "preparation_substeps": 44200,
+    "raw_reward_sum": 579.2057430182392,
+    "reset_wall_s": 68.90023700147867,
+    "scaled_reward_sum": 579.2057430182392,
+    "transitions": 49832,
+    "update_wall_s": 166.53489143773913,
+    "updates": 11957,
+    "wall_s": 540.756816174835
+  },
+  {
+    "available_memory_bytes": 32603996160,
+    "diagnostic": {
+      "alpha": 0.04879197105765343,
+      "entropy_reward_mean": -9.535109519958496,
+      "mean_log_prob": 195.42373657226562
+    },
+    "inference_wall_s": 7.357175014913082,
+    "learner": {
+      "train/actor_loss": -924.417724609375,
+      "train/critic_loss": 605.576416015625,
+      "train/ent_coef": 0.048788655549287796,
+      "train/ent_coef_loss": -9.465486526489258,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 12749.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 527554,
+    "preparation_substeps": 44200,
+    "raw_reward_sum": 612.9713541134953,
+    "reset_wall_s": 69.03532116487622,
+    "scaled_reward_sum": 612.9713541134953,
+    "transitions": 53000,
+    "update_wall_s": 177.43492153659463,
+    "updates": 12749,
+    "wall_s": 570.7711413074285
+  },
+  {
+    "available_memory_bytes": 32655552512,
+    "diagnostic": {
+      "alpha": 0.04676074534654617,
+      "entropy_reward_mean": -3.7772746086120605,
+      "mean_log_prob": 80.77875518798828
+    },
+    "inference_wall_s": 7.783362125977874,
+    "learner": {
+      "train/actor_loss": -1030.302001953125,
+      "train/critic_loss": 615.345458984375,
+      "train/ent_coef": 0.046779800206422806,
+      "train/ent_coef_loss": -78.45914459228516,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 13497.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 557326,
+    "preparation_substeps": 45400,
+    "raw_reward_sum": 647.7750332394845,
+    "reset_wall_s": 71.00568665005267,
+    "scaled_reward_sum": 647.7750332394845,
+    "transitions": 55992,
+    "update_wall_s": 187.78226846270263,
+    "updates": 13497,
+    "wall_s": 600.7992619294673
+  },
+  {
+    "available_memory_bytes": 32614490112,
+    "diagnostic": {
+      "alpha": 0.044605255126953125,
+      "entropy_reward_mean": -5.126408576965332,
+      "mean_log_prob": 114.9283447265625
+    },
+    "inference_wall_s": 8.21105739288032,
+    "learner": {
+      "train/actor_loss": -1132.813232421875,
+      "train/critic_loss": 702.5006103515625,
+      "train/ent_coef": 0.04461152106523514,
+      "train/ent_coef_loss": 37.92222213745117,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 14258.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 587628,
+    "preparation_substeps": 46600,
+    "raw_reward_sum": 679.4033474313421,
+    "reset_wall_s": 72.9943059682846,
+    "scaled_reward_sum": 679.4033474313421,
+    "transitions": 59036,
+    "update_wall_s": 198.07142329774797,
+    "updates": 14258,
+    "wall_s": 630.8393130339682
+  },
+  {
+    "available_memory_bytes": 32628269056,
+    "diagnostic": {
+      "alpha": 0.041357289999723434,
+      "entropy_reward_mean": -6.655979156494141,
+      "mean_log_prob": 160.9384765625
+    },
+    "inference_wall_s": 8.650715405121446,
+    "learner": {
+      "train/actor_loss": -1102.6900634765625,
+      "train/critic_loss": 1692.601806640625,
+      "train/ent_coef": 0.04135400801897049,
+      "train/ent_coef_loss": 93.61997985839844,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 15043.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 618854,
+    "preparation_substeps": 47000,
+    "raw_reward_sum": 713.7123619806114,
+    "reset_wall_s": 73.76139347441494,
+    "scaled_reward_sum": 713.7123619806114,
+    "transitions": 62176,
+    "update_wall_s": 208.91059341467917,
+    "updates": 15043,
+    "wall_s": 660.8614865411073
+  },
+  {
+    "available_memory_bytes": 32608899072,
+    "diagnostic": {
+      "alpha": 0.04186246916651726,
+      "entropy_reward_mean": -7.654881000518799,
+      "mean_log_prob": 182.8578338623047
+    },
+    "inference_wall_s": 9.113458814099431,
+    "learner": {
+      "train/actor_loss": -1026.0726318359375,
+      "train/critic_loss": 450.886962890625,
+      "train/ent_coef": 0.04185909405350685,
+      "train/ent_coef_loss": 8.50063419342041,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 15853.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 651114,
+    "preparation_substeps": 47200,
+    "raw_reward_sum": 748.9155782455321,
+    "reset_wall_s": 74.21180452778935,
+    "scaled_reward_sum": 748.9155782455321,
+    "transitions": 65416,
+    "update_wall_s": 220.362889431417,
+    "updates": 15853,
+    "wall_s": 690.8714392110705
+  },
+  {
+    "available_memory_bytes": 32649465856,
+    "diagnostic": {
+      "alpha": 0.040340740233659744,
+      "entropy_reward_mean": -6.415017604827881,
+      "mean_log_prob": 159.0208282470703
+    },
+    "inference_wall_s": 9.573679845780134,
+    "learner": {
+      "train/actor_loss": -935.1244506835938,
+      "train/critic_loss": 421.4200744628906,
+      "train/ent_coef": 0.04033879563212395,
+      "train/ent_coef_loss": -30.880096435546875,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 16673.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 683781,
+    "preparation_substeps": 47400,
+    "raw_reward_sum": 785.3166482994149,
+    "reset_wall_s": 74.64326770231128,
+    "scaled_reward_sum": 785.3166482994149,
+    "transitions": 68696,
+    "update_wall_s": 231.53556821122766,
+    "updates": 16673,
+    "wall_s": 720.8832552712411
+  },
+  {
+    "available_memory_bytes": 32584536064,
+    "diagnostic": {
+      "alpha": 0.04498426243662834,
+      "entropy_reward_mean": -6.268908977508545,
+      "mean_log_prob": 139.35781860351562
+    },
+    "inference_wall_s": 10.013924226164818,
+    "learner": {
+      "train/actor_loss": -1043.0625,
+      "train/critic_loss": 461.7908020019531,
+      "train/ent_coef": 0.04498643800616264,
+      "train/ent_coef_loss": -2.7173643112182617,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 17454.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 714880,
+    "preparation_substeps": 48000,
+    "raw_reward_sum": 819.5018602105318,
+    "reset_wall_s": 75.6924137212336,
+    "scaled_reward_sum": 819.5018602105318,
+    "transitions": 71820,
+    "update_wall_s": 242.24511230550706,
+    "updates": 17454,
+    "wall_s": 750.9238620996475
+  },
+  {
+    "available_memory_bytes": 32673398784,
+    "diagnostic": {
+      "alpha": 0.044523656368255615,
+      "entropy_reward_mean": -11.41783618927002,
+      "mean_log_prob": 256.44427490234375
+    },
+    "inference_wall_s": 10.477368477731943,
+    "learner": {
+      "train/actor_loss": -1024.56640625,
+      "train/critic_loss": 543.2984619140625,
+      "train/ent_coef": 0.04450313001871109,
+      "train/ent_coef_loss": 118.1207504272461,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 18263.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 747089,
+    "preparation_substeps": 48000,
+    "raw_reward_sum": 852.5901281894621,
+    "reset_wall_s": 75.83527801185846,
+    "scaled_reward_sum": 852.5901281894621,
+    "transitions": 75056,
+    "update_wall_s": 253.45772305689752,
+    "updates": 18263,
+    "wall_s": 780.9296246152371
+  },
+  {
+    "available_memory_bytes": 32543100928,
+    "diagnostic": {
+      "alpha": 0.041423555463552475,
+      "entropy_reward_mean": -5.9635748863220215,
+      "mean_log_prob": 143.96578979492188
+    },
+    "inference_wall_s": 10.92061085626483,
+    "learner": {
+      "train/actor_loss": -888.3917236328125,
+      "train/critic_loss": 346.6764221191406,
+      "train/ent_coef": 0.041426390409469604,
+      "train/ent_coef_loss": -38.0034294128418,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 19038.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 777962,
+    "preparation_substeps": 48800,
+    "raw_reward_sum": 884.8085776376051,
+    "reset_wall_s": 77.18899768404663,
+    "scaled_reward_sum": 884.8085776376051,
+    "transitions": 78156,
+    "update_wall_s": 264.21918917261064,
+    "updates": 19038,
+    "wall_s": 810.9593961909413
+  },
+  {
+    "available_memory_bytes": 32204988416,
+    "diagnostic": {
+      "alpha": 0.04567255452275276,
+      "entropy_reward_mean": -2.354468822479248,
+      "mean_log_prob": 51.551063537597656
+    },
+    "inference_wall_s": 11.359623385593295,
+    "learner": {
+      "train/actor_loss": -989.45654296875,
+      "train/critic_loss": 477.1021728515625,
+      "train/ent_coef": 0.04567432031035423,
+      "train/ent_coef_loss": -20.50012969970703,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 19779.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 807483,
+    "preparation_substeps": 49400,
+    "raw_reward_sum": 915.7958590745624,
+    "reset_wall_s": 78.26142970658839,
+    "scaled_reward_sum": 915.7958590745624,
+    "transitions": 81120,
+    "update_wall_s": 274.7210114579648,
+    "updates": 19779,
+    "wall_s": 840.981287445873
+  },
+  {
+    "available_memory_bytes": 29383360512,
+    "diagnostic": {
+      "alpha": 0.04432837292551994,
+      "entropy_reward_mean": -8.489413261413574,
+      "mean_log_prob": 191.51194763183594
+    },
+    "inference_wall_s": 11.839296458289027,
+    "learner": {
+      "train/actor_loss": -1154.5504150390625,
+      "train/critic_loss": 1114.1546630859375,
+      "train/ent_coef": 0.04433774948120117,
+      "train/ent_coef_loss": -22.338661193847656,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 20556.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 838362,
+    "preparation_substeps": 49800,
+    "raw_reward_sum": 951.3038517933576,
+    "reset_wall_s": 79.06563819758594,
+    "scaled_reward_sum": 951.3038517933576,
+    "transitions": 84228,
+    "update_wall_s": 286.2214358448982,
+    "updates": 20556,
+    "wall_s": 871.0135673321784
+  },
+  {
+    "available_memory_bytes": 27337650176,
+    "diagnostic": {
+      "alpha": 0.04890722408890724,
+      "entropy_reward_mean": -8.718106269836426,
+      "mean_log_prob": 178.258056640625
+    },
+    "inference_wall_s": 12.309299169108272,
+    "learner": {
+      "train/actor_loss": -916.1473999023438,
+      "train/critic_loss": 367.8641357421875,
+      "train/ent_coef": 0.04889316484332085,
+      "train/ent_coef_loss": 16.880189895629883,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 21341.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 869596,
+    "preparation_substeps": 50200,
+    "raw_reward_sum": 984.4327994614118,
+    "reset_wall_s": 79.85611514747143,
+    "scaled_reward_sum": 984.4327994614118,
+    "transitions": 87368,
+    "update_wall_s": 297.58530282601714,
+    "updates": 21341,
+    "wall_s": 901.0210800729692
+  },
+  {
+    "available_memory_bytes": 29766615040,
+    "diagnostic": {
+      "alpha": 0.050057440996170044,
+      "entropy_reward_mean": -15.233551025390625,
+      "mean_log_prob": 304.3214111328125
+    },
+    "inference_wall_s": 12.75286884792149,
+    "learner": {
+      "train/actor_loss": -905.5603637695312,
+      "train/critic_loss": 430.2469482421875,
+      "train/ent_coef": 0.05004733428359032,
+      "train/ent_coef_loss": 65.95854949951172,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 22084.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 899211,
+    "preparation_substeps": 50200,
+    "raw_reward_sum": 1015.7923052097326,
+    "reset_wall_s": 80.00031574442983,
+    "scaled_reward_sum": 1015.7923052097326,
+    "transitions": 90340,
+    "update_wall_s": 308.9198534376919,
+    "updates": 22084,
+    "wall_s": 931.0458497833461
+  },
+  {
+    "available_memory_bytes": 29431005184,
+    "diagnostic": {
+      "alpha": 0.05601625144481659,
+      "entropy_reward_mean": -13.03244400024414,
+      "mean_log_prob": 232.65469360351562
+    },
+    "inference_wall_s": 13.204506481066346,
+    "learner": {
+      "train/actor_loss": -906.1607055664062,
+      "train/critic_loss": 549.8856811523438,
+      "train/ent_coef": 0.05602381005883217,
+      "train/ent_coef_loss": -29.726255416870117,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 22859.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 930109,
+    "preparation_substeps": 50400,
+    "raw_reward_sum": 1051.8312598370478,
+    "reset_wall_s": 80.42336813360453,
+    "scaled_reward_sum": 1051.8312598370478,
+    "transitions": 93440,
+    "update_wall_s": 320.30003180913627,
+    "updates": 22859,
+    "wall_s": 961.0664845649153
+  },
+  {
+    "available_memory_bytes": 29521371136,
+    "diagnostic": {
+      "alpha": 0.0546640120446682,
+      "entropy_reward_mean": -11.781671524047852,
+      "mean_log_prob": 215.5288543701172
+    },
+    "inference_wall_s": 13.646352028474212,
+    "learner": {
+      "train/actor_loss": -859.60498046875,
+      "train/critic_loss": 288.4248046875,
+      "train/ent_coef": 0.05465392768383026,
+      "train/ent_coef_loss": -21.29970932006836,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 23617.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 960298,
+    "preparation_substeps": 50800,
+    "raw_reward_sum": 1087.032492097907,
+    "reset_wall_s": 81.16887216642499,
+    "scaled_reward_sum": 1087.032492097907,
+    "transitions": 96472,
+    "update_wall_s": 330.91225848160684,
+    "updates": 23617,
+    "wall_s": 991.0762144140899
+  },
+  {
+    "available_memory_bytes": 27610324992,
+    "diagnostic": {
+      "alpha": 0.0573900043964386,
+      "entropy_reward_mean": -6.481765270233154,
+      "mean_log_prob": 112.94241333007812
+    },
+    "inference_wall_s": 14.09301945567131,
+    "learner": {
+      "train/actor_loss": -1087.56396484375,
+      "train/critic_loss": 552.5266723632812,
+      "train/ent_coef": 0.05740077421069145,
+      "train/ent_coef_loss": -22.203754425048828,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 24382.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 990783,
+    "preparation_substeps": 50800,
+    "raw_reward_sum": 1121.0881890853223,
+    "reset_wall_s": 81.2906238399446,
+    "scaled_reward_sum": 1121.0881890853223,
+    "transitions": 99532,
+    "update_wall_s": 342.1314783561975,
+    "updates": 24382,
+    "wall_s": 1021.0958505831659
+  },
+  {
+    "available_memory_bytes": 27197358080,
+    "diagnostic": {
+      "alpha": 0.049034688621759415,
+      "entropy_reward_mean": -6.60576057434082,
+      "mean_log_prob": 134.71607971191406
+    },
+    "inference_wall_s": 14.543094344437122,
+    "learner": {
+      "train/actor_loss": -917.5183715820312,
+      "train/critic_loss": 496.1722106933594,
+      "train/ent_coef": 0.0490412712097168,
+      "train/ent_coef_loss": -33.92566680908203,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 25187.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1022825,
+    "preparation_substeps": 50800,
+    "raw_reward_sum": 1154.5288264853775,
+    "reset_wall_s": 81.4271227736026,
+    "scaled_reward_sum": 1154.5288264853775,
+    "transitions": 102752,
+    "update_wall_s": 353.3772585019469,
+    "updates": 25187,
+    "wall_s": 1051.1396484505385
+  },
+  {
+    "available_memory_bytes": 27287949312,
+    "diagnostic": {
+      "alpha": 0.04926925152540207,
+      "entropy_reward_mean": -8.421210289001465,
+      "mean_log_prob": 170.92222595214844
+    },
+    "inference_wall_s": 15.002124039456248,
+    "learner": {
+      "train/actor_loss": -1028.236572265625,
+      "train/critic_loss": 728.0904541015625,
+      "train/ent_coef": 0.049270447343587875,
+      "train/ent_coef_loss": -35.424190521240234,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 25991.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1054851,
+    "preparation_substeps": 50800,
+    "raw_reward_sum": 1193.4550829999657,
+    "reset_wall_s": 81.55661598220468,
+    "scaled_reward_sum": 1193.4550829999657,
+    "transitions": 105968,
+    "update_wall_s": 364.3431232050061,
+    "updates": 25991,
+    "wall_s": 1081.1798163224012
+  },
+  {
+    "available_memory_bytes": 27169091584,
+    "diagnostic": {
+      "alpha": 0.048749588429927826,
+      "entropy_reward_mean": -7.801616191864014,
+      "mean_log_prob": 160.03451538085938
+    },
+    "inference_wall_s": 15.488452978432178,
+    "learner": {
+      "train/actor_loss": -1023.8603515625,
+      "train/critic_loss": 483.4316101074219,
+      "train/ent_coef": 0.04874644801020622,
+      "train/ent_coef_loss": 8.856765747070312,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 26769.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1085808,
+    "preparation_substeps": 51200,
+    "raw_reward_sum": 1228.7372483841905,
+    "reset_wall_s": 82.28796390630305,
+    "scaled_reward_sum": 1228.7372483841905,
+    "transitions": 109080,
+    "update_wall_s": 375.68836121447384,
+    "updates": 26769,
+    "wall_s": 1111.2027989812195
+  },
+  {
+    "available_memory_bytes": 27257085952,
+    "diagnostic": {
+      "alpha": 0.048090994358062744,
+      "entropy_reward_mean": -14.182426452636719,
+      "mean_log_prob": 294.9081726074219
+    },
+    "inference_wall_s": 15.95127141661942,
+    "learner": {
+      "train/actor_loss": -1012.665283203125,
+      "train/critic_loss": 374.7254638671875,
+      "train/ent_coef": 0.04808633029460907,
+      "train/ent_coef_loss": 19.616470336914062,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 27570.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1117699,
+    "preparation_substeps": 51200,
+    "raw_reward_sum": 1262.5536801441694,
+    "reset_wall_s": 82.40799987316132,
+    "scaled_reward_sum": 1262.5536801441694,
+    "transitions": 112284,
+    "update_wall_s": 386.6648599561304,
+    "updates": 27570,
+    "wall_s": 1141.2418182753026
+  },
+  {
+    "available_memory_bytes": 27216064512,
+    "diagnostic": {
+      "alpha": 0.05075656622648239,
+      "entropy_reward_mean": -8.344752311706543,
+      "mean_log_prob": 164.4073486328125
+    },
+    "inference_wall_s": 16.39524763636291,
+    "learner": {
+      "train/actor_loss": -935.893310546875,
+      "train/critic_loss": 541.3607177734375,
+      "train/ent_coef": 0.05076497420668602,
+      "train/ent_coef_loss": 22.642412185668945,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 28359.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1149139,
+    "preparation_substeps": 51200,
+    "raw_reward_sum": 1299.5605091492248,
+    "reset_wall_s": 82.53220393322408,
+    "scaled_reward_sum": 1299.5605091492248,
+    "transitions": 115440,
+    "update_wall_s": 397.24070825986564,
+    "updates": 28359,
+    "wall_s": 1171.2479292042553
+  },
+  {
+    "available_memory_bytes": 27207102464,
+    "diagnostic": {
+      "alpha": 0.05174596235156059,
+      "entropy_reward_mean": -7.303886890411377,
+      "mean_log_prob": 141.14892578125
+    },
+    "inference_wall_s": 16.856037370860577,
+    "learner": {
+      "train/actor_loss": -952.9420166015625,
+      "train/critic_loss": 709.2062377929688,
+      "train/ent_coef": 0.051729779690504074,
+      "train/ent_coef_loss": 53.462501525878906,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 29172.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1181530,
+    "preparation_substeps": 51200,
+    "raw_reward_sum": 1335.4168218800646,
+    "reset_wall_s": 82.65955365262926,
+    "scaled_reward_sum": 1335.4168218800646,
+    "transitions": 118692,
+    "update_wall_s": 408.005281990394,
+    "updates": 29172,
+    "wall_s": 1201.2883425094187
+  },
+  {
+    "available_memory_bytes": 27329396736,
+    "diagnostic": {
+      "alpha": 0.05378098413348198,
+      "entropy_reward_mean": -10.021158218383789,
+      "mean_log_prob": 186.33274841308594
+    },
+    "inference_wall_s": 17.322900857776403,
+    "learner": {
+      "train/actor_loss": -966.5579833984375,
+      "train/critic_loss": 603.197265625,
+      "train/ent_coef": 0.0537908561527729,
+      "train/ent_coef_loss": -49.582035064697266,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 29982.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1213781,
+    "preparation_substeps": 51400,
+    "raw_reward_sum": 1370.7091780756107,
+    "reset_wall_s": 83.10384214296937,
+    "scaled_reward_sum": 1370.7091780756107,
+    "transitions": 121932,
+    "update_wall_s": 419.01801609247923,
+    "updates": 29982,
+    "wall_s": 1231.3278412427753
+  },
+  {
+    "available_memory_bytes": 27206225920,
+    "diagnostic": {
+      "alpha": 0.05280745029449463,
+      "entropy_reward_mean": -10.558368682861328,
+      "mean_log_prob": 199.94088745117188
+    },
+    "inference_wall_s": 17.78877921588719,
+    "learner": {
+      "train/actor_loss": -730.04443359375,
+      "train/critic_loss": 807.6110229492188,
+      "train/ent_coef": 0.0528193861246109,
+      "train/ent_coef_loss": -105.72943115234375,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 30775.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1245372,
+    "preparation_substeps": 51400,
+    "raw_reward_sum": 1409.2729734290128,
+    "reset_wall_s": 83.24374304898083,
+    "scaled_reward_sum": 1409.2729734290128,
+    "transitions": 125104,
+    "update_wall_s": 429.8907333854586,
+    "updates": 30775,
+    "wall_s": 1261.3655530437827
+  },
+  {
+    "available_memory_bytes": 27211636736,
+    "diagnostic": {
+      "alpha": 0.04854888096451759,
+      "entropy_reward_mean": -6.0088911056518555,
+      "mean_log_prob": 123.76991271972656
+    },
+    "inference_wall_s": 18.24676933698356,
+    "learner": {
+      "train/actor_loss": -801.066650390625,
+      "train/critic_loss": 338.0552673339844,
+      "train/ent_coef": 0.04853665828704834,
+      "train/ent_coef_loss": 44.29106140136719,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 31587.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1277730,
+    "preparation_substeps": 51600,
+    "raw_reward_sum": 1445.6051492377214,
+    "reset_wall_s": 83.68899299949408,
+    "scaled_reward_sum": 1445.6051492377214,
+    "transitions": 128352,
+    "update_wall_s": 440.84995877183974,
+    "updates": 31587,
+    "wall_s": 1291.3688377756625
+  },
+  {
+    "available_memory_bytes": 27221815296,
+    "diagnostic": {
+      "alpha": 0.04988119378685951,
+      "entropy_reward_mean": -6.4628448486328125,
+      "mean_log_prob": 129.56475830078125
+    },
+    "inference_wall_s": 18.72176597826183,
+    "learner": {
+      "train/actor_loss": -781.443359375,
+      "train/critic_loss": 721.508544921875,
+      "train/ent_coef": 0.04987810179591179,
+      "train/ent_coef_loss": -40.34545135498047,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 32377.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1309209,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1482.624971262972,
+    "reset_wall_s": 84.107805268839,
+    "scaled_reward_sum": 1482.624971262972,
+    "transitions": 131512,
+    "update_wall_s": 451.9819273017347,
+    "updates": 32377,
+    "wall_s": 1321.384042693302
+  },
+  {
+    "available_memory_bytes": 27176427520,
+    "diagnostic": {
+      "alpha": 0.050657033920288086,
+      "entropy_reward_mean": -6.111392974853516,
+      "mean_log_prob": 120.64254760742188
+    },
+    "inference_wall_s": 19.18607072904706,
+    "learner": {
+      "train/actor_loss": -786.2794189453125,
+      "train/critic_loss": 353.2334899902344,
+      "train/ent_coef": 0.05066021904349327,
+      "train/ent_coef_loss": -17.698453903198242,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 33216.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1342627,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1522.8421675198138,
+    "reset_wall_s": 84.2286297492683,
+    "scaled_reward_sum": 1522.8421675198138,
+    "transitions": 134868,
+    "update_wall_s": 463.19608766026795,
+    "updates": 33216,
+    "wall_s": 1351.4281749241054
+  },
+  {
+    "available_memory_bytes": 27304464384,
+    "diagnostic": {
+      "alpha": 0.05053167790174484,
+      "entropy_reward_mean": -14.677916526794434,
+      "mean_log_prob": 290.4696044921875
+    },
+    "inference_wall_s": 19.676375528797507,
+    "learner": {
+      "train/actor_loss": -895.34521484375,
+      "train/critic_loss": 4388.3681640625,
+      "train/ent_coef": 0.05052390694618225,
+      "train/ent_coef_loss": 69.33390045166016,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 34015.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1374432,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1561.454714127868,
+    "reset_wall_s": 84.36443595029414,
+    "scaled_reward_sum": 1561.454714127868,
+    "transitions": 138064,
+    "update_wall_s": 474.73699967190623,
+    "updates": 34015,
+    "wall_s": 1381.4375615101308
+  },
+  {
+    "available_memory_bytes": 27275857920,
+    "diagnostic": {
+      "alpha": 0.056034885346889496,
+      "entropy_reward_mean": -6.5238542556762695,
+      "mean_log_prob": 116.42486572265625
+    },
+    "inference_wall_s": 20.155464259907603,
+    "learner": {
+      "train/actor_loss": -905.906982421875,
+      "train/critic_loss": 939.3936767578125,
+      "train/ent_coef": 0.056034885346889496,
+      "train/ent_coef_loss": 9.572978019714355,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 34807.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1405988,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1602.50576527699,
+    "reset_wall_s": 84.48918256536126,
+    "scaled_reward_sum": 1602.50576527699,
+    "transitions": 141232,
+    "update_wall_s": 486.0284819509834,
+    "updates": 34807,
+    "wall_s": 1411.443599672988
+  },
+  {
+    "available_memory_bytes": 27063365632,
+    "diagnostic": {
+      "alpha": 0.0545143261551857,
+      "entropy_reward_mean": -9.279361724853516,
+      "mean_log_prob": 170.21876525878906
+    },
+    "inference_wall_s": 20.625054819509387,
+    "learner": {
+      "train/actor_loss": -864.608154296875,
+      "train/critic_loss": 439.3772277832031,
+      "train/ent_coef": 0.054507166147232056,
+      "train/ent_coef_loss": 31.80807876586914,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 35621.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1438403,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1638.631036894157,
+    "reset_wall_s": 84.61347035318613,
+    "scaled_reward_sum": 1638.631036894157,
+    "transitions": 144488,
+    "update_wall_s": 497.15114961750805,
+    "updates": 35621,
+    "wall_s": 1441.473730660975
+  },
+  {
+    "available_memory_bytes": 24990367744,
+    "diagnostic": {
+      "alpha": 0.05204734578728676,
+      "entropy_reward_mean": -7.2287139892578125,
+      "mean_log_prob": 138.88726806640625
+    },
+    "inference_wall_s": 21.095843248069286,
+    "learner": {
+      "train/actor_loss": -892.1658935546875,
+      "train/critic_loss": 318.9175720214844,
+      "train/ent_coef": 0.05204065889120102,
+      "train/ent_coef_loss": 28.873315811157227,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 36384.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1468815,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1678.987094293662,
+    "reset_wall_s": 84.72606799192727,
+    "scaled_reward_sum": 1678.987094293662,
+    "transitions": 147540,
+    "update_wall_s": 508.14040069282055,
+    "updates": 36384,
+    "wall_s": 1471.492053180933
+  },
+  {
+    "available_memory_bytes": 33477783552,
+    "diagnostic": {
+      "alpha": 0.051538534462451935,
+      "entropy_reward_mean": -6.31110954284668,
+      "mean_log_prob": 122.45418548583984
+    },
+    "inference_wall_s": 21.58135189116001,
+    "learner": {
+      "train/actor_loss": -921.248046875,
+      "train/critic_loss": 463.68939208984375,
+      "train/ent_coef": 0.05153632536530495,
+      "train/ent_coef_loss": 22.761646270751953,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 37219.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1502109,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1723.4965958192486,
+    "reset_wall_s": 84.82670150510967,
+    "scaled_reward_sum": 1723.4965958192486,
+    "transitions": 150880,
+    "update_wall_s": 519.3799007758498,
+    "updates": 37219,
+    "wall_s": 1501.521701529622
+  },
+  {
+    "available_memory_bytes": 33455996928,
+    "diagnostic": {
+      "alpha": 0.05100879818201065,
+      "entropy_reward_mean": -8.298209190368652,
+      "mean_log_prob": 162.68191528320312
+    },
+    "inference_wall_s": 22.05885659903288,
+    "learner": {
+      "train/actor_loss": -842.12353515625,
+      "train/critic_loss": 437.8812255859375,
+      "train/ent_coef": 0.05100979655981064,
+      "train/ent_coef_loss": -44.43555450439453,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 38083.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1536549,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1767.817287211017,
+    "reset_wall_s": 84.93734570592642,
+    "scaled_reward_sum": 1767.817287211017,
+    "transitions": 154336,
+    "update_wall_s": 530.5031788647175,
+    "updates": 38083,
+    "wall_s": 1531.5221441928297
+  },
+  {
+    "available_memory_bytes": 32385126400,
+    "diagnostic": {
+      "alpha": 0.05270775407552719,
+      "entropy_reward_mean": -8.736820220947266,
+      "mean_log_prob": 165.75967407226562
+    },
+    "inference_wall_s": 22.534273015335202,
+    "learner": {
+      "train/actor_loss": -897.734375,
+      "train/critic_loss": 548.136474609375,
+      "train/ent_coef": 0.0527186244726181,
+      "train/ent_coef_loss": -3.1328325271606445,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 38921.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1569952,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1810.5236603341173,
+    "reset_wall_s": 85.0548713542521,
+    "scaled_reward_sum": 1810.5236603341173,
+    "transitions": 157688,
+    "update_wall_s": 541.4894248023629,
+    "updates": 38921,
+    "wall_s": 1561.525623684749
+  },
+  {
+    "available_memory_bytes": 32143126528,
+    "diagnostic": {
+      "alpha": 0.056508809328079224,
+      "entropy_reward_mean": -12.042612075805664,
+      "mean_log_prob": 213.1103515625
+    },
+    "inference_wall_s": 22.842982994392514,
+    "learner": {
+      "train/actor_loss": -842.9059448242188,
+      "train/critic_loss": 606.4840087890625,
+      "train/ent_coef": 0.05649275332689285,
+      "train/ent_coef_loss": 9.222776412963867,
+      "train/learning_rate": 0.0003,
+      "train/n_updates": 39499.0
+    },
+    "learner_maxrss_native_units": 1297328,
+    "physics_substeps": 1592983,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1838.394217720433,
+    "reset_wall_s": 85.13726007565856,
+    "scaled_reward_sum": 1838.394217720433,
+    "transitions": 160000,
+    "update_wall_s": 548.6924267224967,
+    "updates": 39499,
+    "wall_s": 1581.7539125364274
+  }
+]

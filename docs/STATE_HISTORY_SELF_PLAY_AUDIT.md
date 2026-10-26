@@ -1,6 +1,6 @@
 # Game state, temporal memory, muscle feedback and repeated self-play
 
-Code review requested during v0.0.5: the athletes must observe their own and their opponent’s motion, retain relevant history, change muscle commands continuously, tolerate timing/command jitter, and improve through many short games. This is a review and implementation handoff. Features described as missing or proposed are not implemented by this document. The separately frozen v0.0.5 experiments continue unchanged.
+Code review requested during v0.0.5: the athletes must observe their own and their opponent’s motion, retain relevant history, change muscle commands continuously, tolerate timing/command jitter, and improve through many short games. This is a review and implementation handoff. Features described as missing or proposed are not implemented by this document. The separately frozen v0.0.5 experiments are complete; their contracts were not changed during this review. See [final results](V0.0.5_RESULTS.md).
 
 **Finding:** the current stance learner is a real feedback muscle controller, but it is not a stateful two-player boxing policy. Increasing episode count alone cannot supply the missing opponent, game, history, referee and league interfaces.
 
@@ -49,7 +49,7 @@ On the preselected original-wave scenario 60000, deterministic final policies pr
 | C |0.396146|14.8%|138/138|
 | D |0.050784|99.2%|11/138|
 
-This exposes behavior worth investigating: C changes commands sharply; D is almost entirely saturated. These are normalized command differences, not measured limb jerk, and one short trajectory cannot establish their cause. They do not prove that filtering fixes the policy. Preserve the actual traces and compare smoothing/delay interventions in a new registered motor experiment. The running extension keeps its action contract unchanged.
+This exposes behavior worth investigating: C changes commands sharply; D is almost entirely saturated. These are normalized command differences, not measured limb jerk, and one short trajectory cannot establish their cause. They do not prove that filtering fixes the policy. Preserve the actual traces and compare smoothing/delay interventions in a new registered motor experiment. The completed extension kept its action contract unchanged.
 
 The [extension screen trace audit](../artifacts/v0.0.5/extension/control-state-audit.json) keeps the same diagnostic on scenario 64000. Trained A/B/C/D mean command changes are 0.029646/0.010952/0.011311/0.000952; saturation fractions are 12.0%/1.3%/11.3%/99.9%. D is still mostly saturated, while C’s sharp original-wave command changes do not generalize to this seed/budget. These are descriptive traces, not a comparison of physical jerk or a new selection criterion.
 
@@ -128,6 +128,8 @@ Profile Python instrumentation as well as the native solver. `step_contacts` cur
 
 [Recorded-action profiling](../artifacts/v0.0.5/extension/control-profile-mac.json), using `scripts/profile_control_path.py`, restores the selected B screen’s predeclared first scenario 64000. Three unprofiled continuations through the training `FaultRecorder` wrapper achieved a median 139.65 control steps/s. Three additional profiled continuations expose costs; for the middle repeat, native `mj_step1`/`mj_step2` accounted for about 76% of total profiled wall time, fault snapshots about 6%, and `point_velocity` about 2%. These non-overlapping categories use cumulative times; other cumulative functions overlap and must not be added. All six continuations retained the outcome/tick and reproduced the recorded integration state within 2.0e-11; 6,498 physics steps were charged to diagnostic work. The trace is short, already in progress, and excludes resets, inference, IPC and learning. Profiling adds overhead and longer histories may change the split.
 
+The [diagnostic accounting correction](../artifacts/v0.0.5/diagnostic-accounting-correction.json) charges constructor preparation (200 steps each for latency/profile) and both control-state resets. Timed values and original published receipts remain unchanged; future scripts include preparation explicitly.
+
 These measurements support fast policy selection on the measured Mac while leaving full-game throughput and deadlines unqualified. They also show why removing Python telemetry alone is unlikely to deliver an order-of-magnitude speedup on this trace. Preserve correctness while investigating solver/backend cost and measured learner/rollout overlap.
 
 Reproduce these read-only diagnostics against the curated evidence, with fresh output paths:
@@ -145,7 +147,7 @@ Objective: qualify a causal, stateful two-player game and demonstrate improved f
 
 Read first, in order: root `AGENTS.md`, `/Users/bentaylor/.codex/RTK.md`; this audit; `docs/{GAME,IMPLEMENTATION,TRAINING,STATUS}.md`; `src/joxing/{scene,physics,rules,balance,support,groups,stance_env,wave,wave_extension}.py`; current physical/scoring/balance/learner tests; original specs only as proposals. Local root: `/Users/bentaylor/Documents/ChatGPT/JOXING`. Use master P1/P2/P3/P5 gates; do not create a competing game specification.
 
-One integration owner. `third_party/**`, original references and published raw evidence are read-only. `runs/**` and `artifacts/generated/**` are generated. No concurrent schema writers. The active extension checkout/source remains frozen until it exits. Do not silently add history/jitter/opponent inputs to its 1,023-value observation or reuse incompatible checkpoints.
+One integration owner. `third_party/**`, original references and published raw evidence are read-only. `runs/**` and `artifacts/generated/**` are generated. No concurrent schema writers. Both wave sources stayed frozen until exit; all owned jobs have now exited. Freeze any new experiment source in the same way. Do not silently add history/jitter/opponent inputs to its 1,023-value observation or reuse incompatible checkpoints.
 
 1. **Feasible motor prerequisite:** quantify initial pose/velocity/COM/support in `balance.py:prepare`; distinguish stationary-stance and initial-fall-recovery variants. Preserve all 700 muscles and native force generation. Qualify useful feedback motor control before competitive training. The current one-second falls make an immediate 100,000-fight launch a poor test of tactics.
 2. **P1 geometry/physical adapter:** finish `scene.py`, `geometry.py`, semantic surface registry, own/opponent contact coverage and pre-impact motion fixtures. Validate fast moving/rotating gloves, guard occlusion, floor/self contact and dt convergence. Compilation alone is insufficient.

@@ -1,0 +1,29 @@
+{
+  "code_commit": "eba09596b79b7b1223c040fd2342e5539d013f64",
+  "current_markdown_files_checked": 13,
+  "git_diff_check_passed": true,
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "known_failed_check": "Strict Mac/Linux closed-loop reference parity; receipts retained.",
+  "missing_local_link_targets": [],
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "plots_video_visually_inspected": true,
+  "python": "3.12.12",
+  "raw_curated_file_hash_matches": 233,
+  "raw_inputs_rewritten": false,
+  "ruff_command": "uvx ruff check src scripts tests",
+  "ruff_passed": true,
+  "schema": "joxing-run-v1",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "source_unchanged_from_extension": true,
+  "tests_logs": {
+    "development/tests-mac-extension.txt": "748e91290af992f69a516a039007bc07c011d5101c50a66464f2c26c511b813e",
+    "tests-linux-extension.txt": "d799d6aa7defbd74cdff209a27389026b1ad40998cdb3c8a11cc935e15f5508a"
+  },
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:56:02.912961+00:00"
+}

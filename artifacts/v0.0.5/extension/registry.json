@@ -1,0 +1,74 @@
+{
+  "B0": {
+    "description": "Reuse the original selected excitation and eight diagnostic rows without recounting them; evaluate32new screen starts. No reselection.",
+    "hypothesis": "Frozen constant baseline remains a meaningful comparator on new starts.",
+    "id": "B0",
+    "reason": "32_new_valid_baseline_trials",
+    "result": "B0/result.json",
+    "status": "completed"
+  },
+  "R-A-761": {
+    "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+    "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+    "id": "R-A-761",
+    "reason": "finished",
+    "result": "R-A-761/result.json",
+    "status": "completed"
+  },
+  "R-A-983": {
+    "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+    "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+    "id": "R-A-983",
+    "reason": "finished",
+    "result": "R-A-983/result.json",
+    "status": "completed"
+  },
+  "R-W-761": {
+    "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+    "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+    "id": "R-W-761",
+    "reason": "finished",
+    "result": "R-W-761/result.json",
+    "status": "completed"
+  },
+  "R-W-983": {
+    "description": "Conditional on unchanged selection rule; fresh seeds761/983,32unseen confirmation starts65000..65031, initial evaluation deferred until final actor is frozen;160000transitions/2700s; four jobs maximum concurrently.",
+    "hypothesis": "A qualifying longer-budget screen result replicates at the same larger budget.",
+    "id": "R-W-983",
+    "reason": "finished",
+    "result": "R-W-983/result.json",
+    "status": "completed"
+  },
+  "S-A": {
+    "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+    "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+    "id": "S-A",
+    "reason": "finished",
+    "result": "S-A/result.json",
+    "status": "completed"
+  },
+  "S-B": {
+    "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+    "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+    "id": "S-B",
+    "reason": "finished",
+    "result": "S-B/result.json",
+    "status": "completed"
+  },
+  "S-C": {
+    "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+    "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+    "id": "S-C",
+    "reason": "finished",
+    "result": "S-C/result.json",
+    "status": "completed"
+  },
+  "S-D": {
+    "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+    "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+    "id": "S-D",
+    "reason": "finished",
+    "result": "S-D/result.json",
+    "status": "completed"
+  }
+}

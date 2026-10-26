@@ -4,9 +4,9 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**v0.0.5 experiments are underway.** The [preregistered plan](docs/V0.0.5_PLAN.md), [experiment book](experiments/v0.0.5/README.md) and [completed original-wave results](docs/V0.0.5_RESULTS.md) are public. Four40,000-step conditions completed160,000total training transitions and336evaluations with zero invalids; the best gain was0.102s and the motor gate remains unmet. At the user’s request, a [larger-budget extension](docs/V0.0.5_BUDGET_ADDENDUM.md) now runs four160,000-step conditions concurrently using16simulation workers. **72tests pass on Mac and Linux.** Its final results/release will follow completion and independent audit.
+**Latest release: v0.0.5.** Both controlled motor waves are complete: **1.44 million training transitions, 912 new evaluation attempts, zero invalids; 72 tests pass on Mac and Linux.** The larger-budget candidate improved over its initial policy on two fresh seeds, but beat reference A on only one. Registered replicated superiority and the five-second motor gate failed: every final policy had **0/32 five-second survivors**. All experiments, negative results, actor bundles, histories and audits are in Git. [Results](docs/V0.0.5_RESULTS.md) · [Experiment book](experiments/v0.0.5/README.md) · [Source-host replay](artifacts/v0.0.5/extension/wave-before-after-linux.mp4).
 
-**Latest release: v0.0.4.** Native-root gravity, audited resets/support, 138-group whole-body feedback and bounded SAC are implemented and tested. **63 tests pass on Mac and Linux.** The pilot reached 39,040 transitions before its 30-minute cap, then completed all 64 paired evaluations with zero invalids. Mean survival was 1.018 -> 1.023 seconds; the confidence interval includes zero and **0/32 reached five seconds**. This is a delivered research platform with a failed motor-learning gate. [Results and limitations](docs/V0.0.4_RESULTS.md) · [Before/after replay](artifacts/v0.0.4/balance-before-after.mp4) · [Evidence/policies](artifacts/v0.0.4/).
+The [state/history code audit](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md) addresses opponent motion, temporal memory, responsive muscles and jitter. Current SAC observes its own velocity/activation and changes muscle commands at 100 Hz **simulated time**. Opponent observations, recurrent acting memory, a connected match referee and self-play league remain missing. The [next motor-teacher plan](docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md) qualifies the released upstream controller before a new transfer experiment.
 
 **Current stage: executable foundation, not trained autonomous boxing.** The project preserves 700 muscles per actor, defines an auditable points game, tests contact accounting and anti-farming scoring, and includes a small constrained motor-learning experiment. Full-body stance, punching, self-play and GPU physics remain gated work.
 
@@ -14,9 +14,24 @@ Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGro
 
 [v0.0.2 results and receipts](docs/V0.0.2_RESULTS.md) · [Iteration plan](docs/V0.0.2_PLAN.md) · [Before/after video](artifacts/v0.0.2/strike-before-after.mp4)
 
-[Documentation index](docs/README.md) · [Training sequence and test gates](docs/TRAINING.md) · [v0.0.4 execution plan](docs/V0.0.4_PLAN.md) · [Execution status](docs/STATUS.md)
+[Documentation index](docs/README.md) · [Training sequence and test gates](docs/TRAINING.md) · [v0.0.5 execution plan](docs/V0.0.5_PLAN.md) · [Execution status](docs/STATUS.md)
 
-## v0.0.4: gravity and feedback learning
+## v0.0.5: what the larger wave established
+
+The original four 40,000-transition conditions tested reward units and entropy temperature. Its best gain was 0.102 seconds, below the registered confirmation threshold. Following the requested budget increase, four independent learners used 16 simulation workers total and 160,000 transitions per condition. Candidate B qualified in the new screen, then faced reference A on fresh seeds:
+
+| Training seed | Initial survival (s) | Final A (s) | Final B (s) | B versus A |
+|---|---:|---:|---:|---|
+| 761 | 1.023 | 0.803 | 1.294 | +0.491s, positive paired interval |
+| 983 | 1.011 | 1.165 | 1.097 | −0.068s, negative paired interval |
+
+These are moving-start fall-recovery episodes, not stationary stance or boxing games. Both waves retain all 912 evaluation attempts and 14,736 completed stochastic motor episodes. Reset intervals do not measure uncertainty across training seeds. The frozen constant evaluated confirmation starts before learner training; learner-policy evaluations were deferred until final actor save. This timing limitation and failed strict cross-platform policy replay are disclosed in the [results](docs/V0.0.5_RESULTS.md).
+
+Real optimizer throughput improved 4.69× on a common-data benchmark; a separate 16-worker rollout benchmark reached 844.67 transitions/s with optimization excluded. The full extension averaged about 360 training transitions/s including setup/evaluation. CPU physics remains the reference; GPU physics is unqualified. Source-host replay passes, all owned jobs exited, and no larger motor proof or competitive training was started.
+
+![Both fresh-seed outcomes; motor and replicated-superiority gates failed](artifacts/v0.0.5/extension/wave-confirmation.png)
+
+## v0.0.4 background: gravity and feedback learning
 
 This iteration implements the body/environment/pilot stages of the earlier v0.0.3 plan. It asks whether feedback through all 700 muscles can improve local balance under ordinary gravity.
 
@@ -28,7 +43,7 @@ This iteration implements the body/environment/pilot stages of the earlier v0.0.
 | 4. Qualify further training | At least 16/32 development starts survive 5 seconds, zero invalids | A failed pilot blocks the larger motor proof |
 | 5. Later formal proof | Three training seeds; 768 held-out quiet/push attempts, up to 20 seconds each | Separately gated future run; >=61/64 stance and >=58/64 recovery successes per seed |
 
-Each pilot evaluation lasts up to 20 seconds. Reset-only preparation/projection is logged; there is no fixed pelvis, gravity compensation or state overwrite during the evaluated trajectory. The initial hand position is a posture target, not a raised boxing guard. Report competence separately from measured learning. Use at most four CPU simulation workers with one BLAS/OpenMP/Torch thread each. GPU simulation remains gated by failed parity tests. The larger program retains a 40-million-substep/four-hour/10-GiB cap; these are limits, not promised training times.
+Each pilot evaluation lasts up to 20 seconds. Reset-only preparation/projection is logged; there is no fixed pelvis, gravity compensation or state overwrite during the evaluated trajectory. The initial hand position is a posture target, not a raised boxing guard. Report competence separately from measured learning. This historical pilot used at most four CPU simulation workers with one BLAS/OpenMP/Torch thread each; the current v0.0.5 allowance is 16 aggregate workers as described above. GPU simulation remains gated by failed parity tests. The larger program retains a 40-million-substep/four-hour/10-GiB cap; these are limits, not promised training times.
 
 The [training guide](docs/TRAINING.md) distinguishes executable pilot commands from the still-planned formal proof and self-play. Full-body contact coverage, raised guard, reliable stance and sporting fall/foul attribution remain open. Linux snapshot continuation is exact; strict Linux-to-Mac closed-loop full-state parity misses tolerance and remains explicitly failed. The 1/2/4-worker inference/support/reset benchmark measured 65.7/131.8/240.5 control transitions per second, with optimizer work excluded.
 
@@ -51,7 +66,7 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 uv run joxing train-reach --workers 4 -
 OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 uv run joxing train-strike --workers 4 --out runs/v0.0.2/reproduction
 ```
 
-The new gravity audit needs only the base dependencies. SAC and its reports use the optional motor extra:
+The gravity audit needs only the base dependencies. SAC and its reports use the optional motor extra:
 
 ```bash
 uv run joxing balance-probe --out runs/v0.0.4/my-probe
@@ -94,4 +109,4 @@ On xbabe1, four CPU workers completed 384 CEM muscle-reach training episodes in 
 
 [Before/after replay](artifacts/reach-before-after.mp4) · [Run receipt](artifacts/receipts/reach-seed7.json) · [Results and limitations](docs/RESULTS.md)
 
-Joxing code is Apache-2.0. Upstream submodules retain their licenses. Supplied engineering documents under `docs/references` retain their original authorship; their inclusion is project reference material, not a separate license grant for third-party datasets. No motion-capture dataset is bundled.
+Joxing code is Apache-2.0. Upstream submodules retain their licenses. Supplied engineering documents under `docs/references` retain their original authorship; their inclusion is project reference material, not a separate license grant for third-party datasets. No additional motion-capture corpus is bundled by Joxing; the pinned msgym submodule includes its upstream sample trajectory, whose provenance must be checked before teacher transfer.

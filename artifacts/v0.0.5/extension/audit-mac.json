@@ -1,0 +1,272 @@
+{
+  "accounting_passed": true,
+  "auditor_script_sha256": "9a7b7bfc0a20283e61befef597d4a76835ac091d5b9e1e56000141368223d9d5",
+  "code_commit": "eba09596b79b7b1223c040fd2342e5539d013f64",
+  "cross_host_reference_parity_passed": false,
+  "evaluation_attempts": 576,
+  "findings": [
+    {
+      "experiment": "R-A-761",
+      "integration_state_max_error": 1.085449859772325e-05,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 1.6319394502417595e-08,
+      "qvel_max_error": 1.2377931812856957e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 2.589217729109805e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.1086244689504383e-15,
+        "qvel_max_error": 5.6343818499726694e-14
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "R-A-761",
+      "integration_state_max_error": 1.8611648000543823e-05,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 5.0041944054703136e-08,
+      "qvel_max_error": 3.4454146757845194e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 5.5852211744422675e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 6.23945339839338e-14,
+        "qvel_max_error": 1.0449419107771973e-12
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "R-A-983",
+      "integration_state_max_error": 3.453369754424784e-05,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 3.147766947098063e-08,
+      "qvel_max_error": 1.1445436798318553e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.1941025945816364e-10,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 1.3322676295501878e-14,
+        "qvel_max_error": 9.070522111187529e-14
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "R-A-983",
+      "integration_state_max_error": 0.0004395045368710271,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 6.9155318693781e-08,
+      "qvel_max_error": 5.548390649534607e-06,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.3216094885137863e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 1.9459694272638828e-14,
+        "qvel_max_error": 4.565237077258644e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "R-W-761",
+      "integration_state_max_error": 1.085449859772325e-05,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 1.6319394502417595e-08,
+      "qvel_max_error": 1.2377931812856957e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 2.589217729109805e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.1086244689504383e-15,
+        "qvel_max_error": 5.6343818499726694e-14
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "R-W-761",
+      "integration_state_max_error": 0.0005693786721678862,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 1.5401220150312867e-06,
+      "qvel_max_error": 2.122795027958979e-05,
+      "recorded_action_replay": {
+        "integration_state_max_error": 4.001776687800884e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 6.17284001691587e-14,
+        "qvel_max_error": 7.318590178329032e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "R-W-983",
+      "integration_state_max_error": 3.453369754424784e-05,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 3.147766947098063e-08,
+      "qvel_max_error": 1.1445436798318553e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.1941025945816364e-10,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 1.3322676295501878e-14,
+        "qvel_max_error": 9.070522111187529e-14
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "R-W-983",
+      "integration_state_max_error": 0.00010073526870968408,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 2.2033032209822778e-07,
+      "qvel_max_error": 3.6252473907261162e-06,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.2221335055073723e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 2.503552920529728e-14,
+        "qvel_max_error": 6.314393452555578e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-A",
+      "integration_state_max_error": 4.2470648917025,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.004314358169220293,
+      "qvel_max_error": 0.049427878291793514,
+      "recorded_action_replay": {
+        "integration_state_max_error": 8.125056183416746e-12,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.3306690738754696e-15,
+        "qvel_max_error": 1.0880185641326534e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-A",
+      "integration_state_max_error": 0.0027236512416664027,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 1.8938491212483477e-06,
+      "qvel_max_error": 1.0816673252200815e-05,
+      "recorded_action_replay": {
+        "integration_state_max_error": 7.629097353856196e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 5.834221994405198e-14,
+        "qvel_max_error": 3.7925218521195347e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-B",
+      "integration_state_max_error": 4.2470648917025,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.004314358169220293,
+      "qvel_max_error": 0.049427878291793514,
+      "recorded_action_replay": {
+        "integration_state_max_error": 8.125056183416746e-12,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.3306690738754696e-15,
+        "qvel_max_error": 1.0880185641326534e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-B",
+      "integration_state_max_error": 0.0004605738533962622,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 1.0796107829946777e-07,
+      "qvel_max_error": 3.5160300879688577e-06,
+      "recorded_action_replay": {
+        "integration_state_max_error": 1.9966250874858815e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 5.580258477522193e-14,
+        "qvel_max_error": 2.427502643342905e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-C",
+      "integration_state_max_error": 4.2470648917025,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.004314358169220293,
+      "qvel_max_error": 0.049427878291793514,
+      "recorded_action_replay": {
+        "integration_state_max_error": 8.125056183416746e-12,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.3306690738754696e-15,
+        "qvel_max_error": 1.0880185641326534e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-C",
+      "integration_state_max_error": 0.00019845180398192497,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 9.818460777744065e-08,
+      "qvel_max_error": 2.262869106539611e-06,
+      "recorded_action_replay": {
+        "integration_state_max_error": 9.35784782996052e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 1.9317880628477724e-14,
+        "qvel_max_error": 7.307557337021819e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-D",
+      "integration_state_max_error": 4.2470648917025,
+      "outcome_tick_matches": true,
+      "policy": "initial",
+      "qpos_max_error": 0.004314358169220293,
+      "qvel_max_error": 0.049427878291793514,
+      "recorded_action_replay": {
+        "integration_state_max_error": 8.125056183416746e-12,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 3.3306690738754696e-15,
+        "qvel_max_error": 1.0880185641326534e-13
+      },
+      "same_host_repeat_error": 0.0
+    },
+    {
+      "experiment": "S-D",
+      "integration_state_max_error": 2.3948162890974345e-05,
+      "outcome_tick_matches": true,
+      "policy": "trained",
+      "qpos_max_error": 3.0302444109509e-08,
+      "qvel_max_error": 7.076880156331455e-07,
+      "recorded_action_replay": {
+        "integration_state_max_error": 4.659028718378977e-11,
+        "outcome_tick_matches": true,
+        "qpos_max_error": 5.10702591327572e-14,
+        "qvel_max_error": 6.191713808334498e-13
+      },
+      "same_host_repeat_error": 0.0
+    }
+  ],
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "invalid_evaluation_attempts": 0,
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "passed": false,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "protocol_hash": "0ec47e01e39823a7f68188a1ee179eb4cfc907d61922ec814afdb450f0016f47",
+  "python": "3.12.12",
+  "recomputed_physics_substeps": 13841563,
+  "reused_diagnostic_attempts_excluded": 8,
+  "same_host_repeat_passed": true,
+  "schema": "joxing-run-v1",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "source_run_commit": "76f6e5ce47f9966d9896f08a03652c20dcc9db31",
+  "tolerances": {
+    "cross_host_full_state": 1e-05,
+    "same_host": 1e-09
+  },
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:47:29.156519+00:00"
+}

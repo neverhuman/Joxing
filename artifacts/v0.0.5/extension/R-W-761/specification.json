@@ -1,0 +1,46 @@
+{
+  "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+  "balance_config": {
+    "control_s": 0.01,
+    "dt_s": 0.001,
+    "episode_s": 20.0,
+    "max_reset_penetration_m": 0.002,
+    "preparation_s": 0.2
+  },
+  "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+  "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+  "observation_slices": {
+    "activation": [
+      170,
+      870
+    ],
+    "hand_error": [
+      876,
+      882
+    ],
+    "pelvis_up": [
+      870,
+      873
+    ],
+    "previous_action": [
+      885,
+      1023
+    ],
+    "relative_pelvis": [
+      873,
+      876
+    ],
+    "relative_qpos": [
+      0,
+      85
+    ],
+    "support": [
+      882,
+      885
+    ],
+    "velocity": [
+      85,
+      170
+    ]
+  }
+}

@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.0.5 — 2026-10-26
+
+- Add preregistered constant-control, real-optimizer profiling and matched reward/entropy SAC experiments, then a separately authorized fourfold-budget extension with 16 simulation workers across four learners.
+- Complete 1.44 million training transitions, 354,000 scheduled updates and all 912 new evaluations, zero invalids. Preserve every experiment description, actor, progress/monitor record, comparison and not_run reason.
+- Candidate B improves over its initial policy on two fresh seeds but loses to A on one; registered replicated superiority fails. Every final policy has 0/32 five-second survivors; no formal motor proof or boxing self-play ran.
+- Measure 4.69× common-data optimizer throughput and 844.67TPS at 16 fixed-policy workers (optimizer excluded). Publish source-host replay, both confirmation seeds, 72 passing Mac/Linux tests and all owned PID exits.
+- Preserve failed strict cross-platform policy replay, disclose constant-baseline confirmation timing, and correct diagnostic preparation accounting additively.
+- Audit delivered velocities/muscle feedback versus missing opponent/history/jitter/game/league interfaces; inspect upstream motor checkpoint metadata and provide a worker-ready transfer plan.
+
+See [results](docs/V0.0.5_RESULTS.md), [experiment book](experiments/v0.0.5/README.md), [state/history audit](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md) and [next motor plan](docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md).
+
 ## v0.0.4 — 2026-10-26
 
 - Implement ordinary-gravity native-root MS-Human-700 feedback control with all 700 muscles, 138 named action groups, 1,023 measured observations and audited reset-only preparation.

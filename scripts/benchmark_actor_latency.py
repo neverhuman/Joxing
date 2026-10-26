@@ -74,7 +74,9 @@ def main():
         "warmup_calls_per_case": args.warmup,
         "timed_calls_per_case": args.samples,
         "device": "cpu",
-        "physics_steps_executed": 0,
+        "control_physics_steps_executed": env.physics_total,
+        "preparation_steps_executed": env.preparation_total,
+        "total_physics_steps_executed": env.physics_total + env.preparation_total,
         "scope": "Isolated actor.predict call on one restored recorded observation, including input conversion and output conversion; wall-clock samples on a shared desktop. No optimizer, observation construction, action transport, contact, physics, scheduling guarantee or two-player game.",
         "limitations": [
             "Repeated fixed inputs do not cover all future policies, observations or host load.",

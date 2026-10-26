@@ -1,0 +1,18 @@
+{"experiment": "B0", "status": "running", "wall_s": 0.19126707687973976, "reason": "reuse_frozen_constant_only"}
+{"experiment": "B0", "status": "completed", "wall_s": 66.0101471170783, "result": "B0/result.json", "reason": "32_new_valid_baseline_trials"}
+{"experiment": "S-A", "status": "running", "wall_s": 66.01091299578547, "reason": "dependencies_passed"}
+{"experiment": "S-B", "status": "running", "wall_s": 66.0132994055748, "reason": "dependencies_passed"}
+{"experiment": "S-C", "status": "running", "wall_s": 66.01463528163731, "reason": "dependencies_passed"}
+{"experiment": "S-D", "status": "running", "wall_s": 66.0158211030066, "reason": "dependencies_passed"}
+{"experiment": "S-D", "status": "completed", "wall_s": 1757.6820465307683, "result": "S-D/result.json", "reason": "finished"}
+{"experiment": "S-A", "status": "completed", "wall_s": 1761.4485903158784, "result": "S-A/result.json", "reason": "finished"}
+{"experiment": "S-C", "status": "completed", "wall_s": 1767.118295410648, "result": "S-C/result.json", "reason": "finished"}
+{"experiment": "S-B", "status": "completed", "wall_s": 1776.134063579142, "result": "S-B/result.json", "reason": "finished"}
+{"experiment": "R-A-761", "status": "running", "wall_s": 1842.8186234999448, "reason": "dependencies_passed"}
+{"experiment": "R-W-761", "status": "running", "wall_s": 1842.8205992151052, "reason": "dependencies_passed"}
+{"experiment": "R-A-983", "status": "running", "wall_s": 1842.8216313365847, "reason": "dependencies_passed"}
+{"experiment": "R-W-983", "status": "running", "wall_s": 1842.822647407651, "reason": "dependencies_passed"}
+{"experiment": "R-A-761", "status": "completed", "wall_s": 3526.7404936365783, "result": "R-A-761/result.json", "reason": "finished"}
+{"experiment": "R-W-983", "status": "completed", "wall_s": 3536.672156887129, "result": "R-W-983/result.json", "reason": "finished"}
+{"experiment": "R-A-983", "status": "completed", "wall_s": 3540.878059150651, "result": "R-A-983/result.json", "reason": "finished"}
+{"experiment": "R-W-761", "status": "completed", "wall_s": 3554.26182215102, "result": "R-W-761/result.json", "reason": "finished"}

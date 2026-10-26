@@ -316,7 +316,9 @@ def confirmation_plot(run, out):
         "Reset intervals do not quantify uncertainty across training seeds; motor gate is separate"
     )
     fig.tight_layout(rect=(0, 0, 1, 0.94))
-    fig.savefig(out / "wave-confirmation.png", dpi=160)
+    fig.savefig(
+        out / "wave-confirmation.png", dpi=160, bbox_inches="tight", pad_inches=0.2
+    )
     plt.close(fig)
 
 

@@ -1,0 +1,48 @@
+{
+  "actor_files": {
+    "final": "a66f2088b0dc78125574a3bddc0b327ef18b6f9d3d6072a2a0c7e3acbf8fd880",
+    "initial": "e8027c97a73fad8e1f41943c4caa0eed9d0f3927f43d419bf37cfe65147c478e"
+  },
+  "arm": "A",
+  "counts": {
+    "available_memory_bytes": 32100380672,
+    "learner_maxrss_native_units": 1348424,
+    "physics_substeps": 1593119,
+    "preparation_substeps": 51800,
+    "raw_reward_sum": 1840.7617516894388,
+    "reset_wall_s": 85.07997560687363,
+    "scaled_reward_sum": 1840.7617516894388
+  },
+  "evaluation_physics_substeps": 69630,
+  "evaluation_preparation_substeps": 6600,
+  "final_actor_hash": "4c876a038b9787b2b3257e2428401590fbd1718c408e87f20302697ae06b3797",
+  "final_diagnostic": {
+    "alpha": 0.16671930253505707,
+    "entropy_reward_mean": -14.962235450744629,
+    "mean_log_prob": 89.74507141113281
+  },
+  "inference_wall_s": 22.620578546077013,
+  "initial_actor_hash": "1b629026c41723b03d075b9a25036eb75e548cd91ce4b736a47a93c5b139b753",
+  "scheduled_training_complete": true,
+  "seed": 983,
+  "source_unchanged": true,
+  "stop_reason": null,
+  "summary": {
+    "attempts": 64,
+    "initial_mean_survival_s": 1.01053125,
+    "invalid": 0,
+    "motor_gate_passed": false,
+    "paired_reset_bootstrap_95ci_s": [
+      0.12762421875000005,
+      0.18256250000000002
+    ],
+    "paired_survival_gain_s": 0.15487500000000004,
+    "pilot_continuation_gate": false,
+    "trained_5s_survivors": 0,
+    "trained_mean_survival_s": 1.1654062500000002
+  },
+  "training_transitions": 160000,
+  "update_wall_s": 545.4508364088833,
+  "updates": 39500,
+  "wall_s": 1696.2646530810744
+}

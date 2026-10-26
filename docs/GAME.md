@@ -2,7 +2,7 @@
 
 Status: design selected for implementation; referee fixtures exist; full game is not yet playable.
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. The current [v0.0.4 gravity/feedback iteration](V0.0.4_PLAN.md) measures one athlete's local balance before competitive play; the [training guide](TRAINING.md) describes later stance/recovery gates. Motor rewards and failure criteria do not change the sporting points or resolve provisional match fall/foul rules below.
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. The completed [v0.0.5 motor experiments](V0.0.5_RESULTS.md) measure one athlete’s moving-start fall recovery before competitive play; the [training guide](TRAINING.md) describes later stance/recovery gates. Motor rewards and failure criteria do not change the sporting points or resolve provisional match fall/foul rules below.
 
 ## Objective and points
 

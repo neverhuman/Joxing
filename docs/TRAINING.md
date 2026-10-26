@@ -1,8 +1,10 @@
 # Training sequence and test gates
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. **Current implemented iteration: v0.0.5; the expanded wave is being finalized.** It extends v0.0.4’s native-gravity feedback platform with controlled objective/throughput experiments. The paragraph below and later formal targets preserve the earlier pilot context. Read the [v0.0.4 execution plan](V0.0.4_PLAN.md) for exact delivered scope and [STATUS.md](STATUS.md) for measurements. The [historical v0.0.3 plan](V0.0.3_PLAN.md) and later stages below describe the larger formal motor proof, which remains gated.
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. **Current implemented iteration: v0.0.5; both waves are complete.** It extends v0.0.4’s native-gravity feedback platform with controlled objective/throughput experiments. The paragraph below and later formal targets preserve the earlier pilot context. Read the [v0.0.4 execution plan](V0.0.4_PLAN.md) for exact delivered scope and [STATUS.md](STATUS.md) for measurements. The [historical v0.0.3 plan](V0.0.3_PLAN.md) and later stages below describe the larger formal motor proof, which remains gated.
 
-**Measured outcome:** the v0.0.4 pilot stopped at 39,040 transitions under its wall cap. All 64 development evaluations completed with zero invalids; mean survival changed 1.018 -> 1.023 seconds, with an interval including zero. Five-second survivors were 0/32, so the larger proof remains blocked. See [full results](V0.0.4_RESULTS.md). Next development must address measured learner throughput and reward/entropy scaling before spending the formal training budget.
+**Historical v0.0.4 outcome:** the pilot stopped at 39,040 transitions under its wall cap. All 64 development evaluations completed with zero invalids; mean survival changed 1.018 -> 1.023 seconds, with an interval including zero. Five-second survivors were 0/32, so the larger proof remains blocked. See [full results](V0.0.4_RESULTS.md). The v0.0.5 controlled wave below addresses those throughput/objective questions; its motor result still blocks the formal budget.
+
+**Latest outcome:** 1.44 million training transitions and 912 new evaluations, zero invalids. Candidate B improved versus its initial policy on both fresh seeds but lost to A on seed 983, so registered superiority did not replicate. Every final policy had 0/32 five-second survivors. The formal proof remains gated. All owned jobs exited; [complete v0.0.5 results](V0.0.5_RESULTS.md).
 
 ## v0.0.5 controlled motor wave
 

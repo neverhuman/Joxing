@@ -1,10 +1,12 @@
 # Implementation and handoff plan
 
-Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current implemented iteration is v0.0.4: follow its [execution plan](V0.0.4_PLAN.md) and [training sequence](TRAINING.md). v0.0.3 was a [planning milestone](V0.0.3_PLAN.md), carried into v0.0.4's executable root/support/stance slice. The P0–P5 sections below describe the broader program; they are not all delivered by this release. [Documentation index](README.md).
+Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. Current implemented iteration is v0.0.5: both controlled motor waves are complete; follow the [results](V0.0.5_RESULTS.md), [execution plan](V0.0.5_PLAN.md) and [training sequence](TRAINING.md). Motor and replicated-superiority gates failed. v0.0.3 was a [planning milestone](V0.0.3_PLAN.md), carried into v0.0.4's executable root/support/stance slice. The P0–P5 sections below describe the broader program; they are not all delivered by this release. [Documentation index](README.md).
+
+The proposed [upstream motor-teacher transfer plan](UPSTREAM_MOTOR_TRANSFER_PLAN.md) refines the next P3 work with inspected checkpoint metadata and compatibility/load tests. It has not been executed.
 
 ## Objective, scope and completion
 
-The [state/history/self-play audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) refines P2/P3/P5 with exact delivered/missing mechanisms, causal observation/history/latency contracts and tests. The user-authorized current CPU allowance is16simulation workers total under the [v0.0.5 resource](V0.0.5_RESOURCE_ADDENDUM.md) and [budget](V0.0.5_BUDGET_ADDENDUM.md) addenda; earlier four-worker entries describe initial caps.
+The [state/history/self-play audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) refines P2/P3/P5 with exact delivered/missing mechanisms, causal observation/history/latency contracts and tests. The user-authorized current CPU allowance is 16 simulation workers total under the [v0.0.5 resource](V0.0.5_RESOURCE_ADDENDUM.md) and [budget](V0.0.5_BUDGET_ADDENDUM.md) addenda; earlier four-worker entries describe initial caps.
 
 Produce a reproducible virtual boxing game in which two independently muscle-driven humans learn motor skills and improve tactics through self-play. Final completion requires stable unassisted motion, calibrated simulation-rule contact scoring, full replay, historical-opponent learning and paired fixed-panel evidence of improved match strength. The first delivery is the auditable CPU foundation plus a bounded learning-pipeline experiment.
 

@@ -1,0 +1,285 @@
+{
+  "audit_receipts": {
+    "audit-linux.json": {
+      "accounting_passed": true,
+      "passed": true,
+      "sha256": "06004e2ff9b7df6b8a96d46098240b5046c8d17658ab9f40c1c4de12fda25bdb"
+    },
+    "audit-mac.json": {
+      "accounting_passed": true,
+      "passed": false,
+      "sha256": "e13177b7bc3c7102d989d9f9af73557139555a98c3f6d48272987443c3f735b8"
+    },
+    "extension/audit-linux.json": {
+      "accounting_passed": true,
+      "passed": true,
+      "sha256": "18b867e73fdb318cf9080b1684e2815c090a527c0e926295c9b7087aa6fd4c10"
+    },
+    "extension/audit-mac.json": {
+      "accounting_passed": true,
+      "passed": false,
+      "sha256": "4724f79043a4829d42779a8914ed5b0545abcb9ff091d9ae1d719a1779a4c23e"
+    }
+  },
+  "boxing_self_play_implemented": false,
+  "candidate_improved_vs_own_initial_both_fresh_seeds": true,
+  "caps": {
+    "aggregate_simulation_workers_xbabe1": 16,
+    "physics_steps": 40000000,
+    "raw_bytes": 10737418240,
+    "wall_s_from_original_launch": 14400
+  },
+  "code_commit": "eba09596b79b7b1223c040fd2342e5539d013f64",
+  "completed_stochastic_motor_episodes": 14736,
+  "confirmation_comparisons": {
+    "confirmation-761": {
+      "constant_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0354375,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.23009140625000002,
+          0.28921875
+        ],
+        "paired_survival_gain_s": 0.25809375,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.29353125
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.022875,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.24453125000000003,
+          0.29950000000000004
+        ],
+        "paired_survival_gain_s": 0.27065625000000004,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.29353125
+      },
+      "reference_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 0.803,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.452125,
+          0.5322859375
+        ],
+        "paired_survival_gain_s": 0.49053125,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.29353125
+      }
+    },
+    "confirmation-983": {
+      "constant_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0354375,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.05406171874999996,
+          0.06937500000000002
+        ],
+        "paired_survival_gain_s": 0.06175000000000001,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0971875
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.01053125,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.08003046874999999,
+          0.09315624999999998
+        ],
+        "paired_survival_gain_s": 0.08665625000000002,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0971875
+      },
+      "reference_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.1654062500000002,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.09631406250000002,
+          -0.04018671875000004
+        ],
+        "paired_survival_gain_s": -0.06821875000000002,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0971875
+      }
+    }
+  },
+  "evaluation_attempts": {
+    "extension_new": 576,
+    "invalid": 0,
+    "original": 336,
+    "reused_diagnostic_rows_excluded": 8,
+    "total_new": 912
+  },
+  "five_second_motor_continuation_passed": false,
+  "formal_motor_proof_run": false,
+  "formal_physics_preparation_steps": 15989627,
+  "formal_plus_reserved_steps": 16989627,
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "limitations": [
+    "No opponent observation, recurrent actor history, causal timing queue or connected game/league in the stance learner.",
+    "All final policies fall before five seconds; these completed motor episodes are not boxing mini-games.",
+    "Candidate B loses to A on fresh seed983; registered replicated superiority fails.",
+    "Constant comparator opened confirmation IDs before learner training; learner policy evaluation remained deferred. This limits a completely sealed-bank claim.",
+    "Strict Mac/Linux closed-loop full-state parity remains failed; recorded-action and repeat-local continuations pass on examined snapshots.",
+    "Isolated inference/short-trace profiles do not qualify whole-game wall-clock real time.",
+    "Earlier diagnostic preparation-count omission is retained and corrected additively in diagnostic-accounting-correction.json.",
+    "Upstream checkpoint metadata is inspected; teacher replication/transfer remains proposed."
+  ],
+  "mujoco": "3.8.0",
+  "next_work": [
+    "Feasible stationary/recovery motor resets and upstream teacher compatibility under docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md.",
+    "P1/P2/P3/P5 opponent-aware local observations, explicit temporal memory, simultaneous game/referee stepping, jitter queues and historical league under docs/STATE_HISTORY_SELF_PLAY_AUDIT.md."
+  ],
+  "numpy": "2.5.4",
+  "original_conditional_not_run": {
+    "R-A-263": "no_meaningful_screen_gain",
+    "R-A-431": "no_meaningful_screen_gain",
+    "R-W-263": "no_meaningful_screen_gain",
+    "R-W-431": "no_meaningful_screen_gain"
+  },
+  "owned_process_exit_receipt_sha256": "9d408b50d7f83c51cb68d336780229e7d7699110a111450dd2ce43d968376983",
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "python": "3.12.12",
+  "registered_replicated_superiority_passed": false,
+  "scheduled_training_optimizer_updates": 354000,
+  "schema": "joxing-run-v1",
+  "selected_extended_arm": "B",
+  "source_commits": {
+    "extension": "76f6e5ce47f9966d9896f08a03652c20dcc9db31",
+    "original": "6ac2badea47271e42a4b60dbd65531a587fa4111"
+  },
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "status": "both_waves_completed_and_audited",
+  "supplementary_physics_reserve": 1000000,
+  "target_release_tag": "v0.0.5",
+  "tests": {
+    "linux_extension": "72 passed in83.23s",
+    "mac_extension": "72 passed in55.40s"
+  },
+  "training_transitions": 1440000,
+  "trials": [
+    {
+      "experiment": "S-A",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 40000,
+      "updates": 9500,
+      "wave": "original"
+    },
+    {
+      "experiment": "S-B",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 40000,
+      "updates": 9500,
+      "wave": "original"
+    },
+    {
+      "experiment": "S-C",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 40000,
+      "updates": 9500,
+      "wave": "original"
+    },
+    {
+      "experiment": "S-D",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 40000,
+      "updates": 9500,
+      "wave": "original"
+    },
+    {
+      "experiment": "R-A-761",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    },
+    {
+      "experiment": "R-A-983",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    },
+    {
+      "experiment": "R-W-761",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    },
+    {
+      "experiment": "R-W-983",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    },
+    {
+      "experiment": "S-A",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    },
+    {
+      "experiment": "S-B",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    },
+    {
+      "experiment": "S-C",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    },
+    {
+      "experiment": "S-D",
+      "scheduled_complete": true,
+      "trained_5s_survivors": 0,
+      "transitions": 160000,
+      "updates": 39500,
+      "wave": "extension"
+    }
+  ],
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:52:55.417308+00:00",
+  "wall_s": {
+    "extension_wave": 3555.3876130525023,
+    "original_wave": 2358.383006501943
+  }
+}

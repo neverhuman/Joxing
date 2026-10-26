@@ -1,0 +1,346 @@
+{
+  "arm": "D",
+  "config": {
+    "arms": {
+      "A": {
+        "entropy": "auto",
+        "reward_scale": 1.0
+      },
+      "B": {
+        "entropy": 0.0001,
+        "reward_scale": 1.0
+      },
+      "C": {
+        "entropy": "auto",
+        "reward_scale": 1000.0
+      },
+      "D": {
+        "entropy": 0.0001,
+        "reward_scale": 1000.0
+      }
+    },
+    "caps": {
+      "minimum_disk_bytes": 10737418240,
+      "minimum_memory_bytes": 4294967296,
+      "physics_steps": 40000000,
+      "raw_bytes": 10737418240,
+      "run_wall_s": 2700,
+      "wave_wall_s": 14400
+    },
+    "constants": [
+      0.005,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "description": "Controlled motor reward/entropy factorial; physics, native anatomy, game and failure gates fixed. Registered before outcomes.",
+    "experiments": [
+      {
+        "description": "48 diagnostic episodes, six constants x eight starts; select strongest mean, ties smaller; freeze and evaluate on screen32.",
+        "hypothesis": "Simple muscle excitation can reveal a weak neural reference or reset motion.",
+        "id": "B0"
+      },
+      {
+        "description": "Same256 real transitions; 20warmup/100timed updates, three repeats of each network/batch; finite changed actor required.",
+        "hypothesis": "Smaller common learner yields at least twice the optimizer throughput.",
+        "id": "P0"
+      },
+      {
+        "description": "ArmA: {'entropy': 'auto', 'reward_scale': 1.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+        "hypothesis": "Reference small-network SAC establishes within-wave control.",
+        "id": "S-A"
+      },
+      {
+        "description": "ArmB: {'entropy': 0.0001, 'reward_scale': 1.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+        "hypothesis": "Lower temperature helps the raw-scale motor objective.",
+        "id": "S-B"
+      },
+      {
+        "description": "ArmC: {'entropy': 'auto', 'reward_scale': 1000.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+        "hypothesis": "Larger reward units help auto-temperature SAC.",
+        "id": "S-C"
+      },
+      {
+        "description": "ArmD: {'entropy': 0.0001, 'reward_scale': 1000.0}; seed149,40000transitions/900s firstlimit;32 paired initial/final screen resets. Common network/starts/seed/budget. No changed physics.",
+        "hypothesis": "Reward units and low temperature interact.",
+        "id": "S-D"
+      },
+      {
+        "description": "Conditional on declared screen rule; seed263,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+        "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+        "id": "R-A-263"
+      },
+      {
+        "description": "Conditional on declared screen rule; seed263,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+        "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+        "id": "R-W-263"
+      },
+      {
+        "description": "Conditional on declared screen rule; seed431,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+        "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+        "id": "R-A-431"
+      },
+      {
+        "description": "Conditional on declared screen rule; seed431,reference A or selected W;40000transitions/900s,32paired confirmation starts. Duplicate W not_run if winner A.",
+        "hypothesis": "Development gain replicates on fresh training seed and unseen resets.",
+        "id": "R-W-431"
+      },
+      {
+        "description": "Export preselected v4 initial/final snapshots and Linux action sequences; samehost1e-9/crosshost1e-5 unchanged, outcomes and qpos/qvel separately.",
+        "hypothesis": "Recorded actions distinguish engine divergence from closed-loop policy divergence.",
+        "id": "X0"
+      }
+    ],
+    "learner": {
+      "batch_size": 64,
+      "buffer_size": 50000,
+      "gamma": 0.99,
+      "gradient_steps": 1,
+      "learning_rate": 0.0003,
+      "learning_starts": 2000,
+      "net_arch": [
+        128,
+        128
+      ],
+      "steps": 160000,
+      "tau": 0.005,
+      "workers": 4
+    },
+    "profile": {
+      "minimum_speedup": 2.0,
+      "repeats": 3,
+      "transitions": 256,
+      "updates": 100,
+      "warmup": 20
+    },
+    "schema": "joxing-wave-0.0.5",
+    "seeds": {
+      "confirmation": [
+        761,
+        983
+      ],
+      "screen": 547
+    },
+    "selection": {
+      "bootstrap_seed": 61005,
+      "gain_s": 0.25,
+      "over_A_s": 0.1
+    },
+    "splits": {
+      "confirmation": [
+        65000,
+        65001,
+        65002,
+        65003,
+        65004,
+        65005,
+        65006,
+        65007,
+        65008,
+        65009,
+        65010,
+        65011,
+        65012,
+        65013,
+        65014,
+        65015,
+        65016,
+        65017,
+        65018,
+        65019,
+        65020,
+        65021,
+        65022,
+        65023,
+        65024,
+        65025,
+        65026,
+        65027,
+        65028,
+        65029,
+        65030,
+        65031
+      ],
+      "diagnostic": [
+        62000,
+        62001,
+        62002,
+        62003,
+        62004,
+        62005,
+        62006,
+        62007
+      ],
+      "screen": [
+        64000,
+        64001,
+        64002,
+        64003,
+        64004,
+        64005,
+        64006,
+        64007,
+        64008,
+        64009,
+        64010,
+        64011,
+        64012,
+        64013,
+        64014,
+        64015,
+        64016,
+        64017,
+        64018,
+        64019,
+        64020,
+        64021,
+        64022,
+        64023,
+        64024,
+        64025,
+        64026,
+        64027,
+        64028,
+        64029,
+        64030,
+        64031
+      ],
+      "training": [
+        110000,
+        110001,
+        110002,
+        110003,
+        110004,
+        110005,
+        110006,
+        110007,
+        110008,
+        110009,
+        110010,
+        110011,
+        110012,
+        110013,
+        110014,
+        110015,
+        110016,
+        110017,
+        110018,
+        110019,
+        110020,
+        110021,
+        110022,
+        110023,
+        110024,
+        110025,
+        110026,
+        110027,
+        110028,
+        110029,
+        110030,
+        110031,
+        110032,
+        110033,
+        110034,
+        110035,
+        110036,
+        110037,
+        110038,
+        110039,
+        110040,
+        110041,
+        110042,
+        110043,
+        110044,
+        110045,
+        110046,
+        110047,
+        110048,
+        110049,
+        110050,
+        110051,
+        110052,
+        110053,
+        110054,
+        110055,
+        110056,
+        110057,
+        110058,
+        110059,
+        110060,
+        110061,
+        110062,
+        110063
+      ]
+    }
+  },
+  "description": "Same four SAC conditions and learner as original; seed547;160000transitions/2700s firstlimit;32paired new development starts64000..64031; four trials concurrently, four workers each.",
+  "hypothesis": "A fourfold transition budget can reveal meaningful motor gain under the controlled objective.",
+  "id": "S-D",
+  "ids": [
+    64000,
+    64001,
+    64002,
+    64003,
+    64004,
+    64005,
+    64006,
+    64007,
+    64008,
+    64009,
+    64010,
+    64011,
+    64012,
+    64013,
+    64014,
+    64015,
+    64016,
+    64017,
+    64018,
+    64019,
+    64020,
+    64021,
+    64022,
+    64023,
+    64024,
+    64025,
+    64026,
+    64027,
+    64028,
+    64029,
+    64030,
+    64031
+  ],
+  "provenance": {
+    "aggregate_simulation_workers": 16,
+    "code_commit": "76f6e5ce47f9966d9896f08a03652c20dcc9db31",
+    "cuda_available": false,
+    "device": "cpu",
+    "host": "xbabe1",
+    "mujoco": "3.8.0",
+    "numpy": "2.5.4",
+    "parallel_trials": 4,
+    "parent_commit": "6ac2badea47271e42a4b60dbd65531a587fa4111",
+    "parent_protocol_hash": "7a4ca4a6b841ca39ca8141db83d1e0e05b01d49054408d71197ac28ecff97fe5",
+    "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+    "protocol_hash": "0ec47e01e39823a7f68188a1ee179eb4cfc907d61922ec814afdb450f0016f47",
+    "python": "3.12.3",
+    "resources": {
+      "available_memory_bytes": 50702352384,
+      "disk_free_bytes": 346846179328
+    },
+    "schema": "joxing-run-v1",
+    "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+    "stable_baselines3": "2.9.2",
+    "torch": "2.14.1+cpu",
+    "upstream": {
+      "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+      "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+    },
+    "utc": "2026-10-26T19:46:44.495877+00:00"
+  },
+  "reason": "dependencies_passed",
+  "seed": 547,
+  "status": "running"
+}

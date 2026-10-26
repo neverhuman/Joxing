@@ -1,0 +1,291 @@
+{
+  "comparisons": {
+    "S-A": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0434999999999999,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.16821953124999997,
+          -0.13178046874999996
+        ],
+        "paired_survival_gain_s": -0.15034374999999997,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 0.89315625
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0590625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.17525000000000002,
+          -0.15653046875
+        ],
+        "paired_survival_gain_s": -0.16590625000000003,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 0.89315625
+      },
+      "transitions_per_s_including_evaluation": 94.47024695156581,
+      "updates_per_optimizer_s": 71.80220852931082,
+      "wall_s": 1693.6549354214221
+    },
+    "S-B": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0434999999999999,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.24206093750000002,
+          0.30043828125
+        ],
+        "paired_survival_gain_s": 0.26996875000000004,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.3134687500000002
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0590625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.22581015625000003,
+          0.28581328125
+        ],
+        "paired_survival_gain_s": 0.25440625000000006,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.3134687500000002
+      },
+      "transitions_per_s_including_evaluation": 93.66026937294522,
+      "updates_per_optimizer_s": 73.12406603543599,
+      "wall_s": 1708.3017278425395
+    },
+    "S-C": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0434999999999999,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.18003125000000006,
+          0.22403203125000007
+        ],
+        "paired_survival_gain_s": 0.20165625000000004,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.24515625
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0590625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.15624921874999997,
+          0.21665624999999994
+        ],
+        "paired_survival_gain_s": 0.18609375,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.24515625
+      },
+      "transitions_per_s_including_evaluation": 94.15341539208961,
+      "updates_per_optimizer_s": 72.81538226202497,
+      "wall_s": 1699.3541799169034
+    },
+    "S-D": {
+      "constant_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0434999999999999,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.07506250000000006,
+          0.09075000000000003
+        ],
+        "paired_survival_gain_s": 0.08306250000000004,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.1265625000000001
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0590625,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.05581250000000003,
+          0.07918749999999998
+        ],
+        "paired_survival_gain_s": 0.0675,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.1265625000000001
+      },
+      "transitions_per_s_including_evaluation": 94.67859804346347,
+      "updates_per_optimizer_s": 72.5253417706506,
+      "wall_s": 1689.9278538804501
+    },
+    "confirmation-761": {
+      "constant_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0354375,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.23009140625000002,
+          0.28921875
+        ],
+        "paired_survival_gain_s": 0.25809375,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.29353125
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.022875,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.24453125000000003,
+          0.29950000000000004
+        ],
+        "paired_survival_gain_s": 0.27065625000000004,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.29353125
+      },
+      "reference_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 0.803,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.452125,
+          0.5322859375
+        ],
+        "paired_survival_gain_s": 0.49053125,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.29353125
+      }
+    },
+    "confirmation-983": {
+      "constant_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.0354375,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.05406171874999996,
+          0.06937500000000002
+        ],
+        "paired_survival_gain_s": 0.06175000000000001,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0971875
+      },
+      "initial_to_final": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.01053125,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          0.08003046874999999,
+          0.09315624999999998
+        ],
+        "paired_survival_gain_s": 0.08665625000000002,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0971875
+      },
+      "reference_to_selected": {
+        "attempts": 64,
+        "initial_mean_survival_s": 1.1654062500000002,
+        "invalid": 0,
+        "motor_gate_passed": false,
+        "paired_reset_bootstrap_95ci_s": [
+          -0.09631406250000002,
+          -0.04018671875000004
+        ],
+        "paired_survival_gain_s": -0.06821875000000002,
+        "pilot_continuation_gate": false,
+        "trained_5s_survivors": 0,
+        "trained_mean_survival_s": 1.0971875
+      }
+    }
+  },
+  "exploratory_factorial_contrasts": {
+    "fixed_minus_auto_raw": {
+      "mean_survival_difference_s": 0.42031250000000003,
+      "paired_reset_95ci_s": [
+        0.38887343750000003,
+        0.4541265625
+      ]
+    },
+    "fixed_minus_auto_scaled": {
+      "mean_survival_difference_s": -0.11859374999999998,
+      "paired_reset_95ci_s": [
+        -0.13746874999999997,
+        -0.10021874999999998
+      ]
+    },
+    "interaction_D_minus_C_minus_B_plus_A": {
+      "mean_survival_difference_s": -0.53890625,
+      "paired_reset_95ci_s": [
+        -0.5797515625,
+        -0.4981859375
+      ]
+    },
+    "scaled_minus_raw_auto": {
+      "mean_survival_difference_s": 0.35200000000000004,
+      "paired_reset_95ci_s": [
+        0.314875,
+        0.38968749999999996
+      ]
+    },
+    "scaled_minus_raw_fixed": {
+      "mean_survival_difference_s": -0.18690625,
+      "paired_reset_95ci_s": [
+        -0.2220640625,
+        -0.154125
+      ]
+    }
+  },
+  "limited_replicated_improvement": false,
+  "motor_gate_passed": false,
+  "reset_motion": {
+    "initial_pelvis_tilt_degrees_min_max": [
+      8.21211695559629,
+      9.18712583216389
+    ],
+    "initial_pelvis_tilt_velocity_rad_s_min_max": [
+      1.1002883282681128,
+      1.1136469620321654
+    ],
+    "interpretation": "Accepted starts are already moving after gravity preparation; this is initial-fall recovery, not stationary quiet stance. No reset dynamics were changed during the wave.",
+    "native_root_dof_order": [
+      "pelvis_tz",
+      "pelvis_ty",
+      "pelvis_tx",
+      "pelvis_tilt",
+      "pelvis_list",
+      "pelvis_rotation"
+    ],
+    "source": "B0/reused-diagnostic-evaluations.json"
+  },
+  "scope": "Exploratory screen; two-seed confirmation only when qualified. Reset bootstrap is not training-seed uncertainty. No boxing/self-play claim.",
+  "selection": {
+    "arm": "B",
+    "gain_s": 0.25440625000000006,
+    "over_A_s": 0.4203125000000002,
+    "qualified": true,
+    "reason": "replicate"
+  }
+}

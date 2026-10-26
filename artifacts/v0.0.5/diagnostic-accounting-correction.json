@@ -1,0 +1,44 @@
+{
+  "code_commit": "eba09596b79b7b1223c040fd2342e5539d013f64",
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "mujoco": "3.8.0",
+  "numpy": "2.5.4",
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "python": "3.12.12",
+  "receipts": {
+    "control-state-audit.json": {
+      "constructor_and_sensitivity_reset_preparation_steps": 400,
+      "control_physics_steps": 0,
+      "original_sha256": "bc23a3ede1a3f6894e47342198cb4d27a234dbd318749f550b94205aa3fb9669",
+      "total_physics_steps": 400
+    },
+    "extension/actor-latency-mac.json": {
+      "constructor_preparation_steps": 200,
+      "control_physics_steps": 0,
+      "original_sha256": "66e2494a63a9c580ad0f57bccdc4371fc7abfcd59b216a4ffdb76ef89674be28",
+      "total_physics_steps": 200
+    },
+    "extension/control-profile-mac.json": {
+      "constructor_preparation_steps": 200,
+      "control_physics_steps": 6498,
+      "original_sha256": "728acd7144387214b390bda446b1d742468ea3128c9db03299529728f9832743",
+      "total_physics_steps": 6698
+    },
+    "extension/control-state-audit.json": {
+      "constructor_and_sensitivity_reset_preparation_steps": 400,
+      "control_physics_steps": 0,
+      "original_sha256": "182ff0c3685072fa9be842d4bc1e45e5a2ac4d29db27dde1274be805dc4d7347",
+      "total_physics_steps": 400
+    }
+  },
+  "schema": "joxing-run-v1",
+  "scope": "Additive accounting correction; published measurements/rows unchanged. StanceEnv construction prepares scenario30000 for200physics ticks before timing/restore. Control-state inspection also resets67099 for200ticks. The earlier latency/profile receipts omitted this preparation; all timed values remain valid. Future scripts now include constructor preparation explicitly.",
+  "source_hash": "ed1379dccbcbe57fe558f99643f637b4aa8224411ee2dfeae5aac5512ef9d37b",
+  "supplementary_reserve_steps": 1000000,
+  "total_control_and_preparation_steps_for_these_diagnostics": 7698,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-26T20:48:21.415092+00:00"
+}
