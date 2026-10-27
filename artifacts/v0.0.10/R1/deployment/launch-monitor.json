@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-27T03:11:48.850457+00:00",
+  "supervisor": {
+    "pid": 3411580,
+    "source_commit": "38eb93c5814912011e32b9c21c4ea2cf20d98927",
+    "started_utc": "2026-10-27T03:11:36.930245+00:00",
+    "status": "running",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.10/runtime",
+          "--locked"
+        ],
+        "pid": 3411582,
+        "status": "completed",
+        "returncode": 0,
+        "wall_s": 1.1666033398360014
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.10/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "pid": 3411695,
+        "status": "running"
+      }
+    ],
+    "formal_new_physics_steps": 0,
+    "formal_simulation_workers": 0,
+    "regression_fixture_physics": "Separate full-suite fixtures; not formal R1/learning/game counters",
+    "threads": 1
+  },
+  "actual_processes": [
+    {
+      "pid": 3411580,
+      "command": "python3 /home/ubuntu/joxing/v010-seam-20261027/runs/v0.0.10/supervise.py ",
+      "cpu_ticks": 3,
+      "rss_bytes": 13492224
+    },
+    {
+      "pid": 3411695,
+      "command": "/home/ubuntu/.local/bin/uv run --project experiments/v0.0.10/runtime --locked pytest -q ",
+      "cpu_ticks": 1,
+      "rss_bytes": 42835968
+    },
+    {
+      "pid": 3411699,
+      "command": "/home/ubuntu/joxing/v010-seam-20261027/experiments/v0.0.10/runtime/.venv/bin/python /home/ubuntu/joxing/v010-seam-20261027/experiments/v0.0.10/runtime/.venv/bin/pytest -q ",
+      "cpu_ticks": 1219,
+      "rss_bytes": 1082068992
+    }
+  ],
+  "tests_tail": "............",
+  "test_dots": 12,
+  "source_diff": "",
+  "load": [
+    12.1650390625,
+    11.6953125,
+    11.16015625
+  ]
+}

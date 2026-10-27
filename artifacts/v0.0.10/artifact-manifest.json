@@ -72,10 +72,35 @@
       "sha256": "1de7af18a082aed8ed2db28a900eee55720e6fca28b21af9e1bac8ef498046d9"
     },
     {
+      "path": "R1/deployment/launch-monitor.json",
+      "bytes": 1912,
+      "sha256": "e210df9b9e563d406beb85c9ea424befb5d92a19ec75c57c302d4684fa699c7a"
+    },
+    {
+      "path": "R1/deployment/launch.json",
+      "bytes": 328,
+      "sha256": "1b5cc17ddab52fa1eaf16cdac795537118423e8438ab4c115ef8ad22cd284def"
+    },
+    {
+      "path": "R1/deployment/preflight.json",
+      "bytes": 295,
+      "sha256": "5c6bdb01c9cd87ccadc90af48c287d776172ccb8dfe4c4b21f33cc93f4ec0f4c"
+    },
+    {
+      "path": "R1/deployment/public-source.json",
+      "bytes": 334,
+      "sha256": "fd39876391868d051f43b6d78d555b91c01944d928a2357e593ca4453f5e6ab4"
+    },
+    {
+      "path": "R1/deployment/supervise.py",
+      "bytes": 2654,
+      "sha256": "1819a685b4fd1199f60f354155c4a5556bfce83dcc419577f687868338f70ed7"
+    },
+    {
       "path": "R1/development-validation.json",
       "bytes": 861,
       "sha256": "99f16910164185c65004d3f6fa26e73b29f98faa613f5a0b0c259a251c9a0ab4"
     }
   ],
-  "scope": "All D0compact/raw results and R1preregistration, no tape duplication/weights/credentials. v10inprogress."
+  "scope": "All D0result/audit and R1preregistration/deployment receipts. v10inprogress; old raw unchanged."
 }
