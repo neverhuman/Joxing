@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-27T03:33:37.969389+00:00",
+  "supervisor": {
+    "pid": 3601585,
+    "source_commit": "7acd207ca69784935657d5f6b2933aff5a23e3f9",
+    "started_utc": "2026-10-27T03:32:51.681607+00:00",
+    "status": "running",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.10/runtime",
+          "--locked"
+        ],
+        "pid": 3601587,
+        "status": "completed",
+        "returncode": 0,
+        "wall_s": 1.2163168396800756
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.10/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "pid": 3601771,
+        "status": "running"
+      }
+    ],
+    "formal_physics_allocation": 12000,
+    "formal_physics_steps_source": "neutral-interface-01/result.json",
+    "formal_simulation_workers": 1,
+    "regression_fixture_physics": "Separate full-suite fixtures; not formal D1/learning/game counters",
+    "threads": 1
+  },
+  "actual_processes": [
+    {
+      "pid": 3601585,
+      "command": "python3 /home/ubuntu/joxing/v010-neutral-20261027/runs/v0.0.10/supervise.py ",
+      "cpu_ticks": 4,
+      "rss_bytes": 13492224
+    },
+    {
+      "pid": 3601771,
+      "command": "/home/ubuntu/.local/bin/uv run --project experiments/v0.0.10/runtime --locked pytest -q ",
+      "cpu_ticks": 2,
+      "rss_bytes": 43061248
+    },
+    {
+      "pid": 3601775,
+      "command": "/home/ubuntu/joxing/v010-neutral-20261027/experiments/v0.0.10/runtime/.venv/bin/python /home/ubuntu/joxing/v010-neutral-20261027/experiments/v0.0.10/runtime/.venv/bin/pytest -q ",
+      "cpu_ticks": 4643,
+      "rss_bytes": 1880764416
+    }
+  ],
+  "test_dots": 54,
+  "test_tail": "......................................................",
+  "source_diff": "",
+  "load": [
+    11.169921875,
+    10.0400390625,
+    10.4609375
+  ]
+}

@@ -133,3 +133,10 @@ Next implementation owner follows docs/V0.0.10_MISSION.md. First offline input/f
 ### v10 reference prerequisite
 
 D0all7savedcase inputs/reset/current+future goals match, but reported native last-frame root velocity violates its unwrapped position derivative by119.46. Native resetgrid excludes this frame; cause of physicalcollapse remainsunproven. Registeredgate stops residualpilot. New opt-in reference_seam.py plus R1protocol qualify an explicit last-frame0/2velocity correction without editing native/default/positions/model/actor. All42rows/raw arrays and171Linux regressions gate R1; D1physical/source replay/likelihood/masks still follow, no learning yet. See V0.0.10_D0_RESULTS.md and V0.0.10_R1_REFERENCE_SEAM.md. Keep v10inprogress, original D0stop/tolerances unchanged.
+
+
+### v10 neutral residual interface implemented; source proof active
+
+R1reference correction qualified42/42rawcases withindependent audit and171Linux regressions;0physics, no causalbalanceclaim. New motor_residual.py owns138latentcommands mappedto700native muscles aroundimmutableteacher, explicit corrected-reference/content/normalizer/group/bundle hashes andphysical-alive reward/masks/terminalobservation. Pending snapshotsresume without newdecisions. Dtypemetadata restores originalreference arithmetic; newmidreplaytest caught an inherited~1.18e-8rewarddifference andcorrectedonlythenewwrapper. Seven localtests pass11.80sincludingexactneutralengine/contact/reward, atomicrestore/assistance/terminalownership, andfiniteordinarySAC138syntheticupdate/replay/target/save-load. No pilotoptimizer updates yet.
+
+Source7acd207pushed/frozen; D1bounded full178Linux regressions then4source-v8physicalpaths active onxbabe3,wrapper3601585. Runtimecaps60s/12kphysics/32MiB/oneworker/thread;10,394expectedphysics. Noexecutingsourceedits/duplicates. Independent4rowrawtypedstate/action/contact/telemetry/reward/mask/counter audit andD2pilot/evalmachineprotocol remainrequired. See V0.0.10_D1_NEUTRAL_INTERFACE.md/MISSION. No default/third_party/model/rules changes orv10tag.

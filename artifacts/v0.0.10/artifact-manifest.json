@@ -72,6 +72,31 @@
       "sha256": "1de7af18a082aed8ed2db28a900eee55720e6fca28b21af9e1bac8ef498046d9"
     },
     {
+      "path": "D1/deployment/launch-monitor.json",
+      "bytes": 2039,
+      "sha256": "875cf9bc70a25925b036a54d45fa6b212f633b7d810a8977d800330bb46fbaf6"
+    },
+    {
+      "path": "D1/deployment/launch.json",
+      "bytes": 338,
+      "sha256": "45b5500614382f67e46225ef463688169677a666767b0fa3c36672e143ef939d"
+    },
+    {
+      "path": "D1/deployment/preflight.json",
+      "bytes": 588,
+      "sha256": "d153a755a825ee6845d5d6162f6278d0e1a2226aceb64e03b638f292f993e9cd"
+    },
+    {
+      "path": "D1/deployment/public-source.json",
+      "bytes": 337,
+      "sha256": "f1264f2cf1c731a5974380cd27d5caa91ab2fc4e10bca01bfd6746c8a018e251"
+    },
+    {
+      "path": "D1/deployment/supervise.py",
+      "bytes": 2794,
+      "sha256": "f48a2ec2c5f29892dd66adeb57a4d53068e02c446821277e4e30d67ad3e89d8e"
+    },
+    {
       "path": "D1/development-validation.json",
       "bytes": 1267,
       "sha256": "fbd59d4428bc7830fc706863b79af0e8a09267531ba1328d2b01b2c34af2103d"
@@ -172,5 +197,5 @@
       "sha256": "1fca1b3c739950da4f883937138bd00fdc0ef021491715609e5698d546cfb40b"
     }
   ],
-  "scope": "D0/R1completed receipts and D1preregistration; v10inprogress."
+  "scope": "D0/R1completed evidence and active D1deployment; v10inprogress."
 }

@@ -23,7 +23,7 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 | v0.0.7 | Transfer mapping/exact replay pass; all 80 long tracking attempts valid but 0/20 completions per condition; 99 Linux tests pass | [Results](V0.0.7_RESULTS.md), [book](../experiments/v0.0.7/README.md), [evidence](../artifacts/v0.0.7/) |
 | v0.0.8 | All40 valid physical attempts fail20s gate; all12 replays exact;127 Mac/Linux tests pass | [Results](V0.0.8_RESULTS.md), [book](../experiments/v0.0.8/README.md), [contract](PHYSICAL_MOTOR.md) |
 | v0.0.9 | Completed exact CPU scaling to520.7TPS/16workers; batching and collector declined under unchanged gates | [Results](V0.0.9_RESULTS.md), [book](../experiments/v0.0.9/README.md), [HPC route](SELF_PLAY_HPC_PLAN.md) |
-| v0.0.10 | In progress: D0audited; seam-velocity correction qualification active, learning gated | [Mission](V0.0.10_MISSION.md), [diagnostic](V0.0.10_D0_RESULTS.md), [R1](V0.0.10_R1_REFERENCE_SEAM.md) |
+| v0.0.10 | In progress: reference correction audited; neutral residual physical qualification active, learning gated | [Mission](V0.0.10_MISSION.md), [diagnostic](V0.0.10_D0_RESULTS.md), [R1](V0.0.10_R1_REFERENCE_SEAM.md) |
 | Later milestones | Proposed; unimplemented | [Master implementation gates](IMPLEMENTATION.md) |
 
 ## Game, physics and compute
