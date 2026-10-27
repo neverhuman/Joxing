@@ -119,10 +119,12 @@ class ContactClassifier:
         self.gap = round(self.rules.gap_s / self.rules.dt_s)
         self.runs = {}  # glove geom -> [first_tick, last_tick, is_strike]
         self.strikes, self.blocking = [], []
+        self.strikes_by = {p: [] for p in PLAYERS}  # ticks each corner was striking
 
     def feed(self, row):
         rules, registry, t = self.rules, self.registry, row["tick"]
         boxing = blocks = False
+        strikers_tick = set()
         active = {
             (glove, touch["sample_id"]): touch["active_speed_mps"]
             for glove, interval in row.get("gloves", {}).items()
@@ -144,6 +146,7 @@ class ContactClassifier:
                 blocks = True
             sample = f"{index}:{c['geom1']}:{c['geom2']}"
             striking = False
+            strikers = set()
             for g in gloves:
                 speed = active.get((registry[g]["name"], sample), -np.inf)
                 fast = (
@@ -156,17 +159,22 @@ class ContactClassifier:
                 run[1] = t
                 if run[0] == t:
                     run[2] = run[2] or fast
-                striking |= run[2] and t - run[0] < self.window
+                if run[2] and t - run[0] < self.window:
+                    striking = True
+                    strikers.add(registry[g]["actor"])
             # A punch into a still guarding glove is boxing: one striking glove
             # in the contact is enough.
             if gloves and striking:
                 boxing = True
+                strikers_tick |= strikers
             elif gloves:
                 blocks = True
         if boxing:
             self.strikes.append(t)
         if blocks:
             self.blocking.append(t)
+        for p in strikers_tick:
+            self.strikes_by[p].append(t)
 
 
 def classify_contacts(evidence, registry, rules=None):
@@ -288,3 +296,19 @@ def support_losses(
     )
     monitor.update(evidence)
     return monitor.losses
+
+
+def anti_stalling(ending, strikes_by, points_ab):
+    """Reference rule v3: a result reached without engagement is a no-contest.
+
+    If neither corner landed a strike (``ContactClassifier.strikes_by``) before
+    the ending tick and no points were scored, the bout gives no utility: a
+    "win" by outlasting a passive opponent is not boxing and must not pay.
+    Blocked and invalid endings pass through unchanged.
+    """
+    if ending.utility is None or any(points_ab):
+        return ending
+    limit = ending.tick if ending.tick is not None else np.inf
+    if any(t <= limit for ticks in strikes_by.values() for t in ticks):
+        return ending
+    return Ending(None, "no contest: no engagement before the ending", ending.tick)

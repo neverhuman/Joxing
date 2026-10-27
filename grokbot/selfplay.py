@@ -40,9 +40,14 @@ import numpy as np
 from grokbot import opponents
 from grokbot.arena import SCRIPTED_PANEL, policy_stream
 from grokbot.reference_env import ReferenceEndingEnv
+from grokbot.scenarios import RangeBoxingEnv
 from joxing.env import PLAYERS, BoxingEnv
 from joxing.scene import SOURCE, build_scene
 
+# Own hands (KEY_BODIES 3, 4) to opponent head and trunk (1, 2), both in the
+# actor's own ego frame: training-only approach shaping, never evaluated.
+OWN_HANDS = [858 + 3 * k for k in (3, 4)]
+OPPONENT_TARGETS = [1056 + 3 * k for k in (1, 2)]
 FEATURES = np.array(
     [930, 931, 932, 948, 949, 950, 891, 892, 893, 1023, 1024, 1025, 1257]
 )  # pelvis/trunk z-row of rotation (tilt), pelvis lin/ang velocity, height
@@ -132,11 +137,26 @@ def random_params(rng, tone=0.5):
 _ENV = None
 
 
-def _init(horizon_ticks):
+def _init(horizon_ticks, separation_m=None, anti_stalling=False):
     global _ENV
     for key in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
         os.environ[key] = "1"
-    _ENV = ReferenceEndingEnv(BoxingEnv(build_scene(), horizon_ticks=horizon_ticks))
+    scene = build_scene()
+    env = (
+        BoxingEnv(scene, horizon_ticks=horizon_ticks)
+        if separation_m is None
+        else RangeBoxingEnv(
+            scene, separation_m=separation_m, horizon_ticks=horizon_ticks
+        )
+    )
+    _ENV = ReferenceEndingEnv(env, anti_stalling=anti_stalling)
+
+
+def reach(values):
+    """Closest own hand to the opponent's head or trunk, in metres."""
+    hands = [values[i : i + 3] for i in OWN_HANDS]
+    targets = [values[i : i + 3] for i in OPPONENT_TARGETS]
+    return float(min(np.linalg.norm(h - t) for h in hands for t in targets))
 
 
 def _controller(spec):
@@ -156,30 +176,38 @@ def play_game(task):
     label = opponent[1] if opponent[0] == "scripted" else "opponent"
     streams = {side: policy_stream(seed, "learner"), other: policy_stream(seed, label)}
     observations, _ = env.reset(seed=seed)
+    start = closest = reach(observations[side].values)
     while True:
         commands = {
             p: controllers[p](observations[p], None, streams[p]) for p in PLAYERS
         }
         result = env.step(commands)
         observations = result["observations"]
+        closest = min(closest, reach(observations[side].values))
         if result["terminated"]:
             ending = result["info"]["ending"]
-            blocked = ending["utility"] is None
+            no_result = ending["utility"] is None
             contacts = env.monitor.contacts
             return {
                 "utility": 0.0
-                if blocked
+                if no_result
                 else float(ending["utility"][PLAYERS.index(side)]),
-                "blocked": blocked,
+                "blocked": result["info"]["blocked"],
+                "no_contest": result["info"]["no_contest"],
                 "tick": env.env.tick,
                 "contact_ticks": len(contacts.strikes) + len(contacts.blocking),
+                "strike_ticks": len(contacts.strikes_by[side]),
+                "opponent_strike_ticks": len(contacts.strikes_by[other]),
                 "points": list(env.env.referee.points),
+                "approach": (start - closest) / start if start > 0 else 0.0,
             }
 
 
-def _pool(workers, horizon_ticks):
+def _pool(workers, horizon_ticks, separation_m=None, anti_stalling=False):
     return multiprocessing.get_context("fork").Pool(
-        workers, initializer=_init, initargs=(horizon_ticks,)
+        workers,
+        initializer=_init,
+        initargs=(horizon_ticks, separation_m, anti_stalling),
     )
 
 
@@ -195,7 +223,18 @@ def centred_ranks(values):
 
 
 def train_generation(
-    pool, params, archive, records, rng, *, iterations, pairs, sigma, lr, eps=0.1
+    pool,
+    params,
+    archive,
+    records,
+    rng,
+    *,
+    iterations,
+    pairs,
+    sigma,
+    lr,
+    eps=0.1,
+    shaping_weight=0.0,
 ):
     """ES iterations against the P4 league; returns new params and stats."""
     stats = {"games": 0, "blocked": 0, "mean_fitness": []}
@@ -225,13 +264,21 @@ def train_generation(
                 )
             meta.append(name)
         results = pool.map(play_game, tasks)
-        fitness = np.array([r["utility"] for r in results])
+        # Training-only approach shaping: reaching toward the opponent's head or
+        # trunk scores up to ``shaping_weight``; standing off scores nothing.
+        fitness = np.array(
+            [r["utility"] + shaping_weight * max(r["approach"], 0.0) for r in results]
+        )
         stats["games"] += len(results)
         stats["blocked"] += sum(r["blocked"] for r in results)
         stats["contact_ticks"] = stats.get("contact_ticks", 0) + sum(
             r["contact_ticks"] for r in results
         )
         stats.setdefault("end_ticks", []).extend(r["tick"] for r in results)
+        stats["mean_approach"] = float(np.mean([r["approach"] for r in results]))
+        stats["no_contest"] = stats.get("no_contest", 0) + sum(
+            r["no_contest"] for r in results
+        )
         stats["mean_fitness"].append(float(fitness.mean()))
         for k, name in enumerate(meta):
             if name in archive:
@@ -273,6 +320,11 @@ def run_league(
     seed,
     panel_eval=True,
     eval_noise=0.05,
+    separation_m=None,
+    anti_stalling=False,
+    shaping_weight=0.0,
+    min_engaged_share=0.0,
+    init_params=None,
     log=print,
 ):
     """Train ``generations`` frozen checkpoints; evaluate each one as it lands."""
@@ -283,7 +335,11 @@ def run_league(
         raise ValueError("Use 1-4 workers on shared hosts")
     rng = np.random.default_rng(seed)
     names = [f"gen{g}" for g in range(generations + 1)]
-    archive = {"gen0": random_params(rng)}
+    archive = {
+        "gen0": random_params(rng)
+        if init_params is None
+        else np.asarray(init_params, float).copy()
+    }
     records, games, report = {}, [], {"generations": []}
     params = archive["gen0"].copy()
     panel = list(SCRIPTED_PANEL) if panel_eval else []
@@ -300,20 +356,29 @@ def run_league(
                     "second": opp,
                     "first_side": side,
                     "seed": s,
-                    "outcome": None if out["blocked"] else int(out["utility"]),
+                    "outcome": None
+                    if out["blocked"] or out["no_contest"]
+                    else int(out["utility"]),
                     "invalid_reason": "blocked: unresolved loss attribution"
                     if out["blocked"]
+                    else "no contest: no engagement before the ending"
+                    if out["no_contest"]
                     else None,
                     "fault_player": None,
                     "losses": [],
                     "ending": None,
                     "end_tick": out["tick"],
                     "contact_ticks": out["contact_ticks"],
+                    "no_contest": out["no_contest"],
+                    "engaged": {
+                        cand: out["strike_ticks"] > 0,
+                        opp: out["opponent_strike_ticks"] > 0,
+                    },
                 }
             )
 
     champion = "gen0"
-    with _pool(workers, horizon_ticks) as pool:
+    with _pool(workers, horizon_ticks, separation_m, anti_stalling) as pool:
         if panel:
             evaluate(pool, "gen0", panel)
         for g in range(1, generations + 1):
@@ -327,6 +392,7 @@ def run_league(
                 pairs=pairs,
                 sigma=sigma,
                 lr=lr,
+                shaping_weight=shaping_weight,
             )
             archive[f"gen{g}"] = params.copy()
             # Every earlier frozen checkpoint, not just the previous one: beating
@@ -372,7 +438,9 @@ def run_league(
                 f"gen{g}",
                 champion,
                 [champion, *panel],
-                GateConfig(min_valid=len(eval_seeds)),
+                GateConfig(
+                    min_valid=len(eval_seeds), min_engaged_share=min_engaged_share
+                ),
             )
             previous_champion = champion
             if gate.promote:
@@ -398,6 +466,13 @@ def run_league(
                 "side_balance": ledger.side_balance(),
                 "side_balance_this_gen": this_gen.side_balance(),
                 "eval_contact_ticks": sum(r["contact_ticks"] for r in mine),
+                "eval_engaged_share": float(
+                    np.mean([r["engaged"][f"gen{g}"] for r in mine])
+                ),
+                "eval_no_contest_share": float(
+                    np.mean([r["no_contest"] for r in mine])
+                ),
+                "train_mean_approach": stats.get("mean_approach"),
                 "promoted": gate.promote,
                 "champion_after": champion,
                 "gate_reasons": list(gate.reasons),
