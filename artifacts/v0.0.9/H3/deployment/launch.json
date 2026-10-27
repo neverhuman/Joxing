@@ -1,0 +1,26 @@
+{
+  "source_commit": "4aea332e85051a2669c1973f71101f488393cd5c",
+  "cwd": "/home/ubuntu/joxing/v009-collector-20261027",
+  "host": "xbabe3",
+  "wrapper_pid": 2496537,
+  "wrapper_sha256": "c2a021b1dc9c72f8705061520954b7f992e5167a7b1166dcaffb0e45d9323472",
+  "capacity": {
+    "host": "xbabe3",
+    "load": [
+      9.720703125,
+      10.0322265625,
+      9.9453125
+    ],
+    "available_memory_bytes": 103010373632,
+    "disk_free_bytes": 47018467328,
+    "owned_jobs": []
+  },
+  "caps": {
+    "wall_s": 240,
+    "physics_steps": 100000,
+    "raw_bytes": 268435456,
+    "simulation_workers": 4,
+    "threads": 1
+  },
+  "gating": "Full165Linux tests before formal H3; four candidate source-v8 replay gates before timing; same1.2x/.95performance gates."
+}
