@@ -5,7 +5,15 @@ equilibrium, including when payoffs are estimated from sampled games."""
 import numpy as np
 import pytest
 
-from grokbot.positive_control import RPS, best_response, random_symmetric_game, run
+from grokbot.positive_control import (
+    RPS,
+    best_response,
+    cyclic_game,
+    exploiter_proxy,
+    exploiter_recall,
+    random_symmetric_game,
+    run,
+)
 
 GAMES = [random_symmetric_game(20, seed) for seed in range(6)]
 
@@ -61,3 +69,43 @@ def test_best_response_and_validation():
         run(RPS, "elo", 3)
     with pytest.raises(ValueError):
         run(np.eye(3), "nash", 3)
+
+
+def test_cyclic_game_needs_every_strategy_and_latest_only_never_gets_there():
+    game = cyclic_game(20)
+    assert exploitabilities(run(game, "latest", 60)) == [1.0] * 60
+    history = run(game, "nash", 25)
+    solved = next(row for row in history if row["exploitability"] < 1e-9)
+    # Unsolved until the population holds all 20 strategies, then solved for good.
+    assert len(solved["members"]) == 20 and solved["iteration"] == 19
+    assert max(exploitabilities(history)[19:]) < 1e-9
+
+
+@pytest.mark.parametrize("game", [cyclic_game(20), GAMES[0]])
+def test_exploiter_proxy_never_overstates_and_full_budget_is_exact(game):
+    rng = np.random.default_rng(0)
+    for row in run(game, "latest", 30):
+        proxy = exploiter_proxy(game, row["meta"], 5, rng)
+        assert 0.0 <= proxy <= row["exploitability"] + 1e-12
+        full = exploiter_proxy(game, row["meta"], len(game), rng)
+        assert full == pytest.approx(max(0.0, row["exploitability"]))
+
+
+def test_weak_exploiter_calls_exploitable_snapshots_safe_in_counter_sparse_games():
+    snapshots = [row["meta"] for row in run(cyclic_game(20), "latest", 60)]
+    recall, missed = exploiter_recall(
+        cyclic_game(20), snapshots, 5, np.random.default_rng(0)
+    )
+    # Every snapshot is fully exploitable, yet most are reported as safe.
+    assert recall < 0.4 and missed > 0.6
+    rich = [row["meta"] for row in run(GAMES[0], "latest", 60)]
+    recall_rich, _ = exploiter_recall(GAMES[0], rich, 5, np.random.default_rng(0))
+    # Counter-rich games forgive the same budget: recall depends on structure.
+    assert recall_rich > 0.6
+
+
+def test_exploiter_reports_no_exploit_rather_than_a_negative_one():
+    dominant = np.array([[0.0, 1.0], [-1.0, 0.0]])
+    rng = np.random.default_rng(3)
+    reports = {exploiter_proxy(dominant, [1.0, 0.0], 1, rng) for _ in range(20)}
+    assert reports == {0.0}  # trying only the dominated strategy finds nothing

@@ -16,6 +16,13 @@ Payoffs between members are exact or estimated from sampled side-swapped games
 through ``grokbot.league.Ledger``, so evaluation noise is part of the control.
 Exploitability of the meta-strategy is measured against the TRUE game. A real
 league never has the true game, and that is what makes this a positive control.
+
+A real league can only estimate exploitability with a fixed-budget exploiter.
+``exploiter_proxy`` models one that searches ``budget`` random pure strategies;
+``exploiter_recall`` measures how much of the true exploitability it reports.
+In counter-sparse games (``cyclic_game``) a weak exploiter calls fully
+exploitable snapshots safe, so an exploiter must be calibrated on a known game
+before its numbers are trusted.
 """
 
 from __future__ import annotations
@@ -32,6 +39,33 @@ def random_symmetric_game(n, seed):
     """Antisymmetric utilities in [-1, 1] for n pure strategies."""
     upper = np.triu(np.random.default_rng(seed).uniform(-1, 1, (n, n)), 1)
     return upper - upper.T
+
+
+def cyclic_game(n):
+    """Strategy i beats only i - 1 and loses only to i + 1 (mod n); else draw."""
+    game = np.zeros((n, n))
+    for i in range(n):
+        game[i, (i - 1) % n], game[(i - 1) % n, i] = 1.0, -1.0
+    return game
+
+
+def exploiter_proxy(game, mixture, budget, rng):
+    """Best utility against ``mixture`` found among ``budget`` random strategies.
+
+    Never above the true exploitability; equal to it when ``budget`` covers the
+    whole strategy set. Floored at 0, as an exploiter reports no exploit.
+    """
+    tried = rng.choice(len(game), size=budget, replace=False)
+    return max(0.0, float((game[tried] @ np.asarray(mixture, float)).max()))
+
+
+def exploiter_recall(game, mixtures, budget, rng):
+    """(reported / true mean exploitability, share of exploitable mixtures
+    reported as unexploitable) for a fixed-budget exploiter."""
+    true = np.array([exploitability(game, m) for m in mixtures])
+    proxy = np.array([exploiter_proxy(game, m, budget, rng) for m in mixtures])
+    exploitable = true > 1e-9
+    return float(proxy.sum() / true.sum()), float(np.mean(proxy[exploitable] == 0.0))
 
 
 def best_response(game, mixture):
