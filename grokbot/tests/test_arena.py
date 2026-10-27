@@ -71,7 +71,9 @@ def test_external_assistance_quarantines_instead_of_scoring(scene):
         env.data.xfrc_applied[1, 2] = 50.0  # an outside hand on the first body
         return np.zeros(700, np.float32)
 
-    record = play(env, {"assisted": assisted, "ok": constant(0.0)}, "assisted", "ok", "A", 0)
+    record = play(
+        env, {"assisted": assisted, "ok": constant(0.0)}, "assisted", "ok", "A", 0
+    )
     assert "External assistance forbidden" in record["invalid_reason"]
     assert record["fault_player"] is None  # engine guard, not a command fault
     assert record["outcome"] is None and record["points"] is None
