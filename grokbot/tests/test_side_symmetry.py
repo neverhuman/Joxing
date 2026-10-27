@@ -28,7 +28,11 @@ def _blocks_over(a, b):
     return [
         block["name"]
         for block in FEATURE_SPEC
-        if np.max(np.abs(a[block["start"] : block["stop"]] - b[block["start"] : block["stop"]]))
+        if np.max(
+            np.abs(
+                a[block["start"] : block["stop"]] - b[block["start"] : block["stop"]]
+            )
+        )
         > TOLERANCE
     ]
 
