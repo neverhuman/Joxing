@@ -1,3 +1,13 @@
+# Two unfinished sensor conditions implemented; fresh402Linux gate next
+
+Read [V0.0.11_D1_STORAGE_COMPLETION_PACKET.md](V0.0.11_D1_STORAGE_COMPLETION_PACKET.md).
+21targeted tests pass15.69s, including the complete two-row development runner,
+actual mid-held replay and fault/denominator invariants. Formal v11physics stays
+5073/nativeboxing0 until the public-frozen402Linux gate→317steps→18attempt audit.
+Hard1000physics/60srunner/120spostgate/24MiBraw/1worker/1thread. No successful old
+case rerun, changed old cap, new motor claim or v11tag. Pretrained shared motor
+bridge packet2 is the next independent motor work while the frozen gate runs.
+
 # Storage qualification complete; pretrained motor bridge started —2026-10-27
 
 All376Linux tests pass387.64s at frozen07ee40a. Full112/112D0/D1corpus qualification
