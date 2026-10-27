@@ -5,6 +5,7 @@ training-only reach measurement."""
 import numpy as np
 import pytest
 
+from grokbot import selfplay
 from grokbot.endings import ContactClassifier, Ending, anti_stalling
 from grokbot.league import Game, Ledger
 from grokbot.promotion import GateConfig, decide
@@ -140,3 +141,70 @@ def test_a_league_of_no_contests_reports_no_ratings_instead_of_crashing():
     ledger.add(Game("gen1", "gen0", "B", 1))
     # The anchor never played: ratings are centred instead of all-NaN.
     assert set(safe_ratings(ledger, "baseline")) == {"gen0", "gen1"}
+
+
+class FakePool:
+    """Returns scripted per-game results in task order (no physics)."""
+
+    def __init__(self, results):
+        self.results = results
+
+    def map(self, function, tasks):
+        assert len(tasks) == len(self.results)
+        return self.results
+
+
+def game(utility, invalid=None):
+    return {
+        "utility": utility,
+        "invalid": invalid,
+        "blocked": False,
+        "no_contest": False,
+        "tick": 100,
+        "contact_ticks": 0,
+        "strike_ticks": 0,
+        "opponent_strike_ticks": 0,
+        "points": [0, 0],
+        "approach": 0.0,
+    }
+
+
+def test_engine_faults_are_dropped_from_the_es_update_not_scored():
+    params = np.zeros(selfplay.N_PARAMS)
+    fault = "RuntimeError: Invalid physics substep: quarantine episode"
+    kwargs = dict(iterations=1, pairs=2, sigma=0.1, lr=0.05)
+    # Pair 0 is quarantined; pair 1 says "+noise wins".
+    mixed = FakePool([game(1.0), game(0.0, fault), game(1.0), game(-1.0)])
+    out, stats = selfplay.train_generation(
+        mixed, params, {}, {}, np.random.default_rng(0), **kwargs
+    )
+    assert stats["invalid"] == 1 and stats["games"] == 4
+    # Only pair 1 teaches: ranks [+0.5, -0.5] -> lr * noise[1] / (2 sigma).
+    noise = np.random.default_rng(0).standard_normal((2, selfplay.N_PARAMS))
+    assert out == pytest.approx(0.05 * noise[1] / (2 * 0.1))
+    every = FakePool([game(1.0, fault), game(0.0), game(0.0), game(1.0, fault)])
+    same, stats = selfplay.train_generation(
+        every, params, {}, {}, np.random.default_rng(0), **kwargs
+    )
+    assert stats["invalid"] == 2 and np.array_equal(same, params)
+
+
+class FaultyEnv:
+    class env:  # noqa: N801 - mirrors ReferenceEndingEnv.env
+        tick = 37
+
+    def reset(self, *, seed):
+        obs = type("Obs", (), {"values": np.zeros(1970, np.float32), "sampled_tick": 0})
+        return {"A": obs, "B": obs}, {}
+
+    def step(self, commands):
+        raise RuntimeError("Invalid physics substep: quarantine episode")
+
+
+def test_a_physics_fault_quarantines_the_game_instead_of_crashing(monkeypatch):
+    monkeypatch.setattr(selfplay, "_ENV", FaultyEnv())
+    out = selfplay.play_game(
+        (("scripted", "baseline"), ("scripted", "relaxed"), "A", 3)
+    )
+    assert out["invalid"] == "RuntimeError: Invalid physics substep: quarantine episode"
+    assert out["utility"] == 0.0 and out["points"] is None and out["tick"] == 37

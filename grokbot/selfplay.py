@@ -181,7 +181,21 @@ def play_game(task):
         commands = {
             p: controllers[p](observations[p], None, streams[p]) for p in PLAYERS
         }
-        result = env.step(commands)
+        try:
+            result = env.step(commands)
+        except Exception as error:  # engine faults quarantine the game
+            return {
+                "utility": 0.0,
+                "invalid": f"{type(error).__name__}: {error}",
+                "blocked": False,
+                "no_contest": False,
+                "tick": env.env.tick,
+                "contact_ticks": 0,
+                "strike_ticks": 0,
+                "opponent_strike_ticks": 0,
+                "points": None,
+                "approach": 0.0,
+            }
         observations = result["observations"]
         closest = min(closest, reach(observations[side].values))
         if result["terminated"]:
@@ -192,6 +206,7 @@ def play_game(task):
                 "utility": 0.0
                 if no_result
                 else float(ending["utility"][PLAYERS.index(side)]),
+                "invalid": None,
                 "blocked": result["info"]["blocked"],
                 "no_contest": result["info"]["no_contest"],
                 "tick": env.env.tick,
@@ -270,6 +285,9 @@ def train_generation(
             [r["utility"] + shaping_weight * max(r["approach"], 0.0) for r in results]
         )
         stats["games"] += len(results)
+        stats["invalid"] = stats.get("invalid", 0) + sum(
+            r["invalid"] is not None for r in results
+        )
         stats["blocked"] += sum(r["blocked"] for r in results)
         stats["contact_ticks"] = stats.get("contact_ticks", 0) + sum(
             r["contact_ticks"] for r in results
@@ -285,11 +303,22 @@ def train_generation(
                 for u in fitness[2 * k : 2 * k + 2]:
                     wins, games = records.get(name, (0.0, 0.0))
                     records[name] = (wins + (u + 1) / 2, games + 1)
-        shaped = centred_ranks(fitness).reshape(pairs, 2)
-        gradient = ((shaped[:, 0] - shaped[:, 1])[:, None] * noise).sum(0) / (
-            2 * pairs * sigma
+        # A pair with a quarantined (engine-fault) game carries no comparison:
+        # drop it from the update instead of scoring the fault as a result.
+        valid = np.array(
+            [
+                results[2 * k]["invalid"] is None
+                and results[2 * k + 1]["invalid"] is None
+                for k in range(pairs)
+            ]
         )
-        params = params + lr * gradient
+        if valid.any():
+            ranks = centred_ranks(fitness.reshape(pairs, 2)[valid].ravel())
+            shaped = ranks.reshape(-1, 2)
+            gradient = ((shaped[:, 0] - shaped[:, 1])[:, None] * noise[valid]).sum(
+                0
+            ) / (2 * valid.sum() * sigma)
+            params = params + lr * gradient
     return params, stats
 
 
@@ -380,9 +409,11 @@ def run_league(
                     "first_side": side,
                     "seed": s,
                     "outcome": None
-                    if out["blocked"] or out["no_contest"]
+                    if out["blocked"] or out["no_contest"] or out["invalid"]
                     else int(out["utility"]),
-                    "invalid_reason": "blocked: unresolved loss attribution"
+                    "invalid_reason": out["invalid"]
+                    if out["invalid"]
+                    else "blocked: unresolved loss attribution"
                     if out["blocked"]
                     else "no contest: no engagement before the ending"
                     if out["no_contest"]
@@ -472,6 +503,7 @@ def run_league(
                 "generation": g,
                 "train_games": stats["games"],
                 "train_blocked": stats["blocked"],
+                "train_invalid": stats.get("invalid", 0),
                 "train_mean_fitness": stats["mean_fitness"],
                 "vs_previous": mean_vs(f"gen{g - 1}"),
                 "vs_earlier": {n: mean_vs(n) for n in earlier},
