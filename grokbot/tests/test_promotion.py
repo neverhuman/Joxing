@@ -127,3 +127,14 @@ def test_hoeffding_bound():
     eps = 2 * math.sqrt(math.log(20) / (2 * 100))
     assert hoeffding_lower(0.5, 100, 0.95) == pytest.approx(0.5 - eps)
     assert hoeffding_lower(1.0, 6, 0.95) > 0 > hoeffding_lower(1.0, 5, 0.95)
+
+
+def test_side_swapped_pairs_sharing_a_seed_count_once():
+    """Mirror games are one paired sample, not two independent games."""
+    seeded = []
+    for seed, r in enumerate(IMPROVES):
+        seeded.append(r | {"seed": seed // 2})  # the two corners of a pair share it
+    decision = decide(seeded, "cand", "inc", PANEL, CONFIG)
+    assert decision.head_to_head["games"] == 10  # 20 games, 10 pairs
+    assert "coverage: 10 valid games vs incumbent" in decision.reasons
+    assert decide(seeded, "cand", "inc", PANEL, GateConfig(min_valid=10)).promote

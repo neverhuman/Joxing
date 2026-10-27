@@ -109,23 +109,19 @@ def decide(points_ab, events, *, bell, invalid_reason=None, bell_tick=None):
     return Ending((int(np.sign(a - b)), int(np.sign(b - a))), "bell: points", bell_tick)
 
 
-def classify_contacts(evidence, registry, rules=None):
-    """(strike_ticks, blocking_ticks) of force-producing inter-athlete contact.
+class ContactClassifier:
+    """Incremental strike/blocking classification of evidence rows (see below)."""
 
-    A glove's contact run (gaps of at most ``gap_s``) with a strike target is a
-    strike if a contact on its first tick approaches at >= ``approach_min_mps``
-    and the referee's touch for that glove (``row["gloves"]``, matched by sample
-    id ``index:geom1:geom2``) moves at >= ``active_speed_min_mps`` against its own
-    trunk. Only the run's first ``impact_window_s`` is boxing. A glove contact
-    without a referee touch, and every other contact tick, blocks attribution.
-    """
-    rules = rules or Rules()
-    window = round(rules.impact_window_s / rules.dt_s)
-    gap = round(rules.gap_s / rules.dt_s)
-    runs = {}  # glove geom -> [first_tick, last_tick, is_strike]
-    strikes, blocking = [], []
-    for row in evidence:
-        t = row["tick"]
+    def __init__(self, registry, rules=None):
+        self.registry = registry
+        self.rules = rules or Rules()
+        self.window = round(self.rules.impact_window_s / self.rules.dt_s)
+        self.gap = round(self.rules.gap_s / self.rules.dt_s)
+        self.runs = {}  # glove geom -> [first_tick, last_tick, is_strike]
+        self.strikes, self.blocking = [], []
+
+    def feed(self, row):
+        rules, registry, t = self.rules, self.registry, row["tick"]
         boxing = blocks = False
         active = {
             (glove, touch["sample_id"]): touch["active_speed_mps"]
@@ -154,13 +150,13 @@ def classify_contacts(evidence, registry, rules=None):
                     c["approach_mps"] >= rules.approach_min_mps
                     and speed >= rules.active_speed_min_mps
                 )
-                run = runs.get(g)
-                if run is None or t - run[1] > gap:
-                    run = runs[g] = [t, t, fast]
+                run = self.runs.get(g)
+                if run is None or t - run[1] > self.gap:
+                    run = self.runs[g] = [t, t, fast]
                 run[1] = t
                 if run[0] == t:
                     run[2] = run[2] or fast
-                striking |= run[2] and t - run[0] < window
+                striking |= run[2] and t - run[0] < self.window
             # A punch into a still guarding glove is boxing: one striking glove
             # in the contact is enough.
             if gloves and striking:
@@ -168,10 +164,25 @@ def classify_contacts(evidence, registry, rules=None):
             elif gloves:
                 blocks = True
         if boxing:
-            strikes.append(t)
+            self.strikes.append(t)
         if blocks:
-            blocking.append(t)
-    return strikes, blocking
+            self.blocking.append(t)
+
+
+def classify_contacts(evidence, registry, rules=None):
+    """(strike_ticks, blocking_ticks) of force-producing inter-athlete contact.
+
+    A glove's contact run (gaps of at most ``gap_s``) with a strike target is a
+    strike if a contact on its first tick approaches at >= ``approach_min_mps``
+    and the referee's touch for that glove (``row["gloves"]``, matched by sample
+    id ``index:geom1:geom2``) moves at >= ``active_speed_min_mps`` against its own
+    trunk. Only the run's first ``impact_window_s`` is boxing. A glove contact
+    without a referee touch, and every other contact tick, blocks attribution.
+    """
+    classifier = ContactClassifier(registry, rules)
+    for row in evidence:
+        classifier.feed(row)
+    return classifier.strikes, classifier.blocking
 
 
 def attribute(contacts, start, end, lookback_ticks=ATTRIBUTION_LOOKBACK_TICKS):
@@ -185,6 +196,74 @@ def attribute(contacts, start, end, lookback_ticks=ATTRIBUTION_LOOKBACK_TICKS):
     if touched(blocking):
         return "unresolved"
     return "knockdown" if touched(strikes) else "self"
+
+
+class BoutMonitor:
+    """Incremental fall detection and attribution over evidence rows.
+
+    Feed ``BoxingEnv.evidence`` rows in tick order with ``update``; each costs
+    O(new rows), so a learner can check every control step of a 60 s bout.
+    ``losses`` holds each corner's first persistent non-foot floor support,
+    attributed with the contacts seen up to the tick it qualified. It equals
+    ``support_losses`` on the same rows.
+    """
+
+    def __init__(
+        self,
+        registry,
+        *,
+        force_N=SUPPORT_FORCE_N,
+        persist_ticks=SUPPORT_PERSIST_TICKS,
+        lookback_ticks=ATTRIBUTION_LOOKBACK_TICKS,
+        rules=None,
+    ):
+        floor = {g for g, r in registry.items() if r["role"] == "floor"}
+        if len(floor) != 1:
+            raise ValueError("Exactly one semantic floor geom required")
+        self.floor = floor
+        self.support = {
+            g: r["actor"]
+            for g, r in registry.items()
+            if r["actor"] in PLAYERS and not any(f in r["body"] for f in FOOT_BODIES)
+        }
+        self.force_N, self.persist_ticks = force_N, persist_ticks
+        self.lookback_ticks = lookback_ticks
+        self.contacts = ContactClassifier(registry, rules)
+        self.streak = {p: 0 for p in PLAYERS}
+        self.found = {}
+        self.last_tick = None
+
+    def update(self, rows):
+        for row in rows:
+            t = row["tick"]
+            if self.last_tick is not None and t != self.last_tick + 1:
+                raise ValueError("Evidence rows must be contiguous and in tick order")
+            self.last_tick = t
+            self.contacts.feed(row)
+            load = {p: 0.0 for p in PLAYERS}
+            for c in row["contacts"]:
+                g1, g2 = c["geom1"], c["geom2"]
+                other = g2 if g1 in self.floor else g1 if g2 in self.floor else None
+                if other in self.support:
+                    load[self.support[other]] += c["normal_force_N"]
+            for p in PLAYERS:
+                self.streak[p] = self.streak[p] + 1 if load[p] >= self.force_N else 0
+                if self.streak[p] == self.persist_ticks and p not in self.found:
+                    start = t - self.persist_ticks + 1
+                    verdict = self.attribute(start, t)
+                    self.found[p] = LossEvent(p, start, "fall", verdict)
+
+    def attribute(self, start, end):
+        return attribute(
+            (self.contacts.strikes, self.contacts.blocking),
+            start,
+            end,
+            self.lookback_ticks,
+        )
+
+    @property
+    def losses(self):
+        return [self.found[p] for p in PLAYERS if p in self.found]
 
 
 def support_losses(
@@ -201,28 +280,11 @@ def support_losses(
     contacts. registry maps geom id to the scene's semantic geom record.
     The fall starts at the first tick of the qualifying streak.
     """
-    floor = {g for g, r in registry.items() if r["role"] == "floor"}
-    if len(floor) != 1:
-        raise ValueError("Exactly one semantic floor geom required")
-    support = {
-        g: r["actor"]
-        for g, r in registry.items()
-        if r["actor"] in PLAYERS and not any(f in r["body"] for f in FOOT_BODIES)
-    }
-    contacts = classify_contacts(evidence, registry)
-    streak = {p: 0 for p in PLAYERS}
-    found = {}
-    for row in evidence:
-        load = {p: 0.0 for p in PLAYERS}
-        for c in row["contacts"]:
-            g1, g2 = c["geom1"], c["geom2"]
-            other = g2 if g1 in floor else g1 if g2 in floor else None
-            if other in support:
-                load[support[other]] += c["normal_force_N"]
-        for p in PLAYERS:
-            streak[p] = streak[p] + 1 if load[p] >= force_N else 0
-            if streak[p] == persist_ticks and p not in found:
-                start = row["tick"] - persist_ticks + 1
-                verdict = attribute(contacts, start, row["tick"], lookback_ticks)
-                found[p] = LossEvent(p, start, "fall", verdict)
-    return [found[p] for p in PLAYERS if p in found]
+    monitor = BoutMonitor(
+        registry,
+        force_N=force_N,
+        persist_ticks=persist_ticks,
+        lookback_ticks=lookback_ticks,
+    )
+    monitor.update(evidence)
+    return monitor.losses
