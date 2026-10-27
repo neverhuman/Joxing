@@ -1,0 +1,52 @@
+{
+  "scope": "Development fixtures only; not formal D1 outcome",
+  "utc": "2026-10-27T13:32:22.441640+00:00",
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/test_sensor_audit.py",
+    "tests/test_sensed_env.py",
+    "tests/test_sensing.py"
+  ],
+  "returncode": 0,
+  "wall_s": 12.449756959016668,
+  "stdout": "...........................................................              [100%]\n59 passed in 12.09s\n",
+  "stderr": "",
+  "files": {
+    "src/joxing/sensor_evidence.py": "daa12e8ee0afde42cb965626ae2d492030ff075ed2a31d8e7bfef34de462efb8",
+    "src/joxing/sensor_audit.py": "f14a446b137174260f0ab4ecd1cc82aa645fa3b3eddefc6beb3d31dd06ce229a",
+    "tests/test_sensor_audit.py": "46d90bfcbebc0806ca6bd304a507ddd5074a679f8b33d1b68827194b4d6cf8ea"
+  },
+  "retained_development_attempts": [
+    {
+      "tests": 18,
+      "passed": 18,
+      "wall_s": 6.15
+    },
+    {
+      "tests": 24,
+      "passed": 23,
+      "failed": 1,
+      "wall_s": 6.95,
+      "failure": "Initial oracle comparator also compared the deliberately distinct transition.info.contract_hash; fixed to validate each identity against its own exact contract, then exclude only that typed metadata. Engines/actions/history/trace remain exact."
+    },
+    {
+      "tests": 27,
+      "passed": 27,
+      "wall_s": 7.25
+    },
+    {
+      "tests": 27,
+      "passed": 27,
+      "wall_s": 7.18
+    }
+  ],
+  "tool_faults": [
+    "uv run runtime ruff unavailable; used cached uv tool run ruff successfully."
+  ]
+}

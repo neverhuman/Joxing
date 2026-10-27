@@ -1,0 +1,171 @@
+{
+  "utc": "2026-10-27T13:20:08.393063+00:00",
+  "result": {
+    "schema": "joxing-sensor-foundation-qualification-v1",
+    "protocol_sha256": "39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf",
+    "source_commit": "4caca5e9e0e906f03349cb950c8fe445fdbf757a",
+    "pid": {
+      "pid": 3942351,
+      "parent_pid": 1,
+      "start_ticks": 920894481,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T13:15:50.961572+00:00",
+    "status": "running",
+    "initial_available_memory_bytes": 103912136704,
+    "initial_disk_free_bytes": 33579962368,
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "process": {
+          "pid": 3942365,
+          "parent_pid": 3942351,
+          "start_ticks": 920894514,
+          "state": "R"
+        },
+        "status": "completed",
+        "owned_processes": [
+          {
+            "pid": 3942365,
+            "parent_pid": 3942351,
+            "start_ticks": 920894514,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 103871733760,
+          "disk_free_bytes": 33579728896,
+          "load": [
+            11.853515625,
+            10.884765625,
+            10.2021484375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 2.089885387569666,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "process": {
+          "pid": 3942594,
+          "parent_pid": 3942351,
+          "start_ticks": 920894731,
+          "state": "R"
+        },
+        "status": "running",
+        "owned_processes": [
+          {
+            "pid": 3942594,
+            "parent_pid": 3942351,
+            "start_ticks": 920894731,
+            "state": "S"
+          },
+          {
+            "pid": 3942613,
+            "parent_pid": 3942594,
+            "start_ticks": 920894739,
+            "state": "R"
+          },
+          {
+            "pid": 3949648,
+            "parent_pid": 3942613,
+            "start_ticks": 920902209,
+            "state": "S"
+          },
+          {
+            "pid": 3949649,
+            "parent_pid": 3942613,
+            "start_ticks": 920902209,
+            "state": "R"
+          },
+          {
+            "pid": 3949650,
+            "parent_pid": 3942613,
+            "start_ticks": 920902209,
+            "state": "Z"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 100009238528,
+          "disk_free_bytes": 33211166720,
+          "load": [
+            13.61669921875,
+            12.1240234375,
+            10.85009765625
+          ]
+        }
+      }
+    ],
+    "formal_gate_physics": 0,
+    "prior_formal_v11_physics": 2642,
+    "formal_v11_optimizer_updates": 0,
+    "regression_fixtures": "Physics/gradient/process fixtures are separate from formal outcome counters; global16worker limit applies"
+  },
+  "test_tail": "........................................................................ [ 26%]\n........................................................................ [ 53%]\n........................................................................ [ 79%]\n...............................................",
+  "live_resources": [
+    {
+      "identity": {
+        "pid": 3942351,
+        "parent_pid": 1,
+        "start_ticks": 920894481,
+        "state": "S"
+      },
+      "cpu_user_ticks": 621,
+      "rss": "VmRSS:\t   29864 kB"
+    },
+    {
+      "identity": {
+        "pid": 3942594,
+        "parent_pid": 3942351,
+        "start_ticks": 920894731,
+        "state": "S"
+      },
+      "cpu_user_ticks": 0,
+      "rss": "VmRSS:\t   43284 kB"
+    },
+    {
+      "identity": {
+        "pid": 3942613,
+        "parent_pid": 3942594,
+        "start_ticks": 920894739,
+        "state": "R"
+      },
+      "cpu_user_ticks": 23435,
+      "rss": "VmRSS:\t 4064688 kB"
+    },
+    {
+      "identity": {
+        "pid": 3949648,
+        "parent_pid": 3942613,
+        "start_ticks": 920902209,
+        "state": "S"
+      },
+      "cpu_user_ticks": 1,
+      "rss": "VmRSS:\t   12816 kB"
+    }
+  ],
+  "source_diff_empty": true,
+  "load": [
+    13.48681640625,
+    12.12158203125,
+    10.8564453125
+  ],
+  "disk_free_bytes": 33211166720
+}

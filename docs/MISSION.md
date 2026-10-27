@@ -1,7 +1,8 @@
 # Current mission: v0.0.11 connected two-player correctness
 
-**D1sensor core implemented; local271tests pass, frozen regression-only Linux
-qualification active on xbabe3. No whole-v11tag or valid native boxing games.** Owner this chat; no
+**D1sensor foundation qualified:271Linux tests pass. Evidence/independent transport
+components pass59targeted tests; a new301test Linux gate is prepared. Full physical
+sensor proof remains next. No whole-v11tag or valid native boxing games.** Owner this chat; no
 agents, concurrent schema writers, other-chat messages or third_party edits.
 
 ## Delivered evidence and scientific limits
@@ -32,16 +33,18 @@ fails old source guards. Extra Mac exact sigmoid recomputation failed by up to
    explicit ActorInput/ages/availability, actual delayed/drop/reorder delivery
    and complete sampled-engine-bound replay. Base env/replay/controller unchanged.
    Local271tests pass202.62s. Read D1_SENSOR_TIMING and new source/tests.
-3. Public/anonymous verified source4caca5e/protocol39f94864 is running on
-   xbabe3:/home/ubuntu/joxing/v011-sensor-foundation-20261027, supervisor3942351/
-   start_ticks920894481. Syncpassed, tests advancing/sourceunchanged13:16:47UTC.
-   Inspect actual PIDs/resources/logs; no duplicate or executing-source edit.
-   271Linux passes and owned exits required;180ssync/
-   420stests. Regression only; no formal sensor auto-launch. Then implement
-   **V0.0.11_D1_PROOF_PACKET.md**:8rows/2,748plannedphysics,951sensor-only +
-   1,797D0oracle reserve, new evidence/auditor/corruption tests and public frozen
-   protocol before formal outcomes. Do not claim the120tick zero-delay unit
-   comparison is the full1s source-host D0oracle proof. Preserve all attempts.
+3. Frozen source4caca5e/protocol39f94864 completed271Linux tests304.87s;
+   independent13:23:55UTC audit verified436files/no drift/all recorded owned exits.
+   Source checkout stays immutable. New sensor_evidence.py/sensor_audit.py and
+  30new tests implement saved true/received-state recording, independent timing/
+   history/command/RNG audits, actual checkpoint replay-tail and zero-delay oracle
+   comparators.59targeted tests pass12.09s; initial comparator metadata failure is
+   retained. Public-freeze the new regression-only sensor-evidence protocol and
+   qualify301Linux tests in a dedicated checkout. No automatic formal launch.
+   Then finish **V0.0.11_D1_PROOF_PACKET.md**: named frozen binary loader, complete
+   physical referee audit,8row/2,748physics runner/supervisor and new preregistration.
+   Transport component success is not formalD1 proof. Preserve every attempt and
+   source-host1s oracle;40tick development fixture does not substitute for it.
 4. Complete remaining four-default-seed/asymmetric/adverse-input correctness
    proof for whole v11. Do not use one recorded seed to imply those tests passed.
 5. Next motor goal is stable unassisted guard/reach under the actual shared-model

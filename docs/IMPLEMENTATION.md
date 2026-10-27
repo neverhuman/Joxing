@@ -1,3 +1,34 @@
+## Sensor foundation qualified; evidence components ready —2026-10-27 13:33UTC
+
+Frozen source4caca5e passed all271Linux tests in304.87s; supervisor tests stage
+308.652548s. Independent completion check at13:23:55UTC rehashed all436registered
+files (148source+288upstream), found no drift, no live recorded PID/startidentity
+and no remaining owned process in that checkout. Receipt:
+artifacts/v0.0.11/development/sensor-foundation-completion.json. No formal physics
+or optimizer updates were added.
+
+New sensor_evidence.py composes the unchanged D0physical tape, records both frozen
+ActorInputs, full history/sample/receipt ages, availability, exact pre/postpolicy
+RNG states, and all actual sampled engines/vectors even when both packets drop.
+New sensor_audit.py independently reconstructs sensor receipt/history selection
+and command queues from saved evidence, reuses explicitly labelled FK/controller/
+snapshot checks, compares actual pending-sensor replay tails and zero-delay saved
+oracles. It reports transport_passed, physical_referee_audited=false and
+formal_sensor_proof=false: a transport component cannot stand in for the complete
+sport/physical audit. Tests include checksum-consistent actual-engine corruption,
+wrong timestamps/age/history/drop/hold/pending/private metadata/RNG and replay
+contact tails. The default env/replay/controller modules remain unchanged.
+
+All59targeted tests pass12.09s (30new); Ruffpasses. Retained initial development
+comparator failure23/24: transition.info.contract_hash is deliberately different
+between variants. Fix validates each against its own exact contract before
+excluding only that metadata; physical engines/actions/history/trace remain exact.
+The40tick comparator fixture is not the retained1s D0oracle formal proof.
+New regression-only301Linux-test protocol/source freeze is next; no autoformal
+rollout. Once it passes, finish the frozen binary loader, full physical referee
+integration and8row bounded runner/supervisor in V0.0.11_D1_PROOF_PACKET.md.
+Formal v11physics remains2642; no native boxing games, learned motor win or v11tag.
+
 ## Active frozen sensor-foundation Linux gate —2026-10-27 13:16UTC
 
 Public source4caca5e9e0e906f03349cb950c8fe445fdbf757a and protocol canonical

@@ -1,0 +1,225 @@
+{
+  "result": {
+    "schema": "joxing-sensor-foundation-qualification-v1",
+    "protocol_sha256": "39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf",
+    "source_commit": "4caca5e9e0e906f03349cb950c8fe445fdbf757a",
+    "pid": {
+      "pid": 3942351,
+      "parent_pid": 1,
+      "start_ticks": 920894481,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T13:15:50.961572+00:00",
+    "status": "completed",
+    "initial_available_memory_bytes": 103912136704,
+    "initial_disk_free_bytes": 33579962368,
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "process": {
+          "pid": 3942365,
+          "parent_pid": 3942351,
+          "start_ticks": 920894514,
+          "state": "R"
+        },
+        "status": "completed",
+        "owned_processes": [
+          {
+            "pid": 3942365,
+            "parent_pid": 3942351,
+            "start_ticks": 920894514,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 103871733760,
+          "disk_free_bytes": 33579728896,
+          "load": [
+            11.853515625,
+            10.884765625,
+            10.2021484375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 2.089885387569666,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "process": {
+          "pid": 3942594,
+          "parent_pid": 3942351,
+          "start_ticks": 920894731,
+          "state": "R"
+        },
+        "status": "completed",
+        "owned_processes": [
+          {
+            "pid": 3942594,
+            "parent_pid": 3942351,
+            "start_ticks": 920894731,
+            "state": "S"
+          },
+          {
+            "pid": 3942613,
+            "parent_pid": 3942594,
+            "start_ticks": 920894739,
+            "state": "R"
+          },
+          {
+            "pid": 3949648,
+            "parent_pid": 3942613,
+            "start_ticks": 920902209,
+            "state": "S"
+          },
+          {
+            "pid": 3949649,
+            "parent_pid": 3942613,
+            "start_ticks": 920902209,
+            "state": "R"
+          },
+          {
+            "pid": 3949650,
+            "parent_pid": 3942613,
+            "start_ticks": 920902209,
+            "state": "Z"
+          },
+          {
+            "pid": 3970051,
+            "parent_pid": 3942613,
+            "start_ticks": 920922039,
+            "state": "S"
+          },
+          {
+            "pid": 3970071,
+            "parent_pid": 3942613,
+            "start_ticks": 920922052,
+            "state": "R"
+          },
+          {
+            "pid": 3970074,
+            "parent_pid": 3942613,
+            "start_ticks": 920922052,
+            "state": "S"
+          },
+          {
+            "pid": 3970515,
+            "parent_pid": 3970071,
+            "start_ticks": 920922542,
+            "state": "S"
+          },
+          {
+            "pid": 3970516,
+            "parent_pid": 3970071,
+            "start_ticks": 920922542,
+            "state": "S"
+          },
+          {
+            "pid": 3970517,
+            "parent_pid": 3970071,
+            "start_ticks": 920922542,
+            "state": "S"
+          },
+          {
+            "pid": 3970518,
+            "parent_pid": 3970071,
+            "start_ticks": 920922542,
+            "state": "S"
+          },
+          {
+            "pid": 3970519,
+            "parent_pid": 3970074,
+            "start_ticks": 920922543,
+            "state": "R"
+          },
+          {
+            "pid": 3970520,
+            "parent_pid": 3970074,
+            "start_ticks": 920922543,
+            "state": "R"
+          },
+          {
+            "pid": 3970521,
+            "parent_pid": 3970074,
+            "start_ticks": 920922543,
+            "state": "R"
+          },
+          {
+            "pid": 3970522,
+            "parent_pid": 3970074,
+            "start_ticks": 920922543,
+            "state": "R"
+          },
+          {
+            "pid": 3982002,
+            "parent_pid": 3942613,
+            "start_ticks": 920924219,
+            "state": "R"
+          },
+          {
+            "pid": 3982003,
+            "parent_pid": 3942613,
+            "start_ticks": 920924219,
+            "state": "R"
+          },
+          {
+            "pid": 3982004,
+            "parent_pid": 3942613,
+            "start_ticks": 920924219,
+            "state": "R"
+          },
+          {
+            "pid": 3982005,
+            "parent_pid": 3942613,
+            "start_ticks": 920924219,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 99091808256,
+          "disk_free_bytes": 33388974080,
+          "load": [
+            12.884765625,
+            12.140625,
+            10.927734375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 308.6525476966053,
+        "live_recorded_processes": []
+      }
+    ],
+    "formal_gate_physics": 0,
+    "prior_formal_v11_physics": 2642,
+    "formal_v11_optimizer_updates": 0,
+    "regression_fixtures": "Physics/gradient/process fixtures are separate from formal outcome counters; global16worker limit applies",
+    "finished_utc": "2026-10-27T13:21:01.961008+00:00"
+  },
+  "tests_log": "........................................................................ [ 26%]\n........................................................................ [ 53%]\n........................................................................ [ 79%]\n.......................................................                  [100%]\n271 passed in 304.87s (0:05:04)\n",
+  "files_checked": 436,
+  "drift": [],
+  "live_recorded": [],
+  "owned_root_processes": [],
+  "load": [
+    14.2314453125,
+    12.6767578125,
+    11.32177734375
+  ],
+  "checked_utc": "2026-10-27T13:23:55.240697+00:00"
+}
