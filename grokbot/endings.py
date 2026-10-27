@@ -10,18 +10,29 @@ sporting thresholds, and the env's own rules are unchanged.
 Table (utility for corner A, B):
 
 1. A numerical/engine invalid is never a result: no utility.
-2. The first valid loss event ends the bout. A self-caused fall or complete exit
-   loses even when leading; simultaneous self-caused losses draw.
+2. The first valid loss event ends the bout. A self-caused or knockdown fall, or
+   a complete exit, loses even when leading; simultaneous losses draw.
 3. A loss attributed to an opponent's foul is not the victim's loss and cannot
    reward the offender; play continues to the next event.
 4. Unresolved attribution blocks the bout: no utility, reported as such.
 5. Otherwise the bell decides: more points wins, equal points draw. An external
    truncation is not a sporting end: no terminal utility.
 
-Attribution here is deliberately conservative. A fall is ``self`` only when no
-inter-actor contact force occurred in the lookback window; anything else is
-``unresolved`` until a foul referee exists. No ``opponent`` verdict is ever
-inferred from contact alone.
+Attribution (v1) classifies every force-producing contact between the athletes
+in the lookback window, using the referee's own constants:
+
+* a glove's contact run with the opponent's head, torso, guard or glove is a
+  strike when its first tick approaches at >= ``approach_min_mps``. Its first
+  ``impact_window_s`` counts as boxing; a fall after boxing contact only is a
+  ``knockdown`` and loses, so knocking the opponent down is worth something;
+* everything else blocks: body on body (clinch, lean, shove), a glove on a
+  non-scoring surface (possible foul), a slow glove push, and holding past the
+  impact window. A fall after any blocking contact is ``unresolved``;
+* no contact at all makes the fall ``self``.
+
+No ``opponent`` (foul) verdict is ever inferred from contact alone. Residual
+exploit: a falling athlete can still lean or slowly push to force a block, so
+``arena.policy_summary`` reports blocked-as-faller rates.
 """
 
 from __future__ import annotations
@@ -30,12 +41,16 @@ from dataclasses import dataclass
 
 import numpy as np
 
-VARIANT = "grokbot-ending-reference-v0"
+from joxing.rules import Rules
+
+VARIANT = "grokbot-ending-reference-v1"
 PLAYERS = ("A", "B")
 FOOT_BODIES = ("_calcn_", "_toes_")
 SUPPORT_FORCE_N = 60.0  # ~10 % of one athlete's 596 N weight
 SUPPORT_PERSIST_TICKS = 100  # 100 ms of continuous support; a brush is not a fall
 ATTRIBUTION_LOOKBACK_TICKS = 500  # any opponent contact in the last 0.5 s
+STRIKE_TARGETS = ("head", "torso", "guard", "glove")
+ATTRIBUTIONS = ("self", "knockdown", "opponent", "unresolved")
 
 
 @dataclass(frozen=True)
@@ -43,14 +58,14 @@ class LossEvent:
     player: str
     tick: int
     kind: str  # "fall" | "exit"
-    attribution: str  # "self" | "opponent" | "unresolved"
+    attribution: str  # one of ATTRIBUTIONS
 
     def __post_init__(self):
         if self.player not in PLAYERS or type(self.tick) is not int or self.tick < 0:
             raise ValueError("Loss event needs a corner and a nonnegative tick")
         if self.kind not in ("fall", "exit"):
             raise ValueError("Unknown loss kind")
-        if self.attribution not in ("self", "opponent", "unresolved"):
+        if self.attribution not in ATTRIBUTIONS:
             raise ValueError("Unknown attribution")
 
 
@@ -75,11 +90,16 @@ def decide(points_ab, events, *, bell, invalid_reason=None, bell_tick=None):
             return Ending(None, "blocked: unresolved loss attribution", tick)
         losers = {e.player for e in now}
         if losers == set(PLAYERS):
-            return Ending((0, 0), "draw: simultaneous self-caused losses", tick)
+            return Ending((0, 0), "draw: simultaneous losses", tick)
         (loser,) = losers
         kind = "/".join(sorted({e.kind for e in now}))
+        how = (
+            "knocked down"
+            if any(e.attribution == "knockdown" for e in now)
+            else "self-caused"
+        )
         return Ending(
-            (-1, 1) if loser == "A" else (1, -1), f"{loser} self-caused {kind}", tick
+            (-1, 1) if loser == "A" else (1, -1), f"{loser} {how} {kind}", tick
         )
     if not bell:
         return Ending(None, "no sporting end: external truncation", None)
@@ -87,22 +107,66 @@ def decide(points_ab, events, *, bell, invalid_reason=None, bell_tick=None):
     return Ending((int(np.sign(a - b)), int(np.sign(b - a))), "bell: points", bell_tick)
 
 
-def contact_ticks(evidence, registry):
-    """Ticks with any force-producing contact between the two athletes."""
-    ticks = []
+def classify_contacts(evidence, registry, rules=None):
+    """(strike_ticks, blocking_ticks) of force-producing inter-athlete contact.
+
+    A glove's contact run (gaps of at most ``gap_s``) with a strike target is a
+    strike if a contact on its first tick approaches at >= ``approach_min_mps``;
+    only the run's first ``impact_window_s`` is boxing. Every other contact tick
+    blocks attribution.
+    """
+    rules = rules or Rules()
+    window = round(rules.impact_window_s / rules.dt_s)
+    gap = round(rules.gap_s / rules.dt_s)
+    runs = {}  # glove geom -> [first_tick, last_tick, is_strike]
+    strikes, blocking = [], []
     for row in evidence:
+        t = row["tick"]
+        boxing = blocks = False
         for c in row["contacts"]:
-            actors = {registry[c["geom1"]]["actor"], registry[c["geom2"]]["actor"]}
-            if actors == set(PLAYERS) and c["normal_force_N"] > 0:
-                ticks.append(row["tick"])
-                break
-    return ticks
+            ends = ((c["geom1"], c["geom2"]), (c["geom2"], c["geom1"]))
+            roles = {g: registry[g] for g in (c["geom1"], c["geom2"])}
+            if c["normal_force_N"] <= 0 or {r["actor"] for r in roles.values()} != set(
+                PLAYERS
+            ):
+                continue
+            gloves = [
+                g
+                for g, o in ends
+                if roles[g]["role"] == "glove" and roles[o]["role"] in STRIKE_TARGETS
+            ]
+            if not gloves:
+                blocks = True
+            for g in gloves:
+                fast = c["approach_mps"] >= rules.approach_min_mps
+                run = runs.get(g)
+                if run is None or t - run[1] > gap:
+                    run = runs[g] = [t, t, fast]
+                run[1] = t
+                if run[0] == t:
+                    run[2] = run[2] or fast
+                if run[2] and t - run[0] < window:
+                    boxing = True
+                else:
+                    blocks = True
+        if boxing:
+            strikes.append(t)
+        if blocks:
+            blocking.append(t)
+    return strikes, blocking
 
 
-def attribute(touch_ticks, start, end, lookback_ticks=ATTRIBUTION_LOOKBACK_TICKS):
-    """self unless the athletes touched from lookback before start to end."""
-    i = np.searchsorted(touch_ticks, start - lookback_ticks)
-    return "unresolved" if i < len(touch_ticks) and touch_ticks[i] <= end else "self"
+def attribute(contacts, start, end, lookback_ticks=ATTRIBUTION_LOOKBACK_TICKS):
+    """Verdict for a loss over [start - lookback, end] from classified contacts."""
+
+    def touched(ticks):
+        i = np.searchsorted(ticks, start - lookback_ticks)
+        return bool(i < len(ticks) and ticks[i] <= end)
+
+    strikes, blocking = contacts
+    if touched(blocking):
+        return "unresolved"
+    return "knockdown" if touched(strikes) else "self"
 
 
 def support_losses(
@@ -127,7 +191,7 @@ def support_losses(
         for g, r in registry.items()
         if r["actor"] in PLAYERS and not any(f in r["body"] for f in FOOT_BODIES)
     }
-    touches = contact_ticks(evidence, registry)
+    contacts = classify_contacts(evidence, registry)
     streak = {p: 0 for p in PLAYERS}
     found = {}
     for row in evidence:
@@ -141,6 +205,6 @@ def support_losses(
             streak[p] = streak[p] + 1 if load[p] >= force_N else 0
             if streak[p] == persist_ticks and p not in found:
                 start = row["tick"] - persist_ticks + 1
-                verdict = attribute(touches, start, row["tick"], lookback_ticks)
+                verdict = attribute(contacts, start, row["tick"], lookback_ticks)
                 found[p] = LossEvent(p, start, "fall", verdict)
     return [found[p] for p in PLAYERS if p in found]

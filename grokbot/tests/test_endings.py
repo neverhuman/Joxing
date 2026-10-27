@@ -10,6 +10,7 @@ from grokbot.endings import (
     SUPPORT_PERSIST_TICKS,
     LossEvent,
     attribute,
+    classify_contacts,
     decide,
     support_losses,
 )
@@ -28,6 +29,8 @@ def fall(player, tick, attribution="self", kind="fall"):
         ((5, 0), [fall("A", 100)], True, (-1, 1), "A self-caused fall"),
         ((0, 5), [fall("B", 9, kind="exit")], True, (1, -1), "B self-caused exit"),
         ((1, 0), [fall("A", 50), fall("B", 50)], True, (0, 0), "draw: simultaneous"),
+        ((3, 0), [fall("A", 40, "knockdown")], True, (-1, 1), "A knocked down fall"),
+        ((0, 0), [fall("A", 9, "knockdown"), fall("B", 9)], True, (0, 0), "draw"),
         ((0, 0), [fall("B", 200), fall("A", 100)], True, (-1, 1), "A self-caused"),
         ((4, 0), [fall("B", 10, "opponent")], True, (1, -1), "bell: points"),
         ((0, 0), [fall("B", 10, "opponent"), fall("A", 20)], True, (-1, 1), "A self"),
@@ -91,18 +94,30 @@ REGISTRY = {
     2: {"actor": "A", "role": "native_non_scoring", "body": "A_calcn_r"},
     3: {"actor": "B", "role": "torso", "body": "B_thorax"},
     4: {"actor": "B", "role": "native_non_scoring", "body": "B_toes_l"},
+    5: {"actor": "A", "role": "glove", "body": "A_glove_r"},
+    6: {"actor": "B", "role": "head", "body": "B_head_neck"},
+    7: {"actor": "B", "role": "native_non_scoring", "body": "B_back"},
+    8: {"actor": "B", "role": "glove", "body": "B_glove_l"},
+    9: {"actor": "A", "role": "torso", "body": "A_thorax"},
 }
+FAST, SLOW = 2.0, 0.1
 
 
 def rows(ticks, *contacts_per_tick):
-    """Evidence rows: contacts_per_tick(tick) -> [(geom1, geom2, force), ...]."""
+    """Evidence rows: contacts_per_tick(tick) -> [(g1, g2, force[, approach])]."""
     out = []
     for t in range(ticks):
         contacts = []
         for make in contacts_per_tick:
-            contacts += [
-                {"geom1": g1, "geom2": g2, "normal_force_N": f} for g1, g2, f in make(t)
-            ]
+            for g1, g2, f, *approach in make(t):
+                contacts.append(
+                    {
+                        "geom1": g1,
+                        "geom2": g2,
+                        "normal_force_N": f,
+                        "approach_mps": approach[0] if approach else 0.0,
+                    }
+                )
         out.append({"tick": t, "contacts": contacts})
     return out
 
@@ -148,8 +163,76 @@ def test_opponent_contact_before_a_fall_leaves_it_unresolved():
 
 
 def test_attribute_window_bounds():
-    assert attribute([], 1000, 1000) == "self"
-    assert attribute([499], 1000, 1100, lookback_ticks=500) == "self"
-    assert attribute([500], 1000, 1100, lookback_ticks=500) == "unresolved"
-    assert attribute([1100], 1000, 1100, lookback_ticks=500) == "unresolved"
-    assert attribute([1101], 1000, 1100, lookback_ticks=500) == "self"
+    none = ([], [])
+    assert attribute(none, 1000, 1000) == "self"
+    for ticks, verdict in [
+        ([499], "self"),
+        ([500], "x"),
+        ([1100], "x"),
+        ([1101], "self"),
+    ]:
+        for contacts, hit in [((ticks, []), "knockdown"), (([], ticks), "unresolved")]:
+            expected = hit if verdict == "x" else "self"
+            assert attribute(contacts, 1000, 1100, lookback_ticks=500) == expected
+    assert attribute(([1000], [1000]), 1000, 1100) == "unresolved"  # blocking wins
+
+
+B_FALLS_AT = 300
+
+
+def b_falls(t):
+    return [(3, 0, 500.0)] if t >= B_FALLS_AT else []
+
+
+def verdict_after(*strike):
+    evidence = rows(B_FALLS_AT + SUPPORT_PERSIST_TICKS, b_falls, *strike)
+    (event,) = support_losses(evidence, REGISTRY)
+    return event.attribution
+
+
+@pytest.mark.parametrize(
+    "contact, verdict",
+    [
+        # A fast glove to the head, then B goes down: a knockdown, B loses.
+        (lambda t: [(5, 6, 300.0, FAST)] if 200 <= t < 205 else [], "knockdown"),
+        # The same strike listed with the glove second.
+        (lambda t: [(6, 5, 300.0, FAST)] if 200 <= t < 205 else [], "knockdown"),
+        # Gloves meeting at speed are boxing too.
+        (lambda t: [(8, 5, 300.0, FAST)] if 200 <= t < 205 else [], "knockdown"),
+        # B's own fast strike on A's torso while falling buys no block.
+        (lambda t: [(8, 9, 300.0, FAST)] if 200 <= t < 205 else [], "knockdown"),
+        # A slow glove push is not a strike.
+        (lambda t: [(5, 6, 300.0, SLOW)] if 200 <= t < 205 else [], "unresolved"),
+        # A strike held past the 50 ms impact window becomes holding.
+        (lambda t: [(5, 6, 300.0, FAST)] if 200 <= t < 260 else [], "unresolved"),
+        # A fast glove to the back is a possible foul, never boxing.
+        (lambda t: [(5, 7, 300.0, FAST)] if 200 <= t < 205 else [], "unresolved"),
+        # Body on body (clinch, lean, shove).
+        (lambda t: [(1, 3, 300.0)] if 200 <= t < 205 else [], "unresolved"),
+    ],
+)
+def test_strike_classification(contact, verdict):
+    assert verdict_after(contact) == verdict
+
+
+def test_a_strike_rearms_only_after_the_gap():
+    def two(gap):
+        def make(t):
+            first = 100 <= t < 140
+            second = 140 + gap <= t < 150 + gap
+            return (
+                [(5, 6, 300.0, FAST if t in (100, 140 + gap) else SLOW)]
+                if (first or second)
+                else []
+            )
+
+        return make
+
+    # Up to 7 empty ticks (the referee's 8 ms gap) continue the first run, so
+    # contact beyond its 50 ms window is holding.
+    strikes, blocking = classify_contacts(rows(250, two(7)), REGISTRY)
+    assert strikes == list(range(100, 140)) + list(range(147, 150))
+    assert blocking == list(range(150, 157))
+    # 8 empty ticks release it; the next fast contact is a fresh strike.
+    strikes, blocking = classify_contacts(rows(250, two(8)), REGISTRY)
+    assert strikes == list(range(100, 140)) + list(range(148, 158)) and blocking == []

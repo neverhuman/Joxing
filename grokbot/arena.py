@@ -161,9 +161,9 @@ def play(env, panel, first, second, first_side, seed, *, low_pelvis_m=0.5):
         env.referee.points, first_side
     )
     registry = env.referee.registry
-    touches = endings.contact_ticks(env.evidence, registry)
+    contacts = endings.classify_contacts(env.evidence, registry)
     losses = endings.support_losses(env.evidence, registry) + [
-        endings.LossEvent(a, t, "exit", endings.attribute(touches, t, t))
+        endings.LossEvent(a, t, "exit", endings.attribute(contacts, t, t))
         for a, t in exits.items()
     ]
     ending = endings.decide(
@@ -225,6 +225,7 @@ def policy_summary(records):
                         "opponent_fault",
                         "invalid_other",
                         "self_falls",
+                        "knocked_down",
                     ),
                     0,
                 )
@@ -250,6 +251,7 @@ def policy_summary(records):
             s["self_falls"] += sum(
                 e["kind"] == "fall" and e["attribution"] == "self" for e in own
             )
+            s["knocked_down"] += sum(e["attribution"] == "knockdown" for e in own)
             if own:
                 s["first_loss_ticks"].append(min(e["tick"] for e in own))
     for s in rows.values():

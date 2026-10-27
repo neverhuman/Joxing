@@ -49,6 +49,7 @@ RECORDS = [
     record("q", "p", invalid="controller fault B: command is nonfinite", fault="p"),
     record("p", "q", invalid="FloatingPointError: Nonfinite activation"),
     record("p", "q", outcome=-1, losses=[("p", 300, "exit", "self")], end=300),
+    record("q", "p", outcome=1, losses=[("p", 400, "fall", "knockdown")], end=400),
 ]
 
 
@@ -61,11 +62,11 @@ def test_every_attempt_is_in_exactly_one_column():
 
 def test_results_and_failures_are_charged_from_each_policys_view():
     p, q = policy_summary(RECORDS)["p"], policy_summary(RECORDS)["q"]
-    assert (p["win"], p["draw"], p["loss"]) == (1, 1, 2)
-    assert (q["win"], q["draw"], q["loss"]) == (2, 1, 1)
+    assert (p["win"], p["draw"], p["loss"]) == (1, 1, 3)
+    assert (q["win"], q["draw"], q["loss"]) == (3, 1, 1)
     assert p["own_fault"] == 1 and q["opponent_fault"] == 1
     assert q["blocked_as_faller"] == 1 and p["blocked_other"] == 1
-    assert q["blocked_as_faller_rate"] == pytest.approx(1 / 7)
+    assert q["blocked_as_faller_rate"] == pytest.approx(1 / 8)
     assert p["invalid_other"] == q["invalid_other"] == 1
 
 
@@ -75,7 +76,8 @@ def test_fall_counts_and_first_loss_times():
         summary["p"]["self_falls"] == 1
     )  # the exit and the unresolved fall don't count
     assert summary["q"]["self_falls"] == 1
-    assert summary["p"]["median_first_loss_tick"] == 700.0  # 700, 800, 300
+    assert summary["p"]["knocked_down"] == 1 and summary["q"]["knocked_down"] == 0
+    assert summary["p"]["median_first_loss_tick"] == 550.0  # 700, 800, 300, 400
     assert summary["q"]["median_first_loss_tick"] == 700.0  # 900, 500
     assert (
         policy_summary([record("a", "b", outcome=0)])["a"]["median_first_loss_tick"]
