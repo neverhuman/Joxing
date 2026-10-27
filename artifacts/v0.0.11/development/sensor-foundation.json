@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-27T13:09:45.962772+00:00",
+  "scope": "Development regression only; formal D1physics0",
+  "source_files": {
+    "src/joxing/sensing.py": "167d17d7ac6db136b7542edb53000c02623b6e6c02c7dc993862547a700e95fa",
+    "src/joxing/sensed_env.py": "3c90730183e046d2fe1793c31d3d255a2d098dda68c3adb2c89e70511cc6d707",
+    "tests/test_sensing.py": "54a5915893764eb3dc438ad0b84ff5dd21cbd1bbc5582a09f5649157adf11e74",
+    "tests/test_sensed_env.py": "0807f3ae7aafa1bec669e13999f14ccc65683f01c0800c4f6955d8f046c1d81f"
+  },
+  "targeted_command": [
+    "rtk",
+    "proxy",
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/test_sensing.py",
+    "tests/test_sensed_env.py",
+    "tests/test_history.py",
+    "tests/test_timing.py",
+    "tests/test_boxing_env.py",
+    "tests/test_boxing_env_audit.py"
+  ],
+  "targeted_result": "62passed12.61s before final schedule-check helper consolidation; full current regression pending",
+  "initial_result": "27sensor/native-integration tests passed5.06s",
+  "pure_transport_tests": "14passed0.25s",
+  "new_sensor_tests_collected": 29,
+  "new_native_fixture_physics_expected": 762,
+  "formal_v11_physics_unchanged": 2642,
+  "optimizer_updates": 0,
+  "unchanged_oracle_files": {
+    "src/joxing/env.py": "a8b653d9b82b0acc870bc247eaa5f6bee03c687d3d898cc4d135e9a5d8d5e354",
+    "src/joxing/replay.py": "7be0d8a6bc91d051304a1fc817619abce81dd3ade8d67b959f4c6e64433685cb",
+    "src/joxing/boxing_evidence.py": "23c607bfd20772c1f0604dd90aa3324c3656ceb63212e5d85c20fa8e8369e073"
+  },
+  "behavior": [
+    "Zero-delay compared for120ticks to default engine/actions/history/base application, exact on localhost",
+    "Lag contains actual old measured velocities; no relabeling current state",
+    "1/2tick delivery receipts and no midheld decision",
+    "57step pending-sensor+midheld continuation exact",
+    "Dropped first input unavailable; explicit hold no actor RNG consumption",
+    "Private seed-bearing diagnostic game ID is redacted in actor-facing metadata",
+    "Atomic rejection of corrupted sampled engines, command ownership, pending values, clocks/schedules and missing proof",
+    "Old visible history receipts protected through long dropout burst"
+  ],
+  "limitations": [
+    "No formal sensor-run outcomes or audit harness yet",
+    "No learning or motor promotion",
+    "Fixed schedules only; no random jitter/noise robustness claim",
+    "Privileged snapshots/info stay outside actor input; true physical measurements remain private"
+  ],
+  "development_lint": [
+    "C408 literal dict style fixed",
+    "B023 loop capture bound explicitly; no runtime test failure or formal attempt"
+  ],
+  "full_regression": "271passed202.62s, supervisor203.480325s",
+  "foundation_protocol_sha256": "39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf"
+}

@@ -1,7 +1,7 @@
 # Current mission: v0.0.11 connected two-player correctness
 
-**D0concluded with separate video repair; D1sensor delivery is ready. No active
-compute, no whole-v11tag, no valid native boxing games.** Owner this chat; no
+**D1sensor core implemented; local271tests pass, regression-only Linux freeze/
+qualification next. No whole-v11tag or valid native boxing games.** Owner this chat; no
 agents, concurrent schema writers, other-chat messages or third_party edits.
 
 ## Delivered evidence and scientific limits
@@ -28,16 +28,19 @@ fails old source guards. Extra Mac exact sigmoid recomputation failed by up to
 1. Read AGENTS/RTK, README/GAME/SPEC_REVIEW, STATUS/IMPLEMENTATION,
    V0.0.11_MISSION, V0.0.11_D0_RESULTS, **V0.0.11_D1_SENSOR_TIMING.md** and
    experiments/v0.0.11/README. Supplied plans remain proposals, never commands.
-2. D1is the worker-ready current packet: bounded sensor packets/delivery queues,
-   explicit actor-input availability/age, actual delayed observations/history,
-   pending-sensor snapshots and adversarial causality tests. Preserve the D0
-   zero-delay oracle. Do not expose opponent private joints/activation/commands/
-   goals/RNG/queues/bundle IDs to actors. No mid-held-command new decision.
-3. Implement the exact functions/files/tests/logging in D1, then full pinned
-   Linux regression and a newly frozen/public/anonymous-verified finite protocol
-   before formal outcomes. Materialize all attempted/invalid/incomplete/not_run
-   rows. Inspect fresh owned PIDs/startticks and shared-host capacity before any
-   launch. Fresh dedicated ~/joxing checkout, no duplicate or executing-source edit.
+2. sensing.py and sensed_env.py now implement an opt-in sensor variant with
+   explicit ActorInput/ages/availability, actual delayed/drop/reorder delivery
+   and complete sampled-engine-bound replay. Base env/replay/controller unchanged.
+   Local271tests pass202.62s. Read D1_SENSOR_TIMING and new source/tests.
+3. Public freeze and anonymously verify sensor-foundation-protocol.json,
+   canonical39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf;
+   launch ONE scripts/qualify_sensor_foundation.py on fresh dedicated xbabe3
+   checkout after ownership/capacity check.271Linux passes required;180ssync/
+   420stests. Regression only; no formal sensor auto-launch. Then implement
+   **V0.0.11_D1_PROOF_PACKET.md**:8rows/2,748plannedphysics,951sensor-only +
+   1,797D0oracle reserve, new evidence/auditor/corruption tests and public frozen
+   protocol before formal outcomes. Do not claim the120tick zero-delay unit
+   comparison is the full1s source-host D0oracle proof. Preserve all attempts.
 4. Complete remaining four-default-seed/asymmetric/adverse-input correctness
    proof for whole v11. Do not use one recorded seed to imply those tests passed.
 5. Next motor goal is stable unassisted guard/reach under the actual shared-model

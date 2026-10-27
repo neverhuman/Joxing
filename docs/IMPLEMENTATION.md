@@ -1,3 +1,33 @@
+## Sensor foundation implemented; Linux qualification next
+
+Added sensing.py SensorPacket/SensorQueue/ActorInput and an explicit
+SensedBoxingEnv variant. Default env.py/replay.py and the D0diagnostic controller
+remain unchanged. Sampling is every20ticks; actual delivery is polled every
+physics tick. Actors see delivered vectors, causal8sample history, availability
+and sample/receipt ages. Empty input stays None/invalid; prescribed diagnostic
+hold does not call/advance actor RNG. Private seed-bearing diagnostic match IDs
+are redacted from new actor-facing metadata. Snapshots/info remain privileged.
+
+Sensed replay binds pending/delivered values to their actual past sampled engine,
+clock/commands and schedule, validates on scratch state before live mutation,
+and preserves monotonic attempted physics. Fixed drops/reordering/late-history
+and protected old receipts are bounded. No random jitter/noise robustness claim.
+New core29tests plus related regression subset62passed12.61s. Final full local
+suite271passed202.62s; supervisor203.480325s. Ruffpasses. Zero-delay120tick fixture
+matches default commands/history/engine/base application exactly; a57step actual
+pending-sensor+held-command continuation matches all future physics/receipt state.
+These are development fixtures, not formal D1outcomes or motor qualification.
+
+New regression-only Linux protocol canonical39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf,
+experiments/v0.0.11/sensor-foundation-protocol.json. Freeze/public/anonymous-verify,
+fresh dedicated xbabe3 checkout,271Linux tests required;180ssync/420stests,
+1numericalthread and max16fixtureprocesses;8GiBRAM/10GiBdisk floors twiceatstart.
+No automatic formal sensor trajectory. Exact next implementation packet:
+V0.0.11_D1_PROOF_PACKET.md,8rows/2,748plannedphysics (951sensor-only +1,797D0oracle
+reserve), new evidence/auditor/adversarial tests and source protocol still needed.
+No new D1physics; cumulativeformal2642. No model/rules/learning/source-host-gate
+change or v11tag. Old executed checkouts/outcomes stay immutable.
+
 ## D0 concluded with separate video repair; D1 sensor delivery ready
 
 The first preregistered diagnostic MP4 is public in artifacts/v0.0.11/D0. All7

@@ -19,9 +19,12 @@ three exact replays. A decoder failure and its separate zero-physics repair are
 both retained. [Full D0 results](docs/V0.0.11_D0_RESULTS.md) ·
 [All attempts and video](artifacts/v0.0.11/D0/).
 
-Next: [causal sensor delivery](docs/V0.0.11_D1_SENSOR_TIMING.md), remaining
-correctness tests, then stable guard/reach motor qualification in the shared
-model. No valid native boxing bout or competitive learning yet.
+The opt-in [sensor-timed variant](docs/V0.0.11_D1_SENSOR_TIMING.md) now provides
+actual delayed/dropped/reordered inputs, explicit ages and pending-sensor replay.
+All271local tests pass; its source-frozen Linux qualification is next. The
+[eight-case physical sensor proof](docs/V0.0.11_D1_PROOF_PACKET.md) still needs
+its evidence runner/auditor and preregistration. Stable guard/reach and sporting
+gates remain before competitive learning; no valid native boxing bout yet.
 
 **Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).
 

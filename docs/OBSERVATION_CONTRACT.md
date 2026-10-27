@@ -1,3 +1,26 @@
+## Opt-in sensed variant development checkpoint
+
+sensed_env.SensedBoxingEnv now separates private true-state sampling from actor
+receipt. sensing.ActorInput contains decision tick, latest delivered observation
+or None, bounded history/validity and explicit sample/receipt ages. Packets sample
+every20ticks and arrive on their actual fixed scheduled physics tick; source drops
+never masquerade as measured padding. History stays ordered by sample time; late
+older delivery cannot replace a newer latest input. Cold-start hold is explicit,
+diagnostic and consumes no actor RNG. No random RF/noise claim or trained actor.
+
+The new actor-facing observation game_id is the constant actor-visible; private
+diagnostic IDs encode seeds and remain only in sensor ownership, privileged
+snapshots/info/logging. Only ActorInput goes to sensor controllers; do not feed
+privileged info or snapshots to a learner. Pending opponent/private queues,
+controller identities and raw opponent joint/activation state remain excluded.
+
+Versioned sensed-replay-v1 retains true base cache plus bounded private sampled
+engines, pending packets and received history. Restore validates every retained
+visible/pending vector against its actual past sampled engine, with matching
+clock/owned controls/schedule before touching the live world. Base env/replay and
+D0controller bytes remain unchanged.271local tests pass; full formal source-host
+sensor evidence/audit is still pending V0.0.11_D1_PROOF_PACKET.md.
+
 # Diagnostic actor observation v1
 
 Implemented for the v11shared-loop prototype, not connected to a trained boxer.
