@@ -14,9 +14,14 @@ from joxing.sensor_protocol import sensor_cases
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--expected-tests", type=int, required=True)
+    parser.add_argument("--repair-ownership-race", action="store_true")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
-    target = root / "experiments/v0.0.11/sensor-proof-protocol.json"
+    target = root / (
+        "experiments/v0.0.11/sensor-proof-repair-protocol.json"
+        if args.repair_ownership_race
+        else "experiments/v0.0.11/sensor-proof-protocol.json"
+    )
     if target.exists():
         raise FileExistsError("Do not overwrite a registered experiment")
     paths = [
@@ -116,6 +121,24 @@ def main():
         },
         "stop": "First unknown process, source/hash/ownership drift, cap/floor, nonfinite/engine warning, wrong denominator, replay/rules/contact/timing mismatch. Retain every row/fault; do not retry or replace seed. No executing-source edits.",
     }
+    if args.repair_ownership_race:
+        old = json.loads(
+            (root / "experiments/v0.0.11/sensor-proof-protocol.json").read_text()
+        )
+        receipt = (
+            root / "artifacts/v0.0.11/development/sensor-proof-attempt-01-failure.json"
+        )
+        prior = json.loads(receipt.read_text())
+        if prior["all_owned_joxing"] or prior["live_recorded"] or prior["drift"]:
+            raise ValueError("Prior attempt not independently exited/source verified")
+        protocol["repair_of_protocol_sha256"] = digest(old)
+        protocol["repair_scope"] = (
+            "Ownership-only race fix: actual PID/start-bound ancestry accepts newly forked descendants; foreign jobs remain forbidden. No changed physics/rules/rows/caps/oracle. Old attempt retained, all8rows not_run,0newformalphysics."
+        )
+        protocol["prior_attempt_receipt_sha256"] = hashlib.sha256(
+            receipt.read_bytes()
+        ).hexdigest()
+        protocol["prior_attempt_rows"] = prior["rows"]
     target.write_text(json.dumps(protocol, indent=2) + "\n")
     print(digest(protocol))
 

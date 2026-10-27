@@ -13,6 +13,7 @@ import subprocess
 import time
 from pathlib import Path
 
+from joxing_process_ownership import unknown_joxing_processes
 from supervise_motor_pilot import descendants, identity, live
 
 
@@ -25,9 +26,17 @@ def canonical(v):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--protocol-sha256", required=True)
+    parser.add_argument(
+        "--protocol-path",
+        choices=[
+            "experiments/v0.0.11/sensor-proof-protocol.json",
+            "experiments/v0.0.11/sensor-proof-repair-protocol.json",
+        ],
+        default="experiments/v0.0.11/sensor-proof-protocol.json",
+    )
     args = parser.parse_args()
     root = Path.cwd()
-    file = "experiments/v0.0.11/sensor-proof-protocol.json"
+    file = args.protocol_path
     p = json.loads((root / file).read_text())
     if (
         canonical(p) != args.protocol_sha256
@@ -69,34 +78,15 @@ def main():
     while pid > 1 and pid not in ancestors:
         ancestors.add(pid)
         pid = identity(pid)["parent_pid"]
-    unknown = []
-    for proc in Path("/proc").iterdir():
-        if not proc.name.isdigit() or int(proc.name) in ancestors:
-            continue
-        try:
-            cmd = (proc / "cmdline").read_bytes()
-            if "/joxing/" in str((proc / "cwd").resolve()) and (
-                b"python" in cmd or b"/uv " in cmd
-            ):
-                unknown.append(int(proc.name))
-        except OSError:
-            pass
+    supervisor_identity = identity(os.getpid())
+    unknown = unknown_joxing_processes(supervisor_identity, ignored_pids=ancestors)
     if unknown:
         raise RuntimeError("Another owned process: " + str(unknown))
 
     def capacity(multiplier=1):
-        permitted = ancestors | {r["pid"] for r in descendants(os.getpid())}
-        for proc in Path("/proc").iterdir():
-            if not proc.name.isdigit() or int(proc.name) in permitted:
-                continue
-            try:
-                cmd = (proc / "cmdline").read_bytes()
-                if "/joxing/" in str((proc / "cwd").resolve()) and (
-                    b"python" in cmd or b"/uv " in cmd
-                ):
-                    raise RuntimeError("Unknown owned Joxing process: " + proc.name)
-            except OSError:
-                pass
+        unknown = unknown_joxing_processes(supervisor_identity, ignored_pids=ancestors)
+        if unknown:
+            raise RuntimeError("Unknown owned Joxing process: " + str(unknown))
         memory = (
             int(
                 next(
@@ -155,6 +145,8 @@ def main():
                 "scripts/qualify_sensor_env.py",
                 "--protocol-sha256",
                 args.protocol_sha256,
+                "--protocol-path",
+                file,
             ],
         ),
         ("audit", prefix + ["python", "scripts/audit_sensor_env.py", "--run", run]),

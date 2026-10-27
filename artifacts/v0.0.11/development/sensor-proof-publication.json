@@ -1,0 +1,63 @@
+{
+  "source_commit": "3d4470eef809dc2494fbc9c184edefbc16bb4216",
+  "protocol_sha256": "b97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19",
+  "utc": "2026-10-27T13:53:35.969714+00:00",
+  "push_returncode": 0,
+  "anonymous_verified": {
+    "experiments/v0.0.11/sensor-proof-protocol.json": {
+      "bytes": 59687,
+      "sha256": "1410021e8cccf3bcdc7af4cf2bc15ed4012c1e271ae63c5e41ad65e59e521413",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/experiments/v0.0.11/sensor-proof-protocol.json"
+    },
+    "src/joxing/frozen_scene.py": {
+      "bytes": 4151,
+      "sha256": "c269f59eba8abbafde6df66bac8ca5154ffc63589bcd3c853e527c092092c681",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/src/joxing/frozen_scene.py"
+    },
+    "src/joxing/sensor_physics_audit.py": {
+      "bytes": 9245,
+      "sha256": "56af747c039ac9c8dfd771dc199285997de36a091d9db134bd40a4054ee1900a",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/src/joxing/sensor_physics_audit.py"
+    },
+    "src/joxing/sensor_protocol.py": {
+      "bytes": 4384,
+      "sha256": "15af45c93266ebf91fa81e9a94f0c1d6ea22f09d6028f09f6bde73d2411e2e8c",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/src/joxing/sensor_protocol.py"
+    },
+    "scripts/qualify_sensor_env.py": {
+      "bytes": 10613,
+      "sha256": "8393c6d75a09eed31c950540e73971b5e006311b40d0ba7c0be30064947f78ac",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/scripts/qualify_sensor_env.py"
+    },
+    "scripts/audit_sensor_env.py": {
+      "bytes": 4203,
+      "sha256": "8d303d9626f5abcf3a34f08b1ba69a027ce5a5f53cd79ebc14c11a7f3ec5d98e",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/scripts/audit_sensor_env.py"
+    },
+    "scripts/register_sensor_proof.py": {
+      "bytes": 5241,
+      "sha256": "b2d4127d790d28e0af18a9b1deb69c31c66f0186b22e0211d709a846d8b849e2",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/scripts/register_sensor_proof.py"
+    },
+    "scripts/supervise_sensor_proof.py": {
+      "bytes": 10286,
+      "sha256": "1045df46f8380e1516d8c2d68fd906e2d3e8478340e1f50febf3d61f5668cf70",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/scripts/supervise_sensor_proof.py"
+    },
+    "tests/test_frozen_scene.py": {
+      "bytes": 3156,
+      "sha256": "7b3d1c36f096593b299123ac13512001f820e479b0ac461b7f3b4460e0cf5756",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/tests/test_frozen_scene.py"
+    },
+    "tests/test_sensor_physics_audit.py": {
+      "bytes": 2876,
+      "sha256": "18378cb9c8591a5ef0e46b534d0117cdaa1e82914a57c0bd211916dbfed01fce",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/tests/test_sensor_physics_audit.py"
+    },
+    "tests/test_sensor_proof.py": {
+      "bytes": 6383,
+      "sha256": "d9e84710b4bf349747e5a623d8838ff2b6c18bc3d6671cca50aef0f8808dbee4",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/3d4470eef809dc2494fbc9c184edefbc16bb4216/tests/test_sensor_proof.py"
+    }
+  }
+}

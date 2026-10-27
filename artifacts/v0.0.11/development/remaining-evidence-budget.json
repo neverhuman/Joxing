@@ -1,0 +1,47 @@
+{
+  "scope": "Storage analysis from retained D0 receipts; not D2 results or a throughput claim",
+  "utc": "2026-10-27T13:56:27.119438+00:00",
+  "rows": [
+    {
+      "case": "source-90101",
+      "non_video_bytes": 19327039,
+      "files": {
+        "trace.json": 5215615,
+        "mid.json": 1585038,
+        "tape.npz": 9034267,
+        "final.json": 1587741,
+        "boundary.json": 1584716,
+        "initial.json": 318844,
+        "contract.json": 818
+      }
+    },
+    {
+      "case": "boundary-90101",
+      "non_video_bytes": 14959007,
+      "files": {
+        "trace.json": 4169823,
+        "tape.npz": 7615909,
+        "final.json": 1587741,
+        "initial.json": 1584716,
+        "contract.json": 818
+      }
+    },
+    {
+      "case": "mid-90101",
+      "non_video_bytes": 14774765,
+      "files": {
+        "trace.json": 4153593,
+        "tape.npz": 7447575,
+        "final.json": 1587741,
+        "initial.json": 1585038,
+        "contract.json": 818
+      }
+    }
+  ],
+  "three_more_source_boundary_mid_groups_projection_bytes": 147182433,
+  "whole_v11_raw_cap_bytes": 268435456,
+  "D0_manifested_raw_bytes": 55053851,
+  "D1_registered_raw_ceiling_bytes": 100663296,
+  "remaining_after_D0_and_D1_maxima_bytes": 112718309,
+  "next_action": "Wait for actual D1raw/attempt denominator; do not launch9dense D2tapes if measured/projected peak exceeds remaining whole-version cap. Qualify a lossless compact evidence variant or stop at the cap; never loosen gates."
+}

@@ -1,0 +1,36 @@
+{
+  "source_commit": "3d4470eef809dc2494fbc9c184edefbc16bb4216",
+  "protocol_sha256": "b97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19",
+  "root": "/home/ubuntu/joxing/v011-sensor-proof-20261027",
+  "command": [
+    "/usr/bin/python3",
+    "scripts/supervise_sensor_proof.py",
+    "--protocol-sha256",
+    "b97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19"
+  ],
+  "supervisor": {
+    "pid": 57936,
+    "start_ticks": 921126041,
+    "state": "R"
+  },
+  "copied_model_inputs": {
+    "artifacts/generated/v0.0.11/sensor-model/scene.mjb": {
+      "source": "/home/ubuntu/joxing/v011-recording-20261027/artifacts/generated/v0.0.11/deployment-model/scene.mjb",
+      "bytes": 180809620,
+      "sha256": "02806d29bba614ea3f110f3729d4cdb7319992f0df41986241a05c9bcfdf03c3"
+    },
+    "artifacts/generated/v0.0.11/sensor-model/scene.json": {
+      "source": "/home/ubuntu/joxing/v011-recording-20261027/runs/v0.0.11/recording-proof-01/scene.json",
+      "bytes": 28836,
+      "sha256": "ab6d804b33791df58657a333cb29fc28e52a027158d839e31238a46b25d13d12"
+    }
+  },
+  "source_files_verified": 163,
+  "upstream_files_verified": 288,
+  "oracle_files_verified": 5,
+  "launch_utc": "2026-10-27T13:54:26.320136+00:00",
+  "expected_tests": 340,
+  "formal_planned_physics": 2748,
+  "threads": 1,
+  "local_receipt_utc": "2026-10-27T13:54:26.352970+00:00"
+}

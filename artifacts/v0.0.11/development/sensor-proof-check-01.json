@@ -1,0 +1,115 @@
+{
+  "supervision": {
+    "schema": "joxing-sensor-proof-supervisor-v1",
+    "source_commit": "3d4470eef809dc2494fbc9c184edefbc16bb4216",
+    "protocol_sha256": "b97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19",
+    "process": {
+      "pid": 57936,
+      "parent_pid": 1,
+      "start_ticks": 921126041,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T13:54:26.918886+00:00",
+    "status": "halted",
+    "initial_capacity": {
+      "available_memory_bytes": 94815858688,
+      "disk_free_bytes": 31817302016,
+      "load": [
+        9.560546875,
+        10.3857421875,
+        10.8271484375
+      ]
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "failed",
+        "reason": "RuntimeError: Unknown owned Joxing process: 58211",
+        "process": {
+          "pid": 58084,
+          "parent_pid": 57936,
+          "start_ticks": 921126141,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 58084,
+            "parent_pid": 57936,
+            "start_ticks": 921126141,
+            "state": "S"
+          }
+        ],
+        "returncode": -15,
+        "wall_s": 0.2288089245557785,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "not_run",
+        "reason": "stopped after earlier failure"
+      },
+      {
+        "stage": "D1",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/qualify_sensor_env.py",
+          "--protocol-sha256",
+          "b97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19"
+        ],
+        "status": "not_run",
+        "reason": "stopped after earlier failure"
+      },
+      {
+        "stage": "audit",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/audit_sensor_env.py",
+          "--run",
+          "runs/v0.0.11/sensor-proof-01"
+        ],
+        "status": "not_run",
+        "reason": "stopped after earlier failure"
+      }
+    ],
+    "reason": "RuntimeError: sync failed: RuntimeError: Unknown owned Joxing process: 58211",
+    "finished_utc": "2026-10-27T13:54:27.547734+00:00"
+  },
+  "test_tail": null,
+  "proof": null,
+  "progress": null,
+  "live_resources": [],
+  "source_diff_empty": true,
+  "load": [
+    10.6142578125,
+    10.4765625,
+    10.7978515625
+  ],
+  "disk_free_bytes": 31740256256,
+  "checked_utc": "2026-10-27T13:56:28.139712+00:00"
+}

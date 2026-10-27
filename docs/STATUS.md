@@ -1,3 +1,37 @@
+## D1attempt halted before tests; ownership repair ready —2026-10-27 14:02UTC
+
+Source3d4470e/protocolb97c23c8 supervisor57936 stopped during uv sync after0.228809s:
+unknown owned PID58211. Its descendants inventory preceded a second/procscan;
+a newly forked build child can be absent from that first snapshot. The sync log
+shows editable-package build startup. Exact ancestry of58211 was not retained
+by the defective check; do not invent its identity. At13:57:28UTC independent
+451file audit found no drift, all recorded processes exited, flagged58211gone
+and all-owned Joxing scanempty. All8formal rows are explicitly not_run/0physics;
+tests/D1/audit stages not_run. Failure retained in sensor-proof-attempt-01-failure.json.
+
+Repair uses actual parent chains to the supervisor's PID AND start_ticks rather
+than inventory membership. New-child/new-grandchild, foreign/orphan/reused-root,
+vanished/cyclic cases are tested.77targeted tests pass27.47s; standalone ownership
+8pass/1Mac-onlyskip. The added real fork/grandchild test must pass on Linux.
+A separate test-fixture isolation defect (global subprocess mock caught platform
+probing) produced25pass/2fail and was corrected to intercept git rev-parse only;
+its negative is retained. No physical/rules/controller/timing/case/cap changes.
+Protocol path routing explicitly supports original and repair packets; old source/
+protocol/outcomes remain untouched. See V0.0.11_D1_OWNERSHIP_REPAIR.md.
+
+New repair protocol canonical317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc,
+fileSHA19aee059071ddee7ee468acb6aacf654c90e25ff3ef123d8a5dc84b082e37b06,
+165source+288upstream inputs. Public-freeze/anonymous verify, fresh capacity/owned
+scan and a new checkout before one bounded349Linux-test gate→same8rows/2,748steps
+→independent saved-evidence audit. No silent retry, old checkout edit or v11tag.
+Formal cumulativephysics stays2642; optimizer0/valid native boxing games0.
+
+Independent storage analysis retained in remaining-evidence-budget.json: three
+more dense source/boundary/mid groups project147,182,433bytes from actual D0files;
+only112,718,309bytes remain if D1uses its whole96MiBceiling. Await actual D1raw
+before the remaining seed proof; qualify lossless compact evidence if needed,
+never relax the256MiB whole-v11cap. This is storage analysis, not D2outcomes.
+
 ## D1physical sensor proof implemented; final source gate next —2026-10-27 13:52UTC
 
 Sensor evidence source628f52e qualified301Linux tests328.69s; supervisor tests

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "pytest",
+    "--collect-only",
+    "-q"
+  ],
+  "result": "349 tests collected in 3.15s",
+  "expected_linux_tests": 349,
+  "additional_linux_test": "Real child/grandchild ancestry test is skipped on Mac only; expected Linux count includes it"
+}

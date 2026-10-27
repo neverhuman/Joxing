@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-27T13:59:54.523884+00:00",
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/test_process_ownership.py",
+    "tests/test_sensor_proof.py",
+    "tests/test_frozen_scene.py",
+    "tests/test_sensor_physics_audit.py",
+    "tests/test_sensor_audit.py"
+  ],
+  "returncode": 0,
+  "stdout": "........................................................................ [ 93%]\n.....                                                                    [100%]\n77 passed in 27.47s\n",
+  "stderr": "",
+  "wall_s": 27.79148895799881,
+  "files": {
+    "scripts/joxing_process_ownership.py": "b4ccaf9ea1ad943d3bd8f2ad5189293905479c60d1c2d433e30219ea37e988f7",
+    "tests/test_process_ownership.py": "a6dd54172cf86ca059b894c81dc5610396f670c18488ffd7129195f4eea4be3b",
+    "scripts/supervise_sensor_proof.py": "f05b80a528c68438c0fe40737fccc969c986d63821ae8be2ea084b2fb03716cd",
+    "scripts/register_sensor_proof.py": "e27970b7bc45b8c6a09afe7b3d30e5aaa3b030cc0213e376c00406bf38682301",
+    "scripts/qualify_sensor_env.py": "d0ca8fc9ad8e112493c57c05d039e059594375fdadc9df401730a54ad4862c6f",
+    "src/joxing/sensor_protocol.py": "2c2c49fe92fb567283587ae06a60bbc08acdd24c5dedb07ab3ceaf541d1c86a8",
+    "tests/test_sensor_proof.py": "085385e3e4b1d773c34734682aee70b05452f749e00b5bb25df4a7a69b4be9cc"
+  },
+  "retained_development_failure": {
+    "tests": 27,
+    "passed": 25,
+    "failed": 2,
+    "wall_s": 5.43,
+    "cause": "A test mocked global subprocess.check_output for git and also intercepted uncached platform probing; narrowed fixture to git rev-parse only. This is a test-isolation defect, not physical gate relaxation."
+  },
+  "prior_formal_attempt": "b97c23c8 protocol supervisor halted during sync; all8rows not_run/0formalphysics; independent451file/no-owned-process audit retained"
+}

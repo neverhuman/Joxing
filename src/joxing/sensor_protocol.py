@@ -95,15 +95,15 @@ def validate_packet(p):
     )
 
 
-def read_packet(root, expected):
+def read_packet(root, expected, packet_path=PACKET):
     root = Path(root)
-    p = json.loads((root / PACKET).read_text())
+    p = json.loads((root / packet_path).read_text())
     require(digest(p) == expected, "Sensor protocol identity")
     validate_packet(p)
     require(
         json.loads(
             subprocess.check_output(
-                ["git", "show", "HEAD:" + PACKET], cwd=root, text=True
+                ["git", "show", "HEAD:" + packet_path], cwd=root, text=True
             )
         )
         == p,

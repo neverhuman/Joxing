@@ -1,0 +1,295 @@
+{
+  "supervision": {
+    "schema": "joxing-sensor-proof-supervisor-v1",
+    "source_commit": "3d4470eef809dc2494fbc9c184edefbc16bb4216",
+    "protocol_sha256": "b97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19",
+    "process": {
+      "pid": 57936,
+      "parent_pid": 1,
+      "start_ticks": 921126041,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T13:54:26.918886+00:00",
+    "status": "halted",
+    "initial_capacity": {
+      "available_memory_bytes": 94815858688,
+      "disk_free_bytes": 31817302016,
+      "load": [
+        9.560546875,
+        10.3857421875,
+        10.8271484375
+      ]
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "failed",
+        "reason": "RuntimeError: Unknown owned Joxing process: 58211",
+        "process": {
+          "pid": 58084,
+          "parent_pid": 57936,
+          "start_ticks": 921126141,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 58084,
+            "parent_pid": 57936,
+            "start_ticks": 921126141,
+            "state": "S"
+          }
+        ],
+        "returncode": -15,
+        "wall_s": 0.2288089245557785,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "not_run",
+        "reason": "stopped after earlier failure"
+      },
+      {
+        "stage": "D1",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/qualify_sensor_env.py",
+          "--protocol-sha256",
+          "b97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19"
+        ],
+        "status": "not_run",
+        "reason": "stopped after earlier failure"
+      },
+      {
+        "stage": "audit",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/audit_sensor_env.py",
+          "--run",
+          "runs/v0.0.11/sensor-proof-01"
+        ],
+        "status": "not_run",
+        "reason": "stopped after earlier failure"
+      }
+    ],
+    "reason": "RuntimeError: sync failed: RuntimeError: Unknown owned Joxing process: 58211",
+    "finished_utc": "2026-10-27T13:54:27.547734+00:00"
+  },
+  "sync_log": "Using CPython 3.12.3 interpreter at: /usr/bin/python3\nCreating virtual environment at: experiments/v0.0.11/runtime/.venv\nResolved 43 packages in 1ms\n   Building joxing @ file:///home/ubuntu/joxing/v011-sensor-proof-20261027\n",
+  "supervisor_log": "",
+  "files_checked": 451,
+  "drift": [],
+  "live_recorded": [],
+  "all_owned_joxing": [],
+  "flagged_pid_exists": false,
+  "flagged_pid_current_identity": null,
+  "source_diff_empty": true,
+  "checked_utc": "2026-10-27T13:57:28.786420+00:00",
+  "rows": [
+    {
+      "seed": 90101,
+      "sensor_schedule": {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ]
+      },
+      "horizon_ticks": 1000,
+      "end_tick": 1000,
+      "scenario": "native-keyframe-v1",
+      "id": "zero-90101",
+      "start_tick": 0,
+      "physics": 1000,
+      "save_mid_tick": 203,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    },
+    {
+      "seed": 90101,
+      "sensor_schedule": {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ]
+      },
+      "horizon_ticks": 1000,
+      "end_tick": 1000,
+      "scenario": "native-keyframe-v1",
+      "id": "zero-mid-90101",
+      "parent": "zero-90101",
+      "checkpoint": "mid",
+      "start_tick": 203,
+      "physics": 797,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    },
+    {
+      "seed": 90201,
+      "sensor_schedule": {
+        "A": [
+          20
+        ],
+        "B": [
+          40
+        ]
+      },
+      "horizon_ticks": 200,
+      "end_tick": 200,
+      "scenario": "native-keyframe-v1",
+      "id": "lag-90201",
+      "start_tick": 0,
+      "physics": 200,
+      "save_mid_tick": 83,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    },
+    {
+      "seed": 90201,
+      "sensor_schedule": {
+        "A": [
+          20
+        ],
+        "B": [
+          40
+        ]
+      },
+      "horizon_ticks": 200,
+      "end_tick": 200,
+      "scenario": "native-keyframe-v1",
+      "id": "lag-mid-90201",
+      "parent": "lag-90201",
+      "checkpoint": "mid",
+      "start_tick": 83,
+      "physics": 117,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    },
+    {
+      "seed": 90202,
+      "sensor_schedule": {
+        "A": [
+          40,
+          0
+        ],
+        "B": [
+          null,
+          20,
+          0
+        ]
+      },
+      "horizon_ticks": 200,
+      "end_tick": 200,
+      "scenario": "native-keyframe-v1",
+      "id": "reorder-90202",
+      "start_tick": 0,
+      "physics": 200,
+      "save_mid_tick": 83,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    },
+    {
+      "seed": 90202,
+      "sensor_schedule": {
+        "A": [
+          40,
+          0
+        ],
+        "B": [
+          null,
+          20,
+          0
+        ]
+      },
+      "horizon_ticks": 200,
+      "end_tick": 200,
+      "scenario": "native-keyframe-v1",
+      "id": "reorder-mid-90202",
+      "parent": "reorder-90202",
+      "checkpoint": "mid",
+      "start_tick": 83,
+      "physics": 117,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    },
+    {
+      "seed": 90203,
+      "sensor_schedule": {
+        "A": [
+          null
+        ],
+        "B": [
+          40,
+          0
+        ]
+      },
+      "horizon_ticks": 200,
+      "end_tick": 200,
+      "scenario": "native-keyframe-v1",
+      "id": "drop-90203",
+      "start_tick": 0,
+      "physics": 200,
+      "save_mid_tick": 83,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    },
+    {
+      "seed": 90203,
+      "sensor_schedule": {
+        "A": [
+          null
+        ],
+        "B": [
+          40,
+          0
+        ]
+      },
+      "horizon_ticks": 200,
+      "end_tick": 200,
+      "scenario": "native-keyframe-v1",
+      "id": "drop-mid-90203",
+      "parent": "drop-90203",
+      "checkpoint": "mid",
+      "start_tick": 83,
+      "physics": 117,
+      "status": "not_run",
+      "physics_attempted": 0,
+      "reason": "Supervisor sync halted before tests/runner"
+    }
+  ]
+}

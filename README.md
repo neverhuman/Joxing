@@ -24,8 +24,10 @@ actual delayed/dropped/reordered inputs, explicit ages and pending-sensor replay
 All301Linux evidence tests pass. The hash-bound frozen-model loader, complete
 physical audit and [eight-case sensor proof](docs/V0.0.11_D1_PROOF_PACKET.md)
 runner are implemented;69targeted tests pass, including39new physical/model/fault
-checks. Its final340test Linux source gate and preregistered2,748step proof are
-ready for public-frozen deployment. Stable guard/reach and sporting
+checks. The first proof supervisor stopped during setup before tests or physics; all
+eight rows remain explicitly not_run. The [ownership repair](docs/V0.0.11_D1_OWNERSHIP_REPAIR.md)
+passes77targeted tests and has a new349test Linux gate before the same2,748step
+proof. Stable guard/reach and sporting
 gates remain before competitive learning; no valid native boxing bout yet.
 
 **Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).

@@ -139,9 +139,14 @@ def test_runner_keeps_all_attempts_and_partial_fault_evidence(
     monkeypatch.chdir(tmp_path)
     p = packet()
     monkeypatch.setattr(module, "read_packet", lambda *_: p)
-    monkeypatch.setattr(
-        module.subprocess, "check_output", lambda *a, **kw: "test-source\n"
-    )
+    real_check_output = module.subprocess.check_output
+
+    def git_identity_only(command, *args, **kwargs):
+        if command == ["git", "rev-parse", "HEAD"]:
+            return "test-source\n"
+        return real_check_output(command, *args, **kwargs)
+
+    monkeypatch.setattr(module.subprocess, "check_output", git_identity_only)
     monkeypatch.setattr(
         module, "identity", lambda pid: {"pid": pid, "start_ticks": 123, "state": "R"}
     )

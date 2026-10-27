@@ -36,9 +36,17 @@ def available_memory():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--protocol-sha256", required=True)
+    parser.add_argument(
+        "--protocol-path",
+        choices=[
+            "experiments/v0.0.11/sensor-proof-protocol.json",
+            "experiments/v0.0.11/sensor-proof-repair-protocol.json",
+        ],
+        default="experiments/v0.0.11/sensor-proof-protocol.json",
+    )
     args = parser.parse_args()
     root = Path.cwd()
-    p = read_packet(root, args.protocol_sha256)
+    p = read_packet(root, args.protocol_sha256, args.protocol_path)
     out = root / "runs/v0.0.11/sensor-proof-01"
     out.mkdir(parents=True, exist_ok=False)
     credit = RawCredit(out, p["raw_bytes"])
