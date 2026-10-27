@@ -1,10 +1,19 @@
 """Match-runner invariants: every attempt is recorded, faults are attributed,
-side-swapped pairs mirror each other, and nothing is silently scored."""
+side-swapped pairs mirror each other (including stochastic policies, via common
+random numbers), and measured endings turn falls into a nonzero result."""
 
 import numpy as np
 import pytest
 
-from grokbot.arena import SCRIPTED_PANEL, constant, corner_result, paired, play
+from grokbot.arena import (
+    SCRIPTED_PANEL,
+    constant,
+    corner_result,
+    paired,
+    play,
+    policy_stream,
+)
+from grokbot.league import Game, Ledger
 from joxing.env import BoxingEnv
 from joxing.scene import build_scene
 
@@ -36,15 +45,42 @@ def test_identical_controllers_draw_scoreless_from_both_corners(scene):
     for r in records:
         assert r["invalid_reason"] is None and r["ticks"] == 200
         assert r["outcome"] == 0 and r["points"] == [0, 0] and r["events"] == 0
+        assert r["losses"] == [] and r["ending"]["reason"] == "bell: points"
 
 
-def test_side_swapped_pair_mirrors_fall_times(scene):
-    env = BoxingEnv(scene, horizon_ticks=2000)
+def test_first_self_caused_fall_decides_and_feeds_a_nonzero_payoff(scene):
+    env = BoxingEnv(scene, horizon_ticks=1300)
     as_a, as_b = paired(env, SCRIPTED_PANEL, "relaxed", "cocontract", seeds=[0])
-    assert as_a["fall_tick"] == as_b["fall_tick"]
-    # Both untrained athletes fall well inside two seconds; nothing is scored.
-    assert all(t is not None and t < 2000 for t in as_a["fall_tick"].values())
-    assert as_a["outcome"] == as_b["outcome"] == 0
+    assert as_a["losses"] == as_b["losses"] and as_a["losses"]
+    assert as_a["pelvis_low_tick"] == as_b["pelvis_low_tick"]
+    first_loss = as_a["losses"][0]
+    assert first_loss["attribution"] == "self" and first_loss["kind"] == "fall"
+    # Nothing is scored, so the points-only bell result is a draw...
+    assert as_a["bell_outcome"] == as_b["bell_outcome"] == 0
+    # ...but the measured ending is not: the earlier faller loses from both corners.
+    expected = -1 if first_loss["policy"] == "relaxed" else 1
+    assert as_a["outcome"] == as_b["outcome"] == expected
+    ledger = Ledger(["relaxed", "cocontract"])
+    for r in (as_a, as_b):
+        ledger.add(Game(r["first"], r["second"], r["first_side"], r["outcome"]))
+    matrix, _ = ledger.payoff()
+    assert matrix[0, 1] == expected and ledger.side_balance() == 0.0
+
+
+def test_common_random_numbers_follow_the_policy_not_the_corner(scene):
+    env = BoxingEnv(scene, horizon_ticks=1300)
+    as_a, as_b = paired(env, SCRIPTED_PANEL, "noise", "baseline", seeds=[0])
+    assert as_a["losses"] == as_b["losses"] and as_a["losses"]
+    assert as_a["pelvis_low_tick"] == as_b["pelvis_low_tick"]
+    assert as_a["outcome"] == as_b["outcome"] != 0
+
+
+def test_policy_streams_are_keyed_by_seed_and_name():
+    draw = [
+        policy_stream(s, n).random()
+        for s, n in [(0, "a"), (0, "a"), (1, "a"), (0, "b")]
+    ]
+    assert draw[0] == draw[1] and len(set(draw)) == 3
 
 
 @pytest.mark.parametrize(

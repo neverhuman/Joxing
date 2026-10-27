@@ -1,4 +1,4 @@
-"""Paired side-swapped match runner for frozen controllers (grokbot, cycle 0003).
+"""Paired side-swapped match runner for frozen controllers (grokbot).
 
 Plays complete diagnostic ``BoxingEnv`` games and returns one plain record per
 attempted game. Every attempt is returned, including invalid ones, so a league
@@ -11,12 +11,24 @@ the ``BoxingEnv.act`` contract. Its output is checked before physics, so a
 malformed command is charged to its corner instead of surfacing as an engine
 fault. The scripted panel below is a plumbing and baseline panel. It is not
 boxing competence and not a promotion anchor.
+
+Common random numbers: each policy draws from its own stream keyed by
+(seed, policy name), not from the env's corner-indexed stream, so both games of a
+side-swapped pair feed a stochastic policy identical randomness. Arena games are
+reproduced from their seed; an env snapshot alone does not carry these streams.
+
+outcome is the grokbot.endings reference utility (a measured self-caused
+fall or exit loses; otherwise points at the bell). bell_outcome keeps the
+env's current points-only result for comparison.
 """
 
 from __future__ import annotations
 
+import hashlib
+
 import numpy as np
 
+from grokbot import endings
 from joxing.env import PLAYERS
 from joxing.observations import FEATURE_SPEC
 
@@ -47,8 +59,14 @@ class ControllerFault(Exception):
         self.player = player
 
 
-def _checked(player, controller):
-    def act(observation, history, rng):
+def policy_stream(seed, name):
+    """The policy's own random stream for one seed, independent of its corner."""
+    key = int.from_bytes(hashlib.sha256(name.encode()).digest()[:8], "little")
+    return np.random.default_rng([seed, key])
+
+
+def _checked(player, controller, rng):
+    def act(observation, history, corner_rng):
         try:
             command = controller(observation, history, rng)
         except Exception as error:
@@ -71,7 +89,12 @@ def corner_result(points_ab, first_side):
     return [own, other], int(np.sign(own - other))
 
 
-def play(env, panel, first, second, first_side, seed, *, fall_height_m=0.5):
+def _exited(env, bodies, half_size_m):
+    xy = env.data.xpos[bodies, :2]
+    return bool(np.all(np.abs(xy).max(axis=1) > half_size_m))
+
+
+def play(env, panel, first, second, first_side, seed, *, low_pelvis_m=0.5):
     """One complete game; never raises for a game-level failure."""
     if first == second:
         raise ValueError("A game needs two distinct panel entries")
@@ -79,8 +102,19 @@ def play(env, panel, first, second, first_side, seed, *, fall_height_m=0.5):
         raise ValueError("first_side must be 'A' or 'B'")
     second_side = "B" if first_side == "A" else "A"
     name = {first_side: first, second_side: second}
-    controllers = {a: _checked(a, panel[name[a]]) for a in PLAYERS}
+    controllers = {
+        a: _checked(a, panel[name[a]], policy_stream(seed, name[a])) for a in PLAYERS
+    }
     observations, info = env.reset(seed=seed)
+    bodies = {
+        a: [
+            b
+            for b in range(env.model.nbody)
+            if env.model.body(b).name.startswith(a + "_")
+        ]
+        for a in PLAYERS
+    }
+    exits = {}
     record = {
         "first": first,
         "second": second,
@@ -88,20 +122,26 @@ def play(env, panel, first, second, first_side, seed, *, fall_height_m=0.5):
         "seed": seed,
         "contract_hash": info["contract_hash"],
         "horizon_ticks": env.horizon_ticks,
+        "ending_variant": endings.VARIANT,
         "outcome": None,
+        "bell_outcome": None,
+        "ending": None,
+        "losses": [],
         "invalid_reason": None,
         "fault_player": None,
         "points": None,
         "ticks": 0,
         "events": 0,
-        "fall_tick": {first: None, second: None},
+        "pelvis_low_tick": {first: None, second: None},
     }
     try:
         while True:
             for a in PLAYERS:
                 height = float(observations[a].values[_HEIGHT])
-                if height < fall_height_m and record["fall_tick"][name[a]] is None:
-                    record["fall_tick"][name[a]] = env.tick
+                if height < low_pelvis_m and record["pelvis_low_tick"][name[a]] is None:
+                    record["pelvis_low_tick"][name[a]] = env.tick
+                if a not in exits and _exited(env, bodies[a], 2.5):
+                    exits[a] = env.tick
             if env.done:
                 break
             result = env.act(controllers)
@@ -115,10 +155,38 @@ def play(env, panel, first, second, first_side, seed, *, fall_height_m=0.5):
             f"{type(error).__name__}: {error}"
         )
     record["ticks"] = env.tick
-    if record["invalid_reason"] is None:
-        record["points"], record["outcome"] = corner_result(
-            env.referee.points, first_side
-        )
+    if record["invalid_reason"] is not None:
+        return record
+    record["points"], record["bell_outcome"] = corner_result(
+        env.referee.points, first_side
+    )
+    registry = env.referee.registry
+    touches = endings.contact_ticks(env.evidence, registry)
+    losses = endings.support_losses(env.evidence, registry) + [
+        endings.LossEvent(a, t, "exit", endings.attribute(touches, t, t))
+        for a, t in exits.items()
+    ]
+    ending = endings.decide(
+        env.referee.points,
+        losses,
+        bell=env.done and not env.truncated,
+        bell_tick=env.tick - 1,
+    )
+    record["losses"] = [
+        {
+            "policy": name[e.player],
+            "tick": e.tick,
+            "kind": e.kind,
+            "attribution": e.attribution,
+        }
+        for e in sorted(losses, key=lambda e: (e.tick, e.player))
+    ]
+    record["ending"] = {"reason": ending.reason, "tick": ending.tick}
+    if ending.utility is None:
+        record["invalid_reason"] = ending.reason  # blocked or not a sporting end
+    else:
+        own = ending.utility[0] if first_side == "A" else ending.utility[1]
+        record["outcome"] = own
     return record
 
 
