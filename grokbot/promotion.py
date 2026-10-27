@@ -7,7 +7,8 @@ common random numbers, every attempt included.
 
 The candidate is promoted only if every check passes:
 
-1. Coverage: at least ``min_valid`` valid games against the incumbent and
+1. Coverage: at least ``min_valid`` independent samples (side-swapped pairs
+   sharing a seed count once) against the incumbent and
    against each other panel member, for both candidate and incumbent.
 2. Integrity: the candidate's invalid share (engine, controller or blocked) and
    its blocked-as-faller share stay under their caps, and the corner-A mean
@@ -57,13 +58,22 @@ def hoeffding_lower(mean, n, confidence):
 
 
 def _utilities(records, me, other):
-    """Valid outcomes of ``me`` against ``other``, from me's view."""
-    values = []
-    for r in records:
+    """Independent samples of ``me``'s utility against ``other``.
+
+    Games that share a ``seed`` (the two corners of a side-swapped pair) are
+    averaged into ONE paired sample: with common random numbers they are
+    mirror images, not independent evidence. Records without a seed count
+    individually.
+    """
+    groups = {}
+    for index, r in enumerate(records):
         if {r["first"], r["second"]} != {me, other} or r["outcome"] is None:
             continue
-        values.append(r["outcome"] if r["first"] == me else -r["outcome"])
-    return values
+        key = r.get("seed", ("record", index))
+        groups.setdefault(key, []).append(
+            r["outcome"] if r["first"] == me else -r["outcome"]
+        )
+    return [sum(v) / len(v) for v in groups.values()]
 
 
 def _mean(values):
