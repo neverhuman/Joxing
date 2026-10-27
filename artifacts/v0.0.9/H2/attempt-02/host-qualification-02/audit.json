@@ -1,0 +1,39 @@
+{
+  "auditor_sha256": "5de0d2627b0fe6a24b76246ff5137e680306470aa6836496fcae08c41a8a1aac",
+  "completed": 4,
+  "findings": [
+    {
+      "path": "recorded_actions",
+      "physics_steps": 2600,
+      "snapshot": "boundary",
+      "snapshot_contact_tail_exact": true
+    },
+    {
+      "path": "closed_loop",
+      "physics_steps": 2600,
+      "snapshot": "boundary",
+      "snapshot_contact_tail_exact": true
+    },
+    {
+      "path": "recorded_actions",
+      "physics_steps": 2597,
+      "snapshot": "mid_control",
+      "snapshot_contact_tail_exact": true
+    },
+    {
+      "path": "closed_loop",
+      "physics_steps": 2597,
+      "snapshot": "mid_control",
+      "snapshot_contact_tail_exact": true
+    }
+  ],
+  "incomplete": 0,
+  "invalid": 0,
+  "new_audit_physics_steps": 0,
+  "not_run": 0,
+  "passed": true,
+  "result_sha256": "7f1e6be88e1bbb64b37033bea1c0b4c9fd362af0a5f289bf51089847d3e72ad7",
+  "scope": "Independent saved final-snapshot/contact-tail audit. Frozen executable assertions verify closed-loop source actions; no second actor/physics execution.",
+  "source_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540",
+  "source_physics_steps": 10394
+}

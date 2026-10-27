@@ -1,0 +1,27 @@
+{
+  "source_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540",
+  "cwd": "/home/ubuntu/joxing/v009-scaling-attempt02-20261027",
+  "host": "xbabe3",
+  "wrapper_pid": 2219857,
+  "wrapper_sha256": "6e33a69f9bbfb79043cc1ac42f5f7faea2885e840be7e827269fe26f5cd964c7",
+  "capacity": {
+    "host": "xbabe3",
+    "load": [
+      9.07763671875,
+      9.4462890625,
+      9.90869140625
+    ],
+    "available_memory_bytes": 104865685504,
+    "disk_free_bytes": 48968028160,
+    "owned_jobs": []
+  },
+  "caps": {
+    "qualification_wall_s": 60,
+    "qualification_physics": 12000,
+    "H2_wall_s": 360,
+    "H2_physics": 120000,
+    "simulation_workers": 16,
+    "threads": 1
+  },
+  "gating": "Full153Linux tests then exact4source-v8 state/action/contact replay paths before original H2; first failed stage stops."
+}

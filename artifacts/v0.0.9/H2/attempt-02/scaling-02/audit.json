@@ -1,0 +1,587 @@
+{
+  "all_scaling_cases_completed": true,
+  "anchor_counts": {
+    "completed": 16
+  },
+  "auditor_sha256": "16b6dd16e46f56f8577eb52bd1809fd1ceb2ac8a64bb6dc81bfb052f19a11c91",
+  "boxing_games": 0,
+  "case_counts": {
+    "completed": 78
+  },
+  "limitations": [
+    "Short120-control native walking workload with audit hashes; no optimizer or referee.",
+    "Capacity before a failed reservation is not retained by the old runner; its required-byte fault is retained.",
+    "A single completed repeat is descriptive only; no two-repeat median inference or training-speed claim."
+  ],
+  "linux_tests_passed": 153,
+  "maximum_allocated_physics_steps": 93600,
+  "new_audit_physics_steps": 0,
+  "parallel_completed_cases_matching_serial": 62,
+  "passed": true,
+  "physics_accounting_exact": true,
+  "physics_steps": 93600,
+  "protocol_sha256": "e741ede38d48b8070924aa71850a36456b5adef868466cfc8a8e0b43c6e80953",
+  "result_sha256": "e2ac61f4b9043ebec2f707a3b7f025b224b4ca21ab383b03df325113c4ee9edd",
+  "runner_error": null,
+  "runner_status": "completed",
+  "samples": [
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 12.008370209232986,
+      "steady_control_steps_per_s": 54.49783090637016,
+      "wave_id": "0:1",
+      "workers": 1
+    },
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 22.902636915188737,
+      "steady_control_steps_per_s": 105.52544026562403,
+      "wave_id": "0:2",
+      "workers": 2
+    },
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 46.046892076840855,
+      "steady_control_steps_per_s": 205.54560814561384,
+      "wave_id": "0:4",
+      "workers": 4
+    },
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 78.06632445465773,
+      "steady_control_steps_per_s": 347.9687623673447,
+      "wave_id": "0:8",
+      "workers": 8
+    },
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 124.43957702304981,
+      "steady_control_steps_per_s": 521.8652829993547,
+      "wave_id": "0:16",
+      "workers": 16
+    },
+    {
+      "repeat": 1,
+      "startup_inclusive_control_steps_per_s": 125.31064838544859,
+      "steady_control_steps_per_s": 519.4453967870139,
+      "wave_id": "1:16",
+      "workers": 16
+    },
+    {
+      "repeat": 1,
+      "startup_inclusive_control_steps_per_s": 81.73306336139785,
+      "steady_control_steps_per_s": 369.72194175336233,
+      "wave_id": "1:8",
+      "workers": 8
+    },
+    {
+      "repeat": 1,
+      "startup_inclusive_control_steps_per_s": 44.435874385218355,
+      "steady_control_steps_per_s": 196.8636564575705,
+      "wave_id": "1:4",
+      "workers": 4
+    },
+    {
+      "repeat": 1,
+      "startup_inclusive_control_steps_per_s": 23.274876156633706,
+      "steady_control_steps_per_s": 108.42973174264957,
+      "wave_id": "1:2",
+      "workers": 2
+    },
+    {
+      "repeat": 1,
+      "startup_inclusive_control_steps_per_s": 12.397598143844837,
+      "steady_control_steps_per_s": 55.035103270691515,
+      "wave_id": "1:1",
+      "workers": 1
+    }
+  ],
+  "scope": "Independent persisted hash/accounting audit; no new physics. Hash equality on unchanged v8 core, not independent raw-tape integration.",
+  "source_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540",
+  "summary": [
+    {
+      "completed_repeats": 2,
+      "median_startup_inclusive_control_steps_per_s": 12.202984176538912,
+      "median_steady_control_steps_per_s": 54.76646708853084,
+      "planned_repeats": 2,
+      "workers": 1
+    },
+    {
+      "completed_repeats": 2,
+      "median_startup_inclusive_control_steps_per_s": 23.088756535911223,
+      "median_steady_control_steps_per_s": 106.9775860041368,
+      "planned_repeats": 2,
+      "workers": 2
+    },
+    {
+      "completed_repeats": 2,
+      "median_startup_inclusive_control_steps_per_s": 45.2413832310296,
+      "median_steady_control_steps_per_s": 201.20463230159217,
+      "planned_repeats": 2,
+      "workers": 4
+    },
+    {
+      "completed_repeats": 2,
+      "median_startup_inclusive_control_steps_per_s": 79.89969390802779,
+      "median_steady_control_steps_per_s": 358.84535206035355,
+      "planned_repeats": 2,
+      "workers": 8
+    },
+    {
+      "completed_repeats": 2,
+      "median_startup_inclusive_control_steps_per_s": 124.8751127042492,
+      "median_steady_control_steps_per_s": 520.6553398931843,
+      "planned_repeats": 2,
+      "workers": 16
+    }
+  ],
+  "wave_case_counts": {
+    "completed": 62
+  },
+  "wave_counts": {
+    "completed": 10
+  },
+  "worker_receipts": [
+    {
+      "file": "0-1-worker-0.json",
+      "peak_rss_KiB": 1502440,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2268663
+    },
+    {
+      "file": "0-16-worker-0.json",
+      "peak_rss_KiB": 1508364,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273661
+    },
+    {
+      "file": "0-16-worker-1.json",
+      "peak_rss_KiB": 1500840,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273665
+    },
+    {
+      "file": "0-16-worker-10.json",
+      "peak_rss_KiB": 1513264,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273675
+    },
+    {
+      "file": "0-16-worker-11.json",
+      "peak_rss_KiB": 1508244,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273674
+    },
+    {
+      "file": "0-16-worker-12.json",
+      "peak_rss_KiB": 1502200,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273678
+    },
+    {
+      "file": "0-16-worker-13.json",
+      "peak_rss_KiB": 1503100,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273677
+    },
+    {
+      "file": "0-16-worker-14.json",
+      "peak_rss_KiB": 1497328,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273670
+    },
+    {
+      "file": "0-16-worker-15.json",
+      "peak_rss_KiB": 1507488,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273668
+    },
+    {
+      "file": "0-16-worker-2.json",
+      "peak_rss_KiB": 1498676,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273664
+    },
+    {
+      "file": "0-16-worker-3.json",
+      "peak_rss_KiB": 1494172,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273669
+    },
+    {
+      "file": "0-16-worker-4.json",
+      "peak_rss_KiB": 1501640,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273666
+    },
+    {
+      "file": "0-16-worker-5.json",
+      "peak_rss_KiB": 1504704,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273671
+    },
+    {
+      "file": "0-16-worker-6.json",
+      "peak_rss_KiB": 1499564,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273667
+    },
+    {
+      "file": "0-16-worker-7.json",
+      "peak_rss_KiB": 1502648,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273672
+    },
+    {
+      "file": "0-16-worker-8.json",
+      "peak_rss_KiB": 1492060,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273673
+    },
+    {
+      "file": "0-16-worker-9.json",
+      "peak_rss_KiB": 1505096,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2273676
+    },
+    {
+      "file": "0-2-worker-0.json",
+      "peak_rss_KiB": 1512940,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2269399
+    },
+    {
+      "file": "0-2-worker-1.json",
+      "peak_rss_KiB": 1507132,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2269396
+    },
+    {
+      "file": "0-4-worker-0.json",
+      "peak_rss_KiB": 1511248,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2270322
+    },
+    {
+      "file": "0-4-worker-1.json",
+      "peak_rss_KiB": 1507988,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2270326
+    },
+    {
+      "file": "0-4-worker-2.json",
+      "peak_rss_KiB": 1502508,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2270327
+    },
+    {
+      "file": "0-4-worker-3.json",
+      "peak_rss_KiB": 1505292,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2270325
+    },
+    {
+      "file": "0-8-worker-0.json",
+      "peak_rss_KiB": 1501476,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271400
+    },
+    {
+      "file": "0-8-worker-1.json",
+      "peak_rss_KiB": 1497824,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271403
+    },
+    {
+      "file": "0-8-worker-2.json",
+      "peak_rss_KiB": 1498756,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271404
+    },
+    {
+      "file": "0-8-worker-3.json",
+      "peak_rss_KiB": 1501780,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271405
+    },
+    {
+      "file": "0-8-worker-4.json",
+      "peak_rss_KiB": 1495612,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271409
+    },
+    {
+      "file": "0-8-worker-5.json",
+      "peak_rss_KiB": 1503616,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271407
+    },
+    {
+      "file": "0-8-worker-6.json",
+      "peak_rss_KiB": 1499388,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271408
+    },
+    {
+      "file": "0-8-worker-7.json",
+      "peak_rss_KiB": 1499224,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2271406
+    },
+    {
+      "file": "1-1-worker-0.json",
+      "peak_rss_KiB": 1500564,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2284776
+    },
+    {
+      "file": "1-16-worker-0.json",
+      "peak_rss_KiB": 1503112,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277021
+    },
+    {
+      "file": "1-16-worker-1.json",
+      "peak_rss_KiB": 1502656,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277020
+    },
+    {
+      "file": "1-16-worker-10.json",
+      "peak_rss_KiB": 1503452,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277030
+    },
+    {
+      "file": "1-16-worker-11.json",
+      "peak_rss_KiB": 1499348,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277032
+    },
+    {
+      "file": "1-16-worker-12.json",
+      "peak_rss_KiB": 1506720,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277029
+    },
+    {
+      "file": "1-16-worker-13.json",
+      "peak_rss_KiB": 1502048,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277031
+    },
+    {
+      "file": "1-16-worker-14.json",
+      "peak_rss_KiB": 1499580,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277024
+    },
+    {
+      "file": "1-16-worker-15.json",
+      "peak_rss_KiB": 1497560,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277033
+    },
+    {
+      "file": "1-16-worker-2.json",
+      "peak_rss_KiB": 1498908,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277016
+    },
+    {
+      "file": "1-16-worker-3.json",
+      "peak_rss_KiB": 1495048,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277028
+    },
+    {
+      "file": "1-16-worker-4.json",
+      "peak_rss_KiB": 1493380,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277019
+    },
+    {
+      "file": "1-16-worker-5.json",
+      "peak_rss_KiB": 1490800,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277023
+    },
+    {
+      "file": "1-16-worker-6.json",
+      "peak_rss_KiB": 1500220,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277025
+    },
+    {
+      "file": "1-16-worker-7.json",
+      "peak_rss_KiB": 1508044,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277022
+    },
+    {
+      "file": "1-16-worker-8.json",
+      "peak_rss_KiB": 1504824,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277026
+    },
+    {
+      "file": "1-16-worker-9.json",
+      "peak_rss_KiB": 1491636,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2277027
+    },
+    {
+      "file": "1-2-worker-0.json",
+      "peak_rss_KiB": 1504692,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2284062
+    },
+    {
+      "file": "1-2-worker-1.json",
+      "peak_rss_KiB": 1494768,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2284065
+    },
+    {
+      "file": "1-4-worker-0.json",
+      "peak_rss_KiB": 1500964,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2282766
+    },
+    {
+      "file": "1-4-worker-1.json",
+      "peak_rss_KiB": 1504408,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2282765
+    },
+    {
+      "file": "1-4-worker-2.json",
+      "peak_rss_KiB": 1506624,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2282767
+    },
+    {
+      "file": "1-4-worker-3.json",
+      "peak_rss_KiB": 1499992,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2282762
+    },
+    {
+      "file": "1-8-worker-0.json",
+      "peak_rss_KiB": 1502032,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280860
+    },
+    {
+      "file": "1-8-worker-1.json",
+      "peak_rss_KiB": 1501028,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280863
+    },
+    {
+      "file": "1-8-worker-2.json",
+      "peak_rss_KiB": 1493452,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280864
+    },
+    {
+      "file": "1-8-worker-3.json",
+      "peak_rss_KiB": 1501944,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280865
+    },
+    {
+      "file": "1-8-worker-4.json",
+      "peak_rss_KiB": 1495280,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280866
+    },
+    {
+      "file": "1-8-worker-5.json",
+      "peak_rss_KiB": 1498712,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280869
+    },
+    {
+      "file": "1-8-worker-6.json",
+      "peak_rss_KiB": 1498576,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280867
+    },
+    {
+      "file": "1-8-worker-7.json",
+      "peak_rss_KiB": 1507328,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 2280868
+    },
+    {
+      "file": "anchors-worker-0.json",
+      "peak_rss_KiB": 1506304,
+      "phase": "completed",
+      "physics_steps": 19200,
+      "pid": 2266371
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "actor_hash": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+  "boxing_games": 0,
+  "cases": [
+    {
+      "all_tail_contacts_posture_exact": true,
+      "final_snapshot_exact": true,
+      "final_snapshot_sha256": "11400d8dbd737466d25f0664a819249b7e205caae095b89896d019b525e21dc0",
+      "first_source_substep": 100,
+      "path": "recorded_actions",
+      "physics_steps": 2600,
+      "predicted_actions_exact": false,
+      "raw_substeps_sha256": "f095acb839b3132c2b5fa7db2e29ce79d570826b836b9b00ce699dade41fd945",
+      "snapshot": "boundary",
+      "status": "completed"
+    },
+    {
+      "all_tail_contacts_posture_exact": true,
+      "final_snapshot_exact": true,
+      "final_snapshot_sha256": "11400d8dbd737466d25f0664a819249b7e205caae095b89896d019b525e21dc0",
+      "first_source_substep": 100,
+      "path": "closed_loop",
+      "physics_steps": 2600,
+      "predicted_actions_exact": true,
+      "raw_substeps_sha256": "f095acb839b3132c2b5fa7db2e29ce79d570826b836b9b00ce699dade41fd945",
+      "snapshot": "boundary",
+      "status": "completed"
+    },
+    {
+      "all_tail_contacts_posture_exact": true,
+      "final_snapshot_exact": true,
+      "final_snapshot_sha256": "11400d8dbd737466d25f0664a819249b7e205caae095b89896d019b525e21dc0",
+      "first_source_substep": 103,
+      "path": "recorded_actions",
+      "physics_steps": 2597,
+      "predicted_actions_exact": false,
+      "raw_substeps_sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14",
+      "snapshot": "mid_control",
+      "status": "completed"
+    },
+    {
+      "all_tail_contacts_posture_exact": true,
+      "final_snapshot_exact": true,
+      "final_snapshot_sha256": "11400d8dbd737466d25f0664a819249b7e205caae095b89896d019b525e21dc0",
+      "first_source_substep": 103,
+      "path": "closed_loop",
+      "physics_steps": 2597,
+      "predicted_actions_exact": true,
+      "raw_substeps_sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14",
+      "snapshot": "mid_control",
+      "status": "completed"
+    }
+  ],
+  "code_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540",
+  "host": "xbabe3",
+  "mujoco": "3.8.0",
+  "normalizer_stats_hash": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+  "numpy": "2.4.2",
+  "passed": true,
+  "physics_steps": 10394,
+  "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+  "protocol_sha256": "66caf5eb8e90b3775d6894c7d3e86ca54e411eebd1ff514c5ea1797145a0bec2",
+  "python": "3.12.3",
+  "schema": "joxing-run-v1",
+  "script_sha256": "33bd3bf6a87f669a889349b8ca78d74a20b1f6bfb43739ed8aa58e15bfe5cfd1",
+  "source_hash": "6e2579711ac7806777db42c83971b028fd1046f2f2fffa13792bd978601bc8a7",
+  "status": "completed",
+  "threads": 1,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-27T00:32:47.939517+00:00",
+  "wall_s": 20.213641298934817
+}

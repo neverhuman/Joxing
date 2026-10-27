@@ -1,0 +1,14 @@
+{
+  "scope": "Final pre-formal harness/fault evidence validation, no physical rollout/training",
+  "command": "uv run --project experiments/v0.0.9/runtime pytest -q tests/test_collector_benchmark.py",
+  "passed": 3,
+  "note": "Includes zero-physics NaN integration-state capture; the reference/default remains unchanged. Prior9candidate invariant tests retain their first receipt. Full165Linux suite gates formal H3.",
+  "source_files": {
+    "src/joxing/physical_fast.py": "98d3017e7891f8d7f57a50b55f029b8871cffbf13f96c44b71e2cb2632392831",
+    "scripts/benchmark_collector.py": "64f944fd7d1e6ac8aedbbf8607344c017f9ce026806591c79976f1929cdf6715",
+    "tests/test_physical_fast.py": "bc11f25b06b9de0121d586d2d4529ea1360762dc242a5c4f38b3ef106a9fc4f4",
+    "tests/test_collector_benchmark.py": "630b28a7cd972c69773fa7b8ac3cb7bb0b797de95a6c93dbd84becf3bc75cd49",
+    "experiments/v0.0.9/collector-protocol.json": "06405dd84f32aa260b85c40edd5eb13250f2cd1dfd7b26cc05ba98c361470d16"
+  },
+  "formal_attempts": 0
+}

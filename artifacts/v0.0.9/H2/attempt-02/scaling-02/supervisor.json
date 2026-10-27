@@ -1,0 +1,85 @@
+{
+  "pid": 2219857,
+  "source_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 2219859,
+      "returncode": 0,
+      "wall_s": 9.630236856639385
+    },
+    {
+      "stage": "full-tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "pid": 2220549,
+      "returncode": 0,
+      "wall_s": 217.51283186860383
+    },
+    {
+      "stage": "host-qualification",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_scaling_host.py",
+        "--protocol",
+        "experiments/v0.0.9/scaling-attempt-02.json",
+        "--inputs",
+        "/home/ubuntu/joxing/deployment-cache/inputs",
+        "--out",
+        "runs/v0.0.9/host-qualification-02"
+      ],
+      "status": "completed",
+      "pid": 2259752,
+      "returncode": 0,
+      "wall_s": 21.3509956356138
+    },
+    {
+      "stage": "H2",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "python",
+        "scripts/benchmark_physical_scaling.py",
+        "--protocol",
+        "experiments/v0.0.9/scaling-protocol.json",
+        "--inputs",
+        "/home/ubuntu/joxing/deployment-cache/inputs",
+        "--out",
+        "runs/v0.0.9/scaling-02"
+      ],
+      "status": "completed",
+      "pid": 2266358,
+      "returncode": 0,
+      "wall_s": 159.7240369860083
+    }
+  ],
+  "started_utc": "2026-10-27T00:29:00.549194+00:00",
+  "physics_budget": 132000,
+  "threads": 1,
+  "finished_utc": "2026-10-27T00:35:48.772546+00:00"
+}

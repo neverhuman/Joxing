@@ -66,3 +66,17 @@ The extra compute produced small motor gains but no five-second survivor and no 
 146Linux regressions pass. Native2ms/all700/frozen scalar actor with v8 physical evidence and extra per-control audit hashes,120controls per process:1/2/4/8worker first-repeat steady parent throughput43.82/82.21/155.66/226.44control transitions/s. Startup-inclusive9.85/17.98/34.41/56.18; worker construction7.59–10.41s dominates these short waves. Each completed parallel trajectory equals its serial anchor.16workers were never launched: fixed2GiB/worker+8GiB floor could not reserve40GiB. All31 completed/47not_run case rows remain;4completed waves/1invalid reservation/5not_run waves.37,200physics/110.277s, exact counters and no live owned process. One completed repeat at each count is descriptive, not a repeated median, production training speed or game throughput. [Audit](../artifacts/v0.0.9/H2/attempt-01/audit.json).
 
 Roomier-host attempt02 is preregistered on xbabe3 (fresh~95GiB available RAM/~45.7GiB disk,load~9 on128logical CPUs). Same CPU/locked runtime/H2script and memory guard, with an additional strict source-v8 boundary/mid-command state/action/contact qualification before scaling. Existing user-local uv byte-identical; pinned assets/weights copied without drivers/services changes. [Worker-ready execution](V0.0.9_H2_ATTEMPT02.md). Keep workers resident across many chunks in future native RL; existing stance training already does this. Batching remains unqualified, physical/control/game gates unchanged.
+
+### v9 H2 attempt02 completed on xbabe3
+
+153Linux tests pass215.75s; four exact source-v8 fixed/closed-loop boundary/mid-command state/action/contact continuations pass10,394physics/20.214s, independently audited from saved snapshots/evidence. Scaling completed all78cases/10waves with zero invalid/incomplete/not_run; all62parallel cases match serial histories,93,600physics/159.405s. Both16worker repeats pass; all71recorded PIDs exited/source unchanged. [All-row audit](../artifacts/v0.0.9/H2/attempt-02/scaling-02/audit.json).
+
+|Workers|Median steady parent controlTPS (2repeats)|Median startup-inclusive controlTPS|
+|---|---:|---:|
+|1|54.77|12.20|
+|2|106.98|23.09|
+|4|201.20|45.24|
+|8|358.85|79.90|
+|16|520.66|124.88|
+
+These are short120control native single-human workloads with snapshot/evidence/audit hashes and scalar inference, no optimizer/referee or boxing game. Keep this host's repeated results separate from xbabe1's stopped allocation.16 is the highest measured aggregate throughput within the allowance; persistent native workers should amortize construction over many chunks. Next [H3](V0.0.9_H3_COLLECTOR.md) tests one allocation-reduced collector at equal4workers with exact replay and1.2x threshold, leaving reference code/default unchanged.

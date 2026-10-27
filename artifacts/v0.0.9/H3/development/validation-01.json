@@ -1,0 +1,24 @@
+{
+  "scope": "Pre-formal development tests, no training/evaluation claim",
+  "candidate_tests": {
+    "command": "uv run --project experiments/v0.0.9/runtime pytest -q tests/test_physical_fast.py",
+    "passed": 9,
+    "wall_s": 12.04
+  },
+  "harness_tests": {
+    "command": "uv run --project experiments/v0.0.9/runtime pytest -q tests/test_collector_benchmark.py",
+    "passed": 2,
+    "wall_s": 0.32
+  },
+  "full_collection": 164,
+  "lint": "uvx ruff check src scripts tests passed; initial unused role/lambda lint issues corrected before source freeze",
+  "source_files": {
+    "src/joxing/physical_fast.py": "98d3017e7891f8d7f57a50b55f029b8871cffbf13f96c44b71e2cb2632392831",
+    "scripts/benchmark_collector.py": "7ee76681e5017d9502f28f5276f0a42dafa35d91aa79702ef023936467f99893",
+    "tests/test_physical_fast.py": "bc11f25b06b9de0121d586d2d4529ea1360762dc242a5c4f38b3ef106a9fc4f4",
+    "tests/test_collector_benchmark.py": "81def5a2900cbcbaa9f6217d51cb218722db2b7c61532f280dafefc0b198ab8c",
+    "experiments/v0.0.9/collector-protocol.json": "06405dd84f32aa260b85c40edd5eb13250f2cd1dfd7b26cc05ba98c361470d16"
+  },
+  "formal_attempts": 0,
+  "notes": "Development source not yet committed when tests ran; final exact files are frozen in the next source commit before formal outcomes."
+}
