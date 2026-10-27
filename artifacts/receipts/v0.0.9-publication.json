@@ -1,0 +1,34 @@
+{
+  "schema": "joxing-publication-v1",
+  "utc": "2026-10-27T01:29:20.141142+00:00",
+  "repository": {
+    "default_branch": "main",
+    "full_name": "neverhuman/Joxing",
+    "private": false,
+    "visibility": "public"
+  },
+  "release_url": "https://github.com/neverhuman/Joxing/releases/tag/v0.0.9",
+  "release_id": 424941535,
+  "published_at": "2026-10-27T01:28:22Z",
+  "release_draft": false,
+  "tag": "v0.0.9",
+  "tag_commit": "6d901706586c328be23cc0c5991fb446443305f5",
+  "remote_peeled_tag_matches": true,
+  "anonymous_source": {
+    "url": "https://raw.githubusercontent.com/neverhuman/Joxing/v0.0.9/docs/V0.0.9_RESULTS.md",
+    "sha256": "187ae891f1ac5440d92282b8b1f2632b5ef607a4f53641b6bb46df5a73cc4cd9",
+    "matches_local": true
+  },
+  "anonymous_archive": {
+    "url": "https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz",
+    "bytes": 214411789,
+    "sha256": "df87afe90e27237e8528156b6a8ec3af69dd84a97bcddeb53ec562d9a285c45f",
+    "matches_local": true,
+    "full_stream_verified": true,
+    "wall_s": 10.35410212498391
+  },
+  "next_mission": "docs/V0.0.10_MISSION.md",
+  "next_mission_status": "ready for implementation, no v10training underway",
+  "frozen_curated_manifest": "artifacts/v0.0.9/artifact-manifest.json",
+  "receipt_location_reason": "Outside completed tagged artifact manifest; records later publication."
+}

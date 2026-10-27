@@ -4,7 +4,7 @@ Current ready mission: **v0.0.10 — bounded physical motor adaptation**. [Worke
 
 ## Completed dependency and decision
 
-[v0.0.9 results](V0.0.9_RESULTS.md) conclude all registered packets honestly. H0frozen batching failed7.15e-6 versus1e-6; N1first divergence at first MLP linear, disablingMKLDNNdid not fix it. H1all6paired cases exact:63–70%loop physical/evidence,23–29%actor+normalizer. H2attempt01xbabe1 stopped at fixed16worker RAM reservation,31completed/47not_run, all15completed parallel histories exact. Preserve negative and every future row.
+[v0.0.9 results](V0.0.9_RESULTS.md) conclude all registered packets honestly. Public annotated tag and full raw release are published; [anonymous full-stream verification](../artifacts/receipts/v0.0.9-publication.json) passes. H0frozen batching failed7.15e-6 versus1e-6; N1first divergence at first MLP linear, disablingMKLDNNdid not fix it. H1all6paired cases exact:63–70%loop physical/evidence,23–29%actor+normalizer. H2attempt01xbabe1 stopped at fixed16worker RAM reservation,31completed/47not_run, all15completed parallel histories exact. Preserve negative and every future row.
 
 H2attempt02xbabe3source37aa36cf6577d453fbb9b367ab3a7963184f8540 qualified four source-v8 replay tails,153Linux tests and all78scaling cases/62parallel histories exact. Median steady1/2/4/8/16workers54.77/106.98/201.20/358.85/520.66controlTPS;startup-inclusive12.20/23.09/45.24/79.90/124.88. Both16worker repeats complete. Preserve hosts separately, no pooled estimate.
 
