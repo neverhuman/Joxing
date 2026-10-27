@@ -293,6 +293,29 @@ def train_generation(
     return params, stats
 
 
+def finite_or_none(value):
+    return float(value) if value is not None and np.isfinite(value) else None
+
+
+def safe_ratings(ledger, anchor):
+    """Elo by name, or {} when there is no valid game or no common scale.
+
+    A league whose bouts are all no-contests has no ratings at all; that is a
+    result to report, not a crash (v0.0.12 attempt 01).
+    """
+    try:
+        ratings = ledger.ratings()  # centred on the rated players
+    except ValueError:
+        return {}
+    if np.isfinite(ratings[ledger.index[anchor]]):
+        ratings = ratings - ratings[ledger.index[anchor]]
+    return {
+        n: round(float(ratings[ledger.index[n]]), 1)
+        for n in ledger.players
+        if np.isfinite(ratings[ledger.index[n]])
+    }
+
+
 def evaluation_tasks(candidate, archive, opponent_names, seeds, noise):
     """Side-swapped pairs: candidate checkpoint vs each named opponent."""
     spec = ("params", archive[candidate], noise)
@@ -432,7 +455,7 @@ def run_league(
                 ]
                 return float(np.mean(vals)) if vals else None
 
-            ratings = ledger.ratings(anchor="baseline" if panel else "gen0")
+            elo = safe_ratings(ledger, "baseline" if panel else "gen0")
             gate = decide(
                 games,
                 f"gen{g}",
@@ -458,13 +481,9 @@ def run_league(
                 "vs_scripted": {n: mean_vs(n) for n in panel},
                 "train_contact_ticks": stats["contact_ticks"],
                 "train_median_end_tick": float(np.median(stats["end_ticks"])),
-                "elo": {
-                    n: round(float(ratings[ledger.index[n]]), 1)
-                    for n in ledger.players
-                    if np.isfinite(ratings[ledger.index[n]])
-                },
-                "side_balance": ledger.side_balance(),
-                "side_balance_this_gen": this_gen.side_balance(),
+                "elo": elo,
+                "side_balance": finite_or_none(ledger.side_balance()),
+                "side_balance_this_gen": finite_or_none(this_gen.side_balance()),
                 "eval_contact_ticks": sum(r["contact_ticks"] for r in mine),
                 "eval_engaged_share": float(
                     np.mean([r["engaged"][f"gen{g}"] for r in mine])
