@@ -1,6 +1,7 @@
 """Exclusive bounded D2 parent; no automatic retry or held-out selection."""
 
 import gc
+import hashlib
 import io
 import json
 import os
@@ -22,9 +23,10 @@ from .motor_pilot import (
     paired_conclusion,
     planned_rows,
 )
+from .motor_protocol import optimizer_hashes, pid_identity
 from .motor_residual import MotorResidualEnv
 from .motor_storage import RawCredit, append_json, save_npz, write_bytes, write_json
-from .provenance import manifest
+from .provenance import digest, manifest
 from .wave import canonical_actor_hash, check_resources
 
 MIB = 1024**2
@@ -108,13 +110,29 @@ def worker_factory(inputs, folder, index, worker, deadline, expected_bundle, raw
     return make
 
 
+def load_motor_env(inputs, factory=MotorResidualEnv.from_inputs):
+    """Loading a frozen SAC teacher must not reseed the parent's learner RNG."""
+    import torch
+
+    states = random.getstate(), np.random.get_state(), torch.get_rng_state()
+    try:
+        return factory(inputs)
+    finally:
+        random.setstate(states[0])
+        np.random.set_state(states[1])
+        torch.set_rng_state(states[2])
+
+
 def save_policy(model, folder, stage, bundle):
     import torch
 
     buffer = io.BytesIO()
     model.save(buffer)
-    write_bytes(folder / (stage + ".zip"), buffer.getvalue())
+    payload = buffer.getvalue()
+    write_bytes(folder / (stage + ".zip"), payload)
     metadata = {
+        "checkpoint_sha256": hashlib.sha256(payload).hexdigest(),
+        "optimizer_state_hashes": optimizer_hashes(model),
         "actor_hash": canonical_actor_hash(model.actor),
         "critic_hash": canonical_actor_hash(model.critic),
         "target_hash": canonical_actor_hash(model.critic_target),
@@ -187,6 +205,7 @@ class PilotRun:
         self.training_folder = None
         self.report = manifest() | {
             "pid": os.getpid(),
+            "process_identity": pid_identity(),
             "status": "running",
             "protocol": protocol,
             "evaluations": planned_rows(),
@@ -200,6 +219,7 @@ class PilotRun:
             "boxing_games": 0,
             "formal_optimizer_updates": 0,
             "physics_accounting_exact": True,
+            "protocol_sha256": digest(protocol),
         }
         write_json(self.out / "protocol.json", protocol)
         self.save("created")
@@ -283,10 +303,23 @@ class PilotRun:
 
     def evaluation(self, model, index, stage, folder):
         self.guard(0)
-        self.active_env = MotorResidualEnv.from_inputs(self.inputs)
+        self.active_env = load_motor_env(self.inputs)
         try:
             if self.active_env.contract_hash != self.p["bundle_hash"]:
                 raise ValueError("Evaluation bundle drift")
+            context = {
+                "bundle": self.active_env.contract,
+                "groups": [list(g) for g in self.active_env.groups],
+                "normalizer": self.active_env.normalizer.export(),
+                "physical_specification": self.active_env.task.specification(),
+                "floor_geom_id": self.active_env.task.floor,
+            }
+            context_path = self.out / "frozen-context.json"
+            if context_path.exists():
+                if digest(context) != digest(json.loads(context_path.read_text())):
+                    raise ValueError("Frozen context drift between phases")
+            else:
+                write_json(context_path, context)
             for i, row in enumerate(self.report["evaluations"]):
                 if (
                     row["training_seed"] != TRAINING_SEEDS[index]
@@ -297,14 +330,26 @@ class PilotRun:
                 path = folder / (stage + "-" + str(row["evaluation_seed"]))
                 row["status"] = "running"
                 self.save("evaluation_start")
-                self.report["evaluations"][i] = collect(
-                    self.active_env,
-                    model,
-                    path,
-                    row,
-                    self.guard,
-                    self.p["raw_credits"]["evaluation_bytes"],
-                )
+                before = self.active_env.task.physics_total
+                row.update(physics_steps=0, controls=0)
+                try:
+                    self.report["evaluations"][i] = collect(
+                        self.active_env,
+                        model,
+                        path,
+                        row,
+                        self.guard,
+                        self.p["raw_credits"]["evaluation_bytes"],
+                    )
+                except Exception as error:
+                    self.report["evaluations"][i] = dict(
+                        row,
+                        status="incomplete",
+                        reason=type(error).__name__ + ": " + str(error),
+                        physics_steps=self.active_env.task.physics_total - before,
+                        physics_accounting_exact=True,
+                    )
+                    raise
                 self.save("evaluation_completed")
                 if self.report["evaluations"][i]["status"] != "completed":
                     raise RuntimeError(
@@ -318,6 +363,13 @@ class PilotRun:
     def training(self, model, index, folder):
         row = self.report["training"][index]
         self.guard(81920)
+        reservation = check_resources(self.out, self.p["caps"])
+        minimum = self.p["caps"]["minimum_memory_bytes"] + 12 * 1024**3
+        if (
+            reservation["available_memory_bytes"] is None
+            or reservation["available_memory_bytes"] < minimum
+        ):
+            raise RuntimeError("Four 2GiB workers plus 4GiB learner reservation")
         began = time.monotonic()
         deadline = min(
             began + 600,
@@ -352,6 +404,9 @@ class PilotRun:
                 start_method="spawn",
             )
             row["worker_pids"] = [p.pid for p in vec.processes]
+            row["worker_process_identities"] = [
+                pid_identity(p.pid) for p in vec.processes
+            ]
             row["startup_s"] = time.monotonic() - began
             self.save("workers_started")
             model.set_env(vec, force_reset=True)
@@ -433,10 +488,10 @@ class PilotRun:
                 self.evaluation(loaded, index, "final", folder)
                 self.guard(0)
                 self.audit_began = time.monotonic()
-                self.active_env = MotorResidualEnv.from_inputs(self.inputs)
                 self.report["replays"][index]["status"] = "running"
                 self.save("replay_start")
                 try:
+                    self.active_env = load_motor_env(self.inputs)
                     rr = replay(
                         self.active_env,
                         loaded,
@@ -446,11 +501,23 @@ class PilotRun:
                         self.p["raw_credits"]["replay_bytes"],
                     )
                     self.report["replays"][index].update(rr)
+                except Exception as error:
+                    self.report["replays"][index].update(
+                        status="incomplete",
+                        reason=type(error).__name__ + ": " + str(error),
+                        physics_steps=(
+                            0
+                            if self.active_env is None
+                            else self.active_env.task.physics_total
+                        ),
+                    )
+                    raise
                 finally:
-                    self.audit_physics += self.active_env.task.physics_total
+                    if self.active_env is not None:
+                        self.audit_physics += self.active_env.task.physics_total
+                        self.active_env.close()
                     self.audit_wall += time.monotonic() - self.audit_began
                     self.audit_began = None
-                    self.active_env.close()
                     self.active_env = None
                 if rr["status"] != "completed":
                     raise RuntimeError("Required frozen-policy replay failed")
@@ -478,4 +545,14 @@ class PilotRun:
                             status="incomplete", reason="Parent halted during attempt"
                         )
             self.save("finished")
+            files = {
+                str(path.relative_to(self.out)): {
+                    "bytes": path.stat().st_size,
+                    "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                }
+                for path in sorted(self.out.rglob("*"))
+                if path.is_file()
+                and path.name not in {"raw-manifest.json", "independent-audit.json"}
+            }
+            write_json(self.out / "raw-manifest.json", {"files": files})
         return self.report

@@ -15,6 +15,7 @@ for variable in (
 ):
     os.environ[variable] = "1"
 
+from joxing.motor_protocol import unknown_owned_processes, validate
 from joxing.motor_run import PilotRun
 from joxing.provenance import ROOT, digest
 from joxing.stance_train import file_hash
@@ -23,10 +24,14 @@ from joxing.stance_train import file_hash
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--protocol", type=Path, required=True)
+    parser.add_argument("--protocol-sha256", required=True)
     parser.add_argument("--inputs", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
     p = json.loads(args.protocol.read_text())
+    validate(p, args.protocol_sha256)
+    if unknown_owned_processes():
+        raise RuntimeError("Another owned Joxing job is active")
     registered = json.loads((ROOT / "experiments/v0.0.10/protocol.json").read_text())
     if digest(p) != digest(registered) or p["schema"] != "joxing-motor-pilot-D2-0.0.10":
         raise ValueError("Unregistered pilot protocol")

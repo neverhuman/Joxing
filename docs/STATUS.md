@@ -1,3 +1,11 @@
+## 2026-10-27: visible-bout priority and D2 launch preparation
+
+User priority: reach recordings of two responsive boxing athletes. New [recorded-bout delivery packet](BOUT_RECORDING_MILESTONE.md) makes shared-world footage an explicit v11 deliverable, followed by qualified guard/reach exchanges and fixed-scenario before/after historical self-play. No native valid bout exists yet. `bout_recording.py` and `render_bout_recording.py` implement passive dual-body state tapes, checksums, bounded output and zero-step scratch playback. First schema is diagnostic-only with points unavailable. Two fixture tests cover both complete bodies, capture nonmutation, clock/hash corruption, causal sampling and bounds; no boxing footage or learner improvement is claimed.
+
+D2 parent/protocol/auditor source is now implemented, including independent saved contact/reward/first-latch arithmetic, all-attempt accounting, checkpoint/optimizer hashes, teacher-load RNG isolation and bounded cleanup. New supervisor gates the exact196-test Linux suite, records PID/start-time identities, then permits one fixed two-seed pilot and saved-evidence audit. No formal D2 run has started at this entry. Fresh xbabe3 scan10:35:46UTC: owned jobs0,95.16GB available RAM,38.12GB disk, load11.22/11.44/11.65. A first remote scan failed because rtk is absent there; local commands remain prefixed with rtk, remote Python is invoked through that outer proxy. Refresh capacity at actual launch.
+
+Raw credits finalized before any D2 outcomes: parent192MiB + eight workers32MiB +32evaluations12MiB +two replays12MiB +prior32MiB =888MiB, within unchanged whole-version1GiB. This replaces the unregistered draft distribution and leaves196MiB margin; no physics/wall/worker/learning/win gate changed. Physical main allowance remains550k/1800s including prior10,394/25.066975s; separate50k/300s audit reserve. Full source/protocol publication and Linux qualification still precede formal outcomes. Earlier draft statuses below are historical.
+
 # Status and execution log
 
 Date: October 26, 2026 (America/Denver).

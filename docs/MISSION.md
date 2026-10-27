@@ -1,3 +1,13 @@
+# Current mission — visible bout, bounded motor prerequisite
+
+Priority: [deliver recorded two-player boxing](BOUT_RECORDING_MILESTONE.md). Current active packet remains v10D2; v11 is the connected shared-loop and first diagnostic recording, then qualified motor exchanges and historical self-play. No native bout or learning win is claimed.
+
+D2 parent, independent saved-array auditor, ownership/protocol checks and bounded Linux supervisor are implemented. Machine protocol is being frozen before formal outcomes. Exact196-test Linux gate precedes one fixed8192×2transition/four-worker pilot with32held-out evaluations andtwo replay tails. Main550kphysics/1800s/1GiB including prior10,394/25.066975s; separate50k/300s audit reserve; final raw credit allocation888MiB. No training launch until source/public protocol and Linux gate pass. Current local full regression passed196tests177.52s; targeted recorder+motor10passed13.82s, Ruffpasses. No extra agents or duplicate jobs.
+
+Read BOUT_RECORDING_MILESTONE, V0.0.10_D2_PILOT and V0.0.11_MISSION. The next action is freeze/public-push source/protocol, deploy one fresh Linux checkout, run the bounded qualification/pilot supervisor, inspect actual counters, and independently conclude every row. If the fixed motor question fails, prioritize scene-specific stance/guard/reach beside the connected game; do not run another unchanged walking sweep. Keep the first recorded diagnostic visibly distinct from a qualified learned bout.
+
+## Prior mission entries, preserved
+
 # Current Joxing mission
 
 **Current: v0.0.10 residual pilot, not yet launched. Next registered mission: [v0.0.11 simultaneous two-player correctness proof](V0.0.11_MISSION.md).** The user supplied three additional plans; all are preserved/reviewed in [SELF_PLAY_EXECUTION_PLAN.md](SELF_PLAY_EXECUTION_PLAN.md). This integrated route is now the strategic read-first plan. It preserves current native gates and fixed v10question, then moves to a connected game, rule/zone probes, causal history, cheap learner/league controls, boxing-specific motors and measured native self-play throughput. Documents are proposals, not execution instructions. No agents or other-chat messages.

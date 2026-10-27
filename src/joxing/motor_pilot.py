@@ -110,14 +110,32 @@ class PilotWorker(gym.Wrapper):
         self.events.touch(exist_ok=False)
         self.step_wall_s = self.reset_wall_s = 0.0
         self.status = "ready"
+        self.attempted_residual = None
         self.closed = False
         self._progress()
 
     def _progress(self):
+        from torch import get_num_threads
+
+        from .motor_protocol import pid_identity
+
         write_json(
             self.folder / "progress.json",
             {
                 "pid": os.getpid(),
+                "process_identity": pid_identity(),
+                "torch_threads": get_num_threads(),
+                "thread_limits": {
+                    key: os.environ.get(key)
+                    for key in (
+                        "OMP_NUM_THREADS",
+                        "OPENBLAS_NUM_THREADS",
+                        "MKL_NUM_THREADS",
+                        "NUMEXPR_NUM_THREADS",
+                        "VECLIB_MAXIMUM_THREADS",
+                    )
+                },
+                "started_motor_episodes": self.episode_index + 1,
                 "status": self.status,
                 "training_seed": TRAINING_SEEDS[self.training_index],
                 "worker_index": self.worker_index,
@@ -173,6 +191,12 @@ class PilotWorker(gym.Wrapper):
         save_npz(
             self.folder / "fault-arrays.npz",
             state=state,
+            attempted_residual=np.empty(0, np.float32)
+            if self.attempted_residual is None
+            else self.attempted_residual,
+            held_command=np.asarray(
+                (self.env._held or {}).get("command", []), np.float32
+            ),
             observation=np.empty(0, np.float32)
             if self.env.task.last_obs is None
             else self.env.task.last_obs,
@@ -230,6 +254,7 @@ class PilotWorker(gym.Wrapper):
         began = time.monotonic()
         try:
             self._guard()
+            self.attempted_residual = np.asarray(residual, dtype=np.float32).copy()
             observation, reward, terminated, truncated, info = self.env.step(residual)
             if (
                 not np.isfinite(observation).all()
@@ -267,6 +292,9 @@ class PilotWorker(gym.Wrapper):
             append_json(self.trace, row)
             self.step_wall_s += time.monotonic() - began
             if self.transitions % 64 == 0 or terminated or truncated:
+                write_json(
+                    self.folder / "last-valid-snapshot.json", self.env.snapshot()
+                )
                 self._flush()
                 self._progress()
             return observation, reward, terminated, truncated, info

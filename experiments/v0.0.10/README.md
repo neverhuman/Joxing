@@ -1,3 +1,9 @@
+# Latest execution state
+
+D2 parent, independent raw-array auditor, protocol ownership checks and bounded Linux supervisor are implemented; source/protocol publication and exact196-test fresh Linux gate precede the first formal pilot. Final disjoint raw allocation888MiB within unchanged1GiB: parent192, eight workers32 each,32evaluations12 each,two replays12 each,prior32MiB. Targeted10tests passed13.82s; full local suite passed196tests177.52s. FormalD2optimizer updates0 at this entry. Visible-bout route and passive recording implementation are in docs/BOUT_RECORDING_MILESTONE.md; this motor pilot is not self-play.
+
+## Prior entries
+
 # v0.0.10 experiment book
 
 Status: in progress; D0/R1/D1audited, D2worker/evaluation foundations implemented/tested, parent runner/protocol/auditor needed before learning. Current packet docs/V0.0.10_D2_PILOT.md. Follow [worker-ready mission](../../docs/V0.0.10_MISSION.md). Current priority is existing-data input/failure audit followed by a deterministic neutral residual-adapter contract. Do not train until tests, source-v8 qualification, a new machine protocol and public source freeze pass. Do not reuse old v9runtime locks after release package metadata changes.
