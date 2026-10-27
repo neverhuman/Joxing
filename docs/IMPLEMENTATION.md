@@ -1,3 +1,22 @@
+## Frozen Linux foundation gate active —2026-10-27 12:01UTC
+
+Public sourcef22cf8b338e00d179dd88df77456cb96ee2c24c7; foundation protocol canonical
+bbcbf084d0169f1c3c869fb34195f1fd861a9876da8fe0c5cbef7fa5d8ea50d2 anonymously
+byte-verified. Dedicated xbabe3:/home/ubuntu/joxing/v011-loop-foundation-20261027.
+Supervisor3355366/start_ticks920445093; pytest3355576/start_ticks920445336.
+133source+288upstreamfiles verified. Fresh launchscanownedempty,99.27GBavailable
+RAM/36.43GBdisk. Syncpassed2.09s; testlogadvancing at12:01:13, pytestCPU13.31s/
+RSS1.28GB, source diffempty. This is regression fixtures only, not a formal v11
+rollout or learner. Bound180s sync/420s tests, one numerical thread/process.
+
+Next heartbeat: inspect actual PID/startticks, full result/testlog/resources and
+source, require218passes and all recorded processes exited. Preserve any fault
+or negative result. If gatepasses, implement D0_SHARED_RECORDING runner/auditor/
+new protocol and adversarial tests; freeze/public-push before its formal outcomes.
+No autoD0launch, duplicatejob, executing-source edit or v11tag. Local docs/receipts
+may advance while the frozen checkout remains immutable. Receipts in
+artifacts/v0.0.11/development/foundation-{publication,capacity,launch,check-01}.json.
+
 ## Shared-loop foundation implemented; Linux qualification next
 
 Current authority: docs/MISSION.md. The shared BoxingEnv now freezes both players'
