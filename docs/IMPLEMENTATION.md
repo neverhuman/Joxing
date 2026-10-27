@@ -103,3 +103,9 @@ Replay UI overlays clock, points, location, force/impulse, event reason, actor a
 Every run saves resolved config, code/source/upstream hashes, engine/backend/precision, hardware, seeds, model/rules/observation hashes, action transforms and assistance. Save candidates/controls, optimizer history, checkpoint hashes and held-out protocol before looking at results. Record commands, elapsed time, artifact paths and failures in STATUS.md. A failed run leaves a fault receipt and attempted-match count.
 
 Final handoff lists achieved gates, remaining blockers, exact continuation command, host/process if still running, expected outputs and path to receipts. Commit source before training; receipts may reference the preceding source commit. Push to NeverHuman/Joxing. Do not mark competitive learning complete until P1–P5 evidence exists.
+
+### v9 measured HPC: N1 and H1
+
+Frozen batching remains unqualified: identical normalized inputs diverge first at latent_pi.0; MKLDNN disable does not change7.15e-6 final error. No old tolerance changed. H1 full native scalar loop completed6/6cases,18kphysics, all three profiled/unprofiled trajectories exact. Baseline median62.48control transitions/s; physical/evidence/telemetry dominates63–70%,actor+normalization23–29%,snapshot~4%. These are one-human motor diagnostics, not valid boxing games or optimizer throughput. Source core remains v8 unchanged; no new rollout backend or actor service. See experiments/v0.0.9 and artifacts/v0.0.9/{N1,H1}.
+
+Next implemented harness is bounded scalar CPU scaling1/2/4/8/16 with serial per-control full-snapshot/action/reward/telemetry hash anchors and source-frozen protocol. It retains common start, startup/RSS/resources, all failed/skipped rows and hard-crash counter uncertainty. Source/protocol precede outcomes; full Linux regressions gate formal H2. Next work packet docs/V0.0.9_H2_SCALING.md. Motor stability/history/referee/league gates remain unmet; scaling cannot replace them.

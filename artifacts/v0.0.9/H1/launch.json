@@ -1,0 +1,24 @@
+{
+  "source_commit": "5b52d77a23fc76936b17f86789a74e3b70b75cad",
+  "cwd": "/home/ubuntu/joxing/v009-profile-20261026",
+  "wrapper_pid": 1725427,
+  "wrapper_sha256": "ea00d1b2e72c832545bbd6f4bdfb6f9bc996c341a0178cdbed162c87f226a9ba",
+  "capacity": {
+    "load": [
+      3.83984375,
+      3.9140625,
+      4.1513671875
+    ],
+    "available_memory_bytes": 44498960384,
+    "disk_free_bytes": 340348858368,
+    "owned_jobs": []
+  },
+  "caps": {
+    "wall_s": 180,
+    "physics_steps": 30000,
+    "raw_bytes": 134217728,
+    "simulation_workers": 1,
+    "ipc_helpers": 1,
+    "threads": 1
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "remote_root": "/home/ubuntu/joxing/v009-profile-20261026/runs/v0.0.9/profile-01",
+  "local_ignored_root": "/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.9/profile-01",
+  "files": {
+    "76000-profiled/trace.json": {
+      "bytes": 597581,
+      "sha256": "6fa18c39ba33abeafcae30cdc29d9f521cd0f1e433e318f991bdfc87349e921f"
+    },
+    "76000-profiled/trajectory.npz": {
+      "bytes": 5286608,
+      "sha256": "b9e5bce4cf4c06a984947a7c2b3695847c19602aa53973eeb6d59588623b7c7a"
+    },
+    "76000-unprofiled/trace.json": {
+      "bytes": 597581,
+      "sha256": "6fa18c39ba33abeafcae30cdc29d9f521cd0f1e433e318f991bdfc87349e921f"
+    },
+    "76000-unprofiled/trajectory.npz": {
+      "bytes": 5286608,
+      "sha256": "b9e5bce4cf4c06a984947a7c2b3695847c19602aa53973eeb6d59588623b7c7a"
+    },
+    "76001-profiled/trace.json": {
+      "bytes": 597594,
+      "sha256": "4c3759187994d5ee7a68024c4f278d11596ebb4ae57dab465065ac0a1130596f"
+    },
+    "76001-profiled/trajectory.npz": {
+      "bytes": 5285877,
+      "sha256": "af9370c17bad9c729dfc7d15ecb6c897c197ba0a684db9a92d34bdcc5dccddca"
+    },
+    "76001-unprofiled/trace.json": {
+      "bytes": 597594,
+      "sha256": "4c3759187994d5ee7a68024c4f278d11596ebb4ae57dab465065ac0a1130596f"
+    },
+    "76001-unprofiled/trajectory.npz": {
+      "bytes": 5285877,
+      "sha256": "af9370c17bad9c729dfc7d15ecb6c897c197ba0a684db9a92d34bdcc5dccddca"
+    },
+    "76002-profiled/trace.json": {
+      "bytes": 602457,
+      "sha256": "65ddcfe07bc179f85e6d4750c576e6583643e8573702ebedbf11574ae8103d3c"
+    },
+    "76002-profiled/trajectory.npz": {
+      "bytes": 5292551,
+      "sha256": "65acdbd884fb8ab7ef0bef6eec01cd3e24216e9e93606dd138aa44ea3070c93d"
+    },
+    "76002-unprofiled/trace.json": {
+      "bytes": 602457,
+      "sha256": "65ddcfe07bc179f85e6d4750c576e6583643e8573702ebedbf11574ae8103d3c"
+    },
+    "76002-unprofiled/trajectory.npz": {
+      "bytes": 5292551,
+      "sha256": "65acdbd884fb8ab7ef0bef6eec01cd3e24216e9e93606dd138aa44ea3070c93d"
+    },
+    "audit.json": {
+      "bytes": 825,
+      "sha256": "1403f2ed77ac4f67d5cfaf3c530a0d40b5f788f8b843553c432a60e844432d7e"
+    },
+    "launch.json": {
+      "bytes": 591,
+      "sha256": "8c2511f04691b71c3fe4dd8465e129c202f8747eb4ecc0ff424330ee235ff437"
+    },
+    "process-exit.json": {
+      "bytes": 242,
+      "sha256": "a943e5157444cfad4436dfd930f2e3073cf529c94264aa0b82002b9f880ff99c"
+    },
+    "protocol.json": {
+      "bytes": 1583,
+      "sha256": "baafcfdaa50a240ebee1d92953a9f99606e14c0d5fa43331864074ecc977b303"
+    },
+    "result.json": {
+      "bytes": 521040,
+      "sha256": "8ea3a2169336ba2711be918c655c30a0d44bd8cd233445a4e03011f3c1ef336c"
+    },
+    "supervisor.json": {
+      "bytes": 1556,
+      "sha256": "57d73abf7069b5fe65fcf01f698deecc142187da6aa9352532317ecb1bb1afc6"
+    }
+  },
+  "curation": "All six result/function/timing rows and independent paired audit in Git, first seed pair raw arrays/trace in Git. All six raw pairs preserved on host and local ignored runs; include full raw archive in eventual completed v9 release."
+}

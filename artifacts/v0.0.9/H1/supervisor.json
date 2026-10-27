@@ -1,0 +1,66 @@
+{
+  "pid": 1725427,
+  "source_commit": "5b52d77a23fc76936b17f86789a74e3b70b75cad",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 1725429,
+      "returncode": 0,
+      "wall_s": 1.0167507976293564
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "tests/test_inference.py",
+        "tests/test_inference_numerics.py",
+        "tests/test_physical_profiler.py"
+      ],
+      "status": "completed",
+      "pid": 1725551,
+      "returncode": 0,
+      "wall_s": 4.323356362059712
+    },
+    {
+      "stage": "H1",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "python",
+        "scripts/profile_physical_pipeline.py",
+        "--protocol",
+        "experiments/v0.0.9/profile-protocol.json",
+        "--inputs",
+        "/home/ubuntu/joxing/v008-20261026/runs/v0.0.8/physical-01/inputs",
+        "--out",
+        "runs/v0.0.9/profile-01"
+      ],
+      "status": "completed",
+      "pid": 1725820,
+      "returncode": 0,
+      "wall_s": 47.17310192808509
+    }
+  ],
+  "started_utc": "2026-10-26T23:58:51.071906+00:00",
+  "physics_budget": 30000,
+  "threads": 1,
+  "finished_utc": "2026-10-26T23:59:43.588391+00:00"
+}

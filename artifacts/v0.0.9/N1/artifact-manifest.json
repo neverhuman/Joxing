@@ -12,6 +12,10 @@
       "bytes": 461,
       "sha256": "8c026a4fdd2b6425b8cf9842a1d56a5f7d57cb7f2add7102833c15cd036baa30"
     },
+    "linux-tests.txt": {
+      "bytes": 99,
+      "sha256": "6c494fbb1af377c5c4b317f0ce6e8a8ea1a268d73b734b626785385a57698fdd"
+    },
     "mkldnn_disabled_float32.npz": {
       "bytes": 217318,
       "sha256": "dcbba12f5df70f2f90461a4dd60879872079ba4adf81b05f1bac5dd27f31bc18"
@@ -31,10 +35,6 @@
     "supervisor.json": {
       "bytes": 1581,
       "sha256": "78c293c890c091f2ddbba8e0f5ad138bf439c11b93e5d784d1c48aa6c6bfc017"
-    },
-    "tests.log": {
-      "bytes": 99,
-      "sha256": "6c494fbb1af377c5c4b317f0ce6e8a8ea1a268d73b734b626785385a57698fdd"
     }
   }
 }

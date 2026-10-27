@@ -1,0 +1,31 @@
+{
+  "completed": 6,
+  "incomplete": 0,
+  "invalid": 0,
+  "new_audit_physics_steps": 0,
+  "not_run": 0,
+  "paired_checks": [
+    {
+      "controls_per_case": 300,
+      "paired_exact": true,
+      "seed": 76000
+    },
+    {
+      "controls_per_case": 300,
+      "paired_exact": true,
+      "seed": 76001
+    },
+    {
+      "controls_per_case": 300,
+      "paired_exact": true,
+      "seed": 76002
+    }
+  ],
+  "passed": true,
+  "physics_steps": 18000,
+  "protocol_sha256": "2607c2dc95358427dca566f79dd4a1920661388a556dca0996125731f256c1d3",
+  "result_sha256": "8ea3a2169336ba2711be918c655c30a0d44bd8cd233445a4e03011f3c1ef336c",
+  "scope": "Independent saved-array/accounting audit, no new physics.",
+  "source_commit": "5b52d77a23fc76936b17f86789a74e3b70b75cad",
+  "unprofiled_median_control_steps_per_s": 62.48111052416125
+}
