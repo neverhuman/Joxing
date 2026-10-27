@@ -1,0 +1,97 @@
+{
+  "scope": "All four formal D1 raw paths, protocol/result and post-run independent zero-physics audit. No weights or training replay.",
+  "files": {
+    "audit.json": {
+      "bytes": 1607,
+      "sha256": "dad2d68fe9ac659d009329f50fc0ec5f0d566d3d80d340a5dac8428847bd581a"
+    },
+    "boundary-closed_loop-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "boundary-closed_loop-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "boundary-closed_loop-start.json": {
+      "bytes": 195401,
+      "sha256": "0a9eeef848c23606ff6a9a66ce2620615f4a2bf9b4b99ead3a07c704e90ee25a"
+    },
+    "boundary-closed_loop-substeps.npz": {
+      "bytes": 554855,
+      "sha256": "f095acb839b3132c2b5fa7db2e29ce79d570826b836b9b00ce699dade41fd945"
+    },
+    "boundary-closed_loop-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "boundary-recorded_actions-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "boundary-recorded_actions-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "boundary-recorded_actions-start.json": {
+      "bytes": 195401,
+      "sha256": "0a9eeef848c23606ff6a9a66ce2620615f4a2bf9b4b99ead3a07c704e90ee25a"
+    },
+    "boundary-recorded_actions-substeps.npz": {
+      "bytes": 554855,
+      "sha256": "f095acb839b3132c2b5fa7db2e29ce79d570826b836b9b00ce699dade41fd945"
+    },
+    "boundary-recorded_actions-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "mid_control-closed_loop-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "mid_control-closed_loop-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "mid_control-closed_loop-start.json": {
+      "bytes": 238964,
+      "sha256": "ea54f59b7bfcdff637c3d6e383d218421afe776307243ba24d7fd35243f31b91"
+    },
+    "mid_control-closed_loop-substeps.npz": {
+      "bytes": 554173,
+      "sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14"
+    },
+    "mid_control-closed_loop-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "mid_control-recorded_actions-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "mid_control-recorded_actions-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "mid_control-recorded_actions-start.json": {
+      "bytes": 238964,
+      "sha256": "ea54f59b7bfcdff637c3d6e383d218421afe776307243ba24d7fd35243f31b91"
+    },
+    "mid_control-recorded_actions-substeps.npz": {
+      "bytes": 554173,
+      "sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14"
+    },
+    "mid_control-recorded_actions-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "protocol.json": {
+      "bytes": 3735,
+      "sha256": "2c2ac5513fbfbfb3590ce3519f90cf4950bbaf5d50df497ab93f6abf519de2de"
+    },
+    "result.json": {
+      "bytes": 31295,
+      "sha256": "51a86cdae3598f981dea02028a650de329ffdc8c52ef6da5e642784b16d81a09"
+    }
+  }
+}

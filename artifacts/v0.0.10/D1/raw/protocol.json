@@ -1,0 +1,75 @@
+{
+  "accounting": {
+    "independent_replay_reserve_physics": 50000,
+    "main_physics_limit": 550000,
+    "main_wall_limit_s": 1800,
+    "prior_D0_R1_formal_wall_s": 3.697177091613412,
+    "prior_D0_R1_physics_steps": 0,
+    "raw_limit_bytes": 1073741824
+  },
+  "caps": {
+    "minimum_disk_bytes": 10737418240,
+    "minimum_memory_bytes": 8589934592,
+    "physics_steps": 12000,
+    "raw_bytes": 33554432,
+    "simulation_workers": 1,
+    "threads": 1,
+    "wall_s": 60
+  },
+  "criteria": {
+    "all700_preserved": true,
+    "all_source_actions_final_physical_snapshot_contacts_and_telemetry_exact": true,
+    "full_linux_regressions_required": 178,
+    "invalid_allowed": 0,
+    "normalizer_clipping_exact": true,
+    "pending_control_no_fresh_decision": true,
+    "reference_dtypes_owned_and_restored_exact": true,
+    "teacher_normalizer_reference_immutable": true
+  },
+  "denominator": {
+    "cases": 4,
+    "expected_physics_steps": 10394,
+    "paths": [
+      "recorded_actions",
+      "closed_loop"
+    ],
+    "snapshot_points": [
+      "boundary",
+      "mid_control"
+    ]
+  },
+  "independent_arm_pairs": [
+    "DELT1",
+    "BIClong",
+    "TRIlong",
+    "ECRL",
+    "FCR"
+  ],
+  "reference_variant": "unwrapped_seam_root_velocity_v1",
+  "residual_amplitude": 0.1,
+  "reward_id": "physical_alive_seconds_v1",
+  "schema": "joxing-neutral-residual-D1-0.0.10",
+  "scope": "Neutral138residual/all700native2ms interface qualification againstsourcev8. R1namedreference variant explicit; no training/game/competence claim.",
+  "source_files": {
+    "artifacts/v0.0.10/R1/audit.json": "44f2c385a1ba07fe55b5a9946e1e12edd30c11c736c31da83f870a9b5b4074fb",
+    "artifacts/v0.0.8/physical/native_2ms/actions-74000.npz": "345eaba8d9b10b9cf445ff837920b7a27a7c3ce3368b12750a28ed6d4e37924b",
+    "artifacts/v0.0.8/physical/native_2ms/replay.json": "e306cc2a6a9a05736d87611ae888208d9a7ad761545eb2f1da400c4e4aebd375",
+    "artifacts/v0.0.8/physical/native_2ms/specification.json": "5d95b7e346caef48a35a32f3f5c41908be62fc36333300342798661447667e3a",
+    "artifacts/v0.0.8/physical/native_2ms/substeps-74000.npz": "1a20864d6b4887b6df3c158c429461afa9f992cc7aa7de4b6f1de1d47600718a",
+    "artifacts/v0.0.8/physical/native_2ms/trace-74000.json": "dc80e3e8955793997d34898203739839887729be3622668b9cfa076809f6f429",
+    "experiments/v0.0.10/runtime/uv.lock": "d2f76fc1965c9c3227e9d57cfddeb09390e685bdd3320fb6001bcf2ca0ed1d75",
+    "src/joxing/motor_residual.py": "164fe91f55d4922a01f1360ed04c93192b3188635ce68c99f19dbc1554cd8124",
+    "src/joxing/native_transfer.py": "dcd6cb3a6cd701af35b25b7c2ce6a86797034bf3d1978ead94be4dab874bdba9",
+    "src/joxing/physical_motor.py": "5a4eb7952364a0a3300042a8b680f901c9040da36aef0244aa65209b074e54ec",
+    "src/joxing/reference_seam.py": "7363c9b0d9b488bb5d5af1d0d4cb30ce9c3b786a6ecacf0d671377c4a3dd1ce3",
+    "src/joxing/upstream_motor.py": "d557ba5678d7456a56d594c14052d7062a35eded47050a50a15723f11e368b0a"
+  },
+  "stop": "First source, bundle, command, reference dtype, replay/contact/telemetry mismatch, nonfinite or first cap stops allfuture rows and leaves faults. Exact attempted physics count on normalexit; hardcrash progressisconfirmedlowerbound with12kallocationupperbound. No gate change. PassingD1doesnotautorunD2; require independent audit and frozen pilot/evaluation protocol.",
+  "teacher": {
+    "actor_hash": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+    "decoder_amplitude": 0.075,
+    "model_file_sha256": "0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829",
+    "normalizer_file_sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086",
+    "normalizer_hash": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8"
+  }
+}

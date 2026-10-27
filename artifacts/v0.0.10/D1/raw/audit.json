@@ -1,0 +1,48 @@
+{
+  "auditor_sha256": "d539dc2ef363e875bc7f05c34914ce30b8450af4bbae8355db6dfdfed0f15237",
+  "case_counts": {
+    "completed": 4
+  },
+  "findings": [
+    {
+      "controls": 260,
+      "path": "recorded_actions",
+      "physics_steps": 2600,
+      "raw_verified": true,
+      "snapshot": "boundary"
+    },
+    {
+      "controls": 260,
+      "path": "closed_loop",
+      "physics_steps": 2600,
+      "raw_verified": true,
+      "snapshot": "boundary"
+    },
+    {
+      "controls": 260,
+      "path": "recorded_actions",
+      "physics_steps": 2597,
+      "raw_verified": true,
+      "snapshot": "mid_control"
+    },
+    {
+      "controls": 260,
+      "path": "closed_loop",
+      "physics_steps": 2597,
+      "raw_verified": true,
+      "snapshot": "mid_control"
+    }
+  ],
+  "incomplete": 0,
+  "interface_gate_passed": true,
+  "invalid": 0,
+  "new_audit_physics_steps": 0,
+  "not_run": 0,
+  "passed": true,
+  "physics_steps": 10394,
+  "raw_bytes": 6759968,
+  "result_sha256": "51a86cdae3598f981dea02028a650de329ffdc8c52ef6da5e642784b16d81a09",
+  "scope": "All four actual typed starts/finals,700-command tapes, every signed contact/load/posture tail and control telemetry independently compared with v8. Motor reward/termination reconstructed; native rewards compared across four paths only. Frozen executable asserts per-control teacher clipping, held no-new-decision and bundle immutability; masks/terminal ownership are unit-tested, not persisted per-control by D1. No actor or physics rerun.",
+  "source_commit": "7acd207ca69784935657d5f6b2933aff5a23e3f9",
+  "training_authorized_by_this_gate": false
+}

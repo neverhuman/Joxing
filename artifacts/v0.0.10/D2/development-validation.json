@@ -1,0 +1,38 @@
+{
+  "scope": "Local implementation fixtures only; no formal D2 study, optimizer or game outcomes.",
+  "formal_training_transitions": 0,
+  "formal_optimizer_updates": 0,
+  "formal_evaluations": 0,
+  "initial_evaluation_fixture": {
+    "passed": 1,
+    "failed": 1,
+    "wall_s": 5.5,
+    "failure": "All447attempted continuation physics and control traces matched; in-memory final snapshot contained tuple contact records while JSON transport had lists. Direct Python equality rejected equivalent serialized state.",
+    "repair": "Compare canonical JSON digests, as source D1 does. No numeric tolerance or physical replay gate changed.",
+    "repeat": {
+      "passed": 2,
+      "wall_s": 5.18
+    }
+  },
+  "worker_and_sac_fixtures": {
+    "passed": 4,
+    "wall_s": 13.99,
+    "scope": "200,000disjoint reset seeds, actual700-muscle worker chunk/raw fault accounting, four-slot synthetic SAC one-gradient/terminal-timeout/replay/save-load, all32evaluation denominator/no pooled seed rescue."
+  },
+  "independent_D1_auditor_corruptions": {
+    "passed": 2,
+    "wall_s": 0.41,
+    "scope": "Saved motor reward and signed contact force corruption each rejected."
+  },
+  "full_local_regressions": {
+    "passed": 186,
+    "wall_s": 160.74,
+    "command": "rtk proxy uv run --project experiments/v0.0.10/runtime --locked pytest -q",
+    "platform": "macOS arm64",
+    "note": "Complete current local suite, separate from executed D1source178Linux suite. No formal D2 optimizer/physical evaluation outcome."
+  },
+  "ruff": {
+    "passed": true,
+    "command": "rtk proxy uvx ruff check src scripts tests"
+  }
+}

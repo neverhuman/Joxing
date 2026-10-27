@@ -1,0 +1,66 @@
+{
+  "pid": 3601585,
+  "source_commit": "7acd207ca69784935657d5f6b2933aff5a23e3f9",
+  "started_utc": "2026-10-27T03:32:51.681607+00:00",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked"
+      ],
+      "pid": 3601587,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 1.2163168396800756
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "pid": 3601771,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 250.89354395493865
+    },
+    {
+      "stage": "D1",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_motor_residual.py",
+        "--protocol",
+        "experiments/v0.0.10/neutral-interface-protocol.json",
+        "--inputs",
+        "/home/ubuntu/joxing/deployment-cache/inputs",
+        "--out",
+        "runs/v0.0.10/neutral-interface-01"
+      ],
+      "pid": 3631571,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 22.50491026416421
+    }
+  ],
+  "formal_physics_allocation": 12000,
+  "formal_physics_steps_source": "neutral-interface-01/result.json",
+  "formal_simulation_workers": 1,
+  "regression_fixture_physics": "Separate full-suite fixtures; not formal D1/learning/game counters",
+  "threads": 1,
+  "finished_utc": "2026-10-27T03:37:26.298548+00:00"
+}
