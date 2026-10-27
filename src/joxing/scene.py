@@ -21,9 +21,11 @@ class Scene:
     actuator_ids: dict[str, np.ndarray]
 
 
-def build_scene(dt: float = 0.001, shells: bool = True) -> Scene:
+def build_scene(dt: float = 0.001, shells: bool = True, *, spawn_variant=None) -> Scene:
     if dt <= 0 or not np.isfinite(dt):
         raise ValueError("dt must be finite and positive")
+    if spawn_variant not in (None, "parallel-walk-v1"):
+        raise ValueError("Unknown explicit scene spawn variant")
     source = mujoco.MjModel.from_xml_path(str(SOURCE))
     base = mujoco.MjData(source)
     mujoco.mj_resetDataKeyframe(source, base, 0)
@@ -36,10 +38,18 @@ def build_scene(dt: float = 0.001, shells: bool = True) -> Scene:
     world.option.timestep = dt
     children = []
     shell_roles = {}
-    for actor, x, yaw, color in (
-        ("A", -0.8, 0.0, [1.0, 0.18, 0.12, 1.0]),
-        ("B", 0.8, np.pi, [0.15, 0.4, 1.0, 1.0]),
-    ):
+    spawns = (
+        (
+            ("A", [-0.8, 0, 0], 0.0, [1.0, 0.18, 0.12, 1.0]),
+            ("B", [0.8, 0, 0], np.pi, [0.15, 0.4, 1.0, 1.0]),
+        )
+        if spawn_variant is None
+        else (
+            ("A", [0, -1.25, 0], 0.0, [1.0, 0.18, 0.12, 1.0]),
+            ("B", [0, 1.25, 0], 0.0, [0.15, 0.4, 1.0, 1.0]),
+        )
+    )
+    for actor, spawn_position, yaw, color in spawns:
         child = mujoco.MjSpec.from_file(str(SOURCE))
         children.append(child)
         bit, affinity = (2, 5) if actor == "A" else (4, 3)
@@ -131,7 +141,7 @@ def build_scene(dt: float = 0.001, shells: bool = True) -> Scene:
                     shell_roles[actor + "_" + name] = "guard"
         frame = world.worldbody.add_frame(
             name=actor + "_spawn",
-            pos=[x, 0, 0],
+            pos=spawn_position,
             quat=[np.cos(yaw / 2), 0, 0, np.sin(yaw / 2)],
         )
         frame.attach_body(child.body("pelvis"), prefix=actor + "_")
@@ -207,6 +217,18 @@ def build_scene(dt: float = 0.001, shells: bool = True) -> Scene:
             "foul/fall/exit adjudication",
         ],
     }
+    if spawn_variant is not None:
+        report.update(
+            profile="pretrained-parallel-walk-1ms-v1",
+            motor_variant={
+                "name": spawn_variant,
+                "spawn_y_m": {"A": -1.25, "B": 1.25},
+                "spawn_yaw_rad": {"A": 0.0, "B": 0.0},
+                "control_dt_s": 0.02,
+                "physics_dt_s": dt,
+                "classification": "separated locomotion transfer; not boxing",
+            },
+        )
     return Scene(world, model, report, ids)
 
 

@@ -1,3 +1,8 @@
+**Concluded, do not rerun:** all422Linux tests and all4archived input/actor rows
+passed. Independent raw/normalized/command byte audit and475input/source hashes
+passed; all owned processes exited. See SHARED_MOTOR_INPUT_RESULTS.md. The next
+ready mission is SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md. Original packet follows.
+
 **Active, do not duplicate:** public frozenf3638b4, dedicated xbabe1root
 /home/ubuntu/joxing/v011-shared-motor-input-20261027, supervisor4137721/start905089809.
 473registered files and exact original native model/normalizer verified. Follow

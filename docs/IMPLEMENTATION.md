@@ -1,3 +1,21 @@
+# Archived policy oracle passed; shared motor core tested —2026-10-27
+
+All422Linux regressions pass458.27s; four original-host archived cache/normalizer/
+scalar command rows pass, max actor error0. Independent475source/reference/input
+hash checks and raw/normalization/action byte comparison pass; all processes exit.
+Full6file/40,205byte proof locally hashverified. See SHARED_MOTOR_INPUT_RESULTS.md.
+Formalphysics stays5390/nativeboxing0, no active jobs or completed-v11tag.
+
+New shared_motor_task.py implements native reference reset, separated parallel
+spawn variant, both700-muscle command streams,1ms shared staged contacts/20ms
+holds and atomic snapshots.11Mac fixture checks pass6.65s;48targeted integration
+checks pass19.34s. First heading setup failure11errors/0physics retained and fixed
+before attachment; default boxing spawns remain default. No trained shared motor
+trajectory yet; these physical regressions use deterministic fixture commands.
+Next ready mission is SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md: independent input
+binding, evidence/writer/runner/auditor, frozen433+test source gate and four actual
+pretrained sources/first replay/first-scenario footage under existing budgets.
+
 # Pretrained cached-input interface and D1completion —2026-10-27
 
 sensor_completion.py and four completion scripts executed only317new steps;

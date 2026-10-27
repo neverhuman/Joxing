@@ -1,0 +1,13 @@
+{
+  "status": "failed_development_setup",
+  "command": ".venv/bin/python -m pytest -q tests/test_shared_motor_task.py",
+  "errors": 11,
+  "seconds": 6.76,
+  "new_physics": 0,
+  "reason": "Changing spawn frame handles after attach/compile did not change attached body compiled transforms; B remained rotated pi. NativeMotorMap correctly rejected B before evaluated stepping.",
+  "source_sha256": {
+    "src/joxing/shared_motor_task.py": "5f50cd8ae73c6f67590c4b62d4aab2fb5e9c1d938c4def9f6f3ea37f54bf4a5d",
+    "tests/test_shared_motor_task.py": "86120c83d086077a7aac7db9d33c0b196cd2764e46087893536466b24dfc8d58"
+  },
+  "next_action": "Select explicit spawn variant before body attachment in build_scene; keep default scene behavior unchanged and test both variants"
+}

@@ -1,0 +1,270 @@
+{
+  "schema": "joxing-shared-motor-input-supervisor-v1",
+  "source_commit": "f3638b47af1d1133293da2f91583d2e9fc1d507b",
+  "protocol_sha256": "d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a",
+  "process": {
+    "pid": 4137721,
+    "parent_pid": 1,
+    "start_ticks": 905089809,
+    "state": "R"
+  },
+  "started_utc": "2026-10-27T15:14:08.472475+00:00",
+  "status": "completed",
+  "initial_capacity": {
+    "available_memory_bytes": 34487779328,
+    "disk_free_bytes": 334672003072,
+    "load": [
+      8.96728515625,
+      6.10693359375,
+      5.07666015625
+    ]
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 4137734,
+        "parent_pid": 4137721,
+        "start_ticks": 905089882,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 4137734,
+          "parent_pid": 4137721,
+          "start_ticks": 905089882,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 34425225216,
+        "disk_free_bytes": 334671122432,
+        "load": [
+          8.96728515625,
+          6.10693359375,
+          5.07666015625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 2.1847801599651575,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 4138145,
+        "parent_pid": 4137721,
+        "start_ticks": 905090129,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 4138145,
+          "parent_pid": 4137721,
+          "start_ticks": 905090129,
+          "state": "S"
+        },
+        {
+          "pid": 4138150,
+          "parent_pid": 4138145,
+          "start_ticks": 905090138,
+          "state": "R"
+        },
+        {
+          "pid": 4149786,
+          "parent_pid": 4138150,
+          "start_ticks": 905101439,
+          "state": "S"
+        },
+        {
+          "pid": 4149787,
+          "parent_pid": 4138150,
+          "start_ticks": 905101439,
+          "state": "R"
+        },
+        {
+          "pid": 4149788,
+          "parent_pid": 4138150,
+          "start_ticks": 905101440,
+          "state": "R"
+        },
+        {
+          "pid": 11939,
+          "parent_pid": 4138150,
+          "start_ticks": 905132666,
+          "state": "S"
+        },
+        {
+          "pid": 11963,
+          "parent_pid": 4138150,
+          "start_ticks": 905132679,
+          "state": "R"
+        },
+        {
+          "pid": 11966,
+          "parent_pid": 4138150,
+          "start_ticks": 905132679,
+          "state": "R"
+        },
+        {
+          "pid": 12520,
+          "parent_pid": 11966,
+          "start_ticks": 905133192,
+          "state": "S"
+        },
+        {
+          "pid": 12521,
+          "parent_pid": 11966,
+          "start_ticks": 905133192,
+          "state": "S"
+        },
+        {
+          "pid": 12522,
+          "parent_pid": 11966,
+          "start_ticks": 905133192,
+          "state": "S"
+        },
+        {
+          "pid": 12523,
+          "parent_pid": 11966,
+          "start_ticks": 905133192,
+          "state": "S"
+        },
+        {
+          "pid": 12524,
+          "parent_pid": 11963,
+          "start_ticks": 905133194,
+          "state": "S"
+        },
+        {
+          "pid": 12525,
+          "parent_pid": 11963,
+          "start_ticks": 905133194,
+          "state": "S"
+        },
+        {
+          "pid": 12526,
+          "parent_pid": 11963,
+          "start_ticks": 905133195,
+          "state": "S"
+        },
+        {
+          "pid": 12527,
+          "parent_pid": 11963,
+          "start_ticks": 905133195,
+          "state": "S"
+        },
+        {
+          "pid": 15122,
+          "parent_pid": 4138150,
+          "start_ticks": 905134922,
+          "state": "R"
+        },
+        {
+          "pid": 15123,
+          "parent_pid": 4138150,
+          "start_ticks": 905134922,
+          "state": "R"
+        },
+        {
+          "pid": 15124,
+          "parent_pid": 4138150,
+          "start_ticks": 905134922,
+          "state": "R"
+        },
+        {
+          "pid": 15125,
+          "parent_pid": 4138150,
+          "start_ticks": 905134922,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 22170034176,
+        "disk_free_bytes": 327800672256,
+        "load": [
+          24.10009765625,
+          12.60888671875,
+          8.11474609375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 460.78334415890276,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "inputs",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_shared_motor_inputs.py",
+        "--protocol-sha256",
+        "d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a",
+        "--source-sha",
+        "f3638b47af1d1133293da2f91583d2e9fc1d507b",
+        "--out",
+        "runs/v0.0.11/shared-motor-input-01"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 16965,
+        "parent_pid": 4137721,
+        "start_ticks": 905136240,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 16965,
+          "parent_pid": 4137721,
+          "start_ticks": 905136240,
+          "state": "S"
+        },
+        {
+          "pid": 16968,
+          "parent_pid": 16965,
+          "start_ticks": 905136247,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 24877277184,
+        "disk_free_bytes": 327420989440,
+        "load": [
+          22.73046875,
+          12.515625,
+          8.1083984375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 6.536687469109893,
+      "live_recorded_processes": []
+    }
+  ],
+  "finished_utc": "2026-10-27T15:21:59.162424+00:00",
+  "post_gate_wall_s": 6.83150470815599
+}

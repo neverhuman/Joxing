@@ -1,3 +1,16 @@
+# Frozen policy oracle concluded; actual shared motor proof next
+
+[Results](../../docs/SHARED_MOTOR_INPUT_RESULTS.md):422Linux tests pass458.27s,
+four archived cache/normalizer/scalar command rows pass exactly,0new physics.
+Independent475file/source/input checks and exact byte audit pass, all PIDs exited.
+Full raw6files/40,205bytes hashverified. Shared motor/reset/reference/replay core
+now has11passing Mac fixture checks and48targeted integration passes; a failed
+heading setup is retained. No trained shared physical outcome yet. Next ready
+[physical proof packet](../../docs/SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md) defines
+four new shared sources/actual first replay/first trial video; source/physical/
+independent-audit gates must precede any walking or boxing claim. Formal v11
+physics5390, nativeboxing0, original remaining correctness battery/no tag.
+
 # Pretrained input oracle active —2026-10-27 15:14UTC
 
 D1completed (402tests/317newphysics/8conditions/18attempts/4replays/oracle);

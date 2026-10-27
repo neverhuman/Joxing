@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "source_sha": "f3638b47af1d1133293da2f91583d2e9fc1d507b",
+  "new_physics": 0,
+  "verified_files": 475,
+  "independent_raw_normalized_action_bytes": "exact",
+  "identities": [
+    {
+      "pid": 4137721,
+      "parent_pid": 1,
+      "start_ticks": 905089809,
+      "state": "R"
+    },
+    {
+      "pid": 4137734,
+      "parent_pid": 4137721,
+      "start_ticks": 905089882,
+      "state": "R"
+    },
+    {
+      "pid": 4137734,
+      "parent_pid": 4137721,
+      "start_ticks": 905089882,
+      "state": "S"
+    },
+    {
+      "pid": 4138145,
+      "parent_pid": 4137721,
+      "start_ticks": 905090129,
+      "state": "R"
+    },
+    {
+      "pid": 4138145,
+      "parent_pid": 4137721,
+      "start_ticks": 905090129,
+      "state": "S"
+    },
+    {
+      "pid": 4138150,
+      "parent_pid": 4138145,
+      "start_ticks": 905090138,
+      "state": "R"
+    },
+    {
+      "pid": 4149786,
+      "parent_pid": 4138150,
+      "start_ticks": 905101439,
+      "state": "S"
+    },
+    {
+      "pid": 4149787,
+      "parent_pid": 4138150,
+      "start_ticks": 905101439,
+      "state": "R"
+    },
+    {
+      "pid": 4149788,
+      "parent_pid": 4138150,
+      "start_ticks": 905101440,
+      "state": "R"
+    },
+    {
+      "pid": 11939,
+      "parent_pid": 4138150,
+      "start_ticks": 905132666,
+      "state": "S"
+    },
+    {
+      "pid": 11963,
+      "parent_pid": 4138150,
+      "start_ticks": 905132679,
+      "state": "R"
+    },
+    {
+      "pid": 11966,
+      "parent_pid": 4138150,
+      "start_ticks": 905132679,
+      "state": "R"
+    },
+    {
+      "pid": 12520,
+      "parent_pid": 11966,
+      "start_ticks": 905133192,
+      "state": "S"
+    },
+    {
+      "pid": 12521,
+      "parent_pid": 11966,
+      "start_ticks": 905133192,
+      "state": "S"
+    },
+    {
+      "pid": 12522,
+      "parent_pid": 11966,
+      "start_ticks": 905133192,
+      "state": "S"
+    },
+    {
+      "pid": 12523,
+      "parent_pid": 11966,
+      "start_ticks": 905133192,
+      "state": "S"
+    },
+    {
+      "pid": 12524,
+      "parent_pid": 11963,
+      "start_ticks": 905133194,
+      "state": "S"
+    },
+    {
+      "pid": 12525,
+      "parent_pid": 11963,
+      "start_ticks": 905133194,
+      "state": "S"
+    },
+    {
+      "pid": 12526,
+      "parent_pid": 11963,
+      "start_ticks": 905133195,
+      "state": "S"
+    },
+    {
+      "pid": 12527,
+      "parent_pid": 11963,
+      "start_ticks": 905133195,
+      "state": "S"
+    },
+    {
+      "pid": 15122,
+      "parent_pid": 4138150,
+      "start_ticks": 905134922,
+      "state": "R"
+    },
+    {
+      "pid": 15123,
+      "parent_pid": 4138150,
+      "start_ticks": 905134922,
+      "state": "R"
+    },
+    {
+      "pid": 15124,
+      "parent_pid": 4138150,
+      "start_ticks": 905134922,
+      "state": "R"
+    },
+    {
+      "pid": 15125,
+      "parent_pid": 4138150,
+      "start_ticks": 905134922,
+      "state": "R"
+    },
+    {
+      "pid": 16965,
+      "parent_pid": 4137721,
+      "start_ticks": 905136240,
+      "state": "R"
+    },
+    {
+      "pid": 16965,
+      "parent_pid": 4137721,
+      "start_ticks": 905136240,
+      "state": "S"
+    },
+    {
+      "pid": 16968,
+      "parent_pid": 16965,
+      "start_ticks": 905136247,
+      "state": "R"
+    }
+  ],
+  "live_recorded": [],
+  "unknown_owned": [],
+  "files": {
+    "shared-motor-input-01/oracle.npz": {
+      "bytes": 30040,
+      "sha256": "6977efc3975ba37faac551029f6caab649d982a0037c922b0e72a364c0e5cba8"
+    },
+    "shared-motor-input-01/result.json": {
+      "bytes": 1083,
+      "sha256": "84642d5e561b80156eb9803b571e8d2965454dd019b1b58398c9ab2926a2d28e"
+    },
+    "shared-motor-input-supervision-01/inputs.log": {
+      "bytes": 935,
+      "sha256": "ccd5026d7bea1ec536b326166e73b3c0e05d907670bf6aaf3f06c33c1794f141"
+    },
+    "shared-motor-input-supervision-01/tests.log": {
+      "bytes": 512,
+      "sha256": "0552a2eda2161657738f05483975fe7190969f07394553339130225a2eee8bf2"
+    },
+    "shared-motor-input-supervision-01/sync.log": {
+      "bytes": 1228,
+      "sha256": "949aff73d717057a8735b015d719a3730ef30044e6fdc3d25d0b7975d3ef0c39"
+    },
+    "shared-motor-input-supervision-01/result.json": {
+      "bytes": 6407,
+      "sha256": "d57e0d211bd3d56be693cb9179bd31d6ee544c62d1560112b24db9f256dd73b9"
+    }
+  },
+  "bytes": 40205,
+  "checked_utc": "2026-10-27T15:25:42Z"
+}

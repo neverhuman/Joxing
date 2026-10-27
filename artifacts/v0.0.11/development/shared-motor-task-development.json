@@ -1,0 +1,41 @@
+{
+  "schema": "joxing-shared-motor-development-v1",
+  "validation": [
+    {
+      "command": ".venv/bin/python -m pytest -q tests/test_shared_motor_task.py",
+      "errors": 11,
+      "seconds": 6.76,
+      "reason": "post-attachment frame mutation ineffective; zero evaluated steps; see failed setup receipt"
+    },
+    {
+      "command": ".venv/bin/python -m pytest -q tests/test_shared_motor_task.py",
+      "passed": 11,
+      "seconds": 6.65,
+      "scope": "Fixture controller, not trained weights; native resets, held control, actual exact engine/contact/input replay, atomic corruption/assistance rejection"
+    },
+    {
+      "command": "targeted integration suite with nonexistent tests/test_env.py",
+      "status": "not_run",
+      "pytest_exit": 4,
+      "reason": "Corrected path is tests/test_boxing_env.py; no tests ran"
+    },
+    {
+      "command": ".venv/bin/python -m pytest -q tests/test_shared_motor_task.py tests/test_shared_motor_inputs.py tests/test_shared_motor.py tests/test_body_adapter.py tests/test_scene.py tests/test_boxing_env.py",
+      "passed": 48,
+      "seconds": 19.34
+    }
+  ],
+  "formal_new_physics": 0,
+  "formal_v11_physics": 5390,
+  "native_boxing_games": 0,
+  "source_sha256": {
+    "src/joxing/scene.py": "101b1c67a0a42f2a4a5e85ca8cfc80ee69679571f1f5f41889dda859705559e0",
+    "src/joxing/shared_motor_task.py": "fce0afccb5897297cfc05b2359a634310a72b9ef1a8463a377b36bbc2fc57511",
+    "tests/test_shared_motor_task.py": "9da55ae94858dcde166f23635c7ac3f16efbd10fa70e84a6b44044deddb7a017"
+  },
+  "limitations": [
+    "No formal shared pretrained walking trajectory or motor-promotion result yet",
+    "Snapshot cache/reference/control consistency and exact continuation tested; independent physical saved-evidence writer/auditor remains next",
+    "Default scene receives only an explicit optional named spawn variant; full fresh Linux regression still required before formal motor proof"
+  ]
+}

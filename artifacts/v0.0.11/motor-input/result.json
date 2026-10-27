@@ -1,0 +1,34 @@
+{
+  "new_physics": 0,
+  "normalizer_fingerprint": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+  "protocol_sha256": "d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a",
+  "rows": [
+    {
+      "id": "cache-mid",
+      "input_sha256": "ea454dc0aa52bed49d0a78d75e9fb6825a2537fcae6202b95ab721ac745c1ac1",
+      "sampled_tick": 200,
+      "status": "passed"
+    },
+    {
+      "id": "cache-final",
+      "input_sha256": "953ce2b780eea1c0ad9b8f1a45e73021d4674ea1b15569374919ebabd8305784",
+      "sampled_tick": 3520,
+      "status": "passed"
+    },
+    {
+      "id": "actor-mid-A",
+      "max_command_error": 0.0,
+      "status": "passed"
+    },
+    {
+      "id": "actor-mid-B",
+      "max_command_error": 0.0,
+      "status": "passed"
+    }
+  ],
+  "schema": "joxing-shared-motor-input-oracle-v1",
+  "scope": "Archived input/scalar policy compatibility; no shared physical motor trajectory, engine-bound input oracle or balance claim",
+  "source_sha": "f3638b47af1d1133293da2f91583d2e9fc1d507b",
+  "status": "passed",
+  "wall_s": 4.005450187250972
+}

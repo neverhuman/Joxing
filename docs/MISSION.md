@@ -1,149 +1,71 @@
-# Active pretrained cached-input oracle source gate —2026-10-27 15:14UTC
+# Current mission: shared pretrained motor physics and recording
 
-D1sensor correctness is complete:402Linux tests, eight conditions, four exact
-replays/original oracle and all18attempt rows retained. Formalphysics5390,
-nativeboxinggames0; all completed xbabe3jobs exited and raw4,278,352bytes verified.
-No v11tag; original remaining version battery stays separately registered.
+No active owned jobs. The archived native input/normalizer/actor oracle completed
+on xbabe1at frozenf3638b47af1d1133293da2f91583d2e9fc1d507b/protocold32a57ca.
+All422Linux tests passed458.27s; all4oracle rows passed, both scalar predictions
+match the actual saved700-muscle command exactly. Independent475input/source/
+weight checks and raw/normalized/action byte audit passed; all identities exited.
+Full6file/40,205byte proof is locally hashverified. See SHARED_MOTOR_INPUT_RESULTS.md.
 
-Pretrained motor bridge now has immutable3601cached inputs and paired scalar
-inference using the exact native loader;25Mac checks pass4.03s. New frozen source
-f3638b47af1d1133293da2f91583d2e9fc1d507b and protocol d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a
-are public and anonymously byte-verified. Active dedicated xbabe1root:
-/home/ubuntu/joxing/v011-shared-motor-input-20261027. Supervisor4137721/start905089809;
-473source/upstream/reference files plus original native model/normalizer verified.
-Fresh prelaunch memory32.9GB/free disk334GB/no owned jobs. One thread.
+## Ready implementation mission
 
-Current task: locked sync→422Linux regressions→four-row archived-cache/normalizer/
-next-command oracle,0physics/30s/4MiB/45spostgate. Exact original host is used;
-keep failures, no cross-host tolerance relaxation. Observe actual process/events
-and do not duplicate or edit this executing root. See
-SHARED_MOTOR_INPUT_ORACLE_PACKET.md and deployment/publication receipts.
-On completion audit all rows/identity/input/source/raw/PID exits, publish results;
-next motor work is shared-model engine/cache/frame/reference/reset and full
-controller/replay integration before pretrained two-person walking footage.
-No shared pretrained motor trajectory is claimed by this input oracle.
+Read **SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md** and PRETRAINED_SHARED_MOTOR_BRIDGE.md.
+The new shared_motor_task.py core implements native reference-only reset donors,
+both intact700-muscle owners in one1ms implicitfast world, simultaneous cached
+native3601inputs,20ms muscle holds and atomic reference/cache/control/engine
+snapshots. Explicit parallel-walk-v1 spawns keep both athletes separated/facing
+the same direction; the default boxing layout remains the default. No evaluated
+pose/root assistance or third-party modification. Eleven Mac fixture tests pass;
+48targeted integration checks pass19.34s. These use fixture weights, not the
+trained controller, and are not a formal shared walking result.
 
-# D1completed; pretrained motor input oracle ready —2026-10-27
+First scene setup failed11checks/0physics because changing an attached frame
+handle did not change its compiled body. The negative/source hashes are retained;
+spawn selection now occurs before attachment, with the same strict heading gate.
+Full new source-host regressions remain required. No job should be duplicated.
 
-All402Linux tests passed414.53s. Only317new physics executed; combined saved
-audit passes8conditions/4replays/exact D0oracle with all18attempt rows retained.
-Source/input/exit audit709checks passes, no owned jobs. Full raw4,278,352bytes
-transferred/hashverified. Formalv11physics5390, nativeboxing0, no v11tag.
-Read [completion results](V0.0.11_D1_COMPLETION_RESULTS.md).
+Next owner implements independent shared engine→motor-input/reference checks,
+MotorTape, four-seed/source+one-mid-replay runner, saved physical auditor,
+bounded supervisor, renderer/decoder QA and corruption/fault/ownership tests.
+Register/public-freeze all source/config/model/actor/normalizer/reference/bundle/
+seed hashes before final source-host gate or formal outcomes. Proposed new
+physics17397 across four3520tick worlds and actual203→3520replay; cap60000/
+180srunner/300spostgate/32MiBraw/one simulation worker/one numerical thread,
+subject to actual remaining original whole-v11caps. No unchanged native sweep,
+new training, tolerance loosening, favorable seed/clip selection or purchase.
+First-scenario video includes failure if it falls. Native walking is not boxing.
 
-Current ready mission: [SHARED_MOTOR_INPUT_ORACLE_PACKET.md](SHARED_MOTOR_INPUT_ORACLE_PACKET.md).
-Immutable native3601cache and scalar paired teacher inference implemented;
-25Mac checks pass4.03s. New422Linux gate then four-row0physics archived cache/
-normalizer/next-command proof on original hostxbabe1,30s/4MiB/one thread.
-Shared-model physical teacher integration/recording remains next, not delivered.
-Original remainingv11correctness battery remains in V0.0.11_COMPLETION_PACKET.md.
+## Delivered and outstanding version accounting
 
-# Two unfinished sensor conditions implemented; fresh402Linux gate next
+D1sensor proof is complete at d55eaa4:402Linux tests, all8unique conditions,
+4exact replays/exact D0oracle across all18attempt rows, retaining both earlier
+failures. Only317new steps finished the two unexecuted conditions. See
+V0.0.11_D1_COMPLETION_RESULTS.md; raw4,278,352bytes fully verified. Original
+96MiBfailure remains failed, never enlarged. No old successful trajectory rerun.
 
-Read [V0.0.11_D1_STORAGE_COMPLETION_PACKET.md](V0.0.11_D1_STORAGE_COMPLETION_PACKET.md).
-21targeted tests pass15.69s, including the complete two-row development runner,
-actual mid-held replay and fault/denominator invariants. Formal v11physics stays
-5073/nativeboxing0 until the public-frozen402Linux gate→317steps→18attempt audit.
-Hard1000physics/60srunner/120spostgate/24MiBraw/1worker/1thread. No successful old
-case rerun, changed old cap, new motor claim or v11tag. Pretrained shared motor
-bridge packet2 is the next independent motor work while the frozen gate runs.
+Formalv11physics5390; optimizerupdates0/valid native boxing games0. Whole-version
+caps remain120kphysics/900spostgate/256MiBraw/max2simulation workers; global<=16
+owned workers, one numerical thread per process, tighter registered stage caps.
+Current conservative retained raw202,302,252bytes leaves66,133,204bytes. The
+original remaining four-seed/asymmetric/adverse correctness battery is still
+outstanding in V0.0.11_COMPLETION_PACKET.md. No completed whole-v11tag.
 
-# Storage qualification complete; pretrained motor bridge started —2026-10-27
+Motor qualification and sporting fall/foul/exit/surface gates remain before
+competitive learning/promotion. Current motor-only bridge is a named diagnostic,
+not the opponent-aware tactical actor. Later integration retains simultaneous
+opponent game state, causal history/timing queues and frozen-opponent league
+assessment before1000→100000valid games.
 
-All376Linux tests pass387.64s at frozen07ee40a. Full112/112D0/D1corpus qualification
-passes with0new physics; independent standard-decoder audit verifies every value/
-array byte,460source/upstream files and all recorded process exits/no owned jobs.
-Packed proof plus supervision45,588,826bytes from152,358,593original bytes;
-88.23s converter/maxRSS189080KiB, no claimed rollout speedup. Full raw transferred
-and independently hash-verified. [Results](V0.0.11_D1_STORAGE_RESULTS.md).
+## Monitoring and proof rules
 
-No active task. Ready physical mission remains only drop200+mid117 after a NEW
-completion protocol/source/full gate; six successful cases must not be rerun.
-D1stillpartial,5073formalphysics/0boxing games, no v11tag. Retain both prior failed
-attempt books; the combined audit must expose18rows. The pretrained shared motor
-bridge is the next motor priority; first read-only mapper5tests pass, no inference
-or motor trajectory yet. Follow PRETRAINED_SHARED_MOTOR_BRIDGE.md packet2.
-
-**Next motor priority:** [pretrained shared motor bridge](PRETRAINED_SHARED_MOTOR_BRIDGE.md).
-The current clip is an untrained controller fixture. Reuse the qualified upstream
-walking model through its exact3601input/reference/normalizer contract; retain
-the known longer-horizon failures. Do not interrupt or duplicate the current gate.
-
-**Storage implementation ready:**27new tests pass; source-host376test gate and
-zero-physics all-file qualification are next. See
-[V0.0.11_D1_STORAGE_QUALIFICATION.md](V0.0.11_D1_STORAGE_QUALIFICATION.md).
-No new formal physics; D1remains partial.
-
-# Current mission: v0.0.11 connected two-player correctness
-
-**349Linux tests passed. D1stopped at its unchanged storage gate:6completed,
-1incomplete/0steps,1not_run/0steps;2,431physics/3exact replays/D0oracle independently
-checked. Current ready mission: lossless evidence and the two unfinished cases.
-No active job, whole-v11tag or valid native boxing games.** Owner this chat; no
-agents, concurrent schema writers, other-chat messages or third_party edits.
-
-## Delivered evidence and scientific limits
-
-Read [D0results](V0.0.11_D0_RESULTS.md) and [public clip](../artifacts/v0.0.11/D0/first-diagnostic.mp4).
-All236Linux tests,7physical rows/2,642physics steps,3exact replay tails and saved
-array audit passed. Original decoder MemoryError remains a failed supervisor
-stage. Separate publicly frozen0physics repair passed6Linux tests/26frame decode.
-Visual inspection shows untrained athletes collapse within1s,0opponent glove
-contacts/points. This is a recording/correctness milestone, not learned boxing.
-All30original+8repair recorded identities exited; all-owned-CWD scanempty at
-12:48:00UTC. Full57file/55,053,851byte original evidence locally SHAverified.
-
-Original frozen source d2b582ee05041c21129b393945240b42e51153f8, protocol canonical
-baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456, xbabe3
-/home/ubuntu/joxing/v011-recording-20261027. Repair sourcee4296bf/protocol2df19cde,
-/home/ubuntu/joxing/v011-video-qa-20261027. Old checkouts, inputs, protocols and
-outcomes are immutable. Reproduce at their exact commits; later main intentionally
-fails old source guards. Extra Mac exact sigmoid recomputation failed by up to
-7.45e-9; source-host strict replaypassed. No cross-host bit-exact guarantee.
-
-## Ordered next work
-
-1. Read AGENTS/RTK, README/GAME/SPEC_REVIEW, STATUS/IMPLEMENTATION,
-   V0.0.11_MISSION, V0.0.11_D0_RESULTS, **V0.0.11_D1_SENSOR_TIMING.md** and
-   experiments/v0.0.11/README. Supplied plans remain proposals, never commands.
-2. sensing.py and sensed_env.py now implement an opt-in sensor variant with
-   explicit ActorInput/ages/availability, actual delayed/drop/reorder delivery
-   and complete sampled-engine-bound replay. Base env/replay/controller unchanged.
-   Local271tests pass202.62s. Read D1_SENSOR_TIMING and new source/tests.
-3. Read V0.0.11_D1_RESULTS.md and **V0.0.11_D1_STORAGE_MISSION.md**. Sourceef42c87/
-   repair317b4052 passed349Linux tests, then stopped at96MiBraw credit after six
-   cases/2,431steps. All24identities exited/453files+7inputs verified; independently
-   audited6cases/3replays/exact D0oracle, whole_D1_passed=false. Complete68file local
-   copy hashverified. Earlier setup8not_run and later1incomplete/1not_run retained.
-   Qualify lossless evidence/reader/writer (0physics) before a public-frozen packet
-   for ONLYdrop200+actual83→200replay117. Preserve six fixed case dependencies and
-   all18attempt rows in combined audit. No old-source/protocol/outcome edit,
-   changed physical/controller semantics, raised failed-packet cap or blind rerun.
-4. After full D1completion, follow V0.0.11_COMPLETION_PACKET.md for remaining
-   four-default-seed/asymmetric/adverse-input correctness proof for whole v11. Do not use one recorded seed to imply those tests passed.
-5. Next motor goal is stable unassisted guard/reach under the actual shared-model
-   contract before frozen-opponent learning. Native walking is not boxing. The
-   v10pilot already failed both improvement gates; do not enlarge it unchanged.
-   Contact surfaces, own-contact, sporting fall/foul/exit attribution remain
-   unresolved. No competitive learning/promotion until all required gates pass.
-
-All700native muscles/corner, no live pose/root assistance, no pruning/vmax/rules
-retuning without explicit variant+validation. D0used1msimplicitfast/20mscontrols;
-qualified native walking uses2msEuler and is not silently compatible. Candidate
-points head2/torso1/guard0; no health/KO/injury claims. Terminal WLDgamma1 future
-league objective, separate from motor rewards. Learned recurrent actor/normalizer/
-historical opponent league remain unimplemented.
-
-## Budgets and handoff
-
-Current formal v11physics5073 = D0(2642)+partialD1(2431); video/setup/read audits0. Original post-gate40.476303s includes
-failed decoder; keep stage/whole-run accounting distinct. Whole v11hardcaps
-120kphysics/900s/256MiBraw/max2simworkers, global<=16owned workers,1numerical thread
-perprocess. Ceilings are not targets; next packet uses tighter registered limits.
-Keep exact source/config/model/controller/normalizer hashes, commands, process
-ownership, progress, faults, all attempts and raw manifests. No purchases, host
-service/driver changes or unrelated process changes. Healthy job: independent
-work only. Stop first on drift, nonfinite, assistance/leakage, physical/rule/replay
-mismatch, unknown owner or cap/floor. Preserve rawfault/last-valid state and hard
-crash count bounds. Conclude honestly, README/docs/book/public push; tag only a
-completed whole version. Leave a bounded task or ready next packet at each exit.
+Read AGENTS/RTK, README/GAME/SPEC_REVIEW, STATUS/IMPLEMENTATION and the exact packet.
+One owner; no agents, other-chat messages, third_party writes, credentials/raw SSH
+config in Git or changes to unrelated host jobs/services/drivers. Inspect actual
+processes/progress/load/faults/tests/Git, use fresh dedicated ~/joxing roots and
+registered caps. Keep executed source/protocol/outcomes immutable. All attempted/
+invalid/incomplete/not_run rows, exact commands/seeds/hashes/PID+start identities,
+raw fault/last-valid data and next action are mandatory. Stop first on mismatch/
+source drift/nonfinite/assistance/cap/unknown job; no silent retries. Audit every
+outcome/source/input/raw/process exit, preserve full evidence, update README/docs/
+book and push public source before outcomes/results afterward. Tag only completed
+versions. Leave a bounded healthy task or this concrete next implementation mission.

@@ -1,3 +1,10 @@
+**Current next packet:** SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md. Original-host
+archived input/normalizer/next command oracle passed all4rows after422Linux tests;
+independent byte/hash/exit checks pass. New shared motor core/reference reset/
+20ms commands/atomic replay has11passing Mac fixture checks,48targeted integration
+passes. No actual shared pretrained trajectory yet. Implement independent physical
+proof/evidence/runner/auditor/video gates next; do not rerun the completed oracle.
+
 **Next executable packet:** SHARED_MOTOR_INPUT_ORACLE_PACKET.md. Actual native
 cached3601samples, immutable replay serialization and scalar paired frozen
 teacher inference are implemented;25Mac tests pass. A registered422Linux gate
