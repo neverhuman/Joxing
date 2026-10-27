@@ -22,7 +22,9 @@ Attribution (v1) classifies every force-producing contact between the athletes
 in the lookback window, using the referee's own constants:
 
 * a glove's contact run with the opponent's head, torso, guard or glove is a
-  strike when its first tick approaches at >= ``approach_min_mps``. Its first
+  strike when, on its first tick, the contact approaches at >= ``approach_min_mps``
+  AND the referee's touch shows the glove moving at >= ``active_speed_min_mps``
+  relative to its own trunk (so walking into a still glove is no strike). Its first
   ``impact_window_s`` counts as boxing; a fall after boxing contact only is a
   ``knockdown`` and loses, so knocking the opponent down is worth something;
 * everything else blocks: body on body (clinch, lean, shove), a glove on a
@@ -43,7 +45,7 @@ import numpy as np
 
 from joxing.rules import Rules
 
-VARIANT = "grokbot-ending-reference-v1"
+VARIANT = "grokbot-ending-reference-v2"
 PLAYERS = ("A", "B")
 FOOT_BODIES = ("_calcn_", "_toes_")
 SUPPORT_FORCE_N = 60.0  # ~10 % of one athlete's 596 N weight
@@ -111,9 +113,11 @@ def classify_contacts(evidence, registry, rules=None):
     """(strike_ticks, blocking_ticks) of force-producing inter-athlete contact.
 
     A glove's contact run (gaps of at most ``gap_s``) with a strike target is a
-    strike if a contact on its first tick approaches at >= ``approach_min_mps``;
-    only the run's first ``impact_window_s`` is boxing. Every other contact tick
-    blocks attribution.
+    strike if a contact on its first tick approaches at >= ``approach_min_mps``
+    and the referee's touch for that glove (``row["gloves"]``, matched by sample
+    id ``index:geom1:geom2``) moves at >= ``active_speed_min_mps`` against its own
+    trunk. Only the run's first ``impact_window_s`` is boxing. A glove contact
+    without a referee touch, and every other contact tick, blocks attribution.
     """
     rules = rules or Rules()
     window = round(rules.impact_window_s / rules.dt_s)
@@ -123,7 +127,12 @@ def classify_contacts(evidence, registry, rules=None):
     for row in evidence:
         t = row["tick"]
         boxing = blocks = False
-        for c in row["contacts"]:
+        active = {
+            (glove, touch["sample_id"]): touch["active_speed_mps"]
+            for glove, interval in row.get("gloves", {}).items()
+            for touch in interval["touches"]
+        }
+        for index, c in enumerate(row["contacts"]):
             ends = ((c["geom1"], c["geom2"]), (c["geom2"], c["geom1"]))
             roles = {g: registry[g] for g in (c["geom1"], c["geom2"])}
             if c["normal_force_N"] <= 0 or {r["actor"] for r in roles.values()} != set(
@@ -137,18 +146,27 @@ def classify_contacts(evidence, registry, rules=None):
             ]
             if not gloves:
                 blocks = True
+            sample = f"{index}:{c['geom1']}:{c['geom2']}"
+            striking = False
             for g in gloves:
-                fast = c["approach_mps"] >= rules.approach_min_mps
+                speed = active.get((registry[g]["name"], sample), -np.inf)
+                fast = (
+                    c["approach_mps"] >= rules.approach_min_mps
+                    and speed >= rules.active_speed_min_mps
+                )
                 run = runs.get(g)
                 if run is None or t - run[1] > gap:
                     run = runs[g] = [t, t, fast]
                 run[1] = t
                 if run[0] == t:
                     run[2] = run[2] or fast
-                if run[2] and t - run[0] < window:
-                    boxing = True
-                else:
-                    blocks = True
+                striking |= run[2] and t - run[0] < window
+            # A punch into a still guarding glove is boxing: one striking glove
+            # in the contact is enough.
+            if gloves and striking:
+                boxing = True
+            elif gloves:
+                blocks = True
         if boxing:
             strikes.append(t)
         if blocks:
