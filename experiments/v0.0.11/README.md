@@ -1,3 +1,14 @@
+# Storage qualification concluded —2026-10-27
+
+Source07ee40a:376Linux tests pass387.64s,112/112corpus files pass0physics conversion
+and separate independent standard-decoder audit. New retained proof45,588,826bytes
+versus152,358,593old bytes,88.23s/maxRSS189080KiB. All originals/old failures remain;
+all processes exited. [Full results](../../docs/V0.0.11_D1_STORAGE_RESULTS.md).
+Next physical packet is ONLY317unexecuted sensor steps, followed by all18attempt
+rows/8unique conditions audit. D1partial/formalphysics5073/nativeboxinggames0.
+The next motor priority is the pretrained shared controller bridge; its first
+input mapper5Mac tests pass but has no shared policy trajectory yet.
+
 # Lossless storage gate —2026-10-27
 
 New explicit storage variant implemented;27new development tests pass14.38s.

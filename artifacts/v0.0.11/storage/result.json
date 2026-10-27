@@ -1,0 +1,3403 @@
+{
+  "bytes_before_final_receipt": 45578146,
+  "cpu_seconds": 88.079171843,
+  "failed_files": 0,
+  "input_bytes": 152358593,
+  "limitations": [
+    "Container correctness only; no new physics, game, motor or learning outcome",
+    "Manifest hashes require external receipt/source anchoring"
+  ],
+  "manifests": {
+    "packed/D0/bell-90102/storage-manifest.json": "8cb8655d0e621060e4a1d5d9c05db9590df7c45846398db73c62942b86ba7cf4",
+    "packed/D0/boundary-90101/storage-manifest.json": "9d275cd15ff84ae3050e13312374330b0cb33f5de1ad135410843dadf092441b",
+    "packed/D0/contact-replay-90104/storage-manifest.json": "4c7ed8ecdc5a1918d433219bf2123750b3f38eb43a3abe06c4266176e9bf5a16",
+    "packed/D0/contact-source-90104/storage-manifest.json": "68dc4acb60c6cf33210fdd4893efde3c297e73af58c89443a4d865a89800b1a2",
+    "packed/D0/mid-90101/storage-manifest.json": "e8c6af2d51f224cb4cbbeb85f9b8fc7208dd8515ab2c88a05000b2b83fae8f56",
+    "packed/D0/source-90101/recording/storage-manifest.json": "49c5b186c2792426e9782bc74b9d4b1f4753cf98fe572f19a03012fdb17e12e2",
+    "packed/D0/source-90101/storage-manifest.json": "3db1e6d3a341c302ddfe50290c19b5f281cc9af9d13d2f0f9f4e2c9f228a99b1",
+    "packed/D0/storage-manifest.json": "db049969a4b75451ac75ea1122281cd812bac17a10014eaacd02c74c403c3314",
+    "packed/D0/truncation-90103/storage-manifest.json": "645713ad67eb8cfea317323d2cf2f88d02b2ebf130dfeb7bdcec5f5448d59880",
+    "packed/D1/lag-90201/storage-manifest.json": "cfd9f9ddf74e43cf125b04ffc5cfcb4a056186261bdf324c552fd29c748c781b",
+    "packed/D1/lag-mid-90201/storage-manifest.json": "0db663b64617f5572021da4c222c015ac982664558a122f6f6786bf9d6761200",
+    "packed/D1/reorder-90202/storage-manifest.json": "1c5ba3a25ecd500e7ff631a7293358c5fa19bd59288ca26f973ca6ff94cf89e5",
+    "packed/D1/reorder-mid-90202/storage-manifest.json": "28dde07d33b997e9070ced9c1e41f56c335125dfdb223000f84955cd6bdb5fe3",
+    "packed/D1/storage-manifest.json": "5141c5a7f26dac503749f4539cce87e3d86a7e8e41ecc12d46384b28f64298c9",
+    "packed/D1/zero-90101/storage-manifest.json": "e7f047cbb7154bdf841b300ee9d9105a983b26b07085b6d0241f912ceeea1003",
+    "packed/D1/zero-mid-90101/storage-manifest.json": "2c82961bb6d6b24fea9ce04949c2f8805fc0bcd0a2bb3fe6fd910af40dded866"
+  },
+  "max_rss_kib": 189080,
+  "new_physics": 0,
+  "passed_files": 112,
+  "pid": 474853,
+  "rows": [
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "bell-90102/contract.json",
+      "seconds": 0.009498132392764091,
+      "source": {
+        "bytes": 815,
+        "sha256": "248d52023742e8ae840af9f6f09d953c1b9656c4b67c7b0f924996df8407779b"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "bell-90102/final.json",
+      "seconds": 0.15064425580203533,
+      "source": {
+        "bytes": 679445,
+        "sha256": "b8f4de2f86b298c17ff8608d1b9221cb0e0117d64fe9649c652a15d894e41821"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "bell-90102/initial.json",
+      "seconds": 0.08608030900359154,
+      "source": {
+        "bytes": 318911,
+        "sha256": "db52a73afef2f500086c81d97e34ea4a71bff7f1e43f5adf58ba3e640e770652"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 16800,
+          "dtype": "<f4",
+          "sha256": "07294420fede12f102e43ef193d599fbc15db34a4ac89f5d58a81375fa342337",
+          "shape": [
+            3,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 5600,
+          "dtype": "<f4",
+          "sha256": "b0b2f0ffdf2fad550e3bbe36e49bd13d03fa21dd09695689a10d21b974879884",
+          "shape": [
+            1,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 0,
+          "dtype": "<i8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 32,
+          "dtype": "<i8",
+          "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+          "shape": [
+            4
+          ]
+        },
+        "contacts": {
+          "bytes": 0,
+          "dtype": "<f8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 36440,
+          "dtype": "<f8",
+          "sha256": "0df32df7e2964df44a872ace7a139e365057cf35f6a722f8f5bdd365f8fd53af",
+          "shape": [
+            1,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 8,
+          "dtype": "<i8",
+          "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "shape": [
+            1
+          ]
+        },
+        "excitation": {
+          "bytes": 33600,
+          "dtype": "<f8",
+          "sha256": "d743ab13bab62f4fc2307b573c67c37f16902379721c614846f8c9e37b0bc4ee",
+          "shape": [
+            3,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 126080,
+          "dtype": "<f4",
+          "sha256": "42f1af515eb6b6bd3d48d4c7682a5c36da066db536312bdbf46be0517ec8e18b",
+          "shape": [
+            1,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 128,
+          "dtype": "<i8",
+          "sha256": "8151b35d75a16f3eed6b5e02aa3612c60738a84e9e743617cd18c304e1cdde92",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 128,
+          "dtype": "<i8",
+          "sha256": "8151b35d75a16f3eed6b5e02aa3612c60738a84e9e743617cd18c304e1cdde92",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 16,
+          "dtype": "|b1",
+          "sha256": "532deabf88729cb43995ab5a9cd49bf9b90a079904dc0645ecda9e47ce7345a9",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 15760,
+          "dtype": "<f4",
+          "sha256": "b664733030e0ee6ab03640bf2adc4aeb4f5cf5961a69087f4ab5b4751290fafb",
+          "shape": [
+            1,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 96,
+          "dtype": "<i8",
+          "sha256": "2e8a356c7baeca5ced8618933c44357aaa5af44c3c9a07fb1ca66d8a9335a611",
+          "shape": [
+            3,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "bell-90102/tape.npz",
+      "seconds": 0.28453858010470867,
+      "source": {
+        "bytes": 19351,
+        "sha256": "2dde3822ede3b766fe3e22788e4970c41c7340c5a19f807bcdd9f38a3db5ccd9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "bell-90102/trace.json",
+      "seconds": 0.02716611698269844,
+      "source": {
+        "bytes": 17751,
+        "sha256": "5ee853eb2857617004486705d9a7a62d0d9dfd068b6bfaf36a61f09c99e62f62"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "boundary-90101/contract.json",
+      "seconds": 0.026330959051847458,
+      "source": {
+        "bytes": 818,
+        "sha256": "dcb687c0c1377cb1c901ceaa754afbd907a745bef98a3dc25c5c3c6d314d1920"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "boundary-90101/final.json",
+      "seconds": 0.32481876015663147,
+      "source": {
+        "bytes": 1587741,
+        "sha256": "51f5999e26d4003b173c198719ba81a4443c5697985b3b23c3e240f8d4508a07"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "boundary-90101/initial.json",
+      "seconds": 0.3264636043459177,
+      "source": {
+        "bytes": 1584716,
+        "sha256": "8a6b91a2cbff2567dc690ff775e42abc58f2976416a9a7e61e224efa6b2e5a5a"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 4480000,
+          "dtype": "<f4",
+          "sha256": "504f838f11d4a90d9743f706457cb2fdfa875133db8b01b8a07316e4bad8b696",
+          "shape": [
+            800,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 224000,
+          "dtype": "<f4",
+          "sha256": "d08ef92f885e24787162cdfb2adc3f51b8ec8fe5738f0f5a3e291320a3718d5c",
+          "shape": [
+            40,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 188080,
+          "dtype": "<i8",
+          "sha256": "c26772c556e3b0b2a6271baec86dcafbd3c0279cd09d4b3ceffef429e690884e",
+          "shape": [
+            11755,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 6408,
+          "dtype": "<i8",
+          "sha256": "fdb46b1371312e5ab00a5ddfcdd4975519190b9d687e69ba2f86f8d8775930fe",
+          "shape": [
+            801
+          ]
+        },
+        "contacts": {
+          "bytes": 1692720,
+          "dtype": "<f8",
+          "sha256": "86dc5c370a45a5291897e91505fa4bc2bca2eee8c1cb4b8e4b1d4ce9b04e35a3",
+          "shape": [
+            11755,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 1457600,
+          "dtype": "<f8",
+          "sha256": "61f9584bcf9d8675adf357377610ab8af48e204afcbd8aceab89d17e2d4e25d5",
+          "shape": [
+            40,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 320,
+          "dtype": "<i8",
+          "sha256": "1ec11b866eb73ff5271e12496c5430be2d16ed92e019bedc9e4379db0e76500f",
+          "shape": [
+            40
+          ]
+        },
+        "excitation": {
+          "bytes": 8960000,
+          "dtype": "<f8",
+          "sha256": "10eaf0445c7a4d9cef1a9465fa833ec3ef4500d2d692385728c4712ebd5d9323",
+          "shape": [
+            800,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 5043200,
+          "dtype": "<f4",
+          "sha256": "82121cc442b263091c79d21457ff0568886695078470a0b1ca91eaa57b8389ea",
+          "shape": [
+            40,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 5120,
+          "dtype": "<i8",
+          "sha256": "891a27d79f9f33dc274d6cd3d8a43dc01600acaf01873ae79df0a1bd10811ab5",
+          "shape": [
+            40,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 5120,
+          "dtype": "<i8",
+          "sha256": "891a27d79f9f33dc274d6cd3d8a43dc01600acaf01873ae79df0a1bd10811ab5",
+          "shape": [
+            40,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 640,
+          "dtype": "|b1",
+          "sha256": "7f3bb4091ffedda2b27e40b327bf63dee55b4baa318ac4d1252e764286e0c82a",
+          "shape": [
+            40,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 630400,
+          "dtype": "<f4",
+          "sha256": "c776e101482f78a1c4af98458c178b584ca118eab280ea73be53e10be8858512",
+          "shape": [
+            40,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 25600,
+          "dtype": "<i8",
+          "sha256": "0df7183b5f94bc35aa2a3dbe3d08e79b62295c8a468b11d5521103451b3ebdbd",
+          "shape": [
+            800,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "boundary-90101/tape.npz",
+      "seconds": 2.726924564689398,
+      "source": {
+        "bytes": 7615909,
+        "sha256": "11d5b911f04512414d69e931ef1aa124d955062891bc89f9408d718af2389022"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "boundary-90101/trace.json",
+      "seconds": 0.6724888309836388,
+      "source": {
+        "bytes": 4169823,
+        "sha256": "c52ffdf4f506d07e399f26563f9a0db4b7c33c96eb461a5d981e46f52589bad8"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-replay-90104/contract.json",
+      "seconds": 0.04502633213996887,
+      "source": {
+        "bytes": 832,
+        "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-replay-90104/final.json",
+      "seconds": 0.18319719284772873,
+      "source": {
+        "bytes": 685312,
+        "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-replay-90104/initial.json",
+      "seconds": 0.1311199925839901,
+      "source": {
+        "bytes": 404610,
+        "sha256": "2b311db0f9470b8c74ad2ec02759e21e7d4c4065110313e689393f0b58bad682"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 106400,
+          "dtype": "<f4",
+          "sha256": "c9326e48c36fdc81ce9fc84826c4ef6ca5ca2f7c99448da6a95fd58de596ce51",
+          "shape": [
+            19,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 0,
+          "dtype": "<f4",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 7040,
+          "dtype": "<i8",
+          "sha256": "af003ea81e9cbe7ca16b14d4bf7bdcdcabb2cb3356ce7e626d0e7a8f02b21cc0",
+          "shape": [
+            440,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 160,
+          "dtype": "<i8",
+          "sha256": "a7aa60909fc17a99238d53b8d33da0d7557d73543ba04d89d50b4036d61db205",
+          "shape": [
+            20
+          ]
+        },
+        "contacts": {
+          "bytes": 63360,
+          "dtype": "<f8",
+          "sha256": "cc9c3eff0b0c770f5ba3d7d9b052a997e2a0da17f92c781ceb829087507dec37",
+          "shape": [
+            440,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 0,
+          "dtype": "<f8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 0,
+          "dtype": "<i8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0
+          ]
+        },
+        "excitation": {
+          "bytes": 212800,
+          "dtype": "<f8",
+          "sha256": "5eb22f796d39bf21060bdd39be152979c399f277a76f0f1e0d5960f800e5646f",
+          "shape": [
+            19,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 0,
+          "dtype": "<f4",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 0,
+          "dtype": "<i8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 0,
+          "dtype": "<i8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 0,
+          "dtype": "|b1",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 0,
+          "dtype": "<f4",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 608,
+          "dtype": "<i8",
+          "sha256": "5078f0018959e17443f093852f21a439629bbb2ea874e05c45338cec7d997cb8",
+          "shape": [
+            19,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "contact-replay-90104/tape.npz",
+      "seconds": 0.6255616638809443,
+      "source": {
+        "bytes": 73166,
+        "sha256": "cabf849f182a57bfd2a10e504c35df37364194378f1963667e7488999f87eb38"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-replay-90104/trace.json",
+      "seconds": 0.07638387009501457,
+      "source": {
+        "bytes": 144190,
+        "sha256": "881fd6e797b0f2691968c344a1f73fc80568ea28ec25fdeb281fa1283799f054"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-source-90104/contact-mid.json",
+      "seconds": 0.139169255271554,
+      "source": {
+        "bytes": 404610,
+        "sha256": "2b311db0f9470b8c74ad2ec02759e21e7d4c4065110313e689393f0b58bad682"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-source-90104/contract.json",
+      "seconds": 0.06218220666050911,
+      "source": {
+        "bytes": 832,
+        "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-source-90104/final.json",
+      "seconds": 0.19803523644804955,
+      "source": {
+        "bytes": 685312,
+        "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-source-90104/initial.json",
+      "seconds": 0.1349055953323841,
+      "source": {
+        "bytes": 318989,
+        "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 112000,
+          "dtype": "<f4",
+          "sha256": "61edc6846df94e5d936bfa0d210c5161c817e5603cb4d2baa63efc72e1dfb56a",
+          "shape": [
+            20,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 5600,
+          "dtype": "<f4",
+          "sha256": "5e5ab79f70ce12e73631d9e3744c6e2f04d6eaf2e3c3abe1254dad2f5782e337",
+          "shape": [
+            1,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 7360,
+          "dtype": "<i8",
+          "sha256": "4b04cf87e2db6424d3c25fb3af10d16e2152b2da881f8784e469b257a61c2c2f",
+          "shape": [
+            460,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 168,
+          "dtype": "<i8",
+          "sha256": "5fd25b5b0578892374b89d826f9895a12d3ee1aae59028bf98e6c40fec8991d3",
+          "shape": [
+            21
+          ]
+        },
+        "contacts": {
+          "bytes": 66240,
+          "dtype": "<f8",
+          "sha256": "13070c20b530bfa68e459ef168fafa7736246b990017e68017d628f153c64921",
+          "shape": [
+            460,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 36440,
+          "dtype": "<f8",
+          "sha256": "6388c93270081bc9c8dbdcf5789df3ee70969dcb826703b21690175e26f21186",
+          "shape": [
+            1,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 8,
+          "dtype": "<i8",
+          "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "shape": [
+            1
+          ]
+        },
+        "excitation": {
+          "bytes": 224000,
+          "dtype": "<f8",
+          "sha256": "41ea26c75071e8b05314205ef2c9b2d6519091d6861e1146cb6178e11bbf2c9a",
+          "shape": [
+            20,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 126080,
+          "dtype": "<f4",
+          "sha256": "4ba6dfcdcf37e3dd4ab01ca46e76d619d349897d6ff4866c1f536d8dc6583e32",
+          "shape": [
+            1,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 128,
+          "dtype": "<i8",
+          "sha256": "8151b35d75a16f3eed6b5e02aa3612c60738a84e9e743617cd18c304e1cdde92",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 128,
+          "dtype": "<i8",
+          "sha256": "8151b35d75a16f3eed6b5e02aa3612c60738a84e9e743617cd18c304e1cdde92",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 16,
+          "dtype": "|b1",
+          "sha256": "532deabf88729cb43995ab5a9cd49bf9b90a079904dc0645ecda9e47ce7345a9",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 15760,
+          "dtype": "<f4",
+          "sha256": "9f2ef3441ae3faef2224beaf1deefc2e406c25c5dae0293f72112a8214ff85ef",
+          "shape": [
+            1,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "5c40a607a1ab5b09c50ffd8019f393a176eeaf092efbf1e84cff7276e4fdef12",
+          "shape": [
+            20,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "contact-source-90104/tape.npz",
+      "seconds": 0.8584715444594622,
+      "source": {
+        "bytes": 80878,
+        "sha256": "4c21523261099efb865ba6e645382146c14e47bc8df63c40677fd77d805ac481"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "contact-source-90104/trace.json",
+      "seconds": 0.09505578689277172,
+      "source": {
+        "bytes": 151468,
+        "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "identity",
+      "path": "events.jsonl",
+      "seconds": 0.006582632660865784,
+      "source": {
+        "bytes": 1763,
+        "sha256": "2e6120d53bc96915636fe7371615ec1e260f1de8a2c822cf2f0d2b7c0161ba3d"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "first-diagnostic.json",
+      "seconds": 0.0761779248714447,
+      "source": {
+        "bytes": 231,
+        "sha256": "4bce0ebe3abf73badc8f14d69f33a4fe8fb7f40bd6cbba0bdfb9ad3d4b9c7211"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "identity",
+      "path": "first-diagnostic.mp4",
+      "seconds": 0.007751639932394028,
+      "source": {
+        "bytes": 338092,
+        "sha256": "52dc16b53f1794a4bcef3082fd6ee16ce644e64935b5a5462b7cb999ad9ca2bf"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "independent-audit.json",
+      "seconds": 0.08349310047924519,
+      "source": {
+        "bytes": 4523,
+        "sha256": "7e04150aef33777dc2712423934bfdc7fcdf7761ff9bdc12707b76b78da326e4"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "mid-90101/contract.json",
+      "seconds": 0.08605031296610832,
+      "source": {
+        "bytes": 818,
+        "sha256": "dcb687c0c1377cb1c901ceaa754afbd907a745bef98a3dc25c5c3c6d314d1920"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "mid-90101/final.json",
+      "seconds": 0.38179947808384895,
+      "source": {
+        "bytes": 1587741,
+        "sha256": "51f5999e26d4003b173c198719ba81a4443c5697985b3b23c3e240f8d4508a07"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "mid-90101/initial.json",
+      "seconds": 0.3832405637949705,
+      "source": {
+        "bytes": 1585038,
+        "sha256": "d94f2da903ac97e8f0b4d215d8a2759b31a9c2f613734bc59b76a1a36d1ad441"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 4463200,
+          "dtype": "<f4",
+          "sha256": "3bf570b90b719e64c8d527fde5c67e9b26ac532996ec16e6eac09cf2b60daab6",
+          "shape": [
+            797,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 218400,
+          "dtype": "<f4",
+          "sha256": "1034917387f2c5d6ecbecbba8b6e0c339f855fc38e949cbbf3ea88ab7f9226aa",
+          "shape": [
+            39,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 187120,
+          "dtype": "<i8",
+          "sha256": "ce9a306b1d64f7d399fde9165d727c7e019a8f20932b4fb4549b7d748e7e4661",
+          "shape": [
+            11695,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 6384,
+          "dtype": "<i8",
+          "sha256": "22881ebbb9f264395d57751888f0c671ee79b6e8a5540c4ded22b2e20a258008",
+          "shape": [
+            798
+          ]
+        },
+        "contacts": {
+          "bytes": 1684080,
+          "dtype": "<f8",
+          "sha256": "0fa7d73903004d0fde624a2e6bfcea84bdc634cba73e6586a6dc81010e1dc8bd",
+          "shape": [
+            11695,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 1421160,
+          "dtype": "<f8",
+          "sha256": "9f09474453768ddda678d169ec355c946953c7df4c6d6b3f9dd7570958ec6ef5",
+          "shape": [
+            39,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 312,
+          "dtype": "<i8",
+          "sha256": "b4655b6c39ee47b99c765e466e65a0e969d7e0ac14d34e7dd69865e2df40ea94",
+          "shape": [
+            39
+          ]
+        },
+        "excitation": {
+          "bytes": 8926400,
+          "dtype": "<f8",
+          "sha256": "456dfb568b18e348b7a9eefa25850a781832c8b399957181b91955298b73f17e",
+          "shape": [
+            797,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 4917120,
+          "dtype": "<f4",
+          "sha256": "4a6edb173d631dc826ef7c8669d8793521a3bc787bb174a6d76a83f719f2ba70",
+          "shape": [
+            39,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 4992,
+          "dtype": "<i8",
+          "sha256": "7cc9f40af34ddd8e73e2da91a0a22f5e0d295b5a407d478b0fe897aec019cb68",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 4992,
+          "dtype": "<i8",
+          "sha256": "7cc9f40af34ddd8e73e2da91a0a22f5e0d295b5a407d478b0fe897aec019cb68",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 624,
+          "dtype": "|b1",
+          "sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 614640,
+          "dtype": "<f4",
+          "sha256": "edbf47d599b4c99435da665a4f138e6edf16e764dd8e0db214f95441754a87bf",
+          "shape": [
+            39,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 25504,
+          "dtype": "<i8",
+          "sha256": "b3c92384cae8879f875b5563f5ad71d09c00972678c65345f8fb01a25fe92246",
+          "shape": [
+            797,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "mid-90101/tape.npz",
+      "seconds": 3.507974920794368,
+      "source": {
+        "bytes": 7447575,
+        "sha256": "d0dc7dd3c4355381f96353ca25917b86ad7aa3eb2708edfa6d38380e49a9237c"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "mid-90101/trace.json",
+      "seconds": 0.734280202537775,
+      "source": {
+        "bytes": 4153593,
+        "sha256": "058b89031e7fdf496faafb33251052c306205fe9febc9b321206678e0b708fb8"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "progress.json",
+      "seconds": 0.10361805744469166,
+      "source": {
+        "bytes": 276,
+        "sha256": "957eb078f65365c79f6ec99b4b2a54ff0d78538f2edc5fd8e5937ea2fca598bc"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "protocol.json",
+      "seconds": 0.10728159360587597,
+      "source": {
+        "bytes": 54903,
+        "sha256": "1dffcaa7067f7a30d50b3786f7f53d7882770dbee02b46926d0302aac2c0f1ab"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "raw-manifest.json",
+      "seconds": 0.10540122725069523,
+      "source": {
+        "bytes": 6543,
+        "sha256": "a541c47e5571bc610af9fd8bd85f2a822746f05182587a8e5e72bceb7507a161"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "result.json",
+      "seconds": 0.10690116696059704,
+      "source": {
+        "bytes": 4206,
+        "sha256": "93b4bbd823dcc95f296cf938301610a3415a6d6558b94c9b4d1f9a03f7f7dd09"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "scene.json",
+      "seconds": 0.11559192836284637,
+      "source": {
+        "bytes": 28836,
+        "sha256": "ab6d804b33791df58657a333cb29fc28e52a027158d839e31238a46b25d13d12"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "source-90101/boundary.json",
+      "seconds": 0.40320078283548355,
+      "source": {
+        "bytes": 1584716,
+        "sha256": "8a6b91a2cbff2567dc690ff775e42abc58f2976416a9a7e61e224efa6b2e5a5a"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "source-90101/contract.json",
+      "seconds": 0.11847281083464622,
+      "source": {
+        "bytes": 818,
+        "sha256": "dcb687c0c1377cb1c901ceaa754afbd907a745bef98a3dc25c5c3c6d314d1920"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "source-90101/final.json",
+      "seconds": 0.41368683986365795,
+      "source": {
+        "bytes": 1587741,
+        "sha256": "51f5999e26d4003b173c198719ba81a4443c5697985b3b23c3e240f8d4508a07"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "source-90101/initial.json",
+      "seconds": 0.18975521251559258,
+      "source": {
+        "bytes": 318844,
+        "sha256": "e4c69ac1d2c3cf3df5b3c7a6b4b82d4af061f796adbf96a23e3c040e41670fa9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "source-90101/mid.json",
+      "seconds": 0.4120698794722557,
+      "source": {
+        "bytes": 1585038,
+        "sha256": "d94f2da903ac97e8f0b4d215d8a2759b31a9c2f613734bc59b76a1a36d1ad441"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "source-90101/recording/recording.json",
+      "seconds": 0.12878061085939407,
+      "source": {
+        "bytes": 7066,
+        "sha256": "db6c798e069b65ea63cdd83b76afaa6fad13fa7280e164b9df4f3b9498e41b6d"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "states": {
+          "bytes": 947440,
+          "dtype": "<f8",
+          "sha256": "d880d9356079106196e5d2f4f9c8a883b6b1ecdf03cbfe9c88c271b6f2437276",
+          "shape": [
+            26,
+            4555
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "source-90101/recording/states.npz",
+      "seconds": 0.32065683230757713,
+      "source": {
+        "bytes": 511020,
+        "sha256": "32fe792e5263bcb851530b0db7e5619fde060639ce6f0a4cfa0ad8ff8f8ad8bb"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 5600000,
+          "dtype": "<f4",
+          "sha256": "22916ae5625b70cb5392d0444c4d6c8982c126b83bd29a98d24ca2bc9c8ccd3a",
+          "shape": [
+            1000,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 280000,
+          "dtype": "<f4",
+          "sha256": "c786db1b51e6111e33f66802201b78c5c4562dcc8992aa7e4c1f5020081bd196",
+          "shape": [
+            50,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 250512,
+          "dtype": "<i8",
+          "sha256": "5614ea6baa830fc0e828d460e5b4d4463a4d4279237bfe5424a1e42d78eeb8ba",
+          "shape": [
+            15657,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 8008,
+          "dtype": "<i8",
+          "sha256": "2ab2a7147c90cb70a38dce555c83da7957c428288c77087473475ac188a9592c",
+          "shape": [
+            1001
+          ]
+        },
+        "contacts": {
+          "bytes": 2254608,
+          "dtype": "<f8",
+          "sha256": "63da4d781aad872d94ff8f75f499b4e2bb4612e492762a4e2c2e92cf3a6fffcf",
+          "shape": [
+            15657,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 1822000,
+          "dtype": "<f8",
+          "sha256": "27b80f49db98fbd1bb883149913051d98d0977ab970f15afbfb33a95e6d48af8",
+          "shape": [
+            50,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 400,
+          "dtype": "<i8",
+          "sha256": "ebc60f0baaa7a6bcce3fc2cc7bd40e00b1ce9697445790f907a68da4f123e861",
+          "shape": [
+            50
+          ]
+        },
+        "excitation": {
+          "bytes": 11200000,
+          "dtype": "<f8",
+          "sha256": "1e4251597b57a3f083c57f3af3eae64bbde9d96b5eaf13b3e397653ed702ff23",
+          "shape": [
+            1000,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 6304000,
+          "dtype": "<f4",
+          "sha256": "2618916f0fd16efd4450af379def0fc09041071133f094602b4d3f48eaa0addd",
+          "shape": [
+            50,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "383e48a0fe8db3d96e5ec65169924314f56bd4dfadcf01fd1cfccaa8f6d07f68",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "383e48a0fe8db3d96e5ec65169924314f56bd4dfadcf01fd1cfccaa8f6d07f68",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 800,
+          "dtype": "|b1",
+          "sha256": "ca82cd4327d80e60edebc327efbc5f8e40977499d68ad97006691c4f84ebdc9c",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 788000,
+          "dtype": "<f4",
+          "sha256": "5c0535ecc65de0f2bd41bdc2a1e8c2c1bad71bc97bc052a85de8ed173ec4b6e1",
+          "shape": [
+            50,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 32000,
+          "dtype": "<i8",
+          "sha256": "13869e1c25fad23e0b2bead450aef9cf3560c1e27866102e01082bdf86cd721d",
+          "shape": [
+            1000,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "source-90101/tape.npz",
+      "seconds": 4.4920198656618595,
+      "source": {
+        "bytes": 9034267,
+        "sha256": "71c1da1e3d610bf2a9b0fe06a802af784e0bc36599755371ef29da3a18d59f91"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "source-90101/trace.json",
+      "seconds": 0.9474398493766785,
+      "source": {
+        "bytes": 5215615,
+        "sha256": "79b499731a4b945aec80a2dcb30d76cd837e3fb5b1ce89a7aedc1cf11a8b8cba"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "truncation-90103/contract.json",
+      "seconds": 0.14491010271012783,
+      "source": {
+        "bytes": 816,
+        "sha256": "8d090060f0f003a12c8678010d7ca819cbc0409c77e1b32b228710df3cfbf884"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "truncation-90103/final.json",
+      "seconds": 0.305729690939188,
+      "source": {
+        "bytes": 679378,
+        "sha256": "175141161b92b7c6dc1c4664a79a491737316b8ed744c5414c1263e8fe794d32"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "truncation-90103/initial.json",
+      "seconds": 0.2162025421857834,
+      "source": {
+        "bytes": 318909,
+        "sha256": "5f39705d97c56d018533e56427d4e023168da231f5e9e3b53ffe594daf9d05c8"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 16800,
+          "dtype": "<f4",
+          "sha256": "b8bfe5fac31e27d5a0ad76dc9d03c7e42ef54797486f84ed747cd5ea4cc4264e",
+          "shape": [
+            3,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 5600,
+          "dtype": "<f4",
+          "sha256": "ac4e7c9d8bc0b3c596dad67717ea447d991a40660b3eb0629c335a91743b4b26",
+          "shape": [
+            1,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 0,
+          "dtype": "<i8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 32,
+          "dtype": "<i8",
+          "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+          "shape": [
+            4
+          ]
+        },
+        "contacts": {
+          "bytes": 0,
+          "dtype": "<f8",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "shape": [
+            0,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 36440,
+          "dtype": "<f8",
+          "sha256": "0df32df7e2964df44a872ace7a139e365057cf35f6a722f8f5bdd365f8fd53af",
+          "shape": [
+            1,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 8,
+          "dtype": "<i8",
+          "sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+          "shape": [
+            1
+          ]
+        },
+        "excitation": {
+          "bytes": 33600,
+          "dtype": "<f8",
+          "sha256": "69c0e1622c1775bf79bb5d6134eb0ea6e613ffaf0c7c4c2cb314cc541e28be87",
+          "shape": [
+            3,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 126080,
+          "dtype": "<f4",
+          "sha256": "7e159c61015a34a0c2ad0ca770d383b312a61f160fd17349dd7815917d52ec78",
+          "shape": [
+            1,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 128,
+          "dtype": "<i8",
+          "sha256": "8151b35d75a16f3eed6b5e02aa3612c60738a84e9e743617cd18c304e1cdde92",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 128,
+          "dtype": "<i8",
+          "sha256": "8151b35d75a16f3eed6b5e02aa3612c60738a84e9e743617cd18c304e1cdde92",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 16,
+          "dtype": "|b1",
+          "sha256": "532deabf88729cb43995ab5a9cd49bf9b90a079904dc0645ecda9e47ce7345a9",
+          "shape": [
+            1,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 15760,
+          "dtype": "<f4",
+          "sha256": "7c5e272afbaf30909bb8d2218ebac4cbf8591430d31c76bd288030a6a83bdb09",
+          "shape": [
+            1,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 96,
+          "dtype": "<i8",
+          "sha256": "2e8a356c7baeca5ced8618933c44357aaa5af44c3c9a07fb1ca66d8a9335a611",
+          "shape": [
+            3,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D0",
+      "kind": "npz",
+      "path": "truncation-90103/tape.npz",
+      "seconds": 1.7756478171795607,
+      "source": {
+        "bytes": 19350,
+        "sha256": "08f084661fea280f1f20fc62cb068ce57650bb23c053f1969503c8fad9272f86"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D0",
+      "kind": "json",
+      "path": "truncation-90103/trace.json",
+      "seconds": 0.15789390169084072,
+      "source": {
+        "bytes": 17783,
+        "sha256": "4f8fdeadbcd740a3e49beda0324d03914131923c4d2a7e50ba77fec25a934173"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "identity",
+      "path": "events.jsonl",
+      "seconds": 0.01405080035328865,
+      "source": {
+        "bytes": 1102,
+        "sha256": "9d50d69b129ebe3707805863d6bb6513105e49d73faa59917b8e067cf69baea9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/contract.json",
+      "seconds": 0.15891027636826038,
+      "source": {
+        "bytes": 1049,
+        "sha256": "9761271f236ccb1dfe01ffe756b2f19d95d5e448352dae7247388bd7ec47f7e9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/final.json",
+      "seconds": 0.4595300927758217,
+      "source": {
+        "bytes": 1578610,
+        "sha256": "e97a8645746c34ea84a070dd3a495e2fef9204541d0421e536d955d8a3d7cc12"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/initial.json",
+      "seconds": 0.23591557331383228,
+      "source": {
+        "bytes": 318908,
+        "sha256": "d524fc91f22017cef613d6dc320c01671277248ae99b15902289b405db9182a9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/mid.json",
+      "seconds": 0.6143804173916578,
+      "source": {
+        "bytes": 2433284,
+        "sha256": "0260399c97130191e12fd79c92a2c6e9d8a3b8b115bf6748cccbf7b3f304641f"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/sensor-final.json",
+      "seconds": 1.00091833434999,
+      "source": {
+        "bytes": 4528014,
+        "sha256": "a265e06ef6a8d676a0421e230001627133d5eca6574f346566b1faafffe3d98f"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/sensor-initial.json",
+      "seconds": 0.2806193847209215,
+      "source": {
+        "bytes": 538088,
+        "sha256": "64317c2e67166f49df43d0247b7d94827bb04b23c3e56f092731b66d7db693dc"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "history_receipt_ages": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "57c85cc7394f332e148216859becc7bfb34819a8437146c09fe41c95247ff0b4",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "history_sample_ages": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "efffd2deba2f24e0ebdff5617aa6fdfb4ed6a5994bb0aa2c9d3821ff483f335d",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "sample_commands": {
+          "bytes": 61600,
+          "dtype": "<f4",
+          "sha256": "541681846a43b216a7bd42965e8f8d2862138b93ee1cfde548246ade1396012a",
+          "shape": [
+            11,
+            2,
+            700
+          ]
+        },
+        "sample_engines": {
+          "bytes": 400840,
+          "dtype": "<f8",
+          "sha256": "795c7ae61f9b812f928ec6ef09190cb12994f12a4988b404db35d9a8abe7a094",
+          "shape": [
+            11,
+            4555
+          ]
+        },
+        "sample_ticks": {
+          "bytes": 88,
+          "dtype": "<i8",
+          "sha256": "8c79cba111ce6eae8eaf21182acc45c30181e57db3ddc09ed51c67bb8f94c965",
+          "shape": [
+            11
+          ]
+        },
+        "sample_values": {
+          "bytes": 173360,
+          "dtype": "<f4",
+          "sha256": "f1f6b381eadd91f24210641fe8329421eb1fb4f84e76a5e90b2c668b1f356e0a",
+          "shape": [
+            11,
+            2,
+            1970
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "lag-90201/sensor-tape.npz",
+      "seconds": 1.0189837291836739,
+      "source": {
+        "bytes": 339001,
+        "sha256": "e9ef59ae9214bf497e56a706b65d7cfabd236567bf3eb05088fbb8c9634a2fe4"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/sensor-trace.json",
+      "seconds": 0.1847438421100378,
+      "source": {
+        "bytes": 24553,
+        "sha256": "7a9535ce5071d9a1f1520e8e989a2299a8f9fb93dc867b094e59a3bb84c0513f"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 1120000,
+          "dtype": "<f4",
+          "sha256": "fa428a4c54456d07ac5558bf98c9ecfb4a1031cb0fa5b99af0d1f7f7d77a7421",
+          "shape": [
+            200,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 56000,
+          "dtype": "<f4",
+          "sha256": "cad67461263058e119b5c9215d5cc264b2e7f6c1cb1d88c9987a7b56b5adefda",
+          "shape": [
+            10,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 67408,
+          "dtype": "<i8",
+          "sha256": "1f53ef3d43443a2c1b2598159d9df08c3be9a36b1d587535ae7bfaf2de845c0b",
+          "shape": [
+            4213,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 1608,
+          "dtype": "<i8",
+          "sha256": "922059a85a3de0c25ddd96642cc62b9e8bc59e7a6c356e020f7d8ca062749729",
+          "shape": [
+            201
+          ]
+        },
+        "contacts": {
+          "bytes": 606672,
+          "dtype": "<f8",
+          "sha256": "8db6d49f98fb71f1b61a50a22e0dec2ef8bb6ee4db6b20739e2d14a086e7e1f7",
+          "shape": [
+            4213,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 364400,
+          "dtype": "<f8",
+          "sha256": "28b38d79ffe3e2fadfc9a6a3746bf81640646dc1dded47217bb6793cc2c0b6d6",
+          "shape": [
+            10,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 80,
+          "dtype": "<i8",
+          "sha256": "b3543035057a3781075eaaf92cb5000aeef151d2a194cc27b3c64cabf739c8c9",
+          "shape": [
+            10
+          ]
+        },
+        "excitation": {
+          "bytes": 2240000,
+          "dtype": "<f8",
+          "sha256": "46f9138c148fd93e30fcc43430db8397a1afe3b2fcc26f6808331186502bf8cb",
+          "shape": [
+            200,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 1260800,
+          "dtype": "<f4",
+          "sha256": "89a78052ccbbd5c760a72d03e86c0a53d0193172befe3ddd2c192494c65b1529",
+          "shape": [
+            10,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "6b74bc2e24173519248e06d108fc362c0b1ac55b7714942eb9bdd3b366c2bdbc",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "fe67777ef3f90953c6eb217cbfb4302755e456449c88de5d20f570a9bd30935c",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 160,
+          "dtype": "|b1",
+          "sha256": "f8663f56d1e7f5ec3272108f04af64a1200da94304c07b23b80151e7c18a02f2",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 157600,
+          "dtype": "<f4",
+          "sha256": "e140eeffe546110062199c0e8b23969a9c6088eb802e76eac37be9d5fbe04880",
+          "shape": [
+            10,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "821f1eab9ed088bd4247b3de0f308d723d3c7648b0e47b76cd3696fed66b4e90",
+          "shape": [
+            200,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "lag-90201/tape.npz",
+      "seconds": 2.649330548942089,
+      "source": {
+        "bytes": 1084860,
+        "sha256": "3836bba0749aaef7964b53a451e015fe9b28e8fbe86c0bb141a294d1907eec56"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-90201/trace.json",
+      "seconds": 0.3472918923944235,
+      "source": {
+        "bytes": 1047648,
+        "sha256": "31ff9d28cf104994243b0a714c4e0c0a43633ad13bf67ef709cfede0aeed9149"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-mid-90201/contract.json",
+      "seconds": 0.18749932758510113,
+      "source": {
+        "bytes": 1049,
+        "sha256": "9761271f236ccb1dfe01ffe756b2f19d95d5e448352dae7247388bd7ec47f7e9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-mid-90201/final.json",
+      "seconds": 0.47992097213864326,
+      "source": {
+        "bytes": 1578610,
+        "sha256": "e97a8645746c34ea84a070dd3a495e2fef9204541d0421e536d955d8a3d7cc12"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-mid-90201/initial.json",
+      "seconds": 0.39283557049930096,
+      "source": {
+        "bytes": 1061068,
+        "sha256": "1275393f53291ee7670b32da248a804249f5b3407665ec5f8caeeccae2e785fe"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-mid-90201/sensor-final.json",
+      "seconds": 1.032093908637762,
+      "source": {
+        "bytes": 4528014,
+        "sha256": "a265e06ef6a8d676a0421e230001627133d5eca6574f346566b1faafffe3d98f"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-mid-90201/sensor-initial.json",
+      "seconds": 0.6442708559334278,
+      "source": {
+        "bytes": 2433284,
+        "sha256": "0260399c97130191e12fd79c92a2c6e9d8a3b8b115bf6748cccbf7b3f304641f"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "history_receipt_ages": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "d29421798adc4cccc5cc545dff02937a160ff352a3c9d02e2c3bd2a66e40dbe8",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "history_sample_ages": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "096851e56334359ef545289d3143547744f6674b51bb36bb13b61939b0b136af",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "sample_commands": {
+          "bytes": 33600,
+          "dtype": "<f4",
+          "sha256": "7f7cd71f26f34edf9ce38180b38537f306a1a8f656edcb780549abe257bd42ca",
+          "shape": [
+            6,
+            2,
+            700
+          ]
+        },
+        "sample_engines": {
+          "bytes": 218640,
+          "dtype": "<f8",
+          "sha256": "1af2d207d039af14d129ac196a8ed62b42e5495698d50d7c9cd22bb5ebe68d16",
+          "shape": [
+            6,
+            4555
+          ]
+        },
+        "sample_ticks": {
+          "bytes": 48,
+          "dtype": "<i8",
+          "sha256": "92aa37e6ef5c4e15c4c284ebe51043c45dc62b0ad104a8befb5af004eed9d6e5",
+          "shape": [
+            6
+          ]
+        },
+        "sample_values": {
+          "bytes": 94560,
+          "dtype": "<f4",
+          "sha256": "fbbd04662e428969ad2147c3476bef6cee970c0225cf37daf8d0cdbc42db9c05",
+          "shape": [
+            6,
+            2,
+            1970
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "lag-mid-90201/sensor-tape.npz",
+      "seconds": 1.1172194294631481,
+      "source": {
+        "bytes": 232978,
+        "sha256": "cfaff84f970e77172069c18a73ca8d94fe975e94d4740b27f7f3c9ee24cfcde2"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-mid-90201/sensor-trace.json",
+      "seconds": 0.2093943953514099,
+      "source": {
+        "bytes": 14009,
+        "sha256": "30f1de6b078c178d57a59ae692fbd60ce6128d70f9573379f7d1f68bb4e6b5cf"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 655200,
+          "dtype": "<f4",
+          "sha256": "5227c172af922eabbdc175a6f55013bdff31089ae2af276124ddf40678ee6ca6",
+          "shape": [
+            117,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 28000,
+          "dtype": "<f4",
+          "sha256": "2ba6d852f7f58ff56bbbee6df0ae53c9f31a23c787e2270b4e4c0459aaa14e52",
+          "shape": [
+            5,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 43632,
+          "dtype": "<i8",
+          "sha256": "67a10accff643e8a08b64c55a7c910e5216d7bcac9d6073e439571698200a41c",
+          "shape": [
+            2727,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 944,
+          "dtype": "<i8",
+          "sha256": "9c79acc44e0095f794ef8e84e84b82ae683d661d4895fded2ca0b2f8296e9048",
+          "shape": [
+            118
+          ]
+        },
+        "contacts": {
+          "bytes": 392688,
+          "dtype": "<f8",
+          "sha256": "aa8c640421265bbe36722a98b84216270f4d292e704f6512bc111f260d4506f0",
+          "shape": [
+            2727,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 182200,
+          "dtype": "<f8",
+          "sha256": "1813532d0424dadb3362b16c21452ae55a2653f3aa3514cb8678c221f6535c78",
+          "shape": [
+            5,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 40,
+          "dtype": "<i8",
+          "sha256": "35226bb9b4cf6572742f559c5a0a7a1154b44ea6bff9979b4359c378e550edaf",
+          "shape": [
+            5
+          ]
+        },
+        "excitation": {
+          "bytes": 1310400,
+          "dtype": "<f8",
+          "sha256": "878743fe9eeee4c07d7b16c5daaf6e4631234d270f4b98a76994e665fdfbb181",
+          "shape": [
+            117,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 630400,
+          "dtype": "<f4",
+          "sha256": "4eab0c01647eb472df3355fd3fffcd6ea4fdf1665e95cbf208f9b2240a526705",
+          "shape": [
+            5,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "e46d875bfa566051f599324d6fd39aa98e4d132133cae87dbbd0a3a312492db6",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "1cd29c12c945ec96e16aae17645b4d917410c653062fbcf7e3df8a1f83ef4d13",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 80,
+          "dtype": "|b1",
+          "sha256": "221ec4cb82f8af94d1ef1118005d3914b735741cf5bcb7600975d809af5d03b8",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 78800,
+          "dtype": "<f4",
+          "sha256": "a9515f39a9aedf3f0456a4aa51f4f7acb19b92af57f10d838bb8dc2e3171e77d",
+          "shape": [
+            5,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 3744,
+          "dtype": "<i8",
+          "sha256": "0f63a45883fc59c27dab66d3627847a602ae31417a2974226957d7fbcd036bb2",
+          "shape": [
+            117,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "lag-mid-90201/tape.npz",
+      "seconds": 2.7477861531078815,
+      "source": {
+        "bytes": 805155,
+        "sha256": "1cc46e0337ca3331630bb4333822156c5216b7aef1c49c8b486e088a259535e1"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "lag-mid-90201/trace.json",
+      "seconds": 0.30622000992298126,
+      "source": {
+        "bytes": 612935,
+        "sha256": "f740d79220610b7f9266b5b60cee0b319788596df9d4a87b7fcfd69b5a82ee2c"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "progress.json",
+      "seconds": 0.21083124354481697,
+      "source": {
+        "bytes": 392,
+        "sha256": "b221e234a3474c93d4b83aa3324c4272217f90d6b04d88123f97d6a1f16d7bf9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "protocol.json",
+      "seconds": 0.22259745746850967,
+      "source": {
+        "bytes": 64275,
+        "sha256": "e49588fa9eb957644c7664f0c687ad72a72139d1cf67dff148e0544ea44c57ff"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "raw-manifest.json",
+      "seconds": 0.21956659108400345,
+      "source": {
+        "bytes": 9122,
+        "sha256": "5f0101822884f3b9052dc439647d9b290812f528727d401bc7f1bcd916a098e2"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/contract.json",
+      "seconds": 0.22122738510370255,
+      "source": {
+        "bytes": 1079,
+        "sha256": "9ccf664aea565e4e9689657c22a80797612a386a382a2b17f2cbbf4fca94f3c5"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/final.json",
+      "seconds": 0.5181568413972855,
+      "source": {
+        "bytes": 1578803,
+        "sha256": "f63acf687f7fa881fef1e227fcab5076695f1ed2bad30569aad995311f9e5e52"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/initial.json",
+      "seconds": 0.297235656529665,
+      "source": {
+        "bytes": 318908,
+        "sha256": "919fa888da3866b4a25dd1fe8eee540f151a61a2a0e363004a639cd8a56bf031"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/mid.json",
+      "seconds": 0.6590788662433624,
+      "source": {
+        "bytes": 2326390,
+        "sha256": "ca9f60f7a80c20b4222e96489cc2a624de40211ef94143aa79e436997ed8242d"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/sensor-final.json",
+      "seconds": 1.0291454046964645,
+      "source": {
+        "bytes": 4322101,
+        "sha256": "e40934bd6522fe986a2da5b7ee6f89b355ac752737a613bfca51f5f6e2295abb"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/sensor-initial.json",
+      "seconds": 0.3358057588338852,
+      "source": {
+        "bytes": 500763,
+        "sha256": "3da13b813029e0145254859e262e7938e43a730061eb2d50dea4f14dc1c3d305"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "history_receipt_ages": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "c9626671f978a2898f3cede81b3de9232ea424252b6ff5ee94798333b89ef0f7",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "history_sample_ages": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "26f1e65fc244c3c29d06d94770aeb5837ae138603aead558cd0748058a4be534",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "sample_commands": {
+          "bytes": 61600,
+          "dtype": "<f4",
+          "sha256": "1e53654838aed4cfdc256a295c433f734dba36a64201f782194a1f83bf0d42f7",
+          "shape": [
+            11,
+            2,
+            700
+          ]
+        },
+        "sample_engines": {
+          "bytes": 400840,
+          "dtype": "<f8",
+          "sha256": "1955d70ebf960fae6b00f059809759bf9291333b288b9eca69c55b23a4ada9f4",
+          "shape": [
+            11,
+            4555
+          ]
+        },
+        "sample_ticks": {
+          "bytes": 88,
+          "dtype": "<i8",
+          "sha256": "8c79cba111ce6eae8eaf21182acc45c30181e57db3ddc09ed51c67bb8f94c965",
+          "shape": [
+            11
+          ]
+        },
+        "sample_values": {
+          "bytes": 173360,
+          "dtype": "<f4",
+          "sha256": "7b62366b6d4a335dbe20e4c7628230884d5371aa2963aa208323b09a223d5a4a",
+          "shape": [
+            11,
+            2,
+            1970
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "reorder-90202/sensor-tape.npz",
+      "seconds": 1.3511770106852055,
+      "source": {
+        "bytes": 339462,
+        "sha256": "d5186f2a1300ec1bfc6dd269eaa2d63d2c4150ef931b0177ce860e7ec1a8a53b"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/sensor-trace.json",
+      "seconds": 0.24584390968084335,
+      "source": {
+        "bytes": 23696,
+        "sha256": "17d03a37c88ad9210ab3a121379f91d813d50c8182fb992d31d16a9ace9705e7"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 1120000,
+          "dtype": "<f4",
+          "sha256": "de6e4e7e46b9c54087e00e112942579e84d568cdc10a2ce2420b03d04ca0ce8f",
+          "shape": [
+            200,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 56000,
+          "dtype": "<f4",
+          "sha256": "8b9cc572bde480fa8f01071336e6a0c86d22f23cd04b5144f04628ff9f11e131",
+          "shape": [
+            10,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 67472,
+          "dtype": "<i8",
+          "sha256": "4360d20e55c4bf2e6567e6f01365a4abc0946368b3fbdc4e1992fab0c6110b40",
+          "shape": [
+            4217,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 1608,
+          "dtype": "<i8",
+          "sha256": "2b167361d0b3eff47d8d640771a1427a128be4139f01cfeb216384592d72780b",
+          "shape": [
+            201
+          ]
+        },
+        "contacts": {
+          "bytes": 607248,
+          "dtype": "<f8",
+          "sha256": "785a5b177e5e7eb7bc176563ee6ab1dfdaf75ac17459c785a31c03fbe2d88952",
+          "shape": [
+            4217,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 364400,
+          "dtype": "<f8",
+          "sha256": "a3027e351ccdcc681f02f238ed7c7ca6d55e00d69d7e9db139f0ad2e47a706cf",
+          "shape": [
+            10,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 80,
+          "dtype": "<i8",
+          "sha256": "b3543035057a3781075eaaf92cb5000aeef151d2a194cc27b3c64cabf739c8c9",
+          "shape": [
+            10
+          ]
+        },
+        "excitation": {
+          "bytes": 2240000,
+          "dtype": "<f8",
+          "sha256": "003f38f0e3d417809cbe12454ca94f88b193bba8c59b6520ad802899912d524a",
+          "shape": [
+            200,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 1260800,
+          "dtype": "<f4",
+          "sha256": "0ab12635817f81dda92fd687e0b7331f8e3afde187f977e34d8c94a28c0f8df0",
+          "shape": [
+            10,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "38a4b06546747fcb3762eb03a1c7197427c3ee847a85c9429cdc17186c2d6da3",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 1280,
+          "dtype": "<i8",
+          "sha256": "871ee772b0e725b0b29c291f42ead82e3d1743978766c6444117bdd95cd19079",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 160,
+          "dtype": "|b1",
+          "sha256": "c0992c43bf43c77fbbee4e948db668081fddf6b6aa74f297972e5378f910d201",
+          "shape": [
+            10,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 157600,
+          "dtype": "<f4",
+          "sha256": "28a34abbb04c38b9a1886869f20346ecd17e5e1b12ead108244882fb7ca56b96",
+          "shape": [
+            10,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "821f1eab9ed088bd4247b3de0f308d723d3c7648b0e47b76cd3696fed66b4e90",
+          "shape": [
+            200,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "reorder-90202/tape.npz",
+      "seconds": 3.342830067500472,
+      "source": {
+        "bytes": 1044160,
+        "sha256": "da0d5e30d128b8d9c1881433923fd1b72df5328d2b10e8286076e3d7d6141890"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-90202/trace.json",
+      "seconds": 0.41122013702988625,
+      "source": {
+        "bytes": 1047789,
+        "sha256": "c2500d454cb09a6a3d6a245f8ef309889a6cb680e129ebdaff019ed0955b2d1b"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-mid-90202/contract.json",
+      "seconds": 0.2484979797154665,
+      "source": {
+        "bytes": 1079,
+        "sha256": "9ccf664aea565e4e9689657c22a80797612a386a382a2b17f2cbbf4fca94f3c5"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-mid-90202/final.json",
+      "seconds": 0.5428039878606796,
+      "source": {
+        "bytes": 1578803,
+        "sha256": "f63acf687f7fa881fef1e227fcab5076695f1ed2bad30569aad995311f9e5e52"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-mid-90202/initial.json",
+      "seconds": 0.45251959934830666,
+      "source": {
+        "bytes": 1061158,
+        "sha256": "a4446e502cc28d68e5ec509f0c1705ebd38deb1c42f245c378a303f8a725232a"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-mid-90202/sensor-final.json",
+      "seconds": 1.0475668534636497,
+      "source": {
+        "bytes": 4322101,
+        "sha256": "e40934bd6522fe986a2da5b7ee6f89b355ac752737a613bfca51f5f6e2295abb"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-mid-90202/sensor-initial.json",
+      "seconds": 0.6873042657971382,
+      "source": {
+        "bytes": 2326390,
+        "sha256": "ca9f60f7a80c20b4222e96489cc2a624de40211ef94143aa79e436997ed8242d"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "history_receipt_ages": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "efcca80bd0715b0ae5dafbd062cf1e2e6b908c8171136b216a27c0f205351c9b",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "history_sample_ages": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "96eb441d1b8e0757cde2ff9ee40ead77f596be86fce8e24c4a255d8aab1bc70b",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "sample_commands": {
+          "bytes": 33600,
+          "dtype": "<f4",
+          "sha256": "225c63ae7444a6fdf183433ecdb002f7b161b9ed67f127c0d58a284e2b6a6c21",
+          "shape": [
+            6,
+            2,
+            700
+          ]
+        },
+        "sample_engines": {
+          "bytes": 218640,
+          "dtype": "<f8",
+          "sha256": "d6ca061db8944bf59189d1900914220f7c885f12ce5049b78be26a7986c461b4",
+          "shape": [
+            6,
+            4555
+          ]
+        },
+        "sample_ticks": {
+          "bytes": 48,
+          "dtype": "<i8",
+          "sha256": "92aa37e6ef5c4e15c4c284ebe51043c45dc62b0ad104a8befb5af004eed9d6e5",
+          "shape": [
+            6
+          ]
+        },
+        "sample_values": {
+          "bytes": 94560,
+          "dtype": "<f4",
+          "sha256": "2a05f5869370da528773b285e5561002b617a421c8c1d7441ac06827cd8115fa",
+          "shape": [
+            6,
+            2,
+            1970
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "reorder-mid-90202/sensor-tape.npz",
+      "seconds": 1.448974458500743,
+      "source": {
+        "bytes": 232909,
+        "sha256": "b61f329eeffe92cd47ab656c602c2b8cf79a1bf4a1582340a3e8ca4066c7ceb9"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-mid-90202/sensor-trace.json",
+      "seconds": 0.2688411585986614,
+      "source": {
+        "bytes": 13433,
+        "sha256": "fa37ed3d76198fb4714001331b2de2e86a06b562251fd853e68857a22785c0bc"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 655200,
+          "dtype": "<f4",
+          "sha256": "6fee466ad66df989549c048b008eddbb26b240fda177b93e93a0346210673794",
+          "shape": [
+            117,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 28000,
+          "dtype": "<f4",
+          "sha256": "9a54bfc7d86b71c60f4ef4b61ca6257c1f867cccdd573b23181da926b4e18594",
+          "shape": [
+            5,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 43696,
+          "dtype": "<i8",
+          "sha256": "0210fb6f84ebd5891b6fe8f09e6a90abb1629aa8fd8d369d9c3127cd31bcd044",
+          "shape": [
+            2731,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 944,
+          "dtype": "<i8",
+          "sha256": "5573205eb1ad29aafc30eed3c3587d358604c983402dcd6b48292c5e2972ffa5",
+          "shape": [
+            118
+          ]
+        },
+        "contacts": {
+          "bytes": 393264,
+          "dtype": "<f8",
+          "sha256": "e6f9df2d70c8f79239f3c4721c6cfdb92c8dc96508de5b8bce5664164d7f4c41",
+          "shape": [
+            2731,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 182200,
+          "dtype": "<f8",
+          "sha256": "c4343a1df2a279466fd4851350be49ce619c40115c5363240edbf52d762a7bcb",
+          "shape": [
+            5,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 40,
+          "dtype": "<i8",
+          "sha256": "35226bb9b4cf6572742f559c5a0a7a1154b44ea6bff9979b4359c378e550edaf",
+          "shape": [
+            5
+          ]
+        },
+        "excitation": {
+          "bytes": 1310400,
+          "dtype": "<f8",
+          "sha256": "2921d3e0563b551d28946a094ff1351fc6be5e5467c0ed59ce797da2befbc736",
+          "shape": [
+            117,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 630400,
+          "dtype": "<f4",
+          "sha256": "65a210fb9e92859f2d506340ef8f8dba46794367abf2cd47dddd6d220b3e4c5c",
+          "shape": [
+            5,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "585e1ff9fe35816cc0226c16ca3c2ca68577783ee9618dfc5fbdf84849d2199e",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 640,
+          "dtype": "<i8",
+          "sha256": "6c390019938be7288c13b1ba5b1b248773a81451b79fb31576fe2d433c687ec6",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 80,
+          "dtype": "|b1",
+          "sha256": "c8b0ce6bde700acba4d9fb1010c775626750ae98abbdb60357eb841800737cff",
+          "shape": [
+            5,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 78800,
+          "dtype": "<f4",
+          "sha256": "dde337a09786f7d66840ba647cc44b29bfe103723f708773c6e25875b30dea37",
+          "shape": [
+            5,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 3744,
+          "dtype": "<i8",
+          "sha256": "0f63a45883fc59c27dab66d3627847a602ae31417a2974226957d7fbcd036bb2",
+          "shape": [
+            117,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "reorder-mid-90202/tape.npz",
+      "seconds": 3.460865853354335,
+      "source": {
+        "bytes": 764128,
+        "sha256": "d3398c30262a983ef2ff8bc16267ced7c5899c0d4909dfad264a11041873fecb"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "reorder-mid-90202/trace.json",
+      "seconds": 0.36915403231978416,
+      "source": {
+        "bytes": 613097,
+        "sha256": "fb94195e3f6556e7e34e39b511ffa03546f1620032601a932a4ecb9bc785abd3"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "result.json",
+      "seconds": 0.2740259151905775,
+      "source": {
+        "bytes": 10792,
+        "sha256": "366903884a84450becb9669e5bcb49a0a7fdf9aeeee8e757ea13f01c60bfebdf"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "scene.json",
+      "seconds": 0.2809305265545845,
+      "source": {
+        "bytes": 28836,
+        "sha256": "ab6d804b33791df58657a333cb29fc28e52a027158d839e31238a46b25d13d12"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/contract.json",
+      "seconds": 0.2779724597930908,
+      "source": {
+        "bytes": 1048,
+        "sha256": "7c8564c78ebe89f4f7d17344f84dc43aa90e0b5faaf669df095d0ebcf4ebe0ad"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/final.json",
+      "seconds": 0.5721953995525837,
+      "source": {
+        "bytes": 1587741,
+        "sha256": "311b4fd01af4b3194048fcd7adb9be18d9200e2ac7e8222961d47d50a4db44a1"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/initial.json",
+      "seconds": 0.35406634770333767,
+      "source": {
+        "bytes": 318844,
+        "sha256": "9c1379701947e694797743076ac0089349c3ebbf8183ba6d69a9320a0cdf8128"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/mid.json",
+      "seconds": 1.0338188614696264,
+      "source": {
+        "bytes": 4089704,
+        "sha256": "337c88c67952e9d861c72097dcf8f8d8c9176ec0e6ac98b5bf1e0ed1c82a63be"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/sensor-final.json",
+      "seconds": 1.0362037513405085,
+      "source": {
+        "bytes": 4107897,
+        "sha256": "11bb5f953fbfc951931c1838c1f22a43fbedecf1b875526ffa2457480e981c45"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/sensor-initial.json",
+      "seconds": 0.3980447817593813,
+      "source": {
+        "bytes": 545572,
+        "sha256": "63d5e08ad8aca8c44f79d63a0e21fdce7afaf8b556ef5b5e91cc86466131dad5"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "history_receipt_ages": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "7e6cb9a38d8738566e32df6f685da99799ca4545c1d0a68ad24769f3b85178e3",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "history_sample_ages": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "7e6cb9a38d8738566e32df6f685da99799ca4545c1d0a68ad24769f3b85178e3",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "sample_commands": {
+          "bytes": 285600,
+          "dtype": "<f4",
+          "sha256": "c893c0797cd9b8af1315c2cdbe574fdaf39254ba315735068125c80e2a02481f",
+          "shape": [
+            51,
+            2,
+            700
+          ]
+        },
+        "sample_engines": {
+          "bytes": 1858440,
+          "dtype": "<f8",
+          "sha256": "82f739a0cbd9871ffd309b2c5d38b30459beeea5e626e7726dae576864e5e6b8",
+          "shape": [
+            51,
+            4555
+          ]
+        },
+        "sample_ticks": {
+          "bytes": 408,
+          "dtype": "<i8",
+          "sha256": "0016179a1ef3cc47c869dee16d50a18892509928e1e88780754c4eed43e801db",
+          "shape": [
+            51
+          ]
+        },
+        "sample_values": {
+          "bytes": 803760,
+          "dtype": "<f4",
+          "sha256": "5bb2fa1892449087c2f23a98f9dcd1a77b2cd319565181f4cf71ec0e99e37c1d",
+          "shape": [
+            51,
+            2,
+            1970
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "zero-90101/sensor-tape.npz",
+      "seconds": 2.1560806408524513,
+      "source": {
+        "bytes": 1958368,
+        "sha256": "7404f33bbb1bbedc398ffd02261dedae974b22839542eaa060d86562757a53ca"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/sensor-trace.json",
+      "seconds": 0.31605702079832554,
+      "source": {
+        "bytes": 126508,
+        "sha256": "e670ce55f1880d67bc3aa795675d8c721ddae9bd61b12f37da8290cc1cb632da"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 5600000,
+          "dtype": "<f4",
+          "sha256": "22916ae5625b70cb5392d0444c4d6c8982c126b83bd29a98d24ca2bc9c8ccd3a",
+          "shape": [
+            1000,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 280000,
+          "dtype": "<f4",
+          "sha256": "c786db1b51e6111e33f66802201b78c5c4562dcc8992aa7e4c1f5020081bd196",
+          "shape": [
+            50,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 250512,
+          "dtype": "<i8",
+          "sha256": "5614ea6baa830fc0e828d460e5b4d4463a4d4279237bfe5424a1e42d78eeb8ba",
+          "shape": [
+            15657,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 8008,
+          "dtype": "<i8",
+          "sha256": "2ab2a7147c90cb70a38dce555c83da7957c428288c77087473475ac188a9592c",
+          "shape": [
+            1001
+          ]
+        },
+        "contacts": {
+          "bytes": 2254608,
+          "dtype": "<f8",
+          "sha256": "63da4d781aad872d94ff8f75f499b4e2bb4612e492762a4e2c2e92cf3a6fffcf",
+          "shape": [
+            15657,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 1822000,
+          "dtype": "<f8",
+          "sha256": "27b80f49db98fbd1bb883149913051d98d0977ab970f15afbfb33a95e6d48af8",
+          "shape": [
+            50,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 400,
+          "dtype": "<i8",
+          "sha256": "ebc60f0baaa7a6bcce3fc2cc7bd40e00b1ce9697445790f907a68da4f123e861",
+          "shape": [
+            50
+          ]
+        },
+        "excitation": {
+          "bytes": 11200000,
+          "dtype": "<f8",
+          "sha256": "1e4251597b57a3f083c57f3af3eae64bbde9d96b5eaf13b3e397653ed702ff23",
+          "shape": [
+            1000,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 6304000,
+          "dtype": "<f4",
+          "sha256": "2618916f0fd16efd4450af379def0fc09041071133f094602b4d3f48eaa0addd",
+          "shape": [
+            50,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "383e48a0fe8db3d96e5ec65169924314f56bd4dfadcf01fd1cfccaa8f6d07f68",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 6400,
+          "dtype": "<i8",
+          "sha256": "383e48a0fe8db3d96e5ec65169924314f56bd4dfadcf01fd1cfccaa8f6d07f68",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 800,
+          "dtype": "|b1",
+          "sha256": "ca82cd4327d80e60edebc327efbc5f8e40977499d68ad97006691c4f84ebdc9c",
+          "shape": [
+            50,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 788000,
+          "dtype": "<f4",
+          "sha256": "5c0535ecc65de0f2bd41bdc2a1e8c2c1bad71bc97bc052a85de8ed173ec4b6e1",
+          "shape": [
+            50,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 32000,
+          "dtype": "<i8",
+          "sha256": "13869e1c25fad23e0b2bead450aef9cf3560c1e27866102e01082bdf86cd721d",
+          "shape": [
+            1000,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "zero-90101/tape.npz",
+      "seconds": 6.521021636202931,
+      "source": {
+        "bytes": 9034267,
+        "sha256": "71c1da1e3d610bf2a9b0fe06a802af784e0bc36599755371ef29da3a18d59f91"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-90101/trace.json",
+      "seconds": 1.098668321967125,
+      "source": {
+        "bytes": 5215615,
+        "sha256": "5252add20ff432494abcd1c540b63de2dbe39df83075ff309e329459bbaba697"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-mid-90101/contract.json",
+      "seconds": 0.30841751396656036,
+      "source": {
+        "bytes": 1048,
+        "sha256": "7c8564c78ebe89f4f7d17344f84dc43aa90e0b5faaf669df095d0ebcf4ebe0ad"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-mid-90101/final.json",
+      "seconds": 0.6071296129375696,
+      "source": {
+        "bytes": 1587741,
+        "sha256": "311b4fd01af4b3194048fcd7adb9be18d9200e2ac7e8222961d47d50a4db44a1"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-mid-90101/initial.json",
+      "seconds": 0.6035278011113405,
+      "source": {
+        "bytes": 1585038,
+        "sha256": "c6930f927329bc7e19d81ff03cfb385a7d2a9f0384cddfb4b5bf4269dcdbb2d1"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-mid-90101/sensor-final.json",
+      "seconds": 1.062074325978756,
+      "source": {
+        "bytes": 4107897,
+        "sha256": "11bb5f953fbfc951931c1838c1f22a43fbedecf1b875526ffa2457480e981c45"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-mid-90101/sensor-initial.json",
+      "seconds": 1.0628038719296455,
+      "source": {
+        "bytes": 4089704,
+        "sha256": "337c88c67952e9d861c72097dcf8f8d8c9176ec0e6ac98b5bf1e0ed1c82a63be"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "history_receipt_ages": {
+          "bytes": 4992,
+          "dtype": "<i8",
+          "sha256": "7961132b9243fa73912a1ac50e9eef28f12859a8973419754c0b1a85939af20f",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "history_sample_ages": {
+          "bytes": 4992,
+          "dtype": "<i8",
+          "sha256": "7961132b9243fa73912a1ac50e9eef28f12859a8973419754c0b1a85939af20f",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "sample_commands": {
+          "bytes": 224000,
+          "dtype": "<f4",
+          "sha256": "d08ef92f885e24787162cdfb2adc3f51b8ec8fe5738f0f5a3e291320a3718d5c",
+          "shape": [
+            40,
+            2,
+            700
+          ]
+        },
+        "sample_engines": {
+          "bytes": 1457600,
+          "dtype": "<f8",
+          "sha256": "3b0b4588e9ef342cf917e96615988b83ead50c9a1ee247a86a4ea4306e17736b",
+          "shape": [
+            40,
+            4555
+          ]
+        },
+        "sample_ticks": {
+          "bytes": 320,
+          "dtype": "<i8",
+          "sha256": "1b01eb0f32067b0e9b7472c2dbb2b4c693f4f216f5069ec5733b0cb794601e1a",
+          "shape": [
+            40
+          ]
+        },
+        "sample_values": {
+          "bytes": 630400,
+          "dtype": "<f4",
+          "sha256": "1b528d40fc24a0ed2788fc6c533a8ec385857b3ff8708b8b4549661f30b6ccf4",
+          "shape": [
+            40,
+            2,
+            1970
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "zero-mid-90101/sensor-tape.npz",
+      "seconds": 2.154303479939699,
+      "source": {
+        "bytes": 1567627,
+        "sha256": "4456f2811fee655e89c661ac7353697fb562cfb5b4d365b00959def185f2508f"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-mid-90101/sensor-trace.json",
+      "seconds": 0.3389499895274639,
+      "source": {
+        "bytes": 99943,
+        "sha256": "0ebab7303f533e7df7a477bbcde3de545b2f76600a6ec05bead175c9dc9fbca9"
+      },
+      "status": "passed"
+    },
+    {
+      "arrays": {
+        "applied": {
+          "bytes": 4463200,
+          "dtype": "<f4",
+          "sha256": "3bf570b90b719e64c8d527fde5c67e9b26ac532996ec16e6eac09cf2b60daab6",
+          "shape": [
+            797,
+            2,
+            700
+          ]
+        },
+        "chosen": {
+          "bytes": 218400,
+          "dtype": "<f4",
+          "sha256": "1034917387f2c5d6ecbecbba8b6e0c339f855fc38e949cbbf3ea88ab7f9226aa",
+          "shape": [
+            39,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 187120,
+          "dtype": "<i8",
+          "sha256": "ce9a306b1d64f7d399fde9165d727c7e019a8f20932b4fb4549b7d748e7e4661",
+          "shape": [
+            11695,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 6384,
+          "dtype": "<i8",
+          "sha256": "22881ebbb9f264395d57751888f0c671ee79b6e8a5540c4ded22b2e20a258008",
+          "shape": [
+            798
+          ]
+        },
+        "contacts": {
+          "bytes": 1684080,
+          "dtype": "<f8",
+          "sha256": "0fa7d73903004d0fde624a2e6bfcea84bdc634cba73e6586a6dc81010e1dc8bd",
+          "shape": [
+            11695,
+            18
+          ]
+        },
+        "decision_states": {
+          "bytes": 1421160,
+          "dtype": "<f8",
+          "sha256": "9f09474453768ddda678d169ec355c946953c7df4c6d6b3f9dd7570958ec6ef5",
+          "shape": [
+            39,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 312,
+          "dtype": "<i8",
+          "sha256": "b4655b6c39ee47b99c765e466e65a0e969d7e0ac14d34e7dd69865e2df40ea94",
+          "shape": [
+            39
+          ]
+        },
+        "excitation": {
+          "bytes": 8926400,
+          "dtype": "<f8",
+          "sha256": "456dfb568b18e348b7a9eefa25850a781832c8b399957181b91955298b73f17e",
+          "shape": [
+            797,
+            2,
+            700
+          ]
+        },
+        "histories": {
+          "bytes": 4917120,
+          "dtype": "<f4",
+          "sha256": "4a6edb173d631dc826ef7c8669d8793521a3bc787bb174a6d76a83f719f2ba70",
+          "shape": [
+            39,
+            2,
+            8,
+            1970
+          ]
+        },
+        "history_received": {
+          "bytes": 4992,
+          "dtype": "<i8",
+          "sha256": "7cc9f40af34ddd8e73e2da91a0a22f5e0d295b5a407d478b0fe897aec019cb68",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "history_ticks": {
+          "bytes": 4992,
+          "dtype": "<i8",
+          "sha256": "7cc9f40af34ddd8e73e2da91a0a22f5e0d295b5a407d478b0fe897aec019cb68",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "history_valid": {
+          "bytes": 624,
+          "dtype": "|b1",
+          "sha256": "14db981bfce5f1c5cc7173ff7c7a3e0c621f43c3a84b67149d2a35e3a624968f",
+          "shape": [
+            39,
+            2,
+            8
+          ]
+        },
+        "observations": {
+          "bytes": 614640,
+          "dtype": "<f4",
+          "sha256": "edbf47d599b4c99435da665a4f138e6edf16e764dd8e0db214f95441754a87bf",
+          "shape": [
+            39,
+            2,
+            1970
+          ]
+        },
+        "packets": {
+          "bytes": 25504,
+          "dtype": "<i8",
+          "sha256": "b3c92384cae8879f875b5563f5ad71d09c00972678c65345f8fb01a25fe92246",
+          "shape": [
+            797,
+            2,
+            2
+          ]
+        }
+      },
+      "corpus": "D1",
+      "kind": "npz",
+      "path": "zero-mid-90101/tape.npz",
+      "seconds": 6.182030210271478,
+      "source": {
+        "bytes": 7447575,
+        "sha256": "d0dc7dd3c4355381f96353ca25917b86ad7aa3eb2708edfa6d38380e49a9237c"
+      },
+      "status": "passed"
+    },
+    {
+      "corpus": "D1",
+      "kind": "json",
+      "path": "zero-mid-90101/trace.json",
+      "seconds": 0.9605035167187452,
+      "source": {
+        "bytes": 4153593,
+        "sha256": "56959cfeecd34ac40363334f36f008214c3b22ea7bee62e8541ea481c0f04486"
+      },
+      "status": "passed"
+    }
+  ],
+  "schema": "joxing-lossless-sensor-evidence-v1",
+  "source_sha": "07ee40a394b5d35079bab6208c5a5f8c3baed0c2",
+  "status": "passed",
+  "wall_seconds": 88.22793542593718
+}

@@ -1,0 +1,272 @@
+{
+  "schema": "joxing-storage-qualification-supervisor-v1",
+  "source_commit": "07ee40a394b5d35079bab6208c5a5f8c3baed0c2",
+  "protocol_sha256": "028cdeb54b8529ce741a588bdcf65083b2d907debc716c7bed3cacbe4faf7cdd",
+  "process": {
+    "pid": 410469,
+    "parent_pid": 1,
+    "start_ticks": 921391088,
+    "state": "R"
+  },
+  "started_utc": "2026-10-27T14:38:37.312273+00:00",
+  "status": "completed",
+  "initial_capacity": {
+    "available_memory_bytes": 103186358272,
+    "disk_free_bytes": 29573095424,
+    "load": [
+      10.6376953125,
+      11.43310546875,
+      11.4140625
+    ]
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 410522,
+        "parent_pid": 410469,
+        "start_ticks": 921391174,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 410522,
+          "parent_pid": 410469,
+          "start_ticks": 921391174,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 103234150400,
+        "disk_free_bytes": 29571907584,
+        "load": [
+          10.6376953125,
+          11.43310546875,
+          11.4140625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 2.2225601635873318,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 410787,
+        "parent_pid": 410469,
+        "start_ticks": 921391431,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 410787,
+          "parent_pid": 410469,
+          "start_ticks": 921391431,
+          "state": "S"
+        },
+        {
+          "pid": 410795,
+          "parent_pid": 410787,
+          "start_ticks": 921391439,
+          "state": "R"
+        },
+        {
+          "pid": 419074,
+          "parent_pid": 410795,
+          "start_ticks": 921400828,
+          "state": "S"
+        },
+        {
+          "pid": 419075,
+          "parent_pid": 410795,
+          "start_ticks": 921400828,
+          "state": "R"
+        },
+        {
+          "pid": 419076,
+          "parent_pid": 410795,
+          "start_ticks": 921400828,
+          "state": "R"
+        },
+        {
+          "pid": 470480,
+          "parent_pid": 410795,
+          "start_ticks": 921427058,
+          "state": "S"
+        },
+        {
+          "pid": 470507,
+          "parent_pid": 410795,
+          "start_ticks": 921427071,
+          "state": "R"
+        },
+        {
+          "pid": 470510,
+          "parent_pid": 410795,
+          "start_ticks": 921427071,
+          "state": "R"
+        },
+        {
+          "pid": 470987,
+          "parent_pid": 470510,
+          "start_ticks": 921427570,
+          "state": "S"
+        },
+        {
+          "pid": 470988,
+          "parent_pid": 470510,
+          "start_ticks": 921427570,
+          "state": "S"
+        },
+        {
+          "pid": 470989,
+          "parent_pid": 470510,
+          "start_ticks": 921427570,
+          "state": "S"
+        },
+        {
+          "pid": 470990,
+          "parent_pid": 470510,
+          "start_ticks": 921427570,
+          "state": "S"
+        },
+        {
+          "pid": 470992,
+          "parent_pid": 470507,
+          "start_ticks": 921427571,
+          "state": "S"
+        },
+        {
+          "pid": 470993,
+          "parent_pid": 470507,
+          "start_ticks": 921427572,
+          "state": "S"
+        },
+        {
+          "pid": 470994,
+          "parent_pid": 470507,
+          "start_ticks": 921427572,
+          "state": "S"
+        },
+        {
+          "pid": 470996,
+          "parent_pid": 470507,
+          "start_ticks": 921427572,
+          "state": "S"
+        },
+        {
+          "pid": 473441,
+          "parent_pid": 410795,
+          "start_ticks": 921429214,
+          "state": "S"
+        },
+        {
+          "pid": 473442,
+          "parent_pid": 410795,
+          "start_ticks": 921429214,
+          "state": "S"
+        },
+        {
+          "pid": 473443,
+          "parent_pid": 410795,
+          "start_ticks": 921429214,
+          "state": "S"
+        },
+        {
+          "pid": 473444,
+          "parent_pid": 410795,
+          "start_ticks": 921429214,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 103206854656,
+        "disk_free_bytes": 28931784704,
+        "load": [
+          13.626953125,
+          11.51904296875,
+          11.30224609375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 390.15365246124566,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "storage",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_evidence_storage.py",
+        "--protocol",
+        "experiments/v0.0.11/storage-qualification-protocol.json",
+        "--protocol-sha256",
+        "3f230bdd2de69219fcd90b8d0617c8a3990b2d5c60d8aa3c7dac5be88a2ebef2",
+        "--source-sha",
+        "07ee40a394b5d35079bab6208c5a5f8c3baed0c2",
+        "--output",
+        "runs/v0.0.11/storage-qualification-01"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 474849,
+        "parent_pid": 410469,
+        "start_ticks": 921430480,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 474849,
+          "parent_pid": 410469,
+          "start_ticks": 921430480,
+          "state": "S"
+        },
+        {
+          "pid": 474853,
+          "parent_pid": 474849,
+          "start_ticks": 921430484,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 104763449344,
+        "disk_free_bytes": 28882223104,
+        "load": [
+          12.8359375,
+          11.8740234375,
+          11.455078125
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 88.71419361419976,
+      "live_recorded_processes": []
+    }
+  ],
+  "finished_utc": "2026-10-27T14:46:39.765618+00:00",
+  "post_gate_wall_s": 89.05369680002332
+}

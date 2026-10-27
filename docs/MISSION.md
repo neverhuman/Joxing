@@ -1,3 +1,19 @@
+# Storage qualification complete; pretrained motor bridge started —2026-10-27
+
+All376Linux tests pass387.64s at frozen07ee40a. Full112/112D0/D1corpus qualification
+passes with0new physics; independent standard-decoder audit verifies every value/
+array byte,460source/upstream files and all recorded process exits/no owned jobs.
+Packed proof plus supervision45,588,826bytes from152,358,593original bytes;
+88.23s converter/maxRSS189080KiB, no claimed rollout speedup. Full raw transferred
+and independently hash-verified. [Results](V0.0.11_D1_STORAGE_RESULTS.md).
+
+No active task. Ready physical mission remains only drop200+mid117 after a NEW
+completion protocol/source/full gate; six successful cases must not be rerun.
+D1stillpartial,5073formalphysics/0boxing games, no v11tag. Retain both prior failed
+attempt books; the combined audit must expose18rows. The pretrained shared motor
+bridge is the next motor priority; first read-only mapper5tests pass, no inference
+or motor trajectory yet. Follow PRETRAINED_SHARED_MOTOR_BRIDGE.md packet2.
+
 **Next motor priority:** [pretrained shared motor bridge](PRETRAINED_SHARED_MOTOR_BRIDGE.md).
 The current clip is an untrained controller fixture. Reuse the qualified upstream
 walking model through its exact3601input/reference/normalizer contract; retain

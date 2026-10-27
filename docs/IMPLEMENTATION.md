@@ -1,3 +1,12 @@
+# Qualified storage and first pretrained shared features —2026-10-27
+
+The frozen storage implementation passes376Linux regressions and112/112lossless
+corpus rows; independent0physics audit and all process exits pass. See
+[V0.0.11_D1_STORAGE_RESULTS.md](V0.0.11_D1_STORAGE_RESULTS.md). Separately,
+shared_motor.py supplies a read-only3601native teacher input mapper; five new
+Mac synthetic checks pass. It does not yet run the pretrained controller in
+shared physics. See PRETRAINED_SHARED_MOTOR_BRIDGE.md for exact next motor work.
+
 # Lossless storage component —2026-10-27
 
 Added evidence_storage.py and sensor_packed_evidence.py; bounded gzip JSON/ZIP_LZMA
