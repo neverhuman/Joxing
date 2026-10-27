@@ -54,3 +54,14 @@ def test_video_sampling_is_causal():
     assert frame_schedule(report, fps=25).tolist() == [0, 1, 1, 2]
     with pytest.raises(ValueError):
         frame_schedule(report, fps=0)
+
+
+def test_integer_clock_preserves_every_registered_frame_despite_engine_roundoff():
+    report = {
+        "physics_dt_s": 0.001,
+        "frames": [
+            {"time_s": t * 0.001 + 1e-14 if t else 0.0, "physics_steps": t}
+            for t in range(0, 1001, 40)
+        ],
+    }
+    assert frame_schedule(report, fps=25).tolist() == list(range(26))

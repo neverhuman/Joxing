@@ -9,6 +9,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 from joxing.bout_recording import STATE, frame_schedule, load_recording, recording_hash
+from joxing.motor_storage import RawCredit
 from joxing.provenance import write_json
 from joxing.scene import build_scene
 
@@ -17,6 +18,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--recording", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--raw-budget-bytes", type=int)
     args = parser.parse_args()
     scene = build_scene()
     report, states = load_recording(scene, args.recording)
@@ -30,9 +32,21 @@ def main():
     option = mujoco.MjvOption()
     option.geomgroup[3:] = 0
     indices = frame_schedule(report)
+    encoder_options = {}
+    if args.raw_budget_bytes is not None:
+        import resource
+
+        owner = RawCredit(args.out.parent, args.raw_budget_bytes)
+        # Single writer: pre-reserve a hard inherited file-size ceiling before
+        # ffmpeg can write. A failed encoder keeps its partial file and fails QA.
+        owner.check(args.out, 8 * 1024**2 + 65536)
+        resource.setrlimit(resource.RLIMIT_FSIZE, (8 * 1024**2, 8 * 1024**2))
+        encoder_options["ffmpeg_params"] = ["-maxrate", "4M", "-bufsize", "4M"]
     with (
         mujoco.Renderer(scene.model, height=576, width=1024) as renderer,
-        imageio.get_writer(args.out, fps=25, codec="libx264", quality=8) as writer,
+        imageio.get_writer(
+            args.out, fps=25, codec="libx264", quality=8, **encoder_options
+        ) as writer,
     ):
         for index in indices:
             mujoco.mj_setState(scene.model, data, states[index], STATE)

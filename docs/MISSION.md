@@ -1,6 +1,6 @@
 # Current mission: v0.0.11 connected two-player loop and recording
 
-**Active: frozen Linux foundation regression on xbabe3; formal v11physics0.** v0.0.10is concluded with a negative
+**Active: D0 recording harness validation/freezing after audited Linux foundation; formal v11physics0.** v0.0.10is concluded with a negative
 motor result:16,384transitions,896optimizerupdates,32/32valid evaluations and2/2
 exact replays; both learning gates failed (−0.06625s/+0.01625s paired survival,
 1/8five-second survivors each). Independent all-row/raw audit passed; all35
@@ -34,19 +34,24 @@ punch/miss/block/recovery exchanges and historical self-play. Native valid bouts
 4. timing.py/CommandPacket/ActionQueue and env.py/referee.py/replay.py now exist.
    Local full218tests pass194.29s;14targetedtests pass6.83s. Read actual source/tests.
    Mid-command/contact application+engine replay passes. No competitive readiness.
-5. Frozen publicsourcef22cf8b/foundationprotocolbbcbf084 is running on xbabe3
-   /home/ubuntu/joxing/v011-loop-foundation-20261027, supervisor3355366/
-   start_ticks920445093; syncpassed and testsadvancing12:01:13UTC.
-   Inspect fresh result/logs/PIDs/source; no duplicate or executing-source edit. Regression only;180s sync/420s tests,
-   one thread/process, require literal218passes and owned process exits.
-6. Next worker packet: V0.0.11_D0_SHARED_RECORDING.md. Implement
-   scripts/qualify_boxing_env.py, scripts/audit_boxing_env.py and adversarial audit
-   tests, then freeze/public-push experiments/v0.0.11/recording-protocol.json.
-   Seven formal rows /2,642plannedphysics; nested12kphysics/300s/64MiB/one owner,
-   within whole v11hard120k/900s/256MiB/max2, firstlimit. First preregistered1s
-   untrained native-keyframe tape plus actual positive-force overlapping reset
-   stress and replay; independently audit all attempts. No competition/training.
-7. No auto-launch from regression success. Inspect capacity/unknown jobs afresh.
+5. Frozen foundation f22cf8b passed218Linux tests292.50s. Independent check
+   verified133source+288upstreamfiles, all22recorded identities exited, ownedscan
+   empty/sourceunchanged12:17:47UTC. Receipt foundation-completion.json.
+6. D0 runner/auditor/adversarial tests now exist. Read
+   V0.0.11_D0_SHARED_RECORDING.md, boxing_evidence.py/boxing_audit.py and
+   scripts/{qualify_boxing_env,audit_boxing_env,supervise_boxing_recording}.py.
+   Local235tests passed189.93s and final34targetedtests12.96s. Protocol canonical
+   baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456 is
+   registered in recording-protocol.json; public-push
+   and anonymously verify bytes. Deploy fresh dedicated xbabe3 checkout; require
+   full236Linux tests before bounded D0→audit→render→decode. Seven formal rows /
+   2,642plannedphysics; nested12kphysics/180srunner/300sallpostgate/64MiB/one
+   simulation owner, within whole v11hard120k/900s/256MiB/max2, firstlimit.
+   First preregistered1s untrained native-keyframe tape plus actual positive-force
+   overlapping reset stress/replay. No competition/training. Decode and visually
+   inspect both athletes/clock/diagnostic label; preserve all raw/checksum receipts.
+7. Only the newly source-frozen recording protocol authorizes gated D0; the old
+   foundation gate never auto-launches formal outcomes. Inspect capacity/unknown jobs afresh.
    Preserve all700muscles, third_party, frozen v10 and every failed attempt. Source
    protocol/runner/auditor/physics evidence and process exits determine outcomes.
 
@@ -83,8 +88,8 @@ entries preserved in docs/history/MISSION_BEFORE_V11_2026-10-27.md.
 ## Heartbeat and handoff
 
 Inspect actual owned PIDs/startticks, fresh events/counters, capacity, faults,
-tests and Git. The frozen regression gate is active; next concrete task is its audited
-completion then D0recording packet above. Healthy future job: independent
+tests and Git. The foundation is concluded; next concrete task is the new source-frozen
+D0qualification/recording packet above. Healthy future job: independent
 work only, no executing-source mutation/duplicate. Stop on first drift, unknown
 owner, nonfinite, assistance, leakage, contact/replay mismatch or cap; retain every
 invalid/incomplete/not_run row and lower/upper physics bounds. Finish independent

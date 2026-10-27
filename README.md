@@ -13,8 +13,9 @@ survivors each: **both improvement gates failed**.
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The diagnostic shared loop now has simultaneous opponent-aware observations,
 causal history, bounded command delays, four-glove contact staging and complete
-application/engine replay. All218local tests pass, including mid-command and
-active-contact replay. Linux qualification is next, followed by the
+application/engine replay. The foundation passed218Linux tests, including mid-command and
+active-contact replay. The typed recording harness and adversarial evidence auditor
+are now implemented; its new source packet must qualify before the
 [first registered recording packet](docs/V0.0.11_D0_SHARED_RECORDING.md).
 No valid native boxing bout exists yet; motor, contact/rules and competition
 remain gated. This phase uses untrained diagnostic muscle commands.

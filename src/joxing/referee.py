@@ -15,6 +15,7 @@ class GloveInterval:
     touches: tuple[Touch, ...]
     clearance_m: float
     extension_m: float
+    physical_evidence: dict | None = None
 
 
 class MatchReferee:
@@ -59,6 +60,7 @@ class MatchReferee:
         """Use cached force-evaluation geometry, before any post-step forward."""
         model = self.scene.model
         grouped = {name: [] for name in self.gloves}
+        trunk_velocities = {name: [] for name in self.gloves}
         for index, contact in enumerate(contacts):
             if contact.geom1 not in self.registry or contact.geom2 not in self.registry:
                 raise ValueError("Unknown physical contact semantic")
@@ -100,6 +102,7 @@ class MatchReferee:
                         bool(np.dot(contact.point - data.geom_xpos[glove], axis) > 0),
                     )
                 )
+                trunk_velocities[name].append(trunk_velocity.tolist())
         result = {}
         for name, glove in self.gloves.items():
             trunk = model.body(name[0] + "_thoracic12").id
@@ -122,7 +125,22 @@ class MatchReferee:
                     for gid, g in self.registry.items()
                     if g["actor"] == opponent
                 )
-            result[name] = GloveInterval(tuple(grouped[name]), clearance, extension)
+            body = model.geom_bodyid[glove]
+            result[name] = GloveInterval(
+                tuple(grouped[name]),
+                clearance,
+                extension,
+                {
+                    "axis_world": (
+                        data.xmat[body].reshape(3, 3) @ np.array([0.0, -1.0, 0.0])
+                    ).tolist(),
+                    "glove_position_world": data.geom_xpos[glove].tolist(),
+                    "trunk_position_world": data.xpos[trunk].tolist(),
+                    "trunk_rotation_world": data.xmat[trunk].reshape(3, 3).tolist(),
+                    "trunk_point_velocities_world": trunk_velocities[name],
+                    "stage": "cached force-evaluation geometry, before post-step forward",
+                },
+            )
         return result
 
     def commit(self, intervals, tick, *, bell=False):

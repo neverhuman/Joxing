@@ -1,3 +1,39 @@
+## Linux foundation audited; D0 recording harness implemented —2026-10-27
+
+The frozen foundation gate passed218Linux tests292.50s (stage296.655539s).
+Independent post-exit check verified all133source+288upstream files,22unique
+recorded identities exited, ownedscanempty and source diffempty at12:17:47UTC.
+Receipt artifacts/v0.0.11/development/foundation-completion.json. No formal v11
+physics or optimizer updates occurred in that regression gate.
+
+D0 implementation now exists: boxing_evidence.py captures actual chosen/applied
+700commands, decoded excitation, packet decision/application ticks, raw actor and
+history arrays, decision-engine states, every typed signed contact and per-glove
+physical/staging/event evidence. boxing_audit.py checks saved arithmetic and exact
+replay tails. qualify_boxing_env.py/audit_boxing_env.py implement the seven-row
+packet; bounded supervisor gates it behind a fresh full pinned236test Linux regression.
+The renderer remains diagnostic/no-qualified-score, scratch-only,0physics, with
+an optional8MiB inherited encoder file ceiling and pre-write raw reservation.
+
+Development tests30passed9.94s including11semantic corruptions, actual-contact/
+boundary/mid-command replay and missing/invalid attempt rejection. A further
+fault-preservation test is included in the 235test full regression, now passed189.93s.
+The small development contact tape passed20source+19replay interval audits;
+this is regression fixture evidence, not a formal D0 result. Same-source FK/
+actor/controller/HitTracker code is reused explicitly; force signs, arrival/
+history/decoding and impulse arithmetic are checked from saved arrays. Saved
+geometry frames/clearance are source measurements, not an independent physical
+model. No sporting qualification follows from these checks.
+
+Next freeze/public-push recording-protocol.json after local validation, then
+fresh xbabe3 deploy:236Linux tests required before D0. Only then one bounded
+untrained diagnostic run:7rows/2,642plannedphysics,12kphysics/180srunner/300swhole
+post-gate/64MiBraw, firstlimit, one simulation process and one numerical thread.
+Supervisor sync180s/tests420s; floors8GiBRAM/10GiBdisk, twiceatstart. Preserve
+allfailed/incomplete/not_run rows and rawfaults; progress records20step hard-crash
+bounds. Audit then source-hostEGLrender/decode; visual inspection remains required.
+No formal D0outcome, new video, learned bout or v11tag is claimed yet.
+
 ## Frozen Linux foundation gate active —2026-10-27 12:01UTC
 
 Public sourcef22cf8b338e00d179dd88df77456cb96ee2c24c7; foundation protocol canonical

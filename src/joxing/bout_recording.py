@@ -141,6 +141,16 @@ def frame_schedule(report, fps=25):
     times = np.array([r["time_s"] for r in report["frames"]])
     if fps <= 0 or not np.isfinite(fps) or np.any(np.diff(times) <= 0):
         raise ValueError("Invalid video timing")
+    if "physics_dt_s" in report and all("physics_steps" in r for r in report["frames"]):
+        # Integer clock avoids dropping exact 40ms samples because accumulated
+        # floating engine time is 0.04000000000000003 rather than 0.04.
+        ticks = np.array([r["physics_steps"] for r in report["frames"]])
+        dt = report["physics_dt_s"]
+        if not np.isfinite(dt) or dt <= 0 or np.any(np.diff(ticks) <= 0):
+            raise ValueError("Invalid recording physics clock")
+        count = int(np.floor((ticks[-1] - ticks[0]) * dt * fps)) + 1
+        targets = ticks[0] + np.arange(count) / (fps * dt)
+        return np.searchsorted(ticks, targets, side="right") - 1
     targets = (
         times[0] + np.arange(int(np.floor((times[-1] - times[0]) * fps)) + 1) / fps
     )

@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-27T12:24:43.468974+00:00",
+  "scope": "Development fixtures only; no formal D0outcomes",
+  "commands": [
+    "rtk proxy uv run --project experiments/v0.0.11/runtime --locked pytest -q tests/test_boxing_env_audit.py tests/test_boxing_env.py tests/test_match_referee.py tests/test_timing.py",
+    "rtk proxy uvx ruff check src scripts tests"
+  ],
+  "tests": "30passed9.94s before added quarantine-preservation test",
+  "small_typed_contact_fixture": {
+    "source_intervals": 20,
+    "replay_intervals": 19,
+    "audit_passed": true,
+    "exact_final_and_all_contact_command_engine_tails": true,
+    "note": "regression fixture; earlier before visible-opponent feedback addition"
+  },
+  "full_test_receipt": "recording-full-tests.json",
+  "source_files": {
+    "src/joxing/boxing_evidence.py": "23c607bfd20772c1f0604dd90aa3324c3656ceb63212e5d85c20fa8e8369e073",
+    "src/joxing/boxing_audit.py": "0505ad4fcb5c951dbd22470ded9efb4b5be3175008e0a7982be28b638931eb11",
+    "src/joxing/referee.py": "12e918f746e6b35cf365a0d198466a9bc805edb33ce5de4c4556d573c611c7b0",
+    "tests/test_boxing_env_audit.py": "4c201aca1531d527bb96a7255c69dde863446dee2c16d6a184be3fb40497d3e6"
+  },
+  "formal_physics": 0,
+  "limitations": [
+    "untrained feedback, no learned muscle motor",
+    "candidate scene/rules remain unqualified",
+    "ideal zero-delay sensing",
+    "FK/actor/controller/HitTracker reused frozen code; geometry clearance source-measured",
+    "formal independent audit and rendered-video visual inspection still pending"
+  ],
+  "final_targeted_tests": "34passed12.96s",
+  "full_suite": "235passed189.93s before final integer video clock/assertion/event-receipt changes; fresh Linux236testgate required",
+  "registered_protocol_sha256": "baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456"
+}
