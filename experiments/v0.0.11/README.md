@@ -1,3 +1,31 @@
+# Pretrained pair walking recording delivered; storage continuation ready —2026-10-27
+
+[First fixed pretrained trial](../../artifacts/v0.0.11/shared-motor-physical/first-pretrained-trial.mp4)
+shows both intact700-muscle athletes walking upright for3.52simulated seconds.
+Source71000has no tracking/physical latch; all3520intervals/29,853contacts/
+176paired decisions pass independent measurement/scalar-policy audit. All89video
+frames decode, first/middle/last visually checked; no new optimization/boxing.
+Full4world/replay gate is FALSE: source71001executed3520ticks but its tape hit
+the unchanged32MiB credit. Two seeds/replay not_run. Failed system-Python launch
+and all10attempt slots retained. No replay/guard/long-balance claim or v11tag.
+Read SHARED_MOTOR_PHYSICAL_RESULTS.md for full sources, commands and negatives.
+
+Frozen physicalc9a2b968/protocol7caaded4:861Linux passes +1existing strict referee
+snapshot-alias xfail,495.58s.7040newphysics/85.918852srunner; cumulative12430.
+Independent506source/input hashes and standard NumPy all23complete arrays pass;
+all owned identities exited. Full22file/29,366,212byte physical raw and8file/
+1,343,677byte zero-physics display raw are locally name/size/SHAverified. Original
+failed-launch raw91,404bytes also retained. Curated result/video/manifests in Git.
+Display source1db2267/protocol7d671086:8gate checks,12.435556s,0newphysics.
+
+No active jobs. NEXTREADY: **SHARED_MOTOR_STORAGE_CONTINUATION_PACKET.md** —
+qualify lossless derived-array/XOR/tail-reference evidence on SAVEDdata with0new
+physics before any unfinished condition/recovery/replay. Preserve all old raw
+and failed32MiB gate. Current raw233,103,545bytes +1MiB reserve leaves34,283,335;
+conservative postgate upper783.494067s leaves116.505933under original900s.
+Do not enlarge limits or rerun completed71000. Original game correctness battery/
+known referee alias defect still block competition. Optimizerupdates/nativeboxing0.
+
 # First shared pretrained trial audited; proof halted on storage —2026-10-27
 
 Frozen c9a2b968/7caaded4 passes861Linux tests with exactly1existing strict

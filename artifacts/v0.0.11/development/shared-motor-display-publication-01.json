@@ -1,0 +1,23 @@
+{
+  "schema": "joxing-shared-motor-display-publication-v1",
+  "source_commit": "1db226720da5abccfeb8881be23605d244510ec0",
+  "status": "passed",
+  "anonymous_checks": [
+    {
+      "path": "scripts/render_shared_motor_partial.py",
+      "bytes": 8900,
+      "sha256": "f4b735305b7f5e62451547caf27007797ff02c7092d5505d61de4c54dc896ecb"
+    },
+    {
+      "path": "experiments/v0.0.11/shared-motor-partial-display-protocol.json",
+      "bytes": 2290,
+      "sha256": "d4e55d768277d2740d59ab15aefe95680b28f760c8ebc1ae9b3d19c9209fdcd2"
+    },
+    {
+      "path": "docs/SHARED_MOTOR_PARTIAL_DISPLAY_PACKET.md",
+      "bytes": 3137,
+      "sha256": "3bc24fada49c7fbab1cccfab6fa5b6ee727c3590f2129011a30d143ad7b26e99"
+    }
+  ],
+  "new_physics": 0
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "joxing-shared-motor-complete-transfer-v1",
+  "status": "passed",
+  "source_root": "/home/ubuntu/joxing/v011-shared-motor-physical-bootstrap02-20261027",
+  "files": {
+    "bootstrap.log": {
+      "bytes": 1273,
+      "sha256": "0d24f201ab23b0336db86811823a1aade8265595a5beb5ccf59229d53ec1a901"
+    },
+    "deployment.json": {
+      "bytes": 91422,
+      "sha256": "cb416741039e8cc32c54c09b9054a59fd240d57394cca852973d4e3f51b54a27"
+    },
+    "launch.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "post-failure-audit.log": {
+      "bytes": 166,
+      "sha256": "c0f6630269ad9ae3ca7bc7f54565cfd6f21ed0f938d8b3fe9e4e5e27e3535ed7"
+    },
+    "runs/v0.0.11/shared-motor-physical-supervision-01/proof.log": {
+      "bytes": 332,
+      "sha256": "dc1254f0b7811a84e6ddbe83085c8b6676bdf4257b4c93a57902c63beddab481"
+    },
+    "runs/v0.0.11/shared-motor-physical-supervision-01/result.json": {
+      "bytes": 8418,
+      "sha256": "46024db59235d32ac8149285ce14a3c96c6f2962780c6de9738e6b68b31faf48"
+    },
+    "runs/v0.0.11/shared-motor-physical-supervision-01/sync.log": {
+      "bytes": 55,
+      "sha256": "415d5551ce1a26766894d2f462edea45301edd073908a98fd506956f20a4f4fd"
+    },
+    "runs/v0.0.11/shared-motor-physical-supervision-01/tests.log": {
+      "bytes": 2981,
+      "sha256": "6322a1f77b784d1c4aec2d39f31762b2284116e17d0329a9b4bc190b9b8f32d6"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/events.jsonl": {
+      "bytes": 185,
+      "sha256": "0ec3f61dbc273178dcd1a467bcda3f6f927cc29af79ec18f2e0ec9a0eacf420c"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/fault.json": {
+      "bytes": 716338,
+      "sha256": "bae0def6a6de2d517a8ce5068d40c8aaa5d757127a8934d8e2d4bad273e0b2bd"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/independent-audit.json": {
+      "bytes": 1674,
+      "sha256": "9eb93ffa987b29e6c4b0917b4e7373e6bd615e615acd006d5761afb39b78c242"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/progress.json": {
+      "bytes": 185,
+      "sha256": "c90d001cf9b9d295ad612d6006818203ce40f737dd375af93ecc007bd2e7bf9f"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/protocol.json": {
+      "bytes": 65403,
+      "sha256": "fb76e5d15bda9d3628450d3e77c8e016959ae00ab58e6a91b5a0556075fa5281"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/provenance.json": {
+      "bytes": 510,
+      "sha256": "de23452047c2b345fc2081d4e7daa564e84249bb4c9fa190766433b9440af936"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/result.json": {
+      "bytes": 2623,
+      "sha256": "859c51fe66ad9c5065cbad2f79a9db49904c1f59eace181e2d0dfbcd0ca27892"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/scene.json": {
+      "bytes": 29132,
+      "sha256": "cfea17534397a11eacee79dab3ee0f04471d48f3bd09fce9dc1279ec999af0b6"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71000/storage-manifest.json": {
+      "bytes": 6281,
+      "sha256": "2671d60b9614a038485583df61cac19c2238eb4afcc32bcf0da5368969fb21e7"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71000/tape.npz": {
+      "bytes": 19210825,
+      "sha256": "10e9404c28c03e9b401c3adb298ed2d964c6570f6853c80e30a37452c5687e61"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71000/trace.json.gz": {
+      "bytes": 905158,
+      "sha256": "99565fda87051d79f03ffc823ab588d94d859d8f29bd745d6a6444b5a434c772"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71001/storage-manifest.json": {
+      "bytes": 397,
+      "sha256": "ccac2c9e98bf70394736ce4e9136a7be95b39300b13bc449b8f055d5ce147b56"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71001/tape.npz.tmp": {
+      "bytes": 7506102,
+      "sha256": "fd140ebe4f38f1afb30310beed308ef4dd27547a78795bb8fe3c1c08eb285f41"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71001/trace.json.gz": {
+      "bytes": 816752,
+      "sha256": "b7001766c7fab8f7dbde29ae6ca8f4e80ec71a3137972fd34171cea8600f5b55"
+    }
+  },
+  "retained_raw_bytes": 29366212,
+  "archive_bytes": 28661050,
+  "archive_sha256": "5841c582499473ec267c5dd1bda83eaa3a8457902693cc229ec92236a765b02a",
+  "new_physics": 0
+}

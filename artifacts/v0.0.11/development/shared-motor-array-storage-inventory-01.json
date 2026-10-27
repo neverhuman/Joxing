@@ -1,0 +1,99 @@
+{
+  "schema": "joxing-shared-motor-array-storage-inventory-v1",
+  "tape_bytes": 19210825,
+  "arrays": {
+    "decision_ticks.npy": {
+      "stored_bytes": 310,
+      "npy_bytes": 1536
+    },
+    "decision_engines.npy": {
+      "stored_bytes": 1716031,
+      "npy_bytes": 6413568
+    },
+    "raw.npy": {
+      "stored_bytes": 2470819,
+      "npy_bytes": 5070336
+    },
+    "normalized.npy": {
+      "stored_bytes": 2734179,
+      "npy_bytes": 5070336
+    },
+    "commands.npy": {
+      "stored_bytes": 246935,
+      "npy_bytes": 985728
+    },
+    "excitation.npy": {
+      "stored_bytes": 268727,
+      "npy_bytes": 1971328
+    },
+    "ticks.npy": {
+      "stored_bytes": 1813,
+      "npy_bytes": 28288
+    },
+    "end_qpos.npy": {
+      "stored_bytes": 3346594,
+      "npy_bytes": 4787328
+    },
+    "posture.npy": {
+      "stored_bytes": 78731,
+      "npy_bytes": 112768
+    },
+    "loads.npy": {
+      "stored_bytes": 53572,
+      "npy_bytes": 169088
+    },
+    "contact_offsets.npy": {
+      "stored_bytes": 2749,
+      "npy_bytes": 28296
+    },
+    "contact_geoms.npy": {
+      "stored_bytes": 1442,
+      "npy_bytes": 477776
+    },
+    "contacts.npy": {
+      "stored_bytes": 1765176,
+      "npy_bytes": 4298960
+    },
+    "video_ticks.npy": {
+      "stored_bytes": 228,
+      "npy_bytes": 840
+    },
+    "video_states.npy": {
+      "stored_bytes": 867442,
+      "npy_bytes": 3243288
+    },
+    "witness_qpos.npy": {
+      "stored_bytes": 179737,
+      "npy_bytes": 239488
+    },
+    "witness_qvel.npy": {
+      "stored_bytes": 192670,
+      "npy_bytes": 239488
+    },
+    "witness_act.npy": {
+      "stored_bytes": 805582,
+      "npy_bytes": 1971328
+    },
+    "witness_qacc.npy": {
+      "stored_bytes": 197930,
+      "npy_bytes": 239488
+    },
+    "witness_actuator_force.npy": {
+      "stored_bytes": 1505985,
+      "npy_bytes": 1971328
+    },
+    "witness_actuator_length.npy": {
+      "stored_bytes": 1055704,
+      "npy_bytes": 1971328
+    },
+    "witness_actuator_velocity.npy": {
+      "stored_bytes": 1671689,
+      "npy_bytes": 1971328
+    },
+    "witness_key_xpos.npy": {
+      "stored_bytes": 44270,
+      "npy_bytes": 59264
+    }
+  },
+  "new_physics": 0
+}

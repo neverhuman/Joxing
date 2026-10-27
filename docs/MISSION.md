@@ -1,76 +1,64 @@
-# Current mission: execute the frozen shared pretrained physical proof
+# Current mission: qualify smaller lossless motor evidence, zero new physics
 
-Implemented independent named native input/engine/cache audits, lossless MotorTape,
-saved normalization/reference/contact/posture/support audit, the four-source and
-actual tick203 replay runner, bounded owner supervisor and first-fixed-trial video
-with full decode.45new Mac fixture checks pass10.14s;88targeted integration checks
-passed32.38s before five extra gate-summary checks. Expanded integration plus the
-external Grokbot suite passed471checks with1known strict xfail50.67s. The xfail is
-HitTracker.restore snapshot aliasing (grokbot cycle0005); no competitive gate or
-boxing qualification is claimed. Concurrent Grokbot paths/CI remain read-only.
+The first fixed shared pretrained pair now walks upright for3.52s in the
+[recording](../artifacts/v0.0.11/shared-motor-physical/first-pretrained-trial.mp4).
+No active owned jobs remain. Read **SHARED_MOTOR_PHYSICAL_RESULTS.md**, then
+**SHARED_MOTOR_STORAGE_CONTINUATION_PACKET.md**. This is the exact next worker-ready
+mission; do not repeat an old version or the failed five-row physical run.
 
-Frozen protocol: shared-motor-physical-protocol.json, canonical SHA
-7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43.
-Full final Linux gate requires861passes and ONLYthe exact existing strict xfail.
-Then four seeds71000..71003 ×3520ticks plus actual203→3520replay3317:17397new
-physics, no optimizer updates. One process/thread,60000physics/180srunner/
-300spostgate/32MiBraw firstlimit; original whole-version caps retained, conservative
-prior postgate upper600s. All five rows allocated before model load; attempted
-engine entries persisted before entry. Original native trials are dependencies,
-not rerun. Input qpos/qvel/activation bind to integration state; solver caches are
-actual phase measurements with separate exact physical-continuation checks,
-never post-step mj_forward replacements. Scratch posture/video add0physics.
+Source71000measurement/scalar-policy audit passes; full four-world/replay gate
+remains FALSE after source71001's storage failure. Complete raw/temporaries,
+failed bootstrap and all10attempt slots remain. Frozen physicalsourcec9a2b968,
+protocol7caaded4,861Linux passes plus the one known strict referee-alias xfail.
+All506source/input hashes, standard NumPy23array audit, process exits and full
+raw transfers pass. Display-onlysource1db2267/protocol7d671086executes0physics;
+89frames decode, first/middle/last were visually checked. Walking is not boxing.
 
-Next: publish/anonymous-byte-verify source+protocol, deploy a fresh xbabe1checkout,
-verify all frozen inputs and capacity, start the bounded full-suite→proof→audit→
-render→decode chain. Do not duplicate or change its executing source. Numerical/
-quota/deadline/source faults stop the chain and retain partial/fault/last-valid
-receipts for a separate read audit; a failed chain does not qualify motor output.
-First registered source footage includes physical/tracking failure if present.
-No actual shared pretrained physical outcome yet. Formal v11physics remains5390,
-optimizerupdates0/valid nativeboxing0. Whole-v11remaining correctness battery
-stays outstanding and no v11tag is authorized by this component.
+## Ready bounded work
 
-Read AGENTS/RTK and SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md, then
-shared_motor_proof.py/shared_motor_evidence.py/shared_motor_saved_audit.py and
-scripts/supervise_shared_motor.py. Full final source-host regressions precede
-formal motion. Keep all attempts, resource/ownership/source/input hashes and exact
-commands. Audit every outcome and process exit, transfer complete raw evidence
-with name/size/SHA checks, inspect first/last frames, publish honest results and
-update this mission to the measured next motor bottleneck. No extra agents,
-other-chat messages, third_party/service edits or duplicate jobs.
+Implement the disjoint motor_evidence_codec.py and independent corpus qualifier/
+auditor/tests described in the continuation packet. Work only from retained
+source1full/source2partial data. Candidate exact recipes remove redundant raw/
+normalized inputs, excitation and engine-bound witness copies; retain actual
+solver-phase caches, all physical qpos/contacts/posture/support and typed hashes.
+Optional uint XOR/tail references must reconstruct every logical byte, with
+bounded allocations/dependencies and the same pre-write/fault controls. Never
+replace actual cached acceleration/forces with a new mj_forward result.
 
-## Delivered and outstanding version accounting
+Register/public-freeze source/protocol before0physics qualification; full pinned
+Linux suite first, recount incoming grokbot/tests and keep the exact existing
+strict-xfail identity. Proposed qualification oneCPU/thread,90swall/512MiB RSS/
+4MiB persisted receipts/shard/faults, lower if actual remaining version credit
+requires. Large encoded corpus may be an explicitly bounded in-memory intermediate
+with immutable original input retained, all23logical hashes and encoded hash/size
+logged; no deleting old physical artifacts or moving expanded data to evade caps.
 
-D1sensor proof is complete at d55eaa4:402Linux tests, all8unique conditions,
-4exact replays/exact D0oracle across all18attempt rows, retaining both earlier
-failures. Only317new steps finished the two unexecuted conditions. See
-V0.0.11_D1_COMPLETION_RESULTS.md; raw4,278,352bytes fully verified. Original
-96MiBfailure remains failed, never enlarged. No old successful trajectory rerun.
+Only after measured compression/byte parity, raw/time projection and a separate
+preregistration may unfinished/recovery/replay physics run. Never rerun completed
+71000. The source2temporary has7complete members but lacks physical arrays;
+recovery would be an explicitly counted new3520step replay matching EVERYold
+engine hash and known decision, preserving its original incomplete attempt.
+Two unexecuted3520step worlds and first203→3520replay3317remain. Proposed later
+13877newsteps is NOTconsumed or ready-to-launch credit; inspect budgets first.
 
-Formalv11physics5390; optimizerupdates0/valid native boxing games0. Whole-version
-caps remain120kphysics/900spostgate/256MiBraw/max2simulation workers; global<=16
-owned workers, one numerical thread per process, tighter registered stage caps.
-Current conservative retained raw202,302,252bytes leaves66,133,204bytes. The
-original remaining four-seed/asymmetric/adverse correctness battery is still
-outstanding in V0.0.11_COMPLETION_PACKET.md. No completed whole-v11tag.
+## Accounting and boundaries
 
-Motor qualification and sporting fall/foul/exit/surface gates remain before
-competitive learning/promotion. Current motor-only bridge is a named diagnostic,
-not the opponent-aware tactical actor. Later integration retains simultaneous
-opponent game state, causal history/timing queues and frozen-opponent league
-assessment before1000→100000valid games.
+Cumulativeformalv11physics12430; optimizerupdates0/validnativeboxinggames0.
+Retainedraw233,103,545 +1MiB receipt reserve leaves34,283,335under256MiB.
+Conservativepostgateupper783.494067s leaves116.505933under900s. Whole120kphysics/
+900spostgate/256MiBraw/max2simworkers unchanged; globalmax16owned workers/one
+numericalthread, this next stage0simworkers. Reserve original remaining game
+correctness battery and known referee snapshot-aliasing repair before competition.
+No v11tag, no training/promotion or invented game counts. Earlier native long
+walking failed20second stability;3.52spositive transfer is not stationary guard.
 
-## Monitoring and proof rules
-
-Read AGENTS/RTK, README/GAME/SPEC_REVIEW, STATUS/IMPLEMENTATION and the exact packet.
-One owner; no agents, other-chat messages, third_party writes, credentials/raw SSH
-config in Git or changes to unrelated host jobs/services/drivers. Inspect actual
-processes/progress/load/faults/tests/Git, use fresh dedicated ~/joxing roots and
-registered caps. Keep executed source/protocol/outcomes immutable. All attempted/
-invalid/incomplete/not_run rows, exact commands/seeds/hashes/PID+start identities,
-raw fault/last-valid data and next action are mandatory. Stop first on mismatch/
-source drift/nonfinite/assistance/cap/unknown job; no silent retries. Audit every
-outcome/source/input/raw/process exit, preserve full evidence, update README/docs/
-book and push public source before outcomes/results afterward. Tag only completed
-versions. Leave a bounded healthy task or this concrete next implementation mission.
+One owner, no agents/other-chat messages/third_party edits, no concurrent referee/
+scene writes, no unrelated jobs/services/drivers or purchases. grokbot/**/CI
+remain read-only incoming work; preserve remote updates and exact frozen evidence.
+Inspect ownership/load/RAM/disk before any task, use fresh dedicated ~/joxing roots,
+keep all commands/hashes/seeds/PID+start/progress/faults/invalid/not_run rows and
+complete independent transfer/exit receipts. Source must stay fixed while running.
+Update README/docs/book and public Git with honest outcomes. Leave a bounded task
+or this exact next mission. After real motor/contact/rules/replay qualification,
+adapt guard/reach/recovery from the teacher before causal opponent-history league
+learning and measured shared-world HPC scaling.

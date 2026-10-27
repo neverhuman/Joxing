@@ -1,0 +1,210 @@
+{
+  "schema": "joxing-shared-motor-independent-integrity-exit-v1",
+  "status": "passed_partial_integrity",
+  "whole_motor_proof_passed": false,
+  "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+  "source_input_checks": 506,
+  "independent_standard_numpy_arrays": [
+    "commands",
+    "contact_geoms",
+    "contact_offsets",
+    "contacts",
+    "decision_engines",
+    "decision_ticks",
+    "end_qpos",
+    "excitation",
+    "loads",
+    "normalized",
+    "posture",
+    "raw",
+    "ticks",
+    "video_states",
+    "video_ticks",
+    "witness_act",
+    "witness_actuator_force",
+    "witness_actuator_length",
+    "witness_actuator_velocity",
+    "witness_key_xpos",
+    "witness_qacc",
+    "witness_qpos",
+    "witness_qvel"
+  ],
+  "live_recorded": [],
+  "unknown_owned": [],
+  "all_recorded_identities": [
+    {
+      "pid": 1026517,
+      "parent_pid": 1,
+      "start_ticks": 905963902,
+      "state": "R"
+    },
+    {
+      "pid": 1026682,
+      "parent_pid": 1026517,
+      "start_ticks": 905964088,
+      "state": "S"
+    },
+    {
+      "pid": 1026813,
+      "parent_pid": 1026517,
+      "start_ticks": 905964366,
+      "state": "S"
+    },
+    {
+      "pid": 1026816,
+      "parent_pid": 1026813,
+      "start_ticks": 905964369,
+      "state": "R"
+    },
+    {
+      "pid": 1035656,
+      "parent_pid": 1026816,
+      "start_ticks": 905973939,
+      "state": "S"
+    },
+    {
+      "pid": 1035657,
+      "parent_pid": 1026816,
+      "start_ticks": 905973939,
+      "state": "R"
+    },
+    {
+      "pid": 1035658,
+      "parent_pid": 1026816,
+      "start_ticks": 905973939,
+      "state": "R"
+    },
+    {
+      "pid": 1089630,
+      "parent_pid": 1026816,
+      "start_ticks": 906006854,
+      "state": "S"
+    },
+    {
+      "pid": 1089654,
+      "parent_pid": 1026816,
+      "start_ticks": 906006868,
+      "state": "R"
+    },
+    {
+      "pid": 1089657,
+      "parent_pid": 1026816,
+      "start_ticks": 906006868,
+      "state": "R"
+    },
+    {
+      "pid": 1090564,
+      "parent_pid": 1089657,
+      "start_ticks": 906007339,
+      "state": "S"
+    },
+    {
+      "pid": 1090565,
+      "parent_pid": 1089657,
+      "start_ticks": 906007339,
+      "state": "S"
+    },
+    {
+      "pid": 1090566,
+      "parent_pid": 1089657,
+      "start_ticks": 906007340,
+      "state": "S"
+    },
+    {
+      "pid": 1090567,
+      "parent_pid": 1089657,
+      "start_ticks": 906007340,
+      "state": "S"
+    },
+    {
+      "pid": 1090568,
+      "parent_pid": 1089654,
+      "start_ticks": 906007344,
+      "state": "S"
+    },
+    {
+      "pid": 1090569,
+      "parent_pid": 1089654,
+      "start_ticks": 906007344,
+      "state": "S"
+    },
+    {
+      "pid": 1090570,
+      "parent_pid": 1089654,
+      "start_ticks": 906007344,
+      "state": "S"
+    },
+    {
+      "pid": 1090571,
+      "parent_pid": 1089654,
+      "start_ticks": 906007344,
+      "state": "S"
+    },
+    {
+      "pid": 1092922,
+      "parent_pid": 1026816,
+      "start_ticks": 906009094,
+      "state": "R"
+    },
+    {
+      "pid": 1092923,
+      "parent_pid": 1026816,
+      "start_ticks": 906009094,
+      "state": "R"
+    },
+    {
+      "pid": 1092924,
+      "parent_pid": 1026816,
+      "start_ticks": 906009094,
+      "state": "R"
+    },
+    {
+      "pid": 1092925,
+      "parent_pid": 1026816,
+      "start_ticks": 906009094,
+      "state": "R"
+    },
+    {
+      "pid": 1115613,
+      "parent_pid": 1026517,
+      "start_ticks": 906014269,
+      "state": "S"
+    },
+    {
+      "pid": 1115618,
+      "parent_pid": 1115613,
+      "start_ticks": 906014271,
+      "state": "R"
+    },
+    {
+      "pid": 1118520,
+      "parent_pid": 1115618,
+      "start_ticks": 906019042,
+      "state": "R"
+    }
+  ],
+  "retained_second_tape": {
+    "central_directory_readable": true,
+    "members": [
+      "decision_ticks.npy",
+      "decision_engines.npy",
+      "raw.npy",
+      "normalized.npy",
+      "commands.npy",
+      "excitation.npy",
+      "ticks.npy"
+    ]
+  },
+  "physics_attempted": 7040,
+  "cumulative_v11_physics": 12430,
+  "all_attempt_slots_including_failed_launch": 10,
+  "optimizer_updates": 0,
+  "valid_native_boxing_games": 0,
+  "new_audit_physics": 0,
+  "load": [
+    4.755859375,
+    6.5654296875,
+    7.07080078125
+  ]
+}

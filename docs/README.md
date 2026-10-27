@@ -1,3 +1,5 @@
+Current motor result: [first shared pretrained walking recording and honest partial proof](SHARED_MOTOR_PHYSICAL_RESULTS.md). Next ready [zero-physics evidence codec qualification](SHARED_MOTOR_STORAGE_CONTINUATION_PACKET.md); [current mission](MISSION.md). No full motor/replay/boxing qualification yet.
+
 # Joxing documentation
 
 Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/neverhuman/Joxing). The repository and committed files are readable without credentials. See the [public-access verification receipt](../artifacts/receipts/repository-public.json).

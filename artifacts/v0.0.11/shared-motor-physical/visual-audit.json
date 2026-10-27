@@ -1,0 +1,26 @@
+{
+  "schema": "joxing-shared-motor-visual-inspection-v1",
+  "status": "passed_diagnostic_display",
+  "mp4_sha256": "856d93e2f91bc13b3cb1ee777cf5c25a10560b6de8c675e5df05a709e10af3ac",
+  "inspected_frame_indices": [
+    0,
+    40,
+    88
+  ],
+  "simulated_times_s": [
+    0,
+    1.6,
+    3.52
+  ],
+  "observations": [
+    "Both intact athletes remain upright in first, middle and final frames",
+    "Alternating stepping poses visible at1.6s; camera follows pair",
+    "Red/blue gloves identify corners; labels show frozen pretrained locomotion and incomplete four-seed proof"
+  ],
+  "limitations": [
+    "No punching, opponent tactics, points or learning improvement shown",
+    "Only first fixed world; full physical/replay gate remains incomplete",
+    "Short horizon does not establish stationary guard or long balance"
+  ],
+  "new_physics": 0
+}

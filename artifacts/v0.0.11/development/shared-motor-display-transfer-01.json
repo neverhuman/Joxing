@@ -1,0 +1,43 @@
+{
+  "schema": "joxing-shared-motor-complete-transfer-v1",
+  "status": "passed",
+  "source_root": "/home/ubuntu/joxing/v011-shared-motor-display-20261027",
+  "files": {
+    "display-supervision.json": {
+      "bytes": 1775,
+      "sha256": "a11259432f5c1d445fcfeda1f73b29b8b7fd8a00131d042341e9b94fcc1858b7"
+    },
+    "display.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/first-partial-display-01/first-frame.png": {
+      "bytes": 122183,
+      "sha256": "201434e285cb80abcdec211a7fdd96a933ccecc30232bb943f33004de1b9e4db"
+    },
+    "runs/v0.0.11/first-partial-display-01/first-pretrained-trial.json": {
+      "bytes": 560,
+      "sha256": "7f12cef64e818c8109b4ece9f259653425ff7b5ed2f21c2024d9604ce94e079e"
+    },
+    "runs/v0.0.11/first-partial-display-01/first-pretrained-trial.mp4": {
+      "bytes": 1102330,
+      "sha256": "856d93e2f91bc13b3cb1ee777cf5c25a10560b6de8c675e5df05a709e10af3ac"
+    },
+    "runs/v0.0.11/first-partial-display-01/last-frame.png": {
+      "bytes": 116310,
+      "sha256": "4dbf473bed05cb6824e19dab588f472ada5c0d57881992967b5a165b5c9b7b64"
+    },
+    "runs/v0.0.11/first-partial-display-01/video-validation.json": {
+      "bytes": 421,
+      "sha256": "f89cae3d17198d48b1a8e53c3ae9abbec4376d9056507ed3d1e86a7e2413841b"
+    },
+    "tests.log": {
+      "bytes": 98,
+      "sha256": "619349d90a8237cdb16f1df8a1b879c05882232cae5cf4f3d4a517453beae178"
+    }
+  },
+  "retained_raw_bytes": 1343677,
+  "archive_bytes": 1339839,
+  "archive_sha256": "bbc1a1b215ec0272a09bca5ed6fd6676068f182762fb603790bc0fea78e32aa6",
+  "new_physics": 0
+}

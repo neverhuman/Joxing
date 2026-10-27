@@ -1,0 +1,339 @@
+{
+  "schema": "joxing-shared-motor-physical-supervisor-v1",
+  "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+  "process": {
+    "pid": 1026517,
+    "parent_pid": 1,
+    "start_ticks": 905963902,
+    "state": "R"
+  },
+  "started_utc": "2026-10-27T17:39:50.208085+00:00",
+  "status": "halted",
+  "initial_capacity": {
+    "available_memory_bytes": 39485165568,
+    "disk_free_bytes": 323083673600,
+    "load": [
+      7.2041015625,
+      5.7685546875,
+      5.36279296875
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1026682,
+        "parent_pid": 1026517,
+        "start_ticks": 905964088,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 1026682,
+          "parent_pid": 1026517,
+          "start_ticks": 905964088,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 39357427712,
+        "disk_free_bytes": 322477568000,
+        "load": [
+          7.2041015625,
+          5.7685546875,
+          5.36279296875
+        ],
+        "owned_raw_bytes": 55
+      },
+      "returncode": 0,
+      "wall_s": 2.180808909237385,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "tests",
+        "grokbot/tests"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1026813,
+        "parent_pid": 1026517,
+        "start_ticks": 905964366,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 1026813,
+          "parent_pid": 1026517,
+          "start_ticks": 905964366,
+          "state": "S"
+        },
+        {
+          "pid": 1026816,
+          "parent_pid": 1026813,
+          "start_ticks": 905964369,
+          "state": "R"
+        },
+        {
+          "pid": 1035656,
+          "parent_pid": 1026816,
+          "start_ticks": 905973939,
+          "state": "S"
+        },
+        {
+          "pid": 1035657,
+          "parent_pid": 1026816,
+          "start_ticks": 905973939,
+          "state": "R"
+        },
+        {
+          "pid": 1035658,
+          "parent_pid": 1026816,
+          "start_ticks": 905973939,
+          "state": "R"
+        },
+        {
+          "pid": 1089630,
+          "parent_pid": 1026816,
+          "start_ticks": 906006854,
+          "state": "S"
+        },
+        {
+          "pid": 1089654,
+          "parent_pid": 1026816,
+          "start_ticks": 906006868,
+          "state": "R"
+        },
+        {
+          "pid": 1089657,
+          "parent_pid": 1026816,
+          "start_ticks": 906006868,
+          "state": "R"
+        },
+        {
+          "pid": 1090564,
+          "parent_pid": 1089657,
+          "start_ticks": 906007339,
+          "state": "S"
+        },
+        {
+          "pid": 1090565,
+          "parent_pid": 1089657,
+          "start_ticks": 906007339,
+          "state": "S"
+        },
+        {
+          "pid": 1090566,
+          "parent_pid": 1089657,
+          "start_ticks": 906007340,
+          "state": "S"
+        },
+        {
+          "pid": 1090567,
+          "parent_pid": 1089657,
+          "start_ticks": 906007340,
+          "state": "S"
+        },
+        {
+          "pid": 1090568,
+          "parent_pid": 1089654,
+          "start_ticks": 906007344,
+          "state": "S"
+        },
+        {
+          "pid": 1090569,
+          "parent_pid": 1089654,
+          "start_ticks": 906007344,
+          "state": "S"
+        },
+        {
+          "pid": 1090570,
+          "parent_pid": 1089654,
+          "start_ticks": 906007344,
+          "state": "S"
+        },
+        {
+          "pid": 1090571,
+          "parent_pid": 1089654,
+          "start_ticks": 906007344,
+          "state": "S"
+        },
+        {
+          "pid": 1092922,
+          "parent_pid": 1026816,
+          "start_ticks": 906009094,
+          "state": "R"
+        },
+        {
+          "pid": 1092923,
+          "parent_pid": 1026816,
+          "start_ticks": 906009094,
+          "state": "R"
+        },
+        {
+          "pid": 1092924,
+          "parent_pid": 1026816,
+          "start_ticks": 906009094,
+          "state": "R"
+        },
+        {
+          "pid": 1092925,
+          "parent_pid": 1026816,
+          "start_ticks": 906009094,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 39199539200,
+        "disk_free_bytes": 325393006592,
+        "load": [
+          17.00732421875,
+          11.947265625,
+          8.16552734375
+        ],
+        "owned_raw_bytes": 10164
+      },
+      "returncode": 0,
+      "wall_s": 498.4476010799408,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "proof",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_shared_motor.py",
+        "--protocol-sha256",
+        "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+        "--source-sha",
+        "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+      ],
+      "status": "failed",
+      "reason": "Nonzero exit or live child",
+      "process": {
+        "pid": 1115613,
+        "parent_pid": 1026517,
+        "start_ticks": 906014269,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 1115613,
+          "parent_pid": 1026517,
+          "start_ticks": 906014269,
+          "state": "S"
+        },
+        {
+          "pid": 1115618,
+          "parent_pid": 1115613,
+          "start_ticks": 906014271,
+          "state": "R"
+        },
+        {
+          "pid": 1118520,
+          "parent_pid": 1115618,
+          "start_ticks": 906019042,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 41186443264,
+        "disk_free_bytes": 324442521600,
+        "load": [
+          8.8974609375,
+          10.5888671875,
+          8.033203125
+        ],
+        "owned_raw_bytes": 29271330
+      },
+      "returncode": 1,
+      "wall_s": 89.1559705529362,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_shared_motor.py",
+        "--protocol-sha256",
+        "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+        "--source-sha",
+        "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    },
+    {
+      "stage": "render",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/render_shared_motor.py",
+        "--protocol-sha256",
+        "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+        "--source-sha",
+        "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    },
+    {
+      "stage": "decode",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/validate_shared_motor_render.py",
+        "--protocol-sha256",
+        "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+        "--source-sha",
+        "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    }
+  ],
+  "reason": "RuntimeError: proof failed: Nonzero exit or live child",
+  "finished_utc": "2026-10-27T17:49:41.772711+00:00",
+  "post_gate_wall_s": 89.15684675239027
+}
