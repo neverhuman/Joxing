@@ -72,6 +72,46 @@
       "sha256": "1de7af18a082aed8ed2db28a900eee55720e6fca28b21af9e1bac8ef498046d9"
     },
     {
+      "path": "D1/development-validation.json",
+      "bytes": 1267,
+      "sha256": "fbd59d4428bc7830fc706863b79af0e8a09267531ba1328d2b01b2c34af2103d"
+    },
+    {
+      "path": "R1/R1.txt",
+      "bytes": 110,
+      "sha256": "5a005ce61575f141c32959e5557397492b014197133f38b6cce20be24dff81cc"
+    },
+    {
+      "path": "R1/audit-validation.json",
+      "bytes": 476,
+      "sha256": "ef1997a6bfa5b6edc89330a189ca366aae3195e7e924b7aba9bcaa7e55ee74ee"
+    },
+    {
+      "path": "R1/audit.json",
+      "bytes": 6545,
+      "sha256": "44f2c385a1ba07fe55b5a9946e1e12edd30c11c736c31da83f870a9b5b4074fb"
+    },
+    {
+      "path": "R1/cycle-0-batch.npz",
+      "bytes": 337398,
+      "sha256": "5d79864422166907e5612fa37baa53e8cb5d0695ec15d4174ed1469affa6ddc1"
+    },
+    {
+      "path": "R1/cycle-0-scalar.npz",
+      "bytes": 337398,
+      "sha256": "5d79864422166907e5612fa37baa53e8cb5d0695ec15d4174ed1469affa6ddc1"
+    },
+    {
+      "path": "R1/cycle-20-batch.npz",
+      "bytes": 329773,
+      "sha256": "491611ebc52b2105152c22f905950b758758a12eb1483744708d4d88e96d03bd"
+    },
+    {
+      "path": "R1/cycle-20-scalar.npz",
+      "bytes": 329773,
+      "sha256": "491611ebc52b2105152c22f905950b758758a12eb1483744708d4d88e96d03bd"
+    },
+    {
       "path": "R1/deployment/launch-monitor.json",
       "bytes": 1912,
       "sha256": "e210df9b9e563d406beb85c9ea424befb5d92a19ec75c57c302d4684fa699c7a"
@@ -100,7 +140,37 @@
       "path": "R1/development-validation.json",
       "bytes": 861,
       "sha256": "99f16910164185c65004d3f6fa26e73b29f98faa613f5a0b0c259a251c9a0ab4"
+    },
+    {
+      "path": "R1/process-exit.json",
+      "bytes": 608,
+      "sha256": "8d2483067d60f306e2d2db7bf92fb4ce6debc90b89418e48a24839d2edfc7294"
+    },
+    {
+      "path": "R1/protocol.json",
+      "bytes": 2640,
+      "sha256": "cb3d12ea0851680094a444423fcfcbd1d69882d1c503652587e057f23e92e630"
+    },
+    {
+      "path": "R1/raw-manifest.json",
+      "bytes": 7301,
+      "sha256": "204455813a168be9f444d08cf05ef5998d4f3d1a079837a9225e51dbb9206d1c"
+    },
+    {
+      "path": "R1/result.json",
+      "bytes": 21932,
+      "sha256": "66fee98583fadd6df0f83d94824677fd4398dd2b0b9c28485c712a19591e8783"
+    },
+    {
+      "path": "R1/supervisor.json",
+      "bytes": 1570,
+      "sha256": "554d1b7aeff47676f5070204cdfd25c9685a9dd6c15613644367f8bc2a8e6380"
+    },
+    {
+      "path": "R1/tests.txt",
+      "bytes": 272,
+      "sha256": "1fca1b3c739950da4f883937138bd00fdc0ef021491715609e5698d546cfb40b"
     }
   ],
-  "scope": "All D0result/audit and R1preregistration/deployment receipts. v10inprogress; old raw unchanged."
+  "scope": "D0/R1completed receipts and D1preregistration; v10inprogress."
 }

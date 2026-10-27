@@ -22,3 +22,10 @@ Separate named [R1reference qualification](../../docs/V0.0.10_R1_REFERENCE_SEAM.
 
 
 R1deployed after publicsourcefreeze38eb93c5814912011e32b9c21c4ea2cf20d98927: xbabe3:/home/ubuntu/joxing/v010-seam-20261027,wrapper3411580. Syncpassed1.167s; full171Linux regressions makingrealprogress at03:11:48UTC underuv3411695/Python3411699. Strictall171passgate before formal42cases/60s/32MiB/zero-physics. Fresh100.21GBRAM/44.53GBdisk/ownedscanempty, sourceunchanged. NoformalR1outcomeyet. See MISSIONlivefiles/nextaudit; no duplicate/sourceedit whileactive. D0negative and all7results preserved; D1/D2stillunrun, no v10tag.
+
+
+## R1result; D1preregistration
+
+R1full171Linux tests pass230.68s; all42rows/4,914samples completed0.779255s,0physics/actor/optimizer. Independent allrawarray/template/reset-grid auditpasses; positions/nonseamvelocity exact, onlydeclaredseamroot differs, all58resetphase outputs exact. All5recordedPIDs exited/ownedscanempty/sourceunchanged.14,011,146rawbytesmanifest/first+lastcyclepairs/results inGit, full42raw retainedhost/local. No causal fall orlearningclaim.
+
+D1[workerpacket](../../docs/V0.0.10_D1_NEUTRAL_INTERFACE.md), neutral-interface-protocol.json canonical136427ced9b436e6ff3ed13b2859e618db4d17f4e85c816480dacc8f914200d1. NewMotorResidualEnv explicit138latentaction/all700 mapping, frozen teacher/normalizer/reference, physicalreward/masks/terminalobs and pending replay. SevenMac tests11.80s pass inclsyntheticSACupdate, nottraining. Initialmidrestore rewardfailure1.18e-8revealed reference dtype loss; newtyped wrapperfix preservesoldbase andexactgates. Full178Linux suite+4source-v8 paths neededbefore D1qualification; cap60s/12kphysics/32MiB,oneworker/thread,10,394planned. Source/publicpushbeforeoutcomes. D2protocol/runner/evaluation stillunimplemented; v10inprogress/untagged.

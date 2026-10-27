@@ -1,0 +1,28 @@
+{
+  "commands": [
+    {
+      "command": "rtk proxy uv run pytest -q tests/test_motor_residual.py",
+      "result": "7 passed in11.80s after typed-reference restoration"
+    },
+    {
+      "command": "rtk proxy uvx ruff check src scripts tests",
+      "result": "All checks passed"
+    },
+    {
+      "command": "rtk proxy uv run pytest --collect-only -q",
+      "result": "178tests collected"
+    }
+  ],
+  "protocol_sha256": "136427ced9b436e6ff3ed13b2859e618db4d17f4e85c816480dacc8f914200d1",
+  "module_sha256": "164fe91f55d4922a01f1360ed04c93192b3188635ce68c99f19dbc1554cd8124",
+  "script_sha256": "3dcdadff7d621f4c75233cd7c1b57e382a8d03301de982dc05d9277f0a820b44",
+  "development_failures": [
+    {
+      "command": "rtk proxy uv run pytest -q tests/test_motor_residual.py",
+      "result": "1failed/5passed in10.23s",
+      "reason": "Inherited base restore loses reference array dtypes; mid-command native reward96.00415859354561vs96.00415858173194. New wrapper records/validates/restores typed references; frozen base/source unchanged, exact gate retained."
+    },
+    "Initial RuffClassVar/exception-style findings corrected before freeze."
+  ],
+  "formal_outcomes": "None before source freeze; one syntheticSACupdate only inunitfixture, not motortraining."
+}

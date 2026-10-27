@@ -1,0 +1,314 @@
+{
+  "auditor_sha256": "39032c960b71e8b18ef30e392e0858c2708920d8d9e36dd903ee96a61f93e4e4",
+  "case_counts": {
+    "completed": 42
+  },
+  "findings": [
+    {
+      "changed_values": 2,
+      "cycle": 0,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 0,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 1,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 1,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 2,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 2,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 3,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 3,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 4,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 4,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 5,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 5,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 6,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 6,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 7,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 7,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 8,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 8,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 9,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 9,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 10,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 10,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 11,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 11,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 12,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 12,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 13,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 13,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 14,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 14,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 4,
+      "cycle": 15,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 4,
+      "cycle": 15,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 16,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 16,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 17,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 17,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 18,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 18,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 4,
+      "cycle": 19,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 4,
+      "cycle": 19,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 20,
+      "interface": "scalar",
+      "raw_verified": true,
+      "samples": 117
+    },
+    {
+      "changed_values": 2,
+      "cycle": 20,
+      "interface": "batch",
+      "raw_verified": true,
+      "samples": 117
+    }
+  ],
+  "incomplete": 0,
+  "invalid": 0,
+  "new_audit_physics_steps": 0,
+  "not_run": 0,
+  "passed": true,
+  "raw_bytes": 14011146,
+  "reference_gate_passed": true,
+  "result_sha256": "66fee98583fadd6df0f83d94824677fd4398dd2b0b9c28485c712a19591e8783",
+  "samples": 4914,
+  "scope": "Every saved time/frame/position/velocity array read; raw motion independently reconstructs all legacy/corrected velocity templates and native reset-grid parity. Position equality/dtypes verified directly; no actor, FK or physics rerun. Frozen executable asserts legacy object immutability.",
+  "source_commit": "38eb93c5814912011e32b9c21c4ea2cf20d98927",
+  "training_authorized_by_this_gate": false
+}

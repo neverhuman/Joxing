@@ -1,0 +1,63 @@
+{
+  "pid": 3411580,
+  "source_commit": "38eb93c5814912011e32b9c21c4ea2cf20d98927",
+  "started_utc": "2026-10-27T03:11:36.930245+00:00",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked"
+      ],
+      "pid": 3411582,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 1.1666033398360014
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "pid": 3411695,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 232.36973298341036
+    },
+    {
+      "stage": "R1",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_reference_seam.py",
+        "--protocol",
+        "experiments/v0.0.10/reference-seam-protocol.json",
+        "--out",
+        "runs/v0.0.10/reference-seam-01"
+      ],
+      "pid": 3475027,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 1.0668582785874605
+    }
+  ],
+  "formal_new_physics_steps": 0,
+  "formal_simulation_workers": 0,
+  "regression_fixture_physics": "Separate full-suite fixtures; not formal R1/learning/game counters",
+  "threads": 1,
+  "finished_utc": "2026-10-27T03:15:31.535493+00:00"
+}

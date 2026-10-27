@@ -1,0 +1,9 @@
+{
+  "command": "rtk proxy uv run python scripts/verify_reference_seam.py --folder runs/v0.0.10/reference-seam-01 --receipts artifacts/v0.0.10/R1",
+  "passed": true,
+  "new_physics_steps": 0,
+  "development_failures": [
+    "First verification call preceded asynchronous rsync completion and failedFileNotFound; waited for transfer then auditpassed. No source/outcome/gate changed."
+  ],
+  "auditor_sha256": "39032c960b71e8b18ef30e392e0858c2708920d8d9e36dd903ee96a61f93e4e4"
+}
