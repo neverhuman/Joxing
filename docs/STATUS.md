@@ -1,3 +1,10 @@
+Git integration note: publication initially rejected because origin/main gained
+eight separate Grokbot/CI commits. Inspected disjoint13file diff; no mission/README/
+agent/project config conflicts. Rebased the unpublished motor commit while
+preserving all upstream changes. No force push or other-chat messaging. CI now
+runs tests plus grokbot/tests; next protocol must capture all executed sources
+and recount. Completed frozen sourcef3638b4evidence/claims remain unchanged.
+
 # Archived policy oracle passed; shared motor core tested —2026-10-27
 
 All422Linux regressions pass458.27s; four original-host archived cache/normalizer/

@@ -35,7 +35,11 @@ The first development build changed an already attached frame and failed the
 Bheading check before any evaluated step. All11setup errors/0physics and its
 source hashes remain in shared-motor-scene-attempt-01.json; no gate was loosened.
 
-One owner in this chat; no agents/concurrent writers. Third_party, completed
+One owner in this chat; no agents/concurrent writers. The externally maintained
+grokbot/** and .github/workflows/ci.yml changes are preserved/read-only for this
+packet; do not write into that concurrent work scope. CI now runs both tests and
+grokbot/tests: include all executed sources in the next source manifest and
+recount both suites before freezing the final gate. Third_party, completed
 checkouts, old protocols/weights/normalizers/raw are read-only. Do not mutate
 executing source or change unrelated jobs/services/drivers. New generated files
 belong under artifacts/generated or runs; never commit weights/credentials.
@@ -52,8 +56,8 @@ SHARED_MOTOR_INPUT_RESULTS and V0.0.11_D1_COMPLETION_RESULTS. Then:
   snapshot/reset, physical_motor signed-floor/evidence/audit helpers
 - sensor_packed_evidence.py/evidence_storage.py/motor_storage.py,
   boxing_audit/sensor_physics_audit array methods and physical_motor replay
-- bout_recording.py, scripts/render_bout_recording.py if present (use rg for the
-  actual renderer), existing video-QA decoder repair and tests/test_bout_recording.py
+- bout_recording.py, scripts/render_bout_recording.py,
+  scripts/validate_bout_render.py and tests/test_bout_recording.py
 - tests/test_shared_motor_task.py and tests/test_shared_motor{,_inputs}.py
 - experiments/v0.0.6/protocol.json and all frozen motor-input protocol/receipts.
 
