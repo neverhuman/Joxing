@@ -21,7 +21,7 @@ both retained. [Full D0 results](docs/V0.0.11_D0_RESULTS.md) ·
 
 The opt-in [sensor-timed variant](docs/V0.0.11_D1_SENSOR_TIMING.md) now provides
 actual delayed/dropped/reordered inputs, explicit ages and pending-sensor replay.
-All271local tests pass; its source-frozen Linux qualification is next. The
+All271local tests pass; its source-frozen Linux qualification is running on xbabe3. The
 [eight-case physical sensor proof](docs/V0.0.11_D1_PROOF_PACKET.md) still needs
 its evidence runner/auditor and preregistration. Stable guard/reach and sporting
 gates remain before competitive learning; no valid native boxing bout yet.

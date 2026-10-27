@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-27T13:15:50.718952+00:00",
+  "root": "/home/ubuntu/joxing/v011-sensor-foundation-20261027",
+  "source_commit": "4caca5e9e0e906f03349cb950c8fe445fdbf757a",
+  "protocol_sha256": "39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf",
+  "command": [
+    "python3",
+    "scripts/qualify_sensor_foundation.py",
+    "--protocol-sha256",
+    "39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf"
+  ],
+  "supervisor": {
+    "pid": 3942351,
+    "parent_pid": 3942208,
+    "start_ticks": 920894481,
+    "state": "R"
+  },
+  "source_files_verified": 148,
+  "upstream_files_verified": 288,
+  "scope": "Bounded regression-only271test qualification; no formal sensor trajectory or optimizer; no auto proof launch",
+  "formal_v11_physics_unchanged": 2642
+}

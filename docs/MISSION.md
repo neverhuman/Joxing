@@ -1,7 +1,7 @@
 # Current mission: v0.0.11 connected two-player correctness
 
-**D1sensor core implemented; local271tests pass, regression-only Linux freeze/
-qualification next. No whole-v11tag or valid native boxing games.** Owner this chat; no
+**D1sensor core implemented; local271tests pass, frozen regression-only Linux
+qualification active on xbabe3. No whole-v11tag or valid native boxing games.** Owner this chat; no
 agents, concurrent schema writers, other-chat messages or third_party edits.
 
 ## Delivered evidence and scientific limits
@@ -32,10 +32,11 @@ fails old source guards. Extra Mac exact sigmoid recomputation failed by up to
    explicit ActorInput/ages/availability, actual delayed/drop/reorder delivery
    and complete sampled-engine-bound replay. Base env/replay/controller unchanged.
    Local271tests pass202.62s. Read D1_SENSOR_TIMING and new source/tests.
-3. Public freeze and anonymously verify sensor-foundation-protocol.json,
-   canonical39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf;
-   launch ONE scripts/qualify_sensor_foundation.py on fresh dedicated xbabe3
-   checkout after ownership/capacity check.271Linux passes required;180ssync/
+3. Public/anonymous verified source4caca5e/protocol39f94864 is running on
+   xbabe3:/home/ubuntu/joxing/v011-sensor-foundation-20261027, supervisor3942351/
+   start_ticks920894481. Syncpassed, tests advancing/sourceunchanged13:16:47UTC.
+   Inspect actual PIDs/resources/logs; no duplicate or executing-source edit.
+   271Linux passes and owned exits required;180ssync/
    420stests. Regression only; no formal sensor auto-launch. Then implement
    **V0.0.11_D1_PROOF_PACKET.md**:8rows/2,748plannedphysics,951sensor-only +
    1,797D0oracle reserve, new evidence/auditor/corruption tests and public frozen

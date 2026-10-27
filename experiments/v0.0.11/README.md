@@ -1,3 +1,23 @@
+## Active frozen sensor-foundation Linux gate —2026-10-27 13:16UTC
+
+Public source4caca5e9e0e906f03349cb950c8fe445fdbf757a and protocol canonical
+39f948644b6004363eaa5426d8c7d21fe49789bd3987f2f0c716151be1e7bfdf anonymously
+byte-verified before launch. Dedicated xbabe3:/home/ubuntu/joxing/v011-sensor-foundation-20261027.
+Supervisor3942351/start_ticks920894481; pytest3942613/start_ticks920894739.
+148source+288upstreamfiles verified, fresh ownedscanempty. Syncpassed2.09s;
+tests advancing at13:16:47UTC, pytestCPU50.27s/RSS2.63GB, availableRAM103.29GB/
+disk33.43GB, source diffempty. No source edits/duplicate job. Formal newphysics0,
+prior cumulativev11physics2642, no optimizer or competitive game outcome.
+
+Next heartbeat: actual PID/startticks/resource/testlog/result/source inspection.
+Require271Linux passes, all recorded owned exits and source/input hash audit.
+Then implement the exact8row evidence runner/auditor/protocol in
+V0.0.11_D1_PROOF_PACKET.md; no automatic trajectory on foundation success. The
+120tick local zero-delay fixture is not the registered1s D0oracle comparison.
+While healthy, independent work only. Retain all faults/negative attempts; public
+push final receipts/docs/book. No v11tag or motor/learning promotion. Receipts in
+artifacts/v0.0.11/development/sensor-foundation-{publication,capacity,launch,check-01}.json.
+
 ## Sensor foundation implemented; Linux qualification next
 
 Added sensing.py SensorPacket/SensorQueue/ActorInput and an explicit
