@@ -11,11 +11,13 @@ survivors each: **both improvement gates failed**.
 [Results](docs/V0.0.10_RESULTS.md) · [All attempted outcomes and audit](artifacts/v0.0.10/D2/) · [Complete raw evidence](https://github.com/neverhuman/Joxing/releases/download/v0.0.10/joxing-v0.0.10-raw.tar.gz).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
-Native body measurements, passive video/state capture and causal history now have
-tested foundations. Diagnostic ego-frame actor observations now expose own muscle state and eleven
-opponent body anchors with measured velocities/orientations. Next are action
-timing queues and the shared physics/referee/replay loop. No valid native boxing bout exists yet;
-we are moving toward the first diagnostic recording rather than enlarging gait training.
+The diagnostic shared loop now has simultaneous opponent-aware observations,
+causal history, bounded command delays, four-glove contact staging and complete
+application/engine replay. All218local tests pass, including mid-command and
+active-contact replay. Linux qualification is next, followed by the
+[first registered recording packet](docs/V0.0.11_D0_SHARED_RECORDING.md).
+No valid native boxing bout exists yet; motor, contact/rules and competition
+remain gated. This phase uses untrained diagnostic muscle commands.
 
 **Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).
 
@@ -31,7 +33,7 @@ we are moving toward the first diagnostic recording rather than enlarging gait t
 
 **Prior training result, v0.0.5:** 1.44 million transitions and 912 new evaluations, zero invalids. Candidate B improved against its initial policy on two fresh seeds but lost to reference A on one. Replicated superiority and the five-second motor gate failed; every final policy had 0/32 five-second survivors. [Results](docs/V0.0.5_RESULTS.md).
 
-The [state/history code audit](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md) addresses opponent motion, temporal memory, responsive muscles and jitter. Current SAC observes its own velocity/activation and changes muscle commands at 100 Hz **simulated time**. Opponent observations, recurrent acting memory, a connected match referee and self-play league remain missing. The [motor-teacher roadmap](docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md) now has native qualification evidence; glove and stationary/reach transfer remain next work.
+The [state/history code audit](docs/STATE_HISTORY_SELF_PLAY_AUDIT.md) addresses opponent motion, temporal memory, responsive muscles and jitter. Current SAC observes its own velocity/activation and changes muscle commands at 100 Hz **simulated time**. The new diagnostic shared loop exposes opponent observations/history and candidate contact staging; a learned temporal actor, qualified match referee and self-play league remain missing. The [motor-teacher roadmap](docs/UPSTREAM_MOTOR_TRANSFER_PLAN.md) now has native qualification evidence; glove and stationary/reach transfer remain next work.
 
 **Current stage: executable foundation, not trained autonomous boxing.** The project preserves 700 muscles per actor, defines an auditable points game, tests contact accounting and anti-farming scoring, and includes a small constrained motor-learning experiment. Full-body stance, punching, self-play and GPU physics remain gated work.
 

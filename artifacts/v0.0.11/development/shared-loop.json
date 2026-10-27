@@ -1,0 +1,58 @@
+{
+  "scope": "Local development fixtures only; no formal v11outcomes",
+  "utc": "2026-10-27T12:00:06.660511+00:00",
+  "source_files": {
+    "src/joxing/timing.py": "892b1e99501810fb194a2ce44ec883314479aebb885b39aa9ad2b923d179b5a9",
+    "src/joxing/env.py": "a8b653d9b82b0acc870bc247eaa5f6bee03c687d3d898cc4d135e9a5d8d5e354",
+    "src/joxing/referee.py": "2b3389bed3061f9464999791a1ff49e1fb415f4c1a830bc10f50a15e9afbc469",
+    "src/joxing/replay.py": "7be0d8a6bc91d051304a1fc817619abce81dd3ade8d67b959f4c6e64433685cb",
+    "tests/test_timing.py": "42741d0a3c7e06a057569fbae9f96931b13d42277442b82fb8defb5c36beb4c7",
+    "tests/test_boxing_env.py": "531c2be41fed712f8a8cb6a8780ecdbd193dab05e1452aae81a3f74c72e9dab7",
+    "tests/test_match_referee.py": "4d925e54d0f4e1bb7185acd59a0187271cf9efa2af032aa552392998fbcd0402"
+  },
+  "commands": [
+    [
+      "rtk",
+      "proxy",
+      "uv",
+      "run",
+      "--project",
+      "experiments/v0.0.11/runtime",
+      "--locked",
+      "pytest",
+      "-q",
+      "tests/test_timing.py",
+      "tests/test_match_referee.py",
+      "tests/test_boxing_env.py"
+    ],
+    [
+      "rtk",
+      "proxy",
+      "uvx",
+      "ruff",
+      "check",
+      "src",
+      "scripts",
+      "tests"
+    ]
+  ],
+  "results": {
+    "targeted": "14 passed in 6.83s",
+    "full_receipt": "shared-loop-full-tests.json",
+    "ruff": "passed"
+  },
+  "retained_negative": {
+    "attempt": "close-overlap-collision-probe-v1 force fixture",
+    "result": "1failed/12passed in 5.97s",
+    "measured_glove_clearance_m": 0.0484382795304345,
+    "interpretation": "Reset roots0.700m closer each did not touch; no force claim",
+    "new_variant": "close-overlap-collision-probe-v2 roots0.727m closer each, artificial overlap; force and replay passed"
+  },
+  "limitations": [
+    "Untrained diagnostic controls",
+    "ideal zero-delay sensing; no sensor delivery queue",
+    "explicit JSON policy state only; arbitrary controller object not captured",
+    "candidate scene/rules, competition disabled",
+    "D0 formal runner/auditor/protocol missing"
+  ]
+}

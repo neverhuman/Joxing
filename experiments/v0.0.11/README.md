@@ -1,3 +1,30 @@
+## Shared-loop foundation implemented; Linux qualification next
+
+Current authority: docs/MISSION.md. The shared BoxingEnv now freezes both players'
+observations before either command, owns all700muscles per corner, schedules
+bounded delayed commands and stages all four gloves before a shared ending.
+ReplaySnapshot restores engine, held command, queue, history, referee, RNG and
+explicit JSON policy state atomically, including mid-command and active contact.
+No competitive readiness or learned bout is claimed. Sensing remains ideal and
+zero-delay; history supports received samples, but sensor-delivery queues and a
+stateful learned controller are not integrated.
+
+Local full development regression:218passed194.29s; supervisor195.236931s.
+Receipt: artifacts/v0.0.11/development/shared-loop-full-tests.json. Targeted
+queue/referee/env tests14passed6.83s; Ruffpasses. The original close-overlap-v1
+fixture failed (1failed/12passed): measured glove clearance0.04843827953m, not
+contact. Its result is retained. Separately named close-overlap-v2 shifts reset
+roots0.727m each, producing an artificial overlap; positive native glove force
+and exact mid-contact replay pass. This is collision stress, not a punch or a
+valid boxing start. No root/pose writes occur during evaluated steps.
+
+Next: public-frozen regression-only Linux foundation qualification, then implement
+[the detailed D0 recording packet](../../docs/V0.0.11_D0_SHARED_RECORDING.md): seven formal
+case rows,2,642plannedphysics, first preregistered untrained1s recording, typed
+application/contact evidence and independent all-attempt audit. Runner, auditor
+and D0machine protocol are still missing. No formal v11physics, optimizer update,
+new video, v11tag or native valid bout exists. Do not auto-start D0 from test success.
+
 ## v10published; diagnostic v11observations implemented
 
 v0.0.10tag/source1c6796385754c13494f1aff59d64587ee9840874 and complete234,850,618byte

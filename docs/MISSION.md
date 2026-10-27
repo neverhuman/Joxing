@@ -31,31 +31,23 @@ punch/miss/block/recovery exchanges and historical self-play. Native valid bouts
    BodyMeasurements is private readout, not a safe ActorObservation. Rotation/
    angular/torso readouts and initial frame/leakage/clock tests now pass. Read
    OBSERVATION_CONTRACT.md; qualify broader asymmetric cases in the harness.
-4. **Next implement src/joxing/timing.py and tests/test_timing.py:** immutable
-   CommandPacket(game,player,decisiontick,applytick,command700,bundlehash),
-   ActionQueue.enqueue(packet,now_tick), pop_due(tick), snapshot/restore.
-   Validate finite[-1,1]commands,decision<=apply, bounded queue/delay and ownership;
-   delayed old decisions must not overwrite a newer applied command. Reset
-   discards oldgame packets; pending commands remain private. Test zero/one/two
-   tick delay, reordering,drop/hold,stale/duplicate packets and typed restore.
-   Wire existing TimedHistory into causal samples. Implement bounded timestamped
-   action queues with decision<=apply, game/player ownership, zero-delay oracle,
-   one/two-tick delay/reorder/drop/stale/reset tests and complete snapshot state.
-5. Implement env.py/referee.py/replay.py in the order and APIs of V0.0.11_MISSION:
-   freeze both observations, validate both700commands, apply legacy sigmoid once,
-   advance one shared MjData, collect every substep, stage both sides' contacts,
-   commit all events then any shared ending. No pose/root assistance during the live
-   rollout; scratch state restoration is rendering only. Keep unresolved scene/endings/motor gates explicit; no competition.
-6. Connect BoutRecorder to completed shared states and retain first registered
-   scenario tape; full contact/application evidence separately. Render with
-   render_bout_recording.py, decode/check duration/HUD/checksums/0rendersteps.
-   Never present a static frame or assisted/scripted diagnostic as learned boxing.
-7. Implement tests then finite qualify_boxing_env.py/audit_boxing_env.py protocol
-   enumerating exact trajectories/replay tails. Freeze/public-push before formal
-   outcomes. Target<=20kplannedphysics; hardmax120kphysics/900s/256MiB/2simulation
-   workers/1thread, firstlimit, subject to a new registered machine protocol.
-   Inspect fresh capacity, no unknown owned job;8GiBRAM/10GiBdisk floors twiceatstart.
-   Preserve all700muscles/corner, no third_party or old source/protocol edits.
+4. timing.py/CommandPacket/ActionQueue and env.py/referee.py/replay.py now exist.
+   Local full218tests pass194.29s;14targetedtests pass6.83s. Read actual source/tests.
+   Mid-command/contact application+engine replay passes. No competitive readiness.
+5. Freeze and public-push experiments/v0.0.11/foundation-qualification.json,
+   then run scripts/qualify_boxing_foundation.py on a fresh dedicated xbabe3
+   checkout after resource/ownership checks. Regression only;180s sync/420s tests,
+   one thread/process, require literal218passes and owned process exits.
+6. Next worker packet: V0.0.11_D0_SHARED_RECORDING.md. Implement
+   scripts/qualify_boxing_env.py, scripts/audit_boxing_env.py and adversarial audit
+   tests, then freeze/public-push experiments/v0.0.11/recording-protocol.json.
+   Seven formal rows /2,642plannedphysics; nested12kphysics/300s/64MiB/one owner,
+   within whole v11hard120k/900s/256MiB/max2, firstlimit. First preregistered1s
+   untrained native-keyframe tape plus actual positive-force overlapping reset
+   stress and replay; independently audit all attempts. No competition/training.
+7. No auto-launch from regression success. Inspect capacity/unknown jobs afresh.
+   Preserve all700muscles, third_party, frozen v10 and every failed attempt. Source
+   protocol/runner/auditor/physics evidence and process exits determine outcomes.
 
 ## Implemented foundations and validation
 
@@ -69,12 +61,12 @@ both athletes and proper diagnostic label,0physics; it is not a bout.
 TimedHistory now isolates game/player/schema, accepts delay/reordering and returns
 only received past samples with validity and age masks; snapshot/restore rejects
 foreign/corrupt packets. Threehistory+body+recording fixtures6passed5.64s; Ruffpass.
-It stores filtered features only. Observation assembly now exists as a tested diagnostic prototype. Action queues, shared loop,
-contact referee and application replay remain unfinished.
+It stores filtered features only. Observation assembly now exists as a tested diagnostic prototype. Action queues, shared loop, candidate contact referee and application replay now exist;
+formal evidence harness and learned temporal actor remain unfinished.
 
 Current development runtime: experiments/v0.0.11/runtime, CPUlocked versions
-inherited from v10 with new package metadata. Full current development regression passed201tests188.09s;
-receipt artifacts/v0.0.11/development/full-tests.json.
+inherited from v10 with new package metadata. Full current development regression passed218tests194.29s;
+receipt artifacts/v0.0.11/development/shared-loop-full-tests.json.
 
 ```text
 rtk proxy uv run --project experiments/v0.0.11/runtime --locked pytest -q
@@ -91,7 +83,7 @@ entries preserved in docs/history/MISSION_BEFORE_V11_2026-10-27.md.
 
 Inspect actual owned PIDs/startticks, fresh events/counters, capacity, faults,
 tests and Git. No active native simulation after v10; the next concrete task is
-observation schema and action queues above. Healthy future job: independent
+frozen Linux foundation gate and D0recording packet above. Healthy future job: independent
 work only, no executing-source mutation/duplicate. Stop on first drift, unknown
 owner, nonfinite, assistance, leakage, contact/replay mismatch or cap; retain every
 invalid/incomplete/not_run row and lower/upper physics bounds. Finish independent
