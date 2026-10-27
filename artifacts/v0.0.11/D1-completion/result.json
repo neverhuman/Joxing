@@ -1,0 +1,121 @@
+{
+  "finished_utc": "2026-10-27T15:05:32.601717+00:00",
+  "optimizer_updates": 0,
+  "physics_attempted": 317,
+  "process": {
+    "parent_pid": 631317,
+    "pid": 631322,
+    "start_ticks": 921551411,
+    "state": "R"
+  },
+  "protocol_sha256": "b83c991fde0fd6ea699cd062c2b1e2156e8e71513a1e8ec45d94ed44eec73125",
+  "rows": [
+    {
+      "end_tick": 200,
+      "engine_attempts_confirmed": 200,
+      "final_sha256": "81b88f7c88a79443ce57342f31d3c025bc65f48333ba30e732ab6a3fb6d1d3d0",
+      "horizon_ticks": 200,
+      "id": "drop-90203",
+      "physics": 200,
+      "physics_attempted": 200,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 0,
+          "B": 9
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 200,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 11,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "save_mid_tick": 83,
+      "scenario": "native-keyframe-v1",
+      "seed": 90203,
+      "sensor_samples": 11,
+      "sensor_schedule": {
+        "A": [
+          null
+        ],
+        "B": [
+          40,
+          0
+        ]
+      },
+      "start_tick": 0,
+      "status": "completed",
+      "wall_s": 4.144798086956143
+    },
+    {
+      "checkpoint": "mid",
+      "end_tick": 200,
+      "engine_attempts_confirmed": 117,
+      "final_sha256": "81b88f7c88a79443ce57342f31d3c025bc65f48333ba30e732ab6a3fb6d1d3d0",
+      "horizon_ticks": 200,
+      "id": "drop-mid-90203",
+      "parent": "drop-90203",
+      "physics": 117,
+      "physics_attempted": 117,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 0,
+          "B": 5
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 117,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 6,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "runtime_replay": {
+        "audit_new_physics": 0,
+        "same_source_exact": true,
+        "sensor_exact": true,
+        "source_tick": 83,
+        "status": "passed",
+        "tail_physics": 117
+      },
+      "scenario": "native-keyframe-v1",
+      "seed": 90203,
+      "sensor_samples": 6,
+      "sensor_schedule": {
+        "A": [
+          null
+        ],
+        "B": [
+          40,
+          0
+        ]
+      },
+      "start_tick": 83,
+      "status": "completed",
+      "wall_s": 6.376465419307351
+    }
+  ],
+  "schema": "joxing-sensor-storage-completion-result-v1",
+  "source_commit": "d55eaa4c20f45db038c8d2b6ea3920acf158f3dd",
+  "started_utc": "2026-10-27T15:05:20.469940+00:00",
+  "status": "completed",
+  "valid_boxing_games": 0,
+  "wall_s": 12.133883019909263
+}

@@ -19,15 +19,13 @@ three exact replays. A decoder failure and its separate zero-physics repair are
 both retained. [Full D0 results](docs/V0.0.11_D0_RESULTS.md) ·
 [All attempts and video](artifacts/v0.0.11/D0/).
 
-The opt-in [sensor-timed variant](docs/V0.0.11_D1_SENSOR_TIMING.md) now provides
-actual delayed/dropped/reordered inputs, explicit ages and pending-sensor replay.
-All349Linux tests pass. The [physical sensor proof](docs/V0.0.11_D1_RESULTS.md)
-completed6of8cases/2,431steps, including exact D0oracle and three checkpoint
-replays, then stopped at its unchanged storage gate. The two drop-only cases
-remain incomplete/not_run. The [next mission](docs/V0.0.11_D1_STORAGE_MISSION.md)
-is lossless evidence packing and completion of only those317remaining steps.
-All attempts, failures and partial audits are retained. The [lossless storage qualification](docs/V0.0.11_D1_STORAGE_RESULTS.md) passed376Linux tests and112/112retained files with identical decoded data, reducing retained evidence from152.4MB to45.6MB. It adds no physical games. Stable guard/reach and sporting
-gates remain before competitive learning; no valid native boxing bout yet.
+The opt-in [sensor-timed variant](docs/V0.0.11_D1_SENSOR_TIMING.md) now passes
+all eight registered sensor conditions, four exact checkpoint replays and the
+original zero-delay oracle. [Completion results](docs/V0.0.11_D1_COMPLETION_RESULTS.md)
+retain all18attempt rows, including earlier setup/storage failures. All402Linux
+tests pass; only317new steps completed the two previously unexecuted conditions.
+Lossless storage preserved all112retained files. No stable motor, valid native
+boxing bout or competitive learning is claimed; whole-v11completion remains gated.
 
 **Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).
 

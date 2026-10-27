@@ -1,0 +1,314 @@
+{
+  "schema": "joxing-sensor-storage-completion-supervisor-v1",
+  "source_commit": "d55eaa4c20f45db038c8d2b6ea3920acf158f3dd",
+  "protocol_sha256": "b83c991fde0fd6ea699cd062c2b1e2156e8e71513a1e8ec45d94ed44eec73125",
+  "process": {
+    "pid": 559766,
+    "parent_pid": 1,
+    "start_ticks": 921509339,
+    "state": "R"
+  },
+  "started_utc": "2026-10-27T14:58:19.863241+00:00",
+  "status": "completed",
+  "initial_capacity": {
+    "available_memory_bytes": 104535556096,
+    "disk_free_bytes": 28364476416,
+    "load": [
+      9.60205078125,
+      9.9638671875,
+      10.55810546875
+    ]
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 559812,
+        "parent_pid": 559766,
+        "start_ticks": 921509434,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 559812,
+          "parent_pid": 559766,
+          "start_ticks": 921509434,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 104460898304,
+        "disk_free_bytes": 28363677696,
+        "load": [
+          9.60205078125,
+          9.9638671875,
+          10.55810546875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 2.213686542585492,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 559943,
+        "parent_pid": 559766,
+        "start_ticks": 921509694,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 559943,
+          "parent_pid": 559766,
+          "start_ticks": 921509694,
+          "state": "S"
+        },
+        {
+          "pid": 559947,
+          "parent_pid": 559943,
+          "start_ticks": 921509701,
+          "state": "R"
+        },
+        {
+          "pid": 568294,
+          "parent_pid": 559947,
+          "start_ticks": 921519073,
+          "state": "S"
+        },
+        {
+          "pid": 568295,
+          "parent_pid": 559947,
+          "start_ticks": 921519074,
+          "state": "R"
+        },
+        {
+          "pid": 568296,
+          "parent_pid": 559947,
+          "start_ticks": 921519074,
+          "state": "R"
+        },
+        {
+          "pid": 627008,
+          "parent_pid": 559947,
+          "start_ticks": 921548125,
+          "state": "S"
+        },
+        {
+          "pid": 627028,
+          "parent_pid": 559947,
+          "start_ticks": 921548138,
+          "state": "S"
+        },
+        {
+          "pid": 627031,
+          "parent_pid": 559947,
+          "start_ticks": 921548138,
+          "state": "S"
+        },
+        {
+          "pid": 627666,
+          "parent_pid": 627031,
+          "start_ticks": 921548590,
+          "state": "R"
+        },
+        {
+          "pid": 627667,
+          "parent_pid": 627031,
+          "start_ticks": 921548590,
+          "state": "Z"
+        },
+        {
+          "pid": 627668,
+          "parent_pid": 627031,
+          "start_ticks": 921548590,
+          "state": "R"
+        },
+        {
+          "pid": 627669,
+          "parent_pid": 627031,
+          "start_ticks": 921548590,
+          "state": "R"
+        },
+        {
+          "pid": 627670,
+          "parent_pid": 627028,
+          "start_ticks": 921548593,
+          "state": "R"
+        },
+        {
+          "pid": 627671,
+          "parent_pid": 627028,
+          "start_ticks": 921548593,
+          "state": "R"
+        },
+        {
+          "pid": 627672,
+          "parent_pid": 627028,
+          "start_ticks": 921548593,
+          "state": "R"
+        },
+        {
+          "pid": 627673,
+          "parent_pid": 627028,
+          "start_ticks": 921548594,
+          "state": "R"
+        },
+        {
+          "pid": 630089,
+          "parent_pid": 559947,
+          "start_ticks": 921550204,
+          "state": "R"
+        },
+        {
+          "pid": 630090,
+          "parent_pid": 559947,
+          "start_ticks": 921550204,
+          "state": "R"
+        },
+        {
+          "pid": 630091,
+          "parent_pid": 559947,
+          "start_ticks": 921550204,
+          "state": "R"
+        },
+        {
+          "pid": 630092,
+          "parent_pid": 559947,
+          "start_ticks": 921550204,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 104711495680,
+        "disk_free_bytes": 27399405568,
+        "load": [
+          11.78759765625,
+          11.2255859375,
+          10.947265625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 416.7646748572588,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "D1",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_sensor_storage_completion.py",
+        "--protocol-sha256",
+        "b83c991fde0fd6ea699cd062c2b1e2156e8e71513a1e8ec45d94ed44eec73125"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 631317,
+        "parent_pid": 559766,
+        "start_ticks": 921551408,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 631317,
+          "parent_pid": 559766,
+          "start_ticks": 921551408,
+          "state": "S"
+        },
+        {
+          "pid": 631322,
+          "parent_pid": 631317,
+          "start_ticks": 921551411,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 108634066944,
+        "disk_free_bytes": 27750223872,
+        "load": [
+          11.3232421875,
+          11.14892578125,
+          10.92578125
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 13.272642098367214,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_sensor_storage_completion.py",
+        "--run",
+        "runs/v0.0.11/sensor-storage-completion-01"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 632743,
+        "parent_pid": 559766,
+        "start_ticks": 921552774,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 632743,
+          "parent_pid": 559766,
+          "start_ticks": 921552774,
+          "state": "S"
+        },
+        {
+          "pid": 632759,
+          "parent_pid": 632743,
+          "start_ticks": 921552778,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 109064785920,
+        "disk_free_bytes": 27741700096,
+        "load": [
+          10.81005859375,
+          11.0380859375,
+          10.89501953125
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 30.96438412554562,
+      "live_recorded_processes": []
+    }
+  ],
+  "finished_utc": "2026-10-27T15:06:04.986552+00:00",
+  "post_gate_wall_s": 44.99331162311137
+}

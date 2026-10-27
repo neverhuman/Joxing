@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"root\": \"/home/ubuntu/joxing/v011-sensor-storage-completion-20261027\", \"source_sha\": \"d55eaa4c20f45db038c8d2b6ea3920acf158f3dd\", \"protocol_sha256\": \"b83c991fde0fd6ea699cd062c2b1e2156e8e71513a1e8ec45d94ed44eec73125\", \"command\": [\"python3\", \"scripts/supervise_sensor_storage_completion.py\", \"--protocol-sha256\", \"b83c991fde0fd6ea699cd062c2b1e2156e8e71513a1e8ec45d94ed44eec73125\", \"--source-sha\", \"d55eaa4c20f45db038c8d2b6ea3920acf158f3dd\"], \"pid\": 559766, \"start_ticks\": 921509339, \"verified_source_upstream\": 468, \"fixed_files\": 63, \"fixed_source_files\": 165, \"initial_load\": [9.60205078125, 9.9638671875, 10.55810546875], \"initial_available_memory_bytes\": 104815472640, \"utc\": \"2026-10-27T14:58:19Z\"}\n",
+  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+}

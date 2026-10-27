@@ -1,0 +1,331 @@
+{
+  "status": "passed",
+  "source_sha": "d55eaa4c20f45db038c8d2b6ea3920acf158f3dd",
+  "files_checked": 709,
+  "identities": [
+    {
+      "pid": 559766,
+      "parent_pid": 1,
+      "start_ticks": 921509339,
+      "state": "R"
+    },
+    {
+      "pid": 559812,
+      "parent_pid": 559766,
+      "start_ticks": 921509434,
+      "state": "R"
+    },
+    {
+      "pid": 559812,
+      "parent_pid": 559766,
+      "start_ticks": 921509434,
+      "state": "S"
+    },
+    {
+      "pid": 559943,
+      "parent_pid": 559766,
+      "start_ticks": 921509694,
+      "state": "R"
+    },
+    {
+      "pid": 559943,
+      "parent_pid": 559766,
+      "start_ticks": 921509694,
+      "state": "S"
+    },
+    {
+      "pid": 559947,
+      "parent_pid": 559943,
+      "start_ticks": 921509701,
+      "state": "R"
+    },
+    {
+      "pid": 568294,
+      "parent_pid": 559947,
+      "start_ticks": 921519073,
+      "state": "S"
+    },
+    {
+      "pid": 568295,
+      "parent_pid": 559947,
+      "start_ticks": 921519074,
+      "state": "R"
+    },
+    {
+      "pid": 568296,
+      "parent_pid": 559947,
+      "start_ticks": 921519074,
+      "state": "R"
+    },
+    {
+      "pid": 627008,
+      "parent_pid": 559947,
+      "start_ticks": 921548125,
+      "state": "S"
+    },
+    {
+      "pid": 627028,
+      "parent_pid": 559947,
+      "start_ticks": 921548138,
+      "state": "S"
+    },
+    {
+      "pid": 627031,
+      "parent_pid": 559947,
+      "start_ticks": 921548138,
+      "state": "S"
+    },
+    {
+      "pid": 627666,
+      "parent_pid": 627031,
+      "start_ticks": 921548590,
+      "state": "R"
+    },
+    {
+      "pid": 627667,
+      "parent_pid": 627031,
+      "start_ticks": 921548590,
+      "state": "Z"
+    },
+    {
+      "pid": 627668,
+      "parent_pid": 627031,
+      "start_ticks": 921548590,
+      "state": "R"
+    },
+    {
+      "pid": 627669,
+      "parent_pid": 627031,
+      "start_ticks": 921548590,
+      "state": "R"
+    },
+    {
+      "pid": 627670,
+      "parent_pid": 627028,
+      "start_ticks": 921548593,
+      "state": "R"
+    },
+    {
+      "pid": 627671,
+      "parent_pid": 627028,
+      "start_ticks": 921548593,
+      "state": "R"
+    },
+    {
+      "pid": 627672,
+      "parent_pid": 627028,
+      "start_ticks": 921548593,
+      "state": "R"
+    },
+    {
+      "pid": 627673,
+      "parent_pid": 627028,
+      "start_ticks": 921548594,
+      "state": "R"
+    },
+    {
+      "pid": 630089,
+      "parent_pid": 559947,
+      "start_ticks": 921550204,
+      "state": "R"
+    },
+    {
+      "pid": 630090,
+      "parent_pid": 559947,
+      "start_ticks": 921550204,
+      "state": "R"
+    },
+    {
+      "pid": 630091,
+      "parent_pid": 559947,
+      "start_ticks": 921550204,
+      "state": "R"
+    },
+    {
+      "pid": 630092,
+      "parent_pid": 559947,
+      "start_ticks": 921550204,
+      "state": "R"
+    },
+    {
+      "pid": 631317,
+      "parent_pid": 559766,
+      "start_ticks": 921551408,
+      "state": "R"
+    },
+    {
+      "pid": 631317,
+      "parent_pid": 559766,
+      "start_ticks": 921551408,
+      "state": "S"
+    },
+    {
+      "pid": 631322,
+      "parent_pid": 631317,
+      "start_ticks": 921551411,
+      "state": "R"
+    },
+    {
+      "pid": 632743,
+      "parent_pid": 559766,
+      "start_ticks": 921552774,
+      "state": "R"
+    },
+    {
+      "pid": 632743,
+      "parent_pid": 559766,
+      "start_ticks": 921552774,
+      "state": "S"
+    },
+    {
+      "pid": 632759,
+      "parent_pid": 632743,
+      "start_ticks": 921552778,
+      "state": "R"
+    },
+    {
+      "parent_pid": 631317,
+      "pid": 631322,
+      "start_ticks": 921551411,
+      "state": "R"
+    }
+  ],
+  "live_recorded": [],
+  "unknown_owned": [],
+  "files": {
+    "sensor-storage-completion-01/result.json": {
+      "bytes": 3526,
+      "sha256": "e72ff257e6a0ca2867b299b4296a879f3b437410aa1533301a80266619ec71c1"
+    },
+    "sensor-storage-completion-01/scene.json": {
+      "bytes": 28836,
+      "sha256": "ab6d804b33791df58657a333cb29fc28e52a027158d839e31238a46b25d13d12"
+    },
+    "sensor-storage-completion-01/events.jsonl": {
+      "bytes": 385,
+      "sha256": "7fc7c3884054ceccff28500c9741798b7235c593f8d349f643dde584aa178c50"
+    },
+    "sensor-storage-completion-01/independent-audit.json": {
+      "bytes": 24568,
+      "sha256": "3606af0b85c0fe91882f653da1afa7597736885336f73fde6bbc066c157f9589"
+    },
+    "sensor-storage-completion-01/raw-manifest.json": {
+      "bytes": 3745,
+      "sha256": "57473aacfda1024dcbded7c052ebf5af31314a8b98d672a42bba4692d363dea2"
+    },
+    "sensor-storage-completion-01/progress.json": {
+      "bytes": 386,
+      "sha256": "8feb18624bbedeee01645a031b819f072d5f14a320d02a3541954c6bb0f18cf2"
+    },
+    "sensor-storage-completion-01/protocol.json": {
+      "bytes": 124625,
+      "sha256": "315f542a6b3ce3dc10ab963071aaf4d6b32d945f2b5ee92326168a3b98b7ba23"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/sensor-trace.json.gz": {
+      "bytes": 1540,
+      "sha256": "3d0c331dd2558378c485f6f31f2be4b42d7a7bc22e061581cb60882944e07e8a"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/contract.json.gz": {
+      "bytes": 609,
+      "sha256": "69e1ee98319146112a627bf23b29e1a05bcabe206c9308cd2c804caf7d5b5f28"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/storage-manifest.json": {
+      "bytes": 7808,
+      "sha256": "a8131748244c59fa796b157beebd362fce0e148f79a6401882fb788ef4cd8d1d"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/trace.json.gz": {
+      "bytes": 77779,
+      "sha256": "b5ea7a67accb33b7e5dece72f6e7c5281ebfad3fb4a6dedc4a3818b6660c2cf1"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/final.json.gz": {
+      "bytes": 270679,
+      "sha256": "badedfdc6f63f6ca79cf64205eb8a98e9fc41792bf20fb49a84f18d12e7a474f"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/initial.json.gz": {
+      "bytes": 172643,
+      "sha256": "95c62c551630bb24b42628001e7ffebcb8d81061c2d2fd2d67f5d3c536bc4c18"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/sensor-initial.json.gz": {
+      "bytes": 320518,
+      "sha256": "ec69a5f910f45914fd5f844b978ac7d06c46d37552cb53f82c0b454304ead77f"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/sensor-final.json.gz": {
+      "bytes": 674832,
+      "sha256": "8118f1c45902fe9ed7d2acce777fc7478b91cdc2cb004a415ac4aafee6dc800e"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/sensor-tape.npz": {
+      "bytes": 125244,
+      "sha256": "ac4dcbba7b25f44b869e00990e6ad2b68b306bf39012daba8c04b653299af0e9"
+    },
+    "sensor-storage-completion-01/drop-mid-90203/tape.npz": {
+      "bytes": 328099,
+      "sha256": "135cce8ee0f51902a9007648841254e924bd3d92f6670480676fea0df3ecc508"
+    },
+    "sensor-storage-completion-01/drop-90203/sensor-trace.json.gz": {
+      "bytes": 2266,
+      "sha256": "03c8bb717272177c9ae2bf818047f0182dcb2fb6b9616ce8d2622fb9bb360a79"
+    },
+    "sensor-storage-completion-01/drop-90203/contract.json.gz": {
+      "bytes": 609,
+      "sha256": "69e1ee98319146112a627bf23b29e1a05bcabe206c9308cd2c804caf7d5b5f28"
+    },
+    "sensor-storage-completion-01/drop-90203/storage-manifest.json": {
+      "bytes": 8152,
+      "sha256": "438e99657642c5835c7b33769c745a1d979685be282f8b034a8e2b4d1b1b1f70"
+    },
+    "sensor-storage-completion-01/drop-90203/trace.json.gz": {
+      "bytes": 128246,
+      "sha256": "439aa7a65231b002b1f2a67f110753481c244d86a41bc1d83626c36f44a8f009"
+    },
+    "sensor-storage-completion-01/drop-90203/final.json.gz": {
+      "bytes": 270679,
+      "sha256": "badedfdc6f63f6ca79cf64205eb8a98e9fc41792bf20fb49a84f18d12e7a474f"
+    },
+    "sensor-storage-completion-01/drop-90203/initial.json.gz": {
+      "bytes": 5351,
+      "sha256": "3e6578df02669ebd92196935156af78f1e78989ed50970caecaa31ae1c147b22"
+    },
+    "sensor-storage-completion-01/drop-90203/sensor-initial.json.gz": {
+      "bytes": 7432,
+      "sha256": "054adae5853914e539e0e18c7b7b9307c2d7c71714adeffc77e3b05d01cddbb8"
+    },
+    "sensor-storage-completion-01/drop-90203/sensor-final.json.gz": {
+      "bytes": 674832,
+      "sha256": "8118f1c45902fe9ed7d2acce777fc7478b91cdc2cb004a415ac4aafee6dc800e"
+    },
+    "sensor-storage-completion-01/drop-90203/sensor-tape.npz": {
+      "bytes": 191414,
+      "sha256": "9be77b66c835c927f757f1c5e32296707ff6447cb564f311203f32d54088a78f"
+    },
+    "sensor-storage-completion-01/drop-90203/tape.npz": {
+      "bytes": 493831,
+      "sha256": "a242bcd1f4e1711c141d9f753f22c1534a4e60ee2f6fee0d50e96917341d4b0f"
+    },
+    "sensor-storage-completion-01/drop-90203/mid.json.gz": {
+      "bytes": 320518,
+      "sha256": "ec69a5f910f45914fd5f844b978ac7d06c46d37552cb53f82c0b454304ead77f"
+    },
+    "sensor-storage-supervision-01/result.json": {
+      "bytes": 7439,
+      "sha256": "640f723ff50c2b24367e166ecaff856e6b2e20f72b31cdb5f22393e0a8f51b85"
+    },
+    "sensor-storage-supervision-01/sync.log": {
+      "bytes": 1249,
+      "sha256": "0c984c538f487fb623828a172d3533d192424de4647f1f589cdc8bc18f81acf3"
+    },
+    "sensor-storage-supervision-01/tests.log": {
+      "bytes": 512,
+      "sha256": "7f71d3820e884bcf9ecb86cdc4936147cdf2af3ed14b8b27ed922f7926601b7d"
+    },
+    "sensor-storage-supervision-01/D1.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "sensor-storage-supervision-01/audit.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "bytes": 4278352,
+  "checked_utc": "2026-10-27T15:09:27Z"
+}

@@ -1,3 +1,10 @@
+**Next executable packet:** SHARED_MOTOR_INPUT_ORACLE_PACKET.md. Actual native
+cached3601samples, immutable replay serialization and scalar paired frozen
+teacher inference are implemented;25Mac tests pass. A registered422Linux gate
+then0physics archived input/normalizer/next-command oracle on originalxbabe1
+comes before the independent shared-model geometry/cache/reset/reference proof.
+D1sensor proof is complete across18attempt rows, not a learned motor claim.
+
 **Implementation started:** `src/joxing/shared_motor.py` now supplies semantic
 NativeMotorMap, immutable MotorReferenceState and read-only3601feature capture.
 Five zero-step synthetic mapping/frame/validation checks pass3.76s. This is not

@@ -1,3 +1,18 @@
+# D1completed; pretrained motor input oracle ready —2026-10-27
+
+All402Linux tests passed414.53s. Only317new physics executed; combined saved
+audit passes8conditions/4replays/exact D0oracle with all18attempt rows retained.
+Source/input/exit audit709checks passes, no owned jobs. Full raw4,278,352bytes
+transferred/hashverified. Formalv11physics5390, nativeboxing0, no v11tag.
+Read [completion results](V0.0.11_D1_COMPLETION_RESULTS.md).
+
+Current ready mission: [SHARED_MOTOR_INPUT_ORACLE_PACKET.md](SHARED_MOTOR_INPUT_ORACLE_PACKET.md).
+Immutable native3601cache and scalar paired teacher inference implemented;
+25Mac checks pass4.03s. New422Linux gate then four-row0physics archived cache/
+normalizer/next-command proof on original hostxbabe1,30s/4MiB/one thread.
+Shared-model physical teacher integration/recording remains next, not delivered.
+Original remainingv11correctness battery remains in V0.0.11_COMPLETION_PACKET.md.
+
 # Two unfinished sensor conditions implemented; fresh402Linux gate next
 
 Read [V0.0.11_D1_STORAGE_COMPLETION_PACKET.md](V0.0.11_D1_STORAGE_COMPLETION_PACKET.md).

@@ -1,0 +1,15 @@
+{
+  "validation": {
+    "command": ".venv/bin/python -m pytest -q tests/test_shared_motor_inputs.py tests/test_shared_motor.py",
+    "passed": 25,
+    "seconds": 4.03
+  },
+  "formal_new_physics": 0,
+  "implementation": [
+    "Immutable3601float32actualcache+owner/game/tick/referencehash",
+    "Both inputs captured before scalar teacher inference; original hash-checked loader reused",
+    "Actual v6cached mid/final inputs roundtrip every float32byte",
+    "New bounded archived cached-input/normalizer/next-action oracle preregistered; source-host execution pending"
+  ],
+  "caveat": "25Mac tests include synthetic fixtures; no shared-model controller trajectory or source-host actor oracle result yet"
+}

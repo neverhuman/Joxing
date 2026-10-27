@@ -1,3 +1,13 @@
+# D1completed; pretrained input oracle ready —2026-10-27
+
+[Results](../../docs/V0.0.11_D1_COMPLETION_RESULTS.md):402Linux tests pass414.53s,
+317new physics, full8condition/4replay/exact D0oracle and all18attempt rows audit
+pass. Raw4,278,352bytes fully transferred and independently hashverified.
+Cumulativeformalphysics5390, nativeboxing0, no v11tag; old negative attempts stay.
+Next [pretrained input oracle](../../docs/SHARED_MOTOR_INPUT_ORACLE_PACKET.md):
+new422Linux gate→four archived-cache/scalar actor rows,0physics/30s/4MiB,xbabe1.
+25Mac development checks pass4.03s; no shared pretrained trajectory yet.
+
 # Two-row sensor completion ready for frozen launch —2026-10-27
 
 New source/protocol b83c991f implements ONLYdrop200+actual83→200replay117.
