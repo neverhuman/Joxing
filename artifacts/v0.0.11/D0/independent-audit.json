@@ -1,0 +1,131 @@
+{
+  "all_attempt_rows": 7,
+  "cases": [
+    {
+      "audit_new_physics": 0,
+      "id": "source-90101",
+      "limitations": [
+        "Reuses frozen FK/actor/controller/HitTracker implementations",
+        "Geometric clearance and saved trunk/face frames are source measurements, not independent physics verification",
+        "No stable motor, realistic punch, legal native bout or learning claim"
+      ],
+      "peak_glove_force_N": 0.0,
+      "physics": 1000,
+      "positive_glove_touches": 0,
+      "status": "passed",
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "audit_new_physics": 0,
+      "id": "boundary-90101",
+      "limitations": [
+        "Reuses frozen FK/actor/controller/HitTracker implementations",
+        "Geometric clearance and saved trunk/face frames are source measurements, not independent physics verification",
+        "No stable motor, realistic punch, legal native bout or learning claim"
+      ],
+      "peak_glove_force_N": 0.0,
+      "physics": 800,
+      "positive_glove_touches": 0,
+      "status": "passed",
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "audit_new_physics": 0,
+      "id": "mid-90101",
+      "limitations": [
+        "Reuses frozen FK/actor/controller/HitTracker implementations",
+        "Geometric clearance and saved trunk/face frames are source measurements, not independent physics verification",
+        "No stable motor, realistic punch, legal native bout or learning claim"
+      ],
+      "peak_glove_force_N": 0.0,
+      "physics": 797,
+      "positive_glove_touches": 0,
+      "status": "passed",
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "audit_new_physics": 0,
+      "id": "contact-source-90104",
+      "limitations": [
+        "Reuses frozen FK/actor/controller/HitTracker implementations",
+        "Geometric clearance and saved trunk/face frames are source measurements, not independent physics verification",
+        "No stable motor, realistic punch, legal native bout or learning claim"
+      ],
+      "peak_glove_force_N": 33.351243078473644,
+      "physics": 20,
+      "positive_glove_touches": 56,
+      "status": "passed",
+      "summed_glove_normal_impulse_Ns": 0.8487973026702126
+    },
+    {
+      "audit_new_physics": 0,
+      "id": "contact-replay-90104",
+      "limitations": [
+        "Reuses frozen FK/actor/controller/HitTracker implementations",
+        "Geometric clearance and saved trunk/face frames are source measurements, not independent physics verification",
+        "No stable motor, realistic punch, legal native bout or learning claim"
+      ],
+      "peak_glove_force_N": 33.351243078473644,
+      "physics": 19,
+      "positive_glove_touches": 52,
+      "status": "passed",
+      "summed_glove_normal_impulse_Ns": 0.7660230773982858
+    },
+    {
+      "audit_new_physics": 0,
+      "id": "bell-90102",
+      "limitations": [
+        "Reuses frozen FK/actor/controller/HitTracker implementations",
+        "Geometric clearance and saved trunk/face frames are source measurements, not independent physics verification",
+        "No stable motor, realistic punch, legal native bout or learning claim"
+      ],
+      "peak_glove_force_N": 0.0,
+      "physics": 3,
+      "positive_glove_touches": 0,
+      "status": "passed",
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "audit_new_physics": 0,
+      "id": "truncation-90103",
+      "limitations": [
+        "Reuses frozen FK/actor/controller/HitTracker implementations",
+        "Geometric clearance and saved trunk/face frames are source measurements, not independent physics verification",
+        "No stable motor, realistic punch, legal native bout or learning claim"
+      ],
+      "peak_glove_force_N": 0.0,
+      "physics": 3,
+      "positive_glove_touches": 0,
+      "status": "passed",
+      "summed_glove_normal_impulse_Ns": 0.0
+    }
+  ],
+  "new_physics": 0,
+  "physics_attempted": 2642,
+  "recorded_frames": 26,
+  "replays": [
+    {
+      "id": "boundary-90101",
+      "same_source_exact": true,
+      "source_tick": 200,
+      "status": "passed",
+      "tail_physics": 800
+    },
+    {
+      "id": "mid-90101",
+      "same_source_exact": true,
+      "source_tick": 203,
+      "status": "passed",
+      "tail_physics": 797
+    },
+    {
+      "id": "contact-replay-90104",
+      "same_source_exact": true,
+      "source_tick": 1,
+      "status": "passed",
+      "tail_physics": 19
+    }
+  ],
+  "scope": "Untrained shared-world diagnostic; no valid boxing or learning",
+  "status": "passed"
+}

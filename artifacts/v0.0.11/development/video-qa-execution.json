@@ -1,0 +1,208 @@
+{
+  "source_commit": "e4296bf06f8805c8609049dfd08d8d3d47059398",
+  "protocol_sha256": "2df19cdea2a530d1c9dd1ac84a044712944a15ba5cfbd75650a20e06453dae2e",
+  "started_utc": "2026-10-27T12:43:02.372614+00:00",
+  "initial_capacity": {
+    "owned": [],
+    "available_memory_bytes": 97743339520,
+    "disk_free_bytes": 34852069376,
+    "load": [
+      9.18359375,
+      9.68408203125,
+      9.888671875
+    ]
+  },
+  "inputs": {
+    "first-diagnostic.mp4": {
+      "bytes": 338092,
+      "sha256": "52dc16b53f1794a4bcef3082fd6ee16ce644e64935b5a5462b7cb999ad9ca2bf"
+    },
+    "first-diagnostic.json": {
+      "bytes": 231,
+      "sha256": "4bce0ebe3abf73badc8f14d69f33a4fe8fb7f40bd6cbba0bdfb9ad3d4b9c7211"
+    },
+    "protocol.json": {
+      "bytes": 54903,
+      "sha256": "1dffcaa7067f7a30d50b3786f7f53d7882770dbee02b46926d0302aac2c0f1ab"
+    }
+  },
+  "status": "completed",
+  "new_physics": 0,
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 3700905,
+        "parent_pid": 3700771,
+        "start_ticks": 920697647,
+        "state": "R"
+      },
+      "returncode": 0,
+      "wall_s": 1.1467861868441105,
+      "owned_processes": [
+        {
+          "pid": 3700905,
+          "parent_pid": 3700771,
+          "start_ticks": 920697647,
+          "state": "S"
+        },
+        {
+          "pid": 3701016,
+          "parent_pid": 3700905,
+          "start_ticks": 920697662,
+          "state": "R"
+        },
+        {
+          "pid": 3701025,
+          "parent_pid": 3700905,
+          "start_ticks": 920697699,
+          "state": "R"
+        }
+      ],
+      "live_recorded": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "tests/test_bout_render_validation.py"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 3701077,
+        "parent_pid": 3700771,
+        "start_ticks": 920697761,
+        "state": "R"
+      },
+      "returncode": 0,
+      "wall_s": 0.8603772819042206,
+      "owned_processes": [
+        {
+          "pid": 3701077,
+          "parent_pid": 3700771,
+          "start_ticks": 920697761,
+          "state": "S"
+        },
+        {
+          "pid": 3701081,
+          "parent_pid": 3701077,
+          "start_ticks": 920697769,
+          "state": "R"
+        }
+      ],
+      "live_recorded": []
+    },
+    {
+      "stage": "decode",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/validate_bout_render.py",
+        "--run",
+        "/home/ubuntu/joxing/v011-video-qa-20261027/runs/v0.0.11/video-qa-01",
+        "--raw-budget-bytes",
+        "8388608"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 3701220,
+        "parent_pid": 3700771,
+        "start_ticks": 920697848,
+        "state": "R"
+      },
+      "returncode": 0,
+      "wall_s": 0.5737743973731995,
+      "owned_processes": [
+        {
+          "pid": 3701220,
+          "parent_pid": 3700771,
+          "start_ticks": 920697848,
+          "state": "S"
+        },
+        {
+          "pid": 3701223,
+          "parent_pid": 3701220,
+          "start_ticks": 920697851,
+          "state": "R"
+        }
+      ],
+      "live_recorded": []
+    }
+  ],
+  "process": {
+    "pid": 3700771,
+    "parent_pid": 3700770,
+    "start_ticks": 920697405,
+    "state": "R"
+  },
+  "validation": {
+    "bytes": 338092,
+    "classification": "DIAGNOSTIC - NOT A QUALIFIED BOXING BOUT",
+    "encoded_duration_s": 1.04,
+    "fps": 25,
+    "frames": 26,
+    "new_physics": 0,
+    "sha256": "52dc16b53f1794a4bcef3082fd6ee16ce644e64935b5a5462b7cb999ad9ca2bf",
+    "simulated_duration_s": 1.0,
+    "status": "passed",
+    "visual_inspection_pending": true
+  },
+  "finished_utc": "2026-10-27T12:43:04.959390+00:00",
+  "source_diff_empty": true,
+  "output_files": {
+    "sync.log": {
+      "bytes": 1198,
+      "sha256": "21f3eafb0db1267c3e057d195ec2bacb5f8a7687e46fcc3a92092ee5447a6391"
+    },
+    "first-frame.png": {
+      "bytes": 136285,
+      "sha256": "2e8a880dc13821a2d230e868c42de3607308740c1fbd1365c2f1f1c14e23c463"
+    },
+    "video-validation.json": {
+      "bytes": 335,
+      "sha256": "c62f92f30d4959534769c00d937c12e39e433f77560e235017ee96ce3f73a391"
+    },
+    "tests.log": {
+      "bytes": 98,
+      "sha256": "0b0f944787b74eb2f646db3fee5e1b26b43ab1bdfd66a7442728b825a538f187"
+    },
+    "first-diagnostic.json": {
+      "bytes": 231,
+      "sha256": "4bce0ebe3abf73badc8f14d69f33a4fe8fb7f40bd6cbba0bdfb9ad3d4b9c7211"
+    },
+    "last-frame.png": {
+      "bytes": 132439,
+      "sha256": "c2d03769fe32e9fdd6c829840dc97361856f5ae9d8df2989e1b54537a8c9f6d3"
+    },
+    "decode.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "protocol.json": {
+      "bytes": 54903,
+      "sha256": "1dffcaa7067f7a30d50b3786f7f53d7882770dbee02b46926d0302aac2c0f1ab"
+    },
+    "first-diagnostic.mp4": {
+      "bytes": 338092,
+      "sha256": "52dc16b53f1794a4bcef3082fd6ee16ce644e64935b5a5462b7cb999ad9ca2bf"
+    }
+  }
+}

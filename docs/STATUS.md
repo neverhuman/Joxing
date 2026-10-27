@@ -1,3 +1,30 @@
+## D0 concluded with separate video repair; D1 sensor delivery ready
+
+The first preregistered diagnostic MP4 is public in artifacts/v0.0.11/D0. All7
+physical rows/2,642steps and3exact replays passed, saved-evidence auditpassed.
+Original decoder MemoryError remains a failed supervisor stage; a separately
+frozen0physics repair passed6Linux tests and decoded the same26frames/25fps/
+1.04svideo. Visual inspection confirms both athletes lose upright stance within
+1second,0opponent-glove touches/points in the source. This is reproducible negative
+motor evidence, not boxing or learning. See V0.0.11_D0_RESULTS.md.
+
+Full57file/55,053,851byte rawcopy is SHAverified locally; compact outcomes/audit/
+manifest/video/visual/fault/exit receipts stay in Git. All30original+8repair
+recorded identities exited; all-owned-CWD process scanempty12:48:00UTC. Both
+source checkouts unchanged. Source-hoststrict replaypassed; extra Mac sigmoid
+bit-exact recomputation failed by up to7.4505806e-9 and is retained separately.
+No cross-host execution qualification or changed gate follows.
+
+No compute active. Ready next worker packet: V0.0.11_D1_SENSOR_TIMING.md. Implement
+bounded sensor delivery/availability and full pending-sensor replay, preserve the
+D0zero-delay oracle and complete v11four-seed/adversarial battery before claiming
+whole-version completion. Stable guard/reach in this actual shared model is the
+motor bottleneck before competitive learning. No unchanged walking sweep, more
+falling-video sweep, v11tag or competitive training. Current formalphysics2642,
+post-repairnewphysics0; retain cumulative v11caps120k/900s/256MiB/max2simworkers,
+global16andone numerical thread/process. Public-push new source/protocol before
+formal next outcomes; inspect shared-host ownership/capacity afresh.
+
 ## D0physics/audit/render complete; original decode failed, bounded repair next
 
 All7registered rows completed2,642physics/17.022529s, all3replays exact. Independent

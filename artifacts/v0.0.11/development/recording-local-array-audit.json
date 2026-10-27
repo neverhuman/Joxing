@@ -1,0 +1,122 @@
+{
+  "utc": "2026-10-27T12:45:04.160706+00:00",
+  "status": "mixed: cross-host sigmoid exactness failed; raw saved-array contact/tail checks passed",
+  "scope": "Independent local saved-array contact arithmetic; exact continuation uses frozen compare_replay helper. Source-host complete audit remains authoritative.",
+  "new_physics": 0,
+  "physics_denominator": 2642,
+  "rows": [
+    {
+      "id": "source-90101",
+      "physics": 1000,
+      "contact_rows": 15657,
+      "diagnostic_points": [
+        0,
+        0
+      ],
+      "mac_sigmoid_exactly_matches_linux": false,
+      "max_abs_sigmoid_difference": 7.450580596923828e-09,
+      "different_sigmoid_values": 387268
+    },
+    {
+      "id": "boundary-90101",
+      "physics": 800,
+      "contact_rows": 11755,
+      "diagnostic_points": [
+        0,
+        0
+      ],
+      "mac_sigmoid_exactly_matches_linux": false,
+      "max_abs_sigmoid_difference": 7.450580596923828e-09,
+      "different_sigmoid_values": 309537
+    },
+    {
+      "id": "mid-90101",
+      "physics": 797,
+      "contact_rows": 11695,
+      "diagnostic_points": [
+        0,
+        0
+      ],
+      "mac_sigmoid_exactly_matches_linux": false,
+      "max_abs_sigmoid_difference": 7.450580596923828e-09,
+      "different_sigmoid_values": 308434
+    },
+    {
+      "id": "contact-source-90104",
+      "physics": 20,
+      "contact_rows": 460,
+      "diagnostic_points": [
+        0,
+        0
+      ],
+      "mac_sigmoid_exactly_matches_linux": false,
+      "max_abs_sigmoid_difference": 7.450580596923828e-09,
+      "different_sigmoid_values": 8787
+    },
+    {
+      "id": "contact-replay-90104",
+      "physics": 19,
+      "contact_rows": 440,
+      "diagnostic_points": [
+        0,
+        0
+      ],
+      "mac_sigmoid_exactly_matches_linux": false,
+      "max_abs_sigmoid_difference": 7.450580596923828e-09,
+      "different_sigmoid_values": 7387
+    },
+    {
+      "id": "bell-90102",
+      "physics": 3,
+      "contact_rows": 0,
+      "diagnostic_points": [
+        0,
+        0
+      ],
+      "mac_sigmoid_exactly_matches_linux": false,
+      "max_abs_sigmoid_difference": 7.450580596923828e-09,
+      "different_sigmoid_values": 2646
+    },
+    {
+      "id": "truncation-90103",
+      "physics": 3,
+      "contact_rows": 0,
+      "diagnostic_points": [
+        0,
+        0
+      ],
+      "mac_sigmoid_exactly_matches_linux": false,
+      "max_abs_sigmoid_difference": 7.450580596923828e-09,
+      "different_sigmoid_values": 2674
+    }
+  ],
+  "replays": [
+    {
+      "id": "boundary-90101",
+      "status": "passed",
+      "source_tick": 200,
+      "tail_physics": 800,
+      "same_source_exact": true
+    },
+    {
+      "id": "mid-90101",
+      "status": "passed",
+      "source_tick": 203,
+      "tail_physics": 797,
+      "same_source_exact": true
+    },
+    {
+      "id": "contact-replay-90104",
+      "status": "passed",
+      "source_tick": 1,
+      "tail_physics": 19,
+      "same_source_exact": true
+    }
+  ],
+  "retained_negative": {
+    "original_assertion": "np.array_equal(Mac recomputed float32 sigmoid, saved Linux excitation)",
+    "result": "AssertionError on first source row",
+    "interpretation": "No cross-host byte-exact transcendental-operation qualification; no source-host gate was changed or relaxed"
+  },
+  "caveat": "Per-glove stress impulse counts both sides of glove/glove contacts; not net/punch impulse"
+}

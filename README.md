@@ -11,17 +11,17 @@ survivors each: **both improvement gates failed**.
 [Results](docs/V0.0.10_RESULTS.md) · [All attempted outcomes and audit](artifacts/v0.0.10/D2/) · [Complete raw evidence](https://github.com/neverhuman/Joxing/releases/download/v0.0.10/joxing-v0.0.10-raw.tar.gz).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
-The diagnostic shared loop now has simultaneous opponent-aware observations,
-causal history, bounded command delays, four-glove contact staging and complete
-application/engine replay. The foundation passed218Linux tests, including mid-command and
-active-contact replay. The typed recording harness and adversarial evidence auditor
-are now implemented. All236Linux tests and the seven-case2,642step physical
-proof passed, including three exact replays and the saved-evidence audit. A
-one-second diagnostic clip rendered; its original decoder failed with a memory
-allocation error. A separately frozen [zero-physics video QA repair](docs/V0.0.11_D0_VIDEO_QA_REPAIR.md)
-will validate that same clip. The failure and full evidence are retained.
-No valid native boxing bout exists yet; motor, contact/rules and competition
-remain gated. This phase uses untrained diagnostic muscle commands.
+The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)
+is available. Both untrained athletes lose their upright stance; no boxing or
+learning is demonstrated. The shared observation/history/command/contact path
+passed236Linux tests and seven registered cases/2,642physics steps, including
+three exact replays. A decoder failure and its separate zero-physics repair are
+both retained. [Full D0 results](docs/V0.0.11_D0_RESULTS.md) ·
+[All attempts and video](artifacts/v0.0.11/D0/).
+
+Next: [causal sensor delivery](docs/V0.0.11_D1_SENSOR_TIMING.md), remaining
+correctness tests, then stable guard/reach motor qualification in the shared
+model. No valid native boxing bout or competitive learning yet.
 
 **Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).
 

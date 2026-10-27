@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-27T12:48:56.893091+00:00",
+  "status": "visually_inspected",
+  "input_mp4_sha256": "52dc16b53f1794a4bcef3082fd6ee16ce644e64935b5a5462b7cb999ad9ca2bf",
+  "method": "Inspected decoded first/last images and ordered encoded frames0,8,16,25 in contact sheet; all26frames decoded by frozen repaired source. Not an assessment of learned skill.",
+  "frames_inspected": [
+    0,
+    8,
+    16,
+    25
+  ],
+  "observations": [
+    "Both complete athletes/gloves visible, redA/blueB",
+    "Diagnostic-not-qualified-bout label, time and points-unavailable HUD visible",
+    "Clock reaches1.000s on final image",
+    "Athletes upright at0/.32s, lean backward by.64s and lose upright stance by1.00s",
+    "No apparent punches or opponent contact in this trajectory; saved contact audit confirms0opponent-glove touches",
+    "HUD peak is an all-contact model force, including floor contacts; not a scored punch force"
+  ],
+  "valid_boxing_games": 0,
+  "new_physics": 0,
+  "video_qa_original_failure": "MemoryError from list(reader), retained without rerender/physics retry",
+  "scope": "First preregistered1s untrained diagnostic motion recording; negative motor evidence",
+  "next": "Complete causal sensor delivery and four-seed correctness battery; then stable guard/reach motor qualification before competitive learning. No unchanged walking sweep."
+}

@@ -1,3 +1,24 @@
+## Measured shared-loop evidence cost —2026-10-27
+
+[D0](V0.0.11_D0_RESULTS.md) now provides a real dual-body workload: the1,000step
+source with full evidence took4.439s including its case setup/serialization,
+225.3physicssteps/s. Whole7caseproof2,642steps/17.023s; not optimizer or valid
+boxing-game throughput. Source case evidence19,845,125bytes; whole captured
+proof/supervision55,053,851bytes. These deliberately dense diagnostic tapes are
+not a production logging policy for100,000games. Retain exact parity with this
+oracle while measuring compact summaries/checkpoint+command replay and a
+preregistered sample of dense tapes; always retain invalid/fault evidence. Measure
+collector, sensor/history/referee, serialization, learner and frozen-panel costs
+separately before worker/batch scaling. Native one-actor v9throughput does not
+predict this shared-game workload. Source trajectory has0boxing contacts and
+both untrained athletes collapse; valid boxing-game throughput remains0.
+
+Strict source-host replaypassed; extra Mac float32 sigmoid recomputation differs
+by up to7.45e-9. Keep CPUarchitecture/runtime/bundle identities in worker
+qualification, not just dependency version strings. No cross-host byte-exact
+collector claim. GPUphysics still requires exact all700feature/parity proof.
+D1sensor causality and stable match-scene guard/reach remain prior gates.
+
 # Fast, meaningful muscle-driven self-play
 
 October 26, 2026. This is the execution route requested for thousands, ultimately hundreds of thousands, of games. Read [v8 results](V0.0.8_RESULTS.md), [GAME](GAME.md), [IMPLEMENTATION](IMPLEMENTATION.md) and [state/history audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) first. Current source still has no production two-player learning game. v8's 40 valid episodes all physically failed around five seconds; replay/correctness passed. Faster versions of those episodes are motor experiments, not boxing games.
