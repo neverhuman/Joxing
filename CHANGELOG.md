@@ -1,5 +1,31 @@
 # Changelog
 
+## v0.0.11 — 2026-10-27
+
+The owner asked for this tag, which sits on main after grokbot PR #14 (`55280e4`) and this entry. **It does not claim jekko's v0.0.11 completion battery.** That battery (`docs/V0.0.11_COMPLETION_PACKET.md`) remains outstanding, and native boxing games remain 0. The v0.0.9 and v0.0.10 notes are in `docs/V0.0.9_RESULTS.md` and `docs/V0.0.10_RESULTS.md`.
+
+- **Main line (jekko).**
+  - Diagnostic shared two-player `BoxingEnv` with opponent-aware observations.
+  - Causal sensor timing: all eight D1 conditions, four exact replays.
+  - Lossless evidence storage.
+  - Pretrained shared-motor input oracle.
+  - First shared pretrained walking trial: both athletes stayed upright for 3.52 s. The four-seed proof is incomplete after a 32 MiB storage cap.
+- **CI.** A GitHub Actions gate mirrors the locked v0.0.11 runtime (grokbot #1). On the #14 head: 1017 passed, plus 1 registered strict xfail.
+- **Grokbot red-team lane (#1–#14, `grokbot/` only).**
+  - League evaluation: a league/Elo/Nash oracle, a side-swapped arena with common random numbers, and a reference ending table with contact-classified attribution.
+  - A promotion gate.
+  - PSRO and exploiter-recall positive controls.
+  - Fuzzes of `HitTracker` and `MatchReferee`.
+  - The P4 opponent sampler.
+  - **The first two-player self-play league (diagnostic).** The champion is gen4, at Elo +1081 against the scripted baseline. Side balance was 0.000 every generation. However, there were **0 contact ticks in 876 games**: the league learned to stand, not to box.
+- **Known blockers.**
+  - `HitTracker.restore` snapshot aliasing, carried as a strict xfail.
+  - The feather-tap scoring ceiling.
+  - No registered boxing-range reset.
+  - The passive equilibrium. Its fix is in progress for v0.0.12.
+
+See [cycle reports](grokbot/redteam/), [shared motor results](docs/SHARED_MOTOR_PHYSICAL_RESULTS.md) and [status](docs/STATUS.md).
+
 ## v0.0.8 — 2026-10-26
 
 - Add signed every-substep physical evidence and scratch end-posture telemetry while preserving native dynamics/cached policy features exactly.
