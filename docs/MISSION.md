@@ -1,6 +1,6 @@
 # Current mission: v0.0.11 connected two-player loop and recording
 
-**Active: D0 recording harness validation/freezing after audited Linux foundation; formal v11physics0.** v0.0.10is concluded with a negative
+**Active: public-frozen D0 recording supervisor on xbabe3,236test gate running; formal v11physics0 at12:30:53UTC.** v0.0.10is concluded with a negative
 motor result:16,384transitions,896optimizerupdates,32/32valid evaluations and2/2
 exact replays; both learning gates failed (−0.06625s/+0.01625s paired survival,
 1/8five-second survivors each). Independent all-row/raw audit passed; all35
@@ -42,8 +42,9 @@ punch/miss/block/recovery exchanges and historical self-play. Native valid bouts
    scripts/{qualify_boxing_env,audit_boxing_env,supervise_boxing_recording}.py.
    Local235tests passed189.93s and final34targetedtests12.96s. Protocol canonical
    baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456 is
-   registered in recording-protocol.json; public-push
-   and anonymously verify bytes. Deploy fresh dedicated xbabe3 checkout; require
+   registered/public/anonymous-byte-verified. Dedicated xbabe3 checkout
+   /home/ubuntu/joxing/v011-recording-20261027, supervisor3596577/
+   start_ticks920622447; syncpassed,236testgate advancing12:30:53UTC. Require
    full236Linux tests before bounded D0→audit→render→decode. Seven formal rows /
    2,642plannedphysics; nested12kphysics/180srunner/300sallpostgate/64MiB/one
    simulation owner, within whole v11hard120k/900s/256MiB/max2, firstlimit.
@@ -88,8 +89,8 @@ entries preserved in docs/history/MISSION_BEFORE_V11_2026-10-27.md.
 ## Heartbeat and handoff
 
 Inspect actual owned PIDs/startticks, fresh events/counters, capacity, faults,
-tests and Git. The foundation is concluded; next concrete task is the new source-frozen
-D0qualification/recording packet above. Healthy future job: independent
+tests and Git. The foundation is concluded; new source-frozen D0supervisor is active.
+Next concrete task is its all-attempt audit, raw/video retrieval and visual inspection. Healthy future job: independent
 work only, no executing-source mutation/duplicate. Stop on first drift, unknown
 owner, nonfinite, assistance, leakage, contact/replay mismatch or cap; retain every
 invalid/incomplete/not_run row and lower/upper physics bounds. Finish independent

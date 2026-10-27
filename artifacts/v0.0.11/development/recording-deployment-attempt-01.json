@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-27T12:30:22.033707+00:00",
+  "status": "failed_before_supervisor",
+  "root": "/home/ubuntu/joxing/v011-recording-20261027",
+  "source_commit": "d2b582ee05041c21129b393945240b42e51153f8",
+  "reason": "SyntaxError in inline model-preflight script: nested newline literal was decoded before compilation",
+  "formal_physics": 0,
+  "optimizer_updates": 0,
+  "next_action": "Reuse verified newly created checkout, compile corrected preflight using chr(10), then launch one supervisor"
+}

@@ -1,3 +1,34 @@
+## Active bounded recording supervisor —2026-10-27 12:30UTC
+
+Public frozen source d2b582ee05041c21129b393945240b42e51153f8; protocol canonical
+baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456, anonymous
+public bytes verified. Fresh xbabe3:/home/ubuntu/joxing/v011-recording-20261027.
+Supervisor3596577/start_ticks920622447; pytest3596803/start_ticks920622753.
+141source+288upstreamfiles verified, startownedscanempty. Syncpassed2.09s;
+236test gate advancing at12:30:53UTC, pytestCPU18.66s/RSS1.45GB, availableRAM
+102.18GB/disk35.18GB, source diffempty. D0/audit/render/decode allnot_run pending
+that gate; no formal outcomes or video yet. No duplicate/executing-source edits.
+
+Compiled exact native model (0physics) retained outside Git and the64MiBD0raw
+credit under artifacts/generated/v0.0.11/deployment-model: modelSceneHashd31ab280
+92832ba5bdb21cc89c62fd8b6f85286f380dd401fb30723c3d93ed0d, full contiguous hash
+in recording-launch.json. XML1,459,109bytes and self-containedMJB180,809,620bytes
+have exact hashes; dimensions170qpos/170qvel/1400ctrl/1400activation,700muscles/
+corner. One inline preflight quoting attempt failed before compilation/supervisor
+or any physics; retained attempt-01. Corrected preflight passed without source
+changes. No credential or model bytes committed.
+
+Next check actual stage/result/events/progress/PIDstartticks/resources/source.
+Require236Linux passes,7/7formal rows,2,642physics, all saved-tape audit checks,
+26decoded frames/25fps/0renderphysics and all recorded owned exits. Decode pass
+still needs visual inspection of both athletes/clock/honest diagnostic label.
+Retrieve/checksum complete raw, preserve failures and not_run denominator, compare
+actual scene hash with deployment model. Keep failed/partial footage classified;
+never retry unchanged silently or claim learned boxing. If healthy, independent
+work only. On completion update README/docs/book/results/public push; no v11tag
+until its larger registered mission concludes. Receipts:
+artifacts/v0.0.11/development/recording-{publication,capacity,launch,check-01}.json.
+
 ## Linux foundation audited; D0 recording harness implemented —2026-10-27
 
 The frozen foundation gate passed218Linux tests292.50s (stage296.655539s).

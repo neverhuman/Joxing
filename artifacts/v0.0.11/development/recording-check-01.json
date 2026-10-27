@@ -1,0 +1,223 @@
+{
+  "utc": "2026-10-27T12:30:53.236630+00:00",
+  "result": {
+    "schema": "joxing-shared-recording-supervisor-v1",
+    "source_commit": "d2b582ee05041c21129b393945240b42e51153f8",
+    "protocol_sha256": "baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456",
+    "process": {
+      "pid": 3596577,
+      "parent_pid": 1,
+      "start_ticks": 920622447,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T12:30:30.802413+00:00",
+    "status": "running",
+    "initial_capacity": {
+      "available_memory_bytes": 103675871232,
+      "disk_free_bytes": 35234631680,
+      "load": [
+        10.03466796875,
+        9.54052734375,
+        9.8681640625
+      ]
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3596599,
+          "parent_pid": 3596577,
+          "start_ticks": 920622512,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3596599,
+            "parent_pid": 3596577,
+            "start_ticks": 920622512,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 103735345152,
+          "disk_free_bytes": 35234344960,
+          "load": [
+            10.03466796875,
+            9.54052734375,
+            9.8681640625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 2.090855948626995,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "running",
+        "reason": null,
+        "process": {
+          "pid": 3596797,
+          "parent_pid": 3596577,
+          "start_ticks": 920622745,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3596797,
+            "parent_pid": 3596577,
+            "start_ticks": 920622745,
+            "state": "S"
+          },
+          {
+            "pid": 3596803,
+            "parent_pid": 3596797,
+            "start_ticks": 920622753,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 102177517568,
+          "disk_free_bytes": 35182362624,
+          "load": [
+            9.8203125,
+            9.52197265625,
+            9.85498046875
+          ]
+        }
+      },
+      {
+        "stage": "D0",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/qualify_boxing_env.py",
+          "--protocol-sha256",
+          "baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      },
+      {
+        "stage": "audit",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/audit_boxing_env.py",
+          "--run",
+          "runs/v0.0.11/recording-proof-01"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      },
+      {
+        "stage": "render",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/render_bout_recording.py",
+          "--recording",
+          "runs/v0.0.11/recording-proof-01/source-90101/recording",
+          "--out",
+          "runs/v0.0.11/recording-proof-01/first-diagnostic.mp4",
+          "--raw-budget-bytes",
+          "67108864"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      },
+      {
+        "stage": "decode",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/validate_bout_render.py",
+          "--run",
+          "runs/v0.0.11/recording-proof-01"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      }
+    ]
+  },
+  "logs": {
+    "sync.log": "Using CPython 3.12.3 interpreter at: /usr/bin/python3\nCreating virtual environment at: experiments/v0.0.11/runtime/.venv\nResolved 43 packages in 3ms\n   Building joxing @ file:///home/ubuntu/joxing/v011-recording-20261027\n      Built joxing @ file:///home/ubuntu/joxing/v011-recording-20261027\nPrepared 1 package in 723ms\nInstalled 40 packages in 292ms\n + absl-py==2.5.1\n + cloudpickle==3.1.2\n + contourpy==1.4.0\n + cycler==0.12.1\n + etils==1.14.0\n + farama-notifications==0.0.6\n + filelock==4.2.4\n + fonttools==4.67.0\n + fsspec==2026.9.0\n + glfw==2.11.0\n + gymnasium==1.2.3\n + imageio==2.38.1\n + imageio-ffmpeg==0.6.0\n + iniconfig==2.3.1\n + jinja2==3.1.6\n + joxing==0.0.10 (from file:///home/ubuntu/joxing/v011-recording-20261027)\n + kiwisolver==1.5.1\n + markupsafe==3.0.4\n + matplotlib==3.11.2\n + mpmath==1.3.0\n + mujoco==3.8.0\n + networkx==3.7\n + numpy==2.4.2\n + packaging==26.3\n + pandas==3.1.0\n + pillow==13.0.0\n + pluggy==1.7.0\n + pygments==2.21.0\n + pyopengl==3.1.10\n + pyparsing==3.3.3\n + pytest==9.1.1\n + python-dateutil==3.0.0\n + setuptools==84.2.1\n + six==1.17.0\n + stable-baselines3==2.7.1\n + sympy==1.14.0\n + torch==2.10.0+cpu\n + typing-extensions==4.16.0\n + tzdata==2026.5\n + zipp==4.1.2\n",
+    "tests.log": "......................",
+    "recording-launch.log": ""
+  },
+  "live_resources": [
+    {
+      "identity": {
+        "pid": 3596577,
+        "parent_pid": 1,
+        "start_ticks": 920622447,
+        "state": "S"
+      },
+      "cpu_user_ticks": 74,
+      "cpu_system_ticks": 52,
+      "rss": "VmRSS:\t   29936 kB"
+    },
+    {
+      "identity": {
+        "pid": 3596797,
+        "parent_pid": 3596577,
+        "start_ticks": 920622745,
+        "state": "S"
+      },
+      "cpu_user_ticks": 0,
+      "cpu_system_ticks": 1,
+      "rss": "VmRSS:\t   41752 kB"
+    },
+    {
+      "identity": {
+        "pid": 3596803,
+        "parent_pid": 3596797,
+        "start_ticks": 920622753,
+        "state": "R"
+      },
+      "cpu_user_ticks": 1866,
+      "cpu_system_ticks": 308,
+      "rss": "VmRSS:\t 1449556 kB"
+    }
+  ],
+  "source_diff_empty": true,
+  "load": [
+    9.8349609375,
+    9.5302734375,
+    9.85595703125
+  ],
+  "disk_free": 35182354432
+}

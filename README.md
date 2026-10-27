@@ -15,7 +15,8 @@ The diagnostic shared loop now has simultaneous opponent-aware observations,
 causal history, bounded command delays, four-glove contact staging and complete
 application/engine replay. The foundation passed218Linux tests, including mid-command and
 active-contact replay. The typed recording harness and adversarial evidence auditor
-are now implemented; its new source packet must qualify before the
+are now implemented. A bounded job on xbabe3 is running its236test Linux gate,
+then the seven-case proof, audit and first diagnostic render described in the
 [first registered recording packet](docs/V0.0.11_D0_SHARED_RECORDING.md).
 No valid native boxing bout exists yet; motor, contact/rules and competition
 remain gated. This phase uses untrained diagnostic muscle commands.

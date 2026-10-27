@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-27T12:30:30.381514+00:00",
+  "root": "/home/ubuntu/joxing/v011-recording-20261027",
+  "source_commit": "d2b582ee05041c21129b393945240b42e51153f8",
+  "protocol_sha256": "baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456",
+  "command": [
+    "python3",
+    "scripts/supervise_boxing_recording.py",
+    "--protocol-sha256",
+    "baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456"
+  ],
+  "supervisor": {
+    "pid": 3596577,
+    "parent_pid": 3596188,
+    "start_ticks": 920622447,
+    "state": "R"
+  },
+  "source_files_verified": 141,
+  "upstream_files_verified": 288,
+  "compiled_model": {
+    "model_scene_hash": "d31ab28092832ba5bdb21cc89c62fd8b6f85286f380dd401fb30723c3d93ed0d",
+    "dimensions": {
+      "nq": 170,
+      "nv": 170,
+      "nu": 1400,
+      "na": 1400,
+      "nbody": 165,
+      "ntendon": 1400,
+      "neq": 84,
+      "ngeom": 715
+    },
+    "muscles_per_actor": 700,
+    "generated_files": {
+      "scene.mjb": {
+        "bytes": 180809620,
+        "sha256": "02806d29bba614ea3f110f3729d4cdb7319992f0df41986241a05c9bcfdf03c3"
+      },
+      "scene.xml": {
+        "bytes": 1459109,
+        "sha256": "a2b0a1a4745669741fe862d8ad453ed19dc6025d152368d3979a45f353cb2635"
+      }
+    },
+    "mujoco": "3.8.0",
+    "numpy": "2.4.2",
+    "actor_bundles": {
+      "A": "e258421ac178b81f051e48b4cf6b4d898e3d0de0da76996594744e17d0937ee4",
+      "B": "797a750657417ca09229b679a842aa7780b3d80d4ef37a3e5827aad3606b1965"
+    },
+    "observation_schema": "09c601a86dd50c9a1f345f633365e0c082f12589ac3d97b3f558b2d3731a4226",
+    "normalizer": "none:raw diagnostic features",
+    "new_physics": 0,
+    "scope": "Model compilation only; no rollout/optimization/outcome"
+  },
+  "scope": "236Linux tests before7caseD0,audit,EGLrender/decode; no learning or v11tag"
+}
