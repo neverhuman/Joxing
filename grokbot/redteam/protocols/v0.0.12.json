@@ -1,0 +1,68 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.12",
+ "registered_utc": "2026-10-27T22:59:53Z",
+ "question": "Does a contact-requiring objective break the v0.0.11 zero-contact passive equilibrium (0 contact ticks in 876 games)?",
+ "classification": "diagnostic self-play; AGENTS.md boxing gates remain unmet; no claim of boxing competence",
+ "rules": {
+  "attribution": "grokbot-ending-reference-v2",
+  "anti_stalling": "grokbot.endings.anti_stalling: a result reached with no landed strike by either corner before the ending tick and no points is a no contest (no utility, return 0)",
+  "env": "grokbot.reference_env.ReferenceEndingEnv(anti_stalling=True); the jekko BoxingEnv and referee are unchanged"
+ },
+ "reset": {
+  "variant": "grokbot.scenarios.RangeBoxingEnv",
+  "separation_m": 0.8,
+  "label": "grokbot-range-0.80m-v0",
+  "mechanism": "BoxingEnv's own reset-only root pelvis_tx shift along each athlete's facing direction; nothing else changes"
+ },
+ "measurements_before_training": [
+  "native keyframe athletes fall backward (heads ~1.3 m away from the opponent within 1.2 s); no contact at 1.0/0.8/0.6 m for gen4, baseline, relaxed/cocontract, noise",
+  "v0.0.11 checkpoints gen0..gen6 re-evaluated at 0.80 m under anti-stalling: engagement share and gate decision reported before any v0.0.12 training"
+ ],
+ "training": {
+  "learner": "grokbot.selfplay antithetic ES with common random numbers, P4 opponent sampler",
+  "init": "v0.0.11 champion gen4 parameters",
+  "generations": 6,
+  "iterations": 3,
+  "pairs": 8,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "shaping": "training-only approach term: (initial - closest own-hand-to-opponent head/trunk distance) / initial, weight 0.5; never used for evaluation, gating or Elo",
+  "shaping_weight": 0.5,
+  "horizon_ticks": 3000,
+  "workers": 4,
+  "nice": 10,
+  "seed": 2
+ },
+ "evaluation": {
+  "eval_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "eval_noise": 0.05,
+  "opponents": "every earlier checkpoint of this run plus the scripted panel",
+  "paired_samples": "side-swapped pairs sharing a seed count once"
+ },
+ "gates": {
+  "engagement_gate": "a candidate must land a strike in >= 0.25 of its evaluation bouts (GateConfig.min_engaged_share = 0.25)",
+  "promotion": "grokbot.promotion.decide against the champion with min_valid = 6 paired samples, all other checks at defaults",
+  "no_contest_handling": "no-contest bouts are excluded from the broken-game invalid share; they count against engagement",
+  "min_engaged_share": 0.25
+ },
+ "success_criterion": "v0.0.12 is a level-up iff at least one generation is promoted under the engagement gate. Elo gains without engagement do not count.",
+ "pre_declared_failure_reading": "if no generation reaches the engagement gate, the result is reported as 'passive equilibrium not broken by objective change alone'; the next lever is motor capability (forward lean / reach primitive or the pretrained bridge), not more rule tuning",
+ "limitations": [
+  "single training seed",
+  "linear 140-parameter region policy; no opponent observations",
+  "strikes are classified contacts (approach and active speed >= 0.5 m/s), not qualified referee points",
+  "0.80 m reset is a grokbot candidate variant, not a jekko-registered scenario"
+ ],
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0016-recheck-v11.py",
+  "grokbot/redteam/probes/cycle-0016-engagement-league.py"
+ ]
+}

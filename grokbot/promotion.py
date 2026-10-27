@@ -18,6 +18,13 @@ The candidate is promoted only if every check passes:
 4. No regression: against every other panel member, the candidate's mean
    utility is at least the incumbent's minus ``regression_margin``. Beating the
    latest snapshot while losing to an archived one is cycling, not progress.
+5. Engagement (if ``min_engaged_share`` > 0): the candidate landed a strike in
+   at least that share of its bouts (record field ``engaged[policy]``). Rating
+   gains won without contact are balance, not boxing, and do not promote.
+
+No-contest bouts (``invalid_reason`` starting "no contest") are passive
+non-results, not broken games: they are excluded from the invalid share and
+handled by the engagement check.
 
 Hoeffding bounds are distribution-free for utilities in [-1, 1]. They are
 conservative and ignore pairing, so they never overstate significance.
@@ -40,6 +47,8 @@ class GateConfig:
     max_blocked_as_faller_share: float = 0.02
     max_side_bias: float = 0.1
     regression_margin: float = 0.1
+    # Share of the candidate's bouts in which it landed a strike; 0 disables.
+    min_engaged_share: float = 0.0
 
 
 @dataclass(frozen=True)
@@ -124,7 +133,13 @@ def decide(records, candidate, incumbent, panel, config=GateConfig()):
 
     own = [r for r in records if candidate in (r["first"], r["second"])]
     if own:
-        invalid = sum(r["outcome"] is None for r in own) / len(own)
+        broken = [
+            r
+            for r in own
+            if r["outcome"] is None
+            and not (r.get("invalid_reason") or "").startswith("no contest")
+        ]
+        invalid = len(broken) / len(own)
         if invalid > config.max_invalid_share:
             reasons.append(f"integrity: invalid share {invalid:.3f}")
         blocked = policy_summary(own)[candidate]["blocked_as_faller_rate"]
@@ -137,4 +152,11 @@ def decide(records, candidate, incumbent, panel, config=GateConfig()):
         ]
         if corner_a and abs(_mean(corner_a)) > config.max_side_bias:
             reasons.append(f"integrity: corner-A mean utility {_mean(corner_a):+.3f}")
+        if config.min_engaged_share > 0:
+            engaged = _mean([bool(r.get("engaged", {}).get(candidate)) for r in own])
+            if engaged < config.min_engaged_share:
+                reasons.append(
+                    f"engagement: landed a strike in {engaged:.3f} of bouts < "
+                    f"{config.min_engaged_share}"
+                )
     return Decision(not reasons, tuple(reasons), head, per_member)

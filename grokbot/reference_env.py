@@ -14,6 +14,10 @@ boundary. The bout ends at the first decisive event of the reference table
   ``info["blocked"]``, and the reward returns the accumulated potential to
   zero, so the return is 0 and a learner can drop the episode.
 
+With ``anti_stalling=True`` (reference v3) a result reached without any
+landed strike and without points is a no-contest (``info["no_contest"]``,
+return 0): outlasting a passive opponent does not pay.
+
 Engine faults propagate from the env unchanged. They are invalid, never a
 result.
 """
@@ -30,8 +34,9 @@ RING_HALF_SIZE_M = 2.5
 
 
 class ReferenceEndingEnv:
-    def __init__(self, env):
+    def __init__(self, env, *, anti_stalling=False):
         self.env = env
+        self.anti_stalling = anti_stalling
         self.registry = {g["id"]: g for g in env.scene.report["physical_geoms"]}
         self.bodies = {
             a: [
@@ -73,12 +78,18 @@ class ReferenceEndingEnv:
         bell = self.env.done and not self.env.truncated
         events = self.monitor.losses + list(self.exits.values())
         ending = endings.decide(points, events, bell=bell, bell_tick=self.env.tick - 1)
-        decided = ending.utility is not None or ending.reason.startswith("blocked")
+        if self.anti_stalling:
+            ending = endings.anti_stalling(
+                ending, self.monitor.contacts.strikes_by, points
+            )
+        decided = ending.utility is not None or ending.reason.startswith(
+            ("blocked", "no contest")
+        )
         new_diff = points[0] - points[1]
         if not decided:
             reward_a, _ = match_reward(self.diff, new_diff, terminal=False)
         elif ending.utility is None:
-            reward_a = -potential(self.diff)  # blocked: return telescopes to 0
+            reward_a = -potential(self.diff)  # no result: return telescopes to 0
         else:
             reward_a, _ = match_reward(
                 self.diff, new_diff, terminal=True, outcome=ending.utility[0]
@@ -95,7 +106,8 @@ class ReferenceEndingEnv:
                 "reason": ending.reason,
                 "tick": ending.tick,
             },
-            blocked=decided and ending.utility is None,
+            blocked=decided and ending.reason.startswith("blocked"),
+            no_contest=decided and ending.reason.startswith("no contest"),
             losses=[vars(e) for e in events],
         )
         return {
