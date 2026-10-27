@@ -5,7 +5,8 @@ from pathlib import Path
 
 import numpy as np
 
-from .provenance import digest, write_json
+from .motor_storage import RawCredit, save_npz, write_json
+from .provenance import digest
 from .wave import canonical_actor_hash
 
 
@@ -46,9 +47,7 @@ def save_fault(env, folder, error):
     observation = (
         np.empty(0, np.float32) if env.task.last_obs is None else env.task.last_obs
     )
-    np.savez_compressed(
-        folder / "fault-arrays.npz", state=state, observation=observation
-    )
+    save_npz(folder / "fault-arrays.npz", state=state, observation=observation)
     write_json(
         folder / "fault.json",
         {
@@ -59,7 +58,7 @@ def save_fault(env, folder, error):
     )
 
 
-def collect(env, model, folder, row, guard):
+def collect(env, model, folder, row, guard, raw_bytes=None):
     """Persist each attempted evaluation; no reset or source state is hidden.
 
     guard(10) must reserve the next complete command against global limits.
@@ -68,6 +67,7 @@ def collect(env, model, folder, row, guard):
     """
     folder = Path(folder)
     folder.mkdir(parents=True, exist_ok=False)
+    raw_credit = RawCredit(folder, raw_bytes) if raw_bytes else None
     before = env.task.physics_total
     row = dict(
         row,
@@ -134,6 +134,8 @@ def collect(env, model, folder, row, guard):
             status="incomplete" if isinstance(error, TimeoutError) else "invalid",
             reason=type(error).__name__ + ": " + str(error),
         )
+        if raw_credit:
+            raw_credit.emergency_mode = True
         save_fault(env, folder, error)
     finally:
         row.update(
@@ -142,19 +144,19 @@ def collect(env, model, folder, row, guard):
             physics_accounting_exact=True,
             mid_snapshot_available=(folder / "mid.json").exists(),
         )
-        np.savez_compressed(
+        save_npz(
             folder / "actions.npz",
             residuals=np.asarray(residuals, dtype=np.float32).reshape(-1, 138),
             teachers=np.asarray(teachers, dtype=np.float32).reshape(-1, 700),
             commands=np.asarray(commands, dtype=np.float32).reshape(-1, 700),
         )
         write_json(folder / "trace.json", trace)
-        env.task.dump_substeps(folder / "substeps.npz")
+        dump_substeps(env.task, folder / "substeps.npz")
         write_json(folder / "result.json", row)
     return row
 
 
-def replay(env, model, source, folder, guard):
+def replay(env, model, source, folder, guard, raw_bytes=None):
     """Actual scalar source-host continuation, using the separately loaded model.
 
     Three held substeps precede the restore point and are excluded from attempted
@@ -162,6 +164,7 @@ def replay(env, model, source, folder, guard):
     """
     source, folder = Path(source), Path(folder)
     folder.mkdir(parents=True, exist_ok=False)
+    raw_credit = RawCredit(folder, raw_bytes) if raw_bytes else None
     expected_row = json.loads((source / "result.json").read_text())
     expected_trace = json.loads((source / "trace.json").read_text())
     before = env.task.physics_total
@@ -218,7 +221,7 @@ def replay(env, model, source, folder, guard):
                 ("teachers", teachers),
             ]:
                 assert np.array_equal(np.asarray(records, np.float32), a[key][10:]), key
-        env.task.dump_substeps(folder / "substeps.npz")
+        dump_substeps(env.task, folder / "substeps.npz")
         first = 103
         with (
             np.load(source / "substeps.npz", allow_pickle=False) as a,
@@ -249,6 +252,8 @@ def replay(env, model, source, folder, guard):
             status="incomplete" if isinstance(error, TimeoutError) else "invalid",
             reason=type(error).__name__ + ": " + str(error),
         )
+        if raw_credit:
+            raw_credit.emergency_mode = True
         save_fault(env, folder, error)
     finally:
         report.update(
@@ -257,13 +262,34 @@ def replay(env, model, source, folder, guard):
             physics_accounting_exact=True,
         )
         write_json(folder / "trace.json", actual_trace)
-        np.savez_compressed(
+        save_npz(
             folder / "actions.npz",
             residuals=np.asarray(residuals, np.float32).reshape(-1, 138),
             teachers=np.asarray(teachers, np.float32).reshape(-1, 700),
             commands=np.asarray(commands, np.float32).reshape(-1, 700),
         )
         if not (folder / "substeps.npz").exists():
-            env.task.dump_substeps(folder / "substeps.npz")
+            dump_substeps(env.task, folder / "substeps.npz")
         write_json(folder / "result.json", report)
     return report
+
+
+def dump_substeps(task, path):
+    # Encode to an in-memory temporary location via a file-like compatible NPZ
+    # builder; never write an unbounded raw file before credit validation.
+    rows = task.evidence
+    contacts = np.asarray(
+        [c for row in rows for c in row.contacts], dtype=float
+    ).reshape(-1, 9)
+    offsets = np.r_[0, np.cumsum([len(row.contacts) for row in rows])]
+    save_npz(
+        path,
+        intervals_s=np.asarray([[r.start_s, r.end_s] for r in rows]).reshape(-1, 2),
+        loads_N=np.asarray([r.loads_N for r in rows]).reshape(-1, 3),
+        tilt_drop=np.asarray([[r.tilt_rad, r.drop_m] for r in rows]).reshape(-1, 2),
+        contact_offsets=offsets,
+        contact_geom_ids=contacts[:, :2].astype(np.int32),
+        contact_role=contacts[:, 2].astype(np.int8),
+        contact_force_N=contacts[:, 3:6],
+        contact_position_m=contacts[:, 6:9],
+    )

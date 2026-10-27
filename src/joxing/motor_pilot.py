@@ -3,7 +3,6 @@
 This module alone does not authorize or launch physical learning.
 """
 
-import json
 import os
 import time
 from pathlib import Path
@@ -11,7 +10,8 @@ from pathlib import Path
 import gymnasium as gym
 import numpy as np
 
-from .provenance import digest, write_json
+from .motor_storage import RawCredit, append_json, save_npz, write_json
+from .provenance import digest
 
 TRAINING_SEEDS = (81011, 81029)
 EVALUATION_SEEDS = tuple(range(83000, 83008))
@@ -57,7 +57,7 @@ def planned_rows():
     ]
 
 
-def make_learner(env, seed):
+def make_learner(env, seed, learner_class=None):
     """Fresh ordinary SAC138; zero deterministic residual before any update."""
     import torch
     from stable_baselines3 import SAC
@@ -66,7 +66,7 @@ def make_learner(env, seed):
         raise ValueError("Unregistered learner seed/action space")
     if env.observation_space.shape != (3601,):
         raise ValueError("Expected frozen-normalized native3601")
-    model = SAC(
+    model = (SAC if learner_class is None else learner_class)(
         "MlpPolicy",
         env,
         policy_kwargs={"net_arch": [256, 256]},
@@ -90,19 +90,25 @@ class PilotWorker(gym.Wrapper):
     leaves the last confirmed counters plus a conservative allocation, not zero.
     """
 
-    def __init__(self, env, folder, training_index, worker_index, deadline):
+    def __init__(
+        self, env, folder, training_index, worker_index, deadline, raw_bytes=None
+    ):
         super().__init__(env)
         reset_seed(training_index, worker_index, 0)
         self.folder = Path(folder)
         self.folder.mkdir(parents=True, exist_ok=False)
+        self.raw_credit = RawCredit(self.folder, raw_bytes) if raw_bytes else None
         self.training_index, self.worker_index = training_index, worker_index
         self.deadline = float(deadline)
         self.episode_index = -1
         self.transitions = self.completed_episodes = 0
         self.chunk_index = 0
-        self.residuals, self.commands, self.rewards = [], [], []
-        self.trace = (self.folder / "transitions.jsonl").open("x")
-        self.events = (self.folder / "episodes.jsonl").open("x")
+        self.residuals, self.commands, self.teachers, self.rewards = [], [], [], []
+        self.trace = self.folder / "transitions.jsonl"
+        self.trace.touch(exist_ok=False)
+        self.events = self.folder / "episodes.jsonl"
+        self.events.touch(exist_ok=False)
+        self.step_wall_s = self.reset_wall_s = 0.0
         self.status = "ready"
         self.closed = False
         self._progress()
@@ -123,6 +129,9 @@ class PilotWorker(gym.Wrapper):
                 "chunks": self.chunk_index,
                 "unflushed_transitions": len(self.residuals),
                 "monotonic_s": time.monotonic(),
+                "step_wall_s": self.step_wall_s,
+                "reset_wall_s": self.reset_wall_s,
+                "bundle_hash": self.env.contract_hash,
             },
         )
 
@@ -138,20 +147,18 @@ class PilotWorker(gym.Wrapper):
         if not self.residuals:
             return
         target = self.folder / (f"commands-{self.chunk_index:05d}.npz")
-        temporary = target.with_suffix(".tmp.npz")
-        np.savez_compressed(
-            temporary,
+        save_npz(
+            target,
             residuals=np.asarray(self.residuals, dtype=np.float32),
             commands=np.asarray(self.commands, dtype=np.float32),
+            teachers=np.asarray(self.teachers, dtype=np.float32),
             rewards=np.asarray(self.rewards, dtype=np.float64),
         )
-        temporary.replace(target)
         self.chunk_index += 1
         self.residuals.clear()
         self.commands.clear()
+        self.teachers.clear()
         self.rewards.clear()
-        self.trace.flush()
-        self.events.flush()
 
     def _fault(self, error):
         # NaN survives raw NPZ even when a JSON snapshot cannot be encoded.
@@ -159,9 +166,11 @@ class PilotWorker(gym.Wrapper):
 
         from .physical_motor import INTEGRATION
 
+        if self.raw_credit:
+            self.raw_credit.emergency_mode = True
         state = np.empty(mujoco.mj_stateSize(self.env.task.model, INTEGRATION))
         mujoco.mj_getState(self.env.task.model, self.env.task.data, state, INTEGRATION)
-        np.savez_compressed(
+        save_npz(
             self.folder / "fault-arrays.npz",
             state=state,
             observation=np.empty(0, np.float32)
@@ -182,6 +191,7 @@ class PilotWorker(gym.Wrapper):
         self._progress()
 
     def reset(self, *, seed=None, options=None):
+        began = time.monotonic()
         try:
             if options:
                 raise ValueError("No unregistered worker reset options")
@@ -198,20 +208,18 @@ class PilotWorker(gym.Wrapper):
             observation, info = self.env.reset(seed=chosen)
             self.episode_index += 1
             self.status = "running"
-            self.events.write(
-                json.dumps(
-                    {
-                        "event": "reset",
-                        "episode_index": self.episode_index,
-                        "seed": chosen,
-                        "sb3_requested_seed": seed,
-                        "physics_steps": self.env.task.physics_total,
-                    }
-                )
-                + "\n"
+            append_json(
+                self.events,
+                {
+                    "event": "reset",
+                    "episode_index": self.episode_index,
+                    "seed": chosen,
+                    "sb3_requested_seed": seed,
+                    "physics_steps": self.env.task.physics_total,
+                },
             )
             write_json(self.folder / "last-valid-snapshot.json", self.env.snapshot())
-            self.events.flush()
+            self.reset_wall_s += time.monotonic() - began
             self._progress()
             return observation, info
         except Exception as error:
@@ -219,6 +227,7 @@ class PilotWorker(gym.Wrapper):
             raise
 
     def step(self, residual):
+        began = time.monotonic()
         try:
             self._guard()
             observation, reward, terminated, truncated, info = self.env.step(residual)
@@ -236,6 +245,7 @@ class PilotWorker(gym.Wrapper):
             transition = self.env.last_transition
             self.residuals.append(np.asarray(transition["residual"], np.float32))
             self.commands.append(np.asarray(transition["command"], np.float32))
+            self.teachers.append(np.asarray(transition["teacher"], np.float32))
             self.rewards.append(float(reward))
             self.transitions += 1
             row = {
@@ -254,7 +264,8 @@ class PilotWorker(gym.Wrapper):
                 "native_reward": transition["native_reward"],
                 "physics_steps": self.env.task.physics_total,
             }
-            self.trace.write(json.dumps(row, allow_nan=False) + "\n")
+            append_json(self.trace, row)
+            self.step_wall_s += time.monotonic() - began
             if self.transitions % 64 == 0 or terminated or truncated:
                 self._flush()
                 self._progress()
@@ -270,8 +281,6 @@ class PilotWorker(gym.Wrapper):
         if self.status != "fault":
             self.status = "closed"
         self._progress()
-        self.trace.close()
-        self.events.close()
         self.env.close()
         self.closed = True
 
