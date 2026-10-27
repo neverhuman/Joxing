@@ -1,0 +1,74 @@
+{
+  "utc": "2026-10-27T00:10:35.426964+00:00",
+  "supervisor": {
+    "pid": 1799276,
+    "source_commit": "a8f47d84d21cd8dd84cd7147989d7a2bc02d06c0",
+    "status": "running",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "pid": 1799279,
+        "returncode": 0,
+        "wall_s": 1.0671407245099545
+      },
+      {
+        "stage": "full-tests",
+        "command": [
+          "uv",
+          "run",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "running",
+        "pid": 1799404
+      }
+    ],
+    "started_utc": "2026-10-27T00:09:55.469501+00:00",
+    "physics_budget": 120000,
+    "threads": 1
+  },
+  "owned_processes": [
+    {
+      "pid": 1799276,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "python3 /home/ubuntu/joxing/v009-scaling-20261027/runs/v0.0.9/supervise.py ",
+      "rss_bytes": 13762560,
+      "cpu_ticks": 5,
+      "state": "S"
+    },
+    {
+      "pid": 1799404,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "uv run --project experiments/v0.0.9/runtime --locked pytest -q ",
+      "rss_bytes": 42487808,
+      "cpu_ticks": 2,
+      "state": "S"
+    },
+    {
+      "pid": 1799409,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "/home/ubuntu/joxing/v009-scaling-20261027/experiments/v0.0.9/runtime/.venv/bin/python /home/ubuntu/joxing/v009-scaling-20261027/experiments/v0.0.9/runtime/.venv/bin/pytest -q ",
+      "rss_bytes": 1999065088,
+      "cpu_ticks": 4278,
+      "state": "S"
+    }
+  ],
+  "test_log_tail": ".........................................",
+  "load": [
+    4.06640625,
+    3.9248046875,
+    4.02978515625
+  ],
+  "source_diff": ""
+}

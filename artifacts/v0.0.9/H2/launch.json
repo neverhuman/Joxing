@@ -1,0 +1,24 @@
+{
+  "source_commit": "a8f47d84d21cd8dd84cd7147989d7a2bc02d06c0",
+  "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+  "wrapper_pid": 1799276,
+  "wrapper_sha256": "950b6cb4a89ef3bd212994fe519fd6b79a84fadbbc778c43c5b20d77a416ef14",
+  "capacity": {
+    "load": [
+      3.72412109375,
+      3.8544921875,
+      4.0166015625
+    ],
+    "available_memory_bytes": 39698784256,
+    "disk_free_bytes": 339911462912,
+    "owned_jobs": []
+  },
+  "caps": {
+    "wall_s": 360,
+    "physics_steps": 120000,
+    "raw_bytes": 134217728,
+    "simulation_workers": 16,
+    "threads": 1
+  },
+  "gating": "Full Linux regression suite must return0 before any formal H2 rollout."
+}
