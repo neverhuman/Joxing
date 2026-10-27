@@ -6,10 +6,17 @@ import numpy as np
 import pytest
 
 from grokbot.endings import ContactClassifier, Ending, anti_stalling
+from grokbot.league import Game, Ledger
 from grokbot.promotion import GateConfig, decide
 from grokbot.reference_env import ReferenceEndingEnv
 from grokbot.scenarios import RangeBoxingEnv
-from grokbot.selfplay import OPPONENT_TARGETS, OWN_HANDS, reach
+from grokbot.selfplay import (
+    OPPONENT_TARGETS,
+    OWN_HANDS,
+    finite_or_none,
+    reach,
+    safe_ratings,
+)
 from grokbot.tests.test_endings import FAST, REGISTRY, rows
 from grokbot.tests.test_promotion import IMPROVES, PANEL
 from joxing.env import BoxingEnv
@@ -123,3 +130,13 @@ def test_reach_is_the_closest_own_hand_to_opponent_head_or_trunk():
     values[OPPONENT_TARGETS[0] : OPPONENT_TARGETS[0] + 3] = [0.9, 0.0, 1.0]
     values[OPPONENT_TARGETS[1] : OPPONENT_TARGETS[1] + 3] = [0.5, 0.0, 1.0]
     assert reach(values) == pytest.approx(0.2)
+
+
+def test_a_league_of_no_contests_reports_no_ratings_instead_of_crashing():
+    ledger = Ledger(["gen0", "gen1", "baseline"])
+    ledger.add(Game("gen1", "gen0", "A", None, "no contest: no engagement"))
+    assert safe_ratings(ledger, "baseline") == {}
+    assert finite_or_none(ledger.side_balance()) is None
+    ledger.add(Game("gen1", "gen0", "B", 1))
+    # The anchor never played: ratings are centred instead of all-NaN.
+    assert set(safe_ratings(ledger, "baseline")) == {"gen0", "gen1"}
