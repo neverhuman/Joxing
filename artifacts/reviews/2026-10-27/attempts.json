@@ -1,0 +1,27 @@
+{
+  "scope": "Exploratory review diagnostics, not preregistered qualification, training or valid boxing games.",
+  "attempts": [
+    {
+      "id": "static-scene-audit-01",
+      "status": "failed",
+      "new_physics_steps": 0,
+      "reason": "KeyError: guessed foot_r/foot_l body names do not exist; no persisted outcome. Corrected to existing body names before rerun."
+    },
+    {
+      "id": "static-scene-audit-02",
+      "status": "computed",
+      "new_physics_steps": 0,
+      "result": "static-scene-audit-02.json",
+      "source": "static-scene-audit-02-source.py",
+      "limitation": "Six-body hand/calcaneus feature subset; not the exact teacher feature schema. Geometry query valid within stated scope; superseded feature comparison by03."
+    },
+    {
+      "id": "static-scene-audit-03",
+      "status": "computed",
+      "new_physics_steps": 0,
+      "result": "static-scene-audit-03.json",
+      "source": "scripts/audit_self_play_readiness.py",
+      "scope": "Exact teacher six-body subset, current scene masks/contract/spawn and153static first-contact rays. No physical hit/scoring/force or dynamic motor transfer proof."
+    }
+  ]
+}

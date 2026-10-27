@@ -51,3 +51,8 @@ Canonical tactical reward is terminal +1 win, -1 loss, 0 draw with gamma=1. Opti
 ## Visible demonstration target
 
 A replay should show both athletes, clock, points, contact location, instantaneous force, event impulse, qualifying/rejected reason, policy and decoder versions. A companion panel should show frozen-panel strength versus simulator transitions and wall time, plus invalid rate and sample throughput. Keep constrained motor clips, scripted contact fixtures and learned unassisted matches visibly labeled.
+
+
+## Implementation sequence and cadence qualification
+
+The [2026-10-27integrated plan](SELF_PLAY_EXECUTION_PLAN.md) preserves this points contract and prioritizes a simultaneous diagnostic BoxingEnv before competitive learning. Its prototype may use the existing composition-smoke physics only under that explicit identity. The qualified native teacher acts at50Hz with2msEuler physics; the50Hz-tactics/100Hz-motor/1kHz-physics schedule above remains proposed and must not be silently applied to that checkpoint. Scoring coverage, self-contact, sporting ending attribution and match-scene motor transfer remain gates. New supplied health/KO/10-point judging proposals are not the current game.

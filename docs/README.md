@@ -28,6 +28,8 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 
 ## Game, physics and compute
 
+- [Integrated self-play execution plan](SELF_PLAY_EXECUTION_PLAN.md) and [next v0.0.11 mission](V0.0.11_MISSION.md): review of three new proposals, independently checked static scene issues, ordered worker packets and learning/HPC/evidence gates.
+
 - [Native transfer implementation contract](NATIVE_TRANSFER.md): named reference mapping, fixed cadence, full snapshots, bounded workers and source-host commands.
 - [Physical motor continuation contract](PHYSICAL_MOTOR.md): substep force/posture timing, held-command restoration, complete accounting and v8 execution/audit commands.
 

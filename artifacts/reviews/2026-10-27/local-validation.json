@@ -1,0 +1,23 @@
+{
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.10/runtime",
+    "--locked",
+    "pytest",
+    "-q"
+  ],
+  "returncode": 0,
+  "wall_s": 170.82761537499027,
+  "scope": "Current local software/unit/physical fixtures only; no formal D2pilot or self-play outcome.",
+  "source_files": {
+    "src/joxing/motor_evaluation.py": "1b4442c72875827eee47fb23cdeed441d4155bd9f43fb457296dade8be847c0b",
+    "src/joxing/motor_pilot.py": "e73985300a0f58aa3a1cdc427f9317464b08817e6ef0e81033d7cb21a790038e",
+    "src/joxing/motor_residual.py": "164fe91f55d4922a01f1360ed04c93192b3188635ce68c99f19dbc1554cd8124",
+    "src/joxing/motor_storage.py": "a14900c3102d87f4d6a1b9ae21b8f831c13593fe95b7e8ba175b700eb26da6c1",
+    "src/joxing/motor_run.py": "029fb7696f1a0d57072be81b87b4bf2a167aea104239ed2664aa5f1814e18e62",
+    "scripts/train_motor_residual.py": "0ad7a85c2b2a35271d839274ee18a57881be53faf8b810ed429f6392ebdc0c8f",
+    "scripts/audit_self_play_readiness.py": "94701ae671fe496db851c05e830fadb3cf28424532a75d39440b9f777e96461e"
+  }
+}

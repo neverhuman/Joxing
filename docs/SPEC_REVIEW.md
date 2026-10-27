@@ -17,7 +17,7 @@ Both upstream heads currently match the supplied pins: MS-Human-700 `2d686957aef
 
 One primary human has 85 qpos, 85 qvel, 700 controls and 700 activation states. Two intact copies have 170/170/1,400, not Gemini's 91/90 per actor. Native root uses six scalar coordinates under a rotated pelvis frame. There are 42 equalities per actor. The no-glove pair weighs 120.433046 kg; our four 0.283 kg glove bodies add exactly 1.132 kg. Existing tendons, equality references and muscle gains must stay in each actor's namespace.
 
-Native primary bodies include `head_neck`, `sternum`, `thoracic12`, `lumbar5`, `hand_r/l`, `humerus_r/l`, `ulna_r/l`. `skull` and `jaw` are visual geoms, not separate primary body anchors; `Sternum` capitalization is wrong. Gemini's proposed neck/wrist names cannot be applied blindly. Anatomical frame orientation also differs from generic humanoid assumptions.
+Native primary bodies include `head_neck`, `sternum`, `thoracic12`, `lumbar5`, `hand_r/l`, `humerus_r/l`, `ulna_r/l`. `skull` and `jaw` are geom names, not separate primary body anchors; the pinned `skull` is collidable, so treating it as visual-only was incorrect (see the2026-10-27static audit); `Sternum` capitalization is wrong. Gemini's proposed neck/wrist names cannot be applied blindly. Anatomical frame orientation also differs from generic humanoid assumptions.
 
 The primary upper limbs lack a boxing collision envelope. Disabled bone/wrap geoms must stay disabled; external shells and gloves provide physical strike/block surfaces. Collision mask logic is OR, not an AND handshake. Preserve full physical coverage for non-scoring surfaces and restore reviewed own-body pairs. Current scene is deliberately only a composition smoke model until those gates pass.
 
@@ -42,3 +42,8 @@ Dedicated `joxing` package, upstream pinned read-only submodules; generated mode
 No supplied A100/H100 or Xeon timing is a capacity promise for our hosts. HPC starts with reproducible local workloads, then exact-model Warp support/parity, bounded worker/batch sweeps and end-to-end learner measurements. See `COMPUTE.md` and `IMPLEMENTATION.md`.
 
 Source references: [MS-Human-700 pinned tree](https://github.com/LNSGroup/MS-Human-700/tree/2d686957aefd5739cf4d2859a6acfd94c8f84400), [msgym pinned tree](https://github.com/LNSGroup/msgym/tree/ad3aac166dab3577d7d16b4a03faccef94c7aac7), [MuJoCo 3.8 simulation staging](https://mujoco.readthedocs.io/en/3.8.0/programming/simulation.html), [model editing](https://mujoco.readthedocs.io/en/3.8.0/programming/modeledit.html).
+
+
+## Three additional plans reviewed —2026-10-27
+
+See [integrated execution plan](SELF_PLAY_EXECUTION_PLAN.md) and [input identities/probe receipts](../artifacts/reviews/2026-10-27/). Adopt yaw equivariance, simultaneous two-corner stepping, causal history, frozen-opponent ownership, positive-control learning, full-workload HPC and typed evidence. Preserve head2/torso1/guard0points and existing native gates; proposed health pools, forced root movement, professional judging and arbitrary large budgets are not adopted. Jarambit is another project; only its evidence/claim separation transfers. Static exploratory coverage reproduces64head/79non-scoring-native/10guard on153neutral-pose approaches; actual teacher key features differ0.401890m between corners in world axes,4.44e-16m after yaw canonicalization. Own glove/forearm-to-head masks are disabled; matchimplicitfast1ms differs from teacherEuler2ms. No physical punch/learning result is inferred.

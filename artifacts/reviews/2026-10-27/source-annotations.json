@@ -1,0 +1,17 @@
+{
+  "schema": "joxing-review-source-annotations-v1",
+  "historical_records_unchanged": true,
+  "records": {
+    "static-scene-audit-02.json": {
+      "source_context": "Exploratory run from working tree with uncommitted motor-runner development and probe script. code_commit is the last Git base, not a clean-source qualification. Relevant executed probe/scene/rules hashes and compiled scene hash are exact_from_record. Unrelated full source-tree hash cannot serve as a source-clean launch receipt.",
+      "field_origin": "exact_from_record_with_explicit_working_tree_limit",
+      "use": "Static readiness review only, not formal D2 or physical contact/motor qualification."
+    },
+    "static-scene-audit-03.json": {
+      "source_context": "Exploratory run from working tree with uncommitted motor-runner development and probe script. code_commit is the last Git base, not a clean-source qualification. Relevant executed probe/scene/rules hashes and compiled scene hash are exact_from_record. Unrelated full source-tree hash cannot serve as a source-clean launch receipt.",
+      "field_origin": "exact_from_record_with_explicit_working_tree_limit",
+      "use": "Static readiness review only, not formal D2 or physical contact/motor qualification."
+    }
+  },
+  "probe03_executable_sha256": "94701ae671fe496db851c05e830fadb3cf28424532a75d39440b9f777e96461e"
+}

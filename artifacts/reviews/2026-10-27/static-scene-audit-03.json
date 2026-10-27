@@ -1,0 +1,1633 @@
+{
+  "boxing_games": 0,
+  "code_commit": "13c2e3692a674e129f40eb92ae085febdb12daa6",
+  "collision_pairs": [
+    {
+      "collision_bits_enable": false,
+      "geoms": [
+        "A_glove_r",
+        "A_shell_head"
+      ]
+    },
+    {
+      "collision_bits_enable": false,
+      "geoms": [
+        "A_shell_ulna_r",
+        "A_shell_head"
+      ]
+    },
+    {
+      "collision_bits_enable": true,
+      "geoms": [
+        "A_glove_r",
+        "B_shell_head"
+      ]
+    },
+    {
+      "collision_bits_enable": true,
+      "geoms": [
+        "A_glove_r",
+        "B_glove_l"
+      ]
+    }
+  ],
+  "dimensions": {
+    "na": 1400,
+    "nbody": 165,
+    "neq": 84,
+    "ngeom": 715,
+    "nq": 170,
+    "ntendon": 1400,
+    "nu": 1400,
+    "nv": 170
+  },
+  "geometry_probe": {
+    "direct_scratch_geom_placement": true,
+    "first_roles": {
+      "guard": 10,
+      "head": 64,
+      "native_non_scoring": 79
+    },
+    "limitations": "Neutral pose only;4mm sampled first depth and tie rule. No physical punch, impulses, HitTracker award, guard-pose or convergence result.",
+    "march_step_m": 0.004,
+    "poses": 1,
+    "samples": [
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0029104389420774868,
+          "geom": "B_shell_humerus_r",
+          "role": "guard",
+          "sample_distance_m": 0.35799999999999993
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0018635196262212633,
+          "geom": "B_shell_humerus_r",
+          "role": "guard",
+          "sample_distance_m": 0.3419999999999999
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0017463442246883343,
+          "geom": "B_shell_humerus_r",
+          "role": "guard",
+          "sample_distance_m": 0.3019999999999999
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0011257172051505199,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0023105874737288645,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0034446439644511967,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0004302932198035625,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.001047174781348477,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0012628233570234834,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0010471747813484422,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.00043029321980362495,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.003444643964451183,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.002310587473728677,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.00112571720515061,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0017463442246883343,
+          "geom": "B_shell_humerus_l",
+          "role": "guard",
+          "sample_distance_m": 0.3019999999999999
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0018635196262212356,
+          "geom": "B_shell_humerus_l",
+          "role": "guard",
+          "sample_distance_m": 0.3419999999999999
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": -40,
+        "first": {
+          "gap_m": -0.0029104389420774313,
+          "geom": "B_shell_humerus_l",
+          "role": "guard",
+          "sample_distance_m": 0.35799999999999993
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0005910189956364748,
+          "geom": "B_shell_humerus_r",
+          "role": "guard",
+          "sample_distance_m": 0.3099999999999999
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.00044588261924893846,
+          "geom": "B_shell_humerus_r",
+          "role": "guard",
+          "sample_distance_m": 0.28599999999999987
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0031135119785581783,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.000474342899954551,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0018960676239956967,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.003261365024436233,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.00043076325422482936,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0011791423114294111,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0014411099504794966,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0011791423114294389,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0004307632542248502,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0032613650244362885,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.001896067623995662,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.000474342899954662,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0031135119785581714,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0004458826192489246,
+          "geom": "B_shell_humerus_l",
+          "role": "guard",
+          "sample_distance_m": 0.28599999999999987
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": -30,
+        "first": {
+          "gap_m": -0.0005910189956364192,
+          "geom": "B_shell_humerus_l",
+          "role": "guard",
+          "sample_distance_m": 0.3099999999999999
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0014966271348827442,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0022486540064818455,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0034178031383265486,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0009114885742186885,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0025056883049342435,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -6.441828720013532e-05,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0025294853583557875,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.002397001956319325,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0006954861896414574,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.00239700297572628,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.002529485165046648,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -6.441828720009368e-05,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0025056883049342366,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0009114885742187301,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0034178031383265625,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0022486540064818594,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": -20,
+        "first": {
+          "gap_m": -0.0014966271348827373,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0030882094831323204,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0038846425143221133,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0011367739151857958,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.002692426420908847,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.00040333473059365327,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.00016592079892723682,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0012917491564508402,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.00013692137393928744,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0023792640910372184,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.00013692284794056264,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0012917496045561153,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0001659229036082427,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.00040333473059364633,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.002692426420908847,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.0011367739151858028,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.003884642563158139,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": -10,
+        "first": {
+          "gap_m": -0.003088209483132265,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.002279603492422913,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0030913200818855,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0003607128829694328,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0019472342579512358,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.00024131454522878515,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0016666263284729824,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0019603532891554892,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0026910368215376165,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0017406408358241338,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0026910379258035383,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0019603530142644,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.001666627109449266,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.00024131661775200763,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0019472342579512705,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.00036071288296945364,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0030913200818855208,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": 0,
+        "first": {
+          "gap_m": -0.0022796034924228853,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.003088208692691191,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.003884640773534391,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.0011367715449832894,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.002462904785364005,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.0011859566290059603,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.0038291076251203635,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.0025788347966479233,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.002496209863922093,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.002352318411636911,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18199999999999977
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.0024962113054149554,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.002578832969513778,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.003829107614159069,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.0011859579792399821,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.002462906097812974,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.0011367715449833171,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.003884641028091697,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": 10,
+        "first": {
+          "gap_m": -0.003088208692691184,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.14999999999999974
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0014966255837605483,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0022486509186086037,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0010240939768516033,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0004202486557473087,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0021324236974443606,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0018016781260138878,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18199999999999977
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.00022957204888415794,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0030845919186339374,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.003683398535769107,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0030845905828740736,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.00022957088250566415,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0018016761943279377,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18199999999999977
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0021324240464521207,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0004202477171349889,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16599999999999976
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0010240958698610539,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0022486509186086037,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": 20,
+        "first": {
+          "gap_m": -0.0014966255837605136,
+          "geom": "B_shell_head",
+          "role": "head",
+          "sample_distance_m": 0.15399999999999975
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.003251326394723246,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0028545395861612963,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.001340013739870645,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.00036902206925436276,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0010140228029035456,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0006091626403822367,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.19399999999999978
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0008114591022552811,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.1979999999999998
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0020601198889018887,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.1979999999999998
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0009253481237624719,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.1979999999999998
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0020601168106250053,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.1979999999999998
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0008114605406424821,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.1979999999999998
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0006091629621884642,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.19399999999999978
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0010140235349425722,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.00036901856021408913,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0013400140858408696,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16999999999999976
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0028545365796099065,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.16199999999999976
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": 30,
+        "first": {
+          "gap_m": -0.0032513273165458226,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.15799999999999975
+        }
+      },
+      {
+        "azimuth_deg": -80,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0027398124326332013,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      },
+      {
+        "azimuth_deg": -70,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.002407973297574223,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": -60,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -8.152879939921781e-05,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": -50,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0025307623967449344,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18999999999999978
+        }
+      },
+      {
+        "azimuth_deg": -40,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.002016457084200257,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.1979999999999998
+        }
+      },
+      {
+        "azimuth_deg": -30,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0015210752228416238,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.2059999999999998
+        }
+      },
+      {
+        "azimuth_deg": -20,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.00174485031759012,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.2099999999999998
+        }
+      },
+      {
+        "azimuth_deg": -10,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0012910851865170422,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.2099999999999998
+        }
+      },
+      {
+        "azimuth_deg": 0,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0007215963147778337,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.2099999999999998
+        }
+      },
+      {
+        "azimuth_deg": 10,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0012910847758161106,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.2099999999999998
+        }
+      },
+      {
+        "azimuth_deg": 20,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.001744848834770156,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.2099999999999998
+        }
+      },
+      {
+        "azimuth_deg": 30,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0015210741546541895,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.2059999999999998
+        }
+      },
+      {
+        "azimuth_deg": 40,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0020164581776564716,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.1979999999999998
+        }
+      },
+      {
+        "azimuth_deg": 50,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.002530762771750003,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18999999999999978
+        }
+      },
+      {
+        "azimuth_deg": 60,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -8.152660993858418e-05,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.18599999999999978
+        }
+      },
+      {
+        "azimuth_deg": 70,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0024079764813753207,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17799999999999977
+        }
+      },
+      {
+        "azimuth_deg": 80,
+        "elevation_deg": 40,
+        "first": {
+          "gap_m": -0.0027398123839157407,
+          "geom": "B_skull",
+          "role": "native_non_scoring",
+          "sample_distance_m": 0.17399999999999977
+        }
+      }
+    ],
+    "sphere_radius_m": 0.062
+  },
+  "host": "Jepsons-MacBook-Pro-2.local",
+  "integrator": "mjINT_IMPLICITFAST",
+  "key_body_names": [
+    "sternum",
+    "head_neck",
+    "toes_r",
+    "toes_l",
+    "proximal_row_r",
+    "proximal_row_l"
+  ],
+  "mujoco": "3.8.0",
+  "new_physics_steps": 0,
+  "numpy": "2.4.2",
+  "optimizer_updates": 0,
+  "physics_dt_s": 0.001,
+  "platform": "macOS-15.7.5-arm64-arm-64bit",
+  "python": "3.12.12",
+  "scene_hash": "d31ab28092832ba5bdb21cc89c62fd8b6f85286f380dd401fb30723c3d93ed0d",
+  "schema": "joxing-run-v1",
+  "scope": "exploratory_static_geometry_not_physical_hit_or_training_qualification",
+  "skull": {
+    "actor": "B",
+    "body": "B_head_neck",
+    "conaffinity": 3,
+    "contype": 4,
+    "id": 468,
+    "name": "B_skull",
+    "role": "native_non_scoring"
+  },
+  "solver_tolerance": 1e-10,
+  "source_files": {
+    "scripts/audit_self_play_readiness.py": "94701ae671fe496db851c05e830fadb3cf28424532a75d39440b9f777e96461e",
+    "src/joxing/rules.py": "4c75013718eb8cc0c83f00a6f6e671d405c08192f7b9c31ed4b4439d1fb57ffd",
+    "src/joxing/scene.py": "f8ac6b106c691c5e3ac35ffacccac89654a50c5dda6ccb1e10d38f9be665f867"
+  },
+  "source_hash": "ee197da92346dd7724e9156b293f8d0da349d924411fe4c39e6db374e15b4b12",
+  "spawn_glove_head_surface_gap_m": 1.6879331276038012,
+  "upstream": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "utc": "2026-10-27T04:06:29.007804+00:00",
+  "wall_s": 2.982173290976789,
+  "world_axis_key_features_corner_max_error_m": 0.4018903312994475,
+  "yaw_canonical_key_features_corner_max_error_m": 4.440892098500626e-16
+}
