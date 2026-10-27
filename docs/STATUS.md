@@ -1,3 +1,24 @@
+Pretrained bridge implementation started: shared_motor.py maps both corners to
+the exact3601native teacher feature layout without physics/state writes. Five
+zero-step synthetic tests pass3.76s. Saved-native feature/normalizer/actor oracle,
+reference-state/reset/controller and replay integration remain; no shared motor
+trajectory or new balance claim. Running source-host storage gate remains
+byte-frozen07ee40a and376tests; new five tests are not attributed to that gate.
+
+# Pretrained motor priority —2026-10-27 14:43UTC
+
+User asks why the athletes fall and to use pretrained locomotion. Confirmed the
+v11clip uses untrained diagnostic_command, not the v6released teacher. v6has40/40
+short3.52s completions; v8has0/40twenty-second completions/roughly5s tilt failures.
+Added [worker-ready shared motor bridge](PRETRAINED_SHARED_MOTOR_BRIDGE.md):
+exact3601feature/cache/reference/reset/normalizer mapping, simultaneous frozen
+scalar inference, full replay state, four-seed bounded transfer proof and honest
+first-trial video. No new physical or learning claim.
+
+Storage gate active at frozen07ee40a, xbabe3dedicatedv011-storage-qualification-20261027,
+supervisor410469/start921391088; syncpassed2.22s, full376tests progressing,
+qualification pending. Executing checkout remains unchanged; no duplicate run.
+
 # Lossless storage implementation ready for Linux gate —2026-10-27 14:39UTC
 
 Implemented save-only packed sensor tapes and bounded old/new evidence readers.

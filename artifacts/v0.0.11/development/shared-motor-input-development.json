@@ -1,0 +1,18 @@
+{
+  "schema": "joxing-shared-motor-development-v1",
+  "purpose": "First read-only pretrained teacher feature extraction; not inference or trained shared motor",
+  "source_files": {
+    "src/joxing/shared_motor.py": "6e2fc2baebe540dd26c83d4b72abdd11264ad793dbee3d35118363a60e5e8de9",
+    "tests/test_shared_motor.py": "247791e90cb90cb476166107e32cbd7b2bef3abc105354931d3719089b9b6a9f"
+  },
+  "command": ".venv/bin/python -m pytest -q tests/test_shared_motor.py",
+  "passed": 5,
+  "seconds": 3.76,
+  "new_physics": 0,
+  "limitations": [
+    "Synthetic cached dynamics verify corner mapping, native order, scaling, yaw and no mutation",
+    "No saved native 3601 feature/normalizer/actor oracle yet",
+    "No controller/reference reset/replay integration or shared locomotion trajectory",
+    "The running storage gate remains frozen07ee40a and does not include these five new tests"
+  ]
+}

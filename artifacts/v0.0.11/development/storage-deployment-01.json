@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"root\": \"/home/ubuntu/joxing/v011-storage-qualification-20261027\", \"source_sha\": \"07ee40a394b5d35079bab6208c5a5f8c3baed0c2\", \"protocol_sha256\": \"028cdeb54b8529ce741a588bdcf65083b2d907debc716c7bed3cacbe4faf7cdd\", \"pid\": 410469, \"start_ticks\": 921391088, \"command\": [\"python3\", \"scripts/supervise_evidence_storage.py\", \"--protocol-sha256\", \"028cdeb54b8529ce741a588bdcf65083b2d907debc716c7bed3cacbe4faf7cdd\", \"--source-sha\", \"07ee40a394b5d35079bab6208c5a5f8c3baed0c2\"], \"verified_source_upstream_files\": 460, \"utc\": \"2026-10-27T14:38:36Z\"}\n",
+  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+}

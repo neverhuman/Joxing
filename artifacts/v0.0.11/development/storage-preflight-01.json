@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"corpora\": [{\"id\": \"D0\", \"files\": 49, \"bytes\": 55040978, \"status\": \"passed\"}, {\"id\": \"D1\", \"files\": 63, \"bytes\": 97317615, \"status\": \"passed\"}], \"owned\": [], \"load\": [11.28662109375, 11.59375, 11.46484375], \"disk_free_bytes\": 29903454208}\n",
+  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+}

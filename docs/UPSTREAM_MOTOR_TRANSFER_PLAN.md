@@ -1,3 +1,9 @@
+**User priority2026-10-27:** connect the already qualified pretrained controller
+to the shared two-actor world. [Concrete next motor bridge](PRETRAINED_SHARED_MOTOR_BRIDGE.md)
+records exact input/reset/replay/recording work. The v11clip uses untrained
+diagnostic feedback, not the frozen walking policy. Keep the longer pretrained
+failures and failed v10adaptation visible; do not claim the bridge already works.
+
 # Motor-teacher transfer: next development experiment
 
 Status: roadmap partially executed. [v0.0.6](V0.0.6_RESULTS.md) completed loader/normalizer/native qualification:40/40 native completions and exact source-host replay; decoder schedule loss reproduced and repaired. Both default/restored modes complete20/20, so no completion advantage is established. No glove, stationary or reach transfer result is claimed. [v0.0.7](V0.0.7_RESULTS.md) has now validated observation-correct glove/timestep interfaces and exact replay, but all longer tracking conditions fail. [v0.0.8](V0.0.8_RESULTS.md) now establishes physical collapse around5s; [v9 HPC](V0.0.9_MISSION.md) proceeds alongside feasible-reset/teacher-adaptation prerequisites. This refines master [P3](IMPLEMENTATION.md#p3-fast-motor-learning-and-latent-codec) and the [state/history audit](STATE_HISTORY_SELF_PLAY_AUDIT.md). Historical proposed steps below remain useful; current implemented files/commands are in v6 results.

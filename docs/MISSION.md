@@ -1,3 +1,8 @@
+**Next motor priority:** [pretrained shared motor bridge](PRETRAINED_SHARED_MOTOR_BRIDGE.md).
+The current clip is an untrained controller fixture. Reuse the qualified upstream
+walking model through its exact3601input/reference/normalizer contract; retain
+the known longer-horizon failures. Do not interrupt or duplicate the current gate.
+
 **Storage implementation ready:**27new tests pass; source-host376test gate and
 zero-physics all-file qualification are next. See
 [V0.0.11_D1_STORAGE_QUALIFICATION.md](V0.0.11_D1_STORAGE_QUALIFICATION.md).
