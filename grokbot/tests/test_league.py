@@ -154,8 +154,13 @@ def test_rps_cycle_is_exploitable_unless_mixed():
 def test_latest_only_cycling_learner_looks_strong_but_is_exploitable():
     """Each snapshot beats its predecessor; the latest is still fully exploitable."""
     names = ["rock", "paper", "scissors", "rock2"]
-    beats = {("paper", "rock"), ("scissors", "paper"), ("rock2", "scissors"),
-             ("rock", "scissors"), ("paper", "rock2")}
+    beats = {
+        ("paper", "rock"),
+        ("scissors", "paper"),
+        ("rock2", "scissors"),
+        ("rock", "scissors"),
+        ("paper", "rock2"),
+    }
     ledger = Ledger(names)
     for a, b in itertools.combinations(names, 2):
         outcome = 1 if (a, b) in beats else -1 if (b, a) in beats else 0

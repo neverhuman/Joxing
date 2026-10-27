@@ -180,9 +180,7 @@ class Ledger:
         draws = np.array(draws)
         low, high = np.full((2, len(self.players)), np.nan)
         seen = np.isfinite(draws).any(0)
-        low[seen], high[seen] = np.nanquantile(
-            draws[:, seen], [tail, 1 - tail], axis=0
-        )
+        low[seen], high[seen] = np.nanquantile(draws[:, seen], [tail, 1 - tail], axis=0)
         return low, high, len(draws)
 
 
