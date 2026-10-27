@@ -1,0 +1,81 @@
+{
+  "schema": "joxing-artifact-manifest-v1",
+  "files": [
+    {
+      "path": "D0/D0.txt",
+      "bytes": 238,
+      "sha256": "c1eae0ed92db279826ee2169e8811884551fc005521af79ecb65f5f80cb77221"
+    },
+    {
+      "path": "D0/audit-validation.json",
+      "bytes": 921,
+      "sha256": "7d096a43a64a33a22cebcd232191cb4df6cc6e25003f71518070d553f5ee827d"
+    },
+    {
+      "path": "D0/audit.json",
+      "bytes": 1993,
+      "sha256": "7fe97e4d080820fcfe94c95f5e71f8b39d4bcdbd5a168710eb138efd2c411582"
+    },
+    {
+      "path": "D0/deployment/launch.json",
+      "bytes": 344,
+      "sha256": "6fdb69286f26557a3760a494b02399c331b3883b4ebb34ab52631ad6c849dea4"
+    },
+    {
+      "path": "D0/deployment/preflight.json",
+      "bytes": 394,
+      "sha256": "a58f8ed692efc81701b1444b52f7a35ccd255c0b13ab52f138897f3075cc037e"
+    },
+    {
+      "path": "D0/deployment/staging.json",
+      "bytes": 1233,
+      "sha256": "c1658629173f85cf4ca78dfaf02b88d9f181a8a1d047dfdc218a3952b28f041b"
+    },
+    {
+      "path": "D0/deployment/supervise.py",
+      "bytes": 2444,
+      "sha256": "556603a10ae3589630e10721cb621e8e39d939977416c6e462398e45e808f2e9"
+    },
+    {
+      "path": "D0/development-validation.json",
+      "bytes": 1003,
+      "sha256": "bf3696ea06b28b0d6857473c4aebac525c9a496a3331281bbc636d4ea5ce58b4"
+    },
+    {
+      "path": "D0/process-exit.json",
+      "bytes": 509,
+      "sha256": "c28b978de5a01669c05667ac6d2e1f053457cdc69e0ac560f22fcb7fa5aff690"
+    },
+    {
+      "path": "D0/protocol.json",
+      "bytes": 5342,
+      "sha256": "99fce79bbda9b413044cd273c86b82e464496abce478a03b6a65c691992a0d33"
+    },
+    {
+      "path": "D0/result.json",
+      "bytes": 1455675,
+      "sha256": "81cda7385eabffd68b84f651f68a5aeac8d2d9cfecafab8173f30674e39d3169"
+    },
+    {
+      "path": "D0/supervisor.json",
+      "bytes": 1581,
+      "sha256": "17fe95d036372284756f2acd687896e1b70218dcca591c4f6dfea6122075b397"
+    },
+    {
+      "path": "D0/sync.txt",
+      "bytes": 1191,
+      "sha256": "8987defef6da2eec91757e511ec25cd41f1eba0406af3e4a1db1fa7b3dd243d2"
+    },
+    {
+      "path": "D0/tests.txt",
+      "bytes": 98,
+      "sha256": "1de7af18a082aed8ed2db28a900eee55720e6fca28b21af9e1bac8ef498046d9"
+    },
+    {
+      "path": "R1/development-validation.json",
+      "bytes": 861,
+      "sha256": "99f16910164185c65004d3f6fa26e73b29f98faa613f5a0b0c259a251c9a0ab4"
+    }
+  ],
+  "scope": "All D0compact/raw results and R1preregistration, no tape duplication/weights/credentials. v10inprogress."
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "joxing-reference-seam-R1-0.0.10",
+  "variant": "unwrapped_seam_root_velocity_v1",
+  "basis": "Known D0seam witness; this is follow-up reference qualification, not an unbiased learning comparison. Original D0stop/gates remain unchanged.",
+  "motion": "third_party/msgym/msgym/motion_data/walking_gait.npz",
+  "source_files": {
+    "src/joxing/reference_seam.py": "7363c9b0d9b488bb5d5af1d0d4cb30ce9c3b786a6ecacf0d671377c4a3dd1ce3",
+    "third_party/msgym/msgym/envs/imitation_trajectory.py": "2dd70e56ff6d71c78049dceb7af8290ac694ed0e5d2271d20d0be49bed28b850",
+    "third_party/msgym/msgym/motion_data/walking_gait.npz": "5736b9affafb23c3ede68a3bededcd620b6a27174055e777191e0f7aa4302e90",
+    "experiments/v0.0.10/runtime/uv.lock": "d2f76fc1965c9c3227e9d57cfddeb09390e685bdd3320fb6001bcf2ca0ed1d75",
+    "artifacts/v0.0.10/D0/audit.json": "7fe97e4d080820fcfe94c95f5e71f8b39d4bcdbd5a168710eb138efd2c411582",
+    "artifacts/v0.0.10/D0/result.json": "81cda7385eabffd68b84f651f68a5aeac8d2d9cfecafab8173f30674e39d3169"
+  },
+  "cycles": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "interfaces": [
+    "scalar",
+    "batch"
+  ],
+  "denominator": {
+    "cases": 42,
+    "frames_each": 117,
+    "samples_total": 4914,
+    "new_physics_steps": 0
+  },
+  "criteria": {
+    "all_old_new_qpos_xpos_exact": true,
+    "all_nonseam_qvel_exact": true,
+    "only_last_frame_coordinates_may_change": [
+      0,
+      2
+    ],
+    "template_velocity_tolerance": 0.0001,
+    "native_reset_grid_qpos_xpos_qvel_exact": true,
+    "upstream_default_and_legacy_object_unchanged": true,
+    "full_linux_regressions_before_formal": 171
+  },
+  "caps": {
+    "wall_s": 60,
+    "physics_steps": 0,
+    "raw_bytes": 33554432,
+    "simulation_workers": 0,
+    "compute_processes": 1,
+    "threads": 1,
+    "minimum_memory_bytes": 8589934592,
+    "minimum_disk_bytes": 10737418240
+  },
+  "scope": "Correct local-cycle translated-root endpoint velocity only, using source query consecutive unwrapped positions. Preserve every position/body target/cadence/actor/normalizer/model/default. Scalar and batch interfaces qualified separately; no actor batching claim. Cyclic float32 position-accumulation rounding stays inherited, not silently repaired. No causal-collapse/learning/boxing claim.",
+  "next_gate": "Passing this reference packet does not permit training. D1must declare this named reference bundle, prove neutral residual/full physical source-v8 replay and masks/likelihood; D2must be separately machine-registered/source-frozen."
+}

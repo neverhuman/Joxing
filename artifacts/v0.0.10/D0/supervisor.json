@@ -1,0 +1,67 @@
+{
+  "pid": 2761809,
+  "source_commit": "8471fe6a5baea8b79af500497685c9b70398d8a1",
+  "started_utc": "2026-10-27T01:40:58.937958+00:00",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked"
+      ],
+      "pid": 2761811,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 1.1662601307034492
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "tests/test_motor_inputs.py"
+      ],
+      "pid": 2761937,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 0.9661083146929741
+    },
+    {
+      "stage": "D0",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_motor_inputs.py",
+        "--protocol",
+        "experiments/v0.0.10/input-audit-protocol.json",
+        "--h1",
+        "runs/v0.0.10/inputs/H1",
+        "--h3",
+        "runs/v0.0.10/inputs/H3",
+        "--out",
+        "runs/v0.0.10/input-audit-01"
+      ],
+      "pid": 2762004,
+      "status": "completed",
+      "returncode": 0,
+      "wall_s": 3.271023403853178
+    }
+  ],
+  "new_physics_steps": 0,
+  "simulation_workers": 0,
+  "threads": 1,
+  "finished_utc": "2026-10-27T01:41:04.343910+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "root": "/home/ubuntu/joxing/v010-inputs-20261027",
+  "initial_fault": "rsync failed11 because inputs parent directory was missing; created owned input directories and retried data transfer. No formal task had launched, no physics/actor executed.",
+  "selected_files": {
+    "H1": [
+      "result.json",
+      "76000-unprofiled/trajectory.npz",
+      "76000-unprofiled/trace.json",
+      "76001-unprofiled/trajectory.npz",
+      "76001-unprofiled/trace.json",
+      "76002-unprofiled/trajectory.npz",
+      "76002-unprofiled/trace.json"
+    ],
+    "H3": [
+      "result.json",
+      "0-baseline-78000/trajectory.npz",
+      "0-baseline-78000/trace.json",
+      "0-baseline-78000/initial.json",
+      "0-baseline-78000/final.json",
+      "0-baseline-78001/trajectory.npz",
+      "0-baseline-78001/trace.json",
+      "0-baseline-78001/initial.json",
+      "0-baseline-78001/final.json",
+      "0-baseline-78002/trajectory.npz",
+      "0-baseline-78002/trace.json",
+      "0-baseline-78002/initial.json",
+      "0-baseline-78002/final.json",
+      "0-baseline-78003/trajectory.npz",
+      "0-baseline-78003/trace.json",
+      "0-baseline-78003/initial.json",
+      "0-baseline-78003/final.json"
+    ]
+  }
+}

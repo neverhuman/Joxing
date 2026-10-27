@@ -1,0 +1,21 @@
+{
+  "commands": [
+    {
+      "command": "rtk proxy uv run pytest -q tests/test_motor_inputs.py tests/test_reference_seam.py",
+      "result": "4 passed in0.29s; synthetic-only"
+    },
+    {
+      "command": "rtk proxy uvx ruff check src scripts tests",
+      "result": "All checks passed"
+    },
+    {
+      "command": "rtk proxy uv run pytest --collect-only -q",
+      "result": "171 tests collected in1.91s"
+    }
+  ],
+  "protocol_sha256": "1c6f405215cba2e49f18afd083311e39f0a0ad45974352b59ecec0043b5071f9",
+  "script_sha256": "cd4bc6198163a58d2a114b4b3099f217340dacd7c305440ce9e3febd71d4c34f",
+  "reference_module_sha256": "7363c9b0d9b488bb5d5af1d0d4cb30ce9c3b786a6ecacf0d671377c4a3dd1ce3",
+  "formal_outcomes": "None before source freeze",
+  "next": "full171Linux regressions then42case source-frozen reference qualification; no actor/physics/optimizer"
+}

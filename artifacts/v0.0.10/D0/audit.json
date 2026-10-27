@@ -1,0 +1,67 @@
+{
+  "auditor_sha256": "673135efe82c01a0802a9180033a69291b6201904b58ff9ee66059f3b33028f8",
+  "case_counts": {
+    "completed": 7
+  },
+  "causal_contribution_to_falls": "unproven; seam frame excluded by native reset grid",
+  "findings": [
+    {
+      "controls": 300,
+      "episodes": 2,
+      "packet": "H1",
+      "raw_statistics_and_cached_references_verified": true,
+      "seed": 76000
+    },
+    {
+      "controls": 300,
+      "episodes": 2,
+      "packet": "H1",
+      "raw_statistics_and_cached_references_verified": true,
+      "seed": 76001
+    },
+    {
+      "controls": 300,
+      "episodes": 2,
+      "packet": "H1",
+      "raw_statistics_and_cached_references_verified": true,
+      "seed": 76002
+    },
+    {
+      "controls": 300,
+      "episodes": 2,
+      "packet": "H3",
+      "raw_statistics_and_cached_references_verified": true,
+      "seed": 78000
+    },
+    {
+      "controls": 300,
+      "episodes": 2,
+      "packet": "H3",
+      "raw_statistics_and_cached_references_verified": true,
+      "seed": 78001
+    },
+    {
+      "controls": 300,
+      "episodes": 2,
+      "packet": "H3",
+      "raw_statistics_and_cached_references_verified": true,
+      "seed": 78002
+    },
+    {
+      "controls": 300,
+      "episodes": 2,
+      "packet": "H3",
+      "raw_statistics_and_cached_references_verified": true,
+      "seed": 78003
+    }
+  ],
+  "new_audit_physics_steps": 0,
+  "passed": true,
+  "reference_error_coordinate": 2,
+  "reference_velocity_error": 119.4601058959961,
+  "residual_training_allowed": false,
+  "result_sha256": "81cda7385eabffd68b84f651f68a5aeac8d2d9cfecafab8173f30674e39d3169",
+  "scope": "Independent seam arithmetic from raw motion NPZ, reset-grid exposure, all7raw normalization blocks/cached goal coordinates/reset/failure records and receipts. Source-pinned scratch FK checks read from frozen output; no second FK/actor/physics execution.",
+  "seam_reachable_on_reset_grid": false,
+  "source_commit": "8471fe6a5baea8b79af500497685c9b70398d8a1"
+}

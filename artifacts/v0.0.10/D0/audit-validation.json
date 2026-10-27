@@ -1,0 +1,15 @@
+{
+  "commands": [
+    "rtk proxy uv run python scripts/verify_motor_inputs.py --folder runs/v0.0.10/input-audit-01 --h1 runs/v0.0.9/profile-01 --h3 runs/v0.0.9/collector-01 --receipts artifacts/v0.0.10/D0",
+    "rtk proxy uv run pytest -q tests/test_motor_inputs.py tests/test_reference_seam.py"
+  ],
+  "results": [
+    "Independent all7case audit passed; zero physics",
+    "4 passed in0.29s on synthetic fixtures"
+  ],
+  "development_faults": [
+    "First independent auditor reproduced velocity division with a weak Python scalar, unlike the pinned loader NumPy float64 scalar; corrected to explicit float64 division followed by float32 storage. Frozen D0output/protocol unchanged.",
+    "Two initial Ruff findings in the seam module/tests were auto-corrected before source freeze; no real reference qualification run yet."
+  ],
+  "auditor_sha256": "673135efe82c01a0802a9180033a69291b6201904b58ff9ee66059f3b33028f8"
+}
