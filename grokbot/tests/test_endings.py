@@ -89,36 +89,56 @@ def test_shaped_return_telescopes_to_the_ending(events, bell):
 
 
 REGISTRY = {
-    0: {"actor": None, "role": "floor", "body": "world"},
-    1: {"actor": "A", "role": "native_non_scoring", "body": "A_pelvis"},
-    2: {"actor": "A", "role": "native_non_scoring", "body": "A_calcn_r"},
-    3: {"actor": "B", "role": "torso", "body": "B_thorax"},
-    4: {"actor": "B", "role": "native_non_scoring", "body": "B_toes_l"},
-    5: {"actor": "A", "role": "glove", "body": "A_glove_r"},
-    6: {"actor": "B", "role": "head", "body": "B_head_neck"},
-    7: {"actor": "B", "role": "native_non_scoring", "body": "B_back"},
-    8: {"actor": "B", "role": "glove", "body": "B_glove_l"},
-    9: {"actor": "A", "role": "torso", "body": "A_thorax"},
+    gid: {"name": body, "body": body, **fields}
+    for gid, body, fields in [
+        (0, "world", {"actor": None, "role": "floor"}),
+        (1, "A_pelvis", {"actor": "A", "role": "native_non_scoring"}),
+        (2, "A_calcn_r", {"actor": "A", "role": "native_non_scoring"}),
+        (3, "B_thorax", {"actor": "B", "role": "torso"}),
+        (4, "B_toes_l", {"actor": "B", "role": "native_non_scoring"}),
+        (5, "A_glove_r", {"actor": "A", "role": "glove"}),
+        (6, "B_head_neck", {"actor": "B", "role": "head"}),
+        (7, "B_back", {"actor": "B", "role": "native_non_scoring"}),
+        (8, "B_glove_l", {"actor": "B", "role": "glove"}),
+        (9, "A_thorax", {"actor": "A", "role": "torso"}),
+    ]
 }
 FAST, SLOW = 2.0, 0.1
 
 
 def rows(ticks, *contacts_per_tick):
-    """Evidence rows: contacts_per_tick(tick) -> [(g1, g2, force[, approach])]."""
+    """Evidence rows shaped like ``BoxingEnv.evidence``.
+
+    contacts_per_tick(tick) -> [(g1, g2, force[, approach[, active1[, active2]]])].
+    Each glove in a contact also gets the referee touch the env would record,
+    with its own speed against its own trunk (default: ``approach``).
+    """
     out = []
     for t in range(ticks):
-        contacts = []
+        contacts, gloves = [], {}
         for make in contacts_per_tick:
-            for g1, g2, f, *approach in make(t):
+            for g1, g2, f, *speeds in make(t):
+                approach = speeds[0] if speeds else 0.0
+                active1 = speeds[1] if len(speeds) > 1 else approach
+                active = {g1: active1, g2: speeds[2] if len(speeds) > 2 else active1}
+                sample = f"{len(contacts)}:{g1}:{g2}"
                 contacts.append(
                     {
                         "geom1": g1,
                         "geom2": g2,
                         "normal_force_N": f,
-                        "approach_mps": approach[0] if approach else 0.0,
+                        "approach_mps": approach,
                     }
                 )
-        out.append({"tick": t, "contacts": contacts})
+                for g in (g1, g2):
+                    if REGISTRY[g]["role"] == "glove":
+                        touches = gloves.setdefault(
+                            REGISTRY[g]["name"], {"touches": []}
+                        )
+                        touches["touches"].append(
+                            {"sample_id": sample, "active_speed_mps": active[g]}
+                        )
+        out.append({"tick": t, "contacts": contacts, "gloves": gloves})
     return out
 
 
@@ -199,8 +219,24 @@ def verdict_after(*strike):
         (lambda t: [(6, 5, 300.0, FAST)] if 200 <= t < 205 else [], "knockdown"),
         # Gloves meeting at speed are boxing too.
         (lambda t: [(8, 5, 300.0, FAST)] if 200 <= t < 205 else [], "knockdown"),
+        # Gloves meeting: whichever glove actually punched makes it boxing...
+        (
+            lambda t: [(8, 5, 300.0, FAST, FAST, 0.0)] if 200 <= t < 205 else [],
+            "knockdown",
+        ),
+        (
+            lambda t: [(8, 5, 300.0, FAST, 0.0, FAST)] if 200 <= t < 205 else [],
+            "knockdown",
+        ),
+        # ...but two still gloves pressed together are not.
+        (
+            lambda t: [(8, 5, 300.0, FAST, 0.0, 0.0)] if 200 <= t < 205 else [],
+            "unresolved",
+        ),
         # B's own fast strike on A's torso while falling buys no block.
         (lambda t: [(8, 9, 300.0, FAST)] if 200 <= t < 205 else [], "knockdown"),
+        # The defender walking into a still glove: fast approach, no punch.
+        (lambda t: [(5, 6, 300.0, FAST, 0.0)] if 200 <= t < 205 else [], "unresolved"),
         # A slow glove push is not a strike.
         (lambda t: [(5, 6, 300.0, SLOW)] if 200 <= t < 205 else [], "unresolved"),
         # A strike held past the 50 ms impact window becomes holding.
@@ -213,6 +249,18 @@ def verdict_after(*strike):
 )
 def test_strike_classification(contact, verdict):
     assert verdict_after(contact) == verdict
+
+
+def test_glove_contact_without_a_referee_touch_blocks():
+    evidence = rows(
+        B_FALLS_AT + SUPPORT_PERSIST_TICKS,
+        b_falls,
+        lambda t: [(5, 6, 300.0, FAST)] if 200 <= t < 205 else [],
+    )
+    assert support_losses(evidence, REGISTRY)[0].attribution == "knockdown"
+    for row in evidence:
+        row["gloves"] = {}
+    assert support_losses(evidence, REGISTRY)[0].attribution == "unresolved"
 
 
 def test_a_strike_rearms_only_after_the_gap():
