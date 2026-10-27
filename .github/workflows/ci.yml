@@ -35,6 +35,8 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          # Evidence audits `git show` frozen historical sources; needs full history.
+          fetch-depth: 0
           # Pinned MS-Human-700 and msgym models (~66 MB checked out).
           submodules: true
       - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
