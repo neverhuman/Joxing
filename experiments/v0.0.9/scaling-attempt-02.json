@@ -1,0 +1,62 @@
+{
+  "schema": "joxing-scaling-host-attempt-02-0.0.9",
+  "purpose": "Preserve memory-stopped xbabe1 H2 attempt01; qualify roomier xbabe3 before executing unchanged scaling protocol. No relaxed memory/math/physics gate.",
+  "target_host": "xbabe3",
+  "dedicated_checkout": "/home/ubuntu/joxing/v009-scaling-attempt02-20261027",
+  "scaling_protocol_sha256": "e741ede38d48b8070924aa71850a36456b5adef868466cfc8a8e0b43c6e80953",
+  "scaling_script_sha256": "82f9f6826bc84e4173f3c22ba6ec0fffceddbe0499370594d9091f92f6041a13",
+  "reference_files": {
+    "experiments/v0.0.8/protocol.json": "522f5e6b95e0d8a5f42a32dd2f7f3977d0f5a6d3c76c2eaf9055b4d2a717d56e",
+    "artifacts/v0.0.8/physical/native_2ms/replay.json": "e306cc2a6a9a05736d87611ae888208d9a7ad761545eb2f1da400c4e4aebd375",
+    "artifacts/v0.0.8/physical/native_2ms/actions-74000.npz": "345eaba8d9b10b9cf445ff837920b7a27a7c3ce3368b12750a28ed6d4e37924b",
+    "artifacts/v0.0.8/physical/native_2ms/substeps-74000.npz": "1a20864d6b4887b6df3c158c429461afa9f992cc7aa7de4b6f1de1d47600718a",
+    "artifacts/v0.0.8/physical/native_2ms/specification.json": "5d95b7e346caef48a35a32f3f5c41908be62fc36333300342798661447667e3a"
+  },
+  "qualification_caps": {
+    "wall_s": 60,
+    "physics_steps": 12000,
+    "raw_bytes": 33554432,
+    "minimum_memory_bytes": 8589934592,
+    "minimum_disk_bytes": 10737418240,
+    "simulation_workers": 1,
+    "threads": 1
+  },
+  "qualification": [
+    "native_2ms source v8 compiled contract matches",
+    "boundary/mid-control times recorded_actions/closed_loop =4planned rows",
+    "all predicted actions match frozen source tape exactly",
+    "full final integration/cache/application/RNG/monitor snapshot exact",
+    "every remaining signed contact/load/position/tilt/drop interval exact against source v8 raw",
+    "actor and normalizer unchanged"
+  ],
+  "scaling_caps_unchanged": {
+    "wall_s": 360,
+    "physics_steps": 120000,
+    "raw_bytes": 134217728,
+    "simulation_workers": 16,
+    "threads": 1,
+    "reserve_bytes_per_worker": 2147483648,
+    "minimum_available_memory_bytes": 8589934592
+  },
+  "source_prerequisites": {
+    "cpu_model": "AMD Ryzen Threadripper PRO 3995WX 64-Cores",
+    "uv_sha256": "1cb9cd0a1749debf6049d7d2bb933882cc52d81016326ee6d99a786d6c988b03",
+    "uv_version": "0.11.28",
+    "runtime_lock_sha256": "27d7dadf339aa4e0c7439fc15d57f89782158b382747b3c29c9282fb601aab6d",
+    "third_party_archive_sha256": "995846c8db706284e5c80af2c01abe50ce6730d7fcb19218655dfc325fcf8dad",
+    "model_sha256": "0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829",
+    "normalizer_sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086"
+  },
+  "mission_accounting": {
+    "previous_physics_steps": 55200,
+    "previous_formal_wall_s": 156.1520088016987,
+    "maximum_additional_qualification_physics_steps": 12000,
+    "planned_additional_H2_physics_steps": 93600,
+    "conservative_additional_physics_cap": 132000,
+    "maximum_additional_formal_wall_s": 420,
+    "full_H1_H2_H3_physics_cap": 500000,
+    "full_H1_H2_H3_wall_s": 900,
+    "audit_reserve_physics": 150000
+  },
+  "stop": "First failed full-regression/qualification/source/capacity/resource/cap gate stops later stages. No overlap with xbabe1 or another owned task. Same H2 protocol and all78case rows. Preserve failed attempt01; never pool different-host rates or reinterpret skipped cases as passed. No drivers/services or third_party edits. Tag only completed v9."
+}

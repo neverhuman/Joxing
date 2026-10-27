@@ -1,0 +1,60 @@
+{
+  "allocation": {
+    "serial_anchor_cases": 16,
+    "total_planned_physics_steps": 93600,
+    "v9_H1_H2_H3_physics_ceiling": 500000,
+    "v9_audit_reserve_physics": 150000,
+    "v9_physics_including_H1": 111600,
+    "wave_cases": 62
+  },
+  "caps": {
+    "minimum_disk_bytes": 10737418240,
+    "minimum_memory_bytes": 8589934592,
+    "physics_steps": 120000,
+    "raw_bytes": 134217728,
+    "simulation_workers": 16,
+    "threads": 1,
+    "wall_s": 360
+  },
+  "control_steps": 120,
+  "criteria": [
+    "all16serial anchors and62wave attempts retained",
+    "common start gate after all workers load; keep startup-inclusive and steady parent timings distinct",
+    "each case exact against its serial anchor: initial/final full snapshot, all per-control pre-snapshot/action/reward/termination/telemetry hashes and resets",
+    "all actor/normalizer hashes unchanged; one computational thread each",
+    "reserve2GiB per worker plus8GiB host floor; minimum16GiB available and20GiBdisk to start",
+    "no claim of equal-worker optimization or boxing win from process scaling"
+  ],
+  "progress_controls": 10,
+  "repeats": 2,
+  "schema": "joxing-physical-cpu-scaling-0.0.9",
+  "scope": "Native_2ms all700 frozen scalar actor and unchanged v8 physical evidence/snapshot loop. Serial trajectory-hash anchors qualify CPU process scaling1/2/4/8/16; not a two-player game, new inference backend or training throughput. Each step includes audit hashing/progress overhead equally.",
+  "seeds": [
+    77000,
+    77001,
+    77002,
+    77003,
+    77004,
+    77005,
+    77006,
+    77007,
+    77008,
+    77009,
+    77010,
+    77011,
+    77012,
+    77013,
+    77014,
+    77015
+  ],
+  "stop": "First parity/source/runtime/resource failure or cap; preserve partial worker receipts, unknown hard-crash physics as lower bound with full allocated upper bound. No duplicate runner. Stop after two consecutive >10percent throughput deteriorations on ascending first repeat. Do not relax H0 or the >=1.2x equal-worker H3 gate.",
+  "v8_protocol_file_sha256": "522f5e6b95e0d8a5f42a32dd2f7f3977d0f5a6d3c76c2eaf9055b4d2a717d56e",
+  "worker_memory_reservation_bytes": 2147483648,
+  "workers": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-27T00:17:56.632095+00:00",
+  "source_commit": "a8f47d84d21cd8dd84cd7147989d7a2bc02d06c0",
+  "recorded_pids": [
+    1799276,
+    1799279,
+    1799404,
+    1825476,
+    1825479,
+    1825488,
+    1825489,
+    1845687,
+    1846646,
+    1846649,
+    1851274,
+    1851277,
+    1851278,
+    1851279,
+    1852831,
+    1852834,
+    1852835,
+    1852836,
+    1852837,
+    1852838,
+    1852839,
+    1852840
+  ],
+  "recorded_pids_present": [],
+  "owned_jobs": [],
+  "source_diff": "",
+  "supervisor_status": "failed",
+  "stage_returns": [
+    {
+      "stage": "sync",
+      "returncode": 0,
+      "status": "completed",
+      "pid": 1799279
+    },
+    {
+      "stage": "full-tests",
+      "returncode": 0,
+      "status": "completed",
+      "pid": 1799404
+    },
+    {
+      "stage": "H2",
+      "returncode": 1,
+      "status": "failed",
+      "pid": 1825476
+    }
+  ]
+}

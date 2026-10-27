@@ -1,0 +1,220 @@
+{
+  "all_scaling_cases_completed": false,
+  "anchor_counts": {
+    "completed": 16
+  },
+  "auditor_sha256": "16b6dd16e46f56f8577eb52bd1809fd1ceb2ac8a64bb6dc81bfb052f19a11c91",
+  "boxing_games": 0,
+  "case_counts": {
+    "completed": 31,
+    "not_run": 47
+  },
+  "limitations": [
+    "Short120-control native walking workload with audit hashes; no optimizer or referee.",
+    "Capacity before a failed reservation is not retained by the old runner; its required-byte fault is retained.",
+    "A single completed repeat is descriptive only; no two-repeat median inference or training-speed claim."
+  ],
+  "linux_tests_passed": 146,
+  "maximum_allocated_physics_steps": 93600,
+  "new_audit_physics_steps": 0,
+  "parallel_completed_cases_matching_serial": 15,
+  "passed": true,
+  "physics_accounting_exact": true,
+  "physics_steps": 37200,
+  "protocol_sha256": "e741ede38d48b8070924aa71850a36456b5adef868466cfc8a8e0b43c6e80953",
+  "result_sha256": "59ba4b8c8707796cffc5d31c436df61a340bbc3d357e37ac4b1f2cd567b69778",
+  "runner_error": "Cannot reserve 42949672960 bytes for 16 workers",
+  "runner_status": "halted",
+  "samples": [
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 9.846275213710548,
+      "steady_control_steps_per_s": 43.82077239310775,
+      "wave_id": "0:1",
+      "workers": 1
+    },
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 17.981725740946345,
+      "steady_control_steps_per_s": 82.21338645724413,
+      "wave_id": "0:2",
+      "workers": 2
+    },
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 34.405386039632404,
+      "steady_control_steps_per_s": 155.65571890022485,
+      "wave_id": "0:4",
+      "workers": 4
+    },
+    {
+      "repeat": 0,
+      "startup_inclusive_control_steps_per_s": 56.182145673481614,
+      "steady_control_steps_per_s": 226.44012553514372,
+      "wave_id": "0:8",
+      "workers": 8
+    }
+  ],
+  "scope": "Independent persisted hash/accounting audit; no new physics. Hash equality on unchanged v8 core, not independent raw-tape integration.",
+  "source_commit": "a8f47d84d21cd8dd84cd7147989d7a2bc02d06c0",
+  "summary": [
+    {
+      "completed_repeats": 1,
+      "median_startup_inclusive_control_steps_per_s": 9.846275213710548,
+      "median_steady_control_steps_per_s": 43.82077239310775,
+      "planned_repeats": 2,
+      "workers": 1
+    },
+    {
+      "completed_repeats": 1,
+      "median_startup_inclusive_control_steps_per_s": 17.981725740946345,
+      "median_steady_control_steps_per_s": 82.21338645724413,
+      "planned_repeats": 2,
+      "workers": 2
+    },
+    {
+      "completed_repeats": 1,
+      "median_startup_inclusive_control_steps_per_s": 34.405386039632404,
+      "median_steady_control_steps_per_s": 155.65571890022485,
+      "planned_repeats": 2,
+      "workers": 4
+    },
+    {
+      "completed_repeats": 1,
+      "median_startup_inclusive_control_steps_per_s": 56.182145673481614,
+      "median_steady_control_steps_per_s": 226.44012553514372,
+      "planned_repeats": 2,
+      "workers": 8
+    },
+    {
+      "completed_repeats": 0,
+      "median_startup_inclusive_control_steps_per_s": null,
+      "median_steady_control_steps_per_s": null,
+      "planned_repeats": 2,
+      "workers": 16
+    }
+  ],
+  "wave_case_counts": {
+    "completed": 15,
+    "not_run": 47
+  },
+  "wave_counts": {
+    "completed": 4,
+    "invalid": 1,
+    "not_run": 5
+  },
+  "worker_receipts": [
+    {
+      "file": "0-1-worker-0.json",
+      "peak_rss_KiB": 1511416,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1845687
+    },
+    {
+      "file": "0-2-worker-0.json",
+      "peak_rss_KiB": 1498040,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1846646
+    },
+    {
+      "file": "0-2-worker-1.json",
+      "peak_rss_KiB": 1490812,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1846649
+    },
+    {
+      "file": "0-4-worker-0.json",
+      "peak_rss_KiB": 1494328,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1851274
+    },
+    {
+      "file": "0-4-worker-1.json",
+      "peak_rss_KiB": 1494152,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1851277
+    },
+    {
+      "file": "0-4-worker-2.json",
+      "peak_rss_KiB": 1508568,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1851278
+    },
+    {
+      "file": "0-4-worker-3.json",
+      "peak_rss_KiB": 1498688,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1851279
+    },
+    {
+      "file": "0-8-worker-0.json",
+      "peak_rss_KiB": 1495764,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852834
+    },
+    {
+      "file": "0-8-worker-1.json",
+      "peak_rss_KiB": 1493356,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852835
+    },
+    {
+      "file": "0-8-worker-2.json",
+      "peak_rss_KiB": 1495072,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852836
+    },
+    {
+      "file": "0-8-worker-3.json",
+      "peak_rss_KiB": 1496620,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852838
+    },
+    {
+      "file": "0-8-worker-4.json",
+      "peak_rss_KiB": 1500780,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852837
+    },
+    {
+      "file": "0-8-worker-5.json",
+      "peak_rss_KiB": 1503596,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852839
+    },
+    {
+      "file": "0-8-worker-6.json",
+      "peak_rss_KiB": 1493872,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852840
+    },
+    {
+      "file": "0-8-worker-7.json",
+      "peak_rss_KiB": 1503448,
+      "phase": "completed",
+      "physics_steps": 1200,
+      "pid": 1852831
+    },
+    {
+      "file": "anchors-worker-0.json",
+      "peak_rss_KiB": 1508004,
+      "phase": "completed",
+      "physics_steps": 19200,
+      "pid": 1825489
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-27T00:24:20.395763+00:00",
+  "host": "xbabe3",
+  "load": [
+    8.75830078125,
+    9.7275390625,
+    10.13720703125
+  ],
+  "available_memory_bytes": 102024245248,
+  "disk_free_bytes": 49047351296,
+  "uv_sha256": "1cb9cd0a1749debf6049d7d2bb933882cc52d81016326ee6d99a786d6c988b03",
+  "uv_version": "uv 0.11.28 (x86_64-unknown-linux-gnu)",
+  "input_files": {
+    "pinned-third-party-20261027.tar.gz": {
+      "bytes": 51248518,
+      "sha256": "995846c8db706284e5c80af2c01abe50ce6730d7fcb19218655dfc325fcf8dad"
+    },
+    "model.zip": {
+      "bytes": 290542461,
+      "sha256": "0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829"
+    },
+    "normalizer.pkl": {
+      "bytes": 1025170,
+      "sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086"
+    },
+    "config.json": {
+      "bytes": 5010,
+      "sha256": "7d31f757a782ddebf6fe4f2496403492453727a26dfee181c825afa37488b6dd"
+    }
+  },
+  "no_physics_or_training": true
+}

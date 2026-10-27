@@ -1,0 +1,187 @@
+{
+  "utc": "2026-10-27T00:14:12.778791+00:00",
+  "supervisor": {
+    "pid": 1799276,
+    "source_commit": "a8f47d84d21cd8dd84cd7147989d7a2bc02d06c0",
+    "status": "running",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "pid": 1799279,
+        "returncode": 0,
+        "wall_s": 1.0671407245099545
+      },
+      {
+        "stage": "full-tests",
+        "command": [
+          "uv",
+          "run",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "completed",
+        "pid": 1799404,
+        "returncode": 0,
+        "wall_s": 240.8194371331483
+      },
+      {
+        "stage": "H2",
+        "command": [
+          "uv",
+          "run",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked",
+          "python",
+          "scripts/benchmark_physical_scaling.py",
+          "--protocol",
+          "experiments/v0.0.9/scaling-protocol.json",
+          "--inputs",
+          "/home/ubuntu/joxing/v008-20261026/runs/v0.0.8/physical-01/inputs",
+          "--out",
+          "runs/v0.0.9/scaling-01"
+        ],
+        "status": "running",
+        "pid": 1825476
+      }
+    ],
+    "started_utc": "2026-10-27T00:09:55.469501+00:00",
+    "physics_budget": 120000,
+    "threads": 1
+  },
+  "test_log_tail": "........................................................................ [ 49%]\n........................................................................ [ 98%]\n..                                                                       [100%]\n146 passed in 237.35s (0:03:57)\n",
+  "load": [
+    5.5849609375,
+    4.6884765625,
+    4.3056640625
+  ],
+  "disk_free_bytes": 339550892032,
+  "available_memory_bytes": 37011140608,
+  "H2": {
+    "status": "running",
+    "physics_steps": 0,
+    "maximum_allocated_physics_steps": null,
+    "physics_accounting_exact": null,
+    "error": null,
+    "wall_s": null,
+    "waves": [
+      {
+        "wave_id": "0:1",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "0:2",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "0:4",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "0:8",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "0:16",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "1:16",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "1:8",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "1:4",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "1:2",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      },
+      {
+        "wave_id": "1:1",
+        "status": "not_run",
+        "steady_control_steps_per_s": null,
+        "reason": null
+      }
+    ]
+  },
+  "private_progress": [
+    {
+      "file": "anchors-worker-0.json",
+      "phase": "running",
+      "pid": 1825489,
+      "physics_steps": 3100,
+      "completed": 2
+    }
+  ],
+  "owned_processes": [
+    {
+      "pid": 1799276,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "python3 /home/ubuntu/joxing/v009-scaling-20261027/runs/v0.0.9/supervise.py ",
+      "cpu_ticks": 24,
+      "rss_bytes": 13770752
+    },
+    {
+      "pid": 1825476,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "uv run --project experiments/v0.0.9/runtime --locked python scripts/benchmark_physical_scaling.py --protocol experiments/v0.0.9/scaling-protocol.json --inputs /home/ubuntu/joxing/v008-20261026/runs/v0.0.8/physical-01/inputs --out runs/v0.0.9/scaling-01 ",
+      "cpu_ticks": 1,
+      "rss_bytes": 42049536
+    },
+    {
+      "pid": 1825479,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "/home/ubuntu/joxing/v009-scaling-20261027/experiments/v0.0.9/runtime/.venv/bin/python3 scripts/benchmark_physical_scaling.py --protocol experiments/v0.0.9/scaling-protocol.json --inputs /home/ubuntu/joxing/v008-20261026/runs/v0.0.8/physical-01/inputs --out runs/v0.0.9/scaling-01 ",
+      "cpu_ticks": 22,
+      "rss_bytes": 65712128
+    },
+    {
+      "pid": 1825488,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "/home/ubuntu/joxing/v009-scaling-20261027/experiments/v0.0.9/runtime/.venv/bin/python3 -c from multiprocessing.resource_tracker import main;main(8) ",
+      "cpu_ticks": 1,
+      "rss_bytes": 13250560
+    },
+    {
+      "pid": 1825489,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-20261027",
+      "command": "/home/ubuntu/joxing/v009-scaling-20261027/experiments/v0.0.9/runtime/.venv/bin/python3 -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=13) --multiprocessing-fork ",
+      "cpu_ticks": 1843,
+      "rss_bytes": 1320574976
+    }
+  ]
+}

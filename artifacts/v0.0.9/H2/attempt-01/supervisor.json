@@ -1,0 +1,65 @@
+{
+  "pid": 1799276,
+  "source_commit": "a8f47d84d21cd8dd84cd7147989d7a2bc02d06c0",
+  "status": "failed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 1799279,
+      "returncode": 0,
+      "wall_s": 1.0671407245099545
+    },
+    {
+      "stage": "full-tests",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "pid": 1799404,
+      "returncode": 0,
+      "wall_s": 240.8194371331483
+    },
+    {
+      "stage": "H2",
+      "command": [
+        "uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "python",
+        "scripts/benchmark_physical_scaling.py",
+        "--protocol",
+        "experiments/v0.0.9/scaling-protocol.json",
+        "--inputs",
+        "/home/ubuntu/joxing/v008-20261026/runs/v0.0.8/physical-01/inputs",
+        "--out",
+        "runs/v0.0.9/scaling-01"
+      ],
+      "status": "failed",
+      "pid": 1825476,
+      "returncode": 1,
+      "wall_s": 110.6122638694942
+    }
+  ],
+  "started_utc": "2026-10-27T00:09:55.469501+00:00",
+  "physics_budget": 120000,
+  "threads": 1,
+  "error": "H2 returned 1",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/joxing/v009-scaling-20261027/runs/v0.0.9/supervise.py\", line 19, in <module>\n    if rc:raise RuntimeError(name+' returned '+str(rc))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: H2 returned 1\n",
+  "finished_utc": "2026-10-27T00:15:47.976302+00:00"
+}
