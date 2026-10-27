@@ -17,8 +17,17 @@ from grokbot.arena import SCRIPTED_PANEL, paired
 from joxing.env import BoxingEnv
 from joxing.scene import build_scene
 
-KEYS = ("first", "second", "first_side", "outcome", "points", "events",
-        "fall_tick", "ticks", "invalid_reason")
+KEYS = (
+    "first",
+    "second",
+    "first_side",
+    "outcome",
+    "points",
+    "events",
+    "fall_tick",
+    "ticks",
+    "invalid_reason",
+)
 
 
 def main(horizon_ticks):
