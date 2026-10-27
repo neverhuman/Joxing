@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "status": "completed",
+  "case_counts": {
+    "evaluations": {
+      "completed": 32
+    },
+    "training": {
+      "completed": 2
+    },
+    "replays": {
+      "completed": 2
+    }
+  },
+  "main_physics_lower": 251144,
+  "main_physics_upper": 251144,
+  "audit_replay_physics": 4494,
+  "new_independent_audit_physics": 0,
+  "raw_bytes_manifested": 276715588,
+  "conclusion": {
+    "evaluation_directional_criteria_passed": false,
+    "required_closed_loop_replays_still_separate": true,
+    "seeds": [
+      {
+        "training_seed": 81011,
+        "all_evaluations_valid": true,
+        "mean_paired_delta_s": -0.0662499999999927,
+        "final_five_second_survivors": 1,
+        "directional_criteria_passed": false,
+        "pairs": [
+          {
+            "evaluation_seed": 83000,
+            "initial_s": 4.705999999999704,
+            "final_s": 4.637999999999711,
+            "delta_s": -0.06799999999999251
+          },
+          {
+            "evaluation_seed": 83001,
+            "initial_s": 4.951999999999677,
+            "final_s": 4.9259999999996795,
+            "delta_s": -0.025999999999997137
+          },
+          {
+            "evaluation_seed": 83002,
+            "initial_s": 4.433999999999734,
+            "final_s": 4.437999999999733,
+            "delta_s": 0.0039999999999995595
+          },
+          {
+            "evaluation_seed": 83003,
+            "initial_s": 4.891999999999683,
+            "final_s": 4.6539999999997095,
+            "delta_s": -0.2379999999999738
+          },
+          {
+            "evaluation_seed": 83004,
+            "initial_s": 5.211999999999648,
+            "final_s": 5.203999999999649,
+            "delta_s": -0.007999999999999119
+          },
+          {
+            "evaluation_seed": 83005,
+            "initial_s": 4.505999999999726,
+            "final_s": 4.459999999999731,
+            "delta_s": -0.045999999999994934
+          },
+          {
+            "evaluation_seed": 83006,
+            "initial_s": 4.927999999999679,
+            "final_s": 4.931999999999679,
+            "delta_s": 0.0039999999999995595
+          },
+          {
+            "evaluation_seed": 83007,
+            "initial_s": 4.849999999999688,
+            "final_s": 4.697999999999705,
+            "delta_s": -0.15199999999998326
+          }
+        ]
+      },
+      {
+        "training_seed": 81029,
+        "all_evaluations_valid": true,
+        "mean_paired_delta_s": 0.01624999999999821,
+        "final_five_second_survivors": 1,
+        "directional_criteria_passed": false,
+        "pairs": [
+          {
+            "evaluation_seed": 83000,
+            "initial_s": 4.705999999999704,
+            "final_s": 4.7539999999996985,
+            "delta_s": 0.047999999999994714
+          },
+          {
+            "evaluation_seed": 83001,
+            "initial_s": 4.951999999999677,
+            "final_s": 4.92199999999968,
+            "delta_s": -0.029999999999996696
+          },
+          {
+            "evaluation_seed": 83002,
+            "initial_s": 4.433999999999734,
+            "final_s": 4.4179999999997355,
+            "delta_s": -0.015999999999998238
+          },
+          {
+            "evaluation_seed": 83003,
+            "initial_s": 4.891999999999683,
+            "final_s": 4.941999999999678,
+            "delta_s": 0.04999999999999449
+          },
+          {
+            "evaluation_seed": 83004,
+            "initial_s": 5.211999999999648,
+            "final_s": 5.2979999999996386,
+            "delta_s": 0.08599999999999053
+          },
+          {
+            "evaluation_seed": 83005,
+            "initial_s": 4.505999999999726,
+            "final_s": 4.507999999999726,
+            "delta_s": 0.0019999999999997797
+          },
+          {
+            "evaluation_seed": 83006,
+            "initial_s": 4.927999999999679,
+            "final_s": 4.885999999999684,
+            "delta_s": -0.041999999999995374
+          },
+          {
+            "evaluation_seed": 83007,
+            "initial_s": 4.849999999999688,
+            "final_s": 4.881999999999684,
+            "delta_s": 0.031999999999996476
+          }
+        ]
+      }
+    ]
+  },
+  "pilot_directional_win": false,
+  "scope": "All saved held-out commands/signed contact/load/posture intervals independently read; first failure persistence/reward/masks/survival reconstructed. Training reset/chunk/reward/update/checkpoint records checked. Final cached observation normalized from frozen stats; all other per-control normalized observation hashes are executed-source assertions checked by the two required exact replay tails, not independently recomputed without unsaved raw caches. Partial/fault outcomes retained and never promoted. No new teacher inference or physics."
+}

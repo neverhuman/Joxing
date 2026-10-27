@@ -4,9 +4,21 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Latest release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).
+**v0.0.10 results are concluded; release publication is being finalized.**
+Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
+valid and both replays exact. Survival changed−0.066s/+0.016s, with1/8five-second
+survivors each: **both improvement gates failed**.
+[Results](docs/V0.0.10_RESULTS.md) · [All attempted outcomes and audit](artifacts/v0.0.10/D2/).
 
-**Next: [v0.0.10 physical motor adaptation](docs/V0.0.10_MISSION.md).** The input audit found a reference seam velocity defect, excluded by the current reset grid; its link to falls is unproven. The correction passed42reference checks and171Linux tests. The neutral residual interface passed all four physical replay paths and178Linux tests; an independent audit verified every saved action/contact/state tail. The [two-seed learning pilot](docs/V0.0.10_D2_PILOT.md) now has tested worker/evaluation foundations; its frozen source passed all196Linux tests and the bounded pilot is now running on xbabe3. [Diagnostic](docs/V0.0.10_D0_RESULTS.md). The [current mission](docs/MISSION.md) and20-minute supervisor track actual work, faults and evidence. The [self-play/HPC route](docs/SELF_PLAY_HPC_PLAN.md) connects motor qualification to simultaneous opponent-aware games, causal history/jitter and frozen historical leagues, then1,000→10,000→100,000valid games.
+**Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
+Native body measurements, passive video/state capture and causal history now have
+tested foundations. Next are safe actor observations, action timing queues and
+the shared physics/referee/replay loop. No valid native boxing bout exists yet;
+we are moving toward the first diagnostic recording rather than enlarging gait training.
+
+**Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).
+
+**Completed: [v0.0.10 physical motor adaptation](docs/V0.0.10_RESULTS.md).** The input audit found a reference seam velocity defect, excluded by the current reset grid; its link to falls is unproven. The correction passed42reference checks and171Linux tests. The neutral residual interface passed all four physical replay paths and178Linux tests; an independent audit verified every saved action/contact/state tail. The [two-seed learning pilot](docs/V0.0.10_D2_PILOT.md) now has tested worker/evaluation foundations; all32fixed evaluations and both exact replays completed after196Linux tests; the two-seed pilot failed its motor improvement gates. [Diagnostic](docs/V0.0.10_D0_RESULTS.md). The [current mission](docs/MISSION.md) and20-minute supervisor track actual work, faults and evidence. The [self-play/HPC route](docs/SELF_PLAY_HPC_PLAN.md) connects motor qualification to simultaneous opponent-aware games, causal history/jitter and frozen historical leagues, then1,000→10,000→100,000valid games.
 
 **Visible-bout priority:** [delivery milestones and recording contract](docs/BOUT_RECORDING_MILESTONE.md). Passive two-body recording, zero-step playback and real shared-state limb-velocity measurements are implemented; first connected diagnostic footage is a v11 deliverable. No native boxing bout is available yet.
 

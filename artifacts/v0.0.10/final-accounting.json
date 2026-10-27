@@ -1,0 +1,158 @@
+{
+  "version": "0.0.10",
+  "status": "completed negative motor pilot",
+  "formal_cases": {
+    "D0": 7,
+    "R1": 42,
+    "D1": 4,
+    "D2_training": 2,
+    "D2_evaluations": 32,
+    "D2_replays": 2
+  },
+  "main_physics_steps": 251144,
+  "main_formal_wall_s": 495.0451960414648,
+  "audit_physics_steps": 4494,
+  "audit_wall_s": 18.962701339274645,
+  "all_formal_physics_steps": 255638,
+  "main_caps": {
+    "minimum_disk_bytes": 10737418240,
+    "minimum_memory_bytes": 8589934592,
+    "physics_steps": 550000,
+    "raw_bytes": 1073741824,
+    "simulation_workers": 4,
+    "threads": 1,
+    "wall_s": 1800
+  },
+  "audit_caps": {
+    "physics_steps": 50000,
+    "wall_s": 300
+  },
+  "formal_D2_transitions": 16384,
+  "actual_optimizer_updates": 896,
+  "training_completed_motor_episodes": 64,
+  "training_partial_motor_episodes": 8,
+  "valid_native_boxing_games": 0,
+  "directional_criteria_passed": false,
+  "independent_audit_passed": true,
+  "seed_results": [
+    {
+      "all_evaluations_valid": true,
+      "directional_criteria_passed": false,
+      "final_five_second_survivors": 1,
+      "mean_paired_delta_s": -0.0662499999999927,
+      "pairs": [
+        {
+          "delta_s": -0.06799999999999251,
+          "evaluation_seed": 83000,
+          "final_s": 4.637999999999711,
+          "initial_s": 4.705999999999704
+        },
+        {
+          "delta_s": -0.025999999999997137,
+          "evaluation_seed": 83001,
+          "final_s": 4.9259999999996795,
+          "initial_s": 4.951999999999677
+        },
+        {
+          "delta_s": 0.0039999999999995595,
+          "evaluation_seed": 83002,
+          "final_s": 4.437999999999733,
+          "initial_s": 4.433999999999734
+        },
+        {
+          "delta_s": -0.2379999999999738,
+          "evaluation_seed": 83003,
+          "final_s": 4.6539999999997095,
+          "initial_s": 4.891999999999683
+        },
+        {
+          "delta_s": -0.007999999999999119,
+          "evaluation_seed": 83004,
+          "final_s": 5.203999999999649,
+          "initial_s": 5.211999999999648
+        },
+        {
+          "delta_s": -0.045999999999994934,
+          "evaluation_seed": 83005,
+          "final_s": 4.459999999999731,
+          "initial_s": 4.505999999999726
+        },
+        {
+          "delta_s": 0.0039999999999995595,
+          "evaluation_seed": 83006,
+          "final_s": 4.931999999999679,
+          "initial_s": 4.927999999999679
+        },
+        {
+          "delta_s": -0.15199999999998326,
+          "evaluation_seed": 83007,
+          "final_s": 4.697999999999705,
+          "initial_s": 4.849999999999688
+        }
+      ],
+      "training_seed": 81011
+    },
+    {
+      "all_evaluations_valid": true,
+      "directional_criteria_passed": false,
+      "final_five_second_survivors": 1,
+      "mean_paired_delta_s": 0.01624999999999821,
+      "pairs": [
+        {
+          "delta_s": 0.047999999999994714,
+          "evaluation_seed": 83000,
+          "final_s": 4.7539999999996985,
+          "initial_s": 4.705999999999704
+        },
+        {
+          "delta_s": -0.029999999999996696,
+          "evaluation_seed": 83001,
+          "final_s": 4.92199999999968,
+          "initial_s": 4.951999999999677
+        },
+        {
+          "delta_s": -0.015999999999998238,
+          "evaluation_seed": 83002,
+          "final_s": 4.4179999999997355,
+          "initial_s": 4.433999999999734
+        },
+        {
+          "delta_s": 0.04999999999999449,
+          "evaluation_seed": 83003,
+          "final_s": 4.941999999999678,
+          "initial_s": 4.891999999999683
+        },
+        {
+          "delta_s": 0.08599999999999053,
+          "evaluation_seed": 83004,
+          "final_s": 5.2979999999996386,
+          "initial_s": 5.211999999999648
+        },
+        {
+          "delta_s": 0.0019999999999997797,
+          "evaluation_seed": 83005,
+          "final_s": 4.507999999999726,
+          "initial_s": 4.505999999999726
+        },
+        {
+          "delta_s": -0.041999999999995374,
+          "evaluation_seed": 83006,
+          "final_s": 4.885999999999684,
+          "initial_s": 4.927999999999679
+        },
+        {
+          "delta_s": 0.031999999999996476,
+          "evaluation_seed": 83007,
+          "final_s": 4.881999999999684,
+          "initial_s": 4.849999999999688
+        }
+      ],
+      "training_seed": 81029
+    }
+  ],
+  "next_mission": "docs/V0.0.11_MISSION.md",
+  "next_priority": "connected shared two-player loop and diagnostic recording; no larger unchanged walking sweep",
+  "raw_D2_manifested_bytes": 276715588,
+  "all_raw_local_verified_files": 668,
+  "publication_receipt": "artifacts/receipts/v0.0.10-publication.json"
+}

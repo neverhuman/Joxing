@@ -1,0 +1,325 @@
+{
+  "source_commit": "b1d1690ec6bc0c4d248336ce407a5c71a3f0e7c6",
+  "supervisor": {
+    "pid": 2726271,
+    "parent_pid": 1,
+    "start_ticks": 919982114,
+    "state": "R"
+  },
+  "started_utc": "2026-10-27T10:43:47.078195+00:00",
+  "protocol_sha256": "725313890a6e260887fb4542a39878646a8c73508c5a6a35f8294d69061013ec",
+  "expected_linux_tests": 196,
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked"
+      ],
+      "process": {
+        "pid": 2726277,
+        "parent_pid": 2726271,
+        "start_ticks": 919982146,
+        "state": "R"
+      },
+      "status": "completed",
+      "owned_processes": [
+        {
+          "pid": 2726277,
+          "parent_pid": 2726271,
+          "start_ticks": 919982146,
+          "state": "S"
+        }
+      ],
+      "returncode": 0,
+      "wall_s": 2.0890588518232107,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "process": {
+        "pid": 2726749,
+        "parent_pid": 2726271,
+        "start_ticks": 919982384,
+        "state": "R"
+      },
+      "status": "completed",
+      "owned_processes": [
+        {
+          "pid": 2726749,
+          "parent_pid": 2726271,
+          "start_ticks": 919982384,
+          "state": "S"
+        },
+        {
+          "pid": 2726755,
+          "parent_pid": 2726749,
+          "start_ticks": 919982391,
+          "state": "R"
+        },
+        {
+          "pid": 2732307,
+          "parent_pid": 2726755,
+          "start_ticks": 919987930,
+          "state": "S"
+        },
+        {
+          "pid": 2732308,
+          "parent_pid": 2726755,
+          "start_ticks": 919987930,
+          "state": "R"
+        },
+        {
+          "pid": 2732309,
+          "parent_pid": 2726755,
+          "start_ticks": 919987930,
+          "state": "R"
+        },
+        {
+          "pid": 2781219,
+          "parent_pid": 2726755,
+          "start_ticks": 920006662,
+          "state": "S"
+        },
+        {
+          "pid": 2781290,
+          "parent_pid": 2726755,
+          "start_ticks": 920006674,
+          "state": "R"
+        },
+        {
+          "pid": 2781293,
+          "parent_pid": 2726755,
+          "start_ticks": 920006674,
+          "state": "R"
+        },
+        {
+          "pid": 2781988,
+          "parent_pid": 2781290,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2781990,
+          "parent_pid": 2781290,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2781992,
+          "parent_pid": 2781290,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2781993,
+          "parent_pid": 2781293,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2781994,
+          "parent_pid": 2781290,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2781995,
+          "parent_pid": 2781293,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2781996,
+          "parent_pid": 2781293,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2781997,
+          "parent_pid": 2781293,
+          "start_ticks": 920007186,
+          "state": "S"
+        },
+        {
+          "pid": 2785211,
+          "parent_pid": 2726755,
+          "start_ticks": 920008868,
+          "state": "R"
+        },
+        {
+          "pid": 2785212,
+          "parent_pid": 2726755,
+          "start_ticks": 920008868,
+          "state": "R"
+        },
+        {
+          "pid": 2785213,
+          "parent_pid": 2726755,
+          "start_ticks": 920008868,
+          "state": "R"
+        },
+        {
+          "pid": 2785214,
+          "parent_pid": 2726755,
+          "start_ticks": 920008868,
+          "state": "R"
+        }
+      ],
+      "returncode": 0,
+      "wall_s": 277.6424154955894,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "D2",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "python",
+        "scripts/train_motor_residual.py",
+        "--protocol",
+        "experiments/v0.0.10/protocol.json",
+        "--protocol-sha256",
+        "725313890a6e260887fb4542a39878646a8c73508c5a6a35f8294d69061013ec",
+        "--inputs",
+        "/home/ubuntu/joxing/deployment-cache/inputs",
+        "--out",
+        "runs/v0.0.10/pilot-01"
+      ],
+      "process": {
+        "pid": 2786514,
+        "parent_pid": 2726271,
+        "start_ticks": 920010178,
+        "state": "R"
+      },
+      "status": "completed",
+      "owned_processes": [
+        {
+          "pid": 2786514,
+          "parent_pid": 2726271,
+          "start_ticks": 920010178,
+          "state": "Z"
+        },
+        {
+          "pid": 2786532,
+          "parent_pid": 2786514,
+          "start_ticks": 920010182,
+          "state": "R"
+        },
+        {
+          "pid": 2789240,
+          "parent_pid": 2786532,
+          "start_ticks": 920014600,
+          "state": "S"
+        },
+        {
+          "pid": 2789241,
+          "parent_pid": 2786532,
+          "start_ticks": 920014600,
+          "state": "R"
+        },
+        {
+          "pid": 2789242,
+          "parent_pid": 2786532,
+          "start_ticks": 920014600,
+          "state": "R"
+        },
+        {
+          "pid": 2789243,
+          "parent_pid": 2786532,
+          "start_ticks": 920014600,
+          "state": "R"
+        },
+        {
+          "pid": 2789244,
+          "parent_pid": 2786532,
+          "start_ticks": 920014600,
+          "state": "R"
+        },
+        {
+          "pid": 2825093,
+          "parent_pid": 2786532,
+          "start_ticks": 920038298,
+          "state": "R"
+        },
+        {
+          "pid": 2825095,
+          "parent_pid": 2786532,
+          "start_ticks": 920038298,
+          "state": "R"
+        },
+        {
+          "pid": 2825096,
+          "parent_pid": 2786532,
+          "start_ticks": 920038298,
+          "state": "R"
+        },
+        {
+          "pid": 2825097,
+          "parent_pid": 2786532,
+          "start_ticks": 920038298,
+          "state": "R"
+        }
+      ],
+      "returncode": 0,
+      "wall_s": 495.8303698860109,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_motor_residual.py",
+        "--run",
+        "runs/v0.0.10/pilot-01"
+      ],
+      "process": {
+        "pid": 2843351,
+        "parent_pid": 2726271,
+        "start_ticks": 920059791,
+        "state": "R"
+      },
+      "status": "completed",
+      "owned_processes": [
+        {
+          "pid": 2843351,
+          "parent_pid": 2726271,
+          "start_ticks": 920059791,
+          "state": "S"
+        },
+        {
+          "pid": 2843382,
+          "parent_pid": 2843351,
+          "start_ticks": 920059795,
+          "state": "R"
+        }
+      ],
+      "returncode": 0,
+      "wall_s": 10.454532336443663,
+      "live_recorded_processes": []
+    }
+  ],
+  "threads": 1,
+  "finished_utc": "2026-10-27T10:56:54.271207+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "development fixtures passed, not connected game or training",
+  "commands": [
+    {
+      "command": "rtk proxy uv run --project experiments/v0.0.10/runtime --locked pytest -q tests/test_history.py tests/test_body_adapter.py tests/test_bout_recording.py",
+      "result": "6 passed in5.64s"
+    },
+    {
+      "command": "rtk proxy uvx ruff check src scripts tests",
+      "result": "All checks passed"
+    }
+  ],
+  "features": [
+    "game/player/schema isolation",
+    "sample<=receive<=decision selection",
+    "delayed and reordered receipts",
+    "prefix padding and validity/age masks",
+    "bounded newest-sample retention",
+    "idempotent identical retransmission",
+    "conflicting data rejected",
+    "owned readonly features",
+    "typed float32 JSON snapshot/restore with corrupt ownership/time/nonfinite/duplicate rejection"
+  ],
+  "limitations": [
+    "No actor observation filter or connected BoxingEnv exists yet",
+    "No action timing/jitter queue or recurrent policy exists yet",
+    "History stores already filtered features; private opponent data must be removed upstream",
+    "Frozen v10policy and source unchanged"
+  ],
+  "formal_v11_physics": 0,
+  "files": {
+    "src/joxing/history.py": "cb3b6a5e064475284a5a78b7360dda3bc61c66a63094d4c0c8b74508e0580aab",
+    "tests/test_history.py": "e9c1bbf43a2b15f1f5cba5e08642773dbc96d35baad8677a76396264cc25b882"
+  }
+}

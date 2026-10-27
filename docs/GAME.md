@@ -1,6 +1,6 @@
 # Joxing game contract: candidate v0
 
-Status: design selected for implementation; referee fixtures exist; full game is not yet playable.
+Status: design selected for implementation; referee fixtures exist; full game is not yet playable. v10motor pilot concluded with both improvement gates failed; v11shared-loop/diagnostic-recording implementation is active.
 
 Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. [v7](V0.0.7_RESULTS.md) confirms native joint-tracking termination can occur with sampled foot support still present; [v8](V0.0.8_RESULTS.md) measures persistent physical failure around5s with all40attempts valid and all12replays exact. Neither defines a sporting loss or changes the points below. The [v0.0.6 native walking qualification](V0.0.6_RESULTS.md) establishes a frozen motor dependency with no opponent/game integration or new learning. The completed [v0.0.5 motor experiments](V0.0.5_RESULTS.md) measure one athlete’s moving-start fall recovery before competitive play; the [training guide](TRAINING.md) describes later stance/recovery gates. Motor rewards and failure criteria do not change the sporting points or resolve provisional match fall/foul rules below.
 

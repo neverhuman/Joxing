@@ -1,3 +1,22 @@
+## v0.0.10 concluded; v0.0.11 active implementation
+
+Both fixed residual seeds completed8,192transitions/448updates each,32/32held-out
+evaluations valid,2/2exact replays. Independent saved-evidence audit passed and
+all35recorded PIDs exited/sourceunchanged/ownedscanempty10:58:23UTC. Neither
+motor gate passed:81011mean−0.06625s,81029mean+0.01625s; each1/8finalfive-second
+survivors versus required4/8 and+0.5s. No larger unchanged walking sweep.
+Main251,144physics/495.045196s; replayreserve4,494physics/18.962701s;896updates,
+64completed/8partial training motor episodes,0boxinggames. All668rawmanifest
+files/276,715,588bytes verified after local copy. Sourceb1d1690/protocol72531389
+and every attempted evaluation/model/update/fault receipt retained in
+artifacts/v0.0.10/D2. See V0.0.10_RESULTS.md and final-accounting.json.
+
+Next: V0.0.11_MISSION, shared two-player env/referee/application replay and the
+first diagnostic recording. Body/recording/history foundations implemented;
+actor observation filter/action queues/sharedloop remain. Current dev runtime
+experiments/v0.0.11/runtime; old source/runtime/protocol remain immutable.
+Publication/tag receipt follows in artifacts/receipts/v0.0.10-publication.json.
+
 ## Linux gate passed; bounded D2 now active
 
 Frozenb1d1690 on xbabe3 passed all196Linux tests275.02s (supervisor277.642415s), all recorded test processes exited. Formal D2uv2786514/Python2786532 started under supervisor2726271. First initial heldout evaluation completed, secondrunning, no invalids; confirmed mainphysics12,754including prior10,394, optimizerupdates0 at this check. Source diffempty. This is actual native motor evaluation, not a bout. Full32evaluation/two training/two replay rows retained; inspect live result/events/private workerprogress before any continuation. Exact source/protocol/launch in artifacts/v0.0.10/D2/deployment/progress-check-02.json. Current development additions do not change executing source.

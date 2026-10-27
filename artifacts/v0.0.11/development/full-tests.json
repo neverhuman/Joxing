@@ -1,0 +1,20 @@
+{
+  "command": [
+    "rtk",
+    "proxy",
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "--offline",
+    "pytest",
+    "-q"
+  ],
+  "returncode": 0,
+  "wall_s": 190.05716658299207,
+  "output_tail": "........................................................................ [ 35%]\n........................................................................ [ 71%]\n.........................................................                [100%]\n201 passed in 188.09s (0:03:08)\n",
+  "stderr_tail": "Using CPython 3.12.12 interpreter at: /opt/homebrew/opt/python@3.12/bin/python3.12\nCreating virtual environment at: experiments/v0.0.11/runtime/.venv\n   Building joxing @ file:///Users/bentaylor/Documents/ChatGPT/JOXING\n      Built joxing @ file:///Users/bentaylor/Documents/ChatGPT/JOXING\nInstalled 40 packages in 510ms\n",
+  "runtime_lock_sha256": "9dc2332fe46eefc51aa133c6e0e9e90790899eb67b94345ac2447967464ebd5c",
+  "scope": "Development regression fixtures, not formal v11; frozen v10source b1d1690 unchanged"
+}
