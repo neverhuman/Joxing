@@ -1,3 +1,29 @@
+## D1partial concluded honestly; lossless storage mission ready —2026-10-27 14:21UTC
+
+Sourceef42c87/protocol317b4052 passed349Linux tests356.69s; formal proof stopped
+at the unchanged96MiB raw-credit gate after6completed cases/2,431physics. Drop
+case incomplete before model creation/0steps; replay not_run/0steps. Independent
+source-host partial audit passed all6cases,3exact replay tails and exact D0oracle,
+0newphysics; whole_D1_passed=false. All24recorded identities exited;453source+
+7model/report/oracle input hashes verified, no drift/all-owned scanempty14:13:20UTC.
+Original setup failure/all8not_run retained. Full68file/97,341,018byte copy locally
+SHAverified; compact result/partial audit/source/exit/manifest in artifacts/v0.0.11/D1.
+Read V0.0.11_D1_RESULTS.md. No active task, v11tag, learned motor or native games.
+
+Current ready mission: **V0.0.11_D1_STORAGE_MISSION.md**. Qualify lossless gzipJSON/
+ZIP_LZMA typed evidence under existing caps, preserve original six successful
+receipts and all negative attempts, preregister ONLYthe unexecuted drop200+
+actual83→200 replay117. Formal cumulativev11physics5,073; next317would yield5,390.
+No source/model/rules/controller/history/timing criterion change or blind rerun.
+The separate V0.0.11_COMPLETION_PACKET.md is conditional on full D1completion.
+
+Storage analysis: three more dense original seed/replay groups project147MB;
+actual remaining budget must be checked first. One-file offline benchmark reduced
+NPZ9.03→3.68MB with exact typed bytes, trace5.22→0.648MB with exact parsed JSON.
+Initial32MiBcredit stop and subsequent bounded stream fix are retained; this is
+not a qualified corpus or end-to-end game throughput claim. Next phase must
+verify every retained array/JSON on Linux and use explicit packed-format hashes.
+
 ## D1attempt halted before tests; ownership repair ready —2026-10-27 14:02UTC
 
 Source3d4470e/protocolb97c23c8 supervisor57936 stopped during uv sync after0.228809s:

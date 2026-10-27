@@ -1,0 +1,53 @@
+{
+  "source_commit": "ef42c872d13bfebb16b347f842ba11f0b8b8e776",
+  "protocol_sha256": "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+  "utc": "2026-10-27T14:03:08.850782+00:00",
+  "push_returncode": 0,
+  "anonymous_verified": {
+    "experiments/v0.0.11/sensor-proof-repair-protocol.json": {
+      "bytes": 64275,
+      "sha256": "19aee059071ddee7ee468acb6aacf654c90e25ff3ef123d8a5dc84b082e37b06",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/experiments/v0.0.11/sensor-proof-repair-protocol.json"
+    },
+    "scripts/joxing_process_ownership.py": {
+      "bytes": 1472,
+      "sha256": "b4ccaf9ea1ad943d3bd8f2ad5189293905479c60d1c2d433e30219ea37e988f7",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/scripts/joxing_process_ownership.py"
+    },
+    "scripts/supervise_sensor_proof.py": {
+      "bytes": 9985,
+      "sha256": "f05b80a528c68438c0fe40737fccc969c986d63821ae8be2ea084b2fb03716cd",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/scripts/supervise_sensor_proof.py"
+    },
+    "scripts/qualify_sensor_env.py": {
+      "bytes": 10917,
+      "sha256": "d0ca8fc9ad8e112493c57c05d039e059594375fdadc9df401730a54ad4862c6f",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/scripts/qualify_sensor_env.py"
+    },
+    "scripts/register_sensor_proof.py": {
+      "bytes": 6445,
+      "sha256": "e27970b7bc45b8c6a09afe7b3d30e5aaa3b030cc0213e376c00406bf38682301",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/scripts/register_sensor_proof.py"
+    },
+    "src/joxing/sensor_protocol.py": {
+      "bytes": 4414,
+      "sha256": "2c2c49fe92fb567283587ae06a60bbc08acdd24c5dedb07ab3ceaf541d1c86a8",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/src/joxing/sensor_protocol.py"
+    },
+    "tests/test_process_ownership.py": {
+      "bytes": 3254,
+      "sha256": "92f86a39db9d7c6bbc52fd8570c1ec41966b7ca55b6722856791ff379a88f94d",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/tests/test_process_ownership.py"
+    },
+    "tests/test_sensor_proof.py": {
+      "bytes": 6610,
+      "sha256": "085385e3e4b1d773c34734682aee70b05452f749e00b5bb25df4a7a69b4be9cc",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/tests/test_sensor_proof.py"
+    },
+    "artifacts/v0.0.11/development/sensor-proof-attempt-01-failure.json": {
+      "bytes": 7196,
+      "sha256": "cd30d4450e6fe771668d1d0b6d69a264dc4f550f38a86ecb44b2cb518d0dc49d",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/ef42c872d13bfebb16b347f842ba11f0b8b8e776/artifacts/v0.0.11/development/sensor-proof-attempt-01-failure.json"
+    }
+  }
+}

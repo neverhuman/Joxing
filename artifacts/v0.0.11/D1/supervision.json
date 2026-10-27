@@ -1,0 +1,285 @@
+{
+  "schema": "joxing-sensor-proof-supervisor-v1",
+  "source_commit": "ef42c872d13bfebb16b347f842ba11f0b8b8e776",
+  "protocol_sha256": "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+  "process": {
+    "pid": 133687,
+    "parent_pid": 1,
+    "start_ticks": 921181646,
+    "state": "R"
+  },
+  "started_utc": "2026-10-27T14:03:42.883829+00:00",
+  "status": "halted",
+  "initial_capacity": {
+    "available_memory_bytes": 104398274560,
+    "disk_free_bytes": 31149264896,
+    "load": [
+      8.9638671875,
+      9.5712890625,
+      10.2646484375
+    ]
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 133717,
+        "parent_pid": 133687,
+        "start_ticks": 921181729,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 133717,
+          "parent_pid": 133687,
+          "start_ticks": 921181729,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 103561932800,
+        "disk_free_bytes": 31147814912,
+        "load": [
+          9.20703125,
+          9.61181640625,
+          10.2744140625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 2.217829404398799,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 133869,
+        "parent_pid": 133687,
+        "start_ticks": 921181982,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 133869,
+          "parent_pid": 133687,
+          "start_ticks": 921181982,
+          "state": "S"
+        },
+        {
+          "pid": 133874,
+          "parent_pid": 133869,
+          "start_ticks": 921181990,
+          "state": "R"
+        },
+        {
+          "pid": 142353,
+          "parent_pid": 133874,
+          "start_ticks": 921191225,
+          "state": "S"
+        },
+        {
+          "pid": 142354,
+          "parent_pid": 133874,
+          "start_ticks": 921191226,
+          "state": "R"
+        },
+        {
+          "pid": 142355,
+          "parent_pid": 133874,
+          "start_ticks": 921191226,
+          "state": "Z"
+        },
+        {
+          "pid": 187672,
+          "parent_pid": 133874,
+          "start_ticks": 921214294,
+          "state": "S"
+        },
+        {
+          "pid": 187692,
+          "parent_pid": 133874,
+          "start_ticks": 921214308,
+          "state": "R"
+        },
+        {
+          "pid": 187695,
+          "parent_pid": 133874,
+          "start_ticks": 921214308,
+          "state": "R"
+        },
+        {
+          "pid": 188243,
+          "parent_pid": 187695,
+          "start_ticks": 921214808,
+          "state": "S"
+        },
+        {
+          "pid": 188244,
+          "parent_pid": 187695,
+          "start_ticks": 921214808,
+          "state": "S"
+        },
+        {
+          "pid": 188245,
+          "parent_pid": 187695,
+          "start_ticks": 921214808,
+          "state": "S"
+        },
+        {
+          "pid": 188246,
+          "parent_pid": 187695,
+          "start_ticks": 921214808,
+          "state": "S"
+        },
+        {
+          "pid": 188247,
+          "parent_pid": 187692,
+          "start_ticks": 921214809,
+          "state": "S"
+        },
+        {
+          "pid": 188248,
+          "parent_pid": 187692,
+          "start_ticks": 921214809,
+          "state": "S"
+        },
+        {
+          "pid": 188249,
+          "parent_pid": 187692,
+          "start_ticks": 921214809,
+          "state": "S"
+        },
+        {
+          "pid": 188250,
+          "parent_pid": 187692,
+          "start_ticks": 921214809,
+          "state": "S"
+        },
+        {
+          "pid": 191017,
+          "parent_pid": 133874,
+          "start_ticks": 921216590,
+          "state": "R"
+        },
+        {
+          "pid": 191018,
+          "parent_pid": 133874,
+          "start_ticks": 921216590,
+          "state": "R"
+        },
+        {
+          "pid": 191019,
+          "parent_pid": 133874,
+          "start_ticks": 921216590,
+          "state": "R"
+        },
+        {
+          "pid": 191020,
+          "parent_pid": 133874,
+          "start_ticks": 921216590,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 94191276032,
+        "disk_free_bytes": 30462193664,
+        "load": [
+          10.18310546875,
+          9.76123046875,
+          10.0947265625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 359.97436505556107,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "D1",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_sensor_env.py",
+        "--protocol-sha256",
+        "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+        "--protocol-path",
+        "experiments/v0.0.11/sensor-proof-repair-protocol.json"
+      ],
+      "status": "failed",
+      "reason": "Nonzero exit or live child",
+      "process": {
+        "pid": 192748,
+        "parent_pid": 133687,
+        "start_ticks": 921218015,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 192748,
+          "parent_pid": 133687,
+          "start_ticks": 921218015,
+          "state": "Z"
+        },
+        {
+          "pid": 192751,
+          "parent_pid": 192748,
+          "start_ticks": 921218018,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 97846841344,
+        "disk_free_bytes": 30364499968,
+        "load": [
+          9.72314453125,
+          9.68359375,
+          10.0595703125
+        ]
+      },
+      "returncode": 1,
+      "wall_s": 28.979675628244877,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_sensor_env.py",
+        "--run",
+        "runs/v0.0.11/sensor-proof-01"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    }
+  ],
+  "reason": "RuntimeError: D1 failed: Nonzero exit or live child",
+  "finished_utc": "2026-10-27T14:10:15.038421+00:00",
+  "post_gate_wall_s": 28.98043755441904
+}

@@ -1,0 +1,184 @@
+{
+  "supervision": {
+    "schema": "joxing-sensor-proof-supervisor-v1",
+    "source_commit": "ef42c872d13bfebb16b347f842ba11f0b8b8e776",
+    "protocol_sha256": "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+    "process": {
+      "pid": 133687,
+      "parent_pid": 1,
+      "start_ticks": 921181646,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T14:03:42.883829+00:00",
+    "status": "running",
+    "initial_capacity": {
+      "available_memory_bytes": 104398274560,
+      "disk_free_bytes": 31149264896,
+      "load": [
+        8.9638671875,
+        9.5712890625,
+        10.2646484375
+      ]
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 133717,
+          "parent_pid": 133687,
+          "start_ticks": 921181729,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 133717,
+            "parent_pid": 133687,
+            "start_ticks": 921181729,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 103561932800,
+          "disk_free_bytes": 31147814912,
+          "load": [
+            9.20703125,
+            9.61181640625,
+            10.2744140625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 2.217829404398799,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "running",
+        "reason": null,
+        "process": {
+          "pid": 133869,
+          "parent_pid": 133687,
+          "start_ticks": 921181982,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 133869,
+            "parent_pid": 133687,
+            "start_ticks": 921181982,
+            "state": "S"
+          },
+          {
+            "pid": 133874,
+            "parent_pid": 133869,
+            "start_ticks": 921181990,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 101356314624,
+          "disk_free_bytes": 30634930176,
+          "load": [
+            9.23095703125,
+            9.4912109375,
+            10.17236328125
+          ]
+        }
+      },
+      {
+        "stage": "D1",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/qualify_sensor_env.py",
+          "--protocol-sha256",
+          "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+          "--protocol-path",
+          "experiments/v0.0.11/sensor-proof-repair-protocol.json"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      },
+      {
+        "stage": "audit",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/audit_sensor_env.py",
+          "--run",
+          "runs/v0.0.11/sensor-proof-01"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      }
+    ]
+  },
+  "tests_log": "........................................................................ [ 20%]\n...........................",
+  "proof": null,
+  "progress": null,
+  "live_resources": [
+    {
+      "identity": {
+        "pid": 133687,
+        "parent_pid": 1,
+        "start_ticks": 921181646,
+        "state": "S"
+      },
+      "cpu_user_ticks": 532,
+      "rss": "VmRSS:\t   30496 kB"
+    },
+    {
+      "identity": {
+        "pid": 133869,
+        "parent_pid": 133687,
+        "start_ticks": 921181982,
+        "state": "S"
+      },
+      "cpu_user_ticks": 0,
+      "rss": "VmRSS:\t   42192 kB"
+    },
+    {
+      "identity": {
+        "pid": 133874,
+        "parent_pid": 133869,
+        "start_ticks": 921181990,
+        "state": "R"
+      },
+      "cpu_user_ticks": 7279,
+      "rss": "VmRSS:\t 2801548 kB"
+    }
+  ],
+  "source_diff_empty": true,
+  "load": [
+    9.23095703125,
+    9.4912109375,
+    10.17236328125
+  ],
+  "disk_free_bytes": 30634926080,
+  "checked_utc": "2026-10-27T14:05:06.343978+00:00"
+}

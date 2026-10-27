@@ -1,0 +1,13 @@
+{
+  "scope": "Independent offline storage development; no formal physics/games",
+  "utc": "2026-10-27T14:08:37.636097+00:00",
+  "status": "halted",
+  "reason": "Conservative all-array staging reservation blocked the second (LZMA) variant after the first DEFLATE archive wrote9,033,987bytes; the unchanged32MiB cap was enforced before any LZMA output",
+  "input": "/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.11/recording-evidence-01/proof/source-90101/tape.npz",
+  "input_bytes": 9034267,
+  "uncompressed_archive_bytes": 28554920,
+  "output_cap_bytes": 33554432,
+  "output_bytes": 9033987,
+  "formal_new_physics": 0,
+  "next_action": "Use bounded streaming compressed writes with the same32MiB cap; do not increase the ceiling or claim a storage win from this attempt"
+}

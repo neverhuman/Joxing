@@ -1,0 +1,43 @@
+{
+  "scope": "Offline lossless storage development;0physics/optimizer/games. Not a qualified telemetry variant or game throughput measurement",
+  "utc": "2026-10-27T14:09:31.340035+00:00",
+  "source_npz": {
+    "path": "/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.11/recording-evidence-01/proof/source-90101/tape.npz",
+    "bytes": 9034267,
+    "sha256": "71c1da1e3d610bf2a9b0fe06a802af784e0bc36599755371ef29da3a18d59f91"
+  },
+  "array_bytes": 28553128,
+  "variants": [
+    {
+      "name": "deflate",
+      "bytes": 9033987,
+      "encode_wall_s": 0.3251146659895312,
+      "decode_and_exact_byte_check_wall_s": 0.02756025001872331,
+      "sha256": "83b02785db42a2915a17e782ebc66770081c4c2dd903cb74298c62ce9282e99a",
+      "all_arrays_exact": true
+    },
+    {
+      "name": "lzma",
+      "bytes": 3675565,
+      "encode_wall_s": 1.0369485419942066,
+      "decode_and_exact_byte_check_wall_s": 0.11160999999265186,
+      "sha256": "4f346f6d04ab5c948cc83f447fe0bc87852d2b357210f7c2d80ea38082ea7f08",
+      "all_arrays_exact": true
+    }
+  ],
+  "output_cap_bytes": 33554432,
+  "wall_cap_s": 90,
+  "prior_negative": "storage-development-01 stopped before second variant because conservative total-array reserve plus existing archive exceeded unchanged32MiB credit; retained9,033,987byte DEFLATE output",
+  "allocation": "Arrays bounded by retained NPZ<128MiB; per-array NPY buffer; streamed compressed writes check actual growth before every write using unbuffered file. Cap remains32MiB.",
+  "trace": {
+    "source_bytes": 5215615,
+    "source_sha256": "79b499731a4b945aec80a2dcb30d76cd837e3fb5b1ce89a7aedc1cf11a8b8cba",
+    "minified_bytes": 2788761,
+    "gzip_level1_bytes": 647632,
+    "encode_wall_s": 0.03340320798452012,
+    "decode_and_semantic_check_wall_s": 0.019845750008244067,
+    "parsed_exact": true
+  },
+  "wall_s": 1.607191375020193,
+  "total_output_bytes": 13357184
+}

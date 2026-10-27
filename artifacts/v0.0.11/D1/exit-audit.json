@@ -1,0 +1,717 @@
+{
+  "supervision": {
+    "schema": "joxing-sensor-proof-supervisor-v1",
+    "source_commit": "ef42c872d13bfebb16b347f842ba11f0b8b8e776",
+    "protocol_sha256": "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+    "process": {
+      "pid": 133687,
+      "parent_pid": 1,
+      "start_ticks": 921181646,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T14:03:42.883829+00:00",
+    "status": "halted",
+    "initial_capacity": {
+      "available_memory_bytes": 104398274560,
+      "disk_free_bytes": 31149264896,
+      "load": [
+        8.9638671875,
+        9.5712890625,
+        10.2646484375
+      ]
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 133717,
+          "parent_pid": 133687,
+          "start_ticks": 921181729,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 133717,
+            "parent_pid": 133687,
+            "start_ticks": 921181729,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 103561932800,
+          "disk_free_bytes": 31147814912,
+          "load": [
+            9.20703125,
+            9.61181640625,
+            10.2744140625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 2.217829404398799,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 133869,
+          "parent_pid": 133687,
+          "start_ticks": 921181982,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 133869,
+            "parent_pid": 133687,
+            "start_ticks": 921181982,
+            "state": "S"
+          },
+          {
+            "pid": 133874,
+            "parent_pid": 133869,
+            "start_ticks": 921181990,
+            "state": "R"
+          },
+          {
+            "pid": 142353,
+            "parent_pid": 133874,
+            "start_ticks": 921191225,
+            "state": "S"
+          },
+          {
+            "pid": 142354,
+            "parent_pid": 133874,
+            "start_ticks": 921191226,
+            "state": "R"
+          },
+          {
+            "pid": 142355,
+            "parent_pid": 133874,
+            "start_ticks": 921191226,
+            "state": "Z"
+          },
+          {
+            "pid": 187672,
+            "parent_pid": 133874,
+            "start_ticks": 921214294,
+            "state": "S"
+          },
+          {
+            "pid": 187692,
+            "parent_pid": 133874,
+            "start_ticks": 921214308,
+            "state": "R"
+          },
+          {
+            "pid": 187695,
+            "parent_pid": 133874,
+            "start_ticks": 921214308,
+            "state": "R"
+          },
+          {
+            "pid": 188243,
+            "parent_pid": 187695,
+            "start_ticks": 921214808,
+            "state": "S"
+          },
+          {
+            "pid": 188244,
+            "parent_pid": 187695,
+            "start_ticks": 921214808,
+            "state": "S"
+          },
+          {
+            "pid": 188245,
+            "parent_pid": 187695,
+            "start_ticks": 921214808,
+            "state": "S"
+          },
+          {
+            "pid": 188246,
+            "parent_pid": 187695,
+            "start_ticks": 921214808,
+            "state": "S"
+          },
+          {
+            "pid": 188247,
+            "parent_pid": 187692,
+            "start_ticks": 921214809,
+            "state": "S"
+          },
+          {
+            "pid": 188248,
+            "parent_pid": 187692,
+            "start_ticks": 921214809,
+            "state": "S"
+          },
+          {
+            "pid": 188249,
+            "parent_pid": 187692,
+            "start_ticks": 921214809,
+            "state": "S"
+          },
+          {
+            "pid": 188250,
+            "parent_pid": 187692,
+            "start_ticks": 921214809,
+            "state": "S"
+          },
+          {
+            "pid": 191017,
+            "parent_pid": 133874,
+            "start_ticks": 921216590,
+            "state": "R"
+          },
+          {
+            "pid": 191018,
+            "parent_pid": 133874,
+            "start_ticks": 921216590,
+            "state": "R"
+          },
+          {
+            "pid": 191019,
+            "parent_pid": 133874,
+            "start_ticks": 921216590,
+            "state": "R"
+          },
+          {
+            "pid": 191020,
+            "parent_pid": 133874,
+            "start_ticks": 921216590,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 94191276032,
+          "disk_free_bytes": 30462193664,
+          "load": [
+            10.18310546875,
+            9.76123046875,
+            10.0947265625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 359.97436505556107,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "D1",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/qualify_sensor_env.py",
+          "--protocol-sha256",
+          "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+          "--protocol-path",
+          "experiments/v0.0.11/sensor-proof-repair-protocol.json"
+        ],
+        "status": "failed",
+        "reason": "Nonzero exit or live child",
+        "process": {
+          "pid": 192748,
+          "parent_pid": 133687,
+          "start_ticks": 921218015,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 192748,
+            "parent_pid": 133687,
+            "start_ticks": 921218015,
+            "state": "Z"
+          },
+          {
+            "pid": 192751,
+            "parent_pid": 192748,
+            "start_ticks": 921218018,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 97846841344,
+          "disk_free_bytes": 30364499968,
+          "load": [
+            9.72314453125,
+            9.68359375,
+            10.0595703125
+          ]
+        },
+        "returncode": 1,
+        "wall_s": 28.979675628244877,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "audit",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/audit_sensor_env.py",
+          "--run",
+          "runs/v0.0.11/sensor-proof-01"
+        ],
+        "status": "not_run",
+        "reason": "stopped after earlier failure"
+      }
+    ],
+    "reason": "RuntimeError: D1 failed: Nonzero exit or live child",
+    "finished_utc": "2026-10-27T14:10:15.038421+00:00",
+    "post_gate_wall_s": 28.98043755441904
+  },
+  "result": {
+    "finished_utc": "2026-10-27T14:10:12.559297+00:00",
+    "optimizer_updates": 0,
+    "physics_attempted": 2431,
+    "process": {
+      "parent_pid": 192748,
+      "pid": 192751,
+      "start_ticks": 921218018,
+      "state": "R"
+    },
+    "protocol_sha256": "317b40521bf6ccff1fbf6ea20900fd87b9e1e7135a255f59e5c33ed89ec44bdc",
+    "reason": "TimeoutError: Pre-write raw credit exhausted: /home/ubuntu/joxing/v011-sensor-proof-repair-20261027/runs/v0.0.11/sensor-proof-01",
+    "rows": [
+      {
+        "end_tick": 1000,
+        "engine_attempts_confirmed": 1000,
+        "final_sha256": "cc901fd6ee46b2490dc4671546271ad83415d160d99b2175d026a2527730605f",
+        "horizon_ticks": 1000,
+        "id": "zero-90101",
+        "physics": 1000,
+        "physics_attempted": 1000,
+        "positive_glove_touches": 0,
+        "reason": null,
+        "runtime_oracle": {
+          "audit_new_physics": 0,
+          "exact_saved_oracle": true,
+          "status": "passed"
+        },
+        "runtime_physical_audit": {
+          "actor_calls": {
+            "A": 50,
+            "B": 50
+          },
+          "audit_new_physics": 0,
+          "formal_sensor_proof": false,
+          "limitations": [
+            "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+            "A per-case audit is not the complete eight-row formal proof or motor qualification"
+          ],
+          "peak_glove_force_N": 0.0,
+          "physical_referee_audited": true,
+          "physics_observed": 1000,
+          "positive_glove_touches": 0,
+          "sampled_engines_checked": 51,
+          "status": "passed",
+          "summed_glove_normal_impulse_Ns": 0.0
+        },
+        "save_mid_tick": 203,
+        "scenario": "native-keyframe-v1",
+        "seed": 90101,
+        "sensor_samples": 51,
+        "sensor_schedule": {
+          "A": [
+            0
+          ],
+          "B": [
+            0
+          ]
+        },
+        "start_tick": 0,
+        "status": "completed",
+        "wall_s": 7.342177577316761
+      },
+      {
+        "checkpoint": "mid",
+        "end_tick": 1000,
+        "engine_attempts_confirmed": 797,
+        "final_sha256": "cc901fd6ee46b2490dc4671546271ad83415d160d99b2175d026a2527730605f",
+        "horizon_ticks": 1000,
+        "id": "zero-mid-90101",
+        "parent": "zero-90101",
+        "physics": 797,
+        "physics_attempted": 797,
+        "positive_glove_touches": 0,
+        "reason": null,
+        "runtime_physical_audit": {
+          "actor_calls": {
+            "A": 39,
+            "B": 39
+          },
+          "audit_new_physics": 0,
+          "formal_sensor_proof": false,
+          "limitations": [
+            "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+            "A per-case audit is not the complete eight-row formal proof or motor qualification"
+          ],
+          "peak_glove_force_N": 0.0,
+          "physical_referee_audited": true,
+          "physics_observed": 797,
+          "positive_glove_touches": 0,
+          "sampled_engines_checked": 40,
+          "status": "passed",
+          "summed_glove_normal_impulse_Ns": 0.0
+        },
+        "runtime_replay": {
+          "audit_new_physics": 0,
+          "same_source_exact": true,
+          "sensor_exact": true,
+          "source_tick": 203,
+          "status": "passed",
+          "tail_physics": 797
+        },
+        "scenario": "native-keyframe-v1",
+        "seed": 90101,
+        "sensor_samples": 40,
+        "sensor_schedule": {
+          "A": [
+            0
+          ],
+          "B": [
+            0
+          ]
+        },
+        "start_tick": 203,
+        "status": "completed",
+        "wall_s": 6.791209092363715
+      },
+      {
+        "end_tick": 200,
+        "engine_attempts_confirmed": 200,
+        "final_sha256": "7142a49ce888f1d39da972e35c3d5d25f29d83ca64f4f013faabfd9ddf1dd589",
+        "horizon_ticks": 200,
+        "id": "lag-90201",
+        "physics": 200,
+        "physics_attempted": 200,
+        "positive_glove_touches": 0,
+        "reason": null,
+        "runtime_physical_audit": {
+          "actor_calls": {
+            "A": 9,
+            "B": 8
+          },
+          "audit_new_physics": 0,
+          "formal_sensor_proof": false,
+          "limitations": [
+            "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+            "A per-case audit is not the complete eight-row formal proof or motor qualification"
+          ],
+          "peak_glove_force_N": 0.0,
+          "physical_referee_audited": true,
+          "physics_observed": 200,
+          "positive_glove_touches": 0,
+          "sampled_engines_checked": 11,
+          "status": "passed",
+          "summed_glove_normal_impulse_Ns": 0.0
+        },
+        "save_mid_tick": 83,
+        "scenario": "native-keyframe-v1",
+        "seed": 90201,
+        "sensor_samples": 11,
+        "sensor_schedule": {
+          "A": [
+            20
+          ],
+          "B": [
+            40
+          ]
+        },
+        "start_tick": 0,
+        "status": "completed",
+        "wall_s": 2.3992752991616726
+      },
+      {
+        "checkpoint": "mid",
+        "end_tick": 200,
+        "engine_attempts_confirmed": 117,
+        "final_sha256": "7142a49ce888f1d39da972e35c3d5d25f29d83ca64f4f013faabfd9ddf1dd589",
+        "horizon_ticks": 200,
+        "id": "lag-mid-90201",
+        "parent": "lag-90201",
+        "physics": 117,
+        "physics_attempted": 117,
+        "positive_glove_touches": 0,
+        "reason": null,
+        "runtime_physical_audit": {
+          "actor_calls": {
+            "A": 5,
+            "B": 5
+          },
+          "audit_new_physics": 0,
+          "formal_sensor_proof": false,
+          "limitations": [
+            "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+            "A per-case audit is not the complete eight-row formal proof or motor qualification"
+          ],
+          "peak_glove_force_N": 0.0,
+          "physical_referee_audited": true,
+          "physics_observed": 117,
+          "positive_glove_touches": 0,
+          "sampled_engines_checked": 6,
+          "status": "passed",
+          "summed_glove_normal_impulse_Ns": 0.0
+        },
+        "runtime_replay": {
+          "audit_new_physics": 0,
+          "same_source_exact": true,
+          "sensor_exact": true,
+          "source_tick": 83,
+          "status": "passed",
+          "tail_physics": 117
+        },
+        "scenario": "native-keyframe-v1",
+        "seed": 90201,
+        "sensor_samples": 6,
+        "sensor_schedule": {
+          "A": [
+            20
+          ],
+          "B": [
+            40
+          ]
+        },
+        "start_tick": 83,
+        "status": "completed",
+        "wall_s": 2.618177942931652
+      },
+      {
+        "end_tick": 200,
+        "engine_attempts_confirmed": 200,
+        "final_sha256": "c5d2a82296dfa80bb6dce730f8aa8712b8a94817432b412dea483fa38691eeda",
+        "horizon_ticks": 200,
+        "id": "reorder-90202",
+        "physics": 200,
+        "physics_attempted": 200,
+        "positive_glove_touches": 0,
+        "reason": null,
+        "runtime_physical_audit": {
+          "actor_calls": {
+            "A": 9,
+            "B": 8
+          },
+          "audit_new_physics": 0,
+          "formal_sensor_proof": false,
+          "limitations": [
+            "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+            "A per-case audit is not the complete eight-row formal proof or motor qualification"
+          ],
+          "peak_glove_force_N": 0.0,
+          "physical_referee_audited": true,
+          "physics_observed": 200,
+          "positive_glove_touches": 0,
+          "sampled_engines_checked": 11,
+          "status": "passed",
+          "summed_glove_normal_impulse_Ns": 0.0
+        },
+        "save_mid_tick": 83,
+        "scenario": "native-keyframe-v1",
+        "seed": 90202,
+        "sensor_samples": 11,
+        "sensor_schedule": {
+          "A": [
+            40,
+            0
+          ],
+          "B": [
+            null,
+            20,
+            0
+          ]
+        },
+        "start_tick": 0,
+        "status": "completed",
+        "wall_s": 2.422946935519576
+      },
+      {
+        "checkpoint": "mid",
+        "end_tick": 200,
+        "engine_attempts_confirmed": 117,
+        "final_sha256": "c5d2a82296dfa80bb6dce730f8aa8712b8a94817432b412dea483fa38691eeda",
+        "horizon_ticks": 200,
+        "id": "reorder-mid-90202",
+        "parent": "reorder-90202",
+        "physics": 117,
+        "physics_attempted": 117,
+        "positive_glove_touches": 0,
+        "reason": null,
+        "runtime_physical_audit": {
+          "actor_calls": {
+            "A": 5,
+            "B": 5
+          },
+          "audit_new_physics": 0,
+          "formal_sensor_proof": false,
+          "limitations": [
+            "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+            "A per-case audit is not the complete eight-row formal proof or motor qualification"
+          ],
+          "peak_glove_force_N": 0.0,
+          "physical_referee_audited": true,
+          "physics_observed": 117,
+          "positive_glove_touches": 0,
+          "sampled_engines_checked": 6,
+          "status": "passed",
+          "summed_glove_normal_impulse_Ns": 0.0
+        },
+        "runtime_replay": {
+          "audit_new_physics": 0,
+          "same_source_exact": true,
+          "sensor_exact": true,
+          "source_tick": 83,
+          "status": "passed",
+          "tail_physics": 117
+        },
+        "scenario": "native-keyframe-v1",
+        "seed": 90202,
+        "sensor_samples": 6,
+        "sensor_schedule": {
+          "A": [
+            40,
+            0
+          ],
+          "B": [
+            null,
+            20,
+            0
+          ]
+        },
+        "start_tick": 83,
+        "status": "completed",
+        "wall_s": 2.622961051762104
+      },
+      {
+        "end_tick": 200,
+        "engine_attempts_confirmed": 0,
+        "horizon_ticks": 200,
+        "id": "drop-90203",
+        "physics": 200,
+        "physics_attempted": 0,
+        "reason": "TimeoutError: Pre-write raw credit exhausted: /home/ubuntu/joxing/v011-sensor-proof-repair-20261027/runs/v0.0.11/sensor-proof-01",
+        "save_mid_tick": 83,
+        "scenario": "native-keyframe-v1",
+        "seed": 90203,
+        "sensor_schedule": {
+          "A": [
+            null
+          ],
+          "B": [
+            40,
+            0
+          ]
+        },
+        "start_tick": 0,
+        "status": "incomplete"
+      },
+      {
+        "checkpoint": "mid",
+        "end_tick": 200,
+        "engine_attempts_confirmed": 0,
+        "horizon_ticks": 200,
+        "id": "drop-mid-90203",
+        "parent": "drop-90203",
+        "physics": 117,
+        "physics_attempted": 0,
+        "reason": "stopped after drop-90203",
+        "scenario": "native-keyframe-v1",
+        "seed": 90203,
+        "sensor_schedule": {
+          "A": [
+            null
+          ],
+          "B": [
+            40,
+            0
+          ]
+        },
+        "start_tick": 83,
+        "status": "not_run"
+      }
+    ],
+    "schema": "joxing-sensor-proof-v1",
+    "source_commit": "ef42c872d13bfebb16b347f842ba11f0b8b8e776",
+    "started_utc": "2026-10-27T14:09:46.496111+00:00",
+    "status": "halted",
+    "valid_boxing_games": 0,
+    "wall_s": 26.065700700506568
+  },
+  "audit": null,
+  "tests_log": "........................................................................ [ 20%]\n........................................................................ [ 41%]\n........................................................................ [ 61%]\n........................................................................ [ 82%]\n.............................................................            [100%]\n349 passed in 356.69s (0:05:56)\n",
+  "D1_log": "",
+  "audit_log": null,
+  "files_checked": 453,
+  "drift": [],
+  "input_hashes": {
+    "artifacts/generated/v0.0.11/sensor-model/scene.mjb": {
+      "sha256": "02806d29bba614ea3f110f3729d4cdb7319992f0df41986241a05c9bcfdf03c3",
+      "expected_sha256": "02806d29bba614ea3f110f3729d4cdb7319992f0df41986241a05c9bcfdf03c3",
+      "matches": true
+    },
+    "artifacts/generated/v0.0.11/sensor-model/scene.json": {
+      "sha256": "ab6d804b33791df58657a333cb29fc28e52a027158d839e31238a46b25d13d12",
+      "expected_sha256": "ab6d804b33791df58657a333cb29fc28e52a027158d839e31238a46b25d13d12",
+      "matches": true
+    },
+    "oracle/source-90101/contract.json": {
+      "sha256": "dcb687c0c1377cb1c901ceaa754afbd907a745bef98a3dc25c5c3c6d314d1920",
+      "expected_sha256": "dcb687c0c1377cb1c901ceaa754afbd907a745bef98a3dc25c5c3c6d314d1920",
+      "matches": true
+    },
+    "oracle/source-90101/initial.json": {
+      "sha256": "e4c69ac1d2c3cf3df5b3c7a6b4b82d4af061f796adbf96a23e3c040e41670fa9",
+      "expected_sha256": "e4c69ac1d2c3cf3df5b3c7a6b4b82d4af061f796adbf96a23e3c040e41670fa9",
+      "matches": true
+    },
+    "oracle/source-90101/final.json": {
+      "sha256": "51f5999e26d4003b173c198719ba81a4443c5697985b3b23c3e240f8d4508a07",
+      "expected_sha256": "51f5999e26d4003b173c198719ba81a4443c5697985b3b23c3e240f8d4508a07",
+      "matches": true
+    },
+    "oracle/source-90101/trace.json": {
+      "sha256": "79b499731a4b945aec80a2dcb30d76cd837e3fb5b1ce89a7aedc1cf11a8b8cba",
+      "expected_sha256": "79b499731a4b945aec80a2dcb30d76cd837e3fb5b1ce89a7aedc1cf11a8b8cba",
+      "matches": true
+    },
+    "oracle/source-90101/tape.npz": {
+      "sha256": "71c1da1e3d610bf2a9b0fe06a802af784e0bc36599755371ef29da3a18d59f91",
+      "expected_sha256": "71c1da1e3d610bf2a9b0fe06a802af784e0bc36599755371ef29da3a18d59f91",
+      "matches": true
+    }
+  },
+  "live_recorded": [],
+  "all_owned_joxing": [],
+  "source_diff_empty": true,
+  "raw_total_bytes": 97317615,
+  "load": [
+    9.3955078125,
+    9.3154296875,
+    9.82421875
+  ],
+  "disk_free_bytes": 30370975744,
+  "checked_utc": "2026-10-27T14:13:20.110402+00:00"
+}

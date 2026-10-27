@@ -1,0 +1,520 @@
+{
+  "status": "partial_evidence_passed",
+  "whole_D1_passed": false,
+  "new_physics": 0,
+  "rows": [
+    {
+      "end_tick": 1000,
+      "engine_attempts_confirmed": 1000,
+      "final_sha256": "cc901fd6ee46b2490dc4671546271ad83415d160d99b2175d026a2527730605f",
+      "horizon_ticks": 1000,
+      "id": "zero-90101",
+      "physics": 1000,
+      "physics_attempted": 1000,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_oracle": {
+        "audit_new_physics": 0,
+        "exact_saved_oracle": true,
+        "status": "passed"
+      },
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 50,
+          "B": 50
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 1000,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 51,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "save_mid_tick": 203,
+      "scenario": "native-keyframe-v1",
+      "seed": 90101,
+      "sensor_samples": 51,
+      "sensor_schedule": {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ]
+      },
+      "start_tick": 0,
+      "status": "completed",
+      "wall_s": 7.342177577316761
+    },
+    {
+      "checkpoint": "mid",
+      "end_tick": 1000,
+      "engine_attempts_confirmed": 797,
+      "final_sha256": "cc901fd6ee46b2490dc4671546271ad83415d160d99b2175d026a2527730605f",
+      "horizon_ticks": 1000,
+      "id": "zero-mid-90101",
+      "parent": "zero-90101",
+      "physics": 797,
+      "physics_attempted": 797,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 39,
+          "B": 39
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 797,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 40,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "runtime_replay": {
+        "audit_new_physics": 0,
+        "same_source_exact": true,
+        "sensor_exact": true,
+        "source_tick": 203,
+        "status": "passed",
+        "tail_physics": 797
+      },
+      "scenario": "native-keyframe-v1",
+      "seed": 90101,
+      "sensor_samples": 40,
+      "sensor_schedule": {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ]
+      },
+      "start_tick": 203,
+      "status": "completed",
+      "wall_s": 6.791209092363715
+    },
+    {
+      "end_tick": 200,
+      "engine_attempts_confirmed": 200,
+      "final_sha256": "7142a49ce888f1d39da972e35c3d5d25f29d83ca64f4f013faabfd9ddf1dd589",
+      "horizon_ticks": 200,
+      "id": "lag-90201",
+      "physics": 200,
+      "physics_attempted": 200,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 9,
+          "B": 8
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 200,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 11,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "save_mid_tick": 83,
+      "scenario": "native-keyframe-v1",
+      "seed": 90201,
+      "sensor_samples": 11,
+      "sensor_schedule": {
+        "A": [
+          20
+        ],
+        "B": [
+          40
+        ]
+      },
+      "start_tick": 0,
+      "status": "completed",
+      "wall_s": 2.3992752991616726
+    },
+    {
+      "checkpoint": "mid",
+      "end_tick": 200,
+      "engine_attempts_confirmed": 117,
+      "final_sha256": "7142a49ce888f1d39da972e35c3d5d25f29d83ca64f4f013faabfd9ddf1dd589",
+      "horizon_ticks": 200,
+      "id": "lag-mid-90201",
+      "parent": "lag-90201",
+      "physics": 117,
+      "physics_attempted": 117,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 5,
+          "B": 5
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 117,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 6,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "runtime_replay": {
+        "audit_new_physics": 0,
+        "same_source_exact": true,
+        "sensor_exact": true,
+        "source_tick": 83,
+        "status": "passed",
+        "tail_physics": 117
+      },
+      "scenario": "native-keyframe-v1",
+      "seed": 90201,
+      "sensor_samples": 6,
+      "sensor_schedule": {
+        "A": [
+          20
+        ],
+        "B": [
+          40
+        ]
+      },
+      "start_tick": 83,
+      "status": "completed",
+      "wall_s": 2.618177942931652
+    },
+    {
+      "end_tick": 200,
+      "engine_attempts_confirmed": 200,
+      "final_sha256": "c5d2a82296dfa80bb6dce730f8aa8712b8a94817432b412dea483fa38691eeda",
+      "horizon_ticks": 200,
+      "id": "reorder-90202",
+      "physics": 200,
+      "physics_attempted": 200,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 9,
+          "B": 8
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 200,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 11,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "save_mid_tick": 83,
+      "scenario": "native-keyframe-v1",
+      "seed": 90202,
+      "sensor_samples": 11,
+      "sensor_schedule": {
+        "A": [
+          40,
+          0
+        ],
+        "B": [
+          null,
+          20,
+          0
+        ]
+      },
+      "start_tick": 0,
+      "status": "completed",
+      "wall_s": 2.422946935519576
+    },
+    {
+      "checkpoint": "mid",
+      "end_tick": 200,
+      "engine_attempts_confirmed": 117,
+      "final_sha256": "c5d2a82296dfa80bb6dce730f8aa8712b8a94817432b412dea483fa38691eeda",
+      "horizon_ticks": 200,
+      "id": "reorder-mid-90202",
+      "parent": "reorder-90202",
+      "physics": 117,
+      "physics_attempted": 117,
+      "positive_glove_touches": 0,
+      "reason": null,
+      "runtime_physical_audit": {
+        "actor_calls": {
+          "A": 5,
+          "B": 5
+        },
+        "audit_new_physics": 0,
+        "formal_sensor_proof": false,
+        "limitations": [
+          "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+          "A per-case audit is not the complete eight-row formal proof or motor qualification"
+        ],
+        "peak_glove_force_N": 0.0,
+        "physical_referee_audited": true,
+        "physics_observed": 117,
+        "positive_glove_touches": 0,
+        "sampled_engines_checked": 6,
+        "status": "passed",
+        "summed_glove_normal_impulse_Ns": 0.0
+      },
+      "runtime_replay": {
+        "audit_new_physics": 0,
+        "same_source_exact": true,
+        "sensor_exact": true,
+        "source_tick": 83,
+        "status": "passed",
+        "tail_physics": 117
+      },
+      "scenario": "native-keyframe-v1",
+      "seed": 90202,
+      "sensor_samples": 6,
+      "sensor_schedule": {
+        "A": [
+          40,
+          0
+        ],
+        "B": [
+          null,
+          20,
+          0
+        ]
+      },
+      "start_tick": 83,
+      "status": "completed",
+      "wall_s": 2.622961051762104
+    },
+    {
+      "end_tick": 200,
+      "engine_attempts_confirmed": 0,
+      "horizon_ticks": 200,
+      "id": "drop-90203",
+      "physics": 200,
+      "physics_attempted": 0,
+      "reason": "TimeoutError: Pre-write raw credit exhausted: /home/ubuntu/joxing/v011-sensor-proof-repair-20261027/runs/v0.0.11/sensor-proof-01",
+      "save_mid_tick": 83,
+      "scenario": "native-keyframe-v1",
+      "seed": 90203,
+      "sensor_schedule": {
+        "A": [
+          null
+        ],
+        "B": [
+          40,
+          0
+        ]
+      },
+      "start_tick": 0,
+      "status": "incomplete"
+    },
+    {
+      "checkpoint": "mid",
+      "end_tick": 200,
+      "engine_attempts_confirmed": 0,
+      "horizon_ticks": 200,
+      "id": "drop-mid-90203",
+      "parent": "drop-90203",
+      "physics": 117,
+      "physics_attempted": 0,
+      "reason": "stopped after drop-90203",
+      "scenario": "native-keyframe-v1",
+      "seed": 90203,
+      "sensor_schedule": {
+        "A": [
+          null
+        ],
+        "B": [
+          40,
+          0
+        ]
+      },
+      "start_tick": 83,
+      "status": "not_run"
+    }
+  ],
+  "cases": [
+    {
+      "id": "zero-90101",
+      "status": "passed",
+      "physics_observed": 1000,
+      "actor_calls": {
+        "A": 50,
+        "B": 50
+      },
+      "audit_new_physics": 0,
+      "sampled_engines_checked": 51,
+      "physical_referee_audited": true,
+      "formal_sensor_proof": false,
+      "limitations": [
+        "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+        "A per-case audit is not the complete eight-row formal proof or motor qualification"
+      ],
+      "positive_glove_touches": 0,
+      "peak_glove_force_N": 0.0,
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "id": "zero-mid-90101",
+      "status": "passed",
+      "physics_observed": 797,
+      "actor_calls": {
+        "A": 39,
+        "B": 39
+      },
+      "audit_new_physics": 0,
+      "sampled_engines_checked": 40,
+      "physical_referee_audited": true,
+      "formal_sensor_proof": false,
+      "limitations": [
+        "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+        "A per-case audit is not the complete eight-row formal proof or motor qualification"
+      ],
+      "positive_glove_touches": 0,
+      "peak_glove_force_N": 0.0,
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "id": "lag-90201",
+      "status": "passed",
+      "physics_observed": 200,
+      "actor_calls": {
+        "A": 9,
+        "B": 8
+      },
+      "audit_new_physics": 0,
+      "sampled_engines_checked": 11,
+      "physical_referee_audited": true,
+      "formal_sensor_proof": false,
+      "limitations": [
+        "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+        "A per-case audit is not the complete eight-row formal proof or motor qualification"
+      ],
+      "positive_glove_touches": 0,
+      "peak_glove_force_N": 0.0,
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "id": "lag-mid-90201",
+      "status": "passed",
+      "physics_observed": 117,
+      "actor_calls": {
+        "A": 5,
+        "B": 5
+      },
+      "audit_new_physics": 0,
+      "sampled_engines_checked": 6,
+      "physical_referee_audited": true,
+      "formal_sensor_proof": false,
+      "limitations": [
+        "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+        "A per-case audit is not the complete eight-row formal proof or motor qualification"
+      ],
+      "positive_glove_touches": 0,
+      "peak_glove_force_N": 0.0,
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "id": "reorder-90202",
+      "status": "passed",
+      "physics_observed": 200,
+      "actor_calls": {
+        "A": 9,
+        "B": 8
+      },
+      "audit_new_physics": 0,
+      "sampled_engines_checked": 11,
+      "physical_referee_audited": true,
+      "formal_sensor_proof": false,
+      "limitations": [
+        "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+        "A per-case audit is not the complete eight-row formal proof or motor qualification"
+      ],
+      "positive_glove_touches": 0,
+      "peak_glove_force_N": 0.0,
+      "summed_glove_normal_impulse_Ns": 0.0
+    },
+    {
+      "id": "reorder-mid-90202",
+      "status": "passed",
+      "physics_observed": 117,
+      "actor_calls": {
+        "A": 5,
+        "B": 5
+      },
+      "audit_new_physics": 0,
+      "sampled_engines_checked": 6,
+      "physical_referee_audited": true,
+      "formal_sensor_proof": false,
+      "limitations": [
+        "Reuses frozen FK/controller/HitTracker and saved clearance/trunk frames; no physical calibration",
+        "A per-case audit is not the complete eight-row formal proof or motor qualification"
+      ],
+      "positive_glove_touches": 0,
+      "peak_glove_force_N": 0.0,
+      "summed_glove_normal_impulse_Ns": 0.0
+    }
+  ],
+  "replays": [
+    {
+      "id": "zero-mid-90101",
+      "status": "passed",
+      "source_tick": 203,
+      "tail_physics": 797,
+      "same_source_exact": true,
+      "sensor_exact": true,
+      "audit_new_physics": 0
+    },
+    {
+      "id": "lag-mid-90201",
+      "status": "passed",
+      "source_tick": 83,
+      "tail_physics": 117,
+      "same_source_exact": true,
+      "sensor_exact": true,
+      "audit_new_physics": 0
+    },
+    {
+      "id": "reorder-mid-90202",
+      "status": "passed",
+      "source_tick": 83,
+      "tail_physics": 117,
+      "same_source_exact": true,
+      "sensor_exact": true,
+      "audit_new_physics": 0
+    }
+  ],
+  "raw_manifest_files_checked": 61,
+  "oracle": {
+    "status": "passed",
+    "exact_saved_oracle": true,
+    "audit_new_physics": 0
+  },
+  "physics_attempted": 2431
+}

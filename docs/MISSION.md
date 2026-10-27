@@ -1,9 +1,9 @@
 # Current mission: v0.0.11 connected two-player correctness
 
-**D1proof attempt halted during setup before tests/physics; all8rows not_run.
-Ownership repair passes77targeted tests. New349test Linux gate/protocol is ready;
-301Linux evidence qualification remains valid at its old source. No whole-v11tag
-or valid native boxing games.** Owner this chat; no
+**349Linux tests passed. D1stopped at its unchanged storage gate:6completed,
+1incomplete/0steps,1not_run/0steps;2,431physics/3exact replays/D0oracle independently
+checked. Current ready mission: lossless evidence and the two unfinished cases.
+No active job, whole-v11tag or valid native boxing games.** Owner this chat; no
 agents, concurrent schema writers, other-chat messages or third_party edits.
 
 ## Delivered evidence and scientific limits
@@ -34,19 +34,17 @@ fails old source guards. Extra Mac exact sigmoid recomputation failed by up to
    explicit ActorInput/ages/availability, actual delayed/drop/reorder delivery
    and complete sampled-engine-bound replay. Base env/replay/controller unchanged.
    Local271tests pass202.62s. Read D1_SENSOR_TIMING and new source/tests.
-3. Evidence source628f52e qualified301Linux tests. Subsequent full proof source
-   3d4470e/protocolb97c23c8 halted during sync on a racing process-inventory guard;
-   all8rows not_run/0formalphysics. Independent451file/source/all-owned exit audit
-   retained in sensor-proof-attempt-01-failure.json. Do not edit/repeat that root.
-   Read **V0.0.11_D1_OWNERSHIP_REPAIR.md**. The repair binds real ancestry to PID+
-   start ticks, includes a real Linux child/grandchild test, and routes protocols
-   explicitly.77targeted tests pass27.47s;349Linux tests now required. New protocol
-   canonical317b4052 is registered separately; public/anonymous source verification
-   and fresh capacity/owned scan/new dedicated checkout precede one bounded gate
-   and same8row/2,748physics proof/audit. Cases, model, controller, rules, sensor
-   schedules, oracle and caps unchanged. No silent retry/duplicate/source edits.
-4. Complete remaining four-default-seed/asymmetric/adverse-input correctness
-   proof for whole v11. Do not use one recorded seed to imply those tests passed.
+3. Read V0.0.11_D1_RESULTS.md and **V0.0.11_D1_STORAGE_MISSION.md**. Sourceef42c87/
+   repair317b4052 passed349Linux tests, then stopped at96MiBraw credit after six
+   cases/2,431steps. All24identities exited/453files+7inputs verified; independently
+   audited6cases/3replays/exact D0oracle, whole_D1_passed=false. Complete68file local
+   copy hashverified. Earlier setup8not_run and later1incomplete/1not_run retained.
+   Qualify lossless evidence/reader/writer (0physics) before a public-frozen packet
+   for ONLYdrop200+actual83→200replay117. Preserve six fixed case dependencies and
+   all18attempt rows in combined audit. No old-source/protocol/outcome edit,
+   changed physical/controller semantics, raised failed-packet cap or blind rerun.
+4. After full D1completion, follow V0.0.11_COMPLETION_PACKET.md for remaining
+   four-default-seed/asymmetric/adverse-input correctness proof for whole v11. Do not use one recorded seed to imply those tests passed.
 5. Next motor goal is stable unassisted guard/reach under the actual shared-model
    contract before frozen-opponent learning. Native walking is not boxing. The
    v10pilot already failed both improvement gates; do not enlarge it unchanged.
@@ -62,7 +60,7 @@ historical opponent league remain unimplemented.
 
 ## Budgets and handoff
 
-Current formal v11physics2642; video repair0. Original post-gate40.476303s includes
+Current formal v11physics5073 = D0(2642)+partialD1(2431); video/setup/read audits0. Original post-gate40.476303s includes
 failed decoder; keep stage/whole-run accounting distinct. Whole v11hardcaps
 120kphysics/900s/256MiBraw/max2simworkers, global<=16owned workers,1numerical thread
 perprocess. Ceilings are not targets; next packet uses tighter registered limits.
