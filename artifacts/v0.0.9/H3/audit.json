@@ -1,0 +1,203 @@
+{
+  "auditor_sha256": "e2a88a15f98f1c047a8118245611e711bbe4599fbb5554746ba24a0dd3169260",
+  "decision": "decline; reference default retained",
+  "findings": [
+    {
+      "case_id": "0:baseline:78000",
+      "contacts": 12422,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "0:baseline:78001",
+      "contacts": 12697,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "0:baseline:78002",
+      "contacts": 12018,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "0:baseline:78003",
+      "contacts": 12293,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "0:allocation_reduced:78000",
+      "contacts": 12422,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "0:allocation_reduced:78001",
+      "contacts": 12697,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "0:allocation_reduced:78002",
+      "contacts": 12018,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "0:allocation_reduced:78003",
+      "contacts": 12293,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:allocation_reduced:78000",
+      "contacts": 12422,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:allocation_reduced:78001",
+      "contacts": 12697,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:allocation_reduced:78002",
+      "contacts": 12018,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:allocation_reduced:78003",
+      "contacts": 12293,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:baseline:78000",
+      "contacts": 12422,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:baseline:78001",
+      "contacts": 12697,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:baseline:78002",
+      "contacts": 12018,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "1:baseline:78003",
+      "contacts": 12293,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:baseline:78000",
+      "contacts": 12422,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:baseline:78001",
+      "contacts": 12697,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:baseline:78002",
+      "contacts": 12018,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:baseline:78003",
+      "contacts": 12293,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:allocation_reduced:78000",
+      "contacts": 12422,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:allocation_reduced:78001",
+      "contacts": 12697,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:allocation_reduced:78002",
+      "contacts": 12018,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    },
+    {
+      "case_id": "2:allocation_reduced:78003",
+      "contacts": 12293,
+      "physics_steps": 3000,
+      "raw_exact": true,
+      "reset_count": 1
+    }
+  ],
+  "incomplete": 0,
+  "invalid": 0,
+  "linux_tests_sha256": "d68324ba530c2fac15c4eba93e3ddf0cb05768a367606a789acf3e79d4d13e74",
+  "new_audit_physics_steps": 0,
+  "not_run": 0,
+  "passed": true,
+  "performance_gate_met": false,
+  "physics_steps": 82394,
+  "qualification_counts": {
+    "completed": 4
+  },
+  "raw_bytes": 165973903,
+  "recorded_exited_pids": 29,
+  "result_sha256": "6a3bdaf26cf2408a03bb94074b0a16f849fa36ee9e2134c5c2a9b22ab5936a3a",
+  "scope": "Every saved raw array/dtype, trace, initial/final snapshot and receipt checked; four source-v8 tails exact. Pre-snapshot hash lists compared, not independently regenerated: full intermediate application snapshots were not saved. Frozen source verifies closed-loop action assertions and in-flight resource/deadline guards; no new physics/actor execution or independent peak sampling.",
+  "source_commit": "4aea332e85051a2669c1973f71101f488393cd5c",
+  "startup_inclusive_medians": {
+    "allocation_reduced": 86.68890811366809,
+    "baseline": 85.60830450860615
+  },
+  "startup_ratio": 1.01262264930096,
+  "steady_medians": {
+    "allocation_reduced": 207.8888125301093,
+    "baseline": 204.15492323669378
+  },
+  "steady_speedup": 1.0182894893457286,
+  "timed_counts": {
+    "completed": 24
+  }
+}

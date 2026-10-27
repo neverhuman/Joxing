@@ -1,0 +1,63 @@
+{
+  "pid": 2496537,
+  "source_commit": "4aea332e85051a2669c1973f71101f488393cd5c",
+  "status": "completed",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "pid": 2496539,
+      "returncode": 0,
+      "wall_s": 1.466119984164834
+    },
+    {
+      "stage": "full-tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "status": "completed",
+      "pid": 2496660,
+      "returncode": 0,
+      "wall_s": 235.8026266824454
+    },
+    {
+      "stage": "H3",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.9/runtime",
+        "--locked",
+        "python",
+        "scripts/benchmark_collector.py",
+        "--protocol",
+        "experiments/v0.0.9/collector-protocol.json",
+        "--inputs",
+        "/home/ubuntu/joxing/deployment-cache/inputs",
+        "--out",
+        "runs/v0.0.9/collector-01"
+      ],
+      "status": "completed",
+      "pid": 2544140,
+      "returncode": 0,
+      "wall_s": 104.21242022328079
+    }
+  ],
+  "started_utc": "2026-10-27T01:06:17.334403+00:00",
+  "physics_budget": 100000,
+  "threads": 1,
+  "finished_utc": "2026-10-27T01:11:58.818540+00:00"
+}

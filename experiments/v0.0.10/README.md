@@ -1,0 +1,5 @@
+# v0.0.10 experiment book
+
+Status: ready for implementation, no formal attempt or result. Follow [worker-ready mission](../../docs/V0.0.10_MISSION.md). Current priority is existing-data input/failure audit followed by a deterministic neutral residual-adapter contract. Do not train until tests, source-v8 qualification, a new machine protocol and public source freeze pass. Do not reuse old v9runtime locks after release package metadata changes.
+
+Proposed later gated pilot: two sequential8192-transition residual-SAC seeds81011/81029,4residentworkers/one thread,32planned heldout evaluations on83000–83007, bounded physical-alive-seconds objective. All700native muscles preserved, frozen native3601teacher/normalizer/decoder0.075, explicit138latentactioncontract. This is motor adaptation, not self-play. Wholemain550kphysics/1800s/1GiB plus50kauditreserve; everyattempt/fault/not_runretained. Register exact implementation/protocol/hashes/commands before any formal outcome. Next record must identify D0/D1implementation/tests/freeze or a proved prerequisite failure, never fabricate a run row.

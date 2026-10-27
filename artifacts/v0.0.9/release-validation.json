@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-27T01:26:45.285536+00:00",
+  "commands": [
+    {
+      "command": "rtk proxy uv run pytest -q tests/test_collector_audit.py tests/test_collector_benchmark.py tests/test_physical_fast.py",
+      "result": "14 passed in13.27s after final formatting/version metadata"
+    },
+    {
+      "command": "rtk proxy uv run pytest --collect-only -q",
+      "result": "167 tests collected"
+    },
+    {
+      "command": "rtk proxy uvx ruff check src scripts tests",
+      "result": "All checks passed"
+    },
+    {
+      "command": "rtk proxy uv lock --offline --check",
+      "result": "Resolved43packages; lock matches release metadata"
+    },
+    {
+      "command": "rtk proxy git diff --check",
+      "result": "clean"
+    }
+  ],
+  "formal_frozen_linux": "165 passed in233.65s, source4aea332; no claim of167Linux rerun",
+  "historical_v9_runtime_lock_sha256": "27d7dadf339aa4e0c7439fc15d57f89782158b382747b3c29c9282fb601aab6d",
+  "package_version": "0.0.9",
+  "next_mission": "docs/V0.0.10_MISSION.md",
+  "next_mission_status": "ready, no v10formal outcomes"
+}

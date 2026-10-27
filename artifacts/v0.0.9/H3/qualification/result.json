@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "first_source_substep": 100,
+      "path": "recorded_actions",
+      "physics_steps": 2600,
+      "snapshot": "boundary",
+      "source_state_contact_action_exact": true,
+      "status": "completed"
+    },
+    {
+      "first_source_substep": 100,
+      "path": "closed_loop",
+      "physics_steps": 2600,
+      "snapshot": "boundary",
+      "source_state_contact_action_exact": true,
+      "status": "completed"
+    },
+    {
+      "first_source_substep": 103,
+      "path": "recorded_actions",
+      "physics_steps": 2597,
+      "snapshot": "mid_control",
+      "source_state_contact_action_exact": true,
+      "status": "completed"
+    },
+    {
+      "first_source_substep": 103,
+      "path": "closed_loop",
+      "physics_steps": 2597,
+      "snapshot": "mid_control",
+      "source_state_contact_action_exact": true,
+      "status": "completed"
+    }
+  ],
+  "physics_steps": 10394
+}

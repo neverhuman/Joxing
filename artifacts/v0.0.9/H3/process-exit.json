@@ -1,0 +1,194 @@
+{
+  "utc": "2026-10-27T01:13:31.754473+00:00",
+  "supervisor": {
+    "pid": 2496537,
+    "source_commit": "4aea332e85051a2669c1973f71101f488393cd5c",
+    "status": "completed",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "pid": 2496539,
+        "returncode": 0,
+        "wall_s": 1.466119984164834
+      },
+      {
+        "stage": "full-tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "completed",
+        "pid": 2496660,
+        "returncode": 0,
+        "wall_s": 235.8026266824454
+      },
+      {
+        "stage": "H3",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked",
+          "python",
+          "scripts/benchmark_collector.py",
+          "--protocol",
+          "experiments/v0.0.9/collector-protocol.json",
+          "--inputs",
+          "/home/ubuntu/joxing/deployment-cache/inputs",
+          "--out",
+          "runs/v0.0.9/collector-01"
+        ],
+        "status": "completed",
+        "pid": 2544140,
+        "returncode": 0,
+        "wall_s": 104.21242022328079
+      }
+    ],
+    "started_utc": "2026-10-27T01:06:17.334403+00:00",
+    "physics_budget": 100000,
+    "threads": 1,
+    "finished_utc": "2026-10-27T01:11:58.818540+00:00"
+  },
+  "recorded_processes": [
+    {
+      "pid": 2496537,
+      "exists": false
+    },
+    {
+      "pid": 2496539,
+      "exists": false
+    },
+    {
+      "pid": 2496660,
+      "exists": false
+    },
+    {
+      "pid": 2496671,
+      "exists": false
+    },
+    {
+      "pid": 2544140,
+      "exists": false
+    },
+    {
+      "pid": 2545140,
+      "exists": false
+    },
+    {
+      "pid": 2545143,
+      "exists": false
+    },
+    {
+      "pid": 2545144,
+      "exists": false
+    },
+    {
+      "pid": 2545145,
+      "exists": false
+    },
+    {
+      "pid": 2546434,
+      "exists": false
+    },
+    {
+      "pid": 2546437,
+      "exists": false
+    },
+    {
+      "pid": 2546438,
+      "exists": false
+    },
+    {
+      "pid": 2546439,
+      "exists": false
+    },
+    {
+      "pid": 2547920,
+      "exists": false
+    },
+    {
+      "pid": 2547923,
+      "exists": false
+    },
+    {
+      "pid": 2547924,
+      "exists": false
+    },
+    {
+      "pid": 2547925,
+      "exists": false
+    },
+    {
+      "pid": 2549395,
+      "exists": false
+    },
+    {
+      "pid": 2549398,
+      "exists": false
+    },
+    {
+      "pid": 2549399,
+      "exists": false
+    },
+    {
+      "pid": 2549400,
+      "exists": false
+    },
+    {
+      "pid": 2550756,
+      "exists": false
+    },
+    {
+      "pid": 2550759,
+      "exists": false
+    },
+    {
+      "pid": 2550760,
+      "exists": false
+    },
+    {
+      "pid": 2550761,
+      "exists": false
+    },
+    {
+      "pid": 2551981,
+      "exists": false
+    },
+    {
+      "pid": 2551984,
+      "exists": false
+    },
+    {
+      "pid": 2551985,
+      "exists": false
+    },
+    {
+      "pid": 2551986,
+      "exists": false
+    }
+  ],
+  "owned_processes": [],
+  "source_diff": "",
+  "head": "4aea332e85051a2669c1973f71101f488393cd5c",
+  "load": [
+    10.18896484375,
+    10.61767578125,
+    10.267578125
+  ],
+  "memory_available_bytes": 103221858304,
+  "disk_free_bytes": 46303039488
+}

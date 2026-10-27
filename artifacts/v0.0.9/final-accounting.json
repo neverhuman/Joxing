@@ -1,0 +1,86 @@
+{
+  "schema": "joxing-v009-final-accounting-v1",
+  "all_formal_attempts": [
+    {
+      "path": "H0/result.json",
+      "sha256": "01769ca1967a1a3c68e31085b575f76ad83a7d65e87b555934274120defd3c78",
+      "status": "halted",
+      "physics_steps": 0,
+      "wall_s": 9.65849761851132,
+      "source_commit": "6a32a1dc872c0cfcf03eea4ce4990355231d155c"
+    },
+    {
+      "path": "N1/result.json",
+      "sha256": "cdeaca9ce1486e0617d53ad3e93bd86e143b44f9ea0624cc5cd6204a74ee0d42",
+      "status": "completed",
+      "physics_steps": 0,
+      "wall_s": 8.21913236565888,
+      "source_commit": "615c02a3641069e5820f16b88afd03f5545866d8"
+    },
+    {
+      "path": "H1/result.json",
+      "sha256": "8ea3a2169336ba2711be918c655c30a0d44bd8cd233445a4e03011f3c1ef336c",
+      "status": "completed",
+      "physics_steps": 18000,
+      "wall_s": 45.87549707107246,
+      "source_commit": "5b52d77a23fc76936b17f86789a74e3b70b75cad"
+    },
+    {
+      "path": "H2/attempt-01/result.json",
+      "sha256": "59ba4b8c8707796cffc5d31c436df61a340bbc3d357e37ac4b1f2cd567b69778",
+      "status": "halted",
+      "physics_steps": 37200,
+      "wall_s": 110.27651173062623,
+      "source_commit": "a8f47d84d21cd8dd84cd7147989d7a2bc02d06c0"
+    },
+    {
+      "path": "H2/attempt-02/host-qualification-02/result.json",
+      "sha256": "7f1e6be88e1bbb64b37033bea1c0b4c9fd362af0a5f289bf51089847d3e72ad7",
+      "status": "completed",
+      "physics_steps": 10394,
+      "wall_s": 20.213641298934817,
+      "source_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540"
+    },
+    {
+      "path": "H2/attempt-02/scaling-02/result.json",
+      "sha256": "e2ac61f4b9043ebec2f707a3b7f025b224b4ca21ab383b03df325113c4ee9edd",
+      "status": "completed",
+      "physics_steps": 93600,
+      "wall_s": 159.4054251331836,
+      "source_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540"
+    },
+    {
+      "path": "H3/result.json",
+      "sha256": "6a3bdaf26cf2408a03bb94074b0a16f849fa36ee9e2134c5c2a9b22ab5936a3a",
+      "status": "completed",
+      "physics_steps": 82394,
+      "wall_s": 103.11012678220868,
+      "source_commit": "4aea332e85051a2669c1973f71101f488393cd5c"
+    }
+  ],
+  "physics_steps": 241588,
+  "formal_wall_s_including_H0_N1": 456.758832000196,
+  "main_H1_H2_H3_wall_s": 438.8812020160258,
+  "main_caps": {
+    "physics_steps": 500000,
+    "wall_s": 900,
+    "raw_bytes": 1073741824
+  },
+  "new_independent_audit_physics_steps": 0,
+  "simulation_workers_max": 16,
+  "simulation_threads_each": 1,
+  "boxing_games": 0,
+  "learner_updates": 0,
+  "timed_or_qualification_case_denominator": {
+    "planned": 228,
+    "completed": 152,
+    "invalid": 1,
+    "incomplete": 0,
+    "not_run": 75
+  },
+  "allocation_failures_separate_from_cases": {
+    "H2_attempt01_memory_guard_waves": 1
+  },
+  "decision": "Use qualified CPU scalar parallel rollout, up to16subject to capacity. Decline batched actor and allocation collector under unchanged gates. Proceed to v10motor residual contract/pilot; no boxing competence.",
+  "regression_fixture_physics": "Separate test fixtures; not formal rollout/learning/game counters."
+}

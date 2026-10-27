@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-27T01:18:17.032185+00:00",
+  "commands": [
+    "rtk proxy uv run pytest -q tests/test_collector_audit.py tests/test_collector_benchmark.py tests/test_physical_fast.py",
+    "rtk proxy uvx ruff check src scripts tests",
+    "rtk proxy uv run python scripts/audit_collector.py --folder runs/v0.0.9/collector-01 --receipts artifacts/v0.0.9/H3"
+  ],
+  "results": [
+    "14 passed in13.11s",
+    "All checks passed",
+    "independent all28row audit passed; zero new physics"
+  ],
+  "development_failures": [
+    "Initial audit incorrectly expected floor_geom_id in source specification; corrected to unique shared floor geom in hash-pinned source tape.",
+    "Initial audit compared parent-added paired_exact to unmodified worker receipt; corrected explicit parent/worker field split.",
+    "Initial auditor assumed left/right load order; source contract is right/left/nonfoot. Corrected and corruption fixture verifies semantic order.",
+    "Three initial Ruff style findings corrected. No formal experiment source/result or gate was changed."
+  ],
+  "auditor_sha256": "e2a88a15f98f1c047a8118245611e711bbe4599fbb5554746ba24a0dd3169260"
+}
