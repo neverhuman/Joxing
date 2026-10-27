@@ -1,0 +1,48 @@
+# Mirrors the canonical source gate used by the supervisors in scripts/:
+#   uv sync --project experiments/v0.0.11/runtime --locked
+#   uv run --project experiments/v0.0.11/runtime --locked pytest -q
+# with every BLAS/OpenMP pool pinned to one thread. CPU physics only; no
+# rendering, GPU, network model downloads or compute-host state is required.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  RUNTIME: experiments/v0.0.11/runtime
+  OMP_NUM_THREADS: "1"
+  OPENBLAS_NUM_THREADS: "1"
+  MKL_NUM_THREADS: "1"
+  NUMEXPR_NUM_THREADS: "1"
+  VECLIB_MAXIMUM_THREADS: "1"
+  MUJOCO_GL: egl
+
+jobs:
+  tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Pinned MS-Human-700 and msgym models (~66 MB checked out).
+          submodules: true
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.11.28"
+          cache-dependency-glob: experiments/v0.0.11/runtime/uv.lock
+      - name: Record pinned submodules
+        run: git submodule status
+      - name: Sync locked runtime
+        run: uv sync --project "$RUNTIME" --locked
+      - name: Test
+        run: uv run --project "$RUNTIME" --locked pytest -q -p no:cacheprovider --durations=15 tests grokbot/tests
