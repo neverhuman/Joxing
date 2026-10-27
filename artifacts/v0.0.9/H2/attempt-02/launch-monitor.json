@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-27T00:30:14.244574+00:00",
+  "supervisor": {
+    "pid": 2219857,
+    "source_commit": "37aa36cf6577d453fbb9b367ab3a7963184f8540",
+    "status": "running",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "pid": 2219859,
+        "returncode": 0,
+        "wall_s": 9.630236856639385
+      },
+      {
+        "stage": "full-tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.9/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "running",
+        "pid": 2220549
+      }
+    ],
+    "started_utc": "2026-10-27T00:29:00.549194+00:00",
+    "physics_budget": 132000,
+    "threads": 1
+  },
+  "owned_processes": [
+    {
+      "pid": 2219857,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-attempt02-20261027",
+      "command": "python3 /home/ubuntu/joxing/v009-scaling-attempt02-20261027/runs/v0.0.9/supervise.py ",
+      "cpu_ticks": 7,
+      "rss_bytes": 13737984
+    },
+    {
+      "pid": 2220549,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-attempt02-20261027",
+      "command": "/home/ubuntu/.local/bin/uv run --project experiments/v0.0.9/runtime --locked pytest -q ",
+      "cpu_ticks": 1,
+      "rss_bytes": 43737088
+    },
+    {
+      "pid": 2220553,
+      "cwd": "/home/ubuntu/joxing/v009-scaling-attempt02-20261027",
+      "command": "/home/ubuntu/joxing/v009-scaling-attempt02-20261027/experiments/v0.0.9/runtime/.venv/bin/python /home/ubuntu/joxing/v009-scaling-attempt02-20261027/experiments/v0.0.9/runtime/.venv/bin/pytest -q ",
+      "cpu_ticks": 6734,
+      "rss_bytes": 2300575744
+    }
+  ],
+  "test_log_tail": ".................................................",
+  "load": [
+    9.76708984375,
+    9.57080078125,
+    9.912109375
+  ],
+  "source_diff": ""
+}
