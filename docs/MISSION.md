@@ -1,3 +1,9 @@
+## Linux gate passed; bounded D2 now active
+
+Frozenb1d1690 on xbabe3 passed all196Linux tests275.02s (supervisor277.642415s), all recorded test processes exited. Formal D2uv2786514/Python2786532 started under supervisor2726271. First initial heldout evaluation completed, secondrunning, no invalids; confirmed mainphysics12,754including prior10,394, optimizerupdates0 at this check. Source diffempty. This is actual native motor evaluation, not a bout. Full32evaluation/two training/two replay rows retained; inspect live result/events/private workerprogress before any continuation. Exact source/protocol/launch in artifacts/v0.0.10/D2/deployment/progress-check-02.json. Current development additions do not change executing source.
+
+Next heartbeat: inspect fresh counters/PIDstartticks/RSS/capacity/faults, then independent completed-attempt audit and raw retrieval/publication. Never launch a duplicate or another unchanged walking sweep. On v10conclusion activate V0.0.11_MISSION and recorded shared-loop goal BOUT_RECORDING_MILESTONE. No v10tag or learned boxing claim yet.
+
 ## Active frozen Linux qualification/pilot —2026-10-27 10:43UTC
 
 Public/frozen sourceb1d1690ec6bc0c4d248336ce407a5c71a3f0e7c6; protocol canonical725313890a6e260887fb4542a39878646a8c73508c5a6a35f8294d69061013ec anonymously byte-verified, repositorypublic. Dedicated xbabe3:/home/ubuntu/joxing/v010-pilot-20261027, supervisor2726271/start_ticks919982114. Launch scanownedempty,100.86GBavailableRAM/37.45GBdisk. Exactsource/input/288upstream file hashes verified. Supervisor requires literal196Linux passes before one fixedD2pilot, then independent saved-evidence audit; stage deadlines180/420/2130/180s. Main550kphysics/1800s/1GiB including prior10,394physics/25.066975s; separate50k/300sauditreserve, max4simulationworkers/one thread. No executing-source mutation or duplicate launch. Local196tests passed177.52s, Ruffpasses.

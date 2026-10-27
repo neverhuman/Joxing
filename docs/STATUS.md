@@ -1,3 +1,9 @@
+## Linux gate passed; bounded D2 now active
+
+Frozenb1d1690 on xbabe3 passed all196Linux tests275.02s (supervisor277.642415s), all recorded test processes exited. Formal D2uv2786514/Python2786532 started under supervisor2726271. First initial heldout evaluation completed, secondrunning, no invalids; confirmed mainphysics12,754including prior10,394, optimizerupdates0 at this check. Source diffempty. This is actual native motor evaluation, not a bout. Full32evaluation/two training/two replay rows retained; inspect live result/events/private workerprogress before any continuation. Exact source/protocol/launch in artifacts/v0.0.10/D2/deployment/progress-check-02.json. Current development additions do not change executing source.
+
+Next heartbeat: inspect fresh counters/PIDstartticks/RSS/capacity/faults, then independent completed-attempt audit and raw retrieval/publication. Never launch a duplicate or another unchanged walking sweep. On v10conclusion activate V0.0.11_MISSION and recorded shared-loop goal BOUT_RECORDING_MILESTONE. No v10tag or learned boxing claim yet.
+
 ## v11 independent foundation while frozen v10 runs
 
 Implemented bodies/{base,native}.py: semantic85joint/700activation ownership per corner and six measured body positions/linear velocities from the shared MjData. Measurements are owned immutable copies with a shared timestamp; Jacobian velocity readout is checked against independent point-Jacobian evaluation. Private opponent activation/joint measurements are not policy observations. This is not BoxingEnv, a history stack, a referee or a bout. New body+recording subset3tests pass5.58s with0new simulation steps in the body test. Recursive provenance now includes nested body modules; a separate hash-mutation test passes0.17s. These edits are in the development checkout only; remote D2sourceb1d1690and its196-test gate are unchanged.
