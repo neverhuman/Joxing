@@ -1,0 +1,46 @@
+{
+  "scope": "Development fixtures only; no formal eight-case outcomes before registration",
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/test_frozen_scene.py",
+    "tests/test_sensor_physics_audit.py",
+    "tests/test_sensor_proof.py",
+    "tests/test_sensor_audit.py"
+  ],
+  "returncode": 0,
+  "stdout": ".....................................................................    [100%]\n69 passed in 29.78s\n",
+  "stderr": "",
+  "wall_s": 30.20764333300758,
+  "utc": "2026-10-27T13:49:25.312187+00:00",
+  "files": {
+    "src/joxing/frozen_scene.py": "c269f59eba8abbafde6df66bac8ca5154ffc63589bcd3c853e527c092092c681",
+    "src/joxing/sensor_physics_audit.py": "56af747c039ac9c8dfd771dc199285997de36a091d9db134bd40a4054ee1900a",
+    "src/joxing/sensor_protocol.py": "15af45c93266ebf91fa81e9a94f0c1d6ea22f09d6028f09f6bde73d2411e2e8c",
+    "scripts/qualify_sensor_env.py": "8393c6d75a09eed31c950540e73971b5e006311b40d0ba7c0be30064947f78ac",
+    "scripts/audit_sensor_env.py": "8d303d9626f5abcf3a34f08b1ba69a027ce5a5f53cd79ebc14c11a7f3ec5d98e",
+    "scripts/register_sensor_proof.py": "b2d4127d790d28e0af18a9b1deb69c31c66f0186b22e0211d709a846d8b849e2",
+    "scripts/supervise_sensor_proof.py": "1d0d64d9bd24b7b9073ea338eecb3a1678dc17b08b359fb5ce440b51d5610db7",
+    "tests/test_frozen_scene.py": "7b3d1c36f096593b299123ac13512001f820e479b0ac461b7f3b4460e0cf5756",
+    "tests/test_sensor_physics_audit.py": "18378cb9c8591a5ef0e46b534d0117cdaa1e82914a57c0bd211916dbfed01fce",
+    "tests/test_sensor_proof.py": "d9e84710b4bf349747e5a623d8838ff2b6c18bc3d6671cca50aef0f8808dbee4"
+  },
+  "prior_attempts": [
+    {
+      "tests": 20,
+      "passed": 20,
+      "wall_s": 15.11
+    },
+    {
+      "tests": 69,
+      "passed": 69,
+      "wall_s": 28.72
+    }
+  ],
+  "lint_fixes": "Explicit negative-audit/partial-save exception annotations, imports, dict literal; no criterion changes"
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-27T13:51:18.746494+00:00",
+  "command": [
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "pytest",
+    "--collect-only",
+    "-q"
+  ],
+  "result": "340 tests collected in 2.93s",
+  "expected_tests": 340
+}

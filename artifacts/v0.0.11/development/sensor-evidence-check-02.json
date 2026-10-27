@@ -1,0 +1,201 @@
+{
+  "result": {
+    "schema": "joxing-sensor-evidence-qualification-v1",
+    "protocol_sha256": "0dc7e1882d02e4cf2e86f891d10fd5ef2251d2a35518f04b81fdce46b025b2ef",
+    "source_commit": "628f52e87f6ab292492ae8e67b8f9410489dfe01",
+    "pid": {
+      "pid": 4087770,
+      "parent_pid": 1,
+      "start_ticks": 921010796,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T13:35:14.125178+00:00",
+    "status": "running",
+    "initial_available_memory_bytes": 93691625472,
+    "initial_disk_free_bytes": 32805715968,
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "process": {
+          "pid": 4087777,
+          "parent_pid": 4087770,
+          "start_ticks": 921010822,
+          "state": "R"
+        },
+        "status": "completed",
+        "owned_processes": [
+          {
+            "pid": 4087777,
+            "parent_pid": 4087770,
+            "start_ticks": 921010822,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 93675372544,
+          "disk_free_bytes": 32805511168,
+          "load": [
+            9.607421875,
+            9.9013671875,
+            10.48583984375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 2.0905282460153103,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "process": {
+          "pid": 4087908,
+          "parent_pid": 4087770,
+          "start_ticks": 921011032,
+          "state": "R"
+        },
+        "status": "running",
+        "owned_processes": [
+          {
+            "pid": 4087908,
+            "parent_pid": 4087770,
+            "start_ticks": 921011032,
+            "state": "S"
+          },
+          {
+            "pid": 4087912,
+            "parent_pid": 4087908,
+            "start_ticks": 921011038,
+            "state": "S"
+          },
+          {
+            "pid": 4094859,
+            "parent_pid": 4087912,
+            "start_ticks": 921018875,
+            "state": "S"
+          },
+          {
+            "pid": 4094860,
+            "parent_pid": 4087912,
+            "start_ticks": 921018875,
+            "state": "R"
+          },
+          {
+            "pid": 4094861,
+            "parent_pid": 4087912,
+            "start_ticks": 921018875,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 88385540096,
+          "disk_free_bytes": 32381657088,
+          "load": [
+            11.26123046875,
+            10.63232421875,
+            10.63525390625
+          ]
+        }
+      }
+    ],
+    "formal_gate_physics": 0,
+    "prior_formal_v11_physics": 2642,
+    "formal_v11_optimizer_updates": 0,
+    "regression_fixtures": "Physics/gradient/process fixtures are separate from formal outcome counters; global16worker limit applies"
+  },
+  "tests_log": "........................................................................ [ 23%]\n........................................................................ [ 47%]\n........................................................................ [ 71%]\n........................................................................ [ 95%]\n...........",
+  "files_checked": 441,
+  "drift": [],
+  "live_recorded": [
+    {
+      "pid": 4087770,
+      "parent_pid": 1,
+      "start_ticks": 921010796,
+      "state": "R"
+    },
+    {
+      "pid": 4087908,
+      "parent_pid": 4087770,
+      "start_ticks": 921011032,
+      "state": "R"
+    },
+    {
+      "pid": 4087908,
+      "parent_pid": 4087770,
+      "start_ticks": 921011032,
+      "state": "S"
+    },
+    {
+      "pid": 4087912,
+      "parent_pid": 4087908,
+      "start_ticks": 921011038,
+      "state": "S"
+    },
+    {
+      "pid": 4094859,
+      "parent_pid": 4087912,
+      "start_ticks": 921018875,
+      "state": "S"
+    }
+  ],
+  "all_owned_joxing": [
+    {
+      "pid": 4087770,
+      "parent_pid": 1,
+      "start_ticks": 921010796,
+      "state": "S"
+    },
+    {
+      "pid": 4087912,
+      "parent_pid": 4087908,
+      "start_ticks": 921011038,
+      "state": "S"
+    },
+    {
+      "pid": 4094859,
+      "parent_pid": 4087912,
+      "start_ticks": 921018875,
+      "state": "S"
+    },
+    {
+      "pid": 4147983,
+      "parent_pid": 4087912,
+      "start_ticks": 921040555,
+      "state": "S"
+    },
+    {
+      "pid": 4148003,
+      "parent_pid": 4087912,
+      "start_ticks": 921040568,
+      "state": "R"
+    },
+    {
+      "pid": 4148006,
+      "parent_pid": 4087912,
+      "start_ticks": 921040569,
+      "state": "R"
+    }
+  ],
+  "source_diff_empty": true,
+  "load": [
+    11.56103515625,
+    10.705078125,
+    10.6591796875
+  ],
+  "disk_free_bytes": 32381640704,
+  "checked_utc": "2026-10-27T13:40:13.196925+00:00"
+}

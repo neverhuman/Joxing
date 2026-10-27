@@ -1,3 +1,44 @@
+## D1physical sensor proof implemented; final source gate next —2026-10-27 13:52UTC
+
+Sensor evidence source628f52e qualified301Linux tests328.69s; supervisor tests
+332.345908s. Independent13:42:33UTC audit verified441registered files, no drift,
+all recorded identities exited and all-owned Joxing scanempty. The earlier gate
+is complete; its checkout and outcomes remain immutable.
+
+Added frozen_scene.py: hash-bound actual MJB/report loader, native dimensions,
+all700semantic muscles/corner, native parameter equality and physical registry
+checks, no XML rebuild/export. Original binary SHA02806d29…/180,809,620bytes and
+actual report SHAab6d804b…/28,836bytes independently reverified on source host.
+Added sensor_physics_audit.py: signed force/approach, all glove/impulse/ledger/
+ending checks with explicitly reused D0array method/FK/controller/HitTracker,
+sample points bound to physical ledger,0auditphysics. No physical calibration or
+motor claim. Default env/replay/controller bytes unchanged.
+
+New sensor_protocol.py and qualify_sensor_env/audit_sensor_env/register_sensor_proof/
+supervise_sensor_proof scripts define all8rows before model load, actual203/83
+checkpoints, per-row physical/replay/oracle checks (stop first), separate full
+saved-evidence audit, exact D0oracle, bounded raw staging/writes/fault reserve,
+PID/startidentity/progress/resource/source/oracle ownership guards and retained
+invalid/incomplete/not_run rows. Engine/load/memory fault fixtures retain every
+attempt and last-valid/fault engine evidence. Global owned-process scan is also
+checked during supervision; one simulation process/one numerical thread.
+
+All69targeted tests pass29.78s (39new),340total collected; Ruffpasses. New formal
+protocol canonicalb97c23c8e145bff5c861ce93d05410a98657cca60194bacbba653580e7f89a19,
+file SHA1410021e8cccf3bcdc7af4cf2bc15ed4012c1e271ae63c5e41ad65e59e521413,
+163source+288upstream files and5retained oracle files. Freeze/public/anonymous
+verification before deployment. Final source must pass340Linux tests, then the
+same registered supervisor may execute8rows/2,748physics and independent audit.
+Hard10kphysics/180srunner/300spostgate/96MiBraw/one simulation worker; firstlimit.
+No rerender or unchanged motor training. Formalphysics still2642 pending launch;
+all700muscles, sporting/motor/whole-v11completion gates unchanged. Do not tagv11.
+
+Budget references: original D0raw55,053,851bytes and postgate40.476303s are carried
+in the protocol; separate0physics video-repair evidence/time also remains in its
+own receipts. The new96MiB/300s maxima leave ample room under whole-v11limits
+256MiB/900s; regression fixtures and generated compiled models are separately
+accounted, never called boxing games. Preserve all source/protocol/attempt hashes.
+
 ## Active frozen sensor-evidence Linux gate —2026-10-27 13:35UTC
 
 Public source628f52e87f6ab292492ae8e67b8f9410489dfe01 and protocol canonical

@@ -1,8 +1,8 @@
 # Current mission: v0.0.11 connected two-player correctness
 
-**D1sensor foundation qualified:271Linux tests pass. Evidence/independent transport
-components pass59targeted tests; a frozen301test Linux gate is active. Full physical
-sensor proof remains next. No whole-v11tag or valid native boxing games.** Owner this chat; no
+**D1evidence qualified:301Linux tests pass. The complete eight-case sensor proof
+runner/frozen loader/physical audit is implemented;69targeted tests pass and the
+final340test source gate is ready. No whole-v11tag or valid native boxing games.** Owner this chat; no
 agents, concurrent schema writers, other-chat messages or third_party edits.
 
 ## Delivered evidence and scientific limits
@@ -33,22 +33,18 @@ fails old source guards. Extra Mac exact sigmoid recomputation failed by up to
    explicit ActorInput/ages/availability, actual delayed/drop/reorder delivery
    and complete sampled-engine-bound replay. Base env/replay/controller unchanged.
    Local271tests pass202.62s. Read D1_SENSOR_TIMING and new source/tests.
-3. Frozen source4caca5e/protocol39f94864 completed271Linux tests304.87s;
-   independent13:23:55UTC audit verified436files/no drift/all recorded owned exits.
-   Source checkout stays immutable. New sensor_evidence.py/sensor_audit.py and
-  30new tests implement saved true/received-state recording, independent timing/
-   history/command/RNG audits, actual checkpoint replay-tail and zero-delay oracle
-   comparators.59targeted tests pass12.09s; initial comparator metadata failure is
-   retained. Public-freeze the new regression-only sensor-evidence protocol and
-   qualify301Linux tests in a dedicated checkout. Source628f52e/protocol0dc7e188
-   is active in /home/ubuntu/joxing/v011-sensor-evidence-20261027; supervisor
-   4087770/start_ticks921010796, pytest4087912/start_ticks921011038. Fresh13:35:37UTC
-   tests progressing/source unchanged. Require301passes/all exits/441file audit.
-   Do not edit this executing checkout or launch another job. No automatic formal launch.
-   Then finish **V0.0.11_D1_PROOF_PACKET.md**: named frozen binary loader, complete
-   physical referee audit,8row/2,748physics runner/supervisor and new preregistration.
-   Transport component success is not formalD1 proof. Preserve every attempt and
-   source-host1s oracle;40tick development fixture does not substitute for it.
+3. Source628f52e/protocol0dc7e188 completed301Linux tests328.69s; independent
+   audit verified441files/no drift/all owned exits at13:42:33UTC. Do not edit it.
+   Complete physical proof code is now present: frozen_scene.py,
+   sensor_physics_audit.py, sensor_protocol.py and scripts/{qualify_sensor_env,
+   audit_sensor_env,register_sensor_proof,supervise_sensor_proof}.py.69targeted
+   tests pass29.78s;340total collected. Read V0.0.11_D1_PROOF_PACKET.md checkpoint.
+   New frozen protocolb97c23c8 requires public/anonymous source+protocol verification
+   before fresh dedicated deployment. Same final source must pass340Linux tests
+   before its supervisor starts8rows/2,748physics then independent audit. One
+   simulation worker/thread,10kphysics/180srunner/300spostgate/96MiBraw firstlimit.
+   On completion independently check every row/file/source/model/oracle/owned exit,
+   retain failures and publish. No source edits, replacements or duplicate run.
 4. Complete remaining four-default-seed/asymmetric/adverse-input correctness
    proof for whole v11. Do not use one recorded seed to imply those tests passed.
 5. Next motor goal is stable unassisted guard/reach under the actual shared-model
