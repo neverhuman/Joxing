@@ -1,3 +1,13 @@
+# Pretrained input oracle active —2026-10-27 15:14UTC
+
+D1completed (402tests/317newphysics/8conditions/18attempts/4replays/oracle);
+source/input/exit/raw checks pass. Sourcef3638b4/protocold32a57ca now runs on
+originalxbabe1 in a fresh dedicated checkout:422test gate→four zero-physics
+archived input/normalizer/command rows. Supervisor4137721/start905089809.
+Source/protocol anonymously public-verified;473files and original weights
+checked. Do not duplicate or mutate executing source. New motor API has25passing
+Mac tests; no shared physics/guard/boxing claim. Follow current STATUS/mission.
+
 # D1completed; pretrained input oracle ready —2026-10-27
 
 [Results](../../docs/V0.0.11_D1_COMPLETION_RESULTS.md):402Linux tests pass414.53s,

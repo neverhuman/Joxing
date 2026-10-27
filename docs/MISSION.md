@@ -1,3 +1,28 @@
+# Active pretrained cached-input oracle source gate —2026-10-27 15:14UTC
+
+D1sensor correctness is complete:402Linux tests, eight conditions, four exact
+replays/original oracle and all18attempt rows retained. Formalphysics5390,
+nativeboxinggames0; all completed xbabe3jobs exited and raw4,278,352bytes verified.
+No v11tag; original remaining version battery stays separately registered.
+
+Pretrained motor bridge now has immutable3601cached inputs and paired scalar
+inference using the exact native loader;25Mac checks pass4.03s. New frozen source
+f3638b47af1d1133293da2f91583d2e9fc1d507b and protocol d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a
+are public and anonymously byte-verified. Active dedicated xbabe1root:
+/home/ubuntu/joxing/v011-shared-motor-input-20261027. Supervisor4137721/start905089809;
+473source/upstream/reference files plus original native model/normalizer verified.
+Fresh prelaunch memory32.9GB/free disk334GB/no owned jobs. One thread.
+
+Current task: locked sync→422Linux regressions→four-row archived-cache/normalizer/
+next-command oracle,0physics/30s/4MiB/45spostgate. Exact original host is used;
+keep failures, no cross-host tolerance relaxation. Observe actual process/events
+and do not duplicate or edit this executing root. See
+SHARED_MOTOR_INPUT_ORACLE_PACKET.md and deployment/publication receipts.
+On completion audit all rows/identity/input/source/raw/PID exits, publish results;
+next motor work is shared-model engine/cache/frame/reference/reset and full
+controller/replay integration before pretrained two-person walking footage.
+No shared pretrained motor trajectory is claimed by this input oracle.
+
 # D1completed; pretrained motor input oracle ready —2026-10-27
 
 All402Linux tests passed414.53s. Only317new physics executed; combined saved

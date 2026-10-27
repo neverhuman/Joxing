@@ -1,3 +1,9 @@
+**Active, do not duplicate:** public frozenf3638b4, dedicated xbabe1root
+/home/ubuntu/joxing/v011-shared-motor-input-20261027, supervisor4137721/start905089809.
+473registered files and exact original native model/normalizer verified. Follow
+actual supervision/progress receipts; do not edit its executing source. The
+422test full gate precedes all four0physics oracle rows. No outcome yet.
+
 # Ready pretrained cached-input oracle
 
 Canonical protocol:d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a. No active job at registration. Sensor D1completed

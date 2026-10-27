@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"root\": \"/home/ubuntu/joxing/v011-shared-motor-input-20261027\", \"source_sha\": \"f3638b47af1d1133293da2f91583d2e9fc1d507b\", \"protocol_sha256\": \"d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a\", \"command\": [\"python3\", \"scripts/supervise_shared_motor_inputs.py\", \"--protocol-sha256\", \"d32a57cabe979523c70530a4bf7429ddd3ba6111714e76bb36e93a0d25b4946a\", \"--source-sha\", \"f3638b47af1d1133293da2f91583d2e9fc1d507b\"], \"pid\": 4137721, \"start_ticks\": 905089809, \"verified_source_upstream_reference_files\": 473, \"inputs\": \"exact original read-only v6model and normalizer verified\", \"utc\": \"2026-10-27T15:14:08Z\"}\n",
+  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+}

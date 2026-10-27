@@ -1,3 +1,14 @@
+# Pretrained cached-input interface and D1completion —2026-10-27
+
+sensor_completion.py and four completion scripts executed only317new steps;
+independent8condition/4replay/oracle/18attempt audit passes after402Linux tests.
+See V0.0.11_D1_COMPLETION_RESULTS.md. Whole-v11remains incomplete, no motor claim.
+shared_motor_inputs.py adds immutable actual3601cache, strict owner/game/tick/
+reference serialization and scalar paired teacher inference through the existing
+hash-checked native loader.25Mac checks pass. Frozen f3638b4now runs its new
+422Linux gate and0physics archived command oracle on original hostxbabe1.
+Shared engine/cache/reference/reset/controller/replay integration remains next.
+
 # Qualified storage and first pretrained shared features —2026-10-27
 
 The frozen storage implementation passes376Linux regressions and112/112lossless
