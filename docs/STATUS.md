@@ -1,3 +1,27 @@
+## v10published; diagnostic v11observations implemented
+
+v0.0.10tag/source1c6796385754c13494f1aff59d64587ee9840874 and complete234,850,618byte
+raw asset are public. Anonymous full-stream SHA256matches296a30a1d070102a3f7683b3062fb97c5661a80007ffbe5581cf086020b84cfc.
+An initial anonymous API quota403was retained; authenticated release creation and
+anonymous direct download verification succeeded. No training/source/gate changed.
+Publication receipt artifacts/receipts/v0.0.10-publication.json. All35owned PIDs
+exited; no native compute active. Negative v10motor result remains unchanged.
+
+v11ActorObservation diagnosticv1 now has1,970named rawfloat32features: own79joint
+positions/velocities,700activation, previouscommand, own/opponent11body pose/
+linear/angular velocity, publicclock/points/height/ring. Opponent privatejoint/
+activation/commands/goals/RNG/bundle/critic excluded. Ego yaw preservesheight/tilt;
+shared-sample timestamps enforced. Native adapter now includes torso/upperarm/
+forearm positions, rotations and angular velocities; source/root/anatomy unchanged.
+Observation/body/history subset7passed5.78s; Ruffpasses. Prior full201tests188.09s
+preceded this extension, not a claim of a new full204test run. Frame arithmetic
+is not dynamic teacher equivariance; ideal sensors are explicit. No model uses
+this new history/observation yet, and no BoxingEnv or learned bout exists.
+
+Next exact packet: timing.py CommandPacket/ActionQueue and tests/test_timing.py,
+then env.py/referee.py/replay.py and first registered diagnostic recording.
+Read OBSERVATION_CONTRACT.md and current MISSION. No formalv11physics or v11tag.
+
 ## v0.0.10 concluded; v0.0.11 active implementation
 
 Both fixed residual seeds completed8,192transitions/448updates each,32/32held-out

@@ -1,0 +1,7 @@
+{
+  "status": "publication setup stopped before release creation",
+  "source_and_tag_pushed": true,
+  "tag_commit": "1c6796385754c13494f1aff59d64587ee9840874",
+  "failure": "HTTP403 anonymous GitHub API shared-address rate limit",
+  "next_action": "Use authenticated API for release creation/upload and verify anonymous raw content and direct public asset stream; no change to outcome or source"
+}

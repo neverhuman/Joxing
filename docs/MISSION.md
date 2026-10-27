@@ -5,8 +5,8 @@ motor result:16,384transitions,896optimizerupdates,32/32valid evaluations and2/2
 exact replays; both learning gates failed (−0.06625s/+0.01625s paired survival,
 1/8five-second survivors each). Independent all-row/raw audit passed; all35
 recorded processes exited, owned scanempty/sourceunchanged10:58:23UTC.
-[Results](V0.0.10_RESULTS.md). Public raw/tag publication is the remaining v10
-administrative step until artifacts/receipts/v0.0.10-publication.json exists.
+[Results](V0.0.10_RESULTS.md). Public v10tag and234,850,618byte raw asset are published; anonymous full-stream
+SHA256verified. Receipt artifacts/receipts/v0.0.10-publication.json.
 Do not rerun or enlarge the walking pilot.
 
 Integration owner: this chat, no agents/concurrent writers/other-chat messages.
@@ -23,21 +23,29 @@ punch/miss/block/recovery exchanges and historical self-play. Native valid bouts
    BOUT_RECORDING_MILESTONE; experiments/v0.0.11/README.md.
 2. src/joxing/{scene,physics,rules,bout_recording,history,provenance}.py and
    bodies/{base,native}.py plus their tests. Supplied references are proposals.
-3. Implement observations.py before policy use: named hashed own proprioception,
+3. observations.py is now implemented as diagnosticv1:1,970rawfloat32features,
+   own proprioception and11body anchors per corner (including torso/arms),
    opponent visible body pose/velocity, ego yaw frame preserving gravity/height,
    public clock/points/ring and previous applied command. Opponent activation,
    commands, goals, RNG, hidden state and bundle IDs are forbidden actor inputs.
-   BodyMeasurements is private readout, not a safe ActorObservation. Extend the
-   adapter explicitly for needed rotation/angular/torso fields; test real
-   asymmetric states, yaw/translation and no alias/private leakage.
-4. Wire existing TimedHistory into causal samples. Implement bounded timestamped
+   BodyMeasurements is private readout, not a safe ActorObservation. Rotation/
+   angular/torso readouts and initial frame/leakage/clock tests now pass. Read
+   OBSERVATION_CONTRACT.md; qualify broader asymmetric cases in the harness.
+4. **Next implement src/joxing/timing.py and tests/test_timing.py:** immutable
+   CommandPacket(game,player,decisiontick,applytick,command700,bundlehash),
+   ActionQueue.enqueue(packet,now_tick), pop_due(tick), snapshot/restore.
+   Validate finite[-1,1]commands,decision<=apply, bounded queue/delay and ownership;
+   delayed old decisions must not overwrite a newer applied command. Reset
+   discards oldgame packets; pending commands remain private. Test zero/one/two
+   tick delay, reordering,drop/hold,stale/duplicate packets and typed restore.
+   Wire existing TimedHistory into causal samples. Implement bounded timestamped
    action queues with decision<=apply, game/player ownership, zero-delay oracle,
    one/two-tick delay/reorder/drop/stale/reset tests and complete snapshot state.
 5. Implement env.py/referee.py/replay.py in the order and APIs of V0.0.11_MISSION:
    freeze both observations, validate both700commands, apply legacy sigmoid once,
    advance one shared MjData, collect every substep, stage both sides' contacts,
-   commit all events then any shared ending. No pose/root assistance in playback
-   generation. Keep unresolved scene/endings/motor gates explicit; no competition.
+   commit all events then any shared ending. No pose/root assistance during the live
+   rollout; scratch state restoration is rendering only. Keep unresolved scene/endings/motor gates explicit; no competition.
 6. Connect BoutRecorder to completed shared states and retain first registered
    scenario tape; full contact/application evidence separately. Render with
    render_bout_recording.py, decode/check duration/HUD/checksums/0rendersteps.
@@ -51,7 +59,7 @@ punch/miss/block/recovery exchanges and historical self-play. Native valid bouts
 
 ## Implemented foundations and validation
 
-NativeBodyAdapter measures85joint/700activation states and six body positions/
+NativeBodyAdapter measures85joint/700activation states and eleven body positions/
 linear velocities per corner from shared state; owned immutable copies. Passive
 recording stores typed complete dual engine state, hashes and clock/counts;
 first format diagnostic-only/pointsunavailable. Static video smoke attempt01
@@ -61,7 +69,7 @@ both athletes and proper diagnostic label,0physics; it is not a bout.
 TimedHistory now isolates game/player/schema, accepts delay/reordering and returns
 only received past samples with validity and age masks; snapshot/restore rejects
 foreign/corrupt packets. Threehistory+body+recording fixtures6passed5.64s; Ruffpass.
-It stores filtered features only. Observation assembly, action queues, shared loop,
+It stores filtered features only. Observation assembly now exists as a tested diagnostic prototype. Action queues, shared loop,
 contact referee and application replay remain unfinished.
 
 Current development runtime: experiments/v0.0.11/runtime, CPUlocked versions

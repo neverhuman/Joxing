@@ -32,12 +32,20 @@ def test_both_corners_read_real_shared_kinematics_without_aliases():
         np.testing.assert_allclose(
             ma.world_linear_velocity_mps[k], jacp @ data.qvel, atol=1e-15
         )
+        np.testing.assert_allclose(
+            ma.world_angular_velocity_radps[k], jacr @ data.qvel, atol=1e-15
+        )
+        np.testing.assert_array_equal(
+            ma.world_rotation_matrix[k], data.xmat[body].reshape(3, 3)
+        )
     for array in (
         ma.qpos,
         ma.qvel,
         ma.activation,
         ma.world_position_m,
         ma.world_linear_velocity_mps,
+        ma.world_rotation_matrix,
+        ma.world_angular_velocity_radps,
     ):
         assert not array.flags.writeable and not np.shares_memory(array, data.qpos)
     for actual, expected in zip(

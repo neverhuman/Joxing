@@ -1,3 +1,11 @@
+# v0.0.10 completed and publicly released
+
+All fixed training/evaluation/replay rows concluded, independent audit passed;
+both improvement gates failed. Public tagv0.0.10 and full raw asset are verified
+by anonymous full-stream SHA256. See docs/V0.0.10_RESULTS.md and
+artifacts/receipts/v0.0.10-publication.json. Next missionv11connected bout loop;
+no unchanged larger walking sweep. Historical running entries below are logs.
+
 ## v0.0.10 concluded; v0.0.11 active implementation
 
 Both fixed residual seeds completed8,192transitions/448updates each,32/32held-out

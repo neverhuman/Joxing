@@ -15,6 +15,8 @@ class BodyMeasurements:
     body_names: tuple[str, ...]
     world_position_m: np.ndarray
     world_linear_velocity_mps: np.ndarray
+    world_rotation_matrix: np.ndarray
+    world_angular_velocity_radps: np.ndarray
 
 
 def owned_readonly(array):

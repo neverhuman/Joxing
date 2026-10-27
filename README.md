@@ -4,16 +4,17 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**v0.0.10 results are concluded; release publication is being finalized.**
+**Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
 valid and both replays exact. Survival changed−0.066s/+0.016s, with1/8five-second
 survivors each: **both improvement gates failed**.
-[Results](docs/V0.0.10_RESULTS.md) · [All attempted outcomes and audit](artifacts/v0.0.10/D2/).
+[Results](docs/V0.0.10_RESULTS.md) · [All attempted outcomes and audit](artifacts/v0.0.10/D2/) · [Complete raw evidence](https://github.com/neverhuman/Joxing/releases/download/v0.0.10/joxing-v0.0.10-raw.tar.gz).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 Native body measurements, passive video/state capture and causal history now have
-tested foundations. Next are safe actor observations, action timing queues and
-the shared physics/referee/replay loop. No valid native boxing bout exists yet;
+tested foundations. Diagnostic ego-frame actor observations now expose own muscle state and eleven
+opponent body anchors with measured velocities/orientations. Next are action
+timing queues and the shared physics/referee/replay loop. No valid native boxing bout exists yet;
 we are moving toward the first diagnostic recording rather than enlarging gait training.
 
 **Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).

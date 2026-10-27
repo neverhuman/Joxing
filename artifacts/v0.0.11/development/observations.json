@@ -1,0 +1,162 @@
+{
+  "status": "diagnostic observation development fixtures passed; not connected to a match or trained policy",
+  "schema_hash": "09c601a86dd50c9a1f345f633365e0c082f12589ac3d97b3f558b2d3731a4226",
+  "dimension": 1970,
+  "schema": {
+    "schema": "joxing-actor-observation-diagnostic-v1",
+    "blocks": [
+      {
+        "name": "own_intrinsic_joint_position",
+        "start": 0,
+        "stop": 79,
+        "units": "native joint units"
+      },
+      {
+        "name": "own_intrinsic_joint_velocity",
+        "start": 79,
+        "stop": 158,
+        "units": "native joint units/s"
+      },
+      {
+        "name": "own_muscle_activation",
+        "start": 158,
+        "stop": 858,
+        "units": "activation"
+      },
+      {
+        "name": "own_body_position_ego",
+        "start": 858,
+        "stop": 891,
+        "units": "m"
+      },
+      {
+        "name": "own_body_linear_velocity_ego",
+        "start": 891,
+        "stop": 924,
+        "units": "m/s"
+      },
+      {
+        "name": "own_body_rotation_ego",
+        "start": 924,
+        "stop": 1023,
+        "units": "rotation matrix"
+      },
+      {
+        "name": "own_body_angular_velocity_ego",
+        "start": 1023,
+        "stop": 1056,
+        "units": "rad/s"
+      },
+      {
+        "name": "opponent_body_position_ego",
+        "start": 1056,
+        "stop": 1089,
+        "units": "m"
+      },
+      {
+        "name": "opponent_body_linear_velocity_ego",
+        "start": 1089,
+        "stop": 1122,
+        "units": "m/s"
+      },
+      {
+        "name": "opponent_body_rotation_ego",
+        "start": 1122,
+        "stop": 1221,
+        "units": "rotation matrix"
+      },
+      {
+        "name": "opponent_body_angular_velocity_ego",
+        "start": 1221,
+        "stop": 1254,
+        "units": "rad/s"
+      },
+      {
+        "name": "round_remaining",
+        "start": 1254,
+        "stop": 1255,
+        "units": "s"
+      },
+      {
+        "name": "own_opponent_points",
+        "start": 1255,
+        "stop": 1257,
+        "units": "points"
+      },
+      {
+        "name": "own_pelvis_height",
+        "start": 1257,
+        "stop": 1258,
+        "units": "m"
+      },
+      {
+        "name": "ring_vertices_ego",
+        "start": 1258,
+        "stop": 1270,
+        "units": "m"
+      },
+      {
+        "name": "own_previous_applied_command",
+        "start": 1270,
+        "stop": 1970,
+        "units": "legacy normalized700 command"
+      }
+    ],
+    "bodies": [
+      "pelvis",
+      "head_neck",
+      "thoracic12",
+      "hand_r",
+      "hand_l",
+      "humerus_r",
+      "humerus_l",
+      "ulna_r",
+      "ulna_l",
+      "calcn_r",
+      "calcn_l"
+    ],
+    "dtype": "float32",
+    "frame": "yaw-only observer pelvis; world gravity/height preserved",
+    "normalization": "none",
+    "opponent_velocity": "absolute world velocity rotated into observer yaw frame"
+  },
+  "commands": [
+    {
+      "command": "rtk proxy uv run --project experiments/v0.0.11/runtime --locked pytest -q tests/test_observations.py tests/test_body_adapter.py tests/test_history.py",
+      "result": "7 passed in5.81s with angular/rotation ownership assertions before expansion to eleven bodies"
+    },
+    {
+      "command": "rtk proxy uv run --project experiments/v0.0.11/runtime --locked pytest -q tests/test_observations.py tests/test_body_adapter.py tests/test_history.py",
+      "result": "7 passed in5.78s; eleven-body schema"
+    }
+  ],
+  "new_formal_physics_steps": 0,
+  "limitations": [
+    "Eleven kinematic body anchors, no complete optical visibility or tactile feature model",
+    "Ideal kinematic readout, no camera visibility or occlusion model",
+    "Action/observation queues not connected to physics yet",
+    "No normalization or motor teacher compatibility is claimed",
+    "Global transform test is frame arithmetic, not dynamics/teacher equivariance"
+  ],
+  "files": {
+    "src/joxing/observations.py": "887610b0c70db0d6fead690ca1f23dd7788cbae9d288981370b4acbd32f9b7c2",
+    "src/joxing/bodies/base.py": "ea4e880b2821460f81633eb5710254e3b9a54aed7bb9b0c1f363a16d4d6f4b94",
+    "src/joxing/bodies/native.py": "122a55158e71514e5895a4a8e4680e24cc2f5d079c00a75c7ba6700f0b0a308f",
+    "tests/test_body_adapter.py": "cdc866be859041512346e35bafb8c428c5125e7b1dca5e8c9581893d0d317b67",
+    "tests/test_observations.py": "d385a4efb73f91ed80d81a6aadf5940bd592d925067b0d16b643900fc9373093"
+  },
+  "development_attempts": [
+    {
+      "schema_hash": "6b6c00785113121ef17ae965d53076e53eecb4a0e4f60101ff2af416ea3e0514",
+      "dimension": 1790,
+      "body_selection": "six original key bodies",
+      "result": "7 passed in5.81s"
+    },
+    {
+      "schema_hash": "09c601a86dd50c9a1f345f633365e0c082f12589ac3d97b3f558b2d3731a4226",
+      "dimension": 1970,
+      "body_selection": "eleven bodies including torso/upper arms/forearms",
+      "result": "7 passed in5.78s"
+    }
+  ]
+}

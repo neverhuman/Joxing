@@ -10,7 +10,19 @@ import numpy as np
 
 from .base import BodyMeasurements, owned_readonly
 
-KEY_BODIES = ("pelvis", "head_neck", "hand_r", "hand_l", "calcn_r", "calcn_l")
+KEY_BODIES = (
+    "pelvis",
+    "head_neck",
+    "thoracic12",
+    "hand_r",
+    "hand_l",
+    "humerus_r",
+    "humerus_l",
+    "ulna_r",
+    "ulna_l",
+    "calcn_r",
+    "calcn_l",
+)
 
 
 class NativeBodyAdapter:
@@ -35,6 +47,18 @@ class NativeBodyAdapter:
             raise ValueError("Unexpected native scalar-joint contract")
         self.qpos_ids = self.model.jnt_qposadr[joints].copy()
         self.qvel_ids = self.model.jnt_dofadr[joints].copy()
+        root_names = tuple(
+            self.model.joint(j).name.removeprefix(prefix) for j in joints[:6]
+        )
+        if root_names != (
+            "pelvis_tz",
+            "pelvis_ty",
+            "pelvis_tx",
+            "pelvis_tilt",
+            "pelvis_list",
+            "pelvis_rotation",
+        ):
+            raise ValueError("Unexpected native root coordinate order")
         self.activation_ids = self.model.actuator_actadr[self.actuator_ids].copy()
         if np.any(self.activation_ids < 0) or np.any(
             self.model.actuator_actnum[self.actuator_ids] != 1
@@ -45,12 +69,13 @@ class NativeBodyAdapter:
     def measure(self, data):
         if not np.isfinite(data.time):
             raise ValueError("Nonfinite shared clock")
-        velocities = []
+        velocities, angular = [], []
         for body in self.body_ids:
             jacp = np.zeros((3, self.model.nv))
             jacr = np.zeros_like(jacp)
             mujoco.mj_jacBody(self.model, data, jacp, jacr, body)
             velocities.append(jacp @ data.qvel)
+            angular.append(jacr @ data.qvel)
         return BodyMeasurements(
             actor=self.actor,
             time_s=float(data.time),
@@ -60,4 +85,8 @@ class NativeBodyAdapter:
             body_names=KEY_BODIES,
             world_position_m=owned_readonly(data.xpos[list(self.body_ids)]),
             world_linear_velocity_mps=owned_readonly(velocities),
+            world_rotation_matrix=owned_readonly(
+                data.xmat[list(self.body_ids)].reshape(-1, 3, 3)
+            ),
+            world_angular_velocity_radps=owned_readonly(angular),
         )
