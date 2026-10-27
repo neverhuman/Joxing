@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"source_commit\": \"b1d1690ec6bc0c4d248336ce407a5c71a3f0e7c6\", \"root\": \"/home/ubuntu/joxing/v010-pilot-20261027\", \"available_memory_bytes\": 98822881280, \"disk_free_bytes\": 37855875072, \"load\": [12.46533203125, 11.92529296875, 11.7919921875], \"owned_before\": [], \"utc\": \"2026-10-27T10:43:11.490784+00:00\", \"input_hashes\": {\"config.json\": \"7d31f757a782ddebf6fe4f2496403492453727a26dfee181c825afa37488b6dd\", \"model.zip\": \"0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829\", \"normalizer.pkl\": \"e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086\"}, \"all_protocol_source_and_upstream_hashes_verified\": true}\n",
+  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+}

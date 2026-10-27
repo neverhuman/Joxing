@@ -57,7 +57,7 @@ def upstream_revision(name: str) -> str:
 
 
 def source_hash() -> str:
-    files = sorted((ROOT / "src/joxing").glob("*.py"))
+    files = sorted((ROOT / "src/joxing").rglob("*.py"))
     return digest({str(p.relative_to(ROOT)): p.read_text() for p in files})
 
 

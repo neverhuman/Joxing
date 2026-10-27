@@ -1,0 +1,25 @@
+{
+  "status": "development fixture tests passed; not formal v11",
+  "commands": [
+    {
+      "command": "rtk proxy uv run --project experiments/v0.0.10/runtime --locked pytest -q tests/test_body_adapter.py tests/test_bout_recording.py",
+      "result": "3 passed in5.58s"
+    },
+    {
+      "command": "rtk proxy uv run --project experiments/v0.0.10/runtime --locked pytest -q tests/test_provenance.py",
+      "result": "1 passed in0.17s"
+    }
+  ],
+  "files": {
+    "src/joxing/bodies/__init__.py": "be1a8a4d1b0238e74e548c7e5d7d93e2a68cc86c7d05ee1044b96e8689b074e2",
+    "src/joxing/bodies/native.py": "9d0e85984974c220e1aac7beaf2e1bdc1b71bea61b8532a6637b251908691895",
+    "src/joxing/bodies/base.py": "69266f72520d91e2b74a3ec3b396690d16ab6bc31322d9995beabeb949e1616b",
+    "tests/test_body_adapter.py": "1e2d8b1e0cd699636da20fee3a1580af23febcc51fd4229efc9ffc8413bc8b2f",
+    "tests/test_provenance.py": "b1e61fb24481b925d52d2f3378e7260f8956196810263667afa923742afd227c",
+    "src/joxing/provenance.py": "a81e9d94dce0297288ee6bf8f1a5a26c4f46549b54818fd768ea3053e6591925"
+  },
+  "source_context": "development changes after frozen b1d1690; hashes authoritative for this fixture receipt",
+  "formal_v11_physics": 0,
+  "valid_boxing_games": 0,
+  "notes": "Body fixture0steps; recording fixture2steps, not formal outcomes. Frozen remote v10source unchanged."
+}

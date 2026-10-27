@@ -1,0 +1,88 @@
+{
+  "source_commit": "b1d1690ec6bc0c4d248336ce407a5c71a3f0e7c6",
+  "supervisor": {
+    "pid": 2726271,
+    "parent_pid": 1,
+    "start_ticks": 919982114,
+    "state": "R"
+  },
+  "started_utc": "2026-10-27T10:43:47.078195+00:00",
+  "protocol_sha256": "725313890a6e260887fb4542a39878646a8c73508c5a6a35f8294d69061013ec",
+  "expected_linux_tests": 196,
+  "status": "running",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked"
+      ],
+      "process": {
+        "pid": 2726277,
+        "parent_pid": 2726271,
+        "start_ticks": 919982146,
+        "state": "R"
+      },
+      "status": "completed",
+      "owned_processes": [
+        {
+          "pid": 2726277,
+          "parent_pid": 2726271,
+          "start_ticks": 919982146,
+          "state": "S"
+        }
+      ],
+      "returncode": 0,
+      "wall_s": 2.0890588518232107,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.10/runtime",
+        "--locked",
+        "pytest",
+        "-q"
+      ],
+      "process": {
+        "pid": 2726749,
+        "parent_pid": 2726271,
+        "start_ticks": 919982384,
+        "state": "R"
+      },
+      "status": "running",
+      "owned_processes": [
+        {
+          "pid": 2726749,
+          "parent_pid": 2726271,
+          "start_ticks": 919982384,
+          "state": "S"
+        },
+        {
+          "pid": 2726755,
+          "parent_pid": 2726749,
+          "start_ticks": 919982391,
+          "state": "R"
+        }
+      ]
+    }
+  ],
+  "threads": 1,
+  "log_tails": {
+    "sync.log": "Using CPython 3.12.3 interpreter at: /usr/bin/python3\nCreating virtual environment at: experiments/v0.0.10/runtime/.venv\nResolved 43 packages in 1ms\n   Building joxing @ file:///home/ubuntu/joxing/v010-pilot-20261027\n      Built joxing @ file:///home/ubuntu/joxing/v010-pilot-20261027\nPrepared 1 package in 654ms\nInstalled 40 packages in 251ms\n + absl-py==2.5.1\n + cloudpickle==3.1.2\n + contourpy==1.4.0\n + cycler==0.12.1\n + etils==1.14.0\n + farama-notifications==0.0.6\n + filelock==4.2.4\n + fonttools==4.67.0\n + fsspec==2026.9.0\n + glfw==2.11.0\n + gymnasium==1.2.3\n + imageio==2.38.1\n + imageio-ffmpeg==0.6.0\n + iniconfig==2.3.1\n + jinja2==3.1.6\n + joxing==0.0.9 (from file:///home/ubuntu/joxing/v010-pilot-20261027)\n + kiwisolver==1.5.1\n + markupsafe==3.0.4\n + matplotlib==3.11.2\n + mpmath==1.3.0\n + mujoco==3.8.0\n + networkx==3.7\n + numpy==2.4.2\n + packaging==26.3\n + pandas==3.1.0\n + pillow==13.0.0\n + pluggy==1.7.0\n + pygments==2.21.0\n + pyopengl==3.1.10\n + pyparsing==3.3.3\n + pytest==9.1.1\n + python-dateutil==3.0.0\n + setuptools==84.2.1\n + six==1.17.0\n + stable-baselines3==2.7.1\n + sympy==1.14.0\n + torch==2.10.0+cpu\n + typing-extensions==4.16.0\n + tzdata==2026.5\n + zipp==4.1.2\n",
+    "tests.log": "................................................."
+  },
+  "resources": {
+    "load": [
+      12.54931640625,
+      12.03955078125,
+      11.8427734375
+    ]
+  }
+}

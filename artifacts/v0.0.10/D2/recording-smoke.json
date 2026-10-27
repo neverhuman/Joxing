@@ -1,0 +1,27 @@
+{
+  "classification": "Static rendering smoke test, not a bout or motion demonstration",
+  "physics_steps": 0,
+  "new_render_physics_steps": 0,
+  "attempts": [
+    {
+      "id": 1,
+      "status": "failed",
+      "error": "ValueError: append_data requires ndarray as first arg",
+      "repair": "Convert PIL display frame to ndarray at video writer boundary"
+    },
+    {
+      "id": 2,
+      "status": "completed",
+      "decoded_frames": 1,
+      "shape": [
+        576,
+        1024,
+        3
+      ],
+      "fps": 25.0,
+      "mp4_sha256": "38ea1874061e3df458108da8b8f86d940d3eaa66b0b53689e8b1f1be26d6f5a5"
+    }
+  ],
+  "frozen_D2_source_unchanged": "b1d1690ec6bc0c4d248336ce407a5c71a3f0e7c6",
+  "render_fix_scope": "Development checkout only; independent recording change after D2 source freeze"
+}

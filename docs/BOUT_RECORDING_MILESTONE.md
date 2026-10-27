@@ -87,3 +87,18 @@ points, event reason/location/impulse, policy identity and assistance status.
 Never hide an early fall, accelerate footage without a speed label or call a
 scripted/assisted diagnostic learned self-play. The next handoff must name the
 next executable command and the remaining motor/game gate, not just a version.
+
+## First rendering smoke receipt
+
+Static saved dual-body state decoded to one1024×576MP4frame at25fps, visually
+inspected with both athletes and diagnostic/no-score labels. No physics was
+advanced. First writer attempt failed a PIL-versus-ndarray boundary; the corrected
+second attempt and fault are preserved in artifacts/v0.0.10/D2/recording-smoke.json.
+This validates the encoding path only; moving footage/full-ledger HUD and a
+qualified bout remain undelivered. Frozen motor sourceb1d1690is unchanged.
+
+The next loop also has a tested native body adapter: each corner's85joint/700
+activation states and six body positions/velocities are measured from the shared
+state with owned immutable copies. This is an internal measurement API; opponent
+private activation is forbidden from actor observations. Causal observation
+assembly/history, action queues, shared step/referee and full replay remain next.

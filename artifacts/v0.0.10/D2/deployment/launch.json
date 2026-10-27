@@ -1,0 +1,30 @@
+{
+  "root": "/home/ubuntu/joxing/v010-pilot-20261027",
+  "source_commit": "b1d1690ec6bc0c4d248336ce407a5c71a3f0e7c6",
+  "pid": 2726271,
+  "start_ticks": 919982114,
+  "command": [
+    "python3",
+    "scripts/supervise_motor_pilot.py",
+    "--protocol-sha256",
+    "725313890a6e260887fb4542a39878646a8c73508c5a6a35f8294d69061013ec",
+    "--expected-tests",
+    "196",
+    "--inputs",
+    "/home/ubuntu/joxing/deployment-cache/inputs"
+  ],
+  "utc": "2026-10-27T10:43:47.046144+00:00",
+  "available_memory_bytes": 100859166720,
+  "disk_free_bytes": 37446414336,
+  "owned_before": [],
+  "simulation_workers_maximum": 4,
+  "formal_main_physics_cap": 550000,
+  "audit_physics_reserve": 50000,
+  "regression_fixture_physics": "separate from formal counters",
+  "stage_deadlines_s": [
+    180,
+    420,
+    2130,
+    180
+  ]
+}

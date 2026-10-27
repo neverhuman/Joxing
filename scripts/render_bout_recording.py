@@ -5,6 +5,7 @@ from pathlib import Path
 
 import imageio.v2 as imageio
 import mujoco
+import numpy as np
 from PIL import Image, ImageDraw
 
 from joxing.bout_recording import STATE, frame_schedule, load_recording, recording_hash
@@ -50,7 +51,7 @@ def main():
             draw.rectangle((0, 530, 1024, 576), fill=(16, 24, 39))
             draw.text((14, 540), "A: " + report["policies"]["A"][:70], fill="#ff8576")
             draw.text((520, 540), "B: " + report["policies"]["B"][:70], fill="#83baff")
-            writer.append_data(frame)
+            writer.append_data(np.asarray(frame))
     write_json(
         args.out.with_suffix(".json"),
         {
