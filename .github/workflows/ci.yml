@@ -3,6 +3,7 @@
 #   uv run --project experiments/v0.0.11/runtime --locked pytest -q
 # with every BLAS/OpenMP pool pinned to one thread. CPU physics only; no
 # rendering, GPU, network model downloads or compute-host state is required.
+# MUJOCO_GL=disable: hosted runners have no EGL, and no test renders.
 name: ci
 
 on:
@@ -25,7 +26,7 @@ env:
   MKL_NUM_THREADS: "1"
   NUMEXPR_NUM_THREADS: "1"
   VECLIB_MAXIMUM_THREADS: "1"
-  MUJOCO_GL: egl
+  MUJOCO_GL: disable
 
 jobs:
   tests:
