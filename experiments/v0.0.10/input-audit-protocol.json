@@ -1,0 +1,87 @@
+{
+  "schema": "joxing-motor-input-audit-D0-0.0.10",
+  "scope": "Existing7unique-seed native motor tapes and cyclic reference, zero mj_step/actor/optimizer. Scratch FK only. No causal blame from temporal association.",
+  "seeds": {
+    "H1": [
+      76000,
+      76001,
+      76002
+    ],
+    "H3": [
+      78000,
+      78001,
+      78002,
+      78003
+    ]
+  },
+  "specification": "artifacts/v0.0.8/physical/native_2ms/specification.json",
+  "normalizer": "artifacts/v0.0.8/physical/normalizer.json",
+  "query_source": "third_party/msgym/msgym/envs/imitation_trajectory.py",
+  "motion": "third_party/msgym/msgym/motion_data/walking_gait.npz",
+  "normalizer_stats_hash": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+  "source_files": {
+    "artifacts/v0.0.8/physical/native_2ms/specification.json": "5d95b7e346caef48a35a32f3f5c41908be62fc36333300342798661447667e3a",
+    "artifacts/v0.0.8/physical/normalizer.json": "65b84a33f55dd7a17e4ee2e6abe414cf0620539440993042e7ef7af04c2d2b21",
+    "third_party/msgym/msgym/envs/imitation_trajectory.py": "2dd70e56ff6d71c78049dceb7af8290ac694ed0e5d2271d20d0be49bed28b850",
+    "third_party/msgym/msgym/motion_data/walking_gait.npz": "5736b9affafb23c3ede68a3bededcd620b6a27174055e777191e0f7aa4302e90",
+    "third_party/ms-human-700/MS-Human-700.xml": "755124766e0e4ed9ddac60c8c4f505f94a6adaa2d51665108eee0cb1f677681d",
+    "experiments/v0.0.10/runtime/uv.lock": "d2f76fc1965c9c3227e9d57cfddeb09390e685bdd3320fb6001bcf2ca0ed1d75",
+    "src/joxing/physical_motor.py": "5a4eb7952364a0a3300042a8b680f901c9040da36aef0244aa65209b074e54ec",
+    "src/joxing/native_transfer.py": "dcd6cb3a6cd701af35b25b7c2ce6a86797034bf3d1978ead94be4dab874bdba9",
+    "src/joxing/upstream_motor.py": "d557ba5678d7456a56d594c14052d7062a35eded47050a50a15723f11e368b0a"
+  },
+  "retained_files": {
+    "H1": {
+      "result.json": "8ea3a2169336ba2711be918c655c30a0d44bd8cd233445a4e03011f3c1ef336c",
+      "76000-unprofiled/trajectory.npz": "b9e5bce4cf4c06a984947a7c2b3695847c19602aa53973eeb6d59588623b7c7a",
+      "76000-unprofiled/trace.json": "6fa18c39ba33abeafcae30cdc29d9f521cd0f1e433e318f991bdfc87349e921f",
+      "76001-unprofiled/trajectory.npz": "af9370c17bad9c729dfc7d15ecb6c897c197ba0a684db9a92d34bdcc5dccddca",
+      "76001-unprofiled/trace.json": "4c3759187994d5ee7a68024c4f278d11596ebb4ae57dab465065ac0a1130596f",
+      "76002-unprofiled/trajectory.npz": "65acdbd884fb8ab7ef0bef6eec01cd3e24216e9e93606dd138aa44ea3070c93d",
+      "76002-unprofiled/trace.json": "65ddcfe07bc179f85e6d4750c576e6583643e8573702ebedbf11574ae8103d3c"
+    },
+    "H3": {
+      "result.json": "6a3bdaf26cf2408a03bb94074b0a16f849fa36ee9e2134c5c2a9b22ab5936a3a",
+      "0-baseline-78000/trajectory.npz": "e152306fec1361ce4ed5f0cfa0bd5483c4a2781fb47e4d0501e3f7aca54b1426",
+      "0-baseline-78000/trace.json": "33ebe879c3b7953227bc77963cc1fdd4012bc59dfe02a2d0cbee7486d602a81e",
+      "0-baseline-78000/initial.json": "f879324c2783104906fafc86d1893d53bdbc718c2d45502c9280f23934a727d3",
+      "0-baseline-78000/final.json": "b0094b5ed5156060514d07c3a55ea30020f256da5ab3adc87252d74940a4a6ca",
+      "0-baseline-78001/trajectory.npz": "2762939861353415f08360656806ae76ff718da79c71f155548a51532614c187",
+      "0-baseline-78001/trace.json": "e47975a7e5f2892177615e067e72fe45bb27a39d0e7eb943e2d96f8b0c125669",
+      "0-baseline-78001/initial.json": "24c3a050964aa0ccf8c9b6e92b4109501d8562b9f14415eb1e738bc6782f1249",
+      "0-baseline-78001/final.json": "bf45d435518bf40816864dbb054d39b12e05da6983ef1e84697810906e89e332",
+      "0-baseline-78002/trajectory.npz": "bf80b48dd3f194010dc30dd162c77b3f3cc781d8fd84247f45820a5644d72026",
+      "0-baseline-78002/trace.json": "baad169a5d34dfd617886d9c4c14fcb8bf987cfea5eaceda20f02b8ce7a25b52",
+      "0-baseline-78002/initial.json": "455ae9f2a2e1efc9279f395448edbd875f907bce4878898656b0098ba15d7029",
+      "0-baseline-78002/final.json": "e7a0c1c77707f57e1eceb69ca778afdf0bb45c737616bb0b05f29bd328cd4b9f",
+      "0-baseline-78003/trajectory.npz": "531df0830db1375e6cd637e29b54a2e2dfd5e5008f6d0e99df15aa2f5df0a0a3",
+      "0-baseline-78003/trace.json": "820e1ea03d1d31d1cd0cab421f0e52e4dfd8d2b838645a4292deff40d6e59a24",
+      "0-baseline-78003/initial.json": "c6c243cc5819be924bb24ef5749c489b0f2d3fb3e4ff71c79784f00ab84476c6",
+      "0-baseline-78003/final.json": "57093c2480bb7bbcff33b33bd018203c3cbd2471492a17d2c014fb08317a4875"
+    }
+  },
+  "criteria": {
+    "cached_qpos_current_future_reference_exact": true,
+    "velocity_consistency_tolerance": 0.0001,
+    "translation_tolerance_m": 0.0001,
+    "normalizer_immutable": true,
+    "reference_inconsistency_stops_learning": true
+  },
+  "caps": {
+    "wall_s": 60,
+    "physics_steps": 0,
+    "raw_bytes": 8388608,
+    "simulation_workers": 0,
+    "compute_processes": 1,
+    "threads": 1,
+    "minimum_memory_bytes": 8589934592,
+    "minimum_disk_bytes": 10737418240
+  },
+  "denominator": {
+    "unique_seed_cases": 7,
+    "controls_each": 300,
+    "new_games": 0,
+    "new_physics_steps": 0
+  },
+  "interpretation": "Retain every attempted/invalid/not_run row. A concrete reference inconsistency stops residual pilot, even if exposure/causal contribution to prior falls is unknown. Report reachable reset-grid exposure separately; off-grid seam is not itself proof of motor failure cause. No silent reference repair or gate change."
+}

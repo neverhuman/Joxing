@@ -1,6 +1,6 @@
 # Current Joxing mission
 
-Current ready mission: **v0.0.10 — bounded physical motor adaptation**. [Worker-ready plan](V0.0.10_MISSION.md). No v10 training/result yet, no active owned simulation task. Integration owner: this chat, one writer, no agents. Next action is implement D0 from retained data and the D1 deterministic residual adapter/tests, freeze/push a new machine protocol/source, then qualify before any pilot learning. Do not repeat v9 or run a larger unchanged training sweep.
+Current ready mission: **v0.0.10 — bounded physical motor adaptation**. [Worker-ready plan](V0.0.10_MISSION.md). No v10 training/result yet, no active owned simulation task. Integration owner: this chat, one writer, no agents. D0 offline input audit is implemented/preregistered with two passing synthetic tests and a new pinned runtime. Next action is freeze/push its source/protocol, run bounded targeted Linux tests and seven saved-data cases in a new dedicated checkout, then independently audit. D1/D2 residual learning remains gated and unimplemented. Do not repeat v9 or run a larger unchanged training sweep.
 
 ## Completed dependency and decision
 

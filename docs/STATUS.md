@@ -325,3 +325,8 @@ v9complete outcome:228case rows152completed/1invalid/75not_run,0incomplete; H2at
 
 
 v0.0.9publication verified2026-10-27 01:29UTC: annotated publictag points6d901706586c328be23cc0c5991fb446443305f5; release424941535published, repositoryprivate=false/visibilitypublic. Anonymous tagged-results GET matches localhash; complete214,411,789-byte asset streamed without credentials and matches SHA256df87afe90e27237e8528156b6a8ec3af69dd84a97bcddeb53ec562d9a285c45f. All388archive members independently checked. Publication receipt artifacts/receipts/v0.0.9-publication.json livesoutsideimmutabletaggedmanifest. Publicmain includes readyv10mission; no v10run launched.
+
+
+### v10 D0 input audit implemented and preregistered —2026-10-27
+
+Fresh owned-job scans on xbabe1/xbabe3 empty; xbabe3load9.57/9.73/10.09,102.33GBavailableRAM/46.30GBdisk. D0 source scripts/audit_motor_inputs.py/protocol experiments/v0.0.10/input-audit-protocol.json implemented; seven unique saved H1/H3baseline seeds, per-block normalization/reset/reference/failure audit plus finite unwrapped seam velocity and scratch FK cycle-translation witnesses. No newphysics/policy/optimizer. Fixed1e-4velocity/translation thresholds; a proved reference inconsistency stops future residual learning, without causal-blame claim. Two synthetic tests/Ruffpass, independent v10CPU runtime lock created; no formal outcome before public source freeze. Exact protocol/source/test receipt artifacts/v0.0.10/D0/development-validation.json. Next bounded fresh-checkout Linux targeted tests/D0, independent raw arithmetic/accounting audit; full residual/pilot remains unimplemented/gated.

@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-27T01:39:08.369664+00:00",
+  "commands": [
+    {
+      "command": "rtk proxy uv run pytest -q tests/test_motor_inputs.py",
+      "result": "2 passed in0.28s; synthetic fixtures, zero real physics/policy/optimizer"
+    },
+    {
+      "command": "rtk proxy uvx ruff check scripts/audit_motor_inputs.py tests/test_motor_inputs.py",
+      "result": "All checks passed"
+    },
+    {
+      "command": "rtk proxy uv lock --project experiments/v0.0.10/runtime --offline",
+      "result": "New independent lock, same pinned runtime versions; historical lock unchanged"
+    }
+  ],
+  "protocol_canonical_sha256": "a5dc183dbb271e19054adde27df91ca7ac1daa4685713199e6f566403843057f",
+  "script_sha256": "5953d5d05b2a731d62bcab9ee6d251d7386d0dc8dbed24cd376d83d1ee7d913b",
+  "formal_outcomes": "None before source freeze. Only metadata/file hashes read.",
+  "development_faults": [
+    "An apply_patch context mismatch after Ruff formatting was corrected; no source/physics outcome affected."
+  ]
+}
