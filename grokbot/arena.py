@@ -197,3 +197,63 @@ def paired(env, panel, first, second, seeds, **kwargs):
         for seed in seeds
         for side in PLAYERS
     ]
+
+
+def policy_summary(records):
+    """Per-policy results over arena records, with every attempt in a column.
+
+    ``blocked_as_faller`` counts bouts the policy turned into a no-result by
+    going down with unresolved attribution. A rising rate is the "grab while
+    falling" exploit of the reference ending table and should block promotion;
+    it is not a neutral outcome. Columns always sum to ``attempted``.
+    """
+    rows = {}
+    for r in records:
+        pair = (r["first"], r["second"])
+        for me, other in (pair, pair[::-1]):
+            s = rows.setdefault(
+                me,
+                dict.fromkeys(
+                    (
+                        "attempted",
+                        "win",
+                        "draw",
+                        "loss",
+                        "blocked_as_faller",
+                        "blocked_other",
+                        "own_fault",
+                        "opponent_fault",
+                        "invalid_other",
+                        "self_falls",
+                    ),
+                    0,
+                )
+                | {"first_loss_ticks": []},
+            )
+            s["attempted"] += 1
+            if r["outcome"] is not None:
+                mine = r["outcome"] if me == r["first"] else -r["outcome"]
+                s[{1: "win", 0: "draw", -1: "loss"}[mine]] += 1
+            elif r["fault_player"] is not None:
+                s["own_fault" if r["fault_player"] == me else "opponent_fault"] += 1
+            elif (r["invalid_reason"] or "").startswith("blocked"):
+                fallers = {
+                    e["policy"]
+                    for e in r["losses"]
+                    if e["tick"] == r["ending"]["tick"]
+                    and e["attribution"] == "unresolved"
+                }
+                s["blocked_as_faller" if me in fallers else "blocked_other"] += 1
+            else:
+                s["invalid_other"] += 1
+            own = [e for e in r["losses"] if e["policy"] == me]
+            s["self_falls"] += sum(
+                e["kind"] == "fall" and e["attribution"] == "self" for e in own
+            )
+            if own:
+                s["first_loss_ticks"].append(min(e["tick"] for e in own))
+    for s in rows.values():
+        ticks = s.pop("first_loss_ticks")
+        s["median_first_loss_tick"] = float(np.median(ticks)) if ticks else None
+        s["blocked_as_faller_rate"] = s["blocked_as_faller"] / s["attempted"]
+    return rows
