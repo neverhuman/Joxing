@@ -1,7 +1,7 @@
 # Current mission: v0.0.11 connected two-player correctness
 
 **D1sensor foundation qualified:271Linux tests pass. Evidence/independent transport
-components pass59targeted tests; a new301test Linux gate is prepared. Full physical
+components pass59targeted tests; a frozen301test Linux gate is active. Full physical
 sensor proof remains next. No whole-v11tag or valid native boxing games.** Owner this chat; no
 agents, concurrent schema writers, other-chat messages or third_party edits.
 
@@ -40,7 +40,11 @@ fails old source guards. Extra Mac exact sigmoid recomputation failed by up to
    history/command/RNG audits, actual checkpoint replay-tail and zero-delay oracle
    comparators.59targeted tests pass12.09s; initial comparator metadata failure is
    retained. Public-freeze the new regression-only sensor-evidence protocol and
-   qualify301Linux tests in a dedicated checkout. No automatic formal launch.
+   qualify301Linux tests in a dedicated checkout. Source628f52e/protocol0dc7e188
+   is active in /home/ubuntu/joxing/v011-sensor-evidence-20261027; supervisor
+   4087770/start_ticks921010796, pytest4087912/start_ticks921011038. Fresh13:35:37UTC
+   tests progressing/source unchanged. Require301passes/all exits/441file audit.
+   Do not edit this executing checkout or launch another job. No automatic formal launch.
    Then finish **V0.0.11_D1_PROOF_PACKET.md**: named frozen binary loader, complete
    physical referee audit,8row/2,748physics runner/supervisor and new preregistration.
    Transport component success is not formalD1 proof. Preserve every attempt and

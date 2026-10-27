@@ -1,0 +1,24 @@
+{
+  "source_commit": "628f52e87f6ab292492ae8e67b8f9410489dfe01",
+  "protocol_sha256": "0dc7e1882d02e4cf2e86f891d10fd5ef2251d2a35518f04b81fdce46b025b2ef",
+  "root": "/home/ubuntu/joxing/v011-sensor-evidence-20261027",
+  "command": [
+    "/usr/bin/python3",
+    "scripts/qualify_sensor_evidence.py",
+    "--protocol-sha256",
+    "0dc7e1882d02e4cf2e86f891d10fd5ef2251d2a35518f04b81fdce46b025b2ef"
+  ],
+  "supervisor": {
+    "pid": 4087770,
+    "start_ticks": 921010796,
+    "state": "R"
+  },
+  "source_files_verified": 153,
+  "upstream_files_verified": 288,
+  "launch_utc": "2026-10-27T13:35:13.868256+00:00",
+  "expected_tests": 301,
+  "threads": 1,
+  "formal_new_physics": 0,
+  "formal_prior_v11_physics": 2642,
+  "local_receipt_utc": "2026-10-27T13:35:13.907718+00:00"
+}

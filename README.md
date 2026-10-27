@@ -23,7 +23,7 @@ The opt-in [sensor-timed variant](docs/V0.0.11_D1_SENSOR_TIMING.md) now provides
 actual delayed/dropped/reordered inputs, explicit ages and pending-sensor replay.
 All271Linux foundation tests pass. The received-input evidence recorder and
 independent transport/replay/oracle comparators now pass59targeted tests, including
-30new corruption/evidence tests. A new301test Linux qualification is prepared. The
+30new corruption/evidence tests. Its publicly frozen301test Linux qualification is running on xbabe3. The
 [eight-case physical sensor proof](docs/V0.0.11_D1_PROOF_PACKET.md) still needs
 its frozen-model loader, complete physical audit, runner and preregistration. Stable guard/reach and sporting
 gates remain before competitive learning; no valid native boxing bout yet.

@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-27T13:34:30.892202+00:00",
+  "source_commit": "628f52e87f6ab292492ae8e67b8f9410489dfe01",
+  "push_returncode": 0,
+  "anonymous_verified": {
+    "experiments/v0.0.11/sensor-evidence-protocol.json": {
+      "bytes": 52934,
+      "sha256": "a71a2e22ad419e2445efd901ec9bf804d7ed9a6a1b159b45cb6d1290914d9147",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/628f52e87f6ab292492ae8e67b8f9410489dfe01/experiments/v0.0.11/sensor-evidence-protocol.json"
+    },
+    "src/joxing/sensor_evidence.py": {
+      "bytes": 7493,
+      "sha256": "daa12e8ee0afde42cb965626ae2d492030ff075ed2a31d8e7bfef34de462efb8",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/628f52e87f6ab292492ae8e67b8f9410489dfe01/src/joxing/sensor_evidence.py"
+    },
+    "src/joxing/sensor_audit.py": {
+      "bytes": 21187,
+      "sha256": "f14a446b137174260f0ab4ecd1cc82aa645fa3b3eddefc6beb3d31dd06ce229a",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/628f52e87f6ab292492ae8e67b8f9410489dfe01/src/joxing/sensor_audit.py"
+    },
+    "tests/test_sensor_audit.py": {
+      "bytes": 10875,
+      "sha256": "46d90bfcbebc0806ca6bd304a507ddd5074a679f8b33d1b68827194b4d6cf8ea",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/628f52e87f6ab292492ae8e67b8f9410489dfe01/tests/test_sensor_audit.py"
+    },
+    "scripts/register_sensor_evidence.py": {
+      "bytes": 2431,
+      "sha256": "ed06fdef8e97e3b15b3f028415838fa5f2e8c3bd28146ff604ab8b4a661d77a9",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/628f52e87f6ab292492ae8e67b8f9410489dfe01/scripts/register_sensor_evidence.py"
+    },
+    "scripts/qualify_sensor_evidence.py": {
+      "bytes": 8670,
+      "sha256": "b1564ce8421e632f3dda3960abd55e94cd86c511540dd74bb557342cb1acc297",
+      "anonymous_url": "https://raw.githubusercontent.com/neverhuman/Joxing/628f52e87f6ab292492ae8e67b8f9410489dfe01/scripts/qualify_sensor_evidence.py"
+    }
+  },
+  "protocol_canonical_sha256": "0dc7e1882d02e4cf2e86f891d10fd5ef2251d2a35518f04b81fdce46b025b2ef",
+  "scope": "Regression-only sensor evidence qualification; no formal D1 or training"
+}
