@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-27T00:11:53.298224+00:00",
+  "supervisor_status": "running",
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "pid": 1799279,
+      "returncode": 0,
+      "wall_s": 1.0671407245099545
+    },
+    {
+      "stage": "full-tests",
+      "status": "running",
+      "pid": 1799404,
+      "returncode": null,
+      "wall_s": null
+    }
+  ],
+  "test_log_tail": ".................................................................",
+  "load": [
+    4.76220703125,
+    4.16845703125,
+    4.1064453125
+  ],
+  "owned_pytest_ticks": 12468
+}
