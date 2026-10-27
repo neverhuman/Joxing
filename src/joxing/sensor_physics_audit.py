@@ -13,6 +13,7 @@ import numpy as np
 
 from .boxing_audit import require
 from .boxing_evidence import CONTACT_COLUMNS, array_sha
+from .evidence_storage import read_json
 from .referee import GloveInterval, MatchReferee
 from .rules import Touch
 from .sensed_env import SensedBoxingEnv
@@ -24,12 +25,12 @@ def audit_sensor_physics(folder, scene, *, expected_physics, delays):
     result = audit_sensor_transport(
         folder, scene, expected_physics=expected_physics, delays=delays
     )
-    initial = json.loads((folder / "sensor-initial.json").read_text())["base"]
-    outer_final = json.loads((folder / "sensor-final.json").read_text())
+    initial = read_json(folder / "sensor-initial.json")["base"]
+    outer_final = read_json(folder / "sensor-final.json")
     final = outer_final["base"]
-    trace = json.loads((folder / "trace.json").read_text())
-    contract = json.loads((folder / "contract.json").read_text())
-    sensor = json.loads((folder / "sensor-trace.json").read_text())
+    trace = read_json(folder / "trace.json")
+    contract = read_json(folder / "contract.json")
+    sensor = read_json(folder / "sensor-trace.json")
     samples = read_arrays(folder / "sensor-tape.npz")
     tape = read_arrays(folder / "tape.npz")
     n, start = expected_physics, initial["application"]["tick"]

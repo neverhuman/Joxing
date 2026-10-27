@@ -1,3 +1,8 @@
+**Storage implementation ready:**27new tests pass; source-host376test gate and
+zero-physics all-file qualification are next. See
+[V0.0.11_D1_STORAGE_QUALIFICATION.md](V0.0.11_D1_STORAGE_QUALIFICATION.md).
+No new formal physics; D1remains partial.
+
 # Current mission: v0.0.11 connected two-player correctness
 
 **349Linux tests passed. D1stopped at its unchanged storage gate:6completed,

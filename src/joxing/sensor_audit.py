@@ -7,8 +7,6 @@ the D0 source-host oracle comparison, or the formal eight-case proof runner.
 """
 
 import copy
-import json
-import zipfile
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -18,19 +16,10 @@ import numpy as np
 from .boxing_audit import compare_replay, require
 from .boxing_evidence import PLAYERS, array_sha, diagnostic_command
 from .env import INTEGRATION, excitation
+from .evidence_storage import read_arrays, read_json
 from .observations import SCHEMA_HASH
 from .provenance import digest
 from .sensed_env import SensedBoxingEnv
-
-
-def read_arrays(path):
-    with zipfile.ZipFile(path) as archive:
-        require(
-            sum(i.file_size for i in archive.infolist()) <= 128 * 1024**2,
-            "Uncompressed sensor evidence cap",
-        )
-    with np.load(path, allow_pickle=False) as archive:
-        return {k: archive[k] for k in archive.files}
 
 
 def typed(value, shape, dtype, name):
@@ -282,11 +271,11 @@ def audit_transport(
 
 def audit_sensor_transport(folder, scene, *, expected_physics, delays):
     folder = Path(folder)
-    initial = json.loads((folder / "sensor-initial.json").read_text())
-    final = json.loads((folder / "sensor-final.json").read_text())
-    trace = json.loads((folder / "trace.json").read_text())
-    sensor_trace = json.loads((folder / "sensor-trace.json").read_text())
-    contract = json.loads((folder / "contract.json").read_text())
+    initial = read_json(folder / "sensor-initial.json")
+    final = read_json(folder / "sensor-final.json")
+    trace = read_json(folder / "trace.json")
+    sensor_trace = read_json(folder / "sensor-trace.json")
+    contract = read_json(folder / "contract.json")
     env = SensedBoxingEnv(
         scene,
         horizon_ticks=contract["horizon_ticks"],
@@ -298,7 +287,7 @@ def audit_sensor_transport(folder, scene, *, expected_physics, delays):
     env.restore(initial)  # Semantic validation/FK, no physics.
     for name, snapshot in [("initial", initial), ("final", final)]:
         require(
-            json.loads((folder / (name + ".json")).read_text()) == snapshot["base"],
+            read_json(folder / (name + ".json")) == snapshot["base"],
             "Sensor/base snapshot disagreement",
         )
     tape, sampled = (
@@ -410,17 +399,17 @@ def compare_sensor_replay(source, replay, *, source_checkpoint):
     """Compare all received/physical tails against their actual source tape."""
     source, replay = Path(source), Path(replay)
     physical = compare_replay(source, replay)
-    initial = json.loads((replay / "sensor-initial.json").read_text())
+    initial = read_json(replay / "sensor-initial.json")
     require(
-        initial == json.loads(Path(source_checkpoint).read_text()),
+        initial == read_json(Path(source_checkpoint)),
         "Replay actual source checkpoint",
     )
     start = initial["base"]["application"]["tick"]
-    s = json.loads((source / "sensor-trace.json").read_text())
-    r = json.loads((replay / "sensor-trace.json").read_text())
+    s = read_json(source / "sensor-trace.json")
+    r = read_json(replay / "sensor-trace.json")
     require(
-        json.loads((source / "sensor-final.json").read_text())
-        == json.loads((replay / "sensor-final.json").read_text()),
+        read_json(source / "sensor-final.json")
+        == read_json(replay / "sensor-final.json"),
         "Replay final sensor state",
     )
     require(
@@ -475,8 +464,8 @@ def compare_zero_delay_oracle(oracle, sensed):
     must match. This function never rebuilds a scene or reruns the old oracle.
     """
     oracle, sensed = Path(oracle), Path(sensed)
-    old_contract = json.loads((oracle / "contract.json").read_text())
-    new_contract = json.loads((sensed / "contract.json").read_text())
+    old_contract = read_json(oracle / "contract.json")
+    new_contract = read_json(sensed / "contract.json")
     require(
         new_contract["sensor_schedule"] == {a: [0] for a in PLAYERS},
         "Oracle requires zero sensor delay",
@@ -486,14 +475,14 @@ def compare_zero_delay_oracle(oracle, sensed):
         "Oracle physical/controller contract differs",
     )
     for name in ["initial", "final"]:
-        old = json.loads((oracle / (name + ".json")).read_text())
-        new = json.loads((sensed / (name + ".json")).read_text())
+        old = read_json(oracle / (name + ".json"))
+        new = read_json(sensed / (name + ".json"))
         require(old["engine"] == new["engine"], "Oracle engine: " + name)
         require(
             old["application"] == new["application"], "Oracle base application: " + name
         )
-    old_trace = json.loads((oracle / "trace.json").read_text())
-    new_trace = json.loads((sensed / "trace.json").read_text())
+    old_trace = read_json(oracle / "trace.json")
+    new_trace = read_json(sensed / "trace.json")
     for trace, contract in [(old_trace, old_contract), (new_trace, new_contract)]:
         require(
             trace["transition"]["info"].pop("contract_hash") == digest(contract),

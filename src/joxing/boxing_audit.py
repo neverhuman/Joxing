@@ -6,6 +6,7 @@ are reused frozen implementations, explicitly not independent physics models.
 """
 
 import json
+from contextlib import nullcontext
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -14,6 +15,7 @@ import numpy as np
 
 from .boxing_evidence import CONTACT_COLUMNS, PLAYERS, array_sha, diagnostic_command
 from .env import INTEGRATION, BoxingEnv
+from .evidence_storage import read_arrays, read_json
 from .referee import GloveInterval, MatchReferee
 from .rules import Touch
 
@@ -25,10 +27,10 @@ def require(condition, reason):
 
 def audit_case(folder, scene, *, expected_physics, delays):
     folder = Path(folder)
-    initial = json.loads((folder / "initial.json").read_text())
-    final = json.loads((folder / "final.json").read_text())
-    trace = json.loads((folder / "trace.json").read_text())
-    contract = json.loads((folder / "contract.json").read_text())
+    initial = read_json(folder / "initial.json")
+    final = read_json(folder / "final.json")
+    trace = read_json(folder / "trace.json")
+    contract = read_json(folder / "contract.json")
     env = BoxingEnv(
         scene,
         horizon_ticks=contract["horizon_ticks"],
@@ -37,8 +39,8 @@ def audit_case(folder, scene, *, expected_physics, delays):
     )
     require(env.contract == contract, "Foreign case contract")
     env.restore(initial)  # Frozen semantic snapshot validation, no mj_step.
-    with np.load(folder / "tape.npz", allow_pickle=False) as z:
-        tape = {k: z[k] for k in z.files}
+    with nullcontext(read_arrays(folder / "tape.npz")) as z:
+        tape = {k: z[k] for k in z}
     require(trace["schema"] == "joxing-shared-evidence-v1", "Foreign evidence schema")
     require(
         trace["contact_columns"] == {k: list(v) for k, v in CONTACT_COLUMNS.items()},
@@ -390,14 +392,14 @@ def audit_case(folder, scene, *, expected_physics, delays):
 
 def compare_replay(source, replay):
     source, replay = Path(source), Path(replay)
-    st = json.loads((source / "trace.json").read_text())
-    rt = json.loads((replay / "trace.json").read_text())
-    start = json.loads((replay / "initial.json").read_text())["application"]["tick"]
-    base = json.loads((source / "initial.json").read_text())["application"]["tick"]
+    st = read_json(source / "trace.json")
+    rt = read_json(replay / "trace.json")
+    start = read_json(replay / "initial.json")["application"]["tick"]
+    base = read_json(source / "initial.json")["application"]["tick"]
     offset = start - base
     require(
-        json.loads((source / "final.json").read_text())
-        == json.loads((replay / "final.json").read_text()),
+        read_json(source / "final.json")
+        == read_json(replay / "final.json"),
         "Replay final application/engine mismatch",
     )
     require(
@@ -406,8 +408,8 @@ def compare_replay(source, replay):
         "Replay contact/event/engine tail mismatch",
     )
     with (
-        np.load(source / "tape.npz", allow_pickle=False) as a,
-        np.load(replay / "tape.npz", allow_pickle=False) as b,
+        nullcontext(read_arrays(source / "tape.npz")) as a,
+        nullcontext(read_arrays(replay / "tape.npz")) as b,
     ):
         for key in ["applied", "excitation", "packets"]:
             require(

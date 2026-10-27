@@ -1,0 +1,79 @@
+{
+  "schema": "joxing-storage-development-v1",
+  "prior_source": "ef42c872d13bfebb16b347f842ba11f0b8b8e776",
+  "unchanged_nonstorage_modules": {
+    "src/joxing/__init__.py": "b2e944ab0a71e441b3a3b9405fecc6be0b34d811b0c1d69e3f44d35b7c6b8092",
+    "src/joxing/balance.py": "4fc33ace1210b9ad9a902f581568bbf4d8bf5fc916a563fa30e6b0ff6bf97352",
+    "src/joxing/bodies/__init__.py": "be1a8a4d1b0238e74e548c7e5d7d93e2a68cc86c7d05ee1044b96e8689b074e2",
+    "src/joxing/bodies/base.py": "ea4e880b2821460f81633eb5710254e3b9a54aed7bb9b0c1f363a16d4d6f4b94",
+    "src/joxing/bodies/native.py": "122a55158e71514e5895a4a8e4680e24cc2f5d079c00a75c7ba6700f0b0a308f",
+    "src/joxing/bout_recording.py": "27f5bde0c9f06933557d91624ac3553ac41fa49a6d310f3b29bcc99ce1141a3d",
+    "src/joxing/boxing_evidence.py": "23c607bfd20772c1f0604dd90aa3324c3656ceb63212e5d85c20fa8e8369e073",
+    "src/joxing/cli.py": "beb3f87f7c49d7057d3068a71a6d1cbfa1990f3df445aa214e38224f9bb95e27",
+    "src/joxing/env.py": "a8b653d9b82b0acc870bc247eaa5f6bee03c687d3d898cc4d135e9a5d8d5e354",
+    "src/joxing/frozen_scene.py": "c269f59eba8abbafde6df66bac8ca5154ffc63589bcd3c853e527c092092c681",
+    "src/joxing/geometry.py": "1b63a11f7b45c4043768be0f6e540892227afa5f3bcaf0aeaab3708d034f1b03",
+    "src/joxing/groups.py": "d90663ecc09c2f9e3e18e25ec594ab29778d94c7e282735ecfcbe334fe3cbe34",
+    "src/joxing/history.py": "cb3b6a5e064475284a5a78b7360dda3bc61c66a63094d4c0c8b74508e0580aab",
+    "src/joxing/motor.py": "737e39ed26adf298a411508ff7a068da07a62d92ac302a2951799c730d908ec5",
+    "src/joxing/motor_audit.py": "b97b5d551c40e14da0ef9e2c2a20b65adea5b11bd06b8e2f41c3cdce199d4bec",
+    "src/joxing/motor_evaluation.py": "1b4442c72875827eee47fb23cdeed441d4155bd9f43fb457296dade8be847c0b",
+    "src/joxing/motor_pilot.py": "bcea1d3de744ea3d235685860af1ed9695c374ef176a4030be7312e8e0973c00",
+    "src/joxing/motor_protocol.py": "43835219da046f6f222f666e99ca63a66072e12ff08fa96f8f38c80ebcf5c9f3",
+    "src/joxing/motor_residual.py": "164fe91f55d4922a01f1360ed04c93192b3188635ce68c99f19dbc1554cd8124",
+    "src/joxing/motor_run.py": "a4c10196b98954a6c6ba2ec306c46422a571f48f8300526582d45c561a246dbb",
+    "src/joxing/motor_storage.py": "a14900c3102d87f4d6a1b9ae21b8f831c13593fe95b7e8ba175b700eb26da6c1",
+    "src/joxing/native_transfer.py": "dcd6cb3a6cd701af35b25b7c2ce6a86797034bf3d1978ead94be4dab874bdba9",
+    "src/joxing/observations.py": "887610b0c70db0d6fead690ca1f23dd7788cbae9d288981370b4acbd32f9b7c2",
+    "src/joxing/physical_fast.py": "98d3017e7891f8d7f57a50b55f029b8871cffbf13f96c44b71e2cb2632392831",
+    "src/joxing/physical_motor.py": "5a4eb7952364a0a3300042a8b680f901c9040da36aef0244aa65209b074e54ec",
+    "src/joxing/physics.py": "9766aa19a2eefab496b69d5a977394f11e9968f722c27c397fc85ee383787641",
+    "src/joxing/provenance.py": "a81e9d94dce0297288ee6bf8f1a5a26c4f46549b54818fd768ea3053e6591925",
+    "src/joxing/referee.py": "12e918f746e6b35cf365a0d198466a9bc805edb33ce5de4c4556d573c611c7b0",
+    "src/joxing/reference_seam.py": "7363c9b0d9b488bb5d5af1d0d4cb30ce9c3b786a6ecacf0d671377c4a3dd1ce3",
+    "src/joxing/replay.py": "7be0d8a6bc91d051304a1fc817619abce81dd3ade8d67b959f4c6e64433685cb",
+    "src/joxing/rules.py": "4c75013718eb8cc0c83f00a6f6e671d405c08192f7b9c31ed4b4439d1fb57ffd",
+    "src/joxing/scene.py": "f8ac6b106c691c5e3ac35ffacccac89654a50c5dda6ccb1e10d38f9be665f867",
+    "src/joxing/sensed_env.py": "3c90730183e046d2fe1793c31d3d255a2d098dda68c3adb2c89e70511cc6d707",
+    "src/joxing/sensing.py": "167d17d7ac6db136b7542edb53000c02623b6e6c02c7dc993862547a700e95fa",
+    "src/joxing/sensor_evidence.py": "daa12e8ee0afde42cb965626ae2d492030ff075ed2a31d8e7bfef34de462efb8",
+    "src/joxing/sensor_protocol.py": "2c2c49fe92fb567283587ae06a60bbc08acdd24c5dedb07ab3ceaf541d1c86a8",
+    "src/joxing/stance_env.py": "4a9e8a02a95d8a09d3db3e40042cb65d2d89d843779bc76bb54f1e3eea471fbd",
+    "src/joxing/stance_train.py": "7eb5023dbaf6dbb5295732beb328946559c6b5e4a0dc2651a784a79022aa40b0",
+    "src/joxing/strike.py": "beb9d856c3eef62ca11f5e744890e81ffe7ad3ab9f24a650e7eeb7e0b0a1373a",
+    "src/joxing/support.py": "c997fc6f43a894663cd470bd3de26d4a25243964bac6dd2238e881980bed2440",
+    "src/joxing/timing.py": "892b1e99501810fb194a2ce44ec883314479aebb885b39aa9ad2b923d179b5a9",
+    "src/joxing/upstream_motor.py": "d557ba5678d7456a56d594c14052d7062a35eded47050a50a15723f11e368b0a",
+    "src/joxing/wave.py": "714550b735d72d26ad3c5f5292264f44ef5d628824c8d25a14c26d8eb1514868",
+    "src/joxing/wave_extension.py": "ba63cb4b008acc9b2ab2614f9bf1fdeb735752e027b36d1442626d1addb51494"
+  },
+  "storage_only_auditor_edits": [
+    "src/joxing/boxing_audit.py",
+    "src/joxing/sensor_audit.py",
+    "src/joxing/sensor_physics_audit.py"
+  ],
+  "validation": [
+    {
+      "command": ".venv/bin/python -m pytest -q tests/test_evidence_storage.py tests/test_sensor_packed_evidence.py tests/test_sensor_physics_audit.py tests/test_sensor_audit.py",
+      "passed": 60,
+      "seconds": 33.94,
+      "note": "before two additional LZMA hardening tests"
+    },
+    {
+      "command": ".venv/bin/python -m pytest -q tests/test_evidence_storage_qualification.py tests/test_evidence_storage.py tests/test_sensor_packed_evidence.py",
+      "passed": 27,
+      "seconds": 14.38
+    },
+    {
+      "command": ".venv/bin/python -m pytest --collect-only -q",
+      "collected": 376,
+      "seconds": 2.17
+    }
+  ],
+  "formal_new_physics": 0,
+  "native_boxing_games": 0,
+  "limitations": [
+    "Mac fixtures are development regression; no formal D1 completion or Linux storage outcome yet",
+    "The original six completed cases are not rerun; no old failed cap or protocol changed"
+  ]
+}

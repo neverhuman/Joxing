@@ -1,3 +1,13 @@
+# Lossless storage component —2026-10-27
+
+Added evidence_storage.py and sensor_packed_evidence.py; bounded gzip JSON/ZIP_LZMA
+with dual container/decoded hashes, pre-write quota/atomic peak/fault retention,
+no expanded evidence files. Auditor changes only route reads through the new
+bounded readers. Original controller/physics/state/history/transport unchanged.
+27new regression tests pass;376total collected. The source-host full suite and
+zero-physics all-file corpus qualification are next; six old physical cases are
+not rerun. [Detailed component/handoff](V0.0.11_D1_STORAGE_QUALIFICATION.md).
+
 ## D1partial concluded honestly; lossless storage mission ready —2026-10-27 14:21UTC
 
 Sourceef42c87/protocol317b4052 passed349Linux tests356.69s; formal proof stopped

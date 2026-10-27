@@ -26,7 +26,7 @@ completed6of8cases/2,431steps, including exact D0oracle and three checkpoint
 replays, then stopped at its unchanged storage gate. The two drop-only cases
 remain incomplete/not_run. The [next mission](docs/V0.0.11_D1_STORAGE_MISSION.md)
 is lossless evidence packing and completion of only those317remaining steps.
-All attempts, failures and partial audits are retained. Stable guard/reach and sporting
+All attempts, failures and partial audits are retained. The [lossless storage component](docs/V0.0.11_D1_STORAGE_QUALIFICATION.md) has27new passing development tests; its frozen Linux regression and complete-corpus qualification are next. Stable guard/reach and sporting
 gates remain before competitive learning; no valid native boxing bout yet.
 
 **Prior release: v0.0.9.** Exact scalar CPU rollout scales to **520.7 native control transitions/s at16workers** on xbabe3, with all78cases and62parallel histories matching serial. Frozen-actor batching failed its unchanged parity gate; the exact collector candidate improved only1.8% and was declined. All failures/not_run cases, experiments and raw evidence are retained. [Results](docs/V0.0.9_RESULTS.md) · [Experiment book](experiments/v0.0.9/README.md) · [Full raw archive](https://github.com/neverhuman/Joxing/releases/download/v0.0.9/joxing-v0.0.9-raw.tar.gz).

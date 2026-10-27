@@ -1,3 +1,14 @@
+# Lossless storage implementation ready for Linux gate —2026-10-27 14:39UTC
+
+Implemented save-only packed sensor tapes and bounded old/new evidence readers.
+27new tests pass14.38s, including actual pending-history held-command replay,
+identical raw/packed audit outputs, quarantine and corruption/credit failures.
+All non-storage core modules remain byte-identical to ef42c87. Full source gate
+now expects376Linux tests, followed by a zero-physics conversion of every retained
+D0/D1proof file under64MiB/180s. [Protocol and handoff](V0.0.11_D1_STORAGE_QUALIFICATION.md).
+No new formal physics: cumulative5073, D1still6of8; only317physical steps remain.
+No new boxing game or learning result; no v11tag.
+
 ## D1partial concluded honestly; lossless storage mission ready —2026-10-27 14:21UTC
 
 Sourceef42c87/protocol317b4052 passed349Linux tests356.69s; formal proof stopped

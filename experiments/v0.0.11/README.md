@@ -1,3 +1,13 @@
+# Lossless storage gate —2026-10-27
+
+New explicit storage variant implemented;27new development tests pass14.38s.
+Read [qualification packet](../../docs/V0.0.11_D1_STORAGE_QUALIFICATION.md).
+Frozen source/protocol must be published before one bounded376Linux-test gate
+then complete D0/D1corpus conversion,0new physics,64MiB/180s/one thread.
+Every file and attempt stays in the denominator; old raw evidence is immutable.
+Only after this gate passes register the two unfinished sensor conditions;
+formalphysics remains5073 and nativeboxinggames0.
+
 ## D1partial concluded honestly; lossless storage mission ready —2026-10-27 14:21UTC
 
 Sourceef42c87/protocol317b4052 passed349Linux tests356.69s; formal proof stopped
