@@ -1,0 +1,43 @@
+{
+  "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+  "deployment_root": "/home/ubuntu/joxing/v011-shared-motor-physical-20261027",
+  "process": {
+    "pid": 1021028,
+    "start_ticks": 905954255
+  },
+  "live": false,
+  "launch_log": "Traceback (most recent call last):\n  File \"/home/ubuntu/joxing/v011-shared-motor-physical-20261027/scripts/supervise_shared_motor.py\", line 18, in <module>\n    from joxing.shared_motor_proof import validate_test_summary\nModuleNotFoundError: No module named 'joxing'\n",
+  "supervision_created": false,
+  "schema": "joxing-shared-motor-launch-failure-v1",
+  "status": "halted-before-tests",
+  "formal_physics_attempted": 0,
+  "rows": [
+    {
+      "id": "source-71000",
+      "status": "not_run",
+      "physics_attempted": 0
+    },
+    {
+      "id": "source-71001",
+      "status": "not_run",
+      "physics_attempted": 0
+    },
+    {
+      "id": "source-71002",
+      "status": "not_run",
+      "physics_attempted": 0
+    },
+    {
+      "id": "source-71003",
+      "status": "not_run",
+      "physics_attempted": 0
+    },
+    {
+      "id": "replay-71000",
+      "status": "not_run",
+      "physics_attempted": 0
+    }
+  ],
+  "next_action": "Unchanged frozen source, fresh dedicated root, bounded bootstrap sync and pinned runtime interpreter"
+}

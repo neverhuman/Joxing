@@ -1,0 +1,102 @@
+{
+  "status": "running",
+  "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "process": {
+    "pid": 1026517,
+    "parent_pid": 1,
+    "start_ticks": 905963902,
+    "state": "R"
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1026682,
+        "parent_pid": 1026517,
+        "start_ticks": 905964088,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 39357427712,
+        "disk_free_bytes": 322477568000,
+        "load": [
+          7.2041015625,
+          5.7685546875,
+          5.36279296875
+        ],
+        "owned_raw_bytes": 55
+      },
+      "returncode": 0,
+      "wall_s": 2.180808909237385,
+      "live_recorded_processes": [],
+      "log_tail": "Resolved 43 packages in 2ms\nChecked 40 packages in 1ms\n"
+    },
+    {
+      "stage": "tests",
+      "status": "running",
+      "reason": null,
+      "process": {
+        "pid": 1026813,
+        "parent_pid": 1026517,
+        "start_ticks": 905964366,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 38953938944,
+        "disk_free_bytes": 324505382912,
+        "load": [
+          7.5732421875,
+          7.234375,
+          6.06689453125
+        ],
+        "owned_raw_bytes": 5275
+      },
+      "log_tail": "........................................................................ [  8%]\n........................................................................ [ 16%]\n.......................",
+      "actual_live": [
+        {
+          "pid": 1026813,
+          "start_ticks": 905964366,
+          "state": "S",
+          "cpu_ticks": 1,
+          "rss_pages": 9984
+        },
+        {
+          "pid": 1026816,
+          "start_ticks": 905964369,
+          "state": "R",
+          "cpu_ticks": 18234,
+          "rss_pages": 1108169
+        },
+        {
+          "pid": 1035656,
+          "start_ticks": 905973939,
+          "state": "S",
+          "cpu_ticks": 1,
+          "rss_pages": 2816
+        }
+      ]
+    },
+    {
+      "stage": "proof",
+      "status": "not_run",
+      "reason": "pending"
+    },
+    {
+      "stage": "audit",
+      "status": "not_run",
+      "reason": "pending"
+    },
+    {
+      "stage": "render",
+      "status": "not_run",
+      "reason": "pending"
+    },
+    {
+      "stage": "decode",
+      "status": "not_run",
+      "reason": "pending"
+    }
+  ]
+}

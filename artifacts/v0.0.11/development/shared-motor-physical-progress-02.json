@@ -1,0 +1,201 @@
+{
+  "status": "running",
+  "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "process": {
+    "pid": 1026517,
+    "parent_pid": 1,
+    "start_ticks": 905963902,
+    "state": "R"
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1026682,
+        "parent_pid": 1026517,
+        "start_ticks": 905964088,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 39357427712,
+        "disk_free_bytes": 322477568000,
+        "load": [
+          7.2041015625,
+          5.7685546875,
+          5.36279296875
+        ],
+        "owned_raw_bytes": 55
+      },
+      "returncode": 0,
+      "wall_s": 2.180808909237385,
+      "live_recorded_processes": [],
+      "log_tail": "Resolved 43 packages in 2ms\nChecked 40 packages in 1ms\n"
+    },
+    {
+      "stage": "tests",
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1026813,
+        "parent_pid": 1026517,
+        "start_ticks": 905964366,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 39199539200,
+        "disk_free_bytes": 325393006592,
+        "load": [
+          17.00732421875,
+          11.947265625,
+          8.16552734375
+        ],
+        "owned_raw_bytes": 10164
+      },
+      "returncode": 0,
+      "wall_s": 498.4476010799408,
+      "live_recorded_processes": [],
+      "log_tail": "tion.py::test_two_row_runner_uses_actual_mid_hold_and_dropped_actor_never_calls\n14.32s call     tests/test_sensor_packed_evidence.py::test_original_and_packed_pending_history_replay_have_identical_audit\n10.76s call     tests/test_physical_motor.py::test_explicit_substeps_leave_native_state_cached_features_and_reward_exact\n10.72s setup    tests/test_shared_motor_evidence.py::test_lossless_motor_tape_and_saved_independent_measurements\n10.62s call     tests/test_native_transfer.py::test_all_four_variants_have_exact_paired_reset_fields\n9.28s setup    tests/test_shared_motor_task.py::test_parallel_variant_preserves_complete_muscles_and_reference_reset\n8.51s call     tests/test_wave.py::test_reward_wrapper_preserves_physics_and_terminal_state\n7.67s call     tests/test_wave.py::test_training_resets_are_seeded_and_separate\n7.42s call     grokbot/tests/test_arena.py::test_common_random_numbers_follow_the_policy_not_the_corner\n7.36s call     grokbot/tests/test_arena.py::test_first_self_caused_fall_decides_and_feeds_a_nonzero_payoff\n6.98s setup    tests/test_sensor_packed_evidence.py::test_original_and_packed_pending_history_replay_have_identical_audit\n6.77s setup    tests/test_sensor_audit.py::test_saved_native_inputs_audit_without_new_physics\n6.18s call     tests/test_wave.py::test_evaluation_fault_keeps_all_planned_attempts\n5.50s call     tests/test_physical_fast.py::test_engine_every_cached_feature_contact_and_reward_matches_reference[1]\n=========================== short test summary info ============================\nXFAIL grokbot/tests/test_referee_fuzz.py::test_restore_does_not_alias_the_snapshot - cycle-0005 F1: HitTracker.restore aliases the snapshot's ledger and encounter dicts; callers must deep-copy (all current call sites do)\n861 passed, 1 xfailed in 495.58s (0:08:15)\n"
+    },
+    {
+      "stage": "proof",
+      "status": "running",
+      "reason": null,
+      "process": {
+        "pid": 1115613,
+        "parent_pid": 1026517,
+        "start_ticks": 906014269,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 40644038656,
+        "disk_free_bytes": 325392744448,
+        "load": [
+          14.1640625,
+          11.62548828125,
+          8.140625
+        ],
+        "owned_raw_bytes": 108098
+      },
+      "log_tail": "",
+      "actual_live": [
+        {
+          "pid": 1115613,
+          "start_ticks": 906014269,
+          "state": "S",
+          "cpu_ticks": 1,
+          "rss_pages": 9728
+        },
+        {
+          "pid": 1115618,
+          "start_ticks": 906014271,
+          "state": "R",
+          "cpu_ticks": 1637,
+          "rss_pages": 593748
+        }
+      ]
+    },
+    {
+      "stage": "audit",
+      "status": "not_run",
+      "reason": "pending"
+    },
+    {
+      "stage": "render",
+      "status": "not_run",
+      "reason": "pending"
+    },
+    {
+      "stage": "decode",
+      "status": "not_run",
+      "reason": "pending"
+    }
+  ],
+  "progress.json": {
+    "max_rss_kib": 2374992,
+    "physics_attempted": 100,
+    "row": "source-71000",
+    "row_physics_attempted": 100,
+    "status": "running",
+    "tick": 100,
+    "wall_s": 14.6064189132303
+  },
+  "result.json": {
+    "command": [
+      "scripts/qualify_shared_motor.py",
+      "--protocol-sha256",
+      "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+      "--source-sha",
+      "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+    ],
+    "optimizer_updates": 0,
+    "physics_attempted": 0,
+    "process": {
+      "pid": 1115618,
+      "start_ticks": 906014271
+    },
+    "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+    "rows": [
+      {
+        "end_tick": 3520,
+        "id": "source-71000",
+        "kind": "source",
+        "physics_attempted": 0,
+        "planned_physics": 3520,
+        "reason": null,
+        "seed": 71000,
+        "start_tick": 0,
+        "status": "running"
+      },
+      {
+        "end_tick": 3520,
+        "id": "source-71001",
+        "kind": "source",
+        "physics_attempted": 0,
+        "planned_physics": 3520,
+        "reason": "pending",
+        "seed": 71001,
+        "start_tick": 0,
+        "status": "not_run"
+      },
+      {
+        "end_tick": 3520,
+        "id": "source-71002",
+        "kind": "source",
+        "physics_attempted": 0,
+        "planned_physics": 3520,
+        "reason": "pending",
+        "seed": 71002,
+        "start_tick": 0,
+        "status": "not_run"
+      },
+      {
+        "end_tick": 3520,
+        "id": "source-71003",
+        "kind": "source",
+        "physics_attempted": 0,
+        "planned_physics": 3520,
+        "reason": "pending",
+        "seed": 71003,
+        "start_tick": 0,
+        "status": "not_run"
+      },
+      {
+        "end_tick": 3520,
+        "id": "replay-71000",
+        "kind": "replay",
+        "physics_attempted": 0,
+        "planned_physics": 3317,
+        "reason": "pending",
+        "seed": 71000,
+        "start_tick": 203,
+        "status": "not_run"
+      }
+    ],
+    "schema": "joxing-shared-motor-proof-result-v1",
+    "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+    "status": "running",
+    "valid_native_boxing_games": 0
+  }
+}

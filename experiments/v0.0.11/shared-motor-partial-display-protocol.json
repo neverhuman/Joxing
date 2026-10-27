@@ -1,0 +1,51 @@
+{
+  "schema": "joxing-shared-motor-partial-display-v1",
+  "scope": "Zero-physics first audited fixed-source display only; four-seed proof and native motor/replay gates remain FAILED/incomplete",
+  "renderer_sha256": "f4b735305b7f5e62451547caf27007797ff02c7092d5505d61de4c54dc896ecb",
+  "physical_source_sha": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "physical_protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+  "proof_root": "/home/ubuntu/joxing/v011-shared-motor-physical-bootstrap02-20261027",
+  "inputs": {
+    "runs/v0.0.11/shared-motor-proof-01/protocol.json": {
+      "bytes": 65403,
+      "sha256": "fb76e5d15bda9d3628450d3e77c8e016959ae00ab58e6a91b5a0556075fa5281"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/result.json": {
+      "bytes": 2623,
+      "sha256": "859c51fe66ad9c5065cbad2f79a9db49904c1f59eace181e2d0dfbcd0ca27892"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/independent-audit.json": {
+      "bytes": 1674,
+      "sha256": "9eb93ffa987b29e6c4b0917b4e7373e6bd615e615acd006d5761afb39b78c242"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71000/trace.json.gz": {
+      "bytes": 905158,
+      "sha256": "99565fda87051d79f03ffc823ab588d94d859d8f29bd745d6a6444b5a434c772"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71000/storage-manifest.json": {
+      "bytes": 6281,
+      "sha256": "2671d60b9614a038485583df61cac19c2238eb4afcc32bcf0da5368969fb21e7"
+    },
+    "runs/v0.0.11/shared-motor-proof-01/source-71000/tape.npz": {
+      "bytes": 19210825,
+      "sha256": "10e9404c28c03e9b401c3adb298ed2d964c6570f6853c80e30a37452c5687e61"
+    }
+  },
+  "new_physics": 0,
+  "raw_bytes": 8388608,
+  "wall_s": 80,
+  "threads": 1,
+  "expected_frames": 89,
+  "seed": 71000,
+  "prior_v11_physics": 12430,
+  "prior_v11_raw_base": 202302252,
+  "retained_physical_bytes": 29273351,
+  "postgate_accounting": {
+    "prior_upper_s": 600,
+    "physical_supervised_s": 89.1559705529362,
+    "partial_read_audit_s": 21.902540232986212,
+    "display_upper_s": 80,
+    "exit_and_read_audit_upper_s": 60
+  },
+  "criterion": "Byte/hash bind old source+input first source; independent saved measurement/policy audit passed; render/decode all89frames; no promotion or full replay claim; preserve failed launch and all10attempt slots"
+}

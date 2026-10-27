@@ -1,0 +1,104 @@
+{
+  "schema": "joxing-shared-motor-publication-v1",
+  "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+  "anonymous_http_checks": [
+    {
+      "path": "README.md",
+      "bytes": 16837,
+      "sha256": "57f7b48cadcf30fd1f57ecf6d3803ff92cddfa0cc08e681d96395207b9567dc8"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/shared-motor-physical-development.json",
+      "bytes": 4896,
+      "sha256": "fc8e72a9da073f10d2d99a1911eaa4901535f4ba486521ff4e864c510ffce788"
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "bytes": 65994,
+      "sha256": "da25cb410a5d98920a4b770245069cd3995d04adf96b51eff6a8307ec5a7c35e"
+    },
+    {
+      "path": "docs/MISSION.md",
+      "bytes": 5108,
+      "sha256": "6a353edd1f8aa66833aa657772371064ca6b00a93b5fbf49405a635a9145dbb1"
+    },
+    {
+      "path": "docs/SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md",
+      "bytes": 14635,
+      "sha256": "0e003a3cd921d34b7bf092f897a3f4063db4712bc647708a5828406868ab19be"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 124203,
+      "sha256": "4870e5a3a6f26b43c3df4bd2337bd150a669cadc4b1998990b18f56a57ba9c27"
+    },
+    {
+      "path": "experiments/v0.0.11/README.md",
+      "bytes": 35821,
+      "sha256": "2f4c151f3f76b93e66f5684c0f0fd5c485ea7930a8a4d0222c5b6c3fcbaa1adc"
+    },
+    {
+      "path": "experiments/v0.0.11/shared-motor-physical-protocol.json",
+      "bytes": 65403,
+      "sha256": "8305cac8c9bb79bf302396be51fbc00783beefe6c7489da01799f6ae1c5fda90"
+    },
+    {
+      "path": "scripts/audit_shared_motor.py",
+      "bytes": 985,
+      "sha256": "8240f36671364c5e5c5544482104d79949a6aa62877e591dd456c907b1148401"
+    },
+    {
+      "path": "scripts/qualify_shared_motor.py",
+      "bytes": 1933,
+      "sha256": "93d672016aff7bf518c4751afc73ae9ebe24a7a4f70eebc87b2afefdf6c9aee3"
+    },
+    {
+      "path": "scripts/register_shared_motor.py",
+      "bytes": 4896,
+      "sha256": "c0254e728234e021f54b12a0509e747cfeedcce60bb986ea609e793fa1fac6f1"
+    },
+    {
+      "path": "scripts/render_shared_motor.py",
+      "bytes": 4871,
+      "sha256": "b6bb509a6859dffc24eaec3046e1d4007bf4d8bd08b1a37c4bcd63efe120a968"
+    },
+    {
+      "path": "scripts/supervise_shared_motor.py",
+      "bytes": 9958,
+      "sha256": "09fbc4f39415d7e32a0fe79eff458ba6d17f1ca4347c8e78798596f4ed101603"
+    },
+    {
+      "path": "scripts/validate_shared_motor_render.py",
+      "bytes": 2154,
+      "sha256": "579cf3c560d99b00b8fa79f78cae9d94b9bb35c60d235dbce1a9810481fa44fd"
+    },
+    {
+      "path": "src/joxing/shared_motor_audit.py",
+      "bytes": 6546,
+      "sha256": "1e09d409fe41de6cb35d01d2acc5d525b6867f7dd7c60bd7282b2651a4dca2e1"
+    },
+    {
+      "path": "src/joxing/shared_motor_evidence.py",
+      "bytes": 12959,
+      "sha256": "05b2335c146ef51f7c65bb909dc822c02d5ba57e69d20b5a2925815c7a65ad4b"
+    },
+    {
+      "path": "src/joxing/shared_motor_proof.py",
+      "bytes": 19080,
+      "sha256": "2bfc788dd6262b94f085774274d5deffd710a80b1ecc2c81572e265fc2b3f7c3"
+    },
+    {
+      "path": "src/joxing/shared_motor_saved_audit.py",
+      "bytes": 15261,
+      "sha256": "099d0200e04b7413af262cfd895b4ace29259378615a0bade76c69df16e1705f"
+    },
+    {
+      "path": "tests/test_shared_motor_evidence.py",
+      "bytes": 13550,
+      "sha256": "c64bd66ccd5c748aa684023504d652407773e2afc722d13fe11f52e31d0c1e7b"
+    }
+  ],
+  "status": "passed",
+  "new_formal_physics": 0
+}

@@ -1,0 +1,2592 @@
+{
+  "schema": "joxing-shared-motor-physical-deployment-v1",
+  "host": "xbabe1",
+  "root": "/home/ubuntu/joxing/v011-shared-motor-physical-20261027",
+  "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+  "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+  "process": {
+    "pid": 1021028,
+    "start_ticks": 905954255
+  },
+  "initial_capacity": {
+    "load": [
+      5.171875,
+      5.18505859375,
+      5.15380859375
+    ],
+    "available_memory_bytes": 44704710656,
+    "free_disk_bytes": 326935584768,
+    "unknown_owned": []
+  },
+  "prelaunch_capacity": {
+    "load": [
+      5.453125,
+      5.2451171875,
+      5.17431640625
+    ],
+    "available_memory_bytes": 44473655296,
+    "free_disk_bytes": 326582808576,
+    "unknown_owned": []
+  },
+  "commands": [
+    [
+      "git",
+      "clone",
+      "--no-recurse-submodules",
+      "--reference-if-able",
+      "/home/ubuntu/joxing/v006-20261026",
+      "--dissociate",
+      "https://github.com/neverhuman/Joxing.git",
+      "/home/ubuntu/joxing/v011-shared-motor-physical-20261027"
+    ],
+    [
+      "git",
+      "-C",
+      "/home/ubuntu/joxing/v011-shared-motor-physical-20261027",
+      "checkout",
+      "--detach",
+      "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+    ],
+    [
+      "python3",
+      "scripts/supervise_shared_motor.py",
+      "--protocol-sha256",
+      "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+      "--source-sha",
+      "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+    ]
+  ],
+  "checks": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "896a626cbbdbe1baadaaf468e367bf39042664dc165712d8c5973ab46eab897d",
+      "bytes": 1668
+    },
+    {
+      "path": "experiments/v0.0.11/runtime/pyproject.toml",
+      "sha256": "3024da0eb8fc42d726be3d209248a221207aa95789fc1d13735ae6e844959324",
+      "bytes": 543
+    },
+    {
+      "path": "experiments/v0.0.11/runtime/uv.lock",
+      "sha256": "9dc2332fe46eefc51aa133c6e0e9e90790899eb67b94345ac2447967464ebd5c",
+      "bytes": 68394
+    },
+    {
+      "path": "grokbot/__init__.py",
+      "sha256": "2bab7ad40a7031d4d2012e2f4787d71e91421ac1fd5babc5f2b3a6b7edc74946",
+      "bytes": 69
+    },
+    {
+      "path": "grokbot/arena.py",
+      "sha256": "51ca65394f26e031194356dbf17e260eda26d8d3eff5bceeb22a099e78dc97f7",
+      "bytes": 7274
+    },
+    {
+      "path": "grokbot/endings.py",
+      "sha256": "5e55bfb11dd38d769227ce9ee2fb703150e4e8ea8b9df050a871f3697845fe76",
+      "bytes": 6179
+    },
+    {
+      "path": "grokbot/league.py",
+      "sha256": "6ab28a185a59f625de8c2bbd2d69fa7f09904e2e4a8bcb2da90ad04d4c4ec2d5",
+      "bytes": 10532
+    },
+    {
+      "path": "grokbot/redteam/probes/cycle-0001-tap-rate.py",
+      "sha256": "516fe098cb8791d8bbd3f0581cf5b6e428c0a0d5089f7a49f370111c8fd06d69",
+      "bytes": 2391
+    },
+    {
+      "path": "grokbot/redteam/probes/cycle-0003-scripted-panel.py",
+      "sha256": "48c78eb61dd5f73f99a1cb4b75c24e63e329bfcc680e0e6fe38d2bdd162434da",
+      "bytes": 1264
+    },
+    {
+      "path": "grokbot/redteam/probes/cycle-0004-ending-panel.py",
+      "sha256": "132d77f07dae23c832c91dc3326610156b04f14e33539152e4157a8c52faffac",
+      "bytes": 3384
+    },
+    {
+      "path": "grokbot/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "grokbot/tests/test_arena.py",
+      "sha256": "9e59fce66df8b3ac7798c57af242ea5673de53845bcd1bebb2b2d3f3f664f847",
+      "bytes": 5207
+    },
+    {
+      "path": "grokbot/tests/test_endings.py",
+      "sha256": "24fd05d3aeae779623543b94c5e6977a95f21c081e0470252a8482b1ce0d2bbe",
+      "bytes": 5859
+    },
+    {
+      "path": "grokbot/tests/test_league.py",
+      "sha256": "0f246047bc3bdf45f687673bc2944004aab371d4be063aa7fb9a2f28d701b7d4",
+      "bytes": 7299
+    },
+    {
+      "path": "grokbot/tests/test_referee_fuzz.py",
+      "sha256": "77651ed78e998f3451c3402ec1221daa61ff48445c331b0c7f6a24a260fd8b1c",
+      "bytes": 9616
+    },
+    {
+      "path": "grokbot/tests/test_side_symmetry.py",
+      "sha256": "0c041577db3aea840984a0854fdcd4a2e52ee922eb8b1f26095b5a823b91610c",
+      "bytes": 3015
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "c1fe5cdbc86c0d4cc7a139adc043153934ba9910df0f98907b0c4648e855224f",
+      "bytes": 1027
+    },
+    {
+      "path": "scripts/audit_boxing_env.py",
+      "sha256": "c13e8fef1d013fca5ac7cea902f1724d70805b633b9288bec15f8deed9ed4290",
+      "bytes": 5219
+    },
+    {
+      "path": "scripts/audit_collector.py",
+      "sha256": "e2a88a15f98f1c047a8118245611e711bbe4599fbb5554746ba24a0dd3169260",
+      "bytes": 16174
+    },
+    {
+      "path": "scripts/audit_control_state.py",
+      "sha256": "993712dd8dde4d30ba7a043546101bd201cae5bc6c3e9884eb3cd99c08e85501",
+      "bytes": 4902
+    },
+    {
+      "path": "scripts/audit_inference_numerics.py",
+      "sha256": "5a19172cf1636125f9592d0afb0c77e5a99b446ca456c9cf975ed4938f9f9abd",
+      "bytes": 5237
+    },
+    {
+      "path": "scripts/audit_motor_inputs.py",
+      "sha256": "5953d5d05b2a731d62bcab9ee6d251d7386d0dc8dbed24cd376d83d1ee7d913b",
+      "bytes": 14231
+    },
+    {
+      "path": "scripts/audit_motor_residual.py",
+      "sha256": "894962912036a9259085b9312716064ccab4b14648951305d2db8e918b2b2914",
+      "bytes": 12187
+    },
+    {
+      "path": "scripts/audit_physical_profile.py",
+      "sha256": "e62addd85cde3631680ade517dbf5c94eda363eeaaaa98d718d5266f6d478ad3",
+      "bytes": 5046
+    },
+    {
+      "path": "scripts/audit_physical_scaling.py",
+      "sha256": "16b6dd16e46f56f8577eb52bd1809fd1ceb2ac8a64bb6dc81bfb052f19a11c91",
+      "bytes": 11044
+    },
+    {
+      "path": "scripts/audit_scaling_host.py",
+      "sha256": "5de0d2627b0fe6a24b76246ff5137e680306470aa6836496fcae08c41a8a1aac",
+      "bytes": 3902
+    },
+    {
+      "path": "scripts/audit_self_play_readiness.py",
+      "sha256": "94701ae671fe496db851c05e830fadb3cf28424532a75d39440b9f777e96461e",
+      "bytes": 6156
+    },
+    {
+      "path": "scripts/audit_sensor_env.py",
+      "sha256": "8d303d9626f5abcf3a34f08b1ba69a027ce5a5f53cd79ebc14c11a7f3ec5d98e",
+      "bytes": 4203
+    },
+    {
+      "path": "scripts/audit_sensor_storage_completion.py",
+      "sha256": "d309d1f9533256e1ceba90a1ab4239726846e3d535062e394a1b2a067f4e66b2",
+      "bytes": 4881
+    },
+    {
+      "path": "scripts/audit_shared_motor.py",
+      "sha256": "8240f36671364c5e5c5544482104d79949a6aa62877e591dd456c907b1148401",
+      "bytes": 985
+    },
+    {
+      "path": "scripts/benchmark_actor_latency.py",
+      "sha256": "c8691e278b7ebd8775181369f80cedad1a097d787070f98528e4ee1a8983508d",
+      "bytes": 4489
+    },
+    {
+      "path": "scripts/benchmark_balance.py",
+      "sha256": "17f032bc6f5e71cc80cdcb4cb56a550e27cc122355a8d6980a1bc240b005427e",
+      "bytes": 4314
+    },
+    {
+      "path": "scripts/benchmark_collector.py",
+      "sha256": "64f944fd7d1e6ac8aedbbf8607344c017f9ce026806591c79976f1929cdf6715",
+      "bytes": 23261
+    },
+    {
+      "path": "scripts/benchmark_inference.py",
+      "sha256": "4d457c5cc52942415c43e4ccb14649fa6d7ce94b740d37d7d83624b9ab5366b9",
+      "bytes": 8300
+    },
+    {
+      "path": "scripts/benchmark_physical_scaling.py",
+      "sha256": "82f9f6826bc84e4173f3c22ba6ec0fffceddbe0499370594d9091f92f6041a13",
+      "bytes": 17117
+    },
+    {
+      "path": "scripts/benchmark_wave_hosts.py",
+      "sha256": "e82569b0db2cef4ddc55a6d20e5a8d7dc2c8897d4d586e1bdeffd97ed9d6c69a",
+      "bytes": 7169
+    },
+    {
+      "path": "scripts/diagnose_inference_numerics.py",
+      "sha256": "c71a11204ed80a1342a46b660e4ff6d795def84f9fa1179d05dc566c36b44805",
+      "bytes": 12043
+    },
+    {
+      "path": "scripts/diagnose_native_tracking.py",
+      "sha256": "70a78056391daf9fbfb9666b2560149635ee413509a8fb4fd14862f8d9e8b2bd",
+      "bytes": 4906
+    },
+    {
+      "path": "scripts/gpu_probe.py",
+      "sha256": "07664b0f1adedd2ac3bfbb46a227d0c57200b395525929dd9e158c4b52c35dc0",
+      "bytes": 3448
+    },
+    {
+      "path": "scripts/inspect_upstream_checkpoint.py",
+      "sha256": "11c6c9eb83344db706b032a43e1a22bb6a87eca21c1367b559d56db7017056a5",
+      "bytes": 4063
+    },
+    {
+      "path": "scripts/joxing_process_ownership.py",
+      "sha256": "b4ccaf9ea1ad943d3bd8f2ad5189293905479c60d1c2d433e30219ea37e988f7",
+      "bytes": 1472
+    },
+    {
+      "path": "scripts/profile_control_path.py",
+      "sha256": "921d4f7e8138a3700eaa93ed7cc81500c0fa2996411a389f373d8e3c9fc2af4c",
+      "bytes": 4979
+    },
+    {
+      "path": "scripts/profile_physical_pipeline.py",
+      "sha256": "0826e9c7d89eadbc794192ecf9a9ac1b5eb02cf6edd425736e789a966cba0b02",
+      "bytes": 14650
+    },
+    {
+      "path": "scripts/qualify_boxing_env.py",
+      "sha256": "1c68fc417b59f40fe3c2570f02ef98a36a57358e2534e513f02216cd79d04dd9",
+      "bytes": 11583
+    },
+    {
+      "path": "scripts/qualify_boxing_foundation.py",
+      "sha256": "eb376f3f2f333d03492dd8ba3ce245bb27a80c401692de0d4b1287fc6420f9b9",
+      "bytes": 7275
+    },
+    {
+      "path": "scripts/qualify_evidence_storage.py",
+      "sha256": "11a52f946022d25ffb7e3e5d0089b0096f1de617dbd67c90364e40f6125015c1",
+      "bytes": 6855
+    },
+    {
+      "path": "scripts/qualify_motor_residual.py",
+      "sha256": "3dcdadff7d621f4c75233cd7c1b57e382a8d03301de982dc05d9277f0a820b44",
+      "bytes": 11138
+    },
+    {
+      "path": "scripts/qualify_reference_seam.py",
+      "sha256": "cd4bc6198163a58d2a114b4b3099f217340dacd7c305440ce9e3febd71d4c34f",
+      "bytes": 7204
+    },
+    {
+      "path": "scripts/qualify_scaling_host.py",
+      "sha256": "33bd3bf6a87f669a889349b8ca78d74a20b1f6bfb43739ed8aa58e15bfe5cfd1",
+      "bytes": 9578
+    },
+    {
+      "path": "scripts/qualify_sensor_env.py",
+      "sha256": "d0ca8fc9ad8e112493c57c05d039e059594375fdadc9df401730a54ad4862c6f",
+      "bytes": 10917
+    },
+    {
+      "path": "scripts/qualify_sensor_evidence.py",
+      "sha256": "b1564ce8421e632f3dda3960abd55e94cd86c511540dd74bb557342cb1acc297",
+      "bytes": 8670
+    },
+    {
+      "path": "scripts/qualify_sensor_foundation.py",
+      "sha256": "eed0d9f8d88593a41524a0890de8e4eb308c20fbfb03bf72c653115b244020a7",
+      "bytes": 8680
+    },
+    {
+      "path": "scripts/qualify_sensor_storage_completion.py",
+      "sha256": "7219656b3686a6aa4af8c6d258492cfb803e938070939249d2b614affa7b9859",
+      "bytes": 10649
+    },
+    {
+      "path": "scripts/qualify_shared_motor.py",
+      "sha256": "93d672016aff7bf518c4751afc73ae9ebe24a7a4f70eebc87b2afefdf6c9aee3",
+      "bytes": 1933
+    },
+    {
+      "path": "scripts/qualify_shared_motor_inputs.py",
+      "sha256": "f9eeaa939a1daca9d126e6b8a8866997489100bef6b1e0275b045605d9ce1c31",
+      "bytes": 6692
+    },
+    {
+      "path": "scripts/register_boxing_foundation.py",
+      "sha256": "5918bd044351d8573ad62f16abda8b93985bd5f03d8af2d48c509d0be5d8a053",
+      "bytes": 2268
+    },
+    {
+      "path": "scripts/register_boxing_recording.py",
+      "sha256": "9bc10e22f9c107d9163330fdb77fc648e1e24f8a8d36aa5193a6d19a069c02ca",
+      "bytes": 4021
+    },
+    {
+      "path": "scripts/register_motor_pilot.py",
+      "sha256": "09b5e69776fa422098e86fa39013c9bfaf828ff9f1692a6f3c060c536fe3fb7d",
+      "bytes": 3875
+    },
+    {
+      "path": "scripts/register_sensor_evidence.py",
+      "sha256": "ed06fdef8e97e3b15b3f028415838fa5f2e8c3bd28146ff604ab8b4a661d77a9",
+      "bytes": 2431
+    },
+    {
+      "path": "scripts/register_sensor_foundation.py",
+      "sha256": "a270d1a9c351ae129979d9247b00716e3b688920295f9137daa102255157477c",
+      "bytes": 2339
+    },
+    {
+      "path": "scripts/register_sensor_proof.py",
+      "sha256": "e27970b7bc45b8c6a09afe7b3d30e5aaa3b030cc0213e376c00406bf38682301",
+      "bytes": 6445
+    },
+    {
+      "path": "scripts/register_sensor_storage_completion.py",
+      "sha256": "f3e8e8d84903e6596b27a72d80d5d3b18b6f81c3d415eecbe416de6050e3b3c9",
+      "bytes": 6229
+    },
+    {
+      "path": "scripts/register_shared_motor.py",
+      "sha256": "c0254e728234e021f54b12a0509e747cfeedcce60bb986ea609e793fa1fac6f1",
+      "bytes": 4896
+    },
+    {
+      "path": "scripts/render_bout_recording.py",
+      "sha256": "f071305d6468dc16d62cd4b21bb1674f1691918e679e54bb8b1f8a8863916933",
+      "bytes": 3411
+    },
+    {
+      "path": "scripts/render_shared_motor.py",
+      "sha256": "b6bb509a6859dffc24eaec3046e1d4007bf4d8bd08b1a37c4bcd63efe120a968",
+      "bytes": 4871
+    },
+    {
+      "path": "scripts/report_balance.py",
+      "sha256": "6e356f00236cfd5aff411e50249c7164cf9443a0c00c4e1a40768f5b5052f75f",
+      "bytes": 6342
+    },
+    {
+      "path": "scripts/report_motor_pilot.py",
+      "sha256": "da218c83ebff34f1399639f5acd96e6123acc830401b6314b359b0bc9e111791",
+      "bytes": 2995
+    },
+    {
+      "path": "scripts/report_native_transfer.py",
+      "sha256": "5cd39d56c1bddb9e9fb9af67c4d3026b6830e00b7b330c987438a5442e79ec35",
+      "bytes": 7926
+    },
+    {
+      "path": "scripts/report_physical_motor.py",
+      "sha256": "af86a4af94701fe24053cc085238ae696ae91f3c7519e0d6c077b0956bc39776",
+      "bytes": 8240
+    },
+    {
+      "path": "scripts/report_reach.py",
+      "sha256": "c20ba546d953c853c7ac94329d0750ec62b489ecb1fea8f58d39bb2ad461e8aa",
+      "bytes": 5144
+    },
+    {
+      "path": "scripts/report_strike.py",
+      "sha256": "da2f43d8acc03c6d5eed6dd21948dd927deb38b742809c2c55b4137bc22c69e7",
+      "bytes": 7788
+    },
+    {
+      "path": "scripts/report_upstream_motor.py",
+      "sha256": "1ac2fff56ea6ff36e892518a5b5cbdc204cc8c7ae3307c5a24c35d2940b13937",
+      "bytes": 6333
+    },
+    {
+      "path": "scripts/report_wave.py",
+      "sha256": "be209be7ea73bb21aeacf38800ea198ab6e338a118f8b5d1a159208b49e33ec6",
+      "bytes": 16355
+    },
+    {
+      "path": "scripts/run_native_transfer.py",
+      "sha256": "74b793661beb8aa632983580ceb32f40176fdc50fdcd57f5a1aed75aec8cf8c7",
+      "bytes": 751
+    },
+    {
+      "path": "scripts/run_physical_motor.py",
+      "sha256": "63b79a779fc36f6f32aa6c2b7d0b68f889a605bb3669f40af3fbdefdc9c3975d",
+      "bytes": 728
+    },
+    {
+      "path": "scripts/run_upstream_motor.py",
+      "sha256": "c2af196aff8b0d61996599d277719c9a2c698830d8d1151c0d3369df76aedc0d",
+      "bytes": 507
+    },
+    {
+      "path": "scripts/run_wave.py",
+      "sha256": "f3f8f2fad920181c8d78a5f5b6e30dfa1eb520f9b0f203d8a27eb1dc99b50863",
+      "bytes": 414
+    },
+    {
+      "path": "scripts/run_wave_extension.py",
+      "sha256": "219ae60421b044dc3587466d6a27565cdcb6791fe4a10822835c1d536ec73330",
+      "bytes": 514
+    },
+    {
+      "path": "scripts/supervise_boxing_recording.py",
+      "sha256": "999c5f1e0cce46e575f8d7f7ae2713cdc2292f51511ea9ec7f49e9633fadfde9",
+      "bytes": 9517
+    },
+    {
+      "path": "scripts/supervise_evidence_storage.py",
+      "sha256": "c24c95aad3eae3948eb84444e40571a4d05024cb8eddc1bbf2358fc7b725a3fd",
+      "bytes": 9370
+    },
+    {
+      "path": "scripts/supervise_motor_pilot.py",
+      "sha256": "2c687fcecb627e9e18c720631a3298874f77b9c02eb3cc775353c8d4bddfd7a2",
+      "bytes": 6766
+    },
+    {
+      "path": "scripts/supervise_sensor_proof.py",
+      "sha256": "f05b80a528c68438c0fe40737fccc969c986d63821ae8be2ea084b2fb03716cd",
+      "bytes": 9985
+    },
+    {
+      "path": "scripts/supervise_sensor_storage_completion.py",
+      "sha256": "7699b6f649721127869258c11809832f285e632d504dea6a854e96f285132c48",
+      "bytes": 10592
+    },
+    {
+      "path": "scripts/supervise_shared_motor.py",
+      "sha256": "09fbc4f39415d7e32a0fe79eff458ba6d17f1ca4347c8e78798596f4ed101603",
+      "bytes": 9958
+    },
+    {
+      "path": "scripts/supervise_shared_motor_inputs.py",
+      "sha256": "cad67da39a673e27a95d0c75fb22be10955246554c59de25e329cb3357e8cc1a",
+      "bytes": 9254
+    },
+    {
+      "path": "scripts/train_motor_residual.py",
+      "sha256": "35343116fd75c7142a23c6acf60259360249ac935d82fcba99edd3628374a161",
+      "bytes": 2269
+    },
+    {
+      "path": "scripts/validate_bout_render.py",
+      "sha256": "5722f794ee4767c588560b31fff70120c3b453de1d5be36b244421150724bd56",
+      "bytes": 2743
+    },
+    {
+      "path": "scripts/validate_shared_motor_render.py",
+      "sha256": "579cf3c560d99b00b8fa79f78cae9d94b9bb35c60d235dbce1a9810481fa44fd",
+      "bytes": 2154
+    },
+    {
+      "path": "scripts/verify_balance.py",
+      "sha256": "89a5af2d310bc3fc1a170220ad2fefebc62991f7cc0378a1cc3fefae087ffb83",
+      "bytes": 5132
+    },
+    {
+      "path": "scripts/verify_motor_inputs.py",
+      "sha256": "673135efe82c01a0802a9180033a69291b6201904b58ff9ee66059f3b33028f8",
+      "bytes": 9246
+    },
+    {
+      "path": "scripts/verify_motor_residual.py",
+      "sha256": "d539dc2ef363e875bc7f05c34914ce30b8450af4bbae8355db6dfdfed0f15237",
+      "bytes": 9900
+    },
+    {
+      "path": "scripts/verify_native_transfer.py",
+      "sha256": "458fdcf813b66197da62de84c0254155942c6f2b1acd3ceb805c75217ee37640",
+      "bytes": 8930
+    },
+    {
+      "path": "scripts/verify_physical_motor.py",
+      "sha256": "55e6bbd07a58274cbc1fde180ed5d3bdc4847297c7c593c59272b37faf31623e",
+      "bytes": 14431
+    },
+    {
+      "path": "scripts/verify_reference_seam.py",
+      "sha256": "39032c960b71e8b18ef30e392e0858c2708920d8d9e36dd903ee96a61f93e4e4",
+      "bytes": 6434
+    },
+    {
+      "path": "scripts/verify_strike.py",
+      "sha256": "1cf759f2f0c60fc9d8e5aee0b05e7bf19ff3411c2b45d5008d24f94fdc6dfcb0",
+      "bytes": 5084
+    },
+    {
+      "path": "scripts/verify_upstream_motor.py",
+      "sha256": "1da98b22e76c6c548ad1c10c655354ea8d663cce0a2909a4bf9e826178c62c20",
+      "bytes": 6511
+    },
+    {
+      "path": "scripts/verify_wave.py",
+      "sha256": "e1053cfdc17633aae63c3228ef03ca2f1c31d366b8d1d2ebb438792eaaeba036",
+      "bytes": 10906
+    },
+    {
+      "path": "scripts/verify_wave_extension.py",
+      "sha256": "9a7b7bfc0a20283e61befef597d4a76835ac091d5b9e1e56000141368223d9d5",
+      "bytes": 7756
+    },
+    {
+      "path": "src/joxing/__init__.py",
+      "sha256": "b2e944ab0a71e441b3a3b9405fecc6be0b34d811b0c1d69e3f44d35b7c6b8092",
+      "bytes": 86
+    },
+    {
+      "path": "src/joxing/balance.py",
+      "sha256": "4fc33ace1210b9ad9a902f581568bbf4d8bf5fc916a563fa30e6b0ff6bf97352",
+      "bytes": 8286
+    },
+    {
+      "path": "src/joxing/bodies/__init__.py",
+      "sha256": "be1a8a4d1b0238e74e548c7e5d7d93e2a68cc86c7d05ee1044b96e8689b074e2",
+      "bytes": 205
+    },
+    {
+      "path": "src/joxing/bodies/base.py",
+      "sha256": "ea4e880b2821460f81633eb5710254e3b9a54aed7bb9b0c1f363a16d4d6f4b94",
+      "bytes": 694
+    },
+    {
+      "path": "src/joxing/bodies/native.py",
+      "sha256": "122a55158e71514e5895a4a8e4680e24cc2f5d079c00a75c7ba6700f0b0a308f",
+      "bytes": 3412
+    },
+    {
+      "path": "src/joxing/bout_recording.py",
+      "sha256": "27f5bde0c9f06933557d91624ac3553ac41fa49a6d310f3b29bcc99ce1141a3d",
+      "bytes": 7424
+    },
+    {
+      "path": "src/joxing/boxing_audit.py",
+      "sha256": "6442db9d28a0bf2a83610776dd7061dec372e002030a26f0765ffda4546181e1",
+      "bytes": 17343
+    },
+    {
+      "path": "src/joxing/boxing_evidence.py",
+      "sha256": "23c607bfd20772c1f0604dd90aa3324c3656ceb63212e5d85c20fa8e8369e073",
+      "bytes": 9757
+    },
+    {
+      "path": "src/joxing/cli.py",
+      "sha256": "beb3f87f7c49d7057d3068a71a6d1cbfa1990f3df445aa214e38224f9bb95e27",
+      "bytes": 7706
+    },
+    {
+      "path": "src/joxing/env.py",
+      "sha256": "a8b653d9b82b0acc870bc247eaa5f6bee03c687d3d898cc4d135e9a5d8d5e354",
+      "bytes": 14887
+    },
+    {
+      "path": "src/joxing/evidence_storage.py",
+      "sha256": "c53974fe6c0eef9e44f500fd237d56797570cded40f9dc3324f109f67887d842",
+      "bytes": 13480
+    },
+    {
+      "path": "src/joxing/frozen_scene.py",
+      "sha256": "c269f59eba8abbafde6df66bac8ca5154ffc63589bcd3c853e527c092092c681",
+      "bytes": 4151
+    },
+    {
+      "path": "src/joxing/geometry.py",
+      "sha256": "1b63a11f7b45c4043768be0f6e540892227afa5f3bcaf0aeaab3708d034f1b03",
+      "bytes": 3049
+    },
+    {
+      "path": "src/joxing/groups.py",
+      "sha256": "d90663ecc09c2f9e3e18e25ec594ab29778d94c7e282735ecfcbe334fe3cbe34",
+      "bytes": 1499
+    },
+    {
+      "path": "src/joxing/history.py",
+      "sha256": "cb3b6a5e064475284a5a78b7360dda3bc61c66a63094d4c0c8b74508e0580aab",
+      "bytes": 5438
+    },
+    {
+      "path": "src/joxing/motor.py",
+      "sha256": "737e39ed26adf298a411508ff7a068da07a62d92ac302a2951799c730d908ec5",
+      "bytes": 9259
+    },
+    {
+      "path": "src/joxing/motor_audit.py",
+      "sha256": "b97b5d551c40e14da0ef9e2c2a20b65adea5b11bd06b8e2f41c3cdce199d4bec",
+      "bytes": 13638
+    },
+    {
+      "path": "src/joxing/motor_evaluation.py",
+      "sha256": "1b4442c72875827eee47fb23cdeed441d4155bd9f43fb457296dade8be847c0b",
+      "bytes": 12189
+    },
+    {
+      "path": "src/joxing/motor_pilot.py",
+      "sha256": "bcea1d3de744ea3d235685860af1ed9695c374ef176a4030be7312e8e0973c00",
+      "bytes": 14483
+    },
+    {
+      "path": "src/joxing/motor_protocol.py",
+      "sha256": "43835219da046f6f222f666e99ca63a66072e12ff08fa96f8f38c80ebcf5c9f3",
+      "bytes": 5489
+    },
+    {
+      "path": "src/joxing/motor_residual.py",
+      "sha256": "164fe91f55d4922a01f1360ed04c93192b3188635ce68c99f19dbc1554cd8124",
+      "bytes": 15461
+    },
+    {
+      "path": "src/joxing/motor_run.py",
+      "sha256": "a4c10196b98954a6c6ba2ec306c46422a571f48f8300526582d45c561a246dbb",
+      "bytes": 21699
+    },
+    {
+      "path": "src/joxing/motor_storage.py",
+      "sha256": "a14900c3102d87f4d6a1b9ae21b8f831c13593fe95b7e8ba175b700eb26da6c1",
+      "bytes": 2809
+    },
+    {
+      "path": "src/joxing/native_transfer.py",
+      "sha256": "dcd6cb3a6cd701af35b25b7c2ce6a86797034bf3d1978ead94be4dab874bdba9",
+      "bytes": 41536
+    },
+    {
+      "path": "src/joxing/observations.py",
+      "sha256": "887610b0c70db0d6fead690ca1f23dd7788cbae9d288981370b4acbd32f9b7c2",
+      "bytes": 6034
+    },
+    {
+      "path": "src/joxing/physical_fast.py",
+      "sha256": "98d3017e7891f8d7f57a50b55f029b8871cffbf13f96c44b71e2cb2632392831",
+      "bytes": 4678
+    },
+    {
+      "path": "src/joxing/physical_motor.py",
+      "sha256": "5a4eb7952364a0a3300042a8b680f901c9040da36aef0244aa65209b074e54ec",
+      "bytes": 33511
+    },
+    {
+      "path": "src/joxing/physics.py",
+      "sha256": "9766aa19a2eefab496b69d5a977394f11e9968f722c27c397fc85ee383787641",
+      "bytes": 7321
+    },
+    {
+      "path": "src/joxing/provenance.py",
+      "sha256": "a81e9d94dce0297288ee6bf8f1a5a26c4f46549b54818fd768ea3053e6591925",
+      "bytes": 2552
+    },
+    {
+      "path": "src/joxing/referee.py",
+      "sha256": "12e918f746e6b35cf365a0d198466a9bc805edb33ce5de4c4556d573c611c7b0",
+      "bytes": 8628
+    },
+    {
+      "path": "src/joxing/reference_seam.py",
+      "sha256": "7363c9b0d9b488bb5d5af1d0d4cb30ce9c3b786a6ecacf0d671377c4a3dd1ce3",
+      "bytes": 1986
+    },
+    {
+      "path": "src/joxing/replay.py",
+      "sha256": "7be0d8a6bc91d051304a1fc817619abce81dd3ade8d67b959f4c6e64433685cb",
+      "bytes": 11049
+    },
+    {
+      "path": "src/joxing/rules.py",
+      "sha256": "4c75013718eb8cc0c83f00a6f6e671d405c08192f7b9c31ed4b4439d1fb57ffd",
+      "bytes": 10134
+    },
+    {
+      "path": "src/joxing/scene.py",
+      "sha256": "101b1c67a0a42f2a4a5e85ca8cfc80ee69679571f1f5f41889dda859705559e0",
+      "bytes": 8939
+    },
+    {
+      "path": "src/joxing/sensed_env.py",
+      "sha256": "3c90730183e046d2fe1793c31d3d255a2d098dda68c3adb2c89e70511cc6d707",
+      "bytes": 10970
+    },
+    {
+      "path": "src/joxing/sensing.py",
+      "sha256": "167d17d7ac6db136b7542edb53000c02623b6e6c02c7dc993862547a700e95fa",
+      "bytes": 11061
+    },
+    {
+      "path": "src/joxing/sensor_audit.py",
+      "sha256": "1099f0d040d87eff93ac9d37e8b6368fb5de1474885481804ed4c5af83b96a8b",
+      "bytes": 20618
+    },
+    {
+      "path": "src/joxing/sensor_completion.py",
+      "sha256": "09a9857bcbef806a35c54570f4a6d4a4c8fe4175368c95a45ca56b34c0b560d8",
+      "bytes": 5547
+    },
+    {
+      "path": "src/joxing/sensor_evidence.py",
+      "sha256": "daa12e8ee0afde42cb965626ae2d492030ff075ed2a31d8e7bfef34de462efb8",
+      "bytes": 7493
+    },
+    {
+      "path": "src/joxing/sensor_packed_evidence.py",
+      "sha256": "04c1a925e3ac1a7d2928be3437870f721c481738344c9d1dcc876d49440e370b",
+      "bytes": 4673
+    },
+    {
+      "path": "src/joxing/sensor_physics_audit.py",
+      "sha256": "967917a58fb5c50623efecaf5dd177095c45d2eaf6e7dbc8aceb862aeae96f01",
+      "bytes": 9210
+    },
+    {
+      "path": "src/joxing/sensor_protocol.py",
+      "sha256": "2c2c49fe92fb567283587ae06a60bbc08acdd24c5dedb07ab3ceaf541d1c86a8",
+      "bytes": 4414
+    },
+    {
+      "path": "src/joxing/shared_motor.py",
+      "sha256": "6e2fc2baebe540dd26c83d4b72abdd11264ad793dbee3d35118363a60e5e8de9",
+      "bytes": 5690
+    },
+    {
+      "path": "src/joxing/shared_motor_audit.py",
+      "sha256": "1e09d409fe41de6cb35d01d2acc5d525b6867f7dd7c60bd7282b2651a4dca2e1",
+      "bytes": 6546
+    },
+    {
+      "path": "src/joxing/shared_motor_evidence.py",
+      "sha256": "05b2335c146ef51f7c65bb909dc822c02d5ba57e69d20b5a2925815c7a65ad4b",
+      "bytes": 12959
+    },
+    {
+      "path": "src/joxing/shared_motor_inputs.py",
+      "sha256": "8f4a6dd2f7bf019ffa90465e453f6ce654ce1c44175286094667021a4e7865a5",
+      "bytes": 6318
+    },
+    {
+      "path": "src/joxing/shared_motor_proof.py",
+      "sha256": "2bfc788dd6262b94f085774274d5deffd710a80b1ecc2c81572e265fc2b3f7c3",
+      "bytes": 19080
+    },
+    {
+      "path": "src/joxing/shared_motor_saved_audit.py",
+      "sha256": "099d0200e04b7413af262cfd895b4ace29259378615a0bade76c69df16e1705f",
+      "bytes": 15261
+    },
+    {
+      "path": "src/joxing/shared_motor_task.py",
+      "sha256": "fce0afccb5897297cfc05b2359a634310a72b9ef1a8463a377b36bbc2fc57511",
+      "bytes": 14775
+    },
+    {
+      "path": "src/joxing/stance_env.py",
+      "sha256": "4a9e8a02a95d8a09d3db3e40042cb65d2d89d843779bc76bb54f1e3eea471fbd",
+      "bytes": 14669
+    },
+    {
+      "path": "src/joxing/stance_train.py",
+      "sha256": "7eb5023dbaf6dbb5295732beb328946559c6b5e4a0dc2651a784a79022aa40b0",
+      "bytes": 13642
+    },
+    {
+      "path": "src/joxing/strike.py",
+      "sha256": "beb9d856c3eef62ca11f5e744890e81ffe7ad3ab9f24a650e7eeb7e0b0a1373a",
+      "bytes": 25687
+    },
+    {
+      "path": "src/joxing/support.py",
+      "sha256": "c997fc6f43a894663cd470bd3de26d4a25243964bac6dd2238e881980bed2440",
+      "bytes": 1665
+    },
+    {
+      "path": "src/joxing/timing.py",
+      "sha256": "892b1e99501810fb194a2ce44ec883314479aebb885b39aa9ad2b923d179b5a9",
+      "bytes": 9056
+    },
+    {
+      "path": "src/joxing/upstream_motor.py",
+      "sha256": "d557ba5678d7456a56d594c14052d7062a35eded47050a50a15723f11e368b0a",
+      "bytes": 32778
+    },
+    {
+      "path": "src/joxing/wave.py",
+      "sha256": "714550b735d72d26ad3c5f5292264f44ef5d628824c8d25a14c26d8eb1514868",
+      "bytes": 33330
+    },
+    {
+      "path": "src/joxing/wave_extension.py",
+      "sha256": "ba63cb4b008acc9b2ab2614f9bf1fdeb735752e027b36d1442626d1addb51494",
+      "bytes": 14345
+    },
+    {
+      "path": "tests/test_balance.py",
+      "sha256": "82e81be9b3e109c4b89d9650e847ac3192ddea01e48cd5dfa0788b6ca2e3b9e5",
+      "bytes": 8926
+    },
+    {
+      "path": "tests/test_body_adapter.py",
+      "sha256": "cdc866be859041512346e35bafb8c428c5125e7b1dca5e8c9581893d0d317b67",
+      "bytes": 2444
+    },
+    {
+      "path": "tests/test_bout_recording.py",
+      "sha256": "73cafbc4ad26f84e69f60f6434618ba555d4bf1120de1eee50c22e3c76952d4b",
+      "bytes": 2600
+    },
+    {
+      "path": "tests/test_bout_render_validation.py",
+      "sha256": "c80dfe16b172f4934cfed9828c7d1670aeefa067d7dc2b0f788a4a382d9b6aca",
+      "bytes": 1521
+    },
+    {
+      "path": "tests/test_boxing_env.py",
+      "sha256": "531c2be41fed712f8a8cb6a8780ecdbd193dab05e1452aae81a3f74c72e9dab7",
+      "bytes": 6917
+    },
+    {
+      "path": "tests/test_boxing_env_audit.py",
+      "sha256": "4c201aca1531d527bb96a7255c69dde863446dee2c16d6a184be3fb40497d3e6",
+      "bytes": 8069
+    },
+    {
+      "path": "tests/test_collector_audit.py",
+      "sha256": "b26fa7f1828524a35e06169de9ce791026b341dcfd99ad5e1a9797d8715fde38",
+      "bytes": 1749
+    },
+    {
+      "path": "tests/test_collector_benchmark.py",
+      "sha256": "630b28a7cd972c69773fa7b8ac3cb7bb0b797de95a6c93dbd84becf3bc75cd49",
+      "bytes": 2630
+    },
+    {
+      "path": "tests/test_evidence_storage.py",
+      "sha256": "1308a348f5feface4d08040764d61781a3f2ead7bd388778ab005d178396bad8",
+      "bytes": 7168
+    },
+    {
+      "path": "tests/test_evidence_storage_qualification.py",
+      "sha256": "84b7a8b52810fbc063df1544616bf3921f0c014e4810ad0214fcd9bca71f1571",
+      "bytes": 2465
+    },
+    {
+      "path": "tests/test_frozen_scene.py",
+      "sha256": "7b3d1c36f096593b299123ac13512001f820e479b0ac461b7f3b4460e0cf5756",
+      "bytes": 3156
+    },
+    {
+      "path": "tests/test_geometry.py",
+      "sha256": "07d57db58a91da6eb12bc08c7604c1970f5c2dd8f77143759c6ae2570ce4532a",
+      "bytes": 1495
+    },
+    {
+      "path": "tests/test_history.py",
+      "sha256": "e9c1bbf43a2b15f1f5cba5e08642773dbc96d35baad8677a76396264cc25b882",
+      "bytes": 3123
+    },
+    {
+      "path": "tests/test_inference.py",
+      "sha256": "171ef296e5a368a599baa309f61ef70d793a1449bb0c12067c76815a3b43eedc",
+      "bytes": 2139
+    },
+    {
+      "path": "tests/test_inference_numerics.py",
+      "sha256": "78a9274b1eae3ef3d7433dad52ed2ddec35e88ff0876c7fa61dbb27398d1933f",
+      "bytes": 2173
+    },
+    {
+      "path": "tests/test_match_referee.py",
+      "sha256": "4d925e54d0f4e1bb7185acd59a0187271cf9efa2af032aa552392998fbcd0402",
+      "bytes": 1203
+    },
+    {
+      "path": "tests/test_motor_audit.py",
+      "sha256": "3174aa0b228eeacae4fffb87fe7e114ae09029935ae1ff009fca2febef1ff318",
+      "bytes": 2678
+    },
+    {
+      "path": "tests/test_motor_evaluation.py",
+      "sha256": "87780d17ce618c90b2e59def0e5c34739860a0514b239087062ed76c20aabb08",
+      "bytes": 3087
+    },
+    {
+      "path": "tests/test_motor_inputs.py",
+      "sha256": "96a53c392a425285c062480d8deb0e9b37d10ae5f9a7bf13d30e0841dc8dace1",
+      "bytes": 2127
+    },
+    {
+      "path": "tests/test_motor_pilot.py",
+      "sha256": "9bbc7a89c14abcce67b699c91acbe61cac3973eaa6685ecf543d71828ce6ac45",
+      "bytes": 5674
+    },
+    {
+      "path": "tests/test_motor_protocol.py",
+      "sha256": "ad1bfc896024b19bf282740733a424670b597c72943de72b56046e513634714f",
+      "bytes": 1536
+    },
+    {
+      "path": "tests/test_motor_residual.py",
+      "sha256": "0c2cd689ec7dbd1b678ee85de10086a8a5df5879c324fd28fcda3939c0923ada",
+      "bytes": 9374
+    },
+    {
+      "path": "tests/test_motor_residual_audit.py",
+      "sha256": "daacdcd46e6f8ccad18a755231cacff9ea8b9bf49308ffe6334eddc2380bdab2",
+      "bytes": 1285
+    },
+    {
+      "path": "tests/test_motor_run.py",
+      "sha256": "38415fe9929fdf1909daa9cef5d6ae4339920e00d9cdbf49258482fe8a265327",
+      "bytes": 6120
+    },
+    {
+      "path": "tests/test_native_transfer.py",
+      "sha256": "c4de2c1070a9ecd814391706da3f3c99c422c27e7d63bd2ef34ff745f7197686",
+      "bytes": 7293
+    },
+    {
+      "path": "tests/test_observations.py",
+      "sha256": "d385a4efb73f91ed80d81a6aadf5940bd592d925067b0d16b643900fc9373093",
+      "bytes": 3252
+    },
+    {
+      "path": "tests/test_physical_fast.py",
+      "sha256": "bc11f25b06b9de0121d586d2d4529ea1360762dc242a5c4f38b3ef106a9fc4f4",
+      "bytes": 5201
+    },
+    {
+      "path": "tests/test_physical_motor.py",
+      "sha256": "e835fe0f4ac023956da7db8d4cd60645a46ba8e2c7562800f6f4e989db335c27",
+      "bytes": 14941
+    },
+    {
+      "path": "tests/test_physical_profiler.py",
+      "sha256": "c5834c13aed6620fd7f88defc106b86ac93e3a1d6107a1467b7b2e92ac26b6fe",
+      "bytes": 2233
+    },
+    {
+      "path": "tests/test_physical_scaling.py",
+      "sha256": "f9f1a38300eac5364f89f34ee6ba58b1ef480dcefe5ef9047f366145b9da85aa",
+      "bytes": 4665
+    },
+    {
+      "path": "tests/test_physics.py",
+      "sha256": "e20bee50137b931557d83bf2f4c419fe750fa4136e9bd0ab17d521022732d965",
+      "bytes": 1143
+    },
+    {
+      "path": "tests/test_process_ownership.py",
+      "sha256": "92f86a39db9d7c6bbc52fd8570c1ec41966b7ca55b6722856791ff379a88f94d",
+      "bytes": 3254
+    },
+    {
+      "path": "tests/test_provenance.py",
+      "sha256": "3c2c8770cc885bc359d7f57eb5a47b8d7e5bde898b0d4abc9a469ff03f40586b",
+      "bytes": 880
+    },
+    {
+      "path": "tests/test_reference_seam.py",
+      "sha256": "422ba651e1da5a4eab4608bfa6902a11fccd295c4b511825e70ca4921a78b32d",
+      "bytes": 2022
+    },
+    {
+      "path": "tests/test_rules.py",
+      "sha256": "5fd142c6c58371c325b4aa191e7f6d8028be0a0841a7fabd812ea86aed861d42",
+      "bytes": 4835
+    },
+    {
+      "path": "tests/test_scaling_audit.py",
+      "sha256": "212dbda30ec68861c732ffff1958705ee22309814a22ec97bf1cbc24ea48ab02",
+      "bytes": 1380
+    },
+    {
+      "path": "tests/test_scaling_host_qualification.py",
+      "sha256": "0e4270dfa46fb65a1309a546840b7f5e4c9f62a161e6a0cb58cd5c2a68987b32",
+      "bytes": 2389
+    },
+    {
+      "path": "tests/test_scene.py",
+      "sha256": "004596dec67337f6a467164e36811b21366016887c7e2eea65ea3d0266821ced",
+      "bytes": 1422
+    },
+    {
+      "path": "tests/test_sensed_env.py",
+      "sha256": "0807f3ae7aafa1bec669e13999f14ccc65683f01c0800c4f6955d8f046c1d81f",
+      "bytes": 9858
+    },
+    {
+      "path": "tests/test_sensing.py",
+      "sha256": "54a5915893764eb3dc438ad0b84ff5dd21cbd1bbc5582a09f5649157adf11e74",
+      "bytes": 5224
+    },
+    {
+      "path": "tests/test_sensor_audit.py",
+      "sha256": "46d90bfcbebc0806ca6bd304a507ddd5074a679f8b33d1b68827194b4d6cf8ea",
+      "bytes": 10875
+    },
+    {
+      "path": "tests/test_sensor_completion.py",
+      "sha256": "d756e0f53bb415e280caf463a9f238e12cfa4c11c51d1a9347e487f293f9f861",
+      "bytes": 8631
+    },
+    {
+      "path": "tests/test_sensor_packed_evidence.py",
+      "sha256": "02b5eba3ec2387ff03b1581a08987054dee7f4e65ccfcf0e441e09481091a9d2",
+      "bytes": 3426
+    },
+    {
+      "path": "tests/test_sensor_physics_audit.py",
+      "sha256": "18378cb9c8591a5ef0e46b534d0117cdaa1e82914a57c0bd211916dbfed01fce",
+      "bytes": 2876
+    },
+    {
+      "path": "tests/test_sensor_proof.py",
+      "sha256": "085385e3e4b1d773c34734682aee70b05452f749e00b5bb25df4a7a69b4be9cc",
+      "bytes": 6610
+    },
+    {
+      "path": "tests/test_shared_motor.py",
+      "sha256": "247791e90cb90cb476166107e32cbd7b2bef3abc105354931d3719089b9b6a9f",
+      "bytes": 3491
+    },
+    {
+      "path": "tests/test_shared_motor_evidence.py",
+      "sha256": "c64bd66ccd5c748aa684023504d652407773e2afc722d13fe11f52e31d0c1e7b",
+      "bytes": 13550
+    },
+    {
+      "path": "tests/test_shared_motor_inputs.py",
+      "sha256": "e3f2e9349e9361879479732cd38d7a0b96fe555eeeeeef0d3d7ad2c91bdee713",
+      "bytes": 6556
+    },
+    {
+      "path": "tests/test_shared_motor_task.py",
+      "sha256": "9da55ae94858dcde166f23635c7ac3f16efbd10fa70e84a6b44044deddb7a017",
+      "bytes": 5252
+    },
+    {
+      "path": "tests/test_stance_learner.py",
+      "sha256": "944182513d14321e84429f564584ba395b58ff9983d08dc092ba796ba8d37244",
+      "bytes": 1544
+    },
+    {
+      "path": "tests/test_strike.py",
+      "sha256": "7d975383e7bbca2647e0f22837b0853a08368cdbe31ba628f1301fbd31798b6c",
+      "bytes": 3502
+    },
+    {
+      "path": "tests/test_timing.py",
+      "sha256": "42741d0a3c7e06a057569fbae9f96931b13d42277442b82fb8defb5c36beb4c7",
+      "bytes": 3527
+    },
+    {
+      "path": "tests/test_upstream_motor.py",
+      "sha256": "e998eb92f290bba920bdc9bf2f71410451b7b688e3d629fbc865d98c2c4a3d1a",
+      "bytes": 6950
+    },
+    {
+      "path": "tests/test_wave.py",
+      "sha256": "dc252eba92a1145a2caa50035680f54a275dd36a4a0af2b106b0ec0278c21b4b",
+      "bytes": 4436
+    },
+    {
+      "path": "tests/test_wave_extension.py",
+      "sha256": "b78cb42c451d02a77b1dbd4f7cdeeb9132d47a02e027b0ae3cab7dc5c2592d62",
+      "bytes": 1392
+    },
+    {
+      "path": "tests/test_wave_learner.py",
+      "sha256": "dcd501c2444b944d665c4aab74fb0a575ef952bf2a3cb1df5cff12326d80f71f",
+      "bytes": 4846
+    },
+    {
+      "path": "third_party/ms-human-700/Asset/Asset_Lowerbody.xml",
+      "sha256": "c8eb749beefb5a18d95c1c0db9a5dec94cea20d83a5d801cf366fbff9b9ac73f",
+      "bytes": 1431
+    },
+    {
+      "path": "third_party/ms-human-700/Asset/Asset_Others.xml",
+      "sha256": "0b4048283bee9c4cd1397026b069a6f3195210f3d558d75d8f0d9dd07db7eece",
+      "bytes": 1322
+    },
+    {
+      "path": "third_party/ms-human-700/Asset/Asset_Torso.xml",
+      "sha256": "46e26d7e2b79e93d2f16d7c03b4c314ad1c6355b0fe7bc85fcf470be2e0cda22",
+      "bytes": 4161
+    },
+    {
+      "path": "third_party/ms-human-700/Asset/Asset_Upperbody.xml",
+      "sha256": "009c5aafd71073288db972d96a66e2190f3aa9fa9385b91f3ca0d81bf58b792a",
+      "bytes": 11484
+    },
+    {
+      "path": "third_party/ms-human-700/Asset/marble.png",
+      "sha256": "393bd6f18954eef65bad5c72ce428ceb350dd713a284d4c8981b0b5061a1ea0c",
+      "bytes": 388987
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Locomotion/Body_Arm_l.xml",
+      "sha256": "87f1e264478efeb11372dbfadd6392761d8c386381549dca1be3e5e9bdfd53e1",
+      "bytes": 53650
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Locomotion/Body_Arm_r.xml",
+      "sha256": "dbe5ba6b5eafbd5573e3ddb9d167b859b1804b7c6a018b5dbbfd17cffaa346a0",
+      "bytes": 53201
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Locomotion/Body_Leg_Foot_l.xml",
+      "sha256": "05a97fa3b74b2e6be6ee13dbef6b1493796035e7bbe5c9b0d6dce7d3ecf1ae1f",
+      "bytes": 16045
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Locomotion/Body_Leg_Foot_r.xml",
+      "sha256": "45c40b0480670a3add3ce75d9c729478d3964cafdeed7302fe004d12f9f9e28d",
+      "bytes": 15986
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Locomotion/Body_Torso_Simple.xml",
+      "sha256": "63438f31aa8b6f56d515deb02c444ae38a5ae61adda365f8bd72dacb9365c53c",
+      "bytes": 166135
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Manipulation/Body_Arm_Hand_Vis_l.xml",
+      "sha256": "9eb65ab2663907c1d923664c328653e409346067bdefa10b85a0f70205bfd10c",
+      "bytes": 57607
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Manipulation/Body_Arm_Hand_r.xml",
+      "sha256": "582e4918e2e082d0954a5367ede4455696a601a368829533e977bf174232b026",
+      "bytes": 64873
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Manipulation/Body_Leg_Foot_Vis_l.xml",
+      "sha256": "3699b397ff850ebf10e9d9a3ebc48737c8616a6144f0370f769fb444526f4603",
+      "bytes": 13213
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Manipulation/Body_Leg_Foot_Vis_r.xml",
+      "sha256": "df54ed4cc5b1f767dfe14adbc425765f40eb11f089222b859a68ddb55a4f1f6c",
+      "bytes": 13160
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Manipulation/Body_Torso_Unimanual.xml",
+      "sha256": "82f6923cab7206548e208f31825ba012794af360890f02a1889c7a147a87defa",
+      "bytes": 166087
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Manipulation/Body_Waterbottle.xml",
+      "sha256": "fd373c2df0036261b85e96deffacf8d7e7b2e6f6ff2f92fb6d2abf2b1f7a21f8",
+      "bytes": 2741
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Primary/Body_Arm_l.xml",
+      "sha256": "0086172124dc9540fd0e36a765f472e12cd1b9ccca817db9ff47324cda77d70c",
+      "bytes": 55944
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Primary/Body_Arm_r.xml",
+      "sha256": "42c6c7788d27f768dbcd6d31be41c9842c58804d94a331a61b9242d4469f2e60",
+      "bytes": 55477
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Primary/Body_Leg_Foot_l.xml",
+      "sha256": "05a97fa3b74b2e6be6ee13dbef6b1493796035e7bbe5c9b0d6dce7d3ecf1ae1f",
+      "bytes": 16045
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Primary/Body_Leg_Foot_r.xml",
+      "sha256": "45c40b0480670a3add3ce75d9c729478d3964cafdeed7302fe004d12f9f9e28d",
+      "bytes": 15986
+    },
+    {
+      "path": "third_party/ms-human-700/Body_Primary/Body_Torso_Simple.xml",
+      "sha256": "6fc3fa1ddfa66ac76038b5a05872175fc7e980b5dcb886f3b1be4bd3e61a4508",
+      "bytes": 180626
+    },
+    {
+      "path": "third_party/ms-human-700/Contact/Contact_Lowerbody.xml",
+      "sha256": "424d4327181f7215f130c1ef155e34f2cd6c540feec7d6db5c3c169ede3df9e4",
+      "bytes": 530
+    },
+    {
+      "path": "third_party/ms-human-700/Contact/Contact_Upperbody.xml",
+      "sha256": "a727627108077c171a246bb5ab27994f896f2224bbfee949feb8b1d9ff78107c",
+      "bytes": 778
+    },
+    {
+      "path": "third_party/ms-human-700/Equality/Equality_Lowerbody.xml",
+      "sha256": "3e74b371506baafc8de26e268d28ee7a5054dd621c4e56734683f5da5a37899e",
+      "bytes": 3338
+    },
+    {
+      "path": "third_party/ms-human-700/Equality/Equality_Upperbody.xml",
+      "sha256": "5cb2864cb284a8df5eb0bf6ea9b6515e198f37770cf7b2b486e5e5c3caea0a46",
+      "bytes": 3765
+    },
+    {
+      "path": "third_party/ms-human-700/Equality/Equality_Upperbody_r.xml",
+      "sha256": "cd5554ac98fe76a9cde115db3574ba3002776e05a7584fcfe528ba4f7a808f65",
+      "bytes": 2031
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/1mc.stl",
+      "sha256": "b75e58243a2005af787bc731c5d1aa6b7da4669f36e9bcd7409a430c1cc311b6",
+      "bytes": 287284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/1mc_mirror.obj",
+      "sha256": "507c04c42dec0c535c072cf86c5a4a550de4daab234e6fa20c8fd1067908ec67",
+      "bytes": 281849
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2distph.stl",
+      "sha256": "39fca9372434520835703ffd34b5cc37a3f15f86ec9841b5fd841acac51adb88",
+      "bytes": 110384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2distph_mirror.obj",
+      "sha256": "6874203905103d1ac7ecfb6b8ab7cda5ec954c4442549ec87425843215a6f46c",
+      "bytes": 106805
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2mc.stl",
+      "sha256": "ac3286bfb7281a7d2dc3ff2ac32fcb8f0424764aa97ad526992a10b739334fe2",
+      "bytes": 418084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2mc_mirror.obj",
+      "sha256": "a4034005452aafc9afb98d785fbd023c1ad84bc22bb7c173de8f9b67dbb2950e",
+      "bytes": 415781
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2midph.stl",
+      "sha256": "074318c92e652ba05d26cbe0ad8e781891e2970e6b7415bc63585536e8beda72",
+      "bytes": 100084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2midph_mirror.obj",
+      "sha256": "86407b5bf376e1d2585ade8553017610e775c84cfab13ff64830cce448dc6b99",
+      "bytes": 95601
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2proxph.stl",
+      "sha256": "041bf5a60e9376c0c47a3981c312698caa8d28f6d8ca08f59c3222da4244fb9d",
+      "bytes": 256184
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/2proxph_mirror.obj",
+      "sha256": "8a4dae1745cbc148ebf18db4147352c79d6b907a8ba05a73a87ba327d3524c3b",
+      "bytes": 252516
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3distph.stl",
+      "sha256": "d5ecddeac9b4572091a32d386a117ba475a0c784e42d06016ba963432396b612",
+      "bytes": 127384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3distph_mirror.obj",
+      "sha256": "a41e6248edb930680574b3e82d3899e47b6276e72749d31de82cc0080ce79cb6",
+      "bytes": 124287
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3mc.stl",
+      "sha256": "eaa77802c8afe5a3187293880d0f95b5b2f0367adcb3639c8038993d39ff8f5c",
+      "bytes": 404384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3mc_mirror.obj",
+      "sha256": "9754a7574106b63f7ce7e7a7ea9f5e4caddc0ff00a2759d588d23aa8290a5831",
+      "bytes": 401891
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3midph.stl",
+      "sha256": "5e0ef3d76f2f99f950e9aefac28131009fa7fad7129f1421f50b5e7086655c88",
+      "bytes": 111784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3midph_mirror.obj",
+      "sha256": "4528ee694bc4817efb202f940fa0556168273144ad80a7933ae002924b82872f",
+      "bytes": 107906
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3proxph.stl",
+      "sha256": "48094bce62d115aee9f2527b22061ff1f5656936e647879d83672b2c62c20728",
+      "bytes": 280284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/3proxph_mirror.obj",
+      "sha256": "9d0e6651f4aaf8195a61189019875c505554349a2f0e47751147a5ee13c4deb9",
+      "bytes": 278219
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4distph_new.stl",
+      "sha256": "bd3cb01c42b7adf4de51e6334536c0a96e24818192db3333cdb649b1e47f202a",
+      "bytes": 130484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4distph_new_mirror.obj",
+      "sha256": "22c96f3c4328c86e9de2b57038f99b0eab786465792e0f7271401d1fd29995d2",
+      "bytes": 127793
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4mc_new.stl",
+      "sha256": "58ca462f843342ea5d454a549e175e95881f8aebe50f79890b15de30527a40e1",
+      "bytes": 324284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4mc_new_mirror.obj",
+      "sha256": "d42cd4f52a1b9cfca845011bfcf62d11e7b6b5400d2406f4ecdbbaf16b9edc7e",
+      "bytes": 323853
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4midph_new.stl",
+      "sha256": "033f579ef014126182992485e57340c9f33c510aa2cec1a2f6380fa5ee8c6b81",
+      "bytes": 110284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4midph_new_mirror.obj",
+      "sha256": "71d2ab13f8dae5be4beb7c053a369932939d9b529a066fed6358bf4ae0db7a92",
+      "bytes": 106579
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4proxph_new.stl",
+      "sha256": "941e740611606e680952b08205f88fe826830bbe0ffdea006c8c7f7c4ab75848",
+      "bytes": 263284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/4proxph_new_mirror.obj",
+      "sha256": "d67da3c374cfa6e67aa34005187f6128dbed2eda2fd6d1c15f30a1f9da9beced",
+      "bytes": 261953
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5distph_new.stl",
+      "sha256": "cda87e548fa9a520352d1c2e1007142178149e67f1c81cd207a5eb7806ba122c",
+      "bytes": 149034
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5distph_new_mirror.obj",
+      "sha256": "e2af9f58fc09519bc29d44d0aa38d77ef5c5a3d7dc245c26f17c65707f286468",
+      "bytes": 147111
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5mc_new.stl",
+      "sha256": "d1fe2ae707a4c3430c721b04c2e060972646522583e380275c9b2e30a6813545",
+      "bytes": 250884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5mc_new_mirror.obj",
+      "sha256": "d8018e59b0f212ea468e8b53fc92872fa1e2d97313a8ccfa4e62c9ab488b20bd",
+      "bytes": 248619
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5midph_new.stl",
+      "sha256": "554dcbd0c9648d4bb38a64ff9ecacafb6a7e0e3eb419fcf28044882a3de3552c",
+      "bytes": 78384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5midph_new_mirror.obj",
+      "sha256": "0cd9bf00442b4fd72873711560c2ec011b0fbe0c26ad2a12d033a1b8cb6dfa1a",
+      "bytes": 75136
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5proxph_new.stl",
+      "sha256": "20f15d183aabdfe63ecec1965ea3a22b1073ae0e75a3b6501c8f3c8eaf317267",
+      "bytes": 187184
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/5proxph_new_mirror.obj",
+      "sha256": "b8bb2d52b8af8d824a42025c7321b3c5063ed5025eb2a6c7f124a589be4196d4",
+      "bytes": 184426
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib10L.obj",
+      "sha256": "279ea7a2e4378d03f1493cc2309abe380cf27a561168a2a0b9fb3460b7862dc0",
+      "bytes": 14117
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib10R.obj",
+      "sha256": "38fbd82d63911d731aefe7549b95d3e45edda024db0537ff7de2c63596c31ffd",
+      "bytes": 14127
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib11L.obj",
+      "sha256": "c6494867a10485860e0035478d467a74b63dada257ce18648b95f538f8a70199",
+      "bytes": 11829
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib11R.obj",
+      "sha256": "0f9e66664c18ff01479c22a566a5269df37f2f2710f18a725c0cd01a076edf84",
+      "bytes": 12320
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib12L.obj",
+      "sha256": "913513863b6c13ab61753d6632aa235ebf84e82bf54a90a9765599aa581a0405",
+      "bytes": 10412
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib12R.obj",
+      "sha256": "0641f6a4b607be1ee03853cf698828e773eaf82c528a6d7ae7f7868c39ebb95b",
+      "bytes": 11217
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib1L.obj",
+      "sha256": "98e14008ce12fd01a3ba1daf8f539eac5952495cd02449b044f1b3c22e81aee5",
+      "bytes": 163047
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib1R.obj",
+      "sha256": "46814bd6e159ed15aee0f40b6fe21a64cec49b5fff32e24967b976f7a6fc35f0",
+      "bytes": 10939
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib2L.obj",
+      "sha256": "35adebbe5b6b2d726e7ff2027eef9ad43486b213aaaa3439a4c1c3d3341bfffc",
+      "bytes": 8104
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib2R.obj",
+      "sha256": "b001230633af26e022805113dd25e65048f62025f3e70f1eb941f664cfd7c0c3",
+      "bytes": 8722
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib3L.obj",
+      "sha256": "dde71477aa768e98b7bb01753700b6a6411cc3f70780edafeb8f8f498c4d44f1",
+      "bytes": 12293
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib3R.obj",
+      "sha256": "401aca72ade6b940ba0bf380977a8bac32c41da412df3bd5729de52439331ff8",
+      "bytes": 13430
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib4L.obj",
+      "sha256": "3b0bfb7d11e0cc17188a1c17d89a6deb3686a010afb9d3755af456e350552fc3",
+      "bytes": 12601
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib4R.obj",
+      "sha256": "f0ce9b0f44f29426084902d02d7eb03284c083e278dad327db8edcc867a4d66b",
+      "bytes": 13474
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib5L.obj",
+      "sha256": "323675cb4c0b3bf6d8119338fee6e0bf3520e26393db13667db18f46260d12d2",
+      "bytes": 15521
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib5R.obj",
+      "sha256": "90b13bc5ef2eafe0515c9450a83d1ee8f6dff24a95356bbd5426e682bbea4e79",
+      "bytes": 16557
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib6L.obj",
+      "sha256": "0ed454b6a56938aa52f99b47cf55ce61df56fc08e0cdd203c38838dd427896c1",
+      "bytes": 16050
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib6R.obj",
+      "sha256": "1b092f4e385bd7685e8449ef243de967d44136564fee05f4efbe71e42e8327e0",
+      "bytes": 17471
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib7L.obj",
+      "sha256": "8ac5f3fa1a4de335dbcc65717ce8631d160799360e199ba5a38afd0b52b4ccef",
+      "bytes": 13045
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib7R.obj",
+      "sha256": "6ea8bedf4003ff25a52877f8dad5b2e4f6008d0ce670245146284a5d2a66a5bb",
+      "bytes": 13546
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib8L.obj",
+      "sha256": "737d7efcad17a3c4551a7300cc411285c4e531f78a395606edd07d4659417164",
+      "bytes": 13512
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib8R.obj",
+      "sha256": "88c7560f4212bf565dd9333858d84bc8b66f64ce973220cfffdca136402c4c41",
+      "bytes": 14241
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib9L.obj",
+      "sha256": "63a80a448d43a8465b8378730b7fd6535de47af736bae9144e0cad52fa1ce89f",
+      "bytes": 14204
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Rib9R.obj",
+      "sha256": "40c2b1089f4b909758223b810316fc842bbc0a8f14be35f2678459d49fbc0d9c",
+      "bytes": 14654
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Sternum.obj",
+      "sha256": "1bccde85b6357a5a23b63b8ef41d86456f15fa38874cb080ab79b96d92889b94",
+      "bytes": 15732
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/Sternum.stl",
+      "sha256": "f6a500a0e00953f170c255908c54ba5dbf694740d48a47413b819be4eaf11001",
+      "bytes": 84
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/capitate.stl",
+      "sha256": "51c4ff14860a267fcf22d63f27cdedf17cdbb0cf4240fdf8c641ae4bcfaa1a8c",
+      "bytes": 237384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/capitate_mirror.obj",
+      "sha256": "95cc9faa59cc37481bca8d6b09b97cce2559b5bfe61295bf088dec60f7b7d0ae",
+      "bytes": 234841
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/cerv1.stl",
+      "sha256": "39ff5cbc8d55cca11ff2477391e6fd570d72db12c534ae534b2aa48c4d19cf0d",
+      "bytes": 31084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/cerv2.stl",
+      "sha256": "ac2ea6dc0b93da0a180cc007ce0497735f1e05b59ef5cb6a7d57c075303c7ef6",
+      "bytes": 14484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/cerv3.stl",
+      "sha256": "115d3eb2de930f0bbe352fec62e31a98c746da92036646cad7f26aae98105cc6",
+      "bytes": 14484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/cerv4.stl",
+      "sha256": "332e959a0cfb15aec8d1f0092356c37800be1d24bc0fa31ebd02ca376820320b",
+      "bytes": 14484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/cerv5.stl",
+      "sha256": "2df996d22591e2d1bc9bd167947c79914278ba0bf22777613978106e8f63b5a1",
+      "bytes": 14284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/cerv6.stl",
+      "sha256": "f712c7e0c7847d5a7f4fb9fbe3a90c9e8860190890a25655f60d3652a37dfc6e",
+      "bytes": 14484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/clavicle.stl",
+      "sha256": "11c83e56c5df39e0213c3e3b119c079cc6953f278f9c222d5887df1a2f0e6aad",
+      "bytes": 19984
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/clavicle_mirror.stl",
+      "sha256": "4db4a2afb7255c886d10435f04eebf4f37f7feb78b190ca6cecdec2a7bca567f",
+      "bytes": 19934
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hamate.stl",
+      "sha256": "d880faf00df1cc473626cc9141d68d6a7eca26f1f46eedde423649263c54e134",
+      "bytes": 258384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hamate_mirror.obj",
+      "sha256": "be4d78e3c354ac7d299f5c6ac475d72d9749eb83d8831912d35d0bb6ad4132ca",
+      "bytes": 256670
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_1mc.stl",
+      "sha256": "e3be917b826f598a637a771489d56e4effd29433458eea21c00ebda4d7a4d200",
+      "bytes": 188584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_1mc_mirror.stl",
+      "sha256": "20dba8ee01c6e169af1fe89626b2a93b783ebd603514e4d46a339627c64ec845",
+      "bytes": 188134
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_2distph.stl",
+      "sha256": "85a1a5b059b658ccba325b58f54eca5b7347b81cf78cee6caa535062cce5e6e5",
+      "bytes": 39284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_2distph_mirror.stl",
+      "sha256": "bb2214ff1c345811a86adb038adfc6d3bf4c9dce03ca09fe7c83a9eaa34e666b",
+      "bytes": 38584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_2midph.stl",
+      "sha256": "f2f1e4267a25d0250f6c9f752458e33a88febe12b40f6052ad3972e71e56c613",
+      "bytes": 100084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_2midph_mirror.stl",
+      "sha256": "be4b995a228464b02841d6e4424902f9953ff51544a9155a394048084312dc7a",
+      "bytes": 100084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_2proxph.stl",
+      "sha256": "c3c7aab40ede40286715339bc7269a572554c7d832c4949f402ebfdc9d7f6c33",
+      "bytes": 150384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_2proxph_mirror.stl",
+      "sha256": "a6fb1acf04a01daa64cdde6faf4016523e01dd1dcece03aebcbd86ab0883eaa3",
+      "bytes": 149284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_3distph.stl",
+      "sha256": "06f29395bf7bf4bd236d62559d41b30d4ac6ea05eb4c08adc5662cdcfa0720fe",
+      "bytes": 45884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_3distph_mirror.stl",
+      "sha256": "06a4de57a1255d9d00c6fbf517a8517d1f1d7bd2189c71d4818f64f180deb381",
+      "bytes": 45284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_3midph.stl",
+      "sha256": "75e7c9adc47d56a763e3bd97d9cb95d0654c475b3bd88b241f23c2421738062f",
+      "bytes": 78284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_3midph_mirror.stl",
+      "sha256": "30faca0db71683073560d53be056ca9a7162cc2ce32cf566ec0c88e5956d4e26",
+      "bytes": 77784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_3proxph.stl",
+      "sha256": "4f94e8ebe820ca71d1b141a66a3577bfc2216abf55f769183c853e164edc852c",
+      "bytes": 158584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_3proxph_mirror.stl",
+      "sha256": "7b46655abfb3312d2c59c5cb280c682db3248cb4d44dffcddc4d2a345ae7e1c8",
+      "bytes": 157284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_4distph.stl",
+      "sha256": "9491a59233365d85ca63c7e8f66a51e30f243a625a3be2163559473db0c81bde",
+      "bytes": 45084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_4distph_mirror.stl",
+      "sha256": "90379a8ca79174fa86dfdb9c3877e0943ee72518d6079f64ef7f4d8195068393",
+      "bytes": 44184
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_4midph.stl",
+      "sha256": "c852a8db761ec8ee2dbad56783bd395793ae24ea3a0e913d23ea8e77676153c0",
+      "bytes": 63984
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_4midph_mirror.stl",
+      "sha256": "b74f6c30f16845d98746fb1ce2310a923f16c1d4ddf91164d59efd4b2724166f",
+      "bytes": 63634
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_4proxph.stl",
+      "sha256": "baf08120ff2fe3345513d74d06300b7add3b1dedc6b3c9a3dbd5924968d15cbc",
+      "bytes": 129484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_4proxph_mirror.stl",
+      "sha256": "2a392d8b73c241dc37924405a0f52ce7b2e852f50f54523ad1b281ff25dbd41a",
+      "bytes": 128334
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_5distph.stl",
+      "sha256": "bd78ad7c51b5af5a88aa9c0bcdd3a0cd151c5c9a8cc048bdd6bffdb884d72099",
+      "bytes": 48484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_5distph_mirror.stl",
+      "sha256": "1e22a68d21eeb31b41a5d34486f85fd747edc4a01efbd26381576d77efc45c13",
+      "bytes": 46934
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_5midph.stl",
+      "sha256": "c8cf776fb0958102c32349e2b9f45b810772fa4bf7ded8df6ad7560ec87b148e",
+      "bytes": 54884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_5midph_mirror.stl",
+      "sha256": "e8ef4a41b15702338b7af46e0db55b5efec8be821aa8a87e98ea8db63ad0e176",
+      "bytes": 54684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_5proxph.stl",
+      "sha256": "b25ec61b280364c728c38d7dae71f36f8a2714a31c179ad6b4e6b8888c86142b",
+      "bytes": 114684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_5proxph_mirror.stl",
+      "sha256": "c6c8819b9650b0b2d9975dab6c3e1c6af6d77de414835f191f3092007fda7e9c",
+      "bytes": 113634
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_capitate.stl",
+      "sha256": "d425a7b8a1fd63cc1b454b7bc276d56b1659ebb66b9c774c62ca8668630346bc",
+      "bytes": 240684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_capitate_mirror.stl",
+      "sha256": "8bbe99de1e469d3e3b348ffbf483bfcffde352f957fc9b2453f48fe72581bb7b",
+      "bytes": 237384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_lunate.stl",
+      "sha256": "55223a9c1bce0a4d5c389246174e6ab89b68dfdc0959e1bcee0cdd951157cc15",
+      "bytes": 186084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_lunate_mirror.stl",
+      "sha256": "cbc4385c68a351d87f26a91db1661f1a50f91c4646cb2d7de2b6ec7de1de9290",
+      "bytes": 185134
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_thumbdist.stl",
+      "sha256": "b502123cb0f85fcd565631b5c73548eaf0670eb61462e3f3cd39c4f68f48541c",
+      "bytes": 58384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_thumbdist_mirror.stl",
+      "sha256": "fde59d09c2f636bae403cba45b5be4b000ac8fefaf375932b20104d22025dd4f",
+      "bytes": 57934
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_thumbprox.stl",
+      "sha256": "e676938442ec4be916a6203ee50307575ff91ae324cd504336409ca49c2e9b58",
+      "bytes": 114784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/hand_thumbprox_mirror.stl",
+      "sha256": "1ca55a76bbcd25007b206cef20a1b76ddd4bdeec32727533734f6716ff06000d",
+      "bytes": 114084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/humerus.stl",
+      "sha256": "ae77708e6e2115abea33a546ad7928c33d182799710ebe307ebc05ea7bfeb37b",
+      "bytes": 29484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/humerus_mirror.stl",
+      "sha256": "4054190fe903d0da8b092625df7fbb86fcef32df0b8248aa7e1cbe7949192218",
+      "bytes": 29484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/jaw.stl",
+      "sha256": "82a9c352bb9c73b9ca0c8e4561dfcccd46d4b44beeeb3460365e7c5c4b8f2d54",
+      "bytes": 145884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_bofoot.stl",
+      "sha256": "e3cc26950da6a22ac921e937740408bba43193f1c422810716435a4dd39a0ad1",
+      "bytes": 92084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_femur.stl",
+      "sha256": "d72e3bc4c1d0bbf76e189d50cd0594e3275169d1b2bf48370cb07d3d2a1a848d",
+      "bytes": 45484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_fibula.stl",
+      "sha256": "1b31ecc2af2935d3602f977af1787c55551a2179d38a44bb015005698a1e1bae",
+      "bytes": 12084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_foot.stl",
+      "sha256": "4cb976c3d03dc47cbee8786999a572f580044976e149c1bdeffe27666a0e42f7",
+      "bytes": 97834
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_patella.stl",
+      "sha256": "1cd80b37a1ba01dd6c135273e7e85a14733c9940905aaa72ce001fc164659440",
+      "bytes": 7084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_pelvis.stl",
+      "sha256": "6998661b30f05288f018ca3e4934ae45560b1fd62f638f339fcf4881aa16c1a4",
+      "bytes": 12384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_talus.stl",
+      "sha256": "45cff977c3cf0e2da78832366630f662f20526a5c5ad4f753c268a58b10b3a6a",
+      "bytes": 9784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/l_tibia.stl",
+      "sha256": "0b4392cf63f523dba4fa0d9fdd62cf2bf0b464eaeaad320103d33534fc9e5b60",
+      "bytes": 19584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/lumbar1.stl",
+      "sha256": "233c4723903137d3ef0d41e0de0c74d12cdf86dfdd1580846fd5a2896dcbf75f",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/lumbar2.stl",
+      "sha256": "848a9aa16f522a75863664118307035118fbd9c23d56ef1e0b012027c623aef0",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/lumbar3.stl",
+      "sha256": "5011db2045c44918939854934057ad0b978c8855ea46f10dccfd667efa46431f",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/lumbar4.stl",
+      "sha256": "07a27646165dc5889fec0546ff61a61d34796496c265143445c0e58d0326075d",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/lumbar5.stl",
+      "sha256": "7088542065c3c122408e41eb10e4d06463cde7d03b170b4568d7cbe9f1218c5b",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/lunate.stl",
+      "sha256": "55223a9c1bce0a4d5c389246174e6ab89b68dfdc0959e1bcee0cdd951157cc15",
+      "bytes": 186084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/lunate_mirror.obj",
+      "sha256": "d5461ac0f177e56de8d3c46f4207e9192ca0925fe82f407ea946da8f9f441466",
+      "bytes": 182780
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/pisiform.stl",
+      "sha256": "b56d96a70bae178e434568a22a27b355f65652fbca48c199635a9cc67506a698",
+      "bytes": 356384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/pisiform_mirror.obj",
+      "sha256": "6f3d0439df1dd6071d7be2267c2bba1c3087faf14c71d26b996aaf2234c6c9e2",
+      "bytes": 347458
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_bofoot.stl",
+      "sha256": "39dae011e441c0018cba4a00664d4076f0bb8f86f73522567275ececf6f78db5",
+      "bytes": 92084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_femur.stl",
+      "sha256": "7d6e76a58e964551824169d89ae4b6142617f947bfdbc4ee0a4328040acf9f63",
+      "bytes": 45484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_fibula.stl",
+      "sha256": "2cb0f77671c5421abdec1643aab77b41af2c2b5a8eff49845b098b2393443354",
+      "bytes": 12084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_foot.stl",
+      "sha256": "e95cf6418432ea49488790364588246202b7ce54d6827bef49ac3406733d9f4f",
+      "bytes": 97834
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_patella.stl",
+      "sha256": "6a08e1e74354c65940bfd00ba343823e65eece2ebf10d9bf66c0429e83588128",
+      "bytes": 7084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_pelvis.stl",
+      "sha256": "6eb7bbe904ce85566fc6afcde0935eda11ae12da341965616c7c798c9b2d7ee4",
+      "bytes": 12384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_talus.stl",
+      "sha256": "96202bdab4836e8fede82d3897b4b1bbc6f1afd6fc77e87b8bb444212df2ae90",
+      "bytes": 9784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/r_tibia.stl",
+      "sha256": "7c016de88550dab6bb33d3060ba7aa42b061ca78c5224b7d92a4c766f25ca15f",
+      "bytes": 19584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/radius.stl",
+      "sha256": "696850e4d3b270bb27bf4ccbd5948bd92a3d9a4fdcc48f247f587e468af04eb6",
+      "bytes": 19584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/radius_mirror.stl",
+      "sha256": "3135655a73ec4e495200332c8defde4901062ea96084b27613c0b7dd53a88e1f",
+      "bytes": 19584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ring_distal_lvs.stl",
+      "sha256": "ba7f9adf2876239b3da90d5a54e2f60ac1531c88314ebb6b82c495f3a24bf5e9",
+      "bytes": 12384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ring_distal_rvs.stl",
+      "sha256": "c829699b1ea854ae355d7864f0d34af96aec259a973e2d2025b8b03f21f970d5",
+      "bytes": 12384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ring_medial_lvs.stl",
+      "sha256": "7311b037e5b378f8b06d1b4e3200e5819155e81dfff2bb909040536f6121166a",
+      "bytes": 17284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ring_medial_rvs.stl",
+      "sha256": "7cd89cd433cb02c0b7a8eb3c76d2239b43e4f586174314046fa6ac10a96f6f9a",
+      "bytes": 17284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ring_proximal_lvs.stl",
+      "sha256": "ade76aca3b0e265d82a90da2e6f901fcce9cb9ca8e5142715c9a288d556509a0",
+      "bytes": 13084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ring_proximal_rvs.stl",
+      "sha256": "fafe0be1092227fa513b8b6e7c946d6617d85f5ee059b2527b85bc96f36ae056",
+      "bytes": 13084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/rotatedcerv7.stl",
+      "sha256": "ae2eff718fcb8305f29fff34880badebca10383344cd801f1277c6a429435cc6",
+      "bytes": 14484
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sacrum.stl",
+      "sha256": "e513525e227c21786ba696e9f9ffc9969b631db046aafa3ca9dc2acf750f24fb",
+      "bytes": 19084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/scaphoid.stl",
+      "sha256": "02a9e3522776d965b43030e39d72d63db12c3782c10a8015ab38c70e2a0f5184",
+      "bytes": 182784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/scaphoid_l.stl",
+      "sha256": "608a07e01bcdd31c8b46379f55ad49ad81d8f46f2e18d0c42e0c4315425f609e",
+      "bytes": 184984
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/scaphoid_lvs.stl",
+      "sha256": "a3b215e8f03c7a1626ede00d330a2723b0d5d0b27eec14da1e0b65464378956d",
+      "bytes": 7184
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/scaphoid_mirror.obj",
+      "sha256": "46115dcf5d2b76843eb50ee9477a3e9af6c9bec88c0e17035e837f75deb0d65e",
+      "bytes": 177169
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/scaphoid_rvs.stl",
+      "sha256": "1fc6f6dc2bf3566e6c9a29ac48583a166b7f3850985e01ddd4e6e636b63ebb83",
+      "bytes": 7184
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/scapula.stl",
+      "sha256": "0c72877eaebe080fc44ee488734954e5a5f844c04334ef3864f2ea2a8945c642",
+      "bytes": 77584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/scapula_mirror.stl",
+      "sha256": "c1ce30700307322ecc4402c32fc6778fb844ac1fa09cd372e7c55fa3e68a2fc8",
+      "bytes": 77434
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfastPISIFORMw.stl",
+      "sha256": "fafbff2b451629a697c2513fa54af61c881be808d451592016c3bd21697bd0f4",
+      "bytes": 352884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfastPISIFORMw_mirror.stl",
+      "sha256": "4f6a46c8b136cef970bf69eb9e28fea3d9eb1c2b8d2b1e5e5054d6df79cfd8dd",
+      "bytes": 352884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfastSCAPHOIDw.stl",
+      "sha256": "02a9e3522776d965b43030e39d72d63db12c3782c10a8015ab38c70e2a0f5184",
+      "bytes": 182784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfastSCAPHOIDw_mirror.stl",
+      "sha256": "ec106a27f2b552865ce5ee1b9614ef1f68fc5952548cfdeb3d1474e6176e954f",
+      "bytes": 182784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfastTRIQUETRALw.stl",
+      "sha256": "fae5aaf6b57e31fb767cab689bcf5a7967064381f463f527db975f2bb161e231",
+      "bytes": 158684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfastTRIQUETRALw_mirror.stl",
+      "sha256": "2556dcdf900f85fd12c7baaa82353744fc2fa896085d2cbae5198e10ce5e503d",
+      "bytes": 158684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_2mc.stl",
+      "sha256": "46759d9c560bfaa57123c060a95f48284e2ce7f3e0a55aa1ea29224c12081e55",
+      "bytes": 418084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_2mc_mirror.stl",
+      "sha256": "8c7723a75ad633ed51547287addd1ac1bf5b416e2b554d8a2f17fe5671d5bb05",
+      "bytes": 418084
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_3mc.stl",
+      "sha256": "2b07255350c65562f186578d4647868d6bb9890627085f8a525c6ecc3170db2d",
+      "bytes": 404384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_3mc_mirror.stl",
+      "sha256": "56744b9f26ff01341d8850efe8575cffb85fe99560b3dbf488a80a3e9331c090",
+      "bytes": 404384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_4mc.stl",
+      "sha256": "0a7b4f336dcb6c8e81635864013070ccca5e7638127a1ea3484d7c027d90bce4",
+      "bytes": 324384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_4mc_mirror.stl",
+      "sha256": "d37adc6f9c9c994d57fa081c3ce58f3e40329fd0879e7a94e3d59d29f871bd7b",
+      "bytes": 324384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_5mc.stl",
+      "sha256": "8fb0deda3c70bc640c6cfc90143126aad9f7502522f99a018afabba334358ada",
+      "bytes": 250884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_5mc_mirror.stl",
+      "sha256": "d9d55cfdb53f3d6809a81e1e5e24c4ff2cbbe1e2abdcea1eeac8587a0bf5fb14",
+      "bytes": 250884
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_hamate.stl",
+      "sha256": "722e3021dc5abeea2a6f951e1acd556eda08386c2e4724976ae0b8be963e75b2",
+      "bytes": 258384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_hamate_mirror.stl",
+      "sha256": "a7b38ff906c59c6c339cb5f95b83845ef89e2c576fb3da2b4c488aec7471bbd4",
+      "bytes": 258384
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_trapezium.stl",
+      "sha256": "9ea5acba7d83f0f59661f66cbd516427283e80712f70a6346abc82ae3a30298c",
+      "bytes": 224684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_trapezium_mirror.stl",
+      "sha256": "adcc2b4741244a34d18ddd8b7fe84ce0a8356edc2828ea3bcc708c7df26b7f17",
+      "bytes": 224684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_trapezoid.stl",
+      "sha256": "e1f5f01b7c0dc2795bf26ed57ee6e8b765ee51a43694551f330f1cf66ddd6914",
+      "bytes": 141684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/sdfast_1seg_hand_fr_c_trapezoid_mirror.stl",
+      "sha256": "2917e154bb3e81e3fc26140885f3bb0eb84e4da9a2e5e5ea2292339995fe41c9",
+      "bytes": 141684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/skull.stl",
+      "sha256": "05318d349a5d41538a8f4d7e2a756e80671417be4d350bcd9e2bce393fcb835c",
+      "bytes": 330134
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic1.stl",
+      "sha256": "f1c84257600265e04d473bc0fd8cf54ac292e29ba753a70840b26c6d1eef111d",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic10.stl",
+      "sha256": "12dd380564a495609e702043ad11f158a8fd620735256680b12dce52350464a4",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic11.stl",
+      "sha256": "1a4fb6bc6462ccda3c7880593c7b48b9c5b1f9481dbb324db5fecbf11839bdb9",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic12.stl",
+      "sha256": "5f626c11af43d4ffe53eff1f0f434802b6ffb1dae02e244e13cb992e508d154f",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic2.stl",
+      "sha256": "e57e53aefa344a6d1a00efbd2220b35ffb0e9208762c18f36f2aa8cd99717a0a",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic3.stl",
+      "sha256": "67b6d6a93b891d486d860ecbcb8d2e958b52483d70522aaa3232d0bd2c0f7b82",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic4.stl",
+      "sha256": "e85b927193b5aeceb00ca4c4614f8eeab149b3011695523f138c867998ad9f3c",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic5.stl",
+      "sha256": "de6568dc687ab332da82bbfb82ddc03133b4ef7b13f17e5fc4d962557226fb12",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic6.stl",
+      "sha256": "f80561bab04c40d12eb765c899135e02e22bd5aa22aaeac48e56683bcabb7724",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic7.stl",
+      "sha256": "2aabbfe6834fbb2d85594a413cf0c696d88f5823447e64efc91d0824b18dfc2d",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic8.stl",
+      "sha256": "9c422dd904851cee74687518bcf97bef51426184dd68c0ef334265911eb3f062",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thoracic9.stl",
+      "sha256": "79fcd68a2a83a93567d3d05b1e5437e8a2de3e142c9bb70f6eb459f389c7e609",
+      "bytes": 21284
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thumbdist.stl",
+      "sha256": "4a65bdf702b450080e6d8a5852114b0d0db69117d835d03a86438e9e35e6c963",
+      "bytes": 176784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thumbdist_mirror.obj",
+      "sha256": "5178ede8050f415d5efc5e9b7525e26caf402f0de8ea442c4fd83df8363d5b73",
+      "bytes": 169672
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thumbprox.stl",
+      "sha256": "e622077a4a0dbd4de16a9802ae93e36f969d7440d32bc6b2855c8c31516c815f",
+      "bytes": 199584
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/thumbprox_mirror.obj",
+      "sha256": "688ca4dbc81f8607f5e54cc712b7bfe072863ce5d48558457ea2689d74b02225",
+      "bytes": 191764
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/trapezium.stl",
+      "sha256": "f130696c1dfec4d05214c6f779573043fc42206d7628ea269ccf8b536712b103",
+      "bytes": 224684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/trapezium_mirror.obj",
+      "sha256": "6477e31fc31215f1cc13b0d14e8d98ff75fd89b475a97a3210f0c640df889b34",
+      "bytes": 221897
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/trapezoid.stl",
+      "sha256": "3a68fabd59a87208030c5b3c5c66e1400f46274163265378668fcc3ee58f1b45",
+      "bytes": 141684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/trapezoid_mirror.obj",
+      "sha256": "991b4c7cd635545349eacb0de95b70c62a42ef5422b5fdab0e6f442f25b39df2",
+      "bytes": 137713
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/triquetral.stl",
+      "sha256": "fae5aaf6b57e31fb767cab689bcf5a7967064381f463f527db975f2bb161e231",
+      "bytes": 158684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/triquetral_mirror.obj",
+      "sha256": "205a970dfe91e0e024272c3a99874a91759995b0c49d526d449d09b30b495a22",
+      "bytes": 154870
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ulna.stl",
+      "sha256": "f0e31028e991a5e87f39932eaa02db902f43c9e576bb6bcfb9f9887d56ed3f00",
+      "bytes": 19984
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/ulna_mirror.stl",
+      "sha256": "989ff6e12d8640c209b2355b55551ea84f82d910292b74c73c61335a7a93ab93",
+      "bytes": 19784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/waterbottle/waterbottle.stl",
+      "sha256": "a652e6a0966ec3d93421be39d386d86723cfad921709dfe3bf0dc02962f1bc2d",
+      "bytes": 415784
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/waterbottle/waterbottle_contact0.stl",
+      "sha256": "eeffffe1b27907a34a44399f0ecac2fd3a8305b9f397ebddaa96238578c18d54",
+      "bytes": 4684
+    },
+    {
+      "path": "third_party/ms-human-700/Geometry/waterbottle/waterbottle_contact1.stl",
+      "sha256": "7764a94d703d707cdbf3d82fd66fa269c49fdf179cf460fbd6717941396b72d2",
+      "bytes": 6284
+    },
+    {
+      "path": "third_party/ms-human-700/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "third_party/ms-human-700/MS-Human-700-Locomotion.xml",
+      "sha256": "fc3e5ff54efe4a958d823f2687903320fc1ff70554c58d14e05b5118f0e03b4b",
+      "bytes": 4182
+    },
+    {
+      "path": "third_party/ms-human-700/MS-Human-700-Manipulation.xml",
+      "sha256": "ec6685d42071d5809ef78c3d111f35810416e384ebbea2989c173e7ca1a60efb",
+      "bytes": 4566
+    },
+    {
+      "path": "third_party/ms-human-700/MS-Human-700.xml",
+      "sha256": "755124766e0e4ed9ddac60c8c4f505f94a6adaa2d51665108eee0cb1f677681d",
+      "bytes": 4591
+    },
+    {
+      "path": "third_party/ms-human-700/Muscle/Muscle_Arm_Hand_r.xml",
+      "sha256": "cbebbef44e5c910b42c9b6f76dfb3d0d1036efcf039ca859c0a918dce7944e8b",
+      "bytes": 12240
+    },
+    {
+      "path": "third_party/ms-human-700/Muscle/Muscle_Arm_l.xml",
+      "sha256": "7e2872bf73ee87f72403e3df76adf427d69de3bc63f387e88c60956d7ecb9173",
+      "bytes": 9369
+    },
+    {
+      "path": "third_party/ms-human-700/Muscle/Muscle_Arm_r.xml",
+      "sha256": "97c316c911bf578eca7184ea24a5e84c71d7d2b931a2941c45d3ec91ba406f68",
+      "bytes": 9368
+    },
+    {
+      "path": "third_party/ms-human-700/Muscle/Muscle_Leg_l.xml",
+      "sha256": "3d6c1e1cfec1d49dc0654816f43448165fc55b6ffae2d51c6d01190f0384f0b2",
+      "bytes": 8099
+    },
+    {
+      "path": "third_party/ms-human-700/Muscle/Muscle_Leg_r.xml",
+      "sha256": "8b290f1f63167e262b376fac9d9c9f73cc9eb0b92c3f7bc422bef43acdb5c14c",
+      "bytes": 8099
+    },
+    {
+      "path": "third_party/ms-human-700/Muscle/Muscle_Torso.xml",
+      "sha256": "18177aac15ec1f394359285c1029cec04b90c26e562493565bbba686f532e4af",
+      "bytes": 80322
+    },
+    {
+      "path": "third_party/ms-human-700/Pictures/dance_gif.gif",
+      "sha256": "eb25d945de72c19a8a0b774792893c6ec57c8d9de1bcd8d63209b1327a716b24",
+      "bytes": 2560088
+    },
+    {
+      "path": "third_party/ms-human-700/Pictures/loco_full_gif.gif",
+      "sha256": "fa1eb59fcf6999ca43291cf24bc7b84c44848c400dcfb2fa166764470f9225d3",
+      "bytes": 516959
+    },
+    {
+      "path": "third_party/ms-human-700/Pictures/loco_legs_gif.gif",
+      "sha256": "80f18c9e9cf52be949b4cdc73c1169afc740f7ee2c482ffb4a00bdef75a94925",
+      "bytes": 1103376
+    },
+    {
+      "path": "third_party/ms-human-700/Pictures/mani_gif.gif",
+      "sha256": "b07a56a486ddb8e836a6cd55b23f976ec9fc79b9fa32bf506e328ded1dd4d69d",
+      "bytes": 662714
+    },
+    {
+      "path": "third_party/ms-human-700/Pictures/ms_human_render_front.png",
+      "sha256": "980b79d0fd4dbfe65f9fc8ef45e7b44d8ab83eec6c40b94d1f09b9952549b4aa",
+      "bytes": 911093
+    },
+    {
+      "path": "third_party/ms-human-700/Pictures/render_gif.gif",
+      "sha256": "3bbe6bf99ae26698a4325a932847bd4ac936e105ad3136f8e5c55d25fcfc1e00",
+      "bytes": 10903551
+    },
+    {
+      "path": "third_party/ms-human-700/Pictures/run_gif.gif",
+      "sha256": "f18dfe945a6ff5e67893585f14c90fcfa03f8812592f9ee9f58b31b107b85c45",
+      "bytes": 3777616
+    },
+    {
+      "path": "third_party/ms-human-700/README.md",
+      "sha256": "3a753babd21543c60684df2866cacf7df21a93a58edca3a6c70c143ac936876f",
+      "bytes": 3728
+    },
+    {
+      "path": "third_party/ms-human-700/Tendon/Tendon_Arm_Hand_l.xml",
+      "sha256": "975820c21666cfdbe73f5536a630643003ed3dac4c9989c310cb1313579bcc9f",
+      "bytes": 20701
+    },
+    {
+      "path": "third_party/ms-human-700/Tendon/Tendon_Arm_Hand_r.xml",
+      "sha256": "7835fb9ab99b0414e30014280a778b61f78519d4621a433eb25170dff12dc272",
+      "bytes": 20099
+    },
+    {
+      "path": "third_party/ms-human-700/Tendon/Tendon_Arm_l.xml",
+      "sha256": "56535f96d7018363cef28123670fdf8991bd6a3a56a0518b450682adf83994c6",
+      "bytes": 18681
+    },
+    {
+      "path": "third_party/ms-human-700/Tendon/Tendon_Arm_r.xml",
+      "sha256": "f743a4f30519f3d65e11d112d6595b947008db07a999ed247a84138eeca7040a",
+      "bytes": 18681
+    },
+    {
+      "path": "third_party/ms-human-700/Tendon/Tendon_Leg_l.xml",
+      "sha256": "19f15c5b53da3e0e28e035f765b3a1a841e5805fcc734b48478c7047d3bd5f64",
+      "bytes": 11503
+    },
+    {
+      "path": "third_party/ms-human-700/Tendon/Tendon_Leg_r.xml",
+      "sha256": "ca508c4852abe62801dfcf64b76f5403ef11a69c7520a7b90186949a6d8bc5f6",
+      "bytes": 11503
+    },
+    {
+      "path": "third_party/ms-human-700/Tendon/Tendon_Torso.xml",
+      "sha256": "fd0d83d39f33c84ca8ae47c7b0f3126b3920e8c96ff01a303f3feac88528feb9",
+      "bytes": 89041
+    },
+    {
+      "path": "third_party/msgym/.gitignore",
+      "sha256": "f58ffa9887a17defc39211d5909cb35e65adbb8d5fb818b73e8711bd238fd32c",
+      "bytes": 369
+    },
+    {
+      "path": "third_party/msgym/.gitmodules",
+      "sha256": "afa84da01e7ec09ee3926f8e2edfe11510da30956561ff33e05c61f92c901566",
+      "bytes": 112
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/DynSyn/DynSynLayer.py",
+      "sha256": "ee16874a93dbc3f0a5bafb76d28847f4ef7cc298f8e92750aeda6bdddc2b89f7",
+      "bytes": 3295
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/DynSyn/SAC_DynSyn.py",
+      "sha256": "04d225dfc6dbbc1275daaca7d66a9d1c8f9c0185f40bb2f16dcaf9afbc343c08",
+      "bytes": 7943
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/DynSyn/__init__.py",
+      "sha256": "bcf3009376ea1d9ba5767165b1152941ec322ae283dc734de64f413bf105abf8",
+      "bytes": 67
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/README.md",
+      "sha256": "bf5d4e258d0bd58f54b9c61cdb18a9bdf8053c2c2c499e16ed81c603fa997f35",
+      "bytes": 2689
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/SB3-Scripts/callback.py",
+      "sha256": "ffc6b323371630598445653897aaab726d9da5f82d80c6e1acb03039e0335c26",
+      "bytes": 4039
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/SB3-Scripts/eval.py",
+      "sha256": "43337ba5cdc1ffa03c9d19906a19b0a6cc81d5f41c2e53d147e85cab024dbc55",
+      "bytes": 4023
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/SB3-Scripts/schedule.py",
+      "sha256": "426785065de868338750f3e39bf218fbfd958df08dcf49e401edb803e85b72e4",
+      "bytes": 1046
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/SB3-Scripts/train.py",
+      "sha256": "1dd83a0e1267fb2ab695d7e7d30f855f6ab31ee6bd325242b953a7d2abe7df75",
+      "bytes": 10927
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/SB3-Scripts/utils.py",
+      "sha256": "9a1ed4ba0e944ef577498deb5d42a5223e979256ad8b19aacb05e46fa5b39e0a",
+      "bytes": 4264
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/SB3-Scripts/wrapper/__init__.py",
+      "sha256": "73279e23b4e4bb7d201be787b33d76dff72386b0ba33c7b0075b47b183ab7759",
+      "bytes": 91
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/SB3-Scripts/wrapper/muscle_norm_wrapper.py",
+      "sha256": "30c534ad35cd3b9c833b2427a989ffb9fdf2140bfcd17eb46a13430c30487db7",
+      "bytes": 564
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/configs/locomotionFull.json",
+      "sha256": "7d31f757a782ddebf6fe4f2496403492453727a26dfee181c825afa37488b6dd",
+      "bytes": 5010
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/configs/locomotionFull_100.json",
+      "sha256": "be8a7d0c60afc532275703f4a8cc44b188e2b8b16035100925dfb4aa1e1beba9",
+      "bytes": 4235
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/configs/locomotionLegs.json",
+      "sha256": "02a82564c22b1fbbb75095af360b848bad97da494fc443d2dc17d7de3fc7d0a3",
+      "bytes": 1557
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/configs/manipulation.json",
+      "sha256": "0fb68cd37f80100ddcb2fd344fb6ead5c171001f89715cf7fc344399bb0f85d3",
+      "bytes": 1727
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/pyproject.toml",
+      "sha256": "f786436b948116d9c326cd89af9dbf2f860afc57ed8974233d8db09b88a618bf",
+      "bytes": 585
+    },
+    {
+      "path": "third_party/msgym/DynSyn-SAC/requirements.txt",
+      "sha256": "2271b638a499810c2d3649bd4668e4a53fe9f16e8a9bac346216e03dce6e6cfd",
+      "bytes": 174
+    },
+    {
+      "path": "third_party/msgym/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "path": "third_party/msgym/README.md",
+      "sha256": "1c272ebe0d2e12b21a26db1ff71fc48773e4f66634aa9ad91cfc7418c9b981c0",
+      "bytes": 6157
+    },
+    {
+      "path": "third_party/msgym/env_test.py",
+      "sha256": "0c23919ae11ce4c885521d7f29c80d7b820683c05521676acad43f9ffc1803b0",
+      "bytes": 1082
+    },
+    {
+      "path": "third_party/msgym/msgym/__init__.py",
+      "sha256": "b270d863cc0fd09f405c2e82531d85f6ed89310f7d8c504f4d05819a57053695",
+      "bytes": 439
+    },
+    {
+      "path": "third_party/msgym/msgym/envs/__init__.py",
+      "sha256": "a8b3c50295b8457485e1d58cb0ea72da101353b374deee16d64774b50900e451",
+      "bytes": 257
+    },
+    {
+      "path": "third_party/msgym/msgym/envs/imitation_trajectory.py",
+      "sha256": "2dd70e56ff6d71c78049dceb7af8290ac694ed0e5d2271d20d0be49bed28b850",
+      "bytes": 7507
+    },
+    {
+      "path": "third_party/msgym/msgym/envs/locomotionFull_v1.py",
+      "sha256": "881d1893c0b6bdd8b4655459b20783dc85711d677c65527de6d3768c46376b09",
+      "bytes": 14154
+    },
+    {
+      "path": "third_party/msgym/msgym/envs/locomotionLegs_v1.py",
+      "sha256": "ec6e81dbd0e0e814039b8a25674f2786d1b0caa165e3c6949113192956062707",
+      "bytes": 15579
+    },
+    {
+      "path": "third_party/msgym/msgym/envs/manipulation_v1.py",
+      "sha256": "226d89b5ce5df7477a57c91ac2a2144fc26496f49639e5358a8b8e776638df21",
+      "bytes": 10951
+    },
+    {
+      "path": "third_party/msgym/msgym/envs/utils.py",
+      "sha256": "1dcd59a75ac7c80b1490bf82992e91839ce79930af59d73ef3d65d8ac07b77e9",
+      "bytes": 4829
+    },
+    {
+      "path": "third_party/msgym/msgym/motion_data/walking_gait.npz",
+      "sha256": "5736b9affafb23c3ede68a3bededcd620b6a27174055e777191e0f7aa4302e90",
+      "bytes": 309345
+    },
+    {
+      "path": "third_party/msgym/pictures/dance_gif.gif",
+      "sha256": "eb25d945de72c19a8a0b774792893c6ec57c8d9de1bcd8d63209b1327a716b24",
+      "bytes": 2560088
+    },
+    {
+      "path": "third_party/msgym/pictures/loco_full_gif.gif",
+      "sha256": "fa1eb59fcf6999ca43291cf24bc7b84c44848c400dcfb2fa166764470f9225d3",
+      "bytes": 516959
+    },
+    {
+      "path": "third_party/msgym/pictures/loco_legs_gif.gif",
+      "sha256": "80f18c9e9cf52be949b4cdc73c1169afc740f7ee2c482ffb4a00bdef75a94925",
+      "bytes": 1103376
+    },
+    {
+      "path": "third_party/msgym/pictures/mani_gif.gif",
+      "sha256": "b07a56a486ddb8e836a6cd55b23f976ec9fc79b9fa32bf506e328ded1dd4d69d",
+      "bytes": 662714
+    },
+    {
+      "path": "third_party/msgym/pictures/ms_human_render_front.png",
+      "sha256": "980b79d0fd4dbfe65f9fc8ef45e7b44d8ab83eec6c40b94d1f09b9952549b4aa",
+      "bytes": 911093
+    },
+    {
+      "path": "third_party/msgym/pictures/render_gif.gif",
+      "sha256": "3bbe6bf99ae26698a4325a932847bd4ac936e105ad3136f8e5c55d25fcfc1e00",
+      "bytes": 10903551
+    },
+    {
+      "path": "third_party/msgym/pictures/run_gif.gif",
+      "sha256": "f18dfe945a6ff5e67893585f14c90fcfa03f8812592f9ee9f58b31b107b85c45",
+      "bytes": 3777616
+    },
+    {
+      "path": "third_party/msgym/pyproject.toml",
+      "sha256": "cd0f508959c9f9505ccdb3f06778fbfad4fbab17fe916c1c240a23e109c4b74a",
+      "bytes": 931
+    },
+    {
+      "path": "artifacts/v0.0.6/native/evaluations.json",
+      "sha256": "544832d1e5905336cf59c556739089cad25f7b01fb0ef45f5fe9b7a0ac229e8a",
+      "bytes": 30324
+    },
+    {
+      "path": "experiments/v0.0.6/protocol.json",
+      "sha256": "2752638584b51f620a343999c13bf6fef35b21a0f4c53d8ddec60f147fa30c64",
+      "bytes": 3154
+    },
+    {
+      "path": "experiments/v0.0.11/shared-motor-input-protocol.json",
+      "sha256": "ba9b3294111f29d4e5382b1cd3b4a08512dc41b17db1829285e69262487f828a",
+      "bytes": 57253
+    },
+    {
+      "path": "artifacts/v0.0.11/motor-input/result.json",
+      "sha256": "84642d5e561b80156eb9803b571e8d2965454dd019b1b58398c9ab2926a2d28e",
+      "bytes": 1083
+    },
+    {
+      "path": "artifacts/v0.0.11/development/shared-motor-input-audit-01.json",
+      "sha256": "b0a9200663f289c6b03d1e64999bdfccd45b42fd055fce417d46e33f0f095018",
+      "bytes": 4337
+    },
+    {
+      "path": "/home/ubuntu/joxing/v006-20261026/runs/v0.0.6/native-01/inputs/model.zip",
+      "sha256": "0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829",
+      "bytes": 290542461
+    },
+    {
+      "path": "/home/ubuntu/joxing/v006-20261026/runs/v0.0.6/native-01/inputs/normalizer.pkl",
+      "sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086",
+      "bytes": 1025170
+    }
+  ],
+  "status": "launched"
+}

@@ -1,3 +1,30 @@
+# First shared pretrained trial audited; proof halted on storage —2026-10-27
+
+Frozen c9a2b968/7caaded4 passes861Linux tests with exactly1existing strict
+referee-alias xfail (495.58s). Source71000completed3520ticks/176decisions for both
+intact700-muscle athletes, with no tracking/physical first latch. Separate saved
+measurement/reference/normalization/contact/posture/support/scalar-policy audit
+passes all3520intervals/29,853contacts/89recorded frames,21.902540s/0newphysics.
+The full4world/replay gate is FALSE: source71001executed3520ticks but exhausted
+the unchanged32MiB pre-write credit while serializing; incomplete source tape and
+fault/last-valid receipts remain. Seeds71002/71003/replay not_run. Total7040new
+formalphysics, cumulative12430, optimizerupdates/nativeboxing0. Runner85.918852s,
+supervised89.155971s/maxRSS2,846,000KiB; retained proof/supervision29,273,351bytes.
+
+First launcher failed before tests (system Python missing project import), all5
+slots not_run/0physics. Its exited PID, log/91,404byte complete failed-launch raw
+and hashverified transfer are retained. A fresh checkout used the pinned runtime;
+source/protocol unchanged. Together both attempts retain10slots. Main root:
+/home/ubuntu/joxing/v011-shared-motor-physical-bootstrap02-20261027.
+
+Next zero-physics display protocol7d671086 binds the already audited FIRSTfixed
+trial, renders/decode89frames with the explicit INCOMPLETE FOUR-SEED PROOF label,
+8MiB/80s/one thread; eight display-only gate tests pass0.45s. It does not alter the
+failed proof, claim exact replay or grant a native motor/boxing gate. The remaining
+proof needs a measured lossless evidence-storage solution and preregistered
+unfinished attempts; do not enlarge32MiB, rerun completed71000or call this boxing.
+No v11tag; original remaining game correctness battery still outstanding.
+
 # Shared pretrained physical proof registered —2026-10-27
 
 Implemented independent named native input/engine/cache audits, lossless MotorTape,

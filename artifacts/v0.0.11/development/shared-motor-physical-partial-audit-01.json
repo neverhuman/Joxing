@@ -1,0 +1,83 @@
+{
+  "command": [
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=5s",
+    "60",
+    "/home/ubuntu/.local/bin/uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "python",
+    "scripts/audit_shared_motor.py",
+    "--protocol-sha256",
+    "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+    "--source-sha",
+    "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6"
+  ],
+  "returncode": 1,
+  "wall_s": 21.902540232986212,
+  "live_recorded_before": [],
+  "audit": {
+    "exact_replay": {
+      "passed": false,
+      "reason": "replay not completed"
+    },
+    "findings": [
+      {
+        "contacts": 29853,
+        "decisions": 176,
+        "id": "source-71000",
+        "measured_intervals": 3520,
+        "passed": true,
+        "physical_failure": {
+          "A": null,
+          "B": null
+        },
+        "physics_steps": 0,
+        "policy_inference_audited": true,
+        "tracking_failure": {
+          "A": null,
+          "B": null
+        },
+        "trajectory_continuation_audited": false,
+        "video_frames": 89
+      },
+      {
+        "id": "source-71001",
+        "passed": false,
+        "reason": "TimeoutError: Pre-write raw credit exhausted: /home/ubuntu/joxing/v011-shared-motor-physical-bootstrap02-20261027/runs/v0.0.11/shared-motor-proof-01",
+        "status": "incomplete"
+      },
+      {
+        "id": "source-71002",
+        "passed": false,
+        "reason": "stopped after earlier failure",
+        "status": "not_run"
+      },
+      {
+        "id": "source-71003",
+        "passed": false,
+        "reason": "stopped after earlier failure",
+        "status": "not_run"
+      },
+      {
+        "id": "replay-71000",
+        "passed": false,
+        "reason": "stopped after earlier failure",
+        "status": "not_run"
+      }
+    ],
+    "new_audit_physics": 0,
+    "optimizer_updates": 0,
+    "passed": false,
+    "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+    "schema": "joxing-shared-motor-independent-audit-v1",
+    "scope": "Four correlated pair worlds; short shared locomotion transfer, not stationary guard or boxing",
+    "short_motor_gate_passed": false,
+    "source_commit": "c9a2b9682c2e500d45c28e3bd15f17a1ab46eef6",
+    "valid_native_boxing_games": 0
+  },
+  "log_tail": "Observation space shape: (3601,)\nAction space shape: (700,)\nLoaded 1 trajectories.\nObservation space shape: (3601,)\nAction space shape: (700,)\nLoaded 1 trajectories.\n"
+}

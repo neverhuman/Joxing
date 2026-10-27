@@ -1,0 +1,17 @@
+{
+  "schema": "joxing-shared-motor-failed-launch-transfer-v1",
+  "status": "passed",
+  "files": {
+    "deployment.json": {
+      "bytes": 91138,
+      "sha256": "d14e3ef53b5f2bc0d11c6e385463704d9ba0047df2a012232ac0a96e91b4df2a"
+    },
+    "launch.log": {
+      "bytes": 266,
+      "sha256": "06365b02b205b86ed62ff4215de893cf8a6611c8c0a602ae4ea7e29f4129640e"
+    }
+  },
+  "archive_bytes": 26992,
+  "archive_sha256": "a0e9ad371dd17dec8be527cccbfa761060a7dc54ab53009a1ecb3377404b8666",
+  "new_physics": 0
+}
