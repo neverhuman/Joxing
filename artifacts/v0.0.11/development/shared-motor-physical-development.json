@@ -1,0 +1,89 @@
+{
+  "schema": "joxing-shared-motor-physical-development-v1",
+  "scope": "Fixture/source implementation only; pretrained formal physical proof not yet executed",
+  "validation": [
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q tests/test_shared_motor_evidence.py",
+      "passed": 20,
+      "wall_s": 8.58
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q tests/test_shared_motor_evidence.py",
+      "failed": 1,
+      "passed": 23,
+      "wall_s": 8.78,
+      "reason": "JSON contact-columns tuple/list value comparison in auditor; corruption checks initially also hit this common prerequisite"
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q tests/test_shared_motor_evidence.py",
+      "failed": 22,
+      "passed": 2,
+      "wall_s": 8.58,
+      "reason": "First tuple conversion still compared mapping against tuple; added clean-baseline assertion before every mutation to prevent masked corruption tests"
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q --tb=short tests/test_shared_motor_evidence.py",
+      "passed": 24,
+      "wall_s": 9.32
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q --tb=short tests/test_shared_motor_evidence.py tests/test_shared_motor_task.py tests/test_shared_motor_inputs.py tests/test_shared_motor.py tests/test_body_adapter.py tests/test_scene.py tests/test_boxing_env.py",
+      "passed": 88,
+      "wall_s": 32.38
+    },
+    {
+      "command": "same targeted command plus grokbot/tests",
+      "passed": 471,
+      "xfailed": 1,
+      "wall_s": 50.67,
+      "known_failure": "grokbot/tests/test_referee_fuzz.py::test_restore_does_not_alias_the_snapshot; already strict xfail on incoming external commit99d85f6"
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q --tb=short tests/test_shared_motor_evidence.py",
+      "passed": 45,
+      "wall_s": 10.14
+    },
+    {
+      "command": "rtk proxy /Users/bentaylor/.local/bin/uvx --offline ruff check src/joxing/shared_motor*.py scripts/*shared_motor*.py tests/test_shared_motor_evidence.py",
+      "status": "passed"
+    }
+  ],
+  "retained_read_failures": [
+    "Two attempted python -m ruff calls found no module; switched to cached uvx ruff",
+    "First SSH SOCKS fetch had no listening proxy; explicit ControlMaster=no/ControlPath=none fixed it; own tunnel exited",
+    "One host inventory exited PermissionError on /proc/1/cwd; production scanner catches OSError; repeated with safe per-process handling"
+  ],
+  "remote_integration": {
+    "fast_forward": "99d85f6",
+    "paths": "grokbot only; no modifications by this owner",
+    "force_push": false
+  },
+  "formal_v11_physics": 5390,
+  "new_formal_physics": 0,
+  "optimizer_updates": 0,
+  "valid_native_boxing_games": 0,
+  "protocol_sha256": "7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43",
+  "new_source_sha256": {
+    "src/joxing/shared_motor_audit.py": "1e09d409fe41de6cb35d01d2acc5d525b6867f7dd7c60bd7282b2651a4dca2e1",
+    "src/joxing/shared_motor_saved_audit.py": "099d0200e04b7413af262cfd895b4ace29259378615a0bade76c69df16e1705f",
+    "src/joxing/shared_motor_inputs.py": "8f4a6dd2f7bf019ffa90465e453f6ce654ce1c44175286094667021a4e7865a5",
+    "src/joxing/shared_motor_proof.py": "2bfc788dd6262b94f085774274d5deffd710a80b1ecc2c81572e265fc2b3f7c3",
+    "src/joxing/shared_motor_evidence.py": "05b2335c146ef51f7c65bb909dc822c02d5ba57e69d20b5a2925815c7a65ad4b",
+    "src/joxing/shared_motor_task.py": "fce0afccb5897297cfc05b2359a634310a72b9ef1a8463a377b36bbc2fc57511",
+    "scripts/validate_shared_motor_render.py": "579cf3c560d99b00b8fa79f78cae9d94b9bb35c60d235dbce1a9810481fa44fd",
+    "scripts/supervise_shared_motor.py": "09fbc4f39415d7e32a0fe79eff458ba6d17f1ca4347c8e78798596f4ed101603",
+    "scripts/render_shared_motor.py": "b6bb509a6859dffc24eaec3046e1d4007bf4d8bd08b1a37c4bcd63efe120a968",
+    "scripts/supervise_shared_motor_inputs.py": "cad67da39a673e27a95d0c75fb22be10955246554c59de25e329cb3357e8cc1a",
+    "scripts/qualify_shared_motor.py": "93d672016aff7bf518c4751afc73ae9ebe24a7a4f70eebc87b2afefdf6c9aee3",
+    "scripts/register_shared_motor.py": "c0254e728234e021f54b12a0509e747cfeedcce60bb986ea609e793fa1fac6f1",
+    "scripts/audit_shared_motor.py": "8240f36671364c5e5c5544482104d79949a6aa62877e591dd456c907b1148401",
+    "scripts/qualify_shared_motor_inputs.py": "f9eeaa939a1daca9d126e6b8a8866997489100bef6b1e0275b045605d9ce1c31",
+    "tests/test_shared_motor_evidence.py": "c64bd66ccd5c748aa684023504d652407773e2afc722d13fe11f52e31d0c1e7b"
+  },
+  "limitations": [
+    "Solver dynamic caches are phase measurements, not reconstructed by forward on integrated pose",
+    "Strict expected referee alias failure remains a competition blocker",
+    "Faulted chains require independent partial read audit; completed short locomotion is not boxing",
+    "No formal results or video yet"
+  ]
+}

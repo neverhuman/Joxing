@@ -1,39 +1,44 @@
-# Current mission: shared pretrained motor physics and recording
+# Current mission: execute the frozen shared pretrained physical proof
 
-No active owned jobs. The archived native input/normalizer/actor oracle completed
-on xbabe1at frozenf3638b47af1d1133293da2f91583d2e9fc1d507b/protocold32a57ca.
-All422Linux tests passed458.27s; all4oracle rows passed, both scalar predictions
-match the actual saved700-muscle command exactly. Independent475input/source/
-weight checks and raw/normalized/action byte audit passed; all identities exited.
-Full6file/40,205byte proof is locally hashverified. See SHARED_MOTOR_INPUT_RESULTS.md.
+Implemented independent named native input/engine/cache audits, lossless MotorTape,
+saved normalization/reference/contact/posture/support audit, the four-source and
+actual tick203 replay runner, bounded owner supervisor and first-fixed-trial video
+with full decode.45new Mac fixture checks pass10.14s;88targeted integration checks
+passed32.38s before five extra gate-summary checks. Expanded integration plus the
+external Grokbot suite passed471checks with1known strict xfail50.67s. The xfail is
+HitTracker.restore snapshot aliasing (grokbot cycle0005); no competitive gate or
+boxing qualification is claimed. Concurrent Grokbot paths/CI remain read-only.
 
-## Ready implementation mission
+Frozen protocol: shared-motor-physical-protocol.json, canonical SHA
+7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43.
+Full final Linux gate requires861passes and ONLYthe exact existing strict xfail.
+Then four seeds71000..71003 ×3520ticks plus actual203→3520replay3317:17397new
+physics, no optimizer updates. One process/thread,60000physics/180srunner/
+300spostgate/32MiBraw firstlimit; original whole-version caps retained, conservative
+prior postgate upper600s. All five rows allocated before model load; attempted
+engine entries persisted before entry. Original native trials are dependencies,
+not rerun. Input qpos/qvel/activation bind to integration state; solver caches are
+actual phase measurements with separate exact physical-continuation checks,
+never post-step mj_forward replacements. Scratch posture/video add0physics.
 
-Read **SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md** and PRETRAINED_SHARED_MOTOR_BRIDGE.md.
-The new shared_motor_task.py core implements native reference-only reset donors,
-both intact700-muscle owners in one1ms implicitfast world, simultaneous cached
-native3601inputs,20ms muscle holds and atomic reference/cache/control/engine
-snapshots. Explicit parallel-walk-v1 spawns keep both athletes separated/facing
-the same direction; the default boxing layout remains the default. No evaluated
-pose/root assistance or third-party modification. Eleven Mac fixture tests pass;
-48targeted integration checks pass19.34s. These use fixture weights, not the
-trained controller, and are not a formal shared walking result.
+Next: publish/anonymous-byte-verify source+protocol, deploy a fresh xbabe1checkout,
+verify all frozen inputs and capacity, start the bounded full-suite→proof→audit→
+render→decode chain. Do not duplicate or change its executing source. Numerical/
+quota/deadline/source faults stop the chain and retain partial/fault/last-valid
+receipts for a separate read audit; a failed chain does not qualify motor output.
+First registered source footage includes physical/tracking failure if present.
+No actual shared pretrained physical outcome yet. Formal v11physics remains5390,
+optimizerupdates0/valid nativeboxing0. Whole-v11remaining correctness battery
+stays outstanding and no v11tag is authorized by this component.
 
-First scene setup failed11checks/0physics because changing an attached frame
-handle did not change its compiled body. The negative/source hashes are retained;
-spawn selection now occurs before attachment, with the same strict heading gate.
-Full new source-host regressions remain required. No job should be duplicated.
-
-Next owner implements independent shared engine→motor-input/reference checks,
-MotorTape, four-seed/source+one-mid-replay runner, saved physical auditor,
-bounded supervisor, renderer/decoder QA and corruption/fault/ownership tests.
-Register/public-freeze all source/config/model/actor/normalizer/reference/bundle/
-seed hashes before final source-host gate or formal outcomes. Proposed new
-physics17397 across four3520tick worlds and actual203→3520replay; cap60000/
-180srunner/300spostgate/32MiBraw/one simulation worker/one numerical thread,
-subject to actual remaining original whole-v11caps. No unchanged native sweep,
-new training, tolerance loosening, favorable seed/clip selection or purchase.
-First-scenario video includes failure if it falls. Native walking is not boxing.
+Read AGENTS/RTK and SHARED_MOTOR_PHYSICAL_PROOF_PACKET.md, then
+shared_motor_proof.py/shared_motor_evidence.py/shared_motor_saved_audit.py and
+scripts/supervise_shared_motor.py. Full final source-host regressions precede
+formal motion. Keep all attempts, resource/ownership/source/input hashes and exact
+commands. Audit every outcome and process exit, transfer complete raw evidence
+with name/size/SHA checks, inspect first/last frames, publish honest results and
+update this mission to the measured next motor bottleneck. No extra agents,
+other-chat messages, third_party/service edits or duplicate jobs.
 
 ## Delivered and outstanding version accounting
 

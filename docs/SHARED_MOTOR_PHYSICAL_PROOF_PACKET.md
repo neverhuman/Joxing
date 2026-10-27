@@ -1,3 +1,46 @@
+# Shared pretrained physical proof registered —2026-10-27
+
+Implemented independent named native input/engine/cache audits, lossless MotorTape,
+saved normalization/reference/contact/posture/support audit, the four-source and
+actual tick203 replay runner, bounded owner supervisor and first-fixed-trial video
+with full decode.45new Mac fixture checks pass10.14s;88targeted integration checks
+passed32.38s before five extra gate-summary checks. Expanded integration plus the
+external Grokbot suite passed471checks with1known strict xfail50.67s. The xfail is
+HitTracker.restore snapshot aliasing (grokbot cycle0005); no competitive gate or
+boxing qualification is claimed. Concurrent Grokbot paths/CI remain read-only.
+
+Frozen protocol: shared-motor-physical-protocol.json, canonical SHA
+7caaded454046af784e52f9cc20a7cb2b4869a4a46174936e9877e58a572ec43.
+Full final Linux gate requires861passes and ONLYthe exact existing strict xfail.
+Then four seeds71000..71003 ×3520ticks plus actual203→3520replay3317:17397new
+physics, no optimizer updates. One process/thread,60000physics/180srunner/
+300spostgate/32MiBraw firstlimit; original whole-version caps retained, conservative
+prior postgate upper600s. All five rows allocated before model load; attempted
+engine entries persisted before entry. Original native trials are dependencies,
+not rerun. Input qpos/qvel/activation bind to integration state; solver caches are
+actual phase measurements with separate exact physical-continuation checks,
+never post-step mj_forward replacements. Scratch posture/video add0physics.
+
+Next: publish/anonymous-byte-verify source+protocol, deploy a fresh xbabe1checkout,
+verify all frozen inputs and capacity, start the bounded full-suite→proof→audit→
+render→decode chain. Do not duplicate or change its executing source. Numerical/
+quota/deadline/source faults stop the chain and retain partial/fault/last-valid
+receipts for a separate read audit; a failed chain does not qualify motor output.
+First registered source footage includes physical/tracking failure if present.
+No actual shared pretrained physical outcome yet. Formal v11physics remains5390,
+optimizerupdates0/valid nativeboxing0. Whole-v11remaining correctness battery
+stays outstanding and no v11tag is authorized by this component.
+
+The ordered implementation below is now present. Remaining execution order is
+publication/anonymous bytes → fresh host deployment/hash/capacity audit → full
+861pass/1exact known-xfail gate → bounded physical proof → saved independent
+measurement/scalar-policy/first-tail audit → first-trial render/decode → independent
+source/input/process-exit/raw transfer audit and honest motor conclusion. Source
+must stay fixed. The referee aliasing defect stays a future boxing correctness
+blocker, not an expected motor-controller failure. On any early fault, retain all
+partial evidence and preregister a separate read/repair step rather than rerun
+old successful sources or relabel invalid work. No v11release tag.
+
 # Next ready mission: record the pretrained policy in the shared world
 
 The original-host archived-input oracle passed all four rows after422Linux
