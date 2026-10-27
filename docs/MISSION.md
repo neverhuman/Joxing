@@ -1,6 +1,7 @@
 # Current mission: v0.0.11 connected two-player loop and recording
 
-**Active: public-frozen D0 recording supervisor on xbabe3,236test gate running; formal v11physics0 at12:30:53UTC.** v0.0.10is concluded with a negative
+**Active: D0physics/audit/render passed; original decode failed MemoryError.
+Bounded zero-physics video-QA repair is next.** v0.0.10is concluded with a negative
 motor result:16,384transitions,896optimizerupdates,32/32valid evaluations and2/2
 exact replays; both learning gates failed (−0.06625s/+0.01625s paired survival,
 1/8five-second survivors each). Independent all-row/raw audit passed; all35
@@ -37,20 +38,16 @@ punch/miss/block/recovery exchanges and historical self-play. Native valid bouts
 5. Frozen foundation f22cf8b passed218Linux tests292.50s. Independent check
    verified133source+288upstreamfiles, all22recorded identities exited, ownedscan
    empty/sourceunchanged12:17:47UTC. Receipt foundation-completion.json.
-6. D0 runner/auditor/adversarial tests now exist. Read
-   V0.0.11_D0_SHARED_RECORDING.md, boxing_evidence.py/boxing_audit.py and
-   scripts/{qualify_boxing_env,audit_boxing_env,supervise_boxing_recording}.py.
-   Local235tests passed189.93s and final34targetedtests12.96s. Protocol canonical
-   baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456 is
-   registered/public/anonymous-byte-verified. Dedicated xbabe3 checkout
-   /home/ubuntu/joxing/v011-recording-20261027, supervisor3596577/
-   start_ticks920622447; syncpassed,236testgate advancing12:30:53UTC. Require
-   full236Linux tests before bounded D0→audit→render→decode. Seven formal rows /
-   2,642plannedphysics; nested12kphysics/180srunner/300sallpostgate/64MiB/one
-   simulation owner, within whole v11hard120k/900s/256MiB/max2, firstlimit.
-   First preregistered1s untrained native-keyframe tape plus actual positive-force
-   overlapping reset stress/replay. No competition/training. Decode and visually
-   inspect both athletes/clock/diagnostic label; preserve all raw/checksum receipts.
+6. D0 frozen d2b582e/protocolbaec85f1completed7rows/2,642physics17.022529s,
+   all3exactreplays and audit, renderpassed; decodeMemoryError retained. All30
+   recorded identities exited, ownedscanempty/sourceunchanged at12:38:29UTC.
+   Fullraw57files/55,053,851bytes copied+SHAverified. Do not rerun physics.
+   New recording-video-qa-protocol.json canonical2df19cde freezes the isolated
+   bounded decoder repair. Read V0.0.11_D0_VIDEO_QA_REPAIR.md; public/anonymous
+   freeze before fresh Linux6test gate and exact old-video decode<=30s/8MiB/
+   0physics. Original evidence immutable. Inspect both athletes/clock/diagnostic
+   label, then honest D0results/public clip. No full v11tag. Conditional next
+   worker packet V0.0.11_D1_SENSOR_TIMING.md; D0findings take priority.
 7. Only the newly source-frozen recording protocol authorizes gated D0; the old
    foundation gate never auto-launches formal outcomes. Inspect capacity/unknown jobs afresh.
    Preserve all700muscles, third_party, frozen v10 and every failed attempt. Source

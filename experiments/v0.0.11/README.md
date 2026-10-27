@@ -1,3 +1,24 @@
+## D0physics/audit/render complete; original decode failed, bounded repair next
+
+All7registered rows completed2,642physics/17.022529s, all3replays exact. Independent
+saved-evidence audit passed.236Linux tests passed301.30s. MP4render completed,
+but decode failed with MemoryError at list(reader); original supervisorhalt is
+retained. No whole-D0pass yet. All30recorded identities exited, ownedscanempty,
+141source+288upstreamfiles verified; source unchanged/actualscene matches compiled
+model at12:38:29UTC. Full57file/55,053,851byte rawcopy independently verified.
+Source90101had0opponentglovetouches/points. Artificial overlap source had56positive
+glove touches, peak33.351243N (model),0.848797Ns summed per-glove impulse;
+replay52touches on the19step tail. These are diagnostic stress numbers, not punches.
+
+Repair source and tests are ready: bounded iterator never requests video length
+hint, retains only first/last copies, rejects27thframe, uses1decoderthread. Local
+9QA/recordingtests passed3.13s; Ruffpasses. New zero-physics protocol canonical
+2df19cdea2a530d1c9dd1ac84a044712944a15ba5cfbd75650a20e06453dae2e.
+Read V0.0.11_D0_VIDEO_QA_REPAIR.md. Public freeze/anonymous verification then fresh
+Linux6tests and bounded decode of the exact338,092byte video, no physical rerun.
+Original run immutable. No v11tag or learning claim. Conditional next packet
+V0.0.11_D1_SENSOR_TIMING.md closes the measured ideal-sensing gap after D0closure.
+
 ## Active bounded recording supervisor —2026-10-27 12:30UTC
 
 Public frozen source d2b582ee05041c21129b393945240b42e51153f8; protocol canonical

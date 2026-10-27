@@ -1,0 +1,430 @@
+{
+  "utc": "2026-10-27T12:38:29.339613+00:00",
+  "supervisor": {
+    "schema": "joxing-shared-recording-supervisor-v1",
+    "source_commit": "d2b582ee05041c21129b393945240b42e51153f8",
+    "protocol_sha256": "baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456",
+    "process": {
+      "pid": 3596577,
+      "parent_pid": 1,
+      "start_ticks": 920622447,
+      "state": "R"
+    },
+    "started_utc": "2026-10-27T12:30:30.802413+00:00",
+    "status": "halted",
+    "initial_capacity": {
+      "available_memory_bytes": 103675871232,
+      "disk_free_bytes": 35234631680,
+      "load": [
+        10.03466796875,
+        9.54052734375,
+        9.8681640625
+      ]
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3596599,
+          "parent_pid": 3596577,
+          "start_ticks": 920622512,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3596599,
+            "parent_pid": 3596577,
+            "start_ticks": 920622512,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 103735345152,
+          "disk_free_bytes": 35234344960,
+          "load": [
+            10.03466796875,
+            9.54052734375,
+            9.8681640625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 2.090855948626995,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3596797,
+          "parent_pid": 3596577,
+          "start_ticks": 920622745,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3596797,
+            "parent_pid": 3596577,
+            "start_ticks": 920622745,
+            "state": "S"
+          },
+          {
+            "pid": 3596803,
+            "parent_pid": 3596797,
+            "start_ticks": 920622753,
+            "state": "R"
+          },
+          {
+            "pid": 3603751,
+            "parent_pid": 3596803,
+            "start_ticks": 920630362,
+            "state": "S"
+          },
+          {
+            "pid": 3603752,
+            "parent_pid": 3596803,
+            "start_ticks": 920630363,
+            "state": "R"
+          },
+          {
+            "pid": 3603753,
+            "parent_pid": 3596803,
+            "start_ticks": 920630363,
+            "state": "R"
+          },
+          {
+            "pid": 3639643,
+            "parent_pid": 3596803,
+            "start_ticks": 920649658,
+            "state": "S"
+          },
+          {
+            "pid": 3639821,
+            "parent_pid": 3596803,
+            "start_ticks": 920649670,
+            "state": "R"
+          },
+          {
+            "pid": 3639826,
+            "parent_pid": 3596803,
+            "start_ticks": 920649670,
+            "state": "R"
+          },
+          {
+            "pid": 3645520,
+            "parent_pid": 3639826,
+            "start_ticks": 920650154,
+            "state": "R"
+          },
+          {
+            "pid": 3645521,
+            "parent_pid": 3639826,
+            "start_ticks": 920650154,
+            "state": "R"
+          },
+          {
+            "pid": 3645522,
+            "parent_pid": 3639826,
+            "start_ticks": 920650154,
+            "state": "R"
+          },
+          {
+            "pid": 3645524,
+            "parent_pid": 3639826,
+            "start_ticks": 920650154,
+            "state": "R"
+          },
+          {
+            "pid": 3645581,
+            "parent_pid": 3639821,
+            "start_ticks": 920650160,
+            "state": "S"
+          },
+          {
+            "pid": 3645583,
+            "parent_pid": 3639821,
+            "start_ticks": 920650160,
+            "state": "S"
+          },
+          {
+            "pid": 3645584,
+            "parent_pid": 3639821,
+            "start_ticks": 920650160,
+            "state": "S"
+          },
+          {
+            "pid": 3645585,
+            "parent_pid": 3639821,
+            "start_ticks": 920650160,
+            "state": "S"
+          },
+          {
+            "pid": 3650316,
+            "parent_pid": 3596803,
+            "start_ticks": 920651855,
+            "state": "R"
+          },
+          {
+            "pid": 3650317,
+            "parent_pid": 3596803,
+            "start_ticks": 920651855,
+            "state": "R"
+          },
+          {
+            "pid": 3650318,
+            "parent_pid": 3596803,
+            "start_ticks": 920651855,
+            "state": "R"
+          },
+          {
+            "pid": 3650319,
+            "parent_pid": 3596803,
+            "start_ticks": 920651855,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 95774425088,
+          "disk_free_bytes": 34994491392,
+          "load": [
+            11.69140625,
+            10.388671875,
+            10.10791015625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 304.71857584267855,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "D0",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/qualify_boxing_env.py",
+          "--protocol-sha256",
+          "baec85f1208721b66d8476dcfbd850afc82c471701aa7ec247ca60f24ea99456"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3651656,
+          "parent_pid": 3596577,
+          "start_ticks": 920653240,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3651656,
+            "parent_pid": 3596577,
+            "start_ticks": 920653240,
+            "state": "S"
+          },
+          {
+            "pid": 3651659,
+            "parent_pid": 3651656,
+            "start_ticks": 920653242,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 97466712064,
+          "disk_free_bytes": 34942857216,
+          "load": [
+            11.22265625,
+            10.36376953125,
+            10.1044921875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 18.790494123473763,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "audit",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/audit_boxing_env.py",
+          "--run",
+          "runs/v0.0.11/recording-proof-01"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3652981,
+          "parent_pid": 3596577,
+          "start_ticks": 920655142,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3652981,
+            "parent_pid": 3596577,
+            "start_ticks": 920655142,
+            "state": "S"
+          },
+          {
+            "pid": 3652984,
+            "parent_pid": 3652981,
+            "start_ticks": 920655145,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 97248485376,
+          "disk_free_bytes": 34939465728,
+          "load": [
+            10.9541015625,
+            10.33447265625,
+            10.09716796875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 10.479026140645146,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "render",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/render_bout_recording.py",
+          "--recording",
+          "runs/v0.0.11/recording-proof-01/source-90101/recording",
+          "--out",
+          "runs/v0.0.11/recording-proof-01/first-diagnostic.mp4",
+          "--raw-budget-bytes",
+          "67108864"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3653458,
+          "parent_pid": 3596577,
+          "start_ticks": 920656214,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3653458,
+            "parent_pid": 3596577,
+            "start_ticks": 920656214,
+            "state": "S"
+          },
+          {
+            "pid": 3653461,
+            "parent_pid": 3653458,
+            "start_ticks": 920656217,
+            "state": "R"
+          },
+          {
+            "pid": 3653824,
+            "parent_pid": 3653461,
+            "start_ticks": 920656766,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 97153327104,
+          "disk_free_bytes": 34939146240,
+          "load": [
+            11.21435546875,
+            10.40673828125,
+            10.123046875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 8.400533685460687,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "decode",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/validate_bout_render.py",
+          "--run",
+          "runs/v0.0.11/recording-proof-01"
+        ],
+        "status": "failed",
+        "reason": "Nonzero exit or live child",
+        "process": {
+          "pid": 3653930,
+          "parent_pid": 3596577,
+          "start_ticks": 920657077,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3653930,
+            "parent_pid": 3596577,
+            "start_ticks": 920657077,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 98393292800,
+          "disk_free_bytes": 34938728448,
+          "load": [
+            11.21435546875,
+            10.40673828125,
+            10.123046875
+          ]
+        },
+        "returncode": 1,
+        "wall_s": 2.099284203723073,
+        "live_recorded_processes": []
+      }
+    ],
+    "reason": "RuntimeError: decode failed: Nonzero exit or live child",
+    "finished_utc": "2026-10-27T12:36:18.781830+00:00",
+    "post_gate_wall_s": 40.47630344517529
+  },
+  "owned_scan": [],
+  "recorded_identities_exited": 30,
+  "source_files_verified": 141,
+  "upstream_files_verified": 288,
+  "source_diff_empty": true,
+  "actual_scene_matches_compiled_model": true,
+  "video": {
+    "bytes": 338092,
+    "sha256": "52dc16b53f1794a4bcef3082fd6ee16ce644e64935b5a5462b7cb999ad9ca2bf"
+  },
+  "formal_physics": 2642,
+  "conclusion": "7/7physics+audit+render passed; decode failed MemoryError; no whole D0pass"
+}

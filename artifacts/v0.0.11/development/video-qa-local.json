@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-27T12:40:07.253991+00:00",
+  "status": "local_regressions_passed",
+  "command": [
+    "rtk",
+    "proxy",
+    "uv",
+    "run",
+    "--project",
+    "experiments/v0.0.11/runtime",
+    "--locked",
+    "pytest",
+    "-q",
+    "tests/test_bout_render_validation.py",
+    "tests/test_bout_recording.py"
+  ],
+  "tests": "9 passed in 3.13s",
+  "repair": "Bound streaming iterator without length_hint; keep first/last owned copies, reject27th frame, force1decoderthread; no physics rerun",
+  "negative": "Original decode MemoryError retained under immutable d2b582e supervisor evidence"
+}
