@@ -1,0 +1,481 @@
+{
+  "max_rss_bytes": 373829632,
+  "new_physics": 0,
+  "optimizer_updates": 0,
+  "process": {
+    "pid": 3665470,
+    "start_ticks": 913666213
+  },
+  "protocol_sha256": "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+  "rows": [
+    {
+      "context_sha256": "8bf122c66e9b6476283e56249f4bfe0cc518e426d64f35dec447257f7bf5d9ae",
+      "encode_s": 7.0703625697642565,
+      "encoded_bytes": 13249547,
+      "encoded_sha256": "00f2dd721915950e39fb0fdd547f728f896c16764ec68ad86516f6c92cbd1a91",
+      "id": "source-71000-full-memory-roundtrip",
+      "independent_decode_s": 0.8070461582392454,
+      "logical": {
+        "commands": {
+          "bytes": 985600,
+          "dtype": "<f4",
+          "sha256": "5f1d2b2b1987b3b6edce18dfe07764b814b6a9350dda670c88131f7a910831d4",
+          "shape": [
+            176,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 477648,
+          "dtype": "<i8",
+          "sha256": "a225dde6dd851aa670ce88c803b81133b9e8fe0d4949d6db7225ba4fb0f7dec1",
+          "shape": [
+            29853,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 28168,
+          "dtype": "<i8",
+          "sha256": "843973383b82b4e2fe9772dc484d86c8302552952080d7954764a0effd42bc10",
+          "shape": [
+            3521
+          ]
+        },
+        "contacts": {
+          "bytes": 4298832,
+          "dtype": "<f8",
+          "sha256": "067fbed637ff787be61b108bb00ebc664141311c100cc507fb066f06bd0f46ec",
+          "shape": [
+            29853,
+            18
+          ]
+        },
+        "decision_engines": {
+          "bytes": 6413440,
+          "dtype": "<f8",
+          "sha256": "dcb825e1610d3c01b2d8f93710d2edb460af65b25e67be03e197de61ed642d13",
+          "shape": [
+            176,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 1408,
+          "dtype": "<i8",
+          "sha256": "772d60f696a4c9e2c37870bc7788d67abc483784f5a23622b12fd9d4bf0e0bc9",
+          "shape": [
+            176
+          ]
+        },
+        "end_qpos": {
+          "bytes": 4787200,
+          "dtype": "<f8",
+          "sha256": "5b0ec9e27d65e641e6350cd91b741ca2d73873ed4ad322c56298657fbd9e0fda",
+          "shape": [
+            3520,
+            170
+          ]
+        },
+        "excitation": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "5e642ff44da6bdad64dd4ad60a3681b1e4fca27aedd46f2263f28420c5be468c",
+          "shape": [
+            176,
+            2,
+            700
+          ]
+        },
+        "loads": {
+          "bytes": 168960,
+          "dtype": "<f8",
+          "sha256": "3c484b2ec0f5b364cce3bd5e0609412fea2a8dfecadbf42954c73c8ec56dd0fc",
+          "shape": [
+            3520,
+            2,
+            3
+          ]
+        },
+        "normalized": {
+          "bytes": 5070208,
+          "dtype": "<f4",
+          "sha256": "b897f85ef3436b09ef015784f6598a7f22ab044b4030f27ac0884ee581a87ecb",
+          "shape": [
+            176,
+            2,
+            3601
+          ]
+        },
+        "posture": {
+          "bytes": 112640,
+          "dtype": "<f8",
+          "sha256": "f638c2a8895e2e2b45e648e6611d6c7ea234828c8f14e2b4646099943874c47c",
+          "shape": [
+            3520,
+            2,
+            2
+          ]
+        },
+        "raw": {
+          "bytes": 5070208,
+          "dtype": "<f4",
+          "sha256": "4538f9bdd642b47a8ed1edde9885f023f34568747519be247bbba332601fb46c",
+          "shape": [
+            176,
+            2,
+            3601
+          ]
+        },
+        "ticks": {
+          "bytes": 28160,
+          "dtype": "<i8",
+          "sha256": "1acd97f4295177a40af05839ae603c697d85b588103dcd29badce8d1bc7cf402",
+          "shape": [
+            3520
+          ]
+        },
+        "video_states": {
+          "bytes": 3243160,
+          "dtype": "<f8",
+          "sha256": "e4fd30c5e1c4457a6db42505b09f1093670884404cbb90c2907d67783e868eec",
+          "shape": [
+            89,
+            4555
+          ]
+        },
+        "video_ticks": {
+          "bytes": 712,
+          "dtype": "<i8",
+          "sha256": "8de8eb9a748a62b8ecb6d7d3f4b2e521a644139caa731f2160a456ccad4f8d99",
+          "shape": [
+            89
+          ]
+        },
+        "witness_act": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "6d4caeb7f0c7ea0719e7bead839f2748b38bc19b008a95c2c330e625b6562b19",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_actuator_force": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "313baab3199ba2f43cd9972bd8da5d85cdefdcbec1a34f78372e23945dbc1192",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_actuator_length": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "d277c5a5bc32881739b2fb2804fd81e75c2b77207f203a9a3df1670210658c40",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_actuator_velocity": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "93d685f0409eb60d41be7bc8a37449b1f1654b4cbfcb13e59e8fed8bf0441fbc",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_key_xpos": {
+          "bytes": 59136,
+          "dtype": "<f8",
+          "sha256": "5de7549b1e17afd7eb6461976b9e8d27d09d28cecbacebe33143f540c0d6bb40",
+          "shape": [
+            176,
+            2,
+            7,
+            3
+          ]
+        },
+        "witness_qacc": {
+          "bytes": 239360,
+          "dtype": "<f8",
+          "sha256": "a0034609cc9703d8747a7c5266b88641642d84cfc4b608c1c9dd84b1a412953c",
+          "shape": [
+            176,
+            170
+          ]
+        },
+        "witness_qpos": {
+          "bytes": 239360,
+          "dtype": "<f8",
+          "sha256": "dacef8a6970716ab23f09df99e274a6fc8859b6abc847b76ad0e6eac41384f47",
+          "shape": [
+            176,
+            170
+          ]
+        },
+        "witness_qvel": {
+          "bytes": 239360,
+          "dtype": "<f8",
+          "sha256": "ce773b43f76e111631a2cc7994ba35e09463f70213d162e4025abea4cf0c1c6e",
+          "shape": [
+            176,
+            170
+          ]
+        }
+      },
+      "production_decode_s": 2.7784847002476454,
+      "reason": "pending",
+      "scope": "Full encoded corpus is a bounded in-memory intermediate; immutable original retained",
+      "status": "passed"
+    },
+    {
+      "complete": false,
+      "id": "source-71001-incomplete-recognition",
+      "original_members": [
+        "decision_ticks.npy",
+        "decision_engines.npy",
+        "raw.npy",
+        "normalized.npy",
+        "commands.npy",
+        "excitation.npy",
+        "ticks.npy"
+      ],
+      "padded_arrays": 0,
+      "reason": "pending",
+      "scope": "Only incomplete membership recognized; no physical arrays recovered or prefix values qualified",
+      "status": "passed"
+    },
+    {
+      "context_sha256": "5115bbf4fe141e2064f75656df41cb7f36114ab7e9f0e1911369682ad680160a",
+      "encoded_bytes": 312953,
+      "encoded_sha256": "ec46baa78fb881815149c35839b8c1378be5a8017c8f605fdf343b95eb139a57",
+      "id": "source-71000-prefix60-disk-roundtrip",
+      "logical": {
+        "commands": {
+          "bytes": 16800,
+          "dtype": "<f4",
+          "sha256": "0e532cc460fb07988c8eaaaed8edc8fe18002bef00953366939775044ece9e6e",
+          "shape": [
+            3,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 5568,
+          "dtype": "<i8",
+          "sha256": "2d59013bde5898fa96d2174780126000c65e008584520aa162fa1025053b7d60",
+          "shape": [
+            348,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 488,
+          "dtype": "<i8",
+          "sha256": "e70844c8693f1a7819c01f1adc9395e1d792d4e1f69ad49284bd6af28193b04f",
+          "shape": [
+            61
+          ]
+        },
+        "contacts": {
+          "bytes": 50112,
+          "dtype": "<f8",
+          "sha256": "be0af342c0a482b634ab8f19ad5bd82216fb4c7e5b5fa902453e26ebb04e0f88",
+          "shape": [
+            348,
+            18
+          ]
+        },
+        "decision_engines": {
+          "bytes": 109320,
+          "dtype": "<f8",
+          "sha256": "e3255623a3561be574754f782bf8fbd9a90ae95283218c975d0e35852b8cd7d8",
+          "shape": [
+            3,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 24,
+          "dtype": "<i8",
+          "sha256": "a2e8868f1477eb138eeb5d006e305d8bd83b9b09ee95991da4b92905e47d3047",
+          "shape": [
+            3
+          ]
+        },
+        "end_qpos": {
+          "bytes": 81600,
+          "dtype": "<f8",
+          "sha256": "ac373d9c877369a8d6d2ffd94fbc4da6c37e861e96b12dea225468930326546b",
+          "shape": [
+            60,
+            170
+          ]
+        },
+        "excitation": {
+          "bytes": 33600,
+          "dtype": "<f8",
+          "sha256": "c86eb54c13199622f6bfae58e27589243ca69dd1c849444f1800550163f1219b",
+          "shape": [
+            3,
+            2,
+            700
+          ]
+        },
+        "loads": {
+          "bytes": 2880,
+          "dtype": "<f8",
+          "sha256": "b8a29a1d8a0a63334b8e99d783884ed37eabde22a5fae86e5a933816416caffa",
+          "shape": [
+            60,
+            2,
+            3
+          ]
+        },
+        "normalized": {
+          "bytes": 86424,
+          "dtype": "<f4",
+          "sha256": "3232cab5f6d958f2d02aa97f91e7e9ca8eeb6fba7ef682a44a495086c01b8a29",
+          "shape": [
+            3,
+            2,
+            3601
+          ]
+        },
+        "posture": {
+          "bytes": 1920,
+          "dtype": "<f8",
+          "sha256": "91f9ba57cd3325e52c1924f1542b3448c9816a61360c3115dadea8ec746f2139",
+          "shape": [
+            60,
+            2,
+            2
+          ]
+        },
+        "raw": {
+          "bytes": 86424,
+          "dtype": "<f4",
+          "sha256": "817ae3681431ea7e9f9b413b749c138f44ccb061d31ee37f43064d4b8a56fe1b",
+          "shape": [
+            3,
+            2,
+            3601
+          ]
+        },
+        "ticks": {
+          "bytes": 480,
+          "dtype": "<i8",
+          "sha256": "d64e9aed6edf2c23e508bd7390a466ac5f0a690d011b258aeafeebd109578ffd",
+          "shape": [
+            60
+          ]
+        },
+        "video_states": {
+          "bytes": 72880,
+          "dtype": "<f8",
+          "sha256": "523a76ba5685b09741440893fcf98e029a0baadde6847b7e02da9027640d5578",
+          "shape": [
+            2,
+            4555
+          ]
+        },
+        "video_ticks": {
+          "bytes": 16,
+          "dtype": "<i8",
+          "sha256": "8649ca6be427f9e99454a4e99f8adc84b45e7e0410dc44eefb22284e477476b2",
+          "shape": [
+            2
+          ]
+        },
+        "witness_act": {
+          "bytes": 33600,
+          "dtype": "<f8",
+          "sha256": "a2025c3e0cc3bf9d13f66c82239c042eec376f0f46c9d4d2fc972fcc155d4378",
+          "shape": [
+            3,
+            1400
+          ]
+        },
+        "witness_actuator_force": {
+          "bytes": 33600,
+          "dtype": "<f8",
+          "sha256": "98a2961733a596b8c6302a31d382d571d76ee913fd6cf45d0f50d4e2b65310ca",
+          "shape": [
+            3,
+            1400
+          ]
+        },
+        "witness_actuator_length": {
+          "bytes": 33600,
+          "dtype": "<f8",
+          "sha256": "65baac9e0891606f5f2ff9dde4eec349afc1a15d56164d97844110df3c23987b",
+          "shape": [
+            3,
+            1400
+          ]
+        },
+        "witness_actuator_velocity": {
+          "bytes": 33600,
+          "dtype": "<f8",
+          "sha256": "6f3ab653e66e209eb230da9c68df46827951e5fdfc08dc84812359e1dbc84540",
+          "shape": [
+            3,
+            1400
+          ]
+        },
+        "witness_key_xpos": {
+          "bytes": 1008,
+          "dtype": "<f8",
+          "sha256": "0abbc378531fdeeb60e4e41edd56838064228ab4573e98346517b378a5214fa4",
+          "shape": [
+            3,
+            2,
+            7,
+            3
+          ]
+        },
+        "witness_qacc": {
+          "bytes": 4080,
+          "dtype": "<f8",
+          "sha256": "3889ff2be346af6fc0cb957687abd53cce2de41d2eaba2e927918574121334af",
+          "shape": [
+            3,
+            170
+          ]
+        },
+        "witness_qpos": {
+          "bytes": 4080,
+          "dtype": "<f8",
+          "sha256": "3e677921a71ac90af0bd4716e4d8f35fc7edb82a2ce384e704ff592bdff5d0a7",
+          "shape": [
+            3,
+            170
+          ]
+        },
+        "witness_qvel": {
+          "bytes": 4080,
+          "dtype": "<f8",
+          "sha256": "273e836ac2faf49fd24b0a990f93c8890137c16ac8e01523737fb4df82c92958",
+          "shape": [
+            3,
+            170
+          ]
+        }
+      },
+      "reason": "pending",
+      "scope": "Stored exact60interval view of original; no new simulation",
+      "status": "passed"
+    }
+  ],
+  "schema": "joxing-motor-codec-qualification-result-v1",
+  "source_commit": "92ef8d05f0d56664129de52fc84ad3589f2314aa",
+  "status": "passed",
+  "wall_s": 12.981274131685495,
+  "whole_motor_proof_passed": false
+}

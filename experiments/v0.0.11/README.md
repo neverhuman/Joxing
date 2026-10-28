@@ -1,3 +1,32 @@
+# Codec qualified; next task is contact-to-score diagnosis — 2026-10-28
+
+[Native codec results](../../docs/MOTOR_CODEC_RESULTS.md): frozen92ef8d05/protocol4874406b
+passes1,088Linux tests plus the one registered strict referee-alias xfail.
+All3 codec rows pass; both decoders reconstruct all23 original arrays exactly.
+Stored corpus19,210,825→13,249,547bytes (31.03% reduction); peak374,403,072bytes
+under unchanged512MiB. Postgate28.907982s;0new physics/optimization/boxing.
+Independent573-file/exit audit and14-file516,935byte full raw transfer pass.
+Every earlier failed/not_run attempt remains. Native whole motor proof is FALSE.
+
+No active owned jobs; finished root is read-only:
+/home/ubuntu/joxing/native-motor-codec-bindings-repair-20261028.
+Native physics12,430; conservative remaining33,194,231raw bytes/57.726918postgate
+seconds. Four source-sized continuation tapes alone project52,998,188bytes, so
+no new native physical continuation is launched and no failed cap is increased.
+No new release tag; diagnostic Grokbot tags remain separate.
+
+NEXTREADY: [SCORED_CONTACT_DIAGNOSTIC_PACKET.md](../../docs/SCORED_CONTACT_DIAGNOSTIC_PACKET.md).
+Start with zero-physics inventory and pure observer tests, one integration owner,
+no Grokbot/referee/scene schema edits or overlapping writer. The published v21
+summary has48primary rows but no staged contacts/onset/direct impulses; its one
+0–0 points replay cannot identify the failed predicate. Inventory receipt:
+artifacts/v0.0.11/development/scoring-evidence-summary-inventory-01.json.
+Use existing native D0/D1 staged traces only as schema/accounting controls.
+Publish/freeze any new formal protocol/source before outcomes; full fresh source
+qualification precedes a formal new-source run. No duplicate diagnostic-lane
+v22 run or expanded self-play sweep. Native contact/rules/motor/replay gates and
+causal opponent-history learning remain prerequisites for competitive claims.
+
 # Active binding repair and independent diagnostic findings — 2026-10-28 14:52 UTC
 
 The repair is running on xbabe1 in

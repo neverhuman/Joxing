@@ -1,0 +1,40 @@
+{
+  "schema": "joxing-scoring-evidence-inventory-v1",
+  "scope": "Retrospective published summary inventory; no new simulation or scoring feasibility result",
+  "input_path": "grokbot/redteam/data/cycle-0029-mirror-opponent-gate-summary.json",
+  "input_sha256": "aee0d4c188a1b9b9bea31e9f3f0eb9f8328a844c82713f048949dc208a68c8a6",
+  "summary_source_commit": "5b3cf20029172dc0fa73f4afb01cb81259e18992",
+  "summary_source_tree": "a75b705dbb47",
+  "primary_rows": 48,
+  "primary_row_keys": [
+    "blocked",
+    "invalid",
+    "no_contest",
+    "opponent_scoring_strike_ticks",
+    "opponent_strike_ticks",
+    "scoring_strike_ticks",
+    "seed",
+    "side",
+    "strike_ticks",
+    "tick",
+    "utility"
+  ],
+  "reported_points_replay": {
+    "replayed": "primary seed 10001 side A (a draw)",
+    "tick": 3000,
+    "referee_points": [
+      0,
+      0
+    ],
+    "candidate_hit_ticks": 50,
+    "opponent_hit_ticks": 50
+  },
+  "has_per_interval_staged_touches": false,
+  "has_per_encounter_onset_eligibility": false,
+  "has_per_zone_direct_impulses": false,
+  "has_per_game_official_points_in_primary_rows": false,
+  "verdict": "NOT_EXPLAINABLE_FROM_THIS_SAVED_SUMMARY",
+  "cause_of_zero_points": "UNDETERMINED",
+  "new_physics": 0,
+  "next": "Inventory existing native D0/D1 staged traces as schema-positive controls; do not rerun or infer missing v21 contacts."
+}

@@ -1,0 +1,353 @@
+{
+  "schema": "joxing-motor-codec-supervisor-v1",
+  "source_commit": "92ef8d05f0d56664129de52fc84ad3589f2314aa",
+  "protocol_sha256": "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+  "process": {
+    "pid": 3497436,
+    "parent_pid": 1,
+    "start_ticks": 913593535,
+    "state": "R"
+  },
+  "started_utc": "2026-10-28T14:51:26.136782+00:00",
+  "status": "completed",
+  "initial_capacity": {
+    "available_memory_bytes": 33098416128,
+    "disk_free_bytes": 266678018048,
+    "load": [
+      8.74853515625,
+      10.5791015625,
+      9.60009765625
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 3497528,
+        "parent_pid": 3497436,
+        "start_ticks": 913593639,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 3497528,
+          "parent_pid": 3497436,
+          "start_ticks": 913593639,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 33070948352,
+        "disk_free_bytes": 266671853568,
+        "load": [
+          8.74853515625,
+          10.5791015625,
+          9.60009765625
+        ],
+        "owned_raw_bytes": 55
+      },
+      "returncode": 0,
+      "wall_s": 2.189980074763298,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "tests",
+        "grokbot/tests"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 3497611,
+        "parent_pid": 3497436,
+        "start_ticks": 913593877,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 3497611,
+          "parent_pid": 3497436,
+          "start_ticks": 913593877,
+          "state": "S"
+        },
+        {
+          "pid": 3497614,
+          "parent_pid": 3497611,
+          "start_ticks": 913593880,
+          "state": "R"
+        },
+        {
+          "pid": 3529163,
+          "parent_pid": 3497614,
+          "start_ticks": 913605411,
+          "state": "S"
+        },
+        {
+          "pid": 3529164,
+          "parent_pid": 3497614,
+          "start_ticks": 913605411,
+          "state": "R"
+        },
+        {
+          "pid": 3529165,
+          "parent_pid": 3497614,
+          "start_ticks": 913605411,
+          "state": "Z"
+        },
+        {
+          "pid": 3587281,
+          "parent_pid": 3497614,
+          "start_ticks": 913640303,
+          "state": "S"
+        },
+        {
+          "pid": 3587302,
+          "parent_pid": 3497614,
+          "start_ticks": 913640327,
+          "state": "R"
+        },
+        {
+          "pid": 3587305,
+          "parent_pid": 3497614,
+          "start_ticks": 913640327,
+          "state": "R"
+        },
+        {
+          "pid": 3587903,
+          "parent_pid": 3587305,
+          "start_ticks": 913641147,
+          "state": "R"
+        },
+        {
+          "pid": 3587904,
+          "parent_pid": 3587305,
+          "start_ticks": 913641147,
+          "state": "R"
+        },
+        {
+          "pid": 3587905,
+          "parent_pid": 3587305,
+          "start_ticks": 913641147,
+          "state": "R"
+        },
+        {
+          "pid": 3587906,
+          "parent_pid": 3587305,
+          "start_ticks": 913641147,
+          "state": "R"
+        },
+        {
+          "pid": 3587907,
+          "parent_pid": 3587302,
+          "start_ticks": 913641148,
+          "state": "R"
+        },
+        {
+          "pid": 3587908,
+          "parent_pid": 3587302,
+          "start_ticks": 913641148,
+          "state": "R"
+        },
+        {
+          "pid": 3587909,
+          "parent_pid": 3587302,
+          "start_ticks": 913641148,
+          "state": "R"
+        },
+        {
+          "pid": 3587910,
+          "parent_pid": 3587302,
+          "start_ticks": 913641148,
+          "state": "R"
+        },
+        {
+          "pid": 3591865,
+          "parent_pid": 3497614,
+          "start_ticks": 913643656,
+          "state": "R"
+        },
+        {
+          "pid": 3591866,
+          "parent_pid": 3497614,
+          "start_ticks": 913643656,
+          "state": "R"
+        },
+        {
+          "pid": 3591867,
+          "parent_pid": 3497614,
+          "start_ticks": 913643656,
+          "state": "R"
+        },
+        {
+          "pid": 3591868,
+          "parent_pid": 3497614,
+          "start_ticks": 913643656,
+          "state": "R"
+        },
+        {
+          "pid": 3604820,
+          "parent_pid": 3497614,
+          "start_ticks": 913650218,
+          "state": "R"
+        },
+        {
+          "pid": 3604834,
+          "parent_pid": 3497614,
+          "start_ticks": 913650227,
+          "state": "R"
+        },
+        {
+          "pid": 3620989,
+          "parent_pid": 3497614,
+          "start_ticks": 913655480,
+          "state": "S"
+        },
+        {
+          "pid": 3621157,
+          "parent_pid": 3497614,
+          "start_ticks": 913655489,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 33562087424,
+        "disk_free_bytes": 274844389376,
+        "load": [
+          7.5576171875,
+          8.50830078125,
+          8.95849609375
+        ],
+        "owned_raw_bytes": 10093
+      },
+      "returncode": 0,
+      "wall_s": 723.1470621638,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "codec",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_motor_evidence_codec.py",
+        "--protocol-sha256",
+        "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+        "--source-sha",
+        "92ef8d05f0d56664129de52fc84ad3589f2314aa"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 3665461,
+        "parent_pid": 3497436,
+        "start_ticks": 913666209,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 3665461,
+          "parent_pid": 3497436,
+          "start_ticks": 913666209,
+          "state": "S"
+        },
+        {
+          "pid": 3665470,
+          "parent_pid": 3665461,
+          "start_ticks": 913666213,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 37531627520,
+        "disk_free_bytes": 274834710528,
+        "load": [
+          7.3046875,
+          8.40185546875,
+          8.91552734375
+        ],
+        "owned_raw_bytes": 90014
+      },
+      "returncode": 0,
+      "wall_s": 15.367473967373371,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_motor_evidence_codec.py",
+        "--protocol-sha256",
+        "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+        "--source-sha",
+        "92ef8d05f0d56664129de52fc84ad3589f2314aa"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 3668177,
+        "parent_pid": 3497436,
+        "start_ticks": 913667767,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 3668177,
+          "parent_pid": 3497436,
+          "start_ticks": 913667767,
+          "state": "S"
+        },
+        {
+          "pid": 3668180,
+          "parent_pid": 3668177,
+          "start_ticks": 913667771,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 36809736192,
+        "disk_free_bytes": 274834325504,
+        "load": [
+          7.2490234375,
+          8.33349609375,
+          8.884765625
+        ],
+        "owned_raw_bytes": 409826
+      },
+      "returncode": 0,
+      "wall_s": 13.14754243567586,
+      "live_recorded_processes": []
+    }
+  ],
+  "finished_utc": "2026-10-28T15:04:00.931462+00:00",
+  "post_gate_wall_s": 28.907982103526592
+}

@@ -33,6 +33,19 @@ If the positive control fails, conclude adapter/rules diagnosis is needed and st
 athlete evaluation. If it passes but athletes do not score, conclude a motor-to-
 legal-strike gap; do not call it a scoring bug or respond with more self-play.
 
+## Existing inputs inventoried after codec completion
+
+Native source90101 trace has1,000intervals and no glove touches. The separately
+named contact-stress90104 trace has20intervals,56 positive-force touches and
+four zero-point events. These are existing diagnostic controls, not v21 or
+natural punch outcomes. Paths/SHA/fields/points and the earlier mistaken
+`contract`-root read are retained in
+`artifacts/v0.0.11/development/scoring-evidence-native-inventory-01.json`.
+Both have actual staged glove/physical-evidence fields. Read their linked
+snapshot/contract before formal use. Inspect their saved guard-only/no-direct
+impulses as a useful rejection control; do not turn it into a strike success.
+The v21 summary inventory explicitly records missing onset/direct-impulse data.
+
 ## Read first, in order
 
 1. AGENTS.md, /Users/bentaylor/.codex/RTK.md, README.md and docs/GAME.md.

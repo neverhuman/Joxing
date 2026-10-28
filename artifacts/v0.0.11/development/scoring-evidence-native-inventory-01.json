@@ -1,0 +1,237 @@
+{
+  "schema": "joxing-score-native-evidence-inventory-v1",
+  "observed_utc": "2026-10-28T15:21:49Z",
+  "status": "inventoried",
+  "earlier_read_attempt": {
+    "status": "failed",
+    "error": "KeyError: contract (assumed trace root field; actual contract resides in separate snapshot metadata)",
+    "new_physics": 0,
+    "formal_attempt": false
+  },
+  "rows": [
+    {
+      "path": "runs/v0.0.11/recording-evidence-01/proof/source-90101/trace.json",
+      "bytes": 5215615,
+      "sha256": "79b499731a4b945aec80a2dcb30d76cd837e3fb5b1ce89a7aedc1cf11a8b8cba",
+      "trace_schema": "joxing-shared-evidence-v1",
+      "root_keys": [
+        "contact_columns",
+        "decisions",
+        "intervals",
+        "rngs_before",
+        "schema",
+        "state_sha256",
+        "transition"
+      ],
+      "intervals": 1000,
+      "interval_keys": [
+        "events",
+        "gloves",
+        "tick"
+      ],
+      "glove_intervals": 4000,
+      "touches": 0,
+      "positive_force_touches": 0,
+      "touch_fields": [],
+      "physical_evidence_present": true,
+      "events": 0,
+      "event_points": 0,
+      "transition": {
+        "bootstrap_mask": {
+          "A": 0.0,
+          "B": 0.0
+        },
+        "info": {
+          "classification": "diagnostic candidate points, not qualified boxing",
+          "competitive_ready": false,
+          "contract_hash": "58f96173e980a14723523c6f6ce0476ca180b122577ad6f5b8c35764a90d3837",
+          "controller_bundles": {
+            "A": "e258421ac178b81f051e48b4cf6b4d898e3d0de0da76996594744e17d0937ee4",
+            "B": "797a750657417ca09229b679a842aa7780b3d80d4ef37a3e5827aad3606b1965"
+          },
+          "end_reason": "diagnostic_bell",
+          "events": [],
+          "game_id": "diagnostic-90101-1",
+          "gates_pending": [
+            "shell fit and full surface coverage",
+            "explicit self-contact pairs",
+            "native collider overlap review",
+            "stable guard reset bank",
+            "free-root singularity study",
+            "calibration",
+            "foul/fall/exit adjudication"
+          ],
+          "invalid_reason": null,
+          "points": [
+            0,
+            0
+          ],
+          "tick": 1000
+        },
+        "rewards": {
+          "A": 0.0,
+          "B": 0.0
+        },
+        "terminated": {
+          "A": true,
+          "B": true
+        },
+        "trace_mask": {
+          "A": 0.0,
+          "B": 0.0
+        },
+        "truncated": {
+          "A": false,
+          "B": false
+        }
+      },
+      "scope": "Existing native D0 diagnostic trace; not a v21 contact tape or unassisted legal-striking qualification"
+    },
+    {
+      "path": "runs/v0.0.11/recording-evidence-01/proof/contact-source-90104/trace.json",
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408",
+      "trace_schema": "joxing-shared-evidence-v1",
+      "root_keys": [
+        "contact_columns",
+        "decisions",
+        "intervals",
+        "rngs_before",
+        "schema",
+        "state_sha256",
+        "transition"
+      ],
+      "intervals": 20,
+      "interval_keys": [
+        "events",
+        "gloves",
+        "tick"
+      ],
+      "glove_intervals": 80,
+      "touches": 80,
+      "positive_force_touches": 56,
+      "touch_fields": [
+        "active_speed_mps",
+        "approach_mps",
+        "face_cos",
+        "normal_force_N",
+        "sample_id",
+        "striking_face",
+        "zone"
+      ],
+      "physical_evidence_present": true,
+      "events": 4,
+      "event_points": 0,
+      "transition": {
+        "bootstrap_mask": {
+          "A": 0.0,
+          "B": 0.0
+        },
+        "info": {
+          "classification": "diagnostic candidate points, not qualified boxing",
+          "competitive_ready": false,
+          "contract_hash": "c11ff9d9d79f3a3722c621cb86fd8dedcae3a2555469a61681834deb773256f6",
+          "controller_bundles": {
+            "A": "e258421ac178b81f051e48b4cf6b4d898e3d0de0da76996594744e17d0937ee4",
+            "B": "797a750657417ca09229b679a842aa7780b3d80d4ef37a3e5827aad3606b1965"
+          },
+          "end_reason": "diagnostic_bell",
+          "events": [
+            {
+              "direct_impulses_Ns": {},
+              "event_id": "diagnostic-90104-1/A_glove_l/1",
+              "finalized_tick": 20,
+              "guard_window_impulse_Ns": 0.2117340382333063,
+              "onset_eligible": {},
+              "onset_tick": 0,
+              "peak_force_N": 33.35124307847276,
+              "points": 0,
+              "reason": "bell",
+              "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+              "window_impulse_Ns": 0.2117340382333063,
+              "zone": null
+            },
+            {
+              "direct_impulses_Ns": {},
+              "event_id": "diagnostic-90104-1/A_glove_r/1",
+              "finalized_tick": 20,
+              "guard_window_impulse_Ns": 0.21266461310180027,
+              "onset_eligible": {},
+              "onset_tick": 0,
+              "peak_force_N": 33.351243078473644,
+              "points": 0,
+              "reason": "bell",
+              "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+              "window_impulse_Ns": 0.21266461310180027,
+              "zone": null
+            },
+            {
+              "direct_impulses_Ns": {},
+              "event_id": "diagnostic-90104-1/B_glove_l/1",
+              "finalized_tick": 20,
+              "guard_window_impulse_Ns": 0.21266461310180027,
+              "onset_eligible": {},
+              "onset_tick": 0,
+              "peak_force_N": 33.351243078473644,
+              "points": 0,
+              "reason": "bell",
+              "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+              "window_impulse_Ns": 0.21266461310180027,
+              "zone": null
+            },
+            {
+              "direct_impulses_Ns": {},
+              "event_id": "diagnostic-90104-1/B_glove_r/1",
+              "finalized_tick": 20,
+              "guard_window_impulse_Ns": 0.2117340382333063,
+              "onset_eligible": {},
+              "onset_tick": 0,
+              "peak_force_N": 33.35124307847276,
+              "points": 0,
+              "reason": "bell",
+              "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+              "window_impulse_Ns": 0.2117340382333063,
+              "zone": null
+            }
+          ],
+          "game_id": "diagnostic-90104-1",
+          "gates_pending": [
+            "shell fit and full surface coverage",
+            "explicit self-contact pairs",
+            "native collider overlap review",
+            "stable guard reset bank",
+            "free-root singularity study",
+            "calibration",
+            "foul/fall/exit adjudication"
+          ],
+          "invalid_reason": null,
+          "points": [
+            0,
+            0
+          ],
+          "tick": 20
+        },
+        "rewards": {
+          "A": 0.0,
+          "B": 0.0
+        },
+        "terminated": {
+          "A": true,
+          "B": true
+        },
+        "trace_mask": {
+          "A": 0.0,
+          "B": 0.0
+        },
+        "truncated": {
+          "A": false,
+          "B": false
+        }
+      },
+      "scope": "Existing native D0 diagnostic trace; not a v21 contact tape or unassisted legal-striking qualification"
+    }
+  ],
+  "new_physics": 0,
+  "new_arrays_written": false,
+  "next": "Use declared source/contact traces for zero-physics explanation fixtures; validate linked snapshot/contract before formal scoring audit."
+}

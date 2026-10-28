@@ -1,0 +1,247 @@
+{
+  "schema": "joxing-codec-bindings-transfer-v1",
+  "status": "passed",
+  "observed_utc": "2026-10-28T15:18:15Z",
+  "files": 14,
+  "bytes": 516935,
+  "archive_bytes": 284721,
+  "archive_sha256": "ca848499dd5acb3a3f0151e1ba050bb1db99a10c91c385310c49be6ae18f2239",
+  "all_names_sizes_sha_verified": true,
+  "original_logical_arrays": [
+    {
+      "array": "commands",
+      "dtype": "<f4",
+      "shape": [
+        176,
+        2,
+        700
+      ],
+      "bytes": 985600,
+      "sha256": "5f1d2b2b1987b3b6edce18dfe07764b814b6a9350dda670c88131f7a910831d4"
+    },
+    {
+      "array": "contact_geoms",
+      "dtype": "<i8",
+      "shape": [
+        29853,
+        2
+      ],
+      "bytes": 477648,
+      "sha256": "a225dde6dd851aa670ce88c803b81133b9e8fe0d4949d6db7225ba4fb0f7dec1"
+    },
+    {
+      "array": "contact_offsets",
+      "dtype": "<i8",
+      "shape": [
+        3521
+      ],
+      "bytes": 28168,
+      "sha256": "843973383b82b4e2fe9772dc484d86c8302552952080d7954764a0effd42bc10"
+    },
+    {
+      "array": "contacts",
+      "dtype": "<f8",
+      "shape": [
+        29853,
+        18
+      ],
+      "bytes": 4298832,
+      "sha256": "067fbed637ff787be61b108bb00ebc664141311c100cc507fb066f06bd0f46ec"
+    },
+    {
+      "array": "decision_engines",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        4555
+      ],
+      "bytes": 6413440,
+      "sha256": "dcb825e1610d3c01b2d8f93710d2edb460af65b25e67be03e197de61ed642d13"
+    },
+    {
+      "array": "decision_ticks",
+      "dtype": "<i8",
+      "shape": [
+        176
+      ],
+      "bytes": 1408,
+      "sha256": "772d60f696a4c9e2c37870bc7788d67abc483784f5a23622b12fd9d4bf0e0bc9"
+    },
+    {
+      "array": "end_qpos",
+      "dtype": "<f8",
+      "shape": [
+        3520,
+        170
+      ],
+      "bytes": 4787200,
+      "sha256": "5b0ec9e27d65e641e6350cd91b741ca2d73873ed4ad322c56298657fbd9e0fda"
+    },
+    {
+      "array": "excitation",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        2,
+        700
+      ],
+      "bytes": 1971200,
+      "sha256": "5e642ff44da6bdad64dd4ad60a3681b1e4fca27aedd46f2263f28420c5be468c"
+    },
+    {
+      "array": "loads",
+      "dtype": "<f8",
+      "shape": [
+        3520,
+        2,
+        3
+      ],
+      "bytes": 168960,
+      "sha256": "3c484b2ec0f5b364cce3bd5e0609412fea2a8dfecadbf42954c73c8ec56dd0fc"
+    },
+    {
+      "array": "normalized",
+      "dtype": "<f4",
+      "shape": [
+        176,
+        2,
+        3601
+      ],
+      "bytes": 5070208,
+      "sha256": "b897f85ef3436b09ef015784f6598a7f22ab044b4030f27ac0884ee581a87ecb"
+    },
+    {
+      "array": "posture",
+      "dtype": "<f8",
+      "shape": [
+        3520,
+        2,
+        2
+      ],
+      "bytes": 112640,
+      "sha256": "f638c2a8895e2e2b45e648e6611d6c7ea234828c8f14e2b4646099943874c47c"
+    },
+    {
+      "array": "raw",
+      "dtype": "<f4",
+      "shape": [
+        176,
+        2,
+        3601
+      ],
+      "bytes": 5070208,
+      "sha256": "4538f9bdd642b47a8ed1edde9885f023f34568747519be247bbba332601fb46c"
+    },
+    {
+      "array": "ticks",
+      "dtype": "<i8",
+      "shape": [
+        3520
+      ],
+      "bytes": 28160,
+      "sha256": "1acd97f4295177a40af05839ae603c697d85b588103dcd29badce8d1bc7cf402"
+    },
+    {
+      "array": "video_states",
+      "dtype": "<f8",
+      "shape": [
+        89,
+        4555
+      ],
+      "bytes": 3243160,
+      "sha256": "e4fd30c5e1c4457a6db42505b09f1093670884404cbb90c2907d67783e868eec"
+    },
+    {
+      "array": "video_ticks",
+      "dtype": "<i8",
+      "shape": [
+        89
+      ],
+      "bytes": 712,
+      "sha256": "8de8eb9a748a62b8ecb6d7d3f4b2e521a644139caa731f2160a456ccad4f8d99"
+    },
+    {
+      "array": "witness_act",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        1400
+      ],
+      "bytes": 1971200,
+      "sha256": "6d4caeb7f0c7ea0719e7bead839f2748b38bc19b008a95c2c330e625b6562b19"
+    },
+    {
+      "array": "witness_actuator_force",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        1400
+      ],
+      "bytes": 1971200,
+      "sha256": "313baab3199ba2f43cd9972bd8da5d85cdefdcbec1a34f78372e23945dbc1192"
+    },
+    {
+      "array": "witness_actuator_length",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        1400
+      ],
+      "bytes": 1971200,
+      "sha256": "d277c5a5bc32881739b2fb2804fd81e75c2b77207f203a9a3df1670210658c40"
+    },
+    {
+      "array": "witness_actuator_velocity",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        1400
+      ],
+      "bytes": 1971200,
+      "sha256": "93d685f0409eb60d41be7bc8a37449b1f1654b4cbfcb13e59e8fed8bf0441fbc"
+    },
+    {
+      "array": "witness_key_xpos",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        2,
+        7,
+        3
+      ],
+      "bytes": 59136,
+      "sha256": "5de7549b1e17afd7eb6461976b9e8d27d09d28cecbacebe33143f540c0d6bb40"
+    },
+    {
+      "array": "witness_qacc",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        170
+      ],
+      "bytes": 239360,
+      "sha256": "a0034609cc9703d8747a7c5266b88641642d84cfc4b608c1c9dd84b1a412953c"
+    },
+    {
+      "array": "witness_qpos",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        170
+      ],
+      "bytes": 239360,
+      "sha256": "dacef8a6970716ab23f09df99e274a6fc8859b6abc847b76ad0e6eac41384f47"
+    },
+    {
+      "array": "witness_qvel",
+      "dtype": "<f8",
+      "shape": [
+        176,
+        170
+      ],
+      "bytes": 239360,
+      "sha256": "ce773b43f76e111631a2cc7994ba35e09463f70213d162e4025abea4cf0c1c6e"
+    }
+  ],
+  "new_physics": 0
+}
