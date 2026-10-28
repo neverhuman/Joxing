@@ -1,0 +1,20 @@
+{
+  "status": "rejected_before_publication",
+  "new_physics": 0,
+  "formal_corpus_rows": [
+    {
+      "id": "source-71000-full-memory-roundtrip",
+      "status": "not_run"
+    },
+    {
+      "id": "source-71001-incomplete-recognition",
+      "status": "not_run"
+    },
+    {
+      "id": "source-71000-prefix60-disk-roundtrip",
+      "status": "not_run"
+    }
+  ],
+  "reason": "Ruff fixture-injection noqa attached to final formatted argument rather than proof argument; no runtime or codec semantic failure; all113targeted tests passed",
+  "protocol_sha256": "5b39c3fb0dc9444241db9a85de8aaaaa9bc4629e73ed7a48c7be2f0afd74cc43"
+}

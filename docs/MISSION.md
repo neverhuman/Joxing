@@ -1,64 +1,54 @@
-# Current mission: qualify smaller lossless motor evidence, zero new physics
+# Current native mission: execute the registered zero-physics codec qualification
 
-The first fixed shared pretrained pair now walks upright for3.52s in the
-[recording](../artifacts/v0.0.11/shared-motor-physical/first-pretrained-trial.mp4).
-No active owned jobs remain. Read **SHARED_MOTOR_PHYSICAL_RESULTS.md**, then
-**SHARED_MOTOR_STORAGE_CONTINUATION_PACKET.md**. This is the exact next worker-ready
-mission; do not repeat an old version or the failed five-row physical run.
+Read AGENTS/RTK, README/GAME/SPEC_REVIEW, STATUS/IMPLEMENTATION, then
+MOTOR_CODEC_QUALIFICATION_PACKET.md and SHARED_MOTOR_STORAGE_CONTINUATION_PACKET.md.
+The pretrained walking first trial and all negative source/attempts remain intact.
+The interrupted codec implementation now passes48checks/113targeted checks/Ruff.
+Protocol bfad4876 is ready for public freeze and final source-host qualification;
+no actual trained-corpus codec result or new physical trial exists yet.
 
-Source71000measurement/scalar-policy audit passes; full four-world/replay gate
-remains FALSE after source71001's storage failure. Complete raw/temporaries,
-failed bootstrap and all10attempt slots remain. Frozen physicalsourcec9a2b968,
-protocol7caaded4,861Linux passes plus the one known strict referee-alias xfail.
-All506source/input hashes, standard NumPy23array audit, process exits and full
-raw transfers pass. Display-onlysource1db2267/protocol7d671086executes0physics;
-89frames decode, first/middle/last were visually checked. Walking is not boxing.
+Resumed the interrupted native evidence work. New lossless codec keeps measured
+solver caches, physical positions/contacts/posture/support and exact logical
+array hashes; it removes six byte-verified derived copies and applies temporal
+byte-XOR/byte-plane compression. Independent decoder shares no production
+unpack/recipe functions.48codec checks pass9.07s;113targeted codec/storage/motor
+checks pass18.09s; Ruff passes. Full saved trained corpus has NOTbeen encoded or
+qualified yet. No physics or actor calls added; native proof ledger stays12430.
 
-## Ready bounded work
+Frozen protocol candidate bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3
+binds three rows: full first-source in-memory roundtrip, seven-member incomplete
+source2recognition (no padding/recovery), first60interval persisted shard. New
+source/inputs:254source +288upstream +3reference +22raw files. Proposed final
+source-host gate1087passes +exact existing strict referee-alias xfail; then
+60scodec +30sindependent second-process audit,90spostgate/512MiB RSS/4MiBraw,
+one thread/0simulation workers. Immutable original/full failures remain.
+Tail-reference storage and physical continuation are NOTpart of this format.
 
-Implement the disjoint motor_evidence_codec.py and independent corpus qualifier/
-auditor/tests described in the continuation packet. Work only from retained
-source1full/source2partial data. Candidate exact recipes remove redundant raw/
-normalized inputs, excitation and engine-bound witness copies; retain actual
-solver-phase caches, all physical qpos/contacts/posture/support and typed hashes.
-Optional uint XOR/tail references must reconstruct every logical byte, with
-bounded allocations/dependencies and the same pre-write/fault controls. Never
-replace actual cached acceleration/forces with a new mj_forward result.
+Merged incoming47files/18commits through70f0739 without modifying CHANGELOG or
+grokbot. Those separate diagnostic v0.0.12–v0.0.14 missions exist; tags v11/v12/v13
+already exist at external owner request. They do NOTcomplete the original native
+v11motor/replay/game battery. Latest lane reports0valid games/strikes. This codec
+continues the ORIGINALnative proof budget, not a claim to undo tags or supersede
+those protocols. No new tag will be created by this stage.
 
-Register/public-freeze source/protocol before0physics qualification; full pinned
-Linux suite first, recount incoming grokbot/tests and keep the exact existing
-strict-xfail identity. Proposed qualification oneCPU/thread,90swall/512MiB RSS/
-4MiB persisted receipts/shard/faults, lower if actual remaining version credit
-requires. Large encoded corpus may be an explicitly bounded in-memory intermediate
-with immutable original input retained, all23logical hashes and encoded hash/size
-logged; no deleting old physical artifacts or moving expanded data to evade caps.
+Next: publish/anonymous-byte-verify, deploy fresh dedicated xbabe1root, verify
+load/RAM/disk/ownership and all frozen files, bootstrap the pinned runtime BEFORE
+starting its supervisor, full locked suite then bounded0physics qualification/
+independent audit. Never repeat completed first source or alter running source.
+Read MOTOR_CODEC_QUALIFICATION_PACKET.md. No formal compression result yet.
 
-Only after measured compression/byte parity, raw/time projection and a separate
-preregistration may unfinished/recovery/replay physics run. Never rerun completed
-71000. The source2temporary has7complete members but lacks physical arrays;
-recovery would be an explicitly counted new3520step replay matching EVERYold
-engine hash and known decision, preserving its original incomplete attempt.
-Two unexecuted3520step worlds and first203→3520replay3317remain. Proposed later
-13877newsteps is NOTconsumed or ready-to-launch credit; inspect budgets first.
+The remaining original native budget is unchanged:12430physics consumed,
+conservative raw upper234,152,121bytes/postgate upper783.494067s. This stage
+adds0physics, at most4MiB/90spostgate/512MiB RSS/one thread. Reserve the original
+remaining game battery. Do not launch recovery or other worlds until codec byte
+parity, independent audit and measured resource projection pass. Completed71000
+must not rerun. Original source71001 remains incomplete; missing arrays may only
+be recovered under an explicitly counted, separately frozen replay.
 
-## Accounting and boundaries
-
-Cumulativeformalv11physics12430; optimizerupdates0/validnativeboxinggames0.
-Retainedraw233,103,545 +1MiB receipt reserve leaves34,283,335under256MiB.
-Conservativepostgateupper783.494067s leaves116.505933under900s. Whole120kphysics/
-900spostgate/256MiBraw/max2simworkers unchanged; globalmax16owned workers/one
-numericalthread, this next stage0simworkers. Reserve original remaining game
-correctness battery and known referee snapshot-aliasing repair before competition.
-No v11tag, no training/promotion or invented game counts. Earlier native long
-walking failed20second stability;3.52spositive transfer is not stationary guard.
-
-One owner, no agents/other-chat messages/third_party edits, no concurrent referee/
-scene writes, no unrelated jobs/services/drivers or purchases. grokbot/**/CI
-remain read-only incoming work; preserve remote updates and exact frozen evidence.
-Inspect ownership/load/RAM/disk before any task, use fresh dedicated ~/joxing roots,
-keep all commands/hashes/seeds/PID+start/progress/faults/invalid/not_run rows and
-complete independent transfer/exit receipts. Source must stay fixed while running.
-Update README/docs/book and public Git with honest outcomes. Leave a bounded task
-or this exact next mission. After real motor/contact/rules/replay qualification,
-adapt guard/reach/recovery from the teacher before causal opponent-history league
-learning and measured shared-world HPC scaling.
+One owner, no agents/other-chat messages/third_party or unrelated service changes.
+The incoming grokbot lane is read-only and independently versioned. Preserve
+its reports/tags without claiming that they qualify this native proof. All raw,
+protocol/source/input/model/normalizer/reference hashes, attempts, failures,
+not_run rows, commands/PID+start/progress/exit/transfer receipts stay durable.
+Finish and publish honest results, then leave a bounded task or a concrete next
+mission driven by measured compression/time/credit. No competitive promotion.

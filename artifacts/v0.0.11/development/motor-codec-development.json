@@ -1,0 +1,46 @@
+{
+  "schema": "joxing-motor-codec-development-v1",
+  "formal_new_physics": 0,
+  "native_proof_physics": 12430,
+  "validation": [
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q --tb=short tests/test_motor_evidence_codec.py",
+      "passed": 46,
+      "wall_s": 24.13,
+      "scope": "Initial actual fixture source+held replay, two decoders, corruptions, bit preservation and quotas"
+    },
+    {
+      "command": "same after dependent-shape checks",
+      "passed": 46,
+      "wall_s": 7.59
+    },
+    {
+      "command": "same plus qualification registry/fault/separate audit tests",
+      "passed": 48,
+      "wall_s": 9.07
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q --tb=short tests/test_motor_evidence_codec.py tests/test_shared_motor_evidence.py tests/test_evidence_storage.py",
+      "passed": 113,
+      "wall_s": 18.09
+    },
+    {
+      "command": "Ruff check new codec modules/scripts/tests",
+      "status": "passed"
+    }
+  ],
+  "interruption": "Earlier turn interrupted after module scaffold/lint. No formal process or corpus encoding launched. Fixed lint-only lambda/deletion, explicit subprocess check, fixture noqa before publication. Prepublication draft retained separately.",
+  "external_integration": {
+    "head": "70f0739",
+    "commits": 18,
+    "files": 47,
+    "writes_to_external_lane": false,
+    "scope": "Diagnostic v12-v14 results/tags preserved; native proof qualification unchanged"
+  },
+  "limitations": [
+    "No trained-corpus result yet",
+    "No external tail references in v1 format; all dependency recipes rejected",
+    "No recovered source2physical arrays",
+    "No new motor/replay/competitive qualification"
+  ]
+}
