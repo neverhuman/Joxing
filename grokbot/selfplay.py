@@ -238,6 +238,11 @@ def _pool(workers, horizon_ticks, separation_m=None, anti_stalling=False):
 
 
 # ---------------------------------------------------------------- learner --
+def valid_result(game):
+    """A sporting result: not a no-contest, not blocked, not an engine fault."""
+    return not (game["no_contest"] or game["blocked"] or game["invalid"])
+
+
 def centred_ranks(values):
     values = np.asarray(values, float)
     ranks = np.empty(len(values))
@@ -265,6 +270,8 @@ def train_generation(
     strike_bonus=0.0,
     kind="params",
     frozen=None,
+    valid_bonus=0.0,
+    no_contest_penalty=0.0,
 ):
     """ES iterations against the P4 league; returns new params and stats.
 
@@ -310,6 +317,8 @@ def train_generation(
                 r["utility"]
                 + shaping_weight * max(r[shaping_key], 0.0)
                 + strike_bonus * (r["strike_ticks"] > 0)
+                + valid_bonus * valid_result(r)
+                - no_contest_penalty * r["no_contest"]
                 for r in results
             ]
         )
@@ -323,6 +332,7 @@ def train_generation(
         )
         stats.setdefault("end_ticks", []).extend(r["tick"] for r in results)
         stats["mean_approach"] = float(np.mean([r["approach"] for r in results]))
+        stats["valid_share"] = float(np.mean([valid_result(r) for r in results]))
         stats["no_contest"] = stats.get("no_contest", 0) + sum(
             r["no_contest"] for r in results
         )
@@ -419,6 +429,8 @@ def run_league(
     shaping_key="approach",
     strike_bonus=0.0,
     frozen=None,
+    valid_bonus=0.0,
+    no_contest_penalty=0.0,
     log=print,
 ):
     """Train ``generations`` frozen checkpoints; evaluate each one as it lands."""
@@ -497,6 +509,8 @@ def run_league(
                 strike_bonus=strike_bonus,
                 kind=policy_kind,
                 frozen=frozen,
+                valid_bonus=valid_bonus,
+                no_contest_penalty=no_contest_penalty,
             )
             archive[f"gen{g}"] = params.copy()
             # Every earlier frozen checkpoint, not just the previous one: beating
@@ -586,6 +600,10 @@ def run_league(
                 "eval_no_contest_share": float(
                     np.mean([r["no_contest"] for r in mine])
                 ),
+                "eval_valid_share": float(
+                    np.mean([r["outcome"] is not None for r in mine])
+                ),
+                "train_valid_share": stats.get("valid_share"),
                 "train_mean_approach": stats.get("mean_approach"),
                 "promoted": gate.promote,
                 "champion_after": champion,
