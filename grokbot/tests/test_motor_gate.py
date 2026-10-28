@@ -97,6 +97,23 @@ def test_fitness_is_stand_fraction_plus_strike_indicator():
     assert clean("self") == 1.0  # fell on its own, no strike in the window
     assert clean("knockdown", opp_fall=None) == 1.0  # nobody fell
 
+    # v0.0.24: every VALID knockdown counts; only a blocked (unresolved) fall not.
+    def valid(attribution, opp_fall=1500):
+        r = result(
+            3000,
+            50,
+            scoring=9,
+            first_hit=600,
+            opp_fall=opp_fall,
+            opp_attribution=attribution,
+        )
+        return motor_gate.fitness(r, 3000, 1.0, valid_knockdown=True)
+
+    assert valid("self") == 2.0  # hit, then the opponent toppled later: valid
+    assert valid("knockdown") == 2.0
+    assert valid("unresolved") == 1.0  # body contact before the fall: blocked
+    assert valid("self", opp_fall=None) == 1.0  # nobody fell
+
 
 def test_es_drops_quarantined_pairs_and_follows_the_better_twin():
     params = np.zeros(N_PARAMS)
