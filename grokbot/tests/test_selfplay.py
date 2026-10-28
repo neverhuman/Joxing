@@ -115,5 +115,6 @@ def test_one_generation_beats_its_random_initialization():
     assert gen["vs_previous"] >= 0.8  # gen1 beats gen0 on paired evaluation
     assert gen["beats_all_earlier"]
     assert gen["side_balance"] == 0.0  # not a corner artifact
+    assert gen["eval_valid_share"] > 0  # a non-degenerate league
     games = report["evaluation_games"]
     assert len(games) == 20 and {g["first_side"] for g in games} == {"A", "B"}

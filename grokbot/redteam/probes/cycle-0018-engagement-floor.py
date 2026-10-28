@@ -50,6 +50,7 @@ def main(out):
         frozen={"v12base": ("params", gen4)},
         valid_bonus=t["training_only_terms"]["valid_bonus"],
         no_contest_penalty=t["training_only_terms"]["no_contest_penalty"],
+        require_valid=False,  # reproduces a recorded degenerate run
         log=lambda row: print(json.dumps(row), flush=True),
     )
     report["protocol_sha256"] = hashlib.sha256(raw).hexdigest()

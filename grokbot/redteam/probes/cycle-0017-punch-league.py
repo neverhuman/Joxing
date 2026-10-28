@@ -47,6 +47,7 @@ def main(out):
         init_params=punch_params(gen4, onset=-3.0, duration=0.0, amplitude=2.0),
         policy_kind="punch",
         frozen={"v11gen4": ("params", gen4)},
+        require_valid=False,  # reproduces a recorded degenerate run
         log=lambda row: print(json.dumps(row), flush=True),
     )
     report["protocol_sha256"] = hashlib.sha256(raw).hexdigest()

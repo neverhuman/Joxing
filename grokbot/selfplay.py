@@ -361,6 +361,15 @@ def train_generation(
     return params, stats
 
 
+class DegenerateLeagueError(RuntimeError):
+    """An evaluation batch produced no valid game: nothing can be rated.
+
+    Raised by ``run_league`` unless ``require_valid=False``. Four versions
+    (v0.0.11-v0.0.14) spent compute on leagues whose evaluation was entirely
+    no-contests or blocked bouts; this stops such a run at its first batch.
+    """
+
+
 def finite_or_none(value):
     return float(value) if value is not None and np.isfinite(value) else None
 
@@ -431,9 +440,15 @@ def run_league(
     frozen=None,
     valid_bonus=0.0,
     no_contest_penalty=0.0,
+    require_valid=True,
     log=print,
 ):
-    """Train ``generations`` frozen checkpoints; evaluate each one as it lands."""
+    """Train ``generations`` frozen checkpoints; evaluate each one as it lands.
+
+    With ``require_valid`` (the default) the run aborts with
+    ``DegenerateLeagueError`` as soon as an evaluation batch has 0 valid games.
+    Reproductions of the recorded degenerate runs pass ``require_valid=False``.
+    """
     from grokbot.league import Game, Ledger
     from grokbot.promotion import GateConfig, _utilities, decide, hoeffding_lower
 
@@ -459,6 +474,23 @@ def run_league(
             candidate, lookup, opponent_names, eval_seeds, eval_noise, policy_kind
         )
         outcomes = pool.map(play_game, [t for _, t in tasks])
+        if require_valid and not any(valid_result(o) for o in outcomes):
+            reasons = {}
+            for o in outcomes:
+                key = (
+                    "engine fault"
+                    if o["invalid"]
+                    else "blocked"
+                    if o["blocked"]
+                    else "no contest"
+                    if o["no_contest"]
+                    else "valid"
+                )
+                reasons[key] = reasons.get(key, 0) + 1
+            raise DegenerateLeagueError(
+                f"{candidate}: 0 valid games in {len(outcomes)} evaluation bouts "
+                f"{reasons}; nothing can be rated (see grokbot/redteam/cycle-0019.md)"
+            )
         for ((cand, opp, side, s), _), out in zip(tasks, outcomes, strict=True):
             games.append(
                 {
