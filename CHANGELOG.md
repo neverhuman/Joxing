@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.0.17 — 2026-10-28 (preregistered criterion not met)
+
+grokbot PRs #20–#22 plus the cycle-0023 report. This is a solo motor diagnostic. It does not claim jekko's completion battery, and native boxing games remain 0. v0.0.14–v0.0.16 were not tagged, because each missed its preregistered criterion.
+
+- **Controller ladder:**
+  - v0.0.15: `PunchPolicy`, 10 regional tones. 0/24 stance; reproduced exactly on a rerun.
+  - v0.0.16: `GroupPolicy`, 138 DynSyn-group tones. Median stand 1.46 → 2.34 s.
+  - v0.0.17: `GroupFeedbackPolicy`, per-group tilt gains. Median stand **2.68 s**. **7/24 trials stood the full 3 s**, the first ever, and **24/24 landed a strike**.
+- **Result:** the primary motor gate needs stance ≥ 0.5 and reach ≥ 0.5. It **failed on stance (0.29)**, so the preregistered head-to-head against the frozen v0.0.13 champion did not run. The sign test against v0.0.16 passed (23/24, p = 1.5e-6).
+- **Exploratory, not counted:** on the pinned seeds, v0.0.17 vs v0.0.13 gave 14 of 24 games valid and **14 of 14 won**. These are the first valid games. However, every v0.0.17 strike lands on the opponent's glove or guard, and each win is that tap followed by the opponent's own fall. v0.0.18 adds head/torso hit tracking and an Elo gate that requires hits.
+
 ## v0.0.13 — 2026-10-28 (preregistered criterion not met)
 
 grokbot PR #17 adds a punch primitive. It does not claim jekko's completion battery, and native boxing games remain 0.
