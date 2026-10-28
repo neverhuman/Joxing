@@ -1,3 +1,29 @@
+# Active scoring diagnostic source qualification — 2026-10-28 15:55 UTC
+
+Public frozen source196820f11489a76a8f673bc9ced41526b6b024af; protocol
+f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911.
+All16 changed published files anonymously byte-verified BEFORE launch.
+Active xbabe1 root: /home/ubuntu/joxing/native-scored-contact-phase-a-20261028.
+Supervisor4193529/start913972736; test launcher4193755/start913973073;
+pytest4193762/start913973077. Sync passed; actual tests show fresh CPU/log progress.
+No formal proof/audit outcome yet. Do not edit this checkout or launch a duplicate.
+
+Deployment verifies595 source/upstream/reference/saved input files. Prelaunch:
+load10.38/9.77/9.90,43.40GB available RAM/256.92GB disk, no unknown Joxing jobs.
+One numerical thread; full source gate1128passes +one exact known strict xfail,
+then20sproof/10saudit,30spostgate/512MiB/4MiB/1,000RIGIDfixture steps firstlimit.
+Native physics/optimizer/self-play increments remain0. Keep every entered/completed
+step, allseven rows and faults. Full native boxing proof stays incomplete.
+
+Next check: use actual ownership/status/events and resource use. On completion,
+independently audit all saved explanations/points/clocks, full source/input hashes,
+rigid-step receipts, exit identities and complete raw transfer; publish honest
+results/limits in README/docs/book. On failure retain the entire attempt and
+repair only its measured cause. Do not alter old source, failed caps, native
+models/rules or the independent Grokbot v22 mission. Read the registered
+SCORED_CONTACT_DIAGNOSTIC_PACKET.md before further action. Receipts:
+artifacts/v0.0.11/development/scored-contact-{publication,deployment,progress}-01.json.
+
 # Scoring diagnostic phase A implemented and registered — 2026-10-28
 
 New read-only score_diagnostic.py independently reconstructs per-glove events

@@ -1,0 +1,90 @@
+{
+  "schema": "joxing-scored-contact-publication-v1",
+  "status": "passed",
+  "source_commit": "196820f11489a76a8f673bc9ced41526b6b024af",
+  "observed_utc": "2026-10-28T15:53:25Z",
+  "anonymous_checks": [
+    {
+      "path": "README.md",
+      "bytes": 18384,
+      "sha256": "e9e3d7103e60360d65961ffeccfbfc9829333411733897ecd44fb233adf3131c"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/scored-contact-development-01.json",
+      "bytes": 1831,
+      "sha256": "a793636e4ef56a2cea49809f661ae6dcefbd56a5672a6d755a0cc308fcc3a9d4"
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "bytes": 80173,
+      "sha256": "db119cae9254693a03846d40164a51bd58ffc7219208d57c7bd9accc7530ebd6"
+    },
+    {
+      "path": "docs/MISSION.md",
+      "bytes": 9205,
+      "sha256": "c6390eca7e26f4cd1f04d1aa5b14c6b7f501273e25ae0cbef69dfd0a80f109db"
+    },
+    {
+      "path": "docs/SCORED_CONTACT_DIAGNOSTIC_PACKET.md",
+      "bytes": 13099,
+      "sha256": "51d0d61c11d68b2df6a709b48ca51444ab541f02dcebd6276c8e3d0d8157dd8c"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 138382,
+      "sha256": "1a9d9bd837e6ca1b50e5136c9f64c7ef0661f90bf472be6bc089e82ba049cd67"
+    },
+    {
+      "path": "experiments/v0.0.11/README.md",
+      "bytes": 50025,
+      "sha256": "a738b9661f35c84e0e170aa203ef58229c42cc6b7c100eb2b3b8ee7fa44d5597"
+    },
+    {
+      "path": "experiments/v0.0.11/scored-contact-protocol.json",
+      "bytes": 72991,
+      "sha256": "c81fca2abba627d383e801ac5b3521314c98bd0e1b295d3d4ba187269e0cef14"
+    },
+    {
+      "path": "scripts/audit_scored_contacts.py",
+      "bytes": 685,
+      "sha256": "5719f61ebb012b10dde0ca2b24c4b2a9e24d3ba9430fd6013082b07c6f958173"
+    },
+    {
+      "path": "scripts/qualify_scored_contacts.py",
+      "bytes": 655,
+      "sha256": "900cea0f0f7621a7f4626afef877abf041866f78dda84428251d26be08c24a41"
+    },
+    {
+      "path": "scripts/register_scored_contacts.py",
+      "bytes": 4611,
+      "sha256": "32588814e2bf5168dca0409093e36a79bbcb99ea162b7a0fd568478ff9724971"
+    },
+    {
+      "path": "scripts/supervise_scored_contacts.py",
+      "bytes": 11107,
+      "sha256": "330d2c97abf1952764ac28b22dd46a730b74e6ab167ff2ca470ae4130e287cd8"
+    },
+    {
+      "path": "src/joxing/score_adapter_fixture.py",
+      "bytes": 3849,
+      "sha256": "b8733289226bcd2e50436490bfd27de08bed2d2aa15f3d37c6851c51fec96a54"
+    },
+    {
+      "path": "src/joxing/score_diagnostic.py",
+      "bytes": 11558,
+      "sha256": "0569afb2989a6e8ce140bf0214a5be4daf6305a26494960c3c636ed201ad7f6e"
+    },
+    {
+      "path": "src/joxing/score_qualification.py",
+      "bytes": 10797,
+      "sha256": "b95ff7736d5bf3416b6e2d7a15faf50311015e8e6e77737aaa05bcc49ef53a14"
+    },
+    {
+      "path": "tests/test_score_diagnostic.py",
+      "bytes": 9054,
+      "sha256": "533d51d337757b599c8f61ab045caa733bf947fabe1ac3d2176be06ad4a90045"
+    }
+  ],
+  "formal_outcomes_observed": false,
+  "protocol_sha256": "f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911"
+}
