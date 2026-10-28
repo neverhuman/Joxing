@@ -118,6 +118,13 @@ These were preregistered-run failures, retained under `runs/grokbot/` as
 Both fixes are reporting and quarantine only, with the same protocol and
 seed. Attempt 03 replayed the same fault in generation 2 and quarantined it.
 
+MuJoCo's own log, retained as `runs/grokbot/engagement-0016/MUJOCO_LOG.TXT`,
+pins the fault down: "Nan, Inf or huge value in QACC at DOF 85" at
+t = 0.715 s, identically in attempts 02 and 03. DOF 85 is the first degree of
+freedom of athlete B, i.e. B's root. It is a deterministic instability under
+one perturbed training policy, not hardware noise. The same quarantine path
+would be needed by any learner that explores aggressive muscle commands.
+
 ### F3 — Low — Gate wording
 
 At gen4–6, blocked bouts appear under "integrity: invalid share". They are
