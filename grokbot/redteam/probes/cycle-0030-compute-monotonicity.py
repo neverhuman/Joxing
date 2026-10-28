@@ -43,6 +43,27 @@ def _v0019_probe():
     return module
 
 
+def by_seat(result):
+    """Seat-swap check (owner 13:35): outcomes split by the stronger side's seat,
+    with draws, no-contests, blocks and faults kept apart."""
+    out = {}
+    for side in ("A", "B"):
+        rows = [r for r in result["results"] if r["side"] == side]
+        valid = [
+            r for r in rows if not (r["no_contest"] or r["blocked"] or r["invalid"])
+        ]
+        out[side] = {
+            "games": len(rows),
+            "wins": sum(r["utility"] > 0 for r in valid),
+            "losses": sum(r["utility"] < 0 for r in valid),
+            "draws": sum(r["utility"] == 0 for r in valid),
+            "no_contest": sum(bool(r["no_contest"]) for r in rows),
+            "blocked": sum(bool(r["blocked"]) for r in rows),
+            "engine_fault": sum(r["invalid"] is not None for r in rows),
+        }
+    return out
+
+
 def verdict(result):
     if result["valid_games"] < MIN_VALID:
         return "ADEQUACY_UNMEASURABLE"
@@ -89,6 +110,7 @@ def main(run_report, out):
         for key, more, less in (("3N_vs_N", at48, at16), ("N_vs_0", at16, mirror)):
             report[key] = gate.head_to_head(more, less, SEEDS)
             report[key]["verdict"] = verdict(report[key])
+            report[key]["by_seat"] = by_seat(report[key])
             print(key, report[key]["verdict"], gate.brief(report[key]), flush=True)
             (out / "report.json").write_text(json.dumps(report, indent=1))
         both = all(report[k]["verdict"] == "PASS" for k in ("3N_vs_N", "N_vs_0"))
