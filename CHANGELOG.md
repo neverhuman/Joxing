@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.0.24 — 2026-10-28 (preregistered smoke gate FAILED; not run, not tagged)
+
+grokbot PR #35 (preregistration) plus the cycle-0036 report. The last level-up is still **v0.0.19**.
+
+- **Lever:** a valid-knockdown bonus (any knockdown whose fall is not blocked), starting from the v0.0.22 policy and gated by a preregistered smoke test.
+- **Bonus-path check passed:** the bonus fired in 23 of 24 trials (all `self` falls), so the instrumentation fix works.
+- **Validity check failed:** the 12-game base head-to-head against v0.0.19 was **10/12 valid (83%), short of 90%**, with 2 blocked games. **`SMOKE_FAILED`, so there was no training run.**
+- **Attempts:** attempt 01 was aborted within a minute, before any game, because the launch was not gated on a failing load check. Attempt 02 was launched at load 64.
+- **Red-team:** the validity check measured the *starting* policy's blocked rate, which is the failure the lever targets, on only 12 games. v0.0.25 should gate the instrumentation separately from that baseline.
+
+## v0.0.23 — 2026-10-28 (preregistered criterion NOT met: VALIDITY_FAILED; not tagged)
+
+grokbot PR #33 (preregistration) plus the cycle-0034 report. This is a diagnostic, not an unassisted boxing result. The last level-up is still **v0.0.19**.
+
+- **One lever:** a clean-knockdown bonus that pays only for falls attributed `knockdown`. **The bonus never fired:** its share was 0.00 in all 48 training iterations. Training therefore reduced to stand time.
+- **Primary vs frozen v0.0.19:** **5/48 valid** (35 no-contests, 8 blocked), so `VALIDITY_FAILED`. The probe exited non-zero.
+- **Hard gate vs v0.0.13:** 14/48 valid (30 blocked). Monotonicity was unmeasurable.
+- **Why:** a replay of the v0.0.22 policy against v0.0.19 found **22/24 knockdowns attributed `self`**. One hit lands at about tick 252 and the opponent falls 1–2 s later, outside the 0.5 s attribution window. The rest were 2 `unresolved` and 0 `knockdown`. `self` falls are valid wins under ending v2, so this lever excluded the valid outcomes.
+- **Caveat on v0.0.22:** its 46–0 was mostly one early hit followed by the opponent toppling on its own.
+- **Next (v0.0.24):** a valid-knockdown bonus that excludes only blocked falls, behind a preregistered smoke gate that requires the event in at least 10% of smoke trials.
+
 ## v0.0.22 — 2026-10-28 (preregistered level-up NOT met; not tagged)
 
 grokbot PR #31 (preregistration) plus the cycle-0032 report. This is a diagnostic, not an unassisted boxing result. v0.0.20 and v0.0.21 were also untagged misses (cycles 0028 and 0030). The last level-up is still **v0.0.19**.
