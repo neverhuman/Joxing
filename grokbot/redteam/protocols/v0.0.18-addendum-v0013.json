@@ -1,0 +1,49 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.18-addendum-v0013",
+ "registered_utc": "2026-10-28T06:48:14Z",
+ "amends": "grokbot/redteam/protocols/v0.0.18.json (sha256 159642dd1e1042ab...) - adds one gate; changes nothing in it",
+ "owner_requirement": "gb_feedback_0628: one concrete Elo/win-rate gate vs the frozen v0.0.13 champion",
+ "registered_before": "pushed before the v0.0.18 candidate gate or any v0.0.18 head-to-head result was read (training-iteration logs only had been seen)",
+ "head_to_head_v0013": {
+  "env": "grokbot.reference_env.ReferenceEndingEnv(RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000), anti_stalling=True) via grokbot.selfplay.play_game (ending v2, unchanged)",
+  "candidate": "the trained v0.0.18 GroupPDPolicy (final_params of runs/grokbot/group-pd-gate-0023/report.json), eval noise 0.05",
+  "opponent": "frozen v0.0.13 champion: kind punch, punch_params(v0.0.11 gen4, onset=-3.0, duration=0.0, amplitude=2.0), eval noise 0.05",
+  "seeds": [
+   4000,
+   4001,
+   4002,
+   4003,
+   4004,
+   4005,
+   4006,
+   4007,
+   4008,
+   4009,
+   4010,
+   4011,
+   4012,
+   4013,
+   4014,
+   4015,
+   4016,
+   4017,
+   4018,
+   4019,
+   4020,
+   4021,
+   4022,
+   4023
+  ],
+  "sides": "each seed with the candidate in corner A and in corner B (48 games)",
+  "valid": "grokbot.selfplay.valid_result; every game stays in the denominator",
+  "samples": "grokbot.promotion._utilities over valid games (seed-paired)",
+  "bound": "grokbot.promotion.hoeffding_lower(mean, n_samples, 0.95)",
+  "elo": "as in v0.0.18.json head_to_head.elo",
+  "pass": "ALL of: (a) valid games >= 50% of the 48; (b) lower95 > 0 (Elo lower bound > 0); (c) at least half of the candidate's valid wins include >= 1 candidate head/torso hit"
+ },
+ "decision": "reported alongside v0.0.18's registered criteria; v0.0.18 level_up stays exactly as registered (motor gate AND the v0.0.16 Elo gate); a v0.0.18 tag requires that level_up",
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0024-v0013-elo-gate.py (reuses cycle-0023 probe statistics with the opponent swapped)"
+ ]
+}
