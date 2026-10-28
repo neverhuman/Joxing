@@ -5,7 +5,7 @@ v0.0.17 protocol (`850ec810…`) was on main before the run. The run's source
 tree `97502709` is identical to main `508cd94`'s tree, as checked after #22
 merged.
 
-## v0.0.17 release notes — **criterion not met, not tagged**
+## v0.0.17 release notes — **criterion not met** (pre-release at owner request)
 
 The candidate was `GroupFeedbackPolicy`: the v0.0.16 group controller plus
 per-group tilt gains, 1,112 parameters. It was trained for 48 ES iterations
@@ -26,8 +26,11 @@ opponent and fitness. The run took 2,921 s at nice 10, reniced to 19 at
 - **Preregistered secondary:** the exact sign test against v0.0.16
   **passed**, with 23 of 24 trials better (p = 1.5×10⁻⁶). The Hoeffding
   bound did not: the mean gain was +0.35 s and the lower bound −1.15 s.
-- **`level_up = false`.** Tagging rule (owners 01:50, 05:05 and 05:28): a
-  version is tagged only if its preregistered criterion is met. **No tag.**
+- **`level_up = false`: not a level-up.** Owners 05:46 and 06:10 asked
+  for v0.0.17 to ship as a release honestly labelled pass or fail. Like
+  v0.0.13, it is therefore a GitHub **pre-release titled "criterion not
+  met"**, tagged on this PR's merge with a CHANGELOG entry. It is not a
+  level-up tag. Tag `v0.0.18` only if its own `level_up` is true.
 - **Training:** the strike share rose from 0.04 to 0.67–0.92 over the last
   10 iterations, and the mean stand time in training reached about 2.1–2.4 s.
   4 engine faults were quarantined.

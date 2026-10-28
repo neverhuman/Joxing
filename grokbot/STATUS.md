@@ -5,7 +5,7 @@ and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `508cd94`, plus this PR. **Latest tag: `v0.0.13`.**
+- **Main:** green at `508cd94`, plus this PR. **Latest tag: `v0.0.13`; `v0.0.17` follows this PR as a pre-release labelled "criterion not met".**
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -25,7 +25,7 @@ and `grokbot/redteam/cycle-*.md`.
 |---|---|---|---|---|---|
 | v0.0.15 | `PunchPolicy`, 10 regional tones | 0/24 | 0/24 | 1.349 s (gen4 1.464 s) | failed; the rerun reproduced it exactly |
 | v0.0.16 | `GroupPolicy`, 138 group tones | 0/24 | 0/24 | 2.344 s | failed, not tagged |
-| v0.0.17 | `GroupFeedbackPolicy`, per-group tilt gains | **7/24** | **24/24** | **2.682 s** | **criterion not met**: stance 0.29 < 0.5, so the head-to-head did not run. Not tagged. Sign test vs v0.0.16 passed (p = 1.5e-6). |
+| v0.0.17 | `GroupFeedbackPolicy`, per-group tilt gains | **7/24** | **24/24** | **2.682 s** | **criterion not met**: stance 0.29 < 0.5, so the head-to-head did not run. Released as a pre-release labelled "criterion not met" at the owner's request (05:46, 06:10). Sign test vs v0.0.16 passed (p = 1.5e-6). |
 
 **Exploratory, not counted:** v0.0.17 vs v0.0.13 on the pinned seeds gave 14
 of 24 games valid and 14 of 14 won. These are the first valid games, but
