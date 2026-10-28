@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~10:30 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~12:00 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `cd2e545`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `ef80a8c`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -28,6 +28,7 @@ and `grokbot/redteam/cycle-*.md`.
 | v0.0.17 | + per-group tilt gains | 7/24 | 0/24 (glove taps) | 2.682 s | criterion not met; pre-release |
 | v0.0.18 | + velocity and height gains, hit-only bonus | 1/24 | 24/24 | 2.314 s | not met; untagged |
 | **v0.0.19** | **hit-and-stay-up fitness** | **16/24** | **24/24** | **3.000 s** | **PASSED: level-up, tagged** |
+| v0.0.20 | two-player self-play league (outcome only) | 16/24 | 24/24 | 3.000 s | **honest null**: no promotion, champion = v0.0.19; primary 3/48 valid; not tagged |
 
 **v0.0.19 head-to-heads** (48 games each):
 
@@ -39,18 +40,30 @@ and `grokbot/redteam/cycle-*.md`.
 v0.0.18 went 15–29 against v0.0.16 (Elo −115). The plateau diagnosis is in
 cycle-0026.md.
 
-## Next step: v0.0.20 (protocol `protocols/v0.0.20.json`, landed before the run)
+## Ladder, v0.0.11 to v0.0.20 (cycle 0028; Elo with v0.0.11 = 0)
 
-- **One lever:** two-player self-play league games trained on the match
-  outcome only, replacing solo motor trials. The model, the initialization
-  (v0.0.19) and the ES step sizes are unchanged.
-- **League:** 4 generations × 4 iterations × 24 pairs, with frozen v0.0.19,
-  v0.0.16 and v0.0.13 as anchors and the degenerate guard on.
-- **Primary (the only level-up):** the champion against frozen v0.0.19 on
-  seeds 7000–7023. Tag `v0.0.20` only if it passes. If nothing is promoted,
-  the primary is an honest null.
-- **Probe:** `probes/cycle-0027-selfplay-league.py`, run at nice 19 with
-  loadavg below 86 after merge.
+| Version | Elo |
+|---|---:|
+| v0.0.13 / v0.0.14 | +25 |
+| v0.0.15 | +25 |
+| v0.0.16 | +586 |
+| v0.0.17 | +520 |
+| v0.0.18 | +810 |
+| **v0.0.19 / v0.0.20** | **+1,012** (+885 to +1,164) |
+
+- **0 intransitive triads.**
+- **Degeneracy:** the v0.0.19 mirror has 0 strikes (no-contests at the
+  bell), and v0.0.18 vs v0.0.19 is 92 % blocked (body collisions at 0.5 m).
+  The self-play league therefore had a valid share of only 23–31 %, which
+  fell over training.
+
+## Next step: v0.0.21 (to be preregistered in its own PR)
+
+- **One lever: the training opponent.** Train the same solo hit-and-stay-up
+  fitness against frozen v0.0.19 instead of the gen4 posture. The model,
+  initialization, ES settings, reset and ending are unchanged.
+- **Primary:** the a/b/c gate against frozen v0.0.19 on fresh seeds. Tag
+  only if it passes.
 
 ## Rules this lane follows
 
