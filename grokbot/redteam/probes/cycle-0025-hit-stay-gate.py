@@ -107,6 +107,13 @@ def brief(result):
     return {k: v for k, v in result.items() if k != "results"}
 
 
+def save(out, report, complete):
+    """Checkpoint after every stage so an exception never discards results."""
+    (out / "report.json").write_text(
+        json.dumps(report | {"complete": complete}, indent=1)
+    )
+
+
 def main(out):
     raw = PROTOCOL_PATH.read_bytes()
     protocol = json.loads(raw)
@@ -159,6 +166,7 @@ def main(out):
         stand["candidate_gate"], stand["v0018_gate"]
     )
     print("candidate_gate", brief(report["candidate_gate"]), flush=True)
+    save(out, report, complete=False)
 
     champion = (
         "punch",
@@ -171,16 +179,19 @@ def main(out):
     secondary_seeds = list(range(6000, 6024))
     report["primary_vs_v0013"] = head_to_head(v19_spec, champion, primary_seeds)
     print("primary_vs_v0013", brief(report["primary_vs_v0013"]), flush=True)
-    report["v0018_vs_v0013_same_seeds"] = head_to_head(
-        v18_spec, champion, primary_seeds
-    )
-    report["v0019_vs_v0016"] = head_to_head(v19_spec, v16, secondary_seeds)
-    report["v0018_vs_v0016"] = head_to_head(v18_spec, v16, secondary_seeds)
+    save(out, report, complete=False)
+    for key, spec, other, seeds in (
+        ("v0018_vs_v0013_same_seeds", v18_spec, champion, primary_seeds),
+        ("v0019_vs_v0016", v19_spec, v16, secondary_seeds),
+        ("v0018_vs_v0016", v18_spec, v16, secondary_seeds),
+    ):
+        report[key] = head_to_head(spec, other, seeds)
+        save(out, report, complete=False)
     a, b = report["v0019_vs_v0016"]["mean"], report["v0018_vs_v0016"]["mean"]
     report["v0016_improvement"] = None if a is None or b is None else a - b
     report["level_up"] = bool(report["primary_vs_v0013"]["passed"])
     report["wall_s"] = round(time.monotonic() - began, 1)
-    (out / "report.json").write_text(json.dumps(report, indent=1))
+    save(out, report, complete=True)
     for k in ("v0018_vs_v0013_same_seeds", "v0019_vs_v0016", "v0018_vs_v0016"):
         print(k, brief(report[k]))
     print("v0016_improvement", report["v0016_improvement"])
