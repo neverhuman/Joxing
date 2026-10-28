@@ -207,13 +207,23 @@ def train(
     contact_penalty=0.0,
     log=print,
 ):
-    """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
+    """Antithetic ES on the solo fitness; quarantined pairs are dropped.
+
+    ``opponent`` is one frozen spec, or a list of specs that ES pairs cycle
+    through (pair k faces ``opponent[k % n]``; both twins of a pair face the
+    same one, so the antithetic comparison stays paired) - v0.0.26.
+    """
+    opponents = opponent if isinstance(opponent, list) else [opponent]
     history = []
     for iteration in range(iterations):
         noise = rng.standard_normal((pairs, len(params)))
         seeds = rng.integers(2**31, size=pairs)
         tasks = [
-            ((kind, params + sign * sigma * noise[k]), opponent, int(seeds[k]))
+            (
+                (kind, params + sign * sigma * noise[k]),
+                opponents[k % len(opponents)],
+                int(seeds[k]),
+            )
             for k in range(pairs)
             for sign in (1, -1)
         ]
