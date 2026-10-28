@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~09:50 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~10:30 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `4ffbd91`, plus this PR. **`v0.0.19` will be tagged on this PR's merge: the first passed preregistered level-up.** The previous tag, `v0.0.17`, is labelled "criterion not met".
+- **Main:** green at `cd2e545`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -39,14 +39,18 @@ and `grokbot/redteam/cycle-*.md`.
 v0.0.18 went 15–29 against v0.0.16 (Elo −115). The plateau diagnosis is in
 cycle-0026.md.
 
-## Next step: v0.0.20 — one lever, more self-play games
+## Next step: v0.0.20 (protocol `protocols/v0.0.20.json`, landed before the run)
 
-- A two-player self-play league seeded from v0.0.19, with the same model and
-  fitness. Frozen-opponent sampling uses the P4 sampler; the degenerate
-  guard is on.
-- **Primary:** the a/b/c gate against the frozen v0.0.19 on new seeds.
-- Preregister and land the protocol before running. Run at nice 19 with
-  loadavg below 86.
+- **One lever:** two-player self-play league games trained on the match
+  outcome only, replacing solo motor trials. The model, the initialization
+  (v0.0.19) and the ES step sizes are unchanged.
+- **League:** 4 generations × 4 iterations × 24 pairs, with frozen v0.0.19,
+  v0.0.16 and v0.0.13 as anchors and the degenerate guard on.
+- **Primary (the only level-up):** the champion against frozen v0.0.19 on
+  seeds 7000–7023. Tag `v0.0.20` only if it passes. If nothing is promoted,
+  the primary is an honest null.
+- **Probe:** `probes/cycle-0027-selfplay-league.py`, run at nice 19 with
+  loadavg below 86 after merge.
 
 ## Rules this lane follows
 
