@@ -1,0 +1,75 @@
+"""Solo motor gate: real short trials, continuous fitness, fault quarantine in
+the ES update, and pass rates that count faults as failures."""
+
+import numpy as np
+import pytest
+
+from grokbot import motor_gate
+from grokbot.selfplay import N_PARAMS
+
+
+class FakePool:
+    def __init__(self, results):
+        self.results = results
+
+    def map(self, function, tasks):
+        assert len(tasks) == len(self.results)
+        return self.results
+
+
+def result(stand, strikes=0, invalid=None):
+    return {
+        "invalid": invalid,
+        "stand_ticks": stand,
+        "strike_ticks": strikes,
+        "opponent_fall_tick": None,
+        "ticks": 3000,
+    }
+
+
+def test_a_short_real_trial_stands_to_the_horizon(monkeypatch):
+    motor_gate._init(0.5, 400)
+    out = motor_gate.trial((("scripted", "baseline"), ("scripted", "baseline"), 0))
+    assert out["invalid"] is None and out["ticks"] == 400
+    assert out["stand_ticks"] == 400 and out["strike_ticks"] == 0
+
+
+def test_fitness_is_stand_fraction_plus_strike_indicator():
+    assert motor_gate.fitness(result(1500), 3000, 1.0) == 0.5
+    assert motor_gate.fitness(result(3000, strikes=4), 3000, 1.0) == 2.0
+    assert motor_gate.fitness(result(0, invalid="RuntimeError"), 3000, 1.0) is None
+
+
+def test_es_drops_quarantined_pairs_and_follows_the_better_twin():
+    params = np.zeros(N_PARAMS)
+    pool = FakePool(
+        [result(0, invalid="RuntimeError"), result(900), result(2400), result(1200)]
+    )
+    out, history = motor_gate.train(
+        pool,
+        params,
+        ("scripted", "baseline"),
+        np.random.default_rng(0),
+        kind="params",
+        iterations=1,
+        pairs=2,
+        sigma=0.1,
+        lr=0.05,
+        horizon_ticks=3000,
+        strike_bonus=1.0,
+        log=lambda row: None,
+    )
+    noise = np.random.default_rng(0).standard_normal((2, N_PARAMS))
+    assert out == pytest.approx(0.05 * noise[1] / (2 * 0.1))  # only pair 1, +twin won
+    assert history[0]["invalid"] == 1
+
+
+def test_gate_counts_faults_as_failures():
+    pool = FakePool(
+        [result(3000, 2), result(3000), result(1200, 1), result(0, invalid="NaN")]
+    )
+    out = motor_gate.gate(
+        pool, ("params", None), ("scripted", "baseline"), range(4), 3000
+    )
+    assert out["stance_pass_rate"] == 0.5 and out["reach_pass_rate"] == 0.5
+    assert out["invalid"] == 1 and out["trials"] == 4
