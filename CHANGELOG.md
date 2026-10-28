@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.25 — 2026-10-28 (preregistered level-up NOT met; not tagged)
+
+grokbot PR #37 (preregistration) plus the cycle-0038 report. The last level-up is still **v0.0.19**.
+
+- **Lever:** a graded contact penalty, `−0.5 · min(1, contact_ticks/500)`, starting from v0.0.22 and trained against frozen v0.0.19. The smoke gate passed: the penalty varied, and the 48-game base head-to-head was 48/48 valid.
+- **Primary vs frozen v0.0.19: PASSED.** 48/48 valid, **48–0**, all wins with hits, Elo +669 (lower bound +191).
+- **Hard gate vs v0.0.13: FAILED.** **0/48 valid: all 48 blocked.** Monotonicity also failed: @16 lost 4–44 to the v0.0.22 base, and @48 vs @16 had only 38/48 valid.
+- **Contact rate vs v0.0.19:** it fell from 353 to 135 ticks in training while the valid-knockdown share stayed at 0.75–0.83. Primary games had median contact 113 against the base's 380. This is a real reduction, not avoidance gaming, but it **does not transfer** to v0.0.13, which training never saw.
+- **Next (v0.0.26):** alternate both training opponents (v0.0.19 and v0.0.13).
+
 ## v0.0.24 — 2026-10-28 (preregistered smoke gate FAILED; not run, not tagged)
 
 grokbot PR #35 (preregistration) plus the cycle-0036 report. The last level-up is still **v0.0.19**.
