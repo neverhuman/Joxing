@@ -1,0 +1,179 @@
+"""Solo motor gate: can one athlete stand and reach at boxing range? (grokbot)
+
+Four league versions (v0.0.11-v0.0.14) failed for one reason: the athletes
+fall backward within about 1.5 s and their punch reaches about 0.2 m, so no
+glove ever meets a target at speed. A league cannot fix that, so this measures
+the missing capability directly, one athlete at a time, before any further
+league is preregistered.
+
+A trial runs the unchanged diagnostic env at a named range reset for a full
+horizon. Unlike the reference-ending env it does not stop at the first fall.
+The candidate plays corner A against a frozen opponent in corner B, and the
+trial reports:
+
+* ``stand_ticks``: ticks until the candidate's first persistent non-foot floor
+  support (``endings.BoutMonitor``), or the horizon if it never touched down;
+* ``strike_ticks``: ticks on which the candidate's glove was striking
+  (``ContactClassifier.strikes_by``: approach and referee active speed
+  >= 0.5 m/s on head/torso/guard/glove);
+* ``invalid``: an engine fault, which quarantines the trial and never scores.
+
+``train`` is antithetic ES with common random numbers on a continuous fitness:
+stand fraction plus a strike indicator. That gives a gradient from the first
+iteration, which the league's sparse no-contest outcomes never did.
+"""
+
+from __future__ import annotations
+
+import multiprocessing
+import os
+
+import numpy as np
+
+from grokbot import endings
+from grokbot.arena import policy_stream
+from grokbot.scenarios import RangeBoxingEnv
+from grokbot.selfplay import _controller, centred_ranks
+from joxing.scene import build_scene
+
+_ENV = None
+
+
+def _init(separation_m, horizon_ticks):
+    global _ENV
+    for key in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS"):
+        os.environ[key] = "1"
+    _ENV = RangeBoxingEnv(
+        build_scene(), separation_m=separation_m, horizon_ticks=horizon_ticks
+    )
+
+
+def pool(workers, separation_m, horizon_ticks):
+    if not 1 <= workers <= 4:
+        raise ValueError("Use 1-4 workers on shared hosts")
+    return multiprocessing.get_context("fork").Pool(
+        workers, initializer=_init, initargs=(separation_m, horizon_ticks)
+    )
+
+
+def trial(task):
+    """(candidate spec, opponent spec, seed) -> one solo-gate measurement."""
+    candidate, opponent, seed = task
+    env = _ENV
+    registry = {g["id"]: g for g in env.scene.report["physical_geoms"]}
+    monitor = endings.BoutMonitor(registry)
+    controllers = {"A": _controller(candidate), "B": _controller(opponent)}
+    streams = {
+        "A": policy_stream(seed, "candidate"),
+        "B": policy_stream(seed, "opponent"),
+    }
+    observations, _ = env.reset(seed=seed)
+    seen = 0
+    try:
+        while not env.done:
+            commands = {
+                p: controllers[p](observations[p], None, streams[p]) for p in "AB"
+            }
+            observations = env.step(commands)["observations"]
+            monitor.update(env.evidence[seen:])
+            seen = len(env.evidence)
+    except Exception as error:  # engine faults quarantine the trial
+        return {
+            "invalid": f"{type(error).__name__}: {error}",
+            "stand_ticks": 0,
+            "strike_ticks": 0,
+            "opponent_fall_tick": None,
+            "ticks": env.tick,
+        }
+    falls = {e.player: e.tick for e in monitor.losses}
+    return {
+        "invalid": None,
+        "stand_ticks": falls.get("A", env.horizon_ticks),
+        "strike_ticks": len(monitor.contacts.strikes_by["A"]),
+        "opponent_fall_tick": falls.get("B"),
+        "ticks": env.tick,
+    }
+
+
+def fitness(result, horizon_ticks, strike_bonus):
+    if result["invalid"]:
+        return None
+    return result["stand_ticks"] / horizon_ticks + strike_bonus * (
+        result["strike_ticks"] > 0
+    )
+
+
+def train(
+    workers_pool,
+    params,
+    opponent,
+    rng,
+    *,
+    kind,
+    iterations,
+    pairs,
+    sigma,
+    lr,
+    horizon_ticks,
+    strike_bonus,
+    log=print,
+):
+    """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
+    history = []
+    for iteration in range(iterations):
+        noise = rng.standard_normal((pairs, len(params)))
+        seeds = rng.integers(2**31, size=pairs)
+        tasks = [
+            ((kind, params + sign * sigma * noise[k]), opponent, int(seeds[k]))
+            for k in range(pairs)
+            for sign in (1, -1)
+        ]
+        results = workers_pool.map(trial, tasks)
+        scores = [fitness(r, horizon_ticks, strike_bonus) for r in results]
+        valid = np.array(
+            [
+                scores[2 * k] is not None and scores[2 * k + 1] is not None
+                for k in range(pairs)
+            ]
+        )
+        if valid.any():
+            flat = np.array([s for s in scores if s is not None], float)
+            paired = np.array(
+                [[scores[2 * k], scores[2 * k + 1]] for k in range(pairs) if valid[k]]
+            )
+            ranks = centred_ranks(paired.ravel()).reshape(-1, 2)
+            gradient = ((ranks[:, 0] - ranks[:, 1])[:, None] * noise[valid]).sum(0) / (
+                2 * valid.sum() * sigma
+            )
+            params = params + lr * gradient
+        row = {
+            "iteration": iteration,
+            "mean_stand_s": float(
+                np.mean([r["stand_ticks"] for r in results if not r["invalid"]]) / 1000
+            )
+            if valid.any()
+            else None,
+            "strike_share": float(np.mean([r["strike_ticks"] > 0 for r in results])),
+            "invalid": int(sum(r["invalid"] is not None for r in results)),
+            "mean_fitness": float(flat.mean()) if valid.any() else None,
+        }
+        history.append(row)
+        log(row)
+    return params, history
+
+
+def gate(workers_pool, spec, opponent, seeds, horizon_ticks):
+    """Stance and reach pass rates over noisy solo trials (faults count as fails)."""
+    results = workers_pool.map(trial, [(spec, opponent, s) for s in seeds])
+    stood = [
+        r["invalid"] is None and r["stand_ticks"] >= horizon_ticks for r in results
+    ]
+    reached = [r["invalid"] is None and r["strike_ticks"] > 0 for r in results]
+    return {
+        "trials": len(results),
+        "stance_pass_rate": float(np.mean(stood)),
+        "reach_pass_rate": float(np.mean(reached)),
+        "median_stand_s": float(np.median([r["stand_ticks"] for r in results]) / 1000),
+        "invalid": int(sum(r["invalid"] is not None for r in results)),
+        "results": results,
+    }
