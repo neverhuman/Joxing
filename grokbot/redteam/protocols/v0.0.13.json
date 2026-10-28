@@ -1,0 +1,83 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.13",
+ "registered_utc": "2026-10-28T00:23:23Z",
+ "question": "With a punch-capable action space and lean-proof shaping, do landed strikes emerge, and does the result beat the frozen v0.0.11 champion with a 95% lower bound above zero?",
+ "classification": "diagnostic self-play; AGENTS.md boxing gates remain unmet; no claim of boxing competence",
+ "owner_requirement": "gb_feedback_0012: preregister a strike-emergence metric and an Elo gain vs the v0.0.11 frozen opponent with CI lower bound > 0",
+ "rules": {
+  "attribution": "grokbot-ending-reference-v2 (strikes need approach and referee active glove speed >= 0.5 m/s)",
+  "anti_stalling": "grokbot.endings.anti_stalling (no landed strike and no points -> no contest)",
+  "env": "grokbot.reference_env.ReferenceEndingEnv(anti_stalling=True); jekko BoxingEnv and referee unchanged"
+ },
+ "reset": {
+  "variant": "grokbot.scenarios.RangeBoxingEnv",
+  "separation_m": 0.6,
+  "label": "grokbot-range-0.60m-v0"
+ },
+ "measurements_before_training": [
+  "reach synergy discovery: DynSyn groups 58 (right) / 81 (left) move the hand ~0.20 m forward, 0.18 m up vs trunk in 0.2 s; 57/80 ~0.16 m",
+  "fixed punches (gen4 posture + reach groups, onsets 0/200/400 ticks): 0 strikes at 0.7 and 0.6 m; closest own-hand to opponent head/trunk origin 0.596 m at 0.6 m (gloves ~0.35-0.45 m short of target shells)"
+ ],
+ "policy": {
+  "kind": "grokbot.motor_primitives.PunchPolicy (140 LinearPolicy params + per-arm punch onset/duration/amplitude on REACH_GROUPS)",
+  "init": "punch_params(v0.0.11 gen4, onset=-3.0, duration=0.0, amplitude=2.0): onset ~28 ticks, duration 300 ticks, amplitude ~0.76"
+ },
+ "training": {
+  "learner": "grokbot.selfplay antithetic ES with common random numbers; P4 sampler; frozen v0.0.11 gen4 added to anchors",
+  "generations": 6,
+  "iterations": 3,
+  "pairs": 8,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "shaping_key": "extension (max own-hand forward displacement relative to own trunk; whole-body lean scores 0)",
+  "shaping_weight": 0.5,
+  "strike_bonus": 1.0,
+  "training_only_terms": "shaping and strike bonus never enter evaluation, gating or Elo",
+  "horizon_ticks": 3000,
+  "workers": 4,
+  "nice": 10,
+  "seed": 3
+ },
+ "evaluation": {
+  "eval_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "eval_noise": 0.05,
+  "opponents": "every earlier checkpoint, the scripted panel and frozen v0.0.11 gen4 (name v11gen4)",
+  "paired_samples": "side-swapped pairs sharing a seed count once (12 per opponent)"
+ },
+ "metrics": {
+  "strike_emergence": "share of the generation's evaluation bouts in which the candidate landed a strike (classified strike contact by its own glove)",
+  "gain_vs_v11": "one-sided 95% Hoeffding lower bound on the paired mean utility vs v11gen4 (12 pairs); requires mean > ~0.71 to exceed 0"
+ },
+ "gates": {
+  "min_engaged_share": 0.25,
+  "promotion": "grokbot.promotion.decide against the champion, min_valid 12, engagement gate 0.25"
+ },
+ "success_criterion": "v0.0.13 is a level-up iff at least one generation has strike_emergence >= 0.25 AND gain_vs_v11 lower95 > 0",
+ "pre_declared_failure_readings": [
+  "strikes emerge but lower95 <= 0: striking costs balance (the striker falls first); next lever is stance/recovery after the punch",
+  "no strikes: the punch primitive cannot close the reach deficit; next lever is a forward step/lean primitive or the pretrained locomotion bridge"
+ ],
+ "limitations": [
+  "single training seed",
+  "linear posture policy without opponent observations",
+  "classified strikes, not referee points",
+  "0.60 m reset is a grokbot candidate variant"
+ ],
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0017-punch-league.py"
+ ]
+}

@@ -163,6 +163,10 @@ def _controller(spec):
     kind, value, *noise = spec
     if kind == "params":
         return LinearPolicy(value, noise[0] if noise else 0.0)
+    if kind == "punch":
+        from grokbot.motor_primitives import PunchPolicy
+
+        return PunchPolicy(value, noise[0] if noise else 0.0)
     return SCRIPTED_PANEL[value]
 
 
@@ -174,9 +178,13 @@ def play_game(task):
     controllers = {side: _controller(learner), other: _controller(opponent)}
     # Per-policy streams (common random numbers); linear policies ignore them.
     label = opponent[1] if opponent[0] == "scripted" else "opponent"
+    from grokbot.motor_primitives import active_extension
+
     streams = {side: policy_stream(seed, "learner"), other: policy_stream(seed, label)}
     observations, _ = env.reset(seed=seed)
     start = closest = reach(observations[side].values)
+    first = observations[side].values.copy()
+    extension = 0.0
     while True:
         commands = {
             p: controllers[p](observations[p], None, streams[p]) for p in PLAYERS
@@ -195,9 +203,11 @@ def play_game(task):
                 "opponent_strike_ticks": 0,
                 "points": None,
                 "approach": 0.0,
+                "extension": 0.0,
             }
         observations = result["observations"]
         closest = min(closest, reach(observations[side].values))
+        extension = max(extension, active_extension(first, observations[side].values))
         if result["terminated"]:
             ending = result["info"]["ending"]
             no_result = ending["utility"] is None
@@ -215,6 +225,7 @@ def play_game(task):
                 "opponent_strike_ticks": len(contacts.strikes_by[other]),
                 "points": list(env.env.referee.points),
                 "approach": (start - closest) / start if start > 0 else 0.0,
+                "extension": extension,
             }
 
 
@@ -250,39 +261,57 @@ def train_generation(
     lr,
     eps=0.1,
     shaping_weight=0.0,
+    shaping_key="approach",
+    strike_bonus=0.0,
+    kind="params",
+    frozen=None,
 ):
-    """ES iterations against the P4 league; returns new params and stats."""
+    """ES iterations against the P4 league; returns new params and stats.
+
+    ``frozen`` maps extra anchor names to ``(kind, params)`` opponents (e.g. a
+    previous version's champion) sampled in the anchors bucket.
+    """
+    frozen = frozen or {}
     stats = {"games": 0, "blocked": 0, "mean_fitness": []}
     for _ in range(iterations):
         history = opponents.history_probabilities(records, eps=eps) if records else {}
         mix = opponents.mixture(
             latest=["latest"],
             history=history,
-            anchors=list(SCRIPTED_PANEL),
+            anchors=list(SCRIPTED_PANEL) + list(frozen),
         )
         noise = rng.standard_normal((pairs, len(params)))
         tasks, meta = [], []
         for k in range(pairs):
             name = opponents.sample(mix, rng)
             spec = (
-                ("params", params)
+                (kind, params)
                 if name == "latest"
-                else ("params", archive[name])
+                else (kind, archive[name])
                 if name in archive
+                else frozen[name]
+                if name in frozen
                 else ("scripted", name)
             )
             side = "A" if k % 2 == 0 else "B"
             seed = int(rng.integers(2**31))
             for sign in (1, -1):
                 tasks.append(
-                    (("params", params + sign * sigma * noise[k]), spec, side, seed)
+                    ((kind, params + sign * sigma * noise[k]), spec, side, seed)
                 )
             meta.append(name)
         results = pool.map(play_game, tasks)
         # Training-only approach shaping: reaching toward the opponent's head or
         # trunk scores up to ``shaping_weight``; standing off scores nothing.
+        # Training-only terms: shaping on ``shaping_key`` (proximity "approach"
+        # or trunk-relative hand "extension") and a bonus for landing a strike.
         fitness = np.array(
-            [r["utility"] + shaping_weight * max(r["approach"], 0.0) for r in results]
+            [
+                r["utility"]
+                + shaping_weight * max(r[shaping_key], 0.0)
+                + strike_bonus * (r["strike_ticks"] > 0)
+                for r in results
+            ]
         )
         stats["games"] += len(results)
         stats["invalid"] = stats.get("invalid", 0) + sum(
@@ -345,14 +374,23 @@ def safe_ratings(ledger, anchor):
     }
 
 
-def evaluation_tasks(candidate, archive, opponent_names, seeds, noise):
-    """Side-swapped pairs: candidate checkpoint vs each named opponent."""
-    spec = ("params", archive[candidate], noise)
+def evaluation_tasks(candidate, archive, opponent_names, seeds, noise, kind="params"):
+    """Side-swapped pairs: candidate checkpoint vs each named opponent.
+
+    ``archive`` values are parameter vectors of policy ``kind``, or
+    ``(kind, params)`` tuples for opponents of another kind.
+    """
+
+    def spec_of(name):
+        value = archive[name]
+        if isinstance(value, tuple):
+            return (value[0], value[1], noise)
+        return (kind, value, noise)
+
+    spec = spec_of(candidate)
     tasks = []
     for name in opponent_names:
-        other = (
-            ("params", archive[name], noise) if name in archive else ("scripted", name)
-        )
+        other = spec_of(name) if name in archive else ("scripted", name)
         for seed in seeds:
             for side in PLAYERS:
                 tasks.append(((candidate, name, side, seed), (spec, other, side, seed)))
@@ -377,11 +415,15 @@ def run_league(
     shaping_weight=0.0,
     min_engaged_share=0.0,
     init_params=None,
+    policy_kind="params",
+    shaping_key="approach",
+    strike_bonus=0.0,
+    frozen=None,
     log=print,
 ):
     """Train ``generations`` frozen checkpoints; evaluate each one as it lands."""
     from grokbot.league import Game, Ledger
-    from grokbot.promotion import GateConfig, decide
+    from grokbot.promotion import GateConfig, _utilities, decide, hoeffding_lower
 
     if not 1 <= workers <= 4:
         raise ValueError("Use 1-4 workers on shared hosts")
@@ -394,11 +436,15 @@ def run_league(
     }
     records, games, report = {}, [], {"generations": []}
     params = archive["gen0"].copy()
-    panel = list(SCRIPTED_PANEL) if panel_eval else []
+    frozen = frozen or {}
+    panel = (list(SCRIPTED_PANEL) if panel_eval else []) + list(frozen)
+    lookup = dict(archive)
 
     def evaluate(pool, candidate, opponent_names):
+        lookup.update(archive)
+        lookup.update(frozen)
         tasks = evaluation_tasks(
-            candidate, archive, opponent_names, eval_seeds, eval_noise
+            candidate, lookup, opponent_names, eval_seeds, eval_noise, policy_kind
         )
         outcomes = pool.map(play_game, [t for _, t in tasks])
         for ((cand, opp, side, s), _), out in zip(tasks, outcomes, strict=True):
@@ -447,6 +493,10 @@ def run_league(
                 sigma=sigma,
                 lr=lr,
                 shaping_weight=shaping_weight,
+                shaping_key=shaping_key,
+                strike_bonus=strike_bonus,
+                kind=policy_kind,
+                frozen=frozen,
             )
             archive[f"gen{g}"] = params.copy()
             # Every earlier frozen checkpoint, not just the previous one: beating
@@ -511,6 +561,19 @@ def run_league(
                 "champion_before": previous_champion,
                 "vs_champion": mean_vs(previous_champion),
                 "vs_scripted": {n: mean_vs(n) for n in panel},
+                "vs_frozen": {
+                    n: {
+                        "pairs": len(samples),
+                        "mean": float(np.mean(samples)) if samples else None,
+                        "lower95": hoeffding_lower(
+                            float(np.mean(samples)) if samples else 0.0,
+                            len(samples),
+                            0.95,
+                        ),
+                    }
+                    for n in frozen
+                    for samples in [_utilities(games, f"gen{g}", n)]
+                },
                 "train_contact_ticks": stats["contact_ticks"],
                 "train_median_end_tick": float(np.median(stats["end_ticks"])),
                 "elo": elo,
