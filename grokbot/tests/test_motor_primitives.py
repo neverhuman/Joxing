@@ -109,6 +109,7 @@ def test_league_runs_a_punch_policy_against_a_frozen_champion():
         init_params=punch_params(GEN4),
         policy_kind="punch",
         frozen={"v11gen4": ("params", GEN4)},
+        require_valid=False,  # plumbing check; this configuration is degenerate
         log=lambda row: None,
     )
     (gen,) = report["generations"]

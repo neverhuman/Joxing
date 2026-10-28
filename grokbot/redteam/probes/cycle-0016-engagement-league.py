@@ -43,6 +43,7 @@ def main(out):
         shaping_weight=t["shaping_weight"],
         min_engaged_share=protocol["gates"]["min_engaged_share"],
         init_params=np.array(init),
+        require_valid=False,  # reproduces a recorded degenerate run
         log=lambda row: print(json.dumps(row), flush=True),
     )
     report["protocol_sha256"] = hashlib.sha256(raw).hexdigest()
