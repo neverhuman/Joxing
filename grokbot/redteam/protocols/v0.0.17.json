@@ -1,0 +1,76 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.17",
+ "registered_utc": "2026-10-28T04:52:02Z",
+ "question": "Does adding per-group posture feedback to the v0.0.16 group controller (a specific capacity increase, not a rerun) pass the motor gate AND beat the frozen v0.0.13 champion head-to-head with valid games?",
+ "context": "v0.0.16 primary gate failed (stance 0/24, reach 0/24) but stand time improved in 24/24 paired trials; pre-declared reading 2 (capacity helps; scale up) applies",
+ "classification": "single-athlete motor diagnostic in the shared two-person world; not boxing, not self-play, not an Elo claim",
+ "env": "grokbot.scenarios.RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000); unchanged jekko env; runs to the horizon (does not stop at the first fall)",
+ "opponent": "frozen v0.0.11 gen4 posture policy (deterministic) in corner B",
+ "candidate": {
+  "kind": "GroupFeedbackPolicy (to be implemented before the run): v0.0.16 GroupPolicy (284 params) + per-DynSyn-group gains on the 6 tilt features (pelvis and trunk z-rows: obs 930-932, 948-950) = 138 x 6 = 828 new params",
+  "init": "v0.0.16 final_params with all 828 per-group gains = 0 (bit-identical commands to the v0.0.16 candidate at iteration 0)"
+ },
+ "training": {
+  "method": "grokbot.motor_gate.train antithetic ES with CRN",
+  "fitness": "stand_ticks/3000 + 1.0 * [strike landed]",
+  "iterations": 48,
+  "pairs": 12,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "seed": 7,
+  "workers": 4,
+  "nice": 10
+ },
+ "gate": {
+  "seeds": [
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023
+  ],
+  "eval_noise": 0.05,
+  "stance_pass": "candidate stands (no persistent non-foot floor support) for the full 3000 ticks",
+  "reach_pass": "candidate lands >= 1 strike tick (approach and referee active speed >= 0.5 m/s on a strike target)",
+  "faults": "engine faults count as failures"
+ },
+ "criteria": {
+  "primary_motor_gate": "stance_pass_rate >= 0.50 AND reach_pass_rate >= 0.50 over the same 24 gate trials (v0.0.15/v0.0.16 seeds, opponent, horizon)",
+  "head_to_head": "only if the motor gate passes: the candidate vs the frozen v0.0.13 champion (its gen0 = punch_params(gen4, onset=-3, duration=0, amplitude=2)) at the 0.50 m range reset under anti-stalling, 12 side-swapped noisy seed pairs: valid games > 0 AND one-sided 95% Hoeffding lower bound of the paired mean utility > 0",
+  "secondary": "one-sided exact sign test on paired stand ticks vs the v0.0.16 candidate on the 24 gate seeds, p < 0.05",
+  "level_up": "v0.0.17 is a level-up (tagged) iff the primary motor gate AND the head-to-head criterion pass"
+ },
+ "pre_declared_readings": [
+  "no stand gain over v0.0.16: open-loop/linear feedback capacity is saturated; next lever is recurrent control or jekko's pretrained bridge",
+  "stand gain but gate fails: report and scale the same controller",
+  "gate passes, head-to-head fails (no valid games or no superiority): engagement still missing; retarget reach",
+  "both pass: tag v0.0.17 and preregister a league with the valid-game floor"
+ ],
+ "scripts": [
+  "to be added with the GroupFeedbackPolicy implementation PR; must read this protocol unchanged"
+ ],
+ "owner_requirements": [
+  "gb_feedback_0313/0314: pass the motor gate and beat v0.0.13 head-to-head with valid games > 0",
+  "gb_feedback_0425: a bigger, specific change, not a rerun"
+ ]
+}
