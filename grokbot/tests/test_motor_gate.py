@@ -163,3 +163,49 @@ def test_gate_counts_faults_as_failures():
     assert out["stance_pass_rate"] == 0.5 and out["reach_pass_rate"] == 0.5
     assert out["scoring_reach_rate"] == 0.0
     assert out["invalid"] == 1 and out["trials"] == 4
+
+
+class RecordingPool(FakePool):
+    def map(self, function, tasks):
+        self.tasks = list(tasks)
+        return super().map(function, tasks)
+
+
+def test_es_cycles_a_list_of_opponents_with_twins_paired():
+    params = np.zeros(N_PARAMS)
+    first, second = ("scripted", "baseline"), ("scripted", "relaxed")
+    pool = RecordingPool([result(1000 + 100 * k) for k in range(8)])
+    motor_gate.train(
+        pool,
+        params,
+        [first, second],
+        np.random.default_rng(0),
+        kind="params",
+        iterations=1,
+        pairs=4,
+        sigma=0.1,
+        lr=0.05,
+        horizon_ticks=3000,
+        strike_bonus=1.0,
+        log=lambda row: None,
+    )
+    faced = [task[1] for task in pool.tasks]
+    assert faced == [first, first, second, second, first, first, second, second]
+    single = RecordingPool([result(1000 + 100 * k) for k in range(8)])
+    motor_gate.train(
+        single,
+        params,
+        first,
+        np.random.default_rng(0),
+        kind="params",
+        iterations=1,
+        pairs=4,
+        sigma=0.1,
+        lr=0.05,
+        horizon_ticks=3000,
+        strike_bonus=1.0,
+        log=lambda row: None,
+    )
+    assert [task[1] for task in single.tasks] == [first] * 8
+    # one opponent: identical tasks to the old single-spec call
+    assert [t[2] for t in single.tasks] == [t[2] for t in pool.tasks]
