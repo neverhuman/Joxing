@@ -1,3 +1,37 @@
+# Scoring diagnostic phase A implemented and registered — 2026-10-28
+
+New read-only score_diagnostic.py independently reconstructs per-glove events
+without calling HitTracker.update and explains effective contact rejections.
+Production referee/rules/scene/env/Grokbot files remain unchanged by this work.
+A separate rigid physical adapter fixture exercises actual step_contacts→
+MatchReferee.stage/commit: development controls score head2/torso1 in both
+geom orders, with exact independent ledgers. These are diagnostic rigid bodies,
+not native700-muscle athletes or a boxing success. Native teacher remains intact.
+
+26new tests pass0.58s;43new/existing rules/referee tests pass3.03s; Ruff passes.
+Saved D0 development reads reconstruct1,000no-contact intervals and20contact-
+stress intervals exactly. The56positive-force stress contacts are guard-only;
+four events pay0. The published v21 summary still lacks the onset/impulse data
+needed to diagnose its zero-point replay. No v21 cause is inferred.
+
+Formal PHASEA protocol canonical SHA:
+f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911.
+Seven rows: two saved native ledger audits, one explicit summary data-gap finding,
+four rigid physical controls. Fresh full source gate1128passes +the exact known
+strict referee-alias xfail precedes20sproof/10saudit,30spostgate/512MiB/4MiB.
+Only1,000new RIGIDfixture steps;0native steps/optimizer/competitive games.
+All attempted/not_run rows and per-step entered/completed receipts persist.
+Original native budget fits without increased caps; motor proof remains FALSE.
+
+Current action: public-freeze/anonymous-byte-verify, deploy fresh xbabe1root with
+all frozen source/upstream and eight saved input files verified, then pinned
+runtime full Linux suite→proof→independent saved audit. Do not alter executing
+source, repeat native physics or duplicate the independent Grokbot v22 mission.
+Incoming b15c695 v22 preregistration is preserved and read-only; its knockdown
+objective is separate from this legal-score adapter diagnosis.
+Read SCORED_CONTACT_DIAGNOSTIC_PACKET.md and scored-contact-protocol.json.
+Later recording/actual athlete legal-strike feasibility stays unqualified.
+
 # Codec qualified; next task is contact-to-score diagnosis — 2026-10-28
 
 [Native codec results](MOTOR_CODEC_RESULTS.md): frozen92ef8d05/protocol4874406b

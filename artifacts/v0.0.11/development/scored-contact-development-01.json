@@ -1,0 +1,60 @@
+{
+  "schema": "joxing-score-development-validation-v1",
+  "scope": "Retrospective development checks, not the formal frozen Linux probe",
+  "rows": [
+    {
+      "case": "source-90101",
+      "status": "passed",
+      "intervals": 1000,
+      "rejection_counts": {},
+      "final_sha256": "1378c59ee3e620aa46bf2e9740332d1c27708b9befb826d75e871ab7a1a31eb1",
+      "wall_s": 0.32268833299167454
+    },
+    {
+      "case": "contact-source-90104",
+      "status": "passed",
+      "intervals": 20,
+      "rejection_counts": {
+        "direct_zone": 80,
+        "positive_force": 24
+      },
+      "final_sha256": "4b70b4bba8485e41bfb5492ed507d7ea30c25086b40a9d9c8aa702678f857f44",
+      "wall_s": 0.05672258301638067
+    }
+  ],
+  "targeted_tests": [
+    {
+      "count": 24,
+      "wall_s": 0.57
+    },
+    {
+      "count": 26,
+      "wall_s": 0.58
+    },
+    {
+      "count": 43,
+      "wall_s": 3.03,
+      "scope": "new scorer plus existing rules and full-model MatchReferee regression"
+    }
+  ],
+  "earlier_read_errors": [
+    "AttributeError: snapshot engine is a list, not a keyed object; no source or data modified"
+  ],
+  "earlier_lint_rejection": "Four C408 test dictionary literals; corrected before registration",
+  "development_fixture_physics": 4000,
+  "new_formal_native_physics": 0,
+  "new_formal_fixture_physics": 0,
+  "full_source_collection": {
+    "tests": 1129,
+    "expected_passes": 1128,
+    "expected_strict_xfail_nodes": [
+      "grokbot/tests/test_referee_fuzz.py::test_restore_does_not_alias_the_snapshot"
+    ],
+    "source_includes_incoming_grokbot": "b15c695"
+  },
+  "earlier_lint_rejections": [
+    "Four C408 dictionary literals; corrected",
+    "Import sorting, explicit subprocess check=False and immediate closure binding; corrected before registration"
+  ],
+  "lint": "Ruff all8 new files passed"
+}

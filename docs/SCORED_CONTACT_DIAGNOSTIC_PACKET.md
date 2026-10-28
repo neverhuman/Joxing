@@ -1,9 +1,47 @@
 # Follow-up: explain the gap between contact and referee points
 
-Status: implementation-ready plan; no formal probe registered or launched here.
+Status: phase A implemented; formal protocol registered before execution. Parent packet
+remains incomplete until actual athlete diagnosis and recording criteria pass.
 Integration owner: the current native Joxing owner. Grokbot is a read-only dependency.
-The active binding-codec qualification must finish and its evidence be audited first.
+The binding-codec qualification and its independent transfer/exit audit passed.
 This packet does not consume or enlarge its physical/time/storage allowance.
+
+## Registered phase A and precise limits
+
+Protocol: experiments/v0.0.11/scored-contact-protocol.json; canonical SHA
+`f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911`.
+This first phase implements the saved-data explainer/independent ledger and rigid
+adapter positive controls. It does not satisfy this parent packet's native-strike
+or recording milestone.26new tests pass;43combined new/existing rules/referee
+checks pass; the full1128pass/one-known-xfail Linux gate is still pending.
+The development fixture/reset remains explicitly separate from native evaluation.
+
+Exact entry points: scripts/{register,qualify,audit,supervise}_scored_contacts.py;
+implementation src/joxing/{score_diagnostic,score_adapter_fixture,score_qualification}.py;
+tests/test_score_diagnostic.py. Source/inputs pin both saved initial/final/trace/
+contract groups and the unchanged published summary. Full source freeze precedes
+outcomes. The supervisor uses a fresh dedicated root and pinned runtime Python:
+
+```sh
+rtk proxy experiments/v0.0.11/runtime/.venv/bin/python scripts/supervise_scored_contacts.py --protocol-sha256 f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911 --source-sha FROZEN_COMMIT
+```
+
+Run on the inspected Linux host, not locally with mismatched dependencies.
+Full tests have900s; proof20s +read-audit10s, combined30s after source gate.
+Same512MiB RSS/4MiB output, one numerical thread, one rigid fixture worker.
+The four controls use head/torso × forward/reverse geometry order,250actual
+steps each. Before/after every step is recorded. Native steps remain0. Failed
+pre-write/time/memory/source gates stop the chain with allseven rows retained.
+The conservative native ledger plus this phase stays below900s/256MiB and the
+120kphysics ceiling; no old cap or failure is relabeled. The source regression
+is separate from formal proof step accounting, as in earlier qualifications.
+
+Independent read-audit regenerates saved explanations, compares each full event
+and final tracker snapshot, reads allfour actual physical control traces and
+validates all1,000entered/completed step pairs. It adds no simulation. The rigid
+physical fixture never demonstrates native reach, standing or athletic scoring.
+Results belong in runs/v0.0.11/scored-contact-{proof,supervision}-01, with the
+complete attempt/event/raw ledger and transfer/exit audit. No release tag.
 
 ## Objective, scope and criteria
 
@@ -115,7 +153,8 @@ No post-step mj_forward to replace force-evaluation geometry.
    Register the exact case, physics/wall/RSS/raw caps, one-thread ownership,
    first-limit stop and all attempted/not_run rows BEFORE formal outcomes.
    Do not spend the original native v11 remainder without an explicit ledger
-   calculation; the codec's worst-case bound leaves under7postgate seconds.
+   calculation; the measured codec conclusion leaves57.726918postgate seconds; phase A
+   reserves at most30 of those seconds.
    If that cannot fit, preregister a separately identified subsequent mission
    and budget before any new formal physics. Never increase a failed cap.
 7. Record first fixed case from saved physical states with a score/event overlay,
