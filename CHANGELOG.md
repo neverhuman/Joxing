@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.0.22 — 2026-10-28 (preregistered level-up NOT met; not tagged)
+
+grokbot PR #31 (preregistration) plus the cycle-0032 report. This is a diagnostic, not an unassisted boxing result. v0.0.20 and v0.0.21 were also untagged misses (cycles 0028 and 0030). The last level-up is still **v0.0.19**.
+
+- **One lever:** a knockdown objective. The training bonus requires a head/torso hit, then the opponent falling first. It was trained against frozen v0.0.19.
+- **Primary, against frozen v0.0.19: PASSED.** 46/48 valid, **46–0–0**, every win with hits, Elo +661 (lower95 +186). These are the first decisive wins over v0.0.19; v0.0.21 drew 42 of 48 against it.
+- **Missed criteria:**
+  - The **v0.0.13 hard gate failed**: 36/48 valid, against 40 required, with 12 games blocked.
+  - **Monotonicity was unmeasurable** for @16 vs v0.0.19: 38/48 valid, with 10 blocked.
+  - @48 vs @16 went 48–0.
+- **Why it missed:** 0 valid losses in 168 games. Both failures are **blocked** games, where the opponent's fall follows body contact and cannot be attributed. The bonus still paid for those falls. The next lever (v0.0.23) rewards only knockdowns the ending attributes.
+
 ## v0.0.19 — 2026-10-28 (preregistered level-up PASSED)
 
 grokbot PRs #24 and #25 plus the cycle-0026 report. This is a solo-trained motor policy evaluated against frozen opponents. It is a diagnostic, not an unassisted boxing result: it does not claim jekko's completion battery, and native boxing games remain 0. v0.0.18 was not tagged, because it missed its criterion.
