@@ -72,5 +72,30 @@
  "owner_requirements": [
   "gb_feedback_0313/0314: pass the motor gate and beat v0.0.13 head-to-head with valid games > 0",
   "gb_feedback_0425: a bigger, specific change, not a rerun"
- ]
+ ],
+ "head_to_head": {
+  "runs_only_if": "the primary motor gate passes (otherwise reported as not run)",
+  "env": "grokbot.reference_env.ReferenceEndingEnv(RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000), anti_stalling=True) via grokbot.selfplay.play_game",
+  "candidate": "the trained GroupFeedbackPolicy, eval noise 0.05",
+  "opponent": "frozen v0.0.13 champion: kind punch, punch_params(v0.0.11 gen4, onset=-3.0, duration=0.0, amplitude=2.0), eval noise 0.05",
+  "seeds": [
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011
+  ],
+  "sides": "each seed played with the candidate in corner A and in corner B (24 games)",
+  "utility": "ReferenceEndingEnv ending utility for the candidate in [-1, 1]; a game is valid iff selfplay.valid_result (not no-contest, not blocked, not an engine fault)",
+  "samples": "grokbot.promotion._utilities: valid games sharing a seed are averaged into one paired sample",
+  "bound": "grokbot.promotion.hoeffding_lower(mean, n_samples, 0.95)",
+  "pass": "valid games > 0 AND hoeffding_lower > 0 (every game, valid or not, is reported in the denominator)"
+ }
 }

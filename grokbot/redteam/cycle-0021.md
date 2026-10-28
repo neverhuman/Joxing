@@ -71,6 +71,6 @@ protocol.
 The v0.0.16 summary data, `data/cycle-0020-group-gate-summary.json`, holds
 the per-trial stand and strike ticks, the training history, the final
 parameters, the exploratory sign test, and the full-report SHA-256. The PR
-also adds the v0.0.17 protocol (sha256 `24fdd85b…`), `grokbot/STATUS.md`,
+also adds the v0.0.17 protocol (sha256 `850ec810…`), `grokbot/STATUS.md`,
 and this report. The v0.0.17 probe and `GroupFeedbackPolicy` land in the
 next PR, before the run.
