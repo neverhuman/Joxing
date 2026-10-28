@@ -1,0 +1,153 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.21",
+ "registered_utc": "2026-10-28T12:10:21Z",
+ "owner_requirements": [
+  "gb_feedback_1146: ONE new lever aimed at validity (3/48 valid is the real failure), vs frozen v0.0.19 on fresh seeds, preregistered as its own PR before the run",
+  "gb_feedback_1205: valid games >= 40/48 is a precondition checked BEFORE the win-rate criterion; fail loud (not null) if validity is not reached"
+ ],
+ "question": "Does training the hit-and-stay-up fitness against a standing frozen v0.0.19 (instead of the falling gen4 posture) produce a policy whose games against v0.0.19 are decisive (>= 40/48 valid) and won with hits?",
+ "lever": "ONE change from v0.0.19: the training opponent in motor_gate.train is the frozen v0.0.19 (kind group_pd, eval noise 0.05) instead of the gen4 posture. Fitness (stand/3000 + hit_and_stayed_up(500)), model, initialisation (v0.0.19 final_params), ES settings, reset and ending are unchanged.",
+ "why_this_lever": "cycle-0028: v0.0.19 lands head hits at ~0.52 s against the gen4 posture (which falls at ~1.46 s and never guards) but 0 strikes against a standing copy of itself (40/48 no-contests); the league's outcome signal vs v0.0.19 was 0-1 valid games per generation. Owner 11:46 suggested pool sampling from v0.0.13/16/19 with a min-valid constraint; v0.0.13 and v0.0.16 are already beaten 48-0 with 100% valid games, so they would add zero rank signal - the narrowest form is the v0.0.19 opponent alone.",
+ "classification": "solo motor fitness against a frozen opponent (not competitive learning: no match outcome in the fitness); diagnostic, not an unassisted boxing result",
+ "env": "grokbot.scenarios.RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000); unchanged jekko env; runs to the horizon (does not stop at the first fall)",
+ "training": {
+  "method": "grokbot.motor_gate.train antithetic ES with CRN",
+  "opponent": "frozen v0.0.19 (group_pd, eval noise 0.05)",
+  "fitness": "stand_ticks/3000 + 1.0 * hit_and_stayed_up(result, stay_up_ticks=500)",
+  "iterations": 48,
+  "pairs": 12,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "seed": 11,
+  "workers": 4,
+  "nice": 19,
+  "load_rule": "launch only with loadavg < 86"
+ },
+ "gate": {
+  "seeds": [
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023
+  ],
+  "eval_noise": 0.05,
+  "stance_pass": "candidate stands (no persistent non-foot floor support) for the full 3000 ticks",
+  "reach_pass": "candidate lands >= 1 strike tick (approach and referee active speed >= 0.5 m/s on a strike target)",
+  "faults": "engine faults count as failures",
+  "also_reported": "scoring_reach_rate (share of trials with >= 1 head/torso hit); not part of the primary gate",
+  "note": "motor gate still against the frozen gen4 posture, reported (not gating)"
+ },
+ "primary": {
+  "name": "validity precondition, then win-rate gate, vs frozen v0.0.19 on NEW seeds 10000-10023 (48 games)",
+  "head_to_head": {
+   "env": "grokbot.reference_env.ReferenceEndingEnv(RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000), anti_stalling=True) via grokbot.selfplay.play_game (ending v2, unchanged)",
+   "candidate": "the trained v0.0.21 GroupPDPolicy, eval noise 0.05",
+   "opponent": "frozen v0.0.19: kind group_pd, v0.0.19 final_params, eval noise 0.05",
+   "seeds": [
+    10000,
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019,
+    10020,
+    10021,
+    10022,
+    10023
+   ],
+   "sides": "each seed with the candidate in corner A and in corner B (48 games)",
+   "valid": "grokbot.selfplay.valid_result; every game stays in the denominator",
+   "samples": "grokbot.promotion._utilities over valid games (seed-paired)",
+   "bound": "grokbot.promotion.hoeffding_lower(mean, n_samples, 0.95)",
+   "elo": "Elo = 400*log10(p/(1-p)) with p = (1+mean)/2 clipped to [0.5/n, 1-0.5/n]; Elo lower bound from p_low = (1+lower95)/2 (-inf if p_low <= 0); win rate with a Wilson 95% interval (descriptive)"
+  },
+  "min_valid_games": 40,
+  "order": [
+   "1. validity precondition: valid primary games >= 40 of 48 (selfplay.valid_result). If NOT met: verdict VALIDITY_FAILED, the win-rate criteria are not evaluated, the probe exits non-zero (fail loud). This is a failure, not a null and not a pass.",
+   "2. only if validity holds: (b) Hoeffding lower95 > 0 (Elo lower bound > 0) AND (c) >= half of the candidate's valid wins with >= 1 candidate head/torso hit"
+  ],
+  "level_up": "v0.0.21 is a level-up (tagged v0.0.21) iff verdict == LEVEL_UP (validity precondition AND b AND c)"
+ },
+ "secondary_reported_not_gating": {
+  "seeds": [
+   11000,
+   11001,
+   11002,
+   11003,
+   11004,
+   11005,
+   11006,
+   11007,
+   11008,
+   11009,
+   11010,
+   11011,
+   11012,
+   11013,
+   11014,
+   11015,
+   11016,
+   11017,
+   11018,
+   11019,
+   11020,
+   11021,
+   11022,
+   11023
+  ],
+  "baseline_validity": "v0.0.19 self-mirror on the primary seeds 10000-10023 (expected near-zero validity, cycle-0028)",
+  "vs_v0016": "candidate vs frozen v0.0.16 on seeds 11000-11023 (48 games)",
+  "vs_v0013": "candidate vs frozen v0.0.13 on seeds 11000-11023 (48 games)",
+  "motor_gate": "candidate and v0.0.19 (re-run, checked per trial against its committed summary) on the 24 motor-gate seeds vs gen4",
+  "training": "per-iteration stand time, scoring_share and hit_and_up_share against v0.0.19"
+ },
+ "red_team_notes": [
+  "The validity threshold 40/48 is strict: v0.0.19 itself reaches 3/48 against v0.0.19 (cycle-0028)",
+  "Body collisions (blocked) count as invalid; v0.0.18 vs v0.0.19 was 92% blocked, so hits alone may not reach 40/48",
+  "No game has been played on seeds 10000-10023 or 11000-11023; the probe smoke test used seeds 99990-99993"
+ ],
+ "pre_declared_readings": [
+  "LEVEL_UP: tag v0.0.21; next preregister a self-play league seeded from it (its games against the champion are now decisive)",
+  "VALIDITY_FAILED with mostly no-contests: hitting a standing guard is still not learned; next lever: aiming feedback (glove-to-head offset) in the controller",
+  "VALIDITY_FAILED with mostly blocked: hits arrive but bodies collide; next lever: separation 0.6 m or a clinch-break ending rule",
+  "CRITERION_NOT_MET (valid but b or c fails): decisive games but no superiority or balance-only wins; next lever: longer training against v0.0.19"
+ ],
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0029-mirror-opponent-gate.py"
+ ]
+}

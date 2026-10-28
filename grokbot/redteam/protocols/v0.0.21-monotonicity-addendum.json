@@ -1,0 +1,23 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.21-monotonicity-addendum",
+ "registered_utc": "2026-10-28T13:11:13Z",
+ "amends": "grokbot/redteam/protocols/v0.0.21.json (sha256 997972f3...) - adds one TAG PRECONDITION; changes no criterion of v0.0.21 and can only withhold a tag, never grant one",
+ "owner_requirement": "gb_feedback_1310 item 5: before tagging v0.0.21, show the eval agent is monotone in compute (more training never loses to less at LCB); Jo r2.13 agent-adequacy form: full@3N vs full@N LCB > .55 on fresh seeds, both seats",
+ "registered_before": "pushed while the v0.0.21 run was still training and before any v0.0.21 gate or head-to-head result was read (only training-iteration rows up to iteration 8 had been seen)",
+ "checkpoints": {
+  "N": "v0.0.21 after 16 ES iterations: reproduced by re-running motor_gate.train with the v0.0.21 protocol settings (seed 11, opponent frozen v0.0.19, hit_and_stayed_up 500) for 16 iterations; reproduction verified by requiring the rerun's history rows 0-15 to equal the main run's rows 0-15 exactly (else REPRODUCTION_FAILED, no tag)",
+  "3N": "v0.0.21 final params (48 iterations)",
+  "0": "v0.0.19 (the 0-iteration start)"
+ },
+ "matchups": {
+  "3N_vs_N": "v0.0.21@48 vs v0.0.21@16, seeds 12000-12023, both sides (48 games)",
+  "N_vs_0": "v0.0.21@16 vs v0.0.19, seeds 12000-12023, both sides (48 games)"
+ },
+ "statistics": "head_to_head() of grokbot/redteam/probes/cycle-0025-hit-stay-gate.py, unchanged; win rate = wins / valid games with a Wilson 95% interval",
+ "pass": "for EACH matchup: valid games >= 40 of 48 (checked first; else ADEQUACY_UNMEASURABLE) AND the Wilson 95% lower bound of the more-trained policy's win rate over valid games > 0.55",
+ "decision": "v0.0.21 may be tagged only if its own registered verdict is LEVEL_UP AND both matchups pass; otherwise no tag, and the report says which condition failed",
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0030-compute-monotonicity.py"
+ ]
+}

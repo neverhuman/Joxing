@@ -52,6 +52,7 @@ SUPPORT_FORCE_N = 60.0  # ~10 % of one athlete's 596 N weight
 SUPPORT_PERSIST_TICKS = 100  # 100 ms of continuous support; a brush is not a fall
 ATTRIBUTION_LOOKBACK_TICKS = 500  # any opponent contact in the last 0.5 s
 STRIKE_TARGETS = ("head", "torso", "guard", "glove")
+SCORING_TARGETS = ("head", "torso")  # a strike here is a hit, not a blocked punch
 ATTRIBUTIONS = ("self", "knockdown", "opponent", "unresolved")
 
 
@@ -120,11 +121,12 @@ class ContactClassifier:
         self.runs = {}  # glove geom -> [first_tick, last_tick, is_strike]
         self.strikes, self.blocking = [], []
         self.strikes_by = {p: [] for p in PLAYERS}  # ticks each corner was striking
+        self.scoring_by = {p: [] for p in PLAYERS}  # ...on a head or torso target
 
     def feed(self, row):
         rules, registry, t = self.rules, self.registry, row["tick"]
         boxing = blocks = False
-        strikers_tick = set()
+        strikers_tick, scorers_tick = set(), set()
         active = {
             (glove, touch["sample_id"]): touch["active_speed_mps"]
             for glove, interval in row.get("gloves", {}).items()
@@ -138,7 +140,7 @@ class ContactClassifier:
             ):
                 continue
             gloves = [
-                g
+                (g, o)
                 for g, o in ends
                 if roles[g]["role"] == "glove" and roles[o]["role"] in STRIKE_TARGETS
             ]
@@ -146,8 +148,8 @@ class ContactClassifier:
                 blocks = True
             sample = f"{index}:{c['geom1']}:{c['geom2']}"
             striking = False
-            strikers = set()
-            for g in gloves:
+            strikers, scorers = set(), set()
+            for g, o in gloves:
                 speed = active.get((registry[g]["name"], sample), -np.inf)
                 fast = (
                     c["approach_mps"] >= rules.approach_min_mps
@@ -162,11 +164,14 @@ class ContactClassifier:
                 if run[2] and t - run[0] < self.window:
                     striking = True
                     strikers.add(registry[g]["actor"])
+                    if roles[o]["role"] in SCORING_TARGETS:
+                        scorers.add(registry[g]["actor"])
             # A punch into a still guarding glove is boxing: one striking glove
             # in the contact is enough.
             if gloves and striking:
                 boxing = True
                 strikers_tick |= strikers
+                scorers_tick |= scorers
             elif gloves:
                 blocks = True
         if boxing:
@@ -175,6 +180,8 @@ class ContactClassifier:
             self.blocking.append(t)
         for p in strikers_tick:
             self.strikes_by[p].append(t)
+        for p in scorers_tick:
+            self.scoring_by[p].append(t)
 
 
 def classify_contacts(evidence, registry, rules=None):
