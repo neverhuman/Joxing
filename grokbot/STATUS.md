@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~06:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~06:45 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `9c22f2c`, plus this PR. **Latest tag: `v0.0.13`.**
+- **Main:** green at `508cd94`, plus this PR. **Latest tag: `v0.0.13`.**
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -24,30 +24,29 @@ and `grokbot/redteam/cycle-*.md`.
 | Version | Change | Stance | Reach | Median stand | Result |
 |---|---|---|---|---|---|
 | v0.0.15 | `PunchPolicy`, 10 regional tones | 0/24 | 0/24 | 1.349 s (gen4 1.464 s) | failed; the rerun reproduced it exactly |
-| v0.0.16 (gate-0020/0021) | **`GroupPolicy`, 138 group tones** | 0/24 | 0/24 | **2.344 s** | failed, not tagged. Stand time better than gen4 in 24/24 trials (exploratory sign test p = 6e-8). First training strikes ever, in 5 iterations. |
+| v0.0.16 | `GroupPolicy`, 138 group tones | 0/24 | 0/24 | 2.344 s | failed, not tagged |
+| v0.0.17 | `GroupFeedbackPolicy`, per-group tilt gains | **7/24** | **24/24** | **2.682 s** | **criterion not met**: stance 0.29 < 0.5, so the head-to-head did not run. Not tagged. Sign test vs v0.0.16 passed (p = 1.5e-6). |
 
-## v0.0.16 preregistered criteria (protocol `1ff40c3d…`)
+**Exploratory, not counted:** v0.0.17 vs v0.0.13 on the pinned seeds gave 14
+of 24 games valid and 14 of 14 won. These are the first valid games, but
+every one was a glove tap followed by the opponent's own fall (cycle 0023,
+F1/F2).
 
-- **Primary:** stance pass ≥ 0.5 **and** reach pass ≥ 0.5 over 24 noisy solo
-  trials (seeds 1000–1023), at the facing 0.5 m spawn, against the frozen
-  gen4 posture, over 3 s. Not met.
-- **Secondary:** Hoeffding lower bound on the paired stand gain over gen4.
-  Not met: the mean is +0.87 s, the lower bound −0.63.
+## Next step: v0.0.18 (protocol `protocols/v0.0.18.json`)
 
-## Next step: v0.0.17 (protocol `850ec810…`, on main since #21)
+- **Changes:** `GroupPDPolicy` (per-group velocity and height gains, 966
+  parameters, from v0.0.17) and a hit-only strike bonus. 48 × 12 ES, seed 8,
+  at nice 19.
+- **Level-up** requires both the **motor gate** and the **Elo gate**. The Elo
+  gate is against the frozen v0.0.16 champion, on seeds 3000–3023 with both
+  sides, and always runs. It needs all of:
+  - valid games ≥ 50 %;
+  - a paired lower bound > 0, which is the same as an Elo lower bound > 0;
+  - at least half of the candidate's wins including head or torso hits.
 
-1. Done in cycle 0022: `GroupFeedbackPolicy` (`GroupPolicy` plus 138 × 6
-   per-group tilt gains, 828 parameters, zero-initialized on the v0.0.16
-   final parameters), with tests and the probe
-   `probes/cycle-0022-group-feedback-gate.py`.
-2. Run 48 × 12 ES with seed 7 on the same gate (in progress or next).
-3. **Level-up** requires the motor gate to pass **and** the head-to-head
-   against the frozen v0.0.13 champion (seeds 2000–2011, 0.5 m,
-   anti-stalling) to have valid games > 0 and a paired lower bound > 0.
-   Note: the champion falls at about 1.7 s, so a valid game needs a strike
-   before then (cycle 0022, F1). Only a level-up gets the tag `v0.0.17`.
-4. If there is no stand gain, the next lever is recurrent control or jekko's
-   pretrained bridge.
+  Only a level-up gets the tag `v0.0.18`.
+- **Probe:** `probes/cycle-0023-group-pd-gate.py`. The run's tree is checked
+  against the merged tree.
 
 ## Rules this lane follows
 
@@ -56,6 +55,6 @@ and `grokbot/redteam/cycle-*.md`.
   `gh pr merge --rebase --match-head-commit`. Re-verify main immediately
   before approving and before merging.
 - Preregister and push the protocol before reading any result.
-- At most 4 one-thread workers, at `nice -n 10`.
+- At most 4 one-thread workers, at `nice -n 19`. Yield if loadavg ≥ 86.
 - Write only under `grokbot/` and `.github/`. Edit `CHANGELOG.md` only when
   the owner asks.

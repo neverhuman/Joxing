@@ -221,3 +221,36 @@ def group_params(posture, **punch):
     """Group tones copied from the posture's regional tones, then posture+punch."""
     regional = np.asarray(posture, float).reshape(len(selfplay.REGIONS), -1)[:, 0]
     return np.concatenate([regional[GROUP_REGION], punch_params(posture, **punch)])
+
+
+RATE_FEATURES = len(selfplay.FEATURES) - TILT_FEATURES  # pelvis velocities, height
+GROUP_PD_PARAMS = GROUP_PARAMS * RATE_FEATURES
+
+
+class GroupPDPolicy(GroupFeedbackPolicy):
+    """``GroupFeedbackPolicy`` + per-group velocity and height gains (v0.0.18).
+
+    v0.0.17 gave every group a proportional response to tilt but no damping,
+    and the athletes still fell at about 2.7 s. ``params`` = the 1,112
+    ``GroupFeedbackPolicy`` parameters, then a 138 x 7 row-major gain matrix on
+    ``selfplay.FEATURES[6:]`` (pelvis linear and angular velocity, height).
+    All-zero gains give exactly the ``GroupFeedbackPolicy`` commands.
+    """
+
+    def __init__(self, params, noise=0.0):
+        params = np.asarray(params, float)
+        base = GROUP_PARAMS + selfplay.N_PARAMS + PUNCH_PARAMS + GROUP_FEEDBACK_PARAMS
+        if params.shape != (base + GROUP_PD_PARAMS,):
+            raise ValueError(f"Expected {base + GROUP_PD_PARAMS} parameters")
+        super().__init__(params[:base], noise)
+        self.rate_gains = params[base:].reshape(GROUP_PARAMS, RATE_FEATURES)
+
+    def _feedback(self, delta):
+        return super()._feedback(delta) + self.rate_gains @ delta[TILT_FEATURES:]
+
+
+def group_pd_params(group_feedback):
+    """``GroupFeedbackPolicy`` parameters extended with all-zero rate gains."""
+    return np.concatenate(
+        [np.asarray(group_feedback, float), np.zeros(GROUP_PD_PARAMS)]
+    )

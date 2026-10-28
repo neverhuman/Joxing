@@ -193,3 +193,42 @@ def test_a_per_group_tilt_gain_moves_only_that_group():
     assert (
         selfplay._controller(("group_feedback", params, 0.0)).group_gains[k, 2] == -0.5
     )
+
+
+def test_group_pd_policy_starts_exactly_at_the_group_feedback_policy():
+    from grokbot.motor_primitives import (
+        GROUP_PD_PARAMS,
+        RATE_FEATURES,
+        GroupFeedbackPolicy,
+        GroupPDPolicy,
+        group_feedback_params,
+        group_params,
+        group_pd_params,
+    )
+
+    feedback = group_feedback_params(
+        group_params(GEN4, onset=-3.0, duration=0.0, amplitude=2.0)
+    )
+    feedback[284:] = np.random.default_rng(2).normal(0, 0.1, 828)  # trained tilt
+    params = group_pd_params(feedback)
+    assert len(params) == 1112 + GROUP_PD_PARAMS == 1112 + 138 * RATE_FEATURES
+    a, b = GroupPDPolicy(params, 0.05), GroupFeedbackPolicy(feedback, 0.05)
+    ra, rb = np.random.default_rng(4), np.random.default_rng(4)
+    values = np.random.default_rng(0).normal(size=1970).astype(np.float32)
+    for tick in (0, 20, 400):
+        moved = values.copy()
+        moved[selfplay.FEATURES] += 0.05 * tick / 400
+        assert np.array_equal(
+            a(Obs(tick, moved), None, ra), b(Obs(tick, moved), None, rb)
+        )
+    k = 7
+    params[1112 + k * RATE_FEATURES + 6] = 0.8  # group 7 on height
+    gain, zero = GroupPDPolicy(params), GroupPDPolicy(group_pd_params(feedback))
+    gain(Obs(0, values)), zero(Obs(0, values))
+    lower = values.copy()
+    lower[selfplay.FEATURES[12]] -= 0.1
+    diff = gain(Obs(20, lower)) != zero(Obs(20, lower))
+    assert diff.any() and set(np.flatnonzero(diff)) <= set(GROUPS[k])
+    assert selfplay._controller(("group_pd", params, 0.0)).rate_gains[k, 6] == 0.8
+    with pytest.raises(ValueError):
+        GroupPDPolicy(feedback)

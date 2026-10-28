@@ -17,11 +17,12 @@ class FakePool:
         return self.results
 
 
-def result(stand, strikes=0, invalid=None):
+def result(stand, strikes=0, invalid=None, scoring=0):
     return {
         "invalid": invalid,
         "stand_ticks": stand,
         "strike_ticks": strikes,
+        "scoring_strike_ticks": scoring,
         "opponent_fall_tick": None,
         "ticks": 3000,
     }
@@ -32,12 +33,17 @@ def test_a_short_real_trial_stands_to_the_horizon(monkeypatch):
     out = motor_gate.trial((("scripted", "baseline"), ("scripted", "baseline"), 0))
     assert out["invalid"] is None and out["ticks"] == 400
     assert out["stand_ticks"] == 400 and out["strike_ticks"] == 0
+    assert out["scoring_strike_ticks"] == 0
 
 
 def test_fitness_is_stand_fraction_plus_strike_indicator():
     assert motor_gate.fitness(result(1500), 3000, 1.0) == 0.5
     assert motor_gate.fitness(result(3000, strikes=4), 3000, 1.0) == 2.0
     assert motor_gate.fitness(result(0, invalid="RuntimeError"), 3000, 1.0) is None
+    # v0.0.18: only a head/torso hit earns the bonus; a blocked punch does not.
+    blocked_punch, hit = result(3000, strikes=50), result(3000, strikes=50, scoring=9)
+    assert motor_gate.fitness(blocked_punch, 3000, 1.0, "scoring_strike_ticks") == 1.0
+    assert motor_gate.fitness(hit, 3000, 1.0, "scoring_strike_ticks") == 2.0
 
 
 def test_es_drops_quarantined_pairs_and_follows_the_better_twin():
@@ -72,4 +78,5 @@ def test_gate_counts_faults_as_failures():
         pool, ("params", None), ("scripted", "baseline"), range(4), 3000
     )
     assert out["stance_pass_rate"] == 0.5 and out["reach_pass_rate"] == 0.5
+    assert out["scoring_reach_rate"] == 0.0
     assert out["invalid"] == 1 and out["trials"] == 4

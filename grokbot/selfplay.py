@@ -175,6 +175,10 @@ def _controller(spec):
         from grokbot.motor_primitives import GroupFeedbackPolicy
 
         return GroupFeedbackPolicy(value, noise[0] if noise else 0.0)
+    if kind == "group_pd":
+        from grokbot.motor_primitives import GroupPDPolicy
+
+        return GroupPDPolicy(value, noise[0] if noise else 0.0)
     return SCRIPTED_PANEL[value]
 
 
@@ -208,7 +212,9 @@ def play_game(task):
                 "tick": env.env.tick,
                 "contact_ticks": 0,
                 "strike_ticks": 0,
+                "scoring_strike_ticks": 0,
                 "opponent_strike_ticks": 0,
+                "opponent_scoring_strike_ticks": 0,
                 "points": None,
                 "approach": 0.0,
                 "extension": 0.0,
@@ -230,7 +236,9 @@ def play_game(task):
                 "tick": env.env.tick,
                 "contact_ticks": len(contacts.strikes) + len(contacts.blocking),
                 "strike_ticks": len(contacts.strikes_by[side]),
+                "scoring_strike_ticks": len(contacts.scoring_by[side]),
                 "opponent_strike_ticks": len(contacts.strikes_by[other]),
+                "opponent_scoring_strike_ticks": len(contacts.scoring_by[other]),
                 "points": list(env.env.referee.points),
                 "approach": (start - closest) / start if start > 0 else 0.0,
                 "extension": extension,
