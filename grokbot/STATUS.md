@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~07:55 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~09:50 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `573c351`, plus this PR. **Latest tag: `v0.0.17`**, a pre-release labelled "criterion not met" (owner request). No tag so far marks a passed preregistered level-up.
+- **Main:** green at `4ffbd91`, plus this PR. **`v0.0.19` will be tagged on this PR's merge: the first passed preregistered level-up.** The previous tag, `v0.0.17`, is labelled "criterion not met".
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -21,34 +21,32 @@ and `grokbot/redteam/cycle-*.md`.
 
 ## Gate history (all preregistered)
 
-| Version | Change | Stance | Reach | Head/torso hits | Median stand | Result |
-|---|---|---|---|---|---|---|
-| v0.0.15 | `PunchPolicy`, 10 regional tones | 0/24 | 0/24 | — | 1.349 s (gen4 1.464 s) | failed; the rerun reproduced it exactly |
-| v0.0.16 | `GroupPolicy`, 138 group tones | 0/24 | 0/24 | — | 2.344 s | failed; not tagged |
-| v0.0.17 | + per-group tilt gains | **7/24** | 24/24 | 0/24 | **2.682 s** | criterion not met; pre-release at owner request |
-| v0.0.18 | + per-group velocity and height gains, with a hit-only bonus | 1/24 | 24/24 | **24/24** | 2.314 s | registered level-up not met; not tagged |
+| Version | Change | Stance | Head/torso hits | Median stand | Result |
+|---|---|---|---|---|---|
+| v0.0.15 | `PunchPolicy`, 10 regional tones | 0/24 | — | 1.349 s | failed |
+| v0.0.16 | `GroupPolicy`, 138 group tones | 0/24 | — | 2.344 s | failed |
+| v0.0.17 | + per-group tilt gains | 7/24 | 0/24 (glove taps) | 2.682 s | criterion not met; pre-release |
+| v0.0.18 | + velocity and height gains, hit-only bonus | 1/24 | 24/24 | 2.314 s | not met; untagged |
+| **v0.0.19** | **hit-and-stay-up fitness** | **16/24** | **24/24** | **3.000 s** | **PASSED: level-up, tagged** |
 
-**v0.0.18 head-to-heads** (48 games each, 0.5 m, anti-stalling):
+**v0.0.19 head-to-heads** (48 games each):
 
-| Opponent | Status | Valid | W–L | Elo | Elo lower95 | Gate |
-|---|---|---|---|---|---|---|
-| frozen v0.0.16 | registered | 44/48 | 13–31 | −151 | −579 | failed |
-| frozen v0.0.13 | addendum (owner 06:28), preregistered | 48/48 | 48–0, all with hits | **+669** | **+191** | passed |
+| Opponent | Status | W–L | Wins with hits | Elo | Elo lower95 |
+|---|---|---|---|---|---|
+| frozen v0.0.13 | **primary** | 48–0 | 48 | +669 | +191 |
+| frozen v0.0.16 | secondary | 47–1 | 21 | +669 | +172 |
 
-Cycle 0024: hitting costs balance, so v0.0.18 falls first against a standing
-opponent.
+v0.0.18 went 15–29 against v0.0.16 (Elo −115). The plateau diagnosis is in
+cycle-0026.md.
 
-## Next step: v0.0.19 (protocol `protocols/v0.0.19.json`, landed before the run)
+## Next step: v0.0.20 — one lever, more self-play games
 
-- **One change:** the hit-and-stay-up fitness. A head/torso hit earns the
-  bonus only if the athlete is still standing 0.5 s after its first hit.
-  Training starts from v0.0.18.
-- **Primary (the only level-up):** the a/b/c gate against frozen v0.0.13 on
-  new seeds 5000–5023. Tag `v0.0.19` only if it passes.
-- **Secondary:** v0.0.18 on the same games; v0.0.19 and v0.0.18 against
-  frozen v0.0.16 on seeds 6000–6023; the motor gate and sign test.
-- **Probe:** `probes/cycle-0025-hit-stay-gate.py`. Run it at nice 19 with
-  loadavg below 86, after this PR merges.
+- A two-player self-play league seeded from v0.0.19, with the same model and
+  fitness. Frozen-opponent sampling uses the P4 sampler; the degenerate
+  guard is on.
+- **Primary:** the a/b/c gate against the frozen v0.0.19 on new seeds.
+- Preregister and land the protocol before running. Run at nice 19 with
+  loadavg below 86.
 
 ## Rules this lane follows
 

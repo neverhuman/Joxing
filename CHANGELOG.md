@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.0.19 — 2026-10-28 (preregistered level-up PASSED)
+
+grokbot PRs #24 and #25 plus the cycle-0026 report. This is a solo-trained motor policy evaluated against frozen opponents. It is a diagnostic, not an unassisted boxing result: it does not claim jekko's completion battery, and native boxing games remain 0. v0.0.18 was not tagged, because it missed its criterion.
+
+- **One change from v0.0.18:** a "hit and stay up" fitness. A head/torso hit earns the bonus only if the athlete is still standing 0.5 s afterwards.
+- **Preregistered primary, against the frozen v0.0.13 champion on new seeds:** 48/48 valid, **48–0, every win with head/torso hits**, Elo +669 (lower95 +191). **Passed.**
+- **Motor gate passed for the first time:** stance 16/24, reach and hits 24/24, median stand 3.0 s (v0.0.18: 1/24, 2.31 s).
+- **Against frozen v0.0.16:** 47–1, Elo +669 (lower95 +172); v0.0.18 went 15–29. Caveats: v0.0.18 also beats v0.0.13, and only 21 of 47 wins against v0.0.16 include hits. It wins by outlasting the opponent more than by knocking it down.
+
 ## v0.0.17 — 2026-10-28 (preregistered criterion not met)
 
 grokbot PRs #20–#22 plus the cycle-0023 report. This is a solo motor diagnostic. It does not claim jekko's completion battery, and native boxing games remain 0. v0.0.14–v0.0.16 were not tagged, because each missed its preregistered criterion.
