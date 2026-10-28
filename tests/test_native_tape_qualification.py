@@ -53,7 +53,11 @@ def packet(tmp_path, monkeypatch):
     )
     p = {
         "raw_bytes": 4 * 1024**2,
-        "maximum_rss_bytes": 512 * 1024**2,
+        # rss_bytes() is the PEAK RSS of the whole pytest process
+        # (getrusage ru_maxrss); earlier tests in the same run (MuJoCo scenes)
+        # already exceed a fixed 512 MiB, which halted this qualification in the
+        # full suite and in CI. Give it 512 MiB of headroom above that peak.
+        "maximum_rss_bytes": qualification.rss_bytes() + 512 * 1024**2,
         "stage_wall_limits_s": {"proof": 20, "audit": 20},
         "maximum_ephemeral_lzma_bytes": 128 * 1024,
         "corpora": {
