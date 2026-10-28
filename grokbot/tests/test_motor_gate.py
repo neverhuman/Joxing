@@ -17,7 +17,15 @@ class FakePool:
         return self.results
 
 
-def result(stand, strikes=0, invalid=None, scoring=0, first_hit=None, opp_fall=None):
+def result(
+    stand,
+    strikes=0,
+    invalid=None,
+    scoring=0,
+    first_hit=None,
+    opp_fall=None,
+    opp_attribution=None,
+):
     return {
         "invalid": invalid,
         "stand_ticks": stand,
@@ -25,6 +33,7 @@ def result(stand, strikes=0, invalid=None, scoring=0, first_hit=None, opp_fall=N
         "scoring_strike_ticks": scoring,
         "first_scoring_tick": first_hit,
         "opponent_fall_tick": opp_fall,
+        "opponent_fall_attribution": opp_attribution,
         "ticks": 3000,
     }
 
@@ -35,6 +44,7 @@ def test_a_short_real_trial_stands_to_the_horizon(monkeypatch):
     assert out["invalid"] is None and out["ticks"] == 400
     assert out["stand_ticks"] == 400 and out["strike_ticks"] == 0
     assert out["scoring_strike_ticks"] == 0 and out["first_scoring_tick"] is None
+    assert out["opponent_fall_attribution"] is None
 
 
 def test_fitness_is_stand_fraction_plus_strike_indicator():
@@ -69,6 +79,23 @@ def test_fitness_is_stand_fraction_plus_strike_indicator():
     assert knock(3000, 1600, 1500) == 1.0  # opponent fell before any hit
     assert knock(3000, None, 1500) == 1.0  # never hit
     assert knock(3000, 600, None) == 1.0  # hit, but nobody fell: a bell draw
+
+    # v0.0.23: only a knockdown the ending attributes counts, not a blocked fall.
+    def clean(attribution, opp_fall=1500):
+        r = result(
+            3000,
+            50,
+            scoring=9,
+            first_hit=600,
+            opp_fall=opp_fall,
+            opp_attribution=attribution,
+        )
+        return motor_gate.fitness(r, 3000, 1.0, clean_knockdown=True)
+
+    assert clean("knockdown") == 2.0
+    assert clean("unresolved") == 1.0  # body contact before the fall: blocked
+    assert clean("self") == 1.0  # fell on its own, no strike in the window
+    assert clean("knockdown", opp_fall=None) == 1.0  # nobody fell
 
 
 def test_es_drops_quarantined_pairs_and_follows_the_better_twin():
