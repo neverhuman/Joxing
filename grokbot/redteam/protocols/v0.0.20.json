@@ -1,0 +1,116 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.20",
+ "registered_utc": "2026-10-28T10:01:36Z",
+ "owner_requirements": [
+  "gb_feedback_0910/0930/0950: preregister v0.0.20 with ONE changed lever (bigger model or more self-play games; pick and justify); land via PR before the run; tag only on a real pass; nice 19, loadavg < 86"
+ ],
+ "question": "Do two-player self-play games, seeded from v0.0.19 and trained on the match outcome alone, produce a champion that beats the frozen v0.0.19 with real hits?",
+ "lever": "ONE change from v0.0.19: the training games. Solo motor trials vs a frozen posture (stand + hit-and-stay-up fitness) -> two-player self-play league games (zero-sum match utility only). Model class, initialisation (v0.0.19 final_params), ES step sizes, reset, ending (v2, anti-stalling) unchanged. Justification: grokbot/redteam/cycle-0026.md (the model now passes the motor gate; the remaining failure, balance wins without knockdowns, only appears against an opponent; v0.0.19 plays 100% valid games, so the league finally has an outcome signal).",
+ "classification": "grokbot diagnostic league with frozen anchors; not an unassisted boxing result; jekko's completion battery not claimed",
+ "league": {
+  "function": "grokbot.selfplay.run_league",
+  "policy_kind": "group_pd",
+  "init_params": "v0.0.19 final_params (grokbot/redteam/data/cycle-0025-hit-stay-gate-summary.json)",
+  "frozen_anchors": {
+   "v0019": "group_pd, v0.0.19 final_params",
+   "v0016": "group, v0.0.16 final_params",
+   "v0013": "punch, punch_params(gen4, onset=-3, duration=0, amplitude=2)"
+  },
+  "generations": 4,
+  "iterations": 4,
+  "pairs": 24,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "seed": 10,
+  "training_terms": "match utility only: shaping_weight 0, strike_bonus 0, valid_bonus 0, no_contest_penalty 0",
+  "opponent_sampling": "P4 mixture (latest, PFSP history, anchors = scripted panel + frozen anchors), eps 0.1",
+  "reset": "RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000)",
+  "anti_stalling": true,
+  "eval_seeds": [
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   106,
+   107,
+   108,
+   109,
+   110,
+   111
+  ],
+  "eval_noise": 0.05,
+  "panel_eval": true,
+  "promotion": "grokbot.promotion.decide against the current champion, GateConfig(min_valid=12, min_engaged_share=0.25)",
+  "require_valid": "True (DegenerateLeagueError aborts a league with an all-invalid evaluation batch)",
+  "workers": 4,
+  "nice": 19,
+  "load_rule": "launch only with loadavg < 86"
+ },
+ "candidate": "the league's final champion (report['champion']); if no generation is promoted the champion is gen0 = v0.0.19 itself",
+ "primary": {
+  "name": "a/b/c gate vs the frozen v0.0.19 on NEW seeds",
+  "head_to_head": {
+   "env": "grokbot.reference_env.ReferenceEndingEnv(RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000), anti_stalling=True) via grokbot.selfplay.play_game (ending v2, unchanged)",
+   "candidate": "the v0.0.20 league champion (kind group_pd), eval noise 0.05",
+   "opponent": "frozen v0.0.19: kind group_pd, v0.0.19 final_params, eval noise 0.05",
+   "seeds": [
+    7000,
+    7001,
+    7002,
+    7003,
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009,
+    7010,
+    7011,
+    7012,
+    7013,
+    7014,
+    7015,
+    7016,
+    7017,
+    7018,
+    7019,
+    7020,
+    7021,
+    7022,
+    7023
+   ],
+   "sides": "each seed with the candidate in corner A and in corner B (48 games)",
+   "valid": "grokbot.selfplay.valid_result; every game stays in the denominator",
+   "samples": "grokbot.promotion._utilities over valid games (seed-paired)",
+   "bound": "grokbot.promotion.hoeffding_lower(mean, n_samples, 0.95)",
+   "elo": "Elo = 400*log10(p/(1-p)) with p = (1+mean)/2 clipped to [0.5/n, 1-0.5/n]; Elo lower bound from p_low = (1+lower95)/2 (-inf if p_low <= 0); win rate with a Wilson 95% interval (descriptive)",
+   "pass": "ALL of: (a) valid games >= 50% of the 48; (b) lower95 > 0 (Elo lower bound > 0); (c) at least half of the candidate's valid wins include >= 1 candidate head/torso hit"
+  },
+  "statistics": "identical code: head_to_head() of grokbot/redteam/probes/cycle-0025-hit-stay-gate.py",
+  "level_up": "v0.0.20 is a level-up (tagged v0.0.20) iff this primary passes: (a) valid >= 50% of 48 AND (b) lower95 > 0 AND (c) >= half of the candidate's valid wins with >= 1 candidate head/torso hit"
+ },
+ "secondary_reported_not_gating": {
+  "vs_v0016": "champion vs frozen v0.0.16 on seeds 8000-8023 (48 games), same statistics",
+  "vs_v0013": "champion vs frozen v0.0.13 on seeds 8000-8023 (48 games), same statistics",
+  "final_generation": "if the champion is not the last generation, the last generation vs frozen v0.0.19 on the primary seeds",
+  "motor_gate": "champion on the 24 motor-gate seeds vs frozen gen4 (stance, reach, hits, median stand)",
+  "league": "per-generation Elo, side balance, valid share, engaged share, promotions, training valid share"
+ },
+ "red_team_notes": [
+  "If no generation is promoted, the primary compares v0.0.19 with itself and is expected to fail (b); that is an honest null, not a pass",
+  "Under anti-stalling the first fall loses, so a league can drift to pure balance; criterion (c) keeps a balance-only champion from passing",
+  "No head-to-head has been played on seeds 7000-7023 or 8000-8023, nor league eval seeds 100-111"
+ ],
+ "pre_declared_readings": [
+  "primary passes: self-play games improved the policy against its own starting point with hits; tag v0.0.20; next preregister a longer league (more generations)",
+  "a promoted champion fails (c): the league learned balance, not hitting; next lever: hit-aware training term or knockdown-only endings",
+  "no promotion / (b) fails: the outcome signal from 4x4x24 games is too weak; next lever: more games per generation",
+  "DegenerateLeagueError: some evaluation batch had 0 valid games; report the census, no claim"
+ ],
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0027-selfplay-league.py"
+ ]
+}
