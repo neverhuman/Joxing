@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~06:45 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~07:00 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `508cd94`, plus this PR. **Latest tag: `v0.0.13`; `v0.0.17` follows this PR as a pre-release labelled "criterion not met".**
+- **Main:** green at `1dc96e9`, plus this PR. **Latest tag: `v0.0.17`**, a pre-release labelled "criterion not met" (owner request). No tag so far marks a passed preregistered level-up.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -21,32 +21,33 @@ and `grokbot/redteam/cycle-*.md`.
 
 ## Gate history (all preregistered)
 
-| Version | Change | Stance | Reach | Median stand | Result |
-|---|---|---|---|---|---|
-| v0.0.15 | `PunchPolicy`, 10 regional tones | 0/24 | 0/24 | 1.349 s (gen4 1.464 s) | failed; the rerun reproduced it exactly |
-| v0.0.16 | `GroupPolicy`, 138 group tones | 0/24 | 0/24 | 2.344 s | failed, not tagged |
-| v0.0.17 | `GroupFeedbackPolicy`, per-group tilt gains | **7/24** | **24/24** | **2.682 s** | **criterion not met**: stance 0.29 < 0.5, so the head-to-head did not run. Released as a pre-release labelled "criterion not met" at the owner's request (05:46, 06:10). Sign test vs v0.0.16 passed (p = 1.5e-6). |
+| Version | Change | Stance | Reach | Head/torso hits | Median stand | Result |
+|---|---|---|---|---|---|---|
+| v0.0.15 | `PunchPolicy`, 10 regional tones | 0/24 | 0/24 | — | 1.349 s (gen4 1.464 s) | failed; the rerun reproduced it exactly |
+| v0.0.16 | `GroupPolicy`, 138 group tones | 0/24 | 0/24 | — | 2.344 s | failed; not tagged |
+| v0.0.17 | + per-group tilt gains | **7/24** | 24/24 | 0/24 | **2.682 s** | criterion not met; pre-release at owner request |
+| v0.0.18 | + per-group velocity and height gains, with a hit-only bonus | 1/24 | 24/24 | **24/24** | 2.314 s | registered level-up not met; not tagged |
 
-**Exploratory, not counted:** v0.0.17 vs v0.0.13 on the pinned seeds gave 14
-of 24 games valid and 14 of 14 won. These are the first valid games, but
-every one was a glove tap followed by the opponent's own fall (cycle 0023,
-F1/F2).
+**v0.0.18 head-to-heads** (48 games each, 0.5 m, anti-stalling):
 
-## Next step: v0.0.18 (protocol `protocols/v0.0.18.json`)
+| Opponent | Status | Valid | W–L | Elo | Elo lower95 | Gate |
+|---|---|---|---|---|---|---|
+| frozen v0.0.16 | registered | 44/48 | 13–31 | −151 | −579 | failed |
+| frozen v0.0.13 | addendum (owner 06:28), preregistered | 48/48 | 48–0, all with hits | **+669** | **+191** | passed |
 
-- **Changes:** `GroupPDPolicy` (per-group velocity and height gains, 966
-  parameters, from v0.0.17) and a hit-only strike bonus. 48 × 12 ES, seed 8,
-  at nice 19.
-- **Level-up** requires both the **motor gate** and the **Elo gate**. The Elo
-  gate is against the frozen v0.0.16 champion, on seeds 3000–3023 with both
-  sides, and always runs. It needs all of:
-  - valid games ≥ 50 %;
-  - a paired lower bound > 0, which is the same as an Elo lower bound > 0;
-  - at least half of the candidate's wins including head or torso hits.
+Cycle 0024: hitting costs balance, so v0.0.18 falls first against a standing
+opponent.
 
-  Only a level-up gets the tag `v0.0.18`.
-- **Probe:** `probes/cycle-0023-group-pd-gate.py`. The run's tree is checked
-  against the merged tree.
+## Next step: v0.0.19 (recommended, not yet preregistered)
+
+- **One change:** a "hit and stay up" fitness, where the hit bonus counts
+  only if the athlete is still up 0.5 s after the hit. Train from v0.0.18
+  with the same policy class.
+- **Report:** the motor gate, the Elo gate vs v0.0.16 and the Elo gate vs
+  v0.0.13. Preregister and push before running, and tag only on the
+  registered level-up.
+- If stance does not recover, the next lever is recurrent control or jekko's
+  pretrained bridge.
 
 ## Rules this lane follows
 
