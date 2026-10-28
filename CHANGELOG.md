@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.0.13 — 2026-10-28 (preregistered criterion not met)
+
+grokbot PR #17 adds a punch primitive. It does not claim jekko's completion battery, and native boxing games remain 0.
+
+- A DynSyn reach-synergy discovery found that groups 58/81 move the hand about 0.20 m forward relative to the trunk in 0.2 s. Fixed punches landed 0 strikes, and the gloves stayed about 0.4 m short of the target shells.
+- A `PunchPolicy` learns punch timing and amplitude on top of gen4 posture control. Its shaping rewards trunk-relative extension, which a body lean cannot fake. The frozen v0.0.11 champion served as anchor and as evaluation target.
+- **Result:** 1,344 evaluation games produced 0 strikes and 0 valid results; 1,330 were no-contests. Neither the strike-emergence criterion nor the gain-vs-v0.0.11 criterion was met. The bottleneck is motor: the athletes fall backward and cannot reach.
+
+## v0.0.12 — 2026-10-27 (preregistered criterion not met)
+
+Tagged at the owner's request on the #16 merge (`deda861`).
+
+- Added: anti-stalling (no strike and no points means a no-contest), a 0.80 m range reset, an engagement promotion gate, and fault quarantine.
+- The re-run champion gate voids the zero-contact v0.0.11 Elo.
+- Contact emerged, but all of it was body-on-body leaning. There were 0 strikes, and 0 of 588 evaluation games produced a valid result.
+
 ## v0.0.11 — 2026-10-27
 
 The owner asked for this tag, which sits on main after grokbot PR #14 (`55280e4`) and this entry. **It does not claim jekko's v0.0.11 completion battery.** That battery (`docs/V0.0.11_COMPLETION_PACKET.md`) remains outstanding, and native boxing games remain 0. The v0.0.9 and v0.0.10 notes are in `docs/V0.0.9_RESULTS.md` and `docs/V0.0.10_RESULTS.md`.
