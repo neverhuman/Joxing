@@ -142,3 +142,54 @@ def test_group_policy_from_gen4_matches_the_punch_policy_where_groups_fit_region
         GroupPolicy(params[:-1])
     with pytest.raises(ValueError):
         GroupPolicy(params, noise=0.05)(Obs(0, values), None, None)
+
+
+def test_group_feedback_policy_starts_exactly_at_the_group_policy():
+    from grokbot.motor_primitives import (
+        GROUP_FEEDBACK_PARAMS,
+        GroupFeedbackPolicy,
+        GroupPolicy,
+        group_feedback_params,
+        group_params,
+    )
+
+    group = group_params(GEN4, onset=-3.0, duration=0.0, amplitude=2.0)
+    params = group_feedback_params(group)
+    assert len(params) == len(group) + GROUP_FEEDBACK_PARAMS == 284 + 828
+    a, b = GroupFeedbackPolicy(params, 0.05), GroupPolicy(group, 0.05)
+    ra, rb = np.random.default_rng(3), np.random.default_rng(3)
+    values = np.random.default_rng(0).normal(size=1970).astype(np.float32)
+    for tick in (0, 20, 400):
+        tilted = values.copy()
+        tilted[selfplay.FEATURES[:6]] += 0.1 * tick / 400
+        assert np.array_equal(
+            a(Obs(tick, tilted), None, ra), b(Obs(tick, tilted), None, rb)
+        )
+    with pytest.raises(ValueError):
+        GroupFeedbackPolicy(group)
+
+
+def test_a_per_group_tilt_gain_moves_only_that_group():
+    from grokbot.motor_primitives import (
+        TILT_FEATURES,
+        GroupFeedbackPolicy,
+        group_feedback_params,
+        group_params,
+    )
+
+    params = group_feedback_params(
+        group_params(GEN4, onset=-3.0, duration=0.0, amplitude=2.0)
+    )
+    k = 5
+    params[284 + k * TILT_FEATURES + 2] = -0.5  # group 5 on the third tilt feature
+    zero = GroupFeedbackPolicy(group_feedback_params(params[:284]))
+    gain = GroupFeedbackPolicy(params)
+    values = np.random.default_rng(1).normal(size=1970).astype(np.float32)
+    zero(Obs(0, values)), gain(Obs(0, values))
+    tilted = values.copy()
+    tilted[selfplay.FEATURES[2]] += 0.2
+    diff = gain(Obs(20, tilted)) != zero(Obs(20, tilted))
+    assert diff.any() and set(np.flatnonzero(diff)) <= set(GROUPS[k])
+    assert (
+        selfplay._controller(("group_feedback", params, 0.0)).group_gains[k, 2] == -0.5
+    )
