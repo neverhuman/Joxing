@@ -35,6 +35,8 @@ boxing bout or competitive learning is claimed; whole-v11completion remains gate
 
 The evidence-codec source gate passed1,087tests plus the known referee xfail, but model preparation exceeded its512MiB cap before encoding. The [bindings repair](docs/MOTOR_CODEC_BINDINGS_REPAIR_PACKET.md) reuses verified full-model metadata under the same memory limit; no trained physics was rerun.
 
+The [binding repair qualification](docs/MOTOR_CODEC_BINDINGS_REPAIR_PACKET.md) is now running on xbabe1 from public frozen source `92ef8d0`, after 573 declared files verified. Same 512 MiB limit; codec results pending. Main also includes the separate [Grokbot diagnostic lane](grokbot/STATUS.md), whose latest passed diagnostic tag is v0.0.19. Its v0.0.21 evaluation reached 48 valid games but 42 draws; one replay showed zero referee points despite classified touches. More training failed its match-strength check. [Next scoring diagnosis](docs/SCORED_CONTACT_DIAGNOSTIC_PACKET.md) separates contact, legal-hit points and actual wins before further scaling.
+
 **Visible-bout priority:** [delivery milestones and recording contract](docs/BOUT_RECORDING_MILESTONE.md). Passive two-body recording, zero-step playback and real shared-state limb-velocity measurements are implemented; first connected diagnostic footage is a v11 deliverable. No native boxing bout is available yet.
 
 **Integrated next-wave plan:** [two-player environment, game tests, causal history, positive-control league, boxing motors and measured HPC](docs/SELF_PLAY_EXECUTION_PLAN.md). A new zero-step geometry audit confirms head-surface coverage and own-contact problems in the composition scene. Build and test the shared match loop alongside the bounded motor work; keep native competitive learning gated.

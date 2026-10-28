@@ -1,0 +1,190 @@
+{
+  "time_utc": "2026-10-28T14:51:47Z",
+  "report": {
+    "schema": "joxing-motor-codec-supervisor-v1",
+    "source_commit": "92ef8d05f0d56664129de52fc84ad3589f2314aa",
+    "protocol_sha256": "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+    "process": {
+      "pid": 3497436,
+      "parent_pid": 1,
+      "start_ticks": 913593535,
+      "state": "R"
+    },
+    "started_utc": "2026-10-28T14:51:26.136782+00:00",
+    "status": "running",
+    "initial_capacity": {
+      "available_memory_bytes": 33098416128,
+      "disk_free_bytes": 266678018048,
+      "load": [
+        8.74853515625,
+        10.5791015625,
+        9.60009765625
+      ],
+      "owned_raw_bytes": 0
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3497528,
+          "parent_pid": 3497436,
+          "start_ticks": 913593639,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3497528,
+            "parent_pid": 3497436,
+            "start_ticks": 913593639,
+            "state": "S"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 33070948352,
+          "disk_free_bytes": 266671853568,
+          "load": [
+            8.74853515625,
+            10.5791015625,
+            9.60009765625
+          ],
+          "owned_raw_bytes": 55
+        },
+        "returncode": 0,
+        "wall_s": 2.189980074763298,
+        "live_recorded_processes": []
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "pytest",
+          "-q",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--durations=15",
+          "tests",
+          "grokbot/tests"
+        ],
+        "status": "running",
+        "reason": null,
+        "process": {
+          "pid": 3497611,
+          "parent_pid": 3497436,
+          "start_ticks": 913593877,
+          "state": "R"
+        },
+        "owned_processes": [
+          {
+            "pid": 3497611,
+            "parent_pid": 3497436,
+            "start_ticks": 913593877,
+            "state": "S"
+          },
+          {
+            "pid": 3497614,
+            "parent_pid": 3497611,
+            "start_ticks": 913593880,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 39592071168,
+          "disk_free_bytes": 268710494208,
+          "load": [
+            9.240234375,
+            10.57373046875,
+            9.6201171875
+          ],
+          "owned_raw_bytes": 3709
+        }
+      },
+      {
+        "stage": "codec",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/qualify_motor_evidence_codec.py",
+          "--protocol-sha256",
+          "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+          "--source-sha",
+          "92ef8d05f0d56664129de52fc84ad3589f2314aa"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      },
+      {
+        "stage": "audit",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "run",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked",
+          "python",
+          "scripts/audit_motor_evidence_codec.py",
+          "--protocol-sha256",
+          "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+          "--source-sha",
+          "92ef8d05f0d56664129de52fc84ad3589f2314aa"
+        ],
+        "status": "not_run",
+        "reason": "pending"
+      }
+    ]
+  },
+  "process_evidence": [
+    {
+      "pid": 3497611,
+      "stat": "3497611 (uv) S 3497436 3497611 3497611 0 -1 4194304 3480 0 1 0 0 1 0 0 20 0 2 0 913593877 239779840 9984 18446744073709551615 102728572519744 102728623793056 140721855216144 0 0 0 0 0 134250055 0 0 0 17 50 0 0 0 0 0 102728624917240 102728624972601 102729552838656 140721855224985 140721855225132 140721855225132 140721855225821 0\n",
+      "status": "Name:\tuv\nUmask:\t0002\nState:\tS (sleeping)\nTgid:\t3497611\nNgid:\t0\nPid:\t3497611\nPPid:\t3497436\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 24 27 30 46 101 988 1000 1001 \nNStgid:\t3497611\nNSpid:\t3497611\nNSpgid:\t3497611\nNSsid:\t3497611\nKthread:\t0\nVmPeak:\t  289968 kB\nVmSize:\t  234160 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t   42812 kB\nVmRSS:\t   42812 kB\nRssAnon:\t   10768 kB\nRssFile:\t   32044 kB\nRssShmem:\t       0 kB\nVmData:\t   35464 kB\nVmStk:\t     208 kB\nVmExe:\t   50076 kB\nVmLib:\t    2416 kB\nVmPTE:\t     228 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t2\nSigQ:\t1/256010\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000000000\nSigCgt:\t0000000108007e47\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t0007ffff,ffffffff,0007ffff,ffffffff\nCpus_allowed_list:\t0-50,64-114\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t1\nnonvoluntary_ctxt_switches:\t0\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "command": "/home/ubuntu/.local/bin/uv run --project experiments/v0.0.11/runtime --locked pytest -q -rx -p no:cacheprovider --durations=15 tests grokbot/tests "
+    },
+    {
+      "pid": 3497611,
+      "stat": "3497611 (uv) S 3497436 3497611 3497611 0 -1 4194304 3480 0 1 0 0 1 0 0 20 0 2 0 913593877 239779840 9984 18446744073709551615 102728572519744 102728623793056 140721855216144 0 0 0 0 0 134250055 0 0 0 17 50 0 0 0 0 0 102728624917240 102728624972601 102729552838656 140721855224985 140721855225132 140721855225132 140721855225821 0\n",
+      "status": "Name:\tuv\nUmask:\t0002\nState:\tS (sleeping)\nTgid:\t3497611\nNgid:\t0\nPid:\t3497611\nPPid:\t3497436\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 24 27 30 46 101 988 1000 1001 \nNStgid:\t3497611\nNSpid:\t3497611\nNSpgid:\t3497611\nNSsid:\t3497611\nKthread:\t0\nVmPeak:\t  289968 kB\nVmSize:\t  234160 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t   42812 kB\nVmRSS:\t   42812 kB\nRssAnon:\t   10768 kB\nRssFile:\t   32044 kB\nRssShmem:\t       0 kB\nVmData:\t   35464 kB\nVmStk:\t     208 kB\nVmExe:\t   50076 kB\nVmLib:\t    2416 kB\nVmPTE:\t     228 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t2\nSigQ:\t1/256010\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000000000\nSigCgt:\t0000000108007e47\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t0007ffff,ffffffff,0007ffff,ffffffff\nCpus_allowed_list:\t0-50,64-114\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t1\nnonvoluntary_ctxt_switches:\t0\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "command": "/home/ubuntu/.local/bin/uv run --project experiments/v0.0.11/runtime --locked pytest -q -rx -p no:cacheprovider --durations=15 tests grokbot/tests "
+    },
+    {
+      "pid": 3497614,
+      "stat": "3497614 (pytest) R 3497611 3497611 3497611 0 -1 4194304 541199 0 1245 0 1851 431 0 0 20 0 1 0 913593880 5500022784 296299 18446744073709551615 4325376 7352253 140726646019904 0 0 0 0 16781312 134218986 0 0 0 17 40 0 0 0 0 0 10653128 12216448 823554048 140726646020791 140726646021071 140726646021071 140726646022027 0\n",
+      "status": "Name:\tpytest\nUmask:\t0002\nState:\tR (running)\nTgid:\t3497614\nNgid:\t0\nPid:\t3497614\nPPid:\t3497611\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 24 27 30 46 101 988 1000 1001 \nNStgid:\t3497614\nNSpid:\t3497614\nNSpgid:\t3497611\nNSsid:\t3497611\nKthread:\t0\nVmPeak:\t 6104920 kB\nVmSize:\t 5371116 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 1478648 kB\nVmRSS:\t 1232160 kB\nRssAnon:\t 1060292 kB\nRssFile:\t  171868 kB\nRssShmem:\t       0 kB\nVmData:\t 1231584 kB\nVmStk:\t     132 kB\nVmExe:\t    2956 kB\nVmLib:\t  658940 kB\nVmPTE:\t    3292 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t1/256010\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000001001000\nSigCgt:\t00000001080004ea\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t0\nSeccomp_filters:\t0\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t0007ffff,ffffffff,0007ffff,ffffffff\nCpus_allowed_list:\t0-50,64-114\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t5175\nnonvoluntary_ctxt_switches:\t203\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "command": "/home/ubuntu/joxing/native-motor-codec-bindings-repair-20261028/experiments/v0.0.11/runtime/.venv/bin/python /home/ubuntu/joxing/native-motor-codec-bindings-repair-20261028/experiments/v0.0.11/runtime/.venv/bin/pytest -q -rx -p no:cacheprovider --durations=15 tests grokbot/tests "
+    }
+  ],
+  "logs": {
+    "tests.log": {
+      "bytes": 22,
+      "modified": 1793199107.273748,
+      "tail": "......................"
+    },
+    "sync.log": {
+      "bytes": 55,
+      "modified": 1793199086.399424,
+      "tail": "Resolved 43 packages in 2ms\nChecked 40 packages in 1ms\n"
+    }
+  },
+  "load": [
+    9.060546875,
+    10.51416015625,
+    9.60595703125
+  ]
+}

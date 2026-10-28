@@ -1,3 +1,38 @@
+# Active binding repair and independent diagnostic findings — 2026-10-28 14:52 UTC
+
+The repair is running on xbabe1 in
+`/home/ubuntu/joxing/native-motor-codec-bindings-repair-20261028`.
+Supervisor PID 3497436/start 913593535; test launcher 3497611/start 913593877;
+pytest 3497614. Frozen source `92ef8d05f0d56664129de52fc84ad3589f2314aa`
+and canonical protocol `4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc`
+were published and anonymously byte-verified before launch. All 573 declared
+source/upstream/reference/physical input files verified. Pinned runtime bootstrapped;
+actual tests are progressing. Full Linux gate precedes codec/audit; neither has
+an outcome yet. The executing checkout is immutable. Deployment/publication/progress
+receipts are in `artifacts/v0.0.11/development/motor-codec-bindings-repair-*.json`.
+
+Prelaunch: load 8.75/10.58/9.60, 33.19 GB available memory, 266.69 GB free disk,
+no unknown Joxing processes. One thread; codec/audit 55/25 seconds, combined 80;
+512 MiB RSS and 4 MiB raw unchanged. Formal new physics/optimizer updates: zero.
+The earlier memory failure and every incomplete/not_run row remain authoritative.
+
+Main now also preserves the independent Grokbot lane through `5e8128c`.
+Its diagnostic v0.0.19 passed that lane's short motor criterion; v0.0.20 failed
+league promotion. v0.0.21 produced 48/48 valid games but 4 wins, 2 losses and
+42 bell draws; the separately replayed seed 10001/seat A had referee points
+[0, 0] despite coarse hit classifications. This single replay does not establish
+the points of every other draw or identify which scoring predicate failed.
+The 48-iteration policy lost all 20 valid games to its 16-iteration checkpoint;
+27 blocked and one no-contest remain in that matchup's full 48 denominator.
+More compute has not established stronger match play. These diagnostic results
+do not complete the original native motor/replay/game gates.
+
+After this evidence qualification, prioritize a measured contact-to-score
+explanation before additional self-play sweeps: see
+`docs/SCORED_CONTACT_DIAGNOSTIC_PACKET.md`. That is an implementation-ready
+follow-up, not authorization to duplicate another lane's run or change rules.
+No referee/scene/Grokbot code changed; no new tag or boxing qualification.
+
 # Codec model-preparation memory failure retained; bindings repair ready — 2026-10-28
 
 Frozen6b6ba042/protocolbfad4876 passed1087Linux tests +1registered strict referee

@@ -1,0 +1,102 @@
+{
+  "schema": "joxing-codec-bindings-repair-publication-v1",
+  "status": "passed",
+  "frozen_source_commit": "92ef8d05f0d56664129de52fc84ad3589f2314aa",
+  "frozen_branch": "native-codec-bindings-20261028",
+  "integrated_main": "bf7b2dd38c2ef47ecfa402071d881f4bd3375142",
+  "protocol_sha256": "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+  "anonymous_checks": [
+    {
+      "path": "src/joxing/motor_codec_bindings.py",
+      "bytes": 2060,
+      "sha256": "17d588252012f0805bf456364d60e6cca923d21463457aa604ca50f59e5510b8"
+    },
+    {
+      "path": "src/joxing/motor_codec_qualification.py",
+      "bytes": 12946,
+      "sha256": "36f3ad711df09305c58d321ff978d59b2840ba67a2bb5255b00a1328b4f16631"
+    },
+    {
+      "path": "scripts/supervise_motor_evidence_codec.py",
+      "bytes": 11133,
+      "sha256": "6be053b5f4b807c189614ab53a5befb359d0d000af8f90700c1ca8d5f38e8f76"
+    },
+    {
+      "path": "tests/test_motor_evidence_codec.py",
+      "bytes": 10891,
+      "sha256": "bbeb52c4345341a0a3c3e04303b7f06a3dc5d513e9d8484479f3b4452e039432"
+    },
+    {
+      "path": "experiments/v0.0.11/motor-codec-bindings-repair-protocol.json",
+      "bytes": 71531,
+      "sha256": "3f7024131219c10a8d1dafd0330b37a1d69595d31504b2461bd37400f66b67c9"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/motor-codec-model-bindings-01.json",
+      "bytes": 42596,
+      "sha256": "62f2eb4cd4be4d4e200bb9d2b5be8bdba7fd0df40fc70daffe82c480bc295bda"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/motor-codec-model-bindings-source-01.jmc",
+      "bytes": 276144,
+      "sha256": "dc673c5c5b120e12deaae2617231fa133fb009f54d0137368d863cdf870b21cd"
+    }
+  ],
+  "incoming_preserved_paths": [
+    "CHANGELOG.md",
+    "grokbot/STATUS.md",
+    "grokbot/endings.py",
+    "grokbot/motor_gate.py",
+    "grokbot/motor_primitives.py",
+    "grokbot/redteam/cycle-0019.md",
+    "grokbot/redteam/cycle-0020.md",
+    "grokbot/redteam/cycle-0021.md",
+    "grokbot/redteam/cycle-0022.md",
+    "grokbot/redteam/cycle-0023.md",
+    "grokbot/redteam/cycle-0024.md",
+    "grokbot/redteam/cycle-0025.md",
+    "grokbot/redteam/cycle-0026.md",
+    "grokbot/redteam/cycle-0027.md",
+    "grokbot/redteam/cycle-0028.md",
+    "grokbot/redteam/cycle-0029.md",
+    "grokbot/redteam/cycle-0030.md",
+    "grokbot/redteam/data/cycle-0019-motor-gate-summary.json",
+    "grokbot/redteam/data/cycle-0020-group-gate-summary.json",
+    "grokbot/redteam/data/cycle-0022-group-feedback-gate-summary.json",
+    "grokbot/redteam/data/cycle-0023-group-pd-gate-summary.json",
+    "grokbot/redteam/data/cycle-0025-hit-stay-gate-summary.json",
+    "grokbot/redteam/data/cycle-0027-selfplay-league-summary.json",
+    "grokbot/redteam/data/cycle-0029-mirror-opponent-gate-summary.json",
+    "grokbot/redteam/probes/cycle-0016-engagement-league.py",
+    "grokbot/redteam/probes/cycle-0017-punch-league.py",
+    "grokbot/redteam/probes/cycle-0018-engagement-floor.py",
+    "grokbot/redteam/probes/cycle-0019-motor-gate.py",
+    "grokbot/redteam/probes/cycle-0020-group-gate.py",
+    "grokbot/redteam/probes/cycle-0022-group-feedback-gate.py",
+    "grokbot/redteam/probes/cycle-0023-group-pd-gate.py",
+    "grokbot/redteam/probes/cycle-0024-v0013-elo-gate.py",
+    "grokbot/redteam/probes/cycle-0025-hit-stay-gate.py",
+    "grokbot/redteam/probes/cycle-0027-selfplay-league.py",
+    "grokbot/redteam/probes/cycle-0028-ladder.py",
+    "grokbot/redteam/probes/cycle-0029-mirror-opponent-gate.py",
+    "grokbot/redteam/probes/cycle-0030-compute-monotonicity.py",
+    "grokbot/redteam/protocols/v0.0.15.json",
+    "grokbot/redteam/protocols/v0.0.16.json",
+    "grokbot/redteam/protocols/v0.0.17.json",
+    "grokbot/redteam/protocols/v0.0.18-addendum-v0013.json",
+    "grokbot/redteam/protocols/v0.0.18.json",
+    "grokbot/redteam/protocols/v0.0.19.json",
+    "grokbot/redteam/protocols/v0.0.20-ladder-addendum.json",
+    "grokbot/redteam/protocols/v0.0.20.json",
+    "grokbot/redteam/protocols/v0.0.21-monotonicity-addendum.json",
+    "grokbot/redteam/protocols/v0.0.21.json",
+    "grokbot/selfplay.py",
+    "grokbot/tests/test_degenerate_guard.py",
+    "grokbot/tests/test_endings.py",
+    "grokbot/tests/test_motor_gate.py",
+    "grokbot/tests/test_motor_primitives.py",
+    "grokbot/tests/test_selfplay.py"
+  ],
+  "new_physics": 0,
+  "qualification_scope": "Frozen candidate only; incoming Grokbot v0.0.21 remains independent"
+}
