@@ -132,6 +132,17 @@ def clean_knocked_down(result):
     return knocked_down(result) and result["opponent_fall_attribution"] == "knockdown"
 
 
+def valid_knocked_down(result):
+    """``knocked_down``, and the fall is not left ``unresolved`` by body contact.
+
+    v0.0.23's ``clean_knocked_down`` never fired: the opponent falls 1-2 s
+    after the hit, outside the 0.5 s window, so ending v2 attributes the fall
+    to the opponent itself (``self``) - a valid win. Only ``unresolved`` falls
+    are blocked (invalid), so this pays every valid knockdown (v0.0.24).
+    """
+    return knocked_down(result) and result["opponent_fall_attribution"] != "unresolved"
+
+
 def fitness(
     result,
     horizon_ticks,
@@ -140,6 +151,7 @@ def fitness(
     stay_up_ticks=None,
     knockdown=False,
     clean_knockdown=False,
+    valid_knockdown=False,
 ):
     """Stand fraction plus a strike bonus.
 
@@ -150,7 +162,9 @@ def fitness(
     """
     if result["invalid"]:
         return None
-    if clean_knockdown:
+    if valid_knockdown:
+        earned = valid_knocked_down(result)
+    elif clean_knockdown:
         earned = clean_knocked_down(result)
     elif knockdown:
         earned = knocked_down(result)
@@ -178,6 +192,7 @@ def train(
     stay_up_ticks=None,
     knockdown=False,
     clean_knockdown=False,
+    valid_knockdown=False,
     log=print,
 ):
     """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
@@ -200,6 +215,7 @@ def train(
                 stay_up_ticks,
                 knockdown,
                 clean_knockdown,
+                valid_knockdown,
             )
             for r in results
         ]
@@ -241,9 +257,13 @@ def train(
             "invalid": int(sum(r["invalid"] is not None for r in results)),
             "mean_fitness": float(flat.mean()) if valid.any() else None,
         }
-        if knockdown or clean_knockdown:  # earlier rows keep their format
+        if knockdown or clean_knockdown or valid_knockdown:  # earlier rows unchanged
             row["knockdown_share"] = float(
                 np.mean([not r["invalid"] and knocked_down(r) for r in results])
+            )
+        if valid_knockdown:
+            row["valid_knockdown_share"] = float(
+                np.mean([not r["invalid"] and valid_knocked_down(r) for r in results])
             )
         if clean_knockdown:
             row["clean_knockdown_share"] = float(
