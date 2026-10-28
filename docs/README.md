@@ -1,3 +1,5 @@
+Current native evidence task: [512MiB bindings repair](MOTOR_CODEC_BINDINGS_REPAIR_PACKET.md). Prior codec attempt failed before encoding; source tests passed and all negative rows remain. No new native motor/boxing qualification.
+
 Current motor result: [first shared pretrained walking recording and honest partial proof](SHARED_MOTOR_PHYSICAL_RESULTS.md). Next ready [zero-physics evidence codec qualification](SHARED_MOTOR_STORAGE_CONTINUATION_PACKET.md); [current mission](MISSION.md). No full motor/replay/boxing qualification yet.
 
 # Joxing documentation

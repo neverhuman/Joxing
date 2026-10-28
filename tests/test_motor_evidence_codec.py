@@ -207,14 +207,16 @@ def test_qualification_registry_shard_and_separate_audit_use_no_new_physics(
     monkeypatch.setattr(module, "originals", lambda p: (trace, arrays, c, refs))
     monkeypatch.setattr(module, "verify_files", lambda *a: None)
     monkeypatch.setattr(module, "peak_rss", lambda: 128 * 1024**2)
-    monkeypatch.setattr(module, "build_scene", lambda **kw: task.scene)
-    monkeypatch.setattr(
-        module,
-        "context_from_trace",
-        lambda model, canonical, t: context_from_trace(
-            task.model, task.drivers["A"].task.model, t
-        ),
-    )
+    binding = {
+        "schema": "joxing-compiled-model-bindings-v1",
+        "scene_hash": c["scene_hash"],
+        "state_specification": c["state_specification"],
+        "state_width": c["state_width"],
+        "fields": c["fields"],
+        "maps": c["maps"],
+        "dimensions": task.scene.report["dimensions"],
+    }
+    monkeypatch.setattr(module, "get_bindings", lambda p: binding)
     partial = (
         tmp_path
         / "dependency/runs/v0.0.11/shared-motor-proof-01/source-71001/tape.npz.tmp"
@@ -245,6 +247,7 @@ def test_qualification_registry_shard_and_separate_audit_use_no_new_physics(
     p = {
         "raw_bytes": 4 * 1024**2,
         "maximum_rss_bytes": 512 * 1024**2,
+        "stage_wall_limits_s": {"codec": 55},
         "proof_root": str(tmp_path / "dependency"),
     }
     physics_before = task.physics_total
@@ -263,3 +266,54 @@ def test_qualification_registry_shard_and_separate_audit_use_no_new_physics(
             )["status"]
             == "passed"
         )
+
+
+def test_cached_bindings_equal_actual_intact_model_without_new_compile(
+    corpus,
+    proof,  # noqa: F811 -- pytest fixture injection
+    monkeypatch,
+):
+    import mujoco
+
+    from joxing.motor_codec_bindings import context_from_bindings
+
+    task, folder, _, _, _ = proof
+    trace = read_json(folder / "source/trace.json")
+    _, original, refs, _ = corpus[0]
+    binding = {
+        "schema": "joxing-compiled-model-bindings-v1",
+        "scene_hash": original["scene_hash"],
+        "state_specification": original["state_specification"],
+        "state_width": original["state_width"],
+        "fields": original["fields"],
+        "maps": original["maps"],
+        "dimensions": task.scene.report["dimensions"],
+    }
+
+    def no_compile(*args, **kwargs):
+        raise AssertionError("Metadata reuse must not compile or step a model")
+
+    monkeypatch.setattr(mujoco, "MjSpec", no_compile)
+    monkeypatch.setattr(mujoco, "MjModel", no_compile)
+    monkeypatch.setattr(mujoco, "mj_step", no_compile)
+    monkeypatch.setattr(mujoco, "mj_forward", no_compile)
+    c, targets = context_from_bindings(binding, trace)
+    assert c == original and targets.tobytes() == refs.tobytes()
+    from pathlib import Path
+
+    saved = json.loads(
+        (
+            Path(__file__).resolve().parents[1]
+            / "artifacts/v0.0.11/development/motor-codec-model-bindings-01.json"
+        ).read_text()
+    )
+    cached, cached_targets = context_from_bindings(saved, trace)
+    assert cached == original and cached_targets.tobytes() == refs.tobytes()
+    bad = copy.deepcopy(binding)
+    bad["scene_hash"] = "0" * 64
+    with pytest.raises(ValueError, match="scene identity"):
+        context_from_bindings(bad, trace)
+    bad = copy.deepcopy(binding)
+    bad["dimensions"]["nu"] = 1398
+    with pytest.raises(ValueError, match="anatomy"):
+        context_from_bindings(bad, trace)

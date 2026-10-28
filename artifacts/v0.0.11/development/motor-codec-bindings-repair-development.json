@@ -1,0 +1,43 @@
+{
+  "schema": "joxing-motor-codec-bindings-repair-development-v1",
+  "new_physics": 0,
+  "prior_failure_source": "6b6ba042757bea7d53753da3f5f78a9cff756f6b",
+  "prior_rss_bytes": 703586304,
+  "rss_cap_bytes": 536870912,
+  "failure_stage": "Scene reconstruction before encoding",
+  "repair": "Reuse authenticated semantic metadata from already passed full-model regression; no new compilation/proxy/pruning/physics",
+  "validation": [
+    {
+      "command": "codec tests during partial helper replacement",
+      "passed": 46,
+      "failed": 2,
+      "wall_s": 7.04,
+      "reason": "Old test mocks referenced removed build_scene helper; corrected to bind metadata provider; no formal run"
+    },
+    {
+      "command": "codec tests after metadata provider repair",
+      "passed": 49,
+      "wall_s": 7.02
+    },
+    {
+      "command": "codec tests with actual retained binding cache checked against fresh full-model fixture",
+      "passed": 49,
+      "wall_s": 7.09
+    },
+    {
+      "command": "final codec tests after stage budget tightening",
+      "passed": 49,
+      "wall_s": 7.52
+    },
+    {
+      "command": "Ruff new modules/scripts/tests",
+      "status": "passed"
+    }
+  ],
+  "binding_cache_dependency_bytes": 276144,
+  "new_postgate_cap_s": 80,
+  "codec_cap_s": 55,
+  "audit_cap_s": 25,
+  "full_motor_proof_passed": false,
+  "trained_corpus_codec_qualified": false
+}

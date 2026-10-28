@@ -9,23 +9,21 @@ import time
 import zipfile
 from pathlib import Path
 
-import mujoco
 import numpy as np
 
 from .evidence_storage import array_descriptor, read_arrays, read_json
+from .motor_codec_bindings import context_from_bindings
 from .motor_codec_independent import independent_decode
 from .motor_evidence_codec import (
     blob_sha,
-    context_from_trace,
     decode,
     encode,
     write_blob,
 )
 from .motor_storage import RawCredit, append_json, write_json
-from .provenance import digest
-from .scene import SOURCE, build_scene
+from .provenance import ROOT, digest
 
-PACKET = "experiments/v0.0.11/motor-codec-qualification-protocol.json"
+PACKET = "experiments/v0.0.11/motor-codec-bindings-repair-protocol.json"
 RUN = "runs/v0.0.11/motor-codec-qualification-01"
 ROW_IDS = [
     "source-71000-full-memory-roundtrip",
@@ -65,7 +63,7 @@ def read_packet(root, protocol_sha, source_sha):
         p["rows"] == ROW_IDS
         and p["new_physics"] == 0
         and p["raw_bytes"] == 4 * 1024**2
-        and p["post_gate_wall_s"] == 90
+        and p["post_gate_wall_s"] == 80
         and p["maximum_rss_bytes"] == 512 * 1024**2,
         "Codec fixed corpus and caps",
     )
@@ -119,17 +117,17 @@ def verify_files(p, root):
         )
 
 
+def get_bindings(p):
+    path = ROOT / p["binding_file"]
+    require(sha_file(path) == p["binding_sha256"], "Codec authenticated model bindings")
+    return json.loads(path.read_text())
+
+
 def originals(p):
     run = Path(p["proof_root"]) / "runs/v0.0.11/shared-motor-proof-01"
     trace = read_json(run / "source-71000/trace.json")
     arrays = read_arrays(run / "source-71000/tape.npz")
-    scene = build_scene(spawn_variant="parallel-walk-v1")
-    require(
-        scene.report["scene_hash"] == trace["contract"]["scene_hash"],
-        "Codec exact original model",
-    )
-    canonical = mujoco.MjModel.from_xml_path(str(SOURCE))
-    c, refs = context_from_trace(scene.model, canonical, trace)
+    c, refs = context_from_bindings(get_bindings(p), trace)
     return trace, arrays, c, refs
 
 
@@ -195,7 +193,10 @@ def qualify(p, root, out, source_sha, protocol_sha):
 
     def budget():
         rss = peak_rss()
-        if time.monotonic() - started >= 60 or rss > p["maximum_rss_bytes"]:
+        if (
+            time.monotonic() - started >= p["stage_wall_limits_s"]["codec"]
+            or rss > p["maximum_rss_bytes"]
+        ):
             raise TimeoutError("Codec first wall/RSS cap")
         write_json(
             out / "progress.json",
@@ -285,9 +286,7 @@ def qualify(p, root, out, source_sha, protocol_sha):
         rows[2]["status"] = "running"
         partial_trace, shard = prefix60(trace, arrays)
         del arrays, refs
-        scene = build_scene(spawn_variant="parallel-walk-v1")
-        canonical = mujoco.MjModel.from_xml_path(str(SOURCE))
-        sc, sr = context_from_trace(scene.model, canonical, partial_trace)
+        sc, sr = context_from_bindings(get_bindings(p), partial_trace)
         blob = encode(shard, sc, sr)
         write_blob(out / "prefix60.jmc", blob)
         expected = {k: array_descriptor(a) for k, a in shard.items()}
@@ -365,9 +364,7 @@ def audit_qualification(p, root, out, source_sha, protocol_sha):
     )
     del blob, decoded
     pt, _shard = prefix60(trace, arrays)
-    scene = build_scene(spawn_variant="parallel-walk-v1")
-    canonical = mujoco.MjModel.from_xml_path(str(SOURCE))
-    sc, sr = context_from_trace(scene.model, canonical, pt)
+    sc, sr = context_from_bindings(get_bindings(p), pt)
     data = (out / "prefix60.jmc").read_bytes()
     require(
         blob_sha(data) == result["rows"][2]["encoded_sha256"],

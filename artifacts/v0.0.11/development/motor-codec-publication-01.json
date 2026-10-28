@@ -1,0 +1,99 @@
+{
+  "schema": "joxing-motor-codec-publication-v1",
+  "source_commit": "6b6ba042757bea7d53753da3f5f78a9cff756f6b",
+  "protocol_sha256": "bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3",
+  "status": "passed",
+  "anonymous_byte_checks": [
+    {
+      "path": "artifacts/v0.0.11/development/motor-codec-development.json",
+      "bytes": 1700,
+      "sha256": "56177efe673dc24c509f2beefce6a485021ff9fd6197b4dca411bb5b7555657d"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/motor-codec-prepublication-draft-01/protocol.json",
+      "bytes": 69614,
+      "sha256": "20987439236897db575aaa6e59ad7bc51c267917add625f6dd64bdb768f805b6"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/motor-codec-prepublication-draft-01/receipt.json",
+      "bytes": 629,
+      "sha256": "564206ecb1b1ee8faf164eedea3009d43723c133b1af257d6dfac9e7275625e9"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/motor-codec-prepublication-draft-01/test_motor_evidence_codec.py.txt",
+      "bytes": 8838,
+      "sha256": "d9fcf8b5a2d503de2809f57e6b24e5de33ecce9d077e67d8ba169c5301fd4975"
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "bytes": 71907,
+      "sha256": "8ed4dc27cb08caaffe3591b74600dabb22c76842f92effc45527c9893c291d95"
+    },
+    {
+      "path": "docs/MISSION.md",
+      "bytes": 3706,
+      "sha256": "6386d359d2d635506e60f8679f8713d1d0339c8dd3a7d971127288fb4c218ba8"
+    },
+    {
+      "path": "docs/MOTOR_CODEC_QUALIFICATION_PACKET.md",
+      "bytes": 5315,
+      "sha256": "b9e4c46ab3c2ffe076a2fd39456bed29872db20e2019bf1dcd42ed3def7881c3"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 130116,
+      "sha256": "4634eabb407692b9cc1631b646cb1cda1e43118c9603c6773352752dc64cf5e5"
+    },
+    {
+      "path": "experiments/v0.0.11/README.md",
+      "bytes": 41737,
+      "sha256": "ed5dde479c4e5a38774d0ce74cfd7937cad8c86fb92b2e7f009b0a27d78f34a4"
+    },
+    {
+      "path": "experiments/v0.0.11/motor-codec-qualification-protocol.json",
+      "bytes": 69614,
+      "sha256": "68e4684af8bb2c43df283d0587386b04a380c0dc58c10737cb6159d076a9f0dc"
+    },
+    {
+      "path": "scripts/audit_motor_evidence_codec.py",
+      "bytes": 1405,
+      "sha256": "a873e10990367e5a8491fd48fae2537e5178758d1da646663f4181070d51181b"
+    },
+    {
+      "path": "scripts/qualify_motor_evidence_codec.py",
+      "bytes": 1629,
+      "sha256": "ec88293ed6a3f632e3becd406bd16753605966f2c882045d0d33d15fcb61ed53"
+    },
+    {
+      "path": "scripts/register_motor_evidence_codec.py",
+      "bytes": 4357,
+      "sha256": "65796da3f709070875e44559ef3b7e3c7fd277adef1ca5c8905f585e94991890"
+    },
+    {
+      "path": "scripts/supervise_motor_evidence_codec.py",
+      "bytes": 11131,
+      "sha256": "159bcbbdd772a2ab5150b4394a5e189ad95643860975b976eef69e980f6cbe46"
+    },
+    {
+      "path": "src/joxing/motor_codec_independent.py",
+      "bytes": 6137,
+      "sha256": "7dbee533ee114b2863b2ad962b6db75e5d472f7e0906432f2fc5e3d43217251c"
+    },
+    {
+      "path": "src/joxing/motor_codec_qualification.py",
+      "bytes": 13200,
+      "sha256": "d035c38646fcdf64ae21755aa3f356f349a06b4a76411353c69d9280a2191f1c"
+    },
+    {
+      "path": "src/joxing/motor_evidence_codec.py",
+      "bytes": 17839,
+      "sha256": "d2851e71848b4b1a85a3ac7a14970f41b10bc171b70daabc2682ebe2fe899a95"
+    },
+    {
+      "path": "tests/test_motor_evidence_codec.py",
+      "bytes": 8838,
+      "sha256": "900f0fd9291dbe4079c7aa2504a41d5890100b6283dec59a1e85b03418d12c3b"
+    }
+  ],
+  "new_physics": 0
+}

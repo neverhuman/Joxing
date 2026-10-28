@@ -1,0 +1,152 @@
+{
+  "schema": "joxing-motor-codec-supervisor-v1",
+  "source_commit": "6b6ba042757bea7d53753da3f5f78a9cff756f6b",
+  "protocol_sha256": "bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3",
+  "process": {
+    "pid": 1441957,
+    "parent_pid": 1,
+    "start_ticks": 909209416,
+    "state": "R"
+  },
+  "started_utc": "2026-10-28T02:40:44.949472+00:00",
+  "status": "halted",
+  "initial_capacity": {
+    "available_memory_bytes": 38425440256,
+    "disk_free_bytes": 263846805504,
+    "load": [
+      9.46337890625,
+      8.33203125,
+      6.66796875
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1442692,
+        "parent_pid": 1441957,
+        "start_ticks": 909209519,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 38400901120,
+        "disk_free_bytes": 263846785024,
+        "load": [
+          9.46337890625,
+          8.33203125,
+          6.66796875
+        ],
+        "owned_raw_bytes": 55
+      },
+      "returncode": 0,
+      "wall_s": 2.1812982950359583,
+      "live_recorded_processes": [],
+      "log_tail": "Resolved 43 packages in 2ms\nChecked 40 packages in 1ms\n"
+    },
+    {
+      "stage": "tests",
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1443516,
+        "parent_pid": 1441957,
+        "start_ticks": 909209755,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 45298978816,
+        "disk_free_bytes": 280994308096,
+        "load": [
+          7.85302734375,
+          9.52587890625,
+          8.4140625
+        ],
+        "owned_raw_bytes": 10089
+      },
+      "returncode": 0,
+      "wall_s": 712.7240807376802,
+      "live_recorded_processes": [],
+      "log_tail": "tual_mid_hold_and_dropped_actor_never_calls\n15.81s call     tests/test_sensor_packed_evidence.py::test_original_and_packed_pending_history_replay_have_identical_audit\n11.34s setup    tests/test_shared_motor_evidence.py::test_lossless_motor_tape_and_saved_independent_measurements\n11.17s call     tests/test_physical_motor.py::test_explicit_substeps_leave_native_state_cached_features_and_reward_exact\n10.76s setup    tests/test_motor_evidence_codec.py::test_physical_source_and_actual_held_replay_all23arrays_exact_in_two_decoders\n10.68s call     tests/test_native_transfer.py::test_all_four_variants_have_exact_paired_reset_fields\n9.37s setup    tests/test_shared_motor_task.py::test_parallel_variant_preserves_complete_muscles_and_reference_reset\n8.87s call     tests/test_wave.py::test_reward_wrapper_preserves_physics_and_terminal_state\n8.07s call     tests/test_wave.py::test_training_resets_are_seeded_and_separate\n7.90s call     grokbot/tests/test_arena.py::test_common_random_numbers_follow_the_policy_not_the_corner\n7.42s call     grokbot/tests/test_arena.py::test_first_self_caused_fall_decides_and_feeds_a_nonzero_payoff\n7.26s setup    tests/test_sensor_packed_evidence.py::test_original_and_packed_pending_history_replay_have_identical_audit\n=========================== short test summary info ============================\nXFAIL grokbot/tests/test_referee_fuzz.py::test_restore_does_not_alias_the_snapshot - cycle-0005 F1: HitTracker.restore aliases the snapshot's ledger and encounter dicts; callers must deep-copy (all current call sites do)\n1087 passed, 1 xfailed in 709.01s (0:11:49)\n"
+    },
+    {
+      "stage": "codec",
+      "status": "failed",
+      "reason": "RuntimeError: Codec worker peak RSS cap",
+      "process": {
+        "pid": 1594416,
+        "parent_pid": 1441957,
+        "start_ticks": 909281050,
+        "state": "R"
+      },
+      "latest_capacity": {
+        "available_memory_bytes": 46952640512,
+        "disk_free_bytes": 280992800768,
+        "load": [
+          7.865234375,
+          9.50048828125,
+          8.41162109375
+        ],
+        "owned_raw_bytes": 81396
+      },
+      "returncode": 1,
+      "wall_s": 4.870139613747597,
+      "live_recorded_processes": [],
+      "log_tail": ""
+    },
+    {
+      "stage": "audit",
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    }
+  ],
+  "reason": "RuntimeError: codec failed: RuntimeError: Codec worker peak RSS cap",
+  "finished_utc": "2026-10-28T02:52:45.297655+00:00",
+  "post_gate_wall_s": 4.871033335104585,
+  "codec_result.json": {
+    "error": "TimeoutError: Owned codec supervisor requested stop",
+    "max_rss_bytes": 703586304,
+    "new_physics": 0,
+    "optimizer_updates": 0,
+    "process": {
+      "pid": 1594420,
+      "start_ticks": 909281053
+    },
+    "protocol_sha256": "bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3",
+    "rows": [
+      {
+        "id": "source-71000-full-memory-roundtrip",
+        "reason": "TimeoutError: Owned codec supervisor requested stop",
+        "status": "failed"
+      },
+      {
+        "id": "source-71001-incomplete-recognition",
+        "reason": "stopped after earlier fault",
+        "status": "not_run"
+      },
+      {
+        "id": "source-71000-prefix60-disk-roundtrip",
+        "reason": "stopped after earlier fault",
+        "status": "not_run"
+      }
+    ],
+    "schema": "joxing-motor-codec-qualification-result-v1",
+    "source_commit": "6b6ba042757bea7d53753da3f5f78a9cff756f6b",
+    "status": "halted",
+    "wall_s": 4.173199260607362,
+    "whole_motor_proof_passed": false
+  },
+  "codec_progress.json": {
+    "new_physics": 0,
+    "row": "source-71000-full-memory-roundtrip",
+    "rss_peak_bytes": 142417920,
+    "wall_s": 0.001696176826953888
+  },
+  "codec_fault.json": {
+    "error": "TimeoutError: Owned codec supervisor requested stop",
+    "new_physics": 0,
+    "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/src/joxing/motor_codec_qualification.py\", line 223, in qualify\n    trace, arrays, c, refs = originals(p)\n                             ^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/src/joxing/motor_codec_qualification.py\", line 126, in originals\n    scene = build_scene(spawn_variant=\"parallel-walk-v1\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/src/joxing/scene.py\", line 53, in build_scene\n    child = mujoco.MjSpec.from_file(str(SOURCE))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/scripts/qualify_motor_evidence_codec.py\", line 43, in stop\n    raise TimeoutError(\"Owned codec supervisor requested stop\")\nTimeoutError: Owned codec supervisor requested stop\n"
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "schema": "joxing-motor-codec-supervisor-v1",
+  "source_commit": "6b6ba042757bea7d53753da3f5f78a9cff756f6b",
+  "protocol_sha256": "bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3",
+  "process": {
+    "pid": 1441957,
+    "parent_pid": 1,
+    "start_ticks": 909209416,
+    "state": "R"
+  },
+  "started_utc": "2026-10-28T02:40:44.949472+00:00",
+  "status": "halted",
+  "initial_capacity": {
+    "available_memory_bytes": 38425440256,
+    "disk_free_bytes": 263846805504,
+    "load": [
+      9.46337890625,
+      8.33203125,
+      6.66796875
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1442692,
+        "parent_pid": 1441957,
+        "start_ticks": 909209519,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 1442692,
+          "parent_pid": 1441957,
+          "start_ticks": 909209519,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 38400901120,
+        "disk_free_bytes": 263846785024,
+        "load": [
+          9.46337890625,
+          8.33203125,
+          6.66796875
+        ],
+        "owned_raw_bytes": 55
+      },
+      "returncode": 0,
+      "wall_s": 2.1812982950359583,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "tests",
+        "grokbot/tests"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 1443516,
+        "parent_pid": 1441957,
+        "start_ticks": 909209755,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 1443516,
+          "parent_pid": 1441957,
+          "start_ticks": 909209755,
+          "state": "S"
+        },
+        {
+          "pid": 1443519,
+          "parent_pid": 1443516,
+          "start_ticks": 909209758,
+          "state": "R"
+        },
+        {
+          "pid": 1491064,
+          "parent_pid": 1443519,
+          "start_ticks": 909221169,
+          "state": "S"
+        },
+        {
+          "pid": 1491065,
+          "parent_pid": 1443519,
+          "start_ticks": 909221169,
+          "state": "R"
+        },
+        {
+          "pid": 1491066,
+          "parent_pid": 1443519,
+          "start_ticks": 909221169,
+          "state": "Z"
+        },
+        {
+          "pid": 1573610,
+          "parent_pid": 1443519,
+          "start_ticks": 909255850,
+          "state": "S"
+        },
+        {
+          "pid": 1573630,
+          "parent_pid": 1443519,
+          "start_ticks": 909255874,
+          "state": "R"
+        },
+        {
+          "pid": 1573633,
+          "parent_pid": 1443519,
+          "start_ticks": 909255874,
+          "state": "R"
+        },
+        {
+          "pid": 1574352,
+          "parent_pid": 1573630,
+          "start_ticks": 909256700,
+          "state": "R"
+        },
+        {
+          "pid": 1574354,
+          "parent_pid": 1573630,
+          "start_ticks": 909256700,
+          "state": "R"
+        },
+        {
+          "pid": 1574355,
+          "parent_pid": 1573630,
+          "start_ticks": 909256700,
+          "state": "R"
+        },
+        {
+          "pid": 1574356,
+          "parent_pid": 1573630,
+          "start_ticks": 909256700,
+          "state": "R"
+        },
+        {
+          "pid": 1574357,
+          "parent_pid": 1573633,
+          "start_ticks": 909256705,
+          "state": "R"
+        },
+        {
+          "pid": 1574358,
+          "parent_pid": 1573633,
+          "start_ticks": 909256705,
+          "state": "R"
+        },
+        {
+          "pid": 1574359,
+          "parent_pid": 1573633,
+          "start_ticks": 909256706,
+          "state": "R"
+        },
+        {
+          "pid": 1574360,
+          "parent_pid": 1573633,
+          "start_ticks": 909256706,
+          "state": "R"
+        },
+        {
+          "pid": 1577509,
+          "parent_pid": 1443519,
+          "start_ticks": 909259166,
+          "state": "R"
+        },
+        {
+          "pid": 1577510,
+          "parent_pid": 1443519,
+          "start_ticks": 909259166,
+          "state": "R"
+        },
+        {
+          "pid": 1577511,
+          "parent_pid": 1443519,
+          "start_ticks": 909259166,
+          "state": "R"
+        },
+        {
+          "pid": 1577512,
+          "parent_pid": 1443519,
+          "start_ticks": 909259166,
+          "state": "R"
+        },
+        {
+          "pid": 1583395,
+          "parent_pid": 1443519,
+          "start_ticks": 909265593,
+          "state": "R"
+        },
+        {
+          "pid": 1583396,
+          "parent_pid": 1443519,
+          "start_ticks": 909265601,
+          "state": "R"
+        },
+        {
+          "pid": 1587121,
+          "parent_pid": 1443519,
+          "start_ticks": 909270668,
+          "state": "R"
+        },
+        {
+          "pid": 1587122,
+          "parent_pid": 1443519,
+          "start_ticks": 909270677,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 45298978816,
+        "disk_free_bytes": 280994308096,
+        "load": [
+          7.85302734375,
+          9.52587890625,
+          8.4140625
+        ],
+        "owned_raw_bytes": 10089
+      },
+      "returncode": 0,
+      "wall_s": 712.7240807376802,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "codec",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_motor_evidence_codec.py",
+        "--protocol-sha256",
+        "bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3",
+        "--source-sha",
+        "6b6ba042757bea7d53753da3f5f78a9cff756f6b"
+      ],
+      "status": "failed",
+      "reason": "RuntimeError: Codec worker peak RSS cap",
+      "process": {
+        "pid": 1594416,
+        "parent_pid": 1441957,
+        "start_ticks": 909281050,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 1594416,
+          "parent_pid": 1441957,
+          "start_ticks": 909281050,
+          "state": "S"
+        },
+        {
+          "pid": 1594420,
+          "parent_pid": 1594416,
+          "start_ticks": 909281053,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 46952640512,
+        "disk_free_bytes": 280992800768,
+        "load": [
+          7.865234375,
+          9.50048828125,
+          8.41162109375
+        ],
+        "owned_raw_bytes": 81396
+      },
+      "returncode": 1,
+      "wall_s": 4.870139613747597,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_motor_evidence_codec.py",
+        "--protocol-sha256",
+        "bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3",
+        "--source-sha",
+        "6b6ba042757bea7d53753da3f5f78a9cff756f6b"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    }
+  ],
+  "reason": "RuntimeError: codec failed: RuntimeError: Codec worker peak RSS cap",
+  "finished_utc": "2026-10-28T02:52:45.297655+00:00",
+  "post_gate_wall_s": 4.871033335104585
+}

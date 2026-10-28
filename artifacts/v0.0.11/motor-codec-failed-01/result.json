@@ -1,0 +1,33 @@
+{
+  "error": "TimeoutError: Owned codec supervisor requested stop",
+  "max_rss_bytes": 703586304,
+  "new_physics": 0,
+  "optimizer_updates": 0,
+  "process": {
+    "pid": 1594420,
+    "start_ticks": 909281053
+  },
+  "protocol_sha256": "bfad487677c58f6916565d68842c2e50f0ca09ccbf43d4e2240d2a4a1a4e49a3",
+  "rows": [
+    {
+      "id": "source-71000-full-memory-roundtrip",
+      "reason": "TimeoutError: Owned codec supervisor requested stop",
+      "status": "failed"
+    },
+    {
+      "id": "source-71001-incomplete-recognition",
+      "reason": "stopped after earlier fault",
+      "status": "not_run"
+    },
+    {
+      "id": "source-71000-prefix60-disk-roundtrip",
+      "reason": "stopped after earlier fault",
+      "status": "not_run"
+    }
+  ],
+  "schema": "joxing-motor-codec-qualification-result-v1",
+  "source_commit": "6b6ba042757bea7d53753da3f5f78a9cff756f6b",
+  "status": "halted",
+  "wall_s": 4.173199260607362,
+  "whole_motor_proof_passed": false
+}

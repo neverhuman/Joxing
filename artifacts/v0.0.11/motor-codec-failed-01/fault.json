@@ -1,0 +1,5 @@
+{
+  "error": "TimeoutError: Owned codec supervisor requested stop",
+  "new_physics": 0,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/src/joxing/motor_codec_qualification.py\", line 223, in qualify\n    trace, arrays, c, refs = originals(p)\n                             ^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/src/joxing/motor_codec_qualification.py\", line 126, in originals\n    scene = build_scene(spawn_variant=\"parallel-walk-v1\")\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/src/joxing/scene.py\", line 53, in build_scene\n    child = mujoco.MjSpec.from_file(str(SOURCE))\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-motor-codec-20261028/scripts/qualify_motor_evidence_codec.py\", line 43, in stop\n    raise TimeoutError(\"Owned codec supervisor requested stop\")\nTimeoutError: Owned codec supervisor requested stop\n"
+}

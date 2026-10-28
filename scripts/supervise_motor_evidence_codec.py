@@ -30,7 +30,7 @@ def main():
     parser.add_argument("--source-sha", required=True)
     args = parser.parse_args()
     root = Path.cwd()
-    file = "experiments/v0.0.11/motor-codec-qualification-protocol.json"
+    file = "experiments/v0.0.11/motor-codec-bindings-repair-protocol.json"
     p = json.loads((root / file).read_text())
     if (
         canonical(p) != args.protocol_sha256

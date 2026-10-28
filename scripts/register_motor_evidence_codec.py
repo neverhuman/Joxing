@@ -30,6 +30,21 @@ def main():
             root / "artifacts/v0.0.11/shared-motor-physical/version-accounting.json"
         ).read_text()
     )
+    failure = json.loads(
+        (
+            root
+            / "artifacts/v0.0.11/development/motor-codec-failure-integrity-exit-01.json"
+        ).read_text()
+    )
+    failed_raw = json.loads(
+        (
+            root / "artifacts/v0.0.11/development/motor-codec-failed-transfer-01.json"
+        ).read_text()
+    )
+    binding_name = "artifacts/v0.0.11/development/motor-codec-model-bindings-01.json"
+    binding_source = (
+        "artifacts/v0.0.11/development/motor-codec-model-bindings-source-01.jmc"
+    )
     sources = sorted(
         {
             *root.glob("src/joxing/**/*.py"),
@@ -49,11 +64,31 @@ def main():
         "new_physics": 0,
         "raw_bytes": 4 * 1024**2,
         "maximum_rss_bytes": 512 * 1024**2,
-        "post_gate_wall_s": 90,
-        "stage_wall_limits_s": {"sync": 180, "tests": 900, "codec": 60, "audit": 30},
+        "post_gate_wall_s": 80,
+        "stage_wall_limits_s": {"sync": 180, "tests": 900, "codec": 55, "audit": 25},
         "prior_v11_physics": 12430,
-        "prior_v11_raw_upper_bytes": accounting["conservative_raw_upper_bytes"],
-        "prior_v11_postgate_upper_s": accounting["conservative_postgate_upper_s"],
+        "binding_file": binding_name,
+        "binding_sha256": sha_file(root / binding_name),
+        "binding_scope": "Authenticated semantic indices from already passed intact-model regression; no model compilation, pruning, proxy or inferred IDs in codec phase",
+        "prior_failed_attempt": {
+            "source_commit": failure["source_commit"],
+            "protocol_sha256": failure["protocol_sha256"],
+            "max_rss_bytes": failure["observed_peak_rss_bytes"],
+            "rows": json.loads(
+                (
+                    root / "artifacts/v0.0.11/motor-codec-failed-01/result.json"
+                ).read_text()
+            )["rows"],
+        },
+        "supplementary_failure_read_binding_transfer_upper_s": 25,
+        "prior_v11_raw_upper_bytes": accounting["conservative_raw_upper_bytes"]
+        + failed_raw["retained_raw_bytes"]
+        + (root / binding_name).stat().st_size
+        + (root / binding_source).stat().st_size
+        + 65536,
+        "prior_v11_postgate_upper_s": accounting["conservative_postgate_upper_s"]
+        + failure["post_gate_wall_s"]
+        + 25,
         "threads_per_process": 1,
         "formal_simulation_workers": 0,
         "fixture_process_ceiling": 16,
@@ -73,6 +108,11 @@ def main():
                 "artifacts/v0.0.11/shared-motor-physical/version-accounting.json",
                 "artifacts/v0.0.11/development/shared-motor-physical-integrity-exit-01.json",
                 "artifacts/v0.0.11/development/shared-motor-physical-transfer-01.json",
+                binding_name,
+                binding_source,
+                "artifacts/v0.0.11/development/motor-codec-failure-integrity-exit-01.json",
+                "artifacts/v0.0.11/development/motor-codec-failed-transfer-01.json",
+                "artifacts/v0.0.11/motor-codec-failed-01/result.json",
             ]
         },
         "source_files": {str(f.relative_to(root)): sha_file(f) for f in sources},
