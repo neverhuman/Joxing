@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~18:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~19:20 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `eec64e1`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `2f3c9ec`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -31,6 +31,7 @@ and `grokbot/redteam/cycle-*.md`.
 | v0.0.20 | two-player self-play league (outcome only) | 16/24 | 24/24 | 3.000 s | **honest null**: no promotion, champion = v0.0.19; primary 3/48 valid; not tagged |
 | v0.0.21 | training opponent = frozen v0.0.19 | 1/24 | 10/24 | 1.856 s | **CRITERION_NOT_MET**: 48/48 valid but 4–2–42 draws (referee points 0–0); NOT monotone (@48 lost 0–20 to @16); vs v0.0.13 46/48 blocked; not tagged |
 | v0.0.22 | knockdown objective | 0/24 | 24/24 | 1.816 s | **primary PASSED** (46–0–0 vs v0.0.19), but the hard gate failed (36/48 valid vs v0.0.13, 12 blocked) and monotonicity was unmeasurable (@16 vs v0.0.19 38/48 valid); level-up NOT met; not tagged |
+| v0.0.23 | clean-knockdown objective (bonus never fired) | 2/24 | 23/24 | 1.923 s | **VALIDITY_FAILED** (primary 5/48 valid); hard gate 14/48; not tagged. Knockdowns of v0.0.19 are attributed `self` (fall 1–2 s after the hit), not `knockdown` |
 
 **v0.0.19 head-to-heads** (48 games each):
 
@@ -59,20 +60,20 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.23 (protocol `protocols/v0.0.23.json`, landed before the run)
+## Next step: v0.0.24 (its own preregistration PR)
 
-- **Diagnosis of v0.0.22** (cycle 0033): the blocked hard-gate games are
-  opponent falls attributed `unresolved` because of 5–9 ticks of
-  torso-to-torso contact in the 0.5 s lookback, after the candidate's head
-  hits.
-- **One lever: a clean-knockdown objective.** The bonus counts only
-  knockdowns that the ending attributes.
-- **Gates, on new seeds:**
-  - primary against frozen v0.0.19 (16000–16023): at least 40/48 valid, then
-    at least 24/48 decisive, then b/c;
-  - hard gate: at least 40/48 valid against v0.0.13 (17000–17023);
-  - monotonicity (18000–18023).
-- **Tag only if all pass.**
+- **Smoke gate first:** a short run at the base policy must produce the
+  bonus event in at least 10 % of trials before the full run is allowed
+  (owner 18:40).
+- **One lever: a valid-knockdown bonus.** It pays `knocked_down` when the
+  fall is not `unresolved`, so it pays for valid `self` falls and excludes
+  only blocked ones. It would have fired in 22/24 replayed trials.
+- **Gates as in v0.0.22/23:**
+  - primary against frozen v0.0.19: at least 40/48 valid, then at least
+    24/48 decisive, then b/c;
+  - hard gate: at least 40/48 valid against v0.0.13;
+  - monotonicity;
+  - the per-seat split.
 
 ## Rules this lane follows
 
