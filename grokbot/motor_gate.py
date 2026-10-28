@@ -16,6 +16,8 @@ trial reports:
 * ``strike_ticks``: ticks on which the candidate's glove was striking
   (``ContactClassifier.strikes_by``: approach and referee active speed
   >= 0.5 m/s on head/torso/guard/glove);
+* ``scoring_strike_ticks``: the subset on a head or torso target (a hit, not a
+  blocked punch; ``ContactClassifier.scoring_by``);
 * ``invalid``: an engine fault, which quarantines the trial and never scores.
 
 ``train`` is antithetic ES with common random numbers on a continuous fitness:
@@ -82,6 +84,7 @@ def trial(task):
             "invalid": f"{type(error).__name__}: {error}",
             "stand_ticks": 0,
             "strike_ticks": 0,
+            "scoring_strike_ticks": 0,
             "opponent_fall_tick": None,
             "ticks": env.tick,
         }
@@ -90,16 +93,17 @@ def trial(task):
         "invalid": None,
         "stand_ticks": falls.get("A", env.horizon_ticks),
         "strike_ticks": len(monitor.contacts.strikes_by["A"]),
+        "scoring_strike_ticks": len(monitor.contacts.scoring_by["A"]),
         "opponent_fall_tick": falls.get("B"),
         "ticks": env.tick,
     }
 
 
-def fitness(result, horizon_ticks, strike_bonus):
+def fitness(result, horizon_ticks, strike_bonus, strike_key="strike_ticks"):
     if result["invalid"]:
         return None
     return result["stand_ticks"] / horizon_ticks + strike_bonus * (
-        result["strike_ticks"] > 0
+        result[strike_key] > 0
     )
 
 
@@ -116,6 +120,7 @@ def train(
     lr,
     horizon_ticks,
     strike_bonus,
+    strike_key="strike_ticks",
     log=print,
 ):
     """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
@@ -129,7 +134,7 @@ def train(
             for sign in (1, -1)
         ]
         results = workers_pool.map(trial, tasks)
-        scores = [fitness(r, horizon_ticks, strike_bonus) for r in results]
+        scores = [fitness(r, horizon_ticks, strike_bonus, strike_key) for r in results]
         valid = np.array(
             [
                 scores[2 * k] is not None and scores[2 * k + 1] is not None
@@ -154,6 +159,9 @@ def train(
             if valid.any()
             else None,
             "strike_share": float(np.mean([r["strike_ticks"] > 0 for r in results])),
+            "scoring_share": float(
+                np.mean([r["scoring_strike_ticks"] > 0 for r in results])
+            ),
             "invalid": int(sum(r["invalid"] is not None for r in results)),
             "mean_fitness": float(flat.mean()) if valid.any() else None,
         }
@@ -169,10 +177,12 @@ def gate(workers_pool, spec, opponent, seeds, horizon_ticks):
         r["invalid"] is None and r["stand_ticks"] >= horizon_ticks for r in results
     ]
     reached = [r["invalid"] is None and r["strike_ticks"] > 0 for r in results]
+    scored = [r["invalid"] is None and r["scoring_strike_ticks"] > 0 for r in results]
     return {
         "trials": len(results),
         "stance_pass_rate": float(np.mean(stood)),
         "reach_pass_rate": float(np.mean(reached)),
+        "scoring_reach_rate": float(np.mean(scored)),
         "median_stand_s": float(np.median([r["stand_ticks"] for r in results]) / 1000),
         "invalid": int(sum(r["invalid"] is not None for r in results)),
         "results": results,

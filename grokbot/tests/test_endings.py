@@ -8,6 +8,7 @@ from grokbot.endings import (
     ATTRIBUTION_LOOKBACK_TICKS,
     SUPPORT_FORCE_N,
     SUPPORT_PERSIST_TICKS,
+    ContactClassifier,
     LossEvent,
     attribute,
     classify_contacts,
@@ -284,3 +285,26 @@ def test_a_strike_rearms_only_after_the_gap():
     # 8 empty ticks release it; the next fast contact is a fresh strike.
     strikes, blocking = classify_contacts(rows(250, two(8)), REGISTRY)
     assert strikes == list(range(100, 140)) + list(range(148, 158)) and blocking == []
+
+
+@pytest.mark.parametrize(
+    "contact, strikes, scoring",
+    [
+        # A fast glove to the head is a strike and a hit.
+        ((5, 6, 300.0, FAST), True, True),
+        # To the torso, glove listed second: still a hit.
+        ((3, 5, 300.0, FAST), True, True),
+        # Into the opponent's glove: boxing (a strike), but a blocked punch.
+        ((5, 8, 300.0, FAST), True, False),
+        # A slow glove to the head: neither.
+        ((5, 6, 300.0, SLOW), False, False),
+    ],
+)
+def test_scoring_strikes_are_the_head_and_torso_subset(contact, strikes, scoring):
+    classifier = ContactClassifier(REGISTRY)
+    for row in rows(10, lambda t: [contact] if 2 <= t < 5 else []):
+        classifier.feed(row)
+    assert bool(classifier.strikes_by["A"]) is strikes
+    assert bool(classifier.scoring_by["A"]) is scoring
+    assert set(classifier.scoring_by["A"]) <= set(classifier.strikes_by["A"])
+    assert classifier.scoring_by["B"] == []

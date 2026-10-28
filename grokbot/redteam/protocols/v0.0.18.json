@@ -1,0 +1,118 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.18",
+ "registered_utc": "2026-10-28T06:00:29Z",
+ "question": "Does per-group damping (velocity and height feedback) plus a hit-only strike bonus produce a policy that passes the motor gate AND beats the frozen v0.0.16 champion head-to-head with a positive Elo lower bound, in games won with real head/torso hits?",
+ "owner_requirements": [
+  "gb_feedback_0528: preregister v0.0.18 with a concrete Elo/win-rate gate vs the v0.0.16 champion",
+  "gb_feedback_0313/0314: level-up = motor gate + head-to-head with valid games",
+  "gb_feedback_0110: valid-game floor >= 50% before any Elo claim"
+ ],
+ "context": "v0.0.17 (protocol 850ec810): stance 7/24, reach 24/24, median stand 2.682 s; level-up not met. Exploratory: all v0.0.17 strikes land on the opponent's glove/guard (0 head/torso in 6 replayed gate seeds), and its 14 exploratory wins vs v0.0.13 were a glove tap followed by the opponent's own fall (grokbot/redteam/cycle-0023.md F1/F2).",
+ "classification": "single-athlete motor diagnostic in the shared two-person world; not boxing, not self-play, not an Elo claim",
+ "env": "grokbot.scenarios.RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000); unchanged jekko env; runs to the horizon (does not stop at the first fall)",
+ "opponent": "frozen v0.0.11 gen4 posture policy (deterministic) in corner B",
+ "candidate": {
+  "kind": "grokbot.motor_primitives.GroupPDPolicy: GroupFeedbackPolicy (1,112) + per-group gains on selfplay.FEATURES[6:] (pelvis linear/angular velocity, height): 138 x 7 = 966 new params, 2,078 total",
+  "init": "group_pd_params(v0.0.17 final_params from grokbot/redteam/data/cycle-0022-group-feedback-gate-summary.json): rate gains 0, commands identical to the v0.0.17 candidate at iteration 0"
+ },
+ "training": {
+  "method": "grokbot.motor_gate.train antithetic ES with CRN against the frozen gen4 posture",
+  "fitness": "stand_ticks/3000 + 1.0 * [scoring_strike_ticks > 0] (head/torso hits only; strike_key='scoring_strike_ticks')",
+  "iterations": 48,
+  "pairs": 12,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "seed": 8,
+  "workers": 4,
+  "nice": 19
+ },
+ "gate": {
+  "seeds": [
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023
+  ],
+  "eval_noise": 0.05,
+  "stance_pass": "candidate stands (no persistent non-foot floor support) for the full 3000 ticks",
+  "reach_pass": "candidate lands >= 1 strike tick (approach and referee active speed >= 0.5 m/s on a strike target)",
+  "faults": "engine faults count as failures",
+  "also_reported": "scoring_reach_rate (share of trials with >= 1 head/torso hit); not part of the primary gate"
+ },
+ "head_to_head": {
+  "runs": "unconditionally, after the motor gate (reported whatever the gate result)",
+  "env": "grokbot.reference_env.ReferenceEndingEnv(RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000), anti_stalling=True) via grokbot.selfplay.play_game (ending variant grokbot-ending-reference-v2, unchanged)",
+  "candidate": "the trained GroupPDPolicy, eval noise 0.05",
+  "opponent": "frozen v0.0.16 champion: kind group, v0.0.16 final_params from grokbot/redteam/data/cycle-0020-group-gate-summary.json, eval noise 0.05",
+  "seeds": [
+   3000,
+   3001,
+   3002,
+   3003,
+   3004,
+   3005,
+   3006,
+   3007,
+   3008,
+   3009,
+   3010,
+   3011,
+   3012,
+   3013,
+   3014,
+   3015,
+   3016,
+   3017,
+   3018,
+   3019,
+   3020,
+   3021,
+   3022,
+   3023
+  ],
+  "sides": "each seed with the candidate in corner A and in corner B (48 games)",
+  "valid": "grokbot.selfplay.valid_result (not no-contest, not blocked, not an engine fault); every game stays in the denominator",
+  "samples": "grokbot.promotion._utilities over valid games: games sharing a seed are averaged into one paired sample",
+  "bound": "lower95 = grokbot.promotion.hoeffding_lower(mean, n_samples, 0.95)",
+  "elo": "Elo = 400*log10(p/(1-p)) with p = (1+mean)/2 clipped to [0.5/n, 1-0.5/n]; Elo lower bound from p_low = (1+lower95)/2 (-inf if p_low <= 0); win rate = wins / valid games with a Wilson 95% interval (descriptive)",
+  "pass": "ALL of: (a) valid games >= 50% of the 48; (b) lower95 > 0 (equivalently Elo lower bound > 0); (c) at least half of the candidate's valid wins include >= 1 candidate head/torso hit (scoring_strike_ticks > 0)"
+ },
+ "criteria": {
+  "primary_motor_gate": "stance_pass_rate >= 0.50 AND reach_pass_rate >= 0.50 over the same 24 gate trials (v0.0.15/v0.0.16 seeds, opponent, horizon)",
+  "elo_gate": "head_to_head.pass above",
+  "secondary": "one-sided exact sign test on paired gate stand ticks vs the v0.0.17 candidate (re-run on the same seeds; also checked per trial against the committed v0.0.17 summary), p < 0.05",
+  "level_up": "v0.0.18 is a level-up (tagged) iff the primary motor gate AND the Elo gate pass"
+ },
+ "pre_declared_readings": [
+  "no stand gain over v0.0.17: linear per-group feedback is saturated; next lever is recurrent control or jekko's pretrained bridge",
+  "stand gain, gate still fails: report, keep scaling the controller",
+  "scoring_reach_rate stays 0: hit-only bonus gives no gradient from glove taps; next: shaping on glove-to-head distance at strike time",
+  "Elo gate (a) fails: games still undecided (no-contest) - candidate does not strike before the opponent's fall",
+  "Elo gate (b) passes but (c) fails: wins come from glove taps + opponent's own fall, not hits; not a level-up",
+  "both pass: tag v0.0.18; next preregister a two-player league from the v0.0.18 policy with this Elo gate"
+ ],
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0023-group-pd-gate.py"
+ ]
+}
