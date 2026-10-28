@@ -1,3 +1,28 @@
+# Scoring passed; native import bootstrap registered — 2026-10-28
+
+1144Linux tests +one registered strict xfail pass747.02s; scoring allseven rows
+and independent audit pass.1000rigid steps,0native steps. The native dependent
+run failed BEFORE physics: standalone launcher could not import repository-root
+grokbot, which pytest had exposed automatically. Source failed/replay not_run;
+audit/render not_run. All615hashes/39exited identities/27raw files507,261bytes
+verified; oldroot /home/ubuntu/joxing/native-strike-wave-20261028 is immutable.
+Read SCORING_PHASE_A_RESULTS.md. No current native job or qualified boxing result.
+
+NEWregistered environment-only attempt native-import-bootstrap-02:
+experiments/v0.0.11/native-strike-import-bootstrap-02.json, canonical SHA
+9eb564782e7c94ef24d76e03ee7b5cee9c97e72569f0d7477e3377040a495d6b.
+Scientific source stays25523545f616cab13b9ed9b4010d2c1a2db32e23; original native
+protocol33fc2903 stays unchanged. Fresh root
+/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028; copy exact successful
+A prerequisite outputs, same pinned runtime, set PYTHONPATH to exact checkout.
+No source/test/scoring rerun and no prior result overwrite. Package/runtime/hash
+checks and the native supervisor's prerequisite gate precede any native step.
+Caps remain5797native steps/40spostgate/24MiB/4GiB/one worker/thread. New2s preflight
+and all old failed time/raw are charged; global worst bounds897.961296s and
+261,553,524bytes remain below900s/256MiB. Budget guard rejects over-time/raw cases.
+Public-freeze manifest/operator before launch. Stop on faults; no cap increase,
+body/rules edits, unrelated services, agents or other-chat messages.
+
 # Active native interaction and recording wave — 2026-10-28
 
 Frozen public source25523545f616cab13b9ed9b4010d2c1a2db32e23; all35 changed

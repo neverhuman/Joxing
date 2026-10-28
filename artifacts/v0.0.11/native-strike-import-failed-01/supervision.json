@@ -1,0 +1,109 @@
+{
+  "schema": "joxing-native-strike-supervisor-v1",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+  "process": {
+    "pid": 815431,
+    "parent_pid": 610650,
+    "start_ticks": 914372555,
+    "state": "R"
+  },
+  "started_utc": "2026-10-28T17:01:16.606650+00:00",
+  "status": "halted",
+  "initial_capacity": {
+    "available_memory_bytes": 48633647104,
+    "disk_free_bytes": 273265266688,
+    "load": [
+      14.44384765625,
+      14.86669921875,
+      13.23095703125
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "proof",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_native_strike_probe.py",
+        "--protocol-sha256",
+        "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "failed",
+      "reason": "Nonzero exit or live child",
+      "process": {
+        "pid": 815550,
+        "parent_pid": 815431,
+        "start_ticks": 914372698,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 815550,
+          "parent_pid": 815431,
+          "start_ticks": 914372698,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 48600608768,
+        "disk_free_bytes": 273264234496,
+        "load": [
+          14.44384765625,
+          14.86669921875,
+          13.23095703125
+        ],
+        "owned_raw_bytes": 0
+      },
+      "returncode": 1,
+      "wall_s": 2.1848584227263927,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_native_strike_probe.py",
+        "--protocol-sha256",
+        "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    },
+    {
+      "stage": "render",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/render_native_strike_probe.py",
+        "--protocol-sha256",
+        "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    }
+  ],
+  "reason": "RuntimeError: proof failed: Nonzero exit or live child",
+  "finished_utc": "2026-10-28T17:01:19.091375+00:00",
+  "post_gate_wall_s": 2.185513274744153
+}

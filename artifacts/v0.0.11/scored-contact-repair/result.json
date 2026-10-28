@@ -1,0 +1,114 @@
+{
+  "fixture_completed": 1000,
+  "fixture_entered": 1000,
+  "max_rss_bytes": 160751616,
+  "new_native_physics": 0,
+  "optimizer_updates": 0,
+  "process": {
+    "pid": 814611,
+    "start_ticks": 914371508
+  },
+  "protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+  "rows": [
+    {
+      "final_sha256": "1378c59ee3e620aa46bf2e9740332d1c27708b9befb826d75e871ab7a1a31eb1",
+      "id": "saved-native-source",
+      "intervals": 1000,
+      "reason": null,
+      "rejection_counts": {},
+      "status": "passed"
+    },
+    {
+      "final_sha256": "4b70b4bba8485e41bfb5492ed507d7ea30c25086b40a9d9c8aa702678f857f44",
+      "id": "saved-native-guard-control",
+      "intervals": 20,
+      "reason": null,
+      "rejection_counts": {
+        "direct_zone": 80,
+        "positive_force": 24
+      },
+      "status": "passed"
+    },
+    {
+      "cause": "UNDETERMINED",
+      "classification": "NOT_EXPLAINABLE_FROM_THIS_SAVED_SUMMARY",
+      "id": "published-v21-data-gap",
+      "legacy_unmeasurable_constants": [
+        "-Infinity",
+        "-Infinity",
+        "-Infinity"
+      ],
+      "primary_rows": 48,
+      "reason": null,
+      "reported_points_replay": {
+        "candidate_hit_ticks": 50,
+        "opponent_hit_ticks": 50,
+        "referee_points": [
+          0,
+          0
+        ],
+        "replayed": "primary seed 10001 side A (a draw)",
+        "tick": 3000
+      },
+      "scope": "Input completeness finding, not a failed athlete or a scoring success",
+      "status": "passed"
+    },
+    {
+      "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+      "final_sha256": "6955ff8da9853399230f60cf6c87dcf8cdbba8dfc69a736fc7012922fb2c2b87",
+      "id": "rigid-head-forward",
+      "physics_steps": 250,
+      "points": [
+        2,
+        0
+      ],
+      "positive_force_touches": 29,
+      "reason": null,
+      "status": "passed"
+    },
+    {
+      "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+      "final_sha256": "531dba92371e750167bd264d27f148391ebf4471ad909f9ebf73192e0e63e52d",
+      "id": "rigid-head-reverse",
+      "physics_steps": 250,
+      "points": [
+        2,
+        0
+      ],
+      "positive_force_touches": 29,
+      "reason": null,
+      "status": "passed"
+    },
+    {
+      "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+      "final_sha256": "009c43af32782260e24b705a8c19bbf28e9350de27c154228db89a6fcbc8cc94",
+      "id": "rigid-torso-forward",
+      "physics_steps": 250,
+      "points": [
+        1,
+        0
+      ],
+      "positive_force_touches": 29,
+      "reason": null,
+      "status": "passed"
+    },
+    {
+      "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+      "final_sha256": "40497e3af60e62ab00f33180f57bb6854f59df062589677670113d3337898ba7",
+      "id": "rigid-torso-reverse",
+      "physics_steps": 250,
+      "points": [
+        1,
+        0
+      ],
+      "positive_force_touches": 29,
+      "reason": null,
+      "status": "passed"
+    }
+  ],
+  "schema": "joxing-score-qualification-result-v1",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "status": "passed",
+  "wall_s": 4.978050120174885,
+  "whole_boxing_proof_passed": false
+}

@@ -1,0 +1,6 @@
+{
+  "error": "ModuleNotFoundError: No module named 'grokbot'",
+  "physics_completed": 0,
+  "physics_entered": 0,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/joxing/native-strike-wave-20261028/src/joxing/native_strike_qualification.py\", line 142, in prove\n    actors = controllers(root, p)\n             ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-strike-wave-20261028/src/joxing/native_strike_qualification.py\", line 79, in controllers\n    a: FrozenGroupController.from_summary(\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-strike-wave-20261028/src/joxing/frozen_group_controller.py\", line 61, in from_summary\n    return cls(json.loads(data)[\"final_params\"], noise=noise)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ubuntu/joxing/native-strike-wave-20261028/src/joxing/frozen_group_controller.py\", line 19, in __init__\n    from grokbot import motor_primitives, selfplay\nModuleNotFoundError: No module named 'grokbot'\n"
+}

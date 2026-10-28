@@ -1,0 +1,130 @@
+{
+  "schema": "joxing-native-strike-import-bootstrap-v1",
+  "attempt_id": "native-import-bootstrap-02",
+  "root": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "native_protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+  "a_protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+  "operator_path": "experiments/v0.0.11/native_strike_import_bootstrap_02.py",
+  "operator_sha256": "c8e46e09105d41588b74528ca3c494202bfbd1bebd6ed42457c49b98f6e99759",
+  "environment_variant": {
+    "PYTHONPATH": "exact fresh frozen checkout root; matches pytest repository import visibility",
+    "scientific_source_changed": false,
+    "threads_per_process": 1,
+    "MUJOCO_GL": "egl"
+  },
+  "prior_attempt_root": "/home/ubuntu/joxing/native-strike-wave-20261028",
+  "prior_attempt_status": "native source failed during controller import; replay not_run;0native steps; original preserved",
+  "source_regression_reuse": {
+    "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+    "passed": 1144,
+    "strict_known_xfails": 1,
+    "pytest_wall_s": 747.02,
+    "policy": "Reuse exact frozen source only; no rerun of completed scoring or regressions"
+  },
+  "prerequisite_files": {
+    "runs/v0.0.11/scored-contact-proof-01/independent-audit.json": {
+      "bytes": 854,
+      "sha256": "948d22517111c495982561956632e3601bfa606d608e279d4c5a97d7751c3320"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/physics.jsonl": {
+      "bytes": 128120,
+      "sha256": "71e0dcbfa0b8164004ccc82ecae65b3273bd3d2a8da0dfb8831e869afac85cda"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/protocol.json": {
+      "bytes": 75420,
+      "sha256": "e9e076ba3f6c436930aea65c6fa0348176c2f4e14fc2c5b15ff492204eaaf168"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/result.json": {
+      "bytes": 3300,
+      "sha256": "3dcef6f247fa3c45b92ac6499f32051b9f78f24b688dfe16832c5fcdd248f15f"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/rigid-head-forward.json.gz": {
+      "bytes": 18601,
+      "sha256": "67217118d2f93c60432d75804a2d7c2fab79d7391005bc7c996f0d8fec215b9f"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/rigid-head-reverse.json.gz": {
+      "bytes": 18586,
+      "sha256": "60ce21dc378a42641f47edccdb9a3bdd177d0dba370a319a9a8c48b3dc3c88e2"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/rigid-torso-forward.json.gz": {
+      "bytes": 18706,
+      "sha256": "b86260cce7518a5b7677de35304cc9d21792431eed384a5949650b9601f835fb"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/rigid-torso-reverse.json.gz": {
+      "bytes": 18707,
+      "sha256": "5d49f00706b33f888bdc73c35d96e0da34a9dec9c9ef5e14d7a5173c8f3acd66"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/saved-native-guard-control.json.gz": {
+      "bytes": 6512,
+      "sha256": "19167d12deddb612b3b93f95a7cc4c53cfeb215e46a72f842e7cdb7f8f709f53"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/saved-native-source.json.gz": {
+      "bytes": 249,
+      "sha256": "a2259b94641d246493af46ab2aafead0460e58bb8f4966ba6874e0f835e04d01"
+    },
+    "runs/v0.0.11/scored-contact-proof-01/storage-manifest.json": {
+      "bytes": 2191,
+      "sha256": "c4aee25a4838a10cf25f2eefd0a142a562ca7f0e095f7549687c7ff21f303efe"
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/audit.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/proof.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/result.json": {
+      "bytes": 8848,
+      "sha256": "f1b9f3a771b75ea5aa693dd61e8ac00bef54353fed76804e427f1598ad7fe694"
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/sync.log": {
+      "bytes": 58,
+      "sha256": "50102b460e409d1a1c36734e6aeec81d8f3f32652876644e4cb2a6fde426b0b6"
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/tests.log": {
+      "bytes": 3342,
+      "sha256": "745ad7ea1ae815ec95640bae16594de385483f4437b9b2a75dfb97f039cd8293"
+    }
+  },
+  "copied_prerequisite_bytes": 303494,
+  "runtime": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "packages": {
+      "mujoco": "3.8.0",
+      "numpy": "2.4.2",
+      "imageio": "2.38.1",
+      "imageio-ffmpeg": "0.6.0",
+      "Pillow": "13.0.0",
+      "torch": "2.10.0+cpu"
+    }
+  },
+  "prior_postgate_upper_s": 855.9612963907421,
+  "preflight_wall_limit_s": 2,
+  "native_postgate_limit_s": 40,
+  "outer_wall_limit_s": 55,
+  "whole_version_outer_deadline_also_enforced": 900,
+  "prior_raw_upper_bytes": 236018670,
+  "operator_raw_limit_bytes": 65536,
+  "native_raw_limit_bytes": 25165824,
+  "scientific_caps_unchanged": {
+    "proof_s": 25,
+    "audit_s": 15,
+    "render_s": 15,
+    "cumulative_s": 40,
+    "rss_bytes": 4294967296,
+    "native_physics": 5797,
+    "native_workers": 1,
+    "video_bytes": 2097152
+  },
+  "all_old_attempts_retained": true,
+  "activation": "Exact file hashes, qualified runtime versions, controlled package resolution, no unknown owned job,2s preflight, full raw and wall credit; otherwise no native launch.",
+  "next": "Run unchanged native supervisor once in fresh root, audit source/replay/recording regardless of point total; no source or scoring fixes in executing checkout.",
+  "operator_budget_checks": {
+    "baseline": "passed",
+    "over_time": "rejected",
+    "over_raw": "rejected",
+    "new_physics": 0
+  }
+}

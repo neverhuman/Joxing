@@ -1,0 +1,371 @@
+{
+  "schema": "joxing-scored-contact-supervisor-v1",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+  "process": {
+    "pid": 610652,
+    "parent_pid": 610650,
+    "start_ticks": 914295951,
+    "state": "R"
+  },
+  "started_utc": "2026-10-28T16:48:30.400672+00:00",
+  "status": "completed",
+  "initial_capacity": {
+    "available_memory_bytes": 44157771776,
+    "disk_free_bytes": 274858172416,
+    "load": [
+      12.7470703125,
+      10.62451171875,
+      10.95849609375
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 610963,
+        "parent_pid": 610652,
+        "start_ticks": 914296079,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 610963,
+          "parent_pid": 610652,
+          "start_ticks": 914296079,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 44152172544,
+        "disk_free_bytes": 274858143744,
+        "load": [
+          12.7470703125,
+          10.62451171875,
+          10.95849609375
+        ],
+        "owned_raw_bytes": 58
+      },
+      "returncode": 0,
+      "wall_s": 2.190484255552292,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "tests",
+        "grokbot/tests"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 611369,
+        "parent_pid": 610652,
+        "start_ticks": 914296329,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 611369,
+          "parent_pid": 610652,
+          "start_ticks": 914296329,
+          "state": "S"
+        },
+        {
+          "pid": 611372,
+          "parent_pid": 611369,
+          "start_ticks": 914296333,
+          "state": "R"
+        },
+        {
+          "pid": 651037,
+          "parent_pid": 611372,
+          "start_ticks": 914308373,
+          "state": "S"
+        },
+        {
+          "pid": 651038,
+          "parent_pid": 611372,
+          "start_ticks": 914308373,
+          "state": "S"
+        },
+        {
+          "pid": 651039,
+          "parent_pid": 611372,
+          "start_ticks": 914308373,
+          "state": "R"
+        },
+        {
+          "pid": 770692,
+          "parent_pid": 611372,
+          "start_ticks": 914343422,
+          "state": "S"
+        },
+        {
+          "pid": 770712,
+          "parent_pid": 611372,
+          "start_ticks": 914343444,
+          "state": "R"
+        },
+        {
+          "pid": 770715,
+          "parent_pid": 611372,
+          "start_ticks": 914343445,
+          "state": "R"
+        },
+        {
+          "pid": 771470,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "S"
+        },
+        {
+          "pid": 771471,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "S"
+        },
+        {
+          "pid": 771472,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "S"
+        },
+        {
+          "pid": 771473,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "S"
+        },
+        {
+          "pid": 771474,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 771475,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 771476,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 771477,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 774943,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 774945,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 774946,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 774947,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 779109,
+          "parent_pid": 611372,
+          "start_ticks": 914350160,
+          "state": "R"
+        },
+        {
+          "pid": 779110,
+          "parent_pid": 611372,
+          "start_ticks": 914350168,
+          "state": "R"
+        },
+        {
+          "pid": 780116,
+          "parent_pid": 611372,
+          "start_ticks": 914351431,
+          "state": "R"
+        },
+        {
+          "pid": 780117,
+          "parent_pid": 611372,
+          "start_ticks": 914351439,
+          "state": "R"
+        },
+        {
+          "pid": 784299,
+          "parent_pid": 611372,
+          "start_ticks": 914356022,
+          "state": "R"
+        },
+        {
+          "pid": 784301,
+          "parent_pid": 611372,
+          "start_ticks": 914356031,
+          "state": "R"
+        },
+        {
+          "pid": 788010,
+          "parent_pid": 611372,
+          "start_ticks": 914360934,
+          "state": "S"
+        },
+        {
+          "pid": 788013,
+          "parent_pid": 611372,
+          "start_ticks": 914360941,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 47108833280,
+        "disk_free_bytes": 273272348672,
+        "load": [
+          14.9267578125,
+          14.97998046875,
+          13.240234375
+        ],
+        "owned_raw_bytes": 10596
+      },
+      "returncode": 0,
+      "wall_s": 751.348370263353,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "proof",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_scored_contacts.py",
+        "--protocol-sha256",
+        "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 814608,
+        "parent_pid": 610652,
+        "start_ticks": 914371503,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 814608,
+          "parent_pid": 610652,
+          "start_ticks": 914371503,
+          "state": "S"
+        },
+        {
+          "pid": 814611,
+          "parent_pid": 814608,
+          "start_ticks": 914371508,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 48749789184,
+        "disk_free_bytes": 273272029184,
+        "load": [
+          14.48291015625,
+          14.88134765625,
+          13.2265625
+        ],
+        "owned_raw_bytes": 257753
+      },
+      "returncode": 0,
+      "wall_s": 6.541714856401086,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_scored_contacts.py",
+        "--protocol-sha256",
+        "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 814802,
+        "parent_pid": 610652,
+        "start_ticks": 914372187,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 814802,
+          "parent_pid": 610652,
+          "start_ticks": 914372187,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 48756080640,
+        "disk_free_bytes": 273267113984,
+        "load": [
+          14.48291015625,
+          14.88134765625,
+          13.2265625
+        ],
+        "owned_raw_bytes": 301882
+      },
+      "returncode": 0,
+      "wall_s": 2.1764425095170736,
+      "live_recorded_processes": []
+    }
+  ],
+  "finished_utc": "2026-10-28T17:01:14.280808+00:00",
+  "post_gate_wall_s": 9.315627086907625
+}

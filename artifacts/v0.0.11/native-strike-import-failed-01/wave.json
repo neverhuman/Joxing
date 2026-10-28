@@ -1,0 +1,450 @@
+{
+  "schema": "joxing-native-strike-wave-v1",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "a_protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+  "native_protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+  "process": {
+    "pid": 610650,
+    "parent_pid": 1,
+    "start_ticks": 914295936,
+    "state": "R"
+  },
+  "status": "halted",
+  "stages": [
+    {
+      "name": "scoring-repair",
+      "command": [
+        "/home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/python",
+        "scripts/supervise_scored_contacts.py",
+        "--protocol-sha256",
+        "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "wall_limit_s": 1140,
+      "supervision": "runs/v0.0.11/scored-contact-supervision-01/result.json",
+      "proof_result": "runs/v0.0.11/scored-contact-proof-01/result.json",
+      "planned_proof_rows": [
+        {
+          "id": "saved-native-source",
+          "status": "not_run"
+        },
+        {
+          "id": "saved-native-guard-control",
+          "status": "not_run"
+        },
+        {
+          "id": "published-v21-data-gap",
+          "status": "not_run"
+        },
+        {
+          "id": "rigid-head-forward",
+          "status": "not_run"
+        },
+        {
+          "id": "rigid-head-reverse",
+          "status": "not_run"
+        },
+        {
+          "id": "rigid-torso-forward",
+          "status": "not_run"
+        },
+        {
+          "id": "rigid-torso-reverse",
+          "status": "not_run"
+        }
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 610652,
+        "parent_pid": 610650,
+        "start_ticks": 914295951,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 610652,
+          "parent_pid": 610650,
+          "start_ticks": 914295951,
+          "state": "S"
+        },
+        {
+          "pid": 610963,
+          "parent_pid": 610652,
+          "start_ticks": 914296079,
+          "state": "Z"
+        },
+        {
+          "pid": 611369,
+          "parent_pid": 610652,
+          "start_ticks": 914296329,
+          "state": "Z"
+        },
+        {
+          "pid": 611372,
+          "parent_pid": 611369,
+          "start_ticks": 914296333,
+          "state": "R"
+        },
+        {
+          "pid": 651037,
+          "parent_pid": 611372,
+          "start_ticks": 914308373,
+          "state": "S"
+        },
+        {
+          "pid": 651038,
+          "parent_pid": 611372,
+          "start_ticks": 914308373,
+          "state": "S"
+        },
+        {
+          "pid": 651039,
+          "parent_pid": 611372,
+          "start_ticks": 914308373,
+          "state": "R"
+        },
+        {
+          "pid": 770692,
+          "parent_pid": 611372,
+          "start_ticks": 914343422,
+          "state": "S"
+        },
+        {
+          "pid": 770712,
+          "parent_pid": 611372,
+          "start_ticks": 914343444,
+          "state": "S"
+        },
+        {
+          "pid": 770715,
+          "parent_pid": 611372,
+          "start_ticks": 914343445,
+          "state": "S"
+        },
+        {
+          "pid": 771470,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "R"
+        },
+        {
+          "pid": 771471,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "R"
+        },
+        {
+          "pid": 771472,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "R"
+        },
+        {
+          "pid": 771473,
+          "parent_pid": 770715,
+          "start_ticks": 914344200,
+          "state": "R"
+        },
+        {
+          "pid": 771474,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 771475,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 771476,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 771477,
+          "parent_pid": 770712,
+          "start_ticks": 914344207,
+          "state": "R"
+        },
+        {
+          "pid": 774943,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 774945,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 774946,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 774947,
+          "parent_pid": 611372,
+          "start_ticks": 914346463,
+          "state": "R"
+        },
+        {
+          "pid": 779109,
+          "parent_pid": 611372,
+          "start_ticks": 914350160,
+          "state": "R"
+        },
+        {
+          "pid": 779110,
+          "parent_pid": 611372,
+          "start_ticks": 914350168,
+          "state": "R"
+        },
+        {
+          "pid": 780116,
+          "parent_pid": 611372,
+          "start_ticks": 914351431,
+          "state": "R"
+        },
+        {
+          "pid": 780117,
+          "parent_pid": 611372,
+          "start_ticks": 914351439,
+          "state": "R"
+        },
+        {
+          "pid": 784299,
+          "parent_pid": 611372,
+          "start_ticks": 914356022,
+          "state": "R"
+        },
+        {
+          "pid": 784301,
+          "parent_pid": 611372,
+          "start_ticks": 914356031,
+          "state": "R"
+        },
+        {
+          "pid": 788010,
+          "parent_pid": 611372,
+          "start_ticks": 914360934,
+          "state": "S"
+        },
+        {
+          "pid": 788013,
+          "parent_pid": 611372,
+          "start_ticks": 914360941,
+          "state": "R"
+        },
+        {
+          "pid": 814608,
+          "parent_pid": 610652,
+          "start_ticks": 914371503,
+          "state": "Z"
+        },
+        {
+          "pid": 814611,
+          "parent_pid": 814608,
+          "start_ticks": 914371508,
+          "state": "R"
+        },
+        {
+          "pid": 814802,
+          "parent_pid": 610652,
+          "start_ticks": 914372187,
+          "state": "S"
+        },
+        {
+          "pid": 814805,
+          "parent_pid": 814802,
+          "start_ticks": 914372190,
+          "state": "R"
+        }
+      ],
+      "actual_proof_rows": [
+        {
+          "final_sha256": "1378c59ee3e620aa46bf2e9740332d1c27708b9befb826d75e871ab7a1a31eb1",
+          "id": "saved-native-source",
+          "intervals": 1000,
+          "reason": null,
+          "rejection_counts": {},
+          "status": "passed"
+        },
+        {
+          "final_sha256": "4b70b4bba8485e41bfb5492ed507d7ea30c25086b40a9d9c8aa702678f857f44",
+          "id": "saved-native-guard-control",
+          "intervals": 20,
+          "reason": null,
+          "rejection_counts": {
+            "direct_zone": 80,
+            "positive_force": 24
+          },
+          "status": "passed"
+        },
+        {
+          "cause": "UNDETERMINED",
+          "classification": "NOT_EXPLAINABLE_FROM_THIS_SAVED_SUMMARY",
+          "id": "published-v21-data-gap",
+          "legacy_unmeasurable_constants": [
+            "-Infinity",
+            "-Infinity",
+            "-Infinity"
+          ],
+          "primary_rows": 48,
+          "reason": null,
+          "reported_points_replay": {
+            "candidate_hit_ticks": 50,
+            "opponent_hit_ticks": 50,
+            "referee_points": [
+              0,
+              0
+            ],
+            "replayed": "primary seed 10001 side A (a draw)",
+            "tick": 3000
+          },
+          "scope": "Input completeness finding, not a failed athlete or a scoring success",
+          "status": "passed"
+        },
+        {
+          "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+          "final_sha256": "6955ff8da9853399230f60cf6c87dcf8cdbba8dfc69a736fc7012922fb2c2b87",
+          "id": "rigid-head-forward",
+          "physics_steps": 250,
+          "points": [
+            2,
+            0
+          ],
+          "positive_force_touches": 29,
+          "reason": null,
+          "status": "passed"
+        },
+        {
+          "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+          "final_sha256": "531dba92371e750167bd264d27f148391ebf4471ad909f9ebf73192e0e63e52d",
+          "id": "rigid-head-reverse",
+          "physics_steps": 250,
+          "points": [
+            2,
+            0
+          ],
+          "positive_force_touches": 29,
+          "reason": null,
+          "status": "passed"
+        },
+        {
+          "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+          "final_sha256": "009c43af32782260e24b705a8c19bbf28e9350de27c154228db89a6fcbc8cc94",
+          "id": "rigid-torso-forward",
+          "physics_steps": 250,
+          "points": [
+            1,
+            0
+          ],
+          "positive_force_touches": 29,
+          "reason": null,
+          "status": "passed"
+        },
+        {
+          "classification": "rigid force-producing adapter fixture, not native athlete boxing",
+          "final_sha256": "40497e3af60e62ab00f33180f57bb6854f59df062589677670113d3337898ba7",
+          "id": "rigid-torso-reverse",
+          "physics_steps": 250,
+          "points": [
+            1,
+            0
+          ],
+          "positive_force_touches": 29,
+          "reason": null,
+          "status": "passed"
+        }
+      ],
+      "returncode": 0,
+      "wall_s": 766.0317695681006,
+      "supervisor_status": "completed",
+      "live_recorded_processes": [],
+      "error": null
+    },
+    {
+      "name": "native-source-replay-recording",
+      "command": [
+        "/home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/python",
+        "scripts/supervise_native_strike_probe.py",
+        "--protocol-sha256",
+        "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "wall_limit_s": 55,
+      "supervision": "runs/v0.0.11/native-strike-supervision-01/result.json",
+      "proof_result": "runs/v0.0.11/native-strike-proof-01/result.json",
+      "planned_proof_rows": [
+        {
+          "id": "fixed-source-10001-A",
+          "status": "not_run"
+        },
+        {
+          "id": "actual-mid-203-continuation",
+          "status": "not_run"
+        }
+      ],
+      "status": "failed",
+      "reason": "Child supervisor did not complete",
+      "process": {
+        "pid": 815431,
+        "parent_pid": 610650,
+        "start_ticks": 914372555,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 815431,
+          "parent_pid": 610650,
+          "start_ticks": 914372555,
+          "state": "S"
+        },
+        {
+          "pid": 815550,
+          "parent_pid": 815431,
+          "start_ticks": 914372698,
+          "state": "S"
+        },
+        {
+          "pid": 815562,
+          "parent_pid": 815550,
+          "start_ticks": 914372701,
+          "state": "S"
+        },
+        {
+          "pid": 815584,
+          "parent_pid": 815562,
+          "start_ticks": 914372760,
+          "state": "R"
+        }
+      ],
+      "actual_proof_rows": [
+        {
+          "id": "fixed-source-10001-A",
+          "reason": "ModuleNotFoundError: No module named 'grokbot'",
+          "status": "failed"
+        },
+        {
+          "id": "actual-mid-203-continuation",
+          "reason": "stopped after earlier fault",
+          "status": "not_run"
+        }
+      ],
+      "returncode": 0,
+      "wall_s": 4.145672837272286,
+      "supervisor_status": "halted",
+      "live_recorded_processes": [],
+      "error": null
+    }
+  ]
+}

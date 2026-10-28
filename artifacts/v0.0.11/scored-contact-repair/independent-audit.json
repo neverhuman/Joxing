@@ -1,0 +1,39 @@
+{
+  "max_rss_bytes": 160669696,
+  "new_physics": 0,
+  "protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+  "rows": [
+    {
+      "id": "saved-native-source",
+      "status": "passed"
+    },
+    {
+      "id": "saved-native-guard-control",
+      "status": "passed"
+    },
+    {
+      "id": "published-v21-data-gap",
+      "status": "passed"
+    },
+    {
+      "id": "rigid-head-forward",
+      "status": "passed"
+    },
+    {
+      "id": "rigid-head-reverse",
+      "status": "passed"
+    },
+    {
+      "id": "rigid-torso-forward",
+      "status": "passed"
+    },
+    {
+      "id": "rigid-torso-reverse",
+      "status": "passed"
+    }
+  ],
+  "schema": "joxing-score-independent-read-audit-v1",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "status": "passed",
+  "whole_boxing_proof_passed": false
+}

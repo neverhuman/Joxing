@@ -1,0 +1,26 @@
+{
+  "environment_engine_entries": 0,
+  "error": "ModuleNotFoundError: No module named 'grokbot'",
+  "max_rss_bytes": 151568384,
+  "optimizer_updates": 0,
+  "physics_completed": 0,
+  "physics_entered": 0,
+  "protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+  "qualified_boxing_games": 0,
+  "rows": [
+    {
+      "id": "fixed-source-10001-A",
+      "reason": "ModuleNotFoundError: No module named 'grokbot'",
+      "status": "failed"
+    },
+    {
+      "id": "actual-mid-203-continuation",
+      "reason": "stopped after earlier fault",
+      "status": "not_run"
+    }
+  ],
+  "schema": "joxing-native-strike-result-v1",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "status": "halted",
+  "wall_s": 0.0048374757170677185
+}
