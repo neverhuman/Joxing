@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~07:00 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~07:55 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `1dc96e9`, plus this PR. **Latest tag: `v0.0.17`**, a pre-release labelled "criterion not met" (owner request). No tag so far marks a passed preregistered level-up.
+- **Main:** green at `573c351`, plus this PR. **Latest tag: `v0.0.17`**, a pre-release labelled "criterion not met" (owner request). No tag so far marks a passed preregistered level-up.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -38,16 +38,17 @@ and `grokbot/redteam/cycle-*.md`.
 Cycle 0024: hitting costs balance, so v0.0.18 falls first against a standing
 opponent.
 
-## Next step: v0.0.19 (recommended, not yet preregistered)
+## Next step: v0.0.19 (protocol `protocols/v0.0.19.json`, landed before the run)
 
-- **One change:** a "hit and stay up" fitness, where the hit bonus counts
-  only if the athlete is still up 0.5 s after the hit. Train from v0.0.18
-  with the same policy class.
-- **Report:** the motor gate, the Elo gate vs v0.0.16 and the Elo gate vs
-  v0.0.13. Preregister and push before running, and tag only on the
-  registered level-up.
-- If stance does not recover, the next lever is recurrent control or jekko's
-  pretrained bridge.
+- **One change:** the hit-and-stay-up fitness. A head/torso hit earns the
+  bonus only if the athlete is still standing 0.5 s after its first hit.
+  Training starts from v0.0.18.
+- **Primary (the only level-up):** the a/b/c gate against frozen v0.0.13 on
+  new seeds 5000–5023. Tag `v0.0.19` only if it passes.
+- **Secondary:** v0.0.18 on the same games; v0.0.19 and v0.0.18 against
+  frozen v0.0.16 on seeds 6000–6023; the motor gate and sign test.
+- **Probe:** `probes/cycle-0025-hit-stay-gate.py`. Run it at nice 19 with
+  loadavg below 86, after this PR merges.
 
 ## Rules this lane follows
 

@@ -85,6 +85,7 @@ def trial(task):
             "stand_ticks": 0,
             "strike_ticks": 0,
             "scoring_strike_ticks": 0,
+            "first_scoring_tick": None,
             "opponent_fall_tick": None,
             "ticks": env.tick,
         }
@@ -94,17 +95,33 @@ def trial(task):
         "stand_ticks": falls.get("A", env.horizon_ticks),
         "strike_ticks": len(monitor.contacts.strikes_by["A"]),
         "scoring_strike_ticks": len(monitor.contacts.scoring_by["A"]),
+        "first_scoring_tick": min(monitor.contacts.scoring_by["A"], default=None),
         "opponent_fall_tick": falls.get("B"),
         "ticks": env.tick,
     }
 
 
-def fitness(result, horizon_ticks, strike_bonus, strike_key="strike_ticks"):
+def hit_and_stayed_up(result, stay_up_ticks):
+    """A head/torso hit, and still standing ``stay_up_ticks`` after the first."""
+    first = result["first_scoring_tick"]
+    return first is not None and result["stand_ticks"] >= first + stay_up_ticks
+
+
+def fitness(
+    result, horizon_ticks, strike_bonus, strike_key="strike_ticks", stay_up_ticks=None
+):
+    """Stand fraction plus a strike bonus.
+
+    With ``stay_up_ticks`` (v0.0.19) the bonus needs a head/torso hit after
+    which the athlete stays up that long: v0.0.18 hit and then fell first.
+    """
     if result["invalid"]:
         return None
-    return result["stand_ticks"] / horizon_ticks + strike_bonus * (
-        result[strike_key] > 0
-    )
+    if stay_up_ticks is None:
+        earned = result[strike_key] > 0
+    else:
+        earned = hit_and_stayed_up(result, stay_up_ticks)
+    return result["stand_ticks"] / horizon_ticks + strike_bonus * earned
 
 
 def train(
@@ -121,6 +138,7 @@ def train(
     horizon_ticks,
     strike_bonus,
     strike_key="strike_ticks",
+    stay_up_ticks=None,
     log=print,
 ):
     """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
@@ -134,7 +152,10 @@ def train(
             for sign in (1, -1)
         ]
         results = workers_pool.map(trial, tasks)
-        scores = [fitness(r, horizon_ticks, strike_bonus, strike_key) for r in results]
+        scores = [
+            fitness(r, horizon_ticks, strike_bonus, strike_key, stay_up_ticks)
+            for r in results
+        ]
         valid = np.array(
             [
                 scores[2 * k] is not None and scores[2 * k + 1] is not None
@@ -161,6 +182,14 @@ def train(
             "strike_share": float(np.mean([r["strike_ticks"] > 0 for r in results])),
             "scoring_share": float(
                 np.mean([r["scoring_strike_ticks"] > 0 for r in results])
+            ),
+            "hit_and_up_share": float(
+                np.mean(
+                    [
+                        not r["invalid"] and hit_and_stayed_up(r, stay_up_ticks or 0)
+                        for r in results
+                    ]
+                )
             ),
             "invalid": int(sum(r["invalid"] is not None for r in results)),
             "mean_fitness": float(flat.mean()) if valid.any() else None,

@@ -17,12 +17,13 @@ class FakePool:
         return self.results
 
 
-def result(stand, strikes=0, invalid=None, scoring=0):
+def result(stand, strikes=0, invalid=None, scoring=0, first_hit=None):
     return {
         "invalid": invalid,
         "stand_ticks": stand,
         "strike_ticks": strikes,
         "scoring_strike_ticks": scoring,
+        "first_scoring_tick": first_hit,
         "opponent_fall_tick": None,
         "ticks": 3000,
     }
@@ -33,7 +34,7 @@ def test_a_short_real_trial_stands_to_the_horizon(monkeypatch):
     out = motor_gate.trial((("scripted", "baseline"), ("scripted", "baseline"), 0))
     assert out["invalid"] is None and out["ticks"] == 400
     assert out["stand_ticks"] == 400 and out["strike_ticks"] == 0
-    assert out["scoring_strike_ticks"] == 0
+    assert out["scoring_strike_ticks"] == 0 and out["first_scoring_tick"] is None
 
 
 def test_fitness_is_stand_fraction_plus_strike_indicator():
@@ -44,6 +45,17 @@ def test_fitness_is_stand_fraction_plus_strike_indicator():
     blocked_punch, hit = result(3000, strikes=50), result(3000, strikes=50, scoring=9)
     assert motor_gate.fitness(blocked_punch, 3000, 1.0, "scoring_strike_ticks") == 1.0
     assert motor_gate.fitness(hit, 3000, 1.0, "scoring_strike_ticks") == 2.0
+
+    # v0.0.19: the hit counts only if the athlete is still up 500 ticks later.
+    def stay(stand, first_hit):
+        r = result(stand, strikes=50, scoring=9, first_hit=first_hit)
+        return motor_gate.fitness(r, 3000, 1.0, stay_up_ticks=500)
+
+    assert stay(1500, 600) == 1.5  # hit at 600, still up at 1100
+    assert stay(1100, 600) == 1100 / 3000 + 1.0  # exactly 500 ticks later
+    assert stay(1099, 600) == 1099 / 3000  # fell one tick early: no bonus
+    assert stay(3000, None) == 1.0  # stood, never hit
+    assert stay(3000, 2600) == 1.0  # hit too late to show it stayed up
 
 
 def test_es_drops_quarantined_pairs_and_follows_the_better_twin():
