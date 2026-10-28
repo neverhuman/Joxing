@@ -117,3 +117,28 @@ def test_league_runs_a_punch_policy_against_a_frozen_champion():
     assert set(gen["vs_frozen"]) == {"v11gen4"}
     assert gen["vs_frozen"]["v11gen4"]["lower95"] <= 1.0
     assert {g["second"] for g in report["evaluation_games"]} == {"gen0", "v11gen4"}
+
+
+def test_group_policy_from_gen4_matches_the_punch_policy_where_groups_fit_regions():
+    from grokbot.motor_primitives import GROUP_REGION, GroupPolicy, group_params
+
+    params = group_params(GEN4, onset=-3.0, duration=0.0, amplitude=2.0)
+    group, punch = GroupPolicy(params), PunchPolicy(params[len(GROUPS) :])
+    regions = list(selfplay.REGIONS.values())
+    inside = np.concatenate(
+        [
+            g
+            for g, r in zip(GROUPS, GROUP_REGION, strict=True)
+            if np.isin(g, regions[r]).all()
+        ]
+    )
+    assert len(inside) >= 600  # nearly every muscle's group sits in one region
+    rng = np.random.default_rng(0)
+    for tick in (0, 20, 400):
+        values = rng.normal(size=1970).astype(np.float32)
+        a, b = group(Obs(tick, values)), punch(Obs(tick, values))
+        assert np.array_equal(a[inside], b[inside])
+    with pytest.raises(ValueError):
+        GroupPolicy(params[:-1])
+    with pytest.raises(ValueError):
+        GroupPolicy(params, noise=0.05)(Obs(0, values), None, None)

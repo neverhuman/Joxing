@@ -1,0 +1,71 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.16",
+ "registered_utc": "2026-10-28T03:28:38Z",
+ "question": "Does a finer controller (per-DynSyn-group tones) break the ~1.5 s stance ceiling that made every league game invalid?",
+ "context": "v0.0.15 gate failed (stance 0/24, reach 0/24) and its rerun reproduced every trial, the training history and the final parameters exactly; root cause in grokbot/redteam/cycle-0019.md",
+ "classification": "single-athlete motor diagnostic in the shared two-person world; not boxing, not self-play, not an Elo claim",
+ "env": "grokbot.scenarios.RangeBoxingEnv(separation_m=0.5, horizon_ticks=3000); unchanged jekko env; runs to the horizon (does not stop at the first fall)",
+ "opponent": "frozen v0.0.11 gen4 posture policy (deterministic) in corner B",
+ "candidate": {
+  "kind": "grokbot.motor_primitives.GroupPolicy (138 group tones + 140 LinearPolicy params, regional feedback applied per group, + 6 punch params = 284)",
+  "init": "group_params(gen4, onset=-3.0, duration=0.0, amplitude=2.0): group tones copied from gen4's regional tones (identical commands to the v0.0.15 init on the 656 muscles whose group sits in one region)"
+ },
+ "training": {
+  "method": "grokbot.motor_gate.train antithetic ES with CRN",
+  "fitness": "stand_ticks/3000 + 1.0 * [strike landed]",
+  "iterations": 32,
+  "pairs": 12,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "seed": 6,
+  "workers": 4,
+  "nice": 10
+ },
+ "gate": {
+  "seeds": [
+   1000,
+   1001,
+   1002,
+   1003,
+   1004,
+   1005,
+   1006,
+   1007,
+   1008,
+   1009,
+   1010,
+   1011,
+   1012,
+   1013,
+   1014,
+   1015,
+   1016,
+   1017,
+   1018,
+   1019,
+   1020,
+   1021,
+   1022,
+   1023
+  ],
+  "eval_noise": 0.05,
+  "stance_pass": "candidate stands (no persistent non-foot floor support) for the full 3000 ticks",
+  "reach_pass": "candidate lands >= 1 strike tick (approach and referee active speed >= 0.5 m/s on a strike target)",
+  "faults": "engine faults count as failures"
+ },
+ "criteria": {
+  "primary_motor_gate": "stance_pass_rate >= 0.50 AND reach_pass_rate >= 0.50 over the 24 gate trials",
+  "secondary": "paired stand-time gain vs the gen4 baseline on the same 24 seeds, one-sided 95% Hoeffding lower bound (gains clipped to [-3, 3] s); also vs the v0.0.15 candidate",
+  "level_up": "v0.0.16 is a level-up (tagged) iff the primary motor gate passes"
+ },
+ "pre_declared_readings": [
+  "stance still fails with no stand-time gain: open-loop tone capacity is not the limit; next lever is feedback/recurrent control or jekko's pretrained bridge",
+  "stand time improves but stance fails: capacity helps; scale iterations or add per-group feedback",
+  "stance passes, reach fails: retarget reach before any league",
+  "both pass: preregister a league with the stage-1 valid-game floor and Elo vs the v0.0.12 baseline"
+ ],
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0020-group-gate.py"
+ ]
+}

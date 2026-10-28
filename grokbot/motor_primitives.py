@@ -123,3 +123,69 @@ def punch_params(posture, *, onset=0.0, duration=0.0, amplitude=0.0):
     """Concatenate posture params with identical raw punch params for both arms."""
     raw = np.array([onset, duration, amplitude] * 2, float)
     return np.concatenate([np.asarray(posture, float), raw])
+
+
+GROUP_PARAMS = len(GROUPS)
+
+
+def _group_region_index():
+    """Region (``selfplay.REGIONS`` order) holding most of each DynSyn group."""
+    regions = list(selfplay.REGIONS.values())
+    out = []
+    for g in GROUPS:
+        counts = [np.isin(g, r).sum() for r in regions]
+        out.append(int(np.argmax(counts)))
+    return np.array(out)
+
+
+GROUP_REGION = _group_region_index()
+
+
+class GroupPolicy:
+    """Per-DynSyn-group tone + regional posture feedback + punch (v0.0.16).
+
+    ``params`` = 138 group tones, then the 140 LinearPolicy parameters (whose
+    regional tones are ignored in favour of the group tones; their feedback
+    gains apply to every group of the region), then the 6 punch parameters.
+    The finer tone map is the extra capacity v0.0.15's root cause asks for;
+    regional feedback keeps the parameter count ES-sized (284).
+    """
+
+    def __init__(self, params, noise=0.0):
+        params = np.asarray(params, float)
+        if params.shape != (GROUP_PARAMS + selfplay.N_PARAMS + PUNCH_PARAMS,):
+            raise ValueError(
+                f"Expected {GROUP_PARAMS + selfplay.N_PARAMS + PUNCH_PARAMS} parameters"
+            )
+        self.tones = params[:GROUP_PARAMS]
+        self.punch = PunchPolicy(params[GROUP_PARAMS:], noise)
+        self.gains = self.punch.posture.gains
+        self.noise = float(noise)
+
+    def __call__(self, observation, history=None, rng=None):
+        base = self.punch.posture
+        features = observation.values[selfplay.FEATURES].astype(float)
+        if base.origin is None or observation.sampled_tick == 0:
+            base.origin = features
+        feedback = self.gains @ (features - base.origin)  # per region
+        values = self.tones + feedback[GROUP_REGION]
+        if self.noise:
+            if rng is None:
+                raise ValueError("A noisy policy needs the game's generator")
+            values = values + rng.normal(0.0, self.noise, len(values))
+        values = np.clip(values, -1, 1)
+        command = np.empty(700, np.float32)
+        for value, ids in zip(values, GROUPS, strict=True):
+            command[ids] = value
+        t = observation.sampled_tick
+        for side, (onset, duration, amplitude) in self.punch.punches.items():
+            if onset <= t < onset + duration:
+                for k in REACH_GROUPS[side]:
+                    command[GROUPS[k]] = np.float32(amplitude)
+        return command
+
+
+def group_params(posture, **punch):
+    """Group tones copied from the posture's regional tones, then posture+punch."""
+    regional = np.asarray(posture, float).reshape(len(selfplay.REGIONS), -1)[:, 0]
+    return np.concatenate([regional[GROUP_REGION], punch_params(posture, **punch)])
