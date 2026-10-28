@@ -1,3 +1,24 @@
+# Native recording recovered; evidence and motor defects measured — 2026-10-28
+
+The fixed3snative source completed3,000steps/150paired decisions with all1,400
+muscles, then timed out while LZMA wrote contacts. Missing force tape and actual
+replay remain unqualified; original stale result preserved. A separately public
+zero-step recovery now delivers all76actual hash-verified frames (640×360/25fps).
+Read docs/NATIVE_SOURCE_PARTIAL_RESULTS.md; artifacts/v0.0.11/native-partial-display-01
+contains the video, three inspected stills, score/prefix/exit/transfer audits.
+Display10.478814s, outer10.986418s,1.511GBpeak/495,592raw bytes,0new physics.
+All623source/input hashes remain exact; no live owned process group/core writer.
+
+This clip shows severe backward lean, not successful boxing. Independent saved
+scoring: one guard event/two torso onsets, all0points. Torso approach/speed pass;
+face angle/striking-face fail. Do not invent missing force evidence or weaken
+scoring to manufacture a win. Full native proof=false;0newlearning/qualifiedgames.
+Current clear next mission: docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md. Qualify
+fast exact offline persistence, then audit native face frames and adapt the
+actually upright frozen locomotion motor before another registered source/replay.
+Old budget effectively exhausted (conservative898.440303/900s), no duplicate run,
+new cap increase, agents or v11tag. No current job; next packet is worker-ready.
+
 # Native source completed; zero-step recording recovery ready — 2026-10-28
 
 The fixed native interaction completed all3,000steps with all1,400muscles and

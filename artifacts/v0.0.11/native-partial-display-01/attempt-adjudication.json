@@ -1,0 +1,38 @@
+{
+  "schema": "joxing-native-source-attempt-adjudication-v1",
+  "scientific_source": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "native_source_attempts": [
+    {
+      "attempt": "wave01-import",
+      "status": "failed_before_physics",
+      "actual_native_steps": 0,
+      "actual_replay": "not_run"
+    },
+    {
+      "attempt": "bootstrap02",
+      "status": "incomplete_persistence",
+      "actual_native_steps": 3000,
+      "journal_entered": 3000,
+      "journal_completed": 3000,
+      "stale_original_result_preserved": true,
+      "actual_replay": "not_run",
+      "full_contact_audit": "not_run",
+      "normal_render": "not_run"
+    }
+  ],
+  "separate_partial_display": {
+    "status": "passed",
+    "new_physics": 0,
+    "frames": 76,
+    "raw_files": 11,
+    "raw_bytes": 495592,
+    "full_proof_passed": false,
+    "visual_review": "first/middle/last inspected; extreme backward lean, not a working boxing stance"
+  },
+  "whole_postgate_conservative_charge_s": 898.4403026178479,
+  "whole_raw_upper_bytes": 242309813,
+  "cumulative_native_motor_stage_physics": 15430,
+  "new_optimizer_updates": 0,
+  "qualified_native_boxing_games": 0,
+  "next_worker_packet": "docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md"
+}

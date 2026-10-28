@@ -10,12 +10,14 @@ valid and both replays exact. Survival changed−0.066s/+0.016s, with1/8five-sec
 survivors each: **both improvement gates failed**.
 [Results](docs/V0.0.10_RESULTS.md) · [All attempted outcomes and audit](artifacts/v0.0.10/D2/) · [Complete raw evidence](https://github.com/neverhuman/Joxing/releases/download/v0.0.10/joxing-v0.0.10-raw.tar.gz).
 
-**Latest native progress:** the first fixed three-second learned-controller interaction
-completed all3,000steps with700muscles per athlete. It then timed out during
-evidence compression, leaving the force tape and replay incomplete. A bounded
-zero-step recording recovery is registered from76hash-verified actual states.
-[Results, limits and next persistence fix](docs/NATIVE_SOURCE_PARTIAL_RESULTS.md).
-Candidate points remain0–0; no qualified bout or new learning is claimed.
+**Latest native recording:** [watch the entire fixed three-second interaction](artifacts/v0.0.11/native-partial-display-01/first-native-partial.mp4).
+Both athletes retain700muscles. All3,000physics steps completed; a separately
+qualified zero-step recovery produced76hash-verified actual frames after the
+force-tape writer timed out. The footage shows severe backward lean, **not a
+working boxing stance**. Candidate points are0–0: the two torso onsets pass speed
+but fail the glove-face predicates. Full force audit/replay remain incomplete.
+[Results and all limitations](docs/NATIVE_SOURCE_PARTIAL_RESULTS.md) ·
+[Next: fast evidence writing, native face calibration and pretrained balance](docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)
@@ -44,11 +46,16 @@ boxing bout or competitive learning is claimed; whole-v11completion remains gate
 
 **Next: explain legal scoring before more training.** The separate [Grokbot diagnostic lane](grokbot/STATUS.md) passed its short v0.0.19 motor criterion; v0.0.21 reached48valid games but42draws, and one replay scored0–0 despite classified touches. Its longer-trained policy failed the match-strength check. [Scoring diagnosis plan](docs/SCORED_CONTACT_DIAGNOSTIC_PACKET.md) traces staged contacts through unchanged rules and distinguishes touches, legal points and decisive games. No new competitive-learning claim or native release tag.
 
-Scoring diagnostics now have26new passing tests, plus43combined rule/referee checks. Development rigid-body controls score2/1points through the real production adapter in either contact order; saved native guard controls correctly score zero. [Registered phase A](docs/SCORED_CONTACT_DIAGNOSTIC_PACKET.md) is running on xbabe1 from public frozen source `196820f`: a fresh Linux source gate precedes the bounded saved/rigid-control audit. Formal outcomes are pending. These controls do not show a native athlete landing a legal punch.
-
-**Next native recording wave:** [fixed three-second interaction and exact continuation](docs/NATIVE_STRIKE_MISSION.md) now has42targeted passing tests. It preserves all1,400muscles, controller/RNG state, actual contact evidence and score timing. The bounded chain is now running on xbabe1 from public frozen source `2552354`, after614declared file checks. It first qualifies the legacy-report repair, then conditionally runs the frozen controllers and records the entire first fixed interaction. No formal three-second result yet; zero legal points will remain visible. The earlier scoring run's data-format failure is retained.
-
-The scoring phase now passes allseven checks after1,144Linux regressions, including physical head/torso awards and independent ledger reconstruction. The native launch stopped before simulation because of a repository import-path issue; that failed attempt is retained. [Results and environment-only bootstrap](docs/SCORING_PHASE_A_RESULTS.md) reuse the exact qualified scientific source and completed scoring proof, with unchanged native limits. Native interaction footage remains pending.
+**Scoring and native interaction diagnosis:** allseven score checks pass after
+1,144Linux tests plus the one registered strict referee xfail. Actual rigid-body
+controls award2/1points in both contact orders; saved guard controls correctly
+score zero. The first formal run failed on a legacy report format, and the first
+native launch failed on an import path. Both failures remain in Git. The repaired
+native launch completed3,000steps but exceeded its unchanged25s deadline while
+compressing contacts; no actual continuation or full force-tape audit completed.
+[Scoring results](docs/SCORING_PHASE_A_RESULTS.md) ·
+[Native negative result, recovered recording and next worker packet](docs/NATIVE_SOURCE_PARTIAL_RESULTS.md).
+No further native run is active under the effectively exhausted old budget.
 
 **Visible-bout priority:** [delivery milestones and recording contract](docs/BOUT_RECORDING_MILESTONE.md). Passive two-body recording, zero-step playback and real shared-state limb-velocity measurements are implemented; first connected diagnostic footage is a v11 deliverable. No native boxing bout is available yet.
 

@@ -1,0 +1,138 @@
+{
+  "candidate_legal_points": [
+    0,
+    0
+  ],
+  "effective_sample_rejections": {
+    "already_finalized": 2879,
+    "direct_zone": 1170,
+    "face_cos": 1859,
+    "onset_ineligible": 1859,
+    "outside_window_or_bell": 2879,
+    "striking_face": 1859
+  },
+  "events": [
+    {
+      "direct_impulses_Ns": {},
+      "event_id": "diagnostic-10001-1/A_glove_l/1",
+      "finalized_tick": 381,
+      "guard_window_impulse_Ns": 10.790312546496772,
+      "onset_eligible": {},
+      "onset_tick": 332,
+      "peak_force_N": 474.41167117285056,
+      "points": 0,
+      "reason": "window",
+      "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+      "window_impulse_Ns": 10.790312546496772,
+      "zone": null
+    },
+    {
+      "direct_impulses_Ns": {},
+      "event_id": "diagnostic-10001-1/A_glove_r/1",
+      "finalized_tick": 425,
+      "guard_window_impulse_Ns": 0.0,
+      "onset_eligible": {
+        "torso": false
+      },
+      "onset_tick": 376,
+      "peak_force_N": 446.84561997044875,
+      "points": 0,
+      "reason": "window",
+      "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+      "window_impulse_Ns": 8.438893969747694,
+      "zone": null
+    },
+    {
+      "direct_impulses_Ns": {},
+      "event_id": "diagnostic-10001-1/B_glove_r/1",
+      "finalized_tick": 605,
+      "guard_window_impulse_Ns": 0.0,
+      "onset_eligible": {
+        "torso": false
+      },
+      "onset_tick": 556,
+      "peak_force_N": 199.71456454549758,
+      "points": 0,
+      "reason": "window",
+      "rules_hash": "bad4ba9aac54a808c7b129c7d61d881e404e1c38a5bea1dde4fdf238d0aaf45d",
+      "window_impulse_Ns": 5.554241185543178,
+      "zone": null
+    }
+  ],
+  "first_direct_onsets": [
+    {
+      "effective_rejections": [
+        "onset_ineligible",
+        "face_cos",
+        "striking_face"
+      ],
+      "eligible_direct_impulse_Ns": 0.0,
+      "first_zone_onset": true,
+      "glove": "A_glove_r",
+      "impulse_Ns": 0.44684561997044875,
+      "instantaneous_predicates": {
+        "active_speed": true,
+        "approach": true,
+        "direct_zone": true,
+        "face_cos": false,
+        "positive_force": true,
+        "striking_face": false
+      },
+      "latched_onset_eligible": false,
+      "measured": {
+        "active_speed_mps": 2.318689426666215,
+        "approach_mps": 2.5661903676793774,
+        "face_cos": -0.4591790301984363,
+        "normal_force_N": 446.84561997044875,
+        "sample_id": "11:223:436",
+        "striking_face": false,
+        "zone": "torso"
+      },
+      "onset_cause_available": true,
+      "tick": 376
+    },
+    {
+      "effective_rejections": [
+        "onset_ineligible",
+        "face_cos",
+        "striking_face"
+      ],
+      "eligible_direct_impulse_Ns": 0.0,
+      "first_zone_onset": true,
+      "glove": "B_glove_r",
+      "impulse_Ns": 0.1715996914267878,
+      "instantaneous_predicates": {
+        "active_speed": true,
+        "approach": true,
+        "direct_zone": true,
+        "face_cos": false,
+        "positive_force": true,
+        "striking_face": false
+      },
+      "latched_onset_eligible": false,
+      "measured": {
+        "active_speed_mps": 1.2224003738399851,
+        "approach_mps": 0.8800369118267408,
+        "face_cos": -0.7149228122500235,
+        "normal_force_N": 171.59969142678779,
+        "sample_id": "7:580:79",
+        "striking_face": false,
+        "zone": "torso"
+      },
+      "onset_cause_available": true,
+      "tick": 556
+    }
+  ],
+  "first_onset_failed_predicates": {
+    "face_cos": 2,
+    "striking_face": 2
+  },
+  "intervals": 3000,
+  "new_physics": 0,
+  "scope": "Independent score-only reconstruction of actual saved staged inputs; missing full signed contact tape and physical continuation remain unqualified",
+  "staged_head_torso_speed_ticks": {
+    "A": 8,
+    "B": 4
+  },
+  "status": "passed"
+}

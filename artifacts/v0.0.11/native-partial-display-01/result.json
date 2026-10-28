@@ -1,0 +1,27 @@
+{
+  "candidate_points": [
+    0,
+    0
+  ],
+  "display_states": "75actual decision engines plus actual final engine; all76complete engine hashes match actual source",
+  "encoded_s": 3.04,
+  "fps": 25,
+  "frames": 76,
+  "full_native_proof_passed": false,
+  "manifest_sha256": "282c16b9d2a992e4bbd3663bb1a63f6610d8075dc051817854cde8e341826476",
+  "max_rss_bytes": 1511084032,
+  "missing": [
+    "complete signed contacts array",
+    "original video array",
+    "actual mid continuation"
+  ],
+  "new_display_physics": 0,
+  "schema": "joxing-native-source-partial-display-v1",
+  "simulated_s": 3.0,
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "source_native_steps": 3000,
+  "status": "passed",
+  "video_bytes": 247065,
+  "video_sha256": "f6acd4baff04664e82c65e85c3b3a060afbd5c07fe301661efed50e47c64d8b5",
+  "wall_s": 10.478813843801618
+}

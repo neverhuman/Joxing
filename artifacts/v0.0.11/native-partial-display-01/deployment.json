@@ -1,0 +1,54 @@
+{
+  "schema": "joxing-partial-native-display-deployment-v1",
+  "publication": [
+    {
+      "path": "experiments/v0.0.11/native-source-partial-display-01.json",
+      "sha256": "982ebfaf4ee75ed4a4a80669d4302c59e275e0e9ddc3a13ce7e4cd6633260cc9",
+      "anonymous": true
+    },
+    {
+      "path": "experiments/v0.0.11/native_source_partial_display_01.py",
+      "sha256": "42ea29098737a5fd155f2a37b4c199a0e55cb5296e1fe9d40c6ac4f106fe0f5f",
+      "anonymous": true
+    }
+  ],
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "manifest_sha256": "282c16b9d2a992e4bbd3663bb1a63f6610d8075dc051817854cde8e341826476",
+  "command": [
+    "/usr/bin/timeout",
+    "--signal=TERM",
+    "--kill-after=1s",
+    "11s",
+    "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/experiments/v0.0.11/runtime/.venv/bin/python",
+    "/home/ubuntu/joxing/native-source-partial-display-20261028/partial.py",
+    "--manifest",
+    "/home/ubuntu/joxing/native-source-partial-display-20261028/manifest.json",
+    "--manifest-sha256",
+    "282c16b9d2a992e4bbd3663bb1a63f6610d8075dc051817854cde8e341826476",
+    "--out",
+    "/home/ubuntu/joxing/native-source-partial-display-20261028/proof"
+  ],
+  "root": "/home/ubuntu/joxing/native-source-partial-display-20261028",
+  "load": [
+    8.08154296875,
+    6.30078125,
+    6.63427734375
+  ],
+  "available_memory_bytes": 51881385984,
+  "free_disk_bytes": 268142170112,
+  "other_owned_jobs": [],
+  "environment": {
+    "PYTHONPATH": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028",
+    "threads": 1,
+    "MUJOCO_GL": "egl"
+  },
+  "new_physics": 0,
+  "process": {
+    "pid": 2093060,
+    "start_ticks": 915096353
+  },
+  "status": "exited",
+  "returncode": 0,
+  "outer_wall_s": 10.986417515203357,
+  "display_status": "passed"
+}

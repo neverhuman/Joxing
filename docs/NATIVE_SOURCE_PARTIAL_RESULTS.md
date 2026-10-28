@@ -29,7 +29,48 @@ force tape or an unexecuted continuation. Original source controls use own-body
 feedback, not opponent-aware history learning. No qualified native bout or new
 optimizer update is claimed.
 
-## Registered recovery: actual-state partial recording
+## Recovery completed: actual-state partial recording
+
+[Watch the entire first fixed source](../artifacts/v0.0.11/native-partial-display-01/first-native-partial.mp4).
+The separately frozen display protocol `282c16b9d2a992e4bbd3663bb1a63f6610d8075dc051817854cde8e341826476`
+and standalone renderer were anonymously byte-verified before execution.
+All 76 frames decoded correctly at 640×360/25 fps: 3.00 seconds simulated,
+3.04 encoded. The video is 247,065 bytes, SHA256
+`f6acd4baff04664e82c65e85c3b3a060afbd5c07fe301661efed50e47c64d8b5`.
+Display wall 10.478814 seconds, outer 10.986418 seconds, peak RSS
+1,511,084,032 bytes; zero new physics. All remained within the registered bounds.
+All 11 raw files / 495,592 bytes were independently verified remotely after
+transfer; all 623 original core/input hashes still match. The timeout identity
+exited and final process-group/core-writer scan is empty. Live ffmpeg child
+identities were not captured; that ownership limitation is retained explicitly.
+
+First/middle/last frames were visually inspected: both athletes begin upright,
+then exhibit extreme backward lean. **This is a failed boxing-stance example,
+not a successful bout.** The recording is the complete fixed first source,
+without a favorable-seed selection. Missing force tape and unexecuted replay
+remain missing, and the original source result remains untouched.
+
+Score-only reconstruction finds one guard encounter and two torso onsets. Both
+torso onsets pass approach/active speed but fail striking-face and face-angle
+predicates (A cosine −0.459179; B −0.714923; required ≥0.5). All three events
+award zero. Later held-contact samples are already finalized/outside the window.
+These are exact saved staging explanations, not a completed force-binding audit,
+and do not prove whether the native face convention or motor behavior is wrong.
+Increasing force/training volume alone would not fix those onset predicates.
+The next packet tests that distinction before changing rewards or training.
+
+Whole postgate conservative charge after actual display is 898.440303 seconds,
+including the full two-second bootstrap preflight allowance and 1.5-second
+read/exit reserve. Actual raw accounting upper is 242,309,813 bytes. Old caps
+remain 900 seconds/256 MiB. Cumulative native motor-stage physics is 15,430;
+this source added 3,000, display added zero. Full native proof stays false.
+
+**Current next worker packet:** [NATIVE_BALANCE_STRIKE_NEXT_PACKET.md](NATIVE_BALANCE_STRIKE_NEXT_PACKET.md).
+Fast persistence is the immediate zero-physics prerequisite. Native face
+calibration and reuse of the actually upright pretrained motor then precede
+another registered fixed physical source/replay. No current owned job or tag.
+
+### Recovery reproduction and original stop conditions
 
 Read AGENTS.md, docs/GAME.md, NATIVE_STRIKE_MISSION.md, this report, then
 `experiments/v0.0.11/native-source-partial-display-01.json` and its standalone

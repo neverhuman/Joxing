@@ -1,0 +1,68 @@
+{
+  "complete": false,
+  "first_incomplete_member": "contacts.npy",
+  "members": [
+    {
+      "compressed_bytes": 131719,
+      "crc32": 898100336,
+      "dtype": "<f4",
+      "member": "commands.npy",
+      "payload_bytes": 840000,
+      "payload_sha256": "696fe4066859f03b9b17a62c106fe3201f20849bfd05be6efb412793d4d58e42",
+      "shape": [
+        150,
+        2,
+        700
+      ]
+    },
+    {
+      "compressed_bytes": 837653,
+      "crc32": 3286904556,
+      "dtype": "<f4",
+      "member": "observations.npy",
+      "payload_bytes": 2364000,
+      "payload_sha256": "a702533d0d892e8dbdfbab9417b34e20803f6ee3b9bf3d192db79790ace94ba7",
+      "shape": [
+        150,
+        2,
+        1970
+      ]
+    },
+    {
+      "compressed_bytes": 1037982,
+      "crc32": 2344289823,
+      "dtype": "<f8",
+      "member": "decision_engines.npy",
+      "payload_bytes": 5466000,
+      "payload_sha256": "48aa0c9ab78609b8ab6261c55c0c670316988dc1ff29d7d97be69841c6320f35",
+      "shape": [
+        150,
+        4555
+      ]
+    },
+    {
+      "compressed_bytes": 2480,
+      "crc32": 3124527218,
+      "dtype": "<i8",
+      "member": "contact_offsets.npy",
+      "payload_bytes": 24008,
+      "payload_sha256": "8f8059c2a92839ad763218ad39ed1a81a9ba05f65bddf4417dd6288f5930e12d",
+      "shape": [
+        3001
+      ]
+    },
+    {
+      "compressed_bytes": 1512,
+      "crc32": 2355102814,
+      "dtype": "<i8",
+      "member": "contact_geoms.npy",
+      "payload_bytes": 425840,
+      "payload_sha256": "f49b7fb6d2cee4d5e0839709566040b965bd53a9a9fa899f8c0e2b2d53087e17",
+      "shape": [
+        26615,
+        2
+      ]
+    }
+  ],
+  "missing_fields_not_padded": true
+}
