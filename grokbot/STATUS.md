@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~14:15 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~15:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `5b3cf20`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `5e8128c`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -58,24 +58,21 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.22 (owner 13:50; preregister in its own PR, in fresh context)
+## Next step: v0.0.22 (protocol `protocols/v0.0.22.json`, landed before the run)
 
-1. **Feasibility probe first.** Can these athletes score **referee** points
-   at all? The 42 v0.0.21 draws had referee points [0, 0] despite
-   grokbot-classified head hits. If they cannot, report it to jekko as the
-   feather-tap ceiling; that is not a lever.
-2. **One lever**, if feasible: the strike bonus requires referee-scored hits.
-3. **Criterion**, against frozen v0.0.19 on fresh seeds:
-   - validity of at least 40/48, checked first;
-   - **at least 24/48 decisive games**;
-   - (b) lower95 > 0;
-   - (c) at least half of wins with hits.
-4. **Hard gate:** at least 40/48 valid games against frozen v0.0.13, which
-   fixes the 46/48-blocked regression.
-5. **Monotonicity:** the 3N-vs-N check runs again.
-6. **Reports:** the seat-swap split, with draws, no-contests, blocks and
-   faults counted separately.
-7. v0.0.19 remains the base and the last level-up.
+- **One lever: the knockdown objective.** The bonus needs a head/torso hit
+  and then the opponent falling first. Training starts from v0.0.19 against
+  frozen v0.0.19. A bell tiebreak was rejected as rewarding feather taps.
+- **Primary:** against frozen v0.0.19 on seeds 13000–13023, checked in
+  order:
+  1. at least 40/48 valid, or `VALIDITY_FAILED` (fail loud);
+  2. at least 24/48 decisive, or `DECISIVE_FAILED` (fail loud);
+  3. (b) and (c).
+- **Hard gate:** at least 40/48 valid against v0.0.13 (seeds 14000–14023).
+- **Monotonicity:** @48 vs @16 and @16 vs v0.0.19 (seeds 15000–15023).
+- **Tag only if** all of the above pass.
+- **Probe:** `probes/cycle-0031-knockdown-gate.py`. Run it at nice 19 after
+  merge.
 
 ## Rules this lane follows
 

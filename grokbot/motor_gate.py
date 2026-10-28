@@ -107,17 +107,38 @@ def hit_and_stayed_up(result, stay_up_ticks):
     return first is not None and result["stand_ticks"] >= first + stay_up_ticks
 
 
+def knocked_down(result):
+    """A head/torso hit, then the opponent falls before the athlete does.
+
+    Ending v2 decides by the first fall and jekko's referee scored 0 points for
+    every hit so far, so this is the only decisive result available (v0.0.22).
+    """
+    first, fall = result["first_scoring_tick"], result["opponent_fall_tick"]
+    return (
+        first is not None and fall is not None and first < fall < result["stand_ticks"]
+    )
+
+
 def fitness(
-    result, horizon_ticks, strike_bonus, strike_key="strike_ticks", stay_up_ticks=None
+    result,
+    horizon_ticks,
+    strike_bonus,
+    strike_key="strike_ticks",
+    stay_up_ticks=None,
+    knockdown=False,
 ):
     """Stand fraction plus a strike bonus.
 
     With ``stay_up_ticks`` (v0.0.19) the bonus needs a head/torso hit after
     which the athlete stays up that long: v0.0.18 hit and then fell first.
+    With ``knockdown`` (v0.0.22) it needs ``knocked_down``: v0.0.21's games
+    against v0.0.19 were 42/48 bell draws because nobody fell.
     """
     if result["invalid"]:
         return None
-    if stay_up_ticks is None:
+    if knockdown:
+        earned = knocked_down(result)
+    elif stay_up_ticks is None:
         earned = result[strike_key] > 0
     else:
         earned = hit_and_stayed_up(result, stay_up_ticks)
@@ -139,6 +160,7 @@ def train(
     strike_bonus,
     strike_key="strike_ticks",
     stay_up_ticks=None,
+    knockdown=False,
     log=print,
 ):
     """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
@@ -153,7 +175,9 @@ def train(
         ]
         results = workers_pool.map(trial, tasks)
         scores = [
-            fitness(r, horizon_ticks, strike_bonus, strike_key, stay_up_ticks)
+            fitness(
+                r, horizon_ticks, strike_bonus, strike_key, stay_up_ticks, knockdown
+            )
             for r in results
         ]
         valid = np.array(
@@ -194,6 +218,10 @@ def train(
             "invalid": int(sum(r["invalid"] is not None for r in results)),
             "mean_fitness": float(flat.mean()) if valid.any() else None,
         }
+        if knockdown:  # earlier runs' history rows keep their exact format
+            row["knockdown_share"] = float(
+                np.mean([not r["invalid"] and knocked_down(r) for r in results])
+            )
         history.append(row)
         log(row)
     return params, history

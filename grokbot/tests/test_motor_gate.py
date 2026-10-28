@@ -17,14 +17,14 @@ class FakePool:
         return self.results
 
 
-def result(stand, strikes=0, invalid=None, scoring=0, first_hit=None):
+def result(stand, strikes=0, invalid=None, scoring=0, first_hit=None, opp_fall=None):
     return {
         "invalid": invalid,
         "stand_ticks": stand,
         "strike_ticks": strikes,
         "scoring_strike_ticks": scoring,
         "first_scoring_tick": first_hit,
-        "opponent_fall_tick": None,
+        "opponent_fall_tick": opp_fall,
         "ticks": 3000,
     }
 
@@ -56,6 +56,19 @@ def test_fitness_is_stand_fraction_plus_strike_indicator():
     assert stay(1099, 600) == 1099 / 3000  # fell one tick early: no bonus
     assert stay(3000, None) == 1.0  # stood, never hit
     assert stay(3000, 2600) == 1.0  # hit too late to show it stayed up
+
+    # v0.0.22: the bonus needs a hit and then the opponent falling first.
+    def knock(stand, first_hit, opp_fall):
+        r = result(stand, 50, scoring=9, first_hit=first_hit, opp_fall=opp_fall)
+        return motor_gate.fitness(r, 3000, 1.0, knockdown=True)
+
+    assert knock(3000, 600, 1500) == 2.0  # hit, opponent down, still standing
+    assert knock(2000, 600, 1500) == 2000 / 3000 + 1.0  # down first, then fell
+    assert knock(1400, 600, 1500) == 1400 / 3000  # fell before the opponent
+    assert knock(1500, 600, 1500) == 0.5  # same tick: not a knockdown
+    assert knock(3000, 1600, 1500) == 1.0  # opponent fell before any hit
+    assert knock(3000, None, 1500) == 1.0  # never hit
+    assert knock(3000, 600, None) == 1.0  # hit, but nobody fell: a bell draw
 
 
 def test_es_drops_quarantined_pairs_and_follows_the_better_twin():
