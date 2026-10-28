@@ -1,0 +1,17 @@
+{
+  "status": "failed_before_checkout_or_launch",
+  "source_commit": "f4a5b03b6e116ff307c2eb42d0d8f525b59a89f2",
+  "reason": "Public anonymous source verification returned HTTP404 after push was rejected because origin/main advanced; no checkout or owned qualification process created",
+  "new_physics": 0,
+  "corpus_rows": [
+    {
+      "id": "native-prefix",
+      "status": "not_run"
+    },
+    {
+      "id": "complete-source",
+      "status": "not_run"
+    }
+  ],
+  "recovery": "Preserve incoming disjoint work, merge and push, then repeat publication preflight before any launch"
+}
