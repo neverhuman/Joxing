@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.0.24 — 2026-10-28 (preregistered smoke gate FAILED; not run, not tagged)
+
+grokbot PR #35 (preregistration) plus the cycle-0036 report. The last level-up is still **v0.0.19**.
+
+- **Lever:** a valid-knockdown bonus (any knockdown whose fall is not blocked), starting from the v0.0.22 policy and gated by a preregistered smoke test.
+- **Bonus-path check passed:** the bonus fired in 23 of 24 trials (all `self` falls), so the instrumentation fix works.
+- **Validity check failed:** the 12-game base head-to-head against v0.0.19 was **10/12 valid (83%), short of 90%**, with 2 blocked games. **`SMOKE_FAILED`, so there was no training run.**
+- **Attempts:** attempt 01 was aborted within a minute, before any game, because the launch was not gated on a failing load check. Attempt 02 was launched at load 64.
+- **Red-team:** the validity check measured the *starting* policy's blocked rate, which is the failure the lever targets, on only 12 games. v0.0.25 should gate the instrumentation separately from that baseline.
+
 ## v0.0.23 — 2026-10-28 (preregistered criterion NOT met: VALIDITY_FAILED; not tagged)
 
 grokbot PR #33 (preregistration) plus the cycle-0034 report. This is a diagnostic, not an unassisted boxing result. The last level-up is still **v0.0.19**.

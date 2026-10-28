@@ -1,0 +1,105 @@
+{
+ "schema": "grokbot-motor-gate-summary-v1",
+ "version": "v0.0.24",
+ "classification": "preregistered smoke gate FAILED (validity 10/12 < 90%); no training, no gates; not tagged",
+ "protocol": "grokbot/redteam/protocols/v0.0.24.json",
+ "protocol_sha256": "c428442db851f1d0ca096b46480b027974eb7abcd7f3379f1479e2da28e11522",
+ "source_commit": "f4505d9480a1d955cdc791308e6a7de9be20515f",
+ "source_tree": "fe88148bc56b",
+ "attempts": [
+  {
+   "attempt": "01",
+   "dir": "runs/grokbot/valid-knockdown-gate-0035-attempt01-aborted-load",
+   "outcome": "aborted by the operator within ~1 min before any game: the launch was not gated on a failing load check (load 84.68); no data"
+  },
+  {
+   "attempt": "02",
+   "dir": "runs/grokbot/valid-knockdown-gate-0035",
+   "launched": "20:24:53Z at load 64.08 from f4505d9",
+   "outcome": "SMOKE_FAILED (probe exit 1)"
+  }
+ ],
+ "full_report_sha256": "6c1b1f1f22ac42ceea4a8151936a74d72e4135631b639d6901da2e5216e9c5fe",
+ "v0019_gate_reproduced": true,
+ "smoke_bonus": {
+  "trials": 24,
+  "fired": 23,
+  "share": 0.9583333333333334,
+  "attribution": [
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   null,
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self",
+   "self"
+  ],
+  "passed": true
+ },
+ "smoke_validity": {
+  "games": 12,
+  "valid_games": 10,
+  "valid_share": 0.8333333333333334,
+  "no_contest": 0,
+  "blocked": 2,
+  "invalid": 0,
+  "wins": 10,
+  "losses": 0,
+  "draws": 0,
+  "wins_with_hits": 10,
+  "win_rate": 1.0,
+  "win_rate_wilson95": [
+   0.7224671969739422,
+   1.0
+  ],
+  "paired_samples": 5,
+  "mean": 1.0,
+  "lower95": -0.0946656610223946,
+  "elo": 381.69700377572997,
+  "elo_lower95": -32.98900057947326,
+  "checks": {
+   "a_valid_share_at_least_half": true,
+   "b_lower95_above_zero": false,
+   "c_half_of_wins_with_hits": true
+  },
+  "passed": false,
+  "by_seat": {
+   "A": {
+    "games": 6,
+    "wins": 5,
+    "losses": 0,
+    "draws": 0,
+    "no_contest": 0,
+    "blocked": 1,
+    "engine_fault": 0
+   },
+   "B": {
+    "games": 6,
+    "wins": 5,
+    "losses": 0,
+    "draws": 0,
+    "no_contest": 0,
+    "blocked": 1,
+    "engine_fault": 0
+   }
+  }
+ },
+ "smoke_gate_passed": false
+}

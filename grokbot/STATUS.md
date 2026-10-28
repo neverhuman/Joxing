@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~19:20 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~20:45 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `2f3c9ec`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `f4505d9`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -31,6 +31,7 @@ and `grokbot/redteam/cycle-*.md`.
 | v0.0.20 | two-player self-play league (outcome only) | 16/24 | 24/24 | 3.000 s | **honest null**: no promotion, champion = v0.0.19; primary 3/48 valid; not tagged |
 | v0.0.21 | training opponent = frozen v0.0.19 | 1/24 | 10/24 | 1.856 s | **CRITERION_NOT_MET**: 48/48 valid but 4–2–42 draws (referee points 0–0); NOT monotone (@48 lost 0–20 to @16); vs v0.0.13 46/48 blocked; not tagged |
 | v0.0.22 | knockdown objective | 0/24 | 24/24 | 1.816 s | **primary PASSED** (46–0–0 vs v0.0.19), but the hard gate failed (36/48 valid vs v0.0.13, 12 blocked) and monotonicity was unmeasurable (@16 vs v0.0.19 38/48 valid); level-up NOT met; not tagged |
+| v0.0.24 | valid-knockdown bonus from v0.0.22 (smoke-gated) | — | — | — | **SMOKE_FAILED**: bonus fired 23/24, but base head-to-head 10/12 valid (< 90%); no training; not tagged |
 | v0.0.23 | clean-knockdown objective (bonus never fired) | 2/24 | 23/24 | 1.923 s | **VALIDITY_FAILED** (primary 5/48 valid); hard gate 14/48; not tagged. Knockdowns of v0.0.19 are attributed `self` (fall 1–2 s after the hit), not `knockdown` |
 
 **v0.0.19 head-to-heads** (48 games each):
@@ -60,20 +61,15 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.24 (its own preregistration PR)
+## Next step: v0.0.25 (its own preregistration PR)
 
-- **Smoke gate first:** a short run at the base policy must produce the
-  bonus event in at least 10 % of trials before the full run is allowed
-  (owner 18:40).
-- **One lever: a valid-knockdown bonus.** It pays `knocked_down` when the
-  fall is not `unresolved`, so it pays for valid `self` falls and excludes
-  only blocked ones. It would have fired in 22/24 replayed trials.
-- **Gates as in v0.0.22/23:**
-  - primary against frozen v0.0.19: at least 40/48 valid, then at least
-    24/48 decisive, then b/c;
-  - hard gate: at least 40/48 valid against v0.0.13;
-  - monotonicity;
-  - the per-seat split.
+- **Smoke gate on the instrumentation only:** the bonus fires, and outcomes
+  are recorded. The base policy's validity is reported as a baseline, not
+  used as a launch precondition (cycle 0036).
+- **Validity floors stay on the trained policy:** at least 40/48 for the
+  primary against v0.0.19 and at least 40/48 for the v0.0.13 hard gate.
+  Monotonicity and the per-seat split are kept.
+- **Lever:** the valid-knockdown bonus, starting from v0.0.22.
 
 ## Rules this lane follows
 
