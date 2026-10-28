@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~15:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~17:20 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `5e8128c`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `2552354`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -30,6 +30,7 @@ and `grokbot/redteam/cycle-*.md`.
 | **v0.0.19** | **hit-and-stay-up fitness** | **16/24** | **24/24** | **3.000 s** | **PASSED: level-up, tagged** |
 | v0.0.20 | two-player self-play league (outcome only) | 16/24 | 24/24 | 3.000 s | **honest null**: no promotion, champion = v0.0.19; primary 3/48 valid; not tagged |
 | v0.0.21 | training opponent = frozen v0.0.19 | 1/24 | 10/24 | 1.856 s | **CRITERION_NOT_MET**: 48/48 valid but 4–2–42 draws (referee points 0–0); NOT monotone (@48 lost 0–20 to @16); vs v0.0.13 46/48 blocked; not tagged |
+| v0.0.22 | knockdown objective | 0/24 | 24/24 | 1.816 s | **primary PASSED** (46–0–0 vs v0.0.19), but the hard gate failed (36/48 valid vs v0.0.13, 12 blocked) and monotonicity was unmeasurable (@16 vs v0.0.19 38/48 valid); level-up NOT met; not tagged |
 
 **v0.0.19 head-to-heads** (48 games each):
 
@@ -58,21 +59,18 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.22 (protocol `protocols/v0.0.22.json`, landed before the run)
+## Next step: v0.0.23 (to be preregistered in its own PR)
 
-- **One lever: the knockdown objective.** The bonus needs a head/torso hit
-  and then the opponent falling first. Training starts from v0.0.19 against
-  frozen v0.0.19. A bell tiebreak was rejected as rewarding feather taps.
-- **Primary:** against frozen v0.0.19 on seeds 13000–13023, checked in
-  order:
-  1. at least 40/48 valid, or `VALIDITY_FAILED` (fail loud);
-  2. at least 24/48 decisive, or `DECISIVE_FAILED` (fail loud);
-  3. (b) and (c).
-- **Hard gate:** at least 40/48 valid against v0.0.13 (seeds 14000–14023).
-- **Monotonicity:** @48 vs @16 and @16 vs v0.0.19 (seeds 15000–15023).
-- **Tag only if** all of the above pass.
-- **Probe:** `probes/cycle-0031-knockdown-gate.py`. Run it at nice 19 after
-  merge.
+- **One lever: a clean-knockdown objective.** The bonus counts only when
+  the ending attributes the opponent's fall to the candidate's strike
+  (`BoutMonitor` attribution `knockdown`, not `unresolved`). v0.0.22 lost 0
+  of 168 valid games, but its gates failed on blocked games, which are
+  exactly the unattributable falls the bonus still paid for.
+- **Gates kept:**
+  - primary against frozen v0.0.19: validity, decisiveness, then b/c;
+  - hard gate: at least 40/48 valid against v0.0.13;
+  - monotonicity: @48 vs @16 and @16 vs v0.0.19;
+  - the per-seat split.
 
 ## Rules this lane follows
 
