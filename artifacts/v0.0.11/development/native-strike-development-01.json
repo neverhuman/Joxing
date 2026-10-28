@@ -1,0 +1,71 @@
+{
+  "schema": "joxing-native-strike-development-v1",
+  "classification": "Development only; no formal three-second native outcome yet",
+  "tests": [
+    {
+      "count": 5,
+      "wall_s": 1.02,
+      "scope": "frozen GroupPD bridge/RNG/origin"
+    },
+    {
+      "count": 37,
+      "wall_s": 4.24
+    },
+    {
+      "count": 38,
+      "wall_s": 4.73
+    },
+    {
+      "count": 40,
+      "wall_s": 4.99
+    },
+    {
+      "count": 42,
+      "wall_s": 4.86
+    },
+    {
+      "count": 5,
+      "scope": "native collector/audit/overlay/lifecycle final refinement",
+      "wall_s": 4.25
+    }
+  ],
+  "native_source_fixture_ticks": 60,
+  "native_actual_mid_tick": 3,
+  "native_exact_continuation_ticks": 57,
+  "held_ticks_without_actor": 17,
+  "causal_command_ticks_on_tail": [
+    20,
+    40
+  ],
+  "checks": [
+    "all1400muscles remain",
+    "per-step full engine/contact/scoring hashes exact",
+    "frozen controller command/RNG/origin parity",
+    "independent saved contact/observation/controller/score audit",
+    "legacy report constants isolated; nonfinite physical evidence still rejected",
+    "future score overlay blocked",
+    "fault/not_run denominator retained"
+  ],
+  "new_formal_native_physics": 0,
+  "new_formal_fixture_physics": 0,
+  "new_dedicated_local_native_test_physics": 875,
+  "new_dedicated_local_rigid_test_physics": 4000,
+  "count_scope": "Four combined test invocations plus one final native-only invocation; excludes earlier source qualification and earlier recorded development fixtures",
+  "negative_attempts": [
+    "Initial unused test-variable/import lint findings fixed before registration",
+    "Patch context mismatch corrected without modifying old results",
+    "Transient SSH proxy network failure recovered; failed transfer contained no remote work"
+  ],
+  "limitations": [
+    "No native legal-strike feasibility result yet",
+    "Historical GroupPD ignores opponent state/history; bridge does not invent those abilities",
+    "Full Linux source gate pending"
+  ],
+  "full_source_collection": {
+    "total": 1145,
+    "expected_passes": 1144,
+    "expected_strict_xfail_nodes": [
+      "grokbot/tests/test_referee_fuzz.py::test_restore_does_not_alias_the_snapshot"
+    ]
+  }
+}

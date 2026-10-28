@@ -228,10 +228,16 @@ def explain_interval(interval, tracker_before, tick, rules, *, bell=False):
     return {"after": s, "events": events, "explanation": details}
 
 
-def audit_saved_trace(initial, final, intervals, horizon_ticks):
+def audit_saved_trace(
+    initial, final, intervals, horizon_ticks, *, maximum_intervals=1000
+):
     """Explain every saved interval and compare events AND complete final state."""
     state = copy.deepcopy(initial)
-    if state["ended"] or not 0 < len(intervals) <= 1000:
+    if (
+        not 1 <= maximum_intervals <= 3000
+        or state["ended"]
+        or not 0 < len(intervals) <= maximum_intervals
+    ):
         raise ValueError("Invalid saved diagnostic extent")
     rows, counts = [], Counter()
     for interval in intervals:

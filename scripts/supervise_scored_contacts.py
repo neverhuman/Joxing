@@ -30,7 +30,7 @@ def main():
     parser.add_argument("--source-sha", required=True)
     args = parser.parse_args()
     root = Path.cwd()
-    file = "experiments/v0.0.11/scored-contact-protocol.json"
+    file = "experiments/v0.0.11/scored-contact-legacy-repair-protocol.json"
     p = json.loads((root / file).read_text())
     if (
         canonical(p) != args.protocol_sha256
@@ -268,6 +268,11 @@ def main():
             save()
         verify_source()
         capacity()
+        if (
+            post_gate is not None
+            and time.monotonic() - post_gate > p["post_gate_wall_s"]
+        ):
+            raise TimeoutError("Final cumulative postgate cap")
         report["status"] = "completed"
     except Exception as error:  # noqa: BLE001 -- retain complete stage denominator
         report.update(status="halted", reason=type(error).__name__ + ": " + str(error))

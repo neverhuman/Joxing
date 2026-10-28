@@ -239,3 +239,39 @@ def test_qualification_stops_and_retains_every_attempt_after_a_fault(
     assert all(r["status"] == "not_run" for r in result["rows"][failed_index + 1 :])
     assert result["fixture_entered"] == result["fixture_completed"] == 0
     assert (out / "fault.json").exists()
+
+
+def test_actual_published_summary_legacy_constants_do_not_enter_selected_measurements():
+    from joxing.provenance import ROOT
+    from joxing.score_qualification import published_summary
+
+    selected, constants = published_summary(
+        ROOT / "grokbot/redteam/data/cycle-0029-mirror-opponent-gate-summary.json"
+    )
+    assert len(selected["games"]) == 48
+    assert selected["points_replay"]["referee_points"] == [0, 0]
+    assert constants == ["-Infinity"] * 3
+
+
+@pytest.mark.parametrize("constant", ["-Infinity", "NaN"])
+def test_legacy_reader_never_accepts_unavailable_selected_points(tmp_path, constant):
+    from joxing.score_qualification import published_summary
+
+    f = tmp_path / "legacy.json"
+    good = '{"primary_vs_v0019":{"games_detail":[]},"referee_points_check":{"referee_points":[0,0]}}'
+    f.write_text(good)
+    assert published_summary(f)[0]["points_replay"]["referee_points"] == [0, 0]
+    f.write_text(good.replace("[0,0]", "[" + constant + ",0]"))
+    with pytest.raises(ValueError):
+        published_summary(f)
+
+
+def test_physical_evidence_reader_still_rejects_legacy_nonfinite_values(tmp_path):
+    from joxing.evidence_storage import read_json
+
+    f = tmp_path / "physical.json"
+    f.write_text('{"force":1.0}')
+    assert read_json(f) == {"force": 1.0}
+    f.write_text('{"force":-Infinity}')
+    with pytest.raises(ValueError):
+        read_json(f)

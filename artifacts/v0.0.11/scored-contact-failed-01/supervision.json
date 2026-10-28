@@ -1,0 +1,339 @@
+{
+  "schema": "joxing-scored-contact-supervisor-v1",
+  "source_commit": "196820f11489a76a8f673bc9ced41526b6b024af",
+  "protocol_sha256": "f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911",
+  "process": {
+    "pid": 4193529,
+    "parent_pid": 1,
+    "start_ticks": 913972736,
+    "state": "R"
+  },
+  "started_utc": "2026-10-28T15:54:38.133157+00:00",
+  "status": "halted",
+  "initial_capacity": {
+    "available_memory_bytes": 43346948096,
+    "disk_free_bytes": 256922124288,
+    "load": [
+      10.11279296875,
+      9.72314453125,
+      9.8876953125
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 4193642,
+        "parent_pid": 4193529,
+        "start_ticks": 913972838,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 4193642,
+          "parent_pid": 4193529,
+          "start_ticks": 913972838,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 43342381056,
+        "disk_free_bytes": 256922120192,
+        "load": [
+          10.11279296875,
+          9.72314453125,
+          9.8876953125
+        ],
+        "owned_raw_bytes": 55
+      },
+      "returncode": 0,
+      "wall_s": 2.1730147413909435,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "tests",
+        "grokbot/tests"
+      ],
+      "status": "completed",
+      "reason": null,
+      "process": {
+        "pid": 4193755,
+        "parent_pid": 4193529,
+        "start_ticks": 913973073,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 4193755,
+          "parent_pid": 4193529,
+          "start_ticks": 913973073,
+          "state": "S"
+        },
+        {
+          "pid": 4193762,
+          "parent_pid": 4193755,
+          "start_ticks": 913973077,
+          "state": "R"
+        },
+        {
+          "pid": 12057,
+          "parent_pid": 4193762,
+          "start_ticks": 913983920,
+          "state": "S"
+        },
+        {
+          "pid": 12058,
+          "parent_pid": 4193762,
+          "start_ticks": 913983920,
+          "state": "R"
+        },
+        {
+          "pid": 12059,
+          "parent_pid": 4193762,
+          "start_ticks": 913983920,
+          "state": "R"
+        },
+        {
+          "pid": 113073,
+          "parent_pid": 4193762,
+          "start_ticks": 914017172,
+          "state": "S"
+        },
+        {
+          "pid": 113103,
+          "parent_pid": 4193762,
+          "start_ticks": 914017193,
+          "state": "R"
+        },
+        {
+          "pid": 113106,
+          "parent_pid": 4193762,
+          "start_ticks": 914017193,
+          "state": "R"
+        },
+        {
+          "pid": 114759,
+          "parent_pid": 113103,
+          "start_ticks": 914017961,
+          "state": "R"
+        },
+        {
+          "pid": 114760,
+          "parent_pid": 113103,
+          "start_ticks": 914017961,
+          "state": "R"
+        },
+        {
+          "pid": 114761,
+          "parent_pid": 113103,
+          "start_ticks": 914017961,
+          "state": "R"
+        },
+        {
+          "pid": 114762,
+          "parent_pid": 113103,
+          "start_ticks": 914017962,
+          "state": "R"
+        },
+        {
+          "pid": 114763,
+          "parent_pid": 113106,
+          "start_ticks": 914017971,
+          "state": "R"
+        },
+        {
+          "pid": 114764,
+          "parent_pid": 113106,
+          "start_ticks": 914017972,
+          "state": "R"
+        },
+        {
+          "pid": 114765,
+          "parent_pid": 113106,
+          "start_ticks": 914017972,
+          "state": "R"
+        },
+        {
+          "pid": 114766,
+          "parent_pid": 113106,
+          "start_ticks": 914017972,
+          "state": "R"
+        },
+        {
+          "pid": 120368,
+          "parent_pid": 4193762,
+          "start_ticks": 914020329,
+          "state": "R"
+        },
+        {
+          "pid": 120369,
+          "parent_pid": 4193762,
+          "start_ticks": 914020329,
+          "state": "R"
+        },
+        {
+          "pid": 120370,
+          "parent_pid": 4193762,
+          "start_ticks": 914020329,
+          "state": "R"
+        },
+        {
+          "pid": 120371,
+          "parent_pid": 4193762,
+          "start_ticks": 914020329,
+          "state": "R"
+        },
+        {
+          "pid": 126652,
+          "parent_pid": 4193762,
+          "start_ticks": 914024133,
+          "state": "R"
+        },
+        {
+          "pid": 126659,
+          "parent_pid": 4193762,
+          "start_ticks": 914024145,
+          "state": "R"
+        },
+        {
+          "pid": 128647,
+          "parent_pid": 4193762,
+          "start_ticks": 914025423,
+          "state": "R"
+        },
+        {
+          "pid": 128670,
+          "parent_pid": 4193762,
+          "start_ticks": 914025437,
+          "state": "R"
+        },
+        {
+          "pid": 139224,
+          "parent_pid": 4193762,
+          "start_ticks": 914030131,
+          "state": "R"
+        },
+        {
+          "pid": 139283,
+          "parent_pid": 4193762,
+          "start_ticks": 914030148,
+          "state": "R"
+        },
+        {
+          "pid": 164880,
+          "parent_pid": 4193762,
+          "start_ticks": 914035200,
+          "state": "S"
+        },
+        {
+          "pid": 164884,
+          "parent_pid": 4193762,
+          "start_ticks": 914035212,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 47510237184,
+        "disk_free_bytes": 274191228928,
+        "load": [
+          15.494140625,
+          14.8359375,
+          12.2568359375
+        ],
+        "owned_raw_bytes": 10607
+      },
+      "returncode": 0,
+      "wall_s": 728.3111475519836,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "proof",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_scored_contacts.py",
+        "--protocol-sha256",
+        "f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911",
+        "--source-sha",
+        "196820f11489a76a8f673bc9ced41526b6b024af"
+      ],
+      "status": "failed",
+      "reason": "Nonzero exit or live child",
+      "process": {
+        "pid": 172688,
+        "parent_pid": 4193529,
+        "start_ticks": 914045932,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 172688,
+          "parent_pid": 4193529,
+          "start_ticks": 914045932,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 51479134208,
+        "disk_free_bytes": 274172596224,
+        "load": [
+          15.2939453125,
+          14.80517578125,
+          12.26123046875
+        ],
+        "owned_raw_bytes": 10705
+      },
+      "returncode": 1,
+      "wall_s": 2.1859013698995113,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_scored_contacts.py",
+        "--protocol-sha256",
+        "f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911",
+        "--source-sha",
+        "196820f11489a76a8f673bc9ced41526b6b024af"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    }
+  ],
+  "reason": "RuntimeError: proof failed: Nonzero exit or live child",
+  "finished_utc": "2026-10-28T16:06:51.440844+00:00",
+  "post_gate_wall_s": 2.1870737355202436
+}

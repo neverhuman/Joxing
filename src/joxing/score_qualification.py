@@ -15,7 +15,7 @@ from .provenance import digest
 from .score_adapter_fixture import run_fixture
 from .score_diagnostic import audit_saved_trace
 
-PACKET = "experiments/v0.0.11/scored-contact-protocol.json"
+PACKET = "experiments/v0.0.11/scored-contact-legacy-repair-protocol.json"
 RUN = "runs/v0.0.11/scored-contact-proof-01"
 ROW_IDS = [
     "saved-native-source",
@@ -106,6 +106,51 @@ def peak_rss():
     return int(rss if sys.platform == "darwin" else rss * 1024)
 
 
+def published_summary(path):
+    """Read this legacy report without admitting nonfinite physical evidence.
+
+    Earlier reporting used -Infinity for unmeasurable Elo. Preserve that token as
+    a tagged value, never convert it to a finite statistic. The original bytes
+    remain pinned. The selected game/points fields must still be finite JSON.
+    """
+    constants = []
+
+    def legacy(token):
+        if token != "-Infinity":
+            raise ValueError("Unknown legacy report constant: " + token)
+        constants.append(token)
+        return {"unmeasurable_legacy_constant": token}
+
+    raw = path.read_bytes()
+    if len(raw) > 2 * 1024**2:
+        raise ValueError("Legacy summary input size bound")
+    document = json.loads(raw, parse_constant=legacy)
+    selected = {
+        "games": document["primary_vs_v0019"]["games_detail"],
+        "points_replay": document["referee_points_check"],
+    }
+
+    # Tagged unavailable statistics may exist elsewhere; selected measurements
+    # and categorical fields must not contain them or other nonfinite values.
+    def finite_selected(value):
+        if isinstance(value, dict):
+            if "unmeasurable_legacy_constant" in value:
+                raise ValueError("Unmeasurable value in selected game evidence")
+            for item in value.values():
+                finite_selected(item)
+        elif isinstance(value, list):
+            for item in value:
+                finite_selected(item)
+        elif isinstance(value, float):
+            import math
+
+            if not math.isfinite(value):
+                raise ValueError("Nonfinite selected game evidence")
+
+    finite_selected(selected)
+    return selected, constants
+
+
 def qualify(p, root, out, source_sha, protocol_sha):
     out.mkdir(parents=True, exist_ok=False)
     credit = RawCredit(out, p["raw_bytes"] - 256 * 1024)
@@ -156,11 +201,11 @@ def qualify(p, root, out, source_sha, protocol_sha):
                     rejection_counts=audit["rejections"],
                 )
             elif index == 2:
-                summary = read_json(
+                summary, legacy_constants = published_summary(
                     root
                     / "grokbot/redteam/data/cycle-0029-mirror-opponent-gate-summary.json"
                 )
-                rows = summary["primary_vs_v0019"]["games_detail"]
+                rows = summary["games"]
                 if len(rows) != 48 or any(
                     "touches" in r or "gloves" in r for r in rows
                 ):
@@ -168,7 +213,8 @@ def qualify(p, root, out, source_sha, protocol_sha):
                 current.update(
                     classification="NOT_EXPLAINABLE_FROM_THIS_SAVED_SUMMARY",
                     primary_rows=len(rows),
-                    reported_points_replay=summary["referee_points_check"],
+                    reported_points_replay=summary["points_replay"],
+                    legacy_unmeasurable_constants=legacy_constants,
                     cause="UNDETERMINED",
                     scope="Input completeness finding, not a failed athlete or a scoring success",
                 )
@@ -253,6 +299,18 @@ def audit(p, root, out, source_sha, protocol_sha):
                 or rebuilt["final_sha256"] != row["final_sha256"]
             ):
                 raise ValueError("Rigid adapter saved audit mismatch")
+        if i == 2:
+            selected, constants = published_summary(
+                root
+                / "grokbot/redteam/data/cycle-0029-mirror-opponent-gate-summary.json"
+            )
+            if (
+                row["classification"] != "NOT_EXPLAINABLE_FROM_THIS_SAVED_SUMMARY"
+                or row["primary_rows"] != len(selected["games"])
+                or row["reported_points_replay"] != selected["points_replay"]
+                or row["legacy_unmeasurable_constants"] != constants
+            ):
+                raise ValueError("Published summary completeness finding differs")
         rows.append({"id": row["id"], "status": "passed"})
     entries = [json.loads(l) for l in (out / "physics.jsonl").read_text().splitlines()]
     expected = [

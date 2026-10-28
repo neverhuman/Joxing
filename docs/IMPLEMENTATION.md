@@ -1,3 +1,36 @@
+# Ready bounded native interaction wave — 2026-10-28
+
+Implementations and preregistration now include one fixed three-second native
+interaction, actual203→3000held continuation, independent contact/score/controller
+input audit, and its entire76-frame recording. Read NATIVE_STRIKE_MISSION.md.
+42targeted checks pass4.86s; final5native checks pass4.25s, including all1400muscles,
+exact57step fixture continuation/17held ticks, correct private RNG/origin, saved
+measurements/controller audit and no future-point video overlay. No formal3s
+native result or new training yet. Historical actors ignore opponent history;
+the bridge preserves and reports that limitation.
+
+The first scoring formal attempt passed1128Linux tests/one known strict xfail,
+then stopped on legacy-Infinity JSON statistics BEFORE new simulation. Two saved
+rows pass; one legacy-summary row fails; four rigid rows not_run. All13raw files/
+204,648bytes and595hash/exit checks retained. Repair isolates legacy unavailable
+statistics; physical evidence remains strict. Source196820f/protocolf2e05830 stays
+failed and read-only. No scoring threshold, native anatomy or rule changed.
+
+NEXT: freeze/publish both new protocols/source, fresh dedicated xbabe1root, verify
+capacity/inputs, then scripts/advance_native_strike_wave.py. Full1144pass/one exact
+known-xfail source gate qualifies all new native code BEFORE the scoring repair.
+On its measured success, same-source native activation is automatic ONLYif
+original remaining credit fits40s/24MiB; no duplicate source suite or writer.
+Scoring512MiB stays unchanged; separate intact-native phase has4GiB as registered.
+Original whole caps and every negative remain. Native boxing proof stays FALSE.
+
+Repair SHA50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958;
+native SHA33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103.
+No agents, third_party edits, other-chat messages or new release tag. Preserve
+Grokbot v22 as an independent read-only lane; this captures legal scoring inputs,
+not its knockdown training objective. Monitor the actual wave/PIDs, retain
+faults/not_run rows, and publish verified results plus fixed footage on completion.
+
 # Active scoring diagnostic source qualification — 2026-10-28 15:55 UTC
 
 Public frozen source196820f11489a76a8f673bc9ced41526b6b024af; protocol

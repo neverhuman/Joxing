@@ -1,0 +1,64 @@
+{
+  "error": "ValueError: -Infinity",
+  "fixture_completed": 0,
+  "fixture_entered": 0,
+  "max_rss_bytes": 160215040,
+  "new_native_physics": 0,
+  "optimizer_updates": 0,
+  "process": {
+    "pid": 172692,
+    "start_ticks": 914045936
+  },
+  "protocol_sha256": "f2e05830f68b057839869ded2db52182d09617b56ed1cb1e0c516692c902e911",
+  "rows": [
+    {
+      "final_sha256": "1378c59ee3e620aa46bf2e9740332d1c27708b9befb826d75e871ab7a1a31eb1",
+      "id": "saved-native-source",
+      "intervals": 1000,
+      "reason": null,
+      "rejection_counts": {},
+      "status": "passed"
+    },
+    {
+      "final_sha256": "4b70b4bba8485e41bfb5492ed507d7ea30c25086b40a9d9c8aa702678f857f44",
+      "id": "saved-native-guard-control",
+      "intervals": 20,
+      "reason": null,
+      "rejection_counts": {
+        "direct_zone": 80,
+        "positive_force": 24
+      },
+      "status": "passed"
+    },
+    {
+      "id": "published-v21-data-gap",
+      "reason": "ValueError: -Infinity",
+      "status": "failed"
+    },
+    {
+      "id": "rigid-head-forward",
+      "reason": "stopped after earlier fault",
+      "status": "not_run"
+    },
+    {
+      "id": "rigid-head-reverse",
+      "reason": "stopped after earlier fault",
+      "status": "not_run"
+    },
+    {
+      "id": "rigid-torso-forward",
+      "reason": "stopped after earlier fault",
+      "status": "not_run"
+    },
+    {
+      "id": "rigid-torso-reverse",
+      "reason": "stopped after earlier fault",
+      "status": "not_run"
+    }
+  ],
+  "schema": "joxing-score-qualification-result-v1",
+  "source_commit": "196820f11489a76a8f673bc9ced41526b6b024af",
+  "status": "halted",
+  "wall_s": 0.8444419410079718,
+  "whole_boxing_proof_passed": false
+}

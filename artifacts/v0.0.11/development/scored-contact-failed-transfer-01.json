@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "schema": "joxing-scored-contact-failed-transfer-v1",
+  "files": 13,
+  "bytes": 204648,
+  "all_names_sizes_sha_verified": true,
+  "archive_sha256": "aa01e503fc83d7bee6f6c28c549983e616fc56bb6f203ccc71eefd904929c08e",
+  "new_native_physics": 0,
+  "new_fixture_physics": 0,
+  "earlier_transfer_attempt": {
+    "status": "failed_before_remote_execution",
+    "error": "Transient SSH proxy network unreachable; later retry succeeded",
+    "new_physics": 0
+  }
+}

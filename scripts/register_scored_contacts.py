@@ -22,6 +22,17 @@ def main():
             root / "artifacts/v0.0.11/motor-codec-bindings-repair/conclusion.json"
         ).read_text()
     )
+    failed = json.loads(
+        (
+            root / "artifacts/v0.0.11/scored-contact-failed-01/supervision.json"
+        ).read_text()
+    )
+    failed_transfer = json.loads(
+        (
+            root
+            / "artifacts/v0.0.11/development/scored-contact-failed-transfer-01.json"
+        ).read_text()
+    )
     physical = json.loads(
         (root / "experiments/v0.0.11/shared-motor-physical-protocol.json").read_text()
     )
@@ -57,6 +68,10 @@ def main():
         "artifacts/v0.0.11/development/scoring-evidence-native-inventory-01.json",
         "artifacts/v0.0.11/development/scoring-evidence-summary-inventory-01.json",
         "artifacts/v0.0.11/development/scored-contact-development-01.json",
+        "artifacts/v0.0.11/development/native-strike-development-01.json",
+        "artifacts/v0.0.11/scored-contact-failed-01/result.json",
+        "artifacts/v0.0.11/scored-contact-failed-01/supervision.json",
+        "artifacts/v0.0.11/development/scored-contact-failed-transfer-01.json",
     ]
     p = {
         "schema": "joxing-score-qualification-v1",
@@ -79,13 +94,17 @@ def main():
         "expected_xfail_nodes": [
             "grokbot/tests/test_referee_fuzz.py::test_restore_does_not_alias_the_snapshot"
         ],
-        "prior_postgate_upper_s": prior["conservative_postgate_upper_s"],
-        "prior_raw_upper_bytes": prior["new_raw_upper_bytes"],
+        "prior_postgate_upper_s": prior["conservative_postgate_upper_s"]
+        + failed["post_gate_wall_s"],
+        "prior_raw_upper_bytes": prior["new_raw_upper_bytes"]
+        + failed_transfer["bytes"]
+        + 65536,
         "source_files": {str(f.relative_to(root)): sha_file(f) for f in files},
         "upstream_files": physical["upstream_files"],
         "reference_files": {n: sha_file(root / n) for n in refs},
         "input_files": inputs,
         "criterion": "All seven rows and exact saved ledger/final state; guard/no-contact rejection controls; published summary remains not-explainable; all four real rigid adapter controls score head2/torso1 under unchanged rules with reversed geom order; complete1000entered/completed physics receipts; independent saved-data audit and source/ownership/budget gates.",
+        "repair_scope": "Preserve failed2pass/1fail/4not_run legacy -Infinity parsing attempt; isolate known unmeasurable statistics from finite selected game data; physical evidence parser stays strict",
         "scope": "Retrospective saved native diagnostics plus repeated rigid physical controls; no held-out athlete or boxing competence, no optimizer or self-play, no scoring/rules/model changes.",
         "non_goals": [
             "native motor continuation",
