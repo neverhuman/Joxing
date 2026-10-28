@@ -1,3 +1,23 @@
+# Native source completed; zero-step recording recovery ready — 2026-10-28
+
+The fixed native interaction completed all3,000steps with all1,400muscles and
+150paired decisions. It then hit its unchanged25s deadline during LZMA contact
+array persistence. Full force-tape audit/actual continuation/normal render are
+not_run; the stale running/zero result is retained and reconciled by6,000journal
+rows. No qualified boxing or new training. All623file checks/37exit identities
+and37raw files5,795,551bytes verified. Read docs/NATIVE_SOURCE_PARTIAL_RESULTS.md
+for honest results, source identities and the next worker-ready mission.
+
+READY zero-physics partial display: public-freeze/anonymous-byte-verify
+experiments/v0.0.11/native-source-partial-display-01.json and standalone renderer
+before launch.76saved engine states hash-match the actual source; no missing
+contacts are imputed. Fresh disjoint output, same qualified core source2552354;
+11sTERM+1skill/4MiB/4GiB/one thread/0steps. Global upper899.453885s under900.
+On completion independently verify exits/outputs/decoded frames and publish video
+plus score-only explanations, preserving full native proof=false. No v11tag.
+Next ready win is an offline fast exact writer; no repeated native run under
+this old effectively exhausted budget. No agents or scientific source edits.
+
 # Scoring passed; native import bootstrap registered — 2026-10-28
 
 1144Linux tests +one registered strict xfail pass747.02s; scoring allseven rows

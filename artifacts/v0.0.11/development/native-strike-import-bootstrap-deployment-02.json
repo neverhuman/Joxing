@@ -1,0 +1,42 @@
+{
+  "schema": "joxing-native-import-bootstrap-deployment-v1",
+  "root": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "manifest_sha256": "9eb564782e7c94ef24d76e03ee7b5cee9c97e72569f0d7477e3377040a495d6b",
+  "process": {
+    "pid": 1111024,
+    "start_ticks": 914519973
+  },
+  "commands": [
+    [
+      "/home/ubuntu/.local/bin/uv",
+      "sync",
+      "--project",
+      "experiments/v0.0.11/runtime",
+      "--locked"
+    ],
+    [
+      "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/experiments/v0.0.11/runtime/.venv/bin/python",
+      "runs/v0.0.11/native-bootstrap02-operator.py",
+      "--root",
+      "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028",
+      "--manifest",
+      "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/runs/v0.0.11/native-bootstrap02-manifest.json",
+      "--manifest-sha256",
+      "9eb564782e7c94ef24d76e03ee7b5cee9c97e72569f0d7477e3377040a495d6b"
+    ]
+  ],
+  "environment": {
+    "PYTHONPATH": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028",
+    "threads": 1
+  },
+  "load": [
+    7.541015625,
+    7.1923828125,
+    8.26513671875
+  ],
+  "available_memory_bytes": 39033499648,
+  "free_disk_bytes": 271758553088,
+  "status": "launched",
+  "native_physics_at_launch": 0
+}

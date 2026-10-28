@@ -10,6 +10,13 @@ valid and both replays exact. Survival changed−0.066s/+0.016s, with1/8five-sec
 survivors each: **both improvement gates failed**.
 [Results](docs/V0.0.10_RESULTS.md) · [All attempted outcomes and audit](artifacts/v0.0.10/D2/) · [Complete raw evidence](https://github.com/neverhuman/Joxing/releases/download/v0.0.10/joxing-v0.0.10-raw.tar.gz).
 
+**Latest native progress:** the first fixed three-second learned-controller interaction
+completed all3,000steps with700muscles per athlete. It then timed out during
+evidence compression, leaving the force tape and replay incomplete. A bounded
+zero-step recording recovery is registered from76hash-verified actual states.
+[Results, limits and next persistence fix](docs/NATIVE_SOURCE_PARTIAL_RESULTS.md).
+Candidate points remain0–0; no qualified bout or new learning is claimed.
+
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)
 is available. Both untrained athletes lose their upright stance; no boxing or

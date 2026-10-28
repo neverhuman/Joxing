@@ -1,0 +1,78 @@
+{
+  "schema": "joxing-native-import-bootstrap-result-v1",
+  "attempt_id": "native-import-bootstrap-02",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "manifest_sha256": "9eb564782e7c94ef24d76e03ee7b5cee9c97e72569f0d7477e3377040a495d6b",
+  "status": "halted",
+  "new_source_changes": 0,
+  "scientific_protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+  "process": {
+    "pid": 1111024,
+    "parent_pid": 1,
+    "start_ticks": 914519973,
+    "state": "R"
+  },
+  "preflight_s": 0.13905720598995686,
+  "verified_source_files": 607,
+  "verified_source_digest": "b6cbbdcae34c8adbfcb81f73f6a6ed3799feeb4456049ef61ee447c048211a95",
+  "runtime": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "packages": {
+      "mujoco": "3.8.0",
+      "numpy": "2.4.2",
+      "imageio": "2.38.1",
+      "imageio-ffmpeg": "0.6.0",
+      "Pillow": "13.0.0",
+      "torch": "2.10.0+cpu"
+    },
+    "grokbot_locations": [
+      "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/grokbot"
+    ],
+    "joxing_origin": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/src/joxing/__init__.py"
+  },
+  "environment": {
+    "PYTHONPATH": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028",
+    "threads": 1,
+    "MUJOCO_GL": "egl"
+  },
+  "command": [
+    "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/experiments/v0.0.11/runtime/.venv/bin/python",
+    "scripts/supervise_native_strike_probe.py",
+    "--protocol-sha256",
+    "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+    "--source-sha",
+    "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+  ],
+  "supervisor_process": {
+    "pid": 1111034,
+    "parent_pid": 1111024,
+    "start_ticks": 914520002,
+    "state": "R"
+  },
+  "owned_identities": [
+    {
+      "pid": 1111034,
+      "parent_pid": 1111024,
+      "start_ticks": 914520002,
+      "state": "R"
+    },
+    {
+      "pid": 1111091,
+      "parent_pid": 1111034,
+      "start_ticks": 914520115,
+      "state": "S"
+    },
+    {
+      "pid": 1111140,
+      "parent_pid": 1111091,
+      "start_ticks": 914520124,
+      "state": "R"
+    }
+  ],
+  "returncode": 0,
+  "supervisor_status": "halted",
+  "error": null,
+  "live_recorded_processes": [],
+  "outer_wall_s": 27.9925887119025,
+  "actual_native_postgate_s": 26.727513507008553
+}

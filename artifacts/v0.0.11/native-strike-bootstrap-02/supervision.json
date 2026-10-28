@@ -1,0 +1,115 @@
+{
+  "schema": "joxing-native-strike-supervisor-v1",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+  "process": {
+    "pid": 1111034,
+    "parent_pid": 1111024,
+    "start_ticks": 914520002,
+    "state": "R"
+  },
+  "started_utc": "2026-10-28T17:25:50.898920+00:00",
+  "status": "halted",
+  "initial_capacity": {
+    "available_memory_bytes": 38966521856,
+    "disk_free_bytes": 271758528512,
+    "load": [
+      7.541015625,
+      7.1923828125,
+      8.26513671875
+    ],
+    "owned_raw_bytes": 0
+  },
+  "stages": [
+    {
+      "stage": "proof",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/qualify_native_strike_probe.py",
+        "--protocol-sha256",
+        "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "failed",
+      "reason": "TimeoutError: Stage/cumulative deadline",
+      "process": {
+        "pid": 1111091,
+        "parent_pid": 1111034,
+        "start_ticks": 914520115,
+        "state": "R"
+      },
+      "owned_processes": [
+        {
+          "pid": 1111091,
+          "parent_pid": 1111034,
+          "start_ticks": 914520115,
+          "state": "S"
+        },
+        {
+          "pid": 1111140,
+          "parent_pid": 1111091,
+          "start_ticks": 914520124,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 39639855104,
+        "disk_free_bytes": 271748575232,
+        "load": [
+          7.80126953125,
+          7.27587890625,
+          8.263671875
+        ],
+        "owned_raw_bytes": 5472078
+      },
+      "returncode": 143,
+      "wall_s": 26.726605450734496,
+      "live_recorded_processes": []
+    },
+    {
+      "stage": "audit",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/audit_native_strike_probe.py",
+        "--protocol-sha256",
+        "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    },
+    {
+      "stage": "render",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "run",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked",
+        "python",
+        "scripts/render_native_strike_probe.py",
+        "--protocol-sha256",
+        "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+        "--source-sha",
+        "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+      ],
+      "status": "not_run",
+      "reason": "stopped after earlier failure"
+    }
+  ],
+  "reason": "RuntimeError: proof failed: TimeoutError: Stage/cumulative deadline",
+  "finished_utc": "2026-10-28T17:26:17.812590+00:00",
+  "post_gate_wall_s": 26.727513507008553
+}

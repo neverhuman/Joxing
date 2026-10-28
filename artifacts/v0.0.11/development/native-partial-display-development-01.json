@@ -1,0 +1,18 @@
+{
+  "schema": "joxing-native-partial-display-development-v1",
+  "checks_passed": [
+    "complete local-header prefix exact including signed zero",
+    "incomplete physical field remains missing",
+    "compressed corruption rejected",
+    "oversized LZMA dictionary rejected before allocation",
+    "truncated completed member rejected"
+  ],
+  "new_physics": 0,
+  "renderer_sha256": "42ea29098737a5fd155f2a37b4c199a0e55cb5296e1fe9d40c6ac4f106fe0f5f",
+  "additional_actual_saved_checks": [
+    "all5complete source members decode with CRC and exact typed extents",
+    "all76saved full-engine hashes match actual source",
+    "all3000saved scoring intervals reconstruct exactly"
+  ],
+  "video_dimensions": "explicit macro_block_size=1 prevents implicit360-to368 resize"
+}
