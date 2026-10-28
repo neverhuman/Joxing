@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~05:20 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~06:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `77956c5`, plus this PR. **Latest tag: `v0.0.13`.**
+- **Main:** green at `9c22f2c`, plus this PR. **Latest tag: `v0.0.13`.**
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -34,19 +34,18 @@ and `grokbot/redteam/cycle-*.md`.
 - **Secondary:** Hoeffding lower bound on the paired stand gain over gen4.
   Not met: the mean is +0.87 s, the lower bound −0.63.
 
-## Next step: v0.0.17 (preregistered in this PR, `protocols/v0.0.17.json`)
+## Next step: v0.0.17 (protocol `850ec810…`, on main since #21)
 
-1. Implement `GroupFeedbackPolicy`: `GroupPolicy` plus per-group gains on
-   the 6 tilt features. That adds 828 parameters, initialized to 0, so it
-   starts from the v0.0.16 final parameters. Add a probe that reads the
-   protocol unchanged, with tests.
-2. Run 48 iterations of 12 ES pairs, seed 7, on the same gate.
-3. **Level-up** requires both:
-   - the motor gate passes;
-   - head-to-head against the frozen v0.0.13 champion at 0.5 m under
-     anti-stalling has valid games > 0 and a paired lower bound > 0.
-
-   Only then tag `v0.0.17`.
+1. Done in cycle 0022: `GroupFeedbackPolicy` (`GroupPolicy` plus 138 × 6
+   per-group tilt gains, 828 parameters, zero-initialized on the v0.0.16
+   final parameters), with tests and the probe
+   `probes/cycle-0022-group-feedback-gate.py`.
+2. Run 48 × 12 ES with seed 7 on the same gate (in progress or next).
+3. **Level-up** requires the motor gate to pass **and** the head-to-head
+   against the frozen v0.0.13 champion (seeds 2000–2011, 0.5 m,
+   anti-stalling) to have valid games > 0 and a paired lower bound > 0.
+   Note: the champion falls at about 1.7 s, so a valid game needs a strike
+   before then (cycle 0022, F1). Only a level-up gets the tag `v0.0.17`.
 4. If there is no stand gain, the next lever is recurrent control or jekko's
    pretrained bridge.
 

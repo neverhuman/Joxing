@@ -167,8 +167,7 @@ class GroupPolicy:
         features = observation.values[selfplay.FEATURES].astype(float)
         if base.origin is None or observation.sampled_tick == 0:
             base.origin = features
-        feedback = self.gains @ (features - base.origin)  # per region
-        values = self.tones + feedback[GROUP_REGION]
+        values = self.tones + self._feedback(features - base.origin)
         if self.noise:
             if rng is None:
                 raise ValueError("A noisy policy needs the game's generator")
@@ -183,6 +182,39 @@ class GroupPolicy:
                 for k in REACH_GROUPS[side]:
                     command[GROUPS[k]] = np.float32(amplitude)
         return command
+
+    def _feedback(self, delta):
+        return (self.gains @ delta)[GROUP_REGION]  # regional gains, per group
+
+
+TILT_FEATURES = 6  # pelvis and trunk z-rows of rotation: selfplay.FEATURES[:6]
+GROUP_FEEDBACK_PARAMS = GROUP_PARAMS * TILT_FEATURES
+
+
+class GroupFeedbackPolicy(GroupPolicy):
+    """``GroupPolicy`` + per-group gains on the 6 tilt features (v0.0.17).
+
+    ``params`` = the 284 ``GroupPolicy`` parameters, then a 138 x 6 row-major
+    gain matrix. Each DynSyn group gets its own response to pelvis and trunk
+    tilt, on top of its region's shared feedback. All-zero gains give exactly
+    the ``GroupPolicy`` commands, so training can start from v0.0.16.
+    """
+
+    def __init__(self, params, noise=0.0):
+        params = np.asarray(params, float)
+        base = GROUP_PARAMS + selfplay.N_PARAMS + PUNCH_PARAMS
+        if params.shape != (base + GROUP_FEEDBACK_PARAMS,):
+            raise ValueError(f"Expected {base + GROUP_FEEDBACK_PARAMS} parameters")
+        super().__init__(params[:base], noise)
+        self.group_gains = params[base:].reshape(GROUP_PARAMS, TILT_FEATURES)
+
+    def _feedback(self, delta):
+        return super()._feedback(delta) + self.group_gains @ delta[:TILT_FEATURES]
+
+
+def group_feedback_params(group):
+    """``GroupPolicy`` parameters extended with all-zero per-group tilt gains."""
+    return np.concatenate([np.asarray(group, float), np.zeros(GROUP_FEEDBACK_PARAMS)])
 
 
 def group_params(posture, **punch):

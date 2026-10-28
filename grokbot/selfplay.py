@@ -171,6 +171,10 @@ def _controller(spec):
         from grokbot.motor_primitives import GroupPolicy
 
         return GroupPolicy(value, noise[0] if noise else 0.0)
+    if kind == "group_feedback":
+        from grokbot.motor_primitives import GroupFeedbackPolicy
+
+        return GroupFeedbackPolicy(value, noise[0] if noise else 0.0)
     return SCRIPTED_PANEL[value]
 
 
