@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~12:00 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~12:30 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `ef80a8c`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `090a0a8`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -57,13 +57,20 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.21 (to be preregistered in its own PR)
+## Next step: v0.0.21 (protocol `protocols/v0.0.21.json`, landed before the run)
 
-- **One lever: the training opponent.** Train the same solo hit-and-stay-up
-  fitness against frozen v0.0.19 instead of the gen4 posture. The model,
-  initialization, ES settings, reset and ending are unchanged.
-- **Primary:** the a/b/c gate against frozen v0.0.19 on fresh seeds. Tag
-  only if it passes.
+- **One lever:** the training opponent becomes frozen v0.0.19 instead of the
+  gen4 posture. The hit-and-stay-up fitness and everything else are
+  unchanged.
+- **Primary:** against frozen v0.0.19 on seeds 10000–10023.
+  - The **validity precondition, at least 40 of 48 valid games, is checked
+    first**. If it fails, the verdict is `VALIDITY_FAILED` and the probe
+    exits non-zero.
+  - Only then are (b) lower95 > 0 and (c) at least half of wins with hits
+    checked.
+  - Tag only if the verdict is `LEVEL_UP`.
+- **Probe:** `probes/cycle-0029-mirror-opponent-gate.py`. Run it at nice 19
+  with loadavg below 86, after merge.
 
 ## Rules this lane follows
 
