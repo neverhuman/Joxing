@@ -87,9 +87,11 @@ def trial(task):
             "scoring_strike_ticks": 0,
             "first_scoring_tick": None,
             "opponent_fall_tick": None,
+            "opponent_fall_attribution": None,
             "ticks": env.tick,
         }
     falls = {e.player: e.tick for e in monitor.losses}
+    attribution = {e.player: e.attribution for e in monitor.losses}
     return {
         "invalid": None,
         "stand_ticks": falls.get("A", env.horizon_ticks),
@@ -97,6 +99,7 @@ def trial(task):
         "scoring_strike_ticks": len(monitor.contacts.scoring_by["A"]),
         "first_scoring_tick": min(monitor.contacts.scoring_by["A"], default=None),
         "opponent_fall_tick": falls.get("B"),
+        "opponent_fall_attribution": attribution.get("B"),
         "ticks": env.tick,
     }
 
@@ -119,6 +122,16 @@ def knocked_down(result):
     )
 
 
+def clean_knocked_down(result):
+    """``knocked_down``, and the ending attributes the opponent's fall to a
+    strike (``knockdown``), not ``unresolved`` after body contact (v0.0.23).
+
+    v0.0.22 lost 0 of 168 valid games but missed its gates on blocked games:
+    falls the ending cannot attribute, which its bonus still paid for.
+    """
+    return knocked_down(result) and result["opponent_fall_attribution"] == "knockdown"
+
+
 def fitness(
     result,
     horizon_ticks,
@@ -126,6 +139,7 @@ def fitness(
     strike_key="strike_ticks",
     stay_up_ticks=None,
     knockdown=False,
+    clean_knockdown=False,
 ):
     """Stand fraction plus a strike bonus.
 
@@ -136,7 +150,9 @@ def fitness(
     """
     if result["invalid"]:
         return None
-    if knockdown:
+    if clean_knockdown:
+        earned = clean_knocked_down(result)
+    elif knockdown:
         earned = knocked_down(result)
     elif stay_up_ticks is None:
         earned = result[strike_key] > 0
@@ -161,6 +177,7 @@ def train(
     strike_key="strike_ticks",
     stay_up_ticks=None,
     knockdown=False,
+    clean_knockdown=False,
     log=print,
 ):
     """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
@@ -176,7 +193,13 @@ def train(
         results = workers_pool.map(trial, tasks)
         scores = [
             fitness(
-                r, horizon_ticks, strike_bonus, strike_key, stay_up_ticks, knockdown
+                r,
+                horizon_ticks,
+                strike_bonus,
+                strike_key,
+                stay_up_ticks,
+                knockdown,
+                clean_knockdown,
             )
             for r in results
         ]
@@ -218,9 +241,13 @@ def train(
             "invalid": int(sum(r["invalid"] is not None for r in results)),
             "mean_fitness": float(flat.mean()) if valid.any() else None,
         }
-        if knockdown:  # earlier runs' history rows keep their exact format
+        if knockdown or clean_knockdown:  # earlier rows keep their format
             row["knockdown_share"] = float(
                 np.mean([not r["invalid"] and knocked_down(r) for r in results])
+            )
+        if clean_knockdown:
+            row["clean_knockdown_share"] = float(
+                np.mean([not r["invalid"] and clean_knocked_down(r) for r in results])
             )
         history.append(row)
         log(row)

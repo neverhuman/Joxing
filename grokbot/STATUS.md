@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~17:20 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~18:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `2552354`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `eec64e1`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -59,18 +59,20 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.23 (to be preregistered in its own PR)
+## Next step: v0.0.23 (protocol `protocols/v0.0.23.json`, landed before the run)
 
-- **One lever: a clean-knockdown objective.** The bonus counts only when
-  the ending attributes the opponent's fall to the candidate's strike
-  (`BoutMonitor` attribution `knockdown`, not `unresolved`). v0.0.22 lost 0
-  of 168 valid games, but its gates failed on blocked games, which are
-  exactly the unattributable falls the bonus still paid for.
-- **Gates kept:**
-  - primary against frozen v0.0.19: validity, decisiveness, then b/c;
-  - hard gate: at least 40/48 valid against v0.0.13;
-  - monotonicity: @48 vs @16 and @16 vs v0.0.19;
-  - the per-seat split.
+- **Diagnosis of v0.0.22** (cycle 0033): the blocked hard-gate games are
+  opponent falls attributed `unresolved` because of 5–9 ticks of
+  torso-to-torso contact in the 0.5 s lookback, after the candidate's head
+  hits.
+- **One lever: a clean-knockdown objective.** The bonus counts only
+  knockdowns that the ending attributes.
+- **Gates, on new seeds:**
+  - primary against frozen v0.0.19 (16000–16023): at least 40/48 valid, then
+    at least 24/48 decisive, then b/c;
+  - hard gate: at least 40/48 valid against v0.0.13 (17000–17023);
+  - monotonicity (18000–18023).
+- **Tag only if all pass.**
 
 ## Rules this lane follows
 
