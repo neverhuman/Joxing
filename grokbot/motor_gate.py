@@ -88,6 +88,7 @@ def trial(task):
             "first_scoring_tick": None,
             "opponent_fall_tick": None,
             "opponent_fall_attribution": None,
+            "contact_ticks": 0,
             "ticks": env.tick,
         }
     falls = {e.player: e.tick for e in monitor.losses}
@@ -100,6 +101,11 @@ def trial(task):
         "first_scoring_tick": min(monitor.contacts.scoring_by["A"], default=None),
         "opponent_fall_tick": falls.get("B"),
         "opponent_fall_attribution": attribution.get("B"),
+        # Non-striking inter-athlete contact (body, clinch, guard) up to the
+        # opponent's fall: the contact that leaves knockdowns unresolved.
+        "contact_ticks": sum(
+            t <= falls.get("B", env.horizon_ticks) for t in monitor.contacts.blocking
+        ),
         "ticks": env.tick,
     }
 
@@ -152,13 +158,17 @@ def fitness(
     knockdown=False,
     clean_knockdown=False,
     valid_knockdown=False,
+    contact_penalty=0.0,
 ):
-    """Stand fraction plus a strike bonus.
+    """Stand fraction plus a strike bonus, minus an optional contact penalty.
 
     With ``stay_up_ticks`` (v0.0.19) the bonus needs a head/torso hit after
     which the athlete stays up that long: v0.0.18 hit and then fell first.
     With ``knockdown`` (v0.0.22) it needs ``knocked_down``: v0.0.21's games
     against v0.0.19 were 42/48 bell draws because nobody fell.
+    ``contact_penalty`` (v0.0.25) subtracts that weight times the share of a
+    0.5 s window spent in non-striking contact before the opponent's fall: a
+    graded signal where the binary knockdown bonus saturates.
     """
     if result["invalid"]:
         return None
@@ -172,7 +182,8 @@ def fitness(
         earned = result[strike_key] > 0
     else:
         earned = hit_and_stayed_up(result, stay_up_ticks)
-    return result["stand_ticks"] / horizon_ticks + strike_bonus * earned
+    contact = contact_penalty * min(1.0, result.get("contact_ticks", 0) / 500)
+    return result["stand_ticks"] / horizon_ticks + strike_bonus * earned - contact
 
 
 def train(
@@ -193,6 +204,7 @@ def train(
     knockdown=False,
     clean_knockdown=False,
     valid_knockdown=False,
+    contact_penalty=0.0,
     log=print,
 ):
     """Antithetic ES on the solo fitness; quarantined pairs are dropped."""
@@ -216,6 +228,7 @@ def train(
                 knockdown,
                 clean_knockdown,
                 valid_knockdown,
+                contact_penalty,
             )
             for r in results
         ]
@@ -260,6 +273,10 @@ def train(
         if knockdown or clean_knockdown or valid_knockdown:  # earlier rows unchanged
             row["knockdown_share"] = float(
                 np.mean([not r["invalid"] and knocked_down(r) for r in results])
+            )
+        if contact_penalty:
+            row["mean_contact_ticks"] = float(
+                np.mean([r["contact_ticks"] for r in results if not r["invalid"]])
             )
         if valid_knockdown:
             row["valid_knockdown_share"] = float(
