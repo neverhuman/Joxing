@@ -19,6 +19,12 @@ but fail the glove-face predicates. Full force audit/replay remain incomplete.
 [Results and all limitations](docs/NATIVE_SOURCE_PARTIAL_RESULTS.md) ·
 [Next: fast evidence writing, native face calibration and pretrained balance](docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md).
 
+**Current bounded task:** [fast exact tape writer qualification](docs/NATIVE_TAPE_STORAGE_MISSION.md).
+All24focused local tests pass; the stored-format candidate preserves every bit
+and leaves current collectors unchanged. Public registration precedes the
+zero-physics benchmark on two saved corpora: exact recovery, measured save speed
+and whole-recording size. No new physical run or competitive learning is active.
+
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)
 is available. Both untrained athletes lose their upright stance; no boxing or

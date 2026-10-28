@@ -1,0 +1,133 @@
+{
+  "schema": "joxing-native-stored-offline-protocol-v1",
+  "source_host": "xbabe1",
+  "deployment_root": "/home/ubuntu/joxing/native-tape-storage-20261028",
+  "budget_scope": "New finite offline writer diagnostic; old native900s/256MiB ledger and every failed deadline remain unchanged",
+  "new_physics": 0,
+  "new_optimizer_updates": 0,
+  "formal_simulation_workers": 0,
+  "numerical_workers": 1,
+  "threads_per_process": 1,
+  "maximum_rss_bytes": 536870912,
+  "raw_bytes": 67108864,
+  "supervision_reserve_bytes": 262144,
+  "post_gate_wall_s": 60,
+  "termination_reserve_s": 1.25,
+  "stage_wall_limits_s": {
+    "sync": 180,
+    "tests": 20,
+    "proof": 45,
+    "audit": 15
+  },
+  "minimum_available_memory_bytes": 8589934592,
+  "minimum_free_disk_bytes": 10737418240,
+  "maximum_ephemeral_lzma_bytes": 33554432,
+  "expected_tests": 24,
+  "python_version": "3.12.3",
+  "numpy_version": "2.4.2",
+  "source_files": {
+    "src/joxing/__init__.py": {
+      "bytes": 86,
+      "sha256": "b2e944ab0a71e441b3a3b9405fecc6be0b34d811b0c1d69e3f44d35b7c6b8092"
+    },
+    "src/joxing/native_tape_storage.py": {
+      "bytes": 9702,
+      "sha256": "efe2bb7469c7966c97302be2526f383bdcea53d0555e07ab053be87be554f85c"
+    },
+    "src/joxing/native_tape_qualification.py": {
+      "bytes": 14889,
+      "sha256": "178d2a4d3f8e718fdb6b16e4dd4b53cd017478e1c8fb40eedda1e0ac9be98b4a"
+    },
+    "src/joxing/motor_storage.py": {
+      "bytes": 2809,
+      "sha256": "a14900c3102d87f4d6a1b9ae21b8f831c13593fe95b7e8ba175b700eb26da6c1"
+    },
+    "scripts/qualify_native_tape_storage.py": {
+      "bytes": 89,
+      "sha256": "bdbd6707557ee6247a98a0e6f67193e136390832d1ade14da3dd5df77ac9c0d6"
+    },
+    "scripts/supervise_native_tape_storage.py": {
+      "bytes": 11977,
+      "sha256": "014bafcbd298125b1b16e83ae552b796b479640c808e8311772bab6f36a6e0e1"
+    },
+    "tests/test_native_tape_storage.py": {
+      "bytes": 6774,
+      "sha256": "14150aa7c11aed5ae7213f2d116c63f3da2144af21de9ea5c1d034a01559e798"
+    },
+    "tests/test_native_tape_qualification.py": {
+      "bytes": 5882,
+      "sha256": "12048f6dc9f29bb683f0bab92a7134dd2fcccbff53aafb54ece9c19237f48a14"
+    },
+    "experiments/v0.0.11/native_source_partial_display_01.py": {
+      "bytes": 16237,
+      "sha256": "42ea29098737a5fd155f2a37b4c199a0e55cb5296e1fe9d40c6ac4f106fe0f5f"
+    },
+    "artifacts/v0.0.11/native-strike-bootstrap-02/raw-manifest.json": {
+      "bytes": 6072,
+      "sha256": "dea268055c5bf2c6fa7efcc9a5b027dbe0198297b44090db088210d5830c5d3b"
+    },
+    "pyproject.toml": {
+      "bytes": 1027,
+      "sha256": "c1fe5cdbc86c0d4cc7a139adc043153934ba9910df0f98907b0c4648e855224f"
+    },
+    "experiments/v0.0.11/runtime/pyproject.toml": {
+      "bytes": 543,
+      "sha256": "3024da0eb8fc42d726be3d209248a221207aa95789fc1d13735ae6e844959324"
+    },
+    "experiments/v0.0.11/runtime/uv.lock": {
+      "bytes": 68394,
+      "sha256": "9dc2332fe46eefc51aa133c6e0e9e90790899eb67b94345ac2447967464ebd5c"
+    }
+  },
+  "input_files": {
+    "/home/ubuntu/joxing/v011-shared-motor-physical-bootstrap02-20261027/runs/v0.0.11/shared-motor-proof-01/source-71000/tape.npz": {
+      "bytes": 19210825,
+      "sha256": "10e9404c28c03e9b401c3adb298ed2d964c6570f6853c80e30a37452c5687e61"
+    },
+    "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/runs/v0.0.11/native-strike-proof-01/source/tape.npz.tmp": {
+      "bytes": 2044399,
+      "sha256": "f8ee264a7b1898f487b6df22cc43fe09680d9260d763434e925e7f0abbef5feb"
+    }
+  },
+  "corpora": {
+    "native-prefix": {
+      "kind": "incomplete-native-prefix",
+      "path": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/runs/v0.0.11/native-strike-proof-01/source/tape.npz.tmp",
+      "members": 5,
+      "payload_bytes": 9119848,
+      "minimum_encode_speedup": 0
+    },
+    "complete-source": {
+      "kind": "complete-legacy-npz",
+      "path": "/home/ubuntu/joxing/v011-shared-motor-physical-bootstrap02-20261027/runs/v0.0.11/shared-motor-proof-01/source-71000/tape.npz",
+      "members": 23,
+      "payload_bytes": 41319560,
+      "minimum_encode_speedup": 2.0
+    }
+  },
+  "native_preflight": {
+    "raw_manifest": "artifacts/v0.0.11/native-strike-bootstrap-02/raw-manifest.json",
+    "archive_and_receipt_metadata_bound_bytes": 8192,
+    "whole_raw_cap_bytes": 25165824,
+    "video_variants": {
+      "original800x448_2MiB": 2097152,
+      "named640x360_1MiB": 1048576
+    },
+    "gate_variant": "named640x360_1MiB",
+    "additional_allocations_bytes": {
+      "continuation_report_upper": 1048576,
+      "audit_and_final_reports_upper": 131072,
+      "supervision_reserve": 262144,
+      "fault_reserve": 2097152
+    }
+  },
+  "criterion": "Both saved corpora exact in candidate and independent NumPy readers plus separate saved audit; complete-source measured encode speedup>=2 versus bounded in-memory LZMA; named640x360video whole native raw size projection fits24MiB. Missing physical values stay missing; original video allocation negative retained.",
+  "non_goals": [
+    "No integration into any executing or existing collector",
+    "No native motor, rules, model, actor, normalizer or history changes",
+    "No rerun of completed physical steps or unexecuted continuation",
+    "No full-source regression or native-boxing qualification claim",
+    "No old cap or failed result alteration",
+    "No automatic physical activation"
+  ]
+}

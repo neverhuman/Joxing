@@ -1,0 +1,71 @@
+{
+  "schema": "joxing-native-tape-storage-development-v1",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_native_tape_storage.py",
+    "tests/test_native_tape_qualification.py"
+  ],
+  "tests_passed": 24,
+  "wall_s": 0.29,
+  "ruff": "passed",
+  "source_files": {
+    "src/joxing/__init__.py": {
+      "bytes": 86,
+      "sha256": "b2e944ab0a71e441b3a3b9405fecc6be0b34d811b0c1d69e3f44d35b7c6b8092"
+    },
+    "src/joxing/native_tape_storage.py": {
+      "bytes": 9702,
+      "sha256": "efe2bb7469c7966c97302be2526f383bdcea53d0555e07ab053be87be554f85c"
+    },
+    "src/joxing/native_tape_qualification.py": {
+      "bytes": 14889,
+      "sha256": "178d2a4d3f8e718fdb6b16e4dd4b53cd017478e1c8fb40eedda1e0ac9be98b4a"
+    },
+    "src/joxing/motor_storage.py": {
+      "bytes": 2809,
+      "sha256": "a14900c3102d87f4d6a1b9ae21b8f831c13593fe95b7e8ba175b700eb26da6c1"
+    },
+    "scripts/qualify_native_tape_storage.py": {
+      "bytes": 89,
+      "sha256": "bdbd6707557ee6247a98a0e6f67193e136390832d1ade14da3dd5df77ac9c0d6"
+    },
+    "scripts/supervise_native_tape_storage.py": {
+      "bytes": 11977,
+      "sha256": "014bafcbd298125b1b16e83ae552b796b479640c808e8311772bab6f36a6e0e1"
+    },
+    "tests/test_native_tape_storage.py": {
+      "bytes": 6774,
+      "sha256": "14150aa7c11aed5ae7213f2d116c63f3da2144af21de9ea5c1d034a01559e798"
+    },
+    "tests/test_native_tape_qualification.py": {
+      "bytes": 5882,
+      "sha256": "12048f6dc9f29bb683f0bab92a7134dd2fcccbff53aafb54ece9c19237f48a14"
+    },
+    "experiments/v0.0.11/native_source_partial_display_01.py": {
+      "bytes": 16237,
+      "sha256": "42ea29098737a5fd155f2a37b4c199a0e55cb5296e1fe9d40c6ac4f106fe0f5f"
+    },
+    "artifacts/v0.0.11/native-strike-bootstrap-02/raw-manifest.json": {
+      "bytes": 6072,
+      "sha256": "dea268055c5bf2c6fa7efcc9a5b027dbe0198297b44090db088210d5830c5d3b"
+    },
+    "pyproject.toml": {
+      "bytes": 1027,
+      "sha256": "c1fe5cdbc86c0d4cc7a139adc043153934ba9910df0f98907b0c4648e855224f"
+    },
+    "experiments/v0.0.11/runtime/pyproject.toml": {
+      "bytes": 543,
+      "sha256": "3024da0eb8fc42d726be3d209248a221207aa95789fc1d13735ae6e844959324"
+    },
+    "experiments/v0.0.11/runtime/uv.lock": {
+      "bytes": 68394,
+      "sha256": "9dc2332fe46eefc51aa133c6e0e9e90790899eb67b94345ac2447967464ebd5c"
+    }
+  },
+  "new_physics": 0,
+  "scope": "Synthetic fixture and adversarial development only; no formal real-corpus benchmark before public freeze",
+  "native_prefix_payload_from_existing_audit": 9119848
+}

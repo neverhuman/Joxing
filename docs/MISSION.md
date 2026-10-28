@@ -1,3 +1,26 @@
+# Fast exact tape candidate implemented; bounded offline qualification ready — 2026-10-28
+
+Next measured bottleneck is LZMA persistence, not more boxing games. New opt-in
+native_tape_storage.py leaves existing collectors/scientific source unchanged.
+24focused local tests pass0.29s/Ruffpass: signed-zero/NaN payloads, endian/strided
+arrays, two decoders, CRC/oversized headers, credit limits and interrupted writes.
+No formal saved-corpus performance outcome or new physics yet.
+
+Current mission docs/NATIVE_TAPE_STORAGE_MISSION.md; protocol
+experiments/v0.0.11/native-tape-storage-protocol.json. Public-freeze/anonymous
+byte-verify first, then fresh dedicated xbabe1 root native-tape-storage-20261028,
+locked runtime and24targeted Linux tests before45sproof/15saudit/60spostgate,
+512MiB RSS/64MiB new raw/one thread/0simulation. This is a separately registered
+offline budget; old native cap/faults stay unchanged. Two rows: five actual native
+prefix members and complete23-array saved walking corpus. Exact bytes in two
+readers +separate audit,2xreference encode speed and future24MiB size gate.
+Original2MiBvideo budget negative retained; named proven640x360/1MiB variant is
+separate future size arithmetic, not a change to old proof or missing data.
+
+No physical activation, body/rules edits, agents or v11tag. On completion audit
+all source/input/output hashes, attempts and process exits; publish results and
+leave native face calibration/pretrained balance as the next ready mission.
+
 # Native recording recovered; evidence and motor defects measured — 2026-10-28
 
 The fixed3snative source completed3,000steps/150paired decisions with all1,400
