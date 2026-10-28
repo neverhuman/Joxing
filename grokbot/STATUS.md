@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~12:30 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~14:15 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `090a0a8`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `5b3cf20`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -29,6 +29,7 @@ and `grokbot/redteam/cycle-*.md`.
 | v0.0.18 | + velocity and height gains, hit-only bonus | 1/24 | 24/24 | 2.314 s | not met; untagged |
 | **v0.0.19** | **hit-and-stay-up fitness** | **16/24** | **24/24** | **3.000 s** | **PASSED: level-up, tagged** |
 | v0.0.20 | two-player self-play league (outcome only) | 16/24 | 24/24 | 3.000 s | **honest null**: no promotion, champion = v0.0.19; primary 3/48 valid; not tagged |
+| v0.0.21 | training opponent = frozen v0.0.19 | 1/24 | 10/24 | 1.856 s | **CRITERION_NOT_MET**: 48/48 valid but 4–2–42 draws (referee points 0–0); NOT monotone (@48 lost 0–20 to @16); vs v0.0.13 46/48 blocked; not tagged |
 
 **v0.0.19 head-to-heads** (48 games each):
 
@@ -57,20 +58,24 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.21 (protocol `protocols/v0.0.21.json`, landed before the run)
+## Next step: v0.0.22 (owner 13:50; preregister in its own PR, in fresh context)
 
-- **One lever:** the training opponent becomes frozen v0.0.19 instead of the
-  gen4 posture. The hit-and-stay-up fitness and everything else are
-  unchanged.
-- **Primary:** against frozen v0.0.19 on seeds 10000–10023.
-  - The **validity precondition, at least 40 of 48 valid games, is checked
-    first**. If it fails, the verdict is `VALIDITY_FAILED` and the probe
-    exits non-zero.
-  - Only then are (b) lower95 > 0 and (c) at least half of wins with hits
-    checked.
-  - Tag only if the verdict is `LEVEL_UP`.
-- **Probe:** `probes/cycle-0029-mirror-opponent-gate.py`. Run it at nice 19
-  with loadavg below 86, after merge.
+1. **Feasibility probe first.** Can these athletes score **referee** points
+   at all? The 42 v0.0.21 draws had referee points [0, 0] despite
+   grokbot-classified head hits. If they cannot, report it to jekko as the
+   feather-tap ceiling; that is not a lever.
+2. **One lever**, if feasible: the strike bonus requires referee-scored hits.
+3. **Criterion**, against frozen v0.0.19 on fresh seeds:
+   - validity of at least 40/48, checked first;
+   - **at least 24/48 decisive games**;
+   - (b) lower95 > 0;
+   - (c) at least half of wins with hits.
+4. **Hard gate:** at least 40/48 valid games against frozen v0.0.13, which
+   fixes the 46/48-blocked regression.
+5. **Monotonicity:** the 3N-vs-N check runs again.
+6. **Reports:** the seat-swap split, with draws, no-contests, blocks and
+   faults counted separately.
+7. v0.0.19 remains the base and the last level-up.
 
 ## Rules this lane follows
 
