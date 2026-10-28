@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~20:45 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-28 ~21:30 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `f4505d9`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `30d0443`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -61,15 +61,20 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.25 (its own preregistration PR)
+## Next step: v0.0.25 (protocol `protocols/v0.0.25.json`, landed before the run)
 
-- **Smoke gate on the instrumentation only:** the bonus fires, and outcomes
-  are recorded. The base policy's validity is reported as a baseline, not
-  used as a launch precondition (cycle 0036).
-- **Validity floors stay on the trained policy:** at least 40/48 for the
-  primary against v0.0.19 and at least 40/48 for the v0.0.13 hard gate.
-  Monotonicity and the per-seat split are kept.
-- **Lever:** the valid-knockdown bonus, starting from v0.0.22.
+- **Diagnosis** (cycle 0037): the binary valid-knockdown bonus is
+  saturated at the v0.0.22 base, at 23/24 against v0.0.19 and 22/24 against
+  v0.0.13, so it gives no ranking signal. Contact ticks before the
+  opponent's fall vary widely.
+- **One lever: a graded contact penalty.** Fitness subtracts
+  `0.5 · min(1, contact_ticks/500)`, starting from v0.0.22 against frozen
+  v0.0.19.
+- **Smoke gate:** the penalty term varies, and a 48-game head-to-head
+  against v0.0.19 is at least 90 % valid.
+- **Gates:** primary, the v0.0.13 hard gate and monotonicity, on new seeds
+  (28000–30023).
+- **Launch:** a single command that waits for load below 70.
 
 ## Rules this lane follows
 

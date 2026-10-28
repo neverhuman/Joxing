@@ -44,7 +44,7 @@ def test_a_short_real_trial_stands_to_the_horizon(monkeypatch):
     assert out["invalid"] is None and out["ticks"] == 400
     assert out["stand_ticks"] == 400 and out["strike_ticks"] == 0
     assert out["scoring_strike_ticks"] == 0 and out["first_scoring_tick"] is None
-    assert out["opponent_fall_attribution"] is None
+    assert out["opponent_fall_attribution"] is None and out["contact_ticks"] == 0
 
 
 def test_fitness_is_stand_fraction_plus_strike_indicator():
@@ -113,6 +113,20 @@ def test_fitness_is_stand_fraction_plus_strike_indicator():
     assert valid("knockdown") == 2.0
     assert valid("unresolved") == 1.0  # body contact before the fall: blocked
     assert valid("self", opp_fall=None) == 1.0  # nobody fell
+
+    # v0.0.25: a graded penalty for non-striking contact before the opponent falls.
+    def contact(ticks, weight=0.5):
+        r = result(
+            3000, 50, scoring=9, first_hit=600, opp_fall=1500, opp_attribution="self"
+        ) | {"contact_ticks": ticks}
+        return motor_gate.fitness(
+            r, 3000, 1.0, valid_knockdown=True, contact_penalty=weight
+        )
+
+    assert contact(0) == 2.0
+    assert contact(250) == 2.0 - 0.25  # half the 0.5 s window in contact
+    assert contact(5000) == 2.0 - 0.5  # capped at the full weight
+    assert contact(5000, weight=0.0) == 2.0  # off by default
 
 
 def test_es_drops_quarantined_pairs_and_follows_the_better_twin():
