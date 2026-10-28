@@ -1,3 +1,37 @@
+# Active native interaction and recording wave — 2026-10-28
+
+Frozen public source25523545f616cab13b9ed9b4010d2c1a2db32e23; all35 changed
+published files anonymously byte-verified before launch. Both protocols/source
+are in public Git. Native mission: NATIVE_STRIKE_MISSION.md.
+Dedicated xbabe1root: /home/ubuntu/joxing/native-strike-wave-20261028.
+WavePID610650/start914295936; scoring supervisor610652/start914295951;
+pytest611372/start914296333. All614 declared source/upstream/reference/old input
+files verified, pinned runtime bootstrapped. Actual source-test CPU/log progress
+is fresh; native source/replay/render stages are not_run until prerequisites pass.
+
+Prelaunch load12.75/10.62/10.96,44.06GB available memory/274.86GB free disk;
+no unknown Joxing jobs. Wave automatically runs the repaired scoring qualification
+then the native supervisor only if its persisted prerequisite reports complete
+and original whole-budget eligibility passes. A zero exit with a halted report
+cannot activate native work. Full1144pass/one-exact-known-xfail gate includes ALL
+new native collector/controller/auditor/renderer source and tests. It is run once
+for the exact frozen source. No executing source edits or duplicate wave.
+
+Source gate/scoring stage bound1140s; dependent native supervisor55s outer cap,
+40spostgate/5797native steps/24MiB/4GiB/one worker/thread; its source/replay/audit/
+render each retain their preregistered first limits. Scoring512MiB remains512MiB.
+Original native cap900s/256MiB/120ksteps stays; if actual credit is insufficient,
+native activation stops. All historical failures/not_run rows remain. No new
+formal3snative outcome yet, no training, qualified bout or release tag.
+
+Next check: inspect wave and BOTH supervisors, actual owned processes, logs,
+resource use, every attempted row and entered/completed physics journal. On
+completion independently audit source/input/hash/PID exits, copy allrawname/
+size/SHA, inspect first/middle/last video frames, publish the complete fixed clip
+and actual legal-hit failure predicates. Stop on faults; do not change caps or
+retry old roots. Receipts: artifacts/v0.0.11/development/native-strike-{publication,
+wave-deployment,wave-progress}-01.json. Read NATIVE_STRIKE_MISSION.md first.
+
 # Ready bounded native interaction wave — 2026-10-28
 
 Implementations and preregistration now include one fixed three-second native

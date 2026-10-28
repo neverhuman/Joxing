@@ -1,0 +1,322 @@
+{
+  "observed_utc": "2026-10-28T16:49:13Z",
+  "reports": {
+    "runs/v0.0.11/native-strike-wave-01/result.json": {
+      "schema": "joxing-native-strike-wave-v1",
+      "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+      "a_protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+      "native_protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+      "process": {
+        "pid": 610650,
+        "parent_pid": 1,
+        "start_ticks": 914295936,
+        "state": "R"
+      },
+      "status": "running",
+      "stages": [
+        {
+          "name": "scoring-repair",
+          "command": [
+            "/home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/python",
+            "scripts/supervise_scored_contacts.py",
+            "--protocol-sha256",
+            "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+            "--source-sha",
+            "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+          ],
+          "wall_limit_s": 1140,
+          "supervision": "runs/v0.0.11/scored-contact-supervision-01/result.json",
+          "proof_result": "runs/v0.0.11/scored-contact-proof-01/result.json",
+          "planned_proof_rows": [
+            {
+              "id": "saved-native-source",
+              "status": "not_run"
+            },
+            {
+              "id": "saved-native-guard-control",
+              "status": "not_run"
+            },
+            {
+              "id": "published-v21-data-gap",
+              "status": "not_run"
+            },
+            {
+              "id": "rigid-head-forward",
+              "status": "not_run"
+            },
+            {
+              "id": "rigid-head-reverse",
+              "status": "not_run"
+            },
+            {
+              "id": "rigid-torso-forward",
+              "status": "not_run"
+            },
+            {
+              "id": "rigid-torso-reverse",
+              "status": "not_run"
+            }
+          ],
+          "status": "running",
+          "reason": null,
+          "process": {
+            "pid": 610652,
+            "parent_pid": 610650,
+            "start_ticks": 914295951,
+            "state": "R"
+          },
+          "owned_identities": [
+            {
+              "pid": 610652,
+              "parent_pid": 610650,
+              "start_ticks": 914295951,
+              "state": "S"
+            },
+            {
+              "pid": 610963,
+              "parent_pid": 610652,
+              "start_ticks": 914296079,
+              "state": "Z"
+            },
+            {
+              "pid": 611369,
+              "parent_pid": 610652,
+              "start_ticks": 914296329,
+              "state": "S"
+            },
+            {
+              "pid": 611372,
+              "parent_pid": 611369,
+              "start_ticks": 914296333,
+              "state": "R"
+            }
+          ]
+        },
+        {
+          "name": "native-source-replay-recording",
+          "command": [
+            "/home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/python",
+            "scripts/supervise_native_strike_probe.py",
+            "--protocol-sha256",
+            "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103",
+            "--source-sha",
+            "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+          ],
+          "wall_limit_s": 55,
+          "supervision": "runs/v0.0.11/native-strike-supervision-01/result.json",
+          "proof_result": "runs/v0.0.11/native-strike-proof-01/result.json",
+          "planned_proof_rows": [
+            {
+              "id": "fixed-source-10001-A",
+              "status": "not_run"
+            },
+            {
+              "id": "actual-mid-203-continuation",
+              "status": "not_run"
+            }
+          ],
+          "status": "not_run",
+          "reason": "pending"
+        }
+      ]
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/result.json": {
+      "schema": "joxing-scored-contact-supervisor-v1",
+      "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+      "protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+      "process": {
+        "pid": 610652,
+        "parent_pid": 610650,
+        "start_ticks": 914295951,
+        "state": "R"
+      },
+      "started_utc": "2026-10-28T16:48:30.400672+00:00",
+      "status": "running",
+      "initial_capacity": {
+        "available_memory_bytes": 44157771776,
+        "disk_free_bytes": 274858172416,
+        "load": [
+          12.7470703125,
+          10.62451171875,
+          10.95849609375
+        ],
+        "owned_raw_bytes": 0
+      },
+      "stages": [
+        {
+          "stage": "sync",
+          "command": [
+            "/home/ubuntu/.local/bin/uv",
+            "sync",
+            "--project",
+            "experiments/v0.0.11/runtime",
+            "--locked"
+          ],
+          "status": "completed",
+          "reason": null,
+          "process": {
+            "pid": 610963,
+            "parent_pid": 610652,
+            "start_ticks": 914296079,
+            "state": "R"
+          },
+          "owned_processes": [
+            {
+              "pid": 610963,
+              "parent_pid": 610652,
+              "start_ticks": 914296079,
+              "state": "S"
+            }
+          ],
+          "latest_capacity": {
+            "available_memory_bytes": 44152172544,
+            "disk_free_bytes": 274858143744,
+            "load": [
+              12.7470703125,
+              10.62451171875,
+              10.95849609375
+            ],
+            "owned_raw_bytes": 58
+          },
+          "returncode": 0,
+          "wall_s": 2.190484255552292,
+          "live_recorded_processes": []
+        },
+        {
+          "stage": "tests",
+          "command": [
+            "/home/ubuntu/.local/bin/uv",
+            "run",
+            "--project",
+            "experiments/v0.0.11/runtime",
+            "--locked",
+            "pytest",
+            "-q",
+            "-rx",
+            "-p",
+            "no:cacheprovider",
+            "--durations=15",
+            "tests",
+            "grokbot/tests"
+          ],
+          "status": "running",
+          "reason": null,
+          "process": {
+            "pid": 611369,
+            "parent_pid": 610652,
+            "start_ticks": 914296329,
+            "state": "R"
+          },
+          "owned_processes": [
+            {
+              "pid": 611369,
+              "parent_pid": 610652,
+              "start_ticks": 914296329,
+              "state": "S"
+            },
+            {
+              "pid": 611372,
+              "parent_pid": 611369,
+              "start_ticks": 914296333,
+              "state": "R"
+            }
+          ],
+          "latest_capacity": {
+            "available_memory_bytes": 42308149248,
+            "disk_free_bytes": 274832371712,
+            "load": [
+              12.53271484375,
+              10.8310546875,
+              11.0146484375
+            ],
+            "owned_raw_bytes": 3732
+          }
+        },
+        {
+          "stage": "proof",
+          "command": [
+            "/home/ubuntu/.local/bin/uv",
+            "run",
+            "--project",
+            "experiments/v0.0.11/runtime",
+            "--locked",
+            "python",
+            "scripts/qualify_scored_contacts.py",
+            "--protocol-sha256",
+            "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+            "--source-sha",
+            "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+          ],
+          "status": "not_run",
+          "reason": "pending"
+        },
+        {
+          "stage": "audit",
+          "command": [
+            "/home/ubuntu/.local/bin/uv",
+            "run",
+            "--project",
+            "experiments/v0.0.11/runtime",
+            "--locked",
+            "python",
+            "scripts/audit_scored_contacts.py",
+            "--protocol-sha256",
+            "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+            "--source-sha",
+            "25523545f616cab13b9ed9b4010d2c1a2db32e23"
+          ],
+          "status": "not_run",
+          "reason": "pending"
+        }
+      ]
+    }
+  },
+  "logs": {
+    "runs/v0.0.11/native-strike-wave-01/scoring-repair.log": {
+      "bytes": 0,
+      "modified": 1793206109.4428766,
+      "tail": ""
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/tests.log": {
+      "bytes": 39,
+      "modified": 1793206148.1274378,
+      "tail": "......................................."
+    },
+    "runs/v0.0.11/scored-contact-supervision-01/sync.log": {
+      "bytes": 58,
+      "modified": 1793206110.7968962,
+      "tail": "Resolved 43 packages in 2ms\nChecked 40 packages in 0.84ms\n"
+    }
+  },
+  "actual_processes": [
+    {
+      "pid": 610650,
+      "start_ticks": 914295936,
+      "state": "S",
+      "cpu_ticks": 194,
+      "rss_bytes": 14680064,
+      "command": "/home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/python scripts/advance_native_strike_wave.py --protocol-sha256 50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958 --source-sha 25523545f616cab13b9ed9b4010d2c1a2db32e23 --native-protocol-sha256 33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103 "
+    },
+    {
+      "pid": 610652,
+      "start_ticks": 914295951,
+      "state": "S",
+      "cpu_ticks": 1138,
+      "rss_bytes": 76423168,
+      "command": "/home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/python scripts/supervise_scored_contacts.py --protocol-sha256 50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958 --source-sha 25523545f616cab13b9ed9b4010d2c1a2db32e23 "
+    },
+    {
+      "pid": 611372,
+      "start_ticks": 914296333,
+      "state": "R",
+      "cpu_ticks": 4466,
+      "rss_bytes": 1864204288,
+      "command": "/home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/python /home/ubuntu/joxing/native-strike-wave-20261028/experiments/v0.0.11/runtime/.venv/bin/pytest -q -rx -p no:cacheprovider --durations=15 tests grokbot/tests "
+    }
+  ],
+  "load": [
+    12.40966796875,
+    10.833984375,
+    11.01416015625
+  ]
+}

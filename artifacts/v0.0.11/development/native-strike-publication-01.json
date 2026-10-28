@@ -1,0 +1,186 @@
+{
+  "schema": "joxing-native-strike-publication-v1",
+  "status": "passed",
+  "source_commit": "25523545f616cab13b9ed9b4010d2c1a2db32e23",
+  "observed_utc": "2026-10-28T16:46:07Z",
+  "anonymous_checks": [
+    {
+      "path": "README.md",
+      "bytes": 19003,
+      "sha256": "24b4d4429d73a5206f697fdf59c433af67b8c79cf92081abac4e1237a673316c"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/native-strike-development-01.json",
+      "bytes": 2219,
+      "sha256": "4298a2d2f35d8c0c168c11e986389bc16f6b4bbd3cf1c7fd499980d5592e6d84"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/scored-contact-failed-integrity-exit-01.json",
+      "bytes": 112838,
+      "sha256": "65f9510932a7be86f6661b27168afb9e326494a329c7e03b326841a4ad14bfd4"
+    },
+    {
+      "path": "artifacts/v0.0.11/development/scored-contact-failed-transfer-01.json",
+      "bytes": 483,
+      "sha256": "55fd49af1f6990faa347011f21da53e4f52b842013733b3e30136c1875a5407e"
+    },
+    {
+      "path": "artifacts/v0.0.11/scored-contact-failed-01/fault.json",
+      "bytes": 1588,
+      "sha256": "43f238dbebd07a0091d06d3b85e80d6f9b0e470515e19d9efe49164457872122"
+    },
+    {
+      "path": "artifacts/v0.0.11/scored-contact-failed-01/raw-manifest.json",
+      "bytes": 2050,
+      "sha256": "fd55ae02160448eb211dd6ebaf00e8d23547f3c01a379a638bc07edfa54a3542"
+    },
+    {
+      "path": "artifacts/v0.0.11/scored-contact-failed-01/result.json",
+      "bytes": 1699,
+      "sha256": "5be5792e99221d321ec0d6c75bdc50ae3df20332bad2a0e4a12d0e98f1910416"
+    },
+    {
+      "path": "artifacts/v0.0.11/scored-contact-failed-01/supervision.json",
+      "bytes": 8181,
+      "sha256": "4f0995da4256fbd0dd127572d70218c6bd953b24d7262152ee7191afa1563b4a"
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "bytes": 84078,
+      "sha256": "c7f95e2079557ba79e29ab6e7ce17b0a39ff1581baf6b99940d376fca06fb85d"
+    },
+    {
+      "path": "docs/MISSION.md",
+      "bytes": 13110,
+      "sha256": "69aade4728c6a3332878c25735e00a9b620597f4503f19d7e2755f38877472a0"
+    },
+    {
+      "path": "docs/NATIVE_STRIKE_MISSION.md",
+      "bytes": 8711,
+      "sha256": "0abb94a6fe23c9fcbba3ff9c15f931cf9aee92d65bd2fd0da99329bf05c84bca"
+    },
+    {
+      "path": "docs/STATUS.md",
+      "bytes": 142287,
+      "sha256": "ae894e0b06c02d86a5da75653bf6bc2da09e8ee7cd141a237cd86993a3e81977"
+    },
+    {
+      "path": "experiments/v0.0.11/README.md",
+      "bytes": 53930,
+      "sha256": "29860995973f43988af5af64183b4f14401e6134d2431ac888a2aceea15a4355"
+    },
+    {
+      "path": "experiments/v0.0.11/native-strike-protocol.json",
+      "bytes": 74290,
+      "sha256": "5029076910ca2e8a104479ef32e482064a04a228735bc0a79edaa3c4d3944a94"
+    },
+    {
+      "path": "experiments/v0.0.11/scored-contact-legacy-repair-protocol.json",
+      "bytes": 75420,
+      "sha256": "5afc159e2caa88e36a6d81f01d3d3e1c1615ed962af33283b3e12275f3c63040"
+    },
+    {
+      "path": "scripts/advance_native_strike_wave.py",
+      "bytes": 646,
+      "sha256": "4a1f40cea7eb15ccf4e531141cb407aad5c6f45ae4699fb1cc2dd23be25df8c6"
+    },
+    {
+      "path": "scripts/audit_native_strike_probe.py",
+      "bytes": 674,
+      "sha256": "745414d3929af4dc9d7028bb6b45bfcaf724837b64ef2b63c1c3dce359ff0b1e"
+    },
+    {
+      "path": "scripts/qualify_native_strike_probe.py",
+      "bytes": 625,
+      "sha256": "ced3d6a71764ca155e13f8fd1872ef6cd3bba0429580e1001e466552a4d4a603"
+    },
+    {
+      "path": "scripts/register_native_strike_probe.py",
+      "bytes": 4237,
+      "sha256": "9c89ad789127eecdd3964b2a64895cf0aec76c2eb6ce90daef428e78f0a8e9c6"
+    },
+    {
+      "path": "scripts/register_scored_contacts.py",
+      "bytes": 5514,
+      "sha256": "66a18dd0090b421e4290d3a78a59808df65b3096f22682d885349e3517ac696c"
+    },
+    {
+      "path": "scripts/render_native_strike_probe.py",
+      "bytes": 601,
+      "sha256": "2909ce0addc37e73b0c5012445e41726286b556c4c15ddb35a9fd8e959fa60dc"
+    },
+    {
+      "path": "scripts/supervise_native_strike_probe.py",
+      "bytes": 11231,
+      "sha256": "bf56abb2c1f39f58820e696e8bb99c00e5fe2dabc96dd70b7d5a1bddccdf4781"
+    },
+    {
+      "path": "scripts/supervise_scored_contacts.py",
+      "bytes": 11312,
+      "sha256": "31395c8e28d5eec8856ed69040d27fa8591b2e6ba24e35ed8d9111ca373b6886"
+    },
+    {
+      "path": "src/joxing/frozen_group_controller.py",
+      "bytes": 4033,
+      "sha256": "bc52e5dc85e1f458603c4bb3a9f3f7bfca2452103644fa715b39947e043842d7"
+    },
+    {
+      "path": "src/joxing/native_strike_audit.py",
+      "bytes": 10134,
+      "sha256": "0e6793742dd3458c79f31c3832da7971609cc23a818e3adca55b0cc800e88aba"
+    },
+    {
+      "path": "src/joxing/native_strike_display.py",
+      "bytes": 6680,
+      "sha256": "b602ea4c8d3036a2e4a8ef23f859915bdfd3b2bcd2e44d45d3fb2fe7dee48490"
+    },
+    {
+      "path": "src/joxing/native_strike_probe.py",
+      "bytes": 9805,
+      "sha256": "adb3c1d416c3adc9a457c9cce9978b9280a2b12897cf704a21f974b383e23993"
+    },
+    {
+      "path": "src/joxing/native_strike_qualification.py",
+      "bytes": 10368,
+      "sha256": "4a889f4e3f494ad18b242e3f153db0403eb667a08779842905429b56036cd259"
+    },
+    {
+      "path": "src/joxing/native_strike_wave.py",
+      "bytes": 7081,
+      "sha256": "901af4a4248a1760f34b5641b6e12098eede82c3c1bbfe34e81972ab2443f6f4"
+    },
+    {
+      "path": "src/joxing/score_diagnostic.py",
+      "bytes": 11674,
+      "sha256": "9f80e3959336e0d56badbe09cdfe8cfa1e4b895b3e3165460156513fdf9ee3c6"
+    },
+    {
+      "path": "src/joxing/score_qualification.py",
+      "bytes": 13170,
+      "sha256": "8dd40c0d4447323bbac1cd6efcbb63f0d8906aea4c4721edcf098aa54b136083"
+    },
+    {
+      "path": "tests/test_frozen_group_controller.py",
+      "bytes": 3034,
+      "sha256": "43a3d7ca7dbd8c487eb11833ce27656e452cd0affbb9011440cc5e20b5216125"
+    },
+    {
+      "path": "tests/test_native_strike_probe.py",
+      "bytes": 5443,
+      "sha256": "128bb77203c38da67e066740faec866a4050c34ca7dd69fdef57297e025ffd5c"
+    },
+    {
+      "path": "tests/test_native_strike_wave.py",
+      "bytes": 890,
+      "sha256": "33f26211cc56ad16200c703499e85a82860fcb50914208943e05aa7ecb4a6494"
+    },
+    {
+      "path": "tests/test_score_diagnostic.py",
+      "bytes": 10447,
+      "sha256": "9ec74840c76e8e9f1a505b0d7e02e8fb113aa270a53b75df1c5a3252a682ed11"
+    }
+  ],
+  "formal_native_outcomes_observed": false,
+  "a_protocol_sha256": "50b1d6ab90a5be39184d560b13970c477059b95306661751e2e980da3bbfa958",
+  "native_protocol_sha256": "33fc2903098481cd13fe3585bf3cb55cb8824517cb3b6b48f883b3737040d103"
+}
