@@ -1,0 +1,80 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.14",
+ "registered_utc": "2026-10-28T01:24:50Z",
+ "owner_requirements": [
+  "gb_feedback_0110: fix engagement first with a preregistered valid-game-rate floor (>= 50%) BEFORE any strike or Elo claim, then Elo vs frozen v0.0.11 with CI lower bound > 0",
+  "gb_feedback_0130: preregistered measurable level-up, Elo vs v0.0.12 baseline, fixed seeds, non-degenerate league with valid games; prereg before training"
+ ],
+ "baseline": {
+  "name": "v12base",
+  "definition": "v0.0.12 champion = its gen0 = v0.0.11 gen4 parameters (identical vector; no v0.0.12 generation was promoted)",
+  "source": "grokbot/redteam/data/cycle-0014-league-summary.json archive gen4"
+ },
+ "classification": "diagnostic self-play; AGENTS.md boxing gates remain unmet; no claim of boxing competence",
+ "rules": {
+  "attribution": "grokbot-ending-reference-v2",
+  "anti_stalling": true,
+  "env": "ReferenceEndingEnv(anti_stalling=True) over grokbot RangeBoxingEnv; jekko env/referee unchanged"
+ },
+ "reset": {
+  "separation_m": 0.5,
+  "label": "grokbot-range-0.50m-v0",
+  "why": "scoping (cycle 0017): <=0.45 m bouts are blocked by body collision, >=0.6 m have no contact"
+ },
+ "scoping_evidence_before_registration": "fixed gen4+punch policies at 0.40-0.70 m, single and mutual punches, two amplitudes: 0 strikes and 0 valid results in 32 probe bouts",
+ "policy": {
+  "kind": "PunchPolicy",
+  "init": "punch_params(v12base, onset=-3.0, duration=0.0, amplitude=2.0)"
+ },
+ "training": {
+  "generations": 4,
+  "iterations": 3,
+  "pairs": 8,
+  "sigma": 0.1,
+  "lr": 0.05,
+  "seed": 4,
+  "training_only_terms": {
+   "valid_bonus": 1.0,
+   "no_contest_penalty": 0.5,
+   "strike_bonus": 1.0,
+   "shaping_key": "extension",
+   "shaping_weight": 0.5
+  },
+  "frozen_anchor": "v12base",
+  "horizon_ticks": 3000,
+  "workers": 4,
+  "nice": 10
+ },
+ "evaluation": {
+  "eval_seeds": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "eval_noise": 0.05,
+  "opponents": "every earlier checkpoint, scripted panel, v12base",
+  "paired_samples": "side-swapped pairs sharing a seed count once"
+ },
+ "criteria": {
+  "stage_1_engagement_floor": "the generation's evaluation valid-result share (not no-contest, not blocked, not engine fault) >= 0.50",
+  "stage_2_level_up": "in a generation meeting stage 1: one-sided 95% Hoeffding lower bound of paired mean utility vs v12base > 0 (12 pairs) AND promotion by grokbot.promotion.decide against the champion with min_engaged_share 0.25",
+  "level_up": "iff some generation meets stage 1 and stage 2"
+ },
+ "pre_declared_readings": [
+  "stage 1 fails: engagement cannot be fixed by spawn distance and training terms with the current motor primitives; next lever is motor capability (stance + targeted reach), not league design",
+  "stage 1 passes, stage 2 fails: valid games exist but no measurable superiority over the baseline"
+ ],
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0018-engagement-floor.py"
+ ]
+}

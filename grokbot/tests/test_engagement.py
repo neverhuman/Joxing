@@ -208,3 +208,32 @@ def test_a_physics_fault_quarantines_the_game_instead_of_crashing(monkeypatch):
     )
     assert out["invalid"] == "RuntimeError: Invalid physics substep: quarantine episode"
     assert out["utility"] == 0.0 and out["points"] is None and out["tick"] == 37
+
+
+def test_valid_result_excludes_no_contests_blocks_and_faults():
+    assert selfplay.valid_result(game(1.0))
+    assert not selfplay.valid_result(game(0.0) | {"no_contest": True})
+    assert not selfplay.valid_result(game(0.0) | {"blocked": True})
+    assert not selfplay.valid_result(game(0.0, "RuntimeError: fault"))
+
+
+def test_training_rewards_valid_bouts_over_no_contests():
+    """v0.0.14 training-only terms: +valid bonus, -no-contest penalty."""
+    params = np.zeros(selfplay.N_PARAMS)
+    pool = FakePool([game(0.0), game(0.0) | {"no_contest": True}])
+    out, stats = selfplay.train_generation(
+        pool,
+        params,
+        {},
+        {},
+        np.random.default_rng(0),
+        iterations=1,
+        pairs=1,
+        sigma=0.1,
+        lr=0.05,
+        valid_bonus=1.0,
+        no_contest_penalty=0.5,
+    )
+    noise = np.random.default_rng(0).standard_normal((1, selfplay.N_PARAMS))
+    assert stats["valid_share"] == 0.5
+    assert out == pytest.approx(0.05 * noise[0] / (2 * 0.1))  # moves toward +noise
