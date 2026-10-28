@@ -1,0 +1,105 @@
+{
+  "observed_utc": "2026-10-28T14:55:17Z",
+  "report": {
+    "schema": "joxing-motor-codec-supervisor-v1",
+    "source_commit": "92ef8d05f0d56664129de52fc84ad3589f2314aa",
+    "protocol_sha256": "4874406b339ff4202ea351ab5f13d1d94f5c5c97a0dc14c66d99e6f8a2b92bbc",
+    "process": {
+      "pid": 3497436,
+      "parent_pid": 1,
+      "start_ticks": 913593535,
+      "state": "R"
+    },
+    "started_utc": "2026-10-28T14:51:26.136782+00:00",
+    "status": "running",
+    "initial_capacity": {
+      "available_memory_bytes": 33098416128,
+      "disk_free_bytes": 266678018048,
+      "load": [
+        8.74853515625,
+        10.5791015625,
+        9.60009765625
+      ],
+      "owned_raw_bytes": 0
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "status": "completed",
+        "reason": null,
+        "process": {
+          "pid": 3497528,
+          "parent_pid": 3497436,
+          "start_ticks": 913593639,
+          "state": "R"
+        },
+        "latest_capacity": {
+          "available_memory_bytes": 33070948352,
+          "disk_free_bytes": 266671853568,
+          "load": [
+            8.74853515625,
+            10.5791015625,
+            9.60009765625
+          ],
+          "owned_raw_bytes": 55
+        },
+        "returncode": 0,
+        "wall_s": 2.189980074763298,
+        "live_recorded_processes": [],
+        "log_tail": "Resolved 43 packages in 2ms\nChecked 40 packages in 1ms\n"
+      },
+      {
+        "stage": "tests",
+        "status": "running",
+        "reason": null,
+        "process": {
+          "pid": 3497611,
+          "parent_pid": 3497436,
+          "start_ticks": 913593877,
+          "state": "R"
+        },
+        "latest_capacity": {
+          "available_memory_bytes": 37660282880,
+          "disk_free_bytes": 274311659520,
+          "load": [
+            7.46435546875,
+            9.49560546875,
+            9.41650390625
+          ],
+          "owned_raw_bytes": 4363
+        },
+        "actual_live": [
+          {
+            "pid": 3497611,
+            "start_ticks": 913593877,
+            "cpu_ticks": 1,
+            "rss_bytes": 40894464
+          },
+          {
+            "pid": 3497614,
+            "start_ticks": 913593880,
+            "cpu_ticks": 23771,
+            "rss_bytes": 3868057600
+          },
+          {
+            "pid": 3529163,
+            "start_ticks": 913605411,
+            "cpu_ticks": 2,
+            "rss_bytes": 11534336
+          }
+        ],
+        "log_tail": "........................................................................ [  6%]\n........................................................................ [ 13%]\n........................................................................ [ 19%]\n........."
+      },
+      {
+        "stage": "codec",
+        "status": "not_run",
+        "reason": "pending"
+      },
+      {
+        "stage": "audit",
+        "status": "not_run",
+        "reason": "pending"
+      }
+    ]
+  }
+}
