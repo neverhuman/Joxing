@@ -1,0 +1,34 @@
+{
+ "schema": "grokbot-preregistration-v1",
+ "version": "v0.0.20-ladder-addendum",
+ "registered_utc": "2026-10-28T10:38:28Z",
+ "amends": "grokbot/redteam/protocols/v0.0.20.json (sha256 18cf2ef5...) - adds two REPORTS; changes no gate, no decision",
+ "owner_requirements": [
+  "gb_feedback_1005/1030: report a round-robin Elo/ladder vs ALL prior frozen versions (v0.0.11..v0.0.19) to catch non-transitive cycling, and a check that league games are not degenerate (draw/stall rate, game length)"
+ ],
+ "registered_before": "pushed while the v0.0.20 league was running and before any of its output was read",
+ "ladder": {
+  "players": {
+   "v0.0.11": "kind params, cycle-0014 archive gen4 (champion)",
+   "v0.0.12": "kind params, cycle-0016 archive champion",
+   "v0.0.13": "kind punch, cycle-0017 archive champion",
+   "v0.0.14": "kind punch, cycle-0018 archive champion",
+   "v0.0.15": "kind punch, cycle-0019 final_params",
+   "v0.0.16": "kind group, cycle-0020 final_params",
+   "v0.0.17": "kind group_feedback, cycle-0022 final_params",
+   "v0.0.18": "kind group_pd, cycle-0023 final_params",
+   "v0.0.19": "kind group_pd, cycle-0025 final_params",
+   "v0.0.20": "kind group_pd, the v0.0.20 league champion (report['league']['archive'][champion])"
+  },
+  "aliases": "players with identical (kind, params) are played once under the earliest name; aliases listed in the report",
+  "games": "round robin over distinct players; seeds 9000-9005, both sides (12 games per pairing); selfplay.play_game at RangeBoxingEnv(0.5 m, 3000 ticks), anti-stalling, ending v2; eval noise 0.05",
+  "ratings": "grokbot.league.Ledger.ratings(anchor='v0.0.11') (Bradley-Terry on the Elo scale, draw = half) and bootstrap_ratings (200 samples, 95%)",
+  "cycling": "pairwise score = mean utility over valid games; count intransitive triads (a beats b, b beats c, c beats a, each with nonzero score); list them",
+  "degeneracy": "per pairing and overall: valid / no-contest / blocked / engine-fault shares and median end tick"
+ },
+ "league_degeneracy": "from the v0.0.20 league report: per generation training valid share, training median end tick, evaluation valid / no-contest shares, engaged share",
+ "decision": "reporting only; v0.0.20 level_up stays exactly as registered in v0.0.20.json",
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0028-ladder.py"
+ ]
+}
