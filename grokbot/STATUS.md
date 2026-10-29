@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-28 ~23:00 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-29 ~02:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `5dd6bdb`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** green at `7579a5f`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -31,6 +31,7 @@ and `grokbot/redteam/cycle-*.md`.
 | v0.0.20 | two-player self-play league (outcome only) | 16/24 | 24/24 | 3.000 s | **honest null**: no promotion, champion = v0.0.19; primary 3/48 valid; not tagged |
 | v0.0.21 | training opponent = frozen v0.0.19 | 1/24 | 10/24 | 1.856 s | **CRITERION_NOT_MET**: 48/48 valid but 4–2–42 draws (referee points 0–0); NOT monotone (@48 lost 0–20 to @16); vs v0.0.13 46/48 blocked; not tagged |
 | v0.0.22 | knockdown objective | 0/24 | 24/24 | 1.816 s | **primary PASSED** (46–0–0 vs v0.0.19), but the hard gate failed (36/48 valid vs v0.0.13, 12 blocked) and monotonicity was unmeasurable (@16 vs v0.0.19 38/48 valid); level-up NOT met; not tagged |
+| v0.0.26 | contact penalty trained vs both v0.0.19 and v0.0.13 | 11/24 | 24/24 | 2.82 s | primary PASSED (46–0), **hard gate PASSED (48/48 vs v0.0.13)**, monotonicity FAILED (@16 lost 2–40 to base; @48 vs @16 24–24); not tagged |
 | v0.0.25 | graded contact penalty from v0.0.22 (smoke passed) | 0/24 | 22/24 | 1.435 s | **primary PASSED** (48–0 vs v0.0.19, contact 380 → 113), but the hard gate scored 0/48 valid vs v0.0.13 (all blocked) and monotonicity failed (@16 lost 4–44 to base); not tagged |
 | v0.0.24 | valid-knockdown bonus from v0.0.22 (smoke-gated) | — | — | — | **SMOKE_FAILED**: bonus fired 23/24, but base head-to-head 10/12 valid (< 90%); no training; not tagged |
 | v0.0.23 | clean-knockdown objective (bonus never fired) | 2/24 | 23/24 | 1.923 s | **VALIDITY_FAILED** (primary 5/48 valid); hard gate 14/48; not tagged. Knockdowns of v0.0.19 are attributed `self` (fall 1–2 s after the hit), not `knockdown` |
@@ -62,17 +63,13 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.26 (its own preregistration PR)
+## Next step: v0.0.27 (its own preregistration PR)
 
-- **One lever:** alternate the training opponents, v0.0.19 and v0.0.13,
-  per ES pair. v0.0.25's contact penalty worked against v0.0.19 (0
-  blocked, 48–0) but gave 48/48 blocked against v0.0.13, which it never
-  saw.
-- **Kept from v0.0.25:** the contact penalty, the valid-knockdown bonus and
-  the v0.0.22 start.
-- **Smoke gate on both opponents.** The same ordered gates on new seeds;
-  monotonicity is required.
-- **Launch:** a single command gated on main CI green and load below 70.
+- **One lever: a smaller ES step,** lr 0.05 → 0.02. Twice now (v0.0.25 and
+  v0.0.26) @16 lost heavily to its own start.
+- **Kept from v0.0.26:** both training opponents, the contact penalty, the
+  valid-knockdown bonus, the v0.0.22 start, the smoke gate and the ordered
+  gates on new seeds.
 
 ## Rules this lane follows
 
