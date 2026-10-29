@@ -186,6 +186,21 @@ def fitness(
     return result["stand_ticks"] / horizon_ticks + strike_bonus * earned - contact
 
 
+def rank_shares(differences, slots, n):
+    """Each rotation slot's share of an ES update's total |rank difference|.
+
+    Pooled centred ranks weight a pair by how far apart its twins rank among
+    all pairs, so an opponent whose fitness sits below the others' gets less of
+    the update than its share of pairs (cycle 0044: the v0.0.22 base got
+    0.23-0.28 of v0.0.28's update for a third of the pairs).
+    """
+    total = np.abs(differences).sum()
+    return [
+        float(np.abs(differences[slots == s]).sum() / total) if total else 0.0
+        for s in range(n)
+    ]
+
+
 def train(
     workers_pool,
     params,
@@ -205,13 +220,16 @@ def train(
     clean_knockdown=False,
     valid_knockdown=False,
     contact_penalty=0.0,
+    log_rank_shares=False,
     log=print,
 ):
     """Antithetic ES on the solo fitness; quarantined pairs are dropped.
 
     ``opponent`` is one frozen spec, or a list of specs that ES pairs cycle
     through (pair k faces ``opponent[k % n]``; both twins of a pair face the
-    same one, so the antithetic comparison stays paired) - v0.0.26.
+    same one, so the antithetic comparison stays paired) - v0.0.26. A spec may
+    appear in several slots to weight it. ``log_rank_shares`` (v0.0.29) adds
+    each slot's ``rank_shares`` of the update to the history rows.
     """
     opponents = opponent if isinstance(opponent, list) else [opponent]
     history = []
@@ -295,6 +313,16 @@ def train(
         if clean_knockdown:
             row["clean_knockdown_share"] = float(
                 np.mean([not r["invalid"] and clean_knocked_down(r) for r in results])
+            )
+        if log_rank_shares:
+            row["rank_share_by_slot"] = (
+                rank_shares(
+                    ranks[:, 0] - ranks[:, 1],
+                    (np.arange(pairs) % len(opponents))[valid],
+                    len(opponents),
+                )
+                if valid.any()
+                else None
             )
         history.append(row)
         log(row)
