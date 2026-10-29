@@ -1,3 +1,20 @@
+# Active repaired full Linux gate — 2026-10-29 19:08 UTC
+
+Frozen0b93aa82/protocol53cfa636; public bytes and all710declared files verified
+before launch. Fresh xbabe1:/home/ubuntu/joxing/upper-task-source-repair-20261029.
+Supervisor4115432/start923770182; tests4116018/start923770552. Sync/runtime pass;
+actual test PID/start matches,32progress dots and3425CPU ticks at29.899s show
+real progress. Sampled peak1,976,795,136bytes/8GiB,40.77GB available RAM,220.53GB
+disk; no other owned Joxing job at launch. All three historical executable blobs
+verified. Full1244case result remains pending; unchanged exact-known-xfail gate.
+
+Do not edit executing source or launch duplicate. On completion independently
+verify every test/JUnit/xfail/source/history/resource/output and owned exit before
+qualification, then publish and define the finite physical probe/recording task.
+No checkpoint motor/training/boxing outcome or release tag from this source gate.
+Current packet: docs/UPPER_TASK_SOURCE_REPAIR_MISSION.md. Keep original failed
+attempt and successful bounded diagnosis; no old caps or criteria changed.
+
 # H10 deployment diagnosis passed; one repaired full source gate ready — 2026-10-29
 
 Current mission docs/UPPER_TASK_SOURCE_REPAIR_MISSION.md; protocol

@@ -48,8 +48,8 @@ command isolation; physical balance and continuation remain open.
 exact neutral physical/contact parity and nonzero mid-hold continuation with a
 synthetic actor. The first full gate stopped; bounded Linux diagnosis confirmed a missing
 historical executable and passes the positive audit plus both corruption checks.
-[One repaired full-source attempt](docs/UPPER_TASK_SOURCE_REPAIR_MISSION.md)
-is next; released-teacher balance and boxing remain unqualified.
+[One repaired 1,244-test full-source attempt](docs/UPPER_TASK_SOURCE_REPAIR_MISSION.md)
+is running on xbabe1; released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)

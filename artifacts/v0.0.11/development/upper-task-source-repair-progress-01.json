@@ -1,0 +1,34 @@
+{
+  "schema": "joxing-upper-task-source-repair-progress-v1",
+  "observed_utc": "2026-10-29T19:08:06Z",
+  "source_commit": "0b93aa82bec36743858cc1e18c86c5910482cc44",
+  "protocol_sha256": "53cfa636af44be29c06d7a0713e56819772e422a8caf5d1c656736191f4e61ef",
+  "root": "/home/ubuntu/joxing/upper-task-source-repair-20261029",
+  "status": "running",
+  "stage": "tests",
+  "supervisor": {
+    "pid": 4115432,
+    "start_ticks": 923770182
+  },
+  "test_process": {
+    "pid": 4116018,
+    "start_ticks": 923770552
+  },
+  "actual_identity_matches": true,
+  "actual_cpu_ticks": 3425,
+  "elapsed_s": 29.899167396128178,
+  "peak_owned_rss_bytes": 1976795136,
+  "fixture_bytes": 49341,
+  "receipt_bytes": 218125,
+  "available_memory_bytes": 40768299008,
+  "free_disk_bytes": 220528889856,
+  "load": [
+    10.10888671875,
+    11.20068359375,
+    10.76953125
+  ],
+  "log_tail": "................................",
+  "formal_native_evaluation_steps": 0,
+  "formal_training_updates": 0,
+  "source_gate_outcome": "pending"
+}
