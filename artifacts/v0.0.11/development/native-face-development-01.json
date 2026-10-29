@@ -1,0 +1,90 @@
+{
+  "schema": "joxing-native-face-development-v1",
+  "tests_passed": 20,
+  "wall_s": 9.23,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_native_face_audit.py",
+    "tests/test_native_face_evidence.py"
+  ],
+  "ruff": "passed",
+  "new_physics": 0,
+  "source_files": {
+    "src/joxing/__init__.py": {
+      "bytes": 86,
+      "sha256": "b2e944ab0a71e441b3a3b9405fecc6be0b34d811b0c1d69e3f44d35b7c6b8092"
+    },
+    "src/joxing/native_face_audit.py": {
+      "bytes": 16633,
+      "sha256": "c5423b0d57eb8c6d1ef51d78d903c35df2cd4d77f930fcec9623a0f62dd2eb20"
+    },
+    "src/joxing/native_face_evidence.py": {
+      "bytes": 10994,
+      "sha256": "32dd38f9f29faee4ecfa7e3ca1d06bbab25c8a01b43ac94eff3cea3875c6b5e9"
+    },
+    "src/joxing/native_face_qualification.py": {
+      "bytes": 9833,
+      "sha256": "35a0fa7092c7db08fb56f50ecb91c166aefb59ee4cd8faa1349c293cc42e23ac"
+    },
+    "src/joxing/scene.py": {
+      "bytes": 8939,
+      "sha256": "101b1c67a0a42f2a4a5e85ca8cfc80ee69679571f1f5f41889dda859705559e0"
+    },
+    "src/joxing/referee.py": {
+      "bytes": 8628,
+      "sha256": "12e918f746e6b35cf365a0d198466a9bc805edb33ce5de4c4556d573c611c7b0"
+    },
+    "src/joxing/physics.py": {
+      "bytes": 7321,
+      "sha256": "9766aa19a2eefab496b69d5a977394f11e9968f722c27c397fc85ee383787641"
+    },
+    "src/joxing/rules.py": {
+      "bytes": 10134,
+      "sha256": "4c75013718eb8cc0c83f00a6f6e671d405c08192f7b9c31ed4b4439d1fb57ffd"
+    },
+    "src/joxing/provenance.py": {
+      "bytes": 2552,
+      "sha256": "a81e9d94dce0297288ee6bf8f1a5a26c4f46549b54818fd768ea3053e6591925"
+    },
+    "src/joxing/motor_storage.py": {
+      "bytes": 2809,
+      "sha256": "a14900c3102d87f4d6a1b9ae21b8f831c13593fe95b7e8ba175b700eb26da6c1"
+    },
+    "src/joxing/evidence_storage.py": {
+      "bytes": 13480,
+      "sha256": "c53974fe6c0eef9e44f500fd237d56797570cded40f9dc3324f109f67887d842"
+    },
+    "scripts/qualify_native_face_audit.py": {
+      "bytes": 89,
+      "sha256": "6ce2ec5b20c948ff8e38d4ef7ef4fcc4089bd347deb9e659ef18ef776f1452a2"
+    },
+    "scripts/supervise_native_face_audit.py": {
+      "bytes": 12053,
+      "sha256": "f3436db15400f4833a20e4fe381e11aee7dd3fc8869b19f54bbe50881e69896a"
+    },
+    "tests/test_native_face_audit.py": {
+      "bytes": 5072,
+      "sha256": "beee888f9cca13516bb47c83c611e90a51e62c97606b539eb4aedd20c02e69d7"
+    },
+    "tests/test_native_face_evidence.py": {
+      "bytes": 2703,
+      "sha256": "c34c104537c899e22a33a293bdd910f8261b278f947bd885541648c6ff473504"
+    },
+    "pyproject.toml": {
+      "bytes": 1027,
+      "sha256": "c1fe5cdbc86c0d4cc7a139adc043153934ba9910df0f98907b0c4648e855224f"
+    },
+    "experiments/v0.0.11/runtime/pyproject.toml": {
+      "bytes": 543,
+      "sha256": "3024da0eb8fc42d726be3d209248a221207aa95789fc1d13735ae6e844959324"
+    },
+    "experiments/v0.0.11/runtime/uv.lock": {
+      "bytes": 68394,
+      "sha256": "9dc2332fe46eefc51aa133c6e0e9e90790899eb67b94345ac2447967464ebd5c"
+    }
+  },
+  "scope": "Development scratch FK/synthetic contacts/corruption controls only; no formal qualification or anatomical punch claim"
+}

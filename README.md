@@ -4,6 +4,10 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
+**Research memory:** [H1–H12 ideas and compressed outcomes](research/README.md).
+Small text notes link to the original protocols, receipts, failures and next
+actions. H9 is the active diagnostic; H10 is the next motor direction.
+
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
 valid and both replays exact. Survival changed−0.066s/+0.016s, with1/8five-second
@@ -26,6 +30,12 @@ or training ran. The uncompressed archives are larger; the writer remains
 opt-in, with a named smaller-video size estimate for later integration.
 [Results and retained failures](docs/NATIVE_TAPE_STORAGE_RESULTS.md) ·
 [Next: native glove-face calibration and pretrained balance](docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md).
+
+**Next diagnostic implemented:** [native glove-face and point-velocity qualification](docs/NATIVE_FACE_AUDIT_MISSION.md).
+Twenty development checks pass. The bounded zero-step task tests the existing
+mechanical face convention on all four native gloves, reversed contacts and
+rotating limbs; independent reconstruction checks the saved evidence. Formal
+outcomes are pending. Synthetic contacts do not demonstrate a physical punch.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)

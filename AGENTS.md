@@ -17,3 +17,10 @@ Record exact commands, versions, seeds, hashes, failures, invalid attempts, and 
 On shared compute use dedicated ~/joxing workspaces, bounded workers and thread limits. Inspect load before launch. Never stop unrelated jobs or change host services. GPU physics requires exact-model feature/parity benchmarks before scaling.
 
 No concurrent writers to referee/scene schemas. Parallel work requires disjoint paths and a named integration owner. Normal task execution does not authorize spawning additional agents.
+
+Maintain compressed research memory in research/README.md and numbered H*.md
+notes. Read the index before repeating work; update the relevant hypothesis with
+idea, registered test, all outcomes/faults, limits, decision and receipt links.
+Mark retrospective summaries; never substitute notes for preregistration or
+rewrite failed criteria. Follow research/TEMPLATE.md and the next unused ID.
+Keep only small text summaries there, with no raw runs, checkpoints or media.

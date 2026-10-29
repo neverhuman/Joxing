@@ -20,6 +20,14 @@ Chin, temple, liver and solar plexus are useful telemetry labels. Their separate
 
 Impulse qualifies a hit. It does not multiply its points. Peak force, vector impulse, normal impulse and location remain visible in telemetry. Forces are model predictions until empirical calibration exists. No injury, concussion, organ-shock or physiological knockout claim is supported.
 
+The current adapter's mechanical striking face is glove-body local −Y and the
+outward hemisphere of its spherical collider. The equipment center is displaced
+45 mm along that direction from the native hand origin; radius is62 mm. This
+documents the existing implementation, not an independently calibrated anatomical
+knuckle surface. [Native face diagnostic](NATIVE_FACE_AUDIT_MISSION.md) checks
+that convention and point-velocity signs using scratch FK/synthetic contacts;
+it cannot establish a real punch or alter the2/1point rules.
+
 ## One punch, one score
 
 One state machine per glove tracks an encounter with the opponent across manifold points, scoring zones and brief contact gaps. Initial candidate constants: 50 ms scoring window; 8 ms gap hysteresis; 0.25 N s qualifying direct-zone impulse; 0.5 m/s target-onset approach and active glove motion; face-axis cosine at least 0.5. These are simulation-rule trial values, not biological thresholds.

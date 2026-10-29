@@ -1,3 +1,30 @@
+# Native face diagnostic implemented; bounded zero-step qualification ready — 2026-10-29
+
+Compressed cross-version memory: ../../research/README.md; active hypothesis H9,
+next H10. Full machine protocols/results below remain the evidence authority.
+
+Current mission docs/NATIVE_FACE_AUDIT_MISSION.md; machine protocol
+experiments/v0.0.11/native-face-audit-protocol.json. No formal outcome yet.
+20local tests pass9.23s/Ruffpass: all1400native muscles,192synthetic rows,
+12prescribed scratch states, A/B yaw/hand geometry, reversed contact order,
+material-point finite-difference velocities and independent saved-model audit.
+Fault controls reject face-sign/center-velocity/state/geometry/denominator/NaN
+corruption. Mechanical hemisphere consistency is not anatomical or real-force
+calibration. No integration, referee commits, points or training are allowed.
+
+Public-freeze and anonymously verify first, then fresh dedicated xbabe1root
+native-face-audit-20261029, pinned MS-Human assets/runtime, exact20targeted Linux
+checks before30sproof/20saudit/60spostgate,4GiB RSS/4MiB raw/one thread/0steps.
+All268source/runtime/asset files and both upstream pins bind the source. No old
+cap or negative result changes. Source/evidence/root writers remain disjoint.
+On completion audit every192row/event, model/output hashes, raw transfer and
+owned exits; publish limits/results. No v11tag or boxing/motor promotion.
+
+Next after this diagnostic is pretrained motor inventory and a balance-preserving
+zero-residual interface, then a separately registered finite adaptation/replay
+pilot. Do not freeze a walking phase to masquerade as standing guard. Existing
+writer remains opt-in and qualified offline; no new collector/physics activation.
+
 # Fast exact writer qualified; native face calibration is next — 2026-10-29
 
 Read docs/NATIVE_TAPE_STORAGE_RESULTS.md. Both saved-corpus rows pass after24
