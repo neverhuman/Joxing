@@ -15,6 +15,19 @@
 | v0.0.26 | Both training opponents | Monotonicity (@16 lost 2–40 to base) | cycle 0040 |
 | v0.0.27 | Smaller ES step (lr 0.02) | Monotonicity (@16 lost 0–48 to base; @48 lost 11–37 to @16) | cycle 0042 |
 | v0.0.28 | Frozen start as a self-play training opponent | Monotonicity (@16 lost 2–46 to base; @48 beat @16 46–2) | cycle 0044 |
+| v0.0.29 | Base faces half of the ES pairs | Monotonicity (@16 lost 16–32 to base; @48 beat @16 47–1) | cycle 0046 |
+
+## v0.0.29 — 2026-10-29 (preregistered level-up NOT met; not tagged)
+
+grokbot PR #45 (preregistration) plus the cycle-0046 report.
+
+- **Lever:** the frozen v0.0.22 base faces half of the ES pairs (rotation v0.0.19, base, v0.0.13, base).
+- **Instrumentation:** per-slot rank-share logging, tested to leave the update unchanged.
+- **Smoke gate passed,** including the lever check: the base's measured update share was 0.40 and 0.57.
+- **Primary and hard gate: passed.** The primary vs v0.0.19 went 44–0 with 4 blocked; the hard gate vs v0.0.13 was 46/48 valid, 46–0.
+- **Monotonicity: FAILED.** @48 beat @16 47–1, but @16 lost **16–32** to the base. In v0.0.28 that matchup was 2–46.
+- **Finding:** the early dip responds to the base's update share (0.25 gave 2–46; 0.44 gave 16–32).
+- **Next (v0.0.30):** a curriculum, with the base as the only opponent for the first 16 iterations.
 
 ## v0.0.28 — 2026-10-29 (preregistered level-up NOT met; not tagged)
 
