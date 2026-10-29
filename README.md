@@ -46,8 +46,9 @@ command isolation; physical balance and continuation remain open.
 
 **Shared arm wrapper implemented:** 81focused development tests pass, including
 exact neutral physical/contact parity and nonzero mid-hold continuation with a
-synthetic actor. The [full Linux source gate](docs/UPPER_TASK_SOURCE_GATE_MISSION.md)
-is next; released-teacher balance and boxing remain unqualified.
+synthetic actor. The full Linux gate stopped on its storage guard with two historical-audit
+test failures. [Bounded diagnosis and retained failure](docs/UPPER_TASK_GATE_FAILURE_PACKET.md)
+come next; released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)

@@ -1,0 +1,1412 @@
+{
+  "schema": "joxing-upper-task-failed-source-integrity-v1",
+  "status": "verified_failed_attempt",
+  "source_commit": "160185e1ab46c0f3fb27d0bf04274c5635740a94",
+  "protocol_sha256": "7745d9cfd996a95f2ce33c4c55d946ef82d3048be18ed09c2f57db7386f90913",
+  "registered_tests": 1242,
+  "reported_marks": 187,
+  "reported_pass": 185,
+  "reported_fail": 2,
+  "failed_indices_zero_based": [
+    184,
+    185
+  ],
+  "remaining_unconfirmed_or_not_run": 1055,
+  "unreported_completion_cannot_be_inferred": true,
+  "original_error": "RuntimeError: Source-gate fixture/receipt credit",
+  "source_files_verified": 642,
+  "identities_exited": [
+    {
+      "pid": 1392034,
+      "parent_pid": 1,
+      "start_ticks": 920033449,
+      "state": "R"
+    },
+    {
+      "pid": 1392087,
+      "parent_pid": 1392034,
+      "start_ticks": 920033576,
+      "state": "Z"
+    },
+    {
+      "pid": 1392218,
+      "parent_pid": 1392034,
+      "start_ticks": 920033756,
+      "state": "Z"
+    },
+    {
+      "pid": 1392667,
+      "parent_pid": 1392034,
+      "start_ticks": 920033936,
+      "state": "R"
+    }
+  ],
+  "live_writers": [],
+  "fixture_manifest": {
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/compiled-scene0/scene.json": {
+      "bytes": 28836,
+      "sha256": "3016ed272308e512c2ad00451415c635e7d0d7fb7c6c9db48fd3ac531ac4a554"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/compiled-scene0/scene.mjb": {
+      "bytes": 180809620,
+      "sha256": "02806d29bba614ea3f110f3729d4cdb7319992f0df41986241a05c9bcfdf03c3"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/boundary/contract.json": {
+      "bytes": 816,
+      "sha256": "8d090060f0f003a12c8678010d7ca819cbc0409c77e1b32b228710df3cfbf884"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/boundary/final.json": {
+      "bytes": 819678,
+      "sha256": "7752e5b314992a4e37d135c838748fbe81a84afc39663ab4ef791da1ec3860c8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/boundary/initial.json": {
+      "bytes": 679330,
+      "sha256": "f26af74e11734f0cde87ce2330368f33a215f4a4e8bc7fb878a824e863bbc151"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/boundary/tape.npz": {
+      "bytes": 105751,
+      "sha256": "1ca823d71ae59d2e20ba27fd2f348961e9f90304a50f7c10a393097c4ac0f601"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/boundary/trace.json": {
+      "bytes": 106404,
+      "sha256": "d2fd4838b0c69f335c8de216286056855728878afe5bc8767787d7ceccea4f39"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact/tape.npz": {
+      "bytes": 80878,
+      "sha256": "4c21523261099efb865ba6e645382146c14e47bc8df63c40677fd77d805ac481"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact-replay/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact-replay/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact-replay/initial.json": {
+      "bytes": 404610,
+      "sha256": "2b311db0f9470b8c74ad2ec02759e21e7d4c4065110313e689393f0b58bad682"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact-replay/tape.npz": {
+      "bytes": 73166,
+      "sha256": "cabf849f182a57bfd2a10e504c35df37364194378f1963667e7488999f87eb38"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/contact-replay/trace.json": {
+      "bytes": 144190,
+      "sha256": "881fd6e797b0f2691968c344a1f73fc80568ea28ec25fdeb281fa1283799f054"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/mid/contract.json": {
+      "bytes": 816,
+      "sha256": "8d090060f0f003a12c8678010d7ca819cbc0409c77e1b32b228710df3cfbf884"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/mid/final.json": {
+      "bytes": 819678,
+      "sha256": "7752e5b314992a4e37d135c838748fbe81a84afc39663ab4ef791da1ec3860c8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/mid/initial.json": {
+      "bytes": 679421,
+      "sha256": "6f744d49b61fbdf5cdcf8d06a47ebda22abe56315ee9e6e249d4e174ec48445d"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/mid/tape.npz": {
+      "bytes": 39770,
+      "sha256": "351c4d95af510d1ecb2083b5aa5b2602d72a77c287e649d33112f10c1c7134d8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/mid/trace.json": {
+      "bytes": 90147,
+      "sha256": "94725387e010bd8be4e22f4ebf5763d7dba9442d2914e117f29cc1fdbbcbf8b6"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/source/contract.json": {
+      "bytes": 816,
+      "sha256": "8d090060f0f003a12c8678010d7ca819cbc0409c77e1b32b228710df3cfbf884"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/source/final.json": {
+      "bytes": 819678,
+      "sha256": "7752e5b314992a4e37d135c838748fbe81a84afc39663ab4ef791da1ec3860c8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/source/initial.json": {
+      "bytes": 318908,
+      "sha256": "0ec338b6bf71f73a0b7751f275e3c08e3d9725831b01a9b022d994d2de5679ce"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/source/tape.npz": {
+      "bytes": 116790,
+      "sha256": "fb2e6805d6c875831821d8a01e7c05cf40f4c3df554aa425eb29c7eec0f3abe7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/match-audit0/source/trace.json": {
+      "bytes": 210883,
+      "sha256": "d876d82158151097eaef75211fb3aed05987b493cf6319f20c351502a72d3a4c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/shared-motor-evidence0/replay/storage-manifest.json": {
+      "bytes": 6183,
+      "sha256": "499c70bb7d4f7d4310b3c733ddf654e25ebad266d44c2e028dc78d41f5298b4a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/shared-motor-evidence0/replay/tape.npz": {
+      "bytes": 152281,
+      "sha256": "d7882da0701c76ef7bb3ebb70970211937922255e1b11e0dada333ab96da6fe5"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/shared-motor-evidence0/replay/trace.json.gz": {
+      "bytes": 179725,
+      "sha256": "b0899e455d917df82d67ddfa49fa70f75d4f3d1131f5a8f7068743ba101c8cab"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/shared-motor-evidence0/source/storage-manifest.json": {
+      "bytes": 6193,
+      "sha256": "d078073ab029b9273ccd10cf88d356f6ae89198a424eb235943220e0aafc99fe"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/shared-motor-evidence0/source/tape.npz": {
+      "bytes": 322561,
+      "sha256": "82d3778e380cc4f90fad8e544e8a92ee088f0df51007e040ec3e6cfa9e76f856"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/shared-motor-evidence0/source/trace.json.gz": {
+      "bytes": 245195,
+      "sha256": "39ee4d88f0eef89696bbf3ddcefade0cc9c05caebbee1fc73f2dd2de510a1164"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/actions.npz": {
+      "bytes": 163284,
+      "sha256": "144bafaf909ac38445b0c9117ce473da0c459bb20ee12ab9eb4cf958d64b699e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/boundary.json": {
+      "bytes": 202078,
+      "sha256": "a295c6e9328904102e83cf31a4be4f006423e1c5f5c8f0d233a29bf5c0f2d925"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/final.json": {
+      "bytes": 186571,
+      "sha256": "62b9d79303ec2fdcc12847f0df2b7c74e5b4d7acb488fd64fcfa95ed890cf60c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/initial.json": {
+      "bytes": 132216,
+      "sha256": "b9e590c57b62f8959d4a5f9398d2934f71fee31a24a50b263f7879a0e4ebee19"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/mid.json": {
+      "bytes": 251500,
+      "sha256": "655066bafb9b38aca22ec493df143c5df7f29610ecb9ec8c08690d602bfd080e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/progress.json": {
+      "bytes": 77,
+      "sha256": "79667294b7792290ab28b0047d8c00842d0d5aa25b7ec2017737893ff7ea05a9"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/result.json": {
+      "bytes": 531,
+      "sha256": "25a4eccda1fd92fa4b86f865e43fe26ec20ee122b5038edfc656b67fd3ab3609"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/substeps.npz": {
+      "bytes": 180171,
+      "sha256": "98aaf6d7012d28e89215d4761ffcedd0e295cbb5ec948660b635458f519d2a28"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/evaluation/trace.json": {
+      "bytes": 112726,
+      "sha256": "077c1e1dd20fb0bc9f0f918aa73e76098a46db54cc23ca5f9765e2ca5e2d6285"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/rejected/actions.npz": {
+      "bytes": 600,
+      "sha256": "ad27ba2f63d504db3ea0acb5303b64610b22808a3fac00a529c2d91910a0251e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/rejected/fault-arrays.npz": {
+      "bytes": 15872,
+      "sha256": "921f8584efea4446511ff92e22d723b6cbf8ec21afa53c93c8535a53769d9ce4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/rejected/fault.json": {
+      "bytes": 82,
+      "sha256": "f9331e9ee9b0b0eae4e060665657cf982c2ac2ec4710e157c5989e559c903fa8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/rejected/result.json": {
+      "bytes": 291,
+      "sha256": "5ab852619e4257e483555d19dd9a5b74316bcb450b18cad2780eca8339db5f29"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/rejected/substeps.npz": {
+      "bytes": 145690,
+      "sha256": "165f371cb61ecf8407fe283451ef66fd10cd779dfb707cd1ba96568a6daff67c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/rejected/trace.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/replay/actions.npz": {
+      "bytes": 132584,
+      "sha256": "5d286c4d2a24e6395f8f920d8697c5c654ce0cd954762b0c8069d600b3a32abf"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/replay/final.json": {
+      "bytes": 186571,
+      "sha256": "62b9d79303ec2fdcc12847f0df2b7c74e5b4d7acb488fd64fcfa95ed890cf60c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/replay/progress.json": {
+      "bytes": 45,
+      "sha256": "ad809e9490e9a95a879d80d3f066bb5ba48b1cc66e839a497070dc1d747950e6"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/replay/result.json": {
+      "bytes": 488,
+      "sha256": "05b3838a8701b913d41e4f69aa6d9baf15fbc3c0a49436056f97ea850aaa538b"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/replay/start.json": {
+      "bytes": 251500,
+      "sha256": "655066bafb9b38aca22ec493df143c5df7f29610ecb9ec8c08690d602bfd080e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/replay/substeps.npz": {
+      "bytes": 145690,
+      "sha256": "165f371cb61ecf8407fe283451ef66fd10cd779dfb707cd1ba96568a6daff67c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_actual_evaluation_and_mid0/replay/trace.json": {
+      "bytes": 92230,
+      "sha256": "f26afe70ac32161690dd5729a04a9c6ddfde749b3f0edd71b143e9dc2bd314f5"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta0/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta0/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta0/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta0/bad/tape.npz": {
+      "bytes": 80884,
+      "sha256": "320b126c1f087823706d14b89c54178a37639b635ab316176c47d440f2aab544"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta0/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta1/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta1/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta1/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta1/bad/tape.npz": {
+      "bytes": 80879,
+      "sha256": "707bc14bfebdcb0a278ce0e243b772208cd4bb94702ad41a3fbab48c097fa0cc"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta1/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta10/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta10/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta10/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta10/bad/tape.npz": {
+      "bytes": 80878,
+      "sha256": "4c21523261099efb865ba6e645382146c14e47bc8df63c40677fd77d805ac481"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta10/bad/trace.json": {
+      "bytes": 151551,
+      "sha256": "7a0fdc7b4daa4d8e00c46ace11d60c7deaa83654736e8efb98fba489ebb1836a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta2/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta2/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta2/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta2/bad/tape.npz": {
+      "bytes": 80882,
+      "sha256": "19b99928a8b683ec8fb90fcff72c6d60e8d0c1ea03c170e3bfd6944f76eafbc9"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta2/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta3/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta3/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta3/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta3/bad/tape.npz": {
+      "bytes": 80889,
+      "sha256": "ba4178cc26030cb56d6fa022de3a1139a423b921d60cb5e61ffbcdaeb5996213"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta3/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta4/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta4/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta4/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta4/bad/tape.npz": {
+      "bytes": 80882,
+      "sha256": "b6fbdfeae350177c6c204fb4de48b36feb9b442832106458a6fbef1dd05ddcd9"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta4/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta5/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta5/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta5/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta5/bad/tape.npz": {
+      "bytes": 80878,
+      "sha256": "1daa85ef53990e4da14993696155d59bc7d3a5a52dac3fcd60696d2ee5f0b83a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta5/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta6/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta6/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta6/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta6/bad/tape.npz": {
+      "bytes": 80878,
+      "sha256": "4c21523261099efb865ba6e645382146c14e47bc8df63c40677fd77d805ac481"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta6/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "6f84e53b0f744862e4f4066b2847c4ab508a9efa0945963a63b97e809a8e799a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta7/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta7/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta7/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta7/bad/tape.npz": {
+      "bytes": 80878,
+      "sha256": "4c21523261099efb865ba6e645382146c14e47bc8df63c40677fd77d805ac481"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta7/bad/trace.json": {
+      "bytes": 142148,
+      "sha256": "164c12851ce074624b74b5588e582654efc045434e521990ed763b35657e19af"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta8/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta8/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta8/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta8/bad/tape.npz": {
+      "bytes": 80883,
+      "sha256": "9996e26a01f157253fc6cbe8f068c6215c2efc02325b595f346ccfa4123473ae"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta8/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "4d88588a4e5e0a135ad22022247a1c2764c83c58ff232e359199762c1833b408"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta9/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta9/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta9/bad/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta9/bad/tape.npz": {
+      "bytes": 80878,
+      "sha256": "4c21523261099efb865ba6e645382146c14e47bc8df63c40677fd77d805ac481"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_audit_rejects_semantic_ta9/bad/trace.json": {
+      "bytes": 151468,
+      "sha256": "1b3459344b1ea69c6c40c115239585e2653419ab03437c96430c9a2860c79f19"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_compiled_loader_rejects_s2/scene.json": {
+      "bytes": 28836,
+      "sha256": "86c139f510092efc8f73a4b99533c122867cd81cd4410b007010a94349ac02da"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_compiled_loader_rejects_s3/scene.json": {
+      "bytes": 28834,
+      "sha256": "8f07a8adcb63906c0cd47b91a30c5b0258a7619751c13f0f389bd4b5970f20c7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_compiled_loader_rejects_s4/scene.json": {
+      "bytes": 28997,
+      "sha256": "8bdacd01897b58e3be4ebbb716b598ba979ae8cdc6f12452f2d52e085ddc4f1e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_compiled_loader_rejects_s5/scene.json": {
+      "bytes": 28666,
+      "sha256": "ee23bb856d51c88f13561869a0a900c73444c6e6dae357f04ea6995412f9d6ee"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_compiled_loader_rejects_s6/scene.json": {
+      "bytes": 28836,
+      "sha256": "f16be709e6c2757db757f7ade780470837f5d92ccf5da5518702ea34febc5f3f"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_compiled_loader_rejects_s7/scene.json": {
+      "bytes": 27295,
+      "sha256": "d13ae3b66ef470ffeeeaddd80e2e9402889c601f15551117a1a0991f60bfd8f4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/out/events.jsonl": {
+      "bytes": 646,
+      "sha256": "4a76ea8ca1b10c8c000f936d6cb885f3bd5e0db1832e6afdcc54fa7f9a9dfed0"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/out/packed/fixture/a.json.gz": {
+      "bytes": 64,
+      "sha256": "6997e3ba192afc6078b5903545a927df83acbb38706898d2105a1f8a3068620f"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/out/packed/fixture/b.npz": {
+      "bytes": 327,
+      "sha256": "02d3f8925db68a2162f718feec2bfb3aba5b8c2049f0647e370faab1207b14bf"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/out/packed/fixture/events.jsonl": {
+      "bytes": 24,
+      "sha256": "b8e31add64ccd577e3bed06dc6eb4c3217c3e64dc27ab78f25799e1f548df0c4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/out/packed/fixture/storage-manifest.json": {
+      "bytes": 791,
+      "sha256": "32fdcc6b65e2a738a5dfa15917fda89580f344aa58ef73b219749b9d887e5132"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/out/result.json": {
+      "bytes": 1766,
+      "sha256": "aac43d7fc3126bf389fc8eb22ccd7918a1622aca9da9b9f7fa72384f22a4f312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/source/a.json": {
+      "bytes": 63,
+      "sha256": "a840e189aece85cff01e908248142fd362ff9d0dd3a2f97939c994e33a45ecab"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/source/b.npz": {
+      "bytes": 395,
+      "sha256": "c7702028a86cd5d854ff3d91a2cabff931eab0891ac4b7f3f96773472e8d907c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_corpus_retains_every_logi0/source/events.jsonl": {
+      "bytes": 24,
+      "sha256": "b8e31add64ccd577e3bed06dc6eb4c3217c3e64dc27ab78f25799e1f548df0c4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_credit_fault_reserve_and_0/a.npz": {
+      "bytes": 91015,
+      "sha256": "c358aaa3b45cc622f5bc6d0c19967366378637a7bcf5483956548cec23dc26f5"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_credit_fault_reserve_and_0/a.npz.tmp": {
+      "bytes": 32812,
+      "sha256": "9a18ab90c334d3c667d7119a1e7255384ff818cf81b5796bedfbfa2d5dc88330"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_credit_fault_reserve_and_0/fault.json": {
+      "bytes": 41,
+      "sha256": "6a65e3a7b9dc2b1c43a65fc7d92dba66ba97ec1c0f338155e0bb1deae74b1794"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_credit_fault_reserve_and_0/storage-manifest.json": {
+      "bytes": 487,
+      "sha256": "eea0cd80eecf6d2b7462ece28c3b8e3e98d6bee3612775a91b3c267d83fafc40"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject0/storage-manifest.json": {
+      "bytes": 346,
+      "sha256": "0ec3ccfd282c0f55de5e6b02a435fcd3047480885c829cbdeca5e394560beded"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject0/tape.npz": {
+      "bytes": 215,
+      "sha256": "ad867f37a6f3656a9b35f04fc91ef8839ef87b42f3386945e1770ede3e1cf59c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject1/storage-manifest.json": {
+      "bytes": 346,
+      "sha256": "3e2db58b4266895a49a09022a6f844c169e0e8040a76400dae98852dbf5c166a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject1/tape.npz": {
+      "bytes": 215,
+      "sha256": "5b06d7ec1707d477c33f61d99fe3577d4feb465d408a501f18e18de603b67f83"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject2/storage-manifest.json": {
+      "bytes": 346,
+      "sha256": "67f53bd499dffced8924e488ff67aaea7cb0beacc8f44b0e4bb1ff29fbd9cd7d"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject2/tape.npz": {
+      "bytes": 214,
+      "sha256": "fbb620ea22859f5fb9ea85bc268f34113d169a378fa96d29fed77a1765283d57"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject3/state.json.gz": {
+      "bytes": 32,
+      "sha256": "8a8ba730bb6f2c3544c2d3e0bf7ea0fc592b149f3393b94b352f0ea2b389266a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_decoded_corruption_reject3/storage-manifest.json": {
+      "bytes": 313,
+      "sha256": "bd8ea0887e6111df47c5863aced732e6f44a35772869816d4ec8cde9817311b7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_evaluation_budget_stop_re0/stopped/actions.npz": {
+      "bytes": 600,
+      "sha256": "ad27ba2f63d504db3ea0acb5303b64610b22808a3fac00a529c2d91910a0251e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_evaluation_budget_stop_re0/stopped/fault-arrays.npz": {
+      "bytes": 10249,
+      "sha256": "d16f72c06a8ba84a970f9df6bb3aee8947e374cf1b6fa514009d086edd9a4ff3"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_evaluation_budget_stop_re0/stopped/fault.json": {
+      "bytes": 95,
+      "sha256": "aa57dfe2d2acb5d93c3fde169a7812015266c003e45baf7f2f03e70c3c960761"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_evaluation_budget_stop_re0/stopped/initial.json": {
+      "bytes": 132023,
+      "sha256": "5719d04d25b897d88ba7ecf45802085bd669848a931a9a7a28d4299b7c7ae7a2"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_evaluation_budget_stop_re0/stopped/result.json": {
+      "bytes": 466,
+      "sha256": "b6e5a7a9ac958e8966080a90f05f383b702ff7abc45d72aba61d2a0059d29b6d"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_evaluation_budget_stop_re0/stopped/substeps.npz": {
+      "bytes": 1619,
+      "sha256": "d0cc8cfe12ae1e094d070dcd7cdb73a3c74ec472ba061b49c765f4d3b207a07f"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_evaluation_budget_stop_re0/stopped/trace.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w0/out/result.json": {
+      "bytes": 992,
+      "sha256": "23ea967b50620c0bbc9582f53e3fd7540e69c1dfa5169f0a81f3de64949c40fe"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w0/source/a.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w0/source/b.npz": {
+      "bytes": 395,
+      "sha256": "c7702028a86cd5d854ff3d91a2cabff931eab0891ac4b7f3f96773472e8d907c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w0/source/events.jsonl": {
+      "bytes": 24,
+      "sha256": "b8e31add64ccd577e3bed06dc6eb4c3217c3e64dc27ab78f25799e1f548df0c4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w1/out/result.json": {
+      "bytes": 874,
+      "sha256": "d31d39a47e6e34fe419c000d961e1c876defba091ed33782a2422f26b166b3d8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w1/source/a.json": {
+      "bytes": 63,
+      "sha256": "a840e189aece85cff01e908248142fd362ff9d0dd3a2f97939c994e33a45ecab"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w1/source/b.npz": {
+      "bytes": 395,
+      "sha256": "c7702028a86cd5d854ff3d91a2cabff931eab0891ac4b7f3f96773472e8d907c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w1/source/events.jsonl": {
+      "bytes": 24,
+      "sha256": "b8e31add64ccd577e3bed06dc6eb4c3217c3e64dc27ab78f25799e1f548df0c4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w1/source/unknown.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w2/out/result.json": {
+      "bytes": 876,
+      "sha256": "c05366157c83c29cde635991c60fa1513913fe02d5841c522c594460e4d5ee45"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w2/source/a.json": {
+      "bytes": 63,
+      "sha256": "a840e189aece85cff01e908248142fd362ff9d0dd3a2f97939c994e33a45ecab"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w2/source/events.jsonl": {
+      "bytes": 24,
+      "sha256": "b8e31add64ccd577e3bed06dc6eb4c3217c3e64dc27ab78f25799e1f548df0c4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w3/out/result.json": {
+      "bytes": 868,
+      "sha256": "55b5544f1d0ece54a7c345034be686319c4cc293a610d8e666fac87d4aa3443e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w3/source/a.json": {
+      "bytes": 63,
+      "sha256": "a840e189aece85cff01e908248142fd362ff9d0dd3a2f97939c994e33a45ecab"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w3/source/b.npz": {
+      "bytes": 395,
+      "sha256": "c7702028a86cd5d854ff3d91a2cabff931eab0891ac4b7f3f96773472e8d907c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_failed_corpus_preserves_w3/source/events.jsonl": {
+      "bytes": 24,
+      "sha256": "b8e31add64ccd577e3bed06dc6eb4c3217c3e64dc27ab78f25799e1f548df0c4"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_fault_recorder_preserves_0/fault-step-1.json": {
+      "bytes": 40901,
+      "sha256": "c99f1cf9002cc0037e089c46ab598ac796d76493a0f5820a43b8fdd7ee56d01a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_four_worker_sac_latents_u0/synthetic.zip": {
+      "bytes": 45705080,
+      "sha256": "d26648a61f5732cdb4b7f75b7b383ef8cfef26da5c19913ac4919131706f6f46"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_hash_bound_modified_muscl0/changed.mjb": {
+      "bytes": 180809620,
+      "sha256": "c8f6dc3d4af8efc01829846925591ce774b385be4d64686f4a2c7c7625922576"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_header_and_write_bounds_r0/corpus.jmc.tmp": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_header_and_write_bounds_r0/filler": {
+      "bytes": 1048566,
+      "sha256": "34821b5f8771564da799f71d1e9fd8e25276b858b33a436f53736946534ebb8a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/actions.npz": {
+      "bytes": 163285,
+      "sha256": "07ff364308379ef9fa230b78b2545c26de227a2e1e79a034e59bc1435a1e30da"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/boundary.json": {
+      "bytes": 202078,
+      "sha256": "79827895cb3ffad2faa7b42353120fb01e6b35391bb708a1f6795bd773c101b3"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/final.json": {
+      "bytes": 186571,
+      "sha256": "512bd76582899f122656eae07523955f70ab90e2170d616cc6e25dac224f3ec2"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/initial.json": {
+      "bytes": 132216,
+      "sha256": "227f4063b71314881fafafd04765c1879306fb8ccb3addf57eace4843e350a21"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/mid.json": {
+      "bytes": 251500,
+      "sha256": "48d40d7b81fab4f8383b25cbc598ac5f51bfe668467c5487259c0d3780e615ec"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/progress.json": {
+      "bytes": 77,
+      "sha256": "79667294b7792290ab28b0047d8c00842d0d5aa25b7ec2017737893ff7ea05a9"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/result.json": {
+      "bytes": 627,
+      "sha256": "03ab587d9c5124303e63e971b688406b9241d203ece11fff61e64c4390b2b8c3"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/substeps.npz": {
+      "bytes": 180171,
+      "sha256": "98aaf6d7012d28e89215d4761ffcedd0e295cbb5ec948660b635458f519d2a28"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/eval/trace.json": {
+      "bytes": 112726,
+      "sha256": "077c1e1dd20fb0bc9f0f918aa73e76098a46db54cc23ca5f9765e2ca5e2d6285"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/replay/actions.npz": {
+      "bytes": 132584,
+      "sha256": "5d286c4d2a24e6395f8f920d8697c5c654ce0cd954762b0c8069d600b3a32abf"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/replay/final.json": {
+      "bytes": 186571,
+      "sha256": "512bd76582899f122656eae07523955f70ab90e2170d616cc6e25dac224f3ec2"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/replay/progress.json": {
+      "bytes": 45,
+      "sha256": "ad809e9490e9a95a879d80d3f066bb5ba48b1cc66e839a497070dc1d747950e6"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/replay/result.json": {
+      "bytes": 482,
+      "sha256": "170a372fbade2f0be2f449d1ce30f9c2110b78091be888d212e437263beffc90"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/replay/start.json": {
+      "bytes": 251500,
+      "sha256": "48d40d7b81fab4f8383b25cbc598ac5f51bfe668467c5487259c0d3780e615ec"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/replay/substeps.npz": {
+      "bytes": 145690,
+      "sha256": "165f371cb61ecf8407fe283451ef66fd10cd779dfb707cd1ba96568a6daff67c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_independent_physical_eval0/replay/trace.json": {
+      "bytes": 92230,
+      "sha256": "f26afe70ac32161690dd5729a04a9c6ddfde749b3f0edd71b143e9dc2bd314f5"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_json_big_rng_integers_tic0/snapshot.json": {
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_json_big_rng_integers_tic0/snapshot.json.gz": {
+      "bytes": 102,
+      "sha256": "c9a3c4458031d0f33fbf4270310ea21a1b00caf56d9bc19bc3cfbac9f24e6982"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_json_big_rng_integers_tic0/storage-manifest.json": {
+      "bytes": 395,
+      "sha256": "c4059a7173e2fd632de122f62a394f794d9212e2dfa672f8b3bc4c88d9cfcc07"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_json_gzip_bomb_and_missin0/a.json.gz": {
+      "bytes": 38,
+      "sha256": "3b1c9d016111cecde4d7d70ca30493bb681b49dce6af7463bba98e406ffdd588"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_latent138_sac_finite_upda0/residual.zip": {
+      "bytes": 45570391,
+      "sha256": "c0c0d1ce746f682a75d6f2fe459500474ac5901783ee4824340e576ac0821729"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_legacy_arrays_and_json_ar0/state.json": {
+      "bytes": 36,
+      "sha256": "29d62c7c2133186b172ec0e5dac8039f031d240a19d8a271b1baeea79bbc5b9b"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_legacy_arrays_and_json_ar0/tape.npz": {
+      "bytes": 391,
+      "sha256": "fb4a4e59159b7f9daa5b3efb03dc93b353424f699f9496cbe93d15f659dcb48e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_lossless_numeric_shapes_a0/storage-manifest.json": {
+      "bytes": 1420,
+      "sha256": "faa11ce2b579e974fc591fbf86cb94130eac90fc01353f3947e9ab94aac07fa5"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_lossless_numeric_shapes_a0/tape.npz": {
+      "bytes": 1032,
+      "sha256": "0ccc405177d949885692abad9d082f4d6d82b318199166285e78abaa9dffe93f"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_lzma_huge_dictionary_is_r0/a.npz": {
+      "bytes": 197,
+      "sha256": "43adb20987b5693706344d9e212210808c78b1fd2a160b60a9c6254d0eba6c7c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_lzma_huge_dictionary_is_r0/storage-manifest.json": {
+      "bytes": 337,
+      "sha256": "667aa0c98f2b8482454658232013a9e9d66f5b4d9917d58029f59e2098216c07"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_malformed_or_deep_json_re0/bad.json": {
+      "bytes": 13,
+      "sha256": "1c53ee0df7b12fd4d65b976120c7fa6b847dc41dffd7f0331c3237a1ceab1756"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_malformed_or_deep_json_re1/bad.json": {
+      "bytes": 9,
+      "sha256": "0ce896293703c00486a61416514acc94d2919f4bd42141dedcca7ddfb97ec422"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_malformed_or_deep_json_re2/bad.json": {
+      "bytes": 11,
+      "sha256": "5c5b27932e06097bf3f3f261b21a48090c139978845a78bed086c2965ec54881"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_nonfinite_fault_state_is_0/fault-arrays.npz": {
+      "bytes": 14039,
+      "sha256": "fca363dca5b9606dda096e209dd020bdffb4b6aeeb4e984190aeace728e75004"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_nonfinite_fault_state_is_0/fault.json": {
+      "bytes": 131773,
+      "sha256": "3a0a1e61a3500b6956321454066777dd8a9c35624cbdcbe83df2be2169c00494"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_packed_manifest_removal_i0/a.npz": {
+      "bytes": 197,
+      "sha256": "aa1b6bfb6ecbccf989795092d1d0fe50fc86d03ee5155c5ba5563fc0e31d2e75"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_policy_summary_requires_e0/summary.json": {
+      "bytes": 43909,
+      "sha256": "6d61f72b7711832e45cc4ac79a0e394bbfd3f00305c2f0bf09101e55c52df70a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_prewrite_credit_preserves0/existing": {
+      "bytes": 1843200,
+      "sha256": "315b1f7bd98ca3496395016d11b8a5d9a83efae0171fff5f0a4bd31d057894e8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_prewrite_credit_preserves0/fault": {
+      "bytes": 409600,
+      "sha256": "16cdf0c823a5b414d79199e429cff4d6e81222581302527cb10ed9236a7edf99"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh0/dependency/runs/v0.0.11/shared-motor-proof-01/source-71001/tape.npz.tmp": {
+      "bytes": 124288,
+      "sha256": "575040c8cf7e8263274faba677acf4b37e51b438c7a62aa813ceca3ea6128d04"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh0/out/events.jsonl": {
+      "bytes": 255,
+      "sha256": "3a08c120c65d011a247fb615452298211028e6cc0a1f0a692cecd3eef8526a78"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh0/out/prefix60.jmc": {
+      "bytes": 276144,
+      "sha256": "dc673c5c5b120e12deaae2617231fa133fb009f54d0137368d863cdf870b21cd"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh0/out/progress.json": {
+      "bytes": 136,
+      "sha256": "2278034c0df626c13d577c40bebb08ef6177a868618d71898e0f2624c1df5cb0"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh0/out/protocol.json": {
+      "bytes": 271,
+      "sha256": "9ed0537727f2c81d76eb47cda589232196ff4b447a679f375dca74d080fe9d9e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh0/out/result.json": {
+      "bytes": 13086,
+      "sha256": "a3fab07da85da79e9f415c75e77a7167a5491887554eaf9adcb68d6b9790bfc3"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh1/dependency/runs/v0.0.11/shared-motor-proof-01/source-71001/tape.npz.tmp": {
+      "bytes": 124288,
+      "sha256": "575040c8cf7e8263274faba677acf4b37e51b438c7a62aa813ceca3ea6128d04"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh1/out/fault.json": {
+      "bytes": 528,
+      "sha256": "0758d30c00906d307e7454a069f345c73ea83427899369cc3ad631c0b6a8a8e1"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh1/out/progress.json": {
+      "bytes": 135,
+      "sha256": "5824a085776afee3bf86ce006a91f6ddb194982079a1016a318894961671748e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh1/out/protocol.json": {
+      "bytes": 271,
+      "sha256": "e31a9468f4cbfcc13104063f6ffbcc971295ef39759314fbe1c26e20b14df6a3"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_qualification_registry_sh1/out/result.json": {
+      "bytes": 841,
+      "sha256": "32b2196744b27871b1fe0acd6825308213cbea4b37681bdd2ce4e8c66cd04b42"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_quarantine_saves_finite_p0/initial.json": {
+      "bytes": 318989,
+      "sha256": "af357022fa69fdb99c80ea0f86d7623ab0d755116a249653f9c4f0e34c1d8312"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_quarantine_saves_finite_p0/tape.npz": {
+      "bytes": 10635,
+      "sha256": "849abead4c52f50b6980f71a6bbef60f0be819b135ff4b8aaf604246062e7220"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_quarantine_saves_finite_p0/trace.json": {
+      "bytes": 7908,
+      "sha256": "5671d02a6fbc1069b2e8335f9d6cecdc53b0cb0d7ae27dced87179bbe6a0bad1"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_raw_nonfinite_and_changed0/bad.npz": {
+      "bytes": 213,
+      "sha256": "62475da6f02afdcfe5e22a7a20e310ecff4a03f92c91c9f0229051f2a274cd77"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_replay_checks_contact_eng0/bad/contract.json": {
+      "bytes": 832,
+      "sha256": "7c821cce891fa52cba1b658c63b70d79a8fa56d88cc6c9d9b34f75257bf29a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_replay_checks_contact_eng0/bad/final.json": {
+      "bytes": 685312,
+      "sha256": "167a1d252fbe20da721daf7df6c0f15d1151b8a19d601750edc6bc99bce09a91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_replay_checks_contact_eng0/bad/initial.json": {
+      "bytes": 404610,
+      "sha256": "2b311db0f9470b8c74ad2ec02759e21e7d4c4065110313e689393f0b58bad682"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_replay_checks_contact_eng0/bad/tape.npz": {
+      "bytes": 73166,
+      "sha256": "cabf849f182a57bfd2a10e504c35df37364194378f1963667e7488999f87eb38"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_replay_checks_contact_eng0/bad/trace.json": {
+      "bytes": 144190,
+      "sha256": "227033cc6550d5de1c360c5804786c090f13e65ac158634dd6502d2cfd87f354"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/audit.json": {
+      "bytes": 1607,
+      "sha256": "dad2d68fe9ac659d009329f50fc0ec5f0d566d3d80d340a5dac8428847bd581a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-closed_loop-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-closed_loop-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-closed_loop-start.json": {
+      "bytes": 195401,
+      "sha256": "0a9eeef848c23606ff6a9a66ce2620615f4a2bf9b4b99ead3a07c704e90ee25a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-closed_loop-substeps.npz": {
+      "bytes": 554855,
+      "sha256": "f095acb839b3132c2b5fa7db2e29ce79d570826b836b9b00ce699dade41fd945"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-closed_loop-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-recorded_actions-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-recorded_actions-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-recorded_actions-start.json": {
+      "bytes": 195401,
+      "sha256": "0a9eeef848c23606ff6a9a66ce2620615f4a2bf9b4b99ead3a07c704e90ee25a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-recorded_actions-substeps.npz": {
+      "bytes": 554855,
+      "sha256": "f095acb839b3132c2b5fa7db2e29ce79d570826b836b9b00ce699dade41fd945"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/boundary-recorded_actions-trace.json": {
+      "bytes": 336341,
+      "sha256": "365ef6d84a39ad25ab0773443486dfa7d3a7a5f30deeda53e203ff9825936ee5"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-closed_loop-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-closed_loop-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-closed_loop-start.json": {
+      "bytes": 238964,
+      "sha256": "ea54f59b7bfcdff637c3d6e383d218421afe776307243ba24d7fd35243f31b91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-closed_loop-substeps.npz": {
+      "bytes": 554173,
+      "sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-closed_loop-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-recorded_actions-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-recorded_actions-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-recorded_actions-start.json": {
+      "bytes": 238964,
+      "sha256": "ea54f59b7bfcdff637c3d6e383d218421afe776307243ba24d7fd35243f31b91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-recorded_actions-substeps.npz": {
+      "bytes": 554173,
+      "sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/mid_control-recorded_actions-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/protocol.json": {
+      "bytes": 3735,
+      "sha256": "2c2ac5513fbfbfb3590ce3519f90cf4950bbaf5d50df497ab93f6abf519de2de"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption0/raw/result.json": {
+      "bytes": 31295,
+      "sha256": "51a86cdae3598f981dea02028a650de329ffdc8c52ef6da5e642784b16d81a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/audit.json": {
+      "bytes": 1607,
+      "sha256": "dad2d68fe9ac659d009329f50fc0ec5f0d566d3d80d340a5dac8428847bd581a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-closed_loop-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-closed_loop-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-closed_loop-start.json": {
+      "bytes": 195401,
+      "sha256": "0a9eeef848c23606ff6a9a66ce2620615f4a2bf9b4b99ead3a07c704e90ee25a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-closed_loop-substeps.npz": {
+      "bytes": 554855,
+      "sha256": "f095acb839b3132c2b5fa7db2e29ce79d570826b836b9b00ce699dade41fd945"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-closed_loop-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-recorded_actions-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-recorded_actions-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-recorded_actions-start.json": {
+      "bytes": 195401,
+      "sha256": "0a9eeef848c23606ff6a9a66ce2620615f4a2bf9b4b99ead3a07c704e90ee25a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-recorded_actions-substeps.npz": {
+      "bytes": 554855,
+      "sha256": "1f6e29a1f05e0c9e8b53eca0a91846de6fc8aba312f3b80517384df80ac0f885"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/boundary-recorded_actions-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-closed_loop-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-closed_loop-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-closed_loop-start.json": {
+      "bytes": 238964,
+      "sha256": "ea54f59b7bfcdff637c3d6e383d218421afe776307243ba24d7fd35243f31b91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-closed_loop-substeps.npz": {
+      "bytes": 554173,
+      "sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-closed_loop-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-recorded_actions-actions.npz": {
+      "bytes": 249231,
+      "sha256": "47ea348072beef4bfcddb82afb73198d2db627fc4ba8edadbdb40f5c92006a7e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-recorded_actions-final.json": {
+      "bytes": 185643,
+      "sha256": "efab1d28aa00a8ca16fe99a94b83b452434267b40cb1f3f103d3cedcd79fc2bb"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-recorded_actions-start.json": {
+      "bytes": 238964,
+      "sha256": "ea54f59b7bfcdff637c3d6e383d218421afe776307243ba24d7fd35243f31b91"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-recorded_actions-substeps.npz": {
+      "bytes": 554173,
+      "sha256": "c98e3fbc522b17ab3ddfb07f8e768db7c9eefed8dd37c47115fa00d7e7692a14"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/mid_control-recorded_actions-trace.json": {
+      "bytes": 474664,
+      "sha256": "a37cd95071a0137ccff285612d7a107f5e13f2beaa456c63b1f0a6b9b0eb53f7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/protocol.json": {
+      "bytes": 3735,
+      "sha256": "2c2ac5513fbfbfb3590ce3519f90cf4950bbaf5d50df497ab93f6abf519de2de"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_saved_evidence_corruption1/raw/result.json": {
+      "bytes": 31295,
+      "sha256": "51a86cdae3598f981dea02028a650de329ffdc8c52ef6da5e642784b16d81a09"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_seam_witness_compares_unw0/motion.npz": {
+      "bytes": 3092,
+      "sha256": "485ff3451d6f0f34ed635483dc1ed319349f75a15665ec980e733980e0df3dc7"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_shape_slots_handoff_and_m0/final.zip.tmp": {
+      "bytes": 12308480,
+      "sha256": "f3b287127c33cbd9a0ab990b299481a4f71e68459cfd34cfd5079915a7873b50"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_shape_slots_handoff_and_m0/initial-bundle.json": {
+      "bytes": 11860,
+      "sha256": "aa748d8e079cc2a05b72ba8d228ba55caccc31416fac1d725791aa3f10b7181f"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_shape_slots_handoff_and_m0/initial-rng.npz": {
+      "bytes": 6362,
+      "sha256": "dc1141cf06d48f597c1b228ab86a11fad937bf861669eada97c87a0ab19ea304"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_shape_slots_handoff_and_m0/initial.zip": {
+      "bytes": 20689923,
+      "sha256": "887d2639653216a826c3d51c26757dc5a53870aeadd742acd6e1b37f4127e5a1"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_shared_world_capture_is_r0/recording/recording.json": {
+      "bytes": 1818,
+      "sha256": "969d1ece7bfcf8542a3d44b1ae15fcb194924e7d2f27d5771dd4686fc7444562"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_shared_world_capture_is_r0/recording/states.npz": {
+      "bytes": 6622,
+      "sha256": "83b123aade7b22c9fc1eb88cd684eecd2fc82162fa76a05dec9866f8e765e8d9"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_unknown_implementation_pr0/worker/progress.json": {
+      "bytes": 610,
+      "sha256": "d1a64609d5e57b14968d19c98030583a238bcfd3d753109c61925f61c8f8632a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_unsafe_archive_rejected_b0/bad.npz": {
+      "bytes": 498,
+      "sha256": "ada7113d6fd074a45d60959d0c0825a797e3cf09a6727b90e7b4048fb7805135"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_unsafe_archive_rejected_b1/bad.npz": {
+      "bytes": 266,
+      "sha256": "95d224e5e5d771804bc8a509bb531636abbcff0e2f2f85de5360441bd6aad887"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_unsafe_archive_rejected_b2/bad.npz": {
+      "bytes": 386,
+      "sha256": "aa78da7e4ebb66b38c9dc2d2893703a0405990b16ff82358a7a4b816c3308e72"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_unsafe_archive_rejected_b3/bad.npz": {
+      "bytes": 236,
+      "sha256": "84849ad0417a7b3835812267c5837793eb7b8d6f1f0c0a0152aca22121c10e32"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_unsafe_archive_rejected_b4/bad.npz": {
+      "bytes": 259,
+      "sha256": "bd30c900634a3fb5d0751af0bbd0ec50b902d9ab095f52c2daa267e42284688a"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_unsafe_archive_rejected_b5/bad.npz": {
+      "bytes": 260,
+      "sha256": "7fe6a86a35386199c0346ee9e41afdaae15e53d1f1b03279394f15bb50f377d2"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_whole_run_audit_rejects_h0/protocol.json": {
+      "bytes": 1636,
+      "sha256": "1e1936308f3676498062efe3a523ed7eb9772e80d77358302a02bc46ac300a8f"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_whole_run_audit_rejects_h0/result.json": {
+      "bytes": 1727,
+      "sha256": "6aedc606109cf6bebab9b2e2de760acd3da53258aa4d104ad5626c0d2cc2a2b2"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_whole_run_audit_rejects_h1/protocol.json": {
+      "bytes": 1636,
+      "sha256": "1e1936308f3676498062efe3a523ed7eb9772e80d77358302a02bc46ac300a8f"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_whole_run_audit_rejects_h1/result.json": {
+      "bytes": 1950,
+      "sha256": "54a0fd45d57b58026fcdfd47af8439285b3e2fc5e5fd598096575c054beffa5c"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_worker_owned_seeds_chunks0/worker/commands-00000.npz": {
+      "bytes": 2915,
+      "sha256": "fb42534146cdbfccce43e26a1799c6fe765fb9187b75c06e5f20791883db02e9"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_worker_owned_seeds_chunks0/worker/episodes.jsonl": {
+      "bytes": 210,
+      "sha256": "10c38114dc443ec75761a20c6b8a227700658fce466ba9dc0032aea434b28f33"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_worker_owned_seeds_chunks0/worker/fault-arrays.npz": {
+      "bytes": 10692,
+      "sha256": "ce48592d5c2d4485c6eddc75f313e8c13dcedf954ba4765a6ec6b8669fd4a34e"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_worker_owned_seeds_chunks0/worker/fault.json": {
+      "bytes": 124,
+      "sha256": "8741727d7cd1a68a202f8dc67783ba57818f2892c9e7d8966dc56946dbbbd0db"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_worker_owned_seeds_chunks0/worker/last-valid-snapshot.json": {
+      "bytes": 132015,
+      "sha256": "7fd26d928142884ae7203a0d3b512c702abd3a1ba79ddf9fad9ff29b582c921d"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_worker_owned_seeds_chunks0/worker/progress.json": {
+      "bytes": 904,
+      "sha256": "07da67210d4306caf58a92163cec87be8db085a09a986f8a4684170338ab7904"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/fixtures/test_worker_owned_seeds_chunks0/worker/transitions.jsonl": {
+      "bytes": 1450,
+      "sha256": "85bb1f1b20f0bc897f3fa222cbbf85d7370346ec9c79e1bf82d5ed656ddca458"
+    }
+  },
+  "receipt_manifest": {
+    "runs/v0.0.11/.upper-task-source-gate.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/result.json": {
+      "bytes": 4568,
+      "sha256": "4e9107b4670f7987d992e86ed87e83f0e54b1bb99f45440e6c774bbfc5e0d6b8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/runtime.log": {
+      "bytes": 58,
+      "sha256": "edbaf7c3fd3f4b2da72c4cdbf9492d4a55d5a1e7ef43a95424334a7cfcb17cc2"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/sync.log": {
+      "bytes": 1225,
+      "sha256": "788d91e4f25d2274666ca6f614ed638d14201179195cd2bdcb96f40eeafdd2f8"
+    },
+    "runs/v0.0.11/upper-task-source-gate-01/tests.log": {
+      "bytes": 203,
+      "sha256": "b19108f58ec39fa9617d7a9fc511b52af0949227f1418cc703710e0ce7a87749"
+    },
+    "runs/v0.0.11/upper-task-source-gate-deployment.json": {
+      "bytes": 184526,
+      "sha256": "d61dfb65ab32283153f51e88bd9d99e86b9cb8ca4a02c129ad832a39b451b60b"
+    },
+    "runs/v0.0.11/upper-task-source-gate-launch.log": {
+      "bytes": 863,
+      "sha256": "0393db4479e9d6b96ccc55ca3b7bec352db297562f4121cf07f01d643ace6f45"
+    }
+  },
+  "fixture_bytes": 531777485,
+  "receipt_bytes": 191443,
+  "summary": {
+    "schema": "joxing-upper-task-source-supervision-v1",
+    "source_commit": "160185e1ab46c0f3fb27d0bf04274c5635740a94",
+    "protocol_sha256": "7745d9cfd996a95f2ce33c4c55d946ef82d3048be18ed09c2f57db7386f90913",
+    "process": {
+      "pid": 1392034,
+      "parent_pid": 1,
+      "start_ticks": 920033449,
+      "state": "R"
+    },
+    "status": "halted",
+    "formal_native_steps": 0,
+    "formal_training_updates": 0,
+    "scope": "Full source regression with fixture physics/updates; not a released-checkpoint pilot",
+    "initial_capacity": {
+      "available_memory_bytes": 48868528128,
+      "free_disk_bytes": 275339808768,
+      "fixture_bytes": 0,
+      "receipt_bytes": 184526,
+      "load": [
+        4.09228515625,
+        4.71728515625,
+        4.9404296875
+      ]
+    },
+    "stages": [
+      {
+        "stage": "sync",
+        "status": "completed",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "limit_s": 180,
+        "process": {
+          "pid": 1392087,
+          "parent_pid": 1392034,
+          "start_ticks": 920033576,
+          "state": "R"
+        },
+        "peak_owned_rss_bytes": 49209344,
+        "owned_identities": [
+          {
+            "pid": 1392087,
+            "parent_pid": 1392034,
+            "start_ticks": 920033576,
+            "state": "Z"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 48858902528,
+          "free_disk_bytes": 275329376256,
+          "fixture_bytes": 0,
+          "receipt_bytes": 188509,
+          "load": [
+            4.09228515625,
+            4.71728515625,
+            4.9404296875
+          ]
+        },
+        "elapsed_s": 1.3400797341018915,
+        "returncode": 0,
+        "wall_s": 1.340453952550888
+      },
+      {
+        "stage": "runtime",
+        "status": "completed",
+        "command": [
+          "/home/ubuntu/joxing/upper-task-source-gate-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import sys,json,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v == {'python': '3.12.3', 'numpy': '2.4.2', 'mujoco': '3.8.0'}"
+        ],
+        "limit_s": 10,
+        "process": {
+          "pid": 1392218,
+          "parent_pid": 1392034,
+          "start_ticks": 920033756,
+          "state": "R"
+        },
+        "peak_owned_rss_bytes": 24629248,
+        "owned_identities": [
+          {
+            "pid": 1392218,
+            "parent_pid": 1392034,
+            "start_ticks": 920033756,
+            "state": "Z"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 48840720384,
+          "free_disk_bytes": 275329368064,
+          "fixture_bytes": 0,
+          "receipt_bytes": 189326,
+          "load": [
+            4.09228515625,
+            4.71728515625,
+            4.9404296875
+          ]
+        },
+        "elapsed_s": 1.338473703712225,
+        "returncode": 0,
+        "wall_s": 1.3388515766710043
+      },
+      {
+        "stage": "tests",
+        "status": "failed",
+        "command": [
+          "/home/ubuntu/joxing/upper-task-source-gate-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--durations=15",
+          "--basetemp",
+          "/home/ubuntu/joxing/upper-task-source-gate-20261029/runs/v0.0.11/upper-task-source-gate-01/fixtures",
+          "--junitxml",
+          "/home/ubuntu/joxing/upper-task-source-gate-20261029/runs/v0.0.11/upper-task-source-gate-01/tests.xml",
+          "tests",
+          "grokbot/tests"
+        ],
+        "limit_s": 1200,
+        "process": {
+          "pid": 1392667,
+          "parent_pid": 1392034,
+          "start_ticks": 920033936,
+          "state": "R"
+        },
+        "peak_owned_rss_bytes": 3586072576,
+        "owned_identities": [
+          {
+            "pid": 1392667,
+            "parent_pid": 1392034,
+            "start_ticks": 920033936,
+            "state": "R"
+          }
+        ],
+        "latest_capacity": {
+          "available_memory_bytes": 48987111424,
+          "free_disk_bytes": 277335748608,
+          "fixture_bytes": 437552842,
+          "receipt_bytes": 190296,
+          "load": [
+            6.40869140625,
+            5.24951171875,
+            5.10107421875
+          ]
+        },
+        "elapsed_s": 108.4742555078119,
+        "returncode": -15,
+        "wall_s": 110.06791296415031
+      }
+    ],
+    "criterion_passed": false,
+    "error": "RuntimeError: Source-gate fixture/receipt credit",
+    "wall_s": 114.13352187164128,
+    "final_live_recorded_identities": [],
+    "fixture_bytes": 531777485,
+    "receipt_bytes": 190300
+  },
+  "observed_utc": "2026-10-29T08:54:05Z"
+}

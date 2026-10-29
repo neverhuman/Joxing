@@ -1,3 +1,33 @@
+# H10 full source gate failed; bounded history diagnosis next — 2026-10-29
+
+Current packet docs/UPPER_TASK_GATE_FAILURE_PACKET.md. Frozen160185e full Linux
+attempt stopped on storage guard:187reported test markers,185pass/2fail,
+1055unconfirmed/not_run, not a passed suite. The two failures map to historical
+saved-evidence corruption checks; this shallow checkout may lack their required
+Git executable object. Whole114.133522s; test110.067913s, sampled peak3.586GB.
+
+Independent audit verifies all642source/upstream files, four exited identities,
+no old-root writer,292fixture files/531,777,485bytes and seven receipts/191,443bytes
+with complete manifests; small receipts transferred exactly, scratch retained.
+Final credit is below limits but the exact tripping sample was not logged; two
+changing tree scans can misattribute growth. Do not claim the old trip is proven
+false or discard its failure. The later system-Python import defect was not reached.
+
+Repaired operator uses one-pass partitioned accounting and stdlib-only summary
+validation; two controls pass0.07s. Local unchanged positive D1saved audit and its
+two corruption checks pass0.27s with historical objects available; no new physics.
+New public-frozen protocol upper-task-history-diagnostic-protocol.json will
+confirm missing original object, correct fresh historical blob, positive saved
+audit and exactly2tests in a fresh dedicated root. Sync180/runtime10/preflight5/
+positive10/tests15s, whole240s;2GiB RSS/32MiB scratch/4MiB receipts/one thread.
+No full-suite or physical pilot activation. All old caps/faults remain unchanged.
+
+After diagnosis preregister ONE repaired full source attempt, same scientific
+wrapper, all required historical objects and current full test collection plus
+exact known strict referee alias xfail. No new physical balance/boxing/training
+claim or v11tag.81focused wrapper checks remain development evidence; H10physical
+hypothesis stays open. No current running task until diagnostic deployment.
+
 # H10 physical wrapper implemented; full Linux source gate ready — 2026-10-29
 
 Current packet: docs/UPPER_TASK_SOURCE_GATE_MISSION.md; protocol

@@ -1,0 +1,35 @@
+{
+  "schema": "joxing-upper-task-gate-repair-development-v1",
+  "scope": "Operator accounting/import controls and existing saved D1 audit; no new physics or training",
+  "original_attempt_status": "failed; no relabeling",
+  "tests": [
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_upper_task_gate_support.py",
+      "result": "2 passed in0.07s"
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_motor_residual_audit.py",
+      "result": "2 passed in0.27s"
+    }
+  ],
+  "positive_saved_control": {
+    "passed": true,
+    "new_audit_physics_steps": 0,
+    "interface_gate_passed": true
+  },
+  "limits": "Local historical Git objects exist; target Linux missing-history explanation remains a diagnostic hypothesis until the new registered run",
+  "source_files": {
+    "scripts/supervise_upper_task_tests.py": {
+      "bytes": 11549,
+      "sha256": "37ad4b3b016ec6fd73fe95f9a0b729724cfc3fb5bbf9f5054cd8ccd3b785149a"
+    },
+    "scripts/upper_task_gate_support.py": {
+      "bytes": 1135,
+      "sha256": "1ffc639f483a0419b91996c433d5e57f2c144036034463f72d3723143f01936e"
+    },
+    "tests/test_upper_task_gate_support.py": {
+      "bytes": 1875,
+      "sha256": "64f7bbc2f0167bb6efe7447dcca586e53147ad07ebf068d8188e67d120c90579"
+    }
+  }
+}

@@ -1,6 +1,8 @@
 # H10 physical wrapper: full Linux source regression gate
 
-Status: implementation ready; freeze/public verification precede this source gate.
+Status: failed and retained. Follow UPPER_TASK_GATE_FAILURE_PACKET.md.
+Original preregistered source-gate instructions below are historical; do not rerun
+this failed root or reuse its original protocol on modified source.
 No released-checkpoint physical pilot or competitive learner is activated here.
 
 ## Objective, read-first and ownership

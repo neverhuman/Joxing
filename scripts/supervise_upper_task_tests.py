@@ -13,6 +13,7 @@ from pathlib import Path
 
 from joxing_process_ownership import unknown_joxing_processes
 from supervise_motor_pilot import descendants, identity, live
+from upper_task_gate_support import partition_usage, validate_summary
 
 ROOT = Path(__file__).resolve().parents[1]
 PACKET = "experiments/v0.0.11/upper-task-source-gate-protocol.json"
@@ -34,17 +35,6 @@ def save(path, value):
     tmp = path.with_suffix(".tmp")
     tmp.write_bytes(raw)
     tmp.replace(path)
-
-
-def size(root):
-    total = 0
-    for f in root.rglob("*"):
-        try:
-            if f.is_file():
-                total += f.stat().st_size
-        except FileNotFoundError:
-            pass
-    return total
 
 
 def rss(row):
@@ -94,23 +84,29 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-sha", required=True)
     parser.add_argument("--protocol-sha256", required=True)
+    parser.add_argument("--packet", default=PACKET)
     args = parser.parse_args()
-    p = json.loads((ROOT / PACKET).read_text())
+    p = json.loads((ROOT / args.packet).read_text())
     if (
         p["schema"] != "joxing-upper-task-source-gate-v1"
+        or p.get("mode") not in ("full_source_gate", "isolation_diagnostic")
         or canonical(p) != args.protocol_sha256
         or subprocess.check_output(
             ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
         ).strip()
         != args.source_sha
         or json.loads(
-            subprocess.check_output(["git", "show", "HEAD:" + PACKET], cwd=ROOT)
+            subprocess.check_output(["git", "show", "HEAD:" + args.packet], cwd=ROOT)
         )
         != p
     ):
         raise ValueError("Frozen source-gate source/protocol")
 
     def verify():
+        for obj, expected in p["required_git_objects"].items():
+            actual = subprocess.check_output(["git", "show", obj], cwd=ROOT)
+            if hashlib.sha256(actual).hexdigest() != expected:
+                raise ValueError("Source-gate historical executable: " + obj)
         for n, d in p["source_files"].items():
             f = ROOT / n
             if (
@@ -124,7 +120,7 @@ def main():
             raise ValueError("Source-gate dirty checkout")
 
     verify()
-    out = ROOT / RUN
+    out = ROOT / p.get("output", RUN)
     out.parent.mkdir(parents=True, exist_ok=True)
     lease = (out.parent / ".upper-task-source-gate.lock").open("a+")
     fcntl.flock(lease, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -156,8 +152,7 @@ def main():
             or disk < p["minimum_free_disk_bytes"]
         ):
             raise RuntimeError("Source-gate shared-host capacity floor")
-        scratch = size(fixture)
-        raw = size(out.parent) - scratch
+        scratch, raw = partition_usage(out.parent, fixture)
         if scratch > p["fixture_scratch_bytes"] or raw > p["receipt_bytes"]:
             raise RuntimeError("Source-gate fixture/receipt credit")
         return {
@@ -206,10 +201,18 @@ def main():
             str(fixture),
             "--junitxml",
             str(out / "tests.xml"),
-            "tests",
-            "grokbot/tests",
+            *p.get("target_nodes", ["tests", "grokbot/tests"]),
         ],
     }
+    if p["mode"] == "isolation_diagnostic":
+        tests = commands.pop("tests")
+        commands["history_preflight"] = [python, "-c", p["history_preflight_code"]]
+        commands["positive_saved_audit"] = [
+            python,
+            "-c",
+            p["positive_saved_audit_code"],
+        ]
+        commands["tests"] = tests
     report = {
         "schema": "joxing-upper-task-source-supervision-v1",
         "source_commit": args.source_sha,
@@ -218,7 +221,7 @@ def main():
         "status": "running",
         "formal_native_steps": 0,
         "formal_training_updates": 0,
-        "scope": "Full source regression with fixture physics/updates; not a released-checkpoint pilot",
+        "scope": p["scope"],
         "initial_capacity": capacity(),
         "stages": [
             {"stage": n, "status": "not_run", "command": cmd}
@@ -282,13 +285,15 @@ def main():
             if row["returncode"]:
                 raise RuntimeError("Source-gate stage nonzero exit")
             if row["stage"] == "tests":
-                from joxing.shared_motor_proof import validate_test_summary
-
-                validate_test_summary(p, (out / "tests.log").read_text())
+                validate_summary(p, (out / "tests.log").read_text())
             row["status"] = "completed"
             save(out / "result.json", report)
         verify()
-        report.update(status="completed", criterion_passed=True)
+        report.update(
+            status="completed",
+            criterion_passed=True,
+            full_source_gate_qualified=p["mode"] == "full_source_gate",
+        )
     except Exception as error:  # noqa: BLE001 -- preserve failed and not_run stages
         if active is not None:
             stop(active, seen)
@@ -307,8 +312,9 @@ def main():
     finally:
         report["wall_s"] = time.monotonic() - began
         report["final_live_recorded_identities"] = [r for r in seen.values() if live(r)]
-        report["fixture_bytes"] = size(fixture)
-        report["receipt_bytes"] = size(out.parent) - report["fixture_bytes"]
+        report["fixture_bytes"], report["receipt_bytes"] = partition_usage(
+            out.parent, fixture
+        )
         save(out / "result.json", report)
     print(json.dumps({k: v for k, v in report.items() if k != "stages"}))
 

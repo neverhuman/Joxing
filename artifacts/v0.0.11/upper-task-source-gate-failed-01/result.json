@@ -1,0 +1,164 @@
+{
+  "schema": "joxing-upper-task-source-supervision-v1",
+  "source_commit": "160185e1ab46c0f3fb27d0bf04274c5635740a94",
+  "protocol_sha256": "7745d9cfd996a95f2ce33c4c55d946ef82d3048be18ed09c2f57db7386f90913",
+  "process": {
+    "pid": 1392034,
+    "parent_pid": 1,
+    "start_ticks": 920033449,
+    "state": "R"
+  },
+  "status": "halted",
+  "formal_native_steps": 0,
+  "formal_training_updates": 0,
+  "scope": "Full source regression with fixture physics/updates; not a released-checkpoint pilot",
+  "initial_capacity": {
+    "available_memory_bytes": 48868528128,
+    "free_disk_bytes": 275339808768,
+    "fixture_bytes": 0,
+    "receipt_bytes": 184526,
+    "load": [
+      4.09228515625,
+      4.71728515625,
+      4.9404296875
+    ]
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "limit_s": 180,
+      "process": {
+        "pid": 1392087,
+        "parent_pid": 1392034,
+        "start_ticks": 920033576,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 49209344,
+      "owned_identities": [
+        {
+          "pid": 1392087,
+          "parent_pid": 1392034,
+          "start_ticks": 920033576,
+          "state": "Z"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 48858902528,
+        "free_disk_bytes": 275329376256,
+        "fixture_bytes": 0,
+        "receipt_bytes": 188509,
+        "load": [
+          4.09228515625,
+          4.71728515625,
+          4.9404296875
+        ]
+      },
+      "elapsed_s": 1.3400797341018915,
+      "returncode": 0,
+      "wall_s": 1.340453952550888
+    },
+    {
+      "stage": "runtime",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-source-gate-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import sys,json,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v == {'python': '3.12.3', 'numpy': '2.4.2', 'mujoco': '3.8.0'}"
+      ],
+      "limit_s": 10,
+      "process": {
+        "pid": 1392218,
+        "parent_pid": 1392034,
+        "start_ticks": 920033756,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 24629248,
+      "owned_identities": [
+        {
+          "pid": 1392218,
+          "parent_pid": 1392034,
+          "start_ticks": 920033756,
+          "state": "Z"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 48840720384,
+        "free_disk_bytes": 275329368064,
+        "fixture_bytes": 0,
+        "receipt_bytes": 189326,
+        "load": [
+          4.09228515625,
+          4.71728515625,
+          4.9404296875
+        ]
+      },
+      "elapsed_s": 1.338473703712225,
+      "returncode": 0,
+      "wall_s": 1.3388515766710043
+    },
+    {
+      "stage": "tests",
+      "status": "failed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-source-gate-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "--basetemp",
+        "/home/ubuntu/joxing/upper-task-source-gate-20261029/runs/v0.0.11/upper-task-source-gate-01/fixtures",
+        "--junitxml",
+        "/home/ubuntu/joxing/upper-task-source-gate-20261029/runs/v0.0.11/upper-task-source-gate-01/tests.xml",
+        "tests",
+        "grokbot/tests"
+      ],
+      "limit_s": 1200,
+      "process": {
+        "pid": 1392667,
+        "parent_pid": 1392034,
+        "start_ticks": 920033936,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 3586072576,
+      "owned_identities": [
+        {
+          "pid": 1392667,
+          "parent_pid": 1392034,
+          "start_ticks": 920033936,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 48987111424,
+        "free_disk_bytes": 277335748608,
+        "fixture_bytes": 437552842,
+        "receipt_bytes": 190296,
+        "load": [
+          6.40869140625,
+          5.24951171875,
+          5.10107421875
+        ]
+      },
+      "elapsed_s": 108.4742555078119,
+      "returncode": -15,
+      "wall_s": 110.06791296415031
+    }
+  ],
+  "criterion_passed": false,
+  "error": "RuntimeError: Source-gate fixture/receipt credit",
+  "wall_s": 114.13352187164128,
+  "final_live_recorded_identities": [],
+  "fixture_bytes": 531777485,
+  "receipt_bytes": 190300
+}

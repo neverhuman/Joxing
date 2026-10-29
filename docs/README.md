@@ -1,3 +1,5 @@
+Current blocker: [H10failed full source gate and bounded history diagnosis](UPPER_TASK_GATE_FAILURE_PACKET.md).
+
 Current native motor phase: [H10command-isolation results](UPPER_RESIDUAL_RESULTS.md),
 [next physical integration packet](UPPER_RESIDUAL_MISSION.md),
 [compressed research memory](../research/README.md) and [current mission](MISSION.md).
