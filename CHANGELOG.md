@@ -13,6 +13,18 @@
 | v0.0.24 | Valid-knockdown bonus | `SMOKE_FAILED`; base head-to-head 10/12 valid | cycle 0036 |
 | v0.0.25 | Graded contact penalty | Hard gate 0/48 (blocked); monotonicity | cycle 0038 |
 | v0.0.26 | Both training opponents | Monotonicity (@16 lost 2–40 to base) | cycle 0040 |
+| v0.0.27 | Smaller ES step (lr 0.02) | Monotonicity (@16 lost 0–48 to base; @48 lost 11–37 to @16) | cycle 0042 |
+
+## v0.0.27 — 2026-10-29 (preregistered level-up NOT met; not tagged)
+
+grokbot PR #41 (preregistration) plus the cycle-0042 report.
+
+- **Lever:** ES lr 0.05 → 0.02 on the v0.0.26 recipe.
+- **Smoke gate, primary and hard gate: all passed.** Both the primary vs v0.0.19 and the hard gate vs v0.0.13 went 48–0.
+- **Monotonicity: FAILED.** @16 lost **0–48** to the v0.0.22 base, and @48 lost **11–37** to @16.
+- **Attempts:** attempt 01 was lost at training iteration 18 by operator error. SIGSTOP-pausing during a load spike orphaned the run, and it was killed by SIGHUP. Attempt 02 completed.
+- **Finding:** the collapse against the policy's own start is not a step-size effect. The objective never rewards beating an opponent of the agent's own strength.
+- **Next (v0.0.28):** add the frozen base as a self-play training opponent.
 
 ## v0.0.26 — 2026-10-29 (preregistered level-up NOT met; not tagged)
 
