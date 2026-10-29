@@ -1,0 +1,559 @@
+{
+ "schema": "grokbot-diagnostic-v1",
+ "cycle": "0044",
+ "posthoc_non_gating": true,
+ "source_report_sha256": "f765fb80ebd10f1095ef0f705421abfc0daa6aa1c6d05ebbf97da0cf680ffb6c",
+ "seeds": [
+  42000,
+  42023
+ ],
+ "trial_vs_base": {
+  "base": {
+   "mean_fitness": 0.993736111111111,
+   "mean_stand_s": 2.0509583333333334,
+   "valid_knockdown": 11,
+   "opponent_falls_first": 11,
+   "self_falls_first": 13,
+   "mean_contact": 148.25,
+   "opp_fall_median_s": 2.1205,
+   "per_seed": [
+    [
+     2140,
+     2178,
+     "self"
+    ],
+    [
+     2175,
+     1684,
+     "self"
+    ],
+    [
+     2153,
+     2042,
+     "self"
+    ],
+    [
+     1865,
+     1777,
+     "self"
+    ],
+    [
+     2015,
+     2278,
+     "self"
+    ],
+    [
+     1994,
+     2266,
+     "self"
+    ],
+    [
+     1860,
+     1917,
+     "self"
+    ],
+    [
+     1704,
+     2030,
+     "self"
+    ],
+    [
+     1840,
+     2120,
+     "self"
+    ],
+    [
+     2069,
+     1895,
+     "self"
+    ],
+    [
+     2207,
+     2053,
+     "self"
+    ],
+    [
+     2221,
+     2121,
+     "self"
+    ],
+    [
+     1797,
+     2345,
+     "self"
+    ],
+    [
+     2312,
+     2236,
+     "self"
+    ],
+    [
+     2071,
+     2110,
+     "self"
+    ],
+    [
+     2323,
+     2425,
+     "self"
+    ],
+    [
+     1910,
+     1869,
+     "self"
+    ],
+    [
+     2141,
+     2194,
+     "self"
+    ],
+    [
+     1890,
+     1931,
+     "self"
+    ],
+    [
+     2418,
+     2144,
+     "self"
+    ],
+    [
+     1916,
+     1778,
+     "self"
+    ],
+    [
+     2383,
+     2188,
+     "self"
+    ],
+    [
+     1792,
+     2334,
+     "self"
+    ],
+    [
+     2027,
+     2601,
+     "self"
+    ]
+   ]
+  },
+  "at16": {
+   "mean_fitness": 0.689361111111111,
+   "mean_stand_s": 1.7467083333333333,
+   "valid_knockdown": 5,
+   "opponent_falls_first": 5,
+   "self_falls_first": 19,
+   "mean_contact": 101.20833333333333,
+   "opp_fall_median_s": 1.9665,
+   "per_seed": [
+    [
+     1363,
+     1978,
+     "self"
+    ],
+    [
+     1898,
+     1713,
+     "self"
+    ],
+    [
+     1788,
+     1842,
+     "self"
+    ],
+    [
+     1549,
+     2034,
+     "self"
+    ],
+    [
+     1923,
+     2231,
+     "self"
+    ],
+    [
+     1889,
+     2260,
+     "self"
+    ],
+    [
+     1409,
+     1957,
+     "self"
+    ],
+    [
+     1971,
+     2020,
+     "self"
+    ],
+    [
+     1563,
+     2047,
+     "self"
+    ],
+    [
+     1969,
+     1861,
+     "self"
+    ],
+    [
+     1952,
+     1818,
+     "self"
+    ],
+    [
+     1662,
+     1861,
+     "self"
+    ],
+    [
+     1939,
+     1817,
+     "self"
+    ],
+    [
+     2024,
+     1615,
+     "self"
+    ],
+    [
+     1875,
+     1990,
+     "self"
+    ],
+    [
+     1286,
+     2037,
+     "self"
+    ],
+    [
+     1298,
+     1859,
+     "self"
+    ],
+    [
+     1583,
+     2320,
+     "self"
+    ],
+    [
+     1848,
+     1962,
+     "self"
+    ],
+    [
+     1962,
+     2465,
+     "self"
+    ],
+    [
+     1649,
+     1842,
+     "self"
+    ],
+    [
+     1872,
+     1971,
+     "self"
+    ],
+    [
+     1541,
+     1804,
+     "self"
+    ],
+    [
+     2108,
+     2297,
+     "self"
+    ]
+   ]
+  },
+  "at48": {
+   "mean_fitness": 1.4247916666666667,
+   "mean_stand_s": 2.573375,
+   "valid_knockdown": 16,
+   "opponent_falls_first": 20,
+   "self_falls_first": 4,
+   "mean_contact": 99.66666666666667,
+   "opp_fall_median_s": 1.949,
+   "per_seed": [
+    [
+     2711,
+     1881,
+     "self"
+    ],
+    [
+     3000,
+     1958,
+     "self"
+    ],
+    [
+     2321,
+     1708,
+     "self"
+    ],
+    [
+     3000,
+     2477,
+     "self"
+    ],
+    [
+     2231,
+     1732,
+     "self"
+    ],
+    [
+     1952,
+     1765,
+     "self"
+    ],
+    [
+     3000,
+     2180,
+     "self"
+    ],
+    [
+     1761,
+     1825,
+     "self"
+    ],
+    [
+     3000,
+     2059,
+     "self"
+    ],
+    [
+     3000,
+     2446,
+     "self"
+    ],
+    [
+     3000,
+     1693,
+     "self"
+    ],
+    [
+     3000,
+     2223,
+     "self"
+    ],
+    [
+     1909,
+     2232,
+     "self"
+    ],
+    [
+     1980,
+     1860,
+     "self"
+    ],
+    [
+     3000,
+     2234,
+     "self"
+    ],
+    [
+     3000,
+     1940,
+     "self"
+    ],
+    [
+     3000,
+     1776,
+     "self"
+    ],
+    [
+     2087,
+     2823,
+     "self"
+    ],
+    [
+     3000,
+     1865,
+     "self"
+    ],
+    [
+     2195,
+     2247,
+     "self"
+    ],
+    [
+     2465,
+     2024,
+     "self"
+    ],
+    [
+     3000,
+     2566,
+     "self"
+    ],
+    [
+     1999,
+     1276,
+     "self"
+    ],
+    [
+     2150,
+     1786,
+     "self"
+    ]
+   ]
+  }
+ },
+ "trial_vs_frozen_and_posthoc_h2h": {
+  "base_vs_v0019": {
+   "mean_fitness": 1.504,
+   "vkd": 22,
+   "stand_s": 2.879,
+   "contact": 416
+  },
+  "at16_vs_v0019": {
+   "mean_fitness": 1.588,
+   "vkd": 23,
+   "stand_s": 2.82,
+   "contact": 315
+  },
+  "at48_vs_v0019": {
+   "mean_fitness": 0.993,
+   "vkd": 13,
+   "stand_s": 2.299,
+   "contact": 324
+  },
+  "base_vs_v0013": {
+   "mean_fitness": 1.499,
+   "vkd": 23,
+   "stand_s": 1.826,
+   "contact": 68
+  },
+  "at16_vs_v0013": {
+   "mean_fitness": 1.734,
+   "vkd": 24,
+   "stand_s": 2.293,
+   "contact": 31
+  },
+  "at48_vs_v0013": {
+   "mean_fitness": 1.654,
+   "vkd": 24,
+   "stand_s": 2.157,
+   "contact": 65
+  },
+  "posthoc_h2h_48_vs_base": {
+   "games": 48,
+   "valid_games": 48,
+   "valid_share": 1.0,
+   "no_contest": 0,
+   "blocked": 0,
+   "invalid": 0,
+   "wins": 43,
+   "losses": 5,
+   "draws": 0,
+   "wins_with_hits": 28,
+   "win_rate": 0.8958333333333334,
+   "win_rate_wilson95": [
+    0.7783257819124587,
+    0.9546782812449945
+   ],
+   "paired_samples": 24,
+   "mean": 0.7916666666666666,
+   "lower95": 0.29202243710977566,
+   "elo": 373.7993804974269,
+   "elo_lower95": 104.50022452548052,
+   "checks": {
+    "a_valid_share_at_least_half": true,
+    "b_lower95_above_zero": true,
+    "c_half_of_wins_with_hits": true
+   },
+   "passed": true
+  }
+ },
+ "scripts": [
+  "grokbot/redteam/probes/cycle-0044-trial-vs-base.py",
+  "grokbot/redteam/probes/cycle-0044-trial-vs-frozen.py",
+  "grokbot/redteam/probes/cycle-0044-rank-shares.py"
+ ],
+ "rank_shares": {
+  "base": [
+   {
+    "pooled": [
+     0.43442622950819676,
+     0.2868852459016394,
+     0.27868852459016397
+    ],
+    "split": [
+     0.33333333333333337,
+     0.33333333333333337,
+     0.33333333333333337
+    ],
+    "mean_fitness_by_opponent": [
+     1.1154583333333334,
+     1.151125,
+     0.625875
+    ],
+    "pooled_total": 5.304347826086956,
+    "split_total": 6.857142857142856
+   },
+   {
+    "pooled": [
+     0.2857142857142857,
+     0.4428571428571429,
+     0.27142857142857146
+    ],
+    "split": [
+     0.25000000000000006,
+     0.4166666666666667,
+     0.33333333333333337
+    ],
+    "mean_fitness_by_opponent": [
+     1.3751250000000002,
+     1.0012083333333335,
+     0.7488750000000001
+    ],
+    "pooled_total": 3.0434782608695654,
+    "split_total": 3.428571428571428
+   }
+  ],
+  "at16": [
+   {
+    "pooled": [
+     0.37209302325581395,
+     0.3953488372093023,
+     0.23255813953488375
+    ],
+    "split": [
+     0.368421052631579,
+     0.368421052631579,
+     0.2631578947368421
+    ],
+    "mean_fitness_by_opponent": [
+     1.1528749999999999,
+     1.3445833333333332,
+     0.5123749999999999
+    ],
+    "pooled_total": 3.739130434782609,
+    "split_total": 5.428571428571428
+   },
+   {
+    "pooled": [
+     0.5394736842105263,
+     0.19736842105263155,
+     0.26315789473684215
+    ],
+    "split": [
+     0.42105263157894735,
+     0.26315789473684204,
+     0.3157894736842105
+    ],
+    "mean_fitness_by_opponent": [
+     1.002625,
+     1.7011249999999998,
+     0.418375
+    ],
+    "pooled_total": 3.3043478260869565,
+    "split_total": 5.428571428571429
+   }
+  ],
+  "note": "share of the ES update's |rank difference| per opponent slot [v0.0.19, v0.0.13, base]; rng 99441; 2 batches x 12 pairs per point; lr 0"
+ }
+}

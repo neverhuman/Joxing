@@ -14,6 +14,20 @@
 | v0.0.25 | Graded contact penalty | Hard gate 0/48 (blocked); monotonicity | cycle 0038 |
 | v0.0.26 | Both training opponents | Monotonicity (@16 lost 2–40 to base) | cycle 0040 |
 | v0.0.27 | Smaller ES step (lr 0.02) | Monotonicity (@16 lost 0–48 to base; @48 lost 11–37 to @16) | cycle 0042 |
+| v0.0.28 | Frozen start as a self-play training opponent | Monotonicity (@16 lost 2–46 to base; @48 beat @16 46–2) | cycle 0044 |
+
+## v0.0.28 — 2026-10-29 (preregistered level-up NOT met; not tagged)
+
+grokbot PR #43 (preregistration) plus the cycle-0044 report.
+
+- **Lever:** the frozen v0.0.22 start joins the training opponents; ES pairs cycle through v0.0.19, v0.0.13 and v0.0.22.
+- **Smoke gate, primary and hard gate: passed.** The primary vs v0.0.19 went 44–0 with 4 blocked; the hard gate vs v0.0.13 went 48–0.
+- **Monotonicity: FAILED.** @48 beat @16 46–2, the first such pass, but @16 lost **2–46** to the base.
+- **Diagnostic (post hoc, non-gating):**
+  - The training trial agrees with head-to-head, which refutes the registered "match-outcome term" reading.
+  - ES traded the base matchup for the frozen opponents early, then recovered. @48 beats the base 43–5 post hoc, which does not count as a gate.
+  - Measured: the base received 0.23–0.28 of the ES update, against a nominal 0.33. Per-opponent ranks would only lift it to about 0.31.
+- **Next (v0.0.29):** the base faces half of the ES pairs.
 
 ## v0.0.27 — 2026-10-29 (preregistered level-up NOT met; not tagged)
 
