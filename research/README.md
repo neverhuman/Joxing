@@ -25,7 +25,7 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H12](H12.md)|Are sporting rules ready for competitive learning?|Partial; force/attribution/fall/geometry/motor/replay gates still block|
 |[H13](H13.md)|Can QFlex value-guided exploration improve a valid motor task?|Research lead only; compatibility/method comparison not_run|
 
-**Last concluded: H9. Next: H10 physical integration (command prerequisite qualified; no job running). Next unused ID: H14.** These are global research-note
+**Last concluded: H9. Next: H10 full Linux wrapper source gate (implemented; no job running before deployment). Next unused ID: H14.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

@@ -1,3 +1,32 @@
+# H10 physical wrapper implemented; full Linux source gate ready — 2026-10-29
+
+Current packet: docs/UPPER_TASK_SOURCE_GATE_MISSION.md; protocol
+experiments/v0.0.11/upper-task-source-gate-protocol.json. New opt-in composition
+reuses the unchanged shared physical task/frozen pair teacher. Both residuals
+stage before paired commands; no extra teacher/policy call during20held ticks.
+Snapshots bind original3601inputs, teacher/mask/behavior, engine/reference/cache,
+held commands, private RNG and exact seed/decision progress. All1400muscles stay.
+
+81focused development tests pass14.99s/Ruffpass. Actual native engine with
+explicitly synthetic actor proves zero-residual state/commands/contact parity
+and nonzero203→held17→nextdecision exact replay, plus boundary/terminal/atomic
+corruption/assistance controls. This is not pretrained balance or learning.
+Prior H10offline2204cases and all earlier negative physical outcomes unchanged.
+
+Publicfreeze and anonymously verify source/protocol before fresh xbabe1root
+upper-task-source-gate-20261029. Full fixed1242Linux collection must yield1241
+passes plus exactly the known strict referee snapshot-alias xfail. Caps: sync180s,
+runtime10s, tests1200s/whole1500s,8GiB aggregate owned RSS,1GiB fixture scratch,
+4MiB receipts, at most16fixture processes/one thread each. Fresh capacity floor
+16GiB available RAM/10GiBdisk; no other owned Joxing job. Source only: tests have
+fixture physics/gradient updates; no formal released-checkpoint motor pilot.
+
+On completion independently audit all rows, source/runtime/outputs and exits;
+retain faults/not_run/scratch, publish compressed H10 receipts and push. The new
+collector/physical balance/reach-return/recording protocol remains to implement
+and register after this source gate. Old900sbudget unchanged; no actual physical
+pilot activation, competitive promotion or v11tag from this source qualification.
+
 # H10 command prerequisite qualified; physical integration next — 2026-10-29
 
 Read docs/UPPER_RESIDUAL_RESULTS.md and research/H10.md. All2204saved native

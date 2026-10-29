@@ -2,7 +2,9 @@
 
 Status: offline prerequisite concluded; all2204cases and independent audit pass.
 Read UPPER_RESIDUAL_RESULTS.md. Physical integration below is next; no current
-job or physical launch budget. This is not a balance or boxing result.
+job or physical launch budget. The wrapper is now implemented; follow
+UPPER_TASK_SOURCE_GATE_MISSION.md for its pending full Linux regression.
+This is not a balance or boxing result.
 
 ## Objective, evidence and boundaries
 

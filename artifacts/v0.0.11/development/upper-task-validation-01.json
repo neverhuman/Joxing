@@ -1,0 +1,67 @@
+{
+  "schema": "joxing-upper-task-development-v1",
+  "observed_utc": "2026-10-29T08:41:26.786203+00:00",
+  "formal_released_checkpoint_outcome": false,
+  "scope": "Actual native engine with explicitly synthetic teacher and diagnostic arm policy; physical fixture tests, not pretrained balance/training",
+  "test_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_upper_residual_task.py tests/test_upper_residual.py tests/test_upper_residual_evidence.py tests/test_shared_motor_task.py tests/test_shared_motor_inputs.py",
+  "attempts": [
+    {
+      "label": "initial wrapper",
+      "result": "20 passed in7.97s"
+    },
+    {
+      "label": "signedzero and just-sampled boundary",
+      "result": "81 passed in15.40s"
+    },
+    {
+      "label": "one-shot adapter",
+      "result": "81 passed in16.34s"
+    },
+    {
+      "label": "final seed/progress and held-action binding",
+      "result": "81 passed in14.99s"
+    }
+  ],
+  "ruff": "passed after two unused-variable/style findings corrected; no runtime failure",
+  "collection": {
+    "command": "rtk proxy .venv/bin/python -m pytest -q --collect-only tests grokbot/tests",
+    "result": "1242 tests collected in3.03s",
+    "reason": "Merged disjoint incoming Grokbot8cc82cd with two new tests BEFORE source freeze/outcomes"
+  },
+  "source_files": {
+    "scripts/supervise_upper_task_tests.py": {
+      "bytes": 10974,
+      "sha256": "4d93ded7874d171f84a26d1e8547d545d5dfbc4ad40a5ccbed789403c52dce48"
+    },
+    "src/joxing/upper_residual_task.py": {
+      "bytes": 16061,
+      "sha256": "0b27674ae67b4701f530ef71bc158f7b78c792af4af1fc699ec0eeb161f89eb2"
+    },
+    "tests/test_upper_residual_task.py": {
+      "bytes": 11640,
+      "sha256": "f8a701189ad9c0caedca6872c8d80488fc5c40a66a358555933bdb392fafa541"
+    }
+  },
+  "formal_native_steps": 0,
+  "formal_training_updates": 0,
+  "registered_linux_expected": {
+    "passed": 1241,
+    "known_strict_xfail": 1
+  },
+  "collection_history": [
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q --collect-only tests grokbot/tests",
+      "result": "1240 tests collected in3.00s"
+    },
+    {
+      "command": "rtk proxy .venv/bin/python -m pytest -q --collect-only tests grokbot/tests",
+      "result": "1242 tests collected in3.03s",
+      "reason": "Merged disjoint incoming Grokbot8cc82cd with two new tests BEFORE source freeze/outcomes"
+    }
+  ],
+  "incoming_validation": {
+    "source": "8cc82cd",
+    "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider grokbot/tests/test_motor_gate.py",
+    "result": "7 passed in4.13s"
+  }
+}
