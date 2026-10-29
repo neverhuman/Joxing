@@ -6,7 +6,7 @@ Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGro
 
 **Research memory:** [H1–H13 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
-actions. H9 has concluded; H10 command isolation is implemented for qualification. H13 records a separate QFlex research lead.
+actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
@@ -38,10 +38,11 @@ This is mechanical consistency, not anatomical or real-force calibration.
 [Results](docs/NATIVE_FACE_AUDIT_RESULTS.md) · [H9summary](research/H9.md) ·
 [Next: pretrained balance and bounded arm adaptation](research/H10.md).
 
-**Pretrained motor next step:** a new arm-only command interface preserves all
-700 outputs and the other578commands exactly.28development checks pass; the
-registered2204-case saved-command qualification is next. Balance and physical
-replay still need their own pilot. [H10 mission](docs/UPPER_RESIDUAL_MISSION.md).
+**Pretrained arm interface qualified:** all2204saved-command cases and an
+independent audit pass after28Linux tests. The new opt-in46-action interface
+retains700outputs and protects578teacher commands exactly. This establishes
+command isolation; physical balance and continuation remain open.
+[H10results](docs/UPPER_RESIDUAL_RESULTS.md) · [Next physical integration](docs/UPPER_RESIDUAL_MISSION.md).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)

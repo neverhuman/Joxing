@@ -1,3 +1,26 @@
+# H10 command prerequisite qualified; physical integration next — 2026-10-29
+
+Read docs/UPPER_RESIDUAL_RESULTS.md and research/H10.md. All2204saved native
+command cases and independent scalar read-audit pass after28Linux tests1.88s.
+All700muscles retained:122arm-file muscles/46groups,578protected commands exact;
+352zero cases preserve every command bit. No new physics, teacher inference or
+optimizer updates; command-record roundtrip is not engine continuation/balance.
+Prior severe lean, failed motor gates and missing force tape remain negative.
+
+Frozen e147cefc/protocol477cbd67;86declared public files verified before launch.
+Postgate23.641719/60s; proof high-water576,790,528bytes/4GiB; final raw14files/
+1,151,101bytes/4MiB transferred exactly. Independent integrity checks all335
+source/input identities,7exited PIDs/start identities and no live owned writer.
+One attempt2204pass/0failed/invalid/incomplete/not_run. No current running job.
+
+Next worker-ready phase: docs/UPPER_RESIDUAL_MISSION.md physical integration
+section. New opt-in UpperPairTeacher/UpperResidualTask wrapper, exact neutral
+source/contact/held continuation and atomic policy/RNG snapshots, then a fresh
+full Linux gate and separately registered finite reach-return/recording pilot.
+No physical launch budget yet; old900sledger unchanged. Preserve walking phase,
+actor/normalizer/700outputs; no fake stationary guard, external assistance,
+competitive promotion or v11tag. H13records deferred QFlex method research.
+
 # H10 arm-command interface ready; no physical adaptation yet — 2026-10-29
 
 Read docs/UPPER_RESIDUAL_MISSION.md and research/H10.md. Observed pretrained

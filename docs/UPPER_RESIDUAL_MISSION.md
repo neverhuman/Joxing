@@ -1,7 +1,8 @@
 # H10: isolate arm adaptation around the pretrained full-body motor
 
-Status: implemented; formal saved-command qualification pending public freeze.
-This is a zero-integration prerequisite, not a balance or boxing result.
+Status: offline prerequisite concluded; all2204cases and independent audit pass.
+Read UPPER_RESIDUAL_RESULTS.md. Physical integration below is next; no current
+job or physical launch budget. This is not a balance or boxing result.
 
 ## Objective, evidence and boundaries
 
@@ -106,6 +107,35 @@ tapes. Run the fresh full Linux suite before activation. Register a *new* finite
 pilot protocol with counted source/replay/audit/render stages, complete ZIP_STORED
 output size arithmetic/fault reserve and owned CPU capacity. Never reuse a prior
 source/test receipt for the changed collector. No launch budget is granted here.
+
+Concrete implementation ownership: new `src/joxing/upper_residual_task.py`
+(`UpperPairTeacher`, `UpperResidualTask`) and `tests/test_upper_residual_task.py`;
+new probe/evidence modules, entry points and machine protocol only after wrapper
+tests. Reuse FrozenPairTeacher.infer_pair and SharedMotorTask.begin_control,
+advance_substep, snapshot/restore through composition; do not edit their closed
+contracts. Stage and validate both residuals before any teacher/engine mutation.
+UpperPairTeacher obtains original A/Binputs simultaneously, makes exactly the two
+original scalar calls and composes each output once. SharedMotorTask applies the
+existing sigmoid once and owns the20substeps. The wrapper owns residual-policy
+state and HeldUpperCommand records; inject no extra inference during a hold.
+
+Wrapper snapshots bind the base snapshot, arm records, behavior/task identity,
+teacher/normalizer/reference hashes and explicit policy/RNG state. Before atomic
+restore validate both owners, sample tick=tick−tick%20, remaining=20−tick%20 when
+mid-hold, and recorded command bits against base commands/engine control. Validate
+all wrapper fields before delegating base.restore; no partial A/Bcommit or policy
+mutation on rejection. A record at a completed boundary is historical until the
+next begin_control; do not demand its stale hold be active or resample early.
+
+Test files must cover zero vs unchanged SharedMotorTask exact engine/commands/
+contacts/references, nonzero protected channels, tick203restore with17held steps
+and no new decision, independent A/Bsampling, policy/private RNG roundtrip,
+boundary/terminal snapshots, rejected wrong bundle/mask/clock and assistance.
+Use explicit fixtures for development; keep actual-checkpoint formal outcomes
+separate. New probe should use the qualified stored writer and retain signed
+contacts, posture/support, complete metadata, entered/completed counters, faults
+and all source/replay attempts. An independent evidence reader reconstructs each
+command, mask/protected channels, source measurements and continuation hashes.
 
 Physical question: can the teacher keep walking while a small arm task changes
 hand pose without degrading posture/support? Use paired neutral and arm-task

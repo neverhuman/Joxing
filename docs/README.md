@@ -1,6 +1,7 @@
-Current native evidence task: [512MiB bindings repair](MOTOR_CODEC_BINDINGS_REPAIR_PACKET.md). Prior codec attempt failed before encoding; source tests passed and all negative rows remain. No new native motor/boxing qualification.
-
-Current motor result: [first shared pretrained walking recording and honest partial proof](SHARED_MOTOR_PHYSICAL_RESULTS.md). Next ready [zero-physics evidence codec qualification](SHARED_MOTOR_STORAGE_CONTINUATION_PACKET.md); [current mission](MISSION.md). No full motor/replay/boxing qualification yet.
+Current native motor phase: [H10command-isolation results](UPPER_RESIDUAL_RESULTS.md),
+[next physical integration packet](UPPER_RESIDUAL_MISSION.md),
+[compressed research memory](../research/README.md) and [current mission](MISSION.md).
+2204offline cases pass; physical balance/boxing remain unqualified.
 
 # Joxing documentation
 
@@ -27,7 +28,7 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 | v0.0.7 | Transfer mapping/exact replay pass; all 80 long tracking attempts valid but 0/20 completions per condition; 99 Linux tests pass | [Results](V0.0.7_RESULTS.md), [book](../experiments/v0.0.7/README.md), [evidence](../artifacts/v0.0.7/) |
 | v0.0.8 | All40 valid physical attempts fail20s gate; all12 replays exact;127 Mac/Linux tests pass | [Results](V0.0.8_RESULTS.md), [book](../experiments/v0.0.8/README.md), [contract](PHYSICAL_MOTOR.md) |
 | v0.0.9 | Completed exact CPU scaling to520.7TPS/16workers; batching and collector declined under unchanged gates | [Results](V0.0.9_RESULTS.md), [book](../experiments/v0.0.9/README.md), [HPC route](SELF_PLAY_HPC_PLAN.md) |
-| v0.0.10 | In progress: reference correction and all4neutral physical replays audited; D2worker/evaluation foundations tested, launch gated | [Mission](V0.0.10_MISSION.md), [diagnostic](V0.0.10_D0_RESULTS.md), [R1](V0.0.10_R1_REFERENCE_SEAM.md), [D2packet](V0.0.10_D2_PILOT.md) |
+| v0.0.10 | Concluded:16,384training transitions/896updates,32valid evaluations/two exact replays; both motor improvement gates failed | [Mission](V0.0.10_MISSION.md), [diagnostic](V0.0.10_D0_RESULTS.md), [R1](V0.0.10_R1_REFERENCE_SEAM.md), [D2packet](V0.0.10_D2_PILOT.md), [final results](V0.0.10_RESULTS.md) |
 | Later milestones | Proposed; unimplemented | [Master implementation gates](IMPLEMENTATION.md) |
 
 ## Game, physics and compute
@@ -47,4 +48,4 @@ Public source and evidence: [github.com/neverhuman/Joxing](https://github.com/ne
 - [Review of all four supplied plans](SPEC_REVIEW.md): adopted ideas, corrections and deferred proposals. [Original reference documents](references/) are research input; their commands and reported measurements are not execution instructions or our own results.
 - [Additional boxing/HPC proposal review](EXTERNAL_REVIEW_2026-10-26.md): defense/style scenarios, causal observations, league edge cases and performance ideas considered against actual v7 evidence. Its preserved input is research material, not a replacement mission.
 
-Delivered capabilities are established by code and receipts. A planned command, success target or future version name does not establish that training or a test has run. The package/latest completed release is v0.0.9, and v0.0.2 remains the prior assisted-strike proof. No release establishes autonomous boxing or qualified GPU physics yet.
+Delivered capabilities are established by code and receipts. A planned command, success target or future version name does not establish that training or a test has run. The package/latest completed release is v0.0.10, and v0.0.2 remains the prior assisted-strike proof. No release establishes autonomous boxing or qualified GPU physics yet.

@@ -1,0 +1,202 @@
+{
+  "schema": "joxing-upper-residual-supervision-v1",
+  "source_commit": "e147cefc9b13d9a4e5761444049f65c9a778ddad",
+  "protocol_sha256": "477cbd678fcf03cd7ec514b8635bae3166545a0e80074c13bd466e764a509436",
+  "process": {
+    "pid": 1172010,
+    "start_ticks": 919854036,
+    "parent_pid": 1,
+    "group": 1172010,
+    "state": "R"
+  },
+  "status": "completed",
+  "load_before": [
+    9.005859375,
+    9.05029296875,
+    7.951171875
+  ],
+  "available_memory_bytes": 47744327680,
+  "free_disk_bytes": 275755229184,
+  "new_physics": 0,
+  "environment": {
+    "threads": 1,
+    "PYTHONPATH": "/home/ubuntu/joxing/upper-residual-20261029"
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "wall_limit_s": 180,
+      "process": {
+        "pid": 1172031,
+        "start_ticks": 919854046,
+        "parent_pid": 1172010,
+        "group": 1172031,
+        "state": "R"
+      },
+      "latest_elapsed_s": 1.2990702018141747,
+      "latest_group_rss_bytes": 0,
+      "returncode": 0,
+      "wall_s": 1.453001257032156,
+      "max_group_rss_bytes": 117358592,
+      "owned_identities": [
+        {
+          "pid": 1172031,
+          "start_ticks": 919854046,
+          "parent_pid": 1172010,
+          "group": 1172031,
+          "state": "Z"
+        },
+        {
+          "pid": 1172156,
+          "start_ticks": 919854071,
+          "parent_pid": 1172031,
+          "group": 1172031,
+          "state": "R"
+        },
+        {
+          "pid": 1172157,
+          "start_ticks": 919854106,
+          "parent_pid": 1172031,
+          "group": 1172031,
+          "state": "R"
+        }
+      ],
+      "error": null,
+      "live_recorded_identities": []
+    },
+    {
+      "stage": "tests",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-residual-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_upper_residual.py",
+        "tests/test_upper_residual_evidence.py"
+      ],
+      "wall_limit_s": 45,
+      "process": {
+        "pid": 1172168,
+        "start_ticks": 919854192,
+        "parent_pid": 1172010,
+        "group": 1172168,
+        "state": "R"
+      },
+      "latest_elapsed_s": 2.2444424480199814,
+      "latest_group_rss_bytes": 517181440,
+      "returncode": 0,
+      "wall_s": 2.3984828665852547,
+      "max_group_rss_bytes": 525758464,
+      "owned_identities": [
+        {
+          "pid": 1172168,
+          "start_ticks": 919854192,
+          "parent_pid": 1172010,
+          "group": 1172168,
+          "state": "Z"
+        }
+      ],
+      "error": null,
+      "live_recorded_identities": []
+    },
+    {
+      "stage": "proof",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-residual-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "scripts/qualify_upper_residual.py",
+        "--protocol-sha256",
+        "477cbd678fcf03cd7ec514b8635bae3166545a0e80074c13bd466e764a509436",
+        "--source-sha",
+        "e147cefc9b13d9a4e5761444049f65c9a778ddad",
+        "--stage",
+        "proof"
+      ],
+      "wall_limit_s": 35,
+      "process": {
+        "pid": 1172505,
+        "start_ticks": 919854432,
+        "parent_pid": 1172010,
+        "group": 1172505,
+        "state": "R"
+      },
+      "latest_elapsed_s": 22.499135142192245,
+      "latest_group_rss_bytes": 0,
+      "returncode": 0,
+      "wall_s": 22.658549720421433,
+      "max_group_rss_bytes": 516177920,
+      "owned_identities": [
+        {
+          "pid": 1172505,
+          "start_ticks": 919854432,
+          "parent_pid": 1172010,
+          "group": 1172505,
+          "state": "Z"
+        }
+      ],
+      "error": null,
+      "live_recorded_identities": []
+    },
+    {
+      "stage": "audit",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-residual-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "scripts/qualify_upper_residual.py",
+        "--protocol-sha256",
+        "477cbd678fcf03cd7ec514b8635bae3166545a0e80074c13bd466e764a509436",
+        "--source-sha",
+        "e147cefc9b13d9a4e5761444049f65c9a778ddad",
+        "--stage",
+        "audit"
+      ],
+      "wall_limit_s": 20,
+      "process": {
+        "pid": 1192649,
+        "start_ticks": 919856698,
+        "parent_pid": 1172010,
+        "group": 1192649,
+        "state": "R"
+      },
+      "latest_elapsed_s": 0.8255944568663836,
+      "latest_group_rss_bytes": 72011776,
+      "returncode": 0,
+      "wall_s": 0.9794502034783363,
+      "max_group_rss_bytes": 80412672,
+      "owned_identities": [
+        {
+          "pid": 1192649,
+          "start_ticks": 919856698,
+          "parent_pid": 1172010,
+          "group": 1192649,
+          "state": "Z"
+        }
+      ],
+      "error": null,
+      "live_recorded_identities": []
+    }
+  ],
+  "cases": {
+    "registered": 2204,
+    "counts": {
+      "passed": 2204,
+      "failed": 0,
+      "not_run": 0,
+      "running": 0
+    }
+  },
+  "criterion_passed": true,
+  "post_gate_wall_s": 23.641719294711947,
+  "raw_bytes": 1147109
+}

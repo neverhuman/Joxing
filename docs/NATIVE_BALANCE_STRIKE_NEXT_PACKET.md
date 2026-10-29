@@ -3,9 +3,11 @@
 Current checkpoint2026-10-29: [H7](../research/H7.md) exact writer and
 [H9](../research/H9.md) mechanical face diagnostic concluded. Do not repeat them.
 Continue at section3 via [H10](../research/H10.md): compatible pretrained motor
-inventory and a balance-preserving upper-limb interface. Reuse the existing
+inventory and an upper-limb interface with explicit balance gates. Reuse the existing
 v10neutral residual implementation/receipts; qualify only the new mask/task/cache
-contract. No current physical launch is registered and no job is running.
+contract. Its [2204-case offline prerequisite](UPPER_RESIDUAL_RESULTS.md) now
+passes. Continue with the [physical integration packet](UPPER_RESIDUAL_MISSION.md);
+no current physical launch is registered and no job is running.
 
 ## Objective and delivery boundary
 
