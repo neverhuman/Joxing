@@ -154,7 +154,10 @@ def main():
             raise RuntimeError("Source-gate shared-host capacity floor")
         scratch, raw = partition_usage(out.parent, fixture)
         if scratch > p["fixture_scratch_bytes"] or raw > p["receipt_bytes"]:
-            raise RuntimeError("Source-gate fixture/receipt credit")
+            raise RuntimeError(
+                f"Source-gate fixture/receipt credit: fixture={scratch}/"
+                f"{p['fixture_scratch_bytes']}, receipts={raw}/{p['receipt_bytes']}"
+            )
         return {
             "available_memory_bytes": available,
             "free_disk_bytes": disk,

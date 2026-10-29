@@ -1,3 +1,6 @@
+Current source phase: [one repaired full Linux gate](UPPER_TASK_SOURCE_REPAIR_MISSION.md);
+bounded history diagnostic passed, original failure remains retained.
+
 Current blocker: [H10failed full source gate and bounded history diagnosis](UPPER_TASK_GATE_FAILURE_PACKET.md).
 
 Current native motor phase: [H10command-isolation results](UPPER_RESIDUAL_RESULTS.md),

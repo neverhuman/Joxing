@@ -1,0 +1,242 @@
+{
+  "schema": "joxing-upper-task-source-supervision-v1",
+  "source_commit": "aeaced579406e2b65a007ce15ab7437df8925f48",
+  "protocol_sha256": "9f8e10ca21f89f5b8ecb0222e2973c1bb15b141b5fbe4b8fe6fde80a3fd25a9c",
+  "process": {
+    "pid": 1545296,
+    "parent_pid": 1,
+    "start_ticks": 920160484,
+    "state": "R"
+  },
+  "status": "completed",
+  "formal_native_steps": 0,
+  "formal_training_updates": 0,
+  "scope": "Bounded missing-history diagnostic: original required object missing, unchanged positive saved evidence passes after explicit history acquisition, both corruption tests pass; no full Linux qualification or new physics",
+  "initial_capacity": {
+    "available_memory_bytes": 45412368384,
+    "free_disk_bytes": 272777723904,
+    "fixture_bytes": 0,
+    "receipt_bytes": 211261,
+    "load": [
+      4.908203125,
+      5.935546875,
+      6.12744140625
+    ]
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "limit_s": 180,
+      "process": {
+        "pid": 1545474,
+        "parent_pid": 1545296,
+        "start_ticks": 920160623,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 81764352,
+      "owned_identities": [
+        {
+          "pid": 1545474,
+          "parent_pid": 1545296,
+          "start_ticks": 920160623,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 45365571584,
+        "free_disk_bytes": 272767291392,
+        "fixture_bytes": 0,
+        "receipt_bytes": 216838,
+        "load": [
+          4.908203125,
+          5.935546875,
+          6.12744140625
+        ]
+      },
+      "elapsed_s": 1.3374980147928,
+      "returncode": 0,
+      "wall_s": 1.3379069678485394
+    },
+    {
+      "stage": "runtime",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-history-diagnostic-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import sys,json,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v == {'python': '3.12.3', 'numpy': '2.4.2', 'mujoco': '3.8.0'}"
+      ],
+      "limit_s": 10,
+      "process": {
+        "pid": 1545650,
+        "parent_pid": 1545296,
+        "start_ticks": 920160809,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 24436736,
+      "owned_identities": [
+        {
+          "pid": 1545650,
+          "parent_pid": 1545296,
+          "start_ticks": 920160809,
+          "state": "Z"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 45176832000,
+        "free_disk_bytes": 272767283200,
+        "fixture_bytes": 0,
+        "receipt_bytes": 217650,
+        "load": [
+          4.908203125,
+          5.935546875,
+          6.12744140625
+        ]
+      },
+      "elapsed_s": 1.3343886137008667,
+      "returncode": 0,
+      "wall_s": 1.3348078466951847
+    },
+    {
+      "stage": "history_preflight",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-history-diagnostic-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import subprocess,json; r=subprocess.run(['git','show','7acd207ca69784935657d5f6b2933aff5a23e3f9:scripts/qualify_motor_residual.py'],cwd='/home/ubuntu/joxing/upper-task-source-gate-20261029',capture_output=True); assert r.returncode != 0; print(json.dumps({'original_required_object_missing':True,'returncode':r.returncode,'stderr':r.stderr.decode()}))"
+      ],
+      "limit_s": 5,
+      "process": {
+        "pid": 1545771,
+        "parent_pid": 1545296,
+        "start_ticks": 920160994,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 0,
+      "owned_identities": [
+        {
+          "pid": 1545771,
+          "parent_pid": 1545296,
+          "start_ticks": 920160994,
+          "state": "Z"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 45120966656,
+        "free_disk_bytes": 272767283200,
+        "fixture_bytes": 0,
+        "receipt_bytes": 218096,
+        "load": [
+          5.076171875,
+          5.95361328125,
+          6.13232421875
+        ]
+      },
+      "elapsed_s": 0.16855267994105816,
+      "returncode": 0,
+      "wall_s": 0.1689893677830696
+    },
+    {
+      "stage": "positive_saved_audit",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-history-diagnostic-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import importlib.util,json; from pathlib import Path; s=importlib.util.spec_from_file_location('audit','scripts/verify_motor_residual.py'); m=importlib.util.module_from_spec(s);s.loader.exec_module(m); r=m.verify(Path('artifacts/v0.0.10/D1/raw'),Path('artifacts/v0.0.10/D1')); assert r['passed'] and r['new_audit_physics_steps']==0; print(json.dumps({'passed':True,'new_physics':0,'positive_saved_control':True}))"
+      ],
+      "limit_s": 10,
+      "process": {
+        "pid": 1545831,
+        "parent_pid": 1545296,
+        "start_ticks": 920161064,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 29896704,
+      "owned_identities": [
+        {
+          "pid": 1545831,
+          "parent_pid": 1545296,
+          "start_ticks": 920161064,
+          "state": "Z"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 44958572544,
+        "free_disk_bytes": 272767279104,
+        "fixture_bytes": 0,
+        "receipt_bytes": 219423,
+        "load": [
+          5.076171875,
+          5.95361328125,
+          6.13232421875
+        ]
+      },
+      "elapsed_s": 1.3342995140701532,
+      "returncode": 0,
+      "wall_s": 1.334729528054595
+    },
+    {
+      "stage": "tests",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-history-diagnostic-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "--basetemp",
+        "/home/ubuntu/joxing/upper-task-history-diagnostic-20261029/runs/v0.0.11/upper-task-history-diagnostic-01/fixtures",
+        "--junitxml",
+        "/home/ubuntu/joxing/upper-task-history-diagnostic-20261029/runs/v0.0.11/upper-task-history-diagnostic-01/tests.xml",
+        "tests/test_motor_residual_audit.py::test_saved_evidence_corruption_rejected[reward]",
+        "tests/test_motor_residual_audit.py::test_saved_evidence_corruption_rejected[contact]"
+      ],
+      "limit_s": 15,
+      "process": {
+        "pid": 1545855,
+        "parent_pid": 1545296,
+        "start_ticks": 920161249,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 17383424,
+      "owned_identities": [
+        {
+          "pid": 1545855,
+          "parent_pid": 1545296,
+          "start_ticks": 920161249,
+          "state": "Z"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 44807692288,
+        "free_disk_bytes": 272753774592,
+        "fixture_bytes": 13384827,
+        "receipt_bytes": 221116,
+        "load": [
+          5.076171875,
+          5.95361328125,
+          6.13232421875
+        ]
+      },
+      "elapsed_s": 1.3332215547561646,
+      "returncode": 0,
+      "wall_s": 1.333675293251872
+    }
+  ],
+  "criterion_passed": true,
+  "full_source_gate_qualified": false,
+  "wall_s": 8.639261273667216,
+  "final_live_recorded_identities": [],
+  "fixture_bytes": 13384827,
+  "receipt_bytes": 221182
+}

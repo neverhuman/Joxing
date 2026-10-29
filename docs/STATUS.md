@@ -1,3 +1,30 @@
+# H10 deployment diagnosis passed; one repaired full source gate ready — 2026-10-29
+
+Current mission docs/UPPER_TASK_SOURCE_REPAIR_MISSION.md; protocol
+experiments/v0.0.11/upper-task-source-repair-protocol.json. Bounded diagnosis
+confirms original historical executable unavailable, while exact acquired object
+makes unchanged positive saved D1audit and both corruption checks pass:2Linux tests
+0.58s,5stages/8.639261s,0newphysics/inference/training.708source files, required
+blob,6exited identities and all56raw files/13,607,174bytes independently verified.
+Original full gate remains failed with185reported passes/2fails/1055unconfirmed.
+
+Operational repair: single-pass fixture/receipt accounting, stdlib summary helper,
+explicit fault credits and all three historical executable objects before tests.
+Scientific shared arm wrapper unchanged;81focused fixture checks are not balance
+qualification. New fixed1244test collection includes two helper controls; require
+1243passes plus SAME exact known strict referee alias xfail. Numerical limits
+remain sync180/runtime10/tests1200/whole1500s,8GiB owned RSS/16fixture processes/
+one thread,1GiB scratch/4MiB receipts and16GiB free RAM/10GiB free disk. Public
+freeze and anonymous verification precede fresh dedicated source-repair root.
+
+No physical checkpoint pilot or competitive learner from this source gate.
+Monitor actual PIDs/CPU/test logs/resources, source fixed, no duplicate. Independently
+audit every test/known xfail/source/history/output and exit on completion, preserve
+all faults and manifests, update H10/docs/book and push. Then implement/register
+the separate complete neutral/arm balance/source/replay/recording protocol. Old
+900sledger unchanged, no gate loosening, actor/anatomy/rule edits or v11tag.
+No job running until the repaired-source deployment receipt exists.
+
 # H10 full source gate failed; bounded history diagnosis next — 2026-10-29
 
 Current packet docs/UPPER_TASK_GATE_FAILURE_PACKET.md. Frozen160185e full Linux
