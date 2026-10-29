@@ -1,0 +1,62 @@
+{
+  "schema": "joxing-upper-residual-public-result-v1",
+  "status": "passed",
+  "commit": "36e0ffbe2eec3b076ac9ddcfcc0b93e2469741a5",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 21209,
+      "sha256": "6c6dbcee10dd339f4c9f5bf4b5b6de81d5c500d9403edb183a7f56963457228c",
+      "anonymous": true
+    },
+    {
+      "path": "docs/UPPER_RESIDUAL_RESULTS.md",
+      "bytes": 5337,
+      "sha256": "90615724fa38e3080eaa649cb4fd3d02d754b7d1991ca58af30de42707639e49",
+      "anonymous": true
+    },
+    {
+      "path": "docs/UPPER_RESIDUAL_MISSION.md",
+      "bytes": 10324,
+      "sha256": "edab588f55d6859b343403ae9296c28fe647fe2b6a443e86a5cefb1468a07664",
+      "anonymous": true
+    },
+    {
+      "path": "research/README.md",
+      "bytes": 3644,
+      "sha256": "d47f157f9fb2ce716e60d5f97eeabada191d29f6c5bd32fc356fe108fb058067",
+      "anonymous": true
+    },
+    {
+      "path": "research/H10.md",
+      "bytes": 5268,
+      "sha256": "876f56fff3999809f92ea4bd5efc66351c62b33fa0f6a82819b142c9d1f3e197",
+      "anonymous": true
+    },
+    {
+      "path": "research/H13.md",
+      "bytes": 1723,
+      "sha256": "8039f3636ef676a7d439411a7ec46776e7ee26c8efd69dadabe455103c298f28",
+      "anonymous": true
+    },
+    {
+      "path": "artifacts/v0.0.11/upper-residual-01/result.json",
+      "bytes": 151853,
+      "sha256": "f076b2fe8205767d2acea8a98255adfa579240399944f8800d96f1b967c9817e",
+      "anonymous": true
+    },
+    {
+      "path": "artifacts/v0.0.11/upper-residual-01/independent-audit.json",
+      "bytes": 612,
+      "sha256": "9f82c1134fbff9b41ef58ee704b40ffff4b31c494e8f617f0be728b8b7450e5e",
+      "anonymous": true
+    },
+    {
+      "path": "artifacts/v0.0.11/development/upper-residual-transfer-01.json",
+      "bytes": 199,
+      "sha256": "b2c4e1496560c8d8c6f42824b08d4c87ed27f26288f7dc9d5e4331ec22129b96",
+      "anonymous": true
+    }
+  ],
+  "observed_utc": "2026-10-29T08:21:06Z"
+}
