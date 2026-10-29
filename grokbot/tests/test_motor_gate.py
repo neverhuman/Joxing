@@ -5,7 +5,7 @@ import numpy as np
 import pytest
 
 from grokbot import motor_gate
-from grokbot.selfplay import N_PARAMS
+from grokbot.selfplay import N_PARAMS, centred_ranks
 
 
 class FakePool:
@@ -209,3 +209,56 @@ def test_es_cycles_a_list_of_opponents_with_twins_paired():
     assert [task[1] for task in single.tasks] == [first] * 8
     # one opponent: identical tasks to the old single-spec call
     assert [t[2] for t in single.tasks] == [t[2] for t in pool.tasks]
+
+
+def test_rank_shares_show_pooled_ranks_underweight_a_low_fitness_opponent():
+    # Slots 0 and 1 interleave in a high fitness band; slot 2 (the base) sits
+    # below both. Every + twin beats its - twin by the same margin.
+    slots = np.arange(12) % 3
+    level = np.array([1.5, 1.5, 0.5])[slots] + 0.1 * (np.arange(12) // 3)
+    plus = level + 0.01 * slots
+    paired = np.stack([plus, plus - 0.05], axis=1)
+    ranks = centred_ranks(paired.ravel()).reshape(-1, 2)
+    shares = motor_gate.rank_shares(ranks[:, 0] - ranks[:, 1], slots, 3)
+    # high-band twins have the other slot's twin between them, the base's not
+    assert shares == pytest.approx([0.4, 0.4, 0.2])
+    assert sum(shares) == pytest.approx(1.0)
+    assert motor_gate.rank_shares(np.zeros(3), np.arange(3), 3) == [0.0] * 3
+
+
+def test_train_logs_rank_shares_only_when_asked_and_never_changes_the_update():
+    params = np.zeros(N_PARAMS)
+    first, second = ("scripted", "baseline"), ("scripted", "relaxed")
+    rotation = [first, second, first, second]  # a spec may fill several slots
+    stands = [1000 + 100 * k for k in range(8)]
+    kwargs = dict(
+        kind="params",
+        iterations=1,
+        pairs=4,
+        sigma=0.1,
+        lr=0.05,
+        horizon_ticks=3000,
+        strike_bonus=1.0,
+        log=lambda row: None,
+    )
+    plain, rows = motor_gate.train(
+        FakePool([result(s) for s in stands]),
+        params,
+        rotation,
+        np.random.default_rng(0),
+        **kwargs,
+    )
+    logged, logged_rows = motor_gate.train(
+        FakePool([result(s) for s in stands]),
+        params,
+        rotation,
+        np.random.default_rng(0),
+        log_rank_shares=True,
+        **kwargs,
+    )
+    assert np.array_equal(plain, logged)
+    assert "rank_share_by_slot" not in rows[0]
+    shares = logged_rows[0]["rank_share_by_slot"]
+    assert len(shares) == 4 and sum(shares) == pytest.approx(1.0)
+    # stand rises with the task index, so every - twin beats its + twin by one rank
+    assert shares == pytest.approx([0.25] * 4)
