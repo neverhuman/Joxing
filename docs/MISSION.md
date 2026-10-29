@@ -1,3 +1,27 @@
+# H10 arm-command interface ready; no physical adaptation yet — 2026-10-29
+
+Read docs/UPPER_RESIDUAL_MISSION.md and research/H10.md. Observed pretrained
+release provides full-body walking, legs locomotion and arm manipulation; no
+standing/running archive in that release. Canonical primary model maps122arm
+muscles to46existing groups, with578protected commands and no mixed groups.
+All700outputs remain. Arm-file muscles can span the torso, so command protection
+is not physical balance; walking is not stationary guard. QFlex lead is H13.
+
+New opt-in interface reuses closed0.1group expansion, exactzero/signedzero bits,
+immutable A/Bheld-command records and strict owner/clock/mask restoration.28local
+checks pass1.18s; Ruffpasses. No collector/default/physics/rule changes, new
+teacher inference, optimization or formal physical outcome. Machine protocol
+experiments/v0.0.11/upper-residual-protocol.json registers2204saved-command cases
+with independent scalar oracle and saved event/hash audit. Publicfreeze and
+anonymous byte verification precede fresh dedicated xbabe1root, exact28Linux
+tests,35sproof/20saudit/60spostgate,4GiB RSS/4MiB raw/one thread/0steps.
+
+On completion independently audit all source/input/raw hashes, attempts and
+owned exits; publish compressed H10 outcome and receipts. Follow the mission
+for a separately registered physical neutral-transfer/arm-task/recording pilot
+after a fresh full Linux gate. Old900sbudget unchanged; no duplicate physics,
+competitive promotion or v11tag. No current formal job before deployment.
+
 # H9 concluded; research ledger current and H10 next — 2026-10-29
 
 Read research/README.md for compressed H1–H12 ideas/outcomes. H9 was registered

@@ -4,9 +4,9 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H12 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H13 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
-actions. H9 has concluded; H10 is the next planned motor direction.
+actions. H9 has concluded; H10 command isolation is implemented for qualification. H13 records a separate QFlex research lead.
 
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
@@ -37,6 +37,11 @@ include rotation; contact-order/hemisphere checks pass with0newphysics or points
 This is mechanical consistency, not anatomical or real-force calibration.
 [Results](docs/NATIVE_FACE_AUDIT_RESULTS.md) · [H9summary](research/H9.md) ·
 [Next: pretrained balance and bounded arm adaptation](research/H10.md).
+
+**Pretrained motor next step:** a new arm-only command interface preserves all
+700 outputs and the other578commands exactly.28development checks pass; the
+registered2204-case saved-command qualification is next. Balance and physical
+replay still need their own pilot. [H10 mission](docs/UPPER_RESIDUAL_MISSION.md).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)

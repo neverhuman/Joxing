@@ -1,0 +1,42 @@
+{
+  "schema": "joxing-upper-residual-development-v1",
+  "observed_utc": "2026-10-29T08:13:23.805815+00:00",
+  "test_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_upper_residual.py tests/test_upper_residual_evidence.py",
+  "result": "28 passed in 1.18s",
+  "ruff": "All checks passed",
+  "formal": false,
+  "new_physics": 0,
+  "new_optimizer_updates": 0,
+  "claim": "Command ownership/snapshot controls, native compilation only; no balance or engine-continuation result",
+  "source_files": {
+    "src/joxing/upper_residual_qualification.py": {
+      "bytes": 14961,
+      "sha256": "528d9d1af0c728898bd5dac1a23ab8bfbcd0b79e753116ec5d58f8b20dedd286"
+    },
+    "src/joxing/upper_residual_evidence.py": {
+      "bytes": 4649,
+      "sha256": "84729d4112f686bc3fe07ab1975d4b3fd47f6275c5e9bc0096968ed7db3a6b32"
+    },
+    "src/joxing/upper_residual.py": {
+      "bytes": 12605,
+      "sha256": "6fe73b9a475c2ea51a4b031d2d5629fdce6e569bf7f57be201c486eab2137544"
+    },
+    "scripts/qualify_upper_residual.py": {
+      "bytes": 92,
+      "sha256": "99639685056a2a9fdb0a391d9bcb4ab5d4566426522d375fa72deb097c5037d0"
+    },
+    "scripts/supervise_upper_residual.py": {
+      "bytes": 12270,
+      "sha256": "02bee050bdd6d633e169a81c97c706cf99c19a9e443f2ea15d0e48823cee7756"
+    },
+    "tests/test_upper_residual.py": {
+      "bytes": 8915,
+      "sha256": "dbbfd3c3cc9ec9bdf247168d00bdb9477a1d1bdd3d4b45651acee43c5f9749f9"
+    },
+    "tests/test_upper_residual_evidence.py": {
+      "bytes": 2674,
+      "sha256": "9ebfe8db1fd58be19e70095fc788d09d462c8a7cec7cbcdf93795a89e91408d7"
+    }
+  },
+  "format_note": "Ruff whitespace-only format after test receipt"
+}

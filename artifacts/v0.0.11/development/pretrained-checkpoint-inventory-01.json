@@ -1,0 +1,33 @@
+{
+  "source_url": "https://api.github.com/repos/LNSGroup/msgym/releases/tags/Checkpoints",
+  "release_id": 291253945,
+  "tag": "Checkpoints",
+  "published_at": "2026-02-27T07:56:24Z",
+  "observed_utc": "2026-10-29T07:38:20.374522+00:00",
+  "assets": [
+    {
+      "id": 363348051,
+      "name": "LocomotionFull.zip",
+      "size": 223978082,
+      "digest": "sha256:2b2f0f1007d530db76463e7d3d5fb309b52c7b2a53649920ddfd9cf8a6880c57",
+      "browser_download_url": "https://github.com/LNSGroup/msgym/releases/download/Checkpoints/LocomotionFull.zip",
+      "updated_at": "2026-02-27T07:54:58Z"
+    },
+    {
+      "id": 363349657,
+      "name": "LocomotionLegs.zip",
+      "size": 11493133,
+      "digest": "sha256:8f442634f9e90cf8cd38de22f74fc0da0b9d842b726cbaf812161533e82313f4",
+      "browser_download_url": "https://github.com/LNSGroup/msgym/releases/download/Checkpoints/LocomotionLegs.zip",
+      "updated_at": "2026-02-27T07:55:19Z"
+    },
+    {
+      "id": 363349793,
+      "name": "Manipulation.zip",
+      "size": 8796640,
+      "digest": "sha256:47d79f1dc5093c0add226384e6b353d5c145734a6147753316a225a4205a764e",
+      "browser_download_url": "https://github.com/LNSGroup/msgym/releases/download/Checkpoints/Manipulation.zip",
+      "updated_at": "2026-02-27T07:55:33Z"
+    }
+  ]
+}

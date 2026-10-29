@@ -6,7 +6,7 @@ receipts instead. Keep each note below12 KiB; this index below16 KiB.
 
 H1–H8 and H11–H12 initially summarize existing work retrospectively. They are
 not backdated preregistrations. H9 is the concluded mechanical diagnostic; H10
-is a planned motor direction. Machine protocols and frozen-source receipts
+has an implemented command-isolation prerequisite. Machine protocols and frozen-source receipts
 remain the authority for measurements, budgets, criteria and denominators.
 
 | ID | Question | Current conclusion |
@@ -20,11 +20,12 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H7](H7.md)|Can saving be faster without changing values?|Qualified offline:28.7× reference save speed; larger files, not integrated|
 |[H8](H8.md)|Do the selected frozen controllers produce a native bout?|Fixed3s clip shows severe lean and0–0; force tape/replay incomplete|
 |[H9](H9.md)|Are native face/rotation conventions internally consistent?|192/192synthetic native controls and independent read-audit pass;0physics|
-|[H10](H10.md)|Can a frozen motor plus bounded arm adaptation keep balance?|Planned; inventory and exact zero-residual parity come first|
+|[H10](H10.md)|Can a frozen motor plus bounded arm adaptation keep balance?|Command interface implemented;2204-case offline qualification ready, balance unproven|
 |[H11](H11.md)|Does diagnostic opponent training improve robustly?|Some matchup gains; degeneracy/validity/monotonicity failures persist|
 |[H12](H12.md)|Are sporting rules ready for competitive learning?|Partial; force/attribution/fall/geometry/motor/replay gates still block|
+|[H13](H13.md)|Can QFlex value-guided exploration improve a valid motor task?|Research lead only; compatibility/method comparison not_run|
 
-**Last concluded: H9. Next: H10 (planned; no job running). Next unused ID: H13.** These are global research-note
+**Last concluded: H9. Next: H10 (offline qualification ready; no job running). Next unused ID: H14.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule
