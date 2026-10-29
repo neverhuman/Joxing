@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "reader": "independent local NumPy/ZIP against frozen original logical descriptors",
+  "rows": [
+    {
+      "id": "native-prefix",
+      "arrays": 5,
+      "payload_bytes": 9119848
+    },
+    {
+      "id": "complete-source",
+      "arrays": 23,
+      "payload_bytes": 41319560
+    }
+  ],
+  "all28logical_arrays_exact": true,
+  "wall_s": 0.043505166977411136,
+  "new_physics": 0
+}

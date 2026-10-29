@@ -19,11 +19,13 @@ but fail the glove-face predicates. Full force audit/replay remain incomplete.
 [Results and all limitations](docs/NATIVE_SOURCE_PARTIAL_RESULTS.md) ·
 [Next: fast evidence writing, native face calibration and pretrained balance](docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md).
 
-**Current bounded task:** [fast exact tape writer qualification](docs/NATIVE_TAPE_STORAGE_MISSION.md).
-All24focused local tests pass; the stored-format candidate preserves every bit
-and leaves current collectors unchanged. Public registration precedes the
-zero-physics benchmark on two saved corpora: exact recovery, measured save speed
-and whole-recording size. No new physical run or competitive learning is active.
+**Evidence writer qualified:** on the complete saved reference, exact saving
+fell from10.477s to0.365s (**28.7× faster**). Both corpora preserve all28arrays in
+two decoders and a separate audit, after24focused Linux tests. No new physics
+or training ran. The uncompressed archives are larger; the writer remains
+opt-in, with a named smaller-video size estimate for later integration.
+[Results and retained failures](docs/NATIVE_TAPE_STORAGE_RESULTS.md) ·
+[Next: native glove-face calibration and pretrained balance](docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)

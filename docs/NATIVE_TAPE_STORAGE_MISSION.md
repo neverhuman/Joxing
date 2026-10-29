@@ -1,5 +1,11 @@
 # Ready offline native tape writer qualification
 
+Status: **concluded; isolated candidate qualified**. Read
+[NATIVE_TAPE_STORAGE_RESULTS.md](NATIVE_TAPE_STORAGE_RESULTS.md) for both exact
+rows, 28.72× reference save speed, larger archives, the original size failure,
+all attempts, the test-fixture CI correction and scope limits. No collector
+integration or new physics. The original preregistered packet follows.
+
 Objective: remove unnecessary LZMA latency from native evidence persistence
 while retaining every logical bit, complete proof accounting and bounded output.
 This is a new finite offline task, not an extension of the exhausted native

@@ -1,0 +1,49 @@
+{
+  "schema": "joxing-native-tape-storage-attempt-accounting-v1",
+  "deployment_attempts": [
+    {
+      "id": "publication-preflight01",
+      "status": "failed_before_checkout_or_process",
+      "corpus_slots": [
+        {
+          "id": "native-prefix",
+          "status": "not_run"
+        },
+        {
+          "id": "complete-source",
+          "status": "not_run"
+        }
+      ]
+    },
+    {
+      "id": "formal-deployment02",
+      "status": "completed",
+      "source_commit": "0d467da93b923006ce1cbdafe7fb2b502be6cf36",
+      "corpus_slots": [
+        {
+          "id": "native-prefix",
+          "status": "passed"
+        },
+        {
+          "id": "complete-source",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "slots_total": 4,
+  "passed": 2,
+  "not_run": 2,
+  "new_physics": 0,
+  "new_optimizer_updates": 0,
+  "native_boxing_proof_passed": false,
+  "network_gap": "Host link unreachable after launch; no duplicate or inferred outcome. Connectivity restored and independent exit/raw audit completed 2026-10-29.",
+  "current_main_test_fixture_correction": {
+    "commit": "6e9d9a861787e3d73fcc0217323bf5fbce9373a9",
+    "scope": "Synthetic fixture peak-RSS headroom only; production512MiBcap and frozen protocol unchanged",
+    "current_test_sha256": "a577e9fcfe15104f19a6f81df257fbad3824ff2b311dc7679bd2252c5b240b8e",
+    "local_targeted_test_passes": 24,
+    "wall_s": 0.37
+  },
+  "next": "zero-step native face calibration and pretrained balance adaptation; full source qualification before collector integration/new physics"
+}

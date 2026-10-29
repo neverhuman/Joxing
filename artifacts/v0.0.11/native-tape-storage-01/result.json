@@ -1,0 +1,337 @@
+{
+  "max_rss_bytes": 168902656,
+  "native_boxing_proof_passed": false,
+  "native_size_preflight": {
+    "additional_allocations_bytes": {
+      "audit_and_final_reports_upper": 131072,
+      "continuation_report_upper": 1048576,
+      "fault_reserve": 2097152,
+      "supervision_reserve": 262144
+    },
+    "archive_and_receipt_metadata_bound_bytes": 8192,
+    "extra_replay_journal_upper_bytes": 399780,
+    "fixed_source_bytes": 3424852,
+    "gate_passed": true,
+    "gate_variant": "named640x360_1MiB",
+    "missing_signed_contacts_remain_missing": true,
+    "projected_array_payload_bytes": 15722456,
+    "scope": "Future complete tape size arithmetic only, not recovered missing data or a native result",
+    "variants": {
+      "named640x360_1MiB": {
+        "fits": true,
+        "video_cap_bytes": 1048576,
+        "whole_raw_upper_bytes": 24142800
+      },
+      "original800x448_2MiB": {
+        "fits": false,
+        "video_cap_bytes": 2097152,
+        "whole_raw_upper_bytes": 25191376
+      }
+    }
+  },
+  "new_physics": 0,
+  "protocol_sha256": "59c2e77848e28907c195923d70eba2f33025459724ce0404179c222825a09e13",
+  "rows": [
+    {
+      "arrays": {
+        "commands": {
+          "bytes": 840000,
+          "dtype": "<f4",
+          "sha256": "696fe4066859f03b9b17a62c106fe3201f20849bfd05be6efb412793d4d58e42",
+          "shape": [
+            150,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 425840,
+          "dtype": "<i8",
+          "sha256": "f49b7fb6d2cee4d5e0839709566040b965bd53a9a9fa899f8c0e2b2d53087e17",
+          "shape": [
+            26615,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 24008,
+          "dtype": "<i8",
+          "sha256": "8f8059c2a92839ad763218ad39ed1a81a9ba05f65bddf4417dd6288f5930e12d",
+          "shape": [
+            3001
+          ]
+        },
+        "decision_engines": {
+          "bytes": 5466000,
+          "dtype": "<f8",
+          "sha256": "48aa0c9ab78609b8ab6261c55c0c670316988dc1ff29d7d97be69841c6320f35",
+          "shape": [
+            150,
+            4555
+          ]
+        },
+        "observations": {
+          "bytes": 2364000,
+          "dtype": "<f4",
+          "sha256": "a702533d0d892e8dbdfbab9417b34e20803f6ee3b9bf3d192db79790ace94ba7",
+          "shape": [
+            150,
+            2,
+            1970
+          ]
+        }
+      },
+      "baseline_scope": "LZMA in bounded memory; candidate includes disk fsync, planning and hashing (conservative speed comparison)",
+      "candidate_read_s": 0.055293161422014236,
+      "encode_speedup": 17.78157743215969,
+      "id": "native-prefix",
+      "integrity_passed": true,
+      "lzma_memory_bytes": 2011916,
+      "lzma_memory_encode_s": 1.2715541794896126,
+      "lzma_memory_sha256": "2289d6041769dcc2af1848f5e4433e555346413f4c54524324c6ed43d175e3f0",
+      "minimum_encode_speedup": 0,
+      "numpy_read_s": 0.33597871847450733,
+      "status": "passed",
+      "stored_archive_bytes": 9121058,
+      "stored_encode_s": 0.07150963880121708,
+      "stored_sha256": "1ee20db8f7687920452e0c87f8ff843fc76e8a68f1a9cb2035ca3599919a3efe"
+    },
+    {
+      "arrays": {
+        "commands": {
+          "bytes": 985600,
+          "dtype": "<f4",
+          "sha256": "5f1d2b2b1987b3b6edce18dfe07764b814b6a9350dda670c88131f7a910831d4",
+          "shape": [
+            176,
+            2,
+            700
+          ]
+        },
+        "contact_geoms": {
+          "bytes": 477648,
+          "dtype": "<i8",
+          "sha256": "a225dde6dd851aa670ce88c803b81133b9e8fe0d4949d6db7225ba4fb0f7dec1",
+          "shape": [
+            29853,
+            2
+          ]
+        },
+        "contact_offsets": {
+          "bytes": 28168,
+          "dtype": "<i8",
+          "sha256": "843973383b82b4e2fe9772dc484d86c8302552952080d7954764a0effd42bc10",
+          "shape": [
+            3521
+          ]
+        },
+        "contacts": {
+          "bytes": 4298832,
+          "dtype": "<f8",
+          "sha256": "067fbed637ff787be61b108bb00ebc664141311c100cc507fb066f06bd0f46ec",
+          "shape": [
+            29853,
+            18
+          ]
+        },
+        "decision_engines": {
+          "bytes": 6413440,
+          "dtype": "<f8",
+          "sha256": "dcb825e1610d3c01b2d8f93710d2edb460af65b25e67be03e197de61ed642d13",
+          "shape": [
+            176,
+            4555
+          ]
+        },
+        "decision_ticks": {
+          "bytes": 1408,
+          "dtype": "<i8",
+          "sha256": "772d60f696a4c9e2c37870bc7788d67abc483784f5a23622b12fd9d4bf0e0bc9",
+          "shape": [
+            176
+          ]
+        },
+        "end_qpos": {
+          "bytes": 4787200,
+          "dtype": "<f8",
+          "sha256": "5b0ec9e27d65e641e6350cd91b741ca2d73873ed4ad322c56298657fbd9e0fda",
+          "shape": [
+            3520,
+            170
+          ]
+        },
+        "excitation": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "5e642ff44da6bdad64dd4ad60a3681b1e4fca27aedd46f2263f28420c5be468c",
+          "shape": [
+            176,
+            2,
+            700
+          ]
+        },
+        "loads": {
+          "bytes": 168960,
+          "dtype": "<f8",
+          "sha256": "3c484b2ec0f5b364cce3bd5e0609412fea2a8dfecadbf42954c73c8ec56dd0fc",
+          "shape": [
+            3520,
+            2,
+            3
+          ]
+        },
+        "normalized": {
+          "bytes": 5070208,
+          "dtype": "<f4",
+          "sha256": "b897f85ef3436b09ef015784f6598a7f22ab044b4030f27ac0884ee581a87ecb",
+          "shape": [
+            176,
+            2,
+            3601
+          ]
+        },
+        "posture": {
+          "bytes": 112640,
+          "dtype": "<f8",
+          "sha256": "f638c2a8895e2e2b45e648e6611d6c7ea234828c8f14e2b4646099943874c47c",
+          "shape": [
+            3520,
+            2,
+            2
+          ]
+        },
+        "raw": {
+          "bytes": 5070208,
+          "dtype": "<f4",
+          "sha256": "4538f9bdd642b47a8ed1edde9885f023f34568747519be247bbba332601fb46c",
+          "shape": [
+            176,
+            2,
+            3601
+          ]
+        },
+        "ticks": {
+          "bytes": 28160,
+          "dtype": "<i8",
+          "sha256": "1acd97f4295177a40af05839ae603c697d85b588103dcd29badce8d1bc7cf402",
+          "shape": [
+            3520
+          ]
+        },
+        "video_states": {
+          "bytes": 3243160,
+          "dtype": "<f8",
+          "sha256": "e4fd30c5e1c4457a6db42505b09f1093670884404cbb90c2907d67783e868eec",
+          "shape": [
+            89,
+            4555
+          ]
+        },
+        "video_ticks": {
+          "bytes": 712,
+          "dtype": "<i8",
+          "sha256": "8de8eb9a748a62b8ecb6d7d3f4b2e521a644139caa731f2160a456ccad4f8d99",
+          "shape": [
+            89
+          ]
+        },
+        "witness_act": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "6d4caeb7f0c7ea0719e7bead839f2748b38bc19b008a95c2c330e625b6562b19",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_actuator_force": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "313baab3199ba2f43cd9972bd8da5d85cdefdcbec1a34f78372e23945dbc1192",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_actuator_length": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "d277c5a5bc32881739b2fb2804fd81e75c2b77207f203a9a3df1670210658c40",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_actuator_velocity": {
+          "bytes": 1971200,
+          "dtype": "<f8",
+          "sha256": "93d685f0409eb60d41be7bc8a37449b1f1654b4cbfcb13e59e8fed8bf0441fbc",
+          "shape": [
+            176,
+            1400
+          ]
+        },
+        "witness_key_xpos": {
+          "bytes": 59136,
+          "dtype": "<f8",
+          "sha256": "5de7549b1e17afd7eb6461976b9e8d27d09d28cecbacebe33143f540c0d6bb40",
+          "shape": [
+            176,
+            2,
+            7,
+            3
+          ]
+        },
+        "witness_qacc": {
+          "bytes": 239360,
+          "dtype": "<f8",
+          "sha256": "a0034609cc9703d8747a7c5266b88641642d84cfc4b608c1c9dd84b1a412953c",
+          "shape": [
+            176,
+            170
+          ]
+        },
+        "witness_qpos": {
+          "bytes": 239360,
+          "dtype": "<f8",
+          "sha256": "dacef8a6970716ab23f09df99e274a6fc8859b6abc847b76ad0e6eac41384f47",
+          "shape": [
+            176,
+            170
+          ]
+        },
+        "witness_qvel": {
+          "bytes": 239360,
+          "dtype": "<f8",
+          "sha256": "ce773b43f76e111631a2cc7994ba35e09463f70213d162e4025abea4cf0c1c6e",
+          "shape": [
+            176,
+            170
+          ]
+        }
+      },
+      "baseline_scope": "LZMA in bounded memory; candidate includes disk fsync, planning and hashing (conservative speed comparison)",
+      "candidate_read_s": 0.16969985701143742,
+      "encode_speedup": 28.717568426952884,
+      "id": "complete-source",
+      "integrity_passed": true,
+      "lzma_memory_bytes": 19210825,
+      "lzma_memory_encode_s": 10.476658685132861,
+      "lzma_memory_sha256": "b352bc1984baccfd6dc35ded326471ea0f884ff82b5c3d4eebbe83da48894eef",
+      "minimum_encode_speedup": 2.0,
+      "numpy_read_s": 0.06144780106842518,
+      "status": "passed",
+      "stored_archive_bytes": 41325014,
+      "stored_encode_s": 0.3648170530796051,
+      "stored_sha256": "28c9743a584268eee7f088e82e841d98235c8288bb1d11bc88574072f4b6eac4"
+    }
+  ],
+  "runtime": {
+    "numpy": "2.4.2",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  },
+  "schema": "joxing-native-stored-qualification-v1",
+  "source_commit": "0d467da93b923006ce1cbdafe7fb2b502be6cf36",
+  "status": "passed",
+  "wall_s": 15.376661039888859
+}

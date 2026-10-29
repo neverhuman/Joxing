@@ -1,0 +1,54 @@
+{
+  "archive_bytes": 9121058,
+  "arrays": {
+    "commands": {
+      "bytes": 840000,
+      "dtype": "<f4",
+      "sha256": "696fe4066859f03b9b17a62c106fe3201f20849bfd05be6efb412793d4d58e42",
+      "shape": [
+        150,
+        2,
+        700
+      ]
+    },
+    "contact_geoms": {
+      "bytes": 425840,
+      "dtype": "<i8",
+      "sha256": "f49b7fb6d2cee4d5e0839709566040b965bd53a9a9fa899f8c0e2b2d53087e17",
+      "shape": [
+        26615,
+        2
+      ]
+    },
+    "contact_offsets": {
+      "bytes": 24008,
+      "dtype": "<i8",
+      "sha256": "8f8059c2a92839ad763218ad39ed1a81a9ba05f65bddf4417dd6288f5930e12d",
+      "shape": [
+        3001
+      ]
+    },
+    "decision_engines": {
+      "bytes": 5466000,
+      "dtype": "<f8",
+      "sha256": "48aa0c9ab78609b8ab6261c55c0c670316988dc1ff29d7d97be69841c6320f35",
+      "shape": [
+        150,
+        4555
+      ]
+    },
+    "observations": {
+      "bytes": 2364000,
+      "dtype": "<f4",
+      "sha256": "a702533d0d892e8dbdfbab9417b34e20803f6ee3b9bf3d192db79790ace94ba7",
+      "shape": [
+        150,
+        2,
+        1970
+      ]
+    }
+  },
+  "payload_bytes": 9119848,
+  "schema": "joxing-native-stored-tape-v1",
+  "sha256": "1ee20db8f7687920452e0c87f8ff843fc76e8a68f1a9cb2035ca3599919a3efe"
+}

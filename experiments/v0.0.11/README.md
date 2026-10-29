@@ -1,3 +1,28 @@
+# Fast exact writer qualified; native face calibration is next — 2026-10-29
+
+Read docs/NATIVE_TAPE_STORAGE_RESULTS.md. Both saved-corpus rows pass after24
+focused Linux tests (0.86s): all28arrays exact in two decoders, separate saved
+read-audit and local transferred-data audit. Reference save0.364817s versus
+10.476659s LZMA (28.72x); actual native-prefix save0.071510s versus1.271554s
+(17.78x). These are evidence-save speeds, not physics/game/learning throughput.
+Postgate17.512614s/60s; peak168,902,656bytes/512MiB; final15rawfiles50,503,913bytes
+verified under64MiB. All15source/input hashes and7recorded exits verified.
+0newphysics/optimization; candidate not integrated into any existing collector.
+
+Frozen source0d467da/protocol59c2e778. Publication-preflight failure retained:
+2not_run slots, then2passed actual rows. Original800x448/2MiBvideo size projection
+fails24MiB by25,552bytes; separately preregistered640x360/1MiB variant fits with
+1,023,024bytes. Missing native signed contacts and replay remain missing.
+Network gap delayed verification, not the independently bounded remote run.
+Incoming fixture-only peak-RSS CI correction6e9d9a8 retained; actual formal512MiB
+cap unchanged. Reproduce old receipts from frozen source; no whole-suite claim.
+
+No current owned job. Next worker-ready mission is native glove-face calibration
+in docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md, then pretrained balance adaptation.
+New writer adoption needs a new bounded complete-output protocol and fresh full
+Linux source gate. Old native budget effectively exhausted; no repeated physics,
+body/rule changes, agents, other-chat messages, competitive promotion or v11tag.
+
 # Fast exact tape candidate implemented; bounded offline qualification ready — 2026-10-28
 
 Next measured bottleneck is LZMA persistence, not more boxing games. New opt-in

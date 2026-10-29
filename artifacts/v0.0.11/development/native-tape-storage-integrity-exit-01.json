@@ -1,0 +1,202 @@
+{
+  "schema": "joxing-native-tape-final-integrity-exit-v1",
+  "status": "passed",
+  "source_commit": "0d467da93b923006ce1cbdafe7fb2b502be6cf36",
+  "protocol_sha256": "59c2e77848e28907c195923d70eba2f33025459724ce0404179c222825a09e13",
+  "source_input_checks": [
+    {
+      "path": "src/joxing/__init__.py",
+      "bytes": 86,
+      "sha256": "b2e944ab0a71e441b3a3b9405fecc6be0b34d811b0c1d69e3f44d35b7c6b8092"
+    },
+    {
+      "path": "src/joxing/native_tape_storage.py",
+      "bytes": 9702,
+      "sha256": "efe2bb7469c7966c97302be2526f383bdcea53d0555e07ab053be87be554f85c"
+    },
+    {
+      "path": "src/joxing/native_tape_qualification.py",
+      "bytes": 14889,
+      "sha256": "178d2a4d3f8e718fdb6b16e4dd4b53cd017478e1c8fb40eedda1e0ac9be98b4a"
+    },
+    {
+      "path": "src/joxing/motor_storage.py",
+      "bytes": 2809,
+      "sha256": "a14900c3102d87f4d6a1b9ae21b8f831c13593fe95b7e8ba175b700eb26da6c1"
+    },
+    {
+      "path": "scripts/qualify_native_tape_storage.py",
+      "bytes": 89,
+      "sha256": "bdbd6707557ee6247a98a0e6f67193e136390832d1ade14da3dd5df77ac9c0d6"
+    },
+    {
+      "path": "scripts/supervise_native_tape_storage.py",
+      "bytes": 11977,
+      "sha256": "014bafcbd298125b1b16e83ae552b796b479640c808e8311772bab6f36a6e0e1"
+    },
+    {
+      "path": "tests/test_native_tape_storage.py",
+      "bytes": 6774,
+      "sha256": "14150aa7c11aed5ae7213f2d116c63f3da2144af21de9ea5c1d034a01559e798"
+    },
+    {
+      "path": "tests/test_native_tape_qualification.py",
+      "bytes": 5882,
+      "sha256": "12048f6dc9f29bb683f0bab92a7134dd2fcccbff53aafb54ece9c19237f48a14"
+    },
+    {
+      "path": "experiments/v0.0.11/native_source_partial_display_01.py",
+      "bytes": 16237,
+      "sha256": "42ea29098737a5fd155f2a37b4c199a0e55cb5296e1fe9d40c6ac4f106fe0f5f"
+    },
+    {
+      "path": "artifacts/v0.0.11/native-strike-bootstrap-02/raw-manifest.json",
+      "bytes": 6072,
+      "sha256": "dea268055c5bf2c6fa7efcc9a5b027dbe0198297b44090db088210d5830c5d3b"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1027,
+      "sha256": "c1fe5cdbc86c0d4cc7a139adc043153934ba9910df0f98907b0c4648e855224f"
+    },
+    {
+      "path": "experiments/v0.0.11/runtime/pyproject.toml",
+      "bytes": 543,
+      "sha256": "3024da0eb8fc42d726be3d209248a221207aa95789fc1d13735ae6e844959324"
+    },
+    {
+      "path": "experiments/v0.0.11/runtime/uv.lock",
+      "bytes": 68394,
+      "sha256": "9dc2332fe46eefc51aa133c6e0e9e90790899eb67b94345ac2447967464ebd5c"
+    },
+    {
+      "path": "/home/ubuntu/joxing/v011-shared-motor-physical-bootstrap02-20261027/runs/v0.0.11/shared-motor-proof-01/source-71000/tape.npz",
+      "bytes": 19210825,
+      "sha256": "10e9404c28c03e9b401c3adb298ed2d964c6570f6853c80e30a37452c5687e61"
+    },
+    {
+      "path": "/home/ubuntu/joxing/native-strike-import-bootstrap02-20261028/runs/v0.0.11/native-strike-proof-01/source/tape.npz.tmp",
+      "bytes": 2044399,
+      "sha256": "f8ee264a7b1898f487b6df22cc43fe09680d9260d763434e925e7f0abbef5feb"
+    }
+  ],
+  "unique_recorded_identities_exited": [
+    {
+      "pid": 156634,
+      "start_ticks": 916560216,
+      "parent_pid": 1,
+      "group": 156634,
+      "state": "R"
+    },
+    {
+      "pid": 156636,
+      "start_ticks": 916560223,
+      "parent_pid": 156634,
+      "group": 156636,
+      "state": "Z"
+    },
+    {
+      "pid": 156745,
+      "start_ticks": 916560252,
+      "parent_pid": 156636,
+      "group": 156636,
+      "state": "R"
+    },
+    {
+      "pid": 156754,
+      "start_ticks": 916560293,
+      "parent_pid": 156636,
+      "group": 156636,
+      "state": "R"
+    },
+    {
+      "pid": 156760,
+      "start_ticks": 916560378,
+      "parent_pid": 156634,
+      "group": 156760,
+      "state": "Z"
+    },
+    {
+      "pid": 156867,
+      "start_ticks": 916560512,
+      "parent_pid": 156634,
+      "group": 156867,
+      "state": "Z"
+    },
+    {
+      "pid": 157612,
+      "start_ticks": 916562079,
+      "parent_pid": 156634,
+      "group": 157612,
+      "state": "Z"
+    }
+  ],
+  "live_owned_group_or_root_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/native-storage-deployment.json": {
+      "bytes": 7067,
+      "sha256": "53d949b9f9a3b676c80b992757cc16ea61cdc3b1021f89bb61887e8d8a2506d4"
+    },
+    "runs/v0.0.11/native-storage-launch.log": {
+      "bytes": 9387,
+      "sha256": "8006eb4d9d7268e3248efe8aa5d68d6dc6b52e48c2ba3940c0ada10fe224175e"
+    },
+    "runs/v0.0.11/native-tape-storage-01/complete-source.npz": {
+      "bytes": 41325014,
+      "sha256": "28c9743a584268eee7f088e82e841d98235c8288bb1d11bc88574072f4b6eac4"
+    },
+    "runs/v0.0.11/native-tape-storage-01/complete-source.receipt.json": {
+      "bytes": 5034,
+      "sha256": "d7d73913b0c44a80d39dca432693efbe540022d786aeab6de0a797d3613983e2"
+    },
+    "runs/v0.0.11/native-tape-storage-01/events.jsonl": {
+      "bytes": 2097,
+      "sha256": "499aa23c556c871f96396416a560a4b02add4c86f84899808c7bc41cbcaa32e7"
+    },
+    "runs/v0.0.11/native-tape-storage-01/independent-audit.json": {
+      "bytes": 629,
+      "sha256": "3c8964e78d809429daea1fb7c3db5bd1801ad060bbb3fef00e4f3ad0361ca6cf"
+    },
+    "runs/v0.0.11/native-tape-storage-01/native-prefix.npz": {
+      "bytes": 9121058,
+      "sha256": "1ee20db8f7687920452e0c87f8ff843fc76e8a68f1a9cb2035ca3599919a3efe"
+    },
+    "runs/v0.0.11/native-tape-storage-01/native-prefix.receipt.json": {
+      "bytes": 1258,
+      "sha256": "756fc2d69cd11ffb0819e1775ebb91919012d0093e931537a08ec944b636c5c5"
+    },
+    "runs/v0.0.11/native-tape-storage-01/result.json": {
+      "bytes": 9918,
+      "sha256": "66fedaad05537a7b488fd43142c9ca29e7d68c5bea9b2bbaea26ae076e6138b7"
+    },
+    "runs/v0.0.11/native-tape-storage-supervision-01/audit.log": {
+      "bytes": 545,
+      "sha256": "7bbb2b0ab0904d55c0494c8961d9d33d1d2f909a206572b1b55b79cb15ea94a8"
+    },
+    "runs/v0.0.11/native-tape-storage-supervision-01/progress.json": {
+      "bytes": 157,
+      "sha256": "eb1d93980e1449f1f2759f04d769dcb474090874d29c51b1f7ce0330a4fadc1d"
+    },
+    "runs/v0.0.11/native-tape-storage-supervision-01/proof.log": {
+      "bytes": 6814,
+      "sha256": "59d38ae5ac0b5e73770cb236bbc86101b86d862ad0d76e06edfb39f2bf4eb6fb"
+    },
+    "runs/v0.0.11/native-tape-storage-supervision-01/result.json": {
+      "bytes": 13619,
+      "sha256": "f69e4eda02636df3df706f206f38f190a94316067dd957f11d2f53f74139409f"
+    },
+    "runs/v0.0.11/native-tape-storage-supervision-01/sync.log": {
+      "bytes": 1217,
+      "sha256": "b2511b54cc3433978bfc9145c2499ee1e7516159f8a66c97ab333c0805b6c26d"
+    },
+    "runs/v0.0.11/native-tape-storage-supervision-01/tests.log": {
+      "bytes": 99,
+      "sha256": "7cf99e256a711000c5c403798059e3def94d35e88d5e3272c219c3ae58ab4f2c"
+    }
+  },
+  "raw_bytes": 50503913,
+  "raw_files": 15,
+  "observed_utc": "2026-10-29T06:24:23Z",
+  "audit_wall_s": 0.3180251754820347,
+  "new_physics": 0
+}

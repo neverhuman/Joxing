@@ -1,0 +1,24 @@
+{
+  "all_planned_rows_audited": true,
+  "audited_rows": [
+    {
+      "id": "native-prefix",
+      "members": 5,
+      "payload_bytes": 9119848
+    },
+    {
+      "id": "complete-source",
+      "members": 23,
+      "payload_bytes": 41319560
+    }
+  ],
+  "candidate_reader_used": false,
+  "max_rss_bytes": 90992640,
+  "new_physics": 0,
+  "protocol_sha256": "59c2e77848e28907c195923d70eba2f33025459724ce0404179c222825a09e13",
+  "qualification_status": "passed",
+  "schema": "joxing-native-stored-saved-audit-v1",
+  "source_commit": "0d467da93b923006ce1cbdafe7fb2b502be6cf36",
+  "status": "passed",
+  "wall_s": 1.4830984231084585
+}
