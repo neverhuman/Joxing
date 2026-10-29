@@ -1,11 +1,11 @@
 # Grokbot lane status (joxing_claude)
 
-Updated 2026-10-29 ~05:10 UTC. The full history is in `~/joxing_grokbot/LOG.md`
+Updated 2026-10-29 ~07:40 UTC. The full history is in `~/joxing_grokbot/LOG.md`
 and `grokbot/redteam/cycle-*.md`.
 
 ## Where things stand
 
-- **Main:** green at `65c954a`, plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
+- **Main:** `d0de0d9` (jekko native work; CI on `9850f06` green), plus this PR. **Latest tag: `v0.0.19`**, the first passed preregistered level-up, released as a pre-release diagnostic.
   Tags `v0.0.11`, `v0.0.12` and `v0.0.13` have GitHub pre-releases that say
   plainly which criteria failed. Tagging rule (owner 01:50): from v0.0.14 on,
   a version is tagged **only if its preregistered criterion passes**.
@@ -31,6 +31,7 @@ and `grokbot/redteam/cycle-*.md`.
 | v0.0.20 | two-player self-play league (outcome only) | 16/24 | 24/24 | 3.000 s | **honest null**: no promotion, champion = v0.0.19; primary 3/48 valid; not tagged |
 | v0.0.21 | training opponent = frozen v0.0.19 | 1/24 | 10/24 | 1.856 s | **CRITERION_NOT_MET**: 48/48 valid but 4–2–42 draws (referee points 0–0); NOT monotone (@48 lost 0–20 to @16); vs v0.0.13 46/48 blocked; not tagged |
 | v0.0.22 | knockdown objective | 0/24 | 24/24 | 1.816 s | **primary PASSED** (46–0–0 vs v0.0.19), but the hard gate failed (36/48 valid vs v0.0.13, 12 blocked) and monotonicity was unmeasurable (@16 vs v0.0.19 38/48 valid); level-up NOT met; not tagged |
+| v0.0.28 | v0.0.26 recipe + frozen v0.0.22 base as a third training opponent | 1/24 | 24/24 | 1.98 s | primary (44–0) and hard gate (48–0) PASSED; @48 beat @16 46–2; @16 lost **2–46** to base → monotonicity FAILED; not tagged (post hoc @48 beat base 43–5, non-gating) |
 | v0.0.27 | v0.0.26 recipe with lr 0.02 | 8/24 | 24/24 | 2.68 s | primary and hard gate PASSED (48–0 each); monotonicity FAILED (@16 lost **0–48** to base; @48 lost 11–37 to @16); not tagged |
 | v0.0.26 | contact penalty trained vs both v0.0.19 and v0.0.13 | 11/24 | 24/24 | 2.82 s | primary PASSED (46–0), **hard gate PASSED (48/48 vs v0.0.13)**, monotonicity FAILED (@16 lost 2–40 to base; @48 vs @16 24–24); not tagged |
 | v0.0.25 | graded contact penalty from v0.0.22 (smoke passed) | 0/24 | 22/24 | 1.435 s | **primary PASSED** (48–0 vs v0.0.19, contact 380 → 113), but the hard gate scored 0/48 valid vs v0.0.13 (all blocked) and monotonicity failed (@16 lost 4–44 to base); not tagged |
@@ -64,12 +65,14 @@ cycle-0026.md.
   The self-play league therefore had a valid share of only 23–31 %, which
   fell over training.
 
-## Next step: v0.0.28 (its own preregistration PR)
+## Next step: v0.0.29 (its own preregistration PR)
 
-- **One lever: a self-play opponent.** The frozen v0.0.22 base joins the
-  training opponents (v0.0.19, v0.0.13, v0.0.22), with lr back to 0.05.
-- **Why:** three versions in a row have lost to their own start under
-  training, while beating both frozen opponents.
+- **One lever: the base faces half of the ES pairs** (rotation v0.0.19,
+  base, v0.0.13, base). Per-slot rank-share logging makes the lever
+  measurable.
+- **Why:** v0.0.28 traded the base matchup away early (@16 lost 2–46), then
+  recovered (@48 beat @16 46–2, and beat the base 43–5 post hoc). The base's
+  measured share of the update was only 0.23–0.28.
 
 ## Rules this lane follows
 
