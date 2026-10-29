@@ -1,5 +1,30 @@
 # Changelog
 
+## Unpublished versions (clarification, owner 2026-10-29 01:10)
+
+**The latest release is still v0.0.19**, the last preregistered level-up. Every grokbot version since then missed its preregistered criterion, so none was tagged or released. The one exception is v0.0.17, which got a pre-release labelled "criterion not met" at the owner's request before v0.0.19. Each untagged version is recorded here and in `grokbot/redteam/cycle-*.md`:
+
+| Version | Lever | Why it was not released | Report |
+|---|---|---|---|
+| v0.0.20 | Two-player self-play league | No promotion; primary 3/48 valid | cycle 0028 |
+| v0.0.21 | Train against frozen v0.0.19 | 42/48 bell draws; not monotone | cycle 0030 |
+| v0.0.22 | Knockdown objective | Hard gate 36/48 (blocked); monotonicity | cycle 0032 |
+| v0.0.23 | Clean-knockdown bonus | `VALIDITY_FAILED`; the bonus never fired | cycle 0034 |
+| v0.0.24 | Valid-knockdown bonus | `SMOKE_FAILED`; base head-to-head 10/12 valid | cycle 0036 |
+| v0.0.25 | Graded contact penalty | Hard gate 0/48 (blocked); monotonicity | cycle 0038 |
+| v0.0.26 | Both training opponents | Monotonicity (@16 lost 2–40 to base) | cycle 0040 |
+
+## v0.0.26 — 2026-10-29 (preregistered level-up NOT met; not tagged)
+
+grokbot PR #39 (preregistration) plus the cycle-0040 report.
+
+- **Lever:** train the v0.0.25 recipe against **both** frozen opponents, v0.0.19 and v0.0.13, alternating per ES pair. The smoke gate passed.
+- **Primary vs v0.0.19: PASSED.** 46–0, all with hits.
+- **Hard gate vs v0.0.13: PASSED for the first time.** 48/48 valid, 48–0; v0.0.25 had 0/48.
+- **Monotonicity: FAILED.** @16 lost **2–40** to the v0.0.22 base, and @48 vs @16 was **24–24**.
+- **Motor gate:** stance 11/24, median stand 2.82 s.
+- **Next (v0.0.27):** a smaller ES step, lr 0.05 → 0.02.
+
 ## v0.0.25 — 2026-10-28 (preregistered level-up NOT met; not tagged)
 
 grokbot PR #37 (preregistration) plus the cycle-0038 report. The last level-up is still **v0.0.19**.
