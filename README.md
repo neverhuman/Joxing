@@ -6,7 +6,7 @@ Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGro
 
 **Research memory:** [H1–H12 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
-actions. H9 is the active diagnostic; H10 is the next motor direction.
+actions. H9 has concluded; H10 is the next planned motor direction.
 
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
@@ -31,11 +31,12 @@ opt-in, with a named smaller-video size estimate for later integration.
 [Results and retained failures](docs/NATIVE_TAPE_STORAGE_RESULTS.md) ·
 [Next: native glove-face calibration and pretrained balance](docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md).
 
-**Next diagnostic implemented:** [native glove-face and point-velocity qualification](docs/NATIVE_FACE_AUDIT_MISSION.md).
-Twenty development checks pass. The bounded zero-step task tests the existing
-mechanical face convention on all four native gloves, reversed contacts and
-rotating limbs; independent reconstruction checks the saved evidence. Formal
-outcomes are pending. Synthetic contacts do not demonstrate a physical punch.
+**Native mechanical face diagnostic concluded:** all192synthetic controls and
+independent native-model reconstruction pass after20Linux tests. Point velocities
+include rotation; contact-order/hemisphere checks pass with0newphysics or points.
+This is mechanical consistency, not anatomical or real-force calibration.
+[Results](docs/NATIVE_FACE_AUDIT_RESULTS.md) · [H9summary](research/H9.md) ·
+[Next: pretrained balance and bounded arm adaptation](research/H10.md).
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)

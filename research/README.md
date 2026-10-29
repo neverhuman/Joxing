@@ -5,7 +5,7 @@ checkpoints, videos, archives, credentials or binary objects.** Link to existing
 receipts instead. Keep each note below12 KiB; this index below16 KiB.
 
 H1–H8 and H11–H12 initially summarize existing work retrospectively. They are
-not backdated preregistrations. H9 is the current implemented diagnostic; H10
+not backdated preregistrations. H9 is the concluded mechanical diagnostic; H10
 is a planned motor direction. Machine protocols and frozen-source receipts
 remain the authority for measurements, budgets, criteria and denominators.
 
@@ -19,12 +19,12 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H6](H6.md)|Can compression preserve all native evidence?|23-array codec exact;31% smaller, with earlier memory failure retained|
 |[H7](H7.md)|Can saving be faster without changing values?|Qualified offline:28.7× reference save speed; larger files, not integrated|
 |[H8](H8.md)|Do the selected frozen controllers produce a native bout?|Fixed3s clip shows severe lean and0–0; force tape/replay incomplete|
-|[H9](H9.md)|Are native face/rotation conventions internally consistent?|Implemented;20development tests pass; formal qualification pending|
+|[H9](H9.md)|Are native face/rotation conventions internally consistent?|192/192synthetic native controls and independent read-audit pass;0physics|
 |[H10](H10.md)|Can a frozen motor plus bounded arm adaptation keep balance?|Planned; inventory and exact zero-residual parity come first|
 |[H11](H11.md)|Does diagnostic opponent training improve robustly?|Some matchup gains; degeneracy/validity/monotonicity failures persist|
 |[H12](H12.md)|Are sporting rules ready for competitive learning?|Partial; force/attribution/fall/geometry/motor/replay gates still block|
 
-**Active: H9. Next: H10. Next unused ID: H13.** These are global research-note
+**Last concluded: H9. Next: H10 (planned; no job running). Next unused ID: H13.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

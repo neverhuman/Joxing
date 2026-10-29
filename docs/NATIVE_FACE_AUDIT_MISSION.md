@@ -1,6 +1,9 @@
 # Native equipment-face and point-velocity diagnostic
 
-Status: implemented and preregistered; formal outcomes pending. Read AGENTS.md,
+Status: concluded; all192mechanical controls and the independent audit pass.
+Read [NATIVE_FACE_AUDIT_RESULTS.md](NATIVE_FACE_AUDIT_RESULTS.md) and
+[research/H9.md](../research/H9.md) for scope, measured outcomes and limitations.
+The original preregistered mission follows. Read AGENTS.md,
 MISSION.md, STATUS.md, GAME.md, NATIVE_SOURCE_PARTIAL_RESULTS.md and
 NATIVE_BALANCE_STRIKE_NEXT_PACKET.md before the new protocol and source.
 

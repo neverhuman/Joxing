@@ -1,3 +1,30 @@
+# H9 concluded; research ledger current and H10 next — 2026-10-29
+
+Read research/README.md for compressed H1–H12 ideas/outcomes. H9 was registered
+in Git before its formal run and now has its measured outcome appended; H10 is
+planned, with no job running. Keep small text only; original receipts stay linked.
+
+docs/NATIVE_FACE_AUDIT_RESULTS.md: all192native mechanical controls,12scratch
+states and4yaw checks pass, plus independent rebuilt-model audit.20Linux tests
+pass17.14s. Maximum velocity error9.519e-10m/s (<2e-7); rotational witness
+0.073462m/s.0integration/referee commits/points/learning. This validates a
+mechanical convention, not anatomical knuckle/force calibration, balance or boxing.
+
+Frozen source9850f069/protocol69317c8c. Combined postgate11.322848/60s;
+proof/audit peak1.503/1.686GB under4GiB; test peak sampled3.200GB under4GiB.
+All268source/runtime/asset identities,7exited process identities and14raw files/
+902,055bytes transferred exactly. Fullsource445KB and row data stay outside Git;
+compact summaries,attempt rows,audits,manifest and selected scalar cases retained.
+Prior missing signed contacts,0–0clip and severe lean remain unqualified.
+
+Next worker-ready step: H10/section3 of docs/NATIVE_BALANCE_STRIKE_NEXT_PACKET.md.
+Inventory actual compatible pretrained tasks/checkpoints; reuse native teacher/
+normalizer/phase and v10neutral residual code. Declare/test a new upper-only mask
+without pruning any700muscles or silently changing old decoder amplitude. Require
+exactzero residual/cache/held-command parity and a new finite protocol/full Linux
+source gate before new physical adaptation. No repeated old physics, source/cap
+rewrites, agents, other-chat messages, competitive promotion or v11tag.
+
 # Native face diagnostic implemented; bounded zero-step qualification ready — 2026-10-29
 
 Research memory now lives in research/README.md and stable H1–H12 notes; H9 is

@@ -1,0 +1,793 @@
+{
+  "cases_completed": 192,
+  "cases_entered": 192,
+  "max_rss_bytes": 1502957568,
+  "maximum_point_rotation_witness_mps": 0.07346216292676218,
+  "maximum_velocity_error_mps": 9.519000032653935e-10,
+  "model_binary_sha256": "02806d29bba614ea3f110f3729d4cdb7319992f0df41986241a05c9bcfdf03c3",
+  "native_boxing_proof_passed": false,
+  "new_physics": 0,
+  "protocol_sha256": "69317c8c7430189b9b7de26cc8a0012c7b917f77095c74f563fc7b2278fdb0d8",
+  "row_count": 192,
+  "rows": [
+    {
+      "id": "native-key/rest/A_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/A_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/A_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/A_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/rest/B_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/mixed/B_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "native-key/opponent-only/B_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/A_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/A_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/A_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/rest/B_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/mixed/B_glove_r/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_l/torso/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/head/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/head/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/head/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/head/False/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/torso/True/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/torso/True/True",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/torso/False/False",
+      "status": "passed"
+    },
+    {
+      "id": "scratch-wrist-offset/opponent-only/B_glove_r/torso/False/True",
+      "status": "passed"
+    }
+  ],
+  "runtime": {
+    "mujoco": "3.8.0",
+    "numpy": "2.4.2",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  },
+  "schema": "joxing-native-face-qualification-v1",
+  "source_bytes": 445214,
+  "source_commit": "9850f0699eb51a7f9bc1cd046af597f59ded1f98",
+  "source_sha256": "448b8fb3d7d7b8fe2a3e4df1bdeb3ba17e419a1bf754dba5d59d3a5bbbb96382",
+  "status": "passed",
+  "wall_s": 5.270037403330207
+}

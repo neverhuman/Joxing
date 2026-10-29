@@ -1,0 +1,86 @@
+[
+  {
+    "id": "native-key/rest/A_glove_l/head/True/False",
+    "pose": "native-key",
+    "profile": "rest",
+    "glove": "A_glove_l",
+    "zone": "head",
+    "front": true,
+    "reverse_geom_order": false,
+    "staged": {
+      "active_speed_mps": 0.0,
+      "approach_mps": 0.0,
+      "face_cos": 0.9999999999999999,
+      "normal_force_N": 10.0,
+      "sample_id": "0:333:469",
+      "striking_face": true,
+      "zone": "head"
+    },
+    "maximum_velocity_error_mps": 0.0,
+    "point_rotation_witness_mps": 0.0,
+    "classification": "synthetic contact on scratch native FK; no collision/force measurement"
+  },
+  {
+    "id": "native-key/rest/A_glove_r/torso/False/True",
+    "pose": "native-key",
+    "profile": "rest",
+    "glove": "A_glove_r",
+    "zone": "torso",
+    "front": false,
+    "reverse_geom_order": true,
+    "staged": {
+      "active_speed_mps": 0.0,
+      "approach_mps": 0.0,
+      "face_cos": -0.9999999999999999,
+      "normal_force_N": 10.0,
+      "sample_id": "0:448:223",
+      "striking_face": false,
+      "zone": "torso"
+    },
+    "maximum_velocity_error_mps": 0.0,
+    "point_rotation_witness_mps": 0.0,
+    "classification": "synthetic contact on scratch native FK; no collision/force measurement"
+  },
+  {
+    "id": "scratch-wrist-offset/rest/A_glove_l/head/True/False",
+    "pose": "scratch-wrist-offset",
+    "profile": "rest",
+    "glove": "A_glove_l",
+    "zone": "head",
+    "front": true,
+    "reverse_geom_order": false,
+    "staged": {
+      "active_speed_mps": 0.0,
+      "approach_mps": 0.0,
+      "face_cos": 1.0000000000000002,
+      "normal_force_N": 10.0,
+      "sample_id": "0:333:469",
+      "striking_face": true,
+      "zone": "head"
+    },
+    "maximum_velocity_error_mps": 0.0,
+    "point_rotation_witness_mps": 0.0,
+    "classification": "synthetic contact on scratch native FK; no collision/force measurement"
+  },
+  {
+    "id": "scratch-wrist-offset/opponent-only/B_glove_r/torso/False/True",
+    "pose": "scratch-wrist-offset",
+    "profile": "opponent-only",
+    "glove": "B_glove_r",
+    "zone": "torso",
+    "front": false,
+    "reverse_geom_order": true,
+    "staged": {
+      "active_speed_mps": 0.0,
+      "approach_mps": -1.1835918060229025,
+      "face_cos": -1.0,
+      "normal_force_N": 10.0,
+      "sample_id": "0:91:580",
+      "striking_face": false,
+      "zone": "torso"
+    },
+    "maximum_velocity_error_mps": 2.601563409143637e-10,
+    "point_rotation_witness_mps": 0.0,
+    "classification": "synthetic contact on scratch native FK; no collision/force measurement"
+  }
+]
