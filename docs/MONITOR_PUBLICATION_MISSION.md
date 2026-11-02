@@ -1,3 +1,7 @@
+# Concluded: H20publication +one smoke qualified
+
+[Results and retained faults](MONITOR_PUBLICATION_RESULTS.md). Next: [fresh H19comparison](PROCESS_EXIT_BACKEND_PUBLICATION_PACKET.md). Historical preregistration below, not a request to repeat.
+
 # Next: qualify watchdog publication without blocking its sampling loop
 
 Status: timing/report scope/smoke schema implemented, target NOT_RUN atfreeze.

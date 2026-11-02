@@ -1,3 +1,24 @@
+# H20 publication qualifies; fresh H19comparison registered — Nov2 Mountain
+
+H20e7137ab/9031712b passes85Linux controls and ONE import-only spawn smoke1VALID/
+0INVALID. Actual gap24.63/probe3.68ms, close982.03ms, no limits relaxed. Declared
+150ms disk-write negative control correctly stops; RAM counterpart stays22.32ms
+and exact delayed301.61ms copy occurs after exit. Both owned IPC scopes removed.
+Independent742source/85JUnit/32exits audit +209rawfiles838591byte exact transfer
+pass; audit fixture-classification fault retained/repaired, no formal repeat.
+0physics/models/actors/updates. docs/MONITOR_PUBLICATION_RESULTS.md has receipts.
+
+Current ready packet process-exit-backend-publication-protocol.json/aefeeb4b:
+85Linux controls then six NEW paired import-only spawn/forkserver slots, qualified
+private-tmpfs/phase timing, original seeds/order/payload/statistic/100ms/2s/RSS
+unchanged.90swhole/12sslot/4MiBfixtures/768KiBreceipts/1MiBIPC, one worker/thread.
+Publish/anonymousverify/freshcapacity before launch, target NOT_RUN atregistration.
+Eleven-packet carry16458physics/293.425650s/32875661fixture/2989633receipt bytes;
+original remainder223542steps/306.574350s/1040866163fixture/1204671receipt bytes.
+Old H19two packets2invalid/0valid/10not_run retained; H20smoke not reused. No
+historical I/O-cause/backend/default/native/training-throughput/balance/boxing
+claim or v11tag. Next worker-ready docs/PROCESS_EXIT_BACKEND_PUBLICATION_PACKET.md.
+
 # H20 timed private report publication registered — Nov2 Mountain
 
 Current packet experiments/v0.0.11/watchdog-publication-protocol.json/9031712b.

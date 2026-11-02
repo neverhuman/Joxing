@@ -1,0 +1,838 @@
+{
+  "runs/v0.0.11/.deferred-native.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/controls.log": {
+    "bytes": 179,
+    "sha256": "e838788ea804cc70e20f33fa05e5f3c0fa0ce1fc29a417f6adf6e83f378b7d18"
+  },
+  "runs/v0.0.11/watchdog-publication-01/controls.xml": {
+    "bytes": 11514,
+    "sha256": "fa3a98262022d8023dd8732950ec0d9980f469802994e6f4fdbf524e37893383"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_exit_uses_nonzero_0/release": {
+    "bytes": 9,
+    "sha256": "1584570866884bb892dbf8bc693d7fbe28203b2ce90ab34642f92ba906781ac2"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.json": {
+    "bytes": 8767,
+    "sha256": "c16805d32be793c063e19434506d383c2e810010b5607391cc4cd9fd281545f3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/foreign.json": {
+    "bytes": 118,
+    "sha256": "e742bc0be8daf706e91dd2f8b210afe621cb719ee3ca8d4e96040567367de39c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/serial.jsonl": {
+    "bytes": 1470,
+    "sha256": "eea0918108f9f517c9879176e9c5e37831d58e1ecb8682b24c46c36973e77405"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.json": {
+    "bytes": 17750,
+    "sha256": "81c0214f618870e259aff3a437ea67b68c8c6e0ea03250b0ee0cfd78fb85ce06"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.json": {
+    "bytes": 2381,
+    "sha256": "43698a40409a4d8a7248e649b4278b1fb770390b74b29687b624cbd2eb4fa37f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.json": {
+    "bytes": 4361,
+    "sha256": "daf75d5e07d4044efeece9b423154e7c5588b0f650d897b1adf398407f2be392"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/maps": {
+    "bytes": 7,
+    "sha256": "27ecf4a6835cb2fdf5207078d77fbe88e63c2e81c12a24c77b26c75f769ba242"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/stat": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/stat": {
+    "bytes": 54,
+    "sha256": "0649b71a331bd5aa9751e2864b6b2e205f9313c73681ce2ff543709b3591b797"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/stat": {
+    "bytes": 54,
+    "sha256": "1cd50a375de032bd7cd00b496aa36f5f0f82608856f59eeb4ea07fe169047d70"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_status_fail_closed_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_status_fail_closed_1/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_status_fail_closed_2/17/status": {
+    "bytes": 11,
+    "sha256": "c20bbc8bfc88c7e3204a21a422bbe259a0855f698295149976521a512190de87"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_bound_status_fail_closed_3/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_capacity_and_existing_out0/out.json": {
+    "bytes": 8,
+    "sha256": "ca67bd59cc4116ac80db5f64cbf4747f26ba929c85e8cc689a6123368d08719b"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de0/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de0/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de0/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/100/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/500/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de1/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de1/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de2/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de2/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de2/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de3/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de3/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de3/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de4/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de4/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fast_tree_only_current_de4/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_fresh_worker_cannot_impor3/worker-events.jsonl": {
+    "bytes": 148,
+    "sha256": "9618f7309703ff4961f8aa37bd1514ac703b5e3f3c96c9ec8713070f76950188"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno0/foreign.json": {
+    "bytes": 118,
+    "sha256": "03cd01c51b7706bb101d92d2d126dd78fc85edf2cfff431692297774c105c5a1"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno0/publication-control.json": {
+    "bytes": 157,
+    "sha256": "278a832cfb830f063d8082090b1037562b805fecd45ec454a778854ecdbd9719"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno0/watchdog.json": {
+    "bytes": 17406,
+    "sha256": "f1c73014a6984992474b9c354bacb685145c410701739d4efd9079df8939e06d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno1/foreign.json": {
+    "bytes": 118,
+    "sha256": "cd44a8998fa0d870125b938d847892b5a2302e8a2a53371bc7d9eff222016da5"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno1/publication-control.json": {
+    "bytes": 168,
+    "sha256": "9031b0d28977acdf4976ad9c6bb6ae171014293bc3a617eec5fd700258168551"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog-publication.json": {
+    "bytes": 1326,
+    "sha256": "e8e9039012419d6b8334375e7e1432ef4b92b958bf1988022512d452434c09f4"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog.json": {
+    "bytes": 21774,
+    "sha256": "ac49f3f6b93602e09afefde04c6be0a7188c613baf82e6aa796f72cefaa92142"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still0/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_live_missing_memory_still1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "beba1d87407c66746338de09d92fae43eb803e69585b3abb1022a40677236717"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "bf3c0c72d1216467fb012ea26bb5cf617c347ded22c30804078eefbda8867c3c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "925ed7234e27b31dabd93cba2b5331be91e9b35776586abf1fc6a8a903928925"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "64c1238a118c84366acf9259712262b7ac782c1e47e49d383f8d1d59d2c38549"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1097/probe-result.json": {
+    "bytes": 148,
+    "sha256": "26fde1f4c37ccbbd90ab7364a44889fb32a9c6f803c31d3b61d1f8ba50786839"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "5e7a77d654cc0d0536c25c8e82f6b3cd9ea3c3b44e88a45a1ed0a92164d72037"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "35fd7c28794c9141fec71c6a3eb9c6331d0a7ed115386026ee071f4f6a219e2f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3cf7287e54da724bb4429bbbdca112b59dc8aa61393aafd9a38e17753b06c6b9"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_parent_preparation_stays_0/receipt.json": {
+    "bytes": 31,
+    "sha256": "ed3e20d51b7750dc648e75019e3f4fcbaa77c2fe22db90efbe77bf74b17b8f90"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_parent_preparation_stays_1/receipt.json": {
+    "bytes": 31,
+    "sha256": "ed3e20d51b7750dc648e75019e3f4fcbaa77c2fe22db90efbe77bf74b17b8f90"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_persistent_missing_status0/17/status": {
+    "bytes": 17,
+    "sha256": "1bd6ddef8dc5ea30ee7656615ec3d037fab1a06929c8483be28cbb7abf030799"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b0/watchdog-publication.json": {
+    "bytes": 1669,
+    "sha256": "c1904c8912d976a65c206d2117f053cee97e1b8f0041f52fb36364a4c4351289"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b0/watchdog.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b1/fake-ram/joxing-watch-bvr3vtvf/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b1/fake-ram/joxing-watch-bvr3vtvf/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b1/watchdog-publication.json": {
+    "bytes": 1024,
+    "sha256": "0b8255bc6439235e18ace48d0c2b52e8adbe7f5a858315a6e5e0ecf72f8728b3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b2/fake-ram/joxing-watch-401jzleq/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b2/watchdog-publication.json": {
+    "bytes": 1024,
+    "sha256": "e056df41f10be043b3f81d729e7a57260bfd5a391fba3c5a058f9b7460fb133a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b3/fake-ram/joxing-watch-676dxu44/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b3/fake-ram/joxing-watch-676dxu44/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b3/watchdog-publication.json": {
+    "bytes": 1024,
+    "sha256": "3b6de27b6d3878db179dc4c10d8a294f037ca57960e7da55418a366e3ee0f465"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b4/fake-ram/joxing-watch-ioiromjh/report.json": {
+    "bytes": 262145,
+    "sha256": "9408817bc040328d1c403ff97e94cea3dfd3a361b2fb7ecc7af75ff3a5157139"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b4/fake-ram/joxing-watch-ioiromjh/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b4/watchdog-publication.json": {
+    "bytes": 1023,
+    "sha256": "aad773b137c694c2a638d8001cf77549421addd0a365ecb6ef4899f8dfc16ae9"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-inp5xh0u/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-inp5xh0u/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-inp5xh0u/unregistered": {
+    "bytes": 1,
+    "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b5/watchdog-publication.json": {
+    "bytes": 1024,
+    "sha256": "39376a4507daccb17f0035713766152f0c887fc7dc0932e7d9cc2f7c3caa3be6"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b6/fake-ram/joxing-watch-ix0x_ta2/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b6/fake-ram/joxing-watch-ix0x_ta2/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b6/watchdog-publication.json": {
+    "bytes": 1130,
+    "sha256": "e75d8ccf805041471b61ef1e3ffe5f21536bb3800215aac5dd04000b507dc4d5"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b6/watchdog.json": {
+    "bytes": 7,
+    "sha256": "11d510e067d2cdcd7559bd86d27a2f4c20babd43670346b97af99b522c1f0075"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b7/fake-ram/joxing-watch-6tmwfhsu/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b7/fake-ram/joxing-watch-6tmwfhsu/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_private_scope_ownership_b7/watchdog-publication.json": {
+    "bytes": 1024,
+    "sha256": "7fcfa2eba34c55398a25d25295f8fad852b33cb7e375bef2b3722981cc73901d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/maps": {
+    "bytes": 17,
+    "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/stat": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/maps.txt": {
+    "bytes": 17,
+    "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-after.txt": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-before.txt": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/status.txt": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa0/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa1/serial.jsonl": {
+    "bytes": 1440,
+    "sha256": "6cfcadfcb43d61787e4bc9f7501e477a7627f5630fe35b1a82fce100ac704ea6"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa10/serial.jsonl": {
+    "bytes": 326,
+    "sha256": "a3dbaefd86632003fd347b61df8d44fbf1e21b5cc06bf5fc7f1cb81e8d600f23"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa11/serial.jsonl": {
+    "bytes": 317,
+    "sha256": "978fb2887aadd208f5006253ea725017ce13fc06bdf2c0bf4e5181bb60123a6a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa14/serial.jsonl": {
+    "bytes": 436,
+    "sha256": "415ab18dd553078dd44757338e354c2ea2fa0df90dcae705b54753de3d4d2f1e"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa2/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa3/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa4/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa5/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa6/serial.jsonl": {
+    "bytes": 417,
+    "sha256": "22e49f010553454ed7327dfd0052b35826388a49be870a0061602c865e717b15"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa7/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "7500b8a0a6aca8de5ef20f9c1eea295f94c04dff5eed0d53fea49868b59ddff6"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa8/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "9117c0bb7df8af22fa018894776e731efc600acf7c83b1af6e3c6799bec80417"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_serial_close_order_and_fa9/serial.jsonl": {
+    "bytes": 444,
+    "sha256": "38d283c35d91879dd33ec0459d3e9a032094c2f474ecc83d55c65d5544f20158"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require0/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require2/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require2/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require2/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require2/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require3/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require3/17/statm": {
+    "bytes": 13,
+    "sha256": "7c575bcf3f81f8b863658b9b2237b6aa3781daa40d5bd4a0da00347664173ff6"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require3/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require3/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require4/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require4/17/statm": {
+    "bytes": 3,
+    "sha256": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require4/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require4/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require5/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require5/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require5/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require5/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require6/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require6/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require6/17/status": {
+    "bytes": 25,
+    "sha256": "9c5b9866ac567c32098d6bcc93749c7ae721b8251b4a962419c67666aaad6c3a"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require6/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require7/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require7/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_terminal_evidence_require7/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/controls/test_transient_missing_status_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/after-import.json": {
+    "bytes": 5037,
+    "sha256": "035ef7b8af6fa033c4f0b1cc98421488e019a1cfae5ee9af331a102f2ed09a36"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/before-release.json": {
+    "bytes": 3353,
+    "sha256": "aae2e5fa5a2dbadbe472090056b418f122f5f41b11220c03a6f53022982c9725"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/payload.json": {
+    "bytes": 797,
+    "sha256": "9efc11274c8989c54580e5b19dc6fb6ace35482bf2d0cd955a8b0426a2956b9f"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/probe-result.json": {
+    "bytes": 624,
+    "sha256": "152d7e52c3eca8739cb25bf1b40754e276d9400e26e343d3846e101f2c046ddb"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-root-before/maps.txt": {
+    "bytes": 14094,
+    "sha256": "8513aef694c5d41511e686cfb46000da56873910e3151b7ebe8012575ab4440d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-root-before/stat-after.txt": {
+    "bytes": 296,
+    "sha256": "d658bc12ded56ab5326278cbc19ab78272123eaa50c267b7481fc3a62bc14ead"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-root-before/stat-before.txt": {
+    "bytes": 296,
+    "sha256": "d658bc12ded56ab5326278cbc19ab78272123eaa50c267b7481fc3a62bc14ead"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "3e7050c4ef542d0db327f39df3c462eca6a4c2542271d5a259ddd1e6865936ca"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-after/maps.txt": {
+    "bytes": 154083,
+    "sha256": "c2742c0c6044fc6a9ab568f403bbd7f61fc79e8898468468c4bc71dc03c2038c"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-after/stat-after.txt": {
+    "bytes": 305,
+    "sha256": "f97e1f8cc9a8b1d164fa70633aa2d03a9b21a39eb86b8b5dcd0d45f59b6cd6a3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-after/stat-before.txt": {
+    "bytes": 305,
+    "sha256": "f97e1f8cc9a8b1d164fa70633aa2d03a9b21a39eb86b8b5dcd0d45f59b6cd6a3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "3e5c802eafec6586788378402213641c66c03c0a17abbd5e8fe74024e61d129d"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-before/maps.txt": {
+    "bytes": 14045,
+    "sha256": "51a123771d1a67de55e1224474c42edc8e6003c9c2171f6bd095fbcfd3379fe3"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-before/stat-after.txt": {
+    "bytes": 296,
+    "sha256": "4145a4b1d3d6e8fb0a7e5622563815eaef20acaf73534b91130ea12843e736ff"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-before/stat-before.txt": {
+    "bytes": 296,
+    "sha256": "4145a4b1d3d6e8fb0a7e5622563815eaef20acaf73534b91130ea12843e736ff"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/proc-worker-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "00e93217c69c320e63a333398d5206b2df16b78256bff3597435d037c502e076"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/serial-close.jsonl": {
+    "bytes": 457,
+    "sha256": "f4c65b375c13c9a0d2a7fcab02f54440b44b9f350509c1e69fd00a8f1d6fd5f9"
+  },
+  "runs/v0.0.11/watchdog-publication-01/fixtures/spawn1097/worker-events.jsonl": {
+    "bytes": 1308,
+    "sha256": "6e507317d06d02d0d37d6eed57e6d53848907cb2b9d5275e694a6cab7ee83ad0"
+  },
+  "runs/v0.0.11/watchdog-publication-01/result.json": {
+    "bytes": 48626,
+    "sha256": "c465904755b5793db7d57b37ac39a6c2c8a1144c91eb4a75ebd8a7ff189b10e7"
+  },
+  "runs/v0.0.11/watchdog-publication-01/runtime.log": {
+    "bytes": 97,
+    "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+  },
+  "runs/v0.0.11/watchdog-publication-01/spawn1097-watchdog-publication.json": {
+    "bytes": 1206,
+    "sha256": "b16b4e2578013730fa765e584adbd87d94a8c267481aea0982e1efb5cbf6aeb1"
+  },
+  "runs/v0.0.11/watchdog-publication-01/spawn1097-watchdog.json": {
+    "bytes": 31265,
+    "sha256": "4562072a4d6f1341b26ecfff0076d98e0177d52db6b5b3b1d5d8c4e9ab1916fd"
+  },
+  "runs/v0.0.11/watchdog-publication-01/spawn1097-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/spawn1097-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/spawn1097.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/watchdog-publication-01/sync.log": {
+    "bytes": 1228,
+    "sha256": "17ffc60206694f119c56ac0c31167cdb4514d9438174cd7ebbb882f0556089c8"
+  },
+  "runs/v0.0.11/watchdog-publication-deployment.json": {
+    "bytes": 179907,
+    "sha256": "e065fad807651266f1d34aa3ab375023f5077645e3e5086515c4a8c56ca6006e"
+  },
+  "runs/v0.0.11/watchdog-publication-launch.log": {
+    "bytes": 795,
+    "sha256": "69f673aad4d39cacc4ef6f96299fba7190c3acd6fe8aba90f36344e67287bfec"
+  }
+}

@@ -8,6 +8,12 @@ Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGro
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
+**Latest prerequisite:** [H20publication proof](docs/MONITOR_PUBLICATION_RESULTS.md)
+passes85Linux controls and one import-only smoke; worst smoke monitoring gap24.63ms
+under unchanged100ms bound. All209raw evidence files verified, owned IPC/processes
+cleaned up. This qualifies the named report path. [Next fresh backend comparison](docs/PROCESS_EXIT_BACKEND_PUBLICATION_PACKET.md)
+keeps the same three seeds/2s close gate; no native boxing or training gain claimed.
+
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
 valid and both replays exact. Survival changed−0.066s/+0.016s, with1/8five-second

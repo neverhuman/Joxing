@@ -30,9 +30,9 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H17](H17.md)|Can serial retirement avoid overlapping exit tails?|75Linux controls pass; native2s close fails before cleanup105.9ms hold fault|
 |[H18](H18.md)|Can closed native buffers be released before process exit?|93Linux +one native lifetime gate pass;90.66MB RSS drop,650ms exit tail remains|
 |[H19](H19.md)|Does process backend explain remaining exit latency?|Two packets2invalid/10not_run; parent fixed,120.58ms sampling gap blocks comparison|
-|[H20](H20.md)|Can report publication avoid stalling the watchdog?|Source79local pass/6Linux skips;85case/private-tmpfs +one-smoke protocol registered|
+|[H20](H20.md)|Can report publication avoid stalling the watchdog?|85Linux +one import-only smoke qualify; exact after-exit copies/owned cleanup, no native result|
 
-**Latest: H19two attempts invalid; no latency result. Next: H20publication prerequisite before backend/native repeats. H18one-worker lifetime proof stays narrow. Next unused ID: H21.** These are global research-note
+**Latest: H20publication prerequisite qualifies. Fresh H19three-pair packet registered after85Linux controls; old two attempts invalid, no latency result yet. H18one-worker lifetime proof stays narrow. Next unused ID: H21.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

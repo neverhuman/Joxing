@@ -1,3 +1,7 @@
+# Current: H20prerequisite qualifies; fresh H19packet ready
+
+Read [PROCESS_EXIT_BACKEND_PUBLICATION_PACKET.md](PROCESS_EXIT_BACKEND_PUBLICATION_PACKET.md) and new protocol aefeeb4b before execution. Original two invalid attempts retained. Historical plan follows.
+
 # Next: isolate process-exit latency without native physics
 
 Current: TWO packets invalid. Stdlib parent repair succeeds and71Linux controls
