@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H19 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H20 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -79,6 +79,9 @@ Two packets remain invalid: the parent import mistake was fixed, then the watche
 correctly stopped during import on a120.58ms sampling gap. No latency result or
 backend/training gain exists. [Both failures and audits](docs/PROCESS_EXIT_BACKEND_RESULTS.md) ·
 [Next: watchdog publication timing and bounded memory-backed reports](docs/MONITOR_PUBLICATION_MISSION.md).
+The opt-in report path is implemented:79local controls pass/6Linux-only skips.
+[Registered85case gate and one zero-physics smoke](experiments/v0.0.11/watchdog-publication-protocol.json)
+retain all100ms/resource limits; target outcomes pending.
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

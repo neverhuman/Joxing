@@ -16,6 +16,7 @@ from source_shard_support import check_junit
 from supervise_motor_pilot import descendants, identity, live
 from supervise_upper_task_tests import canonical, rss, save, stop
 from upper_task_gate_support import partition_usage
+from watchdog_publication import ReportScope
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
@@ -29,7 +30,13 @@ def runner_module(schema):
         "joxing-serial-native-teardown-v1": "joxing.serial_native_teardown",
         "joxing-release-native-teardown-v1": "joxing.release_native_teardown",
         "joxing-process-exit-probe-v1": "joxing.process_exit_probe",
+        "joxing-watch-publication-v1": "joxing.process_exit_probe",
     }[schema]
+
+
+def watchdog_paths(canonical_report, publication=None):
+    path = publication.path if publication is not None else Path(canonical_report)
+    return path, path.with_suffix(".ready")
 
 
 def main():
@@ -47,6 +54,7 @@ def main():
             "joxing-serial-native-teardown-v1",
             "joxing-release-native-teardown-v1",
             "joxing-process-exit-probe-v1",
+            "joxing-watch-publication-v1",
         )
         or canonical(p) != args.protocol_sha256
     ):
@@ -116,6 +124,11 @@ def main():
     verify()
     serial_constructor = p["schema"] == "joxing-serial-native-teardown-v1"
     process_probe = p["schema"] == "joxing-process-exit-probe-v1"
+    publication_smoke = p["schema"] == "joxing-watch-publication-v1"
+    zero_work_probe = process_probe or publication_smoke
+    if p.get("watchdog_output_backend", "disk") not in ("disk", "private-tmpfs-v1"):
+        raise ValueError("Unknown watchdog publication backend")
+    publication = None
     constructor_only = serial_constructor or p["schema"] in (
         "joxing-native-teardown-v1",
         "joxing-release-native-teardown-v1",
@@ -134,6 +147,8 @@ def main():
         pid = identity(pid)["parent_pid"]
 
     def capacity():
+        if publication is not None and not publication.finished:
+            publication._validate()
         foreign = unknown_joxing_processes(supervisor, ignored_pids=ancestors)
         if foreign:
             raise RuntimeError("Another owned Joxing job: " + str(foreign))
@@ -235,7 +250,9 @@ def main():
                     "--supervisor-start",
                     str(supervisor["start_ticks"]),
                     "--output",
-                    str(out / (name + "-watchdog.json")),
+                    str(
+                        watchdog_paths(out / (name + "-watchdog.json"), publication)[0]
+                    ),
                     "--planned-rss",
                     str(p["planned_stop_rss_bytes"]),
                     "--hard-rss",
@@ -249,6 +266,8 @@ def main():
                     "--rss-reader",
                     p.get("rss_reader", "strict-v2"),
                 ]
+                if p.get("watchdog_phase_timing", False):
+                    guard_command.append("--phase-timing")
                 guard_log = (out / (name + "-watchdog.log")).open("w")
                 guard = subprocess.Popen(
                     guard_command,
@@ -296,6 +315,22 @@ def main():
             row["returncode"] = code
             if guard is not None:
                 guard.wait(timeout=2)
+                if publication is not None:
+                    publication.finish(
+                        task_live=active.poll() is None
+                        or any(live(i) for i in seen.values() if i["pid"] != guard.pid),
+                        guard_live=guard.poll() is None,
+                    )
+                    row["publication_receipt"] = str(
+                        publication.receipt.relative_to(ROOT)
+                    )
+                    if (
+                        time.monotonic() - started > limit
+                        or time.monotonic() - began > p["whole_wall_s"]
+                    ):
+                        raise TimeoutError(
+                            "Publication copy exceeded registered wall credit"
+                        )
                 watch = json.loads((out / (name + "-watchdog.json")).read_text())
                 row["watchdog"] = watch
                 for i in watch["owned_identities"]:
@@ -376,7 +411,7 @@ def main():
         report["control_counts"] = checked["counts"]
         if not checked["qualified"]:
             raise ValueError("Native prerequisite controls incomplete")
-        if process_probe:
+        if zero_work_probe:
             if p["physics_limit"] != 0:
                 raise ValueError("Import-only probe physical credit must be zero")
         else:
@@ -384,6 +419,11 @@ def main():
         for slot in report["rows"]:
             slot["status"] = "unconfirmed"
             name = slot["id"]
+            publication = (
+                ReportScope(out / (name + "-watchdog.json"), cap=p["ipc_bytes"])
+                if p.get("watchdog_output_backend", "disk") == "private-tmpfs-v1"
+                else None
+            )
             command = [
                 python,
                 "-m",
@@ -399,10 +439,10 @@ def main():
                 "--binding",
                 binding,
                 "--ready",
-                str(out / (name + "-watchdog.ready")),
+                str(watchdog_paths(out / (name + "-watchdog.json"), publication)[1]),
             ]
             stage(name, command, p["per_slot_wall_s"], slot=slot)
-            if process_probe:
+            if zero_work_probe:
                 facts = json.loads((fixtures / name / "probe-result.json").read_text())
                 if any(
                     facts[k] != 0 for k in ("physics", "actors", "updates", "inference")
@@ -463,6 +503,8 @@ def main():
             report["comparison"] = conclude(
                 {s["id"]: str(fixtures / s["id"]) for s in report["rows"]}
             )
+        elif publication_smoke:
+            report["publication_smoke_qualified"] = True
         elif constructor_only:
             report["constructor_gate_qualified"] = True
         else:
@@ -473,6 +515,8 @@ def main():
             )
         verify_runtime_files()
         verify()
+        if publication_smoke and time.monotonic() - began > p["whole_wall_s"]:
+            raise TimeoutError("Publication whole wall credit")
         report["status"] = "completed"
     except BaseException as error:  # noqa: BLE001 -- retain every attempted/not_run slot
         for trial in report["rows"]:
@@ -500,6 +544,23 @@ def main():
             row["status"] = "failed"
         report.update(status="halted", error=type(error).__name__ + ": " + str(error))
     finally:
+        if publication is not None and not publication.finished:
+            try:
+                publication.finish(
+                    task_live=(active is not None and active.poll() is None)
+                    or any(
+                        live(i)
+                        for i in seen.values()
+                        if guard is None or i["pid"] != guard.pid
+                    ),
+                    guard_live=guard is not None and guard.poll() is None,
+                )
+            except Exception as publication_error:  # noqa: BLE001 -- retain original and cleanup faults
+                report.update(
+                    status="halted",
+                    publication_cleanup_error=str(publication_error),
+                    retained_ipc_directory=str(publication.directory),
+                )
         if ledger is not None:
             report["physics_credit"] = ledger.snapshot()
         report.update(

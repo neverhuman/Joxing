@@ -1,6 +1,13 @@
 # Next: qualify watchdog publication without blocking its sampling loop
 
-Status: H20 worker-ready plan, NOT implemented/preregistered/run. Single current
+Status: timing/report scope/smoke schema implemented, target NOT_RUN atfreeze.
+Protocol experiments/v0.0.11/watchdog-publication-protocol.json, canonical
+9031712b6c53a6293213d5d78b3a216254cd02c55f5807ebd82a6c37c3aa6906.
+85Linux cases then one0physics smoke; local79pass/6Linux skips, full129pass/6skip,
+Ruffpass. Controlled delayed-disk stop is expected only in its declared negative
+control. Disk default and100ms/2s/RSS gates unchanged. New deployment receipt uses
+compact value-lossless JSON; watch/supervisor report formats retained. Historical
+worker-ready plan follows. Single current
 agent owns integration; no delegation/concurrent writers. Workspace
 `/Users/bentaylor/Documents/ChatGPT/JOXING`; use RTK for shell commands.
 

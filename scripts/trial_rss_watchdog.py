@@ -9,6 +9,7 @@ from pathlib import Path
 
 from supervise_motor_pilot import identity, live
 from terminal_rss_reader import TerminalReader, aggregate
+from watchdog_publication import PhaseTiming
 
 
 def bound_rss(bound, *, proc_root=Path("/proc"), read_identity=identity):
@@ -111,13 +112,19 @@ def stop_owned(root, seen):
                 pass
 
 
-def save(path, value):
+def save(path, value, timing=None):
+    began = timing.begin() if timing else None
     raw = json.dumps(value, indent=2, allow_nan=False) + "\n"
+    if timing:
+        timing.end("serialize", began)
     if len(raw) > 256 * 1024:
         raise ValueError("Watchdog report credit")
     temporary = path.with_suffix(".tmp")
+    began = timing.begin() if timing else None
     temporary.write_text(raw)
     temporary.replace(path)
+    if timing:
+        timing.end("report_write", began)
 
 
 def monitor(
@@ -133,6 +140,7 @@ def monitor(
     poll_s=0.02,
     identity_cap=128,
     rss_reader="strict-v2",
+    phase_timing=False,
 ):
     if rss_reader not in ("strict-v2", "terminal-mm-reserve-v3"):
         raise ValueError("Unknown RSS reader")
@@ -175,10 +183,14 @@ def monitor(
         "peak_capacity_charge_bytes": 0,
         "peak_retiring_rss_charge_bytes": 0,
     }
+    timing = PhaseTiming() if phase_timing else None
+    if timing:
+        report["phase_timing"] = timing.data
     root_gone = None
     try:
         while True:
             probe_started = time.monotonic()
+            probe_phase = timing.begin(probe_started) if timing else None
             if not live(supervisor):
                 raise RuntimeError("Supervisor exited")
             seen.update(fast_tree(root))
@@ -209,6 +221,8 @@ def monitor(
                         }
                     )
             now = time.monotonic()
+            if timing:
+                timing.end("probe", probe_phase, wall=now)
             gap = 0 if last_sample is None else now - last_sample
             last_sample = now
             observed, reserved, total = aggregate(samples)
@@ -272,11 +286,17 @@ def monitor(
                 report.update(
                     owned_identities=list(seen.values()), recent_samples=recent
                 )
-                save(out, report)
+                save(out, report, timing)
                 if report["samples"] == 1:
+                    ready_phase = timing.begin() if timing else None
                     out.with_suffix(".ready").touch(exist_ok=False)
+                    if timing:
+                        timing.end("ready_touch", ready_phase)
                 last_write = now
+            sleep_phase = timing.begin() if timing else None
             time.sleep(poll_s)
+            if timing:
+                timing.end("sleep", sleep_phase, requested_s=poll_s)
     except BaseException as error:  # noqa: BLE001 -- stop only the registered task
         report.update(status="fault", reason=type(error).__name__ + ": " + str(error))
         stop_owned(root, seen)
@@ -291,7 +311,7 @@ def monitor(
             else [list(k) for k in reader.retiring],
             wall_s=time.monotonic() - began,
         )
-        save(out, report)
+        save(out, report, timing)
     return report
 
 
@@ -311,6 +331,7 @@ def main():
     parser.add_argument("--wall-s", type=float, required=True)
     parser.add_argument("--max-gap-s", type=float, default=0.1)
     parser.add_argument("--rss-reader", default="strict-v2")
+    parser.add_argument("--phase-timing", action="store_true")
     args = parser.parse_args()
     report = monitor(
         {"pid": args.root_pid, "start_ticks": args.root_start},
@@ -322,6 +343,7 @@ def main():
         wall_s=args.wall_s,
         max_gap_s=args.max_gap_s,
         rss_reader=args.rss_reader,
+        phase_timing=args.phase_timing,
     )
     if report["status"] != "exited":
         raise SystemExit(1)

@@ -1,3 +1,19 @@
+# H20 timed private report publication registered — Nov2 Mountain
+
+Current packet experiments/v0.0.11/watchdog-publication-protocol.json/9031712b.
+Opt-in timing +bounded private-tmpfs report scope/copy-after-exit implemented;
+disk default unchanged. Local79pass/6Linux skips, full129pass/6skip/Ruffpass.
+85Linux controls include explicit150ms disk-delay EXPECTED stale-stop and RAM
+counterpart with exact delayed copy after task/guard exit. Then ONE spawn1097
+import-only smoke, no six-pair conclusion,0native/physics/actor/inference/update.
+Same100ms gap/probe/hold,2s close,7GiBplanned/8GiBhard/16process caps;60swhole/
+12ssmoke/4MiBfixtures/384KiBreceipts/1MiB bounded private IPC. New deployment
+receipt compact JSON is value-lossless; old evidence unchanged. Record real
+serialize/write/sleep/rusage timing; final write self-time explicitly excluded.
+Target NOT_RUN atregistration. Publish/anonymousverify/freshcapacity before start.
+Prior H19two invalid packets/10not_run rows and original envelope carried. No
+historical IO-cause, backend/default/native/boxing/training-throughput claim.
+
 # Current: H19 second packet invalid; H20 publication proof next — Nov2 Mountain
 
 1726ce2/f94d8154 passes71Linux controls. Stdlib parent repair works; spawn1097

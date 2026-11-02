@@ -1,0 +1,56 @@
+{
+  "schema": "joxing-publication-development-v1",
+  "scope": "Mac source/storage/fault controls; actual Linux publication/heap tests skipped, no formal smoke/native outcomes",
+  "checks": [
+    {
+      "passed": 62,
+      "skipped": 5,
+      "wall_s": 0.7,
+      "scope": "initial publication/watchdog/reader/probe subset"
+    },
+    {
+      "passed": 79,
+      "skipped": 6,
+      "wall_s": 0.76,
+      "scope": "plus readiness-route and serial close controls"
+    },
+    {
+      "passed": 129,
+      "skipped": 6,
+      "wall_s": 4.01,
+      "scope": "full previous-regression set plus publication controls"
+    },
+    {
+      "passed": 79,
+      "skipped": 6,
+      "wall_s": 0.8,
+      "scope": "final85case target subset including allocated uid/mode proof"
+    }
+  ],
+  "final_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_watchdog_publication.py tests/test_trial_rss_watchdog.py tests/test_terminal_rss_reader.py tests/test_process_exit_probe.py tests/test_serial_retirement.py --junitxml=runs/v0.0.11/publication-development-04.xml",
+  "ruff": {
+    "status": "passed",
+    "initial_fault": "BLE001 cleanup catch required explicit first-fault-preservation annotation",
+    "fixed_before_freeze": true
+  },
+  "source_files": {
+    "scripts/watchdog_publication.py": {
+      "bytes": 8520,
+      "sha256": "81b52800ac5abe3a2d82a183534aa9260cf4e13b66a8a77cfe7962f30ba65c91"
+    },
+    "scripts/trial_rss_watchdog.py": {
+      "bytes": 13173,
+      "sha256": "6adfea579c4eebb91723a53d7d1a6d3687edbbc7de3ee6e91e2f5329a6949b26"
+    },
+    "scripts/qualify_deferred_trial.py": {
+      "bytes": 23073,
+      "sha256": "35621cc0555e9afd5b9b1d303525369300e034503ea63840cb0a14d03292ca3a"
+    },
+    "tests/test_watchdog_publication.py": {
+      "bytes": 8854,
+      "sha256": "7cbbc717f3bee5442ef71f24d06e88733013e8602dfc7db2196bb08831eb225f"
+    }
+  },
+  "physics": 0,
+  "formal_smoke": "not_run"
+}
