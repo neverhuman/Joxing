@@ -1,0 +1,8 @@
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[exiting]
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[live_missing]
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[nonzero_mm]
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[other_thread_live]
+tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[normal_exit-67108864]
+tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[direct_exit-536870912]
+
+6 tests collected in 0.02s

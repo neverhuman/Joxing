@@ -1,0 +1,57 @@
+{
+  "scope": "Retrospective read-only supplementary comparison; both reference attempts remain invalid, never a candidate parity gate",
+  "new_physics_steps": 0,
+  "new_updates": 0,
+  "rows": [
+    {
+      "trace": "learner.jsonl",
+      "rows": 31,
+      "exact": true
+    },
+    {
+      "trace": "native-evaluation.jsonl",
+      "rows": 249,
+      "exact": true
+    },
+    {
+      "trace": "native-world-0.jsonl",
+      "rows": 18,
+      "exact": true
+    },
+    {
+      "trace": "native-world-1.jsonl",
+      "rows": 18,
+      "exact": true
+    },
+    {
+      "trace": "native-world-2.jsonl",
+      "rows": 18,
+      "exact": true
+    },
+    {
+      "trace": "native-world-3.jsonl",
+      "rows": 18,
+      "exact": true
+    },
+    {
+      "trace": "worker-0.jsonl",
+      "rows": 18,
+      "exact": true
+    },
+    {
+      "trace": "worker-1.jsonl",
+      "rows": 18,
+      "exact": true
+    },
+    {
+      "trace": "worker-2.jsonl",
+      "rows": 18,
+      "exact": true
+    },
+    {
+      "trace": "worker-3.jsonl",
+      "rows": 18,
+      "exact": true
+    }
+  ]
+}

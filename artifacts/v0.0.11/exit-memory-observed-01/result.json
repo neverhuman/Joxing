@@ -1,0 +1,269 @@
+{
+  "schema": "joxing-isolated-source-supervision-v1",
+  "source_commit": "66ff041a74a73a13d7869099fe8a43edb335bdf1",
+  "protocol_sha256": "88c62c953c4ba6349b0aa632849e9e43c1917d9bb8e080b34e4a2c45296b38d5",
+  "process": {
+    "pid": 2740038,
+    "parent_pid": 1,
+    "start_ticks": 954420486,
+    "state": "R"
+  },
+  "status": "completed",
+  "scope": "H16 owned Linux exit-memory observation only. Sequential64MiB normal exit and512MiB direct os._exit test heaps; no native model, physics, actor, training or production monitor-policy change.",
+  "formal_native_evaluations": 0,
+  "formal_training_runs": 0,
+  "initial_capacity": {
+    "available_memory_bytes": 40438796288,
+    "free_disk_bytes": 122505969664,
+    "fixture_bytes": 0,
+    "receipt_bytes": 218162,
+    "load": [
+      13.21630859375,
+      9.83349609375,
+      8.5888671875
+    ]
+  },
+  "rows": [
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[exiting]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[live_missing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[nonzero_mm]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[other_thread_live]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[normal_exit-67108864]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[direct_exit-536870912]",
+      "status": "passed"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "limit_s": 57.99977291189134,
+      "peak_owned_rss_bytes": 128049152,
+      "process": {
+        "pid": 2740076,
+        "parent_pid": 2740038,
+        "start_ticks": 954420557,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2740076,
+          "parent_pid": 2740038,
+          "start_ticks": 954420557,
+          "state": "Z"
+        },
+        {
+          "pid": 2740197,
+          "parent_pid": 2740076,
+          "start_ticks": 954420616,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 1.4085642769932747,
+      "current_owned_rss_bytes": 32583680,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 40682029056,
+        "free_disk_bytes": 122495176704,
+        "fixture_bytes": 0,
+        "receipt_bytes": 224314,
+        "load": [
+          13.21630859375,
+          9.83349609375,
+          8.5888671875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.5117865893989801,
+      "cleanup_wait_s": 4.495494067668915e-05
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3'}"
+      ],
+      "status": "completed",
+      "limit_s": 8,
+      "peak_owned_rss_bytes": 56381440,
+      "process": {
+        "pid": 2740288,
+        "parent_pid": 2740038,
+        "start_ticks": 954420708,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2740288,
+          "parent_pid": 2740038,
+          "start_ticks": 954420708,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7377110198140144,
+      "current_owned_rss_bytes": 32620544,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 40501563392,
+        "free_disk_bytes": 122495119360,
+        "fixture_bytes": 0,
+        "receipt_bytes": 225248,
+        "load": [
+          13.21630859375,
+          9.83349609375,
+          8.5888671875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8407402690500021,
+      "cleanup_wait_s": 2.8094276785850525e-05
+    },
+    {
+      "stage": "collection",
+      "command": [
+        "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_exit_memory_probe.py"
+      ],
+      "status": "completed",
+      "limit_s": 13,
+      "peak_owned_rss_bytes": 49909760,
+      "process": {
+        "pid": 2740468,
+        "parent_pid": 2740038,
+        "start_ticks": 954420792,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2740468,
+          "parent_pid": 2740038,
+          "start_ticks": 954420792,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.733258193358779,
+      "current_owned_rss_bytes": 32620544,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 40424587264,
+        "free_disk_bytes": 122494558208,
+        "fixture_bytes": 0,
+        "receipt_bytes": 226683,
+        "load": [
+          12.79833984375,
+          9.802734375,
+          8.58544921875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8378749098628759,
+      "cleanup_wait_s": 2.9103830456733704e-05
+    },
+    {
+      "stage": "module-000",
+      "shard_index": 0,
+      "command": [
+        "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000",
+        "--junitxml",
+        "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/runs/v0.0.11/exit-memory-diagnostic-01/module-000.xml",
+        "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[exiting]",
+        "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[live_missing]",
+        "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[nonzero_mm]",
+        "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[other_thread_live]",
+        "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[normal_exit-67108864]",
+        "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[direct_exit-536870912]"
+      ],
+      "status": "completed",
+      "limit_s": 27.99999711290002,
+      "peak_owned_rss_bytes": 64475136,
+      "process": {
+        "pid": 2740508,
+        "parent_pid": 2740038,
+        "start_ticks": 954420876,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2740508,
+          "parent_pid": 2740038,
+          "start_ticks": 954420876,
+          "state": "R"
+        },
+        {
+          "pid": 2740519,
+          "parent_pid": 2740508,
+          "start_ticks": 954420915,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 0.7395420633256435,
+      "current_owned_rss_bytes": 64475136,
+      "live_owned_processes": 3,
+      "capacity": {
+        "available_memory_bytes": 40438046720,
+        "free_disk_bytes": 122494365696,
+        "fixture_bytes": 27752,
+        "receipt_bytes": 229781,
+        "load": [
+          12.79833984375,
+          9.802734375,
+          8.58544921875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8451717048883438,
+      "cleanup_wait_s": 4.2922794818878174e-05,
+      "junit_counts": {
+        "passed": 6,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "criterion_passed": true,
+  "full_source_gate_qualified": false,
+  "wall_s": 4.3957572393119335,
+  "test_wall_s": 1.2042800020426512,
+  "final_live_recorded": [],
+  "fixture_bytes": 27752,
+  "receipt_bytes": 230142
+}

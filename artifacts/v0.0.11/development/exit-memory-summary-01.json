@@ -1,0 +1,47 @@
+{
+  "schema": "joxing-exit-memory-summary-v1",
+  "source_commit": "66ff041a74a73a13d7869099fe8a43edb335bdf1",
+  "protocol_sha256": "88c62c953c4ba6349b0aa632849e9e43c1917d9bb8e080b34e4a2c45296b38d5",
+  "data_quality_tests_passed": 6,
+  "hypothesis": "supported-synthetic-exit",
+  "case_results": [
+    {
+      "mode": "direct_exit",
+      "samples": 47,
+      "missing_nonterminal_samples": 46,
+      "missing_nonterminal_classified": 46,
+      "hypothesis": "supported-synthetic-exit",
+      "wall_s": 0.36136651039123535
+    },
+    {
+      "mode": "normal_exit",
+      "samples": 8,
+      "missing_nonterminal_samples": 1,
+      "missing_nonterminal_classified": 1,
+      "hypothesis": "supported-synthetic-exit",
+      "wall_s": 0.056933119893074036
+    }
+  ],
+  "missing_nonterminal_total": 47,
+  "native_physics_steps": 0,
+  "learning_updates": 0,
+  "recorded_identities_exited": 8,
+  "source_files_verified": 727,
+  "raw_files": 13,
+  "raw_bytes": 259083,
+  "historical_native_cause": "inferred, not directly observed",
+  "production_reader": "unchanged",
+  "next_mission": "docs/EXIT_AWARE_RSS_READER_MISSION.md",
+  "previous_native_outcomes": {
+    "invalid": 2,
+    "not_run": 6,
+    "known_steps": 10172,
+    "known_reference_updates": 24,
+    "candidate_qualifications": 0
+  },
+  "active_compute_chain": {
+    "wall_s": 91.90574472397566,
+    "fixture_bytes": 21163444,
+    "receipt_bytes": 750165
+  }
+}

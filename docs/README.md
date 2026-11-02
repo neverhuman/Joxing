@@ -1,3 +1,6 @@
+Current: [H16 exit-memory results](EXIT_MEMORY_RESULTS.md) and
+[exit-aware reader/native teardown mission](EXIT_AWARE_RSS_READER_MISSION.md).
+
 Current: [H15 watcher/lifecycle source results](DEFERRED_LIFECYCLE_SOURCE_RESULTS.md)
 and [native parity execution packet](DEFERRED_PARITY_EXECUTION_PACKET.md).
 

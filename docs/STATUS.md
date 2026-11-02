@@ -1,3 +1,27 @@
+# H16 synthetic exit mechanism supported; exit-aware reader next — Nov2 Mountain
+
+Current worker-ready mission docs/EXIT_AWARE_RSS_READER_MISSION.md. No owned task
+remains active. Frozen66ff041/88c62c95 exit diagnostic passes6Linux data-quality
+cases, whole4.395757s,0physics/learning.47nonterminal missing-RSS samples (1normal,
+46direct exit) all show matching PID/start, stateR, PF_EXITING on the single task,
+absent VmRSS/VmSize and explicit zero statm. Scientific synthetic verdict supported;
+this does not prove the historical worker's exact fields or qualify a reader.
+
+Independent727source/five history objects/one header/6JUnit/all sample-verdict
+and8recorded-exit audit passes;13rawfiles259083bytes exact transfer, no writer.
+Upstream Linux6.8 proc/exit code supports interpretation, with primary links in
+EXIT_MEMORY_RESULTS.md; actual host header separately hashed. No production
+monitor, metric, cap, default, model/rules or native parity gate changed.
+
+Next implement opt-in terminal-mm-reserve-v3: strict PID/start/single-thread/exit/
+explicit-statm evidence, retain NONZERO prior observed high-water as an exit
+reservation rather than guessed zero, existing8GiB/100ms limits plus bounded hold.
+Qualify fake/live/heavy-exit controls, then one real700muscle constructor/close
+worker (200prep steps, no actor/optimizer), before another four-slot RL packet.
+H15remains2INVALID/6NOT_RUN,10172steps/24reference-prefix updates; retrospective
+10history comparison exact, but failed criteria remain failed. No candidate,
+concurrency, full-source, boxing win or v11tag. Carry forward all prior costs.
+
 # H15 second packet invalid; H16 zero-physics exit diagnosis next — Nov2 Mountain
 
 Current protocol experiments/v0.0.11/exit-memory-diagnostic-protocol.json;

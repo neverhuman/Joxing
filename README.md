@@ -59,6 +59,11 @@ The independent RSS watcher passes20Linux controls (max21.36ms sample gap in
 controlled tests); the opt-in lifecycle passes27source/fault controls with fake
 worlds. Legacy remains default. [Results](docs/DEFERRED_LIFECYCLE_SOURCE_RESULTS.md)
 · [Next four-slot native parity packet](docs/DEFERRED_PARITY_EXECUTION_PACKET.md).
+Native parity is blocked by two monitor faults during worker closing; both
+reference prefixes reached64transitions/12updates but remain invalid. A separate
+zero-physics exit diagnostic reproduced47missing-RSS teardown samples after6Linux
+controls. [Results](docs/EXIT_MEMORY_RESULTS.md) · [Next: conservative exit-aware
+reader and native teardown proof](docs/EXIT_AWARE_RSS_READER_MISSION.md).
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

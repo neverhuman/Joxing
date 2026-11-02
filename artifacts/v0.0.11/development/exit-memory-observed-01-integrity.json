@@ -1,0 +1,571 @@
+{
+  "schema": "joxing-isolated-source-independent-v1",
+  "status": "verified_completed_attempt",
+  "source_commit": "66ff041a74a73a13d7869099fe8a43edb335bdf1",
+  "protocol_sha256": "88c62c953c4ba6349b0aa632849e9e43c1917d9bb8e080b34e4a2c45296b38d5",
+  "source_files_verified": 727,
+  "historical_objects_verified": 5,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[exiting]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[live_missing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[nonzero_mm]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[other_thread_live]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[normal_exit-67108864]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[direct_exit-536870912]",
+      "status": "passed"
+    }
+  ],
+  "exit_probes": [
+    {
+      "path": "runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000/test_actual_owned_exit_memory_1/probe/result.json",
+      "schema": "joxing-exit-memory-probe-v1",
+      "mode": "direct_exit",
+      "allocation_bytes": 536870912,
+      "process": {
+        "pid": 2740519,
+        "parent_pid": 2740508,
+        "start_ticks": 954420915,
+        "state": "R"
+      },
+      "parent": {
+        "pid": 2740508,
+        "parent_pid": 2740038,
+        "start_ticks": 954420876,
+        "state": "R"
+      },
+      "command": [
+        "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import os,sys,time; a=bytearray(int(sys.argv[1])); print('ready',flush=True); sys.stdin.buffer.read(1); os._exit(0) if sys.argv[2]=='direct_exit' else sys.exit(0)",
+        "536870912",
+        "direct_exit"
+      ],
+      "kernel": "6.8.0-134-generic",
+      "native_physics_steps": 0,
+      "learning_updates": 0,
+      "status": "completed",
+      "samples": 47,
+      "missing_nonterminal_samples": 46,
+      "missing_nonterminal_classified": 46,
+      "first_missing": {
+        "monotonic_s": 9544209.451764597,
+        "pid": 2740519,
+        "before": {
+          "state": "R",
+          "parent_pid": 2740508,
+          "flags": 4194316,
+          "start_ticks": 954420915
+        },
+        "after": {
+          "state": "R",
+          "parent_pid": 2740508,
+          "flags": 4194316,
+          "start_ticks": 954420915
+        },
+        "vmrss_bytes": null,
+        "vmsize_present": false,
+        "statm_pages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "page_size": 4096,
+        "threads": [
+          {
+            "tid": 2740519,
+            "state": "R",
+            "parent_pid": 2740508,
+            "flags": 4194316,
+            "start_ticks": 954420915
+          }
+        ]
+      },
+      "peak_observed_rss_bytes": 0,
+      "hypothesis": "supported-synthetic-exit",
+      "wall_s": 0.36136651039123535,
+      "returncode": 0,
+      "process_reaped": true
+    },
+    {
+      "path": "runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000/test_actual_owned_exit_memory_0/probe/result.json",
+      "schema": "joxing-exit-memory-probe-v1",
+      "mode": "normal_exit",
+      "allocation_bytes": 67108864,
+      "process": {
+        "pid": 2740515,
+        "parent_pid": 2740508,
+        "start_ticks": 954420909,
+        "state": "R"
+      },
+      "parent": {
+        "pid": 2740508,
+        "parent_pid": 2740038,
+        "start_ticks": 954420876,
+        "state": "R"
+      },
+      "command": [
+        "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import os,sys,time; a=bytearray(int(sys.argv[1])); print('ready',flush=True); sys.stdin.buffer.read(1); os._exit(0) if sys.argv[2]=='direct_exit' else sys.exit(0)",
+        "67108864",
+        "normal_exit"
+      ],
+      "kernel": "6.8.0-134-generic",
+      "native_physics_steps": 0,
+      "learning_updates": 0,
+      "status": "completed",
+      "samples": 8,
+      "missing_nonterminal_samples": 1,
+      "missing_nonterminal_classified": 1,
+      "first_missing": {
+        "monotonic_s": 9544209.153106865,
+        "pid": 2740515,
+        "before": {
+          "state": "R",
+          "parent_pid": 2740508,
+          "flags": 4194316,
+          "start_ticks": 954420909
+        },
+        "after": {
+          "state": "R",
+          "parent_pid": 2740508,
+          "flags": 4194316,
+          "start_ticks": 954420909
+        },
+        "vmrss_bytes": null,
+        "vmsize_present": false,
+        "statm_pages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "page_size": 4096,
+        "threads": [
+          {
+            "tid": 2740515,
+            "state": "R",
+            "parent_pid": 2740508,
+            "flags": 4194316,
+            "start_ticks": 954420909
+          }
+        ]
+      },
+      "peak_observed_rss_bytes": 78311424,
+      "hypothesis": "supported-synthetic-exit",
+      "wall_s": 0.056933119893074036,
+      "returncode": 0,
+      "process_reaped": true
+    }
+  ],
+  "hashed_input_files_verified": 1,
+  "registered_cases": 6,
+  "counts": {
+    "passed": 6,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0
+  },
+  "exited_recorded_identities": [
+    {
+      "pid": 2740038,
+      "parent_pid": 1,
+      "start_ticks": 954420486,
+      "state": "R"
+    },
+    {
+      "pid": 2740076,
+      "parent_pid": 2740038,
+      "start_ticks": 954420557,
+      "state": "Z"
+    },
+    {
+      "pid": 2740197,
+      "parent_pid": 2740076,
+      "start_ticks": 954420616,
+      "state": "R"
+    },
+    {
+      "pid": 2740288,
+      "parent_pid": 2740038,
+      "start_ticks": 954420708,
+      "state": "Z"
+    },
+    {
+      "pid": 2740468,
+      "parent_pid": 2740038,
+      "start_ticks": 954420792,
+      "state": "Z"
+    },
+    {
+      "pid": 2740508,
+      "parent_pid": 2740038,
+      "start_ticks": 954420876,
+      "state": "R"
+    },
+    {
+      "pid": 2740519,
+      "parent_pid": 2740508,
+      "start_ticks": 954420915,
+      "state": "R"
+    },
+    {
+      "pid": 2740515,
+      "parent_pid": 2740508,
+      "start_ticks": 954420909,
+      "state": "R"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.isolated-source.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/collection.log": {
+      "bytes": 557,
+      "sha256": "c1439b6ef5f015d9a288023d90a688ff3083ca9d024848dcc093ccb820bb6f27"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000/test_actual_owned_exit_memory_0/probe/result.json": {
+      "bytes": 1715,
+      "sha256": "cb1f36c671fe63a06c9be8e73455f96b4ed0be3ec36e9a1a4c6d51c6df9d2023"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000/test_actual_owned_exit_memory_0/probe/samples.jsonl": {
+      "bytes": 3138,
+      "sha256": "91971b05997337a6dc86cb0d3ae4dab0c9eca0c2fafbe782c792f644b9234a81"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000/test_actual_owned_exit_memory_1/probe/result.json": {
+      "bytes": 1712,
+      "sha256": "af8fda78a04318f9dcaa0d70664c6440445060ed8db061290a6a346783fd3894"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000/test_actual_owned_exit_memory_1/probe/samples.jsonl": {
+      "bytes": 21187,
+      "sha256": "6b3da7391c44d699f73c803b0556961764987d35937a4d8fb43802e976da3bdb"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/module-000.log": {
+      "bytes": 1197,
+      "sha256": "e6779aef3cd1baeb290cbbb25f21bd59f7c27b8fc247097308151855d18cb111"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/module-000.xml": {
+      "bytes": 1011,
+      "sha256": "e8102549b05307927af1cff724542f1c6ea0c46c607172c40ac57690cbaacc8f"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/result.json": {
+      "bytes": 8143,
+      "sha256": "4a4123f85fd8b14713b7fa967cbbbcf981794fb815a932b5ae1523915731d42f"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/runtime.log": {
+      "bytes": 58,
+      "sha256": "edbaf7c3fd3f4b2da72c4cdbf9492d4a55d5a1e7ef43a95424334a7cfcb17cc2"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-01/sync.log": {
+      "bytes": 1234,
+      "sha256": "04383b71b39af25b1666cc290010a9f2b8a51d60e0828ae4755ba8c5d1e313a0"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-deployment.json": {
+      "bytes": 218162,
+      "sha256": "70e988950bbdc74371ffc2c1d577127d17b648c2ae1d28b5eaa2dd3138026ed1"
+    },
+    "runs/v0.0.11/exit-memory-diagnostic-launch.log": {
+      "bytes": 969,
+      "sha256": "ead4529e4eefd56925091e4a80e35bc4a1f04f3fc8da58e830c4563fafee4232"
+    }
+  },
+  "fixture_bytes": 27752,
+  "receipt_bytes": 231331,
+  "supervision": {
+    "schema": "joxing-isolated-source-supervision-v1",
+    "source_commit": "66ff041a74a73a13d7869099fe8a43edb335bdf1",
+    "protocol_sha256": "88c62c953c4ba6349b0aa632849e9e43c1917d9bb8e080b34e4a2c45296b38d5",
+    "process": {
+      "pid": 2740038,
+      "parent_pid": 1,
+      "start_ticks": 954420486,
+      "state": "R"
+    },
+    "status": "completed",
+    "scope": "H16 owned Linux exit-memory observation only. Sequential64MiB normal exit and512MiB direct os._exit test heaps; no native model, physics, actor, training or production monitor-policy change.",
+    "formal_native_evaluations": 0,
+    "formal_training_runs": 0,
+    "initial_capacity": {
+      "available_memory_bytes": 40438796288,
+      "free_disk_bytes": 122505969664,
+      "fixture_bytes": 0,
+      "receipt_bytes": 218162,
+      "load": [
+        13.21630859375,
+        9.83349609375,
+        8.5888671875
+      ]
+    },
+    "rows": [
+      {
+        "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[exiting]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[live_missing]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[nonzero_mm]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[other_thread_live]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[normal_exit-67108864]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[direct_exit-536870912]",
+        "status": "passed"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "limit_s": 57.99977291189134,
+        "peak_owned_rss_bytes": 128049152,
+        "process": {
+          "pid": 2740076,
+          "parent_pid": 2740038,
+          "start_ticks": 954420557,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2740076,
+            "parent_pid": 2740038,
+            "start_ticks": 954420557,
+            "state": "Z"
+          },
+          {
+            "pid": 2740197,
+            "parent_pid": 2740076,
+            "start_ticks": 954420616,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 1.4085642769932747,
+        "current_owned_rss_bytes": 32583680,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 40682029056,
+          "free_disk_bytes": 122495176704,
+          "fixture_bytes": 0,
+          "receipt_bytes": 224314,
+          "load": [
+            13.21630859375,
+            9.83349609375,
+            8.5888671875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 1.5117865893989801,
+        "cleanup_wait_s": 4.495494067668915e-05
+      },
+      {
+        "stage": "runtime",
+        "command": [
+          "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3'}"
+        ],
+        "status": "completed",
+        "limit_s": 8,
+        "peak_owned_rss_bytes": 56381440,
+        "process": {
+          "pid": 2740288,
+          "parent_pid": 2740038,
+          "start_ticks": 954420708,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2740288,
+            "parent_pid": 2740038,
+            "start_ticks": 954420708,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7377110198140144,
+        "current_owned_rss_bytes": 32620544,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 40501563392,
+          "free_disk_bytes": 122495119360,
+          "fixture_bytes": 0,
+          "receipt_bytes": 225248,
+          "load": [
+            13.21630859375,
+            9.83349609375,
+            8.5888671875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8407402690500021,
+        "cleanup_wait_s": 2.8094276785850525e-05
+      },
+      {
+        "stage": "collection",
+        "command": [
+          "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "--collect-only",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "tests/test_exit_memory_probe.py"
+        ],
+        "status": "completed",
+        "limit_s": 13,
+        "peak_owned_rss_bytes": 49909760,
+        "process": {
+          "pid": 2740468,
+          "parent_pid": 2740038,
+          "start_ticks": 954420792,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2740468,
+            "parent_pid": 2740038,
+            "start_ticks": 954420792,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.733258193358779,
+        "current_owned_rss_bytes": 32620544,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 40424587264,
+          "free_disk_bytes": 122494558208,
+          "fixture_bytes": 0,
+          "receipt_bytes": 226683,
+          "load": [
+            12.79833984375,
+            9.802734375,
+            8.58544921875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8378749098628759,
+        "cleanup_wait_s": 2.9103830456733704e-05
+      },
+      {
+        "stage": "module-000",
+        "shard_index": 0,
+        "command": [
+          "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/runs/v0.0.11/exit-memory-diagnostic-01/fixtures/module-000",
+          "--junitxml",
+          "/home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/runs/v0.0.11/exit-memory-diagnostic-01/module-000.xml",
+          "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[exiting]",
+          "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[live_missing]",
+          "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[nonzero_mm]",
+          "tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[other_thread_live]",
+          "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[normal_exit-67108864]",
+          "tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[direct_exit-536870912]"
+        ],
+        "status": "completed",
+        "limit_s": 27.99999711290002,
+        "peak_owned_rss_bytes": 64475136,
+        "process": {
+          "pid": 2740508,
+          "parent_pid": 2740038,
+          "start_ticks": 954420876,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2740508,
+            "parent_pid": 2740038,
+            "start_ticks": 954420876,
+            "state": "R"
+          },
+          {
+            "pid": 2740519,
+            "parent_pid": 2740508,
+            "start_ticks": 954420915,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 0.7395420633256435,
+        "current_owned_rss_bytes": 64475136,
+        "live_owned_processes": 3,
+        "capacity": {
+          "available_memory_bytes": 40438046720,
+          "free_disk_bytes": 122494365696,
+          "fixture_bytes": 27752,
+          "receipt_bytes": 229781,
+          "load": [
+            12.79833984375,
+            9.802734375,
+            8.58544921875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8451717048883438,
+        "cleanup_wait_s": 4.2922794818878174e-05,
+        "junit_counts": {
+          "passed": 6,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      }
+    ],
+    "criterion_passed": true,
+    "full_source_gate_qualified": false,
+    "wall_s": 4.3957572393119335,
+    "test_wall_s": 1.2042800020426512,
+    "final_live_recorded": [],
+    "fixture_bytes": 27752,
+    "receipt_bytes": 230142
+  },
+  "observed_utc": "2026-11-02T08:17:17Z"
+}

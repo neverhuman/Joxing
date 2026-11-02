@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/exit-memory-diagnostic-20261102-01
+configfile: pyproject.toml
+collecting ... collected 6 items
+
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[exiting] PASSED [ 16%]
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[live_missing] PASSED [ 33%]
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[nonzero_mm] PASSED [ 50%]
+tests/test_exit_memory_probe.py::test_exit_hypothesis_requires_all_evidence[other_thread_live] PASSED [ 66%]
+tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[normal_exit-67108864] PASSED [ 83%]
+tests/test_exit_memory_probe.py::test_actual_owned_exit_memory[direct_exit-536870912] PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/exit-memory-diagnostic-20261102-01/runs/v0.0.11/exit-memory-diagnostic-01/module-000.xml -
+============================== 6 passed in 0.45s ===============================
