@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/deferred-source-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/deferred-source-controls-20261102-01
+configfile: pyproject.toml
+collecting ... collected 8 items
+
+tests/test_deferred_trial.py::test_legacy_body_unchanged_and_default_explicit PASSED [ 12%]
+tests/test_deferred_trial.py::test_unknown_or_nondeferred_variant_rejected_before_output PASSED [ 25%]
+tests/test_deferred_trial.py::test_freeze_close_then_allocate_and_evaluate PASSED [ 37%]
+tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[learning-live-workers-peer trial fault] PASSED [ 50%]
+tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[evaluation-training-end-evaluation fault] PASSED [ 62%]
+tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[construction-unavailable-partial-construction-constructor fault] PASSED [ 75%]
+tests/test_deferred_trial.py::test_partial_constructor_stops_only_new_owned_processes PASSED [ 87%]
+tests/test_deferred_trial.py::test_evaluation_cleanup_fault_does_not_replace_original PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/deferred-source-controls-20261102-01/runs/v0.0.11/deferred-source-controls-01/module-000.xml -
+============================== 8 passed in 5.71s ===============================

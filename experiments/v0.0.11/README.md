@@ -1,3 +1,27 @@
+# H15 prerequisites qualified; four-slot native parity harness next — Nov1 Mountain
+
+Current worker-ready mission: docs/DEFERRED_PARITY_EXECUTION_PACKET.md.
+No owned task remains active. Watcher b468323/7c0f6778 passes20Linux controls;
+actual controlled probe/sample maxima1.23/21.36ms, planned RSS stop below hard
+threshold, foreign test process survives. Audit718source/12recorded exits/all35raw
+files242919bytes exact. No continuous memory or native-startup guarantee.
+
+Opt-in lifecycle516f590/a32da218 passes27Linux source/fault controls,18.834699s
+whole;720source/five historical objects/seven recorded exits/no writer verified;
+all53raw files250982bytes transferred exact. Legacy default/body preserved.
+Tests use fake worlds/learning; no real candidate actor, native step or training.
+No memory saving, balance, eight-world integration or complete source gate yet.
+
+Next worker implements/registers native parity runner, process-local exact trace/
+RNG/replay instrumentation and atomic shared physics credits; four sequential
+legacyA/candidateA/legacyB/candidateB slots, seed1097/64transitions/12updates.
+Independent fast guard must be ready before native imports. Exact paired gates
+stay fixed. Prospectively correct the unregistered200k proposal to240k total:
+worst-case resets/horizons bound218560steps, within existing2M/1800s authorization.
+600s whole/8GiB/4simulation workers/16process/one-thread/1GiBraw remain proposed;
+freeze source/protocol before outcomes. No unchanged sweep, adoption or v11tag.
+See docs/DEFERRED_LIFECYCLE_SOURCE_RESULTS.md and research/H15.md.
+
 # H15 fast watcher qualified; opt-in lifecycle source controls ready — Nov1 Mountain
 
 Fast watcher sourceb468323/protocol7c0f6778 passed20/20Linux controls, whole5.638537s.

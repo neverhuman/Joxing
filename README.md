@@ -55,6 +55,10 @@ fixed history but still exceeded8GiB in a fresh learner process.
 when constructing the two evaluation worlds; it stopped during startup, with28Linux
 controls passed. [Next: deferred-allocation parity](docs/DEFERRED_EVALUATION_ALLOCATION_MISSION.md)
 preserves eight-world concurrency and limits; memory savings remain unproved.
+The independent RSS watcher passes20Linux controls (max21.36ms sample gap in
+controlled tests); the opt-in lifecycle passes27source/fault controls with fake
+worlds. Legacy remains default. [Results](docs/DEFERRED_LIFECYCLE_SOURCE_RESULTS.md)
+· [Next four-slot native parity packet](docs/DEFERRED_PARITY_EXECUTION_PACKET.md).
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

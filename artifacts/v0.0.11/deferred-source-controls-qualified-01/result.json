@@ -1,0 +1,426 @@
+{
+  "schema": "joxing-isolated-source-supervision-v1",
+  "source_commit": "516f5909424b884aab56704c9df6cecd00ab6709",
+  "protocol_sha256": "a32da21881768f8cf09a845c0c52055f7fcf2c338adc0b009910beccf9e79584",
+  "process": {
+    "pid": 1873159,
+    "parent_pid": 1,
+    "start_ticks": 953862011,
+    "state": "R"
+  },
+  "status": "completed",
+  "scope": "Opt-in deferred-evaluation-v1 source/fault/lifecycle controls only: fake worlds and fake learning. Native controlled parity, memory saving, concurrency, full-source gate and boxing remain not_run/unqualified. Original training body/default stays legacy.",
+  "formal_native_evaluations": 0,
+  "formal_training_runs": 0,
+  "initial_capacity": {
+    "available_memory_bytes": 36808454144,
+    "free_disk_bytes": 126047784960,
+    "fixture_bytes": 0,
+    "receipt_bytes": 215468,
+    "load": [
+      8.25390625,
+      10.8271484375,
+      10.6865234375
+    ]
+  },
+  "rows": [
+    {
+      "node": "tests/test_deferred_trial.py::test_legacy_body_unchanged_and_default_explicit",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_unknown_or_nondeferred_variant_rejected_before_output",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_freeze_close_then_allocate_and_evaluate",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[learning-live-workers-peer trial fault]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[evaluation-training-end-evaluation fault]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[construction-unavailable-partial-construction-constructor fault]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_partial_constructor_stops_only_new_owned_processes",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_evaluation_cleanup_fault_does_not_replace_original",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_memory_sample_and_pid_reuse",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_missing_process_has_no_sample",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_phase_order_and_known_roles",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows0-owned0]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows1-owned1]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows2-owned2]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows3-owned3]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows4-owned4]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows5-owned5]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_guard_prevents_actual_side_effect_and_restores",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_interrupted_event_tail_not_invented",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_bounded_subprocess_profile_exit_runs_cleanup",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_partial_constructor_counts_are_lower_bounds",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_missing_live_memory_never_silently_counts_as_zero",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_original_constructor_arguments_and_learn_interception",
+      "status": "passed"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "limit_s": 178,
+      "peak_owned_rss_bytes": 127578112,
+      "process": {
+        "pid": 1873233,
+        "parent_pid": 1873159,
+        "start_ticks": 953862103,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1873233,
+          "parent_pid": 1873159,
+          "start_ticks": 953862103,
+          "state": "Z"
+        },
+        {
+          "pid": 1873368,
+          "parent_pid": 1873233,
+          "start_ticks": 953862166,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 1.4542911928147078,
+      "current_owned_rss_bytes": 32673792,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36345704448,
+        "free_disk_bytes": 125864124416,
+        "fixture_bytes": 0,
+        "receipt_bytes": 227406,
+        "load": [
+          8.55419921875,
+          10.8466796875,
+          10.69384765625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.5617730394005775,
+      "cleanup_wait_s": 4.5085325837135315e-05
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3'}"
+      ],
+      "status": "completed",
+      "limit_s": 8,
+      "peak_owned_rss_bytes": 56229888,
+      "process": {
+        "pid": 1873426,
+        "parent_pid": 1873159,
+        "start_ticks": 953862259,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1873426,
+          "parent_pid": 1873159,
+          "start_ticks": 953862259,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7614321392029524,
+      "current_owned_rss_bytes": 32673792,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36620455936,
+        "free_disk_bytes": 125768286208,
+        "fixture_bytes": 0,
+        "receipt_bytes": 228346,
+        "load": [
+          8.55419921875,
+          10.8466796875,
+          10.69384765625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8714262917637825,
+      "cleanup_wait_s": 3.309175372123718e-05
+    },
+    {
+      "stage": "collection",
+      "command": [
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_deferred_trial.py",
+        "tests/test_trial_memory.py"
+      ],
+      "status": "completed",
+      "limit_s": 13,
+      "peak_owned_rss_bytes": 187850752,
+      "process": {
+        "pid": 1873579,
+        "parent_pid": 1873159,
+        "start_ticks": 953862346,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1873579,
+          "parent_pid": 1873159,
+          "start_ticks": 953862346,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 1.436079552397132,
+      "current_owned_rss_bytes": 32673792,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36364156928,
+        "free_disk_bytes": 125633323008,
+        "fixture_bytes": 0,
+        "receipt_bytes": 231607,
+        "load": [
+          8.55419921875,
+          10.8466796875,
+          10.69384765625
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.5427706930786371,
+      "cleanup_wait_s": 2.9647722840309143e-05
+    },
+    {
+      "stage": "module-000",
+      "shard_index": 0,
+      "command": [
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/runs/v0.0.11/deferred-source-controls-01/fixtures/module-000",
+        "--junitxml",
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/runs/v0.0.11/deferred-source-controls-01/module-000.xml",
+        "tests/test_deferred_trial.py::test_legacy_body_unchanged_and_default_explicit",
+        "tests/test_deferred_trial.py::test_unknown_or_nondeferred_variant_rejected_before_output",
+        "tests/test_deferred_trial.py::test_freeze_close_then_allocate_and_evaluate",
+        "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[learning-live-workers-peer trial fault]",
+        "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[evaluation-training-end-evaluation fault]",
+        "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[construction-unavailable-partial-construction-constructor fault]",
+        "tests/test_deferred_trial.py::test_partial_constructor_stops_only_new_owned_processes",
+        "tests/test_deferred_trial.py::test_evaluation_cleanup_fault_does_not_replace_original"
+      ],
+      "status": "completed",
+      "limit_s": 58,
+      "peak_owned_rss_bytes": 446296064,
+      "process": {
+        "pid": 1873746,
+        "parent_pid": 1873159,
+        "start_ticks": 953862511,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1873746,
+          "parent_pid": 1873159,
+          "start_ticks": 953862511,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 7.744147764518857,
+      "current_owned_rss_bytes": 32677888,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36207927296,
+        "free_disk_bytes": 125707988992,
+        "fixture_bytes": 7256,
+        "receipt_bytes": 235301,
+        "load": [
+          9.20556640625,
+          10.91650390625,
+          10.71826171875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 7.8528824876993895,
+      "cleanup_wait_s": 2.919510006904602e-05,
+      "junit_counts": {
+        "passed": 8,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "stage": "module-001",
+      "shard_index": 1,
+      "command": [
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/runs/v0.0.11/deferred-source-controls-01/fixtures/module-001",
+        "--junitxml",
+        "/home/ubuntu/joxing/deferred-source-controls-20261102-01/runs/v0.0.11/deferred-source-controls-01/module-001.xml",
+        "tests/test_trial_memory.py::test_memory_sample_and_pid_reuse",
+        "tests/test_trial_memory.py::test_missing_process_has_no_sample",
+        "tests/test_trial_memory.py::test_phase_order_and_known_roles",
+        "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows0-owned0]",
+        "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows1-owned1]",
+        "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows2-owned2]",
+        "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows3-owned3]",
+        "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows4-owned4]",
+        "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows5-owned5]",
+        "tests/test_trial_memory.py::test_guard_prevents_actual_side_effect_and_restores",
+        "tests/test_trial_memory.py::test_interrupted_event_tail_not_invented",
+        "tests/test_trial_memory.py::test_bounded_subprocess_profile_exit_runs_cleanup",
+        "tests/test_trial_memory.py::test_partial_constructor_counts_are_lower_bounds",
+        "tests/test_trial_memory.py::test_missing_live_memory_never_silently_counts_as_zero",
+        "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_child]",
+        "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_grandchild]",
+        "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[foreign]",
+        "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[reused]",
+        "tests/test_trial_memory.py::test_original_constructor_arguments_and_learn_interception"
+      ],
+      "status": "completed",
+      "limit_s": 58,
+      "peak_owned_rss_bytes": 439566336,
+      "process": {
+        "pid": 1874781,
+        "parent_pid": 1873159,
+        "start_ticks": 953863297,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1874781,
+          "parent_pid": 1873159,
+          "start_ticks": 953863297,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 6.2284458708018064,
+      "current_owned_rss_bytes": 32727040,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36502667264,
+        "free_disk_bytes": 125707309056,
+        "fixture_bytes": 8206,
+        "receipt_bytes": 241324,
+        "load": [
+          9.18896484375,
+          10.88427734375,
+          10.708984375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 6.343698648735881,
+      "cleanup_wait_s": 3.018602728843689e-05,
+      "junit_counts": {
+        "passed": 19,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "criterion_passed": true,
+  "full_source_gate_qualified": false,
+  "wall_s": 18.834699377417564,
+  "test_wall_s": 14.751140031963587,
+  "final_live_recorded": [],
+  "fixture_bytes": 8206,
+  "receipt_bytes": 241529
+}

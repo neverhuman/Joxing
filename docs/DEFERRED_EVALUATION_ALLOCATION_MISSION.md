@@ -1,7 +1,11 @@
 # H15 next: defer evaluation allocation, prove exact training parity
 
 Worker-ready packet after the constructor profile, Nov1 Mountain/Nov2 UTC.
-Status: planned, not implemented or run. No full-suite or training sweep now.
+Status: watcher and opt-in lifecycle source controls qualified; native parity
+not_run. Next executable work: DEFERRED_PARITY_EXECUTION_PACKET.md. It includes
+prospective worst-case credit accounting, preserving the original200k proposal
+below and correcting that estimate before any native outcomes. No full-suite or
+training sweep now. Results: DEFERRED_LIFECYCLE_SOURCE_RESULTS.md.
 
 ## Objective and evidence
 

@@ -1,3 +1,6 @@
+Current: [H15 watcher/lifecycle source results](DEFERRED_LIFECYCLE_SOURCE_RESULTS.md)
+and [native parity execution packet](DEFERRED_PARITY_EXECUTION_PACKET.md).
+
 Current: [H15 allocation results](TRIAL_MEMORY_PROFILE_RESULTS.md) and
 [deferred-allocation parity mission](DEFERRED_EVALUATION_ALLOCATION_MISSION.md).
 

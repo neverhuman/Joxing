@@ -1,0 +1,29 @@
+{
+  "schema": "joxing-h15-prerequisite-summary-v1",
+  "watchdog": {
+    "source_commit": "b468323d56355b0ad028b28e836b15f7f8655512",
+    "protocol_sha256": "7c0f6778ea0e30ffb1bab34319edb5bbc52890807fd641c5039f9de6dca841ba",
+    "passed": 20,
+    "max_sample_gap_s": 0.021360453218221664,
+    "max_probe_s": 0.0012268498539924622,
+    "source_files_verified": 718,
+    "recorded_exits": 12,
+    "raw_files": 35,
+    "raw_bytes": 242919
+  },
+  "deferred_source": {
+    "source_commit": "516f5909424b884aab56704c9df6cecd00ab6709",
+    "protocol_sha256": "a32da21881768f8cf09a845c0c52055f7fcf2c338adc0b009910beccf9e79584",
+    "passed": 27,
+    "source_files_verified": 720,
+    "recorded_exits": 7,
+    "raw_files": 53,
+    "raw_bytes": 250982,
+    "scope": "fake constructors/learning, no native candidate actor or physics"
+  },
+  "legacy_default": "preserved",
+  "candidate_native_parity": "not_run",
+  "memory_saving": "not_measured",
+  "full_source_gate": "not_qualified",
+  "next_mission": "docs/DEFERRED_PARITY_EXECUTION_PACKET.md"
+}

@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/deferred-source-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/deferred-source-controls-20261102-01
+configfile: pyproject.toml
+collecting ... collected 19 items
+
+tests/test_trial_memory.py::test_memory_sample_and_pid_reuse PASSED      [  5%]
+tests/test_trial_memory.py::test_missing_process_has_no_sample PASSED    [ 10%]
+tests/test_trial_memory.py::test_phase_order_and_known_roles PASSED      [ 15%]
+tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows0-owned0] PASSED [ 21%]
+tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows1-owned1] PASSED [ 26%]
+tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows2-owned2] PASSED [ 31%]
+tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows3-owned3] PASSED [ 36%]
+tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows4-owned4] PASSED [ 42%]
+tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows5-owned5] PASSED [ 47%]
+tests/test_trial_memory.py::test_guard_prevents_actual_side_effect_and_restores PASSED [ 52%]
+tests/test_trial_memory.py::test_interrupted_event_tail_not_invented PASSED [ 57%]
+tests/test_trial_memory.py::test_bounded_subprocess_profile_exit_runs_cleanup PASSED [ 63%]
+tests/test_trial_memory.py::test_partial_constructor_counts_are_lower_bounds PASSED [ 68%]
+tests/test_trial_memory.py::test_missing_live_memory_never_silently_counts_as_zero PASSED [ 73%]
+tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_child] PASSED [ 78%]
+tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_grandchild] PASSED [ 84%]
+tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[foreign] PASSED [ 89%]
+tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[reused] PASSED [ 94%]
+tests/test_trial_memory.py::test_original_constructor_arguments_and_learn_interception PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/deferred-source-controls-20261102-01/runs/v0.0.11/deferred-source-controls-01/module-001.xml -
+============================== 19 passed in 4.51s ==============================
