@@ -1,7 +1,7 @@
 # H15: attribute trial memory, then qualify deferred evaluation allocation
 
-Current worker-ready mission, Nov1,2026 America/Denver. First implement and
-register a small constructor-only profile. Do not launch another full suite or
+Current mission, Nov1,2026 America/Denver. Constructor-only profile is implemented
+and registered in experiments/v0.0.11/trial-memory-profile-protocol.json; target not_run. Do not launch another full suite or
 training sweep. H14's standalone process-isolation acceptance failed; all prior
 failed roots/limits remain unchanged. Native boxing/balance remain unqualified.
 

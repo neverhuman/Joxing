@@ -51,7 +51,7 @@ historical executable and passes the positive audit plus both corruption checks.
 The repaired full gate also stopped:8.77GB sampled owned RSS exceeded8GiB,
 with one further historical-audit failure. [H14process-isolation diagnosis](docs/SOURCE_PROCESS_ISOLATION_MISSION.md)
 fixed history but still exceeded8GiB in a fresh learner process.
-[Next: profile duplicated evaluation/training allocations](docs/TRIAL_MEMORY_LIFECYCLE_MISSION.md)
+[Registered: profile duplicated evaluation/training allocations](docs/TRIAL_MEMORY_LIFECYCLE_MISSION.md)
 while preserving the original eight-world concurrency and limits.
 Released-teacher balance and boxing remain unqualified.
 

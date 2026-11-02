@@ -1,0 +1,50 @@
+{
+  "schema": "joxing-h15-development-v1",
+  "scope": "Development controls only, no native run or measured memory saving",
+  "commands": [
+    "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_trial_memory.py tests/test_process_ownership.py",
+    "rtk proxy uvx ruff check --output-format concise src/joxing/trial_memory.py scripts/profile_trial_memory.py tests/test_trial_memory.py"
+  ],
+  "development_attempts": [
+    {
+      "tests": 12,
+      "passed": 12,
+      "wall_s": 0.16
+    },
+    {
+      "tests": 14,
+      "passed": 13,
+      "failed": 1,
+      "reason": "New fake-constructor test missing Path import; fixed before frozen run"
+    },
+    {
+      "tests": 14,
+      "passed": 14,
+      "wall_s": 1.4
+    },
+    {
+      "tests": 24,
+      "passed": 23,
+      "skipped": 1,
+      "reason": "Real Linux /proc ancestry control skipped on Mac",
+      "wall_s": 1.6
+    }
+  ],
+  "ruff": "passed after formatting/import/dict/check fixes",
+  "source_files": {
+    "src/joxing/trial_memory.py": {
+      "bytes": 14902,
+      "sha256": "8110cf1f002bae2912e2b4ca2baa872f45213af6e930f1386700d81f42a257c0"
+    },
+    "scripts/profile_trial_memory.py": {
+      "bytes": 15544,
+      "sha256": "9cc3848f5ff33482e9e420bfe6dd54ba8782e6fae9fbdde1b9888f3f78318236"
+    },
+    "tests/test_trial_memory.py": {
+      "bytes": 8309,
+      "sha256": "b4fce7c5e032070061699382852826ea1225e9b93c215ef6a75468642c249403"
+    }
+  },
+  "formal_profile": "not_run; public freeze required",
+  "supervisor_stdlib_help": "passed without locked runtime import"
+}

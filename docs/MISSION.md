@@ -1,3 +1,23 @@
+# H15 constructor-only allocation profile registered — Nov1 Mountain
+
+Current packet: [trial-memory profile](TRIAL_MEMORY_LIFECYCLE_MISSION.md).
+Source implements diagnostic-only wrappers; original wave.py/defaults untouched.
+Local development23pass/1Linux-only skip; target requires all24exact controls.
+Two original learners × four world workers retain both evaluation environments;
+phase/role/PID/RSS/PSS/private samples attribute allocation before any optimization.
+No actual learn/predict/env.step/optimizer call allowed. Native initialization
+preparation can run and is counted separately; forced-stop totals remain partial.
+
+Public-freeze protocol experiments/v0.0.11/trial-memory-profile-protocol.json
+before fresh xbabe1 ~/joxing/trial-memory-profile-20261102-01. Planned sampled stop
+7.5GiB, unchanged8GiB hardRSS/16processes/one thread/1GiBscratch/4MiBreceipts.
+Locked sync180s/runtime10/controls60/profile60; whole360s and180s post-setup,
+first limit including2scleanup reserve. No capacity or test criteria relaxed.
+Inspect current jobs/free RAM/disk before launch; no duplicate. On completion
+independently audit all identities, source/output hashes, all constructor/trial
+slots and guards. Capacity-limited evidence is not full qualification or a motor
+win. Analyze before named lifecycle candidate; H14negative results remain fixed.
+
 # H14 isolation insufficient; H15 trial-memory lifecycle profile next — Nov1 Mountain
 
 Current worker-ready packet docs/TRIAL_MEMORY_LIFECYCLE_MISSION.md; research/H15.
