@@ -1,3 +1,27 @@
+# Source gate failed; H14 process-isolation diagnosis ready — 2026-11-01 Mountain
+
+Current mission docs/SOURCE_PROCESS_ISOLATION_MISSION.md; research/H14.md.
+Audit observed2026-11-02UTC. Previous0b93aa82full gate halted at sampled owned
+RSS8,769,728,512bytes >8GiB:670reported passes/1failure/573unconfirmed. No live
+owned jobs. Scaling audit also lacks historical a8f47d84executable (lookup128).
+All710source files and18exited identities verified.877fixture files/779,168,274
+bytes remain immutable on host; seven receipts/222,074bytes transferred exactly.
+Original failures and caps stay unchanged; no balance/boxing/full-source pass.
+
+H14adds complete superproject history and fresh pytest process per module, exact
+case/JUnit/collection ownership, retained scratch and shared8GiB/16process limits.
+Thirteen local helper/saved-evidence checks pass0.39s/Ruffpass. Formal diagnostic
+is6unchanged cases: scaling controls then nested parallel-learner fixture. Source/
+protocol must be public-frozen before fresh dedicated xbabe1root. Caps: setup180s,
+runtime10/collection15; modules180s total/150permodule; whole420s, one thread,
+1GiB scratch/4MiB receipts,16GiB available RAM/10GiB disk. No cap increase.
+
+On completion audit exact case identities, histories, resources, receipts and all
+owned exits. Then register complete module-isolated source battery if warranted,
+with same known strict referee alias xfail and no omitted tests. Physical
+neutral/arm balance/replay/recording protocol still follows source qualification.
+No duplicate, model/rules/default edits, competitive promotion or v11tag.
+
 # Active repaired full Linux gate — 2026-10-29 19:08 UTC
 
 Frozen0b93aa82/protocol53cfa636; public bytes and all710declared files verified

@@ -1,0 +1,248 @@
+{
+  "schema": "joxing-upper-task-source-supervision-v1",
+  "source_commit": "0b93aa82bec36743858cc1e18c86c5910482cc44",
+  "protocol_sha256": "53cfa636af44be29c06d7a0713e56819772e422a8caf5d1c656736191f4e61ef",
+  "process": {
+    "pid": 4115432,
+    "parent_pid": 1,
+    "start_ticks": 923770182,
+    "state": "R"
+  },
+  "status": "halted",
+  "formal_native_steps": 0,
+  "formal_training_updates": 0,
+  "scope": "One repaired full Linux source regression after bounded history diagnosis; same scientific arm wrapper, fixed accounting/stdlib summary, all required historical executable objects. Fixture physics/updates are not checkpoint evaluation or learning outcomes",
+  "initial_capacity": {
+    "available_memory_bytes": 40654135296,
+    "free_disk_bytes": 221389086720,
+    "fixture_bytes": 0,
+    "receipt_bytes": 212331,
+    "load": [
+      10.00927734375,
+      11.294921875,
+      10.7841796875
+    ]
+  },
+  "stages": [
+    {
+      "stage": "sync",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "limit_s": 180,
+      "process": {
+        "pid": 4115463,
+        "parent_pid": 4115432,
+        "start_ticks": 923770248,
+        "state": "D"
+      },
+      "peak_owned_rss_bytes": 78221312,
+      "owned_identities": [
+        {
+          "pid": 4115463,
+          "parent_pid": 4115432,
+          "start_ticks": 923770248,
+          "state": "S"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 40600420352,
+        "free_disk_bytes": 220724363264,
+        "fixture_bytes": 0,
+        "receipt_bytes": 216506,
+        "load": [
+          10.00927734375,
+          11.294921875,
+          10.7841796875
+        ]
+      },
+      "elapsed_s": 1.3658794406801462,
+      "returncode": 0,
+      "wall_s": 1.3664272166788578
+    },
+    {
+      "stage": "runtime",
+      "status": "completed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-source-repair-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import sys,json,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v == {'python': '3.12.3', 'numpy': '2.4.2', 'mujoco': '3.8.0'}"
+      ],
+      "limit_s": 10,
+      "process": {
+        "pid": 4115728,
+        "parent_pid": 4115432,
+        "start_ticks": 923770400,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 23945216,
+      "owned_identities": [
+        {
+          "pid": 4115728,
+          "parent_pid": 4115432,
+          "start_ticks": 923770400,
+          "state": "Z"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 40388431872,
+        "free_disk_bytes": 220686757888,
+        "fixture_bytes": 0,
+        "receipt_bytes": 217325,
+        "load": [
+          10.00927734375,
+          11.294921875,
+          10.7841796875
+        ]
+      },
+      "elapsed_s": 1.3677612971514463,
+      "returncode": 0,
+      "wall_s": 1.3682146146893501
+    },
+    {
+      "stage": "tests",
+      "status": "failed",
+      "command": [
+        "/home/ubuntu/joxing/upper-task-source-repair-20261029/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--durations=15",
+        "--basetemp",
+        "/home/ubuntu/joxing/upper-task-source-repair-20261029/runs/v0.0.11/upper-task-source-repair-01/fixtures",
+        "--junitxml",
+        "/home/ubuntu/joxing/upper-task-source-repair-20261029/runs/v0.0.11/upper-task-source-repair-01/tests.xml",
+        "tests",
+        "grokbot/tests"
+      ],
+      "limit_s": 1200,
+      "process": {
+        "pid": 4116018,
+        "parent_pid": 4115432,
+        "start_ticks": 923770552,
+        "state": "R"
+      },
+      "peak_owned_rss_bytes": 8769728512,
+      "owned_identities": [
+        {
+          "pid": 4116018,
+          "parent_pid": 4115432,
+          "start_ticks": 923770552,
+          "state": "S"
+        },
+        {
+          "pid": 4172361,
+          "parent_pid": 4116018,
+          "start_ticks": 923781760,
+          "state": "S"
+        },
+        {
+          "pid": 4172362,
+          "parent_pid": 4116018,
+          "start_ticks": 923781760,
+          "state": "S"
+        },
+        {
+          "pid": 4172363,
+          "parent_pid": 4116018,
+          "start_ticks": 923781760,
+          "state": "R"
+        },
+        {
+          "pid": 64102,
+          "parent_pid": 4116018,
+          "start_ticks": 923818709,
+          "state": "S"
+        },
+        {
+          "pid": 64124,
+          "parent_pid": 4116018,
+          "start_ticks": 923818717,
+          "state": "S"
+        },
+        {
+          "pid": 64127,
+          "parent_pid": 4116018,
+          "start_ticks": 923818717,
+          "state": "S"
+        },
+        {
+          "pid": 65939,
+          "parent_pid": 64124,
+          "start_ticks": 923819451,
+          "state": "R"
+        },
+        {
+          "pid": 65940,
+          "parent_pid": 64124,
+          "start_ticks": 923819451,
+          "state": "R"
+        },
+        {
+          "pid": 65941,
+          "parent_pid": 64124,
+          "start_ticks": 923819451,
+          "state": "R"
+        },
+        {
+          "pid": 65942,
+          "parent_pid": 64124,
+          "start_ticks": 923819451,
+          "state": "R"
+        },
+        {
+          "pid": 65943,
+          "parent_pid": 64127,
+          "start_ticks": 923819457,
+          "state": "R"
+        },
+        {
+          "pid": 65944,
+          "parent_pid": 64127,
+          "start_ticks": 923819457,
+          "state": "R"
+        },
+        {
+          "pid": 65945,
+          "parent_pid": 64127,
+          "start_ticks": 923819457,
+          "state": "R"
+        },
+        {
+          "pid": 65946,
+          "parent_pid": 64127,
+          "start_ticks": 923819457,
+          "state": "R"
+        }
+      ],
+      "latest_capacity": {
+        "available_memory_bytes": 39373328384,
+        "free_disk_bytes": 219212767232,
+        "fixture_bytes": 779168274,
+        "receipt_bytes": 220750,
+        "load": [
+          11.79736328125,
+          10.93603515625,
+          10.75634765625
+        ]
+      },
+      "elapsed_s": 493.1059898529202,
+      "returncode": -15,
+      "wall_s": 493.7212925758213
+    }
+  ],
+  "criterion_passed": false,
+  "error": "TimeoutError: Source-gate first wall/RSS/process limit",
+  "wall_s": 496.9179022759199,
+  "final_live_recorded_identities": [],
+  "fixture_bytes": 779168274,
+  "receipt_bytes": 220750
+}

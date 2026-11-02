@@ -1,3 +1,6 @@
+Current mission: [H14bounded source-process isolation](SOURCE_PROCESS_ISOLATION_MISSION.md).
+Previous full gate exceeded RSS; all failed evidence retained.
+
 Current source phase: [one repaired full Linux gate](UPPER_TASK_SOURCE_REPAIR_MISSION.md);
 bounded history diagnostic passed, original failure remains retained.
 

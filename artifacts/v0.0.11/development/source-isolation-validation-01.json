@@ -1,0 +1,24 @@
+{
+  "schema": "joxing-source-isolation-development-v1",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_source_shard_support.py tests/test_upper_task_gate_support.py tests/test_scaling_audit.py",
+  "result": "13 passed in0.39s",
+  "helper_only_prior": "9 passed in0.07s",
+  "collection": "6diagnostic tests collected in1.87s",
+  "ruff": "All checks passed",
+  "formal_target_outcome": false,
+  "scope": "Helper/JUnit/partition and saved scaling controls; no new checkpoint motor or training outcome",
+  "source_files": {
+    "scripts/source_shard_support.py": {
+      "bytes": 2481,
+      "sha256": "8189bd50687c4f250959967d81967ea4a79f15aae26b41d11c3736637151d0d2"
+    },
+    "scripts/supervise_isolated_source.py": {
+      "bytes": 14572,
+      "sha256": "b75c876cb65cf6827e60d1440822fa5257622b3ba14b8f2a54b5ec39df3323eb"
+    },
+    "tests/test_source_shard_support.py": {
+      "bytes": 2616,
+      "sha256": "093aa8a1eddce55e47f7a34e966b589d1fc938c693cfa37b0a0179b7fec45adf"
+    }
+  }
+}

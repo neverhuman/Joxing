@@ -1,3 +1,6 @@
+Status: failed on aggregate RSS; retained unchanged. Current continuation:
+SOURCE_PROCESS_ISOLATION_MISSION.md / H14. Original registration follows.
+
 # H10 repaired full-source attempt: same scientific wrapper and limits
 
 Current mission. Bounded history diagnosis concluded successfully; the original

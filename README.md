@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H13 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H14 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -48,8 +48,10 @@ command isolation; physical balance and continuation remain open.
 exact neutral physical/contact parity and nonzero mid-hold continuation with a
 synthetic actor. The first full gate stopped; bounded Linux diagnosis confirmed a missing
 historical executable and passes the positive audit plus both corruption checks.
-[One repaired 1,244-test full-source attempt](docs/UPPER_TASK_SOURCE_REPAIR_MISSION.md)
-is running on xbabe1; released-teacher balance and boxing remain unqualified.
+The repaired full gate also stopped:8.77GB sampled owned RSS exceeded8GiB,
+with one further historical-audit failure. [H14process-isolation diagnosis](docs/SOURCE_PROCESS_ISOLATION_MISSION.md)
+keeps limits fixed and tests complete history/fresh module processes.
+Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**
 The first [one-second diagnostic clip](artifacts/v0.0.11/D0/first-diagnostic.mp4)
