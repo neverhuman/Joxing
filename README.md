@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H17 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H18 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -70,6 +70,9 @@ The serial-close adapter passes75Linux controls, but its four-worker constructor
 fails the two-second close deadline; forced cleanup then exceeds the100ms hold.
 No learning ran. [H17results](docs/SERIAL_RETIREMENT_RESULTS.md) ·
 [Next: release closed native resources while workers remain alive](docs/LIVE_RESOURCE_RELEASE_MISSION.md).
+The release wrapper and saved pre-close receipt are implemented;89local controls
+pass with4Linux-only skips. [Registered one-constructor packet](experiments/v0.0.11/live-resource-release-protocol.json)
+requires all93Linux controls and the unchanged exit/resource gates; target pending.
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

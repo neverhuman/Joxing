@@ -27,6 +27,7 @@ def runner_module(schema):
         "joxing-deferred-native-parity-v1": "joxing.deferred_qualification",
         "joxing-native-teardown-v1": "joxing.native_teardown",
         "joxing-serial-native-teardown-v1": "joxing.serial_native_teardown",
+        "joxing-release-native-teardown-v1": "joxing.release_native_teardown",
     }[schema]
 
 
@@ -43,6 +44,7 @@ def main():
             "joxing-deferred-native-parity-v1",
             "joxing-native-teardown-v1",
             "joxing-serial-native-teardown-v1",
+            "joxing-release-native-teardown-v1",
         )
         or canonical(p) != args.protocol_sha256
     ):
@@ -111,7 +113,10 @@ def main():
 
     verify()
     serial_constructor = p["schema"] == "joxing-serial-native-teardown-v1"
-    constructor_only = serial_constructor or p["schema"] == "joxing-native-teardown-v1"
+    constructor_only = serial_constructor or p["schema"] in (
+        "joxing-native-teardown-v1",
+        "joxing-release-native-teardown-v1",
+    )
     out = ROOT / p["output"]
     out.parent.mkdir(parents=True, exist_ok=True)
     lease = (out.parent / ".deferred-native.lock").open("a+")

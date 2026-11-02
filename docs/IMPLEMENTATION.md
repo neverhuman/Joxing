@@ -1,3 +1,19 @@
+# H18 live resource release registered — Nov2 Mountain
+
+Current packet experiments/v0.0.11/live-resource-release-protocol.json/94750277.
+Opt-in close-only graph release and pre-close receipt implemented;89local tests
+pass/4Linux skips/Ruffpass. Toy Linux MuJoCo3.8 weakrefs supported/dead after
+release,0physics. All93Linux controls must pass before ONE original700muscle/
+200prep/0rollout/actor/update constructor. Before/after state/PID/weakrefs/liveRSS
+and ordinary exit must qualify; actual terminal reservation still must be observed.
+Unobserved native retirement means incomplete, no four-worker/learning launch.
+Same100ms hold/gap/probe,2s close,7GiBplanned/8GiBhard;80swhole/35sslot/
+8MiBfixtures/768KiBreceipts. Gym/SB3 source hashes frozen. Prior seven-packet costs
+plus0.940936s conservative toy-command charge carried; source/criteria not relaxed.
+Target NOT_RUN atregistration. Publicfreeze/anonymousverify/freshcapacity before
+launch; detailed current mission docs/LIVE_RESOURCE_RELEASE_MISSION.md. H17native
+failure/H15invalid parity rows retained. No native balance/boxing/v11tag claim.
+
 # Current: H17 native failed; H18 closed-resource lifetime proof next — Nov2 Mountain
 
 62b361b/27dea5bd passes75Linux controls, then ONE native constructor is INVALID:

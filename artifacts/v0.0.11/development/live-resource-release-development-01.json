@@ -1,0 +1,62 @@
+{
+  "schema": "joxing-live-resource-release-development-v1",
+  "scope": "Local fake lifetime/RSS/receipt controls plus toy binding support; no native reference physics or learning",
+  "checks": [
+    {
+      "passed": 48,
+      "skipped": 1,
+      "wall_s": 2.5,
+      "scope": "initial release/serial/native/deferred subset"
+    },
+    {
+      "passed": 89,
+      "skipped": 4,
+      "wall_s": 3.39,
+      "scope": "complete93case set; Linux-only actual heaps/watchdog skipped on Mac"
+    }
+  ],
+  "junit": "runs/v0.0.11/release-development-02.xml",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_live_resource_release.py tests/test_serial_retirement.py tests/test_serial_native_teardown.py tests/test_native_teardown.py tests/test_deferred_trial.py tests/test_deferred_qualification.py tests/test_terminal_rss_reader.py tests/test_trial_rss_watchdog.py tests/test_physics_credit.py --junitxml=runs/v0.0.11/release-development-02.xml",
+  "ruff": "passed",
+  "toy_linux_binding_probe": {
+    "scope": "development tiny MuJoCo3.8 model/data lifetime, zero mj_step",
+    "weakrefs_supported": {
+      "model": true,
+      "data": true
+    },
+    "weakrefs_dead_after_release": {
+      "model": true,
+      "data": true
+    },
+    "available_memory_bytes": 37537599488,
+    "load": [
+      6.94970703125,
+      6.2685546875,
+      7.48779296875
+    ],
+    "owned_jobs": [],
+    "runtime_root": "/home/ubuntu/joxing/serial-native-teardown-20261102-01",
+    "command": "ssh xbabe1 python3 - via stdin; locked runtime subprocess, PYTHONDONTWRITEBYTECODE/OMP/BLAS1",
+    "charged_outer_wall_s": 0.940935916,
+    "inner_subprocess_wall_s": "not measured; charged whole tool command instead"
+  },
+  "source_files": {
+    "src/joxing/live_resource_release.py": {
+      "bytes": 4996,
+      "sha256": "a19268c5dbf3de9bc036a9679004341f1ff8276258c4ddd4fcca6719154d06ef"
+    },
+    "src/joxing/release_native_teardown.py": {
+      "bytes": 6255,
+      "sha256": "42cbbf7fbb7a8fe00e8bd202c745919281970a6ac3ed482e3574b94c1ae83a3e"
+    },
+    "scripts/qualify_deferred_trial.py": {
+      "bytes": 19079,
+      "sha256": "f98029362cd4546b098821f76d409ef912b6758fa09611fcfcd0d84ff05376fc"
+    },
+    "tests/test_live_resource_release.py": {
+      "bytes": 9988,
+      "sha256": "fcfb8b147564c1f262743540fb04e93e7ddcc5016ba0b4d31acc257215126968"
+    }
+  },
+  "physics": 0
+}

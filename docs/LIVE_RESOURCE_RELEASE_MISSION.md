@@ -1,6 +1,14 @@
 # Next: measure closed-world resource release before process exit
 
-Status: worker-ready plan, NOT implemented/preregistered/run. H18 follows the
+Status: wrapper/runner and93case protocol implemented; target NOT_RUN atfreeze.
+Local89pass/4Linux-only skips/Ruffpass; Linux toy weakref support check passed
+with0physics. Packet experiments/v0.0.11/live-resource-release-protocol.json,
+canonical SHA94750277896099fff234bdfbc3f34455e3d027bdca7f59a72c0b4a3edbd173b5.
+Native prerequisite still requires actual positive observed retirement/release;
+an unobserved fast terminal path is recorded as incomplete, never a gate pass.
+80swhole/35sslot/200physics/oneworker/8MiBfixtures/768KiBreceipts. Original
+carry includes a conservative0.940936s whole-command charge for the toy probe.
+Historical worker-ready plan below. H18 follows the
 failed H17constructor, not a new boxing version. Integration owner current agent,
 single writer/no agents. Workspace `/Users/bentaylor/Documents/ChatGPT/JOXING`.
 
