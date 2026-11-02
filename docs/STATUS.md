@@ -1,3 +1,29 @@
+# Current: H18 one-worker lifetime proof qualifies; H19 exit probe next — Nov2 Mountain
+
+e3d1272/94750277 passes93Linux controls and ONE native1VALID/0INVALID:
+all700muscles/200prep/0rollout/actor/inference/update, parent pre-close receipt and
+child/observed state hashes exact. Actual env/model/data weakrefs die while live;
+VmRSS1018327040→927662080bytes (−90664960), PID/start/flags verified. Native held
+charge1102770176 releases96.47ms, parent21.08ms; maxgap31.58/probe11.25ms, same
+100ms/2s/8GiB gates. No default/model/rule edit or application fast exit.
+
+Close-send→join797.80ms, graph release144.64ms, released→join649.66ms. One-worker
+mechanism qualified, no controlled latency gain/four-worker solution or boxing
+claim. Independent738source/5history objects/93JUnit/2credit-events/26exits audit,
+479rawfiles518942bytes exact transfer, no writer. Auditor's incorrect exclusive
+worker-record assumption repaired; owned parent record valid, all proofs retained,
+no executed-source/protocol/gate change or physics rerun. Details/receipts:
+docs/LIVE_RESOURCE_RELEASE_RESULTS.md, research/H18.md.
+
+Current worker-ready next: docs/PROCESS_EXIT_BACKEND_MISSION.md, research/H19.md,
+NOT implemented/preregistered/run. Three paired import-only spawn/forkserver
+probes,0physics/learning, clean server/cleanup/identity proof, no adoption. Diagnose
+remaining tail before another native serial-four retry. H17native1invalid and
+H15parity3INVALID/0VALID/9NOT_RUN stay. Cumulative16458steps/245.732792s/
+32174082fixture/2172741receipt bytes including toy-development charge; original
+remainder223542steps/354.267208s/1041567742fixture/2021563receipt bytes. No active
+owned job, no eight-world/full-source/learning promotion or v11tag.
+
 # H18 live resource release registered — Nov2 Mountain
 
 Current packet experiments/v0.0.11/live-resource-release-protocol.json/94750277.

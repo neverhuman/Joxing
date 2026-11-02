@@ -1,6 +1,13 @@
 # Next: measure closed-world resource release before process exit
 
-Status: wrapper/runner and93case protocol implemented; target NOT_RUN atfreeze.
+Status: CONCLUDED one-worker native lifetime/resource prerequisite QUALIFIED.
+93Linux controls +ONE700muscle/200prep constructor pass; exact state, dead native
+weakrefs/live RSS drop90.66MB, actual reservation96.47ms. Send→join797.80ms leaves
+649.66ms after release, so no demonstrated four-worker latency solution. Measured
+tail motivates [H19zero-physics mission](PROCESS_EXIT_BACKEND_MISSION.md) before
+more native work. [Results/faults/audit](LIVE_RESOURCE_RELEASE_RESULTS.md).
+
+Historical preregistration: wrapper/runner and93case protocol implemented; target NOT_RUN atfreeze.
 Local89pass/4Linux-only skips/Ruffpass; Linux toy weakref support check passed
 with0physics. Packet experiments/v0.0.11/live-resource-release-protocol.json,
 canonical SHA94750277896099fff234bdfbc3f34455e3d027bdca7f59a72c0b4a3edbd173b5.

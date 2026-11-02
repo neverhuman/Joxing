@@ -1,0 +1,69 @@
+{
+  "schema": "joxing-live-release-post-observation-v1",
+  "read_only": true,
+  "new_physics": 0,
+  "utc": "2026-11-02T10:48:57Z",
+  "close_send_to_join_s": 0.7977975066751242,
+  "graph_release_phase_s": 0.14464283175766468,
+  "released_to_join_s": 0.6496615614742041,
+  "runtime_sources": {
+    "/usr/lib/python3.12/multiprocessing/forkserver.py": {
+      "bytes": 12134,
+      "sha256": "e99f0aa2e4dc41af9d259f220c5eb2632e2ace89b6851e712223bf2682016f29",
+      "exit_sites": [
+        {
+          "line": 281,
+          "source": "                            except Exception:\n                                sys.excepthook(*sys.exc_info())\n                                sys.stderr.flush()\n                            finally:\n                                os._exit(code)\n                        else:\n                            # Send pid to client process\n                            try:"
+        }
+      ]
+    },
+    "/usr/lib/python3.12/multiprocessing/spawn.py": {
+      "bytes": 9644,
+      "sha256": "ebf9fa40eb622384c37690d8c78e7208744df031155ab4ceedab0fc791a1669b",
+      "exit_sites": [
+        {
+          "line": 80,
+          "source": "                kwds[name] = None\n            else:\n                kwds[name] = int(value)\n        spawn_main(**kwds)\n        sys.exit()\n\n\ndef get_command_line(**kwds):"
+        },
+        {
+          "line": 123,
+          "source": "        resource_tracker._resource_tracker._fd = tracker_fd\n        fd = pipe_handle\n        parent_sentinel = os.dup(pipe_handle)\n    exitcode = _main(fd, parent_sentinel)\n    sys.exit(exitcode)\n\n\ndef _main(fd, parent_sentinel):"
+        },
+        {
+          "line": 135,
+          "source": "            prepare(preparation_data)\n            self = reduction.pickle.load(from_parent)\n        finally:\n            del process.current_process()._inheriting\n    return self._bootstrap(parent_sentinel)\n\n\ndef _check_not_importing_main():"
+        }
+      ]
+    },
+    "/usr/lib/python3.12/multiprocessing/process.py": {
+      "bytes": 12139,
+      "sha256": "67f0c2a7a3a83c92dd024705bac18619a2e123c9df77c414beb81035ea4a0e18",
+      "exit_sites": [
+        {
+          "line": 290,
+          "source": "        return '<%s>' % ' '.join(info)\n\n    ##\n\n    def _bootstrap(self, parent_sentinel=None):\n        from . import util, context\n        global _current_process, _parent_process, _process_counter, _children\n"
+        }
+      ]
+    }
+  },
+  "upstream_commits_verified": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "owned_jobs": [],
+  "load": [
+    12.2412109375,
+    10.080078125,
+    8.37353515625
+  ],
+  "available_memory_bytes": 37663297536,
+  "free_disk_bytes": 136785141760,
+  "limits": "Installed exit paths differ; cause of measured remaining exit time not established. No backend experiment or new physics.",
+  "command": [
+    "ssh",
+    "xbabe1",
+    "python3",
+    "-"
+  ],
+  "stdin_source": "\nfrom pathlib import Path\nimport json,hashlib,os,subprocess,time,shutil\nroot=Path('/home/ubuntu/joxing/live-resource-release-20261102-01');out=root/'runs/v0.0.11/live-resource-release-01'\ne=[json.loads(s) for s in (out/'fixtures/native0/serial-close.jsonl').read_text().splitlines()]\nr=[json.loads(s) for s in (out/'fixtures/native0/resource-release.jsonl').read_text().splitlines()]\nfiles={}\nfor name in ['forkserver.py','spawn.py','process.py']:\n f=Path('/usr/lib/python3.12/multiprocessing')/name;t=f.read_text();lines=t.splitlines();sites=[]\n for i,l in enumerate(lines):\n  if 'os._exit' in l or 'sys.exit(' in l or '_bootstrap(' in l:sites.append({'line':i+1,'source':'\\n'.join(lines[max(0,i-4):i+4])})\n files[str(f)]={'bytes':f.stat().st_size,'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'exit_sites':sites}\njobs=[]\nfor d in Path('/proc').iterdir():\n if not d.name.isdigit():continue\n try:\n  cwd=str((d/'cwd').resolve());cmd=(d/'cmdline').read_bytes().replace(bytes([0]),b' ').decode(errors='replace')\n  if (cwd.startswith('/home/ubuntu/joxing/') or '/home/ubuntu/joxing/' in cmd) and any(x in cmd for x in ['python','uv run','timeout']):jobs.append({'pid':int(d.name),'cwd':cwd,'command':cmd[:250]})\n except OSError:pass\nassert not jobs\np=json.loads((root/'experiments/v0.0.11/live-resource-release-protocol.json').read_text())\nvendors={n:subprocess.check_output(['git','rev-parse','HEAD'],cwd=root/'third_party'/n,text=True).strip() for n in p['upstream_commits']};assert vendors==p['upstream_commits']\nprint(json.dumps({'schema':'joxing-live-release-post-observation-v1','read_only':True,'new_physics':0,'utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'close_send_to_join_s':e[2]['monotonic_s']-e[1]['monotonic_s'],'graph_release_phase_s':r[3]['monotonic_s']-r[0]['monotonic_s'],'released_to_join_s':e[2]['monotonic_s']-r[3]['monotonic_s'],'runtime_sources':files,'upstream_commits_verified':vendors,'owned_jobs':jobs,'load':os.getloadavg(),'available_memory_bytes':int(next(s.split()[1] for s in Path('/proc/meminfo').read_text().splitlines() if s.startswith('MemAvailable:')))*1024,'free_disk_bytes':shutil.disk_usage(root).free,'limits':'Installed exit paths differ; cause of measured remaining exit time not established. No backend experiment or new physics.'}))\n"
+}

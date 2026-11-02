@@ -1,0 +1,9 @@
+{
+  "status": "auditor assumption repaired; no source or protocol change",
+  "initial_error": "AssertionError remote line167, auditor wrongly required ONLY native-worker retirement in watchdog report",
+  "cause": "Watcher legitimately also observed owned root process retirement. Registered criterion requires actual native-worker record, not exclusivity. All records remain bound-proof/released/100ms audited.",
+  "old_audit_sha256": "d390b1774eaebdd147a8c471fd26c9a88bbbaafa8a0f9ef7d401d5eed295a998",
+  "new_audit_sha256": "804b0098fd9b9fdb99c4707e09513fd63dc1fd999f9d5ca44af535b393c1f9c8",
+  "formal_source_changed": false,
+  "physics": 0
+}
