@@ -1,6 +1,12 @@
 # Next: isolate process-exit latency without native physics
 
-Current: FIRST packet invalid on parent provenance-helper imports before worker
+Current: TWO packets invalid. Stdlib parent repair succeeds and71Linux controls
+pass, but second packet stops during worker import on120.58ms sample gap; max
+probe1.71ms. Aggregate2invalid/10not_run, no latency result. Do not repeat until
+[H20publication prerequisite](MONITOR_PUBLICATION_MISSION.md). All original gates
+and failed rows retained; [both outcomes/audits](PROCESS_EXIT_BACKEND_RESULTS.md).
+
+Historical first repair: FIRST packet invalid on parent provenance-helper imports before worker
 creation,1invalid/5not_run,0physics; [results/audit](PROCESS_EXIT_BACKEND_RESULTS.md).
 Fresh stdlib-only writer repair registered at process-exit-backend-repair-protocol.json,
 canonical f94d81546acc3471dc5e6b06ba72269417b1fa74820cbb426c6eb60d3b3cecf9.

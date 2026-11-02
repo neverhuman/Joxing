@@ -1,0 +1,36 @@
+{
+  "schema": "joxing-stale-monitor-post-observation-v1",
+  "utc": "2026-11-02T12:14:19Z",
+  "read_only": true,
+  "physics": 0,
+  "owned_jobs": [],
+  "cpu_count": 128,
+  "load": [
+    10.22119140625,
+    13.37890625,
+    16.20263671875
+  ],
+  "available_memory_bytes": 35351535616,
+  "pressure_and_cgroup_snapshot": {
+    "/sys/fs/cgroup/cpu.stat": "usage_usec 162971601367000\nuser_usec 154602780895000\nsystem_usec 8368820472000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+    "/proc/pressure/cpu": "some avg10=0.10 avg60=7.05 avg300=5.55 total=604455901570\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+    "/proc/pressure/memory": "some avg10=0.00 avg60=0.09 avg300=0.86 total=73420208986\nfull avg10=0.00 avg60=0.09 avg300=0.86 total=72091883551\n",
+    "/proc/pressure/io": "some avg10=0.10 avg60=0.39 avg300=2.39 total=53734617412\nfull avg10=0.10 avg60=0.34 avg300=2.32 total=52269229038\n"
+  },
+  "tmpfs_mountinfo": [
+    "32 26 0:27 / /dev/shm rw,nosuid,nodev shared:4 - tmpfs tmpfs rw,inode64"
+  ],
+  "shm_capacity": {
+    "total": 33598705664,
+    "used": 7792918528,
+    "free": 25805787136
+  },
+  "limitations": "Post-failure snapshots, not measurements during the120.58ms gap. Cannot establish cause; no files/services/drivers/priority/affinity changed.",
+  "command": [
+    "ssh",
+    "xbabe1",
+    "python3",
+    "-"
+  ],
+  "stdin_source": "\nfrom pathlib import Path\nimport json,os,shutil,time\nroot=Path('/home/ubuntu/joxing/process-exit-backend-repair-20261102-01')\nmounts=[l for l in Path('/proc/self/mountinfo').read_text().splitlines() if ' /dev/shm ' in l]\nfiles={}\nfor name in ['/sys/fs/cgroup/cpu.max','/sys/fs/cgroup/cpu.stat','/proc/pressure/cpu','/proc/pressure/memory','/proc/pressure/io']:\n f=Path(name)\n if f.exists():files[name]=f.read_text()\njobs=[]\nfor d in Path('/proc').iterdir():\n if not d.name.isdigit():continue\n try:\n  cwd=str((d/'cwd').resolve());cmd=(d/'cmdline').read_bytes().replace(bytes([0]),b' ').decode(errors='replace')\n  if (cwd.startswith('/home/ubuntu/joxing/') or '/home/ubuntu/joxing/' in cmd) and any(x in cmd for x in ['python','uv run','timeout']):jobs.append({'pid':int(d.name),'cwd':cwd,'command':cmd[:250]})\n except OSError:pass\nassert not jobs\nprint(json.dumps({'schema':'joxing-stale-monitor-post-observation-v1','utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'read_only':True,'physics':0,'owned_jobs':jobs,'cpu_count':os.cpu_count(),'load':os.getloadavg(),'available_memory_bytes':int(next(s.split()[1] for s in Path('/proc/meminfo').read_text().splitlines() if s.startswith('MemAvailable:')))*1024,'pressure_and_cgroup_snapshot':files,'tmpfs_mountinfo':mounts,'shm_capacity':dict(zip(['total','used','free'],shutil.disk_usage('/dev/shm'))),'limitations':'Post-failure snapshots, not measurements during the120.58ms gap. Cannot establish cause; no files/services/drivers/priority/affinity changed.'}))\n"
+}

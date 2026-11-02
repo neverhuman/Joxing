@@ -1,3 +1,29 @@
+# Current: H19 second packet invalid; H20 publication proof next — Nov2 Mountain
+
+1726ce2/f94d8154 passes71Linux controls. Stdlib parent repair works; spawn1097
+worker reaches import_begin, not payload-ready/close. Watcher correctly stops
+on120.578872ms gap>100ms; max actual probe1.706129ms, peak379719680bytes/five
+processes.1INVALID/0VALID/5NOT_RUN; both H19packets2INVALID/0VALID/10NOT_RUN,
+0physics/actors/updates and no latency comparison. No failed gate relaxed.
+
+Independent740source/71JUnit/25recorded-exit audit and165rawfiles368009bytes
+exact transfer pass; raw pre-import proc evidence reconstructed, no writer.
+The gap follows a synchronous publication point, but write/sleep/scheduling times
+unmeasured: I/O cause remains hypothesis; post-pressure readings not in-gap proof.
+All faults/commands/PIDs/hashes retained in docs/PROCESS_EXIT_BACKEND_RESULTS.md.
+
+Current worker-ready next: docs/MONITOR_PUBLICATION_MISSION.md/research/H20.md,
+NOT implemented/preregistered/run. Instrument phases; qualify explicit bounded
+private-tmpfs report IPC +exact disk copy AFTER task exit, existing disk default
+and100ms/2s/RSS gates unchanged, then one0physics import-only smoke. No blind
+H19/native repeat. No mounts/services/drivers/priority/affinity/thread changes.
+Ten-packet carry16458steps/273.079176s/32311887fixture/2714816receipt bytes;
+original remainder223542steps/326.920824s/1041429937fixture/1479488receipt bytes.
+Receipt budget now material; preserve all fields/evidence and register any new
+lossless encoding before use. H18one-native lifetime proof stays narrow; no
+backend/default/eight-world/full-source/balance/boxing promotion or v11tag.
+No active owned job; next implementation packet explicit above.
+
 # H19 first packet invalid; stdlib receipt repair registered — Nov2 Mountain
 
 7ee2bf3/c83d92a4 passes69Linux controls, then spawn1097root fails clean-parent

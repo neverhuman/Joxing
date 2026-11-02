@@ -43,3 +43,47 @@ requires71Linux controls before the identical six fresh probes. Same seeds,
 payloads, order, resource/time limits, scientific criterion and old costs carried;
 no gate loosened, default changed or failed row reused. Repair outcomes not_run
 atfreeze; publish/anonymousverify/freshcapacity precede a dedicated new root.
+
+## Second packet: parent repair works; monitor freshness fails
+
+Frozen `1726ce2bb058ab033969626d55e10d1f180e3c9a`, repair protocolf94d8154,
+dedicated `/home/ubuntu/joxing/process-exit-backend-repair-20261102-01`.
+All71Linux controls pass. Spawn1097root proves clean single-thread parent/worker
+and the payload worker reaches waiting_release then import_begin. It never
+reaches payload-ready, close or a latency result. The watcher correctly stops
+the job on a120.578872ms sampling gap>registered100ms. Maximum actual probe
+duration1.706129ms; sampled peak379719680bytes/five processes, no retirement
+records. This is not a memory-cap breach, an exit-time result or proof of any
+backend benefit. One partial payload worker,0physics/actor/updates.
+
+Formal second rows1INVALID/0VALID/5NOT_RUN; combined two packets2INVALID/0VALID/
+10NOT_RUN. No failed row is recycled. The repaired parent-import path passes;
+monitor gap failure remains failed, no limit changed. The interval before the
+stale sample follows a quarter-second publication point in the synchronous
+watcher save path. Because save/sleep/scheduling durations were not separately
+recorded, **I/O attribution is a hypothesis**. Post-failure pressure snapshots
+are not measurements during that gap and cannot prove its cause.
+
+[Second independent audit](../artifacts/v0.0.11/development/process-exit-backend-failed-02-integrity.json)
+verifies740source files,71JUnit cases, raw bound pre-import proc evidence and
+25recorded exited identities/no writer; all165rawfiles368009bytes transferred
+exactly, archive SHA256 `09378431ad6a4b9906922087a0708329b09c0a7c1b42fa95677a5efd34992403`.
+[Transfer](../artifacts/v0.0.11/development/process-exit-backend-failed-02-transfer.json),
+[parent receipts](../artifacts/v0.0.11/process-exit-backend-failed-02/),
+[deployment](../artifacts/v0.0.11/development/process-exit-backend-repair-deployment-01.json),
+[read-only post-observation](../artifacts/v0.0.11/development/process-exit-backend-failed-02-post-observation.json).
+No additional physics/audit benchmark ran. Reproducible auditor is
+artifacts/v0.0.11/development/audit-process-exit-backend-01.py; pass the appropriate
+packet and a fresh output label because retained audit/transfer outputs exist.
+
+Packet14.49564023502171s/87433fixture/280576receipt bytes. Ten-packet cumulative
+including the toy charge:16458steps/273.079175575369s/32311887fixture/
+2714816receipt bytes; original remainder223542steps/326.920824424631s/
+1041429937fixture/1479488receipt bytes.
+
+Decision: stop backend repeats until [H20monitor publication qualification](MONITOR_PUBLICATION_MISSION.md).
+Keep the100ms bound and add phase timing to distinguish probing, persistence and
+wake delays. Test a bounded private memory-backed report path with exact disk
+copy after the task exits; disk remains default. This changes diagnostic I/O,
+not numerical trajectories, caps or scientific acceptance. Native/model/backend
+adoption, eight-world/full-source qualification and boxing remain blocked.
