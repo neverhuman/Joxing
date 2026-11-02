@@ -1,0 +1,19 @@
+{
+  "scope": "Coherent monitor read repair only; no native repair outcome yet",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_trial_rss_watchdog.py tests/test_physics_credit.py tests/test_deferred_qualification.py tests/test_deferred_trial.py",
+  "passed": 34,
+  "skipped": 2,
+  "skip_reason": "Actual Linux RSS integration; will be required before native retry",
+  "wall_s": 2.41,
+  "ruff": "passed",
+  "source_files": {
+    "scripts/trial_rss_watchdog.py": {
+      "bytes": 10215,
+      "sha256": "c3c26f2e34956984c672bcf625b1bf119ae9ab7b03773ce58aa5830e14ff886c"
+    },
+    "tests/test_trial_rss_watchdog.py": {
+      "bytes": 6868,
+      "sha256": "fdc6d7efe4baf688465cc9e02caf00175f57c76fb890b8d6502a569e3285b820"
+    }
+  }
+}

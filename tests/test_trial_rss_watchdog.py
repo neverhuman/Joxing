@@ -86,6 +86,41 @@ def test_bound_status_fail_closed(watchdog, tmp_path, kind):
         assert value == (123 * 1024 if kind == "normal" else None)
 
 
+def test_transient_missing_status_requires_later_real_rss(
+    watchdog, tmp_path, monkeypatch
+):
+    bound = {"pid": 17, "start_ticks": 10, "state": "R"}
+    folder = tmp_path / "17"
+    folder.mkdir()
+    status = folder / "status"
+    status.write_text("VmRSS: 123 kB\n")
+    original = Path.read_text
+    calls = []
+
+    def read(path, *args, **kwargs):
+        if path == status:
+            calls.append(1)
+            if len(calls) == 1:
+                return "Name: switching\n"
+        return original(path, *args, **kwargs)
+
+    monkeypatch.setattr(Path, "read_text", read)
+    assert (
+        watchdog.bound_rss(bound, proc_root=tmp_path, read_identity=lambda _: bound)
+        == 123 * 1024
+    )
+    assert len(calls) == 2
+
+
+def test_persistent_missing_status_fault_names_bound_pid(watchdog, tmp_path):
+    bound = {"pid": 17, "start_ticks": 10, "state": "R"}
+    folder = tmp_path / "17"
+    folder.mkdir()
+    (folder / "status").write_text("Name: unreadable\n")
+    with pytest.raises(RuntimeError, match="pid=17 start=10 after3reads"):
+        watchdog.bound_rss(bound, proc_root=tmp_path, read_identity=lambda _: bound)
+
+
 @pytest.mark.parametrize("case", ["normal_exit", "grandchild_growth"])
 @pytest.mark.skipif(
     sys.platform != "linux", reason="Real /proc watchdog requires Linux"

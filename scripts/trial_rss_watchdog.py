@@ -12,27 +12,43 @@ from supervise_motor_pilot import identity, live
 
 def bound_rss(bound, *, proc_root=Path("/proc"), read_identity=identity):
     """A live unreadable status invalidates monitoring; never substitute zero."""
-    try:
-        current = read_identity(bound["pid"])
-        if current["start_ticks"] != bound["start_ticks"] or current["state"] == "Z":
-            return None
-        raw = (proc_root / str(bound["pid"]) / "status").read_text()
-        value = (
-            int(next(s.split()[1] for s in raw.splitlines() if s.startswith("VmRSS:")))
-            * 1024
-        )
-        after = read_identity(bound["pid"])
-        if after["start_ticks"] != bound["start_ticks"] or after["state"] == "Z":
-            return None
-        return value
-    except (OSError, StopIteration) as error:
+    for attempt in range(3):
         try:
             current = read_identity(bound["pid"])
-        except OSError:
+            if (
+                current["start_ticks"] != bound["start_ticks"]
+                or current["state"] == "Z"
+            ):
+                return None
+            raw = (proc_root / str(bound["pid"]) / "status").read_text()
+            value = (
+                int(
+                    next(
+                        s.split()[1] for s in raw.splitlines() if s.startswith("VmRSS:")
+                    )
+                )
+                * 1024
+            )
+            after = read_identity(bound["pid"])
+            if after["start_ticks"] != bound["start_ticks"] or after["state"] == "Z":
+                return None
+            return value
+        except (OSError, StopIteration) as error:
+            try:
+                current = read_identity(bound["pid"])
+            except OSError:
+                return None
+            if (
+                current["start_ticks"] == bound["start_ticks"]
+                and current["state"] != "Z"
+            ):
+                if attempt < 2:
+                    time.sleep(0.001)
+                    continue
+                raise RuntimeError(
+                    f"Unreadable live owned RSS pid={bound['pid']} start={bound['start_ticks']} after3reads"
+                ) from error
             return None
-        if current["start_ticks"] == bound["start_ticks"] and current["state"] != "Z":
-            raise RuntimeError("Unreadable live owned RSS") from error
-        return None
 
 
 def fast_tree(root, *, proc_root=Path("/proc"), read_identity=identity):

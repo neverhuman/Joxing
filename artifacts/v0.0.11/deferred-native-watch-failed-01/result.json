@@ -1,0 +1,815 @@
+{
+  "schema": "joxing-deferred-native-parity-v1",
+  "source_commit": "75de631ecba1be4173c2b0bdcf020999cfb7262b",
+  "protocol_sha256": "d0d723052ca10004ee53433d5d74b61d66529d9dd0058ea83f40129153d45413",
+  "supervisor": {
+    "pid": 2478577,
+    "parent_pid": 1,
+    "start_ticks": 954237374,
+    "state": "R"
+  },
+  "status": "halted",
+  "rows": [
+    {
+      "arm": "A",
+      "id": "legacyA",
+      "variant": "legacy",
+      "status": "invalid",
+      "work_status": "partial_or_unconfirmed",
+      "reason": "RuntimeError: Native parity watcher stop/fault: RuntimeError: Unreadable live owned RSS"
+    },
+    {
+      "arm": "A",
+      "id": "candidateA",
+      "variant": "deferred-evaluation-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "B",
+      "id": "legacyB",
+      "variant": "legacy",
+      "status": "not_run"
+    },
+    {
+      "arm": "B",
+      "id": "candidateB",
+      "variant": "deferred-evaluation-v1",
+      "status": "not_run"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 2478611,
+        "parent_pid": 2478577,
+        "start_ticks": 954237420,
+        "state": "R"
+      },
+      "elapsed_s": 1.5350014250725508,
+      "capacity": {
+        "available_memory_bytes": 38640664576,
+        "free_disk_bytes": 108940230656,
+        "fixture_bytes": 0,
+        "receipt_bytes": 220357,
+        "load": [
+          20.26220703125,
+          10.1650390625,
+          7.87939453125
+        ]
+      },
+      "peak_sampled_rss_bytes": 150474752,
+      "returncode": 0,
+      "wall_s": 1.6366342641413212
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import sys,numpy,mujoco,torch,stable_baselines3;v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__};print(v);assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3', 'sb3': '2.7.1', 'torch': '2.10.0+cpu'}"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 2478760,
+        "parent_pid": 2478577,
+        "start_ticks": 954237583,
+        "state": "R"
+      },
+      "elapsed_s": 5.236865345388651,
+      "capacity": {
+        "available_memory_bytes": 39222878208,
+        "free_disk_bytes": 108939563008,
+        "fixture_bytes": 0,
+        "receipt_bytes": 221559,
+        "load": [
+          19.68017578125,
+          10.21240234375,
+          7.9072265625
+        ]
+      },
+      "peak_sampled_rss_bytes": 436170752,
+      "returncode": 0,
+      "wall_s": 5.339072337374091
+    },
+    {
+      "stage": "controls",
+      "command": [
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml",
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/runs/v0.0.11/deferred-native-parity-01/controls.xml",
+        "--basetemp",
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/runs/v0.0.11/deferred-native-parity-01/fixtures/controls",
+        "tests/test_physics_credit.py",
+        "tests/test_deferred_qualification.py",
+        "tests/test_deferred_trial.py"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 2479456,
+        "parent_pid": 2478577,
+        "start_ticks": 954238117,
+        "state": "R"
+      },
+      "elapsed_s": 6.834323341026902,
+      "capacity": {
+        "available_memory_bytes": 40068362240,
+        "free_disk_bytes": 108663332864,
+        "fixture_bytes": 142472,
+        "receipt_bytes": 226140,
+        "load": [
+          19.35400390625,
+          10.453125,
+          8.0107421875
+        ]
+      },
+      "peak_sampled_rss_bytes": 461139968,
+      "returncode": 0,
+      "wall_s": 6.958055244758725
+    },
+    {
+      "stage": "legacyA",
+      "command": [
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "joxing.deferred_qualification",
+        "--folder",
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA",
+        "--slot",
+        "legacyA",
+        "--packet",
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/experiments/v0.0.11/deferred-native-parity-protocol.json",
+        "--ledger",
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/runs/v0.0.11/deferred-native-parity-01/fixtures/native-credit.json",
+        "--binding",
+        "1eb984af35a8ad75ce7d83a582bd9d027c6c67abcd928e8281fa0cb7f91c22f8",
+        "--ready",
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/runs/v0.0.11/deferred-native-parity-01/legacyA-watchdog.ready"
+      ],
+      "status": "failed",
+      "process": {
+        "pid": 2480080,
+        "parent_pid": 2478577,
+        "start_ticks": 954238813,
+        "state": "R"
+      },
+      "watchdog_process": {
+        "pid": 2480081,
+        "parent_pid": 2478577,
+        "start_ticks": 954238813,
+        "state": "R"
+      },
+      "watchdog_command": [
+        "python3",
+        "scripts/trial_rss_watchdog.py",
+        "--root-pid",
+        "2480080",
+        "--root-start",
+        "954238813",
+        "--supervisor-pid",
+        "2478577",
+        "--supervisor-start",
+        "954237374",
+        "--output",
+        "/home/ubuntu/joxing/deferred-native-parity-20261102-01/runs/v0.0.11/deferred-native-parity-01/legacyA-watchdog.json",
+        "--planned-rss",
+        "7516192768",
+        "--hard-rss",
+        "8589934592",
+        "--process-cap",
+        "16",
+        "--wall-s",
+        "118",
+        "--max-gap-s",
+        "0.1"
+      ],
+      "elapsed_s": 27.71436071395874,
+      "capacity": {
+        "available_memory_bytes": 40739258368,
+        "free_disk_bytes": 108931022848,
+        "fixture_bytes": 10565704,
+        "receipt_bytes": 240051,
+        "load": [
+          16.40576171875,
+          10.49267578125,
+          8.09033203125
+        ]
+      },
+      "returncode": -15,
+      "watchdog": {
+        "schema": "joxing-fast-rss-watchdog-v1",
+        "status": "fault",
+        "root": {
+          "pid": 2480080,
+          "start_ticks": 954238813
+        },
+        "supervisor": {
+          "pid": 2478577,
+          "start_ticks": 954237374
+        },
+        "watchdog": {
+          "pid": 2480081,
+          "parent_pid": 2478577,
+          "start_ticks": 954238813,
+          "state": "R"
+        },
+        "limits": {
+          "planned_rss": 7516192768,
+          "hard_rss": 8589934592,
+          "process_cap": 16,
+          "wall_s": 118.0,
+          "max_gap_s": 0.1,
+          "poll_s": 0.02,
+          "identity_cap": 128
+        },
+        "samples": 1221,
+        "peak_sampled_rss_bytes": 5284028416,
+        "max_sample_gap_s": 0.05898783169686794,
+        "max_probe_s": 0.020762627944350243,
+        "peak_processes": 8,
+        "wall_s": 27.701271587982774,
+        "last_sample_rss_bytes": 4731265024,
+        "last_sample_monotonic_s": 9542415.68318178,
+        "owned_identities": [
+          {
+            "pid": 2480080,
+            "parent_pid": 2478577,
+            "start_ticks": 954238813,
+            "state": "S"
+          },
+          {
+            "pid": 2481047,
+            "parent_pid": 2480080,
+            "start_ticks": 954239235,
+            "state": "R"
+          },
+          {
+            "pid": 2481283,
+            "parent_pid": 2480080,
+            "start_ticks": 954239539,
+            "state": "R"
+          },
+          {
+            "pid": 2481282,
+            "parent_pid": 2480080,
+            "start_ticks": 954239539,
+            "state": "R"
+          },
+          {
+            "pid": 2481281,
+            "parent_pid": 2480080,
+            "start_ticks": 954239539,
+            "state": "R"
+          },
+          {
+            "pid": 2481280,
+            "parent_pid": 2480080,
+            "start_ticks": 954239539,
+            "state": "R"
+          },
+          {
+            "pid": 2481279,
+            "parent_pid": 2480080,
+            "start_ticks": 954239539,
+            "state": "S"
+          }
+        ],
+        "recent_samples": [
+          {
+            "monotonic_s": 9542414.227929726,
+            "rss_bytes": 5143666688,
+            "gap_s": 0.022908486425876617,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.250849685,
+            "rss_bytes": 5143666688,
+            "gap_s": 0.02291995845735073,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.273813324,
+            "rss_bytes": 5143666688,
+            "gap_s": 0.022963639348745346,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.296752147,
+            "rss_bytes": 5143666688,
+            "gap_s": 0.022938823327422142,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.31971232,
+            "rss_bytes": 5143666688,
+            "gap_s": 0.022960172966122627,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.342643792,
+            "rss_bytes": 5143666688,
+            "gap_s": 0.022931471467018127,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.365577724,
+            "rss_bytes": 5143670784,
+            "gap_s": 0.02293393202126026,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.388507351,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.02292962744832039,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.411441475,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022934123873710632,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.435269952,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.023828476667404175,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.45820574,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022935789078474045,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.481134973,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022929232567548752,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.504062064,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022927090525627136,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.525715508,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.021653443574905396,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.547317153,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.021601645275950432,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.570027964,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022710811346769333,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.59302052,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022992555052042007,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.615944143,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022923624143004417,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.638888748,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022944604977965355,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.661908636,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.023019887506961823,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.685750987,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.023842351511120796,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.708723294,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022972306236624718,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.731692385,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022969091311097145,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.754652277,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022959891706705093,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.777630556,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.0229782797396183,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.800578486,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022947929799556732,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.82352814,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.02294965460896492,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.846475247,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022947106510400772,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.869418671,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022943424060940742,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.892381992,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022963320836424828,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.915319582,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.02293759025633335,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.93914384,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.023824257776141167,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.962115604,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.02297176420688629,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542414.985067833,
+            "rss_bytes": 5143674880,
+            "gap_s": 0.022952228784561157,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.008112095,
+            "rss_bytes": 5143941120,
+            "gap_s": 0.02304426208138466,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.031107057,
+            "rss_bytes": 4781289472,
+            "gap_s": 0.022994961589574814,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.054083971,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.022976914420723915,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.07706211,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.02297813817858696,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.100008355,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.022946245968341827,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.122980604,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.02297224849462509,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.145940935,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.022960331290960312,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.16888526,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.02294432558119297,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.192730058,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.023844797164201736,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.215661688,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.022931629791855812,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.238639124,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.0229774359613657,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.261603866,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.02296474203467369,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.28501353,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.023409664630889893,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.308550203,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.023536672815680504,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.33210905,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.0235588476061821,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.355417673,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.02330862171947956,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.378741134,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.023323461413383484,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.402069032,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.023327898234128952,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.425357267,
+            "rss_bytes": 4780920832,
+            "gap_s": 0.023288235068321228,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.45001884,
+            "rss_bytes": 4780924928,
+            "gap_s": 0.02466157265007496,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.473336468,
+            "rss_bytes": 4780924928,
+            "gap_s": 0.023317627608776093,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.496604064,
+            "rss_bytes": 4780924928,
+            "gap_s": 0.02326759696006775,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.51996239,
+            "rss_bytes": 4780982272,
+            "gap_s": 0.02335832640528679,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.543241056,
+            "rss_bytes": 4781043712,
+            "gap_s": 0.02327866479754448,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.5665242,
+            "rss_bytes": 4781047808,
+            "gap_s": 0.02328314445912838,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.589980531,
+            "rss_bytes": 4781105152,
+            "gap_s": 0.023456331342458725,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.6133549,
+            "rss_bytes": 4755402752,
+            "gap_s": 0.023374369367957115,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.636678232,
+            "rss_bytes": 4729683968,
+            "gap_s": 0.023323331028223038,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.65993196,
+            "rss_bytes": 4731138048,
+            "gap_s": 0.023253727704286575,
+            "processes": 8
+          },
+          {
+            "monotonic_s": 9542415.68318178,
+            "rss_bytes": 4731265024,
+            "gap_s": 0.02324981987476349,
+            "processes": 8
+          }
+        ],
+        "reason": "RuntimeError: Unreadable live owned RSS",
+        "final_live": []
+      }
+    }
+  ],
+  "initial_capacity": {
+    "available_memory_bytes": 38956650496,
+    "free_disk_bytes": 108950777856,
+    "fixture_bytes": 0,
+    "receipt_bytes": 217255,
+    "load": [
+      20.26220703125,
+      10.1650390625,
+      7.87939453125
+    ]
+  },
+  "formal_boxing_games": 0,
+  "competitive_training_runs": 0,
+  "control_counts": {
+    "passed": 23,
+    "xfail": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "error": "RuntimeError: Native parity watcher stop/fault: RuntimeError: Unreadable live owned RSS",
+  "physics_credit": {
+    "binding": "1eb984af35a8ad75ce7d83a582bd9d027c6c67abcd928e8281fa0cb7f91c22f8",
+    "chain": "d61758da888fd99a8f4f384b6496962cfdc1a8316409e73ec69fc76070a83a59",
+    "limit": 240000,
+    "pending": {},
+    "schema": "joxing-physics-credit-v1",
+    "sequence": 640,
+    "settled": {
+      "legacyA:preparation": {
+        "operations": 10,
+        "used": 2000
+      },
+      "legacyA:step": {
+        "operations": 310,
+        "used": 3086
+      }
+    },
+    "used": 5086,
+    "charged": 5086
+  },
+  "wall_s": 42.18313697166741,
+  "owned_identities": [
+    {
+      "pid": 2478611,
+      "parent_pid": 2478577,
+      "start_ticks": 954237420,
+      "state": "Z"
+    },
+    {
+      "pid": 2478726,
+      "parent_pid": 2478611,
+      "start_ticks": 954237444,
+      "state": "R"
+    },
+    {
+      "pid": 2478750,
+      "parent_pid": 2478611,
+      "start_ticks": 954237480,
+      "state": "R"
+    },
+    {
+      "pid": 2478760,
+      "parent_pid": 2478577,
+      "start_ticks": 954237583,
+      "state": "Z"
+    },
+    {
+      "pid": 2479456,
+      "parent_pid": 2478577,
+      "start_ticks": 954238117,
+      "state": "Z"
+    },
+    {
+      "pid": 2479827,
+      "parent_pid": 2479456,
+      "start_ticks": 954238204,
+      "state": "S"
+    },
+    {
+      "pid": 2479864,
+      "parent_pid": 2479456,
+      "start_ticks": 954238249,
+      "state": "R"
+    },
+    {
+      "pid": 2480080,
+      "parent_pid": 2478577,
+      "start_ticks": 954238813,
+      "state": "S"
+    },
+    {
+      "pid": 2480081,
+      "parent_pid": 2478577,
+      "start_ticks": 954238813,
+      "state": "R"
+    },
+    {
+      "pid": 2481279,
+      "parent_pid": 2480080,
+      "start_ticks": 954239539,
+      "state": "S"
+    },
+    {
+      "pid": 2481280,
+      "parent_pid": 2480080,
+      "start_ticks": 954239539,
+      "state": "R"
+    },
+    {
+      "pid": 2481281,
+      "parent_pid": 2480080,
+      "start_ticks": 954239539,
+      "state": "R"
+    },
+    {
+      "pid": 2481282,
+      "parent_pid": 2480080,
+      "start_ticks": 954239539,
+      "state": "R"
+    },
+    {
+      "pid": 2481283,
+      "parent_pid": 2480080,
+      "start_ticks": 954239539,
+      "state": "R"
+    },
+    {
+      "pid": 2481047,
+      "parent_pid": 2480080,
+      "start_ticks": 954239235,
+      "state": "R"
+    }
+  ],
+  "final_live_recorded": []
+}

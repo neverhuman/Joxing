@@ -1,0 +1,1226 @@
+{
+  "runs/v0.0.11/.deferred-native.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/controls.log": {
+    "bytes": 99,
+    "sha256": "8ebf10d8ca3033012dca3b8805fd6cb572a9ee5a078c9ac21d8bee9dca4740e0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/controls.xml": {
+    "bytes": 3216,
+    "sha256": "248962f1ecb4b0a31ecfccf0d50c3c280ae2087ccfdfbb6141042fb3ef0b12fe"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "c9a77d1a6b62d04423e2d4f1ed1a819048afdf12617fa4ff07a28005ec3b87e2"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault.json": {
+    "bytes": 140,
+    "sha256": "744af9f8abdd5fd990de7db6cdcb30e1aead671622951f30846952cb5e921b1d"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "02038a6c24f5c6c7a8f14dc5a82dcb1292302a3da1e395ca9cc09f8246f2cddb"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault.json": {
+    "bytes": 151,
+    "sha256": "54c13697b8d2063f719a1bc3d6874ed7d6d9259f739bfc793c1627c6c52172ca"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st1/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st2/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st2/trial/fault-states.json": {
+    "bytes": 79,
+    "sha256": "64f30e7604d6443124c364d57607cb9689127772b8a996412d55b6ee72301bc7"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_all_faults_retain_real_st2/trial/fault.json": {
+    "bytes": 152,
+    "sha256": "fc69683f8cd1b26dcffd72a4fa599c0d48489d0036858af501202f2bcccc5409"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.json": {
+    "bytes": 247,
+    "sha256": "181ecd5e369a54d69aa11cefffa3ca74b86f760e03318996e59721621bd75c15"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.jsonl": {
+    "bytes": 4701,
+    "sha256": "58b3a5a617206e9daeeb7fa9b47214ecb88f67cd7402581200c54bb6955a5655"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/learner.jsonl": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/learner.jsonl": {
+    "bytes": 1603,
+    "sha256": "0b4d94811b8fe2d0e5b000f55e6c40bdfe383802252d804c84222c24920eb9a6"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/learner.jsonl": {
+    "bytes": 1570,
+    "sha256": "57a4ebafafac9e6c0d6cb383ab1a1ba280104a21fe99e8676a6e3ce609f6d084"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/learner.jsonl": {
+    "bytes": 1570,
+    "sha256": "57a4ebafafac9e6c0d6cb383ab1a1ba280104a21fe99e8676a6e3ce609f6d084"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/evaluation-cleanup-fault.json": {
+    "bytes": 31,
+    "sha256": "be5a54f833f474ddfa8d669cb21bd1a56e17b811c0005d004a8ec9db3399c671"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "02038a6c24f5c6c7a8f14dc5a82dcb1292302a3da1e395ca9cc09f8246f2cddb"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault.json": {
+    "bytes": 150,
+    "sha256": "b165af4cce55a958d6367424f0484f457bcb2e6ec21f1e424510d7d622b7e1c7"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.json": {
+    "bytes": 285,
+    "sha256": "4187ee7df3809c065380626e4f2df120b8bb612c02360ff0dab091333a16b9df"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.jsonl": {
+    "bytes": 467,
+    "sha256": "add963b5f7761328e1868d0a4e2faa656d2a4a3ef5826c23930ddb2235236499"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_existing_ledger_never_ove0/credit.json": {
+    "bytes": 204,
+    "sha256": "6f0eb11693dfaa7ab57f352c6584b97c7d818b5cbcc7f2708150d301ff98b958"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_foreign_stale_or_wrong_bi0/credit.json": {
+    "bytes": 204,
+    "sha256": "6f0eb11693dfaa7ab57f352c6584b97c7d818b5cbcc7f2708150d301ff98b958"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_foreign_stale_or_wrong_bi0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_freeze_close_then_allocat0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_freeze_close_then_allocat0/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_freeze_close_then_allocat0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_freeze_close_then_allocat0/trial/result.json": {
+    "bytes": 1087,
+    "sha256": "e2e608b65537a4d03136e8c7734af76f2a9938fdd20083ceac63b7746e660c69"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_freeze_close_then_allocat0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_freeze_close_then_allocat0/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.json": {
+    "bytes": 252,
+    "sha256": "0790ec8825991ead2fef80bde22fee0927ca799c68e12e94c8c8dd7af3415032"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.jsonl": {
+    "bytes": 241,
+    "sha256": "47a73aff94ea9bf5977b06287320d6d1e5fbccdf784b52187359923145fcfe85"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_unknown_reservation_stays0/credit.json": {
+    "bytes": 355,
+    "sha256": "a1b03aa21a602cb23f393c33560ed69518f8d9ce3f2d22c295402cd553794a51"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_unknown_reservation_stays0/credit.jsonl": {
+    "bytes": 252,
+    "sha256": "b79d51d282df35bf8d51266f600019c7cceaaeddca4d193e3e3e616d11d3bdab"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/controls/test_unknown_reservation_stays0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/learner.jsonl": {
+    "bytes": 9240,
+    "sha256": "ceb2ef3fd8e90a7a221ec096ab2475fc5604e66229fcfedb2cb4252bf0aedfe5"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 86965,
+    "sha256": "7b650168b435e7a68ba0e1a5df20c74f5bf339fe05cce0b06913bef547832c1a"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 6503,
+    "sha256": "573a7cf83a343da86e0bee309ede38fb83598cdf0c9718dc4d10e9609a8bac1a"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 6502,
+    "sha256": "66bfc521c0910059496d9af15acc45acd6ca952668f143c596d6d769c748f595"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 6501,
+    "sha256": "ef7fd60ffc6877477efb2e0fcdbf98a3e50cb01402ab74a88f6fd4d419ace109"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 6504,
+    "sha256": "d873b4375c24ebfc3ad078978268b53dc90732f231d8c2b7e64097d27652b77c"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/worker-0.jsonl": {
+    "bytes": 4881,
+    "sha256": "2ab592672ec7fa47c874326fb84d79d2d92e0a718b52329f4becbe1282fec540"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/worker-1.jsonl": {
+    "bytes": 4881,
+    "sha256": "bfaf93d29b811ee64e62defd80a9e2906c74a02bf61af6895001589f3b2c1386"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/worker-2.jsonl": {
+    "bytes": 4881,
+    "sha256": "8a9846934ee639964214d37646f5a365eff0f2052234de54c4ef6a6b4d94e4c9"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/traces/worker-3.jsonl": {
+    "bytes": 4879,
+    "sha256": "de8fdb99e899255b05bef0dd9daa4d6b065776a792213fe470ad63cddc9fa692"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/checkpoint.zip": {
+    "bytes": 7595735,
+    "sha256": "7c96c63c8345dc7c9a8584b7ab5d9ac840604ff6f919cf72c3def7dda4f17d70"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/description.json": {
+    "bytes": 1054,
+    "sha256": "08a28531f421052e83bdae336ddead17fb570ebfa1403b4f559e2efa3f51f823"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/final-actor.pt": {
+    "bytes": 754309,
+    "sha256": "c832f6e5e9c0f1837e3feec8c75ad174c408e0bc7ffa8f71a30671fdc067b301"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/initial-actor.pt": {
+    "bytes": 754401,
+    "sha256": "b2f68aec2e62a721a106439c3eb00bb6c55ea40d3ee0a7c4e5ee47d19b60be5a"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/initial-evaluations.json": {
+    "bytes": 1461,
+    "sha256": "5ddcda7cc5f0b8441af3f1120450099d6e46737de179f507a7e751f0ccb3f89c"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/initial-replay.json": {
+    "bytes": 551796,
+    "sha256": "a0f18bcfe7588d59ea717149e9c278b5474ad01c4db0487403e0698a959281f3"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/progress.json": {
+    "bytes": 878,
+    "sha256": "619e9615032b9c688156f5ea0f92c5f656c93bb5b8d85bf975bf25c6ba072b17"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/result.json": {
+    "bytes": 1565,
+    "sha256": "cadb15aa718b1bdf7ecead369dece076d2d4659c1f6189b7ee239313be4dd959"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/specification.json": {
+    "bytes": 835,
+    "sha256": "8932c1d54201d012eeb826ea070a4759e057f389cf3cf87eaa32f6601600798b"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/trained-evaluations.json": {
+    "bytes": 1460,
+    "sha256": "470478a08d939f65f42f5149fcc139815aedc1e6eaa3eaa4d5f863ad8a86054d"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/trained-replay.json": {
+    "bytes": 538162,
+    "sha256": "17c290ae5089ece934593f23f7bd0ad1c86ef221fee8cf5bc07be66bfc5f301b"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/worker-0.monitor.csv": {
+    "bytes": 58,
+    "sha256": "04f3bff2e5649f2e929a1e82967cdf885f9dbe48a4491d468ef8122f823db54e"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/worker-1.monitor.csv": {
+    "bytes": 57,
+    "sha256": "576c39fa17255e0f4d2f3460ae44cf055cef2be0d1cad858671c420a24d3aa41"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/worker-2.monitor.csv": {
+    "bytes": 58,
+    "sha256": "5b6e8fe7d48590a18380d9bd5aaea63a2cfa45320ce9e6df861646d0d6bddc50"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/legacyA/trial/worker-3.monitor.csv": {
+    "bytes": 57,
+    "sha256": "782ab1fe6bacd4c48f5dd6e81b3e5820e4e715527154cee0d56186b6027773c8"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/native-credit.json": {
+    "bytes": 379,
+    "sha256": "ad9859888650785ea77be8902cd6c383d3d2cfbe4c66539b83ed25b88facf4fb"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/native-credit.jsonl": {
+    "bytes": 79230,
+    "sha256": "17c8612bd7cc38c36f230e6cc79cbbbbece52e4cfbed26388e595b3868b9e975"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/fixtures/native-credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/legacyA-watchdog.json": {
+    "bytes": 10771,
+    "sha256": "a34b43ac5b910c58b24df307b59a07c311e37df4c5692a111e8060e2b2877bbd"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/legacyA-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/legacyA-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/legacyA.log": {
+    "bytes": 762,
+    "sha256": "6ba41c5182d30d0df604e04942827f9b6e8e7ecac54487791faaf89b29e84974"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/result.json": {
+    "bytes": 22813,
+    "sha256": "7704738d9f0d07cbdd5aec1516c6102f282d60aa745769f75c3aa675db47c170"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/runtime.log": {
+    "bytes": 97,
+    "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+  },
+  "runs/v0.0.11/deferred-native-parity-01/sync.log": {
+    "bytes": 1234,
+    "sha256": "53dd1ddfe8f9860645766df3a71aa240517fb251cd2b0a5c3592b0eef532b881"
+  },
+  "runs/v0.0.11/deferred-native-parity-deployment.json": {
+    "bytes": 217255,
+    "sha256": "8a1e92a5d9295ad48c1dc569304a8893f43d0ad01571522ab975618693065592"
+  },
+  "runs/v0.0.11/deferred-native-parity-launch.log": {
+    "bytes": 1074,
+    "sha256": "1ff1e35fea3a3a13054e93e2b86d800346870121c094f741a2ad315d68d1eef9"
+  }
+}

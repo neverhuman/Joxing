@@ -1,3 +1,29 @@
+# H15 first native packet invalid; coherent RSS read repair registered — Nov2 Mountain
+
+75de631/protocold0d72305:23Linux controls pass. Reference legacyA actually reaches
+64transitions/12updates and5086accounted physical/preparation steps, but packet
+fails on watcher unreadable-live-RSS fault while closing. No semantic-result
+file completed. legacyA remains INVALID, candidateA/legacyB/candidateB NOT_RUN.
+No new parity/memory/performance/boxing qualification. Exit timing suggests a
+transient status-read race; missing PID diagnostic prevents proving that cause.
+
+Independent725source/five-history-object/23JUnit/640credit-event/16recorded-exit
+and306rawfiles10823025byte audit/transfer pass, no writer. Known prep2000 +
+training640 +evaluations2446=5086steps; native actor hashes/trace prefix retained.
+Original failed root/protocol/criteria stay unchanged; no source/model edits there.
+
+Named coherent-read-v2 monitor retries at most3reads/1ms between misses within
+unchanged100msgap/probe. Must get actual VmRSS or verify exit/reuse/zombie;
+persistent live unreadability still faults with PID/start. Local34pass/2Linux
+skips; new packet requires45Linux controls including actual watcher tests first.
+No native core, equality, RSSmetric/cap or default changed. New publicfreeze/root.
+
+Repair packet experiments/v0.0.11/deferred-native-rss-repair-protocol.json carries
+forward prior costs:234914physicssteps/557s/remaining raw+receipt credits, keeping
+both attempts inside original240k/600s/1GiB/4MiB envelope. Same four sequential
+slots/64transitions/12updates/700muscles/7GiBplanned/8GiBhard/four workers. Stop
+on first fault; no unchanged retry, adoption/concurrency/full-source/v11tag yet.
+
 # H15 four-slot native parity protocol registered — Nov2 Mountain
 
 Current packet experiments/v0.0.11/deferred-native-parity-protocol.json implements
