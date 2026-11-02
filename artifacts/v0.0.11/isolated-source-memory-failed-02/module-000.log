@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/isolated-source-scratch-repair-20261101/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/isolated-source-scratch-repair-20261101
+configfile: pyproject.toml
+collecting ... collected 4 items
+
+tests/test_scaling_audit.py::test_actual_capacity_stop_retains_all_seventy_eight_cases PASSED [ 25%]
+tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[missing_case] PASSED [ 50%]
+tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[changed_step] PASSED [ 75%]
+tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[false_physics] PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/isolated-source-scratch-repair-20261101/runs/v0.0.11/isolated-source-scratch-repair-01/module-000.xml -
+============================== 4 passed in 0.53s ===============================

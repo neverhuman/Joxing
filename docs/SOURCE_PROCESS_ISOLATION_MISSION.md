@@ -1,3 +1,7 @@
+Status: concluded negative for isolated learner memory acceptance. History
+controls pass; scratch-repair attempt still exceeds8GiB. Current continuation:
+TRIAL_MEMORY_LIFECYCLE_MISSION.md / H15. Both failed attempts remain retained.
+
 Current update: first attempt retained4passes/2setup errors; scratch parent absent.
 Use isolated-source-scratch-repair-protocol.json in a NEWroot with same six cases
 and numerical limits. Create fixture parent before pytest; new subprocess control

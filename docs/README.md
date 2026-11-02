@@ -1,3 +1,6 @@
+Current worker-ready phase: [H15trial-memory lifecycle profile](TRIAL_MEMORY_LIFECYCLE_MISSION.md).
+H14history repair passes, but fresh learner memory still exceeds8GiB.
+
 Current mission: [H14bounded source-process isolation](SOURCE_PROCESS_ISOLATION_MISSION.md).
 Previous full gate exceeded RSS; all failed evidence retained.
 

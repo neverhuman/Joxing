@@ -1,3 +1,30 @@
+# H14 isolation insufficient; H15 trial-memory lifecycle profile next — Nov1 Mountain
+
+Current worker-ready packet docs/TRIAL_MEMORY_LIFECYCLE_MISSION.md; research/H15.
+Scratch repairfe73f0a/protocol295a2527 fixed setup, but fresh learner module still
+hit8,634,343,424bytes >8GiB at18.922s (14processes/16). Four history/scaling cases
+pass; two learner cases unconfirmed after forced stop. No memory acceptance/full
+source/balance/boxing win. Fixture physics/update totals are unknown, not zero.
+
+Independent audit:713source files, complete history/four required objects,
+19recorded identities exited/no writer; all16raw files/235,417bytes transferred
+exact. Final fixture3778bytes/receipts231,639bytes. First H14attempt retains4pass/
+2setup errors; repaired attempt4pass/2unconfirmed. All original source failures,
+limits and old900sledger remain unchanged. No live owned simulation job remains.
+
+Static next target: each wave.train_run allocates evaluation StanceEnv before its
+four SubprocVecEnv worlds, including deferred evaluation. H15 first profiles per-
+role RSS/PSS/private memory and constructor phases without training or inference;
+then considers a named lifecycle variant only after measurement and exact parity.
+Preserve both concurrent learners/eight training worlds and all700muscles; do not
+shrink assertions, replace RSS metric, raise cap or add skips to manufacture pass.
+
+Next worker implements new constructor-only profile + tests, freezes a bounded
+protocol and launches after host/source gates. The detailed packet covers guards,
+reset/preparation counters, partial initialization, RNG, closing worker states,
+parity, fault receipts and full-source handoff. No training sweep or default
+change now. No v11tag. Publish compressed H15 evidence before any adoption.
+
 # H14 scaling controls pass; scratch setup repair registered — Nov1 Mountain
 
 Current protocol experiments/v0.0.11/isolated-source-scratch-repair-protocol.json;

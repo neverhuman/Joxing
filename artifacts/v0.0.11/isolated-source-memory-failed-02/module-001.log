@@ -1,0 +1,7 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/isolated-source-scratch-repair-20261101/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/isolated-source-scratch-repair-20261101
+configfile: pyproject.toml
+collecting ... collected 2 items
+
+tests/test_wave_learner.py::test_parallel_extension_trials_defer_initial_evaluation 

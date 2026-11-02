@@ -1,0 +1,448 @@
+{
+  "schema": "joxing-isolated-source-supervision-v1",
+  "source_commit": "fe73f0a4bcbe96ce6c2b557cf2b67dda99ae0108",
+  "protocol_sha256": "295a2527f21994800f98633cbef868f5dc5f7df93b5e3c2712a74c9d4493c76a",
+  "process": {
+    "pid": 642946,
+    "parent_pid": 1,
+    "start_ticks": 953172410,
+    "state": "R"
+  },
+  "status": "halted",
+  "scope": "H14 bounded source-memory/history diagnostic. Four saved scaling-audit cases and two fixture learner cases in independent pytest processes, complete source history. Fixture physics/gradient updates are not a checkpoint motor evaluation or RL competence result. Named scratch-parent bootstrap repair; original4pass/2setup-error attempt retained.",
+  "formal_native_evaluations": 0,
+  "formal_training_runs": 0,
+  "initial_capacity": {
+    "available_memory_bytes": 30480171008,
+    "free_disk_bytes": 137120645120,
+    "fixture_bytes": 0,
+    "receipt_bytes": 213017,
+    "load": [
+      6.5380859375,
+      8.37353515625,
+      10.44873046875
+    ]
+  },
+  "rows": [
+    {
+      "node": "tests/test_scaling_audit.py::test_actual_capacity_stop_retains_all_seventy_eight_cases",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[missing_case]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[changed_step]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[false_physics]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_wave_learner.py::test_parallel_extension_trials_defer_initial_evaluation",
+      "status": "unconfirmed"
+    },
+    {
+      "node": "tests/test_wave_learner.py::test_real_update_actor_export_seed_and_rng",
+      "status": "unconfirmed"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "limit_s": 178,
+      "peak_owned_rss_bytes": 146141184,
+      "process": {
+        "pid": 642974,
+        "parent_pid": 642946,
+        "start_ticks": 953172489,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 642974,
+          "parent_pid": 642946,
+          "start_ticks": 953172489,
+          "state": "Z"
+        },
+        {
+          "pid": 643104,
+          "parent_pid": 642974,
+          "start_ticks": 953172538,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 1.449337737634778,
+      "current_owned_rss_bytes": 32591872,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 31310180352,
+        "free_disk_bytes": 136926621696,
+        "fixture_bytes": 0,
+        "receipt_bytes": 220002,
+        "load": [
+          6.7353515625,
+          8.38427734375,
+          10.44091796875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.561923023313284,
+      "cleanup_wait_s": 5.128607153892517e-05
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'python': '3.12.3', 'numpy': '2.4.2', 'mujoco': '3.8.0'}"
+      ],
+      "status": "completed",
+      "limit_s": 8,
+      "peak_owned_rss_bytes": 56451072,
+      "process": {
+        "pid": 643125,
+        "parent_pid": 642946,
+        "start_ticks": 953172645,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 643125,
+          "parent_pid": 642946,
+          "start_ticks": 953172645,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7619779109954834,
+      "current_owned_rss_bytes": 32595968,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 31078236160,
+        "free_disk_bytes": 136829014016,
+        "fixture_bytes": 0,
+        "receipt_bytes": 220930,
+        "load": [
+          6.7353515625,
+          8.38427734375,
+          10.44091796875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8745270371437073,
+      "cleanup_wait_s": 3.106147050857544e-05
+    },
+    {
+      "stage": "collection",
+      "command": [
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_scaling_audit.py",
+        "tests/test_wave_learner.py"
+      ],
+      "status": "completed",
+      "limit_s": 13,
+      "peak_owned_rss_bytes": 445902848,
+      "process": {
+        "pid": 643281,
+        "parent_pid": 642946,
+        "start_ticks": 953172733,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 643281,
+          "parent_pid": 642946,
+          "start_ticks": 953172733,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 6.921208268031478,
+      "current_owned_rss_bytes": 32624640,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 32472735744,
+        "free_disk_bytes": 136029691904,
+        "fixture_bytes": 0,
+        "receipt_bytes": 222336,
+        "load": [
+          6.8369140625,
+          8.37744140625,
+          10.427734375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 7.038443254306912,
+      "cleanup_wait_s": 3.975629806518555e-05
+    },
+    {
+      "stage": "module-000",
+      "shard_index": 0,
+      "command": [
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/runs/v0.0.11/isolated-source-scratch-repair-01/fixtures/module-000",
+        "--junitxml",
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/runs/v0.0.11/isolated-source-scratch-repair-01/module-000.xml",
+        "tests/test_scaling_audit.py::test_actual_capacity_stop_retains_all_seventy_eight_cases",
+        "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[missing_case]",
+        "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[changed_step]",
+        "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[false_physics]"
+      ],
+      "status": "completed",
+      "limit_s": 148,
+      "peak_owned_rss_bytes": 191451136,
+      "process": {
+        "pid": 643549,
+        "parent_pid": 642946,
+        "start_ticks": 953173437,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 643549,
+          "parent_pid": 642946,
+          "start_ticks": 953173437,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 1.4512994214892387,
+      "current_owned_rss_bytes": 32624640,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 32307130368,
+        "free_disk_bytes": 135850594304,
+        "fixture_bytes": 0,
+        "receipt_bytes": 224977,
+        "load": [
+          6.8369140625,
+          8.37744140625,
+          10.427734375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.5618017688393593,
+      "cleanup_wait_s": 3.3523887395858765e-05,
+      "junit_counts": {
+        "passed": 4,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "stage": "module-001",
+      "shard_index": 1,
+      "command": [
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/runs/v0.0.11/isolated-source-scratch-repair-01/fixtures/module-001",
+        "--junitxml",
+        "/home/ubuntu/joxing/isolated-source-scratch-repair-20261101/runs/v0.0.11/isolated-source-scratch-repair-01/module-001.xml",
+        "tests/test_wave_learner.py::test_parallel_extension_trials_defer_initial_evaluation",
+        "tests/test_wave_learner.py::test_real_update_actor_export_seed_and_rng"
+      ],
+      "status": "failed",
+      "limit_s": 148,
+      "peak_owned_rss_bytes": 8634343424,
+      "process": {
+        "pid": 643606,
+        "parent_pid": 642946,
+        "start_ticks": 953173593,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 643606,
+          "parent_pid": 642946,
+          "start_ticks": 953173593,
+          "state": "S"
+        },
+        {
+          "pid": 644112,
+          "parent_pid": 643606,
+          "start_ticks": 953174078,
+          "state": "S"
+        },
+        {
+          "pid": 644113,
+          "parent_pid": 643606,
+          "start_ticks": 953174078,
+          "state": "S"
+        },
+        {
+          "pid": 644134,
+          "parent_pid": 643606,
+          "start_ticks": 953174087,
+          "state": "S"
+        },
+        {
+          "pid": 644137,
+          "parent_pid": 643606,
+          "start_ticks": 953174087,
+          "state": "S"
+        },
+        {
+          "pid": 645402,
+          "parent_pid": 644137,
+          "start_ticks": 953174843,
+          "state": "R"
+        },
+        {
+          "pid": 645403,
+          "parent_pid": 644137,
+          "start_ticks": 953174843,
+          "state": "S"
+        },
+        {
+          "pid": 645404,
+          "parent_pid": 644137,
+          "start_ticks": 953174843,
+          "state": "R"
+        },
+        {
+          "pid": 645405,
+          "parent_pid": 644137,
+          "start_ticks": 953174843,
+          "state": "R"
+        },
+        {
+          "pid": 645406,
+          "parent_pid": 644134,
+          "start_ticks": 953174851,
+          "state": "R"
+        },
+        {
+          "pid": 645407,
+          "parent_pid": 644134,
+          "start_ticks": 953174851,
+          "state": "S"
+        },
+        {
+          "pid": 645408,
+          "parent_pid": 644134,
+          "start_ticks": 953174851,
+          "state": "S"
+        },
+        {
+          "pid": 645409,
+          "parent_pid": 644134,
+          "start_ticks": 953174851,
+          "state": "S"
+        }
+      ],
+      "elapsed_s": 18.922033671289682,
+      "current_owned_rss_bytes": 8634343424,
+      "live_owned_processes": 14,
+      "capacity": {
+        "available_memory_bytes": 26051002368,
+        "free_disk_bytes": 137409437696,
+        "fixture_bytes": 3778,
+        "receipt_bytes": 228073,
+        "load": [
+          7.607421875,
+          8.451171875,
+          10.408203125
+        ]
+      },
+      "returncode": -15,
+      "wall_s": 19.291822131723166
+    }
+  ],
+  "criterion_passed": false,
+  "full_source_gate_qualified": false,
+  "error": "TimeoutError: First stage limit: elapsed=18.922033671289682/148, rss=8634343424/8589934592, processes=14/16",
+  "wall_s": 30.330530494451523,
+  "test_wall_s": 20.854248967021704,
+  "final_live_recorded": [
+    {
+      "pid": 644112,
+      "parent_pid": 643606,
+      "start_ticks": 953174078,
+      "state": "S"
+    },
+    {
+      "pid": 644134,
+      "parent_pid": 643606,
+      "start_ticks": 953174087,
+      "state": "S"
+    },
+    {
+      "pid": 644137,
+      "parent_pid": 643606,
+      "start_ticks": 953174087,
+      "state": "S"
+    },
+    {
+      "pid": 645402,
+      "parent_pid": 644137,
+      "start_ticks": 953174843,
+      "state": "R"
+    },
+    {
+      "pid": 645403,
+      "parent_pid": 644137,
+      "start_ticks": 953174843,
+      "state": "S"
+    },
+    {
+      "pid": 645405,
+      "parent_pid": 644137,
+      "start_ticks": 953174843,
+      "state": "R"
+    },
+    {
+      "pid": 645406,
+      "parent_pid": 644134,
+      "start_ticks": 953174851,
+      "state": "R"
+    },
+    {
+      "pid": 645407,
+      "parent_pid": 644134,
+      "start_ticks": 953174851,
+      "state": "S"
+    },
+    {
+      "pid": 645408,
+      "parent_pid": 644134,
+      "start_ticks": 953174851,
+      "state": "S"
+    },
+    {
+      "pid": 645409,
+      "parent_pid": 644134,
+      "start_ticks": 953174851,
+      "state": "S"
+    }
+  ],
+  "fixture_bytes": 3778,
+  "receipt_bytes": 228073
+}
