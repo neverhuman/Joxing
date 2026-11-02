@@ -30,7 +30,7 @@ No policy was loosened or job duplicated.
 **Spare compute:** [xbabe4 source-validation mission](docs/MAC_SOURCE_READINESS_MISSION.md)
 uses the large Mac for independent history, action-delay, opponent-observation and
 scoring checks while Linux I/O is pressured. All29checks passed on xbabe4, with0physics steps;
-[results](docs/MAC_SOURCE_READINESS_RESULTS.md). Native replay transfer is next. [Live host inventory and roles](docs/COMPUTE.md).
+[results](docs/MAC_SOURCE_READINESS_RESULTS.md). [H25native replay prerequisites](docs/MAC_NATIVE_REPLAY_MISSION.md) are registered: exact archived muscle decoding and atomic restore with0physics permitted; target not_run at freeze. [Live host inventory and roles](docs/COMPUTE.md).
 
 **HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
 passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus

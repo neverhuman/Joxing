@@ -1,3 +1,49 @@
+# H25zero-step prerequisite implemented, six native rows still NOT_RUN
+
+The Mac's H24source runtime is NumPy2.5.4; this H25preflight instead uses the
+original D0locked runtime Python3.12.3/NumPy2.4.2/MuJoCo3.8.0 on native arm64.
+Fresh frozen original D0Git source/root,429source+upstream hash checks and15whole
+saved input files21487214bytes, read-only. Wrapper/runtime/source origins separate.
+Preflight first compares all700native stored controls per corner with the SAME
+float32 sigmoid decode; strict bytes/dtype/shape incl signedzero, no tolerance.
+Then only if exact, attempts original atomic ReplaySnapshot.restore plus exact
+snapshot reproduction. All mj_step/step1/step2 calls forbidden before compilation;
+0allowedphysics. Native six-row112step body remains UNIMPLEMENTED/NOT_RUN.
+A failing prerequisite stops immediately; remaining preflight/native rows retained.
+
+Protocol experiments/v0.0.11/mac-native-replay-protocol.json /canonical
+a2e057c3e4e44e7a0fd9c340a20156090a342bcce82d9d4fd25e653c55617c76.
+(The canonical hash below is recomputed from the file before registration.)
+Local21source/auditor corruption cases pass0.24s/Ruffpass; no target outcome yet.
+Controls reject false decoder pass/error, lost/duplicate/reordered rows, omitted
+physics/changednativeidentity/prefix/source arrays and post-failure execution.
+Independent saved-array auditor uses no MuJoCo/model/physics: fixed native state
+prefix1911+actor0/700indices verified by actual model before formal comparisons.
+
+Task: same Mac capacity policy load<=16/reclaimable estimate>=16GiB/disk>=10GiB,
+no Joxing jobs. One owned source/nativecompile process, thread1. Source setup
+180s,21target controls30s,preflight30s/35s includingcleanup,245swhole first-limit,
+4GiBsampled descendantRSS/8processes/2MiBnewraw/0physics. Large archived inputs
+are declared read-only15file21.49MB source assets, not new run evidence; record
+setup/transfer separately, never call it free. H15-H23oldcosts/caps unchanged.
+Bootstrap/progress/PIDs exact retained; no Docker/GPU/services/agents or actor.
+
+Public freeze+anonymous byte verification before target setup/outcomes. Commands:
+uv sync --project ORACLE/experiments/v0.0.11/runtime --frozen --python3.12.3;
+ORACLE_RUNTIME_PYTHON -m pytest -q CONTROL/tests/test_mac_replay.py;
+ORACLE_RUNTIME_PYTHON CONTROL/scripts/qualify_mac_replay.py --packet PACKET
+--oracle AUTHENTIC_D0_ROOT --inputs READONLY_INPUTS --out FRESH_OUT --source-sha SHA.
+Use bounded wrapper/tree guard (scripts/qualify_mac_source.run_stage), exact argv
+in bootstrap, not unbounded literal commands. No actual native replay path is
+implemented in this packet; no source/forward or decode pass is dynamics proof.
+
+Completion for this checkpoint: independently audited prereq outcome, all3source
+rows and6native rows/denominators retained. If exact restore passes, implement
+remaining original H25body/source comparisons and new freeze before any physics.
+If failed, preserve raw arrays/error and identify arithmetic/cache portability
+bottleneck; no source tolerance, native retry or worker scaling. Main original
+H25mission below remains the future full replay target, not secretly satisfied.
+
 # H25: qualify spare Mac native replay before parallel physics
 
 Status: worker-ready implementation plan, NOTimplemented/preregistered/run.

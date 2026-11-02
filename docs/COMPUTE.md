@@ -1,3 +1,14 @@
+## Capacity refreshed Nov2 17:55 UTC; H25preflight ready
+
+[Fresh two-sample inventory](../artifacts/v0.0.11/development/four-host-capacity-20261102-02.json):
+all detected Joxing jobs empty. xbabe1IO full1.14% (still>H23fixed1%); xbabe2
+6.32%/load96.8;xbabe3IO16.87%; Macload4.31/~251.8GiBfree+inactive+speculative
+estimate, not MemAvailable. No host reservation. xbabe1GPUmemory now510MiB,
+not the prior17256MiB; no GPUtask/ownership inferred from low utilization.
+Mac zero-step H25preflight uses original D0NumPy2.4.2 in authentic source checkout,
+not H24NumPy2.5.4. Local21controls pass; target not_run at preregistration,
+physics prohibited. Native112step replay/parallel scaling still unimplemented.
+
 ## xbabe4 actually used and source-qualified —2026-11-02
 
 [H24results](MAC_SOURCE_READINESS_RESULTS.md):29/29native source/forward controls

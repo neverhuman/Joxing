@@ -37,7 +37,7 @@ remain the authority for measurements, budgets, criteria and denominators.
 
 |[H24](H24.md)|Can spare xbabe4 qualify independent game-contract source checks?|29/29Mac source/forward checks pass,0physics; dynamic replay unqualified|
 
-|[H25](H25.md)|Can spare Mac preserve native boundary/mid-command/contact replay?|Worker-ready exact112step diagnostic plan; not implemented/run|
+|[H25](H25.md)|Can spare Mac preserve native boundary/mid-command/contact replay?|Zero-step exact-decoder/restore prerequisite implemented; local21pass; target/native not_run|
 
 **Latest: H24qualified xbabe4 source/forward29/29 with0physics. H25native replay is the next worker-ready Mac mission. H23same frozen Linux epoch remains resource-deferred. H21one-worker pass stays narrow; all old negatives retained. Next unused ID: H26.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.

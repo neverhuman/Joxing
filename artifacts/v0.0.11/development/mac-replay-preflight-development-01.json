@@ -1,0 +1,16 @@
+{
+  "status": "development_only",
+  "tests_passed": 21,
+  "wall_s": 0.24,
+  "ruff": "passed",
+  "command": "rtk proxy env PYTHONPATH=src:. .venv/bin/python -m pytest -q tests/test_mac_replay.py",
+  "target_not_run": true,
+  "native_replay_unimplemented": true,
+  "new_physics": 0,
+  "input_transfer_bytes": 21487214,
+  "source_input_files": 15,
+  "notes": [
+    "Whole source cases transferred read-only from xbabe3; no model/actor/outcomes changed",
+    "Actual frozen model control-state prefix1911 and exact original actor ranges are predeclared guards, not inferred after outcomes"
+  ]
+}

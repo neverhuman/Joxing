@@ -1,3 +1,13 @@
+# H25zero-step native replay prerequisites registered —Nov2
+
+Original D0source/runtime (NumPy2.4.2) and15whole21.49MB archived inputs. New
+3case stored-native-control byte-exact decode/atomic restore gate, physics calls
+forbidden, no actor/learning. Local21controls pass0.24s/Ruffpass. Target NOT_RUN
+at freeze; six native112step replay body UNIMPLEMENTED/NOT_RUN. Same source
+strictness; early prerequisite failure must retain all rows and block scaling.
+Worker-ready docs/MAC_NATIVE_REPLAY_MISSION.md/research/H25.md; public freeze
+before bounded Mac task. H23Linux epoch unchanged/deferred, v11notconcluded.
+
 # Mac source task concluded; native replay transfer next —2026-11-02
 
 H24public4aeb831/23b21d4a on xbabe4 passes29/29checks,0failures/skips/not_run,
