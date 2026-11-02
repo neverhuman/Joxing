@@ -51,8 +51,10 @@ historical executable and passes the positive audit plus both corruption checks.
 The repaired full gate also stopped:8.77GB sampled owned RSS exceeded8GiB,
 with one further historical-audit failure. [H14process-isolation diagnosis](docs/SOURCE_PROCESS_ISOLATION_MISSION.md)
 fixed history but still exceeded8GiB in a fresh learner process.
-[Registered: profile duplicated evaluation/training allocations](docs/TRIAL_MEMORY_LIFECYCLE_MISSION.md)
-while preserving the original eight-world concurrency and limits.
+[Allocation profile](docs/TRIAL_MEMORY_PROFILE_RESULTS.md) measured1.22GB combined learner RSS growth
+when constructing the two evaluation worlds; it stopped during startup, with28Linux
+controls passed. [Next: deferred-allocation parity](docs/DEFERRED_EVALUATION_ALLOCATION_MISSION.md)
+preserves eight-world concurrency and limits; memory savings remain unproved.
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

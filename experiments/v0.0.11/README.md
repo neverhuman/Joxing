@@ -1,3 +1,26 @@
+# H15 measured allocation; deferred-lifecycle parity is next — Nov1 Mountain
+
+Current worker-ready mission: docs/DEFERRED_EVALUATION_ALLOCATION_MISSION.md.
+No owned task remains active. H15diagnostic source7204702/protocolc617e6cd passed
+all28Linux controls and stopped during startup at planned memory threshold:
+sampled8,536,518,656bytes <8GiB hard cap,14processes. Both learner trials remain
+unconfirmed;2/10constructors completed. Known preparation400steps is a lower
+bound; interrupted worker work unknown. No SAC actors, training or boxing result.
+
+Evaluation construction raised learner RSS by615,768,064/607,580,160bytes, combined
+1,223,348,224. This supports avoiding early allocation, not equal proven savings.
+The stdlib profiler parent is smaller than original pytest; full fixture does
+not qualify. Sampling gaps reached1.198s/largest jump3.16GB, so first implement a
+separate fast owned RSS watchdog before more native startup. PSS is explanatory.
+
+Independent716source/full-history/28JUnit/29sample audit,19exited identities/no
+writer and35raw files/317405bytes exact transfer pass. First ownership stop and
+all H14failures remain. Results docs/TRIAL_MEMORY_PROFILE_RESULTS.md and H15note.
+Next named opt-in lifecycle preserves legacy default, captures four worker states,
+closes training worlds before evaluation, then proves single-trial A/B exact parity
+before unchanged simultaneous-eight-world assertions/full source gate. No cap
+increase, smaller fixture, source promotion, v11tag or unchanged retry.
+
 # H15 first profile ownership stop audited; named repair registered — Nov1 Mountain
 
 Original efa4d41/protocol409cc901:24/24Linux controls pass, but profile stops

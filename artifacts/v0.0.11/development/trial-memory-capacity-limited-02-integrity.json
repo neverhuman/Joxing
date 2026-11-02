@@ -1,0 +1,1613 @@
+{
+  "schema": "joxing-trial-memory-independent-v1",
+  "status": "verified_capacity_limited_attempt",
+  "source_commit": "72047026de40c17912dfa498684afd816de7baad",
+  "protocol_sha256": "c617e6cdafb01423202ea690d9db314ba05705356a51c2f408f88e05cb666b24",
+  "source_files_verified": 716,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_trial_memory.py::test_memory_sample_and_pid_reuse",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_missing_process_has_no_sample",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_phase_order_and_known_roles",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows0-owned0]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows1-owned1]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows2-owned2]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows3-owned3]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows4-owned4]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows5-owned5]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_guard_prevents_actual_side_effect_and_restores",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_interrupted_event_tail_not_invented",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_bounded_subprocess_profile_exit_runs_cleanup",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_partial_constructor_counts_are_lower_bounds",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_missing_live_memory_never_silently_counts_as_zero",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_reported_newborn_binding_checks_actual_ancestry[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_original_constructor_arguments_and_learn_interception",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+      "status": "passed"
+    }
+  ],
+  "profile_samples_verified": 29,
+  "sampled_peak_rss_bytes": 8536518656,
+  "sampled_peak_pss_bytes": 7043260416,
+  "peak_by_role": {
+    "supervisor": {
+      "rss_bytes": 38821888,
+      "pss_bytes": 27626496,
+      "private_bytes": 27230208,
+      "processes": 1
+    },
+    "orchestrator": {
+      "rss_bytes": 26537984,
+      "pss_bytes": 15432704,
+      "private_bytes": 15052800,
+      "processes": 1
+    },
+    "resource_tracker": {
+      "rss_bytes": 13369344,
+      "pss_bytes": 6380544,
+      "private_bytes": 6172672,
+      "processes": 1
+    },
+    "manager": {
+      "rss_bytes": 26148864,
+      "pss_bytes": 15039488,
+      "private_bytes": 14659584,
+      "processes": 1
+    },
+    "A:learner": {
+      "rss_bytes": 1013399552,
+      "pss_bytes": 856030208,
+      "private_bytes": 837808128,
+      "processes": 1
+    },
+    "B:learner": {
+      "rss_bytes": 1005113344,
+      "pss_bytes": 847637504,
+      "private_bytes": 829423616,
+      "processes": 1
+    },
+    "A:world-0": {
+      "rss_bytes": 717881344,
+      "pss_bytes": 648922112,
+      "private_bytes": 632492032,
+      "processes": 1
+    },
+    "A:world-1": {
+      "rss_bytes": 808247296,
+      "pss_bytes": 668272640,
+      "private_bytes": 651747328,
+      "processes": 1
+    },
+    "A:world-2": {
+      "rss_bytes": 408055808,
+      "pss_bytes": 252793856,
+      "private_bytes": 236408832,
+      "processes": 1
+    },
+    "A:world-3": {
+      "rss_bytes": 845217792,
+      "pss_bytes": 690554880,
+      "private_bytes": 674050048,
+      "processes": 1
+    },
+    "B:world-0": {
+      "rss_bytes": 907665408,
+      "pss_bytes": 753514496,
+      "private_bytes": 737013760,
+      "processes": 1
+    },
+    "B:world-1": {
+      "rss_bytes": 886542336,
+      "pss_bytes": 732575744,
+      "private_bytes": 716025856,
+      "processes": 1
+    },
+    "B:world-2": {
+      "rss_bytes": 911204352,
+      "pss_bytes": 757127168,
+      "private_bytes": 740642816,
+      "processes": 1
+    },
+    "B:world-3": {
+      "rss_bytes": 928313344,
+      "pss_bytes": 771352576,
+      "private_bytes": 754581504,
+      "processes": 1
+    }
+  },
+  "phase_rows": [
+    {
+      "trial": "A",
+      "role": "learner",
+      "phase": "imports_before",
+      "rss_bytes": 24739840,
+      "pss_bytes": 14090240,
+      "private_bytes": 13520896
+    },
+    {
+      "trial": "A",
+      "role": "learner",
+      "phase": "imports_after",
+      "rss_bytes": 397512704,
+      "pss_bytes": 328487936,
+      "private_bytes": 272277504
+    },
+    {
+      "trial": "A",
+      "role": "learner",
+      "phase": "evaluation_env_before",
+      "rss_bytes": 397631488,
+      "pss_bytes": 306984960,
+      "private_bytes": 229175296
+    },
+    {
+      "trial": "A",
+      "role": "learner",
+      "phase": "evaluation_env_after",
+      "rss_bytes": 1013399552,
+      "pss_bytes": 919648256,
+      "private_bytes": 838930432
+    },
+    {
+      "trial": "A",
+      "role": "learner",
+      "phase": "vector_before",
+      "rss_bytes": 1013399552,
+      "pss_bytes": 919631872,
+      "private_bytes": 838897664
+    },
+    {
+      "trial": "B",
+      "role": "learner",
+      "phase": "imports_before",
+      "rss_bytes": 24678400,
+      "pss_bytes": 14080000,
+      "private_bytes": 13512704
+    },
+    {
+      "trial": "B",
+      "role": "learner",
+      "phase": "imports_after",
+      "rss_bytes": 397414400,
+      "pss_bytes": 306848768,
+      "private_bytes": 229040128
+    },
+    {
+      "trial": "B",
+      "role": "learner",
+      "phase": "evaluation_env_before",
+      "rss_bytes": 397533184,
+      "pss_bytes": 306910208,
+      "private_bytes": 229044224
+    },
+    {
+      "trial": "B",
+      "role": "learner",
+      "phase": "evaluation_env_after",
+      "rss_bytes": 1005113344,
+      "pss_bytes": 911369216,
+      "private_bytes": 830627840
+    },
+    {
+      "trial": "B",
+      "role": "learner",
+      "phase": "vector_before",
+      "rss_bytes": 1005113344,
+      "pss_bytes": 911321088,
+      "private_bytes": 830627840
+    },
+    {
+      "trial": "A",
+      "role": "world-0",
+      "phase": "world_before",
+      "rss_bytes": 303054848,
+      "pss_bytes": 219048960,
+      "private_bytes": 210571264
+    },
+    {
+      "trial": "A",
+      "role": "world-1",
+      "phase": "world_before",
+      "rss_bytes": 303230976,
+      "pss_bytes": 219159552,
+      "private_bytes": 210620416
+    },
+    {
+      "trial": "A",
+      "role": "world-2",
+      "phase": "world_before",
+      "rss_bytes": 302993408,
+      "pss_bytes": 219037696,
+      "private_bytes": 210558976
+    },
+    {
+      "trial": "A",
+      "role": "world-3",
+      "phase": "world_before",
+      "rss_bytes": 303419392,
+      "pss_bytes": 219167744,
+      "private_bytes": 210669568
+    },
+    {
+      "trial": "B",
+      "role": "world-0",
+      "phase": "world_before",
+      "rss_bytes": 303497216,
+      "pss_bytes": 219205632,
+      "private_bytes": 210661376
+    },
+    {
+      "trial": "B",
+      "role": "world-1",
+      "phase": "world_before",
+      "rss_bytes": 303493120,
+      "pss_bytes": 219159552,
+      "private_bytes": 210587648
+    },
+    {
+      "trial": "B",
+      "role": "world-2",
+      "phase": "world_before",
+      "rss_bytes": 303165440,
+      "pss_bytes": 219083776,
+      "private_bytes": 210599936
+    },
+    {
+      "trial": "B",
+      "role": "world-3",
+      "phase": "world_before",
+      "rss_bytes": 303304704,
+      "pss_bytes": 219091968,
+      "private_bytes": 210591744
+    }
+  ],
+  "limitations": [
+    "Constructor-only diagnostic; not original pytest fixture memory qualification. Orchestrator is stdlib instead of Torch-importing pytest parent; no complete-battery RSS saving inferred.",
+    "Instrumentation and guarded workers preserve constructor args but add code/events; paired original/candidate physical/RNG parity remains unrun."
+  ],
+  "constructor_denominator": {
+    "expected_worlds": 10,
+    "completed_worlds": 2,
+    "all_worlds_constructed": false,
+    "known_preparation_substeps_lower_bound": 400,
+    "known_fixture_physics_substeps_lower_bound": 0,
+    "interrupted_constructor_work": "unknown"
+  },
+  "trials": [
+    {
+      "arm": "A",
+      "status": "unconfirmed",
+      "ready": false
+    },
+    {
+      "arm": "B",
+      "status": "unconfirmed",
+      "ready": false
+    }
+  ],
+  "registered_cases": 28,
+  "counts": {
+    "passed": 28,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0
+  },
+  "exited_recorded_identities": [
+    {
+      "pid": 1162050,
+      "parent_pid": 1,
+      "start_ticks": 953465509,
+      "state": "R"
+    },
+    {
+      "pid": 1162225,
+      "parent_pid": 1162050,
+      "start_ticks": 953465610,
+      "state": "Z"
+    },
+    {
+      "pid": 1162337,
+      "parent_pid": 1162225,
+      "start_ticks": 953465620,
+      "state": "R"
+    },
+    {
+      "pid": 1162444,
+      "parent_pid": 1162225,
+      "start_ticks": 953465661,
+      "state": "R"
+    },
+    {
+      "pid": 1162520,
+      "parent_pid": 1162050,
+      "start_ticks": 953465745,
+      "state": "Z"
+    },
+    {
+      "pid": 1162903,
+      "parent_pid": 1162050,
+      "start_ticks": 953466282,
+      "state": "Z"
+    },
+    {
+      "pid": 1163143,
+      "parent_pid": 1162050,
+      "start_ticks": 953466932,
+      "state": "R"
+    },
+    {
+      "pid": 1163144,
+      "parent_pid": 1163143,
+      "start_ticks": 953466939,
+      "state": "S"
+    },
+    {
+      "pid": 1163145,
+      "parent_pid": 1163143,
+      "start_ticks": 953466939,
+      "state": "S"
+    },
+    {
+      "pid": 1163149,
+      "parent_pid": 1163143,
+      "start_ticks": 953466946,
+      "state": "R"
+    },
+    {
+      "pid": 1163150,
+      "parent_pid": 1163143,
+      "start_ticks": 953466946,
+      "state": "R"
+    },
+    {
+      "pid": 1163847,
+      "parent_pid": 1163149,
+      "start_ticks": 953467701,
+      "state": "S"
+    },
+    {
+      "pid": 1163848,
+      "parent_pid": 1163149,
+      "start_ticks": 953467701,
+      "state": "R"
+    },
+    {
+      "pid": 1163849,
+      "parent_pid": 1163149,
+      "start_ticks": 953467701,
+      "state": "R"
+    },
+    {
+      "pid": 1163850,
+      "parent_pid": 1163149,
+      "start_ticks": 953467701,
+      "state": "R"
+    },
+    {
+      "pid": 1163851,
+      "parent_pid": 1163150,
+      "start_ticks": 953467705,
+      "state": "R"
+    },
+    {
+      "pid": 1163852,
+      "parent_pid": 1163150,
+      "start_ticks": 953467705,
+      "state": "R"
+    },
+    {
+      "pid": 1163853,
+      "parent_pid": 1163150,
+      "start_ticks": 953467705,
+      "state": "R"
+    },
+    {
+      "pid": 1163854,
+      "parent_pid": 1163150,
+      "start_ticks": 953467706,
+      "state": "S"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.trial-memory.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/control-roles.json": {
+      "bytes": 613,
+      "sha256": "790190ce3f22d86a675aeb57eef30551f5903bb7a4ef876effc99ee21269fdb9"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163149-953466946.jsonl": {
+      "bytes": 2640,
+      "sha256": "61593e121392615985304f495188e75bcbc4968bd0807ce0ce816016f3644692"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163150-953466946.jsonl": {
+      "bytes": 2639,
+      "sha256": "e4bbe2a36eab09fd300a0b92ae09345545906268a03b22f456a2226283ab9b39"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163847-953467701.jsonl": {
+      "bytes": 383,
+      "sha256": "8738c0a82c937eaaa238bfacaf904afad8d2bd4b06d85ebb89d11f9a0f2b0439"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163848-953467701.jsonl": {
+      "bytes": 381,
+      "sha256": "9de0d25f0c1172ff785370d579cc1f340caf199110f80bce959ebb00887bdc07"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163849-953467701.jsonl": {
+      "bytes": 382,
+      "sha256": "cf0a7fda66ff83b5047268f3d17a2fbda0f7df879baaf96beb2ae3a58a9aca5c"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163850-953467701.jsonl": {
+      "bytes": 382,
+      "sha256": "2c3f3d28d7b44df0711ef73adfb293af32f23bb7fc90c90184b9141bb56f15e2"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163851-953467705.jsonl": {
+      "bytes": 383,
+      "sha256": "4b0bad7fbdabe674b31205fea706e5f20a5b01c81ce8d2f7e57e328b515499e7"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163852-953467705.jsonl": {
+      "bytes": 383,
+      "sha256": "f6db9e96384a3e02d3fdb8841b10370dbc41b9d660c41eaa05365a8c14fd08a6"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163853-953467705.jsonl": {
+      "bytes": 383,
+      "sha256": "64e9fbc5dde2bf8b11654faf6af74805ef5f2f767b0afc2b6fde6789613a9408"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/events/events-1163854-953467706.jsonl": {
+      "bytes": 383,
+      "sha256": "634f858d322e7dacaa6994745c7b47570dbee100eede59f7b9a6057fc719ecd8"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/R-A/description.json": {
+      "bytes": 1054,
+      "sha256": "f2c3584b0e5cbf43a50e52cde423c60722a484373c6ae641673a5cea92556590"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/R-A/specification.json": {
+      "bytes": 835,
+      "sha256": "8932c1d54201d012eeb826ea070a4759e057f389cf3cf87eaa32f6601600798b"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/R-B/description.json": {
+      "bytes": 1054,
+      "sha256": "d3488fbbdf1aa68234b73ab762176f70553cdc7d5ac5d84f18d7fe355cae6753"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/R-B/specification.json": {
+      "bytes": 835,
+      "sha256": "8932c1d54201d012eeb826ea070a4759e057f389cf3cf87eaa32f6601600798b"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_bounded_subprocess_profil0/cleanup.json": {
+      "bytes": 64,
+      "sha256": "52efddfd87739ef5625add685e35a87efcf7df8a1077d42c5c5bd0dca5f1f649"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_interrupted_event_tail_no0/events-17-123.jsonl": {
+      "bytes": 134,
+      "sha256": "92cb48a289a195fc3acee719478188b6b36fba8a87a88de6cc6ff196240400db"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/maps": {
+      "bytes": 25,
+      "sha256": "1e9096268b4ebb37ec5b867f3137771c22b7ebf16eb50df100d95a116ca482a8"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/smaps_rollup": {
+      "bytes": 75,
+      "sha256": "3b417ece0181ad222082d7d8dd2df8fa134ead3971c2e3896b067de4da856be5"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/stat": {
+      "bytes": 67,
+      "sha256": "a15778482f145157a93a84869be39a8485466fa811be9f80bdba3fdb654272c5"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/status": {
+      "bytes": 14,
+      "sha256": "b6ab98dd350bd58557233b18afeefabf1225149471b2e00ac70d7ba6919a4fda"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_original_constructor_argu0/R-A/description.json": {
+      "bytes": 524,
+      "sha256": "611e0d22d041af728820065bc4201b0493ae07ae6172ce30269207d9bfddf55a"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_original_constructor_argu0/R-A/specification.json": {
+      "bytes": 35,
+      "sha256": "6af43c8486494cae8688a7681f15ec59f14d0c20bda45d9acd7b2824b0fcebce"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_original_constructor_argu0/fixtures/R-A/initial-actor.pt": {
+      "bytes": 12,
+      "sha256": "2b9cc4a9db471dbe900f09fbe469af30efdd8a740f938e325120903fb274339d"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls/test_original_constructor_argu0/release": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/memory.jsonl": {
+      "bytes": 60264,
+      "sha256": "ed55fbd616c0de4743d81362964a7bf3e51fdf86f0529661901b9b566a0c683d"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/profile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/result.json": {
+      "bytes": 23773,
+      "sha256": "76bcaf167e8bd3b5eb26245cc5bccdc4fc5c56704e176b80c9a92bc769b79917"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/runtime.log": {
+      "bytes": 97,
+      "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/sync.log": {
+      "bytes": 1255,
+      "sha256": "7457692bb379a84de923d4eeebdf49d32cc23ceeb825bf87b973b6065a58423f"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/tests.log": {
+      "bytes": 99,
+      "sha256": "3cbec89b592cfb0ce15829aa7e2cf2f18e8363143f7a82778d11144919de76c2"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-01/tests.xml": {
+      "bytes": 3936,
+      "sha256": "2b852daec978da5102487a4ad7c5e9fd379a29b8bcdecb3cbf1a8c14d4e7a8af"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-deployment.json": {
+      "bytes": 214065,
+      "sha256": "b278bb0be3924f78118e8fd99860869eda49208484221b89487669dce5c8cc1a"
+    },
+    "runs/v0.0.11/trial-memory-ownership-repair-launch.log": {
+      "bytes": 236,
+      "sha256": "326da46b879e7b5210476ef57ee66c739f614904a0589df44c2c362e8c6aa0fa"
+    }
+  },
+  "fixture_bytes": 4728,
+  "receipt_bytes": 312677,
+  "supervision": {
+    "schema": "joxing-trial-memory-profile-v1",
+    "source_commit": "72047026de40c17912dfa498684afd816de7baad",
+    "protocol_sha256": "c617e6cdafb01423202ea690d9db314ba05705356a51c2f408f88e05cb666b24",
+    "supervisor": {
+      "pid": 1162050,
+      "parent_pid": 1,
+      "start_ticks": 953465509,
+      "state": "R"
+    },
+    "status": "capacity_limited",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "owned_identities": [
+          {
+            "pid": 1162225,
+            "parent_pid": 1162050,
+            "start_ticks": 953465610,
+            "state": "Z"
+          },
+          {
+            "pid": 1162337,
+            "parent_pid": 1162225,
+            "start_ticks": 953465620,
+            "state": "R"
+          },
+          {
+            "pid": 1162444,
+            "parent_pid": 1162225,
+            "start_ticks": 953465661,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 1.2436874844133854,
+        "peak_sampled_rss_bytes": 153333760,
+        "capacity": {
+          "available_memory_bytes": 37716295680,
+          "free_disk_bytes": 130759417856,
+          "fixture_bytes": 0,
+          "receipt_bytes": 3162,
+          "load": [
+            5.39208984375,
+            7.408203125,
+            9.009765625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 1.353372249752283
+      },
+      {
+        "stage": "runtime",
+        "command": [
+          "/home/ubuntu/joxing/trial-memory-ownership-repair-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import sys,numpy,mujoco,torch,stable_baselines3; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__}; print(v); assert v == {'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3', 'sb3': '2.7.1', 'torch': '2.10.0+cpu'}"
+        ],
+        "status": "completed",
+        "owned_identities": [
+          {
+            "pid": 1162225,
+            "parent_pid": 1162050,
+            "start_ticks": 953465610,
+            "state": "Z"
+          },
+          {
+            "pid": 1162337,
+            "parent_pid": 1162225,
+            "start_ticks": 953465620,
+            "state": "R"
+          },
+          {
+            "pid": 1162444,
+            "parent_pid": 1162225,
+            "start_ticks": 953465661,
+            "state": "R"
+          },
+          {
+            "pid": 1162520,
+            "parent_pid": 1162050,
+            "start_ticks": 953465745,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 5.258381670340896,
+        "peak_sampled_rss_bytes": 444186624,
+        "capacity": {
+          "available_memory_bytes": 37281153024,
+          "free_disk_bytes": 130759368704,
+          "fixture_bytes": 0,
+          "receipt_bytes": 4826,
+          "load": [
+            5.52099609375,
+            7.4013671875,
+            8.99853515625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 5.368896406143904
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/joxing/trial-memory-ownership-repair-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "--junitxml",
+          "/home/ubuntu/joxing/trial-memory-ownership-repair-20261102-01/runs/v0.0.11/trial-memory-ownership-repair-01/tests.xml",
+          "--basetemp",
+          "/home/ubuntu/joxing/trial-memory-ownership-repair-20261102-01/runs/v0.0.11/trial-memory-ownership-repair-01/fixtures/test-controls",
+          "tests/test_trial_memory.py",
+          "tests/test_process_ownership.py"
+        ],
+        "status": "completed",
+        "owned_identities": [
+          {
+            "pid": 1162225,
+            "parent_pid": 1162050,
+            "start_ticks": 953465610,
+            "state": "Z"
+          },
+          {
+            "pid": 1162337,
+            "parent_pid": 1162225,
+            "start_ticks": 953465620,
+            "state": "R"
+          },
+          {
+            "pid": 1162444,
+            "parent_pid": 1162225,
+            "start_ticks": 953465661,
+            "state": "R"
+          },
+          {
+            "pid": 1162520,
+            "parent_pid": 1162050,
+            "start_ticks": 953465745,
+            "state": "Z"
+          },
+          {
+            "pid": 1162903,
+            "parent_pid": 1162050,
+            "start_ticks": 953466282,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 6.3833710085600615,
+        "peak_sampled_rss_bytes": 445829120,
+        "capacity": {
+          "available_memory_bytes": 37487763456,
+          "free_disk_bytes": 130749751296,
+          "fixture_bytes": 950,
+          "receipt_bytes": 10701,
+          "load": [
+            5.5595703125,
+            7.3779296875,
+            8.982421875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 6.493936888873577,
+        "junit_counts": {
+          "passed": 28,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "stage": "profile",
+        "command": [
+          "/home/ubuntu/joxing/trial-memory-ownership-repair-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "joxing.trial_memory",
+          "--folder",
+          "/home/ubuntu/joxing/trial-memory-ownership-repair-20261102-01/runs/v0.0.11/trial-memory-ownership-repair-01",
+          "--packet",
+          "/home/ubuntu/joxing/trial-memory-ownership-repair-20261102-01/experiments/v0.0.11/trial-memory-ownership-repair-protocol.json"
+        ],
+        "status": "capacity_limited",
+        "owned_identities": [
+          {
+            "pid": 1162225,
+            "parent_pid": 1162050,
+            "start_ticks": 953465610,
+            "state": "Z"
+          },
+          {
+            "pid": 1162337,
+            "parent_pid": 1162225,
+            "start_ticks": 953465620,
+            "state": "R"
+          },
+          {
+            "pid": 1162444,
+            "parent_pid": 1162225,
+            "start_ticks": 953465661,
+            "state": "R"
+          },
+          {
+            "pid": 1162520,
+            "parent_pid": 1162050,
+            "start_ticks": 953465745,
+            "state": "Z"
+          },
+          {
+            "pid": 1162903,
+            "parent_pid": 1162050,
+            "start_ticks": 953466282,
+            "state": "Z"
+          },
+          {
+            "pid": 1163143,
+            "parent_pid": 1162050,
+            "start_ticks": 953466932,
+            "state": "S"
+          },
+          {
+            "pid": 1163144,
+            "parent_pid": 1163143,
+            "start_ticks": 953466939,
+            "state": "S"
+          },
+          {
+            "pid": 1163145,
+            "parent_pid": 1163143,
+            "start_ticks": 953466939,
+            "state": "S"
+          },
+          {
+            "pid": 1163149,
+            "parent_pid": 1163143,
+            "start_ticks": 953466946,
+            "state": "S"
+          },
+          {
+            "pid": 1163150,
+            "parent_pid": 1163143,
+            "start_ticks": 953466946,
+            "state": "S"
+          },
+          {
+            "pid": 1163847,
+            "parent_pid": 1163149,
+            "start_ticks": 953467701,
+            "state": "S"
+          },
+          {
+            "pid": 1163848,
+            "parent_pid": 1163149,
+            "start_ticks": 953467701,
+            "state": "R"
+          },
+          {
+            "pid": 1163849,
+            "parent_pid": 1163149,
+            "start_ticks": 953467701,
+            "state": "R"
+          },
+          {
+            "pid": 1163850,
+            "parent_pid": 1163149,
+            "start_ticks": 953467701,
+            "state": "R"
+          },
+          {
+            "pid": 1163851,
+            "parent_pid": 1163150,
+            "start_ticks": 953467705,
+            "state": "R"
+          },
+          {
+            "pid": 1163852,
+            "parent_pid": 1163150,
+            "start_ticks": 953467705,
+            "state": "R"
+          },
+          {
+            "pid": 1163853,
+            "parent_pid": 1163150,
+            "start_ticks": 953467705,
+            "state": "R"
+          },
+          {
+            "pid": 1163854,
+            "parent_pid": 1163150,
+            "start_ticks": 953467706,
+            "state": "S"
+          }
+        ],
+        "elapsed_s": 13.904025010764599,
+        "peak_sampled_rss_bytes": 8536518656,
+        "capacity": {
+          "available_memory_bytes": 29766565888,
+          "free_disk_bytes": 130748497920,
+          "fixture_bytes": 4728,
+          "receipt_bytes": 80113,
+          "load": [
+            6.5078125,
+            7.4921875,
+            8.99365234375
+          ]
+        },
+        "returncode": -15,
+        "wall_s": 14.062723860144615
+      }
+    ],
+    "trials": [
+      {
+        "arm": "A",
+        "status": "unconfirmed",
+        "ready": false
+      },
+      {
+        "arm": "B",
+        "status": "unconfirmed",
+        "ready": false
+      }
+    ],
+    "formal_native_evaluations": 0,
+    "formal_training_runs": 0,
+    "fixture_physics": "unknown until completed constructor events; partial on forced stop",
+    "initial_capacity": {
+      "available_memory_bytes": 37709557760,
+      "free_disk_bytes": 130769854464,
+      "fixture_bytes": 0,
+      "receipt_bytes": 0,
+      "load": [
+        5.07763671875,
+        7.380859375,
+        9.01025390625
+      ]
+    },
+    "events": [
+      {
+        "monotonic_s": 9534669.52353339,
+        "trial": "B",
+        "role": "learner",
+        "phase": "imports_before",
+        "identity": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 24678400,
+          "pss_bytes": 14080000,
+          "private_bytes": 13512704,
+          "libtorch_mapped": false
+        }
+      },
+      {
+        "monotonic_s": 9534669.523899252,
+        "trial": "A",
+        "role": "learner",
+        "phase": "imports_before",
+        "identity": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 24739840,
+          "pss_bytes": 14090240,
+          "private_bytes": 13520896,
+          "libtorch_mapped": false
+        }
+      },
+      {
+        "monotonic_s": 9534673.689303925,
+        "trial": "A",
+        "role": "learner",
+        "phase": "imports_after",
+        "identity": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 397512704,
+          "pss_bytes": 328487936,
+          "private_bytes": 272277504,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534673.73563124,
+        "trial": "A",
+        "role": "learner",
+        "phase": "evaluation_env_before",
+        "identity": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 397631488,
+          "pss_bytes": 306984960,
+          "private_bytes": 229175296,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534673.740969485,
+        "trial": "B",
+        "role": "learner",
+        "phase": "imports_after",
+        "identity": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 397414400,
+          "pss_bytes": 306848768,
+          "private_bytes": 229040128,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534673.784502916,
+        "trial": "B",
+        "role": "learner",
+        "phase": "evaluation_env_before",
+        "identity": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 397533184,
+          "pss_bytes": 306910208,
+          "private_bytes": 229044224,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534676.933650209,
+        "trial": "A",
+        "role": "learner",
+        "phase": "evaluation_env_after",
+        "identity": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 1013399552,
+          "pss_bytes": 919648256,
+          "private_bytes": 838930432,
+          "libtorch_mapped": true
+        },
+        "specification": {
+          "balance_config": {
+            "dt_s": 0.001,
+            "control_s": 0.01,
+            "episode_s": 20.0,
+            "preparation_s": 0.2,
+            "max_reset_penetration_m": 0.002
+          },
+          "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+          "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+          "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+          "observation_slices": {
+            "relative_qpos": [
+              0,
+              85
+            ],
+            "velocity": [
+              85,
+              170
+            ],
+            "activation": [
+              170,
+              870
+            ],
+            "pelvis_up": [
+              870,
+              873
+            ],
+            "relative_pelvis": [
+              873,
+              876
+            ],
+            "hand_error": [
+              876,
+              882
+            ],
+            "support": [
+              882,
+              885
+            ],
+            "previous_action": [
+              885,
+              1023
+            ]
+          }
+        },
+        "muscles": 700,
+        "preparation_substeps": 200,
+        "physics_substeps": 0
+      },
+      {
+        "monotonic_s": 9534676.974927608,
+        "trial": "A",
+        "role": "learner",
+        "phase": "vector_before",
+        "identity": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163149,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 1013399552,
+          "pss_bytes": 919631872,
+          "private_bytes": 838897664,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534676.98186318,
+        "trial": "B",
+        "role": "learner",
+        "phase": "evaluation_env_after",
+        "identity": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 1005113344,
+          "pss_bytes": 911369216,
+          "private_bytes": 830627840,
+          "libtorch_mapped": true
+        },
+        "specification": {
+          "balance_config": {
+            "dt_s": 0.001,
+            "control_s": 0.01,
+            "episode_s": 20.0,
+            "preparation_s": 0.2,
+            "max_reset_penetration_m": 0.002
+          },
+          "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+          "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+          "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+          "observation_slices": {
+            "relative_qpos": [
+              0,
+              85
+            ],
+            "velocity": [
+              85,
+              170
+            ],
+            "activation": [
+              170,
+              870
+            ],
+            "pelvis_up": [
+              870,
+              873
+            ],
+            "relative_pelvis": [
+              873,
+              876
+            ],
+            "hand_error": [
+              876,
+              882
+            ],
+            "support": [
+              882,
+              885
+            ],
+            "previous_action": [
+              885,
+              1023
+            ]
+          }
+        },
+        "muscles": 700,
+        "preparation_substeps": 200,
+        "physics_substeps": 0
+      },
+      {
+        "monotonic_s": 9534677.018964913,
+        "trial": "B",
+        "role": "learner",
+        "phase": "vector_before",
+        "identity": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163150,
+          "parent_pid": 1163143,
+          "start_ticks": 953466946,
+          "state": "R",
+          "rss_bytes": 1005113344,
+          "pss_bytes": 911321088,
+          "private_bytes": 830627840,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.124821572,
+        "trial": "B",
+        "role": "world-0",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163851,
+          "parent_pid": 1163150,
+          "start_ticks": 953467705,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163851,
+          "parent_pid": 1163150,
+          "start_ticks": 953467705,
+          "state": "R",
+          "rss_bytes": 303497216,
+          "pss_bytes": 219205632,
+          "private_bytes": 210661376,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.174686488,
+        "trial": "B",
+        "role": "world-3",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163854,
+          "parent_pid": 1163150,
+          "start_ticks": 953467706,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163854,
+          "parent_pid": 1163150,
+          "start_ticks": 953467706,
+          "state": "R",
+          "rss_bytes": 303304704,
+          "pss_bytes": 219091968,
+          "private_bytes": 210591744,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.211551892,
+        "trial": "A",
+        "role": "world-0",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163847,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163847,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R",
+          "rss_bytes": 303054848,
+          "pss_bytes": 219048960,
+          "private_bytes": 210571264,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.253243644,
+        "trial": "B",
+        "role": "world-1",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163852,
+          "parent_pid": 1163150,
+          "start_ticks": 953467705,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163852,
+          "parent_pid": 1163150,
+          "start_ticks": 953467705,
+          "state": "R",
+          "rss_bytes": 303493120,
+          "pss_bytes": 219159552,
+          "private_bytes": 210587648,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.3064058,
+        "trial": "A",
+        "role": "world-1",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163848,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163848,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R",
+          "rss_bytes": 303230976,
+          "pss_bytes": 219159552,
+          "private_bytes": 210620416,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.31839096,
+        "trial": "A",
+        "role": "world-3",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163850,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163850,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R",
+          "rss_bytes": 303419392,
+          "pss_bytes": 219167744,
+          "private_bytes": 210669568,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.335820884,
+        "trial": "B",
+        "role": "world-2",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163853,
+          "parent_pid": 1163150,
+          "start_ticks": 953467705,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163853,
+          "parent_pid": 1163150,
+          "start_ticks": 953467705,
+          "state": "R",
+          "rss_bytes": 303165440,
+          "pss_bytes": 219083776,
+          "private_bytes": 210599936,
+          "libtorch_mapped": true
+        }
+      },
+      {
+        "monotonic_s": 9534681.64138394,
+        "trial": "A",
+        "role": "world-2",
+        "phase": "world_before",
+        "identity": {
+          "pid": 1163849,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R"
+        },
+        "self_memory": {
+          "pid": 1163849,
+          "parent_pid": 1163149,
+          "start_ticks": 953467701,
+          "state": "R",
+          "rss_bytes": 302993408,
+          "pss_bytes": 219037696,
+          "private_bytes": 210558976,
+          "libtorch_mapped": true
+        }
+      }
+    ],
+    "constructor_denominator": {
+      "expected_worlds": 10,
+      "completed_worlds": 2,
+      "all_worlds_constructed": false,
+      "known_preparation_substeps_lower_bound": 400,
+      "known_fixture_physics_substeps_lower_bound": 0,
+      "interrupted_constructor_work": "unknown"
+    },
+    "wall_s": 28.177219508215785,
+    "owned_identities": [
+      {
+        "pid": 1162225,
+        "parent_pid": 1162050,
+        "start_ticks": 953465610,
+        "state": "Z"
+      },
+      {
+        "pid": 1162337,
+        "parent_pid": 1162225,
+        "start_ticks": 953465620,
+        "state": "R"
+      },
+      {
+        "pid": 1162444,
+        "parent_pid": 1162225,
+        "start_ticks": 953465661,
+        "state": "R"
+      },
+      {
+        "pid": 1162520,
+        "parent_pid": 1162050,
+        "start_ticks": 953465745,
+        "state": "Z"
+      },
+      {
+        "pid": 1162903,
+        "parent_pid": 1162050,
+        "start_ticks": 953466282,
+        "state": "Z"
+      },
+      {
+        "pid": 1163143,
+        "parent_pid": 1162050,
+        "start_ticks": 953466932,
+        "state": "S"
+      },
+      {
+        "pid": 1163144,
+        "parent_pid": 1163143,
+        "start_ticks": 953466939,
+        "state": "S"
+      },
+      {
+        "pid": 1163145,
+        "parent_pid": 1163143,
+        "start_ticks": 953466939,
+        "state": "S"
+      },
+      {
+        "pid": 1163149,
+        "parent_pid": 1163143,
+        "start_ticks": 953466946,
+        "state": "S"
+      },
+      {
+        "pid": 1163150,
+        "parent_pid": 1163143,
+        "start_ticks": 953466946,
+        "state": "S"
+      },
+      {
+        "pid": 1163847,
+        "parent_pid": 1163149,
+        "start_ticks": 953467701,
+        "state": "S"
+      },
+      {
+        "pid": 1163848,
+        "parent_pid": 1163149,
+        "start_ticks": 953467701,
+        "state": "R"
+      },
+      {
+        "pid": 1163849,
+        "parent_pid": 1163149,
+        "start_ticks": 953467701,
+        "state": "R"
+      },
+      {
+        "pid": 1163850,
+        "parent_pid": 1163149,
+        "start_ticks": 953467701,
+        "state": "R"
+      },
+      {
+        "pid": 1163851,
+        "parent_pid": 1163150,
+        "start_ticks": 953467705,
+        "state": "R"
+      },
+      {
+        "pid": 1163852,
+        "parent_pid": 1163150,
+        "start_ticks": 953467705,
+        "state": "R"
+      },
+      {
+        "pid": 1163853,
+        "parent_pid": 1163150,
+        "start_ticks": 953467705,
+        "state": "R"
+      },
+      {
+        "pid": 1163854,
+        "parent_pid": 1163150,
+        "start_ticks": 953467706,
+        "state": "S"
+      }
+    ],
+    "final_live_recorded": [],
+    "guards_violated": false
+  },
+  "observed_utc": "2026-11-02T05:37:40Z"
+}

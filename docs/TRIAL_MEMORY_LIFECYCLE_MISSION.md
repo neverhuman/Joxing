@@ -1,3 +1,7 @@
+Profile concluded capacity-limited; measured evidence in TRIAL_MEMORY_PROFILE_RESULTS.md.
+Current next packet: DEFERRED_EVALUATION_ALLOCATION_MISSION.md. No active job.
+The original profile proposals below are preserved; do not repeat unchanged.
+
 Current execution packet: experiments/v0.0.11/trial-memory-ownership-repair-protocol.json.
 Original first ownership stop is audited in research/H15.md. The named repair
 adds ancestry binding for post-inventory newborns; model/config/caps unchanged.

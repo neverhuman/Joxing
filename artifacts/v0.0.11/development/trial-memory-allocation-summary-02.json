@@ -1,0 +1,150 @@
+{
+  "schema": "joxing-h15-allocation-summary-v1",
+  "source_commit": "72047026de40c17912dfa498684afd816de7baad",
+  "protocol_sha256": "c617e6cdafb01423202ea690d9db314ba05705356a51c2f408f88e05cb666b24",
+  "trial_config_sha256": "2e01b894e8420bdda3ed726e950436192d1672dda7fe147540a3fafdfd6ed3f7",
+  "status": "capacity_limited_diagnostic",
+  "source_files_verified": 716,
+  "control_tests": {
+    "attempt01_passed": 24,
+    "attempt02_passed": 28
+  },
+  "profile_attempts": [
+    {
+      "id": 1,
+      "status": "ownership_setup_failed",
+      "learner_processes_launched": 2,
+      "constructor_slots_unconfirmed": 10
+    },
+    {
+      "id": 2,
+      "status": "capacity_limited",
+      "learner_slots_unconfirmed": 2,
+      "constructors_completed": 2,
+      "constructors_unconfirmed": 8
+    }
+  ],
+  "allocations": [
+    {
+      "trial": "A",
+      "before_rss_bytes": 397631488,
+      "after_rss_bytes": 1013399552,
+      "constructor_rss_delta_bytes": 615768064
+    },
+    {
+      "trial": "B",
+      "before_rss_bytes": 397533184,
+      "after_rss_bytes": 1005113344,
+      "constructor_rss_delta_bytes": 607580160
+    }
+  ],
+  "combined_constructor_rss_delta_bytes": 1223348224,
+  "sampled_peak_rss_bytes": 8536518656,
+  "hard_rss_cap_bytes": 8589934592,
+  "planned_stop_rss_bytes": 8053063680,
+  "samples_verified": 29,
+  "observed_median_gap_s": 0.4726460063830018,
+  "observed_max_gap_s": 1.1977797765284777,
+  "largest_observed_rss_jump_bytes": 3157102592,
+  "peak_by_role": {
+    "supervisor": {
+      "rss_bytes": 38821888,
+      "pss_bytes": 27626496,
+      "private_bytes": 27230208,
+      "processes": 1
+    },
+    "orchestrator": {
+      "rss_bytes": 26537984,
+      "pss_bytes": 15432704,
+      "private_bytes": 15052800,
+      "processes": 1
+    },
+    "resource_tracker": {
+      "rss_bytes": 13369344,
+      "pss_bytes": 6380544,
+      "private_bytes": 6172672,
+      "processes": 1
+    },
+    "manager": {
+      "rss_bytes": 26148864,
+      "pss_bytes": 15039488,
+      "private_bytes": 14659584,
+      "processes": 1
+    },
+    "A:learner": {
+      "rss_bytes": 1013399552,
+      "pss_bytes": 856030208,
+      "private_bytes": 837808128,
+      "processes": 1
+    },
+    "B:learner": {
+      "rss_bytes": 1005113344,
+      "pss_bytes": 847637504,
+      "private_bytes": 829423616,
+      "processes": 1
+    },
+    "A:world-0": {
+      "rss_bytes": 717881344,
+      "pss_bytes": 648922112,
+      "private_bytes": 632492032,
+      "processes": 1
+    },
+    "A:world-1": {
+      "rss_bytes": 808247296,
+      "pss_bytes": 668272640,
+      "private_bytes": 651747328,
+      "processes": 1
+    },
+    "A:world-2": {
+      "rss_bytes": 408055808,
+      "pss_bytes": 252793856,
+      "private_bytes": 236408832,
+      "processes": 1
+    },
+    "A:world-3": {
+      "rss_bytes": 845217792,
+      "pss_bytes": 690554880,
+      "private_bytes": 674050048,
+      "processes": 1
+    },
+    "B:world-0": {
+      "rss_bytes": 907665408,
+      "pss_bytes": 753514496,
+      "private_bytes": 737013760,
+      "processes": 1
+    },
+    "B:world-1": {
+      "rss_bytes": 886542336,
+      "pss_bytes": 732575744,
+      "private_bytes": 716025856,
+      "processes": 1
+    },
+    "B:world-2": {
+      "rss_bytes": 911204352,
+      "pss_bytes": 757127168,
+      "private_bytes": 740642816,
+      "processes": 1
+    },
+    "B:world-3": {
+      "rss_bytes": 928313344,
+      "pss_bytes": 771352576,
+      "private_bytes": 754581504,
+      "processes": 1
+    }
+  },
+  "known_preparation_substeps_lower_bound": 400,
+  "other_initialization_physics": "unknown after interruption",
+  "formal_native_evaluations": 0,
+  "formal_training_runs": 0,
+  "actor_identity": "not_applicable; SAC construction not reached",
+  "owned_identities_exited": 19,
+  "live_writers": [],
+  "raw_files": 35,
+  "raw_bytes": 317405,
+  "limitations": [
+    "Constructor-only diagnostic; not original pytest fixture memory qualification. Orchestrator is stdlib instead of Torch-importing pytest parent; no complete-battery RSS saving inferred.",
+    "Instrumentation and guarded workers preserve constructor args but add code/events; paired original/candidate physical/RNG parity remains unrun."
+  ],
+  "decision": "Measure supports deferred allocation candidate, no demonstrated savings or exact parity. Fast RSS watchdog prerequisite.",
+  "next_mission": "docs/DEFERRED_EVALUATION_ALLOCATION_MISSION.md"
+}

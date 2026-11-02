@@ -1,3 +1,6 @@
+Current: [H15 allocation results](TRIAL_MEMORY_PROFILE_RESULTS.md) and
+[deferred-allocation parity mission](DEFERRED_EVALUATION_ALLOCATION_MISSION.md).
+
 Current worker-ready phase: [H15trial-memory lifecycle profile](TRIAL_MEMORY_LIFECYCLE_MISSION.md).
 H14history repair passes, but fresh learner memory still exceeds8GiB.
 
