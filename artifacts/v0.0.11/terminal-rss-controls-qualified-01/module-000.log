@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/terminal-rss-controls-20261102-01
+configfile: pyproject.toml
+collecting ... collected 13 items
+
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid] PASSED [  7%]
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag] PASSED [ 15%]
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused] PASSED [ 23%]
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero] PASSED [ 30%]
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed] PASSED [ 38%]
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads] PASSED [ 46%]
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field] PASSED [ 53%]
+tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm] PASSED [ 61%]
+tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution PASSED [ 69%]
+tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail PASSED [ 76%]
+tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2] PASSED [ 84%]
+tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3] PASSED [ 92%]
+tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-000.xml -
+============================== 13 passed in 0.57s ==============================

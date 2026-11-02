@@ -30,7 +30,8 @@ def main():
     args = parser.parse_args()
     p = json.loads((ROOT / args.packet).read_text())
     if (
-        p["schema"] != "joxing-deferred-native-parity-v1"
+        p["schema"]
+        not in ("joxing-deferred-native-parity-v1", "joxing-native-teardown-v1")
         or canonical(p) != args.protocol_sha256
     ):
         raise ValueError("Frozen native parity protocol")
@@ -88,6 +89,7 @@ def main():
             raise ValueError("Dirty native source")
 
     verify()
+    constructor_only = p["schema"] == "joxing-native-teardown-v1"
     out = ROOT / p["output"]
     out.parent.mkdir(parents=True, exist_ok=True)
     lease = (out.parent / ".deferred-native.lock").open("a+")
@@ -214,6 +216,8 @@ def main():
                     str(remaining),
                     "--max-gap-s",
                     str(p["max_monitor_gap_s"]),
+                    "--rss-reader",
+                    p.get("rss_reader", "strict-v2"),
                 ]
                 guard_log = (out / (name + "-watchdog.log")).open("w")
                 guard = subprocess.Popen(
@@ -273,6 +277,12 @@ def main():
                 ):
                     raise RuntimeError(
                         "Native parity watcher stop/fault: " + str(watch.get("reason"))
+                    )
+                if watch.get(
+                    "peak_capacity_charge_bytes", watch["peak_sampled_rss_bytes"]
+                ) > p["owned_rss_bytes"] or watch.get("pending_retirements"):
+                    raise RuntimeError(
+                        "Native watcher capacity/pending retirement fault"
                     )
                 guard = None
             if code:
@@ -342,7 +352,9 @@ def main():
             command = [
                 python,
                 "-m",
-                "joxing.deferred_qualification",
+                "joxing.native_teardown"
+                if constructor_only
+                else "joxing.deferred_qualification",
                 "--folder",
                 str(fixtures / name),
                 "--slot",
@@ -357,6 +369,28 @@ def main():
                 str(out / (name + "-watchdog.ready")),
             ]
             stage(name, command, p["per_slot_wall_s"], slot=slot)
+            if constructor_only:
+                facts = json.loads(
+                    (fixtures / name / "constructor-result.json").read_text()
+                )
+                worker = facts["worker"]
+                key = f"{worker['pid']}:{worker['start']}"
+                retirement = row["watchdog"]["retirement_records"].get(key)
+                if (
+                    retirement is None
+                    or not retirement["released"]
+                    or retirement["highwater_charge_bytes"] <= 0
+                    or retirement["max_hold_s"] > 0.1
+                ):
+                    raise ValueError("Native worker retirement path not qualified")
+                slot.update(status="completed", facts=facts, retirement=retirement)
+                report["physics_credit"] = ledger.snapshot()
+                if (
+                    report["physics_credit"]["used"] != 200
+                    or report["physics_credit"]["pending"]
+                ):
+                    raise ValueError("Constructor physics denominator")
+                continue
             semantic = json.loads(
                 (fixtures / name / "semantic-result.json").read_text()
             )
@@ -370,11 +404,14 @@ def main():
             report["physics_credit"] = ledger.snapshot()
             if report["physics_credit"]["pending"]:
                 raise ValueError("Unknown physics work cannot qualify")
-        from joxing.deferred_qualification import compare_slots
+        if constructor_only:
+            report["constructor_gate_qualified"] = True
+        else:
+            from joxing.deferred_qualification import compare_slots
 
-        report["comparison"] = compare_slots(
-            {s["id"]: str(fixtures / s["id"]) for s in report["rows"]}
-        )
+            report["comparison"] = compare_slots(
+                {s["id"]: str(fixtures / s["id"]) for s in report["rows"]}
+            )
         verify()
         report["status"] = "completed"
     except BaseException as error:  # noqa: BLE001 -- retain every attempted/not_run slot

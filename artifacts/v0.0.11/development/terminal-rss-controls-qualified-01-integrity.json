@@ -1,0 +1,1695 @@
+{
+  "schema": "joxing-isolated-source-independent-v1",
+  "status": "verified_completed_attempt",
+  "source_commit": "c0e2aa1a693f2112191f6147aa185f79a3526c1e",
+  "protocol_sha256": "e3a1e07bef567d2035e92ff08c18070dc42828738b4f08165de8d51db75090e4",
+  "source_files_verified": 729,
+  "historical_objects_verified": 5,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+      "status": "passed"
+    }
+  ],
+  "watchdog_controls": [
+    {
+      "path": "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_actual_watchdog_stops_own0/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "strict-v2",
+      "status": "exited",
+      "root": {
+        "pid": 2932524,
+        "start_ticks": 954559608
+      },
+      "supervisor": {
+        "pid": 2932513,
+        "start_ticks": 954559571
+      },
+      "watchdog": {
+        "pid": 2932525,
+        "parent_pid": 2932513,
+        "start_ticks": 954559608,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 132866048,
+        "hard_rss": 233529344,
+        "process_cap": 8,
+        "wall_s": 6.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": null
+      },
+      "samples": 4,
+      "peak_sampled_rss_bytes": 60735488,
+      "max_sample_gap_s": 0.02079119347035885,
+      "max_probe_s": 0.0006848033517599106,
+      "peak_processes": 3,
+      "peak_capacity_charge_bytes": 60735488,
+      "peak_retiring_rss_charge_bytes": 0,
+      "wall_s": 0.06286470405757427,
+      "last_sample_rss_bytes": 47661056,
+      "last_sample_capacity_charge_bytes": 47661056,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 47661056,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9545596.180023912,
+      "owned_identities": [
+        {
+          "pid": 2932524,
+          "parent_pid": 2932513,
+          "start_ticks": 954559608,
+          "state": "S"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9545596.117822401,
+          "rss_bytes": 60727296,
+          "capacity_charge_bytes": 60727296,
+          "observed_rss_bytes": 60727296,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545596.138611464,
+          "rss_bytes": 60735488,
+          "capacity_charge_bytes": 60735488,
+          "observed_rss_bytes": 60735488,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02078906260430813,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545596.159402657,
+          "rss_bytes": 60735488,
+          "capacity_charge_bytes": 60735488,
+          "observed_rss_bytes": 60735488,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02079119347035885,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545596.180023912,
+          "rss_bytes": 47661056,
+          "capacity_charge_bytes": 47661056,
+          "observed_rss_bytes": 47661056,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020621255040168762,
+          "processes": 2
+        }
+      ],
+      "reason": "all_owned_exited",
+      "final_live": [],
+      "retirement_records": {},
+      "pending_retirements": []
+    },
+    {
+      "path": "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_actual_watchdog_stops_own1/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "strict-v2",
+      "status": "stopped",
+      "root": {
+        "pid": 2932527,
+        "start_ticks": 954559620
+      },
+      "supervisor": {
+        "pid": 2932513,
+        "start_ticks": 954559571
+      },
+      "watchdog": {
+        "pid": 2932528,
+        "parent_pid": 2932513,
+        "start_ticks": 954559620,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 132866048,
+        "hard_rss": 233529344,
+        "process_cap": 8,
+        "wall_s": 6.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": null
+      },
+      "samples": 8,
+      "peak_sampled_rss_bytes": 139067392,
+      "max_sample_gap_s": 0.021341796964406967,
+      "max_probe_s": 0.0012114811688661575,
+      "peak_processes": 4,
+      "peak_capacity_charge_bytes": 139067392,
+      "peak_retiring_rss_charge_bytes": 0,
+      "wall_s": 0.15868491306900978,
+      "last_sample_rss_bytes": 139067392,
+      "last_sample_capacity_charge_bytes": 139067392,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 139067392,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9545596.38379091,
+      "owned_identities": [
+        {
+          "pid": 2932527,
+          "parent_pid": 2932513,
+          "start_ticks": 954559620,
+          "state": "S"
+        },
+        {
+          "pid": 2932529,
+          "parent_pid": 2932527,
+          "start_ticks": 954559623,
+          "state": "S"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9545596.236338235,
+          "rss_bytes": 60870656,
+          "capacity_charge_bytes": 60870656,
+          "observed_rss_bytes": 60870656,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545596.25738322,
+          "rss_bytes": 81616896,
+          "capacity_charge_bytes": 81616896,
+          "observed_rss_bytes": 81616896,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021044984459877014,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9545596.27829256,
+          "rss_bytes": 88723456,
+          "capacity_charge_bytes": 88723456,
+          "observed_rss_bytes": 88723456,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02090933918952942,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9545596.299237836,
+          "rss_bytes": 104452096,
+          "capacity_charge_bytes": 104452096,
+          "observed_rss_bytes": 104452096,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02094527706503868,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9545596.320244348,
+          "rss_bytes": 105504768,
+          "capacity_charge_bytes": 105504768,
+          "observed_rss_bytes": 105504768,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02100651152431965,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9545596.34125115,
+          "rss_bytes": 122286080,
+          "capacity_charge_bytes": 122286080,
+          "observed_rss_bytes": 122286080,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02100680209696293,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9545596.362449113,
+          "rss_bytes": 122286080,
+          "capacity_charge_bytes": 122286080,
+          "observed_rss_bytes": 122286080,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021197963505983353,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9545596.38379091,
+          "rss_bytes": 139067392,
+          "capacity_charge_bytes": 139067392,
+          "observed_rss_bytes": 139067392,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021341796964406967,
+          "processes": 4
+        }
+      ],
+      "reason": "planned_rss",
+      "stop_sample": [
+        {
+          "pid": 2932513,
+          "start_ticks": 954559571,
+          "rss_bytes": 32202752,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 32202752,
+          "kind": "observed"
+        },
+        {
+          "pid": 2932528,
+          "start_ticks": 954559620,
+          "rss_bytes": 15466496,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 15466496,
+          "kind": "observed"
+        },
+        {
+          "pid": 2932527,
+          "start_ticks": 954559620,
+          "rss_bytes": 13213696,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 13213696,
+          "kind": "observed"
+        },
+        {
+          "pid": 2932529,
+          "start_ticks": 954559623,
+          "rss_bytes": 78184448,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 78184448,
+          "kind": "observed"
+        }
+      ],
+      "final_live": [],
+      "retirement_records": {},
+      "pending_retirements": []
+    },
+    {
+      "path": "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_actual_exit_uses_nonzero_0/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "terminal-mm-reserve-v3",
+      "status": "exited",
+      "root": {
+        "pid": 2932469,
+        "start_ticks": 954559453
+      },
+      "supervisor": {
+        "pid": 2932466,
+        "start_ticks": 954559416
+      },
+      "watchdog": {
+        "pid": 2932470,
+        "parent_pid": 2932466,
+        "start_ticks": 954559453,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 837623808,
+        "hard_rss": 1106059264,
+        "process_cap": 8,
+        "wall_s": 5.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": 0.1
+      },
+      "samples": 23,
+      "peak_sampled_rss_bytes": 596922368,
+      "max_sample_gap_s": 0.023940594866871834,
+      "max_probe_s": 0.0037996023893356323,
+      "peak_processes": 3,
+      "peak_capacity_charge_bytes": 596922368,
+      "peak_retiring_rss_charge_bytes": 549130240,
+      "wall_s": 0.4668667111545801,
+      "last_sample_rss_bytes": 47792128,
+      "last_sample_capacity_charge_bytes": 47792128,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 47792128,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9545595.032913698,
+      "owned_identities": [
+        {
+          "pid": 2932469,
+          "parent_pid": 2932466,
+          "start_ticks": 954559453,
+          "state": "R"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9545594.56677439,
+          "rss_bytes": 60035072,
+          "capacity_charge_bytes": 60035072,
+          "observed_rss_bytes": 60035072,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.587908303,
+          "rss_bytes": 89071616,
+          "capacity_charge_bytes": 89071616,
+          "observed_rss_bytes": 89071616,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021133912727236748,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.608765503,
+          "rss_bytes": 127569920,
+          "capacity_charge_bytes": 127569920,
+          "observed_rss_bytes": 127569920,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020857200026512146,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.62956289,
+          "rss_bytes": 168587264,
+          "capacity_charge_bytes": 168587264,
+          "observed_rss_bytes": 168587264,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02079738676548004,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.650338955,
+          "rss_bytes": 209326080,
+          "capacity_charge_bytes": 209326080,
+          "observed_rss_bytes": 209326080,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020776065066456795,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.671154687,
+          "rss_bytes": 245321728,
+          "capacity_charge_bytes": 245321728,
+          "observed_rss_bytes": 245321728,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020815731957554817,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.692024952,
+          "rss_bytes": 278798336,
+          "capacity_charge_bytes": 278798336,
+          "observed_rss_bytes": 278798336,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020870264619588852,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.712961,
+          "rss_bytes": 315674624,
+          "capacity_charge_bytes": 315674624,
+          "observed_rss_bytes": 315674624,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02093604765832424,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.733920105,
+          "rss_bytes": 351997952,
+          "capacity_charge_bytes": 351997952,
+          "observed_rss_bytes": 351997952,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02095910534262657,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.75491295,
+          "rss_bytes": 390205440,
+          "capacity_charge_bytes": 390205440,
+          "observed_rss_bytes": 390205440,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02099284529685974,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.776083332,
+          "rss_bytes": 431362048,
+          "capacity_charge_bytes": 431362048,
+          "observed_rss_bytes": 431362048,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02117038145661354,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.797238924,
+          "rss_bytes": 472690688,
+          "capacity_charge_bytes": 472690688,
+          "observed_rss_bytes": 472690688,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021155592054128647,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.81821498,
+          "rss_bytes": 514215936,
+          "capacity_charge_bytes": 514215936,
+          "observed_rss_bytes": 514215936,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020976057276129723,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.839439975,
+          "rss_bytes": 552751104,
+          "capacity_charge_bytes": 552751104,
+          "observed_rss_bytes": 552751104,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021224994212388992,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.860038243,
+          "rss_bytes": 589844480,
+          "capacity_charge_bytes": 589844480,
+          "observed_rss_bytes": 589844480,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020598268136382103,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.88077592,
+          "rss_bytes": 596922368,
+          "capacity_charge_bytes": 596922368,
+          "observed_rss_bytes": 596922368,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020737675949931145,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.901408715,
+          "rss_bytes": 596922368,
+          "capacity_charge_bytes": 596922368,
+          "observed_rss_bytes": 596922368,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020632795989513397,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.922308523,
+          "rss_bytes": 596922368,
+          "capacity_charge_bytes": 596922368,
+          "observed_rss_bytes": 596922368,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020899808034300804,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.943296392,
+          "rss_bytes": 596922368,
+          "capacity_charge_bytes": 596922368,
+          "observed_rss_bytes": 596922368,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020987868309020996,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.964270864,
+          "rss_bytes": 596922368,
+          "capacity_charge_bytes": 596922368,
+          "observed_rss_bytes": 596922368,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020974472165107727,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545594.988207204,
+          "rss_bytes": 47792128,
+          "capacity_charge_bytes": 596922368,
+          "observed_rss_bytes": 47792128,
+          "retiring_rss_charge_bytes": 549130240,
+          "gap_s": 0.02393634058535099,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545595.0121478,
+          "rss_bytes": 47792128,
+          "capacity_charge_bytes": 596922368,
+          "observed_rss_bytes": 47792128,
+          "retiring_rss_charge_bytes": 549130240,
+          "gap_s": 0.023940594866871834,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9545595.032913698,
+          "rss_bytes": 47792128,
+          "capacity_charge_bytes": 47792128,
+          "observed_rss_bytes": 47792128,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020765898749232292,
+          "processes": 2
+        }
+      ],
+      "reason": "all_owned_exited",
+      "final_live": [],
+      "retirement_records": {
+        "2932469:954559453": {
+          "pid": 2932469,
+          "start_ticks": 954559453,
+          "first_retiring_s": 9545594.988196192,
+          "evidence": {
+            "pid": 2932469,
+            "start_ticks": 954559453,
+            "before": {
+              "state": "R",
+              "parent_pid": 2932466,
+              "flags": 4194316,
+              "start_ticks": 954559453
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 2932466,
+              "flags": 4194316,
+              "start_ticks": 954559453
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 2932466,
+              "flags": 4194316,
+              "start_ticks": 954559453
+            },
+            "tasks": [
+              "2932469"
+            ],
+            "after_tasks": [
+              "2932469"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 549130240,
+          "samples": 2,
+          "max_hold_s": 0.044711584225296974,
+          "released": true,
+          "released_s": 9545595.032907777
+        }
+      },
+      "pending_retirements": []
+    }
+  ],
+  "registered_cases": 35,
+  "counts": {
+    "passed": 35,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0
+  },
+  "exited_recorded_identities": [
+    {
+      "pid": 2932151,
+      "parent_pid": 1,
+      "start_ticks": 954559008,
+      "state": "R"
+    },
+    {
+      "pid": 2932175,
+      "parent_pid": 2932151,
+      "start_ticks": 954559090,
+      "state": "Z"
+    },
+    {
+      "pid": 2932318,
+      "parent_pid": 2932175,
+      "start_ticks": 954559151,
+      "state": "R"
+    },
+    {
+      "pid": 2932377,
+      "parent_pid": 2932151,
+      "start_ticks": 954559244,
+      "state": "Z"
+    },
+    {
+      "pid": 2932458,
+      "parent_pid": 2932151,
+      "start_ticks": 954559330,
+      "state": "Z"
+    },
+    {
+      "pid": 2932466,
+      "start_ticks": 954559416
+    },
+    {
+      "pid": 2932469,
+      "parent_pid": 2932466,
+      "start_ticks": 954559453,
+      "state": "R"
+    },
+    {
+      "pid": 2932470,
+      "parent_pid": 2932466,
+      "start_ticks": 954559453,
+      "state": "R"
+    },
+    {
+      "pid": 2932513,
+      "start_ticks": 954559571
+    },
+    {
+      "pid": 2932601,
+      "parent_pid": 2932151,
+      "start_ticks": 954559657,
+      "state": "Z"
+    },
+    {
+      "pid": 2932524,
+      "parent_pid": 2932513,
+      "start_ticks": 954559608,
+      "state": "S"
+    },
+    {
+      "pid": 2932525,
+      "parent_pid": 2932513,
+      "start_ticks": 954559608,
+      "state": "R"
+    },
+    {
+      "pid": 2932527,
+      "parent_pid": 2932513,
+      "start_ticks": 954559620,
+      "state": "S"
+    },
+    {
+      "pid": 2932528,
+      "parent_pid": 2932513,
+      "start_ticks": 954559620,
+      "state": "R"
+    },
+    {
+      "pid": 2932529,
+      "parent_pid": 2932527,
+      "start_ticks": 954559623,
+      "state": "S"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.isolated-source.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/collection.log": {
+      "bytes": 3441,
+      "sha256": "a08545782840f6cbb24802c6272e1fabeca67a2b111585313997a2743b02765c"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_actual_exit_uses_nonzero_0/release": {
+      "bytes": 9,
+      "sha256": "1584570866884bb892dbf8bc693d7fbe28203b2ce90ab34642f92ba906781ac2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_actual_exit_uses_nonzero_0/watchdog.json": {
+      "bytes": 8506,
+      "sha256": "4e65acf245140d627898566510568653f6eb8cc102e47a761cef8e59eb0f40f7"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_actual_exit_uses_nonzero_0/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still0/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still0/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still0/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still0/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still1/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still1/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still1/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_live_missing_memory_still1/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require0/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require0/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require0/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require0/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require1/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require1/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require1/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require1/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require2/17/stat": {
+      "bytes": 50,
+      "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require2/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require2/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require2/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require3/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require3/17/statm": {
+      "bytes": 13,
+      "sha256": "7c575bcf3f81f8b863658b9b2237b6aa3781daa40d5bd4a0da00347664173ff6"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require3/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require3/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require4/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require4/17/statm": {
+      "bytes": 3,
+      "sha256": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require4/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require4/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require5/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require5/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require5/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require5/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require6/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require6/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require6/17/status": {
+      "bytes": 25,
+      "sha256": "9c5b9866ac567c32098d6bcc93749c7ae721b8251b4a962419c67666aaad6c3a"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require6/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require7/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require7/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000/test_terminal_evidence_require7/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_actual_watchdog_stops_own0/watchdog.json": {
+      "bytes": 2381,
+      "sha256": "574f06da658a1422cfb4601fe53f925f61a55c21438a691d61772aefad7909bc"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_actual_watchdog_stops_own0/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_actual_watchdog_stops_own1/watchdog.json": {
+      "bytes": 4357,
+      "sha256": "1b21752a0a172f63fe865fa8cb7a11bb7f4adf7675f142b0a7dc3909ba77d2a2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_actual_watchdog_stops_own1/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_bound_status_fail_closed_0/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_bound_status_fail_closed_1/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_bound_status_fail_closed_2/17/status": {
+      "bytes": 11,
+      "sha256": "c20bbc8bfc88c7e3204a21a422bbe259a0855f698295149976521a512190de87"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_bound_status_fail_closed_3/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de0/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de0/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de0/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de1/100/task/100/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de1/100/task/500/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de1/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de1/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de2/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de2/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de2/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de3/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de3/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de3/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de4/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de4/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_fast_tree_only_current_de4/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_persistent_missing_status0/17/status": {
+      "bytes": 17,
+      "sha256": "1bd6ddef8dc5ea30ee7656615ec3d037fab1a06929c8483be28cbb7abf030799"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001/test_transient_missing_status_0/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/module-000.log": {
+      "bytes": 2105,
+      "sha256": "5f1fcb61e693128d87e73431fee212fc8e6efbaa40112f12ce98e7fa13907e63"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/module-000.xml": {
+      "bytes": 2105,
+      "sha256": "7870269d1f311296d504c014720c1d6c571b0cb1b5739e5953e72a2fad3a4f68"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/module-001.log": {
+      "bytes": 1839,
+      "sha256": "f67fc9f1b363fc3e427fc314d1a0ec3902f1406047609141dfdc3fa7826721f2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/module-001.xml": {
+      "bytes": 1839,
+      "sha256": "04f32214277ce514e6e606c50659911ef972548fbb60bfb58b5eaa8b1296911e"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/module-002.log": {
+      "bytes": 1700,
+      "sha256": "5b4b3ef27b216460252ffd75c548d6ff5b5d504b3084596abc173d1521a4a9cc"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/module-002.xml": {
+      "bytes": 1596,
+      "sha256": "b226c1cbb4088cd0e82034fe734ff534708864efea64fa864f860a319b0b2495"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/result.json": {
+      "bytes": 19262,
+      "sha256": "c7614864cecf0f3d88480d68c5e51e268c131705c4f1e4f207797cda76cfbfcf"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/runtime.log": {
+      "bytes": 58,
+      "sha256": "edbaf7c3fd3f4b2da72c4cdbf9492d4a55d5a1e7ef43a95424334a7cfcb17cc2"
+    },
+    "runs/v0.0.11/terminal-rss-controls-01/sync.log": {
+      "bytes": 1231,
+      "sha256": "7fa0cf527c762a325fbc22a30a1c1c6ffcc26ee12f473b334e638f3edf881c55"
+    },
+    "runs/v0.0.11/terminal-rss-controls-deployment.json": {
+      "bytes": 218875,
+      "sha256": "78916738391ffba2eb77d2538c0d0c3dd5b0556529e48a321fcff7b10c6be072"
+    },
+    "runs/v0.0.11/terminal-rss-controls-launch.log": {
+      "bytes": 920,
+      "sha256": "3bbcdce60ebac6190ab63bd15d9289ebd7fe27922f26b7dbb79a0dc0aefcd671"
+    }
+  },
+  "fixture_bytes": 16598,
+  "receipt_bytes": 254971,
+  "supervision": {
+    "schema": "joxing-isolated-source-supervision-v1",
+    "source_commit": "c0e2aa1a693f2112191f6147aa185f79a3526c1e",
+    "protocol_sha256": "e3a1e07bef567d2035e92ff08c18070dc42828738b4f08165de8d51db75090e4",
+    "process": {
+      "pid": 2932151,
+      "parent_pid": 1,
+      "start_ticks": 954559008,
+      "state": "R"
+    },
+    "status": "completed",
+    "scope": "H16 opt-in terminal-mm-reserve-v3 reader controls only. No native model/physics/actor/learning. Strict-v2 remains default and reproducible.",
+    "formal_native_evaluations": 0,
+    "formal_training_runs": 0,
+    "initial_capacity": {
+      "available_memory_bytes": 36817969152,
+      "free_disk_bytes": 144826359808,
+      "fixture_bytes": 0,
+      "receipt_bytes": 218875,
+      "load": [
+        14.41845703125,
+        12.92431640625,
+        11.00146484375
+      ]
+    },
+    "rows": [
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+        "status": "passed"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "limit_s": 57.999643145129085,
+        "peak_owned_rss_bytes": 126664704,
+        "process": {
+          "pid": 2932175,
+          "parent_pid": 2932151,
+          "start_ticks": 954559090,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2932175,
+            "parent_pid": 2932151,
+            "start_ticks": 954559090,
+            "state": "Z"
+          },
+          {
+            "pid": 2932318,
+            "parent_pid": 2932175,
+            "start_ticks": 954559151,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 1.4280518367886543,
+        "current_owned_rss_bytes": 32636928,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 36809351168,
+          "free_disk_bytes": 144815845376,
+          "fixture_bytes": 0,
+          "receipt_bytes": 234007,
+          "load": [
+            14.41845703125,
+            12.92431640625,
+            11.00146484375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 1.5373663399368525,
+        "cleanup_wait_s": 4.612840712070465e-05
+      },
+      {
+        "stage": "runtime",
+        "command": [
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3'}"
+        ],
+        "status": "completed",
+        "limit_s": 8,
+        "peak_owned_rss_bytes": 56315904,
+        "process": {
+          "pid": 2932377,
+          "parent_pid": 2932151,
+          "start_ticks": 954559244,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2932377,
+            "parent_pid": 2932151,
+            "start_ticks": 954559244,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7488822992891073,
+        "current_owned_rss_bytes": 32653312,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 36661645312,
+          "free_disk_bytes": 144815857664,
+          "fixture_bytes": 0,
+          "receipt_bytes": 234944,
+          "load": [
+            14.41845703125,
+            12.92431640625,
+            11.00146484375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8614992331713438,
+        "cleanup_wait_s": 3.1400471925735474e-05
+      },
+      {
+        "stage": "collection",
+        "command": [
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "--collect-only",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "tests/test_terminal_rss_reader.py",
+          "tests/test_trial_rss_watchdog.py",
+          "tests/test_process_ownership.py"
+        ],
+        "status": "completed",
+        "limit_s": 13,
+        "peak_owned_rss_bytes": 51036160,
+        "process": {
+          "pid": 2932458,
+          "parent_pid": 2932151,
+          "start_ticks": 954559330,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2932458,
+            "parent_pid": 2932151,
+            "start_ticks": 954559330,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7494558710604906,
+        "current_owned_rss_bytes": 32669696,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 36687949824,
+          "free_disk_bytes": 144815828992,
+          "fixture_bytes": 0,
+          "receipt_bytes": 239266,
+          "load": [
+            14.384765625,
+            12.9423828125,
+            11.017578125
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8565870672464371,
+        "cleanup_wait_s": 2.7392059564590454e-05
+      },
+      {
+        "stage": "module-000",
+        "shard_index": 0,
+        "command": [
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000",
+          "--junitxml",
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-000.xml",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid]",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag]",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused]",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero]",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed]",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads]",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field]",
+          "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm]",
+          "tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution",
+          "tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail",
+          "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2]",
+          "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3]",
+          "tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge"
+        ],
+        "status": "completed",
+        "limit_s": 27.999997455626726,
+        "peak_owned_rss_bytes": 629592064,
+        "process": {
+          "pid": 2932466,
+          "parent_pid": 2932151,
+          "start_ticks": 954559416,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2932466,
+            "parent_pid": 2932151,
+            "start_ticks": 954559416,
+            "state": "Z"
+          },
+          {
+            "pid": 2932469,
+            "parent_pid": 2932466,
+            "start_ticks": 954559453,
+            "state": "S"
+          },
+          {
+            "pid": 2932470,
+            "parent_pid": 2932466,
+            "start_ticks": 954559453,
+            "state": "S"
+          }
+        ],
+        "elapsed_s": 1.4319814965128899,
+        "current_owned_rss_bytes": 32673792,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 36718755840,
+          "free_disk_bytes": 144815419392,
+          "fixture_bytes": 9746,
+          "receipt_bytes": 244645,
+          "load": [
+            14.384765625,
+            12.9423828125,
+            11.017578125
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 1.5449855234473944,
+        "cleanup_wait_s": 5.9371814131736755e-05,
+        "junit_counts": {
+          "passed": 13,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "stage": "module-001",
+        "shard_index": 1,
+        "command": [
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001",
+          "--junitxml",
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-001.xml",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+          "tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss",
+          "tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid",
+          "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+          "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]"
+        ],
+        "status": "completed",
+        "limit_s": 26.45431784912944,
+        "peak_owned_rss_bytes": 50618368,
+        "process": {
+          "pid": 2932513,
+          "parent_pid": 2932151,
+          "start_ticks": 954559571,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2932513,
+            "parent_pid": 2932151,
+            "start_ticks": 954559571,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 0.7512588314712048,
+        "current_owned_rss_bytes": 32731136,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 36713832448,
+          "free_disk_bytes": 144815017984,
+          "fixture_bytes": 16598,
+          "receipt_bytes": 249321,
+          "load": [
+            14.384765625,
+            12.9423828125,
+            11.017578125
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8678353074938059,
+        "cleanup_wait_s": 2.9034912586212158e-05,
+        "junit_counts": {
+          "passed": 13,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "stage": "module-002",
+        "shard_index": 2,
+        "command": [
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/fixtures/module-002",
+          "--junitxml",
+          "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-002.xml",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+          "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory"
+        ],
+        "status": "completed",
+        "limit_s": 25.58584332279861,
+        "peak_owned_rss_bytes": 51056640,
+        "process": {
+          "pid": 2932601,
+          "parent_pid": 2932151,
+          "start_ticks": 954559657,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 2932601,
+            "parent_pid": 2932151,
+            "start_ticks": 954559657,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7447267062962055,
+        "current_owned_rss_bytes": 32731136,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 38777090048,
+          "free_disk_bytes": 144815009792,
+          "fixture_bytes": 16598,
+          "receipt_bytes": 253617,
+          "load": [
+            14.384765625,
+            12.9423828125,
+            11.017578125
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8560008127242327,
+        "cleanup_wait_s": 2.9515475034713745e-05,
+        "junit_counts": {
+          "passed": 9,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      }
+    ],
+    "criterion_passed": true,
+    "full_source_gate_qualified": false,
+    "wall_s": 6.977733094245195,
+    "test_wall_s": 3.7207162007689476,
+    "final_live_recorded": [],
+    "fixture_bytes": 16598,
+    "receipt_bytes": 253832
+  },
+  "observed_utc": "2026-11-02T08:42:09Z"
+}

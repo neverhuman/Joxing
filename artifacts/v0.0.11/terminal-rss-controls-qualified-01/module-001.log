@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/terminal-rss-controls-20261102-01
+configfile: pyproject.toml
+collecting ... collected 13 items
+
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children] PASSED [  7%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads] PASSED [ 15%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign] PASSED [ 23%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused] PASSED [ 30%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie] PASSED [ 38%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal] PASSED [ 46%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused] PASSED [ 53%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss] PASSED [ 61%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie] PASSED [ 69%]
+tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss PASSED [ 76%]
+tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid PASSED [ 84%]
+tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit] PASSED [ 92%]
+tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth] PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-001.xml -
+============================== 13 passed in 0.39s ==============================

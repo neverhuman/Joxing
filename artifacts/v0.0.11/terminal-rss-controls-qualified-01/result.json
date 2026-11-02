@@ -1,0 +1,536 @@
+{
+  "schema": "joxing-isolated-source-supervision-v1",
+  "source_commit": "c0e2aa1a693f2112191f6147aa185f79a3526c1e",
+  "protocol_sha256": "e3a1e07bef567d2035e92ff08c18070dc42828738b4f08165de8d51db75090e4",
+  "process": {
+    "pid": 2932151,
+    "parent_pid": 1,
+    "start_ticks": 954559008,
+    "state": "R"
+  },
+  "status": "completed",
+  "scope": "H16 opt-in terminal-mm-reserve-v3 reader controls only. No native model/physics/actor/learning. Strict-v2 remains default and reproducible.",
+  "formal_native_evaluations": 0,
+  "formal_training_runs": 0,
+  "initial_capacity": {
+    "available_memory_bytes": 36817969152,
+    "free_disk_bytes": 144826359808,
+    "fixture_bytes": 0,
+    "receipt_bytes": 218875,
+    "load": [
+      14.41845703125,
+      12.92431640625,
+      11.00146484375
+    ]
+  },
+  "rows": [
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+      "status": "passed"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "limit_s": 57.999643145129085,
+      "peak_owned_rss_bytes": 126664704,
+      "process": {
+        "pid": 2932175,
+        "parent_pid": 2932151,
+        "start_ticks": 954559090,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2932175,
+          "parent_pid": 2932151,
+          "start_ticks": 954559090,
+          "state": "Z"
+        },
+        {
+          "pid": 2932318,
+          "parent_pid": 2932175,
+          "start_ticks": 954559151,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 1.4280518367886543,
+      "current_owned_rss_bytes": 32636928,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36809351168,
+        "free_disk_bytes": 144815845376,
+        "fixture_bytes": 0,
+        "receipt_bytes": 234007,
+        "load": [
+          14.41845703125,
+          12.92431640625,
+          11.00146484375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.5373663399368525,
+      "cleanup_wait_s": 4.612840712070465e-05
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3'}"
+      ],
+      "status": "completed",
+      "limit_s": 8,
+      "peak_owned_rss_bytes": 56315904,
+      "process": {
+        "pid": 2932377,
+        "parent_pid": 2932151,
+        "start_ticks": 954559244,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2932377,
+          "parent_pid": 2932151,
+          "start_ticks": 954559244,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7488822992891073,
+      "current_owned_rss_bytes": 32653312,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36661645312,
+        "free_disk_bytes": 144815857664,
+        "fixture_bytes": 0,
+        "receipt_bytes": 234944,
+        "load": [
+          14.41845703125,
+          12.92431640625,
+          11.00146484375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8614992331713438,
+      "cleanup_wait_s": 3.1400471925735474e-05
+    },
+    {
+      "stage": "collection",
+      "command": [
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_terminal_rss_reader.py",
+        "tests/test_trial_rss_watchdog.py",
+        "tests/test_process_ownership.py"
+      ],
+      "status": "completed",
+      "limit_s": 13,
+      "peak_owned_rss_bytes": 51036160,
+      "process": {
+        "pid": 2932458,
+        "parent_pid": 2932151,
+        "start_ticks": 954559330,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2932458,
+          "parent_pid": 2932151,
+          "start_ticks": 954559330,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7494558710604906,
+      "current_owned_rss_bytes": 32669696,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36687949824,
+        "free_disk_bytes": 144815828992,
+        "fixture_bytes": 0,
+        "receipt_bytes": 239266,
+        "load": [
+          14.384765625,
+          12.9423828125,
+          11.017578125
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8565870672464371,
+      "cleanup_wait_s": 2.7392059564590454e-05
+    },
+    {
+      "stage": "module-000",
+      "shard_index": 0,
+      "command": [
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/fixtures/module-000",
+        "--junitxml",
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-000.xml",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid]",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag]",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused]",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero]",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed]",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads]",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field]",
+        "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm]",
+        "tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution",
+        "tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail",
+        "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2]",
+        "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3]",
+        "tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge"
+      ],
+      "status": "completed",
+      "limit_s": 27.999997455626726,
+      "peak_owned_rss_bytes": 629592064,
+      "process": {
+        "pid": 2932466,
+        "parent_pid": 2932151,
+        "start_ticks": 954559416,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2932466,
+          "parent_pid": 2932151,
+          "start_ticks": 954559416,
+          "state": "Z"
+        },
+        {
+          "pid": 2932469,
+          "parent_pid": 2932466,
+          "start_ticks": 954559453,
+          "state": "S"
+        },
+        {
+          "pid": 2932470,
+          "parent_pid": 2932466,
+          "start_ticks": 954559453,
+          "state": "S"
+        }
+      ],
+      "elapsed_s": 1.4319814965128899,
+      "current_owned_rss_bytes": 32673792,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36718755840,
+        "free_disk_bytes": 144815419392,
+        "fixture_bytes": 9746,
+        "receipt_bytes": 244645,
+        "load": [
+          14.384765625,
+          12.9423828125,
+          11.017578125
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.5449855234473944,
+      "cleanup_wait_s": 5.9371814131736755e-05,
+      "junit_counts": {
+        "passed": 13,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "stage": "module-001",
+      "shard_index": 1,
+      "command": [
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/fixtures/module-001",
+        "--junitxml",
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-001.xml",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+        "tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss",
+        "tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid",
+        "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+        "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]"
+      ],
+      "status": "completed",
+      "limit_s": 26.45431784912944,
+      "peak_owned_rss_bytes": 50618368,
+      "process": {
+        "pid": 2932513,
+        "parent_pid": 2932151,
+        "start_ticks": 954559571,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2932513,
+          "parent_pid": 2932151,
+          "start_ticks": 954559571,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 0.7512588314712048,
+      "current_owned_rss_bytes": 32731136,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 36713832448,
+        "free_disk_bytes": 144815017984,
+        "fixture_bytes": 16598,
+        "receipt_bytes": 249321,
+        "load": [
+          14.384765625,
+          12.9423828125,
+          11.017578125
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8678353074938059,
+      "cleanup_wait_s": 2.9034912586212158e-05,
+      "junit_counts": {
+        "passed": 13,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "stage": "module-002",
+      "shard_index": 2,
+      "command": [
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/fixtures/module-002",
+        "--junitxml",
+        "/home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-002.xml",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+        "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory"
+      ],
+      "status": "completed",
+      "limit_s": 25.58584332279861,
+      "peak_owned_rss_bytes": 51056640,
+      "process": {
+        "pid": 2932601,
+        "parent_pid": 2932151,
+        "start_ticks": 954559657,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 2932601,
+          "parent_pid": 2932151,
+          "start_ticks": 954559657,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7447267062962055,
+      "current_owned_rss_bytes": 32731136,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 38777090048,
+        "free_disk_bytes": 144815009792,
+        "fixture_bytes": 16598,
+        "receipt_bytes": 253617,
+        "load": [
+          14.384765625,
+          12.9423828125,
+          11.017578125
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8560008127242327,
+      "cleanup_wait_s": 2.9515475034713745e-05,
+      "junit_counts": {
+        "passed": 9,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "criterion_passed": true,
+  "full_source_gate_qualified": false,
+  "wall_s": 6.977733094245195,
+  "test_wall_s": 3.7207162007689476,
+  "final_live_recorded": [],
+  "fixture_bytes": 16598,
+  "receipt_bytes": 253832
+}

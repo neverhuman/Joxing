@@ -1,3 +1,22 @@
+# H16 reader controls qualify; ONE native teardown registered — Nov2 Mountain
+
+c0e2aa1/e3a1e07b:35Linux controls and independent729source/15recorded-exit audit
+pass;81rawfiles271569bytes exact transfer. Actual heavy exit reserves549130240
+nonzero bytes and releases in44.71ms; max sample/probe23.94/3.80ms, no zero/RSS
+metric/cap substitution. Strict-v2 remains default; terminal-v3 only opt-in.
+
+Current packet experiments/v0.0.11/native-teardown-v3-protocol.json registers ONE
+real original instrumented worker through SB3spawn,700muscles/200prep/0rollout/
+0actor/0optimizer, native spec identity and initial/close state exactness. Native
+worker's retirement must actually be observed, positively charged and released
+within100ms. Guard must be ready before native imports. No learned rollout.
+3local fake/readiness controls pass after a fake-fixture hash-schema correction;
+public freeze/anonymous verification/capacity check precede fresh bounded root.
+60swhole/30sactive/200physics/oneworker/8MiBraw/1MiBreceipts, existing7GiBplanned/
+8GiBhard/100msgap/16process/one-thread limits. Prior costs retained/carry forward.
+If constructor threading/fallback/gates fail, stop and retain; no RL repeat yet.
+No boxing, candidate training parity, concurrent scaling/default or v11tag.
+
 # H16 opt-in terminal RSS reserve reader registered — Nov2 Mountain
 
 Current controls protocol experiments/v0.0.11/terminal-rss-controls-protocol.json.

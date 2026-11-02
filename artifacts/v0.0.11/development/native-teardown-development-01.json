@@ -1,0 +1,22 @@
+{
+  "scope": "Fake constructor controls, no native physics",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_native_teardown.py",
+  "passed": 3,
+  "skipped": 0,
+  "initial_development_fault": "Fake specification omitted required hash fields;1failed/14passed/1Linux skip in broader precheck. Fixture schema corrected, no native task had run.",
+  "ruff": "passed",
+  "source_files": {
+    "src/joxing/native_teardown.py": {
+      "bytes": 4375,
+      "sha256": "645886ca33b2e48c30aef0f61b19636035a5f22458d2db59313943a376ed8b80"
+    },
+    "tests/test_native_teardown.py": {
+      "bytes": 3183,
+      "sha256": "68032c7f5b6c312ca02f27a7ae459678b4d22053a7d2c94625adcb51e08f5605"
+    },
+    "scripts/qualify_deferred_trial.py": {
+      "bytes": 17563,
+      "sha256": "22c75aa39bd6f7d607c06e5843ea3adacd78f2ef921c439ea0b631ece5ab18b3"
+    }
+  }
+}

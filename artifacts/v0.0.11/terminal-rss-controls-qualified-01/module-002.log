@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/terminal-rss-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/terminal-rss-controls-20261102-01
+configfile: pyproject.toml
+collecting ... collected 9 items
+
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing] PASSED [ 11%]
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child] PASSED [ 22%]
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild] PASSED [ 33%]
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign] PASSED [ 44%]
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan] PASSED [ 55%]
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root] PASSED [ 66%]
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished] PASSED [ 77%]
+tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle] PASSED [ 88%]
+tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/terminal-rss-controls-20261102-01/runs/v0.0.11/terminal-rss-controls-01/module-002.xml -
+============================== 9 passed in 0.06s ===============================
