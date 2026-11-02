@@ -1,0 +1,71 @@
+{
+  "schema": "joxing-four-context-development-v1",
+  "scope": "Local mocked four-world lifecycle and lossless codec/fault controls; no actual native four-world outcomes or new physics",
+  "checks": [
+    {
+      "junit": "runs/v0.0.11/four-context-development-01.xml",
+      "passed": 22,
+      "failed": 1,
+      "skipped": 2,
+      "wall_s": "2.764"
+    },
+    {
+      "junit": "runs/v0.0.11/four-context-development-02.xml",
+      "passed": 188,
+      "failed": 0,
+      "skipped": 9,
+      "wall_s": "5.088"
+    },
+    {
+      "junit": "runs/v0.0.11/four-context-development-03.xml",
+      "passed": 188,
+      "failed": 0,
+      "skipped": 9,
+      "wall_s": "5.247"
+    },
+    {
+      "junit": "runs/v0.0.11/four-context-development-04.xml",
+      "passed": 188,
+      "failed": 0,
+      "skipped": 10,
+      "wall_s": "5.153"
+    }
+  ],
+  "faults": [
+    {
+      "fault": "Initial corruption control did not expect zlib.error from damaged gzip stream",
+      "repair": "Decoder normalizes corruption to ValueError preserving original cause; no corrupted stream accepted"
+    },
+    {
+      "fault": "Initial Ruff import/pairwise style warnings",
+      "repair": "Sorted imports/removed unused name/pairwise, final Ruff passes"
+    }
+  ],
+  "final_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_receipt_encoding.py tests/test_four_native_context.py tests/test_native_context_transfer.py tests/test_live_resource_release.py tests/test_native_teardown.py tests/test_watchdog_publication.py tests/test_trial_rss_watchdog.py tests/test_terminal_rss_reader.py tests/test_process_exit_probe.py tests/test_serial_retirement.py tests/test_serial_native_teardown.py tests/test_deferred_trial.py tests/test_deferred_qualification.py tests/test_physics_credit.py --junitxml=runs/v0.0.11/four-context-development-04.xml",
+  "ruff": "passed",
+  "physics": 0,
+  "native_four": "not_run",
+  "source_files": {
+    "src/joxing/four_native_context.py": {
+      "bytes": 11443,
+      "sha256": "020fc362efb8ed00f896c591956922c549484ca2c0a67e1098f3aa0abb85a06d"
+    },
+    "scripts/receipt_encoding.py": {
+      "bytes": 1802,
+      "sha256": "73fbaa6372b018375a9be7e3cf2aa3742b4d18d65b82e6b10b701991f9133ede"
+    },
+    "scripts/qualify_deferred_trial.py": {
+      "bytes": 24135,
+      "sha256": "ab8d0eff8e95cb89e6d9d0bc40c1c31570efc81e39f0e713a6ce5a40fa3cbac3"
+    },
+    "tests/test_four_native_context.py": {
+      "bytes": 9272,
+      "sha256": "d2bf24dcfaec85f9fd327118d52843bbaebfe1dbad61e4e48dc6e945ecbece31"
+    },
+    "tests/test_receipt_encoding.py": {
+      "bytes": 6919,
+      "sha256": "8ac0eeaaa5ac09e57cc2b44d20e94bb9605ff9056048918c9c4dd052c8cba829"
+    }
+  },
+  "receipt_sizing": "four-context-receipt-projection-01.json; synthetic only, actual Linux preflight mandatory"
+}

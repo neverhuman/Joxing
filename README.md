@@ -15,6 +15,11 @@ the unchanged100ms limit. One close took336.76ms; no controlled native speedup o
 boxing gain claimed. [Next: FOUR-worker close proof](docs/FOUR_NATIVE_CONTEXT_MISSION.md)
 includes a lossless receipt preflight to fit the remaining budget.
 
+**H22 registered:** [four-worker proof](docs/FOUR_NATIVE_CONTEXT_MISSION.md)
+has188local passes/10Linux-only skips; all198Linux checks and lossless receipt
+preflight precede the bounded800-preparation-step attempt. Formal native outcome
+is not_run atregistration; the same2s total close/100ms monitoring gates apply.
+
 **HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
 passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus
 527.06ms spawn (13.13×), exact paired payloads;348raw files verified. This measures

@@ -1,0 +1,14 @@
+{
+  "scope": "LOCAL synthetic H22receipt sizing ONLY; no four-world physical evidence or timing. In-memory prototype uses H21field records, new four-world shape; no prototype result persisted.",
+  "reference_source": "d7d01ee68db9448f45f826cdbfa8d59f401e1d75",
+  "reference_protocol": "da32adcd079bc23cf5220f031bb788d4706b90b8cd212ade659afaf564d9334a",
+  "prototype_main_compact_bytes": 56919,
+  "reference_bootstrap_gzip_bytes": 67032,
+  "unchanged_rest_receipt_bytes": 70014,
+  "structural_projection_bytes": 193965,
+  "headroom_bytes": 10000,
+  "projection_with_headroom_bytes": 203965,
+  "proposed_cap_bytes": 229376,
+  "remaining_old_envelope_receipts": 234023,
+  "limitations": "Actual new source manifest/JUnit count/multiworker monitor fields can be larger; first actual limit stops. No old files rewritten. Exact gzip/plain value fidelity must pass registered Linux controls before native."
+}

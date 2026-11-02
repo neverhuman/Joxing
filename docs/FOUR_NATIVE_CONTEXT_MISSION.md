@@ -1,6 +1,10 @@
 # H22: four native workers under the original serial-close deadline
 
-Status: worker-ready implementation plan, NOT implemented/preregistered/run.
+Status: implemented/preregistered; actual native target NOT_RUN atfreeze.
+Protocol four-native-context-protocol.json/384d6b81;198Linux cases before native.
+Local188pass/10Linux skips/Ruffpass. Actual newbootstrap and pinned H21saved
+receipt fidelity/size preflight must pass on Linux before800prep.
+Historical worker-ready implementation plan follows; use frozen packet for launch.
 Owner current integration agent only; no delegation/concurrent source writers.
 Workspace /Users/bentaylor/Documents/ChatGPT/JOXING; RTK for every shell command.
 

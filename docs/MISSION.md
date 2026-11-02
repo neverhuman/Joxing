@@ -1,3 +1,29 @@
+# H22four-native source and receipt packet registered — Nov2 Mountain
+
+Packet experiments/v0.0.11/four-native-context-protocol.json /
+384d6b81e77fd46f948fdfe8687541f6750332be4ab716f0e39f37953809006b.
+Local188pass/10Linux skips for198exact cases, Ruffpass. New four-world diagnostic
+reuses H21native worker/release/clean-server code and original serial adapter;
+all parent states/measured counters persisted before first close. Actual4native
+outcome NOT_RUN atfreeze, no single-worker outcome reused. All4positive actual
+native retirement observations and SAME100ms/2s/RSS gates required.
+
+Named compact-main-gzip-deployment-v1 changes NEWbootstrap to exact gzipbytes/
+encoded+decoded hashes and NEWmain to compactJSON same fields/types/float bits.
+Default serializers/RAM watcher/uncompressed canonical copies unchanged. Source-
+frozen deployment helper included; pinned H21saved receipts and gzip.py inputs.
+Actual Linux fidelity +newbootstrap/prospective size preflight BEFOREnative.
+Current shape projection193965+10kheadroom=203965bytes, synthetic sizing only.
+100swhole/50sslot/800prep/0rollout/actor/inference/update/12MiBfixtures/224KiB
+receipts/1MiBIPC/4workers/thread1; no old bytes deleted/reclassified or cap raised.
+Public source/packet/anonymousverify/freshcapacity must precede ONEbounded task.
+
+All13prior packet costs16658physics/371.090715s/35531698fixture/3960281receipt
+bytes retained; original remaining223342steps/228.909285s/1038210126fixture/
+234023receipt bytes. Native4/learning/source-suite/balance/boxing unqualified,
+no v11tag. Detailed mission docs/FOUR_NATIVE_CONTEXT_MISSION.md; development
+faults/repairs and synthetic sizing in artifacts/v0.0.11/development/four-context-*.json.
+
 # H21ONE-native context qualifies; H22four-world proof ready — Nov2 Mountain
 
 Frozen d7d01ee/da32adcd passes172Linux controls +ONE native1VALID/0INVALID/0NOT_RUN.

@@ -12,6 +12,7 @@ import time
 from pathlib import Path
 
 from joxing_process_ownership import unknown_joxing_processes
+from receipt_encoding import MODE, save_report
 from source_shard_support import check_junit
 from supervise_motor_pilot import descendants, identity, live
 from supervise_upper_task_tests import canonical, rss, save, stop
@@ -32,6 +33,7 @@ def runner_module(schema):
         "joxing-process-exit-probe-v1": "joxing.process_exit_probe",
         "joxing-watch-publication-v1": "joxing.process_exit_probe",
         "joxing-native-context-transfer-v1": "joxing.context_native_teardown",
+        "joxing-four-native-context-v1": "joxing.four_native_context",
     }[schema]
 
 
@@ -57,6 +59,7 @@ def main():
             "joxing-process-exit-probe-v1",
             "joxing-watch-publication-v1",
             "joxing-native-context-transfer-v1",
+            "joxing-four-native-context-v1",
         )
         or canonical(p) != args.protocol_sha256
     ):
@@ -125,6 +128,8 @@ def main():
 
     verify()
     serial_constructor = p["schema"] == "joxing-serial-native-teardown-v1"
+    four_context = p["schema"] == "joxing-four-native-context-v1"
+    four_constructor = serial_constructor or four_context
     process_probe = p["schema"] == "joxing-process-exit-probe-v1"
     publication_smoke = p["schema"] == "joxing-watch-publication-v1"
     zero_work_probe = process_probe or publication_smoke
@@ -135,7 +140,10 @@ def main():
         "joxing-native-teardown-v1",
         "joxing-release-native-teardown-v1",
         "joxing-native-context-transfer-v1",
+        "joxing-four-native-context-v1",
     )
+    if p.get("receipt_wire_encoding", "legacy") not in ("legacy", MODE):
+        raise ValueError("Unknown receipt encoding")
     out = ROOT / p["output"]
     out.parent.mkdir(parents=True, exist_ok=True)
     lease = (out.parent / ".deferred-native.lock").open("a+")
@@ -299,7 +307,12 @@ def main():
                         or len(living) + 1 > p["process_ceiling"]
                     ):
                         raise RuntimeError("Prerequisite stage resource first limit")
-                save(out / "result.json", report)
+                save_report(
+                    out / "result.json",
+                    report,
+                    mode=p.get("receipt_wire_encoding", "legacy"),
+                    legacy_save=save,
+                )
                 if (
                     row["elapsed_s"] > limit - 2
                     or time.monotonic() - began > p["whole_wall_s"] - 2
@@ -457,8 +470,8 @@ def main():
                 facts = json.loads(
                     (fixtures / name / "constructor-result.json").read_text()
                 )
-                workers = facts["workers"] if serial_constructor else [facts["worker"]]
-                if len(workers) != (4 if serial_constructor else 1):
+                workers = facts["workers"] if four_constructor else [facts["worker"]]
+                if len(workers) != (4 if four_constructor else 1):
                     raise ValueError("Native constructor worker denominator")
                 retirements = [
                     row["watchdog"]["retirement_records"].get(
@@ -467,6 +480,8 @@ def main():
                     for worker in workers
                 ]
                 observed = [r for r in retirements if r is not None]
+                if four_context and len(observed) != 4:
+                    raise ValueError("All four native retirements must be observed")
                 if not observed or any(
                     not r["released"]
                     or r["highwater_charge_bytes"] <= 0
@@ -475,14 +490,14 @@ def main():
                 ):
                     raise ValueError("Native worker retirement path not qualified")
                 slot.update(status="completed", facts=facts)
-                if serial_constructor:
+                if four_constructor:
                     slot["retirements"] = observed
                 else:
                     slot["retirement"] = observed[0]
                 report["physics_credit"] = ledger.snapshot()
                 if (
                     report["physics_credit"]["used"]
-                    != (800 if serial_constructor else 200)
+                    != (800 if four_constructor else 200)
                     or report["physics_credit"]["pending"]
                 ):
                     raise ValueError("Constructor physics denominator")
@@ -571,7 +586,12 @@ def main():
             owned_identities=list(seen.values()),
             final_live_recorded=[i for i in seen.values() if live(i)],
         )
-        save(out / "result.json", report)
+        save_report(
+            out / "result.json",
+            report,
+            mode=p.get("receipt_wire_encoding", "legacy"),
+            legacy_save=save,
+        )
     print(
         json.dumps(
             {
