@@ -1,0 +1,21 @@
+{
+  "schema": "joxing-probe-stdlib-repair-development-v1",
+  "scope": "Source repair only, no formal worker outcomes",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_process_exit_probe.py tests/test_serial_retirement.py tests/test_terminal_rss_reader.py tests/test_trial_rss_watchdog.py --junitxml=runs/v0.0.11/exit-probe-development-05.xml",
+  "passed": 67,
+  "skipped": 4,
+  "wall_s": 0.79,
+  "physics": 0,
+  "ruff": "passed",
+  "fault_retained": "Original clean-parent gate failed on provenance helper imports; no source/protocol edited in old root",
+  "source_files": {
+    "src/joxing/process_exit_probe.py": {
+      "bytes": 15314,
+      "sha256": "e7ed4c51dd3c01d7dd2a891b1452711a2f730a8bfe5cb70ed69ba9f14bbc9bee"
+    },
+    "tests/test_process_exit_probe.py": {
+      "bytes": 7651,
+      "sha256": "0bfe1994ddd9dff92390342a975505528958816db9541e0e0811b398fb118d5f"
+    }
+  }
+}

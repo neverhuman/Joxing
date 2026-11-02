@@ -29,6 +29,16 @@ SLOTS = [
 HEAVY = ("torch", "numpy", "mujoco", "stable_baselines3")
 
 
+def write_json(path, value):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name + ".tmp")
+    temporary.write_text(
+        json.dumps(value, sort_keys=True, indent=2, allow_nan=False) + "\n"
+    )
+    temporary.replace(path)
+
+
 def emit(folder, phase, **values):
     folder = Path(folder)
     folder.mkdir(parents=True, exist_ok=True)
@@ -232,8 +242,6 @@ def validate_phases(method, events, bound):
 def run(folder, slot, packet, ready):
     wait_ready(ready, 15)
     from multiprocessing import forkserver, resource_tracker
-
-    from .provenance import write_json
 
     registered = next(s for s in packet["slots"] if s["id"] == slot)
     method, seed = registered["method"], registered["seed"]

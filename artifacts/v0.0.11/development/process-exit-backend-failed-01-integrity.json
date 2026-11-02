@@ -1,0 +1,3233 @@
+{
+  "schema": "joxing-deferred-native-independent-v1",
+  "status": "verified_halted_attempt",
+  "source_commit": "7ee2bf3e0174f7be83bd59fac3c4ef3c51f6a1eb",
+  "protocol_sha256": "c83d92a42d5233c3da7407f6d79e677c4972957a86e11341cbf482def29a57a5",
+  "source_files_verified": 740,
+  "historical_objects_verified": 5,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[stdlib]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[mixed]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[heavy]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[timeout]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[clean]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[after_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[heavy]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[foreign_server]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[foreign_worker]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bound_proc_proof_rejects_foreign_memory[clean]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bound_proc_proof_rejects_foreign_memory[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bound_proc_proof_rejects_foreign_memory[exiting]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[valid]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[missing_finalizer]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[wrong_order]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[supported]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[negative]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[mismatch]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[missing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[work]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[slow]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[nan]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bounded_receive_preserves_pipe_fault",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_proc_evidence_keeps_raw_maps_for_independent_reconstruction",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_stdlib_adapter_and_runner_until_ready",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[normal]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[waiting]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[repeat]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[missing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[dead]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[pipe]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[join_timeout]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[nonzero]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[present_after_join]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[pending_timeout]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[pending_error]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[counts]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[duplicate]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[overall_timeout]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_actual_serial_heaps_guard_and_foreign_survival",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+      "status": "passed"
+    }
+  ],
+  "watchdog_reports": [
+    {
+      "path": "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "terminal-mm-reserve-v3",
+      "status": "exited",
+      "root": {
+        "pid": 896962,
+        "start_ticks": 955755389
+      },
+      "supervisor": {
+        "pid": 896527,
+        "start_ticks": 955755174
+      },
+      "watchdog": {
+        "pid": 896963,
+        "parent_pid": 896527,
+        "start_ticks": 955755389,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 844578816,
+        "hard_rss": 1113014272,
+        "process_cap": 8,
+        "wall_s": 5.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": 0.1
+      },
+      "samples": 25,
+      "peak_sampled_rss_bytes": 604094464,
+      "max_sample_gap_s": 0.0242058876901865,
+      "max_probe_s": 0.00404772162437439,
+      "peak_processes": 3,
+      "peak_capacity_charge_bytes": 604094464,
+      "peak_retiring_rss_charge_bytes": 549228544,
+      "wall_s": 0.5148150324821472,
+      "last_sample_rss_bytes": 54865920,
+      "last_sample_capacity_charge_bytes": 54865920,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 54865920,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9557554.445628652,
+      "owned_identities": [
+        {
+          "pid": 896962,
+          "parent_pid": 896527,
+          "start_ticks": 955755389,
+          "state": "R"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9557553.931561291,
+          "rss_bytes": 67207168,
+          "capacity_charge_bytes": 67207168,
+          "observed_rss_bytes": 67207168,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557553.952825768,
+          "rss_bytes": 95277056,
+          "capacity_charge_bytes": 95277056,
+          "observed_rss_bytes": 95277056,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02126447670161724,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557553.973825464,
+          "rss_bytes": 132657152,
+          "capacity_charge_bytes": 132657152,
+          "observed_rss_bytes": 132657152,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020999696105718613,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557553.994853543,
+          "rss_bytes": 169377792,
+          "capacity_charge_bytes": 169377792,
+          "observed_rss_bytes": 169377792,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021028079092502594,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.016042778,
+          "rss_bytes": 206991360,
+          "capacity_charge_bytes": 206991360,
+          "observed_rss_bytes": 206991360,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021189235150814056,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.036999293,
+          "rss_bytes": 241238016,
+          "capacity_charge_bytes": 241238016,
+          "observed_rss_bytes": 241238016,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02095651440322399,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.057670739,
+          "rss_bytes": 276017152,
+          "capacity_charge_bytes": 276017152,
+          "observed_rss_bytes": 276017152,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02067144587635994,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.078420622,
+          "rss_bytes": 310579200,
+          "capacity_charge_bytes": 310579200,
+          "observed_rss_bytes": 310579200,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020749883726239204,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.099152502,
+          "rss_bytes": 345178112,
+          "capacity_charge_bytes": 345178112,
+          "observed_rss_bytes": 345178112,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020731879398226738,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.11997372,
+          "rss_bytes": 379920384,
+          "capacity_charge_bytes": 379920384,
+          "observed_rss_bytes": 379920384,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020821217447519302,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.140624708,
+          "rss_bytes": 414244864,
+          "capacity_charge_bytes": 414244864,
+          "observed_rss_bytes": 414244864,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020650988444685936,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.161256889,
+          "rss_bytes": 447275008,
+          "capacity_charge_bytes": 447275008,
+          "observed_rss_bytes": 447275008,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02063218131661415,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.181982888,
+          "rss_bytes": 480444416,
+          "capacity_charge_bytes": 480444416,
+          "observed_rss_bytes": 480444416,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020725999027490616,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.20335606,
+          "rss_bytes": 516603904,
+          "capacity_charge_bytes": 516603904,
+          "observed_rss_bytes": 516603904,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021373171359300613,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.224822588,
+          "rss_bytes": 551591936,
+          "capacity_charge_bytes": 551591936,
+          "observed_rss_bytes": 551591936,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021466528996825218,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.246088758,
+          "rss_bytes": 587399168,
+          "capacity_charge_bytes": 587399168,
+          "observed_rss_bytes": 587399168,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021266169846057892,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.267346712,
+          "rss_bytes": 604094464,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 604094464,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021257953718304634,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.288598074,
+          "rss_bytes": 604094464,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 604094464,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021251361817121506,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.309748605,
+          "rss_bytes": 604094464,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 604094464,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021150531247258186,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.330931878,
+          "rss_bytes": 604094464,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 604094464,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021183272823691368,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.352118056,
+          "rss_bytes": 604094464,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 604094464,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02118617855012417,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.376299076,
+          "rss_bytes": 54865920,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 54865920,
+          "retiring_rss_charge_bytes": 549228544,
+          "gap_s": 0.024181019514799118,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.400504963,
+          "rss_bytes": 54865920,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 54865920,
+          "retiring_rss_charge_bytes": 549228544,
+          "gap_s": 0.0242058876901865,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.424674612,
+          "rss_bytes": 54865920,
+          "capacity_charge_bytes": 604094464,
+          "observed_rss_bytes": 54865920,
+          "retiring_rss_charge_bytes": 549228544,
+          "gap_s": 0.024169648066163063,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.445628652,
+          "rss_bytes": 54865920,
+          "capacity_charge_bytes": 54865920,
+          "observed_rss_bytes": 54865920,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020954040810465813,
+          "processes": 2
+        }
+      ],
+      "reason": "all_owned_exited",
+      "final_live": [],
+      "retirement_records": {
+        "896962:955755389": {
+          "pid": 896962,
+          "start_ticks": 955755389,
+          "first_retiring_s": 9557554.376286251,
+          "evidence": {
+            "pid": 896962,
+            "start_ticks": 955755389,
+            "before": {
+              "state": "R",
+              "parent_pid": 896527,
+              "flags": 4194316,
+              "start_ticks": 955755389
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 896527,
+              "flags": 4194316,
+              "start_ticks": 955755389
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 896527,
+              "flags": 4194316,
+              "start_ticks": 955755389
+            },
+            "tasks": [
+              "896962"
+            ],
+            "after_tasks": [
+              "896962"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 549228544,
+          "samples": 3,
+          "max_hold_s": 0.06933257170021534,
+          "released": true,
+          "released_s": 9557554.445618823
+        }
+      },
+      "pending_retirements": []
+    },
+    {
+      "path": "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "terminal-mm-reserve-v3",
+      "status": "exited",
+      "root": {
+        "pid": 896817,
+        "start_ticks": 955755288
+      },
+      "supervisor": {
+        "pid": 896527,
+        "start_ticks": 955755174
+      },
+      "watchdog": {
+        "pid": 896818,
+        "parent_pid": 896527,
+        "start_ticks": 955755288,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 3260497920,
+        "hard_rss": 4334239744,
+        "process_cap": 8,
+        "wall_s": 10.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": 0.1
+      },
+      "samples": 40,
+      "peak_sampled_rss_bytes": 2216673280,
+      "max_sample_gap_s": 0.026039021089673042,
+      "max_probe_s": 0.005876587703824043,
+      "peak_processes": 7,
+      "peak_capacity_charge_bytes": 2252423168,
+      "peak_retiring_rss_charge_bytes": 548016128,
+      "wall_s": 0.9124853555113077,
+      "last_sample_rss_bytes": 54874112,
+      "last_sample_capacity_charge_bytes": 54874112,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 54874112,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9557553.838080565,
+      "owned_identities": [
+        {
+          "pid": 896817,
+          "parent_pid": 896527,
+          "start_ticks": 955755288,
+          "state": "R"
+        },
+        {
+          "pid": 896826,
+          "parent_pid": 896817,
+          "start_ticks": 955755292,
+          "state": "R"
+        },
+        {
+          "pid": 896825,
+          "parent_pid": 896817,
+          "start_ticks": 955755292,
+          "state": "R"
+        },
+        {
+          "pid": 896824,
+          "parent_pid": 896817,
+          "start_ticks": 955755292,
+          "state": "R"
+        },
+        {
+          "pid": 896822,
+          "parent_pid": 896817,
+          "start_ticks": 955755292,
+          "state": "R"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9557552.926625075,
+          "rss_bytes": 68497408,
+          "capacity_charge_bytes": 68497408,
+          "observed_rss_bytes": 68497408,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557552.94920669,
+          "rss_bytes": 133312512,
+          "capacity_charge_bytes": 133312512,
+          "observed_rss_bytes": 133312512,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022581614553928375,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557552.97085913,
+          "rss_bytes": 235204608,
+          "capacity_charge_bytes": 235204608,
+          "observed_rss_bytes": 235204608,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02165244147181511,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557552.992576385,
+          "rss_bytes": 336527360,
+          "capacity_charge_bytes": 336527360,
+          "observed_rss_bytes": 336527360,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02171725407242775,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.014246246,
+          "rss_bytes": 433532928,
+          "capacity_charge_bytes": 433532928,
+          "observed_rss_bytes": 433532928,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021669860929250717,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.035935726,
+          "rss_bytes": 531824640,
+          "capacity_charge_bytes": 531824640,
+          "observed_rss_bytes": 531824640,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021689480170607567,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.058607182,
+          "rss_bytes": 654696448,
+          "capacity_charge_bytes": 654696448,
+          "observed_rss_bytes": 654696448,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022671455517411232,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.081851613,
+          "rss_bytes": 785608704,
+          "capacity_charge_bytes": 785608704,
+          "observed_rss_bytes": 785608704,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.023244431242346764,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.104840197,
+          "rss_bytes": 915808256,
+          "capacity_charge_bytes": 915808256,
+          "observed_rss_bytes": 915808256,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022988583892583847,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.127750015,
+          "rss_bytes": 1052737536,
+          "capacity_charge_bytes": 1052737536,
+          "observed_rss_bytes": 1052737536,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022909818217158318,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.1506174,
+          "rss_bytes": 1191415808,
+          "capacity_charge_bytes": 1191415808,
+          "observed_rss_bytes": 1191415808,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022867385298013687,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.17367145,
+          "rss_bytes": 1338900480,
+          "capacity_charge_bytes": 1338900480,
+          "observed_rss_bytes": 1338900480,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.023054050281643867,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.19679916,
+          "rss_bytes": 1474146304,
+          "capacity_charge_bytes": 1474146304,
+          "observed_rss_bytes": 1474146304,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.023127710446715355,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.219873987,
+          "rss_bytes": 1588035584,
+          "capacity_charge_bytes": 1588035584,
+          "observed_rss_bytes": 1588035584,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02307482622563839,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.243044777,
+          "rss_bytes": 1679179776,
+          "capacity_charge_bytes": 1679179776,
+          "observed_rss_bytes": 1679179776,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02317078970372677,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.266181653,
+          "rss_bytes": 1784311808,
+          "capacity_charge_bytes": 1784311808,
+          "observed_rss_bytes": 1784311808,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02313687652349472,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.28921352,
+          "rss_bytes": 1882021888,
+          "capacity_charge_bytes": 1882021888,
+          "observed_rss_bytes": 1882021888,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.023031866177916527,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.312116776,
+          "rss_bytes": 1988800512,
+          "capacity_charge_bytes": 1988800512,
+          "observed_rss_bytes": 1988800512,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022903256118297577,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.335169664,
+          "rss_bytes": 2108477440,
+          "capacity_charge_bytes": 2108477440,
+          "observed_rss_bytes": 2108477440,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.023052887991070747,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.358132148,
+          "rss_bytes": 2216673280,
+          "capacity_charge_bytes": 2216673280,
+          "observed_rss_bytes": 2216673280,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022962484508752823,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.3840174,
+          "rss_bytes": 1712537600,
+          "capacity_charge_bytes": 2252419072,
+          "observed_rss_bytes": 1712537600,
+          "retiring_rss_charge_bytes": 539881472,
+          "gap_s": 0.02588525228202343,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.410056422,
+          "rss_bytes": 1712541696,
+          "capacity_charge_bytes": 2252423168,
+          "observed_rss_bytes": 1712541696,
+          "retiring_rss_charge_bytes": 539881472,
+          "gap_s": 0.026039021089673042,
+          "processes": 7
+        },
+        {
+          "monotonic_s": 9557553.435611188,
+          "rss_bytes": 1712541696,
+          "capacity_charge_bytes": 1712541696,
+          "observed_rss_bytes": 1712541696,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02555476687848568,
+          "processes": 6
+        },
+        {
+          "monotonic_s": 9557553.458287785,
+          "rss_bytes": 1712541696,
+          "capacity_charge_bytes": 1712541696,
+          "observed_rss_bytes": 1712541696,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02267659641802311,
+          "processes": 6
+        },
+        {
+          "monotonic_s": 9557553.482041556,
+          "rss_bytes": 1712558080,
+          "capacity_charge_bytes": 1712558080,
+          "observed_rss_bytes": 1712558080,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02375377155840397,
+          "processes": 6
+        },
+        {
+          "monotonic_s": 9557553.507724935,
+          "rss_bytes": 1164541952,
+          "capacity_charge_bytes": 1712558080,
+          "observed_rss_bytes": 1164541952,
+          "retiring_rss_charge_bytes": 548016128,
+          "gap_s": 0.02568337880074978,
+          "processes": 6
+        },
+        {
+          "monotonic_s": 9557553.533365184,
+          "rss_bytes": 1164541952,
+          "capacity_charge_bytes": 1712558080,
+          "observed_rss_bytes": 1164541952,
+          "retiring_rss_charge_bytes": 548016128,
+          "gap_s": 0.025640249252319336,
+          "processes": 6
+        },
+        {
+          "monotonic_s": 9557553.555809151,
+          "rss_bytes": 1164541952,
+          "capacity_charge_bytes": 1164541952,
+          "observed_rss_bytes": 1164541952,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022443966940045357,
+          "processes": 5
+        },
+        {
+          "monotonic_s": 9557553.578177234,
+          "rss_bytes": 1164541952,
+          "capacity_charge_bytes": 1164541952,
+          "observed_rss_bytes": 1164541952,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022368082776665688,
+          "processes": 5
+        },
+        {
+          "monotonic_s": 9557553.60348274,
+          "rss_bytes": 616534016,
+          "capacity_charge_bytes": 1164541952,
+          "observed_rss_bytes": 616534016,
+          "retiring_rss_charge_bytes": 548007936,
+          "gap_s": 0.025305505841970444,
+          "processes": 5
+        },
+        {
+          "monotonic_s": 9557553.628722792,
+          "rss_bytes": 616538112,
+          "capacity_charge_bytes": 1164546048,
+          "observed_rss_bytes": 616538112,
+          "retiring_rss_charge_bytes": 548007936,
+          "gap_s": 0.025240052491426468,
+          "processes": 5
+        },
+        {
+          "monotonic_s": 9557553.653897248,
+          "rss_bytes": 616538112,
+          "capacity_charge_bytes": 1164546048,
+          "observed_rss_bytes": 616538112,
+          "retiring_rss_charge_bytes": 548007936,
+          "gap_s": 0.025174455717206,
+          "processes": 5
+        },
+        {
+          "monotonic_s": 9557553.675829928,
+          "rss_bytes": 616538112,
+          "capacity_charge_bytes": 616538112,
+          "observed_rss_bytes": 616538112,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021932680159807205,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557553.69779549,
+          "rss_bytes": 616538112,
+          "capacity_charge_bytes": 616538112,
+          "observed_rss_bytes": 616538112,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02196556143462658,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557553.722666703,
+          "rss_bytes": 68538368,
+          "capacity_charge_bytes": 616538112,
+          "observed_rss_bytes": 68538368,
+          "retiring_rss_charge_bytes": 547999744,
+          "gap_s": 0.024871213361620903,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557553.748699876,
+          "rss_bytes": 68554752,
+          "capacity_charge_bytes": 616554496,
+          "observed_rss_bytes": 68554752,
+          "retiring_rss_charge_bytes": 547999744,
+          "gap_s": 0.026033172383904457,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557553.773575338,
+          "rss_bytes": 68554752,
+          "capacity_charge_bytes": 616554496,
+          "observed_rss_bytes": 68554752,
+          "retiring_rss_charge_bytes": 547999744,
+          "gap_s": 0.0248754620552063,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557553.795201248,
+          "rss_bytes": 68554752,
+          "capacity_charge_bytes": 68554752,
+          "observed_rss_bytes": 68554752,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021625909954309464,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557553.81678619,
+          "rss_bytes": 68554752,
+          "capacity_charge_bytes": 68554752,
+          "observed_rss_bytes": 68554752,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021584942936897278,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557553.838080565,
+          "rss_bytes": 54874112,
+          "capacity_charge_bytes": 54874112,
+          "observed_rss_bytes": 54874112,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021294374018907547,
+          "processes": 2
+        }
+      ],
+      "reason": "all_owned_exited",
+      "final_live": [],
+      "retirement_records": {
+        "896822:955755292": {
+          "pid": 896822,
+          "start_ticks": 955755292,
+          "first_retiring_s": 9557553.383993236,
+          "evidence": {
+            "pid": 896822,
+            "start_ticks": 955755292,
+            "before": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "tasks": [
+              "896822"
+            ],
+            "after_tasks": [
+              "896822"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 539881472,
+          "samples": 2,
+          "max_hold_s": 0.05160844326019287,
+          "released": true,
+          "released_s": 9557553.43560168
+        },
+        "896824:955755292": {
+          "pid": 896824,
+          "start_ticks": 955755292,
+          "first_retiring_s": 9557553.507624095,
+          "evidence": {
+            "pid": 896824,
+            "start_ticks": 955755292,
+            "before": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "tasks": [
+              "896824"
+            ],
+            "after_tasks": [
+              "896824"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 548016128,
+          "samples": 2,
+          "max_hold_s": 0.04809645935893059,
+          "released": true,
+          "released_s": 9557553.555720555
+        },
+        "896825:955755292": {
+          "pid": 896825,
+          "start_ticks": 955755292,
+          "first_retiring_s": 9557553.603317957,
+          "evidence": {
+            "pid": 896825,
+            "start_ticks": 955755292,
+            "before": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "tasks": [
+              "896825"
+            ],
+            "after_tasks": [
+              "896825"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 548007936,
+          "samples": 3,
+          "max_hold_s": 0.07237128540873528,
+          "released": true,
+          "released_s": 9557553.675689243
+        },
+        "896826:955755292": {
+          "pid": 896826,
+          "start_ticks": 955755292,
+          "first_retiring_s": 9557553.722433394,
+          "evidence": {
+            "pid": 896826,
+            "start_ticks": 955755292,
+            "before": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 896817,
+              "flags": 4194316,
+              "start_ticks": 955755292
+            },
+            "tasks": [
+              "896826"
+            ],
+            "after_tasks": [
+              "896826"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 547999744,
+          "samples": 3,
+          "max_hold_s": 0.07253464125096798,
+          "released": true,
+          "released_s": 9557553.794968035
+        }
+      },
+      "pending_retirements": []
+    },
+    {
+      "path": "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "strict-v2",
+      "status": "exited",
+      "root": {
+        "pid": 897043,
+        "start_ticks": 955755450
+      },
+      "supervisor": {
+        "pid": 896527,
+        "start_ticks": 955755174
+      },
+      "watchdog": {
+        "pid": 897044,
+        "parent_pid": 896527,
+        "start_ticks": 955755450,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 139988992,
+        "hard_rss": 240652288,
+        "process_cap": 8,
+        "wall_s": 6.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": null
+      },
+      "samples": 4,
+      "peak_sampled_rss_bytes": 68042752,
+      "max_sample_gap_s": 0.02080998755991459,
+      "max_probe_s": 0.0005174390971660614,
+      "peak_processes": 3,
+      "peak_capacity_charge_bytes": 68042752,
+      "peak_retiring_rss_charge_bytes": 0,
+      "wall_s": 0.062467070296406746,
+      "last_sample_rss_bytes": 54870016,
+      "last_sample_capacity_charge_bytes": 54870016,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 54870016,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9557554.60567978,
+      "owned_identities": [
+        {
+          "pid": 897043,
+          "parent_pid": 896527,
+          "start_ticks": 955755450,
+          "state": "S"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9557554.5438382,
+          "rss_bytes": 68034560,
+          "capacity_charge_bytes": 68034560,
+          "observed_rss_bytes": 68034560,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.564648187,
+          "rss_bytes": 68038656,
+          "capacity_charge_bytes": 68038656,
+          "observed_rss_bytes": 68038656,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02080998755991459,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.585235544,
+          "rss_bytes": 68042752,
+          "capacity_charge_bytes": 68042752,
+          "observed_rss_bytes": 68042752,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020587356761097908,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.60567978,
+          "rss_bytes": 54870016,
+          "capacity_charge_bytes": 54870016,
+          "observed_rss_bytes": 54870016,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02044423669576645,
+          "processes": 2
+        }
+      ],
+      "reason": "all_owned_exited",
+      "final_live": [],
+      "retirement_records": {},
+      "pending_retirements": []
+    },
+    {
+      "path": "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "strict-v2",
+      "status": "stopped",
+      "root": {
+        "pid": 897055,
+        "start_ticks": 955755462
+      },
+      "supervisor": {
+        "pid": 896527,
+        "start_ticks": 955755174
+      },
+      "watchdog": {
+        "pid": 897057,
+        "parent_pid": 896527,
+        "start_ticks": 955755462,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 139988992,
+        "hard_rss": 240652288,
+        "process_cap": 8,
+        "wall_s": 6.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": null
+      },
+      "samples": 8,
+      "peak_sampled_rss_bytes": 142798848,
+      "max_sample_gap_s": 0.02182192914187908,
+      "max_probe_s": 0.001671869307756424,
+      "peak_processes": 4,
+      "peak_capacity_charge_bytes": 142798848,
+      "peak_retiring_rss_charge_bytes": 0,
+      "wall_s": 0.15994646027684212,
+      "last_sample_rss_bytes": 142798848,
+      "last_sample_capacity_charge_bytes": 142798848,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 142798848,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9557554.813694282,
+      "owned_identities": [
+        {
+          "pid": 897055,
+          "parent_pid": 896527,
+          "start_ticks": 955755462,
+          "state": "S"
+        },
+        {
+          "pid": 897064,
+          "parent_pid": 897055,
+          "start_ticks": 955755467,
+          "state": "R"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9557554.665119078,
+          "rss_bytes": 68042752,
+          "capacity_charge_bytes": 68042752,
+          "observed_rss_bytes": 68042752,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557554.686212152,
+          "rss_bytes": 80257024,
+          "capacity_charge_bytes": 80257024,
+          "observed_rss_bytes": 80257024,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02109307423233986,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557554.707296817,
+          "rss_bytes": 95969280,
+          "capacity_charge_bytes": 95969280,
+          "observed_rss_bytes": 95969280,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02108466438949108,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557554.728115913,
+          "rss_bytes": 99930112,
+          "capacity_charge_bytes": 99930112,
+          "observed_rss_bytes": 99930112,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02081909589469433,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557554.74929578,
+          "rss_bytes": 112750592,
+          "capacity_charge_bytes": 112750592,
+          "observed_rss_bytes": 112750592,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021179867908358574,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557554.77046779,
+          "rss_bytes": 120913920,
+          "capacity_charge_bytes": 120913920,
+          "observed_rss_bytes": 120913920,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02117200940847397,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557554.791872352,
+          "rss_bytes": 129531904,
+          "capacity_charge_bytes": 129531904,
+          "observed_rss_bytes": 129531904,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021404562518000603,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9557554.813694282,
+          "rss_bytes": 142798848,
+          "capacity_charge_bytes": 142798848,
+          "observed_rss_bytes": 142798848,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02182192914187908,
+          "processes": 4
+        }
+      ],
+      "reason": "planned_rss",
+      "stop_sample": [
+        {
+          "pid": 896527,
+          "start_ticks": 955755174,
+          "rss_bytes": 39325696,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 39325696,
+          "kind": "observed"
+        },
+        {
+          "pid": 897057,
+          "start_ticks": 955755462,
+          "rss_bytes": 15523840,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 15523840,
+          "kind": "observed"
+        },
+        {
+          "pid": 897055,
+          "start_ticks": 955755462,
+          "rss_bytes": 13205504,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 13205504,
+          "kind": "observed"
+        },
+        {
+          "pid": 897064,
+          "start_ticks": 955755467,
+          "rss_bytes": 74743808,
+          "retiring_rss_charge_bytes": 0,
+          "capacity_charge_bytes": 74743808,
+          "kind": "observed"
+        }
+      ],
+      "final_live": [],
+      "retirement_records": {},
+      "pending_retirements": []
+    },
+    {
+      "path": "runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "rss_reader": "terminal-mm-reserve-v3",
+      "status": "exited",
+      "root": {
+        "pid": 897223,
+        "start_ticks": 955755514
+      },
+      "supervisor": {
+        "pid": 895544,
+        "start_ticks": 955754284
+      },
+      "watchdog": {
+        "pid": 897224,
+        "parent_pid": 895544,
+        "start_ticks": 955755514,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 7516192768,
+        "hard_rss": 8589934592,
+        "process_cap": 16,
+        "wall_s": 10.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128,
+        "retirement_hold_s": 0.1
+      },
+      "samples": 21,
+      "peak_sampled_rss_bytes": 197185536,
+      "max_sample_gap_s": 0.022172091528773308,
+      "max_probe_s": 0.0012379512190818787,
+      "peak_processes": 3,
+      "peak_capacity_charge_bytes": 197185536,
+      "peak_retiring_rss_charge_bytes": 0,
+      "wall_s": 0.42512127198278904,
+      "last_sample_rss_bytes": 48689152,
+      "last_sample_capacity_charge_bytes": 48689152,
+      "rss_observation_complete": true,
+      "last_sample_observed_rss_bytes": 48689152,
+      "last_sample_retiring_charge_bytes": 0,
+      "last_sample_monotonic_s": 9557555.605209548,
+      "owned_identities": [
+        {
+          "pid": 897223,
+          "parent_pid": 895544,
+          "start_ticks": 955755514,
+          "state": "R"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9557555.180860031,
+          "rss_bytes": 67039232,
+          "capacity_charge_bytes": 67039232,
+          "observed_rss_bytes": 67039232,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.202239295,
+          "rss_bytes": 70500352,
+          "capacity_charge_bytes": 70500352,
+          "observed_rss_bytes": 70500352,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021379264071583748,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.223244783,
+          "rss_bytes": 75141120,
+          "capacity_charge_bytes": 75141120,
+          "observed_rss_bytes": 75141120,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02100548706948757,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.244397089,
+          "rss_bytes": 83963904,
+          "capacity_charge_bytes": 83963904,
+          "observed_rss_bytes": 83963904,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021152306348085403,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.265629884,
+          "rss_bytes": 88821760,
+          "capacity_charge_bytes": 88821760,
+          "observed_rss_bytes": 88821760,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02123279497027397,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.286949797,
+          "rss_bytes": 93970432,
+          "capacity_charge_bytes": 93970432,
+          "observed_rss_bytes": 93970432,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021319912746548653,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.308135424,
+          "rss_bytes": 94724096,
+          "capacity_charge_bytes": 94724096,
+          "observed_rss_bytes": 94724096,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021185627207159996,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.330307515,
+          "rss_bytes": 98852864,
+          "capacity_charge_bytes": 98852864,
+          "observed_rss_bytes": 98852864,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.022172091528773308,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.351461362,
+          "rss_bytes": 126156800,
+          "capacity_charge_bytes": 126156800,
+          "observed_rss_bytes": 126156800,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021153846755623817,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.37255199,
+          "rss_bytes": 136093696,
+          "capacity_charge_bytes": 136093696,
+          "observed_rss_bytes": 136093696,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02109062857925892,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.393658116,
+          "rss_bytes": 181399552,
+          "capacity_charge_bytes": 181399552,
+          "observed_rss_bytes": 181399552,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02110612578690052,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.414746832,
+          "rss_bytes": 187428864,
+          "capacity_charge_bytes": 187428864,
+          "observed_rss_bytes": 187428864,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02108871564269066,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.435840376,
+          "rss_bytes": 189444096,
+          "capacity_charge_bytes": 189444096,
+          "observed_rss_bytes": 189444096,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021093543618917465,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.457715586,
+          "rss_bytes": 190066688,
+          "capacity_charge_bytes": 190066688,
+          "observed_rss_bytes": 190066688,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021875210106372833,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.478817957,
+          "rss_bytes": 191377408,
+          "capacity_charge_bytes": 191377408,
+          "observed_rss_bytes": 191377408,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02110237069427967,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.499925768,
+          "rss_bytes": 193966080,
+          "capacity_charge_bytes": 193966080,
+          "observed_rss_bytes": 193966080,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021107811480760574,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.521026956,
+          "rss_bytes": 195080192,
+          "capacity_charge_bytes": 195080192,
+          "observed_rss_bytes": 195080192,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02110118791460991,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.542119635,
+          "rss_bytes": 195457024,
+          "capacity_charge_bytes": 195457024,
+          "observed_rss_bytes": 195457024,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021092679351568222,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.563241445,
+          "rss_bytes": 197185536,
+          "capacity_charge_bytes": 197185536,
+          "observed_rss_bytes": 197185536,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.021121809259057045,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.584363293,
+          "rss_bytes": 191475712,
+          "capacity_charge_bytes": 191475712,
+          "observed_rss_bytes": 191475712,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.02112184837460518,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9557555.605209548,
+          "rss_bytes": 48689152,
+          "capacity_charge_bytes": 48689152,
+          "observed_rss_bytes": 48689152,
+          "retiring_rss_charge_bytes": 0,
+          "gap_s": 0.020846255123615265,
+          "processes": 2
+        }
+      ],
+      "reason": "all_owned_exited",
+      "final_live": [],
+      "retirement_records": {},
+      "pending_retirements": []
+    }
+  ],
+  "credit_audit": null,
+  "credit_events_verified": 0,
+  "slot_evidence": [
+    {
+      "id": "spawn1097",
+      "registered_status": "invalid",
+      "trace_rows": {}
+    },
+    {
+      "id": "forkserver1097",
+      "registered_status": "not_run",
+      "trace_rows": {}
+    },
+    {
+      "id": "forkserver1098",
+      "registered_status": "not_run",
+      "trace_rows": {}
+    },
+    {
+      "id": "spawn1098",
+      "registered_status": "not_run",
+      "trace_rows": {}
+    },
+    {
+      "id": "spawn1099",
+      "registered_status": "not_run",
+      "trace_rows": {}
+    },
+    {
+      "id": "forkserver1099",
+      "registered_status": "not_run",
+      "trace_rows": {}
+    }
+  ],
+  "constructor_facts": null,
+  "serial_facts": null,
+  "release_facts": null,
+  "probe_audit": [
+    {
+      "id": "spawn1097",
+      "formal_status": "invalid",
+      "result_present": false
+    },
+    {
+      "id": "forkserver1097",
+      "formal_status": "not_run",
+      "result_present": false
+    },
+    {
+      "id": "forkserver1098",
+      "formal_status": "not_run",
+      "result_present": false
+    },
+    {
+      "id": "spawn1098",
+      "formal_status": "not_run",
+      "result_present": false
+    },
+    {
+      "id": "spawn1099",
+      "formal_status": "not_run",
+      "result_present": false
+    },
+    {
+      "id": "forkserver1099",
+      "formal_status": "not_run",
+      "result_present": false
+    }
+  ],
+  "registered_cases": 69,
+  "counts": {
+    "passed": 69,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0
+  },
+  "exited_recorded_identities": [
+    {
+      "pid": 895544,
+      "start_ticks": 955754284
+    },
+    {
+      "pid": 895706,
+      "parent_pid": 895544,
+      "start_ticks": 955754396,
+      "state": "R"
+    },
+    {
+      "pid": 895823,
+      "parent_pid": 895706,
+      "start_ticks": 955754423,
+      "state": "R"
+    },
+    {
+      "pid": 895844,
+      "parent_pid": 895706,
+      "start_ticks": 955754461,
+      "state": "R"
+    },
+    {
+      "pid": 895950,
+      "parent_pid": 895544,
+      "start_ticks": 955754568,
+      "state": "R"
+    },
+    {
+      "pid": 896527,
+      "start_ticks": 955755174
+    },
+    {
+      "pid": 896816,
+      "parent_pid": 896527,
+      "start_ticks": 955755288,
+      "state": "S"
+    },
+    {
+      "pid": 896817,
+      "parent_pid": 896527,
+      "start_ticks": 955755288,
+      "state": "R"
+    },
+    {
+      "pid": 896818,
+      "parent_pid": 896527,
+      "start_ticks": 955755288,
+      "state": "R"
+    },
+    {
+      "pid": 896822,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "R"
+    },
+    {
+      "pid": 896824,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "R"
+    },
+    {
+      "pid": 896825,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "R"
+    },
+    {
+      "pid": 896826,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "R"
+    },
+    {
+      "pid": 896962,
+      "parent_pid": 896527,
+      "start_ticks": 955755389,
+      "state": "R"
+    },
+    {
+      "pid": 896963,
+      "parent_pid": 896527,
+      "start_ticks": 955755389,
+      "state": "R"
+    },
+    {
+      "pid": 897042,
+      "parent_pid": 896527,
+      "start_ticks": 955755450,
+      "state": "S"
+    },
+    {
+      "pid": 897043,
+      "parent_pid": 896527,
+      "start_ticks": 955755450,
+      "state": "S"
+    },
+    {
+      "pid": 897044,
+      "parent_pid": 896527,
+      "start_ticks": 955755450,
+      "state": "R"
+    },
+    {
+      "pid": 897223,
+      "parent_pid": 895544,
+      "start_ticks": 955755514,
+      "state": "R"
+    },
+    {
+      "pid": 897224,
+      "parent_pid": 895544,
+      "start_ticks": 955755514,
+      "state": "R"
+    },
+    {
+      "pid": 897055,
+      "parent_pid": 896527,
+      "start_ticks": 955755462,
+      "state": "S"
+    },
+    {
+      "pid": 897057,
+      "parent_pid": 896527,
+      "start_ticks": 955755462,
+      "state": "R"
+    },
+    {
+      "pid": 897064,
+      "parent_pid": 897055,
+      "start_ticks": 955755467,
+      "state": "R"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.deferred-native.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/controls.log": {
+      "bytes": 99,
+      "sha256": "c1bdca53214a8626d33c640957310ea8e40b20e10b36ef634a4437de6b537a31"
+    },
+    "runs/v0.0.11/process-exit-backend-01/controls.xml": {
+      "bytes": 9299,
+      "sha256": "a172718518ac0cd518d200b07958caabe7adff8a7e3462e45bef088a6e431d5c"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_exit_uses_nonzero_0/release": {
+      "bytes": 9,
+      "sha256": "1584570866884bb892dbf8bc693d7fbe28203b2ce90ab34642f92ba906781ac2"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.json": {
+      "bytes": 9020,
+      "sha256": "7a02e873e0d349982258cad4bf1810f792e8a6100f50a12ed1637be807233a5f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_serial_heaps_guard0/foreign.json": {
+      "bytes": 116,
+      "sha256": "68355598cd44c0747b068578d88f17ff93128b647d4d9b12cbc95d3981819870"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_serial_heaps_guard0/serial.jsonl": {
+      "bytes": 1463,
+      "sha256": "482df1a0dba6e27de0d40672544037919be92b35df969f4b7e42555e349ce36f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.json": {
+      "bytes": 16922,
+      "sha256": "f7c9ac0d357a80d6ad95b5c2e93ee7d3ec7756e9e4a975e9cd56438d0b010f10"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.json": {
+      "bytes": 2372,
+      "sha256": "3b13866eeefa49244303b260bc74a176a17482d3baa53ec9389c732bf93b2102"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.json": {
+      "bytes": 4342,
+      "sha256": "f37cbd7320b20ddd3006f1523bc243e5d7e51af0f53947125ee5ab291ae106e3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/maps": {
+      "bytes": 7,
+      "sha256": "27ecf4a6835cb2fdf5207078d77fbe88e63c2e81c12a24c77b26c75f769ba242"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/stat": {
+      "bytes": 54,
+      "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/stat": {
+      "bytes": 54,
+      "sha256": "0649b71a331bd5aa9751e2864b6b2e205f9313c73681ce2ff543709b3591b797"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/stat": {
+      "bytes": 54,
+      "sha256": "1cd50a375de032bd7cd00b496aa36f5f0f82608856f59eeb4ea07fe169047d70"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_status_fail_closed_0/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_status_fail_closed_1/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_status_fail_closed_2/17/status": {
+      "bytes": 11,
+      "sha256": "c20bbc8bfc88c7e3204a21a422bbe259a0855f698295149976521a512190de87"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_bound_status_fail_closed_3/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de0/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de0/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de0/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/100/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/500/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de1/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de1/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de2/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de2/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de2/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de3/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de3/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de3/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de4/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de4/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fast_tree_only_current_de4/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_fresh_worker_cannot_impor3/worker-events.jsonl": {
+      "bytes": 147,
+      "sha256": "9325a1188fabb68bb10aabaac37a93780011ca1567efc624189abef993f02c82"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still0/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still0/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still0/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still0/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still1/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still1/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still1/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_live_missing_memory_still1/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1097/probe-result.json": {
+      "bytes": 145,
+      "sha256": "beba1d87407c66746338de09d92fae43eb803e69585b3abb1022a40677236717"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1098/probe-result.json": {
+      "bytes": 145,
+      "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1099/probe-result.json": {
+      "bytes": 145,
+      "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1097/probe-result.json": {
+      "bytes": 140,
+      "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1098/probe-result.json": {
+      "bytes": 140,
+      "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1099/probe-result.json": {
+      "bytes": 140,
+      "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1097/probe-result.json": {
+      "bytes": 145,
+      "sha256": "bf3c0c72d1216467fb012ea26bb5cf617c347ded22c30804078eefbda8867c3c"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1098/probe-result.json": {
+      "bytes": 145,
+      "sha256": "925ed7234e27b31dabd93cba2b5331be91e9b35776586abf1fc6a8a903928925"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1099/probe-result.json": {
+      "bytes": 145,
+      "sha256": "64c1238a118c84366acf9259712262b7ac782c1e47e49d383f8d1d59d2c38549"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1097/probe-result.json": {
+      "bytes": 140,
+      "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1098/probe-result.json": {
+      "bytes": 140,
+      "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1099/probe-result.json": {
+      "bytes": 140,
+      "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1097/probe-result.json": {
+      "bytes": 148,
+      "sha256": "26fde1f4c37ccbbd90ab7364a44889fb32a9c6f803c31d3b61d1f8ba50786839"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1098/probe-result.json": {
+      "bytes": 145,
+      "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1099/probe-result.json": {
+      "bytes": 145,
+      "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1097/probe-result.json": {
+      "bytes": 140,
+      "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1098/probe-result.json": {
+      "bytes": 140,
+      "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1099/probe-result.json": {
+      "bytes": 140,
+      "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1098/probe-result.json": {
+      "bytes": 145,
+      "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1099/probe-result.json": {
+      "bytes": 145,
+      "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1097/probe-result.json": {
+      "bytes": 140,
+      "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1098/probe-result.json": {
+      "bytes": 140,
+      "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1099/probe-result.json": {
+      "bytes": 140,
+      "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1097/probe-result.json": {
+      "bytes": 145,
+      "sha256": "5e7a77d654cc0d0536c25c8e82f6b3cd9ea3c3b44e88a45a1ed0a92164d72037"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1098/probe-result.json": {
+      "bytes": 145,
+      "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1099/probe-result.json": {
+      "bytes": 145,
+      "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1097/probe-result.json": {
+      "bytes": 140,
+      "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1098/probe-result.json": {
+      "bytes": 140,
+      "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1099/probe-result.json": {
+      "bytes": 140,
+      "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1097/probe-result.json": {
+      "bytes": 145,
+      "sha256": "35fd7c28794c9141fec71c6a3eb9c6331d0a7ed115386026ee071f4f6a219e2f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1098/probe-result.json": {
+      "bytes": 145,
+      "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1099/probe-result.json": {
+      "bytes": 145,
+      "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1097/probe-result.json": {
+      "bytes": 140,
+      "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1098/probe-result.json": {
+      "bytes": 140,
+      "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1099/probe-result.json": {
+      "bytes": 140,
+      "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1097/probe-result.json": {
+      "bytes": 145,
+      "sha256": "3cf7287e54da724bb4429bbbdca112b59dc8aa61393aafd9a38e17753b06c6b9"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1098/probe-result.json": {
+      "bytes": 145,
+      "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1099/probe-result.json": {
+      "bytes": 145,
+      "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1097/probe-result.json": {
+      "bytes": 140,
+      "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1098/probe-result.json": {
+      "bytes": 140,
+      "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1099/probe-result.json": {
+      "bytes": 140,
+      "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_persistent_missing_status0/17/status": {
+      "bytes": 17,
+      "sha256": "1bd6ddef8dc5ea30ee7656615ec3d037fab1a06929c8483be28cbb7abf030799"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/maps": {
+      "bytes": 17,
+      "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/stat": {
+      "bytes": 54,
+      "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/maps.txt": {
+      "bytes": 17,
+      "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-after.txt": {
+      "bytes": 54,
+      "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-before.txt": {
+      "bytes": 54,
+      "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/status.txt": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa0/serial.jsonl": {
+      "bytes": 1224,
+      "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa1/serial.jsonl": {
+      "bytes": 1440,
+      "sha256": "6cfcadfcb43d61787e4bc9f7501e477a7627f5630fe35b1a82fce100ac704ea6"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa10/serial.jsonl": {
+      "bytes": 326,
+      "sha256": "a3dbaefd86632003fd347b61df8d44fbf1e21b5cc06bf5fc7f1cb81e8d600f23"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa11/serial.jsonl": {
+      "bytes": 317,
+      "sha256": "978fb2887aadd208f5006253ea725017ce13fc06bdf2c0bf4e5181bb60123a6a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa14/serial.jsonl": {
+      "bytes": 436,
+      "sha256": "415ab18dd553078dd44757338e354c2ea2fa0df90dcae705b54753de3d4d2f1e"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa2/serial.jsonl": {
+      "bytes": 1224,
+      "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa3/serial.jsonl": {
+      "bytes": 559,
+      "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa4/serial.jsonl": {
+      "bytes": 559,
+      "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa5/serial.jsonl": {
+      "bytes": 559,
+      "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa6/serial.jsonl": {
+      "bytes": 417,
+      "sha256": "22e49f010553454ed7327dfd0052b35826388a49be870a0061602c865e717b15"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa7/serial.jsonl": {
+      "bytes": 434,
+      "sha256": "7500b8a0a6aca8de5ef20f9c1eea295f94c04dff5eed0d53fea49868b59ddff6"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa8/serial.jsonl": {
+      "bytes": 434,
+      "sha256": "9117c0bb7df8af22fa018894776e731efc600acf7c83b1af6e3c6799bec80417"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_serial_close_order_and_fa9/serial.jsonl": {
+      "bytes": 444,
+      "sha256": "38d283c35d91879dd33ec0459d3e9a032094c2f474ecc83d55c65d5544f20158"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require0/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require0/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require0/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require0/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require1/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require1/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require1/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require1/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require2/17/stat": {
+      "bytes": 50,
+      "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require2/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require2/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require2/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require3/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require3/17/statm": {
+      "bytes": 13,
+      "sha256": "7c575bcf3f81f8b863658b9b2237b6aa3781daa40d5bd4a0da00347664173ff6"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require3/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require3/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require4/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require4/17/statm": {
+      "bytes": 3,
+      "sha256": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require4/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require4/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require5/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require5/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require5/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require5/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require6/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require6/17/statm": {
+      "bytes": 13,
+      "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require6/17/status": {
+      "bytes": 25,
+      "sha256": "9c5b9866ac567c32098d6bcc93749c7ae721b8251b4a962419c67666aaad6c3a"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require6/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require7/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require7/17/status": {
+      "bytes": 11,
+      "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_terminal_evidence_require7/17/task/17/stat": {
+      "bytes": 50,
+      "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+    },
+    "runs/v0.0.11/process-exit-backend-01/fixtures/controls/test_transient_missing_status_0/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/process-exit-backend-01/result.json": {
+      "bytes": 18005,
+      "sha256": "e9fa76a0d3e6b549b63caf8ce05137415f24f18229d2ebb9edded81e596711bc"
+    },
+    "runs/v0.0.11/process-exit-backend-01/runtime.log": {
+      "bytes": 97,
+      "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+    },
+    "runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.json": {
+      "bytes": 6793,
+      "sha256": "c4bdf17cc368c35dff7413e98182b98c83a1ffda2ed5e684d2a41fb0c5219d70"
+    },
+    "runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/process-exit-backend-01/spawn1097.log": {
+      "bytes": 566,
+      "sha256": "c864cc3e52d01723263ba7ba6a45f4dfa3491121583429fe8f688e2ed082c994"
+    },
+    "runs/v0.0.11/process-exit-backend-01/sync.log": {
+      "bytes": 1228,
+      "sha256": "50384f7d15393ab1bfcac178a2ac3a7f8dd65c1ca3b9474b3c2acd7d2953097c"
+    },
+    "runs/v0.0.11/process-exit-backend-deployment.json": {
+      "bytes": 224336,
+      "sha256": "7236e21385b7d2ba801d5134bd184f0648ddeb102a0ae520b6c5508ecf7d5a30"
+    },
+    "runs/v0.0.11/process-exit-backend-launch.log": {
+      "bytes": 1076,
+      "sha256": "bba4a6e93fde32f86aba2d3b7997eda9446e57807ac48dc0bf11d5fa78cc47f1"
+    }
+  },
+  "fixture_bytes": 50372,
+  "receipt_bytes": 261499,
+  "supervision": {
+    "schema": "joxing-process-exit-probe-v1",
+    "source_commit": "7ee2bf3e0174f7be83bd59fac3c4ef3c51f6a1eb",
+    "protocol_sha256": "c83d92a42d5233c3da7407f6d79e677c4972957a86e11341cbf482def29a57a5",
+    "supervisor": {
+      "pid": 895544,
+      "parent_pid": 1,
+      "start_ticks": 955754284,
+      "state": "R"
+    },
+    "status": "halted",
+    "rows": [
+      {
+        "arm": "none",
+        "id": "spawn1097",
+        "method": "spawn",
+        "seed": 1097,
+        "variant": "import-only-context-v1",
+        "status": "invalid",
+        "work_status": "partial_or_unconfirmed",
+        "reason": "RuntimeError: Native parity stage nonzero: spawn1097"
+      },
+      {
+        "arm": "none",
+        "id": "forkserver1097",
+        "method": "forkserver",
+        "seed": 1097,
+        "variant": "import-only-context-v1",
+        "status": "not_run"
+      },
+      {
+        "arm": "none",
+        "id": "forkserver1098",
+        "method": "forkserver",
+        "seed": 1098,
+        "variant": "import-only-context-v1",
+        "status": "not_run"
+      },
+      {
+        "arm": "none",
+        "id": "spawn1098",
+        "method": "spawn",
+        "seed": 1098,
+        "variant": "import-only-context-v1",
+        "status": "not_run"
+      },
+      {
+        "arm": "none",
+        "id": "spawn1099",
+        "method": "spawn",
+        "seed": 1099,
+        "variant": "import-only-context-v1",
+        "status": "not_run"
+      },
+      {
+        "arm": "none",
+        "id": "forkserver1099",
+        "method": "forkserver",
+        "seed": 1099,
+        "variant": "import-only-context-v1",
+        "status": "not_run"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "process": {
+          "pid": 895706,
+          "parent_pid": 895544,
+          "start_ticks": 955754396,
+          "state": "R"
+        },
+        "elapsed_s": 1.6060683261603117,
+        "capacity": {
+          "available_memory_bytes": 41145823232,
+          "free_disk_bytes": 151919357952,
+          "fixture_bytes": 0,
+          "receipt_bytes": 228029,
+          "load": [
+            25.28857421875,
+            22.2275390625,
+            19.00341796875
+          ]
+        },
+        "peak_sampled_rss_bytes": 150818816,
+        "returncode": 0,
+        "wall_s": 1.720500299707055
+      },
+      {
+        "stage": "runtime",
+        "command": [
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import sys,numpy,mujoco,torch,stable_baselines3;v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__};print(v);assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3', 'sb3': '2.7.1', 'torch': '2.10.0+cpu'}"
+        ],
+        "status": "completed",
+        "process": {
+          "pid": 895950,
+          "parent_pid": 895544,
+          "start_ticks": 955754568,
+          "state": "R"
+        },
+        "elapsed_s": 5.939880579710007,
+        "capacity": {
+          "available_memory_bytes": 40472588288,
+          "free_disk_bytes": 151893082112,
+          "fixture_bytes": 0,
+          "receipt_bytes": 229226,
+          "load": [
+            25.47216796875,
+            22.36865234375,
+            19.083984375
+          ]
+        },
+        "peak_sampled_rss_bytes": 436506624,
+        "returncode": 0,
+        "wall_s": 6.0536743979901075
+      },
+      {
+        "stage": "controls",
+        "command": [
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "--junitxml",
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/controls.xml",
+          "--basetemp",
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/fixtures/controls",
+          "tests/test_process_exit_probe.py",
+          "tests/test_serial_retirement.py",
+          "tests/test_terminal_rss_reader.py",
+          "tests/test_trial_rss_watchdog.py"
+        ],
+        "status": "completed",
+        "process": {
+          "pid": 896527,
+          "parent_pid": 895544,
+          "start_ticks": 955755174,
+          "state": "R"
+        },
+        "elapsed_s": 3.275716733187437,
+        "capacity": {
+          "available_memory_bytes": 40659632128,
+          "free_disk_bytes": 151496667136,
+          "fixture_bytes": 50372,
+          "receipt_bytes": 239931,
+          "load": [
+            25.47216796875,
+            22.36865234375,
+            19.083984375
+          ]
+        },
+        "peak_sampled_rss_bytes": 1208569856,
+        "returncode": 0,
+        "wall_s": 3.4003311842679977
+      },
+      {
+        "stage": "spawn1097",
+        "command": [
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "joxing.process_exit_probe",
+          "--folder",
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/fixtures/spawn1097",
+          "--slot",
+          "spawn1097",
+          "--packet",
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/process-exit-backend-protocol.json",
+          "--ledger",
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/fixtures/native-credit.json",
+          "--binding",
+          "81c08541e19aab9d26b336d8d9c7925fef55690ebc2b4b9447a4606bd13d1471",
+          "--ready",
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.ready"
+        ],
+        "status": "failed",
+        "process": {
+          "pid": 897223,
+          "parent_pid": 895544,
+          "start_ticks": 955755514,
+          "state": "R"
+        },
+        "watchdog_process": {
+          "pid": 897224,
+          "parent_pid": 895544,
+          "start_ticks": 955755514,
+          "state": "R"
+        },
+        "watchdog_command": [
+          "python3",
+          "scripts/trial_rss_watchdog.py",
+          "--root-pid",
+          "897223",
+          "--root-start",
+          "955755514",
+          "--supervisor-pid",
+          "895544",
+          "--supervisor-start",
+          "955754284",
+          "--output",
+          "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.json",
+          "--planned-rss",
+          "7516192768",
+          "--hard-rss",
+          "8589934592",
+          "--process-cap",
+          "16",
+          "--wall-s",
+          "10",
+          "--max-gap-s",
+          "0.1",
+          "--rss-reader",
+          "terminal-mm-reserve-v3"
+        ],
+        "elapsed_s": 0.47401782125234604,
+        "capacity": {
+          "available_memory_bytes": 40595251200,
+          "free_disk_bytes": 151425515520,
+          "fixture_bytes": 50372,
+          "receipt_bytes": 249702,
+          "load": [
+            25.47216796875,
+            22.36865234375,
+            19.083984375
+          ]
+        },
+        "returncode": 1,
+        "watchdog": {
+          "schema": "joxing-fast-rss-watchdog-v1",
+          "rss_reader": "terminal-mm-reserve-v3",
+          "status": "exited",
+          "root": {
+            "pid": 897223,
+            "start_ticks": 955755514
+          },
+          "supervisor": {
+            "pid": 895544,
+            "start_ticks": 955754284
+          },
+          "watchdog": {
+            "pid": 897224,
+            "parent_pid": 895544,
+            "start_ticks": 955755514,
+            "state": "R"
+          },
+          "limits": {
+            "planned_rss": 7516192768,
+            "hard_rss": 8589934592,
+            "process_cap": 16,
+            "wall_s": 10.0,
+            "max_gap_s": 0.1,
+            "poll_s": 0.02,
+            "identity_cap": 128,
+            "retirement_hold_s": 0.1
+          },
+          "samples": 21,
+          "peak_sampled_rss_bytes": 197185536,
+          "max_sample_gap_s": 0.022172091528773308,
+          "max_probe_s": 0.0012379512190818787,
+          "peak_processes": 3,
+          "peak_capacity_charge_bytes": 197185536,
+          "peak_retiring_rss_charge_bytes": 0,
+          "wall_s": 0.42512127198278904,
+          "last_sample_rss_bytes": 48689152,
+          "last_sample_capacity_charge_bytes": 48689152,
+          "rss_observation_complete": true,
+          "last_sample_observed_rss_bytes": 48689152,
+          "last_sample_retiring_charge_bytes": 0,
+          "last_sample_monotonic_s": 9557555.605209548,
+          "owned_identities": [
+            {
+              "pid": 897223,
+              "parent_pid": 895544,
+              "start_ticks": 955755514,
+              "state": "R"
+            }
+          ],
+          "recent_samples": [
+            {
+              "monotonic_s": 9557555.180860031,
+              "rss_bytes": 67039232,
+              "capacity_charge_bytes": 67039232,
+              "observed_rss_bytes": 67039232,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.202239295,
+              "rss_bytes": 70500352,
+              "capacity_charge_bytes": 70500352,
+              "observed_rss_bytes": 70500352,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021379264071583748,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.223244783,
+              "rss_bytes": 75141120,
+              "capacity_charge_bytes": 75141120,
+              "observed_rss_bytes": 75141120,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02100548706948757,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.244397089,
+              "rss_bytes": 83963904,
+              "capacity_charge_bytes": 83963904,
+              "observed_rss_bytes": 83963904,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021152306348085403,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.265629884,
+              "rss_bytes": 88821760,
+              "capacity_charge_bytes": 88821760,
+              "observed_rss_bytes": 88821760,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02123279497027397,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.286949797,
+              "rss_bytes": 93970432,
+              "capacity_charge_bytes": 93970432,
+              "observed_rss_bytes": 93970432,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021319912746548653,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.308135424,
+              "rss_bytes": 94724096,
+              "capacity_charge_bytes": 94724096,
+              "observed_rss_bytes": 94724096,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021185627207159996,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.330307515,
+              "rss_bytes": 98852864,
+              "capacity_charge_bytes": 98852864,
+              "observed_rss_bytes": 98852864,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.022172091528773308,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.351461362,
+              "rss_bytes": 126156800,
+              "capacity_charge_bytes": 126156800,
+              "observed_rss_bytes": 126156800,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021153846755623817,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.37255199,
+              "rss_bytes": 136093696,
+              "capacity_charge_bytes": 136093696,
+              "observed_rss_bytes": 136093696,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02109062857925892,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.393658116,
+              "rss_bytes": 181399552,
+              "capacity_charge_bytes": 181399552,
+              "observed_rss_bytes": 181399552,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02110612578690052,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.414746832,
+              "rss_bytes": 187428864,
+              "capacity_charge_bytes": 187428864,
+              "observed_rss_bytes": 187428864,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02108871564269066,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.435840376,
+              "rss_bytes": 189444096,
+              "capacity_charge_bytes": 189444096,
+              "observed_rss_bytes": 189444096,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021093543618917465,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.457715586,
+              "rss_bytes": 190066688,
+              "capacity_charge_bytes": 190066688,
+              "observed_rss_bytes": 190066688,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021875210106372833,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.478817957,
+              "rss_bytes": 191377408,
+              "capacity_charge_bytes": 191377408,
+              "observed_rss_bytes": 191377408,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02110237069427967,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.499925768,
+              "rss_bytes": 193966080,
+              "capacity_charge_bytes": 193966080,
+              "observed_rss_bytes": 193966080,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021107811480760574,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.521026956,
+              "rss_bytes": 195080192,
+              "capacity_charge_bytes": 195080192,
+              "observed_rss_bytes": 195080192,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02110118791460991,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.542119635,
+              "rss_bytes": 195457024,
+              "capacity_charge_bytes": 195457024,
+              "observed_rss_bytes": 195457024,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021092679351568222,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.563241445,
+              "rss_bytes": 197185536,
+              "capacity_charge_bytes": 197185536,
+              "observed_rss_bytes": 197185536,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.021121809259057045,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.584363293,
+              "rss_bytes": 191475712,
+              "capacity_charge_bytes": 191475712,
+              "observed_rss_bytes": 191475712,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.02112184837460518,
+              "processes": 3
+            },
+            {
+              "monotonic_s": 9557555.605209548,
+              "rss_bytes": 48689152,
+              "capacity_charge_bytes": 48689152,
+              "observed_rss_bytes": 48689152,
+              "retiring_rss_charge_bytes": 0,
+              "gap_s": 0.020846255123615265,
+              "processes": 2
+            }
+          ],
+          "reason": "all_owned_exited",
+          "final_live": [],
+          "retirement_records": {},
+          "pending_retirements": []
+        }
+      }
+    ],
+    "initial_capacity": {
+      "available_memory_bytes": 38252138496,
+      "free_disk_bytes": 151930085376,
+      "fixture_bytes": 0,
+      "receipt_bytes": 224336,
+      "load": [
+        25.28857421875,
+        22.2275390625,
+        19.00341796875
+      ]
+    },
+    "formal_boxing_games": 0,
+    "competitive_training_runs": 0,
+    "control_counts": {
+      "passed": 69,
+      "xfail": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "error": "RuntimeError: Native parity stage nonzero: spawn1097",
+    "wall_s": 12.850743534043431,
+    "owned_identities": [
+      {
+        "pid": 895706,
+        "parent_pid": 895544,
+        "start_ticks": 955754396,
+        "state": "S"
+      },
+      {
+        "pid": 895823,
+        "parent_pid": 895706,
+        "start_ticks": 955754423,
+        "state": "R"
+      },
+      {
+        "pid": 895844,
+        "parent_pid": 895706,
+        "start_ticks": 955754461,
+        "state": "R"
+      },
+      {
+        "pid": 895950,
+        "parent_pid": 895544,
+        "start_ticks": 955754568,
+        "state": "Z"
+      },
+      {
+        "pid": 896527,
+        "parent_pid": 895544,
+        "start_ticks": 955755174,
+        "state": "Z"
+      },
+      {
+        "pid": 896816,
+        "parent_pid": 896527,
+        "start_ticks": 955755288,
+        "state": "S"
+      },
+      {
+        "pid": 896817,
+        "parent_pid": 896527,
+        "start_ticks": 955755288,
+        "state": "S"
+      },
+      {
+        "pid": 896818,
+        "parent_pid": 896527,
+        "start_ticks": 955755288,
+        "state": "S"
+      },
+      {
+        "pid": 896822,
+        "parent_pid": 896817,
+        "start_ticks": 955755292,
+        "state": "R"
+      },
+      {
+        "pid": 896824,
+        "parent_pid": 896817,
+        "start_ticks": 955755292,
+        "state": "S"
+      },
+      {
+        "pid": 896825,
+        "parent_pid": 896817,
+        "start_ticks": 955755292,
+        "state": "S"
+      },
+      {
+        "pid": 896826,
+        "parent_pid": 896817,
+        "start_ticks": 955755292,
+        "state": "Z"
+      },
+      {
+        "pid": 896962,
+        "parent_pid": 896527,
+        "start_ticks": 955755389,
+        "state": "R"
+      },
+      {
+        "pid": 896963,
+        "parent_pid": 896527,
+        "start_ticks": 955755389,
+        "state": "S"
+      },
+      {
+        "pid": 897042,
+        "parent_pid": 896527,
+        "start_ticks": 955755450,
+        "state": "S"
+      },
+      {
+        "pid": 897043,
+        "parent_pid": 896527,
+        "start_ticks": 955755450,
+        "state": "Z"
+      },
+      {
+        "pid": 897044,
+        "parent_pid": 896527,
+        "start_ticks": 955755450,
+        "state": "R"
+      },
+      {
+        "pid": 897223,
+        "parent_pid": 895544,
+        "start_ticks": 955755514,
+        "state": "R"
+      },
+      {
+        "pid": 897224,
+        "parent_pid": 895544,
+        "start_ticks": 955755514,
+        "state": "R"
+      }
+    ],
+    "final_live_recorded": []
+  },
+  "observed_utc": "2026-11-02T11:59:06Z"
+}

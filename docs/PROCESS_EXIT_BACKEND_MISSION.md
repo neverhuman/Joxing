@@ -1,6 +1,13 @@
 # Next: isolate process-exit latency without native physics
 
-Status: FINAL prelaunch revision adds raw bound stat/status/maps files for
+Current: FIRST packet invalid on parent provenance-helper imports before worker
+creation,1invalid/5not_run,0physics; [results/audit](PROCESS_EXIT_BACKEND_RESULTS.md).
+Fresh stdlib-only writer repair registered at process-exit-backend-repair-protocol.json,
+canonical f94d81546acc3471dc5e6b06ba72269417b1fa74820cbb426c6eb60d3b3cecf9.
+71Linux controls (67local pass/4Linux skips) precede unchanged6slots/seeds/limits/
+hypothesis in a fresh root. Preserve original failure, carry costs; no adoption.
+
+Historical first freeze: FINAL prelaunch revision adds raw bound stat/status/maps files for
 independent reconstruction;69cases (65local pass/4Linux skips), same slots and
 limits. Superseded68case freeze never deployed; no outcomes reused. Exact current
 protocol identity is in experiments/v0.0.11/process-exit-backend-protocol.json and

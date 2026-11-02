@@ -1,0 +1,625 @@
+{
+  "schema": "joxing-process-exit-probe-v1",
+  "source_commit": "7ee2bf3e0174f7be83bd59fac3c4ef3c51f6a1eb",
+  "protocol_sha256": "c83d92a42d5233c3da7407f6d79e677c4972957a86e11341cbf482def29a57a5",
+  "supervisor": {
+    "pid": 895544,
+    "parent_pid": 1,
+    "start_ticks": 955754284,
+    "state": "R"
+  },
+  "status": "halted",
+  "rows": [
+    {
+      "arm": "none",
+      "id": "spawn1097",
+      "method": "spawn",
+      "seed": 1097,
+      "variant": "import-only-context-v1",
+      "status": "invalid",
+      "work_status": "partial_or_unconfirmed",
+      "reason": "RuntimeError: Native parity stage nonzero: spawn1097"
+    },
+    {
+      "arm": "none",
+      "id": "forkserver1097",
+      "method": "forkserver",
+      "seed": 1097,
+      "variant": "import-only-context-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "none",
+      "id": "forkserver1098",
+      "method": "forkserver",
+      "seed": 1098,
+      "variant": "import-only-context-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "none",
+      "id": "spawn1098",
+      "method": "spawn",
+      "seed": 1098,
+      "variant": "import-only-context-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "none",
+      "id": "spawn1099",
+      "method": "spawn",
+      "seed": 1099,
+      "variant": "import-only-context-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "none",
+      "id": "forkserver1099",
+      "method": "forkserver",
+      "seed": 1099,
+      "variant": "import-only-context-v1",
+      "status": "not_run"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 895706,
+        "parent_pid": 895544,
+        "start_ticks": 955754396,
+        "state": "R"
+      },
+      "elapsed_s": 1.6060683261603117,
+      "capacity": {
+        "available_memory_bytes": 41145823232,
+        "free_disk_bytes": 151919357952,
+        "fixture_bytes": 0,
+        "receipt_bytes": 228029,
+        "load": [
+          25.28857421875,
+          22.2275390625,
+          19.00341796875
+        ]
+      },
+      "peak_sampled_rss_bytes": 150818816,
+      "returncode": 0,
+      "wall_s": 1.720500299707055
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import sys,numpy,mujoco,torch,stable_baselines3;v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__};print(v);assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3', 'sb3': '2.7.1', 'torch': '2.10.0+cpu'}"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 895950,
+        "parent_pid": 895544,
+        "start_ticks": 955754568,
+        "state": "R"
+      },
+      "elapsed_s": 5.939880579710007,
+      "capacity": {
+        "available_memory_bytes": 40472588288,
+        "free_disk_bytes": 151893082112,
+        "fixture_bytes": 0,
+        "receipt_bytes": 229226,
+        "load": [
+          25.47216796875,
+          22.36865234375,
+          19.083984375
+        ]
+      },
+      "peak_sampled_rss_bytes": 436506624,
+      "returncode": 0,
+      "wall_s": 6.0536743979901075
+    },
+    {
+      "stage": "controls",
+      "command": [
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml",
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/controls.xml",
+        "--basetemp",
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/fixtures/controls",
+        "tests/test_process_exit_probe.py",
+        "tests/test_serial_retirement.py",
+        "tests/test_terminal_rss_reader.py",
+        "tests/test_trial_rss_watchdog.py"
+      ],
+      "status": "completed",
+      "process": {
+        "pid": 896527,
+        "parent_pid": 895544,
+        "start_ticks": 955755174,
+        "state": "R"
+      },
+      "elapsed_s": 3.275716733187437,
+      "capacity": {
+        "available_memory_bytes": 40659632128,
+        "free_disk_bytes": 151496667136,
+        "fixture_bytes": 50372,
+        "receipt_bytes": 239931,
+        "load": [
+          25.47216796875,
+          22.36865234375,
+          19.083984375
+        ]
+      },
+      "peak_sampled_rss_bytes": 1208569856,
+      "returncode": 0,
+      "wall_s": 3.4003311842679977
+    },
+    {
+      "stage": "spawn1097",
+      "command": [
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "joxing.process_exit_probe",
+        "--folder",
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/fixtures/spawn1097",
+        "--slot",
+        "spawn1097",
+        "--packet",
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/experiments/v0.0.11/process-exit-backend-protocol.json",
+        "--ledger",
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/fixtures/native-credit.json",
+        "--binding",
+        "81c08541e19aab9d26b336d8d9c7925fef55690ebc2b4b9447a4606bd13d1471",
+        "--ready",
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.ready"
+      ],
+      "status": "failed",
+      "process": {
+        "pid": 897223,
+        "parent_pid": 895544,
+        "start_ticks": 955755514,
+        "state": "R"
+      },
+      "watchdog_process": {
+        "pid": 897224,
+        "parent_pid": 895544,
+        "start_ticks": 955755514,
+        "state": "R"
+      },
+      "watchdog_command": [
+        "python3",
+        "scripts/trial_rss_watchdog.py",
+        "--root-pid",
+        "897223",
+        "--root-start",
+        "955755514",
+        "--supervisor-pid",
+        "895544",
+        "--supervisor-start",
+        "955754284",
+        "--output",
+        "/home/ubuntu/joxing/process-exit-backend-20261102-01/runs/v0.0.11/process-exit-backend-01/spawn1097-watchdog.json",
+        "--planned-rss",
+        "7516192768",
+        "--hard-rss",
+        "8589934592",
+        "--process-cap",
+        "16",
+        "--wall-s",
+        "10",
+        "--max-gap-s",
+        "0.1",
+        "--rss-reader",
+        "terminal-mm-reserve-v3"
+      ],
+      "elapsed_s": 0.47401782125234604,
+      "capacity": {
+        "available_memory_bytes": 40595251200,
+        "free_disk_bytes": 151425515520,
+        "fixture_bytes": 50372,
+        "receipt_bytes": 249702,
+        "load": [
+          25.47216796875,
+          22.36865234375,
+          19.083984375
+        ]
+      },
+      "returncode": 1,
+      "watchdog": {
+        "schema": "joxing-fast-rss-watchdog-v1",
+        "rss_reader": "terminal-mm-reserve-v3",
+        "status": "exited",
+        "root": {
+          "pid": 897223,
+          "start_ticks": 955755514
+        },
+        "supervisor": {
+          "pid": 895544,
+          "start_ticks": 955754284
+        },
+        "watchdog": {
+          "pid": 897224,
+          "parent_pid": 895544,
+          "start_ticks": 955755514,
+          "state": "R"
+        },
+        "limits": {
+          "planned_rss": 7516192768,
+          "hard_rss": 8589934592,
+          "process_cap": 16,
+          "wall_s": 10.0,
+          "max_gap_s": 0.1,
+          "poll_s": 0.02,
+          "identity_cap": 128,
+          "retirement_hold_s": 0.1
+        },
+        "samples": 21,
+        "peak_sampled_rss_bytes": 197185536,
+        "max_sample_gap_s": 0.022172091528773308,
+        "max_probe_s": 0.0012379512190818787,
+        "peak_processes": 3,
+        "peak_capacity_charge_bytes": 197185536,
+        "peak_retiring_rss_charge_bytes": 0,
+        "wall_s": 0.42512127198278904,
+        "last_sample_rss_bytes": 48689152,
+        "last_sample_capacity_charge_bytes": 48689152,
+        "rss_observation_complete": true,
+        "last_sample_observed_rss_bytes": 48689152,
+        "last_sample_retiring_charge_bytes": 0,
+        "last_sample_monotonic_s": 9557555.605209548,
+        "owned_identities": [
+          {
+            "pid": 897223,
+            "parent_pid": 895544,
+            "start_ticks": 955755514,
+            "state": "R"
+          }
+        ],
+        "recent_samples": [
+          {
+            "monotonic_s": 9557555.180860031,
+            "rss_bytes": 67039232,
+            "capacity_charge_bytes": 67039232,
+            "observed_rss_bytes": 67039232,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.202239295,
+            "rss_bytes": 70500352,
+            "capacity_charge_bytes": 70500352,
+            "observed_rss_bytes": 70500352,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021379264071583748,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.223244783,
+            "rss_bytes": 75141120,
+            "capacity_charge_bytes": 75141120,
+            "observed_rss_bytes": 75141120,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02100548706948757,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.244397089,
+            "rss_bytes": 83963904,
+            "capacity_charge_bytes": 83963904,
+            "observed_rss_bytes": 83963904,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021152306348085403,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.265629884,
+            "rss_bytes": 88821760,
+            "capacity_charge_bytes": 88821760,
+            "observed_rss_bytes": 88821760,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02123279497027397,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.286949797,
+            "rss_bytes": 93970432,
+            "capacity_charge_bytes": 93970432,
+            "observed_rss_bytes": 93970432,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021319912746548653,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.308135424,
+            "rss_bytes": 94724096,
+            "capacity_charge_bytes": 94724096,
+            "observed_rss_bytes": 94724096,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021185627207159996,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.330307515,
+            "rss_bytes": 98852864,
+            "capacity_charge_bytes": 98852864,
+            "observed_rss_bytes": 98852864,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.022172091528773308,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.351461362,
+            "rss_bytes": 126156800,
+            "capacity_charge_bytes": 126156800,
+            "observed_rss_bytes": 126156800,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021153846755623817,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.37255199,
+            "rss_bytes": 136093696,
+            "capacity_charge_bytes": 136093696,
+            "observed_rss_bytes": 136093696,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02109062857925892,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.393658116,
+            "rss_bytes": 181399552,
+            "capacity_charge_bytes": 181399552,
+            "observed_rss_bytes": 181399552,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02110612578690052,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.414746832,
+            "rss_bytes": 187428864,
+            "capacity_charge_bytes": 187428864,
+            "observed_rss_bytes": 187428864,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02108871564269066,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.435840376,
+            "rss_bytes": 189444096,
+            "capacity_charge_bytes": 189444096,
+            "observed_rss_bytes": 189444096,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021093543618917465,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.457715586,
+            "rss_bytes": 190066688,
+            "capacity_charge_bytes": 190066688,
+            "observed_rss_bytes": 190066688,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021875210106372833,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.478817957,
+            "rss_bytes": 191377408,
+            "capacity_charge_bytes": 191377408,
+            "observed_rss_bytes": 191377408,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02110237069427967,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.499925768,
+            "rss_bytes": 193966080,
+            "capacity_charge_bytes": 193966080,
+            "observed_rss_bytes": 193966080,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021107811480760574,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.521026956,
+            "rss_bytes": 195080192,
+            "capacity_charge_bytes": 195080192,
+            "observed_rss_bytes": 195080192,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02110118791460991,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.542119635,
+            "rss_bytes": 195457024,
+            "capacity_charge_bytes": 195457024,
+            "observed_rss_bytes": 195457024,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021092679351568222,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.563241445,
+            "rss_bytes": 197185536,
+            "capacity_charge_bytes": 197185536,
+            "observed_rss_bytes": 197185536,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.021121809259057045,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.584363293,
+            "rss_bytes": 191475712,
+            "capacity_charge_bytes": 191475712,
+            "observed_rss_bytes": 191475712,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.02112184837460518,
+            "processes": 3
+          },
+          {
+            "monotonic_s": 9557555.605209548,
+            "rss_bytes": 48689152,
+            "capacity_charge_bytes": 48689152,
+            "observed_rss_bytes": 48689152,
+            "retiring_rss_charge_bytes": 0,
+            "gap_s": 0.020846255123615265,
+            "processes": 2
+          }
+        ],
+        "reason": "all_owned_exited",
+        "final_live": [],
+        "retirement_records": {},
+        "pending_retirements": []
+      }
+    }
+  ],
+  "initial_capacity": {
+    "available_memory_bytes": 38252138496,
+    "free_disk_bytes": 151930085376,
+    "fixture_bytes": 0,
+    "receipt_bytes": 224336,
+    "load": [
+      25.28857421875,
+      22.2275390625,
+      19.00341796875
+    ]
+  },
+  "formal_boxing_games": 0,
+  "competitive_training_runs": 0,
+  "control_counts": {
+    "passed": 69,
+    "xfail": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "error": "RuntimeError: Native parity stage nonzero: spawn1097",
+  "wall_s": 12.850743534043431,
+  "owned_identities": [
+    {
+      "pid": 895706,
+      "parent_pid": 895544,
+      "start_ticks": 955754396,
+      "state": "S"
+    },
+    {
+      "pid": 895823,
+      "parent_pid": 895706,
+      "start_ticks": 955754423,
+      "state": "R"
+    },
+    {
+      "pid": 895844,
+      "parent_pid": 895706,
+      "start_ticks": 955754461,
+      "state": "R"
+    },
+    {
+      "pid": 895950,
+      "parent_pid": 895544,
+      "start_ticks": 955754568,
+      "state": "Z"
+    },
+    {
+      "pid": 896527,
+      "parent_pid": 895544,
+      "start_ticks": 955755174,
+      "state": "Z"
+    },
+    {
+      "pid": 896816,
+      "parent_pid": 896527,
+      "start_ticks": 955755288,
+      "state": "S"
+    },
+    {
+      "pid": 896817,
+      "parent_pid": 896527,
+      "start_ticks": 955755288,
+      "state": "S"
+    },
+    {
+      "pid": 896818,
+      "parent_pid": 896527,
+      "start_ticks": 955755288,
+      "state": "S"
+    },
+    {
+      "pid": 896822,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "R"
+    },
+    {
+      "pid": 896824,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "S"
+    },
+    {
+      "pid": 896825,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "S"
+    },
+    {
+      "pid": 896826,
+      "parent_pid": 896817,
+      "start_ticks": 955755292,
+      "state": "Z"
+    },
+    {
+      "pid": 896962,
+      "parent_pid": 896527,
+      "start_ticks": 955755389,
+      "state": "R"
+    },
+    {
+      "pid": 896963,
+      "parent_pid": 896527,
+      "start_ticks": 955755389,
+      "state": "S"
+    },
+    {
+      "pid": 897042,
+      "parent_pid": 896527,
+      "start_ticks": 955755450,
+      "state": "S"
+    },
+    {
+      "pid": 897043,
+      "parent_pid": 896527,
+      "start_ticks": 955755450,
+      "state": "Z"
+    },
+    {
+      "pid": 897044,
+      "parent_pid": 896527,
+      "start_ticks": 955755450,
+      "state": "R"
+    },
+    {
+      "pid": 897223,
+      "parent_pid": 895544,
+      "start_ticks": 955755514,
+      "state": "R"
+    },
+    {
+      "pid": 897224,
+      "parent_pid": 895544,
+      "start_ticks": 955755514,
+      "state": "R"
+    }
+  ],
+  "final_live_recorded": []
+}

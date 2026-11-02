@@ -36,6 +36,27 @@ class Conn:
     subprocess.run([sys.executable, "-c", code], check=True, timeout=5)
 
 
+@pytest.mark.parametrize("method", ["spawn", "forkserver"])
+def test_parent_preparation_stays_stdlib_after_readiness(tmp_path, method):
+    code = f"""
+import sys
+import joxing.process_exit_probe as p
+p.wait_ready=lambda *a:None
+class StopBeforeProcess(Exception):pass
+def context(method):
+ assert not set(p.HEAVY)&sys.modules.keys()
+ raise StopBeforeProcess('checked before any process')
+p.mp.get_context=context
+try:p.run({str(tmp_path / "probe")!r},{method + "1097"!r},{{'slots':[{{'id':{method + "1097"!r},'method':{method!r},'seed':1097}}]}},'ready')
+except StopBeforeProcess:pass
+else:raise AssertionError('No parent-preparation check')
+assert not set(p.HEAVY)&sys.modules.keys()
+p.write_json({str(tmp_path / "receipt.json")!r},{{'scope':'stdlib writer'}})
+assert not set(p.HEAVY)&sys.modules.keys()
+"""
+    subprocess.run([sys.executable, "-c", code], check=True, timeout=5)
+
+
 @pytest.mark.parametrize(
     "case",
     ["clean", "threads", "after_threads", "heavy", "foreign_server", "foreign_worker"],

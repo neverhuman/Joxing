@@ -75,8 +75,10 @@ state hashes match through close, native objects are released and live RSS falls
 90.66MB. Exit still takes0.798s; four-worker shutdown and learning remain blocked.
 [H18results](docs/LIVE_RESOURCE_RELEASE_RESULTS.md) · [Next: zero-physics process-backend probe](docs/PROCESS_EXIT_BACKEND_MISSION.md).
 The six-slot exit probe is implemented and [preregistered](experiments/v0.0.11/process-exit-backend-protocol.json):
-65local source controls pass/4Linux skips. All69Linux controls precede the
-import-only comparisons; no native/backend adoption or training gain claimed.
+The first packet passed69Linux controls, then correctly stopped before worker
+creation on a parent import mistake. [Failure and named stdlib repair](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
+are retained; the fresh repair requires71Linux controls before the same comparisons.
+No native/backend adoption or training gain claimed.
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

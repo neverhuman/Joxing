@@ -1,3 +1,19 @@
+# H19 first packet invalid; stdlib receipt repair registered — Nov2 Mountain
+
+7ee2bf3/c83d92a4 passes69Linux controls, then spawn1097root fails clean-parent
+import gate BEFORE any worker: shared provenance helper imports NumPy/MuJoCo.
+1INVALID/0VALID/5NOT_RUN retained,0physics/actors/updates. Independent740source/
+69JUnit/23exits/153rawfiles311871bytes audit/transfer pass, no writer.
+
+Current fresh packet process-exit-backend-repair-protocol.json/f94d8154.
+Only repair is local stdlib atomic JSON writer +2parent-preparation controls.
+Local67pass/4Linux skips/Ruffpass;71Linux controls before same6fresh slots/
+seeds/payload/2s/100ms/RSS/90s limits and hypothesis. Old root/protocol unchanged,
+no outcomes reused. Carry all9packet costs:16458steps/258.583535s/32224454fixture/
+2434240receipt bytes; original remainder223542steps/341.416465s/1041517370fixture/
+1760064receipt bytes. Publish/freeze/anonymousverify/freshcapacity before launch;
+repair target NOT_RUN atregistration, no native/backend/default adoption.
+
 # H19 final prelaunch freeze: raw process proof retained — Nov2 Mountain
 
 Current process-exit-backend-protocol.json canonical c83d92a4.
