@@ -4,6 +4,7 @@ import argparse
 import fcntl
 import hashlib
 import json
+import math
 import os
 import shutil
 import subprocess
@@ -45,6 +46,7 @@ def runner_module(schema):
         "joxing-watch-publication-v1": "joxing.process_exit_probe",
         "joxing-native-context-transfer-v1": "joxing.context_native_teardown",
         "joxing-four-native-context-v1": "joxing.four_native_context",
+        "joxing-native-learner-context-parity-v1": "joxing.training_context",
     }[schema]
 
 
@@ -58,6 +60,7 @@ def main():
     parser = argparse.ArgumentParser()
     for key in ("packet", "source-sha", "protocol-sha256"):
         parser.add_argument("--" + key, required=True)
+    parser.add_argument("--epoch-start-monotonic", type=float)
     args = parser.parse_args()
     p = json.loads((ROOT / args.packet).read_text())
     if (
@@ -71,6 +74,7 @@ def main():
             "joxing-watch-publication-v1",
             "joxing-native-context-transfer-v1",
             "joxing-four-native-context-v1",
+            "joxing-native-learner-context-parity-v1",
         )
         or canonical(p) != args.protocol_sha256
     ):
@@ -140,6 +144,16 @@ def main():
     verify()
     serial_constructor = p["schema"] == "joxing-serial-native-teardown-v1"
     four_context = p["schema"] == "joxing-four-native-context-v1"
+    learner_context = p["schema"] == "joxing-native-learner-context-parity-v1"
+    if learner_context:
+        epoch = args.epoch_start_monotonic
+        if (
+            epoch is None
+            or not math.isfinite(epoch)
+            or not 0 <= time.monotonic() - epoch < p["whole_wall_s"]
+        ):
+            raise ValueError("Original host-side epoch clock required")
+        began = epoch
     four_constructor = serial_constructor or four_context
     process_probe = p["schema"] == "joxing-process-exit-probe-v1"
     publication_smoke = p["schema"] == "joxing-watch-publication-v1"
@@ -212,6 +226,11 @@ def main():
         "formal_boxing_games": 0,
         "competitive_training_runs": 0,
     }
+    if learner_context:
+        report.update(
+            started_monotonic_s=began,
+            boot_id=Path("/proc/sys/kernel/random/boot_id").read_text().strip(),
+        )
     seen = {}
     active = guard = None
     row = None
@@ -240,6 +259,11 @@ def main():
 
     def stage(name, command, limit, slot=None):
         nonlocal active, guard, row
+        # H27 retains time for its separate zero-physics audit within the SAME
+        # original host epoch. Older registered routes are unchanged.
+        task_wall = p["whole_wall_s"] - (30 if learner_context else 0)
+        if learner_context and time.monotonic() - began >= task_wall - 2:
+            raise TimeoutError("Original epoch audit reserve")
         row = {"stage": name, "command": command, "status": "running"}
         report["stages"].append(row)
         started = time.monotonic()
@@ -266,9 +290,7 @@ def main():
             seen[(root["pid"], root["start_ticks"])] = root
             row["process"] = root
             if slot is not None:
-                remaining = (
-                    min(limit, p["whole_wall_s"] - (time.monotonic() - began)) - 2
-                )
+                remaining = min(limit, task_wall - (time.monotonic() - began)) - 2
                 guard_command = [
                     "python3",
                     "scripts/trial_rss_watchdog.py",
@@ -335,7 +357,7 @@ def main():
                 )
                 if (
                     row["elapsed_s"] > limit - 2
-                    or time.monotonic() - began > p["whole_wall_s"] - 2
+                    or time.monotonic() - began > task_wall - 2
                 ):
                     raise TimeoutError("Native parity first wall limit")
                 if (
@@ -362,7 +384,7 @@ def main():
                     )
                     if (
                         time.monotonic() - started > limit
-                        or time.monotonic() - began > p["whole_wall_s"]
+                        or time.monotonic() - began > task_wall
                     ):
                         raise TimeoutError(
                             "Publication copy exceeded registered wall credit"
@@ -413,7 +435,7 @@ def main():
                 "experiments/v0.0.11/runtime",
                 "--locked",
             ],
-            180,
+            min(180, 180 - (time.monotonic() - began)) if learner_context else 180,
         )
         if p.get("runtime_import_provenance"):
             try:
@@ -454,6 +476,8 @@ def main():
             15,
         )
         verify_runtime_files()
+        if learner_context and time.monotonic() - began > 180:
+            raise TimeoutError("Learner context setup epoch limit")
         stage(
             "controls",
             [
@@ -469,7 +493,7 @@ def main():
                 str(fixtures / "controls"),
                 *p["test_modules"],
             ],
-            60,
+            p.get("control_wall_s", 60),
         )
         control_xml = (out / "controls.xml").read_bytes()
         checked = check_junit(control_xml.decode(), p["test_node_ids"], [])
@@ -480,6 +504,10 @@ def main():
         report["control_counts"] = checked["counts"]
         if not checked["qualified"]:
             raise ValueError("Native prerequisite controls incomplete")
+        if learner_context:
+            from qualify_native_learner_context import receipt_headroom
+
+            report["receipt_preflight"] = receipt_headroom(p, capacity())
         if zero_work_probe:
             if p["physics_limit"] != 0:
                 raise ValueError("Import-only probe physical credit must be zero")
@@ -558,6 +586,14 @@ def main():
             semantic = json.loads(
                 (fixtures / name / "semantic-result.json").read_text()
             )
+            if learner_context:
+                from joxing.training_context import qualify_retirements
+
+                facts = json.loads(
+                    (fixtures / name / "training-context-result.json").read_text()
+                )
+                retirements = qualify_retirements(facts, row["watchdog"])
+                slot.update(context_facts=facts, retirements=retirements)
             slot.update(
                 status="completed",
                 training_transitions=semantic["training_transitions"],
@@ -586,7 +622,9 @@ def main():
             )
         verify_runtime_files()
         verify()
-        if publication_smoke and time.monotonic() - began > p["whole_wall_s"]:
+        if (publication_smoke or learner_context) and time.monotonic() - began > p[
+            "whole_wall_s"
+        ]:
             raise TimeoutError("Publication whole wall credit")
         report["status"] = "completed"
     except BaseException as error:  # noqa: BLE001 -- retain every attempted/not_run slot

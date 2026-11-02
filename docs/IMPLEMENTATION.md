@@ -1,3 +1,26 @@
+# H27native learner context implemented; prospective packet registered —Nov2
+
+Opt-in cleanforkserver/live-release/serial training adapter and independent saved-
+evidence auditor implemented; old learner/math/defaults unchanged. Four FRESH
+legacyA/candidateA/legacyB/candidateB slots remain64transitions/12updates each,
+seed1097/scenario67010 and exact all10stream/state/RNG/replay/optimizer/actor
+comparison. All315registered source cases must pass on Linux before native.
+Local development301pass/14Linux-only skips; added68controls cover dynamic state,
+training-capable factory, lifetime/corruption/receipt/actor/credit/wire faults.
+No target learning/parity result at freeze. New protocol:
+experiments/v0.0.11/native-learner-context-parity-protocol.json, mission
+ docs/NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md. Separate300s ORIGINALhost epoch
+includes admission/setup/tests/task/audit, taskdeadline270s reserves30saudit;
+60sslot/240kphysics/1GiBfixtures/2MiBreceipts/4workers/thread1, unchanged8GiB/
+100ms/whole2sclose gates. Synthetic receipt projection1.19MB under1.5MiBreserve;
+actualheadroom checked aftercontrols BEFOREphysics; actualallbytes checkedthroughout.
+Original15packet H15costs unchanged and retained alongside new study. Fresh
+four-host inventory04 has noJoxingjobs but sharedLinuxpressure; frozenpolicy
+admission decides launch, no busy-host appropriation or changed thresholds.
+Publish/anonymousverify then one bounded packet; on fault retain all4rows and
+independent audit, do not blindly rerun. H26Maclocal replay secondary, no v11tag,
+boxing/self-play/motor improvement still unqualified.
+
 # H23four-context gate qualifies; return to fresh native learner parity —Nov2
 
 Same frozen1c94152/fbb5961f now admits quietxbabe1 aftertwo preserveddeferrals.

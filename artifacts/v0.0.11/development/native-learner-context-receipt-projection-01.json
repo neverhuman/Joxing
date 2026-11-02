@@ -1,0 +1,31 @@
+{
+  "scope": "synthetic stored-evidence sizing; zero native work",
+  "reference": "H23 source1c94152; saved original canonical four-context report/watch/bootstrap",
+  "expanded_main_decoded_bytes": 231746,
+  "expanded_terminal_decoded_bytes": 115971,
+  "parts": {
+    "expanded_main_wire_bytes": 21805,
+    "expanded_entire_terminal_base64_capsule_reserve_bytes": 14348,
+    "four_canonical_watchers_bytes": 146120,
+    "bootstrap_wire_plus_new_source_allowance_bytes": 103887,
+    "junit_transcode_peak_bytes": 49862,
+    "runtime_sync_control_publication_logs_reserve_bytes": 65536,
+    "independent_audit_summary_reserve_bytes": 262144,
+    "additional_unmodeled_receipt_headroom_bytes": 524288
+  },
+  "projected_peak_receipt_bytes": 1187990,
+  "reserve_bytes": 1572864,
+  "hard_receipt_bytes": 2097152,
+  "local_junit": {
+    "passed": 301,
+    "skipped_linux_only": 14,
+    "cases": 315,
+    "sha256": "99a09770d243b8d757f4fc81a27e7c8a09c847fbba6c2fd6421da8ee47fa52ab"
+  },
+  "notes": [
+    "Projection is preflight only; actual capacity is checked during every stage.",
+    "Both plaintext and compressed XML counted at transcode peak.",
+    "Canonical watchdog copies stay unchanged; all fixtures independently capped1GiB.",
+    "Existing bootstrap/controls count as USED before reserving this growth, conservative double count."
+  ]
+}

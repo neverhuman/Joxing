@@ -1,3 +1,14 @@
+## H27capacity and launch policy —2026-11-02
+
+[Fresh four-host inventory04](../artifacts/v0.0.11/development/four-host-capacity-20261102-04.json)
+finds no Joxingjobs. xbabe1CPU PSI22.14% initially exceeds10% fixedpolicy, while
+xbabe2/3IOfull9.82/26.53% exceed1%. Mac has~269.7GBfree+inactive+speculative
+estimate (not LinuxMemAvailable). A later read-onlyxbabe1sample CPU2.46%/IO1.28%
+still does not authorize launch; formal two10s-spaced fresh admissions decide.
+Do not infer ownership fromGPUidle. H27uses4CPUworkers/thread1 inside registered
+300swhole/240kphysics/8GiBhard. If admissionrejects, retainnot_run and workon source
+or secondaryMac-local replay; no uncontrolled parallel native tasks.
+
 ## Quiet xbabe1 used successfully —2026-11-02 18:57UTC
 
 [Fresh inventory03](../artifacts/v0.0.11/development/four-host-capacity-20261102-03.json)

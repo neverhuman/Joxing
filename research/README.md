@@ -38,7 +38,7 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H25](H25.md)|Can spare Mac preserve native boundary/mid-command/contact replay?|21Mac source controls pass; strict archived decode fails385/1400values;0physics/6native not_run|
 |[H26](H26.md)|Can a separate Mac-native profile preserve strict local replay?|Worker-ready5case/116step plan; not implemented/run|
 
-|[H27](H27.md)|Does qualified process lifetime preserve exact native SAC lifecycle parity?|Primaryworker-ready4fresh-slot/64transition/12update plan; no targetrun|
+|[H27](H27.md)|Does qualified process lifetime preserve exact native SAC lifecycle parity?|Implemented/registered315node+4fresh-slot parity packet; target pending|
 
 **Latest: H23qualifies247Linux checks and four native contexts under unchanged2s/100ms/8GiB gates. H27native learner parity is primary next; original H15receipt envelope cannot fit further runs and remains immutable. H26Mac-local replay is secondary ready; H25failed strict import stays failed. Next unused ID: H28.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.

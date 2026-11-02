@@ -1,0 +1,58 @@
+{
+  "scope": "Local Mac source/fake development only; no native world or training",
+  "protocol_sha256": "4577f17af1ccbfe89e0fe3186705530252b664aae15b3a2b2f79760270d133cf",
+  "controls": {
+    "passed": 301,
+    "skipped": 14,
+    "failed": 0,
+    "registered": 315,
+    "new": 68,
+    "raw_junit": "runs/v0.0.11/h27-all-development.xml",
+    "raw_sha256": "99a09770d243b8d757f4fc81a27e7c8a09c847fbba6c2fd6421da8ee47fa52ab",
+    "wall_s": 12.82
+  },
+  "commands": [
+    "rtk proxy env PYTHONPATH=src:.:scripts .venv/bin/python -m pytest -q [all19packet.test_modules] --junitxml=runs/v0.0.11/h27-all-development.xml",
+    "rtk proxy uv tool run --offline ruff check [changed/new seven Python files]"
+  ],
+  "unchanged_from_a10f862": [
+    "src/joxing/wave.py",
+    "src/joxing/deferred_trial.py",
+    "src/joxing/live_resource_release.py",
+    "src/joxing/serial_retirement.py"
+  ],
+  "development_faults": [
+    "Ruff import ordering/formatting fixed before freeze.",
+    "One apply_patch rejected a stale formatted line; no partial mutation or target run.",
+    "Independent credit reader corrected missing computed charged field before native; new real-ledger corruption/unknown tests pass."
+  ],
+  "native_rows": [
+    {
+      "arm": "A",
+      "id": "legacyA",
+      "variant": "legacy",
+      "status": "not_run"
+    },
+    {
+      "arm": "A",
+      "id": "candidateA",
+      "variant": "deferred-evaluation-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "B",
+      "id": "legacyB",
+      "variant": "legacy",
+      "status": "not_run"
+    },
+    {
+      "arm": "B",
+      "id": "candidateB",
+      "variant": "deferred-evaluation-v1",
+      "status": "not_run"
+    }
+  ],
+  "native_physics": 0,
+  "native_updates": 0,
+  "next_action": "Public freeze+anonymous byte verification, then fixed admission; bounded fresh packet only if admitted."
+}

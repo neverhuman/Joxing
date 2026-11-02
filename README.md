@@ -26,8 +26,9 @@ positive retirement evidence hold; whole shutdown0.964s under the unchanged2s
 limit.800preparation steps,0learning. Earlier deferrals/failures remain recorded.
 
 **Next: actual native learner parity:** [H27mission](docs/NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md)
-proposes four fresh64-transition/12-update reference/candidate trials using the
-qualified process profile. Not yet implemented/run; no boxing improvement claimed.
+registers four fresh64-transition/12-update reference/candidate trials using the
+qualified process profile. Adapter/auditor implemented;301local checks pass with
+14Linux-only skips. Target trials pending public freeze and admission; no boxing improvement claimed.
 
 **Spare compute:** [xbabe4 source-validation mission](docs/MAC_SOURCE_READINESS_MISSION.md)
 uses the large Mac for independent history, action-delay, opponent-observation and

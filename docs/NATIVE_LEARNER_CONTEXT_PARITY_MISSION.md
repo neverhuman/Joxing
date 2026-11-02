@@ -1,6 +1,8 @@
 # H27: transfer qualified native process lifetime into unchanged SAC parity
 
-Status: worker-ready plan; NOTimplemented/preregistered/run. Primary next mission.
+Status: implemented and prospectively registered; target NOT_RUN at public freeze.
+Primary mission; machine protocol native-learner-context-parity-protocol.json.
+Local301passed/14Linux-only skipped (315nodes), added68controls; Linux must pass all.
 Objective: establish exact legacy/deferred-evaluation SAC parity in fresh native
 trials after H23qualified the four-world process lifetime. Non-goals: boxing
 strength, self-play, changing old reward/model/action/reset/timestep/learner math,
@@ -151,12 +153,12 @@ are local development only; formal Linux control collection must pass every
 registered node before native. Preserve a failed test/collection receipt, fix
 source before freeze, never lower case count to hide a failure.
 
-New supervisor CLI contract (implement, do not run a nonexistent tool):
-`python3 scripts/qualify_native_learner_context.py --packet experiments/v0.0.11/native-learner-context-parity-protocol.json --protocol-sha256 CANONICAL_SHA --source-sha FROZEN_SHA`.
+New supervisor CLI (source/protocol must be public before launch):
+`python3 scripts/qualify_native_learner_context.py --packet experiments/v0.0.11/native-learner-context-parity-protocol.json --protocol-sha256 CANONICAL_SHA --source-sha FROZEN_SHA --epoch-start-monotonic ORIGINAL_HOST_EPOCH`.
 Run once inside NEWdedicated frozen Linux checkout under original300s whole
 clock/thread/host admission/source/output lease and resource guard.
 Saved-evidence auditor CLI contract:
-`RUNTIME_PYTHON scripts/audit_native_learner_context.py --packet PACKET --folder FRESH_RUN --source-sha FROZEN_SHA`.
+`RUNTIME_PYTHON scripts/audit_native_learner_context.py --packet PACKET --folder FRESH_RUN --source-sha FROZEN_SHA --epoch-start-monotonic ORIGINAL_HOST_EPOCH`.
 It must reconstruct case/update/transition/physics/payload equality, not trust
 supervisor pass flags. Audit faults mean no promotion; original task rows remain
 unchanged while audit-only repairs retain faults and use a new labelled receipt.
@@ -165,3 +167,29 @@ Handoff must give exact public commits/protocol/model/config/runtime/actor hashe
 source/fault test counts, current actual PIDs/status, all4outcomes and original
 plus new cost totals, raw provenance/safe-transfer hashes, limitations and the
 next smallest measured question. No need for more agents or chat messages.
+
+## Implemented packet and exact next action
+
+The source adapter adds no new learner math. `training-context-result.json` is a
+dynamic four-worker proof, separate from semantic learner comparisons. Explicit
+entry validates original5fixture fields and every registered cap. It reserves
+1.5MiB receipt growth after all controls, based on the saved H23shape expanded in
+RAM; projection is not a native result. Independent auditor reads all8saved actor
+payloads as tensors, all20paired streams, original bootstrap/main/ENTIREterminal
+bytes, raw proc ancestry, live release/finalizers, actual watcher retirements and
+reconstructs physical credits. It never constructs a policy/environment or steps.
+
+Clock starts before initial admission/public/setup on xbabe1; process stages stop
+at270s including cleanup, leaving30s for a fresh auditor inside original300s.
+Public deploy helper: artifacts/v0.0.11/development/deploy-native-learner-context-01.py.
+Run from local checkout with `rtk proxy python3` ONLY after anonymous public byte
+verification. It records bounded admission history, rejects an existing H27root,
+and never resubmits a known launched epoch. Monitor actual source result and
+watcher/progress; immediately run the saved-evidence auditor after writer exit,
+using experiments/v0.0.11/runtime/.venv/bin/python with all math threads1.
+If source stops, preserve its exact failure/unknown charges/allnot_run rows. A
+post-audit failure is separate evidence; never rebase its original epoch clock.
+
+Local development receipts: artifacts/v0.0.11/development/h27-source-validation-01.json;
+raw JUnit remains ignored under runs/v0.0.11. Before formal execution source must
+match all315registered exact nodes,771source hashes and original runtime pins.
