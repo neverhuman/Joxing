@@ -1,3 +1,16 @@
+## Mac strict imported-control mismatch measured; source-local native profile next
+
+[H25outcome](MAC_NATIVE_REPLAY_PREFLIGHT_RESULTS.md): original pinned runtime/
+D0source on xbabe4 passes21controls but reproduces385/1400stored Linux controls
+differently by<=7.45e-9; strict gatefails beforephysics, all6native rows not_run.
+This is arithmetic portability, not measured capacity exhaustion or cause of
+falling. 53.60swhole/1.19GiBpeak/all5PIDs exited, independently audited.
+[H26next](MAC_NATIVE_REFERENCE_MISSION.md) defines a SEPARATE Mac-native execution
+profile and freshly generated source/local bit-exact replay,5cases/116physics
+planned, no old tolerance or source changes. Only after this can this profile
+benchmark persistent1/2/4workers. No active numerical task remains; H26ready to
+implement, H23unchangedawaitsadmission. No end-to-end learning speedup claim.
+
 ## Capacity refreshed Nov2 17:55 UTC; H25preflight ready
 
 [Fresh two-sample inventory](../artifacts/v0.0.11/development/four-host-capacity-20261102-02.json):

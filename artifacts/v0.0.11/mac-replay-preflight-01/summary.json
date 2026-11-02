@@ -1,0 +1,133 @@
+{
+  "status": "verified_failed_prerequisite",
+  "source_commit": "c1dd75db6555b641daf88642ec158ef293af2dd5",
+  "protocol_sha256": "a2e057c3e4e44e7a0fd9c340a20156090a342bcce82d9d4fd25e653c55617c76",
+  "oracle_commit": "d2b582ee05041c21129b393945240b42e51153f8",
+  "source_controls": {
+    "passed": 21,
+    "failed": 0,
+    "skipped": 0
+  },
+  "preflight": {
+    "attempted": 1,
+    "failed": 1,
+    "passed": 0,
+    "not_run": 2
+  },
+  "native_replay": {
+    "attempted": 0,
+    "valid": 0,
+    "invalid": 0,
+    "not_run": 6
+  },
+  "physics_steps": 0,
+  "rollout_steps": 0,
+  "optimizer_updates": 0,
+  "corners": {
+    "A": {
+      "actual_sha256": "7e99e2eba967134b6a67284fd255f1a6894670af741c8c2bcf8aa1a04db49511",
+      "differing_values": 201,
+      "exact": false,
+      "expected_sha256": "eca02379a1750dd2880293e11337cd60c1e333a6dfa84aeec66c82f92a2ca8e2",
+      "max_absolute_error": 3.725290298461914e-09
+    },
+    "B": {
+      "actual_sha256": "ecf903b0129422bd694ff9dd02189f180c4acf3fd2d4a961643cce76a7566cd9",
+      "differing_values": 184,
+      "exact": false,
+      "expected_sha256": "8ff4e7e87c7ce4dea606d0888af8f411d7465bd3ef77dcc5afcd577cc80717f4",
+      "max_absolute_error": 7.450580596923828e-09
+    }
+  },
+  "preflight_worker_wall_s": 3.0674500819295645,
+  "whole_task_wall_s": 53.60159100033343,
+  "setup_before_sync_s": 41.07067437656224,
+  "sampled_peak_rss_bytes": 1276379136,
+  "post_run_audit_wall_s": 0.2249036654829979,
+  "post_run_audit_limitation": "Wrapper used carried terminal elapsed53.601591 as virtual start rather than original monotonic. Separate post-run audit; does NOT certify original continuous245s envelope across later idle time. All native/preflight result gates unchanged; no new physics.",
+  "raw_files": {
+    "h25-launch.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "h25-preflight-bootstrap.json": {
+      "bytes": 10499,
+      "sha256": "2b98537865a8c70b99453713698824a90ec2c8d506759b3ad66ff287b4536e30"
+    },
+    "h25-supervision-01/audit.log": {
+      "bytes": 438,
+      "sha256": "51581b9609e0efab97bd7a174bff366da3b867dbd2ae4d9fd5adbce48f3b8e5a"
+    },
+    "h25-supervision-01/controls.log": {
+      "bytes": 99,
+      "sha256": "139f3f5c2081a1679af0a92b780cee7fd6861a55b35374b2b36eac71db276218"
+    },
+    "h25-supervision-01/controls.xml": {
+      "bytes": 2620,
+      "sha256": "79b1ad94cef0f62e6016f448a95f8ce13ed2bc57ddf32bb87bcf9e66f7a4082e"
+    },
+    "h25-supervision-01/preflight.log": {
+      "bytes": 161,
+      "sha256": "f552fab2624142b8a8ba13cb6658ce43bf38cfb9339921ac8b1f146680231b39"
+    },
+    "h25-supervision-01/progress.json": {
+      "bytes": 120,
+      "sha256": "d8fda11eb1a1c7ae4206b2be71c670ae52c205235117222e4c30eeb8e23f21cf"
+    },
+    "h25-supervision-01/supervisor.json": {
+      "bytes": 2423,
+      "sha256": "fdfe2ee248214d8bd20ae50f6d2802b48700485f80cc59e89995dbc6f36fc2c3"
+    },
+    "h25-supervision-01/sync.log": {
+      "bytes": 1441,
+      "sha256": "76ae7ccbbe79fcaa4d825e23f5da71df0ad438b0c0122a21159f1449a103b081"
+    },
+    "mac-replay-preflight-01/boundary-controls.npz": {
+      "bytes": 16679,
+      "sha256": "55c422396f52690def14dd168109635dcbc226773b381d9f734bc079cdaae76c"
+    },
+    "mac-replay-preflight-01/fault.txt.gz": {
+      "bytes": 223,
+      "sha256": "52b55b8eb14d9518b5886b23890705563d00672ec8d2722bd11bc4b6924fb8f1"
+    },
+    "mac-replay-preflight-01/independent-audit.json": {
+      "bytes": 413,
+      "sha256": "92d9169eb44a0f54afef2a13736394410ebefdb334aae1f640db3456abb6da75"
+    },
+    "mac-replay-preflight-01/post-audit-limitations.json": {
+      "bytes": 988,
+      "sha256": "7c7ffb5d323427dc8e6364d7db90c18155c685ae1b242b239cb8abcb06141e95"
+    },
+    "mac-replay-preflight-01/result.json": {
+      "bytes": 2398,
+      "sha256": "a0b03ead3afc74e85f0eb32c2d303fc373ba4dc8b45ecd994cf17b7d414e3c05"
+    }
+  },
+  "raw_bytes": 38502,
+  "process_exits": [
+    {
+      "pid": 46691,
+      "live": false
+    },
+    {
+      "pid": 46693,
+      "live": false
+    },
+    {
+      "pid": 46862,
+      "live": false
+    },
+    {
+      "pid": 46867,
+      "live": false
+    },
+    {
+      "pid": 50141,
+      "live": false
+    }
+  ],
+  "source_unchanged": true,
+  "wrapper_files_verified": 4,
+  "oracle_files_verified": 429,
+  "input_files_verified": 15
+}

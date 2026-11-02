@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H25 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H26 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -30,7 +30,8 @@ No policy was loosened or job duplicated.
 **Spare compute:** [xbabe4 source-validation mission](docs/MAC_SOURCE_READINESS_MISSION.md)
 uses the large Mac for independent history, action-delay, opponent-observation and
 scoring checks while Linux I/O is pressured. All29checks passed on xbabe4, with0physics steps;
-[results](docs/MAC_SOURCE_READINESS_RESULTS.md). [H25native replay prerequisites](docs/MAC_NATIVE_REPLAY_MISSION.md) are registered: exact archived muscle decoding and atomic restore with0physics permitted; target not_run at freeze. [Live host inventory and roles](docs/COMPUTE.md).
+[results](docs/MAC_SOURCE_READINESS_RESULTS.md). [H25strict Linux-to-Mac control import failed](docs/MAC_NATIVE_REPLAY_PREFLIGHT_RESULTS.md) on small arithmetic differences beforephysics.
+Next is a [separate Mac-native reference with strict local replay](docs/MAC_NATIVE_REFERENCE_MISSION.md); this will not relabel the failed cross-platform gate. [Live host inventory and roles](docs/COMPUTE.md).
 
 **HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
 passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus

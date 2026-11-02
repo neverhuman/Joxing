@@ -1,3 +1,23 @@
+# H25strict Mac import prerequisite failed; H26local-reference next —Nov2
+
+Frozen c1dd75d/a2e057c3, original D0runtime/source,21/21target source tests pass.
+Boundary200held control decode differs201/700A(max3.72529e-9),184/700B(max7.45e-9).
+1prereqfailed/2not_run,all6native replay rows NOT_RUN,0physics/actors/updates.
+Independent stored-array audit confirms failure;429oracle/4wrapper/15input hashes
+unchanged,16rawfiles38502bytes exact,all5PIDs exited. Whole53.601591s/peak1.19GiB.
+Separate post-audit0.224904s and guard-clock limitation retained explicitly; no
+original continuous envelope claim for later idle time. Details/results/receipts:
+docs/MAC_NATIVE_REPLAY_PREFLIGHT_RESULTS.md. No tolerance or old costs changed.
+
+Next worker-ready docs/MAC_NATIVE_REFERENCE_MISSION.md/research/H26.md: a distinct
+Mac-native execution profile, freshly generated Mac source snapshots and STRICT
+LOCALreplay,5rows/116physics proposed,160cap/60srun/4GiB/16MiB/1worker+thread,
+setup180/source30/audit30/whole300 FIRSTlimit. NOTimplemented/preregistered/run.
+Original source/default math/model/rules unchanged, backend envelope rejects
+cross-profile resume; H25cross-host gate stays failed, no bit parity inference.
+H23same frozen Linux epoch remains deferred, no overlapping task, no v11tag,
+working motor/contact/replay/league/self-play still open.
+
 # H25zero-step native replay prerequisites registered —Nov2
 
 Original D0source/runtime (NumPy2.4.2) and15whole21.49MB archived inputs. New
