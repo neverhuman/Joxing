@@ -27,9 +27,10 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H14](H14.md)|Can fresh module processes keep source validation inside8GiB?|History repair passes; fresh learner still exceeds8GiB, standalone isolation declined|
 |[H15](H15.md)|Can trial lifecycle remove duplicate resident worlds?|Three native packets invalid on teardown; candidates unrun, parity blocked|
 |[H16](H16.md)|Can exit flags/statm explain missing live-looking RSS?|Reader35controls +one native teardown pass; four-worker hold fails122.75ms|
-|[H17](H17.md)|Can serial retirement avoid overlapping exit tails?|Opt-in source71local pass/4Linux skips;75case/native constructor packet registered|
+|[H17](H17.md)|Can serial retirement avoid overlapping exit tails?|75Linux controls pass; native2s close fails before cleanup105.9ms hold fault|
+|[H18](H18.md)|Can closed native buffers be released before process exit?|Worker-ready one-constructor lifetime/timing mission; not implemented/run|
 
-**Latest: H15third native packet invalid; H16single-worker result stays narrow. Next: H17serial-retirement constructor proof before more RL. Next unused ID: H18.** These are global research-note
+**Latest: H17constructor invalid; first serial deadline and secondary cleanup fault retained. Next: H18closed-graph lifetime proof before more RL. Next unused ID: H19.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

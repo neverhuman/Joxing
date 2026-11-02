@@ -1,0 +1,43 @@
+{
+  "schema": "joxing-post-serial-native-observation-v1",
+  "read_only": true,
+  "new_physics": 0,
+  "utc": "2026-11-02T09:54:44Z",
+  "upstream_commits_verified": {
+    "ms-human-700": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+    "msgym": "ad3aac166dab3577d7d16b4a03faccef94c7aac7"
+  },
+  "gym_source": {
+    "path": "/home/ubuntu/joxing/serial-native-teardown-20261102-01/experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/gymnasium/core.py",
+    "bytes": 29675,
+    "sha256": "92226890db5bec675bce52b6b9ceba350baef86d86e6f279d02e96f1a39c2258",
+    "close_methods": [
+      {
+        "class": "Env",
+        "line": 193,
+        "source": "    def close(self) -> None:\n        \"\"\"After the user has finished using the environment, close contains the code necessary to \"clean up\" the environment.\n\n        This is critical for closing rendering windows, database or HTTP connections.\n        Calling ``close`` on an already closed environment has no effect and won't raise an error.\n        \"\"\"\n        pass"
+      },
+      {
+        "class": "Wrapper",
+        "line": 339,
+        "source": "    def close(self) -> None:\n        \"\"\"Closes the wrapper and :attr:`env`.\"\"\"\n        return self.env.close()"
+      }
+    ]
+  },
+  "stance_env_close_override": false,
+  "owned_jobs": [],
+  "load": [
+    13.51806640625,
+    14.40771484375,
+    15.2763671875
+  ],
+  "available_memory_bytes": 34373279744,
+  "free_disk_bytes": 145767460864,
+  "command": [
+    "ssh",
+    "xbabe1",
+    "python3",
+    "-"
+  ],
+  "stdin_source": "\nfrom pathlib import Path\nimport ast,json,hashlib,os,time,subprocess,shutil\nroot=Path('/home/ubuntu/joxing/serial-native-teardown-20261102-01')\np=json.loads((root/'experiments/v0.0.11/serial-native-teardown-protocol.json').read_text())\nvendors={n:subprocess.check_output(['git','rev-parse','HEAD'],cwd=root/'third_party'/n,text=True).strip() for n in p['upstream_commits']};assert vendors==p['upstream_commits']\ngym=root/'experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/gymnasium/core.py'\nt=gym.read_text();lines=t.splitlines();methods=[]\nfor cls in ast.parse(t).body:\n if isinstance(cls,ast.ClassDef) and cls.name in ('Env','Wrapper'):\n  for f in cls.body:\n   if isinstance(f,ast.FunctionDef) and f.name=='close':methods.append({'class':cls.name,'line':f.lineno,'source':'\\n'.join(lines[f.lineno-1:f.end_lineno])})\nstance=root/'src/joxing/stance_env.py';assert not any(isinstance(n,ast.FunctionDef) and n.name=='close' for c in ast.parse(stance.read_text()).body if isinstance(c,ast.ClassDef) for n in c.body)\njobs=[]\nfor d in Path('/proc').iterdir():\n if not d.name.isdigit():continue\n try:\n  cwd=str((d/'cwd').resolve());cmd=(d/'cmdline').read_bytes().replace(bytes([0]),b' ').decode(errors='replace')\n  if (cwd.startswith('/home/ubuntu/joxing/') or '/home/ubuntu/joxing/' in cmd) and any(x in cmd for x in ['python','uv run','timeout']):jobs.append({'pid':int(d.name),'cwd':cwd,'command':cmd[:250]})\n except OSError:pass\nassert not jobs\nprint(json.dumps({'schema':'joxing-post-serial-native-observation-v1','read_only':True,'new_physics':0,'utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'upstream_commits_verified':vendors,'gym_source':{'path':str(gym),'bytes':gym.stat().st_size,'sha256':hashlib.sha256(gym.read_bytes()).hexdigest(),'close_methods':methods},'stance_env_close_override':False,'owned_jobs':jobs,'load':os.getloadavg(),'available_memory_bytes':int(next(x.split()[1] for x in Path('/proc/meminfo').read_text().splitlines() if x.startswith('MemAvailable:')))*1024,'free_disk_bytes':shutil.disk_usage(root).free}))\n"
+}

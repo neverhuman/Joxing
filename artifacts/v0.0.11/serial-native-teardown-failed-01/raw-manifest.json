@@ -1,0 +1,1786 @@
+{
+  "runs/v0.0.11/.deferred-native.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/controls.log": {
+    "bytes": 179,
+    "sha256": "b9ab0b4e77e113fddb8a7d57fa98395780e404a202890726d0449e9f21df8293"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/controls.xml": {
+    "bytes": 10017,
+    "sha256": "87f8aa4925b9458b43125f0a0913612f2fc9fadbca5390716df2d133da6ffcca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_exit_uses_nonzero_0/release": {
+    "bytes": 9,
+    "sha256": "1584570866884bb892dbf8bc693d7fbe28203b2ce90ab34642f92ba906781ac2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.json": {
+    "bytes": 8525,
+    "sha256": "302373e2d714ea2d241138d5e87df244f94c2ffbcf43b099f7a2cd2d724d7ef2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_serial_heaps_guard0/foreign.json": {
+    "bytes": 118,
+    "sha256": "249a11d2b3af71bce73cfffeb6c4e91c30ff57af3ce56592f5a35ade86de0ce8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_serial_heaps_guard0/serial.jsonl": {
+    "bytes": 1473,
+    "sha256": "3393d03e9efaa37fb74b321a397e2127653701179130ca3358524cce72a60a3c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.json": {
+    "bytes": 16195,
+    "sha256": "516a4d1968bece00c81c01b4ba6ef4a902b0267f1a396d75e00bd6328a8e0d38"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.json": {
+    "bytes": 2394,
+    "sha256": "5f36e56ebfc3946ac9d15d0b2e628f3003b1da25196edccf6ef40e3ef256420d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.json": {
+    "bytes": 4374,
+    "sha256": "8bb7effb504ed8c9eb4d2c81ada00cd4f65d9a45e96ec0381a80c89d2fb98b09"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "c9a77d1a6b62d04423e2d4f1ed1a819048afdf12617fa4ff07a28005ec3b87e2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault.json": {
+    "bytes": 140,
+    "sha256": "326069a251383de6a6e989885d2b3a15d8d215994a8948831605f3d7b1290c19"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "02038a6c24f5c6c7a8f14dc5a82dcb1292302a3da1e395ca9cc09f8246f2cddb"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault.json": {
+    "bytes": 150,
+    "sha256": "38aac0df93ebce3b84c12ab025fd214e680a004830349d6b63dd39732a893b34"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st1/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st2/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st2/trial/fault-states.json": {
+    "bytes": 79,
+    "sha256": "64f30e7604d6443124c364d57607cb9689127772b8a996412d55b6ee72301bc7"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_all_faults_retain_real_st2/trial/fault.json": {
+    "bytes": 151,
+    "sha256": "abfdb3082aff38c94ec9b3878963587892d76c47eabe8de353bb3e341528ca55"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.json": {
+    "bytes": 247,
+    "sha256": "34742e70aa920b8568be190a0a4ab2f8da305088afa39f6469b36cfdcaa88e2c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.jsonl": {
+    "bytes": 4701,
+    "sha256": "0c7f9e14262462a31a402b103dcf43b30ae04db9eb042d8f96acaf7c5ffea722"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_bound_status_fail_closed_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_bound_status_fail_closed_1/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_bound_status_fail_closed_2/17/status": {
+    "bytes": 11,
+    "sha256": "c20bbc8bfc88c7e3204a21a422bbe259a0855f698295149976521a512190de87"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_bound_status_fail_closed_3/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/learner.jsonl": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/learner.jsonl": {
+    "bytes": 1603,
+    "sha256": "0b4d94811b8fe2d0e5b000f55e6c40bdfe383802252d804c84222c24920eb9a6"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/learner.jsonl": {
+    "bytes": 1570,
+    "sha256": "57a4ebafafac9e6c0d6cb383ab1a1ba280104a21fe99e8676a6e3ce609f6d084"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/learner.jsonl": {
+    "bytes": 1570,
+    "sha256": "57a4ebafafac9e6c0d6cb383ab1a1ba280104a21fe99e8676a6e3ce609f6d084"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/evaluation-cleanup-fault.json": {
+    "bytes": 31,
+    "sha256": "be5a54f833f474ddfa8d669cb21bd1a56e17b811c0005d004a8ec9db3399c671"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "02038a6c24f5c6c7a8f14dc5a82dcb1292302a3da1e395ca9cc09f8246f2cddb"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault.json": {
+    "bytes": 150,
+    "sha256": "d56dc2190d49fb90c3fd56379a86f4824aa8f8ace4b5bcaf2bf291ff4f6816c8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.json": {
+    "bytes": 285,
+    "sha256": "74017c93b08f5c1da17694ef70206272d2ee1b5e586a44b5e28eafe62355c8ba"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.jsonl": {
+    "bytes": 467,
+    "sha256": "d72966ab20a116ce7966f926eef9f8c660bddf154d570b6f98dd24445abb99f1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_existing_ledger_never_ove0/credit.json": {
+    "bytes": 204,
+    "sha256": "6f0eb11693dfaa7ab57f352c6584b97c7d818b5cbcc7f2708150d301ff98b958"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de0/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de0/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de0/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/100/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/500/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de1/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de1/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de2/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de2/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de2/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de3/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de3/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de3/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de4/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de4/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fast_tree_only_current_de4/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_foreign_stale_or_wrong_bi0/credit.json": {
+    "bytes": 204,
+    "sha256": "6f0eb11693dfaa7ab57f352c6584b97c7d818b5cbcc7f2708150d301ff98b958"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_foreign_stale_or_wrong_bi0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/credit.json": {
+    "bytes": 263,
+    "sha256": "e27a8d8c59ace50421278862c7bc3216306b327a7e63f255fb273f2b731f3c41"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "d70fc11792f529ca8782c3784bb968767605bdf0a7d6f56eb7f0662c5fbcab7b"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/constructor-result.json": {
+    "bytes": 997,
+    "sha256": "ffa95e4e85500a60ac0a1fcc62374a6aaeb6599c2c9ad997479a2d27a17e0413"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/credit.json": {
+    "bytes": 263,
+    "sha256": "e27a8d8c59ace50421278862c7bc3216306b327a7e63f255fb273f2b731f3c41"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "d70fc11792f529ca8782c3784bb968767605bdf0a7d6f56eb7f0662c5fbcab7b"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/credit.json": {
+    "bytes": 263,
+    "sha256": "e27a8d8c59ace50421278862c7bc3216306b327a7e63f255fb273f2b731f3c41"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "d70fc11792f529ca8782c3784bb968767605bdf0a7d6f56eb7f0662c5fbcab7b"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-3.jsonl": {
+    "bytes": 89,
+    "sha256": "2ed415ce40fe4b45b9aa9d59ccf0b0fb2bc7f3c7a5749a5ef3180806efbbbb8e"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/credit.json": {
+    "bytes": 263,
+    "sha256": "e27a8d8c59ace50421278862c7bc3216306b327a7e63f255fb273f2b731f3c41"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "d70fc11792f529ca8782c3784bb968767605bdf0a7d6f56eb7f0662c5fbcab7b"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-3.jsonl": {
+    "bytes": 174,
+    "sha256": "57067c43d659a4de622694aca7d3874632a9706bcb6666efc6582f0100f452ae"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/credit.json": {
+    "bytes": 263,
+    "sha256": "e27a8d8c59ace50421278862c7bc3216306b327a7e63f255fb273f2b731f3c41"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "d70fc11792f529ca8782c3784bb968767605bdf0a7d6f56eb7f0662c5fbcab7b"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/guard-events/fault.jsonl": {
+    "bytes": 3,
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_freeze_close_then_allocat0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_freeze_close_then_allocat0/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_freeze_close_then_allocat0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_freeze_close_then_allocat0/trial/result.json": {
+    "bytes": 1087,
+    "sha256": "89b0837578409520a7969df2c32bb8fd139571e12fcfa9668bb7607d58955ebd"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_freeze_close_then_allocat0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_freeze_close_then_allocat0/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.json": {
+    "bytes": 252,
+    "sha256": "d120534ac253192327da23824caee77051379abf67d52518d501d4baa7544efa"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.jsonl": {
+    "bytes": 241,
+    "sha256": "448ad6d3c30897caf5d3ed7829346ab2ede4c702767ea67dbe230a6564a45ec5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still0/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_live_missing_memory_still1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an0/credit.json": {
+    "bytes": 261,
+    "sha256": "491d3aa46b0db4a43d319c9ec5bf967194da7e5a3578e969ac3e81d3ff9374e6"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an0/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "7f504c9d21f6f0a48e710549958f22401060dbe866220bee28e2d42c8b775c11"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an0/native/constructor-result.json": {
+    "bytes": 602,
+    "sha256": "8d6b35b80ffa7b4c3db8cef96ad2150d4580e7c1ec8f8f7e3db9847eac8f6115"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an0/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an0/native/traces/worker-0.jsonl": {
+    "bytes": 110,
+    "sha256": "84f2731e73ca7b00904295249bd192ec1e72241f65a17ac0230c33f45aeacc44"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an1/credit.json": {
+    "bytes": 261,
+    "sha256": "491d3aa46b0db4a43d319c9ec5bf967194da7e5a3578e969ac3e81d3ff9374e6"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an1/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "7f504c9d21f6f0a48e710549958f22401060dbe866220bee28e2d42c8b775c11"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an1/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an1/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_one_worker_close_order_an1/native/traces/worker-0.jsonl": {
+    "bytes": 110,
+    "sha256": "84f2731e73ca7b00904295249bd192ec1e72241f65a17ac0230c33f45aeacc44"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_persistent_missing_status0/17/status": {
+    "bytes": 17,
+    "sha256": "1bd6ddef8dc5ea30ee7656615ec3d037fab1a06929c8483be28cbb7abf030799"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa0/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa1/serial.jsonl": {
+    "bytes": 1440,
+    "sha256": "6cfcadfcb43d61787e4bc9f7501e477a7627f5630fe35b1a82fce100ac704ea6"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa10/serial.jsonl": {
+    "bytes": 326,
+    "sha256": "a3dbaefd86632003fd347b61df8d44fbf1e21b5cc06bf5fc7f1cb81e8d600f23"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa11/serial.jsonl": {
+    "bytes": 317,
+    "sha256": "978fb2887aadd208f5006253ea725017ce13fc06bdf2c0bf4e5181bb60123a6a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa14/serial.jsonl": {
+    "bytes": 436,
+    "sha256": "415ab18dd553078dd44757338e354c2ea2fa0df90dcae705b54753de3d4d2f1e"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa2/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa3/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa4/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa5/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa6/serial.jsonl": {
+    "bytes": 417,
+    "sha256": "22e49f010553454ed7327dfd0052b35826388a49be870a0061602c865e717b15"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa7/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "7500b8a0a6aca8de5ef20f9c1eea295f94c04dff5eed0d53fea49868b59ddff6"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa8/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "9117c0bb7df8af22fa018894776e731efc600acf7c83b1af6e3c6799bec80417"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_serial_close_order_and_fa9/serial.jsonl": {
+    "bytes": 444,
+    "sha256": "38d283c35d91879dd33ec0459d3e9a032094c2f474ecc83d55c65d5544f20158"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require0/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require2/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require2/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require2/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require2/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require3/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require3/17/statm": {
+    "bytes": 13,
+    "sha256": "7c575bcf3f81f8b863658b9b2237b6aa3781daa40d5bd4a0da00347664173ff6"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require3/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require3/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require4/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require4/17/statm": {
+    "bytes": 3,
+    "sha256": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require4/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require4/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require5/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require5/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require5/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require5/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require6/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require6/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require6/17/status": {
+    "bytes": 25,
+    "sha256": "9c5b9866ac567c32098d6bcc93749c7ae721b8251b4a962419c67666aaad6c3a"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require6/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require7/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require7/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_terminal_evidence_require7/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_transient_missing_status_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_unknown_reservation_stays0/credit.json": {
+    "bytes": 355,
+    "sha256": "dc5fce1b1299bbe10115f73bf65fef999acb53ab3211451957d6f0047259fce6"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_unknown_reservation_stays0/credit.jsonl": {
+    "bytes": 252,
+    "sha256": "19bffe4b85c1f12493b12d09177269647bd9f5406935bd01fc8e5eba22f3a67f"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_unknown_reservation_stays0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native-credit.json": {
+    "bytes": 320,
+    "sha256": "ef6858b9979a686ff5667851373bc71f6c65a8a8b0c8a2e7b14a1a1222b5e355"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native-credit.jsonl": {
+    "bytes": 996,
+    "sha256": "25cc3fbff922d0ce7cbb853879a209a9170862a0d5e6946b846653eac9cd5e21"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native-credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/serial-close.jsonl": {
+    "bytes": 1093,
+    "sha256": "197d012efcdee29154da71a906876ba57238177f960042b53785f924f1cd4243"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/traces/native-world-0.jsonl": {
+    "bytes": 469,
+    "sha256": "e37fa08348bc38fd416eab783f2d4ad8d340088ab9888a992af72821f2196721"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/traces/native-world-1.jsonl": {
+    "bytes": 469,
+    "sha256": "008166b7dff1e95f16f43f89980444509098fba00c69bb4c0e95c4d06c07365e"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/traces/native-world-2.jsonl": {
+    "bytes": 469,
+    "sha256": "a920be8e25e135575a5df9f6b5b8fec7981affc54e7b5288888e354576515efa"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/traces/native-world-3.jsonl": {
+    "bytes": 469,
+    "sha256": "b40fa8dc5acfc547b530970e92dcfa308f49475d672625d14c6409d7ff496579"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/traces/worker-0.jsonl": {
+    "bytes": 274,
+    "sha256": "b38945fc19d012ff4e94c65f3f486c5bcbdce9bd38ecb36eb6bd276b30bfca56"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/traces/worker-1.jsonl": {
+    "bytes": 274,
+    "sha256": "43898738d521dd9f051fa57aa2445059036cd801f7ccc15744ae288a377d690e"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/traces/worker-2.jsonl": {
+    "bytes": 274,
+    "sha256": "d1557e30ededa501d77968bfdc6cf02dd6d893c1925fb44cdb13d2d473989512"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/trial/worker-0.monitor.csv": {
+    "bytes": 58,
+    "sha256": "e666b3a1a2529d24edcc731e24d2514fac025889b044d2ebebcb7046b82f7613"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/trial/worker-1.monitor.csv": {
+    "bytes": 57,
+    "sha256": "385767f75e5b3fdb9d68b9d6998c6c4f369ae21954670bce5b19066327200aec"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/trial/worker-2.monitor.csv": {
+    "bytes": 57,
+    "sha256": "bb4d8fb2852456c06042843d9bb777d0f431b805d2196c93de9ba6c9a70a6d00"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/fixtures/native0/trial/worker-3.monitor.csv": {
+    "bytes": 58,
+    "sha256": "f905012a6b2d3604919fcdc1ae2ee5c2e660b97dc0496ff6797ad08965dd73e5"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/native0-watchdog.json": {
+    "bytes": 23546,
+    "sha256": "1f6b4c4c81901e5b0a90b87f5d7d490a12d3a631424166aea53bb297cb5b5e54"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/native0-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/native0-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/native0.log": {
+    "bytes": 1108,
+    "sha256": "3f4e4d349b8d571c35615d2abc9539210a2419c8f30bab6c3cc8ac8478a6e838"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/result.json": {
+    "bytes": 39719,
+    "sha256": "2c03ca8cb054ff03219776d87986d9281bd267e9e8ff74392eaf382875338b21"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/runtime.log": {
+    "bytes": 97,
+    "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+  },
+  "runs/v0.0.11/serial-native-teardown-01/sync.log": {
+    "bytes": 1234,
+    "sha256": "f4e641b6742ce9da6e422469c3486546994a04855dc71ff2bd9667e4cebc3b11"
+  },
+  "runs/v0.0.11/serial-native-teardown-deployment.json": {
+    "bytes": 221225,
+    "sha256": "4a7d748a651f0fc20b82a97e19eb4126f43c0c10089e04adbea9199682714d4c"
+  },
+  "runs/v0.0.11/serial-native-teardown-launch.log": {
+    "bytes": 816,
+    "sha256": "20f820ca2a63eb7ae39d7bf7eb80bd31d4a6c5b6a4ae59c4c7ce1064c93b93b5"
+  }
+}

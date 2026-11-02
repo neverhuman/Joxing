@@ -1,6 +1,12 @@
 # Next: bounded serial retirement of four native workers
 
-Status: opt-in adapter/runner and source controls implemented. Registered packet:
+Status: CONCLUDED FAILED native prerequisite.75Linux controls pass, but the2s
+serial deadline expires on worker2 after0.85/0.92s first-two exits. Forced cleanup
+then triggers105.9ms retirement hold fault. No normal worker3 close/parent initial
+hash receipt; four-way state parity unavailable. Preserve original gates below.
+[Results](SERIAL_RETIREMENT_RESULTS.md); next [H18mission](LIVE_RESOURCE_RELEASE_MISSION.md).
+
+Historical preregistration: opt-in adapter/runner and source controls implemented. Registered packet:
 `experiments/v0.0.11/serial-native-teardown-protocol.json`, canonical SHA256
 `27dea5bd160a8a781001576978359d84b605d534da583c797bf13e2d04d1ff13`.
 Requires75exact Linux controls then ONE four-worker constructor; formal outcomes

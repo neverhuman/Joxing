@@ -66,9 +66,10 @@ then exceeded its unchanged100ms reservation hold (122.75ms observed), stopping
 the next paired packet. All failures and independent audits are retained.
 [Results](docs/NATIVE_RETIREMENT_RESULTS.md) · [Next: four-worker constructor-only
 proof with serial shutdown](docs/SERIAL_RETIREMENT_MISSION.md). No unchanged RL retry.
-The serial-close adapter and four-worker constructor harness are implemented:
-71local controls pass,4Linux cases skip. The [registered target packet](experiments/v0.0.11/serial-native-teardown-protocol.json)
-requires all75Linux controls before native startup; target outcomes pending.
+The serial-close adapter passes75Linux controls, but its four-worker constructor
+fails the two-second close deadline; forced cleanup then exceeds the100ms hold.
+No learning ran. [H17results](docs/SERIAL_RETIREMENT_RESULTS.md) ·
+[Next: release closed native resources while workers remain alive](docs/LIVE_RESOURCE_RELEASE_MISSION.md).
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

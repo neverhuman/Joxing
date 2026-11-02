@@ -1,3 +1,26 @@
+# Current: H17 native failed; H18 closed-resource lifetime proof next — Nov2 Mountain
+
+62b361b/27dea5bd passes75Linux controls, then ONE native constructor is INVALID:
+four700muscle resets/800prep/0rollout/actor/update. FIRST fault is2.001146s serial
+close deadline; first-two worker exits0.850553/0.921264s. Remaining-worker forced
+cleanup then triggers105.905ms retirement hold, the supervisor headline. Do not
+attribute the later cleanup hold to ordinary serial shutdown. No deadline/cap
+relaxed. Three close hashes exist; initial parent hashes were not persisted,
+so full four-way state equality is unavailable. Source controls remain separate.
+
+Independent735source/five historical objects/75JUnit/8credit-event/34recorded-exit
+and five watcher-report audit;446rawfiles502591bytes exact transfer, no writer.
+Results/chronology/receipts: docs/SERIAL_RETIREMENT_RESULTS.md. H15parity remains
+3INVALID/0VALID/9NOT_RUN; no candidate, memory-saving, balance or boxing win.
+
+Worker-ready next: docs/LIVE_RESOURCE_RELEASE_MISSION.md, research/H18.md,
+NOT implemented/preregistered/run. Test closed graph release with live RSS/weakref
+proof and pre-close receipt, first ONE200prep/0rollout constructor, before larger
+work. No fast exit/allocator tuning/model/default edits or unchanged RL repeats.
+Seven-packet cumulative16258steps/211.862205s/31955319fixture/1872562receipt bytes;
+original remainder223742steps/388.137795s/1041786505fixture/2321742receipt bytes.
+No active owned job, no full-source/concurrency/default promotion or v11tag.
+
 # H17 serial-close source implemented; native packet registered — Nov2 Mountain
 
 Current protocol: experiments/v0.0.11/serial-native-teardown-protocol.json,

@@ -1,0 +1,396 @@
+{
+  "schema": "joxing-serial-native-partial-independent-v1",
+  "scope": "Partial attempt chronology; native gate failed, no completed state parity or performance claim",
+  "source_commit": "62b361bf3ec2086029af0e4537d24ddbb67b1c34",
+  "first_fault": {
+    "error": "TimeoutError: Serial worker join deadline",
+    "monotonic_s": 9549486.2683851,
+    "phase": "fault"
+  },
+  "serial_close_elapsed_to_fault_s": 2.001146459951997,
+  "joined_workers": [
+    {
+      "worker": 0,
+      "send_to_join_s": 0.8505526464432478
+    },
+    {
+      "worker": 1,
+      "send_to_join_s": 0.9212638568133116
+    }
+  ],
+  "workers": [
+    {
+      "worker": 0,
+      "identity": {
+        "pid": 3607041,
+        "start": "954947594",
+        "state": "S"
+      },
+      "native_reset_rows": 1,
+      "native_model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "native_action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "close_rows": 1,
+      "close_state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+      "parent_initial_state_hash": "unavailable; not persisted before fault"
+    },
+    {
+      "worker": 1,
+      "identity": {
+        "pid": 3607042,
+        "start": "954947594",
+        "state": "S"
+      },
+      "native_reset_rows": 1,
+      "native_model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "native_action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "close_rows": 1,
+      "close_state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+      "parent_initial_state_hash": "unavailable; not persisted before fault"
+    },
+    {
+      "worker": 2,
+      "identity": {
+        "pid": 3607043,
+        "start": "954947594",
+        "state": "S"
+      },
+      "native_reset_rows": 1,
+      "native_model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "native_action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "close_rows": 1,
+      "close_state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+      "parent_initial_state_hash": "unavailable; not persisted before fault"
+    },
+    {
+      "worker": 3,
+      "identity": {
+        "pid": 3607044,
+        "start": "954947595",
+        "state": "S"
+      },
+      "native_reset_rows": 1,
+      "native_model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "native_action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "close_rows": 0,
+      "close_state_hash": null,
+      "parent_initial_state_hash": "unavailable; not persisted before fault"
+    }
+  ],
+  "retirement_records": {
+    "3607041:954947594": {
+      "highwater_charge_bytes": 1057787904,
+      "max_hold_s": 0.07429434545338154,
+      "released": true
+    },
+    "3607042:954947594": {
+      "highwater_charge_bytes": 1078759424,
+      "max_hold_s": 0.07596789859235287,
+      "released": true
+    },
+    "3607044:954947595": {
+      "highwater_charge_bytes": 1071972352,
+      "max_hold_s": 0.10590513423085213,
+      "released": false
+    },
+    "3607043:954947594": {
+      "highwater_charge_bytes": 1065652224,
+      "max_hold_s": 0.08120488375425339,
+      "released": true
+    }
+  },
+  "constructor_result_present": false,
+  "guard_event_files": [],
+  "controls_watch_reports": [
+    {
+      "path": "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.json",
+      "status": "exited",
+      "reason": "all_owned_exited",
+      "rss_reader": "terminal-mm-reserve-v3",
+      "max_sample_gap_s": 0.023951169103384018,
+      "max_probe_s": 0.00377030111849308,
+      "retirement_records": {
+        "3606427:954946921": {
+          "pid": 3606427,
+          "start_ticks": 954946921,
+          "first_retiring_s": 9549469.668898365,
+          "evidence": {
+            "pid": 3606427,
+            "start_ticks": 954946921,
+            "before": {
+              "state": "R",
+              "parent_pid": 3605795,
+              "flags": 4194316,
+              "start_ticks": 954946921
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 3605795,
+              "flags": 4194316,
+              "start_ticks": 954946921
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 3605795,
+              "flags": 4194316,
+              "start_ticks": 954946921
+            },
+            "tasks": [
+              "3606427"
+            ],
+            "after_tasks": [
+              "3606427"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 549203968,
+          "samples": 2,
+          "max_hold_s": 0.044663989916443825,
+          "released": true,
+          "released_s": 9549469.713562354
+        }
+      }
+    },
+    {
+      "path": "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.json",
+      "status": "exited",
+      "reason": "all_owned_exited",
+      "rss_reader": "terminal-mm-reserve-v3",
+      "max_sample_gap_s": 0.026882417500019073,
+      "max_probe_s": 0.005605436861515045,
+      "retirement_records": {
+        "3605868:954946341": {
+          "pid": 3605868,
+          "start_ticks": 954946341,
+          "first_retiring_s": 9549463.981078526,
+          "evidence": {
+            "pid": 3605868,
+            "start_ticks": 954946341,
+            "before": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "tasks": [
+              "3605868"
+            ],
+            "after_tasks": [
+              "3605868"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 548048896,
+          "samples": 2,
+          "max_hold_s": 0.04855022951960564,
+          "released": true,
+          "released_s": 9549464.029628756
+        },
+        "3605869:954946341": {
+          "pid": 3605869,
+          "start_ticks": 954946341,
+          "first_retiring_s": 9549464.054908315,
+          "evidence": {
+            "pid": 3605869,
+            "start_ticks": 954946341,
+            "before": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "tasks": [
+              "3605869"
+            ],
+            "after_tasks": [
+              "3605869"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 547979264,
+          "samples": 2,
+          "max_hold_s": 0.05019021965563297,
+          "released": true,
+          "released_s": 9549464.105098534
+        },
+        "3605870:954946341": {
+          "pid": 3605870,
+          "start_ticks": 954946341,
+          "first_retiring_s": 9549464.105010867,
+          "evidence": {
+            "pid": 3605870,
+            "start_ticks": 954946341,
+            "before": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946341
+            },
+            "tasks": [
+              "3605870"
+            ],
+            "after_tasks": [
+              "3605870"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 548012032,
+          "samples": 2,
+          "max_hold_s": 0.04656984470784664,
+          "released": true,
+          "released_s": 9549464.151580712
+        },
+        "3605871:954946342": {
+          "pid": 3605871,
+          "start_ticks": 954946342,
+          "first_retiring_s": 9549464.17605069,
+          "evidence": {
+            "pid": 3605871,
+            "start_ticks": 954946342,
+            "before": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946342
+            },
+            "after": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946342
+            },
+            "task": {
+              "state": "R",
+              "parent_pid": 3605856,
+              "flags": 4194316,
+              "start_ticks": 954946342
+            },
+            "tasks": [
+              "3605871"
+            ],
+            "after_tasks": [
+              "3605871"
+            ],
+            "status_threads": 1,
+            "vmrss_absent": true,
+            "vmsize_absent": true,
+            "statm_pages": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "highwater_charge_bytes": 548052992,
+          "samples": 2,
+          "max_hold_s": 0.04583262279629707,
+          "released": true,
+          "released_s": 9549464.221883312
+        }
+      }
+    },
+    {
+      "path": "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.json",
+      "status": "exited",
+      "reason": "all_owned_exited",
+      "rss_reader": "strict-v2",
+      "max_sample_gap_s": 0.02108726277947426,
+      "max_probe_s": 0.0006996747106313705,
+      "retirement_records": {}
+    },
+    {
+      "path": "runs/v0.0.11/serial-native-teardown-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.json",
+      "status": "stopped",
+      "reason": "planned_rss",
+      "rss_reader": "strict-v2",
+      "max_sample_gap_s": 0.021598830819129944,
+      "max_probe_s": 0.0012821964919567108,
+      "retirement_records": {}
+    }
+  ],
+  "physics": 800,
+  "new_physics": 0,
+  "limits": "First2s close timeout preceded forced cleanup; later105.9ms hold fault is not a clean serial-exit measurement. Missing before-close receipt prevents independent exact state parity conclusion."
+}
