@@ -1,0 +1,621 @@
+{
+  "status": "independently_qualified_four_native_contexts",
+  "source_commit": "1c9415240368d78defe5d85f7367150d6c6434fd",
+  "protocol_sha256": "fbb5961fb9c82fc28e581145b3e1d99591d612dbf4c7560fb677c6943f2566c1",
+  "source_files_verified": 763,
+  "historical_objects_verified": 5,
+  "complete_superproject_history": true,
+  "controls": {
+    "passed": 247,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0,
+    "not_run": 0
+  },
+  "native_packet": {
+    "attempted": 1,
+    "valid": 1,
+    "invalid": 0,
+    "not_run": 0
+  },
+  "native_worlds": {
+    "attempted": 4,
+    "valid": 4,
+    "invalid": 0,
+    "not_run": 0
+  },
+  "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+  "specification": {
+    "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+    "balance_config": {
+      "control_s": 0.01,
+      "dt_s": 0.001,
+      "episode_s": 20.0,
+      "max_reset_penetration_m": 0.002,
+      "preparation_s": 0.2
+    },
+    "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+    "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+    "observation_slices": {
+      "activation": [
+        170,
+        870
+      ],
+      "hand_error": [
+        876,
+        882
+      ],
+      "pelvis_up": [
+        870,
+        873
+      ],
+      "previous_action": [
+        885,
+        1023
+      ],
+      "relative_pelvis": [
+        873,
+        876
+      ],
+      "relative_qpos": [
+        0,
+        85
+      ],
+      "support": [
+        882,
+        885
+      ],
+      "velocity": [
+        85,
+        170
+      ]
+    }
+  },
+  "preparation_steps": 800,
+  "rollout_steps": 0,
+  "policy_inferences": 0,
+  "learner_updates": 0,
+  "actors_constructed": 0,
+  "formal_boxing_games": 0,
+  "close_to_join_s": 0.963513869792223,
+  "wall_s": 34.76866769045591,
+  "peak_capacity_charge_bytes": 4533751808,
+  "peak_processes": 9,
+  "max_sample_gap_s": 0.038165176287293434,
+  "max_probe_s": 0.017782509326934814,
+  "native_retirement_records": {
+    "3947203:958274921": {
+      "pid": 3947203,
+      "start_ticks": 958274921,
+      "first_retiring_s": 9582757.058967154,
+      "evidence": {
+        "pid": 3947203,
+        "start_ticks": 958274921,
+        "before": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "after": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "task": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "tasks": [
+          "3947203"
+        ],
+        "after_tasks": [
+          "3947203"
+        ],
+        "status_threads": 1,
+        "vmrss_absent": true,
+        "vmsize_absent": true,
+        "statm_pages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "highwater_charge_bytes": 1051942912,
+      "samples": 3,
+      "max_hold_s": 0.07972466386854649,
+      "released": true,
+      "released_s": 9582757.138691818
+    },
+    "3947204:958274921": {
+      "pid": 3947204,
+      "start_ticks": 958274921,
+      "first_retiring_s": 9582757.305914272,
+      "evidence": {
+        "pid": 3947204,
+        "start_ticks": 958274921,
+        "before": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "after": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "task": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "tasks": [
+          "3947204"
+        ],
+        "after_tasks": [
+          "3947204"
+        ],
+        "status_threads": 1,
+        "vmrss_absent": true,
+        "vmsize_absent": true,
+        "statm_pages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "highwater_charge_bytes": 1064312832,
+      "samples": 3,
+      "max_hold_s": 0.07530917786061764,
+      "released": true,
+      "released_s": 9582757.38122345
+    },
+    "3947205:958274921": {
+      "pid": 3947205,
+      "start_ticks": 958274921,
+      "first_retiring_s": 9582757.543702688,
+      "evidence": {
+        "pid": 3947205,
+        "start_ticks": 958274921,
+        "before": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "after": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "task": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274921
+        },
+        "tasks": [
+          "3947205"
+        ],
+        "after_tasks": [
+          "3947205"
+        ],
+        "status_threads": 1,
+        "vmrss_absent": true,
+        "vmsize_absent": true,
+        "statm_pages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "highwater_charge_bytes": 1060614144,
+      "samples": 3,
+      "max_hold_s": 0.06993370316922665,
+      "released": true,
+      "released_s": 9582757.613636391
+    },
+    "3947206:958274922": {
+      "pid": 3947206,
+      "start_ticks": 958274922,
+      "first_retiring_s": 9582757.790966816,
+      "evidence": {
+        "pid": 3947206,
+        "start_ticks": 958274922,
+        "before": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274922
+        },
+        "after": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274922
+        },
+        "task": {
+          "state": "R",
+          "parent_pid": 3947077,
+          "flags": 4194380,
+          "start_ticks": 958274922
+        },
+        "tasks": [
+          "3947206"
+        ],
+        "after_tasks": [
+          "3947206"
+        ],
+        "status_threads": 1,
+        "vmrss_absent": true,
+        "vmsize_absent": true,
+        "statm_pages": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "highwater_charge_bytes": 1049505792,
+      "samples": 3,
+      "max_hold_s": 0.07234872691333294,
+      "released": true,
+      "released_s": 9582757.863315543
+    }
+  },
+  "workers": [
+    {
+      "pid": 3947203,
+      "start": "958274921"
+    },
+    {
+      "pid": 3947204,
+      "start": "958274921"
+    },
+    {
+      "pid": 3947205,
+      "start": "958274921"
+    },
+    {
+      "pid": 3947206,
+      "start": "958274922"
+    }
+  ],
+  "physics_credit": {
+    "binding": "f8e97e8e37089530b73c9743f7f2dbf91460f8394f8801637205b84817c8452e",
+    "chain": "f9ae70986c4eaae46758ded0f6d12d516bd3055bf1dcb63b0b5f240c4bfedff0",
+    "limit": 800,
+    "pending": {},
+    "schema": "joxing-physics-credit-v1",
+    "sequence": 8,
+    "settled": {
+      "native0:preparation": {
+        "operations": 4,
+        "used": 800
+      }
+    },
+    "used": 800
+  },
+  "encoded_receipts": {
+    "path": "runs/v0.0.11/resource-admitted-four-context-deployment.json.gz",
+    "decoded_bytes": 195056,
+    "decoded_sha256": "ad2c44908e45f40532155001e855da0e1af575cbb8a411ebe8c8c94bba585aeb",
+    "encoded_bytes": 71119,
+    "encoded_sha256": "c8d9dbba27966763c3646196785d6c2110875c16c9395f343c8457da0db84598",
+    "encoding": "compact-main-gzip-deployment-v1",
+    "all_decoded_fields_retained": true,
+    "verified_files": 776,
+    "main": {
+      "encoding": "gzip-main-stdout-bootstrap-v2",
+      "decoded_bytes": 63293,
+      "decoded_sha256": "965ce5fa735e6e7069bf4c3a74fb847531b1366fbd5ae9861f7aac9174a8cf9f",
+      "encoded_bytes": 12022,
+      "encoded_sha256": "4168b8336f485542bcc245d8612440c224e54000f8e87d2513d0fa1a9d4be681"
+    },
+    "terminal": {
+      "decoded_bytes": 31031,
+      "decoded_sha256": "fbaae99ddf45bc67e4dbaa9ba171b11ab699b672e3d3bd91e3d42bbceddc873f",
+      "encoded_bytes": 5207,
+      "encoded_sha256": "ec5be8d9564a76934b80e645e5a0d8395276562ef860317255023dbaa006af4d"
+    },
+    "admission_verified": {
+      "prior_deferrals": 2,
+      "spacing_s": 10.10875921137631,
+      "post_checkout": true,
+      "post_sync": true
+    },
+    "runtime_provenance": {
+      "events": 11,
+      "finalized": true,
+      "phases": [
+        {
+          "module": "numpy",
+          "wall_s": 0.18508686497807503,
+          "cpu_s": 0.16989959200000002,
+          "minor_faults": 3714,
+          "major_faults": 52
+        },
+        {
+          "module": "mujoco",
+          "wall_s": 0.32635377906262875,
+          "cpu_s": 0.227868664,
+          "minor_faults": 7434,
+          "major_faults": 656
+        },
+        {
+          "module": "torch",
+          "wall_s": 2.2090891264379025,
+          "cpu_s": 2.068782095,
+          "minor_faults": 46325,
+          "major_faults": 466
+        },
+        {
+          "module": "stable_baselines3",
+          "wall_s": 1.8923717867583036,
+          "cpu_s": 1.8182195079999999,
+          "minor_faults": 15233,
+          "major_faults": 133
+        }
+      ],
+      "versions": {
+        "python": "3.12.3",
+        "numpy": "2.4.2",
+        "mujoco": "3.8.0",
+        "torch": "2.10.0+cpu",
+        "sb3": "2.7.1"
+      },
+      "wall_s": 5.414354195818305
+    }
+  },
+  "fixture_bytes": 2190668,
+  "receipt_bytes": 136519,
+  "exited_recorded_identities": [
+    {
+      "pid": 3945421,
+      "start_ticks": 958272414
+    },
+    {
+      "parent_pid": 3945421,
+      "pid": 3945454,
+      "start_ticks": 958272456,
+      "state": "R"
+    },
+    {
+      "parent_pid": 3945454,
+      "pid": 3945607,
+      "start_ticks": 958272483,
+      "state": "R"
+    },
+    {
+      "parent_pid": 3945454,
+      "pid": 3945633,
+      "start_ticks": 958272520,
+      "state": "R"
+    },
+    {
+      "parent_pid": 3945421,
+      "pid": 3945914,
+      "start_ticks": 958272635,
+      "state": "R"
+    },
+    {
+      "pid": 3946520,
+      "start_ticks": 958273176
+    },
+    {
+      "pid": 3946688,
+      "start_ticks": 958273744
+    },
+    {
+      "pid": 3946700,
+      "parent_pid": 3946520,
+      "start_ticks": 958273849,
+      "state": "S"
+    },
+    {
+      "pid": 3946701,
+      "parent_pid": 3946520,
+      "start_ticks": 958273849,
+      "state": "S"
+    },
+    {
+      "pid": 3946702,
+      "parent_pid": 3946520,
+      "start_ticks": 958273849,
+      "state": "R"
+    },
+    {
+      "pid": 3946728,
+      "parent_pid": 3946520,
+      "start_ticks": 958273902,
+      "state": "S"
+    },
+    {
+      "pid": 3946729,
+      "parent_pid": 3946520,
+      "start_ticks": 958273902,
+      "state": "S"
+    },
+    {
+      "pid": 3946730,
+      "parent_pid": 3946520,
+      "start_ticks": 958273902,
+      "state": "R"
+    },
+    {
+      "pid": 3946836,
+      "parent_pid": 3946520,
+      "start_ticks": 958274049,
+      "state": "R"
+    },
+    {
+      "pid": 3946837,
+      "parent_pid": 3946520,
+      "start_ticks": 958274049,
+      "state": "R"
+    },
+    {
+      "parent_pid": 3946520,
+      "pid": 3946856,
+      "start_ticks": 958274141,
+      "state": "Z"
+    },
+    {
+      "pid": 3946895,
+      "parent_pid": 3946520,
+      "start_ticks": 958274197,
+      "state": "S"
+    },
+    {
+      "pid": 3946896,
+      "parent_pid": 3946520,
+      "start_ticks": 958274197,
+      "state": "S"
+    },
+    {
+      "pid": 3946897,
+      "parent_pid": 3946520,
+      "start_ticks": 958274197,
+      "state": "R"
+    },
+    {
+      "pid": 3946898,
+      "parent_pid": 3946896,
+      "start_ticks": 958274202,
+      "state": "R"
+    },
+    {
+      "pid": 3946899,
+      "parent_pid": 3946896,
+      "start_ticks": 958274202,
+      "state": "R"
+    },
+    {
+      "pid": 3946900,
+      "parent_pid": 3946896,
+      "start_ticks": 958274202,
+      "state": "R"
+    },
+    {
+      "pid": 3946901,
+      "parent_pid": 3946896,
+      "start_ticks": 958274202,
+      "state": "R"
+    },
+    {
+      "parent_pid": 3946520,
+      "pid": 3946942,
+      "start_ticks": 958274309,
+      "state": "R"
+    },
+    {
+      "parent_pid": 3946520,
+      "pid": 3947029,
+      "start_ticks": 958274369,
+      "state": "S"
+    },
+    {
+      "pid": 3947074,
+      "start_ticks": 958274506
+    },
+    {
+      "pid": 3947075,
+      "parent_pid": 3945421,
+      "start_ticks": 958274506,
+      "state": "R"
+    },
+    {
+      "pid": 3947076,
+      "parent_pid": 3947074,
+      "start_ticks": 958274514,
+      "state": "S"
+    },
+    {
+      "pid": 3947077,
+      "start_ticks": 958274514
+    },
+    {
+      "pid": 3947203,
+      "start_ticks": 958274921
+    },
+    {
+      "pid": 3947204,
+      "start_ticks": 958274921
+    },
+    {
+      "pid": 3947205,
+      "start_ticks": 958274921
+    },
+    {
+      "pid": 3947206,
+      "start_ticks": 958274922
+    },
+    {
+      "pid": 3946777,
+      "parent_pid": 3946520,
+      "start_ticks": 958274014,
+      "state": "S"
+    },
+    {
+      "pid": 3946778,
+      "parent_pid": 3946520,
+      "start_ticks": 958274014,
+      "state": "R"
+    },
+    {
+      "pid": 3946781,
+      "parent_pid": 3946520,
+      "start_ticks": 958274025,
+      "state": "S"
+    },
+    {
+      "pid": 3946782,
+      "parent_pid": 3946520,
+      "start_ticks": 958274026,
+      "state": "R"
+    },
+    {
+      "pid": 3946783,
+      "parent_pid": 3946781,
+      "start_ticks": 958274030,
+      "state": "R"
+    },
+    {
+      "pid": 3946691,
+      "start_ticks": 958273753
+    },
+    {
+      "pid": 3946692,
+      "start_ticks": 958273756
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest_sha256": "63c99fbca6a26677fa2977953354365237124b13263f7a52b258e494186a7f6b",
+  "full_independent_audit_sha256": "4790826069acef053018be4c5f6bd6d7d25e76b0c3725b3f78a43f2bc5c12cd5",
+  "raw_files": 1002,
+  "raw_bytes": 2327187,
+  "scope": "Four original700muscle/200prep constructors, exact native state/lifetime/retirement; no learning, stable guard, boxing or native performance comparison"
+}

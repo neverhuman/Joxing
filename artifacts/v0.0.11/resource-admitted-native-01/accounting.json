@@ -1,0 +1,43 @@
+{
+  "scope": "Original H15supervised source-host proof envelope; prior costs immutable, publication copies and observed readiness spans separately retained",
+  "packets_before": 14,
+  "packets_after": 15,
+  "prior": {
+    "physics": 16658,
+    "active_wall_s": 395.40257320619463,
+    "fixture_bytes": 35531698,
+    "receipt_bytes": 4032589
+  },
+  "this_packet": {
+    "physics": 800,
+    "active_wall_s": 34.76866769045591,
+    "fixture_bytes": 2190668,
+    "receipt_bytes": 136519
+  },
+  "cumulative": {
+    "physics": 17458,
+    "active_wall_s": 430.17124089665054,
+    "fixture_bytes": 37722366,
+    "receipt_bytes": 4169108
+  },
+  "original_limit": {
+    "physics": 240000,
+    "active_wall_s": 600,
+    "fixture_bytes": 1073741824,
+    "receipt_bytes": 4194304
+  },
+  "remaining": {
+    "physics": 222542,
+    "active_wall_s": 169.82875910334946,
+    "fixture_bytes": 1036019458,
+    "receipt_bytes": 25196
+  },
+  "observed_readiness_spans_s": [
+    38.156887739896774,
+    18.943874578922987,
+    22.20874264650047
+  ],
+  "original_parity_complete": false,
+  "next_packet_fits_original_receipts": false,
+  "reason": "25196receipt bytes remain; one unchanged canonical native watchdog alone is36530bytes, before bootstrap/runtime/main/tests. Do not launch another task against old envelope or silently reset its costs."
+}

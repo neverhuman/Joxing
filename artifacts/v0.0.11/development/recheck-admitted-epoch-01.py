@@ -31,6 +31,7 @@ if any(x.get('status')=='launched' for x in prior):
 (STAGING/HISTORY).write_text(json.dumps(prior,sort_keys=True,separators=(',',':'))+'\n')
 if args.prepare_only:
  print(json.dumps({'status':'prepared_frozen_epoch','source_commit':SOURCE,'public_files_verified_locally':len(names),'admission_records':len(prior),'simulation_launched':False}));raise SystemExit(0)
+(STAGING/'runs/v0.0.11').mkdir(parents=True,exist_ok=True)
 result=subprocess.run([sys.executable,HELPER],cwd=STAGING,text=True,capture_output=True,timeout=420)
 (ROOT/'runs/v0.0.11/frozen-admission-recheck-output.txt').write_text(result.stdout+result.stderr)
 if (STAGING/HISTORY).exists():

@@ -1,3 +1,12 @@
+# Concluded: H23four-native prerequisite qualified
+
+247Linux cases and fouroriginal700muscle contexts qualify under unchanged
+2s/100ms/8GiB/state/credit gates.0learning; two deferrals and allprior negatives
+preserved. [Results/faults/account](RESOURCE_ADMISSION_RESULTS.md). Do not rerun
+concluded epoch. Nextprimary[NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md](NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md)
+is a prospective new bounded study, not an oldbudget extension. Historical
+preregistration/readiness below unchanged.
+
 # Current: H23resource-deferred, fixed source epoch ready
 
 Read [checkpoint/receipts/frozen recheck command](RESOURCE_ADMISSION_CHECKPOINT.md) first.

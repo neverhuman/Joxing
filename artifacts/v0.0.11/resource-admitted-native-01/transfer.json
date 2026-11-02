@@ -1,0 +1,335 @@
+{
+  "status": "passed_exact_owned_file_bytes",
+  "raw_files": 1002,
+  "raw_bytes": 2327187,
+  "tar_sha256": "c92e6ff96d4e13d4002240b66f7f5884afda8dcba0b012bef8f2dded62694197",
+  "all_names_sizes_hashes_verified": true,
+  "original_symlink_metadata": [
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_release_lifetime_and_faulcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_release_lifetime_and_faul6",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_admitted_bootstrapcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_admitted_bootstrap0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_capacity_and_existing_outcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_capacity_and_existing_out0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_comparison_requires_complcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_comparison_requires_compl4",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_saved_main_terminal_complcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_saved_main_terminal_compl2",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_gzip_bytes_stay_in_receipcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_gzip_bytes_stay_in_receip0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_mujoco_binding_weakrefs_zcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_mujoco_binding_weakrefs_z0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_launcher_ready_path_matchcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_launcher_ready_path_match0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_proc_evidence_keeps_raw_mcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_proc_evidence_keeps_raw_m0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_unknown_or_nondeferred_vacurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_unknown_or_nondeferred_va0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_bound_status_fail_closed_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_bound_status_fail_closed_3",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_prepare_refuses_dirty_or_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_prepare_refuses_dirty_or_8",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_one_worker_close_order_ancurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_one_worker_close_order_an1",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_four_parent_receipt_faultcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_four_parent_receipt_fault9",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_bootstrap_and_sizecurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_bootstrap_and_size0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_atomic_failures_keep_priocurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_atomic_failures_keep_prio3",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_exact_main_terminal_and_ocurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_exact_main_terminal_and_o2",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_private_scope_ownership_bcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_private_scope_ownership_b7",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_managed_finalizer_and_rescurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_managed_finalizer_and_res4",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_foreign_stale_or_wrong_bicurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_foreign_stale_or_wrong_bi0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_live_missing_memory_stillcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_live_missing_memory_still1",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_fresh_spawn_installs_naticurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_fresh_spawn_installs_nati0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_serial_heaps_guardcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_serial_heaps_guard0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_watchdog_stops_owncurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_watchdog_stops_own1",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_encodings_preserve_all_ficurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_encodings_preserve_all_fi0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_transient_missing_status_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_transient_missing_status_0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_freeze_close_then_allocatcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_freeze_close_then_allocat0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_existing_ledger_never_ovecurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_existing_ledger_never_ove0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_persistent_missing_statuscurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_persistent_missing_status0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_four_worker_exact_denomincurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_four_worker_exact_denomin4",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_clean_context_and_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_clean_context_and_0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_all_faults_retain_real_stcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_all_faults_retain_real_st2",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_paired_conclusion_keeps_ncurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_paired_conclusion_keeps_n6",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_missing_tmpfs_rejected_becurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_missing_tmpfs_rejected_be0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_evaluation_cleanup_fault_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_evaluation_cleanup_fault_0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_parent_preparation_stays_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_parent_preparation_stays_1",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_owned_new_xml_exact_bytescurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_owned_new_xml_exact_bytes3",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_unknown_reservation_stayscurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_unknown_reservation_stays0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_bound_proc_proof_rejects_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_bound_proc_proof_rejects_2",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_saved_h21_receipt_fidelitcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_saved_h21_receipt_fidelit1",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_exact_refund_and_duplicatcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_exact_refund_and_duplicat0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_child_witness_before_naticurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_child_witness_before_nati3",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_exit_uses_nonzero_current",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_actual_exit_uses_nonzero_0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_atomic_processes_cannot_ocurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_atomic_processes_cannot_o0",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_post_constructor_proof_recurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_post_constructor_proof_re7",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_injected_disk_delay_cannocurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_injected_disk_delay_canno1",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_fast_tree_only_current_decurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_fast_tree_only_current_de4",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_live_rss_requires_same_licurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_live_rss_requires_same_li4",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_before_close_receipt_survcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_before_close_receipt_surv7",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_terminal_evidence_requirecurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_terminal_evidence_require7",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_fresh_worker_cannot_imporcurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_fresh_worker_cannot_impor3",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_serial_close_order_and_facurrent",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_serial_close_order_and_fa14",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_owned_new_xml_exact_bytes2/controls.xml",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_owned_new_xml_exact_bytes2/actual",
+      "resolved_within_owned_root": true,
+      "is_file": true
+    },
+    {
+      "path": "runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_private_scope_ownership_b2/fake-ram/joxing-watch-x5s5x_z4/report.json",
+      "link_target": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/controls/test_private_scope_ownership_b2/foreign",
+      "resolved_within_owned_root": true,
+      "is_file": false
+    }
+  ],
+  "representation": "regular file payloads for safe extraction; original symlink targets retained separately",
+  "original_safe_filter_fault": "Initial archive extraction stopped at absolute test-owned symlink, correctly refused by tar data filter. Partial safe prefix retained separately; source unchanged, no simulation rerun."
+}

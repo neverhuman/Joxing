@@ -1,0 +1,12 @@
+{
+  "fault": "Two independent audit invocations stopped on same new terminal reserialization assertion. A string-match repair command itself failed, so second read ran unchanged; retained. No simulation/source rerun.",
+  "reason": "Original terminal nested insertion order differs from sorted-key main; initial added assertion also used a literal escape instead of newline. Exact entire encoded/decoded byte hashes already verify retained wire bytes.",
+  "repair": "Require actual newline and all nested fields/types/float.hex incl signedzero identical, with original encoded/decoded hashes. Existing V2 full-byte codec controls, all source and scientific gates unchanged.",
+  "old_auditor_sha256": "723992af98dec2380ed16fdf8dc3a007c4e1e95c9e189e70c1121eff08f02836",
+  "new_auditor_sha256": "36a06f865a42f49f26d76c896470c9b1d7588212d4055439ae361b1d61e49c51",
+  "no_executing_source_or_native_gate_edit": true,
+  "no_native_rerun": true,
+  "post_audit_transfer_fault": "Original transfer tail safely rejected test-owned absolute symlink. All original audit assertions had already passed and full audit was saved. Transfer now separated into metadata+owned regular bytes; no safe filter disabled.",
+  "public_helper_tail": "Fresh-label audit-only entry point; remote audit body byte-identical to completed successful audit. Dedicated transfer helper preserves all link metadata and verifies regularized payload bytes. Full source evidence unchanged.",
+  "published_auditor_sha256": "6769ba94c272987918599f4fdf2afaf5df3f387d47b0e30b0bda7b5cd1ad5edc"
+}

@@ -1,0 +1,7 @@
+{
+  "fault": "Original frozen helper launched successfully then failed local receipt capture because sparse staging lacked runs/v0.0.11; retained original fault and remote bootstrap recovery.",
+  "fix": "Create LOCALignored staging log parent before invoking original frozen helper. No executing/target/H23source/protocol change.",
+  "verification": "--prepare-only with authoritative launched history returns already_launched_inspect_owned_task without another SSH, constructor or task",
+  "no_native_rerun": true,
+  "next_step": "Never recheck concluded epoch; inspect immutable receipts; use a fresh registered source/protocol/root for future tasks."
+}

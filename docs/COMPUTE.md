@@ -1,3 +1,21 @@
+## Quiet xbabe1 used successfully —2026-11-02 18:57UTC
+
+[Fresh inventory03](../artifacts/v0.0.11/development/four-host-capacity-20261102-03.json)
+finds noJoxingjobs and lowerxbabe1CPU/load/I/O; two prospective10s-spaced admission
+samples plusfreshpostcheckout/postsync pass originalpolicy. H23runs exactlyonce:
+247Linuxcontrols +four700muscle constructors/800prep pass,whole34.77s,4.22GiBpeak,
+9ownedprocesses; all40recordedidentities exit. Fourworker wholeclose963.51ms,
+all4nativepositiveholds69.93–79.72ms. [Audited results](RESOURCE_ADMISSION_RESULTS.md).
+No GPUappropriation: xbabe1GPUalready45%busy/~17GiBallocated atinventory; actual
+physicsCPUonly/thread1. No four-world throughput/learning/boxing claim.
+
+Nextprimary[H27native learner parity](NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md)
+uses thisqualifiedprofile in bothfresh reference/candidate arms, before wider
+concurrency/default adoption/H10physicalmotor. Original H15source-host receipt
+envelope has25196bytesremaining and cannotfitnextpacket; newseparate prospective
+budget must be registered with alloldcosts retained. H26Mac-local strict replay
+remains secondaryreadywork. No active numerical task remains after qualification.
+
 ## Mac strict imported-control mismatch measured; source-local native profile next
 
 [H25outcome](MAC_NATIVE_REPLAY_PREFLIGHT_RESULTS.md): original pinned runtime/

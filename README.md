@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H26 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H27 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -12,8 +12,7 @@ actions. H9 has concluded; H10 command isolation is qualified; physical integrat
 pass172Linux controls plus ONE original700-muscle worker:200preparation steps,
 exact frozen state, verified native resource release and72.26ms retirement under
 the unchanged100ms limit. One close took336.76ms; no controlled native speedup or
-boxing gain claimed. [Next: FOUR-worker close proof](docs/FOUR_NATIVE_CONTEXT_MISSION.md)
-includes a lossless receipt preflight to fit the remaining budget.
+boxing gain claimed. The subsequent [four-worker gate now qualifies](docs/RESOURCE_ADMISSION_RESULTS.md).
 
 **H22 stopped before native work:** [audited result](docs/FOUR_NATIVE_CONTEXT_RESULTS.md).
 The runtime import stage exceeded its unchanged deadline before198Linux checks;
@@ -21,17 +20,20 @@ all four worlds remain not_run,0new physics. Host load was high; the precise
 stall cause is unknown. [Next: host admission and import provenance](docs/RESOURCE_ADMISSION_MISSION.md)
 keeps deadlines and native gates while avoiding an unchanged retry.
 
-**H23 awaits resources:** [readiness checkpoint](docs/RESOURCE_ADMISSION_CHECKPOINT.md).
-Local233tests passed/14Linux-only skips. Two admission checks deferred before
-runtime/tests/physics when fresh pressure exceeded the fixed policy. The same
-frozen epoch remains ready; all247Linux checks and four worlds are not_run.
-No policy was loosened or job duplicated.
+**Four-worker native gate qualified:** [H23results](docs/RESOURCE_ADMISSION_RESULTS.md).
+All247Linux checks and four700-muscle worlds pass. Exact state/lifetime and
+positive retirement evidence hold; whole shutdown0.964s under the unchanged2s
+limit.800preparation steps,0learning. Earlier deferrals/failures remain recorded.
+
+**Next: actual native learner parity:** [H27mission](docs/NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md)
+proposes four fresh64-transition/12-update reference/candidate trials using the
+qualified process profile. Not yet implemented/run; no boxing improvement claimed.
 
 **Spare compute:** [xbabe4 source-validation mission](docs/MAC_SOURCE_READINESS_MISSION.md)
 uses the large Mac for independent history, action-delay, opponent-observation and
 scoring checks while Linux I/O is pressured. All29checks passed on xbabe4, with0physics steps;
 [results](docs/MAC_SOURCE_READINESS_RESULTS.md). [H25strict Linux-to-Mac control import failed](docs/MAC_NATIVE_REPLAY_PREFLIGHT_RESULTS.md) on small arithmetic differences beforephysics.
-Next is a [separate Mac-native reference with strict local replay](docs/MAC_NATIVE_REFERENCE_MISSION.md); this will not relabel the failed cross-platform gate. [Live host inventory and roles](docs/COMPUTE.md).
+A [Mac-native reference with strict local replay](docs/MAC_NATIVE_REFERENCE_MISSION.md) remains secondary work; it will not relabel the failed cross-platform gate. [Live host inventory and roles](docs/COMPUTE.md).
 
 **HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
 passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus

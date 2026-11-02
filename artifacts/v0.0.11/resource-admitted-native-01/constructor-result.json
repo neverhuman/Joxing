@@ -1,0 +1,1140 @@
+{
+  "actors_constructed": 0,
+  "close_to_join_s": 0.963513869792223,
+  "close_transport": "serial-close-v1",
+  "context": {
+    "method": "forkserver",
+    "preload": [],
+    "root": {
+      "pid": 3947074,
+      "start": "958274506"
+    },
+    "root_before": {
+      "after_flags": 4194304,
+      "after_state": "R",
+      "after_threads": 1,
+      "before_flags": 4194304,
+      "before_state": "R",
+      "heavy_mappings": [],
+      "identity": {
+        "pid": 3947074,
+        "start": "958274506"
+      },
+      "maps_sha256": "2addd1aaa9161f365d7b26b81407b0b76d7b8c6280a2f27bf8648f9a78d26a7b",
+      "parent_pid": 3945421,
+      "proc_evidence": {
+        "maps.txt": {
+          "bytes": 14094,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-root-before/maps.txt",
+          "sha256": "2addd1aaa9161f365d7b26b81407b0b76d7b8c6280a2f27bf8648f9a78d26a7b"
+        },
+        "stat-after.txt": {
+          "bytes": 297,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-root-before/stat-after.txt",
+          "sha256": "bdfc773cc3699b32d5afbb5e96fe0e241fa1f00f0d1f9143fb58a9f8c8b9d848"
+        },
+        "stat-before.txt": {
+          "bytes": 297,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-root-before/stat-before.txt",
+          "sha256": "741abe4617b6516d24334f88f233b245f81ca140ebd583c44e92526c8ef64e87"
+        },
+        "status.txt": {
+          "bytes": 1587,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-root-before/status.txt",
+          "sha256": "e1bd1093527685fa8cb16f7203296800b55edaeffbcdffc047ecd658169208cd"
+        }
+      },
+      "threads": 1
+    },
+    "schema": "joxing-four-native-context-proof-v1",
+    "server": {
+      "pid": 3947077,
+      "start": "958274514"
+    },
+    "server_after": {
+      "after_flags": 4194304,
+      "after_state": "S",
+      "after_threads": 1,
+      "before_flags": 4194304,
+      "before_state": "S",
+      "heavy_mappings": [],
+      "identity": {
+        "pid": 3947077,
+        "start": "958274514"
+      },
+      "maps_sha256": "f9aa4722ec6a12840a13d033fe261be792a6254790bc08f60185b06eb2afb6cf",
+      "parent_pid": 3947074,
+      "proc_evidence": {
+        "maps.txt": {
+          "bytes": 8359,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-after/maps.txt",
+          "sha256": "f9aa4722ec6a12840a13d033fe261be792a6254790bc08f60185b06eb2afb6cf"
+        },
+        "stat-after.txt": {
+          "bytes": 301,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-after/stat-after.txt",
+          "sha256": "b6f48cd390b562c8ee6cb37f5c852b8a69e6a86afe1d8dd50c7982f18564b241"
+        },
+        "stat-before.txt": {
+          "bytes": 301,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-after/stat-before.txt",
+          "sha256": "b6f48cd390b562c8ee6cb37f5c852b8a69e6a86afe1d8dd50c7982f18564b241"
+        },
+        "status.txt": {
+          "bytes": 1588,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-after/status.txt",
+          "sha256": "c208d61c5677832eb6320f5a09e6a5abed7501972f752fa6ecf54d368f54734c"
+        }
+      },
+      "threads": 1
+    },
+    "server_before": {
+      "after_flags": 4194304,
+      "after_state": "R",
+      "after_threads": 1,
+      "before_flags": 4194304,
+      "before_state": "R",
+      "heavy_mappings": [],
+      "identity": {
+        "pid": 3947077,
+        "start": "958274514"
+      },
+      "maps_sha256": "625185f608834f3b072b560d0dfc9e2e93249ad1a3e0a2167c71a61d2ac64a2e",
+      "parent_pid": 3947074,
+      "proc_evidence": {
+        "maps.txt": {
+          "bytes": 1218,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-before/maps.txt",
+          "sha256": "625185f608834f3b072b560d0dfc9e2e93249ad1a3e0a2167c71a61d2ac64a2e"
+        },
+        "stat-after.txt": {
+          "bytes": 291,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-before/stat-after.txt",
+          "sha256": "0b680fc8c1244f1af68ebe243fbc1b94a62257d43b5daf35e8ab14d74a1638b9"
+        },
+        "stat-before.txt": {
+          "bytes": 213,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-before/stat-before.txt",
+          "sha256": "4a6859df8864b64f684da9b306cb277c0c366df63f76befe1ed2da34f723ed33"
+        },
+        "status.txt": {
+          "bytes": 1587,
+          "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0-context/proc-server-before/status.txt",
+          "sha256": "59ddcf429a78fe71ec3ba1b244d9c2c322807c3984c87e39d516dab6b54a056d"
+        }
+      },
+      "threads": 1
+    },
+    "workers": [
+      {
+        "after": {
+          "after_flags": 4194368,
+          "after_state": "S",
+          "after_threads": 1,
+          "before_flags": 4194368,
+          "before_state": "S",
+          "heavy_mappings": [
+            "libtorch",
+            "numpy",
+            "mujoco",
+            "openblas"
+          ],
+          "identity": {
+            "pid": 3947203,
+            "start": "958274921"
+          },
+          "maps_sha256": "3c49d89c77dda1e29d947a62678d77ab669e4c87eaf8753422e0a39661a2ea54",
+          "parent_pid": 3947077,
+          "proc_evidence": {
+            "maps.txt": {
+              "bytes": 165898,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-after/maps.txt",
+              "sha256": "3c49d89c77dda1e29d947a62678d77ab669e4c87eaf8753422e0a39661a2ea54"
+            },
+            "stat-after.txt": {
+              "bytes": 308,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-after/stat-after.txt",
+              "sha256": "cfe7793209a6156ad5ee44611707fb8cc7f14f4555f043662d78b2e39213ce98"
+            },
+            "stat-before.txt": {
+              "bytes": 308,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-after/stat-before.txt",
+              "sha256": "cfe7793209a6156ad5ee44611707fb8cc7f14f4555f043662d78b2e39213ce98"
+            },
+            "status.txt": {
+              "bytes": 1592,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-after/status.txt",
+              "sha256": "98fceb4b0f0e054043a40fddc9383566d178f815d41f8cbb7270c3bd2f2b566c"
+            }
+          },
+          "threads": 1
+        },
+        "before": {
+          "method": "forkserver",
+          "monotonic_s": 9582753.337248154,
+          "phase": "before_native_constructor_not_before_library_imports",
+          "proc": {
+            "after_flags": 4194368,
+            "after_state": "R",
+            "after_threads": 1,
+            "before_flags": 4194368,
+            "before_state": "R",
+            "heavy_mappings": [
+              "libtorch",
+              "numpy",
+              "openblas"
+            ],
+            "identity": {
+              "pid": 3947203,
+              "start": "958274921"
+            },
+            "maps_sha256": "0a202b458ae84ac5c92398ba0c09575fcb7742c9d6d07d3a6fc93b81c0fcaa20",
+            "parent_pid": 3947077,
+            "proc_evidence": {
+              "maps.txt": {
+                "bytes": 120082,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-before/maps.txt",
+                "sha256": "0a202b458ae84ac5c92398ba0c09575fcb7742c9d6d07d3a6fc93b81c0fcaa20"
+              },
+              "stat-after.txt": {
+                "bytes": 304,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-before/stat-after.txt",
+                "sha256": "b22f76f107ac6874a4550df87a2be7c4c67b5bbe704d12c38240074db7f18ebd"
+              },
+              "stat-before.txt": {
+                "bytes": 304,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-before/stat-before.txt",
+                "sha256": "b22f76f107ac6874a4550df87a2be7c4c67b5bbe704d12c38240074db7f18ebd"
+              },
+              "status.txt": {
+                "bytes": 1591,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-0/proc-context-worker-before/status.txt",
+                "sha256": "acbf4cf2d559c51b33f33a8bfe267d686bd0c786a7f036a6fdb23d422dbce476"
+              }
+            },
+            "threads": 1
+          },
+          "server": {
+            "pid": 3947077,
+            "start": "958274514"
+          },
+          "worker": {
+            "pid": 3947203,
+            "start": "958274921"
+          }
+        },
+        "index": 0,
+        "worker": {
+          "pid": 3947203,
+          "start": "958274921"
+        }
+      },
+      {
+        "after": {
+          "after_flags": 4194368,
+          "after_state": "S",
+          "after_threads": 1,
+          "before_flags": 4194368,
+          "before_state": "S",
+          "heavy_mappings": [
+            "libtorch",
+            "numpy",
+            "mujoco",
+            "openblas"
+          ],
+          "identity": {
+            "pid": 3947204,
+            "start": "958274921"
+          },
+          "maps_sha256": "bd56c6fd4037aff7d4d5566fa3c214a63e07752534febc7de922b3b5bf432c97",
+          "parent_pid": 3947077,
+          "proc_evidence": {
+            "maps.txt": {
+              "bytes": 165849,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-after/maps.txt",
+              "sha256": "bd56c6fd4037aff7d4d5566fa3c214a63e07752534febc7de922b3b5bf432c97"
+            },
+            "stat-after.txt": {
+              "bytes": 306,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-after/stat-after.txt",
+              "sha256": "47754e3c62ffbe1d5cd13251527a0de3678d4a97fe9ff604eb15b2162d9e2242"
+            },
+            "stat-before.txt": {
+              "bytes": 306,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-after/stat-before.txt",
+              "sha256": "47754e3c62ffbe1d5cd13251527a0de3678d4a97fe9ff604eb15b2162d9e2242"
+            },
+            "status.txt": {
+              "bytes": 1592,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-after/status.txt",
+              "sha256": "03341494c1b4d2fc7d8407de483becc426567703a88c8107a044b9810be85497"
+            }
+          },
+          "threads": 1
+        },
+        "before": {
+          "method": "forkserver",
+          "monotonic_s": 9582753.237922393,
+          "phase": "before_native_constructor_not_before_library_imports",
+          "proc": {
+            "after_flags": 4194368,
+            "after_state": "R",
+            "after_threads": 1,
+            "before_flags": 4194368,
+            "before_state": "R",
+            "heavy_mappings": [
+              "libtorch",
+              "numpy",
+              "openblas"
+            ],
+            "identity": {
+              "pid": 3947204,
+              "start": "958274921"
+            },
+            "maps_sha256": "454f43a15b0b5cb3072ca4db447207507b4dca43816279f979a57693e5a7c9c8",
+            "parent_pid": 3947077,
+            "proc_evidence": {
+              "maps.txt": {
+                "bytes": 120082,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-before/maps.txt",
+                "sha256": "454f43a15b0b5cb3072ca4db447207507b4dca43816279f979a57693e5a7c9c8"
+              },
+              "stat-after.txt": {
+                "bytes": 303,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-before/stat-after.txt",
+                "sha256": "d48e95f4718ca4b56fbe08aa860ba737fbafd01f5b15f8e2031e260b803ce3d9"
+              },
+              "stat-before.txt": {
+                "bytes": 303,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-before/stat-before.txt",
+                "sha256": "d48e95f4718ca4b56fbe08aa860ba737fbafd01f5b15f8e2031e260b803ce3d9"
+              },
+              "status.txt": {
+                "bytes": 1591,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-1/proc-context-worker-before/status.txt",
+                "sha256": "9bafa82b2f57b1ff0a1aab1d59ca4fade6b467338b677f26af16f6afcfe2ba83"
+              }
+            },
+            "threads": 1
+          },
+          "server": {
+            "pid": 3947077,
+            "start": "958274514"
+          },
+          "worker": {
+            "pid": 3947204,
+            "start": "958274921"
+          }
+        },
+        "index": 1,
+        "worker": {
+          "pid": 3947204,
+          "start": "958274921"
+        }
+      },
+      {
+        "after": {
+          "after_flags": 4194368,
+          "after_state": "S",
+          "after_threads": 1,
+          "before_flags": 4194368,
+          "before_state": "S",
+          "heavy_mappings": [
+            "libtorch",
+            "numpy",
+            "mujoco",
+            "openblas"
+          ],
+          "identity": {
+            "pid": 3947205,
+            "start": "958274921"
+          },
+          "maps_sha256": "9ac97f9272023a88a5904f51d978686a6b5144d9cc3e72e1a795e17d29065c71",
+          "parent_pid": 3947077,
+          "proc_evidence": {
+            "maps.txt": {
+              "bytes": 165996,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-after/maps.txt",
+              "sha256": "9ac97f9272023a88a5904f51d978686a6b5144d9cc3e72e1a795e17d29065c71"
+            },
+            "stat-after.txt": {
+              "bytes": 307,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-after/stat-after.txt",
+              "sha256": "36c4653e8575ba0a5248ee6ee77fe1227d1ede591ff2ec2445c3cd65b40f9828"
+            },
+            "stat-before.txt": {
+              "bytes": 307,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-after/stat-before.txt",
+              "sha256": "36c4653e8575ba0a5248ee6ee77fe1227d1ede591ff2ec2445c3cd65b40f9828"
+            },
+            "status.txt": {
+              "bytes": 1592,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-after/status.txt",
+              "sha256": "ed105d4c318ec3879e3c8918b6261c66375ad46c08ce292d19535dcc400a071a"
+            }
+          },
+          "threads": 1
+        },
+        "before": {
+          "method": "forkserver",
+          "monotonic_s": 9582753.155945793,
+          "phase": "before_native_constructor_not_before_library_imports",
+          "proc": {
+            "after_flags": 4194368,
+            "after_state": "R",
+            "after_threads": 1,
+            "before_flags": 4194368,
+            "before_state": "R",
+            "heavy_mappings": [
+              "libtorch",
+              "numpy",
+              "openblas"
+            ],
+            "identity": {
+              "pid": 3947205,
+              "start": "958274921"
+            },
+            "maps_sha256": "b9349f2406c1f2edafba4df9800e15b1ceeb06385494b8bd2e8871b4c0cca02b",
+            "parent_pid": 3947077,
+            "proc_evidence": {
+              "maps.txt": {
+                "bytes": 120082,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-before/maps.txt",
+                "sha256": "b9349f2406c1f2edafba4df9800e15b1ceeb06385494b8bd2e8871b4c0cca02b"
+              },
+              "stat-after.txt": {
+                "bytes": 303,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-before/stat-after.txt",
+                "sha256": "dc87f6409891547cdb6e05c4641c1e9cd84f12ffc6577d9037f12d7ea648d1b9"
+              },
+              "stat-before.txt": {
+                "bytes": 303,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-before/stat-before.txt",
+                "sha256": "dc87f6409891547cdb6e05c4641c1e9cd84f12ffc6577d9037f12d7ea648d1b9"
+              },
+              "status.txt": {
+                "bytes": 1591,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-2/proc-context-worker-before/status.txt",
+                "sha256": "d76fdc901988544d89dd2c4b6821f0c62f2931f79dafcd615a60393d27fbc725"
+              }
+            },
+            "threads": 1
+          },
+          "server": {
+            "pid": 3947077,
+            "start": "958274514"
+          },
+          "worker": {
+            "pid": 3947205,
+            "start": "958274921"
+          }
+        },
+        "index": 2,
+        "worker": {
+          "pid": 3947205,
+          "start": "958274921"
+        }
+      },
+      {
+        "after": {
+          "after_flags": 4194368,
+          "after_state": "S",
+          "after_threads": 1,
+          "before_flags": 4194368,
+          "before_state": "S",
+          "heavy_mappings": [
+            "libtorch",
+            "numpy",
+            "mujoco",
+            "openblas"
+          ],
+          "identity": {
+            "pid": 3947206,
+            "start": "958274922"
+          },
+          "maps_sha256": "317dba71bc9039ba7fbd355e170f5471b3910cf42aa361cd232f6ce4d451f1f8",
+          "parent_pid": 3947077,
+          "proc_evidence": {
+            "maps.txt": {
+              "bytes": 165947,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-after/maps.txt",
+              "sha256": "317dba71bc9039ba7fbd355e170f5471b3910cf42aa361cd232f6ce4d451f1f8"
+            },
+            "stat-after.txt": {
+              "bytes": 308,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-after/stat-after.txt",
+              "sha256": "29a17e2e0288a994ffd5375480801dd304cb2998650809d2c0c12df9535a52a3"
+            },
+            "stat-before.txt": {
+              "bytes": 308,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-after/stat-before.txt",
+              "sha256": "29a17e2e0288a994ffd5375480801dd304cb2998650809d2c0c12df9535a52a3"
+            },
+            "status.txt": {
+              "bytes": 1592,
+              "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-after/status.txt",
+              "sha256": "e7f92368d2c3cefa36f347bbfb2bfe9982b149c972b18de8d7ca21d7c1f9aeda"
+            }
+          },
+          "threads": 1
+        },
+        "before": {
+          "method": "forkserver",
+          "monotonic_s": 9582753.337248154,
+          "phase": "before_native_constructor_not_before_library_imports",
+          "proc": {
+            "after_flags": 4194368,
+            "after_state": "R",
+            "after_threads": 1,
+            "before_flags": 4194368,
+            "before_state": "R",
+            "heavy_mappings": [
+              "libtorch",
+              "numpy",
+              "openblas"
+            ],
+            "identity": {
+              "pid": 3947206,
+              "start": "958274922"
+            },
+            "maps_sha256": "e2e5b034ae0e33669001254ee1725dcc947b7ce0da9266af85db4b1224e4bdd0",
+            "parent_pid": 3947077,
+            "proc_evidence": {
+              "maps.txt": {
+                "bytes": 120082,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-before/maps.txt",
+                "sha256": "e2e5b034ae0e33669001254ee1725dcc947b7ce0da9266af85db4b1224e4bdd0"
+              },
+              "stat-after.txt": {
+                "bytes": 304,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-before/stat-after.txt",
+                "sha256": "f155e9cdcada3b5ef99cc601d688edc53d15f3b977fa1610381c06bc5ddc95da"
+              },
+              "stat-before.txt": {
+                "bytes": 304,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-before/stat-before.txt",
+                "sha256": "f155e9cdcada3b5ef99cc601d688edc53d15f3b977fa1610381c06bc5ddc95da"
+              },
+              "status.txt": {
+                "bytes": 1591,
+                "path": "/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-01/fixtures/native0/world-3/proc-context-worker-before/status.txt",
+                "sha256": "168901956b8d68b074dc1b6f8898b553439854c078187648a26a6a8e069af703"
+              }
+            },
+            "threads": 1
+          },
+          "server": {
+            "pid": 3947077,
+            "start": "958274514"
+          },
+          "worker": {
+            "pid": 3947206,
+            "start": "958274922"
+          }
+        },
+        "index": 3,
+        "worker": {
+          "pid": 3947206,
+          "start": "958274922"
+        }
+      }
+    ]
+  },
+  "initial_and_close_state_hashes": [
+    "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+    "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+    "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+    "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+  ],
+  "learner_updates": 0,
+  "muscles_per_worker": [
+    700,
+    700,
+    700,
+    700
+  ],
+  "normalizer": "none",
+  "per_worker_preparation_steps": [
+    200,
+    200,
+    200,
+    200
+  ],
+  "per_worker_rollout_steps": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "policy_inferences": 0,
+  "preparation_steps": 800,
+  "resource_release": "live-graph-release-v1",
+  "rollout_steps": 0,
+  "schema": "joxing-four-native-context-v1",
+  "specifications": [
+    {
+      "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "balance_config": {
+        "control_s": 0.01,
+        "dt_s": 0.001,
+        "episode_s": 20.0,
+        "max_reset_penetration_m": 0.002,
+        "preparation_s": 0.2
+      },
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+      "observation_slices": {
+        "activation": [
+          170,
+          870
+        ],
+        "hand_error": [
+          876,
+          882
+        ],
+        "pelvis_up": [
+          870,
+          873
+        ],
+        "previous_action": [
+          885,
+          1023
+        ],
+        "relative_pelvis": [
+          873,
+          876
+        ],
+        "relative_qpos": [
+          0,
+          85
+        ],
+        "support": [
+          882,
+          885
+        ],
+        "velocity": [
+          85,
+          170
+        ]
+      }
+    },
+    {
+      "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "balance_config": {
+        "control_s": 0.01,
+        "dt_s": 0.001,
+        "episode_s": 20.0,
+        "max_reset_penetration_m": 0.002,
+        "preparation_s": 0.2
+      },
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+      "observation_slices": {
+        "activation": [
+          170,
+          870
+        ],
+        "hand_error": [
+          876,
+          882
+        ],
+        "pelvis_up": [
+          870,
+          873
+        ],
+        "previous_action": [
+          885,
+          1023
+        ],
+        "relative_pelvis": [
+          873,
+          876
+        ],
+        "relative_qpos": [
+          0,
+          85
+        ],
+        "support": [
+          882,
+          885
+        ],
+        "velocity": [
+          85,
+          170
+        ]
+      }
+    },
+    {
+      "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "balance_config": {
+        "control_s": 0.01,
+        "dt_s": 0.001,
+        "episode_s": 20.0,
+        "max_reset_penetration_m": 0.002,
+        "preparation_s": 0.2
+      },
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+      "observation_slices": {
+        "activation": [
+          170,
+          870
+        ],
+        "hand_error": [
+          876,
+          882
+        ],
+        "pelvis_up": [
+          870,
+          873
+        ],
+        "previous_action": [
+          885,
+          1023
+        ],
+        "relative_pelvis": [
+          873,
+          876
+        ],
+        "relative_qpos": [
+          0,
+          85
+        ],
+        "support": [
+          882,
+          885
+        ],
+        "velocity": [
+          85,
+          170
+        ]
+      }
+    },
+    {
+      "action_hash": "a1b7f6281d85b9fcf2e148882b79c6365b7215979e589dcac7700663a355c8ad",
+      "balance_config": {
+        "control_s": 0.01,
+        "dt_s": 0.001,
+        "episode_s": 20.0,
+        "max_reset_penetration_m": 0.002,
+        "preparation_s": 0.2
+      },
+      "model_hash": "c899971a5c6297586edd856c9e5ceb8e09ddb1f45488205a879bccefb515ae77",
+      "observation_hash": "c438deb84c0b6e2db3dda584808f78aa227ab190c3144a5a5e7eb5f7472dd554",
+      "observation_slices": {
+        "activation": [
+          170,
+          870
+        ],
+        "hand_error": [
+          876,
+          882
+        ],
+        "pelvis_up": [
+          870,
+          873
+        ],
+        "previous_action": [
+          885,
+          1023
+        ],
+        "relative_pelvis": [
+          873,
+          876
+        ],
+        "relative_qpos": [
+          0,
+          85
+        ],
+        "support": [
+          882,
+          885
+        ],
+        "velocity": [
+          85,
+          170
+        ]
+      }
+    }
+  ],
+  "workers": [
+    {
+      "pid": 3947203,
+      "start": "958274921"
+    },
+    {
+      "pid": 3947204,
+      "start": "958274921"
+    },
+    {
+      "pid": 3947205,
+      "start": "958274921"
+    },
+    {
+      "pid": 3947206,
+      "start": "958274922"
+    }
+  ],
+  "worlds": [
+    {
+      "finalizer": {
+        "identity": {
+          "pid": 3947203,
+          "start": "958274921"
+        },
+        "monotonic_s": 9582757.046214985,
+        "phase": "managed_finalizer"
+      },
+      "index": 0,
+      "release_phases": [
+        {
+          "identity": {
+            "pid": 3947203,
+            "start": "958274921"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947203,
+              "start": "958274921",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947203,
+              "start": "958274921",
+              "state": "R"
+            },
+            "rss_bytes": 967745536
+          },
+          "monotonic_s": 9582756.901529849,
+          "muscles": 700,
+          "phase": "before_close",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "identity": {
+            "pid": 3947203,
+            "start": "958274921"
+          },
+          "monotonic_s": 9582756.90696753,
+          "phase": "inner_closed",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "collected_objects": 33,
+          "identity": {
+            "pid": 3947203,
+            "start": "958274921"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947203,
+              "start": "958274921",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947203,
+              "start": "958274921",
+              "state": "R"
+            },
+            "rss_bytes": 877064192
+          },
+          "monotonic_s": 9582757.045968005,
+          "observed_rss_change_bytes": -90681344,
+          "phase": "graph_checked",
+          "weakrefs_dead": {
+            "data": true,
+            "env": true,
+            "model": true
+          }
+        },
+        {
+          "identity": {
+            "pid": 3947203,
+            "start": "958274921"
+          },
+          "monotonic_s": 9582757.046074597,
+          "phase": "released"
+        }
+      ],
+      "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+      "worker": {
+        "pid": 3947203,
+        "start": "958274921"
+      }
+    },
+    {
+      "finalizer": {
+        "identity": {
+          "pid": 3947204,
+          "start": "958274921"
+        },
+        "monotonic_s": 9582757.288359424,
+        "phase": "managed_finalizer"
+      },
+      "index": 1,
+      "release_phases": [
+        {
+          "identity": {
+            "pid": 3947204,
+            "start": "958274921"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947204,
+              "start": "958274921",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947204,
+              "start": "958274921",
+              "state": "R"
+            },
+            "rss_bytes": 979841024
+          },
+          "monotonic_s": 9582757.14392895,
+          "muscles": 700,
+          "phase": "before_close",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "identity": {
+            "pid": 3947204,
+            "start": "958274921"
+          },
+          "monotonic_s": 9582757.149492731,
+          "phase": "inner_closed",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "collected_objects": 33,
+          "identity": {
+            "pid": 3947204,
+            "start": "958274921"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947204,
+              "start": "958274921",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947204,
+              "start": "958274921",
+              "state": "R"
+            },
+            "rss_bytes": 889159680
+          },
+          "monotonic_s": 9582757.288106604,
+          "observed_rss_change_bytes": -90681344,
+          "phase": "graph_checked",
+          "weakrefs_dead": {
+            "data": true,
+            "env": true,
+            "model": true
+          }
+        },
+        {
+          "identity": {
+            "pid": 3947204,
+            "start": "958274921"
+          },
+          "monotonic_s": 9582757.288206061,
+          "phase": "released"
+        }
+      ],
+      "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+      "worker": {
+        "pid": 3947204,
+        "start": "958274921"
+      }
+    },
+    {
+      "finalizer": {
+        "identity": {
+          "pid": 3947205,
+          "start": "958274921"
+        },
+        "monotonic_s": 9582757.524256816,
+        "phase": "managed_finalizer"
+      },
+      "index": 2,
+      "release_phases": [
+        {
+          "identity": {
+            "pid": 3947205,
+            "start": "958274921"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947205,
+              "start": "958274921",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947205,
+              "start": "958274921",
+              "state": "R"
+            },
+            "rss_bytes": 974667776
+          },
+          "monotonic_s": 9582757.384454392,
+          "muscles": 700,
+          "phase": "before_close",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "identity": {
+            "pid": 3947205,
+            "start": "958274921"
+          },
+          "monotonic_s": 9582757.38993804,
+          "phase": "inner_closed",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "collected_objects": 33,
+          "identity": {
+            "pid": 3947205,
+            "start": "958274921"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947205,
+              "start": "958274921",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947205,
+              "start": "958274921",
+              "state": "R"
+            },
+            "rss_bytes": 883986432
+          },
+          "monotonic_s": 9582757.52399978,
+          "observed_rss_change_bytes": -90681344,
+          "phase": "graph_checked",
+          "weakrefs_dead": {
+            "data": true,
+            "env": true,
+            "model": true
+          }
+        },
+        {
+          "identity": {
+            "pid": 3947205,
+            "start": "958274921"
+          },
+          "monotonic_s": 9582757.524107212,
+          "phase": "released"
+        }
+      ],
+      "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+      "worker": {
+        "pid": 3947205,
+        "start": "958274921"
+      }
+    },
+    {
+      "finalizer": {
+        "identity": {
+          "pid": 3947206,
+          "start": "958274922"
+        },
+        "monotonic_s": 9582757.76892709,
+        "phase": "managed_finalizer"
+      },
+      "index": 3,
+      "release_phases": [
+        {
+          "identity": {
+            "pid": 3947206,
+            "start": "958274922"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947206,
+              "start": "958274922",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947206,
+              "start": "958274922",
+              "state": "R"
+            },
+            "rss_bytes": 964136960
+          },
+          "monotonic_s": 9582757.619936436,
+          "muscles": 700,
+          "phase": "before_close",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "identity": {
+            "pid": 3947206,
+            "start": "958274922"
+          },
+          "monotonic_s": 9582757.625493323,
+          "phase": "inner_closed",
+          "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff"
+        },
+        {
+          "collected_objects": 33,
+          "identity": {
+            "pid": 3947206,
+            "start": "958274922"
+          },
+          "memory": {
+            "after": {
+              "flags": 4194368,
+              "pid": 3947206,
+              "start": "958274922",
+              "state": "R"
+            },
+            "before": {
+              "flags": 4194368,
+              "pid": 3947206,
+              "start": "958274922",
+              "state": "R"
+            },
+            "rss_bytes": 873455616
+          },
+          "monotonic_s": 9582757.7686792,
+          "observed_rss_change_bytes": -90681344,
+          "phase": "graph_checked",
+          "weakrefs_dead": {
+            "data": true,
+            "env": true,
+            "model": true
+          }
+        },
+        {
+          "identity": {
+            "pid": 3947206,
+            "start": "958274922"
+          },
+          "monotonic_s": 9582757.768776445,
+          "phase": "released"
+        }
+      ],
+      "state_hash": "8f65c491a4de3fd9e921f88483d3976709c8e2e2bf21679508874a36faf9bfff",
+      "worker": {
+        "pid": 3947206,
+        "start": "958274922"
+      }
+    }
+  ]
+}

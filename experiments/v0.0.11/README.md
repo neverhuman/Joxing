@@ -1,3 +1,29 @@
+# H23four-context gate qualifies; return to fresh native learner parity —Nov2
+
+Same frozen1c94152/fbb5961f now admits quietxbabe1 aftertwo preserveddeferrals.
+247/247Linux cases pass;4original700muscle worlds VALID/0invalid/0not_run,800prep,
+exact originalspec/state,0rollout/actors/inferences/updates. Whole4worker close
+963.51ms<2s; actualpositive native holds79.72/75.31/69.93/72.35ms<100ms.
+All4livegraphs die/managedfinalizers/cleancontext/rawancestry proved. Maxgap38.17/
+probe17.78ms,4.22GiBpeak/9processes,whole34.768668s. Independent763source/5history/
+247JUnit/8credits/40exits and1002file2327187byte exacttransfer pass;no livewriter.
+Reporting faults (localcapture recovery, independentterminal-order assertion,
+safe tar symlink refusal) retained/repaired withoutnative/source/gate rerun.
+Fullresults/accounting: docs/RESOURCE_ADMISSION_RESULTS.md. No boxing/learner gain.
+
+Original15packet H15epoch retains17458steps/430.171241s/37722366fixture/4169108
+receiptbytes, only25196receiptsleft; another complete packet cannotfit. Do not
+continue or resetoldledger. NextPRIMARYworker-ready
+docs/NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md/research/H27.md: distinct opt-in
+qualifiedcontext/live-release/serial profile in BOTHoriginal lifecycle arms,
+4NEWnative legacyA/candidateA/legacyB/candidateB slots/64transitions/12updates each,
+unchanged exactparity/700muscles/100ms/2s/8GiB gates. Newseparate bounded study
+proposed300swhole/60sslot/240kphysics/1GiBfixtures/2MiBreceipts/4workers/thread1;
+oldcosts/gatesimmutable, source/protocol/size/publicfreeze BEFOREoutcomes.
+NOTimplemented/preregistered/run; no agent/overlap, no defaultflip or v11tag.
+H26Mac-local strict replay remains SECONDARYreadywork if Linuxunavailable.
+Stable motor/contact/referee/replay/league still precede competitive learning.
+
 # H25strict Mac import prerequisite failed; H26local-reference next —Nov2
 
 Frozen c1dd75d/a2e057c3, original D0runtime/source,21/21target source tests pass.

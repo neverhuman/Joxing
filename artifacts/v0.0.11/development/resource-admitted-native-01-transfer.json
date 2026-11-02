@@ -1,0 +1,9 @@
+{
+  "status": "passed_exact_owned_file_bytes",
+  "raw_files": 1002,
+  "raw_bytes": 2327187,
+  "tar_sha256": "c92e6ff96d4e13d4002240b66f7f5884afda8dcba0b012bef8f2dded62694197",
+  "all_names_sizes_hashes_verified": true,
+  "representation": "regular file payloads for safe extraction; original symlink targets retained separately",
+  "original_safe_filter_fault": "Initial archive extraction stopped at absolute test-owned symlink, correctly refused by tar data filter. Partial safe prefix retained separately; source unchanged, no simulation rerun."
+}

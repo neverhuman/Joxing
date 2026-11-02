@@ -1,3 +1,12 @@
+# Superseded by H23completed qualification —2026-11-02
+
+The same frozen epoch's third admission passed;247Linux cases/four700muscle
+contexts qualify. [Authoritative result/accounting/faults](RESOURCE_ADMISSION_RESULTS.md).
+Do not invoke this epoch again. The two deferred checks below remain historical.
+Nextprimary[H27](NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md) needs new source/protocol/
+explicit separate finite budget before any target; old ledger cannot fit a new
+complete packet. No learner/boxing claim or v11tag.
+
 # H23checkpoint: implemented, resource-deferred, no formal task yet
 
 Updated2026-11-02. This is an ONGOINGreadiness checkpoint, not a native result or

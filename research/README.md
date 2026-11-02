@@ -33,12 +33,14 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H20](H20.md)|Can report publication avoid stalling the watchdog?|85Linux +one import-only smoke qualify; exact after-exit copies/owned cleanup, no native result|
 |[H21](H21.md)|Does forkserver preserve native reset and live release?|172Linux +ONE700muscle/200prep exact state/lifetime pass; native retirement72.26ms|
 |[H22](H22.md)|Can four native contexts meet the original serial-close limit?|Runtime prerequisite timeout;198controls/4worlds not_run,0newphysics, failure retained|
-|[H23](H23.md)|Can host admission/import provenance prevent opaque stalls?|Local233pass/14skips; two fresh-check deferrals,247Linux/4worlds not_run|
+|[H23](H23.md)|Can host admission/import provenance prevent opaque stalls?|247Linux +four native700muscle contexts qualify;963.51ms close,800prep/0learning|
 |[H24](H24.md)|Can spare xbabe4 qualify independent game-contract source checks?|29/29Mac source/forward checks pass,0physics; dynamic replay unqualified|
 |[H25](H25.md)|Can spare Mac preserve native boundary/mid-command/contact replay?|21Mac source controls pass; strict archived decode fails385/1400values;0physics/6native not_run|
 |[H26](H26.md)|Can a separate Mac-native profile preserve strict local replay?|Worker-ready5case/116step plan; not implemented/run|
 
-**Latest: H25strict archived Linux→Mac muscle decode failed beforephysics, all6native rows not_run. H26Mac-native strict LOCALreplay is the next worker-ready mission. H24source29/29 remains valid; H23same Linux epoch still deferred. All old negatives retained. Next unused ID: H27.** These are global research-note
+|[H27](H27.md)|Does qualified process lifetime preserve exact native SAC lifecycle parity?|Primaryworker-ready4fresh-slot/64transition/12update plan; no targetrun|
+
+**Latest: H23qualifies247Linux checks and four native contexts under unchanged2s/100ms/8GiB gates. H27native learner parity is primary next; original H15receipt envelope cannot fit further runs and remains immutable. H26Mac-local replay is secondary ready; H25failed strict import stays failed. Next unused ID: H28.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

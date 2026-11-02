@@ -1,0 +1,34 @@
+{
+  "status": "recovered_from_exact_remote_bootstrap_no_rerun",
+  "source_commit": "1c9415240368d78defe5d85f7367150d6c6434fd",
+  "source_process": {
+    "pid": 3945421,
+    "start_ticks": 958272414
+  },
+  "fault": "Local frozen sparse recheck staging omitted runs/v0.0.11. Original helper launched remote task then FileNotFoundError writing local captured output; recheck exited nonzero. Source and remote job unchanged.",
+  "recovery": "Verified original encoded/decoded bytes/SHA from remote gzip bootstrap; restored complete launch receipt, appended only remote authoritative third admission record to identical prior history. No remote launch repeated.",
+  "encoding": {
+    "decoded_bytes": 195056,
+    "decoded_sha256": "ad2c44908e45f40532155001e855da0e1af575cbb8a411ebe8c8c94bba585aeb",
+    "encoded_bytes": 71119,
+    "encoded_sha256": "c8d9dbba27966763c3646196785d6c2110875c16c9395f343c8457da0db84598",
+    "encoding": "compact-main-gzip-deployment-v1"
+  },
+  "history_rows": 3,
+  "full_metadata_preservation": [
+    {
+      "original_generated_path": "artifacts/v0.0.11/development/resource-admitted-native-01-integrity.json",
+      "ignored_full_copy": "runs/v0.0.11/resource-admitted-native-01-integrity.json",
+      "bytes": 546484,
+      "sha256": "4790826069acef053018be4c5f6bd6d7d25e76b0c3725b3f78a43f2bc5c12cd5"
+    },
+    {
+      "original_generated_path": "artifacts/v0.0.11/development/resource-admitted-four-context-deployment-01.json",
+      "ignored_full_copy": "runs/v0.0.11/h23-recovered-full-deployment-01.json",
+      "bytes": 250437,
+      "sha256": "18823a0a1e7e5f343359cff7a9671739ecbe403ab6870616436f03b388dbc49f"
+    }
+  ],
+  "public_exact_original_bootstrap": "artifacts/v0.0.11/resource-admitted-native-01/deployment.json.gz",
+  "public_exact_independent_audit": "artifacts/v0.0.11/resource-admitted-native-01/independent-audit.json.gz"
+}

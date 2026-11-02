@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "offline audit routine controls, no physics/source/gate change",
+  "checks": {
+    "dict_order_ignored": true,
+    "signed_zero_rejected": true,
+    "float_int_rejected": true,
+    "bool_int_rejected": true,
+    "list_order_rejected": true,
+    "missing_field_rejected": true
+  },
+  "auditor_source_sha256": "6769ba94c272987918599f4fdf2afaf5df3f387d47b0e30b0bda7b5cd1ad5edc",
+  "remote_audit_body_sha256": "b3eb93971f99c93f4960cf6244e5e421b56e31b1522f911e68b8812bfc04d743"
+}
