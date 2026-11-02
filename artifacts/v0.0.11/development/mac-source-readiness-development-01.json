@@ -1,0 +1,15 @@
+{
+  "scope": "local development only; target not_run",
+  "tests": 29,
+  "passed": 29,
+  "wall_s": 6.1,
+  "physics_calls": [],
+  "ruff": "passed after import ordering/check=False fixes",
+  "command": "rtk proxy env PYTHONPATH=src:. JOXING_MAC_SOURCE_PROOF=runs/v0.0.11/h24-local-plugin-development.json .venv/bin/python -m pytest -q -p scripts.qualify_mac_source tests/test_history.py tests/test_timing.py tests/test_rules.py tests/test_observations.py tests/test_match_referee.py",
+  "development_faults": [
+    "Read-only convenience command had unmatched parenthesis; corrected without executing experiments",
+    "Read attempt docs/HPC.md missing; actual file docs/SELF_PLAY_HPC_PLAN.md read instead",
+    "Read search guessed bodies.py; actual package used by tests unchanged"
+  ],
+  "inventory_collector_note": "Initial saved inventory predates formatting/check=False-only fixes; its collector SHA refers to pre-lint development source. REMOTE collection body unchanged; inventory remains read-only, not qualification."
+}

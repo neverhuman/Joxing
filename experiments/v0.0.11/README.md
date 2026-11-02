@@ -1,3 +1,14 @@
+# Spare Mac source-validation task registered —2026-11-02
+
+User requests using all four nodes where spare capacity exists. Live four-host
+inventory: Linux IO full3.90/30.06/28.14%; Mac81%CPUidle/load3.90/no Joxing jobs,
+~247GiB free+inactive+speculative estimate (not Linux available RAM). H24registered
+29source/native compile-forward controls on xbabe4, zero permitted physics steps,
+explicit root-lock Mac runtime. Target NOT_RUN at freeze; source/packet public
+before setup/outcomes. Read docs/MAC_SOURCE_READINESS_MISSION.md/research/H24.md.
+H23frozen1c94152/fbb5961f remains resource-deferred unchanged, no formal rerun,
+no native4/learning/boxing claim or v11tag. No extra agents/services/GPU takeover.
+
 # H23implemented; two admission deferrals, no formal task — Nov2 Mountain
 
 Frozen1c94152/fbb5961f, local233pass/14skips/Ruffpass;247formal Linux checks and

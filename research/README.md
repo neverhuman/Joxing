@@ -35,7 +35,9 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H22](H22.md)|Can four native contexts meet the original serial-close limit?|Runtime prerequisite timeout;198controls/4worlds not_run,0newphysics, failure retained|
 |[H23](H23.md)|Can host admission/import provenance prevent opaque stalls?|Local233pass/14skips; two fresh-check deferrals,247Linux/4worlds not_run|
 
-**Latest: H22runtime prerequisite stopped; no native4attempt. H23implemented/resource-deferred; same frozen epoch awaits admission. H21one-worker pass stays narrow, old negatives retained. Next unused ID: H24.** These are global research-note
+|[H24](H24.md)|Can spare xbabe4 qualify independent game-contract source checks?|Registered29-case native Mac source/forward task; target not_run|
+
+**Latest: H22runtime prerequisite stopped; no native4attempt. H23implemented/resource-deferred; same frozen epoch awaits admission. H21one-worker pass stays narrow, old negatives retained. Next unused ID: H25.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

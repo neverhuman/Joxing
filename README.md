@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H23 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H24 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -26,6 +26,11 @@ Local233tests passed/14Linux-only skips. Two admission checks deferred before
 runtime/tests/physics when fresh pressure exceeded the fixed policy. The same
 frozen epoch remains ready; all247Linux checks and four worlds are not_run.
 No policy was loosened or job duplicated.
+
+**Spare compute:** [xbabe4 source-validation mission](docs/MAC_SOURCE_READINESS_MISSION.md)
+uses the large Mac for independent history, action-delay, opponent-observation and
+scoring checks while Linux I/O is pressured. Registered29cases, no physics steps;
+target not_run at registration. [Live host inventory and roles](docs/COMPUTE.md).
 
 **HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
 passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus

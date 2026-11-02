@@ -1,3 +1,36 @@
+## Four-node scheduling refresh —2026-11-02 16:37 UTC
+
+[Two samples per host](../artifacts/v0.0.11/development/four-host-capacity-20261102-01.json),
+read-only, no reservation. CPUbusy is10s Linux aggregate; Mac idle is top snapshot.
+
+|Node|Observed CPU|RAM|I/O full.avg10|Role now / next qualified role|
+|---|---|---|---:|---|
+|xbabe1|18.6%busy, load42.9|21.4GiBavailable|3.90%|H23frozen Linux prerequisite waits; later learner/rollouts|
+|xbabe2|24.6%busy, load84.6|62.9GiBavailable|30.06%|Defer native work; later independent seeds/evaluation|
+|xbabe3|7.1%busy, load25.4|103.7GiBavailable|28.14%|Defer native work; later persistent CPU rollouts after transfer|
+|xbabe4|81.3%idle, load3.90|512GiBtotal;247.1GiB free+inactive+speculative estimate|Unavailable on Darwin|H24native source/forward checks now; separate native replay transfer next|
+
+No Joxing jobs detected. Mac memory estimate and memory_pressure93% report are
+not Linux MemAvailable or a guarantee of free allocatable RAM. Disk floors pass
+at inventory. Linux CPUheadroom does not mean an I/O-stalled task will meet a
+100ms watchdog. All exceed H23's fixed1%I/O policy; no cap/policy relaxed.
+xbabe1GPU0%util but17256/24564MiB already allocated: do not appropriate that
+memory. xbabe2GPU334/24576MiB;xbabe3GPU1/24576MiB at sample. GPUidle snapshots
+are not ownership/reservations; no CUDA learner/physics task launched.
+
+Actual next action: publicly freeze and run [H24](MAC_SOURCE_READINESS_MISSION.md)
+on dedicated ~/joxing native Mac Python, no Docker. This uses spare compute for
+independent source correctness while preserving H23's Linux identity. Later
+Mac physics requires native boundary/mid-command replay qualification; cross-CPU
+byte parity is not assumed. Scale persistent1/2/4 then<=16aggregate only after
+measured parity/capacity, node-local actors, separate inference/optimizer timing.
+Never launch unchanged huge sweeps simply to use cores. Existing unassisted
+motor/contact/referee/replay gates still precede competitive games.
+
+Reusable inventory: `rtk proxy python3 scripts/inspect_compute.py --out FRESH_JSON`.
+Checks all four hosts concurrently with stdlib metadata/10s-spaced samples; no
+model imports, simulation, affinity/service writes or credentials in output.
+
 ## H23read-only availability checkpoint —2026-11-02 16:25 UTC
 
 [Saved snapshots](../artifacts/v0.0.11/development/h23-alternative-host-inventory-01.json):
