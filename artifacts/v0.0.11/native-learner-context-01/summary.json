@@ -1,0 +1,110 @@
+{
+  "status": "halted_invalid_not_qualified",
+  "source_commit": "fd1ed5bfc303592f98bd13387036bfa4da218c7c",
+  "protocol_sha256": "4577f17af1ccbfe89e0fe3186705530252b664aae15b3a2b2f79760270d133cf",
+  "controls": {
+    "passed": 315,
+    "failed": 0,
+    "skipped": 0
+  },
+  "rows": [
+    {
+      "arm": "A",
+      "id": "legacyA",
+      "reason": "RuntimeError: Native parity watcher stop/fault: RuntimeError: Retiring RSS hold first limit at release",
+      "status": "invalid",
+      "variant": "legacy",
+      "work_status": "partial_or_unconfirmed"
+    },
+    {
+      "arm": "A",
+      "id": "candidateA",
+      "status": "not_run",
+      "variant": "deferred-evaluation-v1"
+    },
+    {
+      "arm": "B",
+      "id": "legacyB",
+      "status": "not_run",
+      "variant": "legacy"
+    },
+    {
+      "arm": "B",
+      "id": "candidateB",
+      "status": "not_run",
+      "variant": "deferred-evaluation-v1"
+    }
+  ],
+  "native_trials": {
+    "attempted": 1,
+    "valid": 0,
+    "invalid": 1,
+    "not_run": 3
+  },
+  "observed_invalid_prefix": {
+    "transitions": 64,
+    "updates": 12,
+    "initial_actor_hash": "8c5786c4cbed1667a814adef088719df6b8d0290a53fd85b2a07bc744022790f",
+    "final_actor_hash": "84184743d0c7bf49139eed773bd67d0943409c0f5f4de5a7191afc64e6d0b486",
+    "all_ten_streams_retained": true,
+    "worker_steps_each": [
+      16,
+      16,
+      16,
+      16
+    ],
+    "cold_state_exact_all4": true,
+    "trained_state_and_reset_rng_close_trace_exact_all4": true,
+    "live_graph_release_complete": 3,
+    "live_graph_release_incomplete": 1,
+    "managed_finalizers_present": 3,
+    "counterpart_comparisons": 0
+  },
+  "fault": "RuntimeError: Native parity watcher stop/fault: RuntimeError: Retiring RSS hold first limit at release",
+  "retirement_holds_ms": [
+    95.38547322154045,
+    94.34942714869976,
+    100.5775723606348
+  ],
+  "retirement_released": [
+    true,
+    true,
+    false
+  ],
+  "peak_owned_rss_bytes": 5309886464,
+  "peak_processes": 9,
+  "max_probe_s": 0.05346931889653206,
+  "max_sample_gap_s": 0.07672235928475857,
+  "physics_used": 5086,
+  "physics_breakdown": {
+    "preparation": 2000,
+    "steps": 3086
+  },
+  "unknown_physics": 0,
+  "task_original_epoch_wall_s": 88.93701716698706,
+  "main_audit_wall_s": 0.7679379694163799,
+  "original_epoch_through_main_audit_s": 89.96744495816529,
+  "original_epoch_through_separate_forensic_s": 231.40746937319636,
+  "source_identities_exited": 44,
+  "additional_audit_process_exited": true,
+  "live_jobs_after": [],
+  "fixture_bytes": 13385957,
+  "receipt_bytes_including_new_audits": 136572,
+  "no_default_or_gate_change": true,
+  "formal_boxing_games": 0,
+  "competitive_training_runs": 0,
+  "post_audit_faults": [
+    {
+      "attempt": 1,
+      "kind": "IndexError in supplementary prefix auditor assuming fourth graph_checked phase exists",
+      "interpretation": "Failed proof assumption, not source repair; forced cleanup interrupted fourth release after inner_closed. Exact source/trial logs unchanged.",
+      "recovery": "Attempt2 explicitly preserves absent graph/finalizer as incomplete; no simulation, whole original epoch231.407s."
+    }
+  ],
+  "scope": "Original source controls +invalid actual native SAC prefix, no candidate/lifecycle parity, fitness, boxing or throughput promotion.",
+  "supplementary_audit_limits": [
+    "Main frozen auditor records/checks its own RSS and process identity; supplementary prefix readers were bounded30s/thread1 but did not retain own RSS samples. No continuous RSS guard claim for supplementary readers.",
+    "First failed supplementary reader process PID/start was not captured. SSH returned nonzero and failure log retained; second reader PID retained without start ticks. Do not invent missing identity proof.",
+    "No physical/model replay or candidate comparison occurred; retained state/RNG/optimizer/replay digests are not raw model checkpoints or a motor improvement evaluation."
+  ]
+}

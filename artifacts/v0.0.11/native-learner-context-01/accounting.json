@@ -1,0 +1,26 @@
+{
+  "old_H15_epoch_immutable": {
+    "packets": 15,
+    "physics": 17458,
+    "active_wall_s": 430.17124089665054,
+    "fixtures": 37722366,
+    "receipts": 4169108,
+    "remaining_receipts": 25196
+  },
+  "separate_H27_epoch": {
+    "physics": 5086,
+    "cap_physics": 240000,
+    "original_clock_through_forensics_s": 231.40746937319636,
+    "cap_original_whole_s": 300,
+    "fixtures": 13385957,
+    "fixture_cap": 1073741824,
+    "receipts_including_all_audits": 136572,
+    "receipt_cap": 2097152,
+    "source_wall_s": 88.93701716698706,
+    "scope": "All source outcomes and both supplementary audit attempts within original continuous300s; idle time included through successful forensic receipt. No old budget extension."
+  },
+  "combined_sunk_physics": 22544,
+  "combined_sunk_fixture_bytes": 51108323,
+  "combined_sunk_receipt_bytes": 4305680,
+  "publication_scope": "Later read-only transfer/inventory/documentation/publication separately scoped,0physics; no additional original continuous-envelope claim."
+}

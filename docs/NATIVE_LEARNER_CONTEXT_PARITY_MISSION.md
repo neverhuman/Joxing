@@ -1,6 +1,8 @@
 # H27: transfer qualified native process lifetime into unchanged SAC parity
 
-Status: implemented and prospectively registered; target NOT_RUN at public freeze.
+Status: CONCLUDED negative:1invalid/3not_run; unchanged100ms retirement gate fails.
+[Results](NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md). The protocol below is preserved
+as registered; H28lean IPC/import mission is next, no unchanged H27retry.
 Primary mission; machine protocol native-learner-context-parity-protocol.json.
 Local301passed/14Linux-only skipped (315nodes), added68controls; Linux must pass all.
 Objective: establish exact legacy/deferred-evaluation SAC parity in fresh native

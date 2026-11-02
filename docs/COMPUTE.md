@@ -1,3 +1,14 @@
+## H27used quietxbabe1; bounded packet stopped and alljobs exited —20:36UTC
+
+[Audited H27result](NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md):315Linuxcontrols and
+64transition/12update prefix run; native retirement100.58ms>100fails,1invalid/3not_run.
+Actual5.31GBpeak/9processes,0GPU,5086physics. No duplicate/unchangedretry. All44source
+identities plusaudit processes exit; posttaskownedjobscanempty, load7.96, available
+~34.97GB. Posttaskmemory PSI4.70% nowexceedsfixed1% floor, no new task admitted.
+NextH28is0nativephysics/import IPC proof; worker-ready source mission before
+furthernative training. CPUworkers retain~899–922MBafter native release; remove
+unneeded child imports only after strict source/IPC validation, no speedup claim.
+
 ## H27capacity and launch policy —2026-11-02
 
 [Fresh four-host inventory04](../artifacts/v0.0.11/development/four-host-capacity-20261102-04.json)

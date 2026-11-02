@@ -1,3 +1,24 @@
+# Current measured HPC prerequisite —2026-11-02
+
+[H27](NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md) runs64native transitions/12updates
+after315Linuxcontrols, then fails worker retirement100.58ms>100ms.4.95GiBpeak/
+4workers is a memory observation, not qualified games/s or learner throughput.
+Candidate, wider concurrency and boxing training remain unrun. H23constructor
+qualification alone did not qualify trained-worker exit.
+
+[NextH28](LEAN_ROLLOUT_WORKER_MISSION.md) tests a Torch-free scalar rollout child
+against pinned SB3pipe semantics on two paired fake histories, including actual
+imports/maps/perworkerRSS/exit. After that, native factory+four-slot learner
+parity, then simultaneous two-learner/eight-world memory/full-source/peer-stop
+proof are required. Persistent workers should span many environment resets; do
+not start a Python/Torch process per mini-game. Policy inference/updates remain
+in the learner; early exit accounting remains mandatory at bounded shutdown.
+Run exact scalar native physics first; GPUphysics still needs exact700muscle
+feature/state/contact/replay parity before scaling. Use available nodes after
+fresh shared-host admission, never fill resources merely because they exist.
+Only stable motors/attributed legal contacts/causal opponent history/strictreplay
+can turn native transitions into valid historical-opponent training games.
+
 ## Measured shared-loop evidence cost —2026-10-27
 
 [D0](V0.0.11_D0_RESULTS.md) now provides a real dual-body workload: the1,000step

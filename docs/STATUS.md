@@ -1,3 +1,26 @@
+# H27native learner runs but retirement gate fails; H28lean worker next —Nov2
+
+Publicfd1ed5b/4577f17a passes315/315Linuxcontrols. FreshlegacyA reaches64transitions/
+12updates/5086physics and changed savedactor; thirdworker retirement100.577572ms
+exceeds unchanged100ms, watcher stopsownedtree.1invalid/3not_run,0parity/fitness/
+boxing claims; fourthlivegraph/finalizer incomplete, earlier3complete. Peak4.95GiB,
+9processes, maxgap76.72ms/probe53.47ms; no capacity/sampling fault. Source88.937s,
+independent315case/771source/640credit/44exit audit89.967s fromoriginalepoch;
+supplementary invalid-prefix tensor/10stream/64step/12update audit231.407s,0physics.
+Initial supplementary reader IndexError (missingfourthgraph) retained; corrected
+reader preservesincomplete status, source/trial unchanged. All1867files13,522,529
+bytes exact safe transfer,63symlinkmetadata; no activejob. OldH15costs immutable,
+new5086physics/13,385,957fixture/136,572receipts separately accounted. Results:
+docs/NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md; research/H27.md.
+
+NextPRIMARY worker-ready docs/LEAN_ROLLOUT_WORKER_MISSION.md/research/H28.md:
+Torch-free rollout IPC/profile hypothesis,0nativephysics, two fresh paired fake-
+environment/command/state/RNG histories +actualimportmaps/RSS/exit proof before
+native integration. Releasedworkers still~899–922MB; import cost plausible,
+causal share of failedhold unproved. NOTimplemented/preregistered/run; no blind
+SACretry/thresholdloosen/defaultflip/tag. H26Mac-local replay secondaryready;
+stable motor/contact/referee/replay/league remain open before competitive self-play.
+
 # H27native learner context implemented; prospective packet registered —Nov2
 
 Opt-in cleanforkserver/live-release/serial training adapter and independent saved-

@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H27 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H28 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -25,10 +25,12 @@ All247Linux checks and four700-muscle worlds pass. Exact state/lifetime and
 positive retirement evidence hold; whole shutdown0.964s under the unchanged2s
 limit.800preparation steps,0learning. Earlier deferrals/failures remain recorded.
 
-**Next: actual native learner parity:** [H27mission](docs/NATIVE_LEARNER_CONTEXT_PARITY_MISSION.md)
-registers four fresh64-transition/12-update reference/candidate trials using the
-qualified process profile. Adapter/auditor implemented;301local checks pass with
-14Linux-only skips. Target trials pending public freeze and admission; no boxing improvement claimed.
+**Native learner prerequisite stopped:** [H27results](docs/NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md).
+All315Linux checks pass and the first native trial reaches64transitions/12updates,
+but worker shutdown exceeds the unchanged100ms limit at100.58ms.1invalid/3not_run;
+no lifecycle parity or boxing gain. Every prefix, fault and audit is retained.
+[Next: lean rollout worker import/IPC proof](docs/LEAN_ROLLOUT_WORKER_MISSION.md),
+with0nativephysics before another training packet.
 
 **Spare compute:** [xbabe4 source-validation mission](docs/MAC_SOURCE_READINESS_MISSION.md)
 uses the large Mac for independent history, action-delay, opponent-observation and
