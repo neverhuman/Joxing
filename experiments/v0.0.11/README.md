@@ -1,3 +1,20 @@
+# H16 opt-in terminal RSS reserve reader registered — Nov2 Mountain
+
+Current controls protocol experiments/v0.0.11/terminal-rss-controls-protocol.json.
+New terminal-mm-reserve-v3 is opt-in; strict-v2 remains default. Positive prior
+RSS highwater is held as a separately labelled retirement charge only for stable
+single-task/PID-start/exit-flag/absent VmRSS+VmSize/explicit-zero-statm evidence.
+No guessed zero; live/mixed/unknown memory still faults. Resource gate uses actual
+RSS PLUS charge, unchanged8GiB/100ms limits and100ms hold limit. No model edit.
+
+Mac23pass/3Linux skips/Ruffpass. Fresh source-public-frozen Linux gate requires
+35exact cases including actual512MiB exit with NONZERO held/released charge,
+unchanged foreign/growth/ancestry checks. No native constructor or learning yet.
+After independent control audit, register ONE real instrumented700muscle worker,
+200prep steps/constructor-close only; do not repeat64-step learning first.
+Carry all prior failed native rows/costs. Current mission remains
+EXIT_AWARE_RSS_READER_MISSION.md, native parity and boxing unqualified.
+
 # H16 synthetic exit mechanism supported; exit-aware reader next — Nov2 Mountain
 
 Current worker-ready mission docs/EXIT_AWARE_RSS_READER_MISSION.md. No owned task

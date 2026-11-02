@@ -8,6 +8,7 @@ import time
 from pathlib import Path
 
 from supervise_motor_pilot import identity, live
+from terminal_rss_reader import TerminalReader, aggregate
 
 
 def bound_rss(bound, *, proc_root=Path("/proc"), read_identity=identity):
@@ -131,7 +132,13 @@ def monitor(
     max_gap_s=0.1,
     poll_s=0.02,
     identity_cap=128,
+    rss_reader="strict-v2",
 ):
+    if rss_reader not in ("strict-v2", "terminal-mm-reserve-v3"):
+        raise ValueError("Unknown RSS reader")
+    reader = (
+        TerminalReader(bound_rss) if rss_reader == "terminal-mm-reserve-v3" else None
+    )
     if not (0 < planned_rss < hard_rss and 0 < poll_s < max_gap_s and wall_s > 0):
         raise ValueError("Watchdog registered limits")
     if out.exists() or out.with_suffix(".ready").exists():
@@ -145,6 +152,7 @@ def monitor(
     seen, recent = {(root["pid"], root["start_ticks"]): root}, []
     report = {
         "schema": "joxing-fast-rss-watchdog-v1",
+        "rss_reader": rss_reader,
         "status": "monitoring",
         "root": root,
         "supervisor": supervisor,
@@ -157,12 +165,15 @@ def monitor(
             "max_gap_s": max_gap_s,
             "poll_s": poll_s,
             "identity_cap": identity_cap,
+            "retirement_hold_s": None if reader is None else reader.hold_s,
         },
         "samples": 0,
         "peak_sampled_rss_bytes": 0,
         "max_sample_gap_s": 0,
         "max_probe_s": 0,
         "peak_processes": 0,
+        "peak_capacity_charge_bytes": 0,
+        "peak_retiring_rss_charge_bytes": 0,
     }
     root_gone = None
     try:
@@ -175,33 +186,59 @@ def monitor(
                 raise RuntimeError("Owned identity credit")
             samples = []
             for row in [supervisor, own, *seen.values()]:
-                value = bound_rss(row)
-                if value is not None:
+                if reader is None:
+                    value = bound_rss(row)
+                    reading = (
+                        None
+                        if value is None
+                        else {
+                            "rss_bytes": value,
+                            "retiring_rss_charge_bytes": 0,
+                            "capacity_charge_bytes": value,
+                            "kind": "observed",
+                        }
+                    )
+                else:
+                    reading = reader.sample(row)
+                if reading is not None:
                     samples.append(
                         {
                             "pid": row["pid"],
                             "start_ticks": row["start_ticks"],
-                            "rss_bytes": value,
+                            **reading,
                         }
                     )
             now = time.monotonic()
             gap = 0 if last_sample is None else now - last_sample
             last_sample = now
-            total = sum(s["rss_bytes"] for s in samples)
+            observed, reserved, total = aggregate(samples)
             report.update(
                 samples=report["samples"] + 1,
                 wall_s=now - began,
-                peak_sampled_rss_bytes=max(report["peak_sampled_rss_bytes"], total),
+                peak_sampled_rss_bytes=max(report["peak_sampled_rss_bytes"], observed),
+                peak_capacity_charge_bytes=max(
+                    report["peak_capacity_charge_bytes"], total
+                ),
+                peak_retiring_rss_charge_bytes=max(
+                    report["peak_retiring_rss_charge_bytes"], reserved
+                ),
                 max_sample_gap_s=max(report["max_sample_gap_s"], gap),
                 max_probe_s=max(report["max_probe_s"], now - probe_started),
                 peak_processes=max(report["peak_processes"], len(samples)),
-                last_sample_rss_bytes=total,
+                last_sample_rss_bytes=observed,
+                last_sample_capacity_charge_bytes=total,
+                rss_observation_complete=reserved == 0,
+                last_sample_observed_rss_bytes=observed,
+                last_sample_retiring_charge_bytes=reserved,
                 last_sample_monotonic_s=now,
             )
             recent.append(
                 {
                     "monotonic_s": now,
-                    "rss_bytes": total,
+                    "rss_bytes": observed,
+                    "capacity_charge_bytes": total,
+                    "observed_rss_bytes": observed,
+                    "retiring_rss_charge_bytes": reserved,
                     "gap_s": gap,
                     "processes": len(samples),
                 }
@@ -248,6 +285,10 @@ def monitor(
             owned_identities=list(seen.values()),
             recent_samples=recent,
             final_live=[i for i in seen.values() if live(i)],
+            retirement_records={} if reader is None else reader.records,
+            pending_retirements=[]
+            if reader is None
+            else [list(k) for k in reader.retiring],
             wall_s=time.monotonic() - began,
         )
         save(out, report)
@@ -269,6 +310,7 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--wall-s", type=float, required=True)
     parser.add_argument("--max-gap-s", type=float, default=0.1)
+    parser.add_argument("--rss-reader", default="strict-v2")
     args = parser.parse_args()
     report = monitor(
         {"pid": args.root_pid, "start_ticks": args.root_start},
@@ -279,6 +321,7 @@ def main():
         process_cap=args.process_cap,
         wall_s=args.wall_s,
         max_gap_s=args.max_gap_s,
+        rss_reader=args.rss_reader,
     )
     if report["status"] != "exited":
         raise SystemExit(1)

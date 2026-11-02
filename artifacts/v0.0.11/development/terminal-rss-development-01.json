@@ -1,0 +1,23 @@
+{
+  "scope": "Mac fake/proc controls; actual Linux memory controls pending",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_terminal_rss_reader.py tests/test_trial_rss_watchdog.py",
+  "passed": 23,
+  "skipped": 3,
+  "wall_s": 0.08,
+  "ruff": "passed",
+  "source_files": {
+    "scripts/terminal_rss_reader.py": {
+      "bytes": 5301,
+      "sha256": "a4c08d48c044f71f9f8b001344332da8e0b2bd54cb604a52aaa6d2e6eb8d830f"
+    },
+    "scripts/trial_rss_watchdog.py": {
+      "bytes": 12182,
+      "sha256": "6a0679f4974ad150505b634c9fb3caee4dc0b7ed5c4a9a67ede5e300b74d1eb3"
+    },
+    "tests/test_terminal_rss_reader.py": {
+      "bytes": 6721,
+      "sha256": "fd4e87854dd0e871845b9a327290f0776f5e948d861dd912a612be71de2ae2a3"
+    }
+  },
+  "native_physics_steps": 0
+}
