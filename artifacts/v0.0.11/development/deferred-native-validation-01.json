@@ -1,0 +1,37 @@
+{
+  "schema": "joxing-deferred-native-development-v1",
+  "scope": "Fake hooks/credits/hash/ownership controls only; no native physics or candidate learning yet",
+  "commands": [
+    "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_physics_credit.py tests/test_deferred_qualification.py tests/test_deferred_trial.py",
+    "rtk proxy uvx ruff check --output-format concise scripts/qualify_deferred_trial.py src/joxing/physics_credit.py src/joxing/deferred_qualification.py tests/test_physics_credit.py tests/test_deferred_qualification.py"
+  ],
+  "passed": 23,
+  "skipped": 0,
+  "wall_s": 2.41,
+  "ruff": "passed after style fixes before registration",
+  "supervisor_stdlib_help": "passed",
+  "source_files": {
+    "src/joxing/physics_credit.py": {
+      "bytes": 5194,
+      "sha256": "5f991abd41a13e0a21e79895ffb318c40d0e043bda3ed62a8bdae165e3bac136"
+    },
+    "src/joxing/deferred_qualification.py": {
+      "bytes": 15869,
+      "sha256": "12920b5bdc17fc41b06a9b07e0a0dfa980029752dc68f6239f7eaf3cbddf3670"
+    },
+    "scripts/qualify_deferred_trial.py": {
+      "bytes": 15766,
+      "sha256": "88c0b7680d39735533f0211c5dc0f91bbf46b3337edce994bdb0f9eaf72c2b6c"
+    },
+    "tests/test_physics_credit.py": {
+      "bytes": 2613,
+      "sha256": "1c977dec59f97137ad60f34fde468567da98643f6f62113bb9184d10b784b619"
+    },
+    "tests/test_deferred_qualification.py": {
+      "bytes": 5188,
+      "sha256": "5f7b909ef7b047f36d7d1cc3e19602ed26a00e228be65fbee4e47d2cc450ef64"
+    }
+  },
+  "native_protocol_sha256": "d0d723052ca10004ee53433d5d74b61d66529d9dd0058ea83f40129153d45413",
+  "native_outcomes": "not_run"
+}

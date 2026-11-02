@@ -1,3 +1,25 @@
+# H15 four-slot native parity protocol registered — Nov2 Mountain
+
+Current packet experiments/v0.0.11/deferred-native-parity-protocol.json implements
+DEFERRED_PARITY_EXECUTION_PACKET.md. Source/runtime/protocol must be frozen and
+anonymously public-verified before a fresh dedicated xbabe1root.23local controls
+pass2.41s/Ruffpass; native outcomes not_run at registration.
+
+Four sequential legacyA/candidateA/legacyB/candidateB slots use original four-world
+64transition/12update fixture, seed1097, both entropy arms. Observers hash exact
+native/worker/actor/critic/target/optimizer/RNG/replay/evaluation histories, excluding
+only declared wall/resource/envelope metadata. Shared atomic credit reserves
+before physics/preparation; interrupted reservations stay charged/unknown. Watcher
+must be ready before native imports. Legacy default and all scientific gates stay.
+
+Budget600s whole/120sper-slot/240kphysicalsteps incl all resets/evaluations,
+7GiBplanned stop/8GiBhardRSS/100msmonitor-gap/16process/four simulationworkers/
+one thread/1GiBraw/4MiBreceipts. Static worst-case221760steps corrects218560 by
+including the first vector reset; prospective only, no failed native run relaxed.
+Stop whole packet on any fault/mismatch, preserve all attempted/invalid/not_run
+slots. Independent audit and next mission required. No concurrency/default
+adoption/full-source gate/boxing claim or v11tag.
+
 # H15 prerequisites qualified; four-slot native parity harness next — Nov1 Mountain
 
 Current worker-ready mission: docs/DEFERRED_PARITY_EXECUTION_PACKET.md.

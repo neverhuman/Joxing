@@ -1,7 +1,7 @@
 # Next worker: four native allocation-parity trials
 
-Current H15 execution handoff, prospective. Native parity harness/protocol are NOT
-implemented or run. First read DEFERRED_EVALUATION_ALLOCATION_MISSION.md. Its
+Current H15 execution handoff, prospective. Native parity harness/protocol are implemented/registered; target not_run at registration.
+Protocol: experiments/v0.0.11/deferred-native-parity-protocol.json. First read DEFERRED_EVALUATION_ALLOCATION_MISSION.md. Its
 watchdog and candidate implementation prerequisites now exist; consult latest
 STATUS/receipts for Linux source-control conclusion. Legacy remains default.
 
@@ -34,8 +34,8 @@ fixture assertions, old protocols/roots, or executing-source edits.
 
 Default episode horizon is20s, not usual early-fall duration. Four trials can use
 160,000evaluation steps +2,560training steps. A deliberately pessimistic bound
-allows64new training reset scenarios/trial, four initial worker preparations and
-evaluation construction/scenario preparation: at most218,560total steps over all
+allows64post-transition resets plus the first four vector resets/trial, four initial worker preparations and
+evaluation construction/scenario preparation: at most221,760total steps over all
 four trials. Recompute this from current source; do not copy a guessed bound.
 
 The previous mission's PROPOSED200,000-step envelope was not a registered native
