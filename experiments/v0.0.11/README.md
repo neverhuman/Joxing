@@ -1,3 +1,33 @@
+# H23admission/provenance/receipt source registered — Nov2 Mountain
+
+Packet experiments/v0.0.11/resource-admitted-four-context-protocol.json /
+fbb5961fb9c82fc28e581145b3e1d99591d612dbf4c7560fb677c6943f2566c1.
+247Linux cases before any native, local233pass/14Linux skips/Ruffpass. H22native
+four-world body/context/release/serial adapter byte-identical. Admission policy
+prospectively fixed: two10s-spaced fresh samples, load<=.5affinityCPU, CPU PSI
+some<=10%/IO+memory full<=1%, oldmem/disk/no owned jobs; prelaunch/freshpostsetup.
+Defer/not_run instead of starting under failed admission. Actual pair NOT_RUN at
+sourcefreeze; no native/runtime/source-Linux qualification or pass inferred.
+
+Runtime stage SAME15s/2s reserve, module-by-module PID/start/wall/CPU/fault/IO/
+pressure records; gzipJSONL SYNC_FLUSH preserves cutoff prefix, raw stderr separate.
+Named V2exact bootstrap/main/ENTIREterminal/JUnit encodings, olddefaults/watch
+canonical plain copies unchanged. NEWowned XML packed exactly only after producer
+exit and checks/SHA/UID/inode/roundtrip; oldinputs never modified. This prelaunch
+encoding refinement follows actual storage sizing, no field/log/evidence loss.
+Current synthetic encoded projection148533bytes<159744, actual bootstrap and
+control-transcode peak preflight mandatory BEFORE800prep. No prototype is a
+physical result. Source-frozen admission-first deployment helper, bounded16KiB
+history, all checks retained; no background loop/duplicate/other-job changes.
+
+Same100swhole/50sslot/15sruntime/800prep/12MiBraw/156KiBreceipts/1MiBIPC/4workers/
+thread1/16process/7GiBplanned/8GiBhard/100ms/WHOLE2sclose. All14old costs retained;
+16658physics/395.402573s/35531698fixture/4032589receipt bytes leaves223342steps/
+204.597427s/1038210126fixture/161715receipt bytes. Publicfreeze/anonymousverify/
+admission/freshcapacity before conditional task. docs/RESOURCE_ADMISSION_MISSION.md
+and research/H23.md; H22failure stays failed/native4not_run, no boxing/learning
+promotion or v11tag. Target NOT_RUN atregistration.
+
 # H22runtime prerequisite halted; H23admitted continuation ready — Nov2 Mountain
 
 Frozen7244b5c/384d6b81 sync completes9.827143s; runtime import/version check stops

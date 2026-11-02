@@ -1,0 +1,51 @@
+{
+  "schema": "joxing-resource-admission-development-v1",
+  "scope": "Local admission mocks/phase import mocks/byte-exact encoding controls. No formal admission/native outcome or new physics.",
+  "checks": [
+    {
+      "junit": "runs/v0.0.11/admission-development-01.xml",
+      "passed": 61,
+      "failed": 0,
+      "skipped": 3,
+      "wall_s": "2.718"
+    },
+    {
+      "junit": "runs/v0.0.11/admission-development-02.xml",
+      "passed": 229,
+      "failed": 0,
+      "skipped": 14,
+      "wall_s": "5.280"
+    },
+    {
+      "junit": "runs/v0.0.11/admission-development-03.xml",
+      "passed": 233,
+      "failed": 0,
+      "skipped": 14,
+      "wall_s": "5.298"
+    },
+    {
+      "junit": "runs/v0.0.11/admission-development-04.xml",
+      "passed": 233,
+      "failed": 0,
+      "skipped": 14,
+      "wall_s": "5.652"
+    }
+  ],
+  "ruff": "passed",
+  "intermediate_faults": [
+    "Source patch contexts changed after formatter; reapplied matching source before registration; no formal run or native source change",
+    "Ruff unused/import-order fixes only; no failed test observed in H23local checks"
+  ],
+  "final_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_host_admission.py tests/test_runtime_import_check.py tests/test_receipt_encoding_v2.py tests/test_receipt_encoding.py tests/test_four_native_context.py tests/test_native_context_transfer.py tests/test_live_resource_release.py tests/test_native_teardown.py tests/test_watchdog_publication.py tests/test_trial_rss_watchdog.py tests/test_terminal_rss_reader.py tests/test_process_exit_probe.py tests/test_serial_retirement.py tests/test_serial_native_teardown.py tests/test_deferred_trial.py tests/test_deferred_qualification.py tests/test_physics_credit.py --junitxml=runs/v0.0.11/admission-development-04.xml",
+  "native_bodies_unchanged_from": "7244b5c",
+  "native_body_hashes": {
+    "src/joxing/four_native_context.py": "020fc362efb8ed00f896c591956922c549484ca2c0a67e1098f3aa0abb85a06d",
+    "src/joxing/native_context.py": "76cc40ad0030fcb31682d06f423312f86271a463c37c22f0378cf26b366cf8ab",
+    "src/joxing/live_resource_release.py": "a19268c5dbf3de9bc036a9679004341f1ff8276258c4ddd4fcca6719154d06ef",
+    "src/joxing/serial_retirement.py": "e2c6c6d47b6d61da102f04483282e67716741eedde8d3b9d3b9934c0de4f003b"
+  },
+  "new_encoding_refinement": "Actual byte projection required exact NEWJUnit gzip after verified producer exit and exact gzip JSONLruntime events, in addition to main/terminal encoding. This preserves all bytes and old inputs/defaults/canonical watcher; refinement before any formal source/packet deployment.",
+  "projection": "resource-admission-receipt-projection-01.json; synthetic only",
+  "physics": 0,
+  "formal_native": "not_run"
+}

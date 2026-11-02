@@ -33,9 +33,9 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H20](H20.md)|Can report publication avoid stalling the watchdog?|85Linux +one import-only smoke qualify; exact after-exit copies/owned cleanup, no native result|
 |[H21](H21.md)|Does forkserver preserve native reset and live release?|172Linux +ONE700muscle/200prep exact state/lifetime pass; native retirement72.26ms|
 |[H22](H22.md)|Can four native contexts meet the original serial-close limit?|Runtime prerequisite timeout;198controls/4worlds not_run,0newphysics, failure retained|
-|[H23](H23.md)|Can host admission/import provenance prevent opaque stalls?|Worker-ready admitted continuation and exact receipt codec; not implemented/run|
+|[H23](H23.md)|Can host admission/import provenance prevent opaque stalls?|247case packet registered, local233pass/14skips; admission/native not_run|
 
-**Latest: H22runtime prerequisite stopped; no native4attempt. Next H23host admission/import provenance/receipt proof. H21one-worker pass stays narrow, old negatives retained. Next unused ID: H24.** These are global research-note
+**Latest: H22runtime prerequisite stopped; no native4attempt. H23host admission/import provenance/receipt proof implemented/registered. H21one-worker pass stays narrow, old negatives retained. Next unused ID: H24.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

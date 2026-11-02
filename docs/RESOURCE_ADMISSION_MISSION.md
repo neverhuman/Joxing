@@ -1,6 +1,12 @@
 # H23: admit a quiet host, expose runtime import progress, retain full receipts
 
-Status: worker-ready plan; NOT implemented/preregistered/run. Current agent owns
+Status: implemented/preregistered; formal admission/native target NOT_RUN atfreeze.
+Protocol resource-admitted-four-context-protocol.json/fbb5961f,247Linux cases;
+local233pass/14Linux skips/Ruffpass. Native H22body byte-identical.
+Before ANYformal deployment refined receipt mode to include exact owned NEWXML
+gzip after producer exit/validated hashes and streaming gzipJSONLruntime events
+with flushed prefix recovery/separate rawstderr. All bytes retained, olddefaults/
+inputs/canonicalwatch unchanged. Historical plan follows; frozen packet authoritative. Current agent owns
 integration, no delegates/concurrent writers. Work in
 /Users/bentaylor/Documents/ChatGPT/JOXING, prefix shell commands with RTK.
 

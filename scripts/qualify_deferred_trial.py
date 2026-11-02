@@ -11,8 +11,19 @@ import sys
 import time
 from pathlib import Path
 
+from host_admission import AdmissionDeferred
+from host_admission import reasons as admission_reasons
+from host_admission import snapshot as admission_snapshot
 from joxing_process_ownership import unknown_joxing_processes
-from receipt_encoding import MODE, save_report
+from receipt_encoding import (
+    MODE,
+    V2,
+    main_metadata,
+    pack_owned_control,
+    report_path,
+    save_report,
+    terminal_line,
+)
 from source_shard_support import check_junit
 from supervise_motor_pilot import descendants, identity, live
 from supervise_upper_task_tests import canonical, rss, save, stop
@@ -142,9 +153,11 @@ def main():
         "joxing-native-context-transfer-v1",
         "joxing-four-native-context-v1",
     )
-    if p.get("receipt_wire_encoding", "legacy") not in ("legacy", MODE):
+    if p.get("receipt_wire_encoding", "legacy") not in ("legacy", MODE, V2):
         raise ValueError("Unknown receipt encoding")
     out = ROOT / p["output"]
+    receipt_mode = p.get("receipt_wire_encoding", "legacy")
+    report_file = report_path(out, receipt_mode)
     out.parent.mkdir(parents=True, exist_ok=True)
     lease = (out.parent / ".deferred-native.lock").open("a+")
     fcntl.flock(lease, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -232,6 +245,11 @@ def main():
         started = time.monotonic()
         log = (out / (name + ".log")).open("w")
         guard_log = None
+        runtime_stderr = (
+            (out / "runtime.stderr.log").open("w")
+            if name == "runtime" and p.get("runtime_import_provenance")
+            else None
+        )
         try:
             active = subprocess.Popen(
                 command,
@@ -239,7 +257,9 @@ def main():
                 env=env,
                 stdin=subprocess.DEVNULL,
                 stdout=log,
-                stderr=subprocess.STDOUT,
+                stderr=runtime_stderr
+                if runtime_stderr is not None
+                else subprocess.STDOUT,
                 start_new_session=True,
             )
             root = identity(active.pid)
@@ -308,7 +328,7 @@ def main():
                     ):
                         raise RuntimeError("Prerequisite stage resource first limit")
                 save_report(
-                    out / "result.json",
+                    report_file,
                     report,
                     mode=p.get("receipt_wire_encoding", "legacy"),
                     legacy_save=save,
@@ -380,6 +400,8 @@ def main():
             log.close()
             if guard_log is not None:
                 guard_log.close()
+            if runtime_stderr is not None:
+                runtime_stderr.close()
 
     try:
         stage(
@@ -393,14 +415,42 @@ def main():
             ],
             180,
         )
+        if p.get("runtime_import_provenance"):
+            try:
+                sample = admission_snapshot(
+                    ignored_pids=ancestors | {supervisor["pid"]}
+                )
+                assessed = time.monotonic()
+                rejected = admission_reasons(sample, p["admission_policy"], assessed)
+            except (OSError, ValueError) as error:
+                sample, rejected = {"error": str(error)}, ["missing_or_invalid_data"]
+                assessed = time.monotonic()
+            report["runtime_admission"] = {
+                "sample": sample,
+                "reasons": rejected,
+                "assessed_monotonic_s": assessed,
+            }
+            if rejected:
+                raise AdmissionDeferred("Runtime host admission: " + str(rejected))
         stage(
             "runtime",
-            [
-                python,
-                "-c",
-                "import sys,numpy,mujoco,torch,stable_baselines3;v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__};print(v);assert v=="
-                + repr(p["runtime_versions"]),
-            ],
+            (
+                [
+                    python,
+                    "scripts/runtime_import_check.py",
+                    "--expected",
+                    json.dumps(p["runtime_versions"]),
+                    "--event-wire",
+                    "gzip-jsonl-v1",
+                ]
+                if p.get("runtime_import_provenance")
+                else [
+                    python,
+                    "-c",
+                    "import sys,numpy,mujoco,torch,stable_baselines3;v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__};print(v);assert v=="
+                    + repr(p["runtime_versions"]),
+                ]
+            ),
             15,
         )
         verify_runtime_files()
@@ -421,9 +471,12 @@ def main():
             ],
             60,
         )
-        checked = check_junit(
-            (out / "controls.xml").read_text(), p["test_node_ids"], []
-        )
+        control_xml = (out / "controls.xml").read_bytes()
+        checked = check_junit(control_xml.decode(), p["test_node_ids"], [])
+        if receipt_mode == V2:
+            report["controls_encoding"] = pack_owned_control(
+                out / "controls.xml", hashlib.sha256(control_xml).hexdigest()
+            )
         report["control_counts"] = checked["counts"]
         if not checked["qualified"]:
             raise ValueError("Native prerequisite controls incomplete")
@@ -561,6 +614,8 @@ def main():
         if row is not None and row["status"] == "running":
             row["status"] = "failed"
         report.update(status="halted", error=type(error).__name__ + ": " + str(error))
+        if isinstance(error, AdmissionDeferred):
+            report["status"] = "deferred"
     finally:
         if publication is not None and not publication.finished:
             try:
@@ -587,13 +642,13 @@ def main():
             final_live_recorded=[i for i in seen.values() if live(i)],
         )
         save_report(
-            out / "result.json",
+            report_file,
             report,
             mode=p.get("receipt_wire_encoding", "legacy"),
             legacy_save=save,
         )
     print(
-        json.dumps(
+        terminal_line(
             {
                 k: report.get(k)
                 for k in (
@@ -604,7 +659,9 @@ def main():
                     "wall_s",
                     "final_live_recorded",
                 )
-            }
+            },
+            receipt_mode,
+            main=main_metadata(report_file) if receipt_mode == V2 else None,
         )
     )
     if report["status"] != "completed":
