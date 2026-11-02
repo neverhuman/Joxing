@@ -1,3 +1,12 @@
+# H19 final prelaunch freeze: raw process proof retained — Nov2 Mountain
+
+Current process-exit-backend-protocol.json canonical c83d92a4.
+BEFORE ANY deployment, added raw bound stat/status/maps evidence and its corruption
+control;69Linux cases required (65local pass/4Linux skips), unchanged six slots/
+seeds/2s/100ms/RSS/90s limits and scientific threshold. Superseded e0e76c36/b49f1d2
+never launched, no formal outcomes recycled. Current read-first mission and H19
+note below. No native/default/backend adoption.
+
 # H19 paired import-only exit probe registered — Nov2 Mountain
 
 Current packet experiments/v0.0.11/process-exit-backend-protocol.json/e0e76c36.

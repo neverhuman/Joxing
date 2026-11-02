@@ -48,25 +48,46 @@ def emit(folder, phase, **values):
         )
 
 
-def facts(bound, proc_root=Path("/proc")):
+def facts(bound, proc_root=Path("/proc"), *, evidence_dir=None):
     folder = proc_root / str(bound["pid"])
-    before = (folder / "stat").read_text().rsplit(")", 1)[1].split()
+    before_raw = (folder / "stat").read_text()
+    before = before_raw.rsplit(")", 1)[1].split()
     if (
         before[19] != str(bound["start"])
         or before[0] in ("Z", "X")
         or int(before[6]) & 4
     ):
         raise RuntimeError("Probe identity/live-state drift")
+    status_raw = (folder / "status").read_text()
     status = {
         k: v.strip()
-        for line in (folder / "status").read_text().splitlines()
+        for line in status_raw.splitlines()
         if ":" in line
         for k, v in [line.split(":", 1)]
     }
-    maps = (folder / "maps").read_text().lower()
-    after = (folder / "stat").read_text().rsplit(")", 1)[1].split()
+    maps_raw = (folder / "maps").read_text()
+    maps = maps_raw.lower()
+    after_raw = (folder / "stat").read_text()
+    after = after_raw.rsplit(")", 1)[1].split()
     if after[19] != str(bound["start"]) or after[0] in ("Z", "X") or int(after[6]) & 4:
         raise RuntimeError("Probe identity changed during proof")
+    evidence = {}
+    if evidence_dir is not None:
+        evidence_dir = Path(evidence_dir)
+        evidence_dir.mkdir(parents=True, exist_ok=False)
+        for name, raw in {
+            "stat-before.txt": before_raw,
+            "stat-after.txt": after_raw,
+            "status.txt": status_raw,
+            "maps.txt": maps_raw,
+        }.items():
+            path = evidence_dir / name
+            path.write_text(raw)
+            evidence[name] = {
+                "path": str(path),
+                "bytes": len(raw.encode()),
+                "sha256": hashlib.sha256(raw.encode()).hexdigest(),
+            }
     return {
         "identity": bound,
         "parent_pid": int(after[1]),
@@ -79,7 +100,8 @@ def facts(bound, proc_root=Path("/proc")):
         "heavy_mappings": [
             s for s in ("libtorch", "numpy", "mujoco", "openblas", "mkl") if s in maps
         ],
-        "maps_sha256": hashlib.sha256(maps.encode()).hexdigest(),
+        "maps_sha256": hashlib.sha256(maps_raw.encode()).hexdigest(),
+        "proc_evidence": evidence,
     }
 
 
@@ -233,10 +255,10 @@ def run(folder, slot, packet, ready):
         hello = recv(conn, 4)
         if hello != {"identity": bound, "method": method}:
             raise ValueError("Worker handshake identity/context mismatch")
-        worker_before = facts(bound)
+        worker_before = facts(bound, evidence_dir=folder / "proc-worker-before")
         proof = {
             "worker_before": worker_before,
-            "root": facts(process_identity()),
+            "root": facts(process_identity(), evidence_dir=folder / "proc-root-before"),
             "context": method,
             "ipc_context": ctx.get_start_method(),
             "auxiliaries": [],
@@ -251,7 +273,9 @@ def run(folder, slot, packet, ready):
         if method == "forkserver":
             pid = forkserver._forkserver._forkserver_pid
             server_bound = {"pid": pid, "start": read_identity(pid)["start"]}
-            proof["server_before"] = facts(server_bound)
+            proof["server_before"] = facts(
+                server_bound, evidence_dir=folder / "proc-server-before"
+            )
             validate_server(proof["server_before"], worker_before, os.getpid())
             proof["auxiliaries"].append(server_bound)
         elif worker_before["parent_pid"] != os.getpid():
@@ -272,11 +296,13 @@ def run(folder, slot, packet, ready):
         )
         if response != {"payload_sha256": hashlib.sha256(raw.encode()).hexdigest()}:
             raise ValueError("Probe payload transport mismatch")
-        proof["worker_after"] = facts(bound)
+        proof["worker_after"] = facts(bound, evidence_dir=folder / "proc-worker-after")
         if proof["worker_after"]["threads"] != 1:
             raise ValueError("Probe worker threads")
         if method == "forkserver":
-            proof["server_after"] = facts(server_bound)
+            proof["server_after"] = facts(
+                server_bound, evidence_dir=folder / "proc-server-after"
+            )
             validate_server(proof["server_after"], proof["worker_after"], os.getpid())
         write_json(folder / "after-import.json", proof)
 

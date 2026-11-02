@@ -35,7 +35,7 @@
   },
   "close_deadline_s": 2.0,
   "competitive_training_runs": 0,
-  "criterion": "All68exact Linux source/ownership/RSS controls then all6valid fresh roots in fixed order. One worker at a time; no model/data/env/actor/native physics/learning; exact paired seed/runtime/tiny tensor-array/Python-NumPy-Torch RNG payload digests. Before release, bound worker/root1thread/no heavy mappings, forkserver1thread/empty preload/no heavy mappings/full ancestry; after import worker/server1thread and identities stable. Required explicit pipe-close/before_return/managed-finalizer receipts, method-specific Python atexit classified honestly, same2s send-to-join/100ms gap/probe/retiring hold/7GiBplanned/8GiBhard/16process caps and all owned root/worker/server/tracker exits. Hypothesis supported_import_only iff all6valid and candidate median<=0.5reference median with no candidate pair slower. Negative hypothesis is completed not_supported_import_only; any mechanical fault halts remaining rows not_run. No native backend/default promotion, boxing or training throughput claim.",
+  "criterion": "All69exact Linux source/ownership/RSS controls then all6valid fresh roots in fixed order. One worker at a time; no model/data/env/actor/native physics/learning; exact paired seed/runtime/tiny tensor-array/Python-NumPy-Torch RNG payload digests. Before release, bound worker/root1thread/no heavy mappings, forkserver1thread/empty preload/no heavy mappings/full ancestry; after import worker/server1thread and identities stable. Required explicit pipe-close/before_return/managed-finalizer receipts, method-specific Python atexit classified honestly, same2s send-to-join/100ms gap/probe/retiring hold/7GiBplanned/8GiBhard/16process caps and all owned root/worker/server/tracker exits. Hypothesis supported_import_only iff all6valid and candidate median<=0.5reference median with no candidate pair slower. Negative hypothesis is completed not_supported_import_only; any mechanical fault halts remaining rows not_run. No native backend/default promotion, boxing or training throughput claim. Raw before/after stat/status/maps files must be retained and hashed so the clean-server proof can be independently reconstructed.",
   "deployment_root": "/home/ubuntu/joxing/process-exit-backend-20261102-01",
   "fixture_bytes": 4194304,
   "formal_boxing_games": 0,
@@ -84,6 +84,12 @@
   "per_slot_wall_s": 12,
   "physics_limit": 0,
   "planned_stop_rss_bytes": 7516192768,
+  "prelaunch_revision": {
+    "formal_outcomes_under_superseded_protocol": "not_run; no deployment launched",
+    "reason": "Add raw bound proc stat/status/maps copies for independent server-proof reconstruction, not only filtered fields/hash. Same slots/order/payload/limits/scientific threshold.",
+    "source_commit": "b49f1d2c338aef8ba61dcde9f7884eaaaf34ca2b",
+    "supersedes_protocol_sha256": "e0e76c36371e66f3ae615de3f8837489bf8f7ca14862c54b6b74f4e3f47339fb"
+  },
   "process_ceiling": 16,
   "receipt_bytes": 786432,
   "required_git_objects": {
@@ -1473,8 +1479,8 @@
       "sha256": "5f991abd41a13e0a21e79895ffb318c40d0e043bda3ed62a8bdae165e3bac136"
     },
     "src/joxing/process_exit_probe.py": {
-      "bytes": 14004,
-      "sha256": "033c47675301f877e84d8d06ffd40a48da31ef48899674ef521503351fa4a73f"
+      "bytes": 15063,
+      "sha256": "fae314ec70d7dfdeda76dff70927013b5261128457f58849493db1658b00b822"
     },
     "src/joxing/provenance.py": {
       "bytes": 2552,
@@ -1817,8 +1823,8 @@
       "sha256": "1c977dec59f97137ad60f34fde468567da98643f6f62113bb9184d10b784b619"
     },
     "tests/test_process_exit_probe.py": {
-      "bytes": 5904,
-      "sha256": "3e688c8cfe581cdd76ec1f646302f368cbd8ecfdfa8af1db15c3b343dff198a3"
+      "bytes": 6767,
+      "sha256": "fb655ee338413815fe57f97c7e9428414277e35505c4d664f3d29f3fa3f4d97d"
     },
     "tests/test_process_ownership.py": {
       "bytes": 3254,
@@ -3155,6 +3161,7 @@
     "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[slow]",
     "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[nan]",
     "tests/test_process_exit_probe.py::test_bounded_receive_preserves_pipe_fault",
+    "tests/test_process_exit_probe.py::test_proc_evidence_keeps_raw_maps_for_independent_reconstruction",
     "tests/test_serial_retirement.py::test_stdlib_adapter_and_runner_until_ready",
     "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[normal]",
     "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[waiting]",

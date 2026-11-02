@@ -19,15 +19,22 @@
       "skipped": 4,
       "wall_s": 0.59,
       "scope": "registered68case target subset"
+    },
+    {
+      "passed": 65,
+      "skipped": 4,
+      "wall_s": 0.59,
+      "scope": "final69case target set with independent raw-proc evidence control"
     }
   ],
-  "final_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_process_exit_probe.py tests/test_serial_retirement.py tests/test_terminal_rss_reader.py tests/test_trial_rss_watchdog.py --junitxml=runs/v0.0.11/exit-probe-development-03.xml",
+  "final_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_process_exit_probe.py tests/test_serial_retirement.py tests/test_terminal_rss_reader.py tests/test_trial_rss_watchdog.py --junitxml=runs/v0.0.11/exit-probe-development-04.xml",
   "ruff": {
     "status": "passed",
     "initial_faults": [
       "I001 import order",
       "RUF007 pairwise",
-      "F401 unused import"
+      "F401 unused import",
+      "PERF102 unused dict key in new evidence control; fixed"
     ],
     "fixed_before_freeze": true
   },
@@ -39,18 +46,24 @@
   },
   "source_files": {
     "src/joxing/process_exit_probe.py": {
-      "bytes": 14004,
-      "sha256": "033c47675301f877e84d8d06ffd40a48da31ef48899674ef521503351fa4a73f"
+      "bytes": 15063,
+      "sha256": "fae314ec70d7dfdeda76dff70927013b5261128457f58849493db1658b00b822"
     },
     "scripts/qualify_deferred_trial.py": {
       "bytes": 20049,
       "sha256": "33a2288552018ec54957789ab238a2d2250d4777368c161244fefed6a6c66748"
     },
     "tests/test_process_exit_probe.py": {
-      "bytes": 5904,
-      "sha256": "3e688c8cfe581cdd76ec1f646302f368cbd8ecfdfa8af1db15c3b343dff198a3"
+      "bytes": 6767,
+      "sha256": "fb655ee338413815fe57f97c7e9428414277e35505c4d664f3d29f3fa3f4d97d"
     }
   },
   "physics": 0,
-  "formal_results": "not_run"
+  "formal_results": "not_run",
+  "prelaunch_revision": {
+    "supersedes_protocol_sha256": "e0e76c36371e66f3ae615de3f8837489bf8f7ca14862c54b6b74f4e3f47339fb",
+    "source_commit": "b49f1d2c338aef8ba61dcde9f7884eaaaf34ca2b",
+    "formal_outcomes_under_superseded_protocol": "not_run; no deployment launched",
+    "reason": "Add raw bound proc stat/status/maps copies for independent server-proof reconstruction, not only filtered fields/hash. Same slots/order/payload/limits/scientific threshold."
+  }
 }

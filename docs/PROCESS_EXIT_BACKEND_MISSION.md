@@ -1,6 +1,11 @@
 # Next: isolate process-exit latency without native physics
 
-Status: implemented/preregistered, target NOT_RUN atfreeze. Protocol
+Status: FINAL prelaunch revision adds raw bound stat/status/maps files for
+independent reconstruction;69cases (65local pass/4Linux skips), same slots and
+limits. Superseded68case freeze never deployed; no outcomes reused. Exact current
+protocol identity is in experiments/v0.0.11/process-exit-backend-protocol.json and
+its canonical hash in docs/MISSION.md/deployment receipt. Historical first freeze:
+implemented/preregistered, target NOT_RUN atfreeze. Protocol
 experiments/v0.0.11/process-exit-backend-protocol.json, canonical
 e0e76c36371e66f3ae615de3f8837489bf8f7ca14862c54b6b74f4e3f47339fb.
 Registered68case Linux subset: local64pass/4Linux skips; full previous-regression

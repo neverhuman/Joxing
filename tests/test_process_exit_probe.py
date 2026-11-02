@@ -1,6 +1,7 @@
 import json
 import subprocess
 import sys
+from pathlib import Path
 
 import pytest
 
@@ -179,3 +180,22 @@ def test_bounded_receive_preserves_pipe_fault():
 
     with pytest.raises(EOFError, match="original"):
         recv(Broken(), 0.01)
+
+
+def test_proc_evidence_keeps_raw_maps_for_independent_reconstruction(tmp_path):
+    import hashlib
+
+    d = tmp_path / "17"
+    d.mkdir()
+    fields = ["R", "11", "0", "0", "0", "0", "0"] + ["0"] * 10 + ["1", "0", "10"]
+    (d / "stat").write_text("17 (fixture) " + " ".join(fields))
+    (d / "status").write_text("Threads: 1\n")
+    (d / "maps").write_text("/LIB/libTORCH.so\n")
+    r = facts({"pid": 17, "start": "10"}, tmp_path, evidence_dir=tmp_path / "captured")
+    assert r["heavy_mappings"] == ["libtorch"]
+    assert len(r["proc_evidence"]) == 4
+    for meta in r["proc_evidence"].values():
+        f = Path(meta["path"])
+        assert f.stat().st_size == meta["bytes"]
+        assert hashlib.sha256(f.read_bytes()).hexdigest() == meta["sha256"]
+    assert (tmp_path / "captured/maps.txt").read_text() == "/LIB/libTORCH.so\n"
