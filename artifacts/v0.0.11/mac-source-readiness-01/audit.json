@@ -1,0 +1,102 @@
+{
+  "status": "verified_source_only",
+  "source_commit": "4aeb8310a6cadf0dc4fb6796ae417c15a8f8b71d",
+  "protocol_sha256": "23b21d4ac066241d2ceca31ccc865ec0925c1f76fbf36cf688fb9f6eb52bdaee",
+  "cases": {
+    "attempted": 29,
+    "passed": 29,
+    "failed": 0,
+    "skipped": 0,
+    "not_run": 0
+  },
+  "case_names": [
+    "tests.test_history::test_history_preserves_delay_order_and_excludes_future_arrivals",
+    "tests.test_history::test_cross_corner_episode_future_and_conflicting_packets_rejected",
+    "tests.test_history::test_bounded_owned_history_restores_exactly_and_rejects_corruption",
+    "tests.test_timing::test_zero_one_two_tick_delay_and_ownership[0]",
+    "tests.test_timing::test_zero_one_two_tick_delay_and_ownership[1]",
+    "tests.test_timing::test_zero_one_two_tick_delay_and_ownership[2]",
+    "tests.test_timing::test_delayed_old_decision_never_overwrites_newer_and_conflicts_reject",
+    "tests.test_timing::test_snapshot_pending_commands_and_reordered_arrivals_restore_exactly",
+    "tests.test_timing::test_missing_ticks_capacity_future_and_invalid_commands_stop_before_mutation",
+    "tests.test_rules::test_contact_window_scores_once_despite_held_pressure[head-2]",
+    "tests.test_rules::test_contact_window_scores_once_despite_held_pressure[torso-1]",
+    "tests.test_rules::test_contact_window_scores_once_despite_held_pressure[guard-0]",
+    "tests.test_rules::test_contact_window_scores_once_despite_held_pressure[illegal-0]",
+    "tests.test_rules::test_guard_brush_then_direct_target_uses_target_onset",
+    "tests.test_rules::test_target_cannot_inherit_guard_speed_or_impulse",
+    "tests.test_rules::test_onset_is_latched_before_deceleration",
+    "tests.test_rules::test_stationary_guard_rejects_opponent_running_into_it",
+    "tests.test_rules::test_manifold_sum_duplicate_delivery_and_dominant_zone_tie",
+    "tests.test_rules::test_subthreshold_zones_cannot_pool_impulse",
+    "tests.test_rules::test_clearance_and_retraction_required_after_contact",
+    "tests.test_rules::test_gap_and_recontact_cannot_restart_window",
+    "tests.test_rules::test_bell_cannot_collect_new_impulse",
+    "tests.test_rules::test_restore_mid_hit_reproduces_ledger",
+    "tests.test_rules::test_shaping_telescopes_to_terminal_match_utility",
+    "tests.test_rules::test_invalid_and_missing_samples_fail_loudly",
+    "tests.test_observations::test_corner_frame_and_owned_real_kinematics",
+    "tests.test_observations::test_private_opponent_fields_never_enter_actor_and_ticks_must_match",
+    "tests.test_observations::test_pure_global_yaw_translation_frame_invariance",
+    "tests.test_match_referee::test_all_four_gloves_finalize_prior_impulses_before_bell_and_order_is_irrelevant"
+  ],
+  "versions": {
+    "mujoco": "3.8.0",
+    "numpy": "2.5.4",
+    "pytest": "9.1.1",
+    "python": "3.12.3"
+  },
+  "physics_calls": [],
+  "physics_steps": 0,
+  "actor_updates": 0,
+  "rollouts": 0,
+  "supervised_wall_s": 13.675331624224782,
+  "setup_verification_wall_s": 23.936000583693385,
+  "setup_plus_supervised_s": 37.61133220791817,
+  "sampled_peak_rss_bytes": 1461321728,
+  "exact_transfer_files": {
+    "checks.log": {
+      "sha256": "3617387337ef25773c0140fa4eef7d42059d2b7c5dba30e19f0b4acbc9f45452",
+      "bytes": 99
+    },
+    "checks.xml": {
+      "sha256": "e72be257ca3fa10375f8d498426c6135a54b55c6b1429089a213d7978403e168",
+      "bytes": 3684
+    },
+    "progress.json": {
+      "sha256": "ed1c175a413f855bad35cf71b19e978ffe1a3cdea6c56d4257ee3ab1f3122dc4",
+      "bytes": 122
+    },
+    "proof.json": {
+      "sha256": "b71420c8f0ebec116a40a195e086de5488d32c517d0b202ffc306efb2e28d7f6",
+      "bytes": 270
+    },
+    "result.json": {
+      "sha256": "282bd8d35bf540d8c1424e6f20ad34679c1bb643a7ed9f77a2a7ac18e8f1f1d6",
+      "bytes": 11355
+    },
+    "sync.log": {
+      "sha256": "12a81d989f84610af55878f0042d8ef1e74e11bd076f7cb0ef367b1841699061",
+      "bytes": 924
+    }
+  },
+  "raw_bytes": 16454,
+  "limits": "Mac source only; no dynamic motor, Linux retirement, learning or games/s claim",
+  "source_files_verified": 102,
+  "model_gitlink": "2d686957aefd5739cf4d2859a6acfd94c8f84400",
+  "process_exits": [
+    {
+      "pid": 29262,
+      "live": false
+    },
+    {
+      "pid": 29308,
+      "live": false
+    },
+    {
+      "pid": 29394,
+      "live": false
+    }
+  ],
+  "source_unchanged": true
+}

@@ -1,3 +1,14 @@
+## xbabe4 actually used and source-qualified —2026-11-02
+
+[H24results](MAC_SOURCE_READINESS_RESULTS.md):29/29native source/forward controls
+pass,0physics;13.68s supervised/37.61s setup-inclusive,1.36GiBsampledpeak, all
+owned PIDs exited, independently audited. Explicit MacNumPy2.5.4 variant, no
+native dynamics/actor portability inference. [Next H25](MAC_NATIVE_REPLAY_MISSION.md)
+is a small exact boundary/mid-command/contact replay transfer before using Mac
+for dynamic scaling. No active task after this completed diagnostic; H25worker-
+ready implementation mission and H23pending admitted Linux mission remain clear.
+Do not claim these checks are boxing, learning speed or a physics benchmark.
+
 ## Four-node scheduling refresh —2026-11-02 16:37 UTC
 
 [Two samples per host](../artifacts/v0.0.11/development/four-host-capacity-20261102-01.json),

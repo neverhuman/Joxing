@@ -1,3 +1,20 @@
+# Mac source task concluded; native replay transfer next —2026-11-02
+
+H24public4aeb831/23b21d4a on xbabe4 passes29/29checks,0failures/skips/not_run,
+0physics/actor/updates. Independent102source/model/version/29JUnit audit and
+sixrawfile16454byte exact transfer pass; all3recorded PIDs exited. Supervised
+13.675332s +setup/anonymousverify23.936001s; peak1.36GiB. Source/compile/forward
+only, explicit MacNumPy2.5.4 variant; no dynamic motor/Linux teardown/learning
+parity or boxing claim. Results docs/MAC_SOURCE_READINESS_RESULTS.md.
+
+Next worker-ready docs/MAC_NATIVE_REPLAY_MISSION.md/research/H25.md: exact
+original D0boundary/mid-command/contact continuation, sixrows/112plannedphysics,
+proposed90s/160step/4GiB/16MiBraw/1worker+thread, source/input/protocol/public
+freeze before run. NOTimplemented/preregistered/run; strict equality/no waived
+cross-chip drift. Only after qualification benchmark1/2/4persistent workers,
+later<=16aggregate when actual capacity/parity pass. H23Linux1c94152/fbb5961f
+remains unchanged/resource-deferred, no duplicate run, no v11tag.
+
 # Spare Mac source-validation task registered —2026-11-02
 
 User requests using all four nodes where spare capacity exists. Live four-host
