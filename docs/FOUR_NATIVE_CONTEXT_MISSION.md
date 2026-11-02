@@ -1,3 +1,9 @@
+# H22concluded: runtime prerequisite halted; native4NOT_RUN
+
+[Results/all attempted stages and audit](FOUR_NATIVE_CONTEXT_RESULTS.md).
+Do not repeat this packet unchanged. Next [H23resource admission/provenance](RESOURCE_ADMISSION_MISSION.md).
+Historical source/plan below; no native gate was qualified.
+
 # H22: four native workers under the original serial-close deadline
 
 Status: implemented/preregistered; actual native target NOT_RUN atfreeze.

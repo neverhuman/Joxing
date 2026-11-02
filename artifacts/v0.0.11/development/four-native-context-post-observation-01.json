@@ -1,0 +1,17 @@
+{
+  "scope": "POST-failure read-only host observation, not in-import evidence",
+  "utc": "2026-11-02T15:18:53Z",
+  "load": [
+    81.5947265625,
+    70.3349609375,
+    44.46484375
+  ],
+  "cpu_count": 128,
+  "affinity_cpus": 102,
+  "/proc/pressure/cpu": "some avg10=2.84 avg60=3.29 avg300=1.69 total=604534018844\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+  "/proc/pressure/io": "some avg10=4.13 avg60=3.65 avg300=6.36 total=53990608126\nfull avg10=4.13 avg60=3.55 avg300=6.04 total=52518845428\n",
+  "/proc/pressure/memory": "some avg10=2.19 avg60=1.88 avg300=2.08 total=73607989060\nfull avg10=2.19 avg60=1.88 avg300=2.08 total=72279435321\n",
+  "/sys/fs/cgroup/cpu.max": null,
+  "/sys/fs/cgroup/cpu.stat": "usage_usec 163096695775000\nuser_usec 154699977695000\nsystem_usec 8396718080000\ncore_sched.force_idle_usec 0\nnr_periods 0\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+  "owned_jobs": []
+}

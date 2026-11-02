@@ -1,3 +1,30 @@
+# H22runtime prerequisite halted; H23admitted continuation ready — Nov2 Mountain
+
+Frozen7244b5c/384d6b81 sync completes9.827143s; runtime import/version check stops
+at13.143566s under unchanged15s allowance/2s cleanup reserve. Whole24.311858s,
+peak434843648bytes, not an RSS breach. Version assertion incomplete; empty log.
+ALL198Linux controls NOT_RUN, ONEfour-world row NOT_RUN, all4native worlds
+NOT_RUN;0newphysics/model/actor/rollout/update and no physical ledger/guard.
+No unchanged repeat/time gate relaxation. Local188pass/10skips stay local only.
+
+Independent754source/five-history/5exits audit reconstructs every not_run row,
+all7rawfiles72308bytes exact transfer, no writer. Actual bootstrap184186→68058
+exact gzip bytes/fields verified, but Linuxcodec/source gates never ran and remain
+unqualified. Contemporaneous load58.84→83.01/79.50; later IO/memory PSI observed
+POSTfailure only, causal import module/stall cause unknown. Details/receipts:
+docs/FOUR_NATIVE_CONTEXT_RESULTS.md. No source/protocol edit or formal rerun.
+
+14packet carry16658physics/395.402573s/35531698fixture/4032589receipt bytes;
+original remaining223342steps/204.597427s/1038210126fixture/161715receipt bytes.
+Next worker-ready docs/RESOURCE_ADMISSION_MISSION.md /research/H23.md, NOT
+implemented/preregistered/run: prospective read-only quiet-host admission BEFORE
+costly launch; staged wall/CPU/fault/IO/import provenance under SAME15s; exact NEW
+main/terminal compression to fit receipts, no field/evidence deletion. Conditional
+unchanged H22four-native body only after all old+new source/runtime/codec gates.
+Proposed100swhole/50sslot/800prep/12MiBraw/156KiBreceipts/1MiBIPC/4workers,
+same100ms/2s/RSS limits, actual projection mandatory. No active owned job; no
+four-worker/learner parity/balance/boxing promotion/v11tag. Prior failures retained.
+
 # H22four-native source and receipt packet registered — Nov2 Mountain
 
 Packet experiments/v0.0.11/four-native-context-protocol.json /

@@ -1,0 +1,1077 @@
+{
+  "schema": "joxing-deferred-native-independent-v1",
+  "status": "verified_halted_attempt",
+  "source_commit": "7244b5c691701402466a0bf6773e0372cd8a4326",
+  "protocol_sha256": "384d6b81e77fd46f948fdfe8687541f6750332be4ab716f0e39f37953809006b",
+  "source_files_verified": 754,
+  "historical_objects_verified": 5,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_deferred_qualification.py::test_comparison_requires_complete_exact_histories[changed]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_comparison_requires_complete_exact_histories[empty]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_comparison_requires_complete_exact_histories[missing]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_comparison_requires_complete_exact_histories[missing_update]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_comparison_requires_complete_exact_histories[none]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_exact_array_hash_and_no_rng_consumption",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_fresh_spawn_installs_native_hooks_before_constructor",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_only_monitor_wall_time_excluded",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_static_worst_case_includes_first_vector_reset",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_qualification.py::test_stdlib_import_before_readiness_and_timeout",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[construction-unavailable-partial-construction-constructor fault]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[evaluation-training-end-evaluation fault]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_all_faults_retain_real_state_origin[learning-live-workers-peer trial fault]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_evaluation_cleanup_fault_does_not_replace_original",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_freeze_close_then_allocate_and_evaluate",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_legacy_body_unchanged_and_default_explicit",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_partial_constructor_stops_only_new_owned_processes",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_deferred_trial.py::test_unknown_or_nondeferred_variant_rejected_before_output",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_module_stdlib_until_readiness",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[context]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[deadline]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[finalizer]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[none]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[prep]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[second_close]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[spec]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[state]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[thread]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_four_parent_receipt_faults_and_shared_close[weakref]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_four_native_context.py::test_one_worker_packet_cannot_enter_four_variant",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[changed_after_close-default]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[changed_after_close-proved_forkserver]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[close_fault-default]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[close_fault-proved_forkserver]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[frozen_state-default]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[frozen_state-proved_forkserver]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[none-default]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_before_close_receipt_survives_native_close_fault[none-proved_forkserver]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_live_rss_requires_same_live_identity[changed_after]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_live_rss_requires_same_live_identity[exiting]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_live_rss_requires_same_live_identity[live]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_live_rss_requires_same_live_identity[missing]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_live_rss_requires_same_live_identity[reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_module_stdlib_until_ready",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_mujoco_binding_weakrefs_zero_physics",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_lifetime_and_faults[aliases]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_lifetime_and_faults[changed]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_lifetime_and_faults[close_fault]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_lifetime_and_faults[normal]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_lifetime_and_faults[retained]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_lifetime_and_faults[rss_fault]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_lifetime_and_faults[unsupported]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_live_resource_release.py::test_release_supervisor_dispatch_is_explicit",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_actual_clean_context_and_managed_exit_zero_native",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_child_witness_before_native_constructor[clean]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_child_witness_before_native_constructor[method]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_child_witness_before_native_constructor[parent]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_child_witness_before_native_constructor[threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_import_stays_stdlib_before_readiness",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_managed_finalizer_and_result_identity_required[early]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_managed_finalizer_and_result_identity_required[foreign]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_managed_finalizer_and_result_identity_required[missing]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_managed_finalizer_and_result_identity_required[valid]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_managed_finalizer_and_result_identity_required[worker_drift]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[method]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[parent]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[server_heavy]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[server_reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[two_workers]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[valid]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_post_constructor_proof_rejects_context_drift[worker_reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[clean]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[existing]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[foreign_server]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[loaded]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[preload]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[root_heavy]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[root_threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[server_heavy]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_prepare_refuses_dirty_or_foreign_server[server_threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_supervisor_constructor_route_is_explicit",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_unproved_context_rejected_before_readiness[fork]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_unproved_context_rejected_before_readiness[forkserver]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_context_transfer.py::test_unproved_context_rejected_before_readiness[unknown]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_teardown.py::test_constructor_module_stdlib_until_readiness",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_teardown.py::test_one_worker_close_order_and_no_rollout[False]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_native_teardown.py::test_one_worker_close_order_and_no_rollout[True]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_physics_credit.py::test_atomic_processes_cannot_overspend",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_physics_credit.py::test_exact_refund_and_duplicate_cannot_invent_credit",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_physics_credit.py::test_existing_ledger_never_overwritten",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_physics_credit.py::test_foreign_stale_or_wrong_binding_denied",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_physics_credit.py::test_unknown_reservation_stays_charged",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bound_proc_proof_rejects_foreign_memory[clean]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bound_proc_proof_rejects_foreign_memory[exiting]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bound_proc_proof_rejects_foreign_memory[reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_bounded_receive_preserves_pipe_fault",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[after_threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[clean]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[foreign_server]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[foreign_worker]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[heavy]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_clean_server_and_ancestry_are_required[threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[foreign]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[missing_finalizer]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[valid]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_exit_receipts_require_complete_managed_cleanup[wrong_order]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[heavy]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[mixed]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[stdlib]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_fresh_worker_cannot_import_before_release[timeout]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[mismatch]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[missing]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[nan]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[negative]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[slow]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[supported]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_paired_conclusion_keeps_negative_and_invalid_denominators[work]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_parent_preparation_stays_stdlib_after_readiness[forkserver]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_parent_preparation_stays_stdlib_after_readiness[spawn]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_process_exit_probe.py::test_proc_evidence_keeps_raw_maps_for_independent_reconstruction",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_actual_bootstrap_and_size_preflight",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_atomic_failures_keep_prior_valid_receipt[nonfinite]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_atomic_failures_keep_prior_valid_receipt[oversize]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_atomic_failures_keep_prior_valid_receipt[partial]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_atomic_failures_keep_prior_valid_receipt[unknown]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_bootstrap_corruption_and_bounds_fail[corrupt]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_bootstrap_corruption_and_bounds_fail[decoded_limit]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_bootstrap_corruption_and_bounds_fail[encode_limit]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_bootstrap_corruption_and_bounds_fail[truncated]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_encodings_preserve_all_fields_and_float_bits",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_four_supervisor_dispatch_and_old_routes",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_gzip_bytes_stay_in_receipt_partition",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_saved_h21_receipt_fidelity[bootstrap]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_saved_h21_receipt_fidelity[main]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_native_teardown.py::test_four_worker_exact_denominators_and_bad_evidence_rejected[close_state]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_native_teardown.py::test_four_worker_exact_denominators_and_bad_evidence_rejected[extra_reset]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_native_teardown.py::test_four_worker_exact_denominators_and_bad_evidence_rejected[guard]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_native_teardown.py::test_four_worker_exact_denominators_and_bad_evidence_rejected[none]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_native_teardown.py::test_four_worker_exact_denominators_and_bad_evidence_rejected[spec]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_native_teardown.py::test_supervisor_dispatch_preserves_existing_schema_commands",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_actual_serial_heaps_guard_and_foreign_survival",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[counts]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[dead]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[duplicate]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[join_timeout]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[missing]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[nonzero]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[normal]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[overall_timeout]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[pending_error]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[pending_timeout]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[pipe]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[present_after_join]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[repeat]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_serial_close_order_and_fail_closed[waiting]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_serial_retirement.py::test_stdlib_adapter_and_runner_until_ready",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_actual_exit_uses_nonzero_retirement_charge",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[strict-v2]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_live_missing_memory_still_faults_in_both_modes[terminal-mm-reserve-v3]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_missing_live_no_baseline_and_expired_hold_fail",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_nonzero_charge_held_and_released_without_zero_substitution",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[live_flag]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[malformed]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_size_field]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[missing_statm]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[mixed_threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[nonzero]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_terminal_rss_reader.py::test_terminal_evidence_requires_complete_bound_single_thread[valid]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_persistent_missing_status_fault_names_bound_pid",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_transient_missing_status_requires_later_real_rss",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_capacity_and_existing_output_reject_before_allocation",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_injected_disk_delay_cannot_block_ram_sampler[disk]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_injected_disk_delay_cannot_block_ram_sampler[private-tmpfs-v1]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_launcher_ready_path_matches_guard_output_and_default_stays_disk",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_missing_tmpfs_rejected_before_scope_creation",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_phase_metadata_and_compact_json_preserve_float_values",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[active]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[corrupt]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[exact]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[mode]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[owner]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[size]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[symlink]",
+      "status": "not_run"
+    },
+    {
+      "node": "tests/test_watchdog_publication.py::test_private_scope_ownership_bounds_and_exact_fault_copy[unknown]",
+      "status": "not_run"
+    }
+  ],
+  "watchdog_reports": [],
+  "credit_audit": null,
+  "credit_events_verified": 0,
+  "slot_evidence": [
+    {
+      "id": "native0",
+      "registered_status": "not_run",
+      "trace_rows": {}
+    }
+  ],
+  "constructor_facts": null,
+  "serial_facts": null,
+  "release_facts": null,
+  "probe_audit": [],
+  "publication_audit": [],
+  "context_audit": [],
+  "four_native_audit": [
+    {
+      "index": 0,
+      "formal_status": "not_run",
+      "native": [],
+      "closed": [],
+      "release": [],
+      "finalizer": [],
+      "constructor_entered": false
+    },
+    {
+      "index": 1,
+      "formal_status": "not_run",
+      "native": [],
+      "closed": [],
+      "release": [],
+      "finalizer": [],
+      "constructor_entered": false
+    },
+    {
+      "index": 2,
+      "formal_status": "not_run",
+      "native": [],
+      "closed": [],
+      "release": [],
+      "finalizer": [],
+      "constructor_entered": false
+    },
+    {
+      "index": 3,
+      "formal_status": "not_run",
+      "native": [],
+      "closed": [],
+      "release": [],
+      "finalizer": [],
+      "constructor_entered": false
+    }
+  ],
+  "runtime_version_gate_passed": false,
+  "control_gate_entered": false,
+  "encoded_deployment": {
+    "path": "runs/v0.0.11/four-native-context-deployment.json.gz",
+    "decoded_bytes": 184186,
+    "decoded_sha256": "c4acb575eb74874ab55d6453de92ea454bb2256c8cd1b60ca3fb41f900cbfd05",
+    "encoded_bytes": 68058,
+    "encoded_sha256": "a43269367816155e89d1af6ab04491f362adcddaa1673a2a5e6702e2ff63e6dd",
+    "encoding": "compact-main-gzip-deployment-v1",
+    "all_decoded_fields_retained": true,
+    "verified_files": 765
+  },
+  "fake_checkpoint_controls": [],
+  "registered_cases": 198,
+  "counts": {
+    "passed": 0,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0,
+    "not_run": 198
+  },
+  "exited_recorded_identities": [
+    {
+      "parent_pid": 1,
+      "pid": 2897341,
+      "start_ticks": 956871351,
+      "state": "R"
+    },
+    {
+      "parent_pid": 2897341,
+      "pid": 2898412,
+      "start_ticks": 956871470,
+      "state": "R"
+    },
+    {
+      "parent_pid": 2898412,
+      "pid": 2900239,
+      "start_ticks": 956871723,
+      "state": "R"
+    },
+    {
+      "parent_pid": 2898412,
+      "pid": 2902010,
+      "start_ticks": 956871959,
+      "state": "R"
+    },
+    {
+      "parent_pid": 2897341,
+      "pid": 2906154,
+      "start_ticks": 956872453,
+      "state": "R"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.deferred-native.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/four-native-context-01/result.json": {
+      "bytes": 2413,
+      "sha256": "a3300cf9b99755706786224168b43772e10ebd8ac316daff6144c2852843be66"
+    },
+    "runs/v0.0.11/four-native-context-01/runtime.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/four-native-context-01/sync.log": {
+      "bytes": 1227,
+      "sha256": "69b1891c05087259f8977153e0ad3a61af54c676b62f1928ff738bcbb234270e"
+    },
+    "runs/v0.0.11/four-native-context-deployment.encoding.json": {
+      "bytes": 260,
+      "sha256": "16f2bb60c68024dc278a9a711aa1f7163857578415ca7f50a51b4014f871ffb6"
+    },
+    "runs/v0.0.11/four-native-context-deployment.json.gz": {
+      "bytes": 68058,
+      "sha256": "a43269367816155e89d1af6ab04491f362adcddaa1673a2a5e6702e2ff63e6dd"
+    },
+    "runs/v0.0.11/four-native-context-launch.log": {
+      "bytes": 350,
+      "sha256": "ecf60996bf150c155584b84f8c6630caaaf6ba8e8ec86c5db9a060de8addf1fb"
+    }
+  },
+  "fixture_bytes": 0,
+  "receipt_bytes": 72308,
+  "supervision": {
+    "competitive_training_runs": 0,
+    "error": "TimeoutError: Native parity first wall limit",
+    "final_live_recorded": [],
+    "formal_boxing_games": 0,
+    "initial_capacity": {
+      "available_memory_bytes": 32974970880,
+      "fixture_bytes": 0,
+      "free_disk_bytes": 201554968576,
+      "load": [
+        58.8369140625,
+        19.7861328125,
+        11.30078125
+      ],
+      "receipt_bytes": 68318
+    },
+    "owned_identities": [
+      {
+        "parent_pid": 2897341,
+        "pid": 2898412,
+        "start_ticks": 956871470,
+        "state": "S"
+      },
+      {
+        "parent_pid": 2898412,
+        "pid": 2900239,
+        "start_ticks": 956871723,
+        "state": "R"
+      },
+      {
+        "parent_pid": 2898412,
+        "pid": 2902010,
+        "start_ticks": 956871959,
+        "state": "R"
+      },
+      {
+        "parent_pid": 2897341,
+        "pid": 2906154,
+        "start_ticks": 956872453,
+        "state": "R"
+      }
+    ],
+    "protocol_sha256": "384d6b81e77fd46f948fdfe8687541f6750332be4ab716f0e39f37953809006b",
+    "rows": [
+      {
+        "arm": "none",
+        "expected_worker_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "id": "native0",
+        "method": "forkserver",
+        "seed": 1097,
+        "status": "not_run",
+        "variant": "four-native-forkserver-release-v1"
+      }
+    ],
+    "schema": "joxing-four-native-context-v1",
+    "source_commit": "7244b5c691701402466a0bf6773e0372cd8a4326",
+    "stages": [
+      {
+        "capacity": {
+          "available_memory_bytes": 32523837440,
+          "fixture_bytes": 0,
+          "free_disk_bytes": 199710154752,
+          "load": [
+            83.00634765625,
+            26.248046875,
+            13.494140625
+          ],
+          "receipt_bytes": 70704
+        },
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "elapsed_s": 9.4734918307513,
+        "peak_sampled_rss_bytes": 151060480,
+        "process": {
+          "parent_pid": 2897341,
+          "pid": 2898412,
+          "start_ticks": 956871470,
+          "state": "R"
+        },
+        "returncode": 0,
+        "stage": "sync",
+        "status": "completed",
+        "wall_s": 9.827142668887973
+      },
+      {
+        "capacity": {
+          "available_memory_bytes": 31025491968,
+          "fixture_bytes": 0,
+          "free_disk_bytes": 198752526336,
+          "load": [
+            79.49755859375,
+            27.3740234375,
+            13.998046875
+          ],
+          "receipt_bytes": 71540
+        },
+        "command": [
+          "/home/ubuntu/joxing/four-native-context-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import sys,numpy,mujoco,torch,stable_baselines3;v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__};print(v);assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3', 'sb3': '2.7.1', 'torch': '2.10.0+cpu'}"
+        ],
+        "elapsed_s": 13.143565524369478,
+        "peak_sampled_rss_bytes": 434843648,
+        "process": {
+          "parent_pid": 2897341,
+          "pid": 2906154,
+          "start_ticks": 956872453,
+          "state": "R"
+        },
+        "stage": "runtime",
+        "status": "failed"
+      }
+    ],
+    "status": "halted",
+    "supervisor": {
+      "parent_pid": 1,
+      "pid": 2897341,
+      "start_ticks": 956871351,
+      "state": "R"
+    },
+    "wall_s": 24.31185842305422
+  },
+  "observed_utc": "2026-11-02T15:09:40Z"
+}

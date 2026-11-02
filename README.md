@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H22 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H23 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -15,10 +15,11 @@ the unchanged100ms limit. One close took336.76ms; no controlled native speedup o
 boxing gain claimed. [Next: FOUR-worker close proof](docs/FOUR_NATIVE_CONTEXT_MISSION.md)
 includes a lossless receipt preflight to fit the remaining budget.
 
-**H22 registered:** [four-worker proof](docs/FOUR_NATIVE_CONTEXT_MISSION.md)
-has188local passes/10Linux-only skips; all198Linux checks and lossless receipt
-preflight precede the bounded800-preparation-step attempt. Formal native outcome
-is not_run atregistration; the same2s total close/100ms monitoring gates apply.
+**H22 stopped before native work:** [audited result](docs/FOUR_NATIVE_CONTEXT_RESULTS.md).
+The runtime import stage exceeded its unchanged deadline before198Linux checks;
+all four worlds remain not_run,0new physics. Host load was high; the precise
+stall cause is unknown. [Next: host admission and import provenance](docs/RESOURCE_ADMISSION_MISSION.md)
+keeps deadlines and native gates while avoiding an unchanged retry.
 
 **HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
 passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus
