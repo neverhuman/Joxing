@@ -1,0 +1,56 @@
+{
+  "schema": "joxing-exit-probe-development-v1",
+  "scope": "Mac source/fault controls only; no registered six-slot worker outcomes/native physics/learning",
+  "checks": [
+    {
+      "passed": 59,
+      "skipped": 1,
+      "wall_s": 2.63,
+      "scope": "new probe/release/serial controls"
+    },
+    {
+      "passed": 114,
+      "skipped": 4,
+      "wall_s": 3.72,
+      "scope": "new probe plus complete previous H18regression set"
+    },
+    {
+      "passed": 64,
+      "skipped": 4,
+      "wall_s": 0.59,
+      "scope": "registered68case target subset"
+    }
+  ],
+  "final_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_process_exit_probe.py tests/test_serial_retirement.py tests/test_terminal_rss_reader.py tests/test_trial_rss_watchdog.py --junitxml=runs/v0.0.11/exit-probe-development-03.xml",
+  "ruff": {
+    "status": "passed",
+    "initial_faults": [
+      "I001 import order",
+      "RUF007 pairwise",
+      "F401 unused import"
+    ],
+    "fixed_before_freeze": true
+  },
+  "registration_helper_fault": {
+    "error": "ModuleNotFoundError: joxing",
+    "cause": "System Python helper tried package import outside project env",
+    "repair": "Read literal SLOTS with stdlib AST; no module import or formal execution",
+    "physics": 0
+  },
+  "source_files": {
+    "src/joxing/process_exit_probe.py": {
+      "bytes": 14004,
+      "sha256": "033c47675301f877e84d8d06ffd40a48da31ef48899674ef521503351fa4a73f"
+    },
+    "scripts/qualify_deferred_trial.py": {
+      "bytes": 20049,
+      "sha256": "33a2288552018ec54957789ab238a2d2250d4777368c161244fefed6a6c66748"
+    },
+    "tests/test_process_exit_probe.py": {
+      "bytes": 5904,
+      "sha256": "3e688c8cfe581cdd76ec1f646302f368cbd8ecfdfa8af1db15c3b343dff198a3"
+    }
+  },
+  "physics": 0,
+  "formal_results": "not_run"
+}

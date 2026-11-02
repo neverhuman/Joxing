@@ -29,7 +29,7 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H16](H16.md)|Can exit flags/statm explain missing live-looking RSS?|Reader35controls +one native teardown pass; four-worker hold fails122.75ms|
 |[H17](H17.md)|Can serial retirement avoid overlapping exit tails?|75Linux controls pass; native2s close fails before cleanup105.9ms hold fault|
 |[H18](H18.md)|Can closed native buffers be released before process exit?|93Linux +one native lifetime gate pass;90.66MB RSS drop,650ms exit tail remains|
-|[H19](H19.md)|Does process backend explain remaining exit latency?|Worker-ready zero-physics paired import/exit diagnostic; not implemented/run|
+|[H19](H19.md)|Does process backend explain remaining exit latency?|Source64local pass/4Linux skips;68case/six-slot zero-physics protocol registered|
 
 **Latest: H18one-worker native lifetime proof qualified; no demonstrated four-worker latency solution. Next: H19zero-physics backend probe before more native work. Next unused ID: H20.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.

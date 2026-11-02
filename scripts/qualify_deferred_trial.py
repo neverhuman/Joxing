@@ -28,6 +28,7 @@ def runner_module(schema):
         "joxing-native-teardown-v1": "joxing.native_teardown",
         "joxing-serial-native-teardown-v1": "joxing.serial_native_teardown",
         "joxing-release-native-teardown-v1": "joxing.release_native_teardown",
+        "joxing-process-exit-probe-v1": "joxing.process_exit_probe",
     }[schema]
 
 
@@ -45,6 +46,7 @@ def main():
             "joxing-native-teardown-v1",
             "joxing-serial-native-teardown-v1",
             "joxing-release-native-teardown-v1",
+            "joxing-process-exit-probe-v1",
         )
         or canonical(p) != args.protocol_sha256
     ):
@@ -113,6 +115,7 @@ def main():
 
     verify()
     serial_constructor = p["schema"] == "joxing-serial-native-teardown-v1"
+    process_probe = p["schema"] == "joxing-process-exit-probe-v1"
     constructor_only = serial_constructor or p["schema"] in (
         "joxing-native-teardown-v1",
         "joxing-release-native-teardown-v1",
@@ -373,7 +376,11 @@ def main():
         report["control_counts"] = checked["counts"]
         if not checked["qualified"]:
             raise ValueError("Native prerequisite controls incomplete")
-        ledger = PhysicsCredit.create(ledger_path, binding, p["physics_limit"])
+        if process_probe:
+            if p["physics_limit"] != 0:
+                raise ValueError("Import-only probe physical credit must be zero")
+        else:
+            ledger = PhysicsCredit.create(ledger_path, binding, p["physics_limit"])
         for slot in report["rows"]:
             slot["status"] = "unconfirmed"
             name = slot["id"]
@@ -395,6 +402,14 @@ def main():
                 str(out / (name + "-watchdog.ready")),
             ]
             stage(name, command, p["per_slot_wall_s"], slot=slot)
+            if process_probe:
+                facts = json.loads((fixtures / name / "probe-result.json").read_text())
+                if any(
+                    facts[k] != 0 for k in ("physics", "actors", "updates", "inference")
+                ):
+                    raise ValueError("Import-only work counters")
+                slot.update(status="completed", facts=facts)
+                continue
             if constructor_only:
                 facts = json.loads(
                     (fixtures / name / "constructor-result.json").read_text()
@@ -442,7 +457,13 @@ def main():
             report["physics_credit"] = ledger.snapshot()
             if report["physics_credit"]["pending"]:
                 raise ValueError("Unknown physics work cannot qualify")
-        if constructor_only:
+        if process_probe:
+            from joxing.process_exit_probe import conclude
+
+            report["comparison"] = conclude(
+                {s["id"]: str(fixtures / s["id"]) for s in report["rows"]}
+            )
+        elif constructor_only:
             report["constructor_gate_qualified"] = True
         else:
             from joxing.deferred_qualification import compare_slots

@@ -1,3 +1,19 @@
+# H19 paired import-only exit probe registered — Nov2 Mountain
+
+Current packet experiments/v0.0.11/process-exit-backend-protocol.json/e0e76c36.
+Process-local context/clean-server/IPC/cleanup/payload/source controls implemented;
+local64pass/4Linux skips for registered68cases, full114pass/4skip/Ruffpass.
+Six fresh roots in fixed order, seeds1097/1098/1099, spawn/forkserver pairs,
+0native model/data/physics/actor/inference/update. Source/runtime/CPython exit
+files frozen; clean single-thread server must be proved before worker imports.
+Same2s close/100ms monitor/7GiBplanned/8GiBhard/16process limits.90swhole/
+12sslot/one payload worker/4MiBfixtures/768KiBreceipts in original remainder.
+68Linux controls must pass before probes. Hypothesis negative remains a completed
+negative result; mechanics fault stops and preserves remaining not_run. No backend
+or default adoption, native latency/boxing/training-throughput claim. Target
+NOT_RUN atregistration; publicfreeze/anonymousverify/freshcapacity before launch.
+Current detail docs/PROCESS_EXIT_BACKEND_MISSION.md, research/H19.md.
+
 # Current: H18 one-worker lifetime proof qualifies; H19 exit probe next — Nov2 Mountain
 
 e3d1272/94750277 passes93Linux controls and ONE native1VALID/0INVALID:

@@ -1,6 +1,13 @@
 # Next: isolate process-exit latency without native physics
 
-Status: H19 worker-ready plan, NOT implemented/preregistered/run. Integration
+Status: implemented/preregistered, target NOT_RUN atfreeze. Protocol
+experiments/v0.0.11/process-exit-backend-protocol.json, canonical
+e0e76c36371e66f3ae615de3f8837489bf8f7ca14862c54b6b74f4e3f47339fb.
+Registered68case Linux subset: local64pass/4Linux skips; full previous-regression
+set114pass/4skip/Ruffpass. Reused supervisor scripts/qualify_deferred_trial.py
+through explicit new probe schema (no separate duplicate supervisor). Original
+source/defaults and lifetime/physical gates unchanged. Historical plan below.
+Integration
 owner current agent, no agents/concurrent writers. Workspace
 `/Users/bentaylor/Documents/ChatGPT/JOXING`, RTK for shell commands.
 
