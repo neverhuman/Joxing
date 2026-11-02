@@ -1,3 +1,12 @@
+# Current: strict H25prerequisite failed; do not repeat or promote
+
+Nov2frozen c1dd75d/a2e057c3:21target controls pass; firstboundary200decode fails
+385/1400values at<=7.45e-9 with original D0runtime/source.0physics, twoother
+prerequisites and all6native replay rows NOT_RUN. Independently audited failure;
+all5owned PIDs exited. [Complete outcome and limits](MAC_NATIVE_REPLAY_PREFLIGHT_RESULTS.md).
+Next is the separate [H26Mac-native reference mission](MAC_NATIVE_REFERENCE_MISSION.md),
+NOTpassing or loosening H25. Preregistration below is retained historically.
+
 # H25zero-step prerequisite implemented, six native rows still NOT_RUN
 
 The Mac's H24source runtime is NumPy2.5.4; this H25preflight instead uses the
