@@ -1,0 +1,46 @@
+{
+  "status": "verified_saved_deferrals",
+  "protocol_sha256": "fbb5961fb9c82fc28e581145b3e1d99591d612dbf4c7560fb677c6943f2566c1",
+  "history_sha256": "a4ed9765bd429ca0b132a81bddc5a184a1200bd31ea28ccd0c959c63cc02e65c",
+  "history_bytes": 5254,
+  "deferrals": [
+    {
+      "history_index": 0,
+      "status": "deferred_after_checkout",
+      "source_commit": "1c9415240368d78defe5d85f7367150d6c6434fd",
+      "initial_pair_status": "admitted",
+      "spacing_s": 10.131583182141185,
+      "post_reasons": [
+        "io_pressure"
+      ],
+      "post_io_full_avg10": 4.86,
+      "post_memory_full_avg10": 0.06,
+      "observed_transaction_span_s": 38.156887739896774
+    },
+    {
+      "history_index": 1,
+      "status": "deferred_after_checkout",
+      "source_commit": "1c9415240368d78defe5d85f7367150d6c6434fd",
+      "initial_pair_status": "admitted",
+      "spacing_s": 10.120854647830129,
+      "post_reasons": [
+        "memory_pressure"
+      ],
+      "post_io_full_avg10": 0.0,
+      "post_memory_full_avg10": 1.79,
+      "observed_transaction_span_s": 18.943874578922987
+    }
+  ],
+  "native_worlds": {
+    "attempted": 0,
+    "valid": 0,
+    "invalid": 0,
+    "not_run": 4
+  },
+  "controls_not_run": 247,
+  "separate_admission_transaction_spans_retained": true,
+  "source_files_verified": 763,
+  "historical_objects_verified": 5,
+  "source_commit": "1c9415240368d78defe5d85f7367150d6c6434fd",
+  "no_formal_outputs": true
+}

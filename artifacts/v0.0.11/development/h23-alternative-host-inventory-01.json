@@ -1,0 +1,59 @@
+{
+  "scope": "Read-only availability after H23deferrals; not admission/qualification or throughput. No migration or job launch.",
+  "snapshots": [
+    {
+      "host": "xbabe2",
+      "utc": "2026-11-02T16:25:24Z",
+      "platform": "Linux",
+      "cpus": 128,
+      "load": [
+        50.78564453125,
+        46.41796875,
+        47.94873046875
+      ],
+      "disk_free": 572595159040,
+      "scope": "Read-only availability, no qualification or benchmark",
+      "memory_available_kib": 80692544,
+      "affinity_cpus": 102,
+      "pressure": {
+        "cpu": "some avg10=1.99 avg60=1.81 avg300=1.74 total=35271888946\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "io": "some avg10=10.77 avg60=10.36 avg300=10.56 total=285114769603\nfull avg10=8.50 avg60=8.55 avg300=8.94 total=260140969170\n",
+        "memory": "some avg10=0.66 avg60=1.10 avg300=1.87 total=34853226116\nfull avg10=0.66 avg60=1.09 avg300=1.85 total=33955166705\n"
+      }
+    },
+    {
+      "host": "xbabe3",
+      "utc": "2026-11-02T16:25:24Z",
+      "platform": "Linux",
+      "cpus": 128,
+      "load": [
+        17.28125,
+        10.48876953125,
+        11.52587890625
+      ],
+      "disk_free": 96181485568,
+      "scope": "Read-only availability, no qualification or benchmark",
+      "memory_available_kib": 108788716,
+      "affinity_cpus": 102,
+      "pressure": {
+        "cpu": "some avg10=0.04 avg60=0.02 avg300=0.00 total=503598962396\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+        "io": "some avg10=25.59 avg60=12.83 avg300=8.49 total=80344589907\nfull avg10=24.89 avg60=12.47 avg300=8.33 total=78368790220\n",
+        "memory": "some avg10=3.91 avg60=1.18 avg300=0.27 total=54591654366\nfull avg10=3.69 avg60=1.12 avg300=0.26 total=53335987885\n"
+      }
+    },
+    {
+      "host": "xbabe4",
+      "utc": "2026-11-02T16:25:24Z",
+      "platform": "Darwin",
+      "cpus": 32,
+      "load": [
+        5.40673828125,
+        4.90087890625,
+        4.6552734375
+      ],
+      "disk_free": 80998850560,
+      "scope": "Read-only availability, no qualification or benchmark",
+      "memory_bytes": 549755813888
+    }
+  ]
+}

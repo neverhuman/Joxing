@@ -1,3 +1,15 @@
+## H23read-only availability checkpoint —2026-11-02 16:25 UTC
+
+[Saved snapshots](../artifacts/v0.0.11/development/h23-alternative-host-inventory-01.json):
+xbabe2~82.6GBavailable/572.6GBdisk, IO full.avg10=8.50%; xbabe3~111.4GBavailable/
+96.2GBdisk, IO full24.89%/memory full3.69%. Macxbabe4:32CPUs/load5.41/80.999GBdisk,
+512GiB TOTALmemory, available RAMnot measured. These transient readings are not
+benchmarks/reservations/native qualifications. No migration/simulation/services/
+drivers changed. H23onxbabe1deferred twice after fresh checks; [checkpoint and
+fixed-source recheck](RESOURCE_ADMISSION_CHECKPOINT.md). Current Linuxpressure
+readings exceed its registered1%full IO/memory admission policy. Previous
+qualified v9throughput remains scoped to its own workload below.
+
 # Compute inventory and HPC approach
 
 Latest completed v0.0.9: [exact scalar CPU scaling and honest negative optimization results](V0.0.9_RESULTS.md). On xbabe3median steady parent TPS at1/2/4/8/16workers:54.77/106.98/201.20/358.85/520.66; startup-inclusive12.20/23.09/45.24/79.90/124.88. All78cases/62parallel histories match serial; both16worker repeats complete. xbabe1capacity-stopped attempt is retained separately, never pooled. Full165Linux tests pass before H3; collector1.0183x fails1.2x gate, batching still fails1e-6parity. Baseline remains default. Workload includes scalar actor, snapshots/hash, native2ms/all700 physics and evidence/resets; excludes optimization/opponent/referee. All owned jobs exited/source unchanged. [Raw/accounting](../artifacts/v0.0.9/final-accounting.json). [v10motor pilot](V0.0.10_MISSION.md) uses at most4persistent workers with fresh capacity/reservation; global owned ceiling16/one thread each remains. GPUs are available only transiently; physics feature/parity remains unqualified.

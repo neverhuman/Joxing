@@ -1,3 +1,10 @@
+# Current: H23resource-deferred, fixed source epoch ready
+
+Read [checkpoint/receipts/frozen recheck command](RESOURCE_ADMISSION_CHECKPOINT.md) first.
+Two admission deferrals, no formal runtime/tests/native attempted. Keep policy/
+caps/source fixed; use authentic frozen helper checkout when rechecking.
+Historical registered plan below; admission is not a native success.
+
 # H23: admit a quiet host, expose runtime import progress, retain full receipts
 
 Status: implemented/preregistered; formal admission/native target NOT_RUN atfreeze.

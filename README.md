@@ -21,10 +21,11 @@ all four worlds remain not_run,0new physics. Host load was high; the precise
 stall cause is unknown. [Next: host admission and import provenance](docs/RESOURCE_ADMISSION_MISSION.md)
 keeps deadlines and native gates while avoiding an unchanged retry.
 
-**H23 registered:** [admission and provenance](docs/RESOURCE_ADMISSION_MISSION.md)
-has233local passes/14Linux-only skips. Its247Linux checks and live admission/
-receipt preflight precede conditional four-worker physics; native body and
-existing deadlines stay unchanged. Formal outcome not_run atregistration.
+**H23 awaits resources:** [readiness checkpoint](docs/RESOURCE_ADMISSION_CHECKPOINT.md).
+Local233tests passed/14Linux-only skips. Two admission checks deferred before
+runtime/tests/physics when fresh pressure exceeded the fixed policy. The same
+frozen epoch remains ready; all247Linux checks and four worlds are not_run.
+No policy was loosened or job duplicated.
 
 **HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
 passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus

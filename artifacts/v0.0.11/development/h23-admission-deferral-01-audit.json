@@ -1,0 +1,27 @@
+{
+  "status": "verified_deferral_not_native_attempt",
+  "protocol_sha256": "fbb5961fb9c82fc28e581145b3e1d99591d612dbf4c7560fb677c6943f2566c1",
+  "policy_recomputed_independently": true,
+  "initial_pair_spacing_s": 10.131583182141185,
+  "post_checkout_rejection": [
+    "io_pressure"
+  ],
+  "post_checkout_io_full_avg10": 4.86,
+  "launch_transaction_observed_span_s": 38.156887739896774,
+  "span_scope": "Separate source/admission transaction, not active formal runtime envelope; no launcher/model/process started",
+  "native_worlds": {
+    "attempted": 0,
+    "valid": 0,
+    "invalid": 0,
+    "not_run": 4
+  },
+  "controls": {
+    "not_run": 247
+  },
+  "source_files_verified": 763,
+  "historical_objects_verified": 5,
+  "source_commit": "1c9415240368d78defe5d85f7367150d6c6434fd",
+  "no_execution_outputs": true,
+  "no_runtime_env": true,
+  "live_writers": []
+}
