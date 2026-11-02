@@ -1,0 +1,26 @@
+{
+  "scope": "Mac parser only",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_exit_memory_probe.py",
+  "passed": 4,
+  "skipped": 2,
+  "wall_s": 0.01,
+  "ruff": "passed",
+  "kernel_prerequisite": {
+    "kernel": "6.8.0-134-generic",
+    "header": "/usr/src/linux-headers-6.8.0-134-generic/include/linux/sched.h",
+    "bytes": 62423,
+    "sha256": "5c8a0686b408bcfef1e66cf043a04405a075d1e5572ad0a04cd1de3ecbb2373a",
+    "PF_EXITING": 4
+  },
+  "source_files": {
+    "scripts/probe_exit_memory.py": {
+      "bytes": 5562,
+      "sha256": "f9dfc65c9d6b0d10cce79ede9b48f5d0b1b9becd661d23e2105d74d8e524c695"
+    },
+    "tests/test_exit_memory_probe.py": {
+      "bytes": 1828,
+      "sha256": "4210a0e601b4539ca817be395192e98a54de10dcde2685dd519932fad56f4bba"
+    }
+  },
+  "target": "not_run at registration"
+}

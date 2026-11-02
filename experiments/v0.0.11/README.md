@@ -1,3 +1,24 @@
+# H15 second packet invalid; H16 zero-physics exit diagnosis next — Nov2 Mountain
+
+Current protocol experiments/v0.0.11/exit-memory-diagnostic-protocol.json;
+mission docs/EXIT_MEMORY_DIAGNOSTIC_MISSION.md; research/H16.md. No native RL
+retry until the monitor's missing-RSS behavior is explained and a fix qualifies.
+
+763f8af/9352ee44 passes45Linux controls, then fails again on unreadable live RSS:
+worker0 PID2569513/start954309674 after its complete close trace. LegacyA actual
+64transitions/12updates/5086exact steps;1INVALID/3NOT_RUN, no semantic-result.
+Second independent725source/640credit-event/21recorded-exit/332rawfile10831501byte
+audit passes. Aggregate2INVALID/6NOT_RUN,10172steps/24reference updates. No candidate
+parity, measured saving, concurrency/default/full-source or boxing qualification.
+
+H16registers sequential64MiB normal/512MiB direct-exit heaps, matching PID/start,
+1ms state/flags/VmRSS/statm/thread probes. Installed kernel header confirms
+PF_EXITING0x4; production cause is not yet proved. Six Linux cases validate data
+quality; actual support/unobserved/unclassified verdict separate. No physics,
+learning, model, host service/driver or production monitor-policy change.
+Mac4pass/2Linux skip/Ruffpass. Freeze/anonymousverify before fresh boundedroot,
+60s whole/2MiBraw/one heap at a time; all original scientific gates unchanged.
+
 # H15 first native packet invalid; coherent RSS read repair registered — Nov2 Mountain
 
 75de631/protocold0d72305:23Linux controls pass. Reference legacyA actually reaches
