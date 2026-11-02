@@ -40,7 +40,24 @@ def constructor_worker(*args, folder, **kwargs):
     return result
 
 
-def run(folder, slot, packet, ledger_path, binding, ready):
+def run(
+    folder,
+    slot,
+    packet,
+    ledger_path,
+    binding,
+    ready,
+    *,
+    start_method="spawn",
+    worker_factory=None,
+    after_construct=None,
+    expected_state=None,
+):
+    if start_method not in ("spawn", "forkserver") or (
+        start_method == "forkserver"
+        and (worker_factory is None or after_construct is None or not expected_state)
+    ):
+        raise ValueError("Explicit native context proof required")
     wait_ready(ready, 15)
     from stable_baselines3.common.vec_env import SubprocVecEnv
 
@@ -54,7 +71,7 @@ def run(folder, slot, packet, ledger_path, binding, ready):
     owner, vec, failure = VectorOwner(), None, None
     try:
         factory = partial(
-            constructor_worker,
+            worker_factory or constructor_worker,
             str(folder / "trial"),
             0,
             packet["seed"],
@@ -67,7 +84,9 @@ def run(folder, slot, packet, ledger_path, binding, ready):
         adapter = serial_vec_class(
             SubprocVecEnv, folder / "serial-close.jsonl", packet["close_deadline_s"]
         )
-        vec = owner.construct(adapter, [factory], start_method="spawn")
+        vec = owner.construct(adapter, [factory], start_method=start_method)
+        if after_construct is not None:
+            after_construct(vec)
         specifications, snapshots = (
             vec.env_method("specification"),
             vec.env_method("snapshot"),
@@ -103,6 +122,11 @@ def run(folder, slot, packet, ledger_path, binding, ready):
             "normalizer": "none",
         }
         write_json(folder / "before-close.json", before)
+        if (
+            expected_state is not None
+            and before["initial_state_hash"] != expected_state
+        ):
+            raise ValueError("Native context frozen state mismatch")
         owner.close()
         closed = [
             json.loads(line)

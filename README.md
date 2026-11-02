@@ -16,6 +16,11 @@ not RL training throughput.** [Next: ONE native700-muscle context/state/lifetime
 before four-worker or learning integration. [H20publication prerequisite](docs/MONITOR_PUBLICATION_RESULTS.md)
 qualified independently; physical balance/boxing gates remain open.
 
+**H21 registered:** [one native context-transfer proof](docs/NATIVE_CONTEXT_TRANSFER_MISSION.md)
+now has165local passes/7Linux-only skips. Its172case Linux gate precedes ONE
+700-muscle/200-preparation-step constructor, with exact frozen state and unchanged
+resource/close limits. Formal native outcome remains not_run atregistration.
+
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations
 valid and both replays exact. Survival changed−0.066s/+0.016s, with1/8five-second

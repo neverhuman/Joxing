@@ -1,6 +1,9 @@
 # H21: one native forkserver constructor and release proof
 
-Status: worker-ready implementation plan; NOT implemented/preregistered/run.
+Status: implemented/preregistered; formal native target NOT_RUN atfreeze.
+Protocol native-context-transfer-protocol.json/da32adcd,172Linux controls first.
+Local165pass/7Linux skips/Ruffpass; all prior attempts/caps retained.
+Historical implementation plan below; execute the frozen protocol, not prose proposals.
 Owner current integration agent only. No delegates/concurrent writers. Workspace
 /Users/bentaylor/Documents/ChatGPT/JOXING; prefix shell commands with RTK.
 

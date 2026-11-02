@@ -31,6 +31,7 @@ def runner_module(schema):
         "joxing-release-native-teardown-v1": "joxing.release_native_teardown",
         "joxing-process-exit-probe-v1": "joxing.process_exit_probe",
         "joxing-watch-publication-v1": "joxing.process_exit_probe",
+        "joxing-native-context-transfer-v1": "joxing.context_native_teardown",
     }[schema]
 
 
@@ -55,6 +56,7 @@ def main():
             "joxing-release-native-teardown-v1",
             "joxing-process-exit-probe-v1",
             "joxing-watch-publication-v1",
+            "joxing-native-context-transfer-v1",
         )
         or canonical(p) != args.protocol_sha256
     ):
@@ -132,6 +134,7 @@ def main():
     constructor_only = serial_constructor or p["schema"] in (
         "joxing-native-teardown-v1",
         "joxing-release-native-teardown-v1",
+        "joxing-native-context-transfer-v1",
     )
     out = ROOT / p["output"]
     out.parent.mkdir(parents=True, exist_ok=True)

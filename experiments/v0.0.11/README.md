@@ -1,3 +1,26 @@
+# H21native context transfer implemented and registered — Nov2 Mountain
+
+Current packet experiments/v0.0.11/native-context-transfer-protocol.json /
+da32adcd079bc23cf5220f031bb788d4706b90b8cd212ade659afaf564d9334a.
+Local165pass/7Linux skips for172exact registered cases, Ruffpass. H18default
+spawn behavior retained; only explicit proof hooks/context variant opt in. Fresh
+stdlib-only root starts clean empty-preload server before heavy parent imports;
+actual worker method/ancestry/raw proc witness precedes native constructor AFTER
+SB3library imports (labelled honestly), server rechecked after construction.
+Exact H18state/spec/700muscles/200prep/0rollout/actor/inference/update, livegraph
+release and managed finalizer required. Same100ms gap/probe/positive observed
+native retirement,2s close/RSS gates. No native outcome yet; target NOT_RUN.
+
+172Linux source/fault/actual-stdlib controls must pass BEFORE one native row.
+80swhole/35sslot/200physics/4MiBfixtures/384KiBreceipts/1MiBprivateIPC, one worker/
+thread. Publicfreeze/anonymousverify/freshcapacity precede launch. All12prior
+packets16458physics/336.200048s/34554362fixture/3641782receipt bytes retained;
+original remainder223542steps/263.799952s/1039187462fixture/552522receipt bytes.
+No cap/default/model/rules/service change, native speedup comparison, four-worker/
+learning-parity/boxing promotion or v11tag. Worker-ready detailed mission:
+docs/NATIVE_CONTEXT_TRANSFER_MISSION.md. Newdevelopment faults and repairs kept
+in artifacts/v0.0.11/development/native-context-transfer-development-01.json.
+
 # H19paired exit probe qualifies; next ONE-native context proof — Nov2 Mountain
 
 Frozen5a9be04/aefeeb4b passes85Linux controls and all6fresh import-only comparison

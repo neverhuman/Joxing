@@ -227,8 +227,13 @@ def test_release_supervisor_dispatch_is_explicit():
     )
 
 
-@pytest.mark.parametrize("fault", ["none", "close_fault", "changed_after_close"])
-def test_before_close_receipt_survives_native_close_fault(tmp_path, monkeypatch, fault):
+@pytest.mark.parametrize("transport", ["default", "proved_forkserver"])
+@pytest.mark.parametrize(
+    "fault", ["none", "close_fault", "changed_after_close", "frozen_state"]
+)
+def test_before_close_receipt_survives_native_close_fault(
+    tmp_path, monkeypatch, fault, transport
+):
     from stable_baselines3.common import vec_env
 
     from joxing import release_native_teardown as nt
@@ -246,7 +251,11 @@ def test_before_close_receipt_survives_native_close_fault(tmp_path, monkeypatch,
 
     class Vec:
         def __init__(self, factories, **kwargs):
-            assert len(factories) == 1 and kwargs == {"start_method": "spawn"}
+            assert len(factories) == 1 and kwargs == {
+                "start_method": "forkserver"
+                if transport == "proved_forkserver"
+                else "spawn"
+            }
             self.processes = []
             (folder / "traces").mkdir()
             (folder / "traces/native-world-0.jsonl").write_text(
@@ -303,14 +312,26 @@ def test_before_close_receipt_survives_native_close_fault(tmp_path, monkeypatch,
         "fixture",
         tmp_path / "ready",
     )
+    hooks = []
+    options = {}
+    if transport == "proved_forkserver":
+        options = {
+            "start_method": "forkserver",
+            "worker_factory": lambda: None,
+            "after_construct": lambda vec: hooks.append("context_proved"),
+            "expected_state": nt.value_digest(state),
+        }
+    if fault == "frozen_state":
+        options["expected_state"] = "wrong"
     if fault == "none":
-        r = nt.run(*args)
+        r = nt.run(*args, **options)
         assert (
             r["preparation_steps"] == 200
             and r["resource_release"] == "live-graph-release-v1"
         )
     else:
         with pytest.raises((RuntimeError, ValueError)):
-            nt.run(*args)
+            nt.run(*args, **options)
         assert not (folder / "constructor-result.json").exists()
     assert (folder / "before-close.json").exists()
+    assert hooks == (["context_proved"] if transport == "proved_forkserver" else [])
