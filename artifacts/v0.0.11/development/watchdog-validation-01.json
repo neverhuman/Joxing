@@ -1,0 +1,20 @@
+{
+  "scope": "Mac development only",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_trial_rss_watchdog.py",
+  "passed": 9,
+  "skipped": 2,
+  "skip_reason": "Linux /proc integration",
+  "wall_s": 0.03,
+  "ruff": "passed",
+  "source_files": {
+    "scripts/trial_rss_watchdog.py": {
+      "bytes": 9724,
+      "sha256": "c904ffc740a03756baa0e018df5dad902d56999821c823079b2a4503f73ceb55"
+    },
+    "tests/test_trial_rss_watchdog.py": {
+      "bytes": 5726,
+      "sha256": "46b9c5a9d6f5470d45eef5194179fe703ee3105a0f7c298c3e0b045e1a0629af"
+    }
+  },
+  "formal_target": "not_run"
+}

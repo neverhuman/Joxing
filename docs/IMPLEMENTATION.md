@@ -1,3 +1,19 @@
+# H15 fast RSS guard controls registered — Nov1 Mountain
+
+Next executable protocol: experiments/v0.0.11/watchdog-controls-protocol.json.
+Twenty Linux cases qualify a stdlib-only independent watcher before more native
+startup. Mac development9pass/2Linux skips; no target result yet. Probe every
+owned thread's children, bind PID/start, read only RSS/status; PSS stays elsewhere.
+Real test-owned grandchild allocation must stop on planned RSS below hard limit,
+foreign test process survives; max sample/probe gap100ms, nominal20ms. Normal
+exit and ancestry controls also required. No physics or learning in this packet.
+
+Freeze source/protocol publicly before fresh dedicated xbabe1root. Existing8GiB/
+16process/one-thread/1GiBfixture/4MiBreceipt limits remain; bounded whole360s,
+120scombined tests/60spermodule, first limit. Audit all outcomes/identities/raw
+hashes independently. This is a prerequisite within the current deferred-
+allocation mission, not a boxing or complete source-gate qualification.
+
 # H15 measured allocation; deferred-lifecycle parity is next — Nov1 Mountain
 
 Current worker-ready mission: docs/DEFERRED_EVALUATION_ALLOCATION_MISSION.md.
