@@ -22,6 +22,14 @@ sys.path.insert(0, str(ROOT / "src"))
 from joxing.physics_credit import PhysicsCredit
 
 
+def runner_module(schema):
+    return {
+        "joxing-deferred-native-parity-v1": "joxing.deferred_qualification",
+        "joxing-native-teardown-v1": "joxing.native_teardown",
+        "joxing-serial-native-teardown-v1": "joxing.serial_native_teardown",
+    }[schema]
+
+
 def main():
     began = time.monotonic()
     parser = argparse.ArgumentParser()
@@ -31,7 +39,11 @@ def main():
     p = json.loads((ROOT / args.packet).read_text())
     if (
         p["schema"]
-        not in ("joxing-deferred-native-parity-v1", "joxing-native-teardown-v1")
+        not in (
+            "joxing-deferred-native-parity-v1",
+            "joxing-native-teardown-v1",
+            "joxing-serial-native-teardown-v1",
+        )
         or canonical(p) != args.protocol_sha256
     ):
         raise ValueError("Frozen native parity protocol")
@@ -88,8 +100,18 @@ def main():
         ).returncode:
             raise ValueError("Dirty native source")
 
+    def verify_runtime_files():
+        for n, d in p.get("runtime_file_hashes", {}).items():
+            f = ROOT / n
+            if (
+                f.stat().st_size != d["bytes"]
+                or hashlib.sha256(f.read_bytes()).hexdigest() != d["sha256"]
+            ):
+                raise ValueError("Installed runtime source drift: " + n)
+
     verify()
-    constructor_only = p["schema"] == "joxing-native-teardown-v1"
+    serial_constructor = p["schema"] == "joxing-serial-native-teardown-v1"
+    constructor_only = serial_constructor or p["schema"] == "joxing-native-teardown-v1"
     out = ROOT / p["output"]
     out.parent.mkdir(parents=True, exist_ok=True)
     lease = (out.parent / ".deferred-native.lock").open("a+")
@@ -322,6 +344,7 @@ def main():
             ],
             15,
         )
+        verify_runtime_files()
         stage(
             "controls",
             [
@@ -352,9 +375,7 @@ def main():
             command = [
                 python,
                 "-m",
-                "joxing.native_teardown"
-                if constructor_only
-                else "joxing.deferred_qualification",
+                runner_module(p["schema"]),
                 "--folder",
                 str(fixtures / name),
                 "--slot",
@@ -373,20 +394,32 @@ def main():
                 facts = json.loads(
                     (fixtures / name / "constructor-result.json").read_text()
                 )
-                worker = facts["worker"]
-                key = f"{worker['pid']}:{worker['start']}"
-                retirement = row["watchdog"]["retirement_records"].get(key)
-                if (
-                    retirement is None
-                    or not retirement["released"]
-                    or retirement["highwater_charge_bytes"] <= 0
-                    or retirement["max_hold_s"] > 0.1
+                workers = facts["workers"] if serial_constructor else [facts["worker"]]
+                if len(workers) != (4 if serial_constructor else 1):
+                    raise ValueError("Native constructor worker denominator")
+                retirements = [
+                    row["watchdog"]["retirement_records"].get(
+                        f"{worker['pid']}:{worker['start']}"
+                    )
+                    for worker in workers
+                ]
+                observed = [r for r in retirements if r is not None]
+                if not observed or any(
+                    not r["released"]
+                    or r["highwater_charge_bytes"] <= 0
+                    or r["max_hold_s"] > 0.1
+                    for r in observed
                 ):
                     raise ValueError("Native worker retirement path not qualified")
-                slot.update(status="completed", facts=facts, retirement=retirement)
+                slot.update(status="completed", facts=facts)
+                if serial_constructor:
+                    slot["retirements"] = observed
+                else:
+                    slot["retirement"] = observed[0]
                 report["physics_credit"] = ledger.snapshot()
                 if (
-                    report["physics_credit"]["used"] != 200
+                    report["physics_credit"]["used"]
+                    != (800 if serial_constructor else 200)
                     or report["physics_credit"]["pending"]
                 ):
                     raise ValueError("Constructor physics denominator")
@@ -412,6 +445,7 @@ def main():
             report["comparison"] = compare_slots(
                 {s["id"]: str(fixtures / s["id"]) for s in report["rows"]}
             )
+        verify_runtime_files()
         verify()
         report["status"] = "completed"
     except BaseException as error:  # noqa: BLE001 -- retain every attempted/not_run slot

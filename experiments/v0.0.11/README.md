@@ -1,3 +1,15 @@
+# H17 serial-close source implemented; native packet registered — Nov2 Mountain
+
+Current protocol: experiments/v0.0.11/serial-native-teardown-protocol.json,
+SHA27dea5bd. Local71pass/4Linux-only skips/Ruffpass; target outcomes NOT_RUN at
+registration.75exact Linux controls then ONE original four-worker constructor,
+all700muscles/800prep/0rollout/actor/inference/update and exact initial/close state.
+Named serial-close-v1 only; legacy defaults/100ms hold/8GiB gate unchanged.
+100swhole/50sslot/12MiBraw/1MiBreceipts within original remaining envelope.
+Public source freeze/anonymous verification/fresh capacity required before start.
+Detailed implementation/stop/audit/handoff: docs/SERIAL_RETIREMENT_MISSION.md.
+No paired-learning/concurrency/boxing qualification or v11tag from these controls.
+
 # Third paired-native packet invalid; H17 next — Nov2 Mountain
 
 Frozen e1a8521, protocoldeferred-native-terminal-v3-protocol.json/ca5ee668:

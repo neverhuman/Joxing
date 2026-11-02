@@ -1,6 +1,11 @@
 # Next: bounded serial retirement of four native workers
 
-Status: worker-ready plan; implementation and formal protocol NOT YET created.
+Status: opt-in adapter/runner and source controls implemented. Registered packet:
+`experiments/v0.0.11/serial-native-teardown-protocol.json`, canonical SHA256
+`27dea5bd160a8a781001576978359d84b605d534da583c797bf13e2d04d1ff13`.
+Requires75exact Linux controls then ONE four-worker constructor; formal outcomes
+not_run at registration. Local71pass/4Linux-only skips, Ruffpass. Legacy default
+and100ms reader hold unchanged. Freeze/public verification precede target launch.
 Integration owner: the current Joxing agent, one writer, no delegation. Work in
 `/Users/bentaylor/Documents/ChatGPT/JOXING`; RTK for all shell commands.
 

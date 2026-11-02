@@ -1,0 +1,64 @@
+{
+  "schema": "joxing-serial-retirement-development-v1",
+  "scope": "Mac fake/source controls only; four Linux-only cases skipped, no target native outcome",
+  "checks": [
+    {
+      "scope": "adapter/native-teardown/deferred/terminal subset",
+      "passed": 48,
+      "skipped": 2,
+      "wall_s": 2.44
+    },
+    {
+      "scope": "plus new four-constructor fake/dispatch cases",
+      "passed": 54,
+      "skipped": 2,
+      "wall_s": 2.68
+    },
+    {
+      "scope": "plus existing watchdog and ledger",
+      "passed": 70,
+      "skipped": 4,
+      "wall_s": 3.0
+    },
+    {
+      "scope": "final75case set includes pending response error",
+      "passed": 71,
+      "skipped": 4,
+      "wall_s": 3.11
+    }
+  ],
+  "junit": "runs/v0.0.11/serial-development-03.xml",
+  "final_command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_serial_retirement.py tests/test_serial_native_teardown.py tests/test_native_teardown.py tests/test_deferred_trial.py tests/test_deferred_qualification.py tests/test_terminal_rss_reader.py tests/test_trial_rss_watchdog.py tests/test_physics_credit.py --junitxml=runs/v0.0.11/serial-development-03.xml",
+  "ruff": {
+    "command": "rtk proxy uvx --offline ruff check src/joxing/serial_retirement.py src/joxing/serial_native_teardown.py scripts/qualify_deferred_trial.py tests/test_serial_retirement.py tests/test_serial_native_teardown.py",
+    "status": "passed",
+    "initial_faults": [
+      "I001 import order",
+      "ISC004 string grouping"
+    ],
+    "fixed_before_formal_freeze": true
+  },
+  "source_files": {
+    "src/joxing/serial_retirement.py": {
+      "bytes": 5045,
+      "sha256": "e2c6c6d47b6d61da102f04483282e67716741eedde8d3b9d3b9934c0de4f003b"
+    },
+    "src/joxing/serial_native_teardown.py": {
+      "bytes": 5442,
+      "sha256": "426438c4e0ee463f068529922e44f35634480bd096ce3548e8e720d0cf1baa11"
+    },
+    "scripts/qualify_deferred_trial.py": {
+      "bytes": 18889,
+      "sha256": "db8accaa0df7d2f7a32b3e55d8c904a4fb355a4d26e2f7477323202dce639f8f"
+    },
+    "tests/test_serial_retirement.py": {
+      "bytes": 8981,
+      "sha256": "6bb30d2d74d66f803609f673dc8c849fcd4cacd236a9d617f46b8855ec9e7596"
+    },
+    "tests/test_serial_native_teardown.py": {
+      "bytes": 4811,
+      "sha256": "2930f60d024beaaba42e4760abf28fc53ffaf7d3ee9a1bb9ca17fb3c462286e0"
+    }
+  },
+  "physics": 0
+}
