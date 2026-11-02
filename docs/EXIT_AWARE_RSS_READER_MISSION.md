@@ -1,6 +1,11 @@
 # Next: qualify conservative RSS accounting during verified exit
 
-Status: worker-ready, not implemented/run. Work
+Status: reader35Linux controls and ONE native constructor qualified; subsequent
+four-worker learning packet FAILED its100ms retirement hold. Latest outcome:
+[NATIVE_RETIREMENT_RESULTS.md](NATIVE_RETIREMENT_RESULTS.md). Current worker-ready
+next step: [SERIAL_RETIREMENT_MISSION.md](SERIAL_RETIREMENT_MISSION.md), before
+another learning attempt. Preserve this original mission and failed criteria.
+Work
 `/Users/bentaylor/Documents/ChatGPT/JOXING`; RTK shell, one integration owner,
 no agents. Read AGENTS/RTK, research index/H15/H16, current MISSION/STATUS,
 EXIT_MEMORY_RESULTS.md, both failed native audits, then the production watcher,

@@ -4,7 +4,7 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H15 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H17 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
@@ -59,11 +59,13 @@ The independent RSS watcher passes20Linux controls (max21.36ms sample gap in
 controlled tests); the opt-in lifecycle passes27source/fault controls with fake
 worlds. Legacy remains default. [Results](docs/DEFERRED_LIFECYCLE_SOURCE_RESULTS.md)
 · [Next four-slot native parity packet](docs/DEFERRED_PARITY_EXECUTION_PACKET.md).
-Native parity is blocked by two monitor faults during worker closing; both
-reference prefixes reached64transitions/12updates but remain invalid. A separate
-zero-physics exit diagnostic reproduced47missing-RSS teardown samples after6Linux
-controls. [Results](docs/EXIT_MEMORY_RESULTS.md) · [Next: conservative exit-aware
-reader and native teardown proof](docs/EXIT_AWARE_RSS_READER_MISSION.md).
+Native parity remains blocked after three invalid reference attempts; all reached
+64transitions/12updates, but no candidate ran. The opt-in exit-memory reader passes
+35Linux controls and one700muscle constructor teardown. Four-worker teardown
+then exceeded its unchanged100ms reservation hold (122.75ms observed), stopping
+the next paired packet. All failures and independent audits are retained.
+[Results](docs/NATIVE_RETIREMENT_RESULTS.md) · [Next: four-worker constructor-only
+proof with serial shutdown](docs/SERIAL_RETIREMENT_MISSION.md). No unchanged RL retry.
 Released-teacher balance and boxing remain unqualified.
 
 **Active: [v0.0.11 connected two-player loop and recording](docs/V0.0.11_MISSION.md).**

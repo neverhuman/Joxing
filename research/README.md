@@ -25,10 +25,11 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H12](H12.md)|Are sporting rules ready for competitive learning?|Partial; force/attribution/fall/geometry/motor/replay gates still block|
 |[H13](H13.md)|Can QFlex value-guided exploration improve a valid motor task?|Research lead only; compatibility/method comparison not_run|
 |[H14](H14.md)|Can fresh module processes keep source validation inside8GiB?|History repair passes; fresh learner still exceeds8GiB, standalone isolation declined|
-|[H15](H15.md)|Can trial lifecycle remove duplicate resident worlds?|Two native packets invalid on teardown RSS; parity blocked|
-|[H16](H16.md)|Can exit flags/statm explain missing live-looking RSS?|Reader35Linux controls +native700muscle teardown qualify; opt-in only|
+|[H15](H15.md)|Can trial lifecycle remove duplicate resident worlds?|Three native packets invalid on teardown; candidates unrun, parity blocked|
+|[H16](H16.md)|Can exit flags/statm explain missing live-looking RSS?|Reader35controls +one native teardown pass; four-worker hold fails122.75ms|
+|[H17](H17.md)|Can serial retirement avoid overlapping exit tails?|Worker-ready constructor-only mission; implementation/protocol/run pending|
 
-**Last concluded: H16 (synthetic support). Next: fresh H15native parity with qualified reader, then H10motor work. Next unused ID: H17.** These are global research-note
+**Latest: H15third native packet invalid; H16single-worker result stays narrow. Next: H17serial-retirement constructor proof before more RL. Next unused ID: H18.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

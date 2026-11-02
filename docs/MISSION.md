@@ -1,3 +1,24 @@
+# Current: H17 serial-retirement constructor proof — Nov2 Mountain
+
+Worker-ready next mission: docs/SERIAL_RETIREMENT_MISSION.md; no owned task active.
+Third H15native packet e1a8521/ca5ee668 fails its registered100ms retirement hold:
+one actual worker's reserved interval122.75ms. LegacyA64transitions/12updates/
+5086steps remains INVALID; candidateA/legacyB/candidateB NOT_RUN. All3packets:
+3INVALID/0VALID/9NOT_RUN. No candidate parity, memory saving or boxing gain.
+
+23Linux controls passed; independent731source/five-object/640credit-event/18exit
+audit passes, all306rawfiles10854269bytes exact transfer. No writer remains.
+One native constructor and reader controls qualified earlier; four-worker scope
+does not inherit that pass. All4actual workers show strict terminal-mm proof.
+Maxgap46.54ms/probe26.32ms; no100ms/gates/default/cap relaxation. Details and
+retained negatives: docs/NATIVE_RETIREMENT_RESULTS.md, research/H15/H16/H17.md.
+
+Implement named local close-only adapter +fault controls, then freeze ONE
+four-worker constructor/close protocol:800prep/0rollout/actor/update, exact state,
+same700muscles/8GiB/100ms. Serial-close hypothesis is unproved. No unchanged RL
+retry. Six-packet cumulative15458physics/179.254512s leaves224542steps/420.745488s
+and1041991155fixture/2619683receipt bytes in original envelope. No v11tag.
+
 # H16 native teardown qualifies; H15 paired learning v3 registered — Nov2 Mountain
 
 5a12aef/3c93c805 constructor packet qualifies:3Linux source controls plus1real

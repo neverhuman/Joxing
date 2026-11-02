@@ -1,0 +1,130 @@
+{
+  "schema": "joxing-invalid-native-retrospective-read-audit-v1",
+  "status": "passed",
+  "scope": "Retrospective prefix equality only; all three formal attempts remain invalid and candidate slots not_run. Not a valid baseline or native paired qualification.",
+  "invalid_attempts": 3,
+  "not_run_slots": 9,
+  "source_commit": "e1a85212858d5b82656a7df133fc4a078fd670b0",
+  "actor_weights": {
+    "status": "passed",
+    "read_only_actor_weights": [
+      {
+        "phase": "initial",
+        "canonical_sha256": "8c5786c4cbed1667a814adef088719df6b8d0290a53fd85b2a07bc744022790f",
+        "archive_sha256": "b2f68aec2e62a721a106439c3eb00bb6c55ea40d3ee0a7c4e5ee47d19b60be5a",
+        "archive_bytes": 754401
+      },
+      {
+        "phase": "final",
+        "canonical_sha256": "84184743d0c7bf49139eed773bd67d0943409c0f5f4de5a7191afc64e6d0b486",
+        "archive_sha256": "c832f6e5e9c0f1837e3feec8c75ad174c408e0bc7ffa8f71a30671fdc067b301",
+        "archive_bytes": 754309
+      }
+    ],
+    "physics": 0,
+    "inference": 0,
+    "updates": 0
+  },
+  "traces": [
+    {
+      "trace": "learner",
+      "rows_per_attempt": [
+        31,
+        31,
+        31
+      ],
+      "all_exact": true,
+      "semantic_sha256": "2749c5ddb68df64a58adcad65448a6403ef8f8ca34457eb99c1d42e41179f0fb"
+    },
+    {
+      "trace": "native-evaluation",
+      "rows_per_attempt": [
+        249,
+        249,
+        249
+      ],
+      "all_exact": true,
+      "semantic_sha256": "b75e9923497fdf625266e149695017e6c0d1fba31ac00510bc367fd02e67ab04"
+    },
+    {
+      "trace": "worker-0",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "69374ac9d1093dcf84dcf20b3ba6b763cb432242007116a55b0ef381557fca30"
+    },
+    {
+      "trace": "worker-1",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "62449254a38b381d0c50e12f087163ed792524cdec07336301dd0eca738f4678"
+    },
+    {
+      "trace": "worker-2",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "92a08f94bd21c605ded86e45969a0dd67e5929466b43004391c7726548e392a7"
+    },
+    {
+      "trace": "worker-3",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "ea1ac7dcda5e875797c2235b380e7ad44b1fc6bf9679db83481072126527d557"
+    },
+    {
+      "trace": "native-world-0",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "3b87894b953205c3e1b360ace56a6d72204e7863f356e90f27eb43fe8695b844"
+    },
+    {
+      "trace": "native-world-1",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "4ac545c53b022436c044321fe0082c252b07cdf061da2a30be1591f186eab8ec"
+    },
+    {
+      "trace": "native-world-2",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "ad509210da8381ac974c70a4a07c3e13e5aadae53e317b085ba225f30f57b445"
+    },
+    {
+      "trace": "native-world-3",
+      "rows_per_attempt": [
+        18,
+        18,
+        18
+      ],
+      "all_exact": true,
+      "semantic_sha256": "385b8961a7b671036fd029eda2def99469d877a850e2c0378fce90c55e8c6e70"
+    }
+  ]
+}

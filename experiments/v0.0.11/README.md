@@ -1,3 +1,20 @@
+# Third paired-native packet invalid; H17 next — Nov2 Mountain
+
+Frozen e1a8521, protocoldeferred-native-terminal-v3-protocol.json/ca5ee668:
+23Linux controls pass; referencelegacyA64real transitions/12updates/5086steps,
+then RSS reservation hold122.75ms>100ms.1INVALID/3NOT_RUN; allnative packets
+3INVALID/0VALID/9NOT_RUN. No candidate run or allocation/boxing qualification.
+Independent731source/five executable objects/640credit-events/18exits verified;
+306rawfiles10854269bytes transferred exact. Strict single-task terminal-mm proof
+observed in all4workers; maxgap46.54ms/probe26.32ms, no gate relaxed.
+
+Outcome/audits: docs/NATIVE_RETIREMENT_RESULTS.md. Next worker-ready packet:
+docs/SERIAL_RETIREMENT_MISSION.md/research/H17.md. Implementation/source controls
+and machine preregistration still pending; ONE four-worker constructor/close only
+(800prep/0rollout/actor/update) before any new learning. Do not repeat unchanged
+failed packet. Original six-packet carry15458physics/179.254512s/
+31750669fixture/1574621receipt bytes. No active job, adoption or v11tag.
+
 # H16 native teardown qualifies; H15 paired learning v3 registered — Nov2 Mountain
 
 5a12aef/3c93c805 constructor packet qualifies:3Linux source controls plus1real

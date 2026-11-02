@@ -1,3 +1,22 @@
+# Next implementation: serial native-worker retirement — Nov2 Mountain
+
+Current exact packet: docs/SERIAL_RETIREMENT_MISSION.md, research/H17.md. Implement
+local opt-in close-only Vec adapter, bounded send-one/join-one with PID/start
+ownership and fault receipts; never patch installed SB3 or change physics/reader
+defaults. Add fake order/fault +Linux process controls, then separate ready-guarded
+FOUR-worker constructor-only runner/protocol. All700muscles/800prep total/0rollout/
+actor/update, four exact initial/close hashes, positive observed terminal charge,
+unchanged100ms hold/gap/probe and8GiB gate. Freeze before formal native outcomes.
+
+Reason: third H15native parity packet e1a8521/ca5ee668 stops at122.75ms retirement
+hold after reference64transitions/12updates/5086steps. All3packets3INVALID/
+0VALID/9NOT_RUN.23Linux controls and independent731source/640credit-event/18exit/
+306rawfile audit pass, not native parity. Read-only pinned SB3 close broadcasts
+all closes before joining; contention remains a hypothesis. No more unchanged RL.
+Results/costs/receipts: docs/NATIVE_RETIREMENT_RESULTS.md. Original budget remainder
+224542physics/420.745488s/1041991155fixture/2619683receipt bytes. No active writer,
+default/concurrency/full-source/boxing promotion or v11tag.
+
 # H16 native teardown qualifies; H15 paired learning v3 registered — Nov2 Mountain
 
 5a12aef/3c93c805 constructor packet qualifies:3Linux source controls plus1real

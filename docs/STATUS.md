@@ -1,3 +1,25 @@
+# Third native packet invalid; serial retirement next — Nov2 Mountain
+
+e1a8521/ca5ee668 passes23Linux controls; legacyA actually64transitions/12updates/
+5086steps. Positive retirement charge reaches122.75ms>registered100ms hold;
+watcher stops.1INVALID/3NOT_RUN; allthree native packets3INVALID/0VALID/9NOT_RUN.
+No candidate learning/parity, measured allocation saving, balance or boxing win.
+Independent731source/five historical objects/640credit-event/18exited identities
+audit passes;306rawfiles10854269bytes exact transfer, no owned writer. All10trace
+histories exact retrospectively across three invalid prefixes; saved actor tensor
+hashes independently match. These checks never turn failed attempts into valid.
+
+All4actual workers have matching single-task terminal-mm proof; max sample gap/
+probe46.54/26.32ms. Reader35controls and ONE native constructor passed earlier;
+four-worker retirement scope failed. Hold/caps/defaults remain unchanged.
+[Detailed outcome/receipts](NATIVE_RETIREMENT_RESULTS.md). Six-packet cost15458
+physics/179.25451156683266s/31750669fixture/1574621receipt bytes retained.
+
+Current worker-ready next: [serial retirement mission](SERIAL_RETIREMENT_MISSION.md),
+research/H17.md, not yet implemented/run. Test four-worker constructor only after
+source/fault controls/public freeze,800prep/0rollout before any more RL. No active
+job, no unchanged retry, no v11tag or full-source qualification.
+
 # H16 native teardown qualifies; H15 paired learning v3 registered — Nov2 Mountain
 
 5a12aef/3c93c805 constructor packet qualifies:3Linux source controls plus1real
