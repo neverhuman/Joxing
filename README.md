@@ -4,22 +4,22 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H21 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H22 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
-**Latest measured win:** [three paired process-exit tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
-passed85Linux controls and all6fresh probes. Forkserver's import-only exit median
-was40.13ms versus527.06ms for spawn (13.13× faster); paired payloads matched exactly.
-All348raw evidence files verified; old failures remain. **This is exit latency,
-not RL training throughput.** [Next: ONE native700-muscle context/state/lifetime test](docs/NATIVE_CONTEXT_TRANSFER_MISSION.md)
-before four-worker or learning integration. [H20publication prerequisite](docs/MONITOR_PUBLICATION_RESULTS.md)
-qualified independently; physical balance/boxing gates remain open.
+**Native prerequisite passed:** [H21results](docs/NATIVE_CONTEXT_TRANSFER_RESULTS.md)
+pass172Linux controls plus ONE original700-muscle worker:200preparation steps,
+exact frozen state, verified native resource release and72.26ms retirement under
+the unchanged100ms limit. One close took336.76ms; no controlled native speedup or
+boxing gain claimed. [Next: FOUR-worker close proof](docs/FOUR_NATIVE_CONTEXT_MISSION.md)
+includes a lossless receipt preflight to fit the remaining budget.
 
-**H21 registered:** [one native context-transfer proof](docs/NATIVE_CONTEXT_TRANSFER_MISSION.md)
-now has165local passes/7Linux-only skips. Its172case Linux gate precedes ONE
-700-muscle/200-preparation-step constructor, with exact frozen state and unchanged
-resource/close limits. Formal native outcome remains not_run atregistration.
+**HPC prerequisite:** [H19paired import-only tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
+passed85Linux controls and all6fresh probes. Forkserver exit median40.13ms versus
+527.06ms spawn (13.13×), exact paired payloads;348raw files verified. This measures
+exit latency. [H20publication proof](docs/MONITOR_PUBLICATION_RESULTS.md) qualified
+the report path separately. Physical balance and boxing gates remain open.
 
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations

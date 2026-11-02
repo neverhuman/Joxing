@@ -1,3 +1,9 @@
+# Concluded: H21ONE-native context/state/lifetime gates qualify
+
+[Results, audit and retained faults](NATIVE_CONTEXT_TRANSFER_RESULTS.md).
+Next [H22FOUR-native context mission](FOUR_NATIVE_CONTEXT_MISSION.md) includes
+receipt preflight; historical source/packet below is not a repeat instruction.
+
 # H21: one native forkserver constructor and release proof
 
 Status: implemented/preregistered; formal native target NOT_RUN atfreeze.

@@ -31,9 +31,10 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H18](H18.md)|Can closed native buffers be released before process exit?|93Linux +one native lifetime gate pass;90.66MB RSS drop,650ms exit tail remains|
 |[H19](H19.md)|Does process backend explain remaining exit latency?|Third packet6valid: import-only exit median13.13× faster; prior2invalid/10not_run retained|
 |[H20](H20.md)|Can report publication avoid stalling the watchdog?|85Linux +one import-only smoke qualify; exact after-exit copies/owned cleanup, no native result|
-|[H21](H21.md)|Does forkserver preserve native reset and live release?|Source165local pass/7Linux skips;172case ONE700muscle/200prep packet registered|
+|[H21](H21.md)|Does forkserver preserve native reset and live release?|172Linux +ONE700muscle/200prep exact state/lifetime pass; native retirement72.26ms|
+|[H22](H22.md)|Can four native contexts meet the original serial-close limit?|Worker-ready800prep proof with lossless receipt preflight; not implemented/run|
 
-**Latest: H19three-pair import-only hypothesis supported after H20qualification; native/RL gain unproved. H21ONE-native transfer implemented/registered; target not_run atfreeze. Old negative outcomes retained. Next unused ID: H22.** These are global research-note
+**Latest: H21ONE-native transfer qualifies. Next H22four-worker proof with storage preflight; RL/boxing gains still unproved. Old negatives retained. Next unused ID: H23.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

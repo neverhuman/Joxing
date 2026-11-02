@@ -1,0 +1,2706 @@
+{
+  "runs/v0.0.11/.deferred-native.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-deployment.json": {
+    "bytes": 181508,
+    "sha256": "412ddbed8c779f1639a83ce8ecc41e36124ad8a41e9b81363a8a33dfc4ece9ef"
+  },
+  "runs/v0.0.11/native-context-launch.log": {
+    "bytes": 11419,
+    "sha256": "1976535d9953f907ed669fc5557276828355f5c0af9b5d2e2b63dc322321f59b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/controls.log": {
+    "bytes": 261,
+    "sha256": "b5e4bcdf9ae9fce951fa3c00a3a89dd28281a83cf88c699e7e305d2347f10373"
+  },
+  "runs/v0.0.11/native-context-transfer-01/controls.xml": {
+    "bytes": 23185,
+    "sha256": "2f43c13eb12b6824c0405eabecebcebbc47641ced56f4fa4a3eab95698c46c78"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/context-control.json": {
+    "bytes": 8639,
+    "sha256": "a4ae9b0bfbd58a2dda5c167679757e089e0ef4388aea27a06ce423fad92b08bc"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/fixture_context_worker.py": {
+    "bytes": 315,
+    "sha256": "f470905393a5448d71c5333b73d267c9ea8e7c8cd14f2624cb10cc7fb0208c52"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native/context-finalizer.jsonl": {
+    "bytes": 117,
+    "sha256": "96d308aab188d07aa4f0a5e834c1c71ef42b9a1c32147459d1fddc8bf50fb79c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native/context-worker-before.json": {
+    "bytes": 2076,
+    "sha256": "86ec2ce9abacce50f8556e46d026892a18cf31b63733021d49d550138c9d4541"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native/proc-context-worker-before/maps.txt": {
+    "bytes": 14174,
+    "sha256": "2d80a96c5ec46e8eb8bda7de5e92f82f4e37dc06167520b658d0a0aff9147411"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native/proc-context-worker-before/stat-after.txt": {
+    "bytes": 295,
+    "sha256": "af890948cd2608a9d846c3ff137f8da862b995e1395b59df6f1e135d3031ce3e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native/proc-context-worker-before/stat-before.txt": {
+    "bytes": 295,
+    "sha256": "af890948cd2608a9d846c3ff137f8da862b995e1395b59df6f1e135d3031ce3e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native/proc-context-worker-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "3cd510282d09d32f7f3699aac2094f0357581f4c4f9265dcd6e8193233fe32f4"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/after.json": {
+    "bytes": 9754,
+    "sha256": "752ae5e985c3cdd189ef4c4f3719667b6370fd8a15140617eb691f9417e5c010"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/before.json": {
+    "bytes": 3857,
+    "sha256": "22174b85cc50ea5903cc783027221f4b89138733aa55c17866d9de2594af1e1d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-root-before/maps.txt": {
+    "bytes": 14045,
+    "sha256": "188e72ed4b9a899962969782db57beb9a5f0338a8d5871991fa932c1c0de45b5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-root-before/stat-after.txt": {
+    "bytes": 297,
+    "sha256": "95ebf9457219d2480510d9a4f1b1b101f0c283d08ea5be2d62b841af6828c5a1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-root-before/stat-before.txt": {
+    "bytes": 297,
+    "sha256": "456f220396ae1a624535d8c49ad71ed0bc421fd5c215a187e738d742f6fa10ba"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "6d5ed81583772cb0833717ca5cd2795e686a7a1c503f55e4e45eaf4227105f82"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-after/maps.txt": {
+    "bytes": 8359,
+    "sha256": "c76f0229703cdfaa8c9cabb7cad5909b20084df941a463681c04557aed71f715"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-after/stat-after.txt": {
+    "bytes": 301,
+    "sha256": "6d96c7518436a7775e3803550445014bbb9f0782e63721a07529fc189879eca7"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-after/stat-before.txt": {
+    "bytes": 301,
+    "sha256": "6d96c7518436a7775e3803550445014bbb9f0782e63721a07529fc189879eca7"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-after/status.txt": {
+    "bytes": 1588,
+    "sha256": "73403e7fde60151cf82e53c2a44bcdad15c97ce6737ea44b7ddfded769767886"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-before/maps.txt": {
+    "bytes": 1218,
+    "sha256": "00c394a1aaab0dad6110f03daded3e30832179e2069777a2eca7273df2cef5da"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-before/stat-after.txt": {
+    "bytes": 291,
+    "sha256": "b9a519690df74aaf060cafbe7253e70f5e50261418ce9f9f72c1d8fb5a267f1c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-before/stat-before.txt": {
+    "bytes": 214,
+    "sha256": "062ac3ce204a67ff78e7eca332946e8ccd692952d0d02caee0bb59e71c57536a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-server-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "7c05739abb5c1dd2118b8bec7dda96ce08d0f45ae057f6d0e5f85080a23ea215"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-worker-after/maps.txt": {
+    "bytes": 14174,
+    "sha256": "2d80a96c5ec46e8eb8bda7de5e92f82f4e37dc06167520b658d0a0aff9147411"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-worker-after/stat-after.txt": {
+    "bytes": 295,
+    "sha256": "9772c94bdd82221f0345027dc427afa956df29cc698483ed29ce19ae413a86fa"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-worker-after/stat-before.txt": {
+    "bytes": 295,
+    "sha256": "9772c94bdd82221f0345027dc427afa956df29cc698483ed29ce19ae413a86fa"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_clean_context_and_0/native-context/proc-worker-after/status.txt": {
+    "bytes": 1588,
+    "sha256": "efcfb6dc1bfa17e844f3c7dcc64e6ae4ea4f94d6fff709a56be9cba307f88019"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_exit_uses_nonzero_0/release": {
+    "bytes": 9,
+    "sha256": "1584570866884bb892dbf8bc693d7fbe28203b2ce90ab34642f92ba906781ac2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.json": {
+    "bytes": 9299,
+    "sha256": "d0e0af13f0d97560b2a6eec4dde856fda7312be070c6bcfc6ce57395452c27ea"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_serial_heaps_guard0/foreign.json": {
+    "bytes": 118,
+    "sha256": "ec4f5969cace9847face1a7deafdff5fe58537a39cfb1aeee8c287dcce2358f8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_serial_heaps_guard0/serial.jsonl": {
+    "bytes": 1474,
+    "sha256": "c11f152dd00c64b9de8cec6c5289322a477816ca6d063059c97c6be6d77d112c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.json": {
+    "bytes": 17265,
+    "sha256": "9af9e904745068b756f9fc2cdef71ca8b596e5f63377e9d4368bab9173ec9f2f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.json": {
+    "bytes": 2395,
+    "sha256": "3512a59e0962c51f04533778c925ed6277c8aea3655c1e0fe22c67dd6173f39d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.json": {
+    "bytes": 4368,
+    "sha256": "ec044f55906e1f6026867ed48684ad2c98052e133c908d1dc4857c07d3fa58bf"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "c9a77d1a6b62d04423e2d4f1ed1a819048afdf12617fa4ff07a28005ec3b87e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st0/trial/fault.json": {
+    "bytes": 140,
+    "sha256": "b1656ce66e6fb12d7f61a4dc178f0063daa66699d3d317f56fddfb548592424a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "02038a6c24f5c6c7a8f14dc5a82dcb1292302a3da1e395ca9cc09f8246f2cddb"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/fault.json": {
+    "bytes": 150,
+    "sha256": "5fc49528823ba45af61fedbf30c9ebacfb3a3ea14d26e01c866bf964bb802e21"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st1/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st2/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st2/trial/fault-states.json": {
+    "bytes": 79,
+    "sha256": "64f30e7604d6443124c364d57607cb9689127772b8a996412d55b6ee72301bc7"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_all_faults_retain_real_st2/trial/fault.json": {
+    "bytes": 152,
+    "sha256": "c1364cdc08d4bb08aa9d0654f779c4a27b3b88695307e5878dee06ef741adb44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.json": {
+    "bytes": 247,
+    "sha256": "0360bf5b74fa56c5ca01502800e9335c4423ba4e2f4e09bad142a2b661575fbf"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.jsonl": {
+    "bytes": 4701,
+    "sha256": "4b480e0481a81814a98f9217b79c42b78a297ab560ad9af9a8db4ecfa6e39c31"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_atomic_processes_cannot_o0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/native/constructor-result.json": {
+    "bytes": 1338,
+    "sha256": "303115a03e6b2ca2c53b07c86120a5f73ffeccfc32b62761b5e2469d5310ae94"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/native/resource-release.jsonl": {
+    "bytes": 486,
+    "sha256": "87cea60b6b6901fe1dc94c4a688a5f81e7497234d6745ba28ac98a86e5db3f11"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv0/native/traces/worker-0.jsonl": {
+    "bytes": 147,
+    "sha256": "4341973201947f2f1edf4be10a9178a3f26659e1d303592699de16b779c87434"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/native/constructor-result.json": {
+    "bytes": 1338,
+    "sha256": "303115a03e6b2ca2c53b07c86120a5f73ffeccfc32b62761b5e2469d5310ae94"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/native/resource-release.jsonl": {
+    "bytes": 486,
+    "sha256": "87cea60b6b6901fe1dc94c4a688a5f81e7497234d6745ba28ac98a86e5db3f11"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv1/native/traces/worker-0.jsonl": {
+    "bytes": 147,
+    "sha256": "4341973201947f2f1edf4be10a9178a3f26659e1d303592699de16b779c87434"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv2/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv2/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv2/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv2/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv2/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv3/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv3/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv3/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv3/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv3/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv4/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv4/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv4/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv4/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv4/native/resource-release.jsonl": {
+    "bytes": 427,
+    "sha256": "769039c6a86d20b7f689675323dff694e36e7feac0f168fa4b4182053f464402"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv4/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv4/native/traces/worker-0.jsonl": {
+    "bytes": 147,
+    "sha256": "4341973201947f2f1edf4be10a9178a3f26659e1d303592699de16b779c87434"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv5/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv5/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv5/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv5/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv5/native/resource-release.jsonl": {
+    "bytes": 427,
+    "sha256": "769039c6a86d20b7f689675323dff694e36e7feac0f168fa4b4182053f464402"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv5/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv5/native/traces/worker-0.jsonl": {
+    "bytes": 147,
+    "sha256": "4341973201947f2f1edf4be10a9178a3f26659e1d303592699de16b779c87434"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv6/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv6/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv6/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv6/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv6/native/resource-release.jsonl": {
+    "bytes": 486,
+    "sha256": "87cea60b6b6901fe1dc94c4a688a5f81e7497234d6745ba28ac98a86e5db3f11"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv6/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv6/native/traces/worker-0.jsonl": {
+    "bytes": 147,
+    "sha256": "4341973201947f2f1edf4be10a9178a3f26659e1d303592699de16b779c87434"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv7/credit.json": {
+    "bytes": 263,
+    "sha256": "8093dd82a1bed598bbcb82f321100a38206571627ac4f06f4b27025cba173e35"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv7/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv7/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv7/native/before-close.json": {
+    "bytes": 452,
+    "sha256": "2b4cbbd1fea306c05ade495c4e4f12c391a11644f41f078f2fcd06a12b9302b2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv7/native/resource-release.jsonl": {
+    "bytes": 486,
+    "sha256": "87cea60b6b6901fe1dc94c4a688a5f81e7497234d6745ba28ac98a86e5db3f11"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv7/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_before_close_receipt_surv7/native/traces/worker-0.jsonl": {
+    "bytes": 147,
+    "sha256": "4341973201947f2f1edf4be10a9178a3f26659e1d303592699de16b779c87434"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/maps": {
+    "bytes": 7,
+    "sha256": "27ecf4a6835cb2fdf5207078d77fbe88e63c2e81c12a24c77b26c75f769ba242"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/stat": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/stat": {
+    "bytes": 54,
+    "sha256": "0649b71a331bd5aa9751e2864b6b2e205f9313c73681ce2ff543709b3591b797"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/stat": {
+    "bytes": 54,
+    "sha256": "1cd50a375de032bd7cd00b496aa36f5f0f82608856f59eeb4ea07fe169047d70"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_status_fail_closed_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_status_fail_closed_1/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_status_fail_closed_2/17/status": {
+    "bytes": 11,
+    "sha256": "c20bbc8bfc88c7e3204a21a422bbe259a0855f698295149976521a512190de87"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_bound_status_fail_closed_3/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_capacity_and_existing_out0/out.json": {
+    "bytes": 8,
+    "sha256": "ca67bd59cc4116ac80db5f64cbf4747f26ba929c85e8cc689a6123368d08719b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_child_witness_before_nati0/context-worker-before.json": {
+    "bytes": 314,
+    "sha256": "c7caf448f60677d0bee2df1eabbac1c89fa8244d28ebcd0b9a00b15bd8f9fe85"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_child_witness_before_nati1/context-worker-before.json": {
+    "bytes": 309,
+    "sha256": "9a8874c3fa27f3fa06ed83f73f230a159e699ab80d7a84a2ee9bb27a72197b18"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_child_witness_before_nati2/context-worker-before.json": {
+    "bytes": 314,
+    "sha256": "7111064725215d9eb920c2a7f5631cb73eb9fe7e9bab526649d01996fc02142e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_child_witness_before_nati3/context-worker-before.json": {
+    "bytes": 314,
+    "sha256": "63817d2fd43d4e588789c0d293e9670a72264f3f3be9027f61686e76e9f51842"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl0/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl1/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/learner.jsonl": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl2/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/learner.jsonl": {
+    "bytes": 1603,
+    "sha256": "0b4d94811b8fe2d0e5b000f55e6c40bdfe383802252d804c84222c24920eb9a6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl3/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/learner.jsonl": {
+    "bytes": 1570,
+    "sha256": "57a4ebafafac9e6c0d6cb383ab1a1ba280104a21fe99e8676a6e3ce609f6d084"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/candidateB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/learner.jsonl": {
+    "bytes": 1570,
+    "sha256": "57a4ebafafac9e6c0d6cb383ab1a1ba280104a21fe99e8676a6e3ce609f6d084"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyA/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/semantic-result.json": {
+    "bytes": 168,
+    "sha256": "fd6a9529c814e05f3ec417b06a93aeb2ac458da68005df04fc10e23c5616db77"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/learner.jsonl": {
+    "bytes": 1611,
+    "sha256": "a6f57b5369b7468750add58a7637af3f5f7c85f9a7fa12bf7cebd2670c48048f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-evaluation.jsonl": {
+    "bytes": 163,
+    "sha256": "71ef3c48af6437e457a7a10d5bb6e66a9a5967020fa5c36a3eeac6acef0a4be0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-0.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-1.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-2.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/native-world-3.jsonl": {
+    "bytes": 578,
+    "sha256": "9d816a4489b7165d9f811870eddcd936b54371394b2532d92d8c93680580b9b1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-0.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-1.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-2.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_comparison_requires_compl4/legacyB/traces/worker-3.jsonl": {
+    "bytes": 578,
+    "sha256": "1d4869f7c5a1525539c059c482b3461fb6b219fe1ecbe0a50456eeaa8908b5ad"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/evaluation-cleanup-fault.json": {
+    "bytes": 31,
+    "sha256": "be5a54f833f474ddfa8d669cb21bd1a56e17b811c0005d004a8ec9db3399c671"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault-checkpoint.zip": {
+    "bytes": 16,
+    "sha256": "174bac15b8e8d5b17730ce467d12f1337f136e32e0dc526d25e87267a79be95c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault-states.json": {
+    "bytes": 385,
+    "sha256": "02038a6c24f5c6c7a8f14dc5a82dcb1292302a3da1e395ca9cc09f8246f2cddb"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/fault.json": {
+    "bytes": 150,
+    "sha256": "5b170d0a8a6f0484e0efaff735847ff5834cea2b082e9c89358b6feee5fcc3e9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_evaluation_cleanup_fault_0/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.json": {
+    "bytes": 285,
+    "sha256": "1fff310d0ac1b9aef829330420e49f6f383c534619e21ab54f75762dec4ad636"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.jsonl": {
+    "bytes": 467,
+    "sha256": "05dc98a357bbedea917f6c2a65df0c0586584c4bafa597f48a5fcd2c2adb005d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_exact_refund_and_duplicat0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_existing_ledger_never_ove0/credit.json": {
+    "bytes": 204,
+    "sha256": "6f0eb11693dfaa7ab57f352c6584b97c7d818b5cbcc7f2708150d301ff98b958"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de0/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de0/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de0/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/100/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/500/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de1/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de1/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de2/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de2/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de2/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de3/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de3/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de3/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de4/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de4/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fast_tree_only_current_de4/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_foreign_stale_or_wrong_bi0/credit.json": {
+    "bytes": 204,
+    "sha256": "6f0eb11693dfaa7ab57f352c6584b97c7d818b5cbcc7f2708150d301ff98b958"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_foreign_stale_or_wrong_bi0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/credit.json": {
+    "bytes": 263,
+    "sha256": "5d0f6170832d99e92ef64be73b7d14ed043dfbab95662176dcf2fc1d296f4f30"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "cc135ceee57b6eb31ae8683cb14122e5b5b21d756537dde5ea094aad054717c6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/constructor-result.json": {
+    "bytes": 997,
+    "sha256": "ffa95e4e85500a60ac0a1fcc62374a6aaeb6599c2c9ad997479a2d27a17e0413"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin0/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/credit.json": {
+    "bytes": 263,
+    "sha256": "5d0f6170832d99e92ef64be73b7d14ed043dfbab95662176dcf2fc1d296f4f30"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "cc135ceee57b6eb31ae8683cb14122e5b5b21d756537dde5ea094aad054717c6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin1/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/credit.json": {
+    "bytes": 263,
+    "sha256": "5d0f6170832d99e92ef64be73b7d14ed043dfbab95662176dcf2fc1d296f4f30"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "cc135ceee57b6eb31ae8683cb14122e5b5b21d756537dde5ea094aad054717c6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin2/native/traces/worker-3.jsonl": {
+    "bytes": 89,
+    "sha256": "2ed415ce40fe4b45b9aa9d59ccf0b0fb2bc7f3c7a5749a5ef3180806efbbbb8e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/credit.json": {
+    "bytes": 263,
+    "sha256": "5d0f6170832d99e92ef64be73b7d14ed043dfbab95662176dcf2fc1d296f4f30"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "cc135ceee57b6eb31ae8683cb14122e5b5b21d756537dde5ea094aad054717c6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/native-world-3.jsonl": {
+    "bytes": 174,
+    "sha256": "57067c43d659a4de622694aca7d3874632a9706bcb6666efc6582f0100f452ae"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin3/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/credit.json": {
+    "bytes": 263,
+    "sha256": "5d0f6170832d99e92ef64be73b7d14ed043dfbab95662176dcf2fc1d296f4f30"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/credit.jsonl": {
+    "bytes": 996,
+    "sha256": "cc135ceee57b6eb31ae8683cb14122e5b5b21d756537dde5ea094aad054717c6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/guard-events/fault.jsonl": {
+    "bytes": 3,
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-0.jsonl": {
+    "bytes": 87,
+    "sha256": "e4fd22e913d946359570cf6c5e750639f17c038cbddeaf154448b510daa140b8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-1.jsonl": {
+    "bytes": 87,
+    "sha256": "aee148114f05d1cba9985eb326f2ea96061a889fe80b8d61c055ebb83ee58d6d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-2.jsonl": {
+    "bytes": 87,
+    "sha256": "ca2ad18570db0f1579e461bdff68e7aaf2c86f55a0e287ed8299af6e4eb94be2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/native-world-3.jsonl": {
+    "bytes": 87,
+    "sha256": "079bc4db493561904cd92b813487c6cc02d58afb097db3844e2174760d33f762"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-0.jsonl": {
+    "bytes": 148,
+    "sha256": "d970502562ab57114cb4c93c592c24d90f97c33a22b14a54d712674281ab4f4c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-1.jsonl": {
+    "bytes": 148,
+    "sha256": "7778f89f54bde327cc38d2128f484a64437c7e2e49b44d818b386b83d7836e02"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-2.jsonl": {
+    "bytes": 148,
+    "sha256": "f1518d27a558ce0d34ca9c75e48844ba1184c9637b8458b0caa93ee0d9c6cde5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_four_worker_exact_denomin4/native/traces/worker-3.jsonl": {
+    "bytes": 148,
+    "sha256": "1323219983f26d9ab6814ebaf0993e4ff525fbd49e9961f30fd1b1f10292644d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_freeze_close_then_allocat0/trial/description.json": {
+    "bytes": 601,
+    "sha256": "96b72f27143daa348cf9e762051db0c6ba7a132f453ad3a8b4d74935879cbb10"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_freeze_close_then_allocat0/trial/final-actor.pt": {
+    "bytes": 5,
+    "sha256": "2443630b4620165c8b173e7265e17526fe2787ae594364dd6d839ad58f2fc007"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_freeze_close_then_allocat0/trial/initial-actor.pt": {
+    "bytes": 7,
+    "sha256": "ac1b5c0961a7269b6a053ee64276ed0e20a7f48aefb9f67519539d23aaf10149"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_freeze_close_then_allocat0/trial/result.json": {
+    "bytes": 1087,
+    "sha256": "fb30289a4d7f48d899d4a2c7d765ee17950b7b208a2cfc817551919755a097c5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_freeze_close_then_allocat0/trial/specification.json": {
+    "bytes": 24,
+    "sha256": "e979d8042d0787b2ca231c25978dee60330440c27dc7cac54e581e57e105357f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_freeze_close_then_allocat0/trial/training-end-workers.json": {
+    "bytes": 373,
+    "sha256": "7b1e6cfa473b369462ad1a29343854407cf9b1c830660317013fddc6b7fcdef9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.json": {
+    "bytes": 252,
+    "sha256": "9dec2b8ec75b3b068ee2b176719dbc5f34e040f23ef053ea8d1627cea872ef00"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.jsonl": {
+    "bytes": 241,
+    "sha256": "71a1e162a39c714faa7cbe846a0fac737777d59f6be246783590151bc441c417"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fresh_spawn_installs_nati0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_fresh_worker_cannot_impor3/worker-events.jsonl": {
+    "bytes": 148,
+    "sha256": "2024627ec83e0a0a655d0b5ef45634e90b57e53a559c5b64239c4eb6a002586e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno0/foreign.json": {
+    "bytes": 118,
+    "sha256": "ce6944f06de769c62f892de1558a7a64ed0d4a9c54f3d5869bde9ee75341b900"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno0/publication-control.json": {
+    "bytes": 156,
+    "sha256": "a0add095aa2601f98f721e0926ae1b6fa271f1d0722663e0a0f20d769e215293"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno0/watchdog.json": {
+    "bytes": 17428,
+    "sha256": "6c046036cc232787c646f5f166e6a07d9a64ffd310ad743ad951d2a32d99a99e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno1/foreign.json": {
+    "bytes": 118,
+    "sha256": "145b4c85ea41f408f53f1b36aee8bd748f9d144b3d3f67a90d47d562543134c9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno1/publication-control.json": {
+    "bytes": 167,
+    "sha256": "8365277f962d65b861f55f89267c0421792e4d03f71ef1ca75c19a4ffe01c86e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog-publication.json": {
+    "bytes": 1344,
+    "sha256": "0d4cc8d1f04f952999271775b90a4ef3800999f324d631278a922d615a27af1d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog.json": {
+    "bytes": 21874,
+    "sha256": "aa9310f256d75bdb80041678517cbb25eb5070f0fcdc7ba1aa9744830f6b415d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still0/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_missing_memory_still1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li0/17/stat": {
+    "bytes": 53,
+    "sha256": "7fe845521d35f4f3e436feaa77a7de88d38cebaf94280f4cc243fecf71022dc6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li1/17/stat": {
+    "bytes": 53,
+    "sha256": "cca3c4a3b0205eda9d1d7aa00eef3013ee92b156b4fa44a2f82001325bdbb1a3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li1/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li2/17/stat": {
+    "bytes": 53,
+    "sha256": "709f074debaa638aa075c6fe1f9df8d4945d7900570c3dcb64d84423cd4d81f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li2/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li3/17/stat": {
+    "bytes": 53,
+    "sha256": "7fe845521d35f4f3e436feaa77a7de88d38cebaf94280f4cc243fecf71022dc6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li3/17/status": {
+    "bytes": 11,
+    "sha256": "6151d2c7d777681a4ecfd7d179692f2015d1a7986b3a583e4f3adcc4cd151921"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li4/17/stat": {
+    "bytes": 53,
+    "sha256": "7fe845521d35f4f3e436feaa77a7de88d38cebaf94280f4cc243fecf71022dc6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_live_rss_requires_same_li4/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_managed_finalizer_and_res0/context-finalizer.jsonl": {
+    "bytes": 88,
+    "sha256": "e4eac655a03774364890402f2372238ec657516253214ed0694d29dd708a4c4e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_managed_finalizer_and_res1/context-finalizer.jsonl": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_managed_finalizer_and_res2/context-finalizer.jsonl": {
+    "bytes": 88,
+    "sha256": "2ec5075a13edafb3d6f22b1db01895a035311fcb22fb2ee64c21641204abf995"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_managed_finalizer_and_res3/context-finalizer.jsonl": {
+    "bytes": 88,
+    "sha256": "46ef0c6b27a5b3207b49188793e034d4acfe892a41eae07d87111c8d3b309bd9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_managed_finalizer_and_res4/context-finalizer.jsonl": {
+    "bytes": 88,
+    "sha256": "e4eac655a03774364890402f2372238ec657516253214ed0694d29dd708a4c4e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_mujoco_binding_weakrefs_z0/binding.json": {
+    "bytes": 134,
+    "sha256": "d1c1af739ee0f965ac64025fa304369eb8221daca23eebe338a4c84e14762ac0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an0/credit.json": {
+    "bytes": 261,
+    "sha256": "f6d97310724483bbfcffe2c16f85cc0037c2ef4c32356e33b1d29d7a6c5aa903"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an0/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an0/native/constructor-result.json": {
+    "bytes": 602,
+    "sha256": "8d6b35b80ffa7b4c3db8cef96ad2150d4580e7c1ec8f8f7e3db9847eac8f6115"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an0/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an0/native/traces/worker-0.jsonl": {
+    "bytes": 110,
+    "sha256": "84f2731e73ca7b00904295249bd192ec1e72241f65a17ac0230c33f45aeacc44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an1/credit.json": {
+    "bytes": 261,
+    "sha256": "f6d97310724483bbfcffe2c16f85cc0037c2ef4c32356e33b1d29d7a6c5aa903"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an1/credit.jsonl": {
+    "bytes": 249,
+    "sha256": "df288d25f42d55ba5cd301677e51aee89ebb63faa5dab9ba9b30d5019cb1b5e2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an1/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an1/native/traces/native-world-0.jsonl": {
+    "bytes": 86,
+    "sha256": "45ed960e94a013de6708b701e25050a947d67eca3ae40f1d1110724a7edec28c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_one_worker_close_order_an1/native/traces/worker-0.jsonl": {
+    "bytes": 110,
+    "sha256": "84f2731e73ca7b00904295249bd192ec1e72241f65a17ac0230c33f45aeacc44"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "beba1d87407c66746338de09d92fae43eb803e69585b3abb1022a40677236717"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "bf3c0c72d1216467fb012ea26bb5cf617c347ded22c30804078eefbda8867c3c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "925ed7234e27b31dabd93cba2b5331be91e9b35776586abf1fc6a8a903928925"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "64c1238a118c84366acf9259712262b7ac782c1e47e49d383f8d1d59d2c38549"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1097/probe-result.json": {
+    "bytes": 148,
+    "sha256": "26fde1f4c37ccbbd90ab7364a44889fb32a9c6f803c31d3b61d1f8ba50786839"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "5e7a77d654cc0d0536c25c8e82f6b3cd9ea3c3b44e88a45a1ed0a92164d72037"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "35fd7c28794c9141fec71c6a3eb9c6331d0a7ed115386026ee071f4f6a219e2f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3cf7287e54da724bb4429bbbdca112b59dc8aa61393aafd9a38e17753b06c6b9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_parent_preparation_stays_0/receipt.json": {
+    "bytes": 31,
+    "sha256": "ed3e20d51b7750dc648e75019e3f4fcbaa77c2fe22db90efbe77bf74b17b8f90"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_parent_preparation_stays_1/receipt.json": {
+    "bytes": 31,
+    "sha256": "ed3e20d51b7750dc648e75019e3f4fcbaa77c2fe22db90efbe77bf74b17b8f90"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_persistent_missing_status0/17/status": {
+    "bytes": 17,
+    "sha256": "1bd6ddef8dc5ea30ee7656615ec3d037fab1a06929c8483be28cbb7abf030799"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re0/native/context-worker-before.json": {
+    "bytes": 98,
+    "sha256": "423e186aa48bbe8146c6eada8cf2cfd34b386aaac8d3ac5d288bd60d23aa2c7b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re0/native-context/after.json": {
+    "bytes": 624,
+    "sha256": "8fadce61065ba118ac9e11e4a318ece1ef33c128f000305668818a8b3303465f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re1/native/context-worker-before.json": {
+    "bytes": 98,
+    "sha256": "423e186aa48bbe8146c6eada8cf2cfd34b386aaac8d3ac5d288bd60d23aa2c7b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re2/native/context-worker-before.json": {
+    "bytes": 98,
+    "sha256": "85f2ebf1f6ba2bafee8b8fbff90abdd05d430cb3ad1281915cdb17e3338edd80"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re3/native/context-worker-before.json": {
+    "bytes": 93,
+    "sha256": "db7252dab8df90fe0a175c877c0b148353811cbfd60b6d0bf31e239e5cabc072"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re4/native/context-worker-before.json": {
+    "bytes": 98,
+    "sha256": "423e186aa48bbe8146c6eada8cf2cfd34b386aaac8d3ac5d288bd60d23aa2c7b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re5/native/context-worker-before.json": {
+    "bytes": 98,
+    "sha256": "423e186aa48bbe8146c6eada8cf2cfd34b386aaac8d3ac5d288bd60d23aa2c7b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re6/native/context-worker-before.json": {
+    "bytes": 98,
+    "sha256": "423e186aa48bbe8146c6eada8cf2cfd34b386aaac8d3ac5d288bd60d23aa2c7b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_post_constructor_proof_re7/native/context-worker-before.json": {
+    "bytes": 98,
+    "sha256": "423e186aa48bbe8146c6eada8cf2cfd34b386aaac8d3ac5d288bd60d23aa2c7b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_prepare_refuses_dirty_or_0/native-context/before.json": {
+    "bytes": 542,
+    "sha256": "4fe9437ec149f080a37d9c5a3dab92d567a3e294e1d536243e1279786ac200d2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b0/watchdog-publication.json": {
+    "bytes": 1705,
+    "sha256": "8ec4fce37d76545275995a7d1809ce990a77d51e83c12eebf611b533a8803da4"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b0/watchdog.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b1/fake-ram/joxing-watch-40mbaht6/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b1/fake-ram/joxing-watch-40mbaht6/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b1/watchdog-publication.json": {
+    "bytes": 1047,
+    "sha256": "62bda41c6d8e39abc3c185332c969d34d165d7a71a2a1ee7ae36a41898a22f5b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b2/fake-ram/joxing-watch-n292uoma/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b2/watchdog-publication.json": {
+    "bytes": 1048,
+    "sha256": "8525459bc3a469c23885111d106fc6f155b6fa12e49066ee1b7b5339868076eb"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b3/fake-ram/joxing-watch-wpgrf_k4/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b3/fake-ram/joxing-watch-wpgrf_k4/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b3/watchdog-publication.json": {
+    "bytes": 1047,
+    "sha256": "d009e83cd0fbc95a9cd13d25184e76b13efb32848faed32b882a54fbab1443cd"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b4/fake-ram/joxing-watch-r3ca7_b4/report.json": {
+    "bytes": 262145,
+    "sha256": "9408817bc040328d1c403ff97e94cea3dfd3a361b2fb7ecc7af75ff3a5157139"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b4/fake-ram/joxing-watch-r3ca7_b4/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b4/watchdog-publication.json": {
+    "bytes": 1048,
+    "sha256": "0bfca32fab9f6c80567774c8f00fe1a83cc9417f0bb6a76877c2d3f76a554028"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-qdspmtct/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-qdspmtct/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-qdspmtct/unregistered": {
+    "bytes": 1,
+    "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b5/watchdog-publication.json": {
+    "bytes": 1048,
+    "sha256": "41154ed4871aedddd00f842cf47061b94ce33893989c24c97cc6227595f001aa"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b6/fake-ram/joxing-watch-p0bq675q/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b6/fake-ram/joxing-watch-p0bq675q/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b6/watchdog-publication.json": {
+    "bytes": 1152,
+    "sha256": "7fd69360ee130ffa1cccb5c3d1857ee7fb10324ade46a0b4fb6bbbf282bf5365"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b6/watchdog.json": {
+    "bytes": 7,
+    "sha256": "11d510e067d2cdcd7559bd86d27a2f4c20babd43670346b97af99b522c1f0075"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b7/fake-ram/joxing-watch-0triukz8/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b7/fake-ram/joxing-watch-0triukz8/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_private_scope_ownership_b7/watchdog-publication.json": {
+    "bytes": 1048,
+    "sha256": "f004862d04b39064492a4267374d02c6c1d4f3dcc0a804e7ed936a51cd260776"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/maps": {
+    "bytes": 17,
+    "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/stat": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/maps.txt": {
+    "bytes": 17,
+    "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-after.txt": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-before.txt": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/status.txt": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_release_lifetime_and_faul0/release.jsonl": {
+    "bytes": 633,
+    "sha256": "bc02cbfbd76b06563af4b1e90411ed85322011cd972820fbffbd04497e9d11d2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_release_lifetime_and_faul1/release.jsonl": {
+    "bytes": 632,
+    "sha256": "8574a6a5a96468ec4e840f417e1623dc1cebf43ddcacf0520c9de4ae0d36b1c2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_release_lifetime_and_faul2/release.jsonl": {
+    "bytes": 693,
+    "sha256": "b67b8e87ec1002373f8c20c0d553911ca13f55f1875a019cbec52069e9409c0d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_release_lifetime_and_faul3/release.jsonl": {
+    "bytes": 310,
+    "sha256": "f40b3a27b3cab47608436187627dae086dec96d7249d04c412902c1879dbd580"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_release_lifetime_and_faul4/release.jsonl": {
+    "bytes": 443,
+    "sha256": "a5ac19c8cc4f48411a30c47d3f29d1fb52921a700f709c5776030729a294f743"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_release_lifetime_and_faul5/release.jsonl": {
+    "bytes": 136,
+    "sha256": "6816c0845481ef72094e6230a9244c02950caf2bea05703d8ec8ccbda5361782"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_release_lifetime_and_faul6/release.jsonl": {
+    "bytes": 425,
+    "sha256": "5b69eff6f6995cfe0fd3ef0394b8e6a6b885f46f6903d50210db9d6f9a69d1d5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa0/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa1/serial.jsonl": {
+    "bytes": 1440,
+    "sha256": "6cfcadfcb43d61787e4bc9f7501e477a7627f5630fe35b1a82fce100ac704ea6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa10/serial.jsonl": {
+    "bytes": 326,
+    "sha256": "a3dbaefd86632003fd347b61df8d44fbf1e21b5cc06bf5fc7f1cb81e8d600f23"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa11/serial.jsonl": {
+    "bytes": 317,
+    "sha256": "978fb2887aadd208f5006253ea725017ce13fc06bdf2c0bf4e5181bb60123a6a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa14/serial.jsonl": {
+    "bytes": 436,
+    "sha256": "415ab18dd553078dd44757338e354c2ea2fa0df90dcae705b54753de3d4d2f1e"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa2/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa3/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa4/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa5/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa6/serial.jsonl": {
+    "bytes": 417,
+    "sha256": "22e49f010553454ed7327dfd0052b35826388a49be870a0061602c865e717b15"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa7/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "7500b8a0a6aca8de5ef20f9c1eea295f94c04dff5eed0d53fea49868b59ddff6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa8/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "9117c0bb7df8af22fa018894776e731efc600acf7c83b1af6e3c6799bec80417"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_serial_close_order_and_fa9/serial.jsonl": {
+    "bytes": 444,
+    "sha256": "38d283c35d91879dd33ec0459d3e9a032094c2f474ecc83d55c65d5544f20158"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require0/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require2/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require2/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require2/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require2/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require3/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require3/17/statm": {
+    "bytes": 13,
+    "sha256": "7c575bcf3f81f8b863658b9b2237b6aa3781daa40d5bd4a0da00347664173ff6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require3/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require3/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require4/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require4/17/statm": {
+    "bytes": 3,
+    "sha256": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require4/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require4/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require5/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require5/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require5/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require5/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require6/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require6/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require6/17/status": {
+    "bytes": 25,
+    "sha256": "9c5b9866ac567c32098d6bcc93749c7ae721b8251b4a962419c67666aaad6c3a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require6/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require7/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require7/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_terminal_evidence_require7/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_transient_missing_status_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_unknown_reservation_stays0/credit.json": {
+    "bytes": 355,
+    "sha256": "fe5131a838ee691d998b0de09172cdbadc2914cc91e166cb56c93e3de3222a0b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_unknown_reservation_stays0/credit.jsonl": {
+    "bytes": 252,
+    "sha256": "8eab3119c98a55a336b040f5506e38f85527b536d90080996f991f1d75e4f2d0"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/controls/test_unknown_reservation_stays0/credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native-credit.json": {
+    "bytes": 320,
+    "sha256": "caf336601864fc85046db590ee68860a006c904175a34661bf681d7a1f8b7e53"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native-credit.jsonl": {
+    "bytes": 249,
+    "sha256": "90c64e5590a20369b355e575140e610bde2712dca18b39747d1866923ee765ee"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native-credit.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/before-close.json": {
+    "bytes": 1273,
+    "sha256": "e5a8ce231b6f45a0fc51d9c9f59bfd14419b8bb999fa4b2ed3ac5b48dd576e61"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/constructor-result.json": {
+    "bytes": 12873,
+    "sha256": "bbaeb8cf9baab117f4c7a4b9723b478d9537b46094f0891753271c9cd289dccd"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/context-finalizer.jsonl": {
+    "bytes": 117,
+    "sha256": "245e6cf5306bdecdcf86a9cf8937f48ff80aa5a8550611f795df37f1ac6f3377"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/context-worker-before.json": {
+    "bytes": 1971,
+    "sha256": "1b0dc7916f0d9177b4575d2b349f8c1bd238f025b828861fd289b36c61e1eefc"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/proc-context-worker-before/maps.txt": {
+    "bytes": 117471,
+    "sha256": "70465240f85fa733a31ec073c304d72e129500d5e660616a3b1b0ac2ee95e21d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/proc-context-worker-before/stat-after.txt": {
+    "bytes": 303,
+    "sha256": "3c492204d6cea38af020613044f42e9d4c1364291b471d75017d9a6f1058e5fa"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/proc-context-worker-before/stat-before.txt": {
+    "bytes": 303,
+    "sha256": "fc8cff8221ee23bbf0d3152e7b87d8bf84b891a484bb02b4b576abe7bb5eb7c2"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/proc-context-worker-before/status.txt": {
+    "bytes": 1591,
+    "sha256": "4d3cca299a035e8669c207e469c8da5e29eb954d7da7f13347b8257551c1c363"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/resource-release.jsonl": {
+    "bytes": 1150,
+    "sha256": "fa529d86a325b124ac0d49c5100f41385df7ab7287e71d2414183b9cb0146fde"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/serial-close.jsonl": {
+    "bytes": 457,
+    "sha256": "494f7875bfa9a214eb7aed84871424a766ae243b7b45a56012dc02091efc1264"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/traces/native-world-0.jsonl": {
+    "bytes": 469,
+    "sha256": "c9ec8c0e409851c8dae3f1223d4653feca43ee8d6064ad3aec9b308aab52843b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/traces/worker-0.jsonl": {
+    "bytes": 274,
+    "sha256": "03f8b4debed279c5c378457a9d83567cb38bc5e29aebc577b03fcbcaab9e47ae"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0/trial/worker-0.monitor.csv": {
+    "bytes": 58,
+    "sha256": "6d1e0f57e5ecbff5e4b8363a7095620972b0accbbf4398b5761da0bb583ef9db"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/after.json": {
+    "bytes": 9089,
+    "sha256": "79b118d259fb364f3ce3033c6aa8875ca0812acb8aaf5ef33ed01c5248422c4a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/before.json": {
+    "bytes": 3537,
+    "sha256": "e8a31873835d4f01c424fa37a0cfd3cb265ca2937eb6ee84ed23179d1626eb8b"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-root-before/maps.txt": {
+    "bytes": 14094,
+    "sha256": "964cea73a97304d2914b893424014f41b738da90466f6505cdd07597e8a444a7"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-root-before/stat-after.txt": {
+    "bytes": 296,
+    "sha256": "03c3bc2ec2ad64eef501855c9a46a60b77dfc6f7abadac530066cec2cb3b6302"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-root-before/stat-before.txt": {
+    "bytes": 296,
+    "sha256": "99d8cc05ca7b8b9cf126a2bc5de1149e74745df14107f7d129a05703e5671aba"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "98e8edcc1c5d5b9ae6dced09294a7269aa009533f516049a238679278138e0ea"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-after/maps.txt": {
+    "bytes": 8408,
+    "sha256": "c88a7895bd26470c0b246bdb907678710859252f4e5308d03df46e59c04380f5"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-after/stat-after.txt": {
+    "bytes": 300,
+    "sha256": "5cf9a11ecda0e83fcb79d7235908066452879327faadef0c9cc1dfe81df196c6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-after/stat-before.txt": {
+    "bytes": 300,
+    "sha256": "5cf9a11ecda0e83fcb79d7235908066452879327faadef0c9cc1dfe81df196c6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-after/status.txt": {
+    "bytes": 1588,
+    "sha256": "86ddd2cd0edbccb0788b6cfc98d79e03fd9b666ff3dfbcd358ce618dfde3aaca"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-before/maps.txt": {
+    "bytes": 1793,
+    "sha256": "28abbeeea11bd5969eba4542b1f7a5d29ff7718929d42d73d66c3046d7c481b6"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-before/stat-after.txt": {
+    "bytes": 290,
+    "sha256": "2546e7824a51a5654bb27641b654a720452bbae07a46da506d75a65d34e91f94"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-before/stat-before.txt": {
+    "bytes": 290,
+    "sha256": "4584052bc3d0f56532be21a36f1a996cce06159d072b3095e9b2e43a7542c16f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-server-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "c0dd4ecea18a0c53383b381565a3ff164ab74348a55e389dea8a5b0b6a7b667d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-worker-after/maps.txt": {
+    "bytes": 162874,
+    "sha256": "3f59b86223afc0b86febd37730454fe89626ec141971e947c9075ec249d5bcd8"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-worker-after/stat-after.txt": {
+    "bytes": 307,
+    "sha256": "ccac814f86bda2ca8f114e9456c2053f578df333049225cc8bfcb6844a065aed"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-worker-after/stat-before.txt": {
+    "bytes": 307,
+    "sha256": "ccac814f86bda2ca8f114e9456c2053f578df333049225cc8bfcb6844a065aed"
+  },
+  "runs/v0.0.11/native-context-transfer-01/fixtures/native0-context/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "c27f9aa8757a03b619880b1f46ec5b9af6bac134405efe0d6c120584d3b2760d"
+  },
+  "runs/v0.0.11/native-context-transfer-01/native0-watchdog-publication.json": {
+    "bytes": 1218,
+    "sha256": "6b0ebea69a9eca2874d892f9e9eac34f417f1297ff69251b946e1fe7f9b2bb4f"
+  },
+  "runs/v0.0.11/native-context-transfer-01/native0-watchdog.json": {
+    "bytes": 32597,
+    "sha256": "4b636b368877953b4a4cba0067fa1aba41fa48d6516a70b0aadba328088c387a"
+  },
+  "runs/v0.0.11/native-context-transfer-01/native0-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/native0-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/native0.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/native-context-transfer-01/result.json": {
+    "bytes": 66977,
+    "sha256": "fe610139563f760d69cca73044f13554b805d3c997bf4f4c7a4c589af409b53c"
+  },
+  "runs/v0.0.11/native-context-transfer-01/runtime.log": {
+    "bytes": 97,
+    "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+  },
+  "runs/v0.0.11/native-context-transfer-01/sync.log": {
+    "bytes": 1237,
+    "sha256": "c02983214b0d3ceb9604b1f45112c69ce9e66825e75ae5b0b37bef258aa5c15b"
+  }
+}

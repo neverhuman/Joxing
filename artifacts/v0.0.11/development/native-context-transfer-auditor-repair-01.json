@@ -1,0 +1,9 @@
+{
+  "status": "audit_only_repaired_then_verified",
+  "first_fault": "Overbroad checkpoint-extension ban also rejected ten literal mock SavedActor/SAC control outputs from added deferred lifecycle tests",
+  "frozen_source_explanation": "tests/test_deferred_trial.py SavedActor.save writes only b'initial'/b'final'; fake SAC.save writes b'fault-checkpoint'. Exact literal values are verified, not classified as real actors.",
+  "repair": "Require exact known three control-directory prefixes, exact three filenames, exact literal bytes and ten-file denominator. Formal native folder still rejects all actor/archive files; all control bytes remain in manifest/transfer.",
+  "executed_source_protocol_or_criteria_changed": false,
+  "formal_native_repeated": false,
+  "audit": "native-context-transfer-qualified-01-integrity.json"
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "LOCAL OFFLINE planning measurement on immutable H21saved receipt bytes. No new simulation, no four-worker result, no codec deployment/qualification. Old evidence not rewritten; gzip held in RAM only.",
+  "reference_source": "d7d01ee68db9448f45f826cdbfa8d59f401e1d75",
+  "reference_protocol_sha256": "da32adcd079bc23cf5220f031bb788d4706b90b8cd212ade659afaf564d9334a",
+  "deployment_original_bytes": 181508,
+  "deployment_level1_mtime0_gzip_bytes": 67032,
+  "decompressed_exact_original_bytes": true,
+  "original_sha256": "412ddbed8c779f1639a83ce8ecc41e36124ad8a41e9b81363a8a33dfc4ece9ef",
+  "candidate_encoded_sha256": "10c5de23c1a0933beec5849c20e18dba2b89b9a86d71977f6df8c9ebfb2a7b3b",
+  "main_original_bytes": 66977,
+  "main_compact_bytes": 41274,
+  "decoded_main_values_equal": true,
+  "one_native_fact_compact_bytes": 9607,
+  "pure_structural_four_fact_projection_bytes": 207141,
+  "projection_extra_headroom_bytes": 10000,
+  "projection_with_headroom_bytes": 217141,
+  "proposed_next_receipt_limit_bytes": 229376,
+  "remaining_receipt_budget_bytes": 234023,
+  "limitations": "Three extra current one-worker fact records +10k headroom are a sizing projection only. Future four-worker actual structure/report/timing may be larger; preregister first-limit stop and do not increase old cap. New gzip bootstrap and compact main require lossless source/LINUX controls before native task; existing RAM watcher/canonical exact copies unchanged."
+}

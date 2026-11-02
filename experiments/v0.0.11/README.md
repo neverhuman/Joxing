@@ -1,3 +1,30 @@
+# H21ONE-native context qualifies; H22four-world proof ready — Nov2 Mountain
+
+Frozen d7d01ee/da32adcd passes172Linux controls +ONE native1VALID/0INVALID/0NOT_RUN.
+All700muscles/200prep/0rollout/actor/inference/update; original H18spec/state exact,
+parent beforeclose persisted, live native graph weakrefs die, managed finalizer
+and clean1thread forkserver/context/raw ancestry proved. Actual native positive
+1090039808byte retirement charge releases72.26ms; same100ms/2s/RSS gates hold.
+Close336.76ms is descriptive only, no historical native speedup comparison.
+Independent747source/172JUnit/200credits/41exits audit +676rawfiles1295835bytes
+exact transfer pass, no writer/IPC. Audit-only mock-checkpoint classification
+fault retained/repaired; no executing source/gate edit or native rerun.
+Details/commands/limits: docs/NATIVE_CONTEXT_TRANSFER_RESULTS.md.
+
+Next worker-ready docs/FOUR_NATIVE_CONTEXT_MISSION.md /research/H22.md, NOT
+implemented/preregistered/run. FOURoriginal700muscle constructors/800prep, SAME
+2s WHOLEserialclose/100ms/RSS gates, no learning. Receipt preflight prerequisite:
+13packet carry16658physics/371.090715s/35531698fixture/3960281receipt bytes;
+original remaining223342steps/228.909285s/1038210126fixture/234023receipt bytes.
+Unchanged packet cannot fit. Offline ONLYlossless sizing: bootstrap181508→67032
+exact-gzipbytes/main66977→41274compactJSON, four-fact+headroom217141projected,
+not native4evidence. Named NEWbootstrap/main encoding must source/LINUX-qualify
+before native work; RAM watcher/canonical exact copies/defaults unchanged, no
+old bytes removed or caps raised. Proposed100swhole/50sslot/800physics/12MiBraw/
+224KiBreceipts/1MiBIPC/4workers fits original remainder; stop actual first limit.
+No active owned job. No four-worker/learning parity/full-source/motor/bout/league
+qualification or v11tag; H15invalids/H17four-worker failure remain authoritative.
+
 # H21native context transfer implemented and registered — Nov2 Mountain
 
 Current packet experiments/v0.0.11/native-context-transfer-protocol.json /
