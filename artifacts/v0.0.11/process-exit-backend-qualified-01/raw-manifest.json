@@ -1,0 +1,1394 @@
+{
+  "runs/v0.0.11/.deferred-native.lock": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/backend-publication-deployment.json": {
+    "bytes": 180298,
+    "sha256": "0b16c09075cc8589430e38233e9999e23ca72b035f4404612500112b35240b1e"
+  },
+  "runs/v0.0.11/backend-publication-launch.log": {
+    "bytes": 4238,
+    "sha256": "407581a5ff9ae9492e6d483ab43e2eb07842d774664b8a9c471a2a0fc0b572a1"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/controls.log": {
+    "bytes": 179,
+    "sha256": "7de8cfd77759026519cb8bfba6b283306f648c01a8d594d911fbfb3c2e5427c7"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/controls.xml": {
+    "bytes": 11514,
+    "sha256": "bfd496a5fc5a53d78675422a00a08256bf887f9aac323581e33235e034624792"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_exit_uses_nonzero_0/release": {
+    "bytes": 9,
+    "sha256": "1584570866884bb892dbf8bc693d7fbe28203b2ce90ab34642f92ba906781ac2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.json": {
+    "bytes": 9298,
+    "sha256": "9959241a434e00216e65c4f694b2c8293a4e03fef21ddad9a5c3b48931b26d73"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_exit_uses_nonzero_0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/foreign.json": {
+    "bytes": 118,
+    "sha256": "3aa095c7668ce61aba633ab85e55bf6bd59f5c8367216e2f7068241d54ae60a3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/serial.jsonl": {
+    "bytes": 1475,
+    "sha256": "1f6168b772e7b4aa80669acec040e0de33d8aaa0a129ddb6bacb6461888545df"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.json": {
+    "bytes": 15146,
+    "sha256": "0ea32c6515ddad407addb1e9b6de1b8c9de147ec3babad6a7d877ca83c10019a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_serial_heaps_guard0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.json": {
+    "bytes": 2383,
+    "sha256": "fea8d0de451d4bb8f6fc1a5494166f75b14c10f9c7dc944c114aa74e9fe4a126"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_watchdog_stops_own0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.json": {
+    "bytes": 4366,
+    "sha256": "09e3aab6f5fa4c6bd071e014159c799c0e77fe07c0cdd05616ac02400208793a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_actual_watchdog_stops_own1/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/maps": {
+    "bytes": 7,
+    "sha256": "27ecf4a6835cb2fdf5207078d77fbe88e63c2e81c12a24c77b26c75f769ba242"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/stat": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_proc_proof_rejects_0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/stat": {
+    "bytes": 54,
+    "sha256": "0649b71a331bd5aa9751e2864b6b2e205f9313c73681ce2ff543709b3591b797"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_proc_proof_rejects_1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/stat": {
+    "bytes": 54,
+    "sha256": "1cd50a375de032bd7cd00b496aa36f5f0f82608856f59eeb4ea07fe169047d70"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_proc_proof_rejects_2/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_status_fail_closed_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_status_fail_closed_1/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_status_fail_closed_2/17/status": {
+    "bytes": 11,
+    "sha256": "c20bbc8bfc88c7e3204a21a422bbe259a0855f698295149976521a512190de87"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_bound_status_fail_closed_3/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_capacity_and_existing_out0/out.json": {
+    "bytes": 8,
+    "sha256": "ca67bd59cc4116ac80db5f64cbf4747f26ba929c85e8cc689a6123368d08719b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de0/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de0/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de0/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/100/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de1/100/task/500/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de1/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de1/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de2/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de2/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de2/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de3/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de3/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de3/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de4/100/task/100/children": {
+    "bytes": 3,
+    "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de4/101/task/101/children": {
+    "bytes": 3,
+    "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fast_tree_only_current_de4/102/task/102/children": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_fresh_worker_cannot_impor3/worker-events.jsonl": {
+    "bytes": 147,
+    "sha256": "9ee088b7728c2b9a6a290c31d149b8d2fb5f88c1df03ca6e7a8875c08f8841e6"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno0/foreign.json": {
+    "bytes": 118,
+    "sha256": "e7ef028469fd4f46ad2e6516cca1a0fc5cc11b0c87ace2262151ccc217d1489a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno0/publication-control.json": {
+    "bytes": 157,
+    "sha256": "1d8c1e9e460f3e27666a53174bca64f8950f3cfe74ef4461be26118a3e2ac925"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno0/watchdog.json": {
+    "bytes": 17401,
+    "sha256": "47c4f406c58de701b64cd0ca4b7a416190eeacadc2b6360f5cc0bced7e17547c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno1/foreign.json": {
+    "bytes": 118,
+    "sha256": "1bde7df4d8da22028da9d02e339f4a9241708dca7f0d9241ce7552c05ff2943e"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno1/publication-control.json": {
+    "bytes": 167,
+    "sha256": "2221d9717812fe098c16fe89e5d52a1c719285a47d4695ef59554868fed29303"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog-publication.json": {
+    "bytes": 1398,
+    "sha256": "bcad9d0492049a70a1140c1cb6622db9e0773e98fd51fe3fea1c4afa489516f1"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog.json": {
+    "bytes": 21797,
+    "sha256": "31f6ea8a011fffbf48c1f4d1fa874e0b6fef025d75762433707791c8677fed00"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_injected_disk_delay_canno1/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still0/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_live_missing_memory_still1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "beba1d87407c66746338de09d92fae43eb803e69585b3abb1022a40677236717"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n0/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "bf3c0c72d1216467fb012ea26bb5cf617c347ded22c30804078eefbda8867c3c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "925ed7234e27b31dabd93cba2b5331be91e9b35776586abf1fc6a8a903928925"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "64c1238a118c84366acf9259712262b7ac782c1e47e49d383f8d1d59d2c38549"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n1/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1097/probe-result.json": {
+    "bytes": 148,
+    "sha256": "26fde1f4c37ccbbd90ab7364a44889fb32a9c6f803c31d3b61d1f8ba50786839"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n2/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n3/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "5e7a77d654cc0d0536c25c8e82f6b3cd9ea3c3b44e88a45a1ed0a92164d72037"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n4/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "35fd7c28794c9141fec71c6a3eb9c6331d0a7ed115386026ee071f4f6a219e2f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n5/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1097/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3cf7287e54da724bb4429bbbdca112b59dc8aa61393aafd9a38e17753b06c6b9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1098/probe-result.json": {
+    "bytes": 145,
+    "sha256": "170df5e1e654f68ac1aea77b7ddb993cbea88207fe11844800771e1bc1941387"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/forkserver1099/probe-result.json": {
+    "bytes": 145,
+    "sha256": "3f24c27242ad9403754698c38560466007f7500e190d4fbbf5670b9abeab5810"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1097/probe-result.json": {
+    "bytes": 140,
+    "sha256": "05d033c9445cf765e317915ca0742da8bbc0434d4bd2f865e0379c2c55c4a27f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1098/probe-result.json": {
+    "bytes": 140,
+    "sha256": "0f320437f9fc2841897f0c5c7611d8dcbf93a98ecbfa94444e7763b590733c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_paired_conclusion_keeps_n6/spawn1099/probe-result.json": {
+    "bytes": 140,
+    "sha256": "353568ee7bffe56f485328a0c12f069e4f51acfeaced537d8e98e7666019a91a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_parent_preparation_stays_0/receipt.json": {
+    "bytes": 31,
+    "sha256": "ed3e20d51b7750dc648e75019e3f4fcbaa77c2fe22db90efbe77bf74b17b8f90"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_parent_preparation_stays_1/receipt.json": {
+    "bytes": 31,
+    "sha256": "ed3e20d51b7750dc648e75019e3f4fcbaa77c2fe22db90efbe77bf74b17b8f90"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_persistent_missing_status0/17/status": {
+    "bytes": 17,
+    "sha256": "1bd6ddef8dc5ea30ee7656615ec3d037fab1a06929c8483be28cbb7abf030799"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b0/watchdog-publication.json": {
+    "bytes": 1811,
+    "sha256": "14405cf7f99ed49bdf04322d879fc2cd745c22f67aea69beeefaea887cc1d461"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b0/watchdog.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b0/watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b1/fake-ram/joxing-watch-q75axby1/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b1/fake-ram/joxing-watch-q75axby1/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b1/watchdog-publication.json": {
+    "bytes": 1120,
+    "sha256": "c750c85cdf57c262072b2afe69b2101fd3b4889f5fa09fedcfe74c86348505b2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b2/fake-ram/joxing-watch-4hus9wz3/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b2/watchdog-publication.json": {
+    "bytes": 1120,
+    "sha256": "fb9abd3272917345cf42e141201da92620e5df08385f1a762ad6d071e38ab0bb"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b3/fake-ram/joxing-watch-zcr2pj_c/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b3/fake-ram/joxing-watch-zcr2pj_c/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b3/watchdog-publication.json": {
+    "bytes": 1120,
+    "sha256": "db5f407267cf824358aaf220ab845170063c54449ffac780eed77d93358314ea"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b4/fake-ram/joxing-watch-wa8ueoar/report.json": {
+    "bytes": 262145,
+    "sha256": "9408817bc040328d1c403ff97e94cea3dfd3a361b2fb7ecc7af75ff3a5157139"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b4/fake-ram/joxing-watch-wa8ueoar/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b4/watchdog-publication.json": {
+    "bytes": 1118,
+    "sha256": "886084a41fb4433f631635218c47f951f29d1fd6ce5d272cd683126d70220d55"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-66nc2rd9/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-66nc2rd9/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b5/fake-ram/joxing-watch-66nc2rd9/unregistered": {
+    "bytes": 1,
+    "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b5/watchdog-publication.json": {
+    "bytes": 1120,
+    "sha256": "033da2588d548ac472d55b8fbb66a91ed9d2a98a3752b943fcc6f52bf9c01460"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b6/fake-ram/joxing-watch-8j_61sb9/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b6/fake-ram/joxing-watch-8j_61sb9/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b6/watchdog-publication.json": {
+    "bytes": 1226,
+    "sha256": "6e4b65d5235acd7821cec4d46346280980ad04dd5dec4a3b84dd9e659c2ed3c4"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b6/watchdog.json": {
+    "bytes": 7,
+    "sha256": "11d510e067d2cdcd7559bd86d27a2f4c20babd43670346b97af99b522c1f0075"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b7/fake-ram/joxing-watch-81ln7gxi/report.json": {
+    "bytes": 33,
+    "sha256": "3c5ed9cac537e4d893a8a3729e30c1728a363199ff8fa2ff3d1cc7a20dcd5a1c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b7/fake-ram/joxing-watch-81ln7gxi/report.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_private_scope_ownership_b7/watchdog-publication.json": {
+    "bytes": 1120,
+    "sha256": "6d378bcdb8e4222d5fde27a0069625bfc60bb6100f0956850c7a3b2d7b0469bb"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/maps": {
+    "bytes": 17,
+    "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/stat": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/maps.txt": {
+    "bytes": 17,
+    "sha256": "e1a02572b78ef23d18a4007ef570feeb0339be944691be2409f92795f3a14a1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-after.txt": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/stat-before.txt": {
+    "bytes": 54,
+    "sha256": "28974766a8ced1d8ec78183ee45057120cc0f0303c583e9f9b5e8c3f466d14f9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_proc_evidence_keeps_raw_m0/captured/status.txt": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa0/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa1/serial.jsonl": {
+    "bytes": 1440,
+    "sha256": "6cfcadfcb43d61787e4bc9f7501e477a7627f5630fe35b1a82fce100ac704ea6"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa10/serial.jsonl": {
+    "bytes": 326,
+    "sha256": "a3dbaefd86632003fd347b61df8d44fbf1e21b5cc06bf5fc7f1cb81e8d600f23"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa11/serial.jsonl": {
+    "bytes": 317,
+    "sha256": "978fb2887aadd208f5006253ea725017ce13fc06bdf2c0bf4e5181bb60123a6a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa14/serial.jsonl": {
+    "bytes": 436,
+    "sha256": "415ab18dd553078dd44757338e354c2ea2fa0df90dcae705b54753de3d4d2f1e"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa2/serial.jsonl": {
+    "bytes": 1224,
+    "sha256": "1487082fbd607eb2833ab158c8b4b5ffe6446fab4e3c886deea8013e3f293af8"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa3/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa4/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa5/serial.jsonl": {
+    "bytes": 559,
+    "sha256": "eca5033157a0f627f11ce690249f9da782975ca57041cbef4f16c1b803b490ef"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa6/serial.jsonl": {
+    "bytes": 417,
+    "sha256": "22e49f010553454ed7327dfd0052b35826388a49be870a0061602c865e717b15"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa7/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "7500b8a0a6aca8de5ef20f9c1eea295f94c04dff5eed0d53fea49868b59ddff6"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa8/serial.jsonl": {
+    "bytes": 434,
+    "sha256": "9117c0bb7df8af22fa018894776e731efc600acf7c83b1af6e3c6799bec80417"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_serial_close_order_and_fa9/serial.jsonl": {
+    "bytes": 444,
+    "sha256": "38d283c35d91879dd33ec0459d3e9a032094c2f474ecc83d55c65d5544f20158"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require0/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require0/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require0/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require0/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require1/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require1/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require1/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require1/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "f118393226a9e5db44502af53203b6406f04141ff9efc37be2d2043aeec77b1a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require2/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require2/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require2/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require2/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "16eb94ecff87767190411b7e319865ebf7a2a400de6a45f9e6584506b8156fc5"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require3/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require3/17/statm": {
+    "bytes": 13,
+    "sha256": "7c575bcf3f81f8b863658b9b2237b6aa3781daa40d5bd4a0da00347664173ff6"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require3/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require3/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require4/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require4/17/statm": {
+    "bytes": 3,
+    "sha256": "933305f987bcf5fb6c250018e35a6eee1528f06013807a4136ec13622909af97"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require4/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require4/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require5/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require5/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require5/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require5/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require6/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require6/17/statm": {
+    "bytes": 13,
+    "sha256": "d2ea945bf9a24c9a64d5ee9871917e131c78e73c707dc71cf591754058afbbca"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require6/17/status": {
+    "bytes": 25,
+    "sha256": "9c5b9866ac567c32098d6bcc93749c7ae721b8251b4a962419c67666aaad6c3a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require6/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require7/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require7/17/status": {
+    "bytes": 11,
+    "sha256": "a40314109601b12ff4f8ba5d6fa51d4b5c514037fe0e1d2451c905b74abb52d3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_terminal_evidence_require7/17/task/17/stat": {
+    "bytes": 50,
+    "sha256": "65d56da5815645f5d3b298cfca6f2831bb4e1af94235d5d0488f82b6e60f730f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/controls/test_transient_missing_status_0/17/status": {
+    "bytes": 14,
+    "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/after-import.json": {
+    "bytes": 8916,
+    "sha256": "4f1ceddd624a9794e335fc21e32d723bc3c7a4f2f26d6dec0a087a44bee5c21c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/before-release.json": {
+    "bytes": 5389,
+    "sha256": "41a6ce496f27acc07dcad79d7924bca992cc3f25fb43621a98b358dbc739b21f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/payload.json": {
+    "bytes": 797,
+    "sha256": "9efc11274c8989c54580e5b19dc6fb6ace35482bf2d0cd955a8b0426a2956b9f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/probe-result.json": {
+    "bytes": 672,
+    "sha256": "6891626891b484f9ce23221a494a42b4cc4744ee043416c8ab5c7334efa0d9bc"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-root-before/maps.txt": {
+    "bytes": 14094,
+    "sha256": "beb042a70d3cfeb292f7d5864ccfb80cc0e429ea5770de922ad374c75198a596"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-root-before/stat-after.txt": {
+    "bytes": 296,
+    "sha256": "0517079d2a20b0467645c2fddcb99fffea454cd0b1087c36fcdbb11efcdbd93b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-root-before/stat-before.txt": {
+    "bytes": 296,
+    "sha256": "c12d7070a1dd576396db4374819148c79a1f99d3f75cfa2b290ab09720fdd659"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "b09965fa6185492a66244b765824ea97a6e7fd4d74adbc79abcbb810ddab73b9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-after/maps.txt": {
+    "bytes": 8408,
+    "sha256": "70ad74fb89332a8f812edbac3257b65f87df4cfae3a1c18f6ae0c8df52747252"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-after/stat-after.txt": {
+    "bytes": 300,
+    "sha256": "9e418f55ba44feb1e76bb77a8997f81edda5a32a4509bfb7d6a5877670733608"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-after/stat-before.txt": {
+    "bytes": 300,
+    "sha256": "9e418f55ba44feb1e76bb77a8997f81edda5a32a4509bfb7d6a5877670733608"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-after/status.txt": {
+    "bytes": 1588,
+    "sha256": "0b37339c7783108f8d3be35d70363df6b13ca16b0a8051de89a45c974bed90e0"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-before/maps.txt": {
+    "bytes": 8408,
+    "sha256": "70ad74fb89332a8f812edbac3257b65f87df4cfae3a1c18f6ae0c8df52747252"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-before/stat-after.txt": {
+    "bytes": 300,
+    "sha256": "9e418f55ba44feb1e76bb77a8997f81edda5a32a4509bfb7d6a5877670733608"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-before/stat-before.txt": {
+    "bytes": 300,
+    "sha256": "9e418f55ba44feb1e76bb77a8997f81edda5a32a4509bfb7d6a5877670733608"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-server-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "0b37339c7783108f8d3be35d70363df6b13ca16b0a8051de89a45c974bed90e0"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-after/maps.txt": {
+    "bytes": 159431,
+    "sha256": "dfd2fd4737e1c9c659ad8a3dcb5e858b90dbf7b4445b078225af31d13a73ed02"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-after/stat-after.txt": {
+    "bytes": 304,
+    "sha256": "c34fbf953872cf5fbbf7b4a1d645279e9f5adbf0a29ac9ffdc40f54179b03f3a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-after/stat-before.txt": {
+    "bytes": 304,
+    "sha256": "c34fbf953872cf5fbbf7b4a1d645279e9f5adbf0a29ac9ffdc40f54179b03f3a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "3577c2f471aabf070713d2cecd52abe5d0e9cde25760ea6733dd79164c9b00b4"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-before/maps.txt": {
+    "bytes": 14174,
+    "sha256": "405be04354e03d72da09c3a6dfa7a3e1c5c188858a19b1228f08f896f5de49f0"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-before/stat-after.txt": {
+    "bytes": 297,
+    "sha256": "71a601aefc00d6a98057c59e66c41bb8713f815d050748e5da9fb1446322b3fc"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-before/stat-before.txt": {
+    "bytes": 297,
+    "sha256": "71a601aefc00d6a98057c59e66c41bb8713f815d050748e5da9fb1446322b3fc"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/proc-worker-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "c27300427a5f48535163ca50a4a1515f19a303c22ef6f2048d1a78b64edb57dc"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/serial-close.jsonl": {
+    "bytes": 454,
+    "sha256": "f70407529ac1013e179818f36db94f4ff8df509933cec03b1efa33133ba1da76"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1097/worker-events.jsonl": {
+    "bytes": 1202,
+    "sha256": "90d8a1200d7bd1476e6724a953924a56e64fcec5310239a80d8ff0ecc602371e"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/after-import.json": {
+    "bytes": 8916,
+    "sha256": "e02037b042da46c7c5c83e3095a93d795671765c5cbbe70d1f5d53de1a48873b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/before-release.json": {
+    "bytes": 5389,
+    "sha256": "e639b200cf6b16cd55282cd6c877325bc92005852e32e0d8b914a983eb6f500a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/payload.json": {
+    "bytes": 797,
+    "sha256": "eddde9fa38f53428dc8490b27be882d7634ca069ee7148d88251178b517adf08"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/probe-result.json": {
+    "bytes": 672,
+    "sha256": "4da4a3e9611c490b0aee1171a2b1945ad762303400de558e5e9ee0aeb7198b2e"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-root-before/maps.txt": {
+    "bytes": 13996,
+    "sha256": "046bb070dad546cc669429cd5e3159252b68436513842b42f3c0deb683006c7d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-root-before/stat-after.txt": {
+    "bytes": 296,
+    "sha256": "c534ae294049bb7c7f47b59b69e241623cde9e5565282b1975c86ffb51cbce31"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-root-before/stat-before.txt": {
+    "bytes": 296,
+    "sha256": "e7b54af9ff8e350fcac517ea4e1a0989cbee6c1f43d6d933bad506403166b510"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "0f6b67906b47c4a5b72c048fef9996d14e1becf238a8bab9319cfd86e65e36f0"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-after/maps.txt": {
+    "bytes": 8408,
+    "sha256": "f27a21e7205c8e0244910ad226547e20ead4c64c0d245aa86c88264e9637ead0"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-after/stat-after.txt": {
+    "bytes": 301,
+    "sha256": "6677606e88fe9ca6b8603d0c9740169e264026af22dfbb674a2ff9c9a6cf925f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-after/stat-before.txt": {
+    "bytes": 301,
+    "sha256": "6677606e88fe9ca6b8603d0c9740169e264026af22dfbb674a2ff9c9a6cf925f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-after/status.txt": {
+    "bytes": 1588,
+    "sha256": "2031348e193e9e3682ffc902b399f8a27769785dc98d3b8baadb912442403e29"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-before/maps.txt": {
+    "bytes": 8408,
+    "sha256": "f27a21e7205c8e0244910ad226547e20ead4c64c0d245aa86c88264e9637ead0"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-before/stat-after.txt": {
+    "bytes": 301,
+    "sha256": "6677606e88fe9ca6b8603d0c9740169e264026af22dfbb674a2ff9c9a6cf925f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-before/stat-before.txt": {
+    "bytes": 301,
+    "sha256": "6677606e88fe9ca6b8603d0c9740169e264026af22dfbb674a2ff9c9a6cf925f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-server-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "2031348e193e9e3682ffc902b399f8a27769785dc98d3b8baadb912442403e29"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-after/maps.txt": {
+    "bytes": 159382,
+    "sha256": "6ea27146c504cea6d91d5dca91019f619e314d40f0aeda7b71fa822df7fa69b6"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-after/stat-after.txt": {
+    "bytes": 304,
+    "sha256": "cd0396b144ac2a2aca767cb24635079ae37536776a5206dbb292497a032357f2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-after/stat-before.txt": {
+    "bytes": 304,
+    "sha256": "cd0396b144ac2a2aca767cb24635079ae37536776a5206dbb292497a032357f2"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "cc4bc985fc8a2400aa9588aadde599174836b22712ada1cd37a18ca2eb7251ee"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-before/maps.txt": {
+    "bytes": 14125,
+    "sha256": "d5149b771d765f959f2822d930d50811b921186eed3f10cfa17b0fd12854a369"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-before/stat-after.txt": {
+    "bytes": 297,
+    "sha256": "ed8c20217bd6f069cd866d3c1780bb6e60dc1ad250a3523a663bdb74d0f4d169"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-before/stat-before.txt": {
+    "bytes": 297,
+    "sha256": "ed8c20217bd6f069cd866d3c1780bb6e60dc1ad250a3523a663bdb74d0f4d169"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/proc-worker-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "8145653851998f0c9a1a2092a1d24dc6733b5d52eea65d7735c5ad4cd536142f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/serial-close.jsonl": {
+    "bytes": 459,
+    "sha256": "65e063ce3721ea7e808e2cba0a98a0eaaa33078ad3ad98bdcac6175ad9f80101"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1098/worker-events.jsonl": {
+    "bytes": 1203,
+    "sha256": "383c1833cab74b67a11b4ea529f4ab4c18b254f769384fcf1e007014a6ef6971"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/after-import.json": {
+    "bytes": 8916,
+    "sha256": "abfa632e39304f16617dd6c768cf4d1050247b38db2f10b11a289c59b44a6385"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/before-release.json": {
+    "bytes": 5389,
+    "sha256": "c1ef5c68d857ea386e6cf893bde2073af3afc73992b4994a74cf81ddac814cd9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/payload.json": {
+    "bytes": 797,
+    "sha256": "e8886876ca49119ef4be0dff1d831df2407cdf150e057d7a65742297998fc00b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/probe-result.json": {
+    "bytes": 672,
+    "sha256": "bfeae21427c046da7acd3d978cb01ba7a8ef09b2d968d3d78ee7dcd02779bd97"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-root-before/maps.txt": {
+    "bytes": 14094,
+    "sha256": "dbead0df003e32d041886a45f75519cf9aff6e255968eec26f66a6c43d5f784f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-root-before/stat-after.txt": {
+    "bytes": 297,
+    "sha256": "dad555adeb6c417d0cc454f23781b32326d867027df50c3f86ff33c78d024109"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-root-before/stat-before.txt": {
+    "bytes": 297,
+    "sha256": "3a10f27ffba92c79b200cbb5866fe8a3fdd30f1f46766b71cfaa6762fd3bb889"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "cc76cdd3c703ee04788f78c4c617def1d3209981c4cbb455fa720569cf71cb78"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-after/maps.txt": {
+    "bytes": 8359,
+    "sha256": "06825a487b476640173f7231ef1a0d74c1f20134fce448ca796ccf6351a65194"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-after/stat-after.txt": {
+    "bytes": 299,
+    "sha256": "b24de366f4ee0df2f11b572645a0136419238eef86cb31b07a73e90837563642"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-after/stat-before.txt": {
+    "bytes": 299,
+    "sha256": "b24de366f4ee0df2f11b572645a0136419238eef86cb31b07a73e90837563642"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-after/status.txt": {
+    "bytes": 1588,
+    "sha256": "4ba037147b3ce447916b26b3787f410a0f2af7b50489d69b180ed1fd299f626f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-before/maps.txt": {
+    "bytes": 8359,
+    "sha256": "06825a487b476640173f7231ef1a0d74c1f20134fce448ca796ccf6351a65194"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-before/stat-after.txt": {
+    "bytes": 299,
+    "sha256": "b24de366f4ee0df2f11b572645a0136419238eef86cb31b07a73e90837563642"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-before/stat-before.txt": {
+    "bytes": 299,
+    "sha256": "b24de366f4ee0df2f11b572645a0136419238eef86cb31b07a73e90837563642"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-server-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "3d58b3193d31a76d5291eb3234cd8ee237b649147b61af47b6086185bc96a2d0"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-after/maps.txt": {
+    "bytes": 159529,
+    "sha256": "2d5c118d33b1d507ca33e352abd13366d40a33586f52fab3931abb2269457e36"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-after/stat-after.txt": {
+    "bytes": 304,
+    "sha256": "cefab06044c4f36bfc50e2a8f051033778bd73aeb5e4258136cf82da8ae38f6f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-after/stat-before.txt": {
+    "bytes": 304,
+    "sha256": "cefab06044c4f36bfc50e2a8f051033778bd73aeb5e4258136cf82da8ae38f6f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "4adcbc0d72e7386505aa3f6012ef6e9cc89a2e473ca5ee9b6bc3adb1943e9714"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-before/maps.txt": {
+    "bytes": 14076,
+    "sha256": "afce83072860cac5976fc5c8e181e0e76e3f2e26636052d891939823f2e8680a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-before/stat-after.txt": {
+    "bytes": 297,
+    "sha256": "c3ae7d78f44b3952fea9e05505605d373ef25da52c5d9d671b162d4df52c4a28"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-before/stat-before.txt": {
+    "bytes": 297,
+    "sha256": "c3ae7d78f44b3952fea9e05505605d373ef25da52c5d9d671b162d4df52c4a28"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/proc-worker-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "e903956ebd4224825c680128313971bd6f772c929b1b77a0c786badaa8af805b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/serial-close.jsonl": {
+    "bytes": 459,
+    "sha256": "f1c94f44307f31e14e958f6874fd0d08bd535a515357437b8178d4a4f39ca523"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/forkserver1099/worker-events.jsonl": {
+    "bytes": 1203,
+    "sha256": "af22c7e0a0cf03ee78ca211b3230c312b124df8f8be99843d9f766eaef2c8227"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/after-import.json": {
+    "bytes": 5325,
+    "sha256": "415a7fdc00f21f56b94e6a9b569fd6d42b44147118792e74eb27eba6b730c464"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/before-release.json": {
+    "bytes": 3545,
+    "sha256": "525469cf59f214adf0179bc5d71464feb8bc8d124570a645436a3b34fa506b12"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/payload.json": {
+    "bytes": 797,
+    "sha256": "9efc11274c8989c54580e5b19dc6fb6ace35482bf2d0cd955a8b0426a2956b9f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/probe-result.json": {
+    "bytes": 623,
+    "sha256": "bc4d1c4758b4115155c5485f9f072583833bd141cb872ab9c1105eebb3acc9a6"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-root-before/maps.txt": {
+    "bytes": 13996,
+    "sha256": "9f0b54474acd663c61faf76f0c094acbec254a1a741d1ec3aa6b5d7ccf4bbe8d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-root-before/stat-after.txt": {
+    "bytes": 295,
+    "sha256": "bdebc8e003c2125df6a1da5c5c71edfb594b7553f5aac0911c2cdb4e3a777452"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-root-before/stat-before.txt": {
+    "bytes": 295,
+    "sha256": "bdebc8e003c2125df6a1da5c5c71edfb594b7553f5aac0911c2cdb4e3a777452"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "8b8c75e568b71601cd010f23d50715cba1167137f3220e394b3d27ff6138200d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-after/maps.txt": {
+    "bytes": 159253,
+    "sha256": "d848c650316dc4a230220e7a5d60163dead64d3161a91d012281e84714baee36"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-after/stat-after.txt": {
+    "bytes": 303,
+    "sha256": "865b0807d842173ecabbf7f30d41d84e657f6a2f49eaa024cf14206eacf79eed"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-after/stat-before.txt": {
+    "bytes": 303,
+    "sha256": "865b0807d842173ecabbf7f30d41d84e657f6a2f49eaa024cf14206eacf79eed"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "cda48a9c8bfce207640977e6c080fb803e4f5d98726855b0ea598242d7c08e06"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-before/maps.txt": {
+    "bytes": 14045,
+    "sha256": "b7e730ad37c56f12ef445ee9eeffaaa10c4df63595310db0f31e2289d2aac2cd"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-before/stat-after.txt": {
+    "bytes": 296,
+    "sha256": "df755fa4b95772d10a8263e184f20e21e9e831a06fa9a9c741ad8356bb1ea700"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-before/stat-before.txt": {
+    "bytes": 296,
+    "sha256": "df755fa4b95772d10a8263e184f20e21e9e831a06fa9a9c741ad8356bb1ea700"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/proc-worker-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "c91417119ef65e044abe86354193644ab601ef7304734c7db4d60c7cca16b520"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/serial-close.jsonl": {
+    "bytes": 457,
+    "sha256": "cb27604f9273aea3c33029cf3c9348ef03e67b702ddfbc0151775f0b1590152a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1097/worker-events.jsonl": {
+    "bytes": 1310,
+    "sha256": "225d04d71016b95dac29927405fb91611be59bcd8539e875002078042494ba66"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/after-import.json": {
+    "bytes": 5325,
+    "sha256": "7aadb23dd0103bbc50b578f8cc0cd2ec3cd63dec555aa6f60efa0b181aae638a"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/before-release.json": {
+    "bytes": 3545,
+    "sha256": "8e988ad0313cdc372c5bd5dee6e4629a493296948a69e21e3a0df33749dbbbd5"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/payload.json": {
+    "bytes": 797,
+    "sha256": "eddde9fa38f53428dc8490b27be882d7634ca069ee7148d88251178b517adf08"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/probe-result.json": {
+    "bytes": 625,
+    "sha256": "b22651d571434b64b05582b94e826ab7994cbf12ca4aae5f2189888cc7169e63"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-root-before/maps.txt": {
+    "bytes": 14094,
+    "sha256": "e0475cc1de38bc8b354c7abb56690238560df7639382911810cec57b7dcc24d8"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-root-before/stat-after.txt": {
+    "bytes": 295,
+    "sha256": "c0b5c3c878de44b7fbb465b0491b90a70482ee16e72807049bf6b0118c2977f3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-root-before/stat-before.txt": {
+    "bytes": 295,
+    "sha256": "c0b5c3c878de44b7fbb465b0491b90a70482ee16e72807049bf6b0118c2977f3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "cbc7c0d0cfa5f9803fb990888ed1fc1c87a5babf2a26826e9a34111fe1fbe4a7"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-after/maps.txt": {
+    "bytes": 159400,
+    "sha256": "6f7df36cedf77590f20ee4771f04f52b8433bf6aa776f0291569c3a730680c39"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-after/stat-after.txt": {
+    "bytes": 305,
+    "sha256": "71f5348de249c1c118c81ce9007d832aff002ac1d8c09b01b590673fca650a8b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-after/stat-before.txt": {
+    "bytes": 305,
+    "sha256": "71f5348de249c1c118c81ce9007d832aff002ac1d8c09b01b590673fca650a8b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "5610309dc33ba062f60cc71cf8c5c9d52a8190bda8a3a6af285d29919c8eef41"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-before/maps.txt": {
+    "bytes": 14045,
+    "sha256": "3b9ca27a863ac2c715689cefac674b4ec6b306b852d94ab0076d5034aa812089"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-before/stat-after.txt": {
+    "bytes": 296,
+    "sha256": "eac2f6f6afe2163b72f6f7c000efe90850c5e261d0ef5b9093624d21c7ff8f15"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-before/stat-before.txt": {
+    "bytes": 296,
+    "sha256": "eac2f6f6afe2163b72f6f7c000efe90850c5e261d0ef5b9093624d21c7ff8f15"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/proc-worker-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "f4dc8f399867d0eba1fe26d41b20a22640435f4fbde0afabaafa4ea1e9711c4b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/serial-close.jsonl": {
+    "bytes": 458,
+    "sha256": "878bb90807798663a3e9e823e0def20159558df9f2c448ab4b3d05222e71db80"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1098/worker-events.jsonl": {
+    "bytes": 1311,
+    "sha256": "a9a11dabcd92224e1a52cdad47c8e1893a53e794301677f02f8ae2f382c9f9fe"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/after-import.json": {
+    "bytes": 5325,
+    "sha256": "6805bfa149b51755e0d5270e407aeae96e8d952547be4547c1450662cc32a775"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/before-release.json": {
+    "bytes": 3545,
+    "sha256": "acf81c01d259a33dc02c397b4b8298cb7ebddce1597129793697794153a45a3f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/payload.json": {
+    "bytes": 797,
+    "sha256": "e8886876ca49119ef4be0dff1d831df2407cdf150e057d7a65742297998fc00b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/probe-result.json": {
+    "bytes": 624,
+    "sha256": "06dbaaa616b6051b0d7c666743bd307b6560d8e9aee494a513e8c62969c16e47"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-root-before/maps.txt": {
+    "bytes": 13996,
+    "sha256": "cd0dbc9f79ab259aa13d9a9d7b2ffcfb681cd2e063e0aa9f03e0e2f1f07be9e3"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-root-before/stat-after.txt": {
+    "bytes": 297,
+    "sha256": "3f44883dc94cb699f5f5917c8ab0a1190c0345b274aab9ff995712c05c401eac"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-root-before/stat-before.txt": {
+    "bytes": 297,
+    "sha256": "3f44883dc94cb699f5f5917c8ab0a1190c0345b274aab9ff995712c05c401eac"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-root-before/status.txt": {
+    "bytes": 1587,
+    "sha256": "0f1dd8cfb0d9428ae34ddfeecc9f3a0b602f51bf20ff6fae74c969b08628c326"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-after/maps.txt": {
+    "bytes": 159351,
+    "sha256": "dfe950c19c2ebae55d1f7f6449a22af6b2e74e36e9e11652863cd005804c8e23"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-after/stat-after.txt": {
+    "bytes": 304,
+    "sha256": "fa60c925f93d2e2177419dd2f7187780894338297757ee7c7d189ff4aad2c786"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-after/stat-before.txt": {
+    "bytes": 304,
+    "sha256": "fa60c925f93d2e2177419dd2f7187780894338297757ee7c7d189ff4aad2c786"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-after/status.txt": {
+    "bytes": 1592,
+    "sha256": "69b5f6b661ddb692c3cbbf6c466de90d51a5599228267e80392315bdb19db4a7"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-before/maps.txt": {
+    "bytes": 14045,
+    "sha256": "e0a84289f6d14f9153adffa6e6e8afa70444966a914694d03b58d11abb5402cf"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-before/stat-after.txt": {
+    "bytes": 297,
+    "sha256": "965eb61e42601d39a363b0a4f47b78f2400debbcd9ae2250313e748a21238693"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-before/stat-before.txt": {
+    "bytes": 297,
+    "sha256": "965eb61e42601d39a363b0a4f47b78f2400debbcd9ae2250313e748a21238693"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/proc-worker-before/status.txt": {
+    "bytes": 1588,
+    "sha256": "ad1e1296cbbb1d5f29f7f4d5d6ac033641a0d4ec585905311bdebd8ba5774742"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/serial-close.jsonl": {
+    "bytes": 458,
+    "sha256": "a968013fe20778f9edf364405bb0915d68d9713b2f0cc3403ba11f863ac78d28"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/fixtures/spawn1099/worker-events.jsonl": {
+    "bytes": 1311,
+    "sha256": "6a55c44036bcabf3d9e424e2e88608efc1c17fea3d54d8cba30f54aff18d5ab7"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1097-watchdog-publication.json": {
+    "bytes": 1293,
+    "sha256": "88e6790397cf6429904c79e80bd0503415f9681fb772ba39b39428198257fe1f"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1097-watchdog.json": {
+    "bytes": 31363,
+    "sha256": "9b0019948a9c954afe5e1854d2e645072ad065372bc3e141f3a4e928dbdade3e"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1097-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1097-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1097.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1098-watchdog-publication.json": {
+    "bytes": 1293,
+    "sha256": "892013bc0c6d5b9093bbce3e0f1322d02ca4c3f286bc499abefbf99da06c47f9"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1098-watchdog.json": {
+    "bytes": 31358,
+    "sha256": "19e51896fea117e6fd757dad63bda8ee4ef589fc5da520f73f22535d05519c30"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1098-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1098-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1098.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1099-watchdog-publication.json": {
+    "bytes": 1293,
+    "sha256": "fa6ca39cee5c61aa13ea3f2099cefc7506d1fee6e2bac80cf30238b2151e93ad"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1099-watchdog.json": {
+    "bytes": 31381,
+    "sha256": "73b2153f17ba2c5cd4429e35b686533787ca1120162e78808017a886c10d8fbd"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1099-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1099-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/forkserver1099.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/result.json": {
+    "bytes": 259038,
+    "sha256": "ce7649ee421dadf5abcf9af375f125b41ceebb59978d635fa95a659da9c91c8d"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/runtime.log": {
+    "bytes": 97,
+    "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1097-watchdog-publication.json": {
+    "bytes": 1278,
+    "sha256": "fca84b9ebdaaa25f77a818a09749a29ab45c2c0c1389e86939975b7408581b9b"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1097-watchdog.json": {
+    "bytes": 31246,
+    "sha256": "2cf13a7b9776d5c58d976fdbb5fdac9420d581f852e7203acd82c82082e46784"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1097-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1097-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1097.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1098-watchdog-publication.json": {
+    "bytes": 1278,
+    "sha256": "6d391b22433c14fe6bfffdaaf9a0bea202cbb4dc9901ce32855dcff688a3be7c"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1098-watchdog.json": {
+    "bytes": 31252,
+    "sha256": "3dddfcef39c34f94c645aaf3a7752b754b62a6befd81fe6208f88f34f86164ef"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1098-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1098-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1098.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1099-watchdog-publication.json": {
+    "bytes": 1278,
+    "sha256": "c25aef087a584dcf2e3289de23ddab822ade2a5978e01615436a3d2d2cf01d5e"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1099-watchdog.json": {
+    "bytes": 31208,
+    "sha256": "b0bbbcdf09d29c855525a9d21d33f37075735367e1284cd7e2c46c6c01a05600"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1099-watchdog.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1099-watchdog.ready": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/spawn1099.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "runs/v0.0.11/process-exit-backend-publication-01/sync.log": {
+    "bytes": 1264,
+    "sha256": "46570d5a9a5e3d3b446cd37f5ed8fc7add0bfa6efcf2f494ae8643147c112b42"
+  }
+}

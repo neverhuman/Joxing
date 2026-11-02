@@ -87,3 +87,69 @@ wake delays. Test a bounded private memory-backed report path with exact disk
 copy after the task exits; disk remains default. This changes diagnostic I/O,
 not numerical trajectories, caps or scientific acceptance. Native/model/backend
 adoption, eight-world/full-source qualification and boxing remain blocked.
+
+## Third packet: paired import-only backend hypothesis supported
+
+H20publication prerequisite qualified separately; this NEW comparison uses its
+named RAM-backed path/timing, not the H20smoke as a sample. Frozen source
+`5a9be0484f3842cca2251d19f61c7b7e4b9e7c67`,
+[packet](../experiments/v0.0.11/process-exit-backend-publication-protocol.json)
+`aefeeb4b57dd8a26b8b7cec4f93ae1ec75d1f7f4bd921175fec3f8b0a019e438`.
+Fresh immutable root `/home/ubuntu/joxing/process-exit-backend-publication-20261102-01`.
+
+All85Linux controls pass, then all6fresh slots are VALID/0INVALID/0NOT_RUN.
+Fixed order and all paired seeds/payloads/RNG/runtime contracts match exactly.
+Close-send→join (seconds):
+
+|Seed|Spawn|Forkserver|
+|---|---:|---:|
+|1097|0.527060417458415|0.04012689180672169|
+|1098|0.48309944942593575|0.03975098207592964|
+|1099|0.5999017674475908|0.04120119288563728|
+
+Median0.527060417458415 vs0.04012689180672169s (13.13484× faster exit in this
+import-only diagnostic). All three candidate pairs faster, candidate/reference
+median0.07613338<=0.5. Preregistered verdict **supported_import_only**.
+This is n=3, one host, tiny tensor/array payload, not a native/RL throughput gain.
+Including TWO prior packets, H19full comparison denominator is8ATTEMPTED/
+6VALID/2INVALID plus10NOT_RUN (18registered slots); no failed row is relabeled.
+H20single smoke remains a separate prerequisite.
+
+Every formal slot stays within100ms sample/probe/retirement and2s close. Max
+formal gap25.129117ms/probe4.962541ms; maximum formal capacity517738496bytes/six
+processes. Six payload workers actually expose positively charged terminal exit,
+all reservations release within47.318965ms. Clean single-thread stdlib-only server
+has empty preload and actual bound ancestry before imports; server stays clean
+and all payload workers1thread after imports. Child cleanup phases include pipe
+close/before_return/managed finalizer. Python atexit observed for all spawn,
+absent for all forkserver as separately registered; no application fast exit.
+No model/data/physics/actor/inference/update occurred, no physics ledger exists.
+All seven real private scopes copied exactly then removed; no IPC/live writer.
+Default remains spawn/disk; this is only the explicit diagnostic variant.
+
+[Independent audit](../artifacts/v0.0.11/development/process-exit-backend-qualified-01-integrity.json)
+verifies743source/five historical objects/full history,85exact JUnit cases,
+raw before/after stat/status/maps, all six payloads/RNG/phase ordering/close times,
+independent pair medians/verdict, twelve real watcher reports, seven IPC receipts
+and56recorded exited identities/no writer. All348rawfiles2330850bytes exact
+transfer; archive SHA `5da0b0d0d398a8670b37e464b857d7e0ccad742b455307ddf35ec507f60cbea8`.
+[Transfer](../artifacts/v0.0.11/development/process-exit-backend-qualified-01-transfer.json),
+[parent receipts](../artifacts/v0.0.11/process-exit-backend-qualified-01/),
+[deployment/source/capacity/command](../artifacts/v0.0.11/development/backend-publication-deployment-01.json).
+Prelaunch load8.11/7.18/7.47,33.74GB available RAM/152.33GB disk, no other ownedjob;
+anonymous public byte verification BEFORE launch. Runtime and all inputs match.
+Auditor completes without a repair in this packet. Reproduce:
+`rtk proxy python3 artifacts/v0.0.11/development/audit-backend-publication-01.py experiments/v0.0.11/process-exit-backend-publication-protocol.json FRESH_LABEL`.
+Raw remains in ignored `runs/v0.0.11/process-exit-backend-qualified-01-evidence`.
+
+Packet42.7743978574872s/1678701fixture/652149receipt bytes. Twelve-packet carry
+16458physics/336.20004829830765s/34554362fixture/3641782receipt bytes; original
+remainder223542steps/263.79995170169235s/1039187462fixture/552522receipt bytes.
+Receipt budget is tight; no failed cap raised or previous bytes removed.
+
+Decision: candidate backend merits ONE bounded native constructor/lifetime test,
+not default adoption, four-worker teardown, paired-learning parity, native balance
+or boxing qualification. [H21worker-ready mission](NATIVE_CONTEXT_TRANSFER_MISSION.md)
+keeps all700muscles, same200prep/frozen state and H18release contract; new machine
+protocol/source must be frozen before outcomes. H15three invalid native learning
+attempts remain; no candidate learning parity or v11tag.

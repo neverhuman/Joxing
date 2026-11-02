@@ -4,15 +4,17 @@
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H20 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H21 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 
-**Latest prerequisite:** [H20publication proof](docs/MONITOR_PUBLICATION_RESULTS.md)
-passes85Linux controls and one import-only smoke; worst smoke monitoring gap24.63ms
-under unchanged100ms bound. All209raw evidence files verified, owned IPC/processes
-cleaned up. This qualifies the named report path. [Next fresh backend comparison](docs/PROCESS_EXIT_BACKEND_PUBLICATION_PACKET.md)
-keeps the same three seeds/2s close gate; no native boxing or training gain claimed.
+**Latest measured win:** [three paired process-exit tests](docs/PROCESS_EXIT_BACKEND_RESULTS.md)
+passed85Linux controls and all6fresh probes. Forkserver's import-only exit median
+was40.13ms versus527.06ms for spawn (13.13× faster); paired payloads matched exactly.
+All348raw evidence files verified; old failures remain. **This is exit latency,
+not RL training throughput.** [Next: ONE native700-muscle context/state/lifetime test](docs/NATIVE_CONTEXT_TRANSFER_MISSION.md)
+before four-worker or learning integration. [H20publication prerequisite](docs/MONITOR_PUBLICATION_RESULTS.md)
+qualified independently; physical balance/boxing gates remain open.
 
 **Latest release: [v0.0.10](https://github.com/neverhuman/Joxing/releases/tag/v0.0.10).**
 Two fresh motor seeds executed16,384transitions/896optimizerupdates; all32evaluations

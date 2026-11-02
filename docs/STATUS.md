@@ -1,3 +1,26 @@
+# H19paired exit probe qualifies; next ONE-native context proof — Nov2 Mountain
+
+Frozen5a9be04/aefeeb4b passes85Linux controls and all6fresh import-only comparison
+slots VALID/0INVALID/0NOT_RUN. Spawn/forkserver median527.060417/40.126892ms,
+13.13484× exit speedup for this tiny CPU payload; every pair faster/exact payload,
+preregistered supported_import_only. No native/RL/games-per-second gain inferred.
+All100ms/2s/RSS gates hold, seven exact private copies/owned cleanup, no writer.
+Independent743source/85JUnit/56exits audit and348rawfiles2330850byte exact transfer
+pass. H19full denominator8attempted/6valid/2invalid plus10not_run; old faults stay.
+Full metrics/commands/proofs: docs/PROCESS_EXIT_BACKEND_RESULTS.md.
+
+Next worker-ready implementation docs/NATIVE_CONTEXT_TRANSFER_MISSION.md /
+research/H21.md: ONE original700muscle/seed1097/200prep/0rollout/actor/update
+forkserver constructor/lifetime proof against H18exact state/spec, clean server/
+context/ancestry/actual positive retirement evidence. NOT implemented/preregistered/
+run. Proposed80swhole/35sslot/4MiBfixtures/384KiBreceipts/1MiBIPC/oneworker,
+same100ms/2s/7GiBplanned/8GiBhard limits; no native timing control or speedup claim.
+Twelve-packet carry16458physics/336.200048s/34554362fixture/3641782receipt bytes;
+original remaining223542steps/263.799952s/1039187462fixture/552522receipt bytes.
+Receipt budget tight: verify prospective storage fits, preserve prior evidence.
+No active owned job; current clear next mission above. No default/four-worker/
+learning-parity/full-source/motor/bout promotion or v11tag.
+
 # H20 publication qualifies; fresh H19comparison registered — Nov2 Mountain
 
 H20e7137ab/9031712b passes85Linux controls and ONE import-only spawn smoke1VALID/

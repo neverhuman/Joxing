@@ -29,10 +29,11 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H16](H16.md)|Can exit flags/statm explain missing live-looking RSS?|Reader35controls +one native teardown pass; four-worker hold fails122.75ms|
 |[H17](H17.md)|Can serial retirement avoid overlapping exit tails?|75Linux controls pass; native2s close fails before cleanup105.9ms hold fault|
 |[H18](H18.md)|Can closed native buffers be released before process exit?|93Linux +one native lifetime gate pass;90.66MB RSS drop,650ms exit tail remains|
-|[H19](H19.md)|Does process backend explain remaining exit latency?|Two packets2invalid/10not_run; parent fixed,120.58ms sampling gap blocks comparison|
+|[H19](H19.md)|Does process backend explain remaining exit latency?|Third packet6valid: import-only exit median13.13× faster; prior2invalid/10not_run retained|
 |[H20](H20.md)|Can report publication avoid stalling the watchdog?|85Linux +one import-only smoke qualify; exact after-exit copies/owned cleanup, no native result|
+|[H21](H21.md)|Does forkserver preserve native reset and live release?|Worker-ready ONE700muscle/200prep transfer mission; not implemented/run|
 
-**Latest: H20publication prerequisite qualifies. Fresh H19three-pair packet registered after85Linux controls; old two attempts invalid, no latency result yet. H18one-worker lifetime proof stays narrow. Next unused ID: H21.** These are global research-note
+**Latest: H19three-pair import-only hypothesis supported after H20qualification; native/RL gain unproved. Next H21ONE-native transfer mission. Old negative outcomes retained. Next unused ID: H22.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

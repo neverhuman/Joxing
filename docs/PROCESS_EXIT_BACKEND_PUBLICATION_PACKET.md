@@ -1,3 +1,7 @@
+# Concluded: H19six-slot import-only criterion supported
+
+All6VALID, independent audit passes; [results/all attempts](PROCESS_EXIT_BACKEND_RESULTS.md). Next [ONE-native transfer mission](NATIVE_CONTEXT_TRANSFER_MISSION.md). Historical protocol below; do not rerun it.
+
 # H19: three-pair backend comparison after H20 publication qualification
 
 Status: implemented ready packet; all six target rows NOT_RUN atregistration.
