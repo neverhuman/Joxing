@@ -1,6 +1,14 @@
 """Exact module partition and JUnit identity checks; standard library only."""
 
 import xml.etree.ElementTree as ET
+from pathlib import Path
+
+
+def create_fixture_root(output):
+    """Pytest creates its basetemp leaf, but its parent must already exist."""
+    root = Path(output) / "fixtures"
+    root.mkdir(exist_ok=False)
+    return root
 
 
 def partition(nodes, xfails):

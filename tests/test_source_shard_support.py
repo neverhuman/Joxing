@@ -1,4 +1,7 @@
 import importlib.util
+import os
+import subprocess
+import sys
 from pathlib import Path
 
 import pytest
@@ -72,3 +75,34 @@ def test_failed_case_remains_in_complete_denominator():
     assert not result["qualified"] and result["rows"] == [
         {"node": NODES[0], "status": "failed"}
     ]
+
+
+def test_real_pytest_tmp_path_works_when_earlier_module_used_no_scratch(tmp_path):
+    output = tmp_path / "run"
+    output.mkdir()
+    fixtures = support.create_fixture_root(output)
+    test = tmp_path / "test_child.py"
+    test.write_text("def test_tmp(tmp_path):\n    assert tmp_path.is_dir()\n")
+    env = os.environ.copy()
+    env["PYTEST_DISABLE_PLUGIN_AUTOLOAD"] = "1"
+    result = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pytest",
+            "-q",
+            "-p",
+            "no:cacheprovider",
+            "--basetemp",
+            str(fixtures / "module-001"),
+            str(test),
+        ],
+        cwd=tmp_path,
+        env=env,
+        capture_output=True,
+        text=True,
+        timeout=20,
+        check=False,
+    )
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert "1 passed" in result.stdout

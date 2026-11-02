@@ -1,3 +1,8 @@
+Current update: first attempt retained4passes/2setup errors; scratch parent absent.
+Use isolated-source-scratch-repair-protocol.json in a NEWroot with same six cases
+and numerical limits. Create fixture parent before pytest; new subprocess control
+passes with14combined development checks. No memory benefit yet established.
+
 # H14: complete history and fresh module processes under unchanged memory cap
 
 Current mission, reconciled November1,2026 (America/Denver). This is a bounded

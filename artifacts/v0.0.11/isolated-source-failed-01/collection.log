@@ -1,0 +1,8 @@
+tests/test_scaling_audit.py::test_actual_capacity_stop_retains_all_seventy_eight_cases
+tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[missing_case]
+tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[changed_step]
+tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[false_physics]
+tests/test_wave_learner.py::test_parallel_extension_trials_defer_initial_evaluation
+tests/test_wave_learner.py::test_real_update_actor_export_seed_and_rng
+
+6 tests collected in 4.72s

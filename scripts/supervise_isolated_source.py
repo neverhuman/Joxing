@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 
 from joxing_process_ownership import unknown_joxing_processes
-from source_shard_support import check_junit, partition
+from source_shard_support import check_junit, create_fixture_root, partition
 from supervise_motor_pilot import descendants, identity, live
 from supervise_upper_task_tests import canonical, rss, save, stop
 from upper_task_gate_support import KNOWN_XFAIL, partition_usage
@@ -89,7 +89,7 @@ def main():
     lease = (out.parent / ".isolated-source.lock").open("a+")
     fcntl.flock(lease, fcntl.LOCK_EX | fcntl.LOCK_NB)
     out.mkdir(exist_ok=False)
-    fixtures = out / "fixtures"
+    fixtures = create_fixture_root(out)
     supervisor = identity(os.getpid())
     ancestors, pid = set(), os.getpid()
     while pid > 1 and pid not in ancestors:

@@ -1,3 +1,18 @@
+# H14 scaling controls pass; scratch setup repair registered — Nov1 Mountain
+
+Current protocol experiments/v0.0.11/isolated-source-scratch-repair-protocol.json;
+mission docs/SOURCE_PROCESS_ISOLATION_MISSION.md. First H14attemptf011018/
+7c98de39 retains4passed scaling controls and2learner setup errors. Full history
+fix works. Learner tmp_path setup failed because scratch parent was not created;
+no learner body or memory comparison ran. Original attempt stays failed.
+
+Named repair creates scratch parent before modules, with real subprocess pytest
+regression.14local controls pass0.56s/Ruffpass. Fresh dedicated scratch-repair root,
+same6cases/alloriginal8GiB/16process/1GiBscratch/4MiBreceipt/180stotal-test limits.
+Publicfreeze and anonymously verify before launch. No full-source, balance or
+learning gain claimed. Preserve every failed raw/receipt; on completion audit all
+six JUnit identities, source/history/resources and owned exits, then publish.
+
 # Source gate failed; H14 process-isolation diagnosis ready — 2026-11-01 Mountain
 
 Current mission docs/SOURCE_PROCESS_ISOLATION_MISSION.md; research/H14.md.

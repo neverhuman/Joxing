@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="2" failures="0" skipped="0" tests="2" time="4.694" timestamp="2026-11-02T04:40:49.629960+00:00" hostname="xbabe1"><testcase classname="tests.test_wave_learner" name="test_parallel_extension_trials_defer_initial_evaluation" time="0.001"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-001'&quot;">self = PosixPath('/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-001')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+&gt;           os.mkdir(self, mode)
+E           FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-001'
+
+/usr/lib/python3.12/pathlib.py:1313: FileNotFoundError</error></testcase><testcase classname="tests.test_wave_learner" name="test_real_update_actor_export_seed_and_rng" time="0.000"><error message="failed on setup with &quot;FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-001'&quot;">self = PosixPath('/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-001')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+&gt;           os.mkdir(self, mode)
+E           FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-001'
+
+/usr/lib/python3.12/pathlib.py:1313: FileNotFoundError</error></testcase></testsuite></testsuites>

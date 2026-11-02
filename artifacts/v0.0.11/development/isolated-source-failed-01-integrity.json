@@ -1,0 +1,459 @@
+{
+  "schema": "joxing-isolated-source-independent-v1",
+  "status": "verified_halted_attempt",
+  "source_commit": "f01101835c1b7d80b25e83c2b0df36732ea8c288",
+  "protocol_sha256": "7c98de391e52a66c2529d1f4f6b23766e06fcc33b01f2b14b853f19b946907d7",
+  "source_files_verified": 713,
+  "historical_objects_verified": 4,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_scaling_audit.py::test_actual_capacity_stop_retains_all_seventy_eight_cases",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[missing_case]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[changed_step]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[false_physics]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_wave_learner.py::test_parallel_extension_trials_defer_initial_evaluation",
+      "status": "error"
+    },
+    {
+      "node": "tests/test_wave_learner.py::test_real_update_actor_export_seed_and_rng",
+      "status": "error"
+    }
+  ],
+  "registered_cases": 6,
+  "counts": {
+    "passed": 4,
+    "failed": 0,
+    "error": 2,
+    "xfail": 0,
+    "skipped": 0
+  },
+  "exited_recorded_identities": [
+    {
+      "pid": 566806,
+      "parent_pid": 1,
+      "start_ticks": 953127478,
+      "state": "R"
+    },
+    {
+      "pid": 566875,
+      "parent_pid": 566806,
+      "start_ticks": 953127580,
+      "state": "Z"
+    },
+    {
+      "pid": 567083,
+      "parent_pid": 566875,
+      "start_ticks": 953127717,
+      "state": "R"
+    },
+    {
+      "pid": 567601,
+      "parent_pid": 566806,
+      "start_ticks": 953128988,
+      "state": "Z"
+    },
+    {
+      "pid": 567610,
+      "parent_pid": 566806,
+      "start_ticks": 953129075,
+      "state": "Z"
+    },
+    {
+      "pid": 567815,
+      "parent_pid": 566806,
+      "start_ticks": 953129780,
+      "state": "Z"
+    },
+    {
+      "pid": 567990,
+      "parent_pid": 566806,
+      "start_ticks": 953129937,
+      "state": "Z"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.isolated-source.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/collection.log": {
+      "bytes": 535,
+      "sha256": "0ef39e781bece558ad8f4d51dfd4dd9738570f617b720ee8851ea45d43f4d40f"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/module-000.log": {
+      "bytes": 999,
+      "sha256": "9da1339f238d430e3572939ab7a96cb789393ecabe12117852a3c0f3c69946b3"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/module-000.xml": {
+      "bytes": 754,
+      "sha256": "24656a413b1a3aee794ce6243f0f92900f134428250db15f5f3938b82b537aa3"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/module-001.log": {
+      "bytes": 2249,
+      "sha256": "fd9d84fe0ca6ddcb932e0bff335c60952f51a394cf5747f2fcf60c7629ce87a7"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/module-001.xml": {
+      "bytes": 2201,
+      "sha256": "1aea874b65d851cbc66053f1f62bd148f2653b287c623a159005056d49892de0"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/result.json": {
+      "bytes": 9708,
+      "sha256": "75be4f62277adecc0656dd73ac4b81b792ef8942edda9413ad9f724ca2e867d8"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/runtime.log": {
+      "bytes": 58,
+      "sha256": "edbaf7c3fd3f4b2da72c4cdbf9492d4a55d5a1e7ef43a95424334a7cfcb17cc2"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-01/sync.log": {
+      "bytes": 1900,
+      "sha256": "6f8c055b6dd690970dfced0e7b085661dca4cd3ac69d786efb133995b6929911"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-deployment.json": {
+      "bytes": 212996,
+      "sha256": "dac7e8c74dc23e31dbe2336e77fb90e651577211c37b9260546bc0562d0a297b"
+    },
+    "runs/v0.0.11/isolated-source-diagnostic-launch.log": {
+      "bytes": 1109,
+      "sha256": "e549548894b784387d73fca50b6280f1e62e7967641b60d84dae6f498f1a8b71"
+    }
+  },
+  "fixture_bytes": 0,
+  "receipt_bytes": 232509,
+  "supervision": {
+    "schema": "joxing-isolated-source-supervision-v1",
+    "source_commit": "f01101835c1b7d80b25e83c2b0df36732ea8c288",
+    "protocol_sha256": "7c98de391e52a66c2529d1f4f6b23766e06fcc33b01f2b14b853f19b946907d7",
+    "process": {
+      "pid": 566806,
+      "parent_pid": 1,
+      "start_ticks": 953127478,
+      "state": "R"
+    },
+    "status": "halted",
+    "scope": "H14 bounded source-memory/history diagnostic. Four saved scaling-audit cases and two fixture learner cases in independent pytest processes, complete source history. Fixture physics/gradient updates are not a checkpoint motor evaluation or RL competence result.",
+    "formal_native_evaluations": 0,
+    "formal_training_runs": 0,
+    "initial_capacity": {
+      "available_memory_bytes": 34428723200,
+      "free_disk_bytes": 138977452032,
+      "fixture_bytes": 0,
+      "receipt_bytes": 212996,
+      "load": [
+        10.1845703125,
+        12.81396484375,
+        12.37109375
+      ]
+    },
+    "rows": [
+      {
+        "node": "tests/test_scaling_audit.py::test_actual_capacity_stop_retains_all_seventy_eight_cases",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[missing_case]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[changed_step]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[false_physics]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_wave_learner.py::test_parallel_extension_trials_defer_initial_evaluation",
+        "status": "failed"
+      },
+      {
+        "node": "tests/test_wave_learner.py::test_real_update_actor_export_seed_and_rng",
+        "status": "failed"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "limit_s": 178,
+        "peak_owned_rss_bytes": 147890176,
+        "process": {
+          "pid": 566875,
+          "parent_pid": 566806,
+          "start_ticks": 953127580,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 566875,
+            "parent_pid": 566806,
+            "start_ticks": 953127580,
+            "state": "Z"
+          },
+          {
+            "pid": 567083,
+            "parent_pid": 566875,
+            "start_ticks": 953127717,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 13.97403585165739,
+        "current_owned_rss_bytes": 32436224,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 34354708480,
+          "free_disk_bytes": 137864310784,
+          "fixture_bytes": 0,
+          "receipt_bytes": 220495,
+          "load": [
+            10.43359375,
+            12.740234375,
+            12.353515625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 14.08741201274097,
+        "cleanup_wait_s": 5.221925675868988e-05
+      },
+      {
+        "stage": "runtime",
+        "command": [
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'python': '3.12.3', 'numpy': '2.4.2', 'mujoco': '3.8.0'}"
+        ],
+        "status": "completed",
+        "limit_s": 8,
+        "peak_owned_rss_bytes": 57741312,
+        "process": {
+          "pid": 567601,
+          "parent_pid": 566806,
+          "start_ticks": 953128988,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 567601,
+            "parent_pid": 566806,
+            "start_ticks": 953128988,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7577059715986252,
+        "current_owned_rss_bytes": 32436224,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 34365505536,
+          "free_disk_bytes": 137864269824,
+          "fixture_bytes": 0,
+          "receipt_bytes": 221419,
+          "load": [
+            10.43359375,
+            12.740234375,
+            12.353515625
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8709917794913054,
+        "cleanup_wait_s": 3.5276636481285095e-05
+      },
+      {
+        "stage": "collection",
+        "command": [
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "--collect-only",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "tests/test_scaling_audit.py",
+          "tests/test_wave_learner.py"
+        ],
+        "status": "completed",
+        "limit_s": 13,
+        "peak_owned_rss_bytes": 449421312,
+        "process": {
+          "pid": 567610,
+          "parent_pid": 566806,
+          "start_ticks": 953129075,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 567610,
+            "parent_pid": 566806,
+            "start_ticks": 953129075,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 6.931902481243014,
+        "current_owned_rss_bytes": 32436224,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 34258456576,
+          "free_disk_bytes": 137864138752,
+          "fixture_bytes": 0,
+          "receipt_bytes": 222825,
+          "load": [
+            10.3603515625,
+            12.64892578125,
+            12.328125
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 7.044262720271945,
+        "cleanup_wait_s": 3.097020089626312e-05
+      },
+      {
+        "stage": "module-000",
+        "shard_index": 0,
+        "command": [
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-000",
+          "--junitxml",
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/module-000.xml",
+          "tests/test_scaling_audit.py::test_actual_capacity_stop_retains_all_seventy_eight_cases",
+          "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[missing_case]",
+          "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[changed_step]",
+          "tests/test_scaling_audit.py::test_missing_or_mutated_evidence_cannot_pass[false_physics]"
+        ],
+        "status": "completed",
+        "limit_s": 148,
+        "peak_owned_rss_bytes": 190164992,
+        "process": {
+          "pid": 567815,
+          "parent_pid": 566806,
+          "start_ticks": 953129780,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 567815,
+            "parent_pid": 566806,
+            "start_ticks": 953129780,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 1.450192278251052,
+        "current_owned_rss_bytes": 32440320,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 34261184512,
+          "free_disk_bytes": 137864003584,
+          "fixture_bytes": 0,
+          "receipt_bytes": 225449,
+          "load": [
+            10.3603515625,
+            12.64892578125,
+            12.328125
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 1.5686221849173307,
+        "cleanup_wait_s": 3.4283846616744995e-05,
+        "junit_counts": {
+          "passed": 4,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "stage": "module-001",
+        "shard_index": 1,
+        "command": [
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/fixtures/module-001",
+          "--junitxml",
+          "/home/ubuntu/joxing/isolated-source-diagnostic-20261101/runs/v0.0.11/isolated-source-diagnostic-01/module-001.xml",
+          "tests/test_wave_learner.py::test_parallel_extension_trials_defer_initial_evaluation",
+          "tests/test_wave_learner.py::test_real_update_actor_export_seed_and_rng"
+        ],
+        "status": "failed",
+        "limit_s": 148,
+        "peak_owned_rss_bytes": 443047936,
+        "process": {
+          "pid": 567990,
+          "parent_pid": 566806,
+          "start_ticks": 953129937,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 567990,
+            "parent_pid": 566806,
+            "start_ticks": 953129937,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 6.962547481060028,
+        "current_owned_rss_bytes": 32481280,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 34246696960,
+          "free_disk_bytes": 137863467008,
+          "fixture_bytes": 0,
+          "receipt_bytes": 230886,
+          "load": [
+            10.22412109375,
+            12.54443359375,
+            12.29736328125
+          ]
+        },
+        "returncode": 1,
+        "wall_s": 7.075310420244932,
+        "cleanup_wait_s": 3.0178576707839966e-05,
+        "junit_counts": {
+          "passed": 0,
+          "xfail": 0,
+          "failed": 2,
+          "skipped": 0
+        }
+      }
+    ],
+    "criterion_passed": false,
+    "full_source_gate_qualified": false,
+    "error": "ValueError: Module contains unsuccessful or unexpected source case",
+    "wall_s": 30.648649973794818,
+    "test_wall_s": 8.644745204597712,
+    "final_live_recorded": [],
+    "fixture_bytes": 0,
+    "receipt_bytes": 230887
+  },
+  "observed_utc": "2026-11-02T04:44:42Z"
+}

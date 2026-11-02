@@ -24,7 +24,7 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H11](H11.md)|Does diagnostic opponent training improve robustly?|Some matchup gains; degeneracy/validity/monotonicity failures persist|
 |[H12](H12.md)|Are sporting rules ready for competitive learning?|Partial; force/attribution/fall/geometry/motor/replay gates still block|
 |[H13](H13.md)|Can QFlex value-guided exploration improve a valid motor task?|Research lead only; compatibility/method comparison not_run|
-|[H14](H14.md)|Can fresh module processes keep source validation inside8GiB?|Implemented; six-case history/memory diagnostic pending|
+|[H14](H14.md)|Can fresh module processes keep source validation inside8GiB?|Four history controls pass; scratch repair registered, memory proof pending|
 
 **Last concluded: H9. Next: H14validation prerequisite for H10motor work. Next unused ID: H15.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
