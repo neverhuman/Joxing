@@ -1,3 +1,24 @@
+# H16 native teardown qualifies; H15 paired learning v3 registered — Nov2 Mountain
+
+5a12aef/3c93c805 constructor packet qualifies:3Linux source controls plus1real
+700muscle worker,200exact prep/0rollout/0actors/0updates, initial/close state exact.
+Actual missing-RSS native exit positively reserves1074524160bytes, released70.99ms;
+max sample/probe26.71/5.57ms. Peak capacity charge1535262720bytes, no zero/PSS swap.
+Independent731source/five historical objects/11recorded-exit/2credit-event audit
+passes;30rawfiles285843bytes exact, no writer. Strict-v2 remains default.
+
+Current packet experiments/v0.0.11/deferred-native-terminal-v3-protocol.json now
+registers fresh legacyA/candidateA/legacyB/candidateB with qualified v3 explicitly.
+Same seed1097/64transitions/12updates/four native workers and exact trace/RNG/
+optimizer/replay/state/evaluation gates. Source/protocol publicfreeze/anonymous
+verify/fresh capacity required before launch. No code/scientific gate loosened.
+
+All five prior packets/costs are carried:10372physics,131.566882active seconds,
+21184982raw/1286039receipt bytes. Remaining229628steps/468s/raw+receipt balance,
+original240k/600s/1GiB/4MiB envelope. Old2INVALID/6NOT_RUN never reused or relabeled.
+Stop first fault/mismatch, preserve all rows. No defaults, concurrency/full-source,
+native balance/boxing win or v11tag until actual gates pass.
+
 # H16 reader controls qualify; ONE native teardown registered — Nov2 Mountain
 
 c0e2aa1/e3a1e07b:35Linux controls and independent729source/15recorded-exit audit
