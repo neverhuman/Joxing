@@ -11,7 +11,7 @@ import sys
 import time
 from pathlib import Path
 
-from joxing_process_ownership import unknown_joxing_processes
+from joxing_process_ownership import belongs_to_supervisor, unknown_joxing_processes
 from source_shard_support import check_junit
 from supervise_motor_pilot import descendants, identity, live
 from supervise_upper_task_tests import canonical, save, stop
@@ -26,6 +26,24 @@ from joxing.trial_memory import (
     sample_owned,
     validate_events,
 )
+
+
+def bind_reported(rows, supervisor, seen, *, read_identity=identity):
+    """Refresh newborn identities using actual ancestry, never trust journal PID claims."""
+    for bound in rows:
+        key = bound["pid"], bound["start_ticks"]
+        if key in seen:
+            continue
+        actual = read_identity(bound["pid"])
+        if (
+            actual["start_ticks"] != bound["start_ticks"]
+            or belongs_to_supervisor(
+                bound["pid"], supervisor, read_identity=read_identity
+            )
+            is not True
+        ):
+            raise ValueError("Unbound reported process identity")
+        seen[key] = actual
 
 
 def main():
@@ -235,6 +253,20 @@ def main():
                 while True:
                     for item in descendants(active.pid):
                         seen[(item["pid"], item["start_ticks"])] = item
+                    if name == "profile":
+                        events = read_events(out / "events")
+                        controls_path = out / "control-roles.json"
+                        controls = (
+                            json.loads(controls_path.read_text())
+                            if controls_path.exists()
+                            else []
+                        )
+                        bind_reported(
+                            [e["identity"] for e in events]
+                            + [c["identity"] for c in controls],
+                            supervisor,
+                            seen,
+                        )
                     living = [i for i in seen.values() if live(i)]
                     samples = sample_owned([supervisor, *living], is_live=live)
                     aggregate = sum(s["rss_bytes"] for s in samples)
@@ -248,14 +280,12 @@ def main():
                         owned_identities=list(seen.values()),
                     )
                     if name == "profile":
-                        events = read_events(out / "events")
                         roles = validate_events(events, list(seen.values()))
                         roles[f"{supervisor['pid']}:{supervisor['start_ticks']}"] = {
                             "role": "supervisor"
                         }
-                        controls_path = out / "control-roles.json"
-                        if controls_path.exists():
-                            for control in json.loads(controls_path.read_text()):
+                        if controls:
+                            for control in controls:
                                 i = control["identity"]
                                 if (i["pid"], i["start_ticks"]) not in seen:
                                     # Never read memory for an event-supplied foreign PID.

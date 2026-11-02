@@ -1,0 +1,615 @@
+{
+  "schema": "joxing-trial-memory-independent-v1",
+  "status": "verified_halted_attempt",
+  "source_commit": "efa4d41ef9642b067fd2cb56839b0a9a8cd9beb3",
+  "protocol_sha256": "409cc901bb6552748c2a4cad0b7f7965740c3a303c6996395b08f56ebb4c873f",
+  "source_files_verified": 716,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_trial_memory.py::test_memory_sample_and_pid_reuse",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_missing_process_has_no_sample",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_phase_order_and_known_roles",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows0-owned0]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows1-owned1]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows2-owned2]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows3-owned3]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows4-owned4]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_unbound_reused_or_impossible_events_rejected[rows5-owned5]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_guard_prevents_actual_side_effect_and_restores",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_interrupted_event_tail_not_invented",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_bounded_subprocess_profile_exit_runs_cleanup",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_partial_constructor_counts_are_lower_bounds",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_missing_live_memory_never_silently_counts_as_zero",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_memory.py::test_original_constructor_arguments_and_learn_interception",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+      "status": "passed"
+    }
+  ],
+  "profile_samples_verified": 0,
+  "sampled_peak_rss_bytes": null,
+  "sampled_peak_pss_bytes": null,
+  "peak_by_role": {},
+  "phase_rows": [],
+  "constructor_denominator": {
+    "expected_worlds": 10,
+    "completed_worlds": 0,
+    "all_worlds_constructed": false,
+    "known_preparation_substeps_lower_bound": 0,
+    "known_fixture_physics_substeps_lower_bound": 0,
+    "interrupted_constructor_work": "unknown"
+  },
+  "trials": [
+    {
+      "arm": "A",
+      "status": "not_run",
+      "ready": false
+    },
+    {
+      "arm": "B",
+      "status": "not_run",
+      "ready": false
+    }
+  ],
+  "registered_cases": 24,
+  "counts": {
+    "passed": 24,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0
+  },
+  "exited_recorded_identities": [
+    {
+      "pid": 1148978,
+      "parent_pid": 1,
+      "start_ticks": 953443725,
+      "state": "R"
+    },
+    {
+      "pid": 1149016,
+      "parent_pid": 1148978,
+      "start_ticks": 953443789,
+      "state": "Z"
+    },
+    {
+      "pid": 1149178,
+      "parent_pid": 1149016,
+      "start_ticks": 953443823,
+      "state": "R"
+    },
+    {
+      "pid": 1149188,
+      "parent_pid": 1149016,
+      "start_ticks": 953443863,
+      "state": "R"
+    },
+    {
+      "pid": 1149191,
+      "parent_pid": 1148978,
+      "start_ticks": 953443958,
+      "state": "R"
+    },
+    {
+      "pid": 1149345,
+      "parent_pid": 1148978,
+      "start_ticks": 953444480,
+      "state": "R"
+    },
+    {
+      "pid": 1149595,
+      "parent_pid": 1148978,
+      "start_ticks": 953445073,
+      "state": "R"
+    },
+    {
+      "pid": 1149600,
+      "parent_pid": 1149595,
+      "start_ticks": 953445080,
+      "state": "S"
+    },
+    {
+      "pid": 1149599,
+      "parent_pid": 1149595,
+      "start_ticks": 953445080,
+      "state": "S"
+    },
+    {
+      "pid": 1149614,
+      "parent_pid": 1149595,
+      "start_ticks": 953445087,
+      "state": "R"
+    },
+    {
+      "pid": 1149615,
+      "parent_pid": 1149595,
+      "start_ticks": 953445088,
+      "state": "R"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.trial-memory.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/control-roles.json": {
+      "bytes": 613,
+      "sha256": "17c0a36e48801ee1191f304b33a7ba468994d17d1da313a3c98fc8bb7ea1e684"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_bounded_subprocess_profil0/cleanup.json": {
+      "bytes": 64,
+      "sha256": "52efddfd87739ef5625add685e35a87efcf7df8a1077d42c5c5bd0dca5f1f649"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_interrupted_event_tail_no0/events-17-123.jsonl": {
+      "bytes": 134,
+      "sha256": "92cb48a289a195fc3acee719478188b6b36fba8a87a88de6cc6ff196240400db"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/maps": {
+      "bytes": 25,
+      "sha256": "1e9096268b4ebb37ec5b867f3137771c22b7ebf16eb50df100d95a116ca482a8"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/smaps_rollup": {
+      "bytes": 75,
+      "sha256": "3b417ece0181ad222082d7d8dd2df8fa134ead3971c2e3896b067de4da856be5"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/stat": {
+      "bytes": 67,
+      "sha256": "a15778482f145157a93a84869be39a8485466fa811be9f80bdba3fdb654272c5"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_memory_sample_and_pid_reu0/17/status": {
+      "bytes": 14,
+      "sha256": "b6ab98dd350bd58557233b18afeefabf1225149471b2e00ac70d7ba6919a4fda"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_original_constructor_argu0/R-A/description.json": {
+      "bytes": 524,
+      "sha256": "611e0d22d041af728820065bc4201b0493ae07ae6172ce30269207d9bfddf55a"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_original_constructor_argu0/R-A/specification.json": {
+      "bytes": 35,
+      "sha256": "6af43c8486494cae8688a7681f15ec59f14d0c20bda45d9acd7b2824b0fcebce"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_original_constructor_argu0/fixtures/R-A/initial-actor.pt": {
+      "bytes": 12,
+      "sha256": "2b9cc4a9db471dbe900f09fbe469af30efdd8a740f938e325120903fb274339d"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls/test_original_constructor_argu0/release": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/profile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/result.json": {
+      "bytes": 8372,
+      "sha256": "e652d2997d2df7b3c876adfbeef4f14fc5b74fd80d5e1237fd8b7afb328811a3"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/runtime.log": {
+      "bytes": 97,
+      "sha256": "51f893185ded0c93966576dc1e9800872291946e86c0bca202751dcab8a43ee4"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/sync.log": {
+      "bytes": 1228,
+      "sha256": "ea8e8c4eecde7ddcb3b3d7ff2b691830d185a884988b8c637d450d2bf2eccff8"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/tests.log": {
+      "bytes": 99,
+      "sha256": "ee2df7cef8af761dd621d2f63c0ad65c227db6a8f1f37ef1e608c2ac0f3c0be5"
+    },
+    "runs/v0.0.11/trial-memory-profile-01/tests.xml": {
+      "bytes": 3408,
+      "sha256": "38f504c2f5c6a653c6e049d789e6dfbb24d9c5ef30b629bac1645c380ff802ef"
+    },
+    "runs/v0.0.11/trial-memory-profile-deployment.json": {
+      "bytes": 214016,
+      "sha256": "f54bc87669c1d254c900433b9dc566c5dfbdeef0e1d2be3f834f09944665cf0b"
+    },
+    "runs/v0.0.11/trial-memory-profile-launch.log": {
+      "bytes": 217,
+      "sha256": "d06b5927920d97f43e4ee0db9fa56788d4c5adabd753a276dcf2f6e0e8e9cea8"
+    }
+  },
+  "fixture_bytes": 950,
+  "receipt_bytes": 228050,
+  "supervision": {
+    "schema": "joxing-trial-memory-profile-v1",
+    "source_commit": "efa4d41ef9642b067fd2cb56839b0a9a8cd9beb3",
+    "protocol_sha256": "409cc901bb6552748c2a4cad0b7f7965740c3a303c6996395b08f56ebb4c873f",
+    "supervisor": {
+      "pid": 1148978,
+      "parent_pid": 1,
+      "start_ticks": 953443725,
+      "state": "R"
+    },
+    "status": "halted",
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "owned_identities": [
+          {
+            "pid": 1149016,
+            "parent_pid": 1148978,
+            "start_ticks": 953443789,
+            "state": "Z"
+          },
+          {
+            "pid": 1149178,
+            "parent_pid": 1149016,
+            "start_ticks": 953443823,
+            "state": "R"
+          },
+          {
+            "pid": 1149188,
+            "parent_pid": 1149016,
+            "start_ticks": 953443863,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 1.5883608665317297,
+        "peak_sampled_rss_bytes": 131149824,
+        "capacity": {
+          "available_memory_bytes": 38109110272,
+          "free_disk_bytes": 131256172544,
+          "fixture_bytes": 0,
+          "receipt_bytes": 3129,
+          "load": [
+            8.29248046875,
+            9.9453125,
+            10.07421875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 1.6899554207921028
+      },
+      {
+        "stage": "runtime",
+        "command": [
+          "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import sys,numpy,mujoco,torch,stable_baselines3; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__}; print(v); assert v == {'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3', 'sb3': '2.7.1', 'torch': '2.10.0+cpu'}"
+        ],
+        "status": "completed",
+        "owned_identities": [
+          {
+            "pid": 1149016,
+            "parent_pid": 1148978,
+            "start_ticks": 953443789,
+            "state": "Z"
+          },
+          {
+            "pid": 1149178,
+            "parent_pid": 1149016,
+            "start_ticks": 953443823,
+            "state": "R"
+          },
+          {
+            "pid": 1149188,
+            "parent_pid": 1149016,
+            "start_ticks": 953443863,
+            "state": "R"
+          },
+          {
+            "pid": 1149191,
+            "parent_pid": 1148978,
+            "start_ticks": 953443958,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 5.107674784958363,
+        "peak_sampled_rss_bytes": 442826752,
+        "capacity": {
+          "available_memory_bytes": 38107213824,
+          "free_disk_bytes": 131255894016,
+          "fixture_bytes": 0,
+          "receipt_bytes": 4787,
+          "load": [
+            8.10888671875,
+            9.87939453125,
+            10.05224609375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 5.214019048959017
+      },
+      {
+        "stage": "tests",
+        "command": [
+          "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "--junitxml",
+          "/home/ubuntu/joxing/trial-memory-profile-20261102-01/runs/v0.0.11/trial-memory-profile-01/tests.xml",
+          "--basetemp",
+          "/home/ubuntu/joxing/trial-memory-profile-20261102-01/runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls",
+          "tests/test_trial_memory.py",
+          "tests/test_process_ownership.py"
+        ],
+        "status": "completed",
+        "owned_identities": [
+          {
+            "pid": 1149016,
+            "parent_pid": 1148978,
+            "start_ticks": 953443789,
+            "state": "Z"
+          },
+          {
+            "pid": 1149178,
+            "parent_pid": 1149016,
+            "start_ticks": 953443823,
+            "state": "R"
+          },
+          {
+            "pid": 1149188,
+            "parent_pid": 1149016,
+            "start_ticks": 953443863,
+            "state": "R"
+          },
+          {
+            "pid": 1149191,
+            "parent_pid": 1148978,
+            "start_ticks": 953443958,
+            "state": "R"
+          },
+          {
+            "pid": 1149345,
+            "parent_pid": 1148978,
+            "start_ticks": 953444480,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 5.827344663441181,
+        "peak_sampled_rss_bytes": 445296640,
+        "capacity": {
+          "available_memory_bytes": 37927682048,
+          "free_disk_bytes": 131255504896,
+          "fixture_bytes": 950,
+          "receipt_bytes": 10094,
+          "load": [
+            7.93994140625,
+            9.81494140625,
+            10.0302734375
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 5.931886464357376,
+        "junit_counts": {
+          "passed": 24,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "stage": "profile",
+        "command": [
+          "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "joxing.trial_memory",
+          "--folder",
+          "/home/ubuntu/joxing/trial-memory-profile-20261102-01/runs/v0.0.11/trial-memory-profile-01",
+          "--packet",
+          "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/trial-memory-profile-protocol.json"
+        ],
+        "status": "failed",
+        "owned_identities": [
+          {
+            "pid": 1149016,
+            "parent_pid": 1148978,
+            "start_ticks": 953443789,
+            "state": "Z"
+          },
+          {
+            "pid": 1149178,
+            "parent_pid": 1149016,
+            "start_ticks": 953443823,
+            "state": "R"
+          },
+          {
+            "pid": 1149188,
+            "parent_pid": 1149016,
+            "start_ticks": 953443863,
+            "state": "R"
+          },
+          {
+            "pid": 1149191,
+            "parent_pid": 1148978,
+            "start_ticks": 953443958,
+            "state": "R"
+          },
+          {
+            "pid": 1149345,
+            "parent_pid": 1148978,
+            "start_ticks": 953444480,
+            "state": "R"
+          },
+          {
+            "pid": 1149595,
+            "parent_pid": 1148978,
+            "start_ticks": 953445073,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 0.06789951398968697,
+        "peak_sampled_rss_bytes": 64745472,
+        "capacity": {
+          "available_memory_bytes": 37892153344,
+          "free_disk_bytes": 131255496704,
+          "fixture_bytes": 950,
+          "receipt_bytes": 10707,
+          "load": [
+            7.93994140625,
+            9.81494140625,
+            10.0302734375
+          ]
+        }
+      }
+    ],
+    "trials": [
+      {
+        "arm": "A",
+        "status": "not_run",
+        "ready": false
+      },
+      {
+        "arm": "B",
+        "status": "not_run",
+        "ready": false
+      }
+    ],
+    "formal_native_evaluations": 0,
+    "formal_training_runs": 0,
+    "fixture_physics": "unknown until completed constructor events; partial on forced stop",
+    "initial_capacity": {
+      "available_memory_bytes": 38114754560,
+      "free_disk_bytes": 131266691072,
+      "fixture_bytes": 0,
+      "receipt_bytes": 0,
+      "load": [
+        8.29248046875,
+        9.9453125,
+        10.07421875
+      ]
+    },
+    "error": "ValueError: Unbound control process role",
+    "events": [],
+    "constructor_denominator": {
+      "expected_worlds": 10,
+      "completed_worlds": 0,
+      "all_worlds_constructed": false,
+      "known_preparation_substeps_lower_bound": 0,
+      "known_fixture_physics_substeps_lower_bound": 0,
+      "interrupted_constructor_work": "unknown"
+    },
+    "wall_s": 13.02196673490107,
+    "owned_identities": [
+      {
+        "pid": 1149016,
+        "parent_pid": 1148978,
+        "start_ticks": 953443789,
+        "state": "Z"
+      },
+      {
+        "pid": 1149178,
+        "parent_pid": 1149016,
+        "start_ticks": 953443823,
+        "state": "R"
+      },
+      {
+        "pid": 1149188,
+        "parent_pid": 1149016,
+        "start_ticks": 953443863,
+        "state": "R"
+      },
+      {
+        "pid": 1149191,
+        "parent_pid": 1148978,
+        "start_ticks": 953443958,
+        "state": "R"
+      },
+      {
+        "pid": 1149345,
+        "parent_pid": 1148978,
+        "start_ticks": 953444480,
+        "state": "R"
+      },
+      {
+        "pid": 1149595,
+        "parent_pid": 1148978,
+        "start_ticks": 953445073,
+        "state": "R"
+      }
+    ],
+    "final_live_recorded": [],
+    "guards_violated": false
+  },
+  "observed_utc": "2026-11-02T05:34:17Z"
+}

@@ -1,3 +1,7 @@
+Current execution packet: experiments/v0.0.11/trial-memory-ownership-repair-protocol.json.
+Original first ownership stop is audited in research/H15.md. The named repair
+adds ancestry binding for post-inventory newborns; model/config/caps unchanged.
+
 # H15: attribute trial memory, then qualify deferred evaluation allocation
 
 Current mission, Nov1,2026 America/Denver. Constructor-only profile is implemented

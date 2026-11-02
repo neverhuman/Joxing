@@ -1,3 +1,23 @@
+# H15 first profile ownership stop audited; named repair registered — Nov1 Mountain
+
+Original efa4d41/protocol409cc901:24/24Linux controls pass, but profile stops
+at0.0679s on unbound newborn control role (13.021967s whole). This was an inventory
+race before allocation measurement, not a memory result. Two learner processes
+launched; parent reports not_run with no trial events; independent interpretation
+is initialization unconfirmed, all10constructor slots unconfirmed. Known prep
+lower bound0 does not establish zero work. Original report/criteria retained.
+716source files/full history,11exited recorded identities/no writer verified;
+all20raw files/229000bytes transferred exact. See research/H15.md and
+artifacts/v0.0.11/development/trial-memory-ownership-failed-01-integrity.json.
+
+Named source-only supervisor repair binds newborn reports by actual PID/start
+and complete ancestry to its supervisor before sampling. Four regression controls
+cover new child/grandchild, foreign and reused identities:27local pass/1Linux skip.
+New packet experiments/v0.0.11/trial-memory-ownership-repair-protocol.json requires
+all28Linux controls, then same original constructors/config/caps in a fresh root.
+No model/learner/rules/default change, memory saving or boxing improvement claimed.
+Freeze/push/anonymous verification and fresh capacity check precede launch.
+
 # H15 constructor-only allocation profile registered — Nov1 Mountain
 
 Current packet: [trial-memory profile](../../docs/TRIAL_MEMORY_LIFECYCLE_MISSION.md).

@@ -1,0 +1,27 @@
+{
+  "schema": "joxing-h15-ownership-repair-development-v1",
+  "scope": "Development controls only; original failed Linux root preserved",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_trial_memory.py tests/test_process_ownership.py",
+  "expected_target_tests": 28,
+  "development_passed": 27,
+  "development_skipped": 1,
+  "skip_reason": "Linux-only real ancestry on Mac",
+  "ruff": "passed",
+  "controls_added": [
+    "new child after inventory",
+    "new grandchild after inventory",
+    "foreign ancestry rejection",
+    "PID reuse rejection"
+  ],
+  "source_files": {
+    "scripts/profile_trial_memory.py": {
+      "bytes": 16696,
+      "sha256": "e43897c3c83e6ac7bbd3c9b5615211c6157551aa517e17d941d891b7ed654622"
+    },
+    "tests/test_trial_memory.py": {
+      "bytes": 9713,
+      "sha256": "206916ce0f3391e63298fa627b774cd93c99ee5a739ad0d43d2502475e369f9b"
+    }
+  },
+  "formal_retry": "not_run; new public freeze/root required"
+}

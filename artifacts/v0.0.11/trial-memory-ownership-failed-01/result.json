@@ -1,0 +1,322 @@
+{
+  "schema": "joxing-trial-memory-profile-v1",
+  "source_commit": "efa4d41ef9642b067fd2cb56839b0a9a8cd9beb3",
+  "protocol_sha256": "409cc901bb6552748c2a4cad0b7f7965740c3a303c6996395b08f56ebb4c873f",
+  "supervisor": {
+    "pid": 1148978,
+    "parent_pid": 1,
+    "start_ticks": 953443725,
+    "state": "R"
+  },
+  "status": "halted",
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "owned_identities": [
+        {
+          "pid": 1149016,
+          "parent_pid": 1148978,
+          "start_ticks": 953443789,
+          "state": "Z"
+        },
+        {
+          "pid": 1149178,
+          "parent_pid": 1149016,
+          "start_ticks": 953443823,
+          "state": "R"
+        },
+        {
+          "pid": 1149188,
+          "parent_pid": 1149016,
+          "start_ticks": 953443863,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 1.5883608665317297,
+      "peak_sampled_rss_bytes": 131149824,
+      "capacity": {
+        "available_memory_bytes": 38109110272,
+        "free_disk_bytes": 131256172544,
+        "fixture_bytes": 0,
+        "receipt_bytes": 3129,
+        "load": [
+          8.29248046875,
+          9.9453125,
+          10.07421875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.6899554207921028
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import sys,numpy,mujoco,torch,stable_baselines3; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__,'torch':torch.__version__,'sb3':stable_baselines3.__version__}; print(v); assert v == {'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3', 'sb3': '2.7.1', 'torch': '2.10.0+cpu'}"
+      ],
+      "status": "completed",
+      "owned_identities": [
+        {
+          "pid": 1149016,
+          "parent_pid": 1148978,
+          "start_ticks": 953443789,
+          "state": "Z"
+        },
+        {
+          "pid": 1149178,
+          "parent_pid": 1149016,
+          "start_ticks": 953443823,
+          "state": "R"
+        },
+        {
+          "pid": 1149188,
+          "parent_pid": 1149016,
+          "start_ticks": 953443863,
+          "state": "R"
+        },
+        {
+          "pid": 1149191,
+          "parent_pid": 1148978,
+          "start_ticks": 953443958,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 5.107674784958363,
+      "peak_sampled_rss_bytes": 442826752,
+      "capacity": {
+        "available_memory_bytes": 38107213824,
+        "free_disk_bytes": 131255894016,
+        "fixture_bytes": 0,
+        "receipt_bytes": 4787,
+        "load": [
+          8.10888671875,
+          9.87939453125,
+          10.05224609375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 5.214019048959017
+    },
+    {
+      "stage": "tests",
+      "command": [
+        "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml",
+        "/home/ubuntu/joxing/trial-memory-profile-20261102-01/runs/v0.0.11/trial-memory-profile-01/tests.xml",
+        "--basetemp",
+        "/home/ubuntu/joxing/trial-memory-profile-20261102-01/runs/v0.0.11/trial-memory-profile-01/fixtures/test-controls",
+        "tests/test_trial_memory.py",
+        "tests/test_process_ownership.py"
+      ],
+      "status": "completed",
+      "owned_identities": [
+        {
+          "pid": 1149016,
+          "parent_pid": 1148978,
+          "start_ticks": 953443789,
+          "state": "Z"
+        },
+        {
+          "pid": 1149178,
+          "parent_pid": 1149016,
+          "start_ticks": 953443823,
+          "state": "R"
+        },
+        {
+          "pid": 1149188,
+          "parent_pid": 1149016,
+          "start_ticks": 953443863,
+          "state": "R"
+        },
+        {
+          "pid": 1149191,
+          "parent_pid": 1148978,
+          "start_ticks": 953443958,
+          "state": "R"
+        },
+        {
+          "pid": 1149345,
+          "parent_pid": 1148978,
+          "start_ticks": 953444480,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 5.827344663441181,
+      "peak_sampled_rss_bytes": 445296640,
+      "capacity": {
+        "available_memory_bytes": 37927682048,
+        "free_disk_bytes": 131255504896,
+        "fixture_bytes": 950,
+        "receipt_bytes": 10094,
+        "load": [
+          7.93994140625,
+          9.81494140625,
+          10.0302734375
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 5.931886464357376,
+      "junit_counts": {
+        "passed": 24,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "stage": "profile",
+      "command": [
+        "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "joxing.trial_memory",
+        "--folder",
+        "/home/ubuntu/joxing/trial-memory-profile-20261102-01/runs/v0.0.11/trial-memory-profile-01",
+        "--packet",
+        "/home/ubuntu/joxing/trial-memory-profile-20261102-01/experiments/v0.0.11/trial-memory-profile-protocol.json"
+      ],
+      "status": "failed",
+      "owned_identities": [
+        {
+          "pid": 1149016,
+          "parent_pid": 1148978,
+          "start_ticks": 953443789,
+          "state": "Z"
+        },
+        {
+          "pid": 1149178,
+          "parent_pid": 1149016,
+          "start_ticks": 953443823,
+          "state": "R"
+        },
+        {
+          "pid": 1149188,
+          "parent_pid": 1149016,
+          "start_ticks": 953443863,
+          "state": "R"
+        },
+        {
+          "pid": 1149191,
+          "parent_pid": 1148978,
+          "start_ticks": 953443958,
+          "state": "R"
+        },
+        {
+          "pid": 1149345,
+          "parent_pid": 1148978,
+          "start_ticks": 953444480,
+          "state": "R"
+        },
+        {
+          "pid": 1149595,
+          "parent_pid": 1148978,
+          "start_ticks": 953445073,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 0.06789951398968697,
+      "peak_sampled_rss_bytes": 64745472,
+      "capacity": {
+        "available_memory_bytes": 37892153344,
+        "free_disk_bytes": 131255496704,
+        "fixture_bytes": 950,
+        "receipt_bytes": 10707,
+        "load": [
+          7.93994140625,
+          9.81494140625,
+          10.0302734375
+        ]
+      }
+    }
+  ],
+  "trials": [
+    {
+      "arm": "A",
+      "status": "not_run",
+      "ready": false
+    },
+    {
+      "arm": "B",
+      "status": "not_run",
+      "ready": false
+    }
+  ],
+  "formal_native_evaluations": 0,
+  "formal_training_runs": 0,
+  "fixture_physics": "unknown until completed constructor events; partial on forced stop",
+  "initial_capacity": {
+    "available_memory_bytes": 38114754560,
+    "free_disk_bytes": 131266691072,
+    "fixture_bytes": 0,
+    "receipt_bytes": 0,
+    "load": [
+      8.29248046875,
+      9.9453125,
+      10.07421875
+    ]
+  },
+  "error": "ValueError: Unbound control process role",
+  "events": [],
+  "constructor_denominator": {
+    "expected_worlds": 10,
+    "completed_worlds": 0,
+    "all_worlds_constructed": false,
+    "known_preparation_substeps_lower_bound": 0,
+    "known_fixture_physics_substeps_lower_bound": 0,
+    "interrupted_constructor_work": "unknown"
+  },
+  "wall_s": 13.02196673490107,
+  "owned_identities": [
+    {
+      "pid": 1149016,
+      "parent_pid": 1148978,
+      "start_ticks": 953443789,
+      "state": "Z"
+    },
+    {
+      "pid": 1149178,
+      "parent_pid": 1149016,
+      "start_ticks": 953443823,
+      "state": "R"
+    },
+    {
+      "pid": 1149188,
+      "parent_pid": 1149016,
+      "start_ticks": 953443863,
+      "state": "R"
+    },
+    {
+      "pid": 1149191,
+      "parent_pid": 1148978,
+      "start_ticks": 953443958,
+      "state": "R"
+    },
+    {
+      "pid": 1149345,
+      "parent_pid": 1148978,
+      "start_ticks": 953444480,
+      "state": "R"
+    },
+    {
+      "pid": 1149595,
+      "parent_pid": 1148978,
+      "start_ticks": 953445073,
+      "state": "R"
+    }
+  ],
+  "final_live_recorded": [],
+  "guards_violated": false
+}

@@ -1,6 +1,7 @@
 """Fail-closed ownership, constructor causality and no-training controls."""
 
 import contextlib
+import importlib.util
 import json
 import subprocess
 import sys
@@ -186,6 +187,39 @@ def test_missing_live_memory_never_silently_counts_as_zero():
     with pytest.raises(ValueError, match="incomplete"):
         tm.sample_owned(rows, sample=lambda _: None, is_live=lambda _: True)
     assert tm.sample_owned(rows, sample=lambda _: None, is_live=lambda _: False) == []
+
+
+@pytest.mark.parametrize("kind", ["new_child", "new_grandchild", "foreign", "reused"])
+def test_reported_newborn_binding_checks_actual_ancestry(kind, monkeypatch):
+    scripts = Path(__file__).resolve().parents[1] / "scripts"
+    monkeypatch.syspath_prepend(str(scripts))
+    spec = importlib.util.spec_from_file_location(
+        "profile_trial_memory", scripts / "profile_trial_memory.py"
+    )
+    helper = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(helper)
+    root = {"pid": 100, "start_ticks": 1000, "parent_pid": 1}
+    child = {"pid": 101, "start_ticks": 1001, "parent_pid": 100}
+    rows = {
+        100: root,
+        101: child,
+        102: {"pid": 102, "start_ticks": 1002, "parent_pid": 101},
+    }
+    candidate = rows[102] if kind == "new_grandchild" else child.copy()
+    seen = {(100, 1000): root}
+    if kind == "foreign":
+        rows[101] = child | {"parent_pid": 1}
+    elif kind == "reused":
+        rows[101] = child | {"start_ticks": 9999}
+    if kind in ("foreign", "reused"):
+        with pytest.raises(ValueError):
+            helper.bind_reported(
+                [candidate], root, seen, read_identity=rows.__getitem__
+            )
+        assert len(seen) == 1
+    else:
+        helper.bind_reported([candidate], root, seen, read_identity=rows.__getitem__)
+        assert (candidate["pid"], candidate["start_ticks"]) in seen
 
 
 def test_original_constructor_arguments_and_learn_interception(monkeypatch, tmp_path):
