@@ -378,7 +378,15 @@ def train_run(
     budget_check,
     *,
     defer_initial_evaluation=False,
+    allocation_lifecycle="legacy",
 ):
+    if allocation_lifecycle != "legacy":
+        if allocation_lifecycle != "deferred-evaluation-v1":
+            raise ValueError("Unknown allocation lifecycle")
+        from .deferred_trial import train_deferred
+
+        return train_deferred(out, protocol, arm, seed, ids, provenance, budget_check,
+                              defer_initial_evaluation=defer_initial_evaluation)
     import torch
     from stable_baselines3.common.callbacks import BaseCallback
     from stable_baselines3.common.vec_env import SubprocVecEnv

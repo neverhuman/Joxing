@@ -1,0 +1,391 @@
+{
+  "schema": "joxing-isolated-source-supervision-v1",
+  "source_commit": "b468323d56355b0ad028b28e836b15f7f8655512",
+  "protocol_sha256": "7c0f6778ea0e30ffb1bab34319edb5bbc52890807fd641c5039f9de6dca841ba",
+  "process": {
+    "pid": 1684210,
+    "parent_pid": 1,
+    "start_ticks": 953774592,
+    "state": "R"
+  },
+  "status": "completed",
+  "scope": "H15 lightweight RSS guard qualification: eleven watcher cases plus nine ancestry cases. Three actual Linux subprocess controls; no native environment, inference, physics or learning. Old 8GiB gate and all prior failures unchanged.",
+  "formal_native_evaluations": 0,
+  "formal_training_runs": 0,
+  "initial_capacity": {
+    "available_memory_bytes": 41991348224,
+    "free_disk_bytes": 129094905856,
+    "fixture_bytes": 0,
+    "receipt_bytes": 214729,
+    "load": [
+      10.35986328125,
+      9.943359375,
+      9.201171875
+    ]
+  },
+  "rows": [
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+      "status": "passed"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "sync",
+      "command": [
+        "/home/ubuntu/.local/bin/uv",
+        "sync",
+        "--project",
+        "experiments/v0.0.11/runtime",
+        "--locked"
+      ],
+      "status": "completed",
+      "limit_s": 178,
+      "peak_owned_rss_bytes": 128692224,
+      "process": {
+        "pid": 1684311,
+        "parent_pid": 1684210,
+        "start_ticks": 953774688,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1684311,
+          "parent_pid": 1684210,
+          "start_ticks": 953774688,
+          "state": "Z"
+        },
+        {
+          "pid": 1684457,
+          "parent_pid": 1684311,
+          "start_ticks": 953774746,
+          "state": "R"
+        }
+      ],
+      "elapsed_s": 1.4253263920545578,
+      "current_owned_rss_bytes": 32718848,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 41787760640,
+        "free_disk_bytes": 129084420096,
+        "fixture_bytes": 0,
+        "receipt_bytes": 225163,
+        "load": [
+          10.5712890625,
+          9.994140625,
+          9.2216796875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 1.5315830241888762,
+      "cleanup_wait_s": 4.9563124775886536e-05
+    },
+    {
+      "stage": "runtime",
+      "command": [
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-c",
+        "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3'}"
+      ],
+      "status": "completed",
+      "limit_s": 8,
+      "peak_owned_rss_bytes": 56418304,
+      "process": {
+        "pid": 1684485,
+        "parent_pid": 1684210,
+        "start_ticks": 953774842,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1684485,
+          "parent_pid": 1684210,
+          "start_ticks": 953774842,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.751342386007309,
+      "current_owned_rss_bytes": 32731136,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 41807384576,
+        "free_disk_bytes": 129084399616,
+        "fixture_bytes": 0,
+        "receipt_bytes": 226095,
+        "load": [
+          10.5712890625,
+          9.994140625,
+          9.2216796875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8541633021086454,
+      "cleanup_wait_s": 2.9476359486579895e-05
+    },
+    {
+      "stage": "collection",
+      "command": [
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "tests/test_trial_rss_watchdog.py",
+        "tests/test_process_ownership.py"
+      ],
+      "status": "completed",
+      "limit_s": 13,
+      "peak_owned_rss_bytes": 50114560,
+      "process": {
+        "pid": 1684656,
+        "parent_pid": 1684210,
+        "start_ticks": 953774927,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1684656,
+          "parent_pid": 1684210,
+          "start_ticks": 953774927,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7464465592056513,
+      "current_owned_rss_bytes": 32731136,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 41907138560,
+        "free_disk_bytes": 129084108800,
+        "fixture_bytes": 0,
+        "receipt_bytes": 228893,
+        "load": [
+          10.5712890625,
+          9.994140625,
+          9.2216796875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8532058503478765,
+      "cleanup_wait_s": 2.8012320399284363e-05
+    },
+    {
+      "stage": "module-000",
+      "shard_index": 0,
+      "command": [
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/fixtures/module-000",
+        "--junitxml",
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/module-000.xml",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+        "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+        "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+        "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+        "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]"
+      ],
+      "status": "completed",
+      "limit_s": 58,
+      "peak_owned_rss_bytes": 51216384,
+      "process": {
+        "pid": 1685295,
+        "parent_pid": 1684210,
+        "start_ticks": 953775012,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1685295,
+          "parent_pid": 1684210,
+          "start_ticks": 953775012,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7698630690574646,
+      "current_owned_rss_bytes": 32808960,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 41281171456,
+        "free_disk_bytes": 129083768832,
+        "fixture_bytes": 4242,
+        "receipt_bytes": 232972,
+        "load": [
+          10.5712890625,
+          9.994140625,
+          9.2216796875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8887465745210648,
+      "cleanup_wait_s": 2.9286369681358337e-05,
+      "junit_counts": {
+        "passed": 11,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "stage": "module-001",
+      "shard_index": 1,
+      "command": [
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-vv",
+        "-rx",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp",
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/fixtures/module-001",
+        "--junitxml",
+        "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/module-001.xml",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+        "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+        "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory"
+      ],
+      "status": "completed",
+      "limit_s": 58,
+      "peak_owned_rss_bytes": 51212288,
+      "process": {
+        "pid": 1685325,
+        "parent_pid": 1684210,
+        "start_ticks": 953775101,
+        "state": "R"
+      },
+      "owned_identities": [
+        {
+          "pid": 1685325,
+          "parent_pid": 1684210,
+          "start_ticks": 953775101,
+          "state": "Z"
+        }
+      ],
+      "elapsed_s": 0.7696062736213207,
+      "current_owned_rss_bytes": 32866304,
+      "live_owned_processes": 1,
+      "capacity": {
+        "available_memory_bytes": 41113509888,
+        "free_disk_bytes": 129083707392,
+        "fixture_bytes": 4242,
+        "receipt_bytes": 237238,
+        "load": [
+          10.5712890625,
+          9.994140625,
+          9.2216796875
+        ]
+      },
+      "returncode": 0,
+      "wall_s": 0.8876406140625477,
+      "cleanup_wait_s": 2.872385084629059e-05,
+      "junit_counts": {
+        "passed": 9,
+        "xfail": 0,
+        "failed": 0,
+        "skipped": 0
+      }
+    }
+  ],
+  "criterion_passed": true,
+  "full_source_gate_qualified": false,
+  "wall_s": 5.6385366301983595,
+  "test_wall_s": 2.3982691168785095,
+  "final_live_recorded": [],
+  "fixture_bytes": 4242,
+  "receipt_bytes": 237453
+}

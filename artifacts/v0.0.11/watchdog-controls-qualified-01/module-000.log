@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0 -- /home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python
+rootdir: /home/ubuntu/joxing/watchdog-controls-20261102-01
+configfile: pyproject.toml
+collecting ... collected 11 items
+
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children] PASSED [  9%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads] PASSED [ 18%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign] PASSED [ 27%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused] PASSED [ 36%]
+tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie] PASSED [ 45%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal] PASSED [ 54%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused] PASSED [ 63%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss] PASSED [ 72%]
+tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie] PASSED [ 81%]
+tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit] PASSED [ 90%]
+tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth] PASSED [100%]
+
+- generated xml file: /home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/module-000.xml -
+============================== 11 passed in 0.38s ==============================

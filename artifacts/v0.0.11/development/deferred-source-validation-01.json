@@ -1,0 +1,24 @@
+{
+  "schema": "joxing-deferred-source-development-v1",
+  "scope": "Fake constructors/training; no native physics or parity",
+  "command": "rtk proxy .venv/bin/python -m pytest -q -p no:cacheprovider tests/test_deferred_trial.py tests/test_trial_memory.py",
+  "passed": 27,
+  "skipped": 0,
+  "previous_development_passed": 26,
+  "ruff": "passed after missing json import/formatting fixes before tests",
+  "source_files": {
+    "src/joxing/deferred_trial.py": {
+      "bytes": 12024,
+      "sha256": "4fcc2d178243bc359c3bfcce60a6eefbfeb11ef58f41cfa98e49c3b6f5b52f0e"
+    },
+    "src/joxing/wave.py": {
+      "bytes": 33748,
+      "sha256": "8c1f9b4d084d7e56e09e3681845a7320d01ff6b9dc3fa05fab93da17ff6e78c9"
+    },
+    "tests/test_deferred_trial.py": {
+      "bytes": 8386,
+      "sha256": "3564fa7ee568a5b1fe668ed8194e6a0c69853f6d745aa4161aca0ddbc6840fc6"
+    }
+  },
+  "target": "not_run; freeze required"
+}

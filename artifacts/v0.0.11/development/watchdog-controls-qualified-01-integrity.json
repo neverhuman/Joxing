@@ -1,0 +1,906 @@
+{
+  "schema": "joxing-isolated-source-independent-v1",
+  "status": "verified_completed_attempt",
+  "source_commit": "b468323d56355b0ad028b28e836b15f7f8655512",
+  "protocol_sha256": "7c0f6778ea0e30ffb1bab34319edb5bbc52890807fd641c5039f9de6dca841ba",
+  "source_files_verified": 718,
+  "historical_objects_verified": 4,
+  "complete_superproject_history": true,
+  "case_rows": [
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+      "status": "passed"
+    },
+    {
+      "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+      "status": "passed"
+    }
+  ],
+  "watchdog_controls": [
+    {
+      "path": "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_actual_watchdog_stops_own0/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "status": "exited",
+      "root": {
+        "pid": 1685319,
+        "start_ticks": 953775048
+      },
+      "supervisor": {
+        "pid": 1685295,
+        "start_ticks": 953775012
+      },
+      "watchdog": {
+        "pid": 1685320,
+        "parent_pid": 1685295,
+        "start_ticks": 953775048,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 132763648,
+        "hard_rss": 233426944,
+        "process_cap": 8,
+        "wall_s": 6.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128
+      },
+      "samples": 4,
+      "peak_sampled_rss_bytes": 60092416,
+      "max_sample_gap_s": 0.02101234346628189,
+      "max_probe_s": 0.0007052235305309296,
+      "peak_processes": 3,
+      "wall_s": 0.06302082352340221,
+      "last_sample_rss_bytes": 46997504,
+      "last_sample_monotonic_s": 9537750.57565778,
+      "owned_identities": [
+        {
+          "pid": 1685319,
+          "parent_pid": 1685295,
+          "start_ticks": 953775048,
+          "state": "S"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9537750.51331966,
+          "rss_bytes": 60080128,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9537750.534332003,
+          "rss_bytes": 60092416,
+          "gap_s": 0.02101234346628189,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9537750.555044852,
+          "rss_bytes": 60092416,
+          "gap_s": 0.020712848752737045,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9537750.57565778,
+          "rss_bytes": 46997504,
+          "gap_s": 0.02061292715370655,
+          "processes": 2
+        }
+      ],
+      "reason": "all_owned_exited",
+      "final_live": []
+    },
+    {
+      "path": "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_actual_watchdog_stops_own1/watchdog.json",
+      "schema": "joxing-fast-rss-watchdog-v1",
+      "status": "stopped",
+      "root": {
+        "pid": 1685322,
+        "start_ticks": 953775059
+      },
+      "supervisor": {
+        "pid": 1685295,
+        "start_ticks": 953775012
+      },
+      "watchdog": {
+        "pid": 1685323,
+        "parent_pid": 1685295,
+        "start_ticks": 953775059,
+        "state": "R"
+      },
+      "limits": {
+        "planned_rss": 132767744,
+        "hard_rss": 233431040,
+        "process_cap": 8,
+        "wall_s": 6.0,
+        "max_gap_s": 0.1,
+        "poll_s": 0.02,
+        "identity_cap": 128
+      },
+      "samples": 8,
+      "peak_sampled_rss_bytes": 138293248,
+      "max_sample_gap_s": 0.021360453218221664,
+      "max_probe_s": 0.0012268498539924622,
+      "peak_processes": 4,
+      "wall_s": 0.1587319988757372,
+      "last_sample_rss_bytes": 138293248,
+      "last_sample_monotonic_s": 9537750.777814737,
+      "owned_identities": [
+        {
+          "pid": 1685322,
+          "parent_pid": 1685295,
+          "start_ticks": 953775059,
+          "state": "S"
+        },
+        {
+          "pid": 1685324,
+          "parent_pid": 1685322,
+          "start_ticks": 953775063,
+          "state": "S"
+        }
+      ],
+      "recent_samples": [
+        {
+          "monotonic_s": 9537750.63025556,
+          "rss_bytes": 60063744,
+          "gap_s": 0,
+          "processes": 3
+        },
+        {
+          "monotonic_s": 9537750.651470467,
+          "rss_bytes": 77307904,
+          "gap_s": 0.021214907988905907,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9537750.672430033,
+          "rss_bytes": 87941120,
+          "gap_s": 0.02095956541597843,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9537750.693414936,
+          "rss_bytes": 99139584,
+          "gap_s": 0.02098490297794342,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9537750.714433232,
+          "rss_bytes": 104726528,
+          "gap_s": 0.021018296480178833,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9537750.735202456,
+          "rss_bytes": 121454592,
+          "gap_s": 0.02076922357082367,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9537750.756454283,
+          "rss_bytes": 121507840,
+          "gap_s": 0.021251827478408813,
+          "processes": 4
+        },
+        {
+          "monotonic_s": 9537750.777814737,
+          "rss_bytes": 138293248,
+          "gap_s": 0.021360453218221664,
+          "processes": 4
+        }
+      ],
+      "reason": "planned_rss",
+      "stop_sample": [
+        {
+          "pid": 1685295,
+          "start_ticks": 953775012,
+          "rss_bytes": 32104448
+        },
+        {
+          "pid": 1685323,
+          "start_ticks": 953775059,
+          "rss_bytes": 14893056
+        },
+        {
+          "pid": 1685322,
+          "start_ticks": 953775059,
+          "rss_bytes": 13103104
+        },
+        {
+          "pid": 1685324,
+          "start_ticks": 953775063,
+          "rss_bytes": 78192640
+        }
+      ],
+      "final_live": []
+    }
+  ],
+  "registered_cases": 20,
+  "counts": {
+    "passed": 20,
+    "failed": 0,
+    "error": 0,
+    "xfail": 0,
+    "skipped": 0
+  },
+  "exited_recorded_identities": [
+    {
+      "pid": 1684210,
+      "parent_pid": 1,
+      "start_ticks": 953774592,
+      "state": "R"
+    },
+    {
+      "pid": 1684311,
+      "parent_pid": 1684210,
+      "start_ticks": 953774688,
+      "state": "Z"
+    },
+    {
+      "pid": 1684457,
+      "parent_pid": 1684311,
+      "start_ticks": 953774746,
+      "state": "R"
+    },
+    {
+      "pid": 1684485,
+      "parent_pid": 1684210,
+      "start_ticks": 953774842,
+      "state": "Z"
+    },
+    {
+      "pid": 1684656,
+      "parent_pid": 1684210,
+      "start_ticks": 953774927,
+      "state": "Z"
+    },
+    {
+      "pid": 1685295,
+      "start_ticks": 953775012
+    },
+    {
+      "pid": 1685325,
+      "parent_pid": 1684210,
+      "start_ticks": 953775101,
+      "state": "Z"
+    },
+    {
+      "pid": 1685319,
+      "parent_pid": 1685295,
+      "start_ticks": 953775048,
+      "state": "S"
+    },
+    {
+      "pid": 1685320,
+      "parent_pid": 1685295,
+      "start_ticks": 953775048,
+      "state": "R"
+    },
+    {
+      "pid": 1685322,
+      "parent_pid": 1685295,
+      "start_ticks": 953775059,
+      "state": "S"
+    },
+    {
+      "pid": 1685323,
+      "parent_pid": 1685295,
+      "start_ticks": 953775059,
+      "state": "R"
+    },
+    {
+      "pid": 1685324,
+      "parent_pid": 1685322,
+      "start_ticks": 953775063,
+      "state": "S"
+    }
+  ],
+  "live_writers": [],
+  "raw_manifest": {
+    "runs/v0.0.11/.isolated-source.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/collection.log": {
+      "bytes": 1924,
+      "sha256": "8286db6d7f3c822fc2fd1ba7815c0ee5b9137924d15449bfed410f4e867d72c1"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_actual_watchdog_stops_own0/watchdog.json": {
+      "bytes": 1539,
+      "sha256": "5147a21a7742f83c0b1ab91ae3cebcbce13dd38f361fbfbec6efa9e1c8530654"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_actual_watchdog_stops_own0/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_actual_watchdog_stops_own1/watchdog.json": {
+      "bytes": 2620,
+      "sha256": "7f2493bc4807f74c1e6039505e8a565259641c4be07b48f4052cc44ec4429896"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_actual_watchdog_stops_own1/watchdog.ready": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_bound_status_fail_closed_0/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_bound_status_fail_closed_1/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_bound_status_fail_closed_2/17/status": {
+      "bytes": 11,
+      "sha256": "c20bbc8bfc88c7e3204a21a422bbe259a0855f698295149976521a512190de87"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_bound_status_fail_closed_3/17/status": {
+      "bytes": 14,
+      "sha256": "19e57f9ac05da09025eb36269ee42eb5d52bccfbe869ea4d9c09e473bff4e0f2"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de0/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de0/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de0/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de1/100/task/100/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de1/100/task/500/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de1/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de1/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de2/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de2/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de2/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de3/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de3/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de3/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de4/100/task/100/children": {
+      "bytes": 3,
+      "sha256": "16dc368a89b428b2485484313ba67a3912ca03f2b2b42429174a4f8b3dc84e44"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de4/101/task/101/children": {
+      "bytes": 3,
+      "sha256": "37834f2f25762f23e1f74a531cbe445db73d6765ebe60878a7dfbecd7d4af6e1"
+    },
+    "runs/v0.0.11/watchdog-controls-01/fixtures/module-000/test_fast_tree_only_current_de4/102/task/102/children": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/v0.0.11/watchdog-controls-01/module-000.log": {
+      "bytes": 1620,
+      "sha256": "807d96c498b806ca17e0cb76a92b3c1f55394947a20966da3c562fd0ef26c655"
+    },
+    "runs/v0.0.11/watchdog-controls-01/module-000.xml": {
+      "bytes": 1584,
+      "sha256": "58ac600604a3d1a00eaa0136abf14f1e8faa95b50406f09b296b863ec9b308fc"
+    },
+    "runs/v0.0.11/watchdog-controls-01/module-001.log": {
+      "bytes": 1684,
+      "sha256": "452384fa43e51750924ce784a7becaefd260406e7d78b56b13efe03bd519ab07"
+    },
+    "runs/v0.0.11/watchdog-controls-01/module-001.xml": {
+      "bytes": 1596,
+      "sha256": "06b5defc30501caa9549c42a0aee7a0594bc470f90d51245aa765784d5a61aa9"
+    },
+    "runs/v0.0.11/watchdog-controls-01/result.json": {
+      "bytes": 13258,
+      "sha256": "81bf9b0a6ada9ae8630c9d68c42c5884695f1e7569f4728746e538e2725e58c1"
+    },
+    "runs/v0.0.11/watchdog-controls-01/runtime.log": {
+      "bytes": 58,
+      "sha256": "edbaf7c3fd3f4b2da72c4cdbf9492d4a55d5a1e7ef43a95424334a7cfcb17cc2"
+    },
+    "runs/v0.0.11/watchdog-controls-01/sync.log": {
+      "bytes": 1219,
+      "sha256": "c70835059d059adcbec934c2e0fc14a76ab1e4d0ece814fc5811c921bcb9fe2d"
+    },
+    "runs/v0.0.11/watchdog-controls-deployment.json": {
+      "bytes": 214729,
+      "sha256": "767ca5b8978eb67ccae404633a3b9d59bffedb9a9990dcf866aa170307a5c6d3"
+    },
+    "runs/v0.0.11/watchdog-controls-launch.log": {
+      "bytes": 1005,
+      "sha256": "e2f4157488c18eb2c912f249d7e7fe74bcb59b6c31f834661cc9bc516b9815bc"
+    }
+  },
+  "fixture_bytes": 4242,
+  "receipt_bytes": 238677,
+  "supervision": {
+    "schema": "joxing-isolated-source-supervision-v1",
+    "source_commit": "b468323d56355b0ad028b28e836b15f7f8655512",
+    "protocol_sha256": "7c0f6778ea0e30ffb1bab34319edb5bbc52890807fd641c5039f9de6dca841ba",
+    "process": {
+      "pid": 1684210,
+      "parent_pid": 1,
+      "start_ticks": 953774592,
+      "state": "R"
+    },
+    "status": "completed",
+    "scope": "H15 lightweight RSS guard qualification: eleven watcher cases plus nine ancestry cases. Three actual Linux subprocess controls; no native environment, inference, physics or learning. Old 8GiB gate and all prior failures unchanged.",
+    "formal_native_evaluations": 0,
+    "formal_training_runs": 0,
+    "initial_capacity": {
+      "available_memory_bytes": 41991348224,
+      "free_disk_bytes": 129094905856,
+      "fixture_bytes": 0,
+      "receipt_bytes": 214729,
+      "load": [
+        10.35986328125,
+        9.943359375,
+        9.201171875
+      ]
+    },
+    "rows": [
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory",
+        "status": "passed"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "sync",
+        "command": [
+          "/home/ubuntu/.local/bin/uv",
+          "sync",
+          "--project",
+          "experiments/v0.0.11/runtime",
+          "--locked"
+        ],
+        "status": "completed",
+        "limit_s": 178,
+        "peak_owned_rss_bytes": 128692224,
+        "process": {
+          "pid": 1684311,
+          "parent_pid": 1684210,
+          "start_ticks": 953774688,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 1684311,
+            "parent_pid": 1684210,
+            "start_ticks": 953774688,
+            "state": "Z"
+          },
+          {
+            "pid": 1684457,
+            "parent_pid": 1684311,
+            "start_ticks": 953774746,
+            "state": "R"
+          }
+        ],
+        "elapsed_s": 1.4253263920545578,
+        "current_owned_rss_bytes": 32718848,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 41787760640,
+          "free_disk_bytes": 129084420096,
+          "fixture_bytes": 0,
+          "receipt_bytes": 225163,
+          "load": [
+            10.5712890625,
+            9.994140625,
+            9.2216796875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 1.5315830241888762,
+        "cleanup_wait_s": 4.9563124775886536e-05
+      },
+      {
+        "stage": "runtime",
+        "command": [
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-c",
+          "import json,sys,numpy,mujoco; v={'python':sys.version.split()[0],'numpy':numpy.__version__,'mujoco':mujoco.__version__}; print(json.dumps(v)); assert v=={'mujoco': '3.8.0', 'numpy': '2.4.2', 'python': '3.12.3'}"
+        ],
+        "status": "completed",
+        "limit_s": 8,
+        "peak_owned_rss_bytes": 56418304,
+        "process": {
+          "pid": 1684485,
+          "parent_pid": 1684210,
+          "start_ticks": 953774842,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 1684485,
+            "parent_pid": 1684210,
+            "start_ticks": 953774842,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.751342386007309,
+        "current_owned_rss_bytes": 32731136,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 41807384576,
+          "free_disk_bytes": 129084399616,
+          "fixture_bytes": 0,
+          "receipt_bytes": 226095,
+          "load": [
+            10.5712890625,
+            9.994140625,
+            9.2216796875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8541633021086454,
+        "cleanup_wait_s": 2.9476359486579895e-05
+      },
+      {
+        "stage": "collection",
+        "command": [
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "--collect-only",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "tests/test_trial_rss_watchdog.py",
+          "tests/test_process_ownership.py"
+        ],
+        "status": "completed",
+        "limit_s": 13,
+        "peak_owned_rss_bytes": 50114560,
+        "process": {
+          "pid": 1684656,
+          "parent_pid": 1684210,
+          "start_ticks": 953774927,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 1684656,
+            "parent_pid": 1684210,
+            "start_ticks": 953774927,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7464465592056513,
+        "current_owned_rss_bytes": 32731136,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 41907138560,
+          "free_disk_bytes": 129084108800,
+          "fixture_bytes": 0,
+          "receipt_bytes": 228893,
+          "load": [
+            10.5712890625,
+            9.994140625,
+            9.2216796875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8532058503478765,
+        "cleanup_wait_s": 2.8012320399284363e-05
+      },
+      {
+        "stage": "module-000",
+        "shard_index": 0,
+        "command": [
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/fixtures/module-000",
+          "--junitxml",
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/module-000.xml",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[children]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[all_threads]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[foreign]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[reused]",
+          "tests/test_trial_rss_watchdog.py::test_fast_tree_only_current_descendants[zombie]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[normal]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[reused]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[missing_rss]",
+          "tests/test_trial_rss_watchdog.py::test_bound_status_fail_closed[zombie]",
+          "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[normal_exit]",
+          "tests/test_trial_rss_watchdog.py::test_actual_watchdog_stops_owned_growth_only[grandchild_growth]"
+        ],
+        "status": "completed",
+        "limit_s": 58,
+        "peak_owned_rss_bytes": 51216384,
+        "process": {
+          "pid": 1685295,
+          "parent_pid": 1684210,
+          "start_ticks": 953775012,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 1685295,
+            "parent_pid": 1684210,
+            "start_ticks": 953775012,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7698630690574646,
+        "current_owned_rss_bytes": 32808960,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 41281171456,
+          "free_disk_bytes": 129083768832,
+          "fixture_bytes": 4242,
+          "receipt_bytes": 232972,
+          "load": [
+            10.5712890625,
+            9.994140625,
+            9.2216796875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8887465745210648,
+        "cleanup_wait_s": 2.9286369681358337e-05,
+        "junit_counts": {
+          "passed": 11,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      },
+      {
+        "stage": "module-001",
+        "shard_index": 1,
+        "command": [
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-vv",
+          "-rx",
+          "-p",
+          "no:cacheprovider",
+          "--basetemp",
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/fixtures/module-001",
+          "--junitxml",
+          "/home/ubuntu/joxing/watchdog-controls-20261102-01/runs/v0.0.11/watchdog-controls-01/module-001.xml",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[existing]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_child]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[new_grandchild]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[foreign]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[orphan]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[reused_root]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[vanished]",
+          "tests/test_process_ownership.py::test_ancestry_ownership_handles_new_children_without_inventory_race[cycle]",
+          "tests/test_process_ownership.py::test_real_new_child_and_grandchild_are_owned_after_initial_inventory"
+        ],
+        "status": "completed",
+        "limit_s": 58,
+        "peak_owned_rss_bytes": 51212288,
+        "process": {
+          "pid": 1685325,
+          "parent_pid": 1684210,
+          "start_ticks": 953775101,
+          "state": "R"
+        },
+        "owned_identities": [
+          {
+            "pid": 1685325,
+            "parent_pid": 1684210,
+            "start_ticks": 953775101,
+            "state": "Z"
+          }
+        ],
+        "elapsed_s": 0.7696062736213207,
+        "current_owned_rss_bytes": 32866304,
+        "live_owned_processes": 1,
+        "capacity": {
+          "available_memory_bytes": 41113509888,
+          "free_disk_bytes": 129083707392,
+          "fixture_bytes": 4242,
+          "receipt_bytes": 237238,
+          "load": [
+            10.5712890625,
+            9.994140625,
+            9.2216796875
+          ]
+        },
+        "returncode": 0,
+        "wall_s": 0.8876406140625477,
+        "cleanup_wait_s": 2.872385084629059e-05,
+        "junit_counts": {
+          "passed": 9,
+          "xfail": 0,
+          "failed": 0,
+          "skipped": 0
+        }
+      }
+    ],
+    "criterion_passed": true,
+    "full_source_gate_qualified": false,
+    "wall_s": 5.6385366301983595,
+    "test_wall_s": 2.3982691168785095,
+    "final_live_recorded": [],
+    "fixture_bytes": 4242,
+    "receipt_bytes": 237453
+  },
+  "observed_utc": "2026-11-02T06:29:36Z"
+}

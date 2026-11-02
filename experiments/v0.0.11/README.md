@@ -1,3 +1,25 @@
+# H15 fast watcher qualified; opt-in lifecycle source controls ready — Nov1 Mountain
+
+Fast watcher sourceb468323/protocol7c0f6778 passed20/20Linux controls, whole5.638537s.
+Actual normal-exit/growing-grandchild probes max21.36ms, no slow PSS scans. Planned
+RSS stop stayed below hard threshold; test foreign process survived. Independent
+718source/4history-object/20JUnit/12recorded-exit audit and35raw files242919bytes
+exact transfer pass. Diagnostic test scopes only; no continuous RSS guarantee.
+
+Named opt-in deferred-evaluation-v1 is implemented in src/joxing/deferred_trial.py;
+wave.train_run keeps legacy default and immutable legacy body. Four worker specs,
+initial/final actors and states freeze before closing worlds, then evaluation
+allocates. Pre/post-close/partial/cleanup faults retain their real origin.
+27local fake-constructor/fault/legacy controls pass. New registered source-only
+packet experiments/v0.0.11/deferred-source-controls-protocol.json requires all27
+Linux controls before native parity. No real candidate training/memory improvement
+or default adoption yet. Publish/freeze/anonymous verify before fresh boundedroot.
+
+Next: implement the four-slot native parity execution harness in the detailed
+DEFERRED_EVALUATION_ALLOCATION_MISSION.md. Use qualified fast watcher independently;
+register counters and exact trace/RNG/actor/replay comparison before real outcomes.
+No eight-worker launch/full source rerun before single-trial parity, no v11tag.
+
 # H15 fast RSS guard controls registered — Nov1 Mountain
 
 Next executable protocol: experiments/v0.0.11/watchdog-controls-protocol.json.
