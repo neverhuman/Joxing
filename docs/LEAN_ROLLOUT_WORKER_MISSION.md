@@ -1,6 +1,8 @@
 # H28: qualify a Torch-free rollout command worker before more native RL
 
-Status: implemented/prospectively registered; target4rows NOT_RUN at freeze.
+Status: CONCLUDED prerequisite failure:375pass/3fail,all4formalrows NOT_RUN.
+[Results](LEAN_ROLLOUT_WORKER_RESULTS.md); [H29next source-readiness mission](PORTABLE_LINUX_SOURCE_READINESS_MISSION.md).
+Registration below preserved as proposed/executed; no unchanged retry.
 Local364passed/14Linux-only skips,378registered nodes.0formal outcomes. One integration owner, no agents or other chats. Primary after
 [H27negative result](NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md); H26Mac-local replay
 remains an independent secondary mission. Do not rerun unchanged H27.

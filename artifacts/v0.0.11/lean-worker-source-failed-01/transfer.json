@@ -1,0 +1,294 @@
+{
+  "status": "verified_all_owned_payloads",
+  "files": 1877,
+  "bytes": 2301503,
+  "archive_sha256": "27a9862add07d719b5b4d54e196dc9103a502ef78a188ec5c35e8b771ec31daa",
+  "original_symlinks": [
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_admitted_bootstrapcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_admitted_bootstrap0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_bootstrap_and_sizecurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_bootstrap_and_size0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_clean_context_and_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_clean_context_and_0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_exit_uses_nonzero_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_exit_uses_nonzero_0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_serial_heaps_guardcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_serial_heaps_guard0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_watchdog_stops_owncurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_watchdog_stops_own1"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_all_faults_retain_real_stcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_all_faults_retain_real_st2"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_atomic_failures_keep_priocurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_atomic_failures_keep_prio3"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_atomic_processes_cannot_ocurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_atomic_processes_cannot_o0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_before_close_receipt_survcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_before_close_receipt_surv7"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_bound_proc_proof_rejects_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_bound_proc_proof_rejects_2"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_bound_status_fail_closed_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_bound_status_fail_closed_3"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_capacity_and_existing_outcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_capacity_and_existing_out0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_child_witness_before_naticurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_child_witness_before_nati3"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_comparison_requires_complcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_comparison_requires_compl4"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_conclusion_rejects_false_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_conclusion_rejects_false_9"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_dynamic_close_rejects_corcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_dynamic_close_rejects_cor10"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_encodings_preserve_all_ficurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_encodings_preserve_all_fi0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_evaluation_cleanup_fault_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_evaluation_cleanup_fault_0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_exact_main_terminal_and_ocurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_exact_main_terminal_and_o2"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_exact_refund_and_duplicatcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_exact_refund_and_duplicat0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_existing_ledger_never_ovecurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_existing_ledger_never_ove0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_fast_tree_only_current_decurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_fast_tree_only_current_de4"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_foreign_stale_or_wrong_bicurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_foreign_stale_or_wrong_bi0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_four_parent_receipt_faultcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_four_parent_receipt_fault9"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_four_worker_exact_denomincurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_four_worker_exact_denomin4"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_freeze_close_then_allocatcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_freeze_close_then_allocat0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_fresh_spawn_installs_naticurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_fresh_spawn_installs_nati0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_fresh_worker_cannot_imporcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_fresh_worker_cannot_impor3"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_full_fresh_forkserver_paicurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_full_fresh_forkserver_pai0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_gzip_bytes_stay_in_receipcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_gzip_bytes_stay_in_receip0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_independent_credit_reconscurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_independent_credit_recons2"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_independent_full_trace_ancurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_independent_full_trace_an14"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_independent_wire_reader_bcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_independent_wire_reader_b3"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_injected_disk_delay_cannocurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_injected_disk_delay_canno1"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_launcher_ready_path_matchcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_launcher_ready_path_match0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_live_missing_memory_stillcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_live_missing_memory_still1"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_live_rss_requires_same_licurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_live_rss_requires_same_li4"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_managed_finalizer_and_rescurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_managed_finalizer_and_res4"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_missing_tmpfs_rejected_becurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_missing_tmpfs_rejected_be0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_mujoco_binding_weakrefs_zcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_mujoco_binding_weakrefs_z0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_one_worker_close_order_ancurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_one_worker_close_order_an1"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpu0/historical-input",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpu0/fresh/artifacts/generated/h28-receipt-inputs/historical-input"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpu2/historical-input",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpu2/absent"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpu7/historical-input",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpu7/fresh/artifacts/generated/h28-receipt-inputs/historical-input"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpucurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_exact_readonly_inpu7"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_new_xml_exact_bytes2/controls.xml",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_new_xml_exact_bytes2/actual"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_new_xml_exact_bytescurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_owned_new_xml_exact_bytes3"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_paired_conclusion_keeps_ncurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_paired_conclusion_keeps_n6"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_parent_preparation_stays_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_parent_preparation_stays_1"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_persistent_missing_statuscurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_persistent_missing_status0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_post_constructor_proof_recurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_post_constructor_proof_re7"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_prepare_refuses_dirty_or_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_prepare_refuses_dirty_or_8"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_private_scope_ownership_b2/fake-ram/joxing-watch-s1225by9/report.json",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_private_scope_ownership_b2/foreign"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_private_scope_ownership_bcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_private_scope_ownership_b7"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_proc_evidence_keeps_raw_mcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_proc_evidence_keeps_raw_m0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_receipt_exhaustion_blockscurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_receipt_exhaustion_blocks4"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_receipt_first_limit_blockcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_receipt_first_limit_block3"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_release_lifetime_and_faulcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_release_lifetime_and_faul6"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_saved_actor_tensor_readercurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_saved_actor_tensor_reader0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_saved_h21_receipt_fidelitcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_saved_h21_receipt_fidelit1"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_saved_main_terminal_complcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_saved_main_terminal_compl2"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_scoped_aliases_restore_afcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_scoped_aliases_restore_af1"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_serial_close_order_and_facurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_serial_close_order_and_fa14"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_terminal_evidence_requirecurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_terminal_evidence_require7"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_transient_missing_status_current",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_transient_missing_status_0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_unknown_or_nondeferred_vacurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_unknown_or_nondeferred_va0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_unknown_reservation_stayscurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_unknown_reservation_stays0"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_vector_keeps_cold_gate_ancurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_vector_keeps_cold_gate_an4"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_witness_rejects_context_ocurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_witness_rejects_context_o5"
+    },
+    {
+      "path": "runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_worker_is_training_capablcurrent",
+      "target": "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_worker_is_training_capabl0"
+    }
+  ],
+  "representation": "Only dereferenced regular owned bytes extracted with data filter; exact original symlink metadata retained separately.",
+  "scope": "Post-task publication/transfer; no extra simulation or original continuous compute-envelope claim."
+}

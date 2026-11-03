@@ -1,3 +1,16 @@
+## Spare xbabe3 used; runtime ready, source gate stopped —Nov2local
+
+[H28result](LEAN_ROLLOUT_WORKER_RESULTS.md): coldlockedruntime10.786s, exactpinned
+versions/source verification;375/378Linuxcontrols pass,3fixture/startupfailures.
+All4formalIPC/RSSprobes not_run,0nativephysics/actors/updates.11ownedprocesspeak,
+source1.61GB/controller104MB;46boundidentities exit andposttaskjobs empty.
+Controller autoaudits failure despite chat detachment; rawfailedXML needs
+supplement (retained), not a false sourcepass. Newlyinstalled dependencies live
+onlyin dedicatednewcheckout runtime, no globalpackage/driver/service change.
+Historicalbyteinput aliases are readonly/labelled; neverretarget oldaliases or
+modifythisfrozenroot/runtime. H29SOURCE-ONLYportable input+startup+failedXML
+readiness plan next, no blind training retry or qualifiedmemory/game throughput.
+
 ## Spare xbabe3 selected for H28; isolation and pins before launch —Nov2local
 
 [Fresh capacity07](../artifacts/v0.0.11/development/four-host-capacity-20261103-07.json):

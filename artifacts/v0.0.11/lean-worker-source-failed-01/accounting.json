@@ -1,0 +1,29 @@
+{
+  "H28_packet01": {
+    "source_wall_original_epoch_s": 82.49606113100162,
+    "controller_through_audit_and_publication_s": 83.4550394550024,
+    "reporting_supplement_original_epoch_s": 284.72966360600185,
+    "original_whole_cap_s": 300,
+    "physics": 0,
+    "formal_probes": 0,
+    "fixture_output_bytes": 2087071,
+    "immutable_input_mirror_bytes": 262515,
+    "charged_fixture_bytes": 2349586,
+    "fixture_cap_bytes": 16777216,
+    "receipt_bytes": 214432,
+    "receipt_cap_bytes": 1048576
+  },
+  "prior_studies_immutable": {
+    "H15_physics": 17458,
+    "H15_active_wall_s": 430.17124089665054,
+    "H15_fixtures": 37722366,
+    "H15_receipts": 4169108,
+    "H27_physics": 5086,
+    "H27_source_wall_s": 88.93701716698706,
+    "H27_epoch_through_forensics_s": 231.40746937319636,
+    "H27_fixtures": 13385957,
+    "H27_receipts": 136572
+  },
+  "combined_sunk_native_physics": 22544,
+  "later_work_scope": "Read-only transfer/docs/publication after original300s separately scoped; no clocks rebased, old failures/caps unchanged. Any new source-fix task needs its own prospective bounded protocol before outcomes."
+}

@@ -1,0 +1,318 @@
+{
+  "status": "audited",
+  "controller": {
+    "pid": 1337104,
+    "parent_pid": 1,
+    "start_ticks": 2134535,
+    "state": "R"
+  },
+  "original_epoch": 21302.412064373,
+  "source_command": [
+    "/usr/bin/python3",
+    "scripts/qualify_lean_worker_probe.py",
+    "--packet",
+    "experiments/v0.0.11/lean-rollout-worker-protocol.json",
+    "--source-sha",
+    "3ffbd18760afea69360acba226d4a6a618108951",
+    "--protocol-sha256",
+    "dbaa06ae77ff925942ce6fc7936e2aac334cf6cbb47beca0c0e1c166db61390e",
+    "--epoch-start-monotonic",
+    "21302.412064373"
+  ],
+  "owned_identities": [
+    {
+      "pid": 1337131,
+      "parent_pid": 1337104,
+      "start_ticks": 2134539,
+      "state": "R"
+    },
+    {
+      "pid": 1337267,
+      "parent_pid": 1337131,
+      "start_ticks": 2134559,
+      "state": "S"
+    },
+    {
+      "pid": 1337317,
+      "parent_pid": 1337131,
+      "start_ticks": 2134624,
+      "state": "Z"
+    },
+    {
+      "pid": 1338420,
+      "parent_pid": 1337317,
+      "start_ticks": 2134893,
+      "state": "R"
+    },
+    {
+      "pid": 1338595,
+      "parent_pid": 1337317,
+      "start_ticks": 2134928,
+      "state": "R"
+    },
+    {
+      "pid": 1347056,
+      "parent_pid": 1337131,
+      "start_ticks": 2135726,
+      "state": "Z"
+    },
+    {
+      "pid": 1352061,
+      "parent_pid": 1337131,
+      "start_ticks": 2136265,
+      "state": "Z"
+    },
+    {
+      "pid": 1353343,
+      "parent_pid": 1352061,
+      "start_ticks": 2136833,
+      "state": "Z"
+    },
+    {
+      "pid": 1353910,
+      "parent_pid": 1352061,
+      "start_ticks": 2136988,
+      "state": "S"
+    },
+    {
+      "pid": 1353911,
+      "parent_pid": 1352061,
+      "start_ticks": 2136988,
+      "state": "S"
+    },
+    {
+      "pid": 1353912,
+      "parent_pid": 1352061,
+      "start_ticks": 2136988,
+      "state": "D"
+    },
+    {
+      "pid": 1354280,
+      "parent_pid": 1352061,
+      "start_ticks": 2137061,
+      "state": "S"
+    },
+    {
+      "pid": 1354281,
+      "parent_pid": 1352061,
+      "start_ticks": 2137061,
+      "state": "S"
+    },
+    {
+      "pid": 1354282,
+      "parent_pid": 1352061,
+      "start_ticks": 2137061,
+      "state": "S"
+    },
+    {
+      "pid": 1356774,
+      "parent_pid": 1352061,
+      "start_ticks": 2137189,
+      "state": "S"
+    },
+    {
+      "pid": 1356775,
+      "parent_pid": 1352061,
+      "start_ticks": 2137189,
+      "state": "Z"
+    },
+    {
+      "pid": 1356776,
+      "parent_pid": 1352061,
+      "start_ticks": 2137190,
+      "state": "S"
+    },
+    {
+      "pid": 1356922,
+      "parent_pid": 1352061,
+      "start_ticks": 2137207,
+      "state": "S"
+    },
+    {
+      "pid": 1356924,
+      "parent_pid": 1352061,
+      "start_ticks": 2137207,
+      "state": "S"
+    },
+    {
+      "pid": 1356926,
+      "parent_pid": 1352061,
+      "start_ticks": 2137207,
+      "state": "S"
+    },
+    {
+      "pid": 1357017,
+      "parent_pid": 1356924,
+      "start_ticks": 2137212,
+      "state": "S"
+    },
+    {
+      "pid": 1357774,
+      "parent_pid": 1352061,
+      "start_ticks": 2137231,
+      "state": "Z"
+    },
+    {
+      "pid": 1357836,
+      "parent_pid": 1352061,
+      "start_ticks": 2137232,
+      "state": "R"
+    },
+    {
+      "pid": 1358609,
+      "parent_pid": 1352061,
+      "start_ticks": 2137307,
+      "state": "Z"
+    },
+    {
+      "pid": 1358615,
+      "parent_pid": 1352061,
+      "start_ticks": 2137342,
+      "state": "R"
+    },
+    {
+      "pid": 1358616,
+      "parent_pid": 1352061,
+      "start_ticks": 2137358,
+      "state": "Z"
+    },
+    {
+      "pid": 1358698,
+      "parent_pid": 1352061,
+      "start_ticks": 2137372,
+      "state": "S"
+    },
+    {
+      "pid": 1358699,
+      "parent_pid": 1352061,
+      "start_ticks": 2137372,
+      "state": "S"
+    },
+    {
+      "pid": 1358700,
+      "parent_pid": 1352061,
+      "start_ticks": 2137372,
+      "state": "R"
+    },
+    {
+      "pid": 1358727,
+      "parent_pid": 1358699,
+      "start_ticks": 2137376,
+      "state": "S"
+    },
+    {
+      "pid": 1358729,
+      "parent_pid": 1358699,
+      "start_ticks": 2137376,
+      "state": "S"
+    },
+    {
+      "pid": 1358730,
+      "parent_pid": 1358699,
+      "start_ticks": 2137376,
+      "state": "Z"
+    },
+    {
+      "pid": 1358731,
+      "parent_pid": 1358699,
+      "start_ticks": 2137376,
+      "state": "S"
+    },
+    {
+      "pid": 1358845,
+      "parent_pid": 1352061,
+      "start_ticks": 2137453,
+      "state": "R"
+    },
+    {
+      "pid": 1358918,
+      "parent_pid": 1352061,
+      "start_ticks": 2137510,
+      "state": "S"
+    },
+    {
+      "pid": 1358919,
+      "parent_pid": 1352061,
+      "start_ticks": 2137510,
+      "state": "R"
+    },
+    {
+      "pid": 1358920,
+      "parent_pid": 1352061,
+      "start_ticks": 2137510,
+      "state": "R"
+    },
+    {
+      "pid": 1358921,
+      "parent_pid": 1352061,
+      "start_ticks": 2137510,
+      "state": "R"
+    },
+    {
+      "pid": 1358922,
+      "parent_pid": 1352061,
+      "start_ticks": 2137510,
+      "state": "R"
+    },
+    {
+      "pid": 1359077,
+      "parent_pid": 1352061,
+      "start_ticks": 2137620,
+      "state": "R"
+    },
+    {
+      "pid": 1359078,
+      "parent_pid": 1359077,
+      "start_ticks": 2137628,
+      "state": "S"
+    },
+    {
+      "pid": 1359079,
+      "parent_pid": 1359077,
+      "start_ticks": 2137628,
+      "state": "S"
+    },
+    {
+      "pid": 1359856,
+      "parent_pid": 1359079,
+      "start_ticks": 2138011,
+      "state": "R"
+    }
+  ],
+  "source_process": {
+    "pid": 1337131,
+    "parent_pid": 1337104,
+    "start_ticks": 2134539,
+    "state": "R"
+  },
+  "source_returncode": 1,
+  "source_status": "halted",
+  "audit_command": [
+    "/home/ubuntu/joxing/lean-worker-probe-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+    "scripts/audit_lean_worker_probe.py",
+    "--packet",
+    "experiments/v0.0.11/lean-rollout-worker-protocol.json",
+    "--folder",
+    "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01",
+    "--source-sha",
+    "3ffbd18760afea69360acba226d4a6a618108951",
+    "--ready-file",
+    "/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/independent-audit.ready"
+  ],
+  "audit_process": {
+    "pid": 1361686,
+    "parent_pid": 1337104,
+    "start_ticks": 2138500,
+    "state": "R"
+  },
+  "audit_returncode": 0,
+  "audit_peak_rss_bytes": 104288256,
+  "original_epoch_elapsed_s": 83.4550394550024,
+  "controller_peak_rss_bytes": 104333312,
+  "source_controller_peak_processes": 11,
+  "final_live": [],
+  "final_usage": {
+    "fixtures": 2349586,
+    "receipts_before_controller_final": 166665
+  }
+}

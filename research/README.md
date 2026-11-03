@@ -39,9 +39,10 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H26](H26.md)|Can a separate Mac-native profile preserve strict local replay?|Worker-ready5case/116step plan; not implemented/run|
 
 |[H27](H27.md)|Does qualified process lifetime preserve exact native SAC lifecycle parity?|315Linuxcontrols;64transitions/12updates prefix invalid on100.58ms hold,3not_run|
-|[H28](H28.md)|Can a Torch-free pipe worker preserve rollout semantics and reduce footprint?|Implemented/registered378node+4fake probe packet; target pending|
+|[H28](H28.md)|Can a Torch-free pipe worker preserve rollout semantics and reduce footprint?|375/378Linuxsource pass; missingfixtures/startup3fail;4formalprobesnot_run|
+|[H29](H29.md)|Can portable byte fixtures/startup readiness unblock Linux source checks?|Worker-ready source-only repair plan; notimplemented/run|
 
-**Latest: H27actual learner prefix reaches64transitions/12updates but fails100ms retirement; all315Linux controls pass,1invalid/3not_run. H28lean worker IPC/import gate is primary next, no unchanged native retry. H26Mac-local replay remains secondary. Old costs/failures immutable. Next unused ID: H29.** These are global research-note
+**Latest: H28sparexbabe3 runtime prepared;375/378Linuxsource pass,3prerequisite failures,all4formal probes not_run. H29portable fixture/startup/rawXML audit source mission primary next, no blindretry/clockreset. H27native teardown stays failed. H26Mac-local replay secondary. Next unused ID: H30.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
 
 ## Update rule

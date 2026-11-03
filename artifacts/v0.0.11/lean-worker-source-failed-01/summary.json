@@ -1,0 +1,106 @@
+{
+  "status": "source_prerequisite_failed_formal_hypothesis_unrun",
+  "source_commit": "3ffbd18760afea69360acba226d4a6a618108951",
+  "protocol_sha256": "dbaa06ae77ff925942ce6fc7936e2aac334cf6cbb47beca0c0e1c166db61390e",
+  "host": "xbabe3",
+  "controls": {
+    "failed": 3,
+    "passed": 375,
+    "skipped": 0
+  },
+  "registered_controls": 378,
+  "old_controls": {
+    "passed": 313,
+    "failed": 2,
+    "registered": 315
+  },
+  "new_controls": {
+    "passed": 62,
+    "failed": 1,
+    "registered": 63
+  },
+  "rows": [
+    {
+      "arm": "none",
+      "id": "sb3A",
+      "method": "forkserver",
+      "profile": "sb3",
+      "seed": 1097,
+      "status": "not_run",
+      "variant": "fake-ipc-sb3-v1"
+    },
+    {
+      "arm": "none",
+      "id": "leanA",
+      "method": "forkserver",
+      "profile": "lean",
+      "seed": 1097,
+      "status": "not_run",
+      "variant": "fake-ipc-lean-v1"
+    },
+    {
+      "arm": "none",
+      "id": "sb3B",
+      "method": "forkserver",
+      "profile": "sb3",
+      "seed": 1098,
+      "status": "not_run",
+      "variant": "fake-ipc-sb3-v1"
+    },
+    {
+      "arm": "none",
+      "id": "leanB",
+      "method": "forkserver",
+      "profile": "lean",
+      "seed": 1098,
+      "status": "not_run",
+      "variant": "fake-ipc-lean-v1"
+    }
+  ],
+  "formal_probes": {
+    "attempted": 0,
+    "valid": 0,
+    "invalid": 0,
+    "not_run": 4
+  },
+  "faults": [
+    {
+      "node": "tests/test_receipt_encoding_v2.py::test_actual_admitted_bootstrap_and_storage_preflight",
+      "cause": "Missing historical admitted bootstrap wire inputs in mirrored fixture dependency closure"
+    },
+    {
+      "node": "tests/test_receipt_encoding.py::test_actual_bootstrap_and_size_preflight",
+      "cause": "Missing historical admitted bootstrap wire inputs in mirrored fixture dependency closure"
+    },
+    {
+      "node": "tests/test_lean_worker_probe.py::test_full_fresh_forkserver_pair_matches_and_candidate_import_isolation",
+      "cause": "First3sresponse timeout without constructor-ready handshake. Cold import plausible; actual delayed phase unmeasured. Formalrunner already waits8s for initialization."
+    }
+  ],
+  "native_physics": 0,
+  "native_models": 0,
+  "policy_actors": 0,
+  "updates": 0,
+  "source_wall_original_epoch_s": 82.49606113100162,
+  "controller_wall_original_epoch_s": 83.4550394550024,
+  "audit_status": "verified_halted",
+  "auditor_note": "Frozen auditor verifies halt/source/runtime/ownership but only decodes compressed XML; failed producer left rawXML. Separate saved-JUnit audit verifies complete378node375pass/3fail denominator. No false allpassed interpretation.",
+  "supplement_epoch_s": 284.72966360600185,
+  "exited_bound_identities": 46,
+  "live_jobs_after": [],
+  "controller_source_peak_processes": 11,
+  "controller_peak_rss_bytes": 104333312,
+  "audit_peak_sampled_rss_bytes": 104288256,
+  "source_peak_sampled_rss_bytes": 1607172096,
+  "fixture_output_bytes": 2087071,
+  "included_input_mirror_bytes": 262515,
+  "charged_fixture_bytes": 2349586,
+  "receipt_bytes_after_supplement": 214432,
+  "original_whole_cap_s": 300,
+  "scope": "Runtime/ownership/source qualification only; four formal IPC/RSS probes notrun, no memory reduction/native training/gameplay claim. No unchanged retry.",
+  "reporting_limits": [
+    "Frozen main auditor decodes successful compressedJUnit only; failed rawXML independently audited by supplement and local saved recheck.",
+    "Reporting supplement executed via SSHstdin; exact executable source bytes not separately retained, tool command text remains in chat history. Bound PID/start and original284.729664s timestamp retained. No source/physics retry.",
+    "Supplementary raw-JUnit reader retained PID/start/time but not its own RSS sample; no continuous guarded-RSS proof for that reporting-only process."
+  ]
+}

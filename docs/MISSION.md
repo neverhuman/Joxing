@@ -1,3 +1,25 @@
+# H28source prerequisite stops; portable Linux readiness H29next —Nov2local
+
+Public3ffbd18/dbaa06ae onsparexbabe3passes375/378Linuxcases,3fail/0skip. Two
+missing H22/H23bootstrap wires; FIRSTfake command3s timeout beforeinit-ready
+witness (coldimport plausible, phaseunmeasured). All4formalIPC/RSSprobes not_run,
+0nativephysics/models/actors/updates. Runtime coldsetup10.786s/exactpins verified;
+controller automatically audits halt, source82.496s/controller83.455s original
+clock. Frozenauditor skipsrawfailedXML; supplement independentlyverifiesall378
+nodeIDs/375pass/3fail/4not_run and46exits atoriginal284.730s<300. RawXMLaudit
+limitation retained, no falseallpass claim. Peaksource1.61GB/controller104MB,
+11processes; allownedjobs exit.1877files2,301,503bytes exact safetransfer,71links.
+Chargedfixtures2,349,586incl262515inputs/214432receipts within16MiB/1MiB;
+oldcosts/gatesimmutable. Results docs/LEAN_ROLLOUT_WORKER_RESULTS.md.
+
+NextPRIMARYworker-ready docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md/H29:
+complete exact8receiptfixtureclosure +negativeplain siblings, explicit portable
+pathprovider (olddefaultunchanged/noaliasretarget), positiveconstructorready
+underexisting8s beforeordinary3s, auditrawfailedJUnit. New SOURCE-ONLY120s/0native
+proposal, source/protocol/budget freeze BEFOREoutcomes; all378assertions retained.
+NOTimplemented/preregistered/run. No H28retry/clockreset, no memory/nativeparity/
+boxing/league/defaultpromotion/tag. H26Mac-local replay remainssecondaryready.
+
 # H28lean worker proof implemented; spare xbabe3 selected —Nov2(local)
 
 New opt-in SB3Gymnasium pipe worker avoids Torch/SB3/MuJoCo child imports;
