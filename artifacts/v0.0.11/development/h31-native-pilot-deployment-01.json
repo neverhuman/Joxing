@@ -1,0 +1,106 @@
+{
+  "schema": "joxing-native-pair-motor-pilot-v1",
+  "status": "launched",
+  "source_commit": "607cfe96a2308c8af095fe16aca6f2cc7f94b954",
+  "protocol_sha256": "05845df8010d4c8aca881e3f584f1e5905abe8b323667e0140a6e66bec50a2a5",
+  "root": "/Users/bentaylor/joxing/native-pair-motor-pilot-20261103-01",
+  "pid": 63161,
+  "start": "Tue Nov  3 00:47:01 2026",
+  "original_epoch": 33387.462847166,
+  "setup_elapsed_s": 3.331218416999036,
+  "public_verified": [
+    {
+      "path": "experiments/v0.0.11/native-pair-motor-pilot-01.json",
+      "bytes": 154473,
+      "sha256": "2f369490f9dbab464b32f01a27532319d58c763f15347e2f8ebf7d3ddeb58090"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_rl.py",
+      "bytes": 30172,
+      "sha256": "1ec4d6484f7f2490598f79d534e9479fc006339648461801e1f86af3d365f134"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_vec.py",
+      "bytes": 6754,
+      "sha256": "cc7677c914e5c54ce4aded2d54d0b6f4d06d4eeb60d4acacd36f0139172edca0"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_train.py",
+      "bytes": 15481,
+      "sha256": "44e31a680480d5e494caad8b7c87abf62163f31a6afc2362c2b9338e57788c86"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_pilot.py",
+      "bytes": 18526,
+      "sha256": "e7e0b1469bbb3b04cd445c9efa2fb9911dfc71c12570aa0e3e4366cff8a5d388"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_evidence.py",
+      "bytes": 25350,
+      "sha256": "f9bc5696b1fb7e871a4ac11c948a33c32800727b28b9e6c6503967bd104187f0"
+    },
+    {
+      "path": "scripts/native_pair_guarded_stage.py",
+      "bytes": 5194,
+      "sha256": "cb1d656017e3f43650659dbcac42573a0d97a545274fa10b87e4d7813bdb1ad1"
+    },
+    {
+      "path": "scripts/qualify_native_pair_pilot.py",
+      "bytes": 11834,
+      "sha256": "e9393b99d0563697ed6f63541fcf0bd1529c5d130c445f675bba51e70b3b2a82"
+    },
+    {
+      "path": "scripts/run_native_pair_pilot.py",
+      "bytes": 2442,
+      "sha256": "e18d1d82c2142d1153fc35cd574b1f05f9b2e7ed7ea6b08fdc6b118a68381072"
+    },
+    {
+      "path": "scripts/audit_native_pair_pilot.py",
+      "bytes": 16800,
+      "sha256": "5f20ec23f8257f90da1e1d7548ab2421bd61da77dca3f861e05082c53d3cbd8d"
+    },
+    {
+      "path": "scripts/render_native_pair_motor.py",
+      "bytes": 3787,
+      "sha256": "12b0dff6292c951b78b124db83f9a7d8a89c9e7f1e1441f83e3cafd0a07cc840"
+    },
+    {
+      "path": "tests/test_native_pair_motor_rl.py",
+      "bytes": 18672,
+      "sha256": "60d38263fdb2184d9a04cfa39fd4789de9634fba2ea5560540969a0d9bff0e8e"
+    },
+    {
+      "path": "tests/test_native_pair_motor_vec.py",
+      "bytes": 3423,
+      "sha256": "2477ee30674bac6e4d7e3eb44bc106cb41b5fd787c103b79efdc71703ced416e"
+    }
+  ],
+  "command": [
+    "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/bin/python",
+    "scripts/qualify_native_pair_pilot.py",
+    "--packet",
+    "experiments/v0.0.11/native-pair-motor-pilot-01.json",
+    "--source-sha",
+    "607cfe96a2308c8af095fe16aca6f2cc7f94b954",
+    "--protocol-sha256",
+    "05845df8010d4c8aca881e3f584f1e5905abe8b323667e0140a6e66bec50a2a5",
+    "--epoch-start-monotonic",
+    "33387.462847166"
+  ],
+  "checkout_commands": [
+    [
+      "git",
+      "clone",
+      "--no-hardlinks",
+      "/Users/bentaylor/Documents/ChatGPT/JOXING",
+      "/Users/bentaylor/joxing/native-pair-motor-pilot-20261103-01"
+    ],
+    [
+      "git",
+      "checkout",
+      "--detach",
+      "607cfe96a2308c8af095fe16aca6f2cc7f94b954"
+    ]
+  ],
+  "native_physics": "not_yet_observed"
+}

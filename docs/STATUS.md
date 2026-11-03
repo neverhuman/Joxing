@@ -1,3 +1,18 @@
+# H31 admission01 deferred; fresh same-limit admission02 registered
+
+Public607cfe9/05845df8 owner exited after3.713s before source/native stages:
+local load8.96875>unchanged7.0limit (14CPUs×.5), memory21.65GBavailable.
+0sourcecases/0physics/0nativeattempts; bothseeds/all16evals not_run.
+Owner/admission/exit retained in artifacts/v0.0.11/native-pair-motor-pilot-
+admission-01. Oldroot/clocksealed; no gatechange or unrelated jobs touched.
+
+Separate admission02:experiments/v0.0.11/native-pair-motor-pilot-02.json,
+sha3e25e0291a68a0cf60dd02b2edec0a4cf110008a1a40f85a7a5319c14374dcf2. Only root/output/prior-deferral
+provenance differ:834sourcehashes/99cases/2×1024steps/allcriteria/caps unchanged.
+Freshsame-limitcapacitymustpass before native launch. xbabe4has512GiBmemory/
+lowloadbutreadonlyexistingruntime lacksTorch/SB3/rendering andteacherassets;
+no package changes. Prefer recovered eligible localprofile; retainspareMacport.
+
 # H31 two-seed native motor pilot registered — source ready, formal task pending
 
 Implemented full policy/optimizer/RNG/native/VecEnv boundary checkpoints,

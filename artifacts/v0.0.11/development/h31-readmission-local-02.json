@@ -1,0 +1,36 @@
+[
+  {
+    "eligible": true,
+    "sample": {
+      "monotonic_s": 33603.949890666,
+      "physical_memory_bytes": 38654705664,
+      "free_percentage": 56,
+      "available_pressure_estimate_bytes": 21646635171,
+      "cpu_count": 14,
+      "load": [
+        6.15380859375,
+        6.08984375,
+        5.58349609375
+      ],
+      "free_disk_bytes": 221860048896,
+      "definition": "Mac memory_pressure free percentage times physical memory; not Linux MemAvailable/PSI"
+    }
+  },
+  {
+    "eligible": true,
+    "sample": {
+      "monotonic_s": 33613.977379166,
+      "physical_memory_bytes": 38654705664,
+      "free_percentage": 56,
+      "available_pressure_estimate_bytes": 21646635171,
+      "cpu_count": 14,
+      "load": [
+        6.22900390625,
+        6.103515625,
+        5.59375
+      ],
+      "free_disk_bytes": 221858537472,
+      "definition": "Mac memory_pressure free percentage times physical memory; not Linux MemAvailable/PSI"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "status": "capacity_deferred_before_source",
+  "attempts": 1,
+  "native_attempts": 0,
+  "entered_physics": 0,
+  "source_cases": 0,
+  "native_seed_rows": [
+    {
+      "seed": 761,
+      "status": "not_run"
+    },
+    {
+      "seed": 983,
+      "status": "not_run"
+    }
+  ],
+  "owner_exited": true,
+  "owner": {
+    "command": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python scripts/qualify_native_pair_pilot.py --packet experiments/v0.0.11/native-pair-motor-pilot-01.json --source-sha 607cfe96a2308c8af095fe16aca6f2cc7f94b954 --protocol-sha256 05845df8010d4c8aca881e3f584f1e5905abe8b323667e0140a6e66bec50a2a5 --epoch-start-monotonic 33387.462847166",
+    "parent_pid": 1,
+    "pid": 63161,
+    "rss_bytes": 35422208,
+    "start": "Tue Nov 3 00:47:01 2026",
+    "state": "Ss"
+  },
+  "source_commit": "607cfe96a2308c8af095fe16aca6f2cc7f94b954",
+  "protocol_sha256": "05845df8010d4c8aca881e3f584f1e5905abe8b323667e0140a6e66bec50a2a5",
+  "reason": "RuntimeError: Local Mac capacity admission first limit: {\"monotonic_s\": 33391.143314416, \"physical_memory_bytes\": 38654705664, \"free_percentage\": 56, \"available_pressure_estimate_bytes\": 21646635171, \"cpu_count\": 14, \"load\": [8.96875, 5.9716796875, 5.400390625], \"free_disk_bytes\": 221992574976, \"definition\": \"Mac memory_pressure free percentage times physical memory; not Linux MemAvailable/PSI\"}",
+  "whole_epoch_s": 3.7134172919977573,
+  "scope": "Admission deferral; old root/clock sealed, no gate change. Both seed rows/all16evals not_run.",
+  "metadata_faults": [
+    "First metadata collector incorrectly passed check=False to check_output; failed before any copy/native writes. Dependent capacity read found missing02protocol. Corrected to subprocess.run; no physics."
+  ],
+  "next": "Separate02admission only after fresh same-limit capacity recovers."
+}

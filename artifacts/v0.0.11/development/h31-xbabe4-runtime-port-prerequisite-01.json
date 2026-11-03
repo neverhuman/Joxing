@@ -1,0 +1,27 @@
+{
+  "scope": "Read-only xbabe4 runtime/resource inspection;0physics/0installedpackages",
+  "host": "Mac-Studio.local",
+  "home": "/Users/agent",
+  "cpu_count": 32,
+  "physical_memory_bytes": 549755813888,
+  "memory_pressure_free_percent": 93,
+  "load": [
+    4.16455078125,
+    4.17041015625,
+    4.2880859375
+  ],
+  "runtime": "/Users/agent/joxing/mac-source-readiness-20261102-01/.venv/bin/python",
+  "python": "3.12.3",
+  "versions": {
+    "mujoco": "3.8.0",
+    "numpy": "2.5.4",
+    "gymnasium": "1.4.0",
+    "torch": "missing",
+    "stable-baselines3": "missing",
+    "imageio": "missing",
+    "imageio-ffmpeg": "missing",
+    "pillow": "missing"
+  },
+  "teacher_assets_in_existing_dedicated_roots": "none found",
+  "decision": "Recovered local Mac profile passes same-limit2sampleadmission; launch separate02nativepilot there now. xbabe4futureport requires own pinned project runtime/inputs/source qualification; do not claim it is trainingready."
+}
