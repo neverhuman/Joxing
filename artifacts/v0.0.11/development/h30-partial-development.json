@@ -1,0 +1,40 @@
+{
+  "scope": "H30partial development checkpoint, not executable qualification",
+  "files": [
+    "scripts/portable_lean_probe_support.py",
+    "scripts/run_portable_lean_probe.py",
+    "scripts/qualify_portable_lean_probe.py"
+  ],
+  "validation": {
+    "ruff": "passed;3style fixes applied",
+    "compile": "passed",
+    "unit_tests": "NOT_RUN",
+    "target_runs": 0
+  },
+  "missing": [
+    "independent auditor",
+    "machine protocol/source freeze",
+    "new protocol/guard/dispatch negative controls",
+    "full source qualification",
+    "formal4row outcomes"
+  ],
+  "safety": "Both CLIentrypoints fail closed before dispatch; no model/physics/training constructed",
+  "priority": "User requests actual native twohumanoid RL ASAP; H31primary, H30secondary only on measured dependency",
+  "source_hashes": {
+    "scripts/portable_lean_probe_support.py": "c4a23edabadd0c926c7c6112d0eb8b0e5bcb100e3eac35ce594bf801f61e9f31",
+    "scripts/run_portable_lean_probe.py": "05ea8e3b72249aa1b36b72c6a92a91dfae3c80462b231d8d4ab66a2061cfbb23",
+    "scripts/qualify_portable_lean_probe.py": "bd91b3c9de522cbedebfbe5930d21d00f9113b6e3aff744d0dd07660e3f799f9"
+  },
+  "disabled_dispatch_checks": [
+    {
+      "path": "scripts/qualify_portable_lean_probe.py",
+      "returncode": 1,
+      "message": "H30 DRAFT: independent audit/protocol not registered; formal dispatch disabled. Native motor RL is the priority; see docs/NATIVE_PAIR_RL_PILOT_MISSION.md"
+    },
+    {
+      "path": "scripts/run_portable_lean_probe.py",
+      "returncode": 1,
+      "message": "H30 DRAFT: independent audit/protocol not registered; formal dispatch disabled. Native motor RL is the priority; see docs/NATIVE_PAIR_RL_PILOT_MISSION.md"
+    }
+  ]
+}

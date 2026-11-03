@@ -1,3 +1,9 @@
+Priority update2026-11-02: SECONDARY after explicit user request for native RL
+ASAP. Primary mission NATIVE_PAIR_RL_PILOT_MISSION.md/H31. H30has partial drafts,
+not a completed implementation; its CLIentrypoints fail closed. No formal rows
+or native work ran. Resume H30only when an actual native resource measurement
+makes the benchmark necessary. Original proposed criteria below stay unchanged.
+
 # H30 — Four-row lean-worker IPC/import/RSS qualification after portable readiness
 
 Status: worker-ready next mission, NOTimplemented/preregistered/run. Same v0.0.11,

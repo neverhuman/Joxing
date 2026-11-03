@@ -1,0 +1,162 @@
+{
+  "scope": "Read-only fresh capacity; no reservation/native work",
+  "hosts": [
+    {
+      "host": "xbabe1",
+      "returncode": 0,
+      "result": {
+        "samples": [
+          {
+            "utc": "2026-11-03T04:15:02Z",
+            "monotonic_s": 9616152.501974612,
+            "load": [
+              9.29541015625,
+              12.77734375,
+              19.52734375
+            ],
+            "affinity": 102,
+            "available_memory_bytes": 32394592256,
+            "workspace_exists": true,
+            "disk_free_bytes": 274412187648,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.01 avg300=0.00 total=607562789113\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=3.23 avg60=1.75 avg300=1.37 total=55670767406\nfull avg10=3.23 avg60=1.75 avg300=1.37 total=53373448691\n",
+              "memory": "some avg10=0.22 avg60=0.18 avg300=0.04 total=77154708165\nfull avg10=0.22 avg60=0.18 avg300=0.04 total=75804557820\n"
+            },
+            "jobs": []
+          },
+          {
+            "utc": "2026-11-03T04:15:12Z",
+            "monotonic_s": 9616162.590085115,
+            "load": [
+              9.24365234375,
+              12.65234375,
+              19.4140625
+            ],
+            "affinity": 102,
+            "available_memory_bytes": 32314945536,
+            "workspace_exists": true,
+            "disk_free_bytes": 274405810176,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.01 avg300=0.00 total=607562814651\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=4.86 avg60=2.37 avg300=1.52 total=55671409394\nfull avg10=4.86 avg60=2.37 avg300=1.52 total=53374090387\n",
+              "memory": "some avg10=0.08 avg60=0.15 avg300=0.04 total=77154708165\nfull avg10=0.08 avg60=0.15 avg300=0.04 total=75804557820\n"
+            },
+            "jobs": []
+          }
+        ]
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe2",
+      "returncode": 0,
+      "result": {
+        "samples": [
+          {
+            "utc": "2026-11-03T04:15:02Z",
+            "monotonic_s": 31008.740097541,
+            "load": [
+              49.38623046875,
+              47.23291015625,
+              48.1357421875
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 79251255296,
+            "workspace_exists": false,
+            "disk_free_bytes": 761732894720,
+            "psi": {
+              "cpu": "some avg10=0.01 avg60=0.04 avg300=0.04 total=735665536\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=10.76 avg60=10.30 avg300=10.23 total=3764132428\nfull avg10=9.28 avg60=9.03 avg300=9.09 total=3287118220\n",
+              "memory": "some avg10=0.03 avg60=0.07 avg300=0.17 total=444468830\nfull avg10=0.03 avg60=0.07 avg300=0.17 total=434116412\n"
+            },
+            "jobs": []
+          },
+          {
+            "utc": "2026-11-03T04:15:12Z",
+            "monotonic_s": 31018.913537329,
+            "load": [
+              49.1279296875,
+              47.25634765625,
+              48.13427734375
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 78725144576,
+            "workspace_exists": false,
+            "disk_free_bytes": 761588908032,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.04 avg300=0.04 total=735735633\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=9.27 avg60=9.99 avg300=10.16 total=3765085162\nfull avg10=7.99 avg60=8.73 avg300=9.02 total=3287926908\n",
+              "memory": "some avg10=0.01 avg60=0.06 avg300=0.17 total=444480884\nfull avg10=0.01 avg60=0.06 avg300=0.17 total=434128256\n"
+            },
+            "jobs": []
+          }
+        ]
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe3",
+      "returncode": 0,
+      "result": {
+        "samples": [
+          {
+            "utc": "2026-11-03T04:15:02Z",
+            "monotonic_s": 30613.566721516,
+            "load": [
+              85.30322265625,
+              95.1259765625,
+              101.0380859375
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 84004790272,
+            "workspace_exists": true,
+            "disk_free_bytes": 33880322048,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=31073649\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=11.48 avg60=16.04 avg300=14.01 total=2719735518\nfull avg10=9.51 avg60=15.21 avg300=13.49 total=2632099063\n",
+              "memory": "some avg10=0.00 avg60=0.19 avg300=0.20 total=332635238\nfull avg10=0.00 avg60=0.19 avg300=0.20 total=325831859\n"
+            },
+            "jobs": []
+          },
+          {
+            "utc": "2026-11-03T04:15:12Z",
+            "monotonic_s": 30623.684933295,
+            "load": [
+              87.015625,
+              95.1708984375,
+              100.98876953125
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 83759759360,
+            "workspace_exists": true,
+            "disk_free_bytes": 33879900160,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=31081295\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=30.43 avg60=20.03 avg300=14.96 total=2724237380\nfull avg10=27.64 avg60=18.76 avg300=14.33 total=2636213198\n",
+              "memory": "some avg10=0.00 avg60=0.16 avg300=0.19 total=332635528\nfull avg10=0.00 avg60=0.16 avg300=0.19 total=325832149\n"
+            },
+            "jobs": []
+          }
+        ]
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe4",
+      "returncode": 0,
+      "result": {
+        "utc": "2026-11-03T04:15:02Z",
+        "load": [
+          6.4501953125,
+          6.2998046875,
+          6.037109375
+        ],
+        "jobs": [],
+        "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    10864.\nPages active:                               15151105.\nPages inactive:                             15420360.\nPages speculative:                            781176.\nPages throttled:                                   0.\nPages wired down:                             552039.\nPages purgeable:                               12671.\n\"Translation faults\":                    21260325244.\nPages copy-on-write:                      3803373996.\nPages zero filled:                       52315370828.\nPages reactivated:                          27697004.\nPages purged:                                8554379.\nFile-backed pages:                           9708606.\nAnonymous pages:                            21644035.\nPages stored in compressor:                  7688341.\nPages occupied by compressor:                1561964.\nDecompressions:                             16276609.\nCompressions:                               35099833.\nPageins:                                   196735185.\nPageouts:                                     280819.\nSwapins:                                           0.\nSwapouts:                                          0.\n",
+        "cpu_count": 32
+      },
+      "stderr": ""
+    }
+  ]
+}

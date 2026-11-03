@@ -42,9 +42,13 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H28](H28.md)|Can a Torch-free pipe worker preserve rollout semantics and reduce footprint?|375/378Linuxsource pass; missingfixtures/startup3fail;4formalprobesnot_run|
 |[H29](H29.md)|Can portable byte fixtures/startup readiness unblock Linux source checks?|413/413Linux+audit pass/42exits; source readiness only|
 
-|[H30](H30.md)|Can portable lean-worker qualification preserve lifetime and reduce childRSS?|Worker-ready4row/300s/0native plan; notimplemented/run|
+|[H30](H30.md)|Can portable lean-worker qualification preserve lifetime and reduce childRSS?|Secondarypartialdraft/CLIdisabled;4not_run; native H31priority|
 
-**Latest: H29qualifies source-only413Linuxcases/audit/42exits. H30portable lean4row mission primary next;0formal attempts,0nativegain. Next unused ID:H31.**
+|[H31](H31.md)|Can a native shared-world muscle-residual PPOpilot learn balance/reach toward boxing?|PRIMARYworker-ready implementation;0nativepilot attempts|
+
+**Latest: User prioritizes real two-humanoid RL ASAP. H31native paired motor learning primary; H30fakeworker draft secondary/dispatch-disabled. H29source-only413cases/audit pass. Next unused ID:H32.**
+
+**Prior checkpoint: H29qualifies source-only413Linuxcases/audit/42exits. H30portable lean4row mission primary next;0formal attempts,0nativegain. Next unused ID:H31.**
 
 **Prior checkpoint: H29same-source recoveredxbabe1placement registered;803sourcefiles/413cases/limits unchanged,0sourceattempts. xbabe3nowpressured, no jobstarted there.**
 

@@ -1,16 +1,17 @@
 # Joxing
 
-Current wave: H29 passed all **413 Linux source checks** and the independent
-audit; all 42 owned processes exited. This clears portable source/startup
-readiness. [Results and receipts](docs/PORTABLE_LINUX_SOURCE_READINESS_RESULTS.md).
-Next: [four paired lean-worker memory tests](docs/PORTABLE_LEAN_WORKER_QUALIFICATION_MISSION.md).
-Native balance, legal scoring and self-play remain unqualified.
+Current priority: [native two-humanoid motor RL](docs/NATIVE_PAIR_RL_PILOT_MISSION.md),
+using the pretrained motor, learned muscle residuals, opponent-aware history and
+fixed before/after clips. Implementation is next; no trained boxing bout yet.
+H29's 413 Linux source checks/audit passed. The fake-worker memory benchmark is
+secondary and will not delay native work without a measured resource blocker.
+[Current status](docs/STATUS.md).
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H30 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H31 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 

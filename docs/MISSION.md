@@ -1,3 +1,30 @@
+# User priority: native two-humanoid RL pilot next —Nov2local
+
+User clarified: actual two-humanoid boxing RL ASAP; fake-worker benchmarking must
+not dominate the critical path. Current PRIMARYworker-ready mission is
+NATIVE_PAIR_RL_PILOT_MISSION.md / research/H31.md: intact two700muscle bodies,
+frozen compatible walking baseline + learned138group muscle residuals per actor,
+causal own/opponent limb-motion history, simultaneous paired PPOslots, fixed
+before/after native evaluation clips. First establish actual native transitions/
+optimizer/replay; then qualify learned balance/reach and legal points before
+competitive historical-opponent boxing. No RLpilot launched or working bout claimed.
+
+H30is SECONDARY, no formal attempts/all4not_run. Three draft modules preserve
+work on portable fake-only packet/guard/controller plumbing; CLIentrypoints are
+explicitly DISABLED because independent auditor, protocol and tests are unfinished.
+Only syntax/Ruff checked, no H30formal outcome or promotion. Do not invoke/complete
+H30before native work unless an ACTUALnative resource fault makes it necessary.
+Freshcapacity11: no ownedJoxingjobs; LinuxIOpressure xbabe1=4.86%,xbabe2=7.99%,
+xbabe3=27.64% exceeds fixed1%admission. Macspare, separate nativeprofile required.
+Do native implementation/source work while pressure is high; recheck capacity
+before any launch, no changes to shared jobs/services. No agents/overlap.
+
+H29source413/413Linux+audit/42exits remains qualified; it is infrastructure, not
+native motor/points/self-play competence. Preserve previous outcomes/faults/costs.
+v0.0.11incomplete/untagged. New H31protocol/source/budget must be public before
+native outcomes; proposed one persistentworld/thread1/8GiB/1800s/200kphysics,
+allenteredsteps/prep/replay/eval counted, firstlimit. Full details in ready mission.
+
 # H29 source readiness qualifies; H30formal lean-worker test next —Nov2local
 
 H29publica159900/9b8e4128 on recoveredxbabe1passes413/413Linuxcases,0skip/fail.
