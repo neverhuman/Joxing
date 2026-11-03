@@ -1,0 +1,49 @@
+{
+  "scope": "Real native engine, synthetic teacher, source fixture only",
+  "joint_transitions": 16,
+  "physics": 320,
+  "completed_motor_episodes": 5,
+  "original_tape_bytes": 3868036,
+  "candidate_tape_and_manifest_bytes": 2189946,
+  "fraction": 0.5661648443809727,
+  "all_array_bytes_exact": true,
+  "behavior_max_error": 0.0,
+  "chunks": [
+    {
+      "path": "chunk-0000.json",
+      "bytes": 16240,
+      "sha256": "1275ddaa96142b087d456672d6b2d407267e56d0e4d139aff2e6af1d25765dfb",
+      "rows": 5,
+      "first_joint_step": 0,
+      "chain": "4533a120fb4797de0d9168ff89446ada3f1da90c892f567d44db90e54e934bcb",
+      "tape_bytes": 628322
+    },
+    {
+      "path": "chunk-0001.json",
+      "bytes": 16243,
+      "sha256": "e6e8af9b2ff092ca4df006148f96c053b5dbde7e181e253c42eb742b6e65d27a",
+      "rows": 5,
+      "first_joint_step": 5,
+      "chain": "5c244836a2bdb88b792d41bf0bc91c2339dd9f15e5026f80a30a2cb30930797d",
+      "tape_bytes": 680530
+    },
+    {
+      "path": "chunk-0002.json",
+      "bytes": 16364,
+      "sha256": "7d6c37d9bcf51289756b346e8f0d44bdce841c1d11a7780931f07f2b95390e27",
+      "rows": 5,
+      "first_joint_step": 10,
+      "chain": "9f913af09c3614ef80b9d819e2748ba55fd79592974fdde7ca1347b7b1f91601",
+      "tape_bytes": 628322
+    },
+    {
+      "path": "chunk-0003.json",
+      "bytes": 5611,
+      "sha256": "86a5844c21d3679ccebac83aab0c1ae475eddc82f194bfe44980eff0f48b7d22",
+      "rows": 1,
+      "first_joint_step": 15,
+      "chain": "9f97404b03bc6ca790d3a2272ff0cafd1fc97431db1d9159c0afcd95d3de81cb",
+      "tape_bytes": 198314
+    }
+  ]
+}

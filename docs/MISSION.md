@@ -1,3 +1,25 @@
+# H31 lossless native training evidence ready — source checkpoint Nov2local
+
+55paired motor/evidence controls +39history/rules/referee/stored-tape regressions
+pass. Native engine/synthetic teacher fixture16jointsteps/2updates/five60msmotor
+episodes: all7901actor observations, teacher/actions/700commands/native endpoints/
+rewards/masks bit-exact vs original recorder; behavior value/logprob0error.
+Archive+manifests2189946Bvs3868036B,43.3835%smaller. No new released-controller
+performance trial or boxing game. First source test-fixture rejection fault and
+collector fault retained; static new sourcephysics1766,0formal attempts.
+
+New CausalChunkWriter/typed pre-write raw+text credits/128row chunks are opt-in;
+default smoke and frozen native prototype untouched. Wholepilot forecast with
+worst-case resets/checkpoints/eval/media/source reserves declines2×2048steps
+(1249335552Braw/22020096Btext). Ready next scope2×1024JOINTsteps:706456704Braw/
+15204352Btext fits unchanged1GiB/16MiB, subject to remaining guarded writers.
+Next implement full checkpoint/continuation cadence, fixed3seval replay/auditor
+and bounded owner, then publish protocol/source and launch once prerequisites pass.
+Original proposed behavioral gates stay unchanged; competition remains false.
+No active native job; docs/NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md is current
+worker-ready packet. See NATIVE_PAIR_STREAMING_SOURCE_RESULTS.md/researchH31 and
+artifacts/v0.0.11/native-pair-streaming-source-01. v11inprogress/untagged.
+
 # H31 actual native PPO witness passes; longer motor training next —Nov2local
 
 Public2101233/7fd7abe9:22fresh source cases and actual released motor/native loop

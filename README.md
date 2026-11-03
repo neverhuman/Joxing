@@ -10,6 +10,12 @@ The fixed one-second evaluations stay upright but score **0–0**, with no convi
 punch sequence or demonstrated improvement. [Next: longer guard/reach training](docs/NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md).
 Competitive boxing and historical-opponent self-play remain unqualified.
 
+**Longer training preparation:** [lossless streaming evidence](docs/NATIVE_PAIR_STREAMING_SOURCE_RESULTS.md)
+passes 55 paired controls plus 39 regressions. A native-engine fixture with a
+synthetic teacher preserves every value using **43.4% fewer evidence bytes**.
+The next bounded pilot is two 1,024-step runs with fixed three-second evaluations;
+checkpoint and evaluation guards remain to finish before launch.
+
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.

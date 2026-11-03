@@ -312,3 +312,105 @@ def test_actual_native_fixture_ppo_rollout_audited_update_and_tape(factory, tmp_
     assert saved["world"]["schema"] == "joxing-native-paired-motor-rl-v1" and saved[
         "last_obs"
     ].shape == (2, 7901)
+
+
+def test_native_streaming_evidence_exact_against_original_ppo_tape(factory, tmp_path):
+    import torch
+
+    from joxing.native_pair_motor_evidence import (
+        CausalChunkWriter,
+        EvidenceBudget,
+        read_chunk,
+    )
+    from joxing.native_pair_motor_train import (
+        AuditedPPO,
+        NativeTransitions,
+        StreamingNativeTransitions,
+    )
+    from joxing.native_pair_motor_vec import NativePairMotorVecEnv
+    from joxing.native_tape_storage import load
+
+    world, _ = factory[0](horizon=60)
+    vec = NativePairMotorVecEnv(world, seed=71000, record_history=True)
+    candidate = tmp_path / "candidate"
+    budget = EvidenceBudget(candidate, raw_limit=8 * 1024**2, text_limit=1024**2)
+    writer = CausalChunkWriter(
+        candidate / "chunks",
+        contract_hash=world.contract_hash,
+        state_dimension=4555,
+        budget=budget,
+        chunk_rows=5,
+    )
+    golden = tmp_path / "original"
+    golden.mkdir()
+    model = AuditedPPO(
+        "MlpPolicy",
+        vec,
+        n_steps=8,
+        batch_size=16,
+        n_epochs=1,
+        seed=2,
+        device="cpu",
+        policy_kwargs={"net_arch": [16, 16], "log_std_init": -3.0},
+        verbose=0,
+    )
+    model.native_update_rows, model.native_output = [], golden
+    reference = NativeTransitions(vec, golden, lambda n: None)
+    callback = StreamingNativeTransitions(vec, writer, lambda n: None)
+    model.learn(total_timesteps=32, callback=[reference, callback])
+    result = writer.close()
+    expected_receipt = reference.save_arrays()
+    expected = load(golden / "native-transitions.npz", expected_receipt)
+    rows, cursor, chain = [], None, "0" * 64
+    for r in result["chunks"]:
+        decoded, cursor, chain = read_chunk(
+            writer.output / r["path"],
+            expected_sha256=r["sha256"],
+            contract_hash=world.contract_hash,
+            cursor=cursor,
+            previous_chain=chain,
+        )
+        rows.extend(decoded)
+    assert len(rows) == 16 and world.physics_total == 320
+    assert world.completed_episodes == 5 and result["chain"] == chain
+    for k in expected:
+        assert np.stack([r[k] for r in rows]).tobytes() == expected[k].tobytes(), k
+    errors = []
+    for update in range(2):
+        behavior = AuditedPPO.load(
+            golden / f"update-{update:03d}-before.zip", device="cpu"
+        )
+        for r in rows[update * 8 : (update + 1) * 8]:
+            with torch.no_grad():
+                value, logprob, _ = behavior.policy.evaluate_actions(
+                    torch.as_tensor(r["source_obs"]),
+                    torch.as_tensor(r["raw_policy_actions"]),
+                )
+            errors.append(
+                max(
+                    float(np.max(abs(value.numpy() - r["values"]))),
+                    float(np.max(abs(logprob.numpy() - r["log_probs"]))),
+                )
+            )
+    assert max(errors) == 0.0
+    compact = sum(r["tape_bytes"] + r["bytes"] for r in result["chunks"])
+    assert compact < 0.65 * expected_receipt["archive_bytes"]
+    (tmp_path / "stream-comparison.json").write_text(
+        json.dumps(
+            {
+                "scope": "Real native engine, synthetic teacher, source fixture only",
+                "joint_transitions": 16,
+                "physics": world.physics_total,
+                "completed_motor_episodes": 5,
+                "original_tape_bytes": expected_receipt["archive_bytes"],
+                "candidate_tape_and_manifest_bytes": compact,
+                "fraction": compact / expected_receipt["archive_bytes"],
+                "all_array_bytes_exact": True,
+                "behavior_max_error": max(errors),
+                "chunks": result["chunks"],
+            },
+            indent=2,
+        )
+        + "\n"
+    )
+    vec.close()

@@ -1,3 +1,85 @@
+# H31 streaming source checkpoint — next is the bounded behavioral pilot
+
+Implemented: `src/joxing/native_pair_motor_evidence.py` (`CausalChunkWriter`,
+`EvidenceBudget`, `read_chunk`, `training_storage_forecast`), opt-in VecEnv raw
+history capture, and `StreamingNativeTransitions` in native_pair_motor_train.py.
+55paired controls+39regressions pass. Native engine/synthetic teacher fixture:
+16jointsteps/2PPOupdates/five resets, all original arrays bit-exact and behavior
+recomputation0error. Candidate tapes+manifests are43.3835%smaller. No new actual
+released-controller training or boxing result. See NATIVE_PAIR_STREAMING_SOURCE_RESULTS.md
+and artifacts/v0.0.11/native-pair-streaming-source-01/summary.json first.
+
+**Current ready scope:2seeds×1024JOINTsteps**, not the original2048proposal.
+Worst-case resets+128row/full-checkpoint cadence+128MiBotherraw/8MiBothertext
+forecast706456704Braw/15204352Btext fits unchanged1GiB/16MiB.2×2048requires
+1249335552B/22020096B and is declined BEFOREformal registration. No gates are
+weakened. Full writer enforcement is still required; forecast alone is not launch
+permission. All physical/muscle/reward/rule defaults and proposed behavior gates
+below remain unchanged. Same H31; next unused research IDH32.
+
+## Remaining ordered execution packet
+
+One integration owner, no agents or concurrent writers. Read AGENTS/RTK,
+MISSION/STATUS/IMPLEMENTATION/experiment book; this result and researchH31/index;
+new evidence module and tests, native paired train/vec/core, original source2101233,
+prototype result and prior mission below. Edit only opt-in native motor pilot
+source/scripts/tests plus current docs/research/receipts. No third_party, frozen
+prototype root/protocol/results, scene/referee/model schemas or other projects.
+
+1. Add `PilotAuditedPPO` and `run_native_pilot()` in native_pair_motor_train.py;
+   keep old smoke API8/16/32/64bounds unchanged. Freeze new128joint-step rollout,
+   batch64/4epochs/lr3e-4/gamma.99/64x64/zero mean/logstd−3 before outcomes.
+   Implement ONEfull checkpoint per rollout boundary+initial, not duplicated
+   before/after files. Save via bounded in-memory serialization, enforce13MiB
+   model and1MiBcontinuation BEFOREdisk writes. Save optimizer, all RNG, native
+   snapshot, vec nextseed/returns/length/resetinfos and model lastobs/episode masks.
+   Initial bundle must precede first rollout; post-update bundle supplies next
+   rollout's behavior. Record real optimizer minibatch steps separately from
+   epoch counts. No asynchronous observation/teacher resampling on restore.
+2. Bind StreamingNativeTransitions to exact world/behavior checkpoint identity,
+   raw state dimension and3072Browcap. Publish complete chunk/hash chain. Test
+   initial and post-update restore with an actual next action/hold, bit-exact
+   observations/teacher/commands/native state/PPOlikelihoods/RNG. Existing source
+  55+39controls stay green; collect exact fixture physics reserves prospectively.
+3. Add bounded fixed evaluation writer and independent auditor in NEWscripts,
+   e.g. run_native_pair_pilot.py/audit_native_pair_pilot.py. Use the same four
+   resets71000/71016/71032/71048 before/after per training seed761/983,3s each;
+   retain every fall/zero-point result. Record all actions and complete initial
+   continuation so ALL16evals independently replay exactly. Record real glove
+   target distances/phase durations/cycles/face and censored survival for the
+   original proposed behavior gates. Render first entire before/after eval per
+   seed with existing renderer (4clips), no flattering selection. Before policy
+   zero residual equals the initial deterministic learner mean; never shift starts.
+4. Implement stdlib bounded owner `scripts/qualify_native_pair_pilot.py` and new
+   `experiments/v0.0.11/native-pair-motor-pilot-01.json`. Account all serialization,
+   checkpoints/chunks/eval/source/media/fault bytes and typed text online, including
+   logs and temporary replacements. Forecast02's128MiB/8MiB other allowance is
+   a reservation to allocate, not an implemented guard.200000physics proposed cap:
+   40960training +48000eval +48000independent eval replay leaves63040 for exact
+   source/prep/midhold237/other replay. If auditing ALLtraining too, add40960 and
+   leave22080. Count before each entered step; no render physics. Retain both
+   attempted/valid/invalid/not_run seed rows from start. New1800sepoch and stage
+   bounds below,8GiB/oneworld/thread1; stop at first fault/limit, no retries in an
+   old root or budget reset. A valid fall is training data; numerical/ownership/
+   assistance/parity faults are invalid and stop. No competitive learning.
+5. Freeze exact numerical protocol, source hashes, model/teacher/group/normalizer/
+   reference/rule/timing and units before outcomes; publish/sourcecheckfirst.
+   Recheck four hosts and chosen profile admission; use a NEWdedicated~/joxing
+   root and readonly runtime/inputs. Start only once all prerequisites pass.
+   No host service/package changes. Audit all owned PIDs/start/exit/progress/raw
+   and exact evaluations, then publish small summaries and fixed clips in Git;
+   retain checkpoints/tapes outsideGit. No tag or skill claim just for updates.
+
+Completion: both bounded registered seeds conclude with honest per-side,
+per-seed improvement/failure under original behavioral criteria, independently
+replayable evaluations and allfaults/denominators/resources retained. If an
+implementation or prerequisite fails, stop dependent stages, preserve its receipt,
+leave this explicit next action. No pilot is active at this checkpoint.
+
+---
+Original prospective2048step proposal below retained for research history;
+the current1024step scope and remaining packet above supersede its unrun size.
+
 # H31 next: two-seed native guard/reach training, not another plumbing benchmark
 
 Status: worker-ready IMPLEMENTATIONcontinuation; not implemented/registered/run.

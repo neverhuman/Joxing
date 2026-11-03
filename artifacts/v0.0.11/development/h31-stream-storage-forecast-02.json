@@ -1,0 +1,54 @@
+{
+  "scope": "Prospective storage arithmetic only; no pilot run",
+  "reason": "Reserve128MiB for source/full16evaluations+initialstates/fixedclips/replay/faults,8MiB for their text; old64MiB/2MiB allowance incomplete for full3s evidence",
+  "assumptions": {
+    "seeds": 2,
+    "state_dimension": 4555,
+    "checkpoint_bytes": 13631488,
+    "continuation_bytes": 1048576,
+    "other_raw_bytes": 134217728,
+    "other_text_bytes": 8388608
+  },
+  "profiles": [
+    {
+      "scope": "Worst-reset storage reservation only; no native training outcome",
+      "joint_steps_per_seed": 2048,
+      "seeds": 2,
+      "chunk_rows": 128,
+      "chunks": 32,
+      "maximum_reset_rows_per_chunk": 127,
+      "chunk_archive_bytes": 18823880,
+      "manifest_text_upper_bytes": 13631488,
+      "checkpoint_count": 34,
+      "checkpoint_reservation_bytes": 499122176,
+      "other_raw_bytes": 134217728,
+      "other_text_bytes": 8388608,
+      "raw_upper_bytes": 1249335552,
+      "text_upper_bytes": 22020096,
+      "raw_limit": 1073741824,
+      "text_limit": 16777216,
+      "fits": false,
+      "checkpoint_and_other_writes_guarded": false
+    },
+    {
+      "scope": "Worst-reset storage reservation only; no native training outcome",
+      "joint_steps_per_seed": 1024,
+      "seeds": 2,
+      "chunk_rows": 128,
+      "chunks": 16,
+      "maximum_reset_rows_per_chunk": 127,
+      "chunk_archive_bytes": 18823880,
+      "manifest_text_upper_bytes": 6815744,
+      "checkpoint_count": 18,
+      "checkpoint_reservation_bytes": 264241152,
+      "other_raw_bytes": 134217728,
+      "other_text_bytes": 8388608,
+      "raw_upper_bytes": 706456704,
+      "text_upper_bytes": 15204352,
+      "raw_limit": 1073741824,
+      "text_limit": 16777216,
+      "fits": true,
+      "checkpoint_and_other_writes_guarded": false
+    }
+  ]
+}

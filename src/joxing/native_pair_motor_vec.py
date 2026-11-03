@@ -11,8 +11,10 @@ from .shared_motor_task import PLAYERS
 
 
 class NativePairMotorVecEnv(VecEnv):
-    def __init__(self, world, *, seed=71000):
+    def __init__(self, world, *, seed=71000, record_history=False):
         self.world = world
+        # Opt-in evidence only. Never read history after a terminal auto-reset.
+        self.record_history = bool(record_history)
         self.pending = None
         self.next_seed = int(seed)
         self.waiting = False
@@ -68,6 +70,11 @@ class NativePairMotorVecEnv(VecEnv):
         self.pending = None
         self.waiting = False
         before_obs = self.world.observations()
+        before_history = (
+            {p: self.world.histories[p].snapshot() for p in PLAYERS}
+            if self.record_history
+            else None
+        )
         teacher_inputs = (
             {p: v.values.copy() for p, v in self.world.core.inputs.items()}
             if hasattr(self.world, "core")
@@ -100,6 +107,11 @@ class NativePairMotorVecEnv(VecEnv):
             if hasattr(self.world, "core")
             else None,
         }
+        if self.record_history:
+            self.last_transition.update(
+                source_histories=before_history,
+                next_histories={p: self.world.histories[p].snapshot() for p in PLAYERS},
+            )
 
         rewards = np.array([reward[p] for p in PLAYERS], np.float32)
         done = bool(terminated or truncated)

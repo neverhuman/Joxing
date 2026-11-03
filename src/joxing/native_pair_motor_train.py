@@ -164,6 +164,26 @@ class NativeTransitions(BaseCallback):
         return store(self.output / "native-transitions.npz", arrays)
 
 
+class StreamingNativeTransitions(BaseCallback):
+    """Explicit candidate; old smoke recorder and its bounds stay unchanged."""
+
+    def __init__(self, vec, writer, guard):
+        super().__init__()
+        if not vec.record_history:
+            raise ValueError("Streaming evidence requires pre-reset raw histories")
+        self.vec, self.writer, self.guard = vec, writer, guard
+
+    def _on_step(self):
+        self.guard(0)
+        self.writer.append(
+            self.vec.last_transition,
+            raw_actions=np.asarray(self.locals["actions"]).copy(),
+            values=self.locals["values"].detach().cpu().numpy().copy(),
+            log_probs=self.locals["log_probs"].detach().cpu().numpy().copy(),
+        )
+        return True
+
+
 def prove_native_replay(world, *, seed, output):
     world.reset(seed=seed)
     zero = {p: np.zeros(138, np.float32) for p in "AB"}

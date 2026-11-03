@@ -1,0 +1,240 @@
+{
+  "schema": "joxing-native-streaming-source-development-v1",
+  "scope": "Development source controls only: real native engine, synthetic teacher; not formal released-controller training or a boxing result",
+  "parent_commit": "af65608b383b71094a1a0433573bf8bc0cf54db2",
+  "source_files": {
+    "src/joxing/native_pair_motor_evidence.py": {
+      "bytes": 25350,
+      "sha256": "f9bc5696b1fb7e871a4ac11c948a33c32800727b28b9e6c6503967bd104187f0"
+    },
+    "src/joxing/native_pair_motor_vec.py": {
+      "bytes": 6754,
+      "sha256": "cc7677c914e5c54ce4aded2d54d0b6f4d06d4eeb60d4acacd36f0139172edca0"
+    },
+    "src/joxing/native_pair_motor_train.py": {
+      "bytes": 15481,
+      "sha256": "44e31a680480d5e494caad8b7c87abf62163f31a6afc2362c2b9338e57788c86"
+    },
+    "tests/test_native_pair_motor_evidence.py": {
+      "bytes": 11011,
+      "sha256": "1842e5e7c51cb4923023d38fdb22046b3c7d2348a38b0001310c739a3809f6f5"
+    },
+    "tests/test_native_pair_motor_rl.py": {
+      "bytes": 14210,
+      "sha256": "60945569bccef5bb1123cb780c272ff27d52d448cf921a44ff621efd58541a20"
+    }
+  },
+  "checks": [
+    {
+      "file": "h31-stream-dev-01.xml",
+      "cases": 29,
+      "failed": 1,
+      "errors": 0,
+      "skipped": 0,
+      "time_s": 2.243,
+      "sha256": "3a73e600d8609c9914db3a63f390073f21661557c9c25294ec57a1b799c2ce2d"
+    },
+    {
+      "file": "h31-stream-dev-02.xml",
+      "cases": 52,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "time_s": 14.976,
+      "sha256": "59a993a1764b468fd889989bdc24faae3006e7cc8ef6077e06b139f9b95ac000"
+    },
+    {
+      "file": "h31-stream-dev-03.xml",
+      "cases": 55,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "time_s": 16.816,
+      "sha256": "9fd81e88e4c6dcbc87bfe62b02d6c0fa6f1daf0be758c3b9c64529abd5ca95ce"
+    },
+    {
+      "file": "h31-stream-regression-01.xml",
+      "cases": 39,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "time_s": 2.872,
+      "sha256": "1c2740d21b42b5ed87efe1ccba49d3c2afdec30cf3c70f3a89304e1bafceeba1"
+    }
+  ],
+  "native_fixture": {
+    "scope": "Real native engine, synthetic teacher, source fixture only",
+    "joint_transitions": 16,
+    "physics": 320,
+    "completed_motor_episodes": 5,
+    "original_tape_bytes": 3868036,
+    "candidate_tape_and_manifest_bytes": 2189946,
+    "fraction": 0.5661648443809727,
+    "all_array_bytes_exact": true,
+    "behavior_max_error": 0.0,
+    "chunks": [
+      {
+        "path": "chunk-0000.json",
+        "bytes": 16240,
+        "sha256": "1275ddaa96142b087d456672d6b2d407267e56d0e4d139aff2e6af1d25765dfb",
+        "rows": 5,
+        "first_joint_step": 0,
+        "chain": "4533a120fb4797de0d9168ff89446ada3f1da90c892f567d44db90e54e934bcb",
+        "tape_bytes": 628322
+      },
+      {
+        "path": "chunk-0001.json",
+        "bytes": 16243,
+        "sha256": "e6e8af9b2ff092ca4df006148f96c053b5dbde7e181e253c42eb742b6e65d27a",
+        "rows": 5,
+        "first_joint_step": 5,
+        "chain": "5c244836a2bdb88b792d41bf0bc91c2339dd9f15e5026f80a30a2cb30930797d",
+        "tape_bytes": 680530
+      },
+      {
+        "path": "chunk-0002.json",
+        "bytes": 16364,
+        "sha256": "7d6c37d9bcf51289756b346e8f0d44bdce841c1d11a7780931f07f2b95390e27",
+        "rows": 5,
+        "first_joint_step": 10,
+        "chain": "9f913af09c3614ef80b9d819e2748ba55fd79592974fdde7ca1347b7b1f91601",
+        "tape_bytes": 628322
+      },
+      {
+        "path": "chunk-0003.json",
+        "bytes": 5611,
+        "sha256": "86a5844c21d3679ccebac83aab0c1ae475eddc82f194bfe44980eff0f48b7d22",
+        "rows": 1,
+        "first_joint_step": 15,
+        "chain": "9f97404b03bc6ca790d3a2272ff0cafd1fc97431db1d9159c0afcd95d3de81cb",
+        "tape_bytes": 198314
+      }
+    ]
+  },
+  "raw_fixture_root": "/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.11/h31-stream-fixtures-03/test_native_streaming_evidence0",
+  "raw_native_fixture_manifest": {
+    "candidate/chunks/chunk-0000.json": {
+      "bytes": 16240,
+      "sha256": "1275ddaa96142b087d456672d6b2d407267e56d0e4d139aff2e6af1d25765dfb"
+    },
+    "candidate/chunks/chunk-0000.npz": {
+      "bytes": 628322,
+      "sha256": "247b3b1b89ae5e5ac3ec787a8f288972083a262cc49034c7a69dcf2ce60c35ac"
+    },
+    "candidate/chunks/chunk-0001.json": {
+      "bytes": 16243,
+      "sha256": "e6e8af9b2ff092ca4df006148f96c053b5dbde7e181e253c42eb742b6e65d27a"
+    },
+    "candidate/chunks/chunk-0001.npz": {
+      "bytes": 680530,
+      "sha256": "20aecdd3cebd98f55596111c6c92273cc3c38003ce7a37e3fa8085eeaac15643"
+    },
+    "candidate/chunks/chunk-0002.json": {
+      "bytes": 16364,
+      "sha256": "7d6c37d9bcf51289756b346e8f0d44bdce841c1d11a7780931f07f2b95390e27"
+    },
+    "candidate/chunks/chunk-0002.npz": {
+      "bytes": 628322,
+      "sha256": "acb8a3c31f1dffe385361363c8cef1de90f83a2bed4554d3537981063927bb85"
+    },
+    "candidate/chunks/chunk-0003.json": {
+      "bytes": 5611,
+      "sha256": "86a5844c21d3679ccebac83aab0c1ae475eddc82f194bfe44980eff0f48b7d22"
+    },
+    "candidate/chunks/chunk-0003.npz": {
+      "bytes": 198314,
+      "sha256": "6a1aa6cb5323b260d1a37c9aa71dc46f68d6e1b254c6b184fe1938fc3fa0a24b"
+    },
+    "original/native-transitions.npz": {
+      "bytes": 3868036,
+      "sha256": "6b3c7a466ff84bafed8635a6ed285fc8c36bbf0852f790bc2350564f8493ff5a"
+    },
+    "original/transitions.jsonl": {
+      "bytes": 19961,
+      "sha256": "6667cddd9cd0d250458f1fe9b279067af694af52007b6a9bca6d2fde0b9c6632"
+    },
+    "original/update-000-after.zip": {
+      "bytes": 3294395,
+      "sha256": "4418dcb9ee17f1227ad36999dfd087b168976370384cbd95218cb71b60cde94b"
+    },
+    "original/update-000-before.zip": {
+      "bytes": 1237574,
+      "sha256": "ef8b27f78c86f930d4c2a46d4ffad9df9186bed6e44a946a8f2ef7b04fff281b"
+    },
+    "original/update-000-continuation.pt": {
+      "bytes": 492249,
+      "sha256": "c289650f2bfcfa154188fb51cf79b639d93783c5545e657adab2b808a5936de9"
+    },
+    "original/update-001-after.zip": {
+      "bytes": 3294851,
+      "sha256": "ee11b623ffd5b7cd48a93556d81ded2260dd67d4476f14e0afe23df89ab6f217"
+    },
+    "original/update-001-before.zip": {
+      "bytes": 3294547,
+      "sha256": "64e9fb824fdee90c49366d42bc9b117f8555389872f6aecce7970bedb397f241"
+    },
+    "original/update-001-continuation.pt": {
+      "bytes": 448793,
+      "sha256": "ab8e21a3ae8bbfbf58bcd7acfbbe6d5834d23d14831e652094a6b35c2d2966b3"
+    },
+    "original/updates.jsonl": {
+      "bytes": 768,
+      "sha256": "627b0c48168f4e2fa70412bd4c68f9691b20226838335c9af14421b8d7867a43"
+    },
+    "stream-comparison.json": {
+      "bytes": 1583,
+      "sha256": "b5790627d4b33c19668abb8933c775c83411594372f4b1e181ee67d13c8ecc74"
+    }
+  },
+  "storage_forecasts": [
+    "../development/h31-stream-storage-forecast-01.json",
+    "../development/h31-stream-storage-forecast-02.json"
+  ],
+  "new_formal_native_attempts": 0,
+  "qualified_boxing_games": 0,
+  "source_physics": {
+    "dev01": 0,
+    "dev02": 883,
+    "dev03": 883,
+    "regression01": 0,
+    "total": 1766,
+    "kind": "Static count: original native fixture loops563 plus new16joint intervals320 per dev02/dev03; not formal physics credit"
+  },
+  "retained_faults": [
+    "dev01:28/29pass; RAW rejection test allocated300000B, legitimately enough for one row. Corrected fixture to200000B; no production cap changed.",
+    "Optional .venv/bin/ruff path missing; cached uvx --offline ruff used, no runtime installation.",
+    "Ruff literal/iterator style findings corrected; final check passes.",
+    "dev02 lacked explicit thread-limit environment; no resource/throughput qualification claimed. dev03 and regression01 explicitly use five thread environment limits=1.",
+    "Initial metadata collector raised relative-vs-absolute Path.relative_to mismatch after copying five small receipts. No source/native writes; corrected collector preserves those copies and adds summary."
+  ],
+  "commands": [
+    "rtk proxy .venv/bin/python -m pytest tests/test_native_pair_motor_evidence.py -q --junitxml=runs/v0.0.11/h31-stream-dev-01.xml",
+    "rtk proxy .venv/bin/python -m pytest tests/test_native_pair_motor_evidence.py tests/test_native_pair_motor_rl.py tests/test_native_pair_motor_vec.py -q --junitxml=runs/v0.0.11/h31-stream-dev-02.xml --basetemp=runs/v0.0.11/h31-stream-fixtures-02",
+    "rtk proxy env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_native_pair_motor_evidence.py tests/test_native_pair_motor_rl.py tests/test_native_pair_motor_vec.py -q --junitxml=runs/v0.0.11/h31-stream-dev-03.xml --basetemp=runs/v0.0.11/h31-stream-fixtures-03",
+    "rtk proxy env OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 .venv/bin/python -m pytest tests/test_history.py tests/test_rules.py tests/test_match_referee.py tests/test_native_tape_storage.py -q --junitxml=runs/v0.0.11/h31-stream-regression-01.xml --basetemp=runs/v0.0.11/h31-stream-regression-fixtures-01",
+    "rtk proxy uvx --offline ruff check src/joxing/native_pair_motor_evidence.py src/joxing/native_pair_motor_vec.py src/joxing/native_pair_motor_train.py tests/test_native_pair_motor_evidence.py tests/test_native_pair_motor_rl.py"
+  ],
+  "sampled_dev03_process": {
+    "pid": 42646,
+    "start": "Mon Nov  2 23:18:50 2026",
+    "rss_bytes": 2811527168,
+    "cpu_percent": 95.2,
+    "scope": "One live sample; not peak/full resource qualification"
+  },
+  "fresh_capacity": "../development/four-host-capacity-20261103-13.json",
+  "limits": [
+    "Synthetic teacher source fixture; no new released-model improvement outcome",
+    "Exact reconstruction against original recorder, not new independent physics replay",
+    "Checkpoint/evaluation/source/media guarded writers, owner and independent pilot audit still required",
+    "Old dedicated prototype source/protocol untouched; wholev11inprogress/untagged"
+  ],
+  "next": "Guard full checkpoint/continuation cadence and run_native_pilot for2x1024joint steps/3s fixed evals; publish protocol/source before launch.2x2048worst-reset forecast exceeds1GiB.",
+  "runtime": {
+    "python": "3.12.12",
+    "numpy": "2.5.4",
+    "mujoco": "3.8.0",
+    "torch": "2.14.1",
+    "stable-baselines3": "2.9.2",
+    "gymnasium": "1.4.0"
+  }
+}
