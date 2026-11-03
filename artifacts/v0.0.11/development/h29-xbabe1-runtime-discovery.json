@@ -1,0 +1,13 @@
+{
+  "command": [
+    "ssh",
+    "-o",
+    "ConnectTimeout=15",
+    "xbabe1",
+    "python3 -"
+  ],
+  "returncode": 1,
+  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\nTraceback (most recent call last):\n  File \"<stdin>\", line 7, in <module>\n  File \"/usr/lib/python3.12/pathlib.py\", line 1021, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/pathlib.py\", line 1015, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing/lean-worker-probe-20261102-01/experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/gymnasium/core.py'\n",
+  "discovery": null,
+  "earlier_command_fault": "Remote rtk unavailable (exit127); outer local RTKwrapper used with direct remote python3 thereafter; no files/physics/source tests executed"
+}

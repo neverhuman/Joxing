@@ -1,9 +1,9 @@
 # Joxing
 
 Current wave: H29 portable receipt/startup repair is public. Local checks:
-399 passed, 14 Linux-only skips. The Linux launch deferred on shared-host I/O;
-all 413 target checks remain unrun. [Current status](docs/STATUS.md) and
-[ready mission](docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md).
+399 passed, 14 Linux-only skips. The same 413-case Linux source check now has
+an explicitly registered xbabe1 placement because xbabe3 is busy.
+[Current status](docs/STATUS.md) · [ready mission](docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md).
 No trained, unassisted scoring bout yet.
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.

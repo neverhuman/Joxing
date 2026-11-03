@@ -40,9 +40,11 @@ remain the authority for measurements, budgets, criteria and denominators.
 
 |[H27](H27.md)|Does qualified process lifetime preserve exact native SAC lifecycle parity?|315Linuxcontrols;64transitions/12updates prefix invalid on100.58ms hold,3not_run|
 |[H28](H28.md)|Can a Torch-free pipe worker preserve rollout semantics and reduce footprint?|375/378Linuxsource pass; missingfixtures/startup3fail;4formalprobesnot_run|
-|[H29](H29.md)|Can portable byte fixtures/startup readiness unblock Linux source checks?|Public repair;399localpass/14skip; admission1I/Odeferred,413Linuxnot_run|
+|[H29](H29.md)|Can portable byte fixtures/startup readiness unblock Linux source checks?|Same-source xbabe1placement registered; xbabe3pressured;413Linuxnot_run|
 
-**Latest: H29sourceb80dc3a/protocolcd43c45e public; admission1I/Odeferred before checkout,0sourceattempts/413not_run. Current ready source-only mission remains H29.**
+**Latest: H29same-source recoveredxbabe1placement registered;803sourcefiles/413cases/limits unchanged,0sourceattempts. xbabe3nowpressured, no jobstarted there.**
+
+**Prior checkpoint: H29sourceb80dc3a/protocolcd43c45e public; admission1I/Odeferred before checkout,0sourceattempts/413not_run. Current ready source-only mission remains H29.**
 
 **Prior checkpoint: H28sparexbabe3 runtime prepared;375/378Linuxsource pass,3prerequisite failures,all4formal probes not_run. H29portable fixture/startup/rawXML source mission implemented/preregistered, Linux next, no blindretry/clockreset. H27native teardown stays failed. H26Mac-local replay secondary. Next unused ID: H30.** These are global research-note
 IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.

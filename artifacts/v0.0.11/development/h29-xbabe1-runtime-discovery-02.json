@@ -1,0 +1,104 @@
+{
+  "command": [
+    "ssh",
+    "-o",
+    "ConnectTimeout=15",
+    "xbabe1",
+    "python3 -"
+  ],
+  "returncode": 0,
+  "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n",
+  "discovery": {
+    "scope": "read-only host/runtime byte discovery, no simulation or heavy imports",
+    "kernel": "6.8.0-134-generic",
+    "checks": [
+      {
+        "path": "/usr/lib/python3.12/gzip.py",
+        "bytes": 24859,
+        "sha256": "31e7275c5c20d1b414063c28088b68e7a3e657af60c9c23435bf92e77a1fd1e5",
+        "matches": true
+      },
+      {
+        "path": "/usr/lib/python3.12/multiprocessing/forkserver.py",
+        "bytes": 12134,
+        "sha256": "e99f0aa2e4dc41af9d259f220c5eb2632e2ace89b6851e712223bf2682016f29",
+        "matches": true
+      },
+      {
+        "path": "/usr/lib/python3.12/multiprocessing/popen_forkserver.py",
+        "bytes": 2230,
+        "sha256": "0588ad0e5a36718b4377dc2a2a97864a10986c25a33dc3bfed12595711b0cdab",
+        "matches": true
+      },
+      {
+        "path": "/usr/lib/python3.12/multiprocessing/popen_spawn_posix.py",
+        "bytes": 2029,
+        "sha256": "97b5d25aa479516894489877e6a7921252ee35f51e118c2f1f91f32919e7caa8",
+        "matches": true
+      },
+      {
+        "path": "/usr/lib/python3.12/multiprocessing/process.py",
+        "bytes": 12139,
+        "sha256": "67f0c2a7a3a83c92dd024705bac18619a2e123c9df77c414beb81035ea4a0e18",
+        "matches": true
+      },
+      {
+        "path": "/usr/lib/python3.12/multiprocessing/resource_tracker.py",
+        "bytes": 10332,
+        "sha256": "b0099f5e2285fe2462b77c47bbf29220b57c778741a34f386c10c1e9940884c8",
+        "matches": true
+      },
+      {
+        "path": "/usr/lib/python3.12/multiprocessing/spawn.py",
+        "bytes": 9644,
+        "sha256": "ebf9fa40eb622384c37690d8c78e7208744df031155ab4ceedab0fc791a1669b",
+        "matches": true
+      },
+      {
+        "path": "/usr/lib/python3.12/multiprocessing/util.py",
+        "bytes": 14261,
+        "sha256": "6752c4515ec69f82e9df64e017da490c3754e51d818c270ea1ad2d64e09268be",
+        "matches": true
+      },
+      {
+        "path": "/home/ubuntu/joxing/native-learner-context-parity-20261102-01/experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/gymnasium/core.py",
+        "bytes": 29675,
+        "sha256": "92226890db5bec675bce52b6b9ceba350baef86d86e6f279d02e96f1a39c2258",
+        "matches": true
+      },
+      {
+        "path": "/home/ubuntu/joxing/native-learner-context-parity-20261102-01/experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/stable_baselines3/common/env_util.py",
+        "bytes": 7994,
+        "sha256": "5b5c7fa9f06f2dd4ae65e2e5ed164c0df0b7b5f65a9a249ed56d57c2a1cc2e60",
+        "matches": true
+      },
+      {
+        "path": "/home/ubuntu/joxing/native-learner-context-parity-20261102-01/experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/stable_baselines3/common/vec_env/base_vec_env.py",
+        "bytes": 19151,
+        "sha256": "3af7d0b55d4de0ba1bed29649e9a5d588fb4cff6e74cad70e1e989368879533f",
+        "matches": true
+      },
+      {
+        "path": "/home/ubuntu/joxing/native-learner-context-parity-20261102-01/experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/stable_baselines3/common/vec_env/patch_gym.py",
+        "bytes": 3430,
+        "sha256": "8669d9c71cb5894903a8e87ed86855b8e4207c73b82635e8996a06061bb8fe11",
+        "matches": true
+      },
+      {
+        "path": "/home/ubuntu/joxing/native-learner-context-parity-20261102-01/experiments/v0.0.11/runtime/.venv/lib/python3.12/site-packages/stable_baselines3/common/vec_env/subproc_vec_env.py",
+        "bytes": 11266,
+        "sha256": "e3acbeb465d5ca1288a7b9fa812eeacb9b03e3c52e757a1130b5d57a04baf942",
+        "matches": true
+      }
+    ],
+    "kernel_header": {
+      "path": "/usr/src/linux-headers-6.8.0-134-generic/include/linux/sched.h",
+      "bytes": 62423,
+      "sha256": "5c8a0686b408bcfef1e66cf043a04405a075d1e5572ad0a04cd1de3ecbb2373a"
+    },
+    "python": "Python 3.12.3",
+    "wall_s": 0.005264736711978912,
+    "boot_id": "e6034e0c-00ab-4c3e-9183-4ba3db85567b"
+  },
+  "earlier_fault": "Discovery01 used deployment-root prefix instead of actual runtime-root prefix; corrected path mapping only. No imports/native/source runs in failed read."
+}

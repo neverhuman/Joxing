@@ -1,6 +1,8 @@
 # H29: portable exact receipt fixtures and explicit worker startup readiness
 
 Status: implemented/preregistered before outcomes;413registered source nodes,
+current PRIMARYplacement variant xbabe1protocol9b8e4128f997; original803scientific
+sourcehashes/cases/gates unchanged. See current MISSION.md and appended profile.
 local399pass/14Linux-only skips. Formal target NOT_RUN: publicb80dc3a/protocolcd43c45e; first fixed host
 admission deferred on IOfull2.58% (second0.95%), before checkout/source.
 Retain admission history; only a measured capacity change plus BOTHfresh samples
@@ -172,3 +174,27 @@ Handoff: exact public commits/protocol, input closure/negative paths/runtime/
 startup proof hashes, every attempted test/result/fault, PIDs/exits/storage/wall,
 all old/new costs and smallest next measured question. Next unused research ID
 is H30after registering this note; no automatic version increment from a retry.
+
+## Prospective recovered xbabe1 placement —2026-11-02
+
+xbabe3now heavily pressured by unrelated work; source gate never started there.
+Use new `portable-linux-source-readiness-xbabe1-protocol.json`, exact413cases/all
+803original scientificsourcefiles/8inputs/limits unchanged. Same question/H29,
+no newID or native claim. Preserve old protocol and all admission costs/faults.
+Readonly existing H27runtime under /home/ubuntu/joxing/native-learner-context-parity-20261102-01;
+13runtime/stdlib bytes match, Py3.12.3. Explicit kernel6.8.0-134/headerSHA pinned;
+source-only relocation cannot qualify native cross-host parity. Runtime imported
+versions still must pass formal runtime stage; discovery is only byte checks.
+Current root /home/ubuntu/joxing/portable-source-readiness-20261103-01 on xbabe1
+must be absent before one fresh task. Launcher scripts/qualify_linux_fixture_readiness.py
+unchanged; new deployment helper under artifacts/v0.0.11/development. New helper
+adds hard60s bootstrap alarm and explicit originalepoch/elapsed/RSS metadata;
+all scientific/source/audit/controller functions remain frozen.
+
+Validation: 803old source hashes exact, all413node IDs and caps/admission equal;
+entry validate/launcher local+remote compile/ruff pass. Prior399Macpass/14skip
+retained, not relabelled Linux pass. New source/protocol public BEFOREtarget.
+No further job while another owned writer is active. Freeze and invoke new helper
+only after fresh actual capacity inventory; it applies fixed two-sample admission.
+All120s/60setup/30source/15audit/0physics/1fakeworker/thread1/12process/7planned-
+8GiBhard/8MiBfixturesincludinginputs/1MiBreceipts remain, first limit.

@@ -1,3 +1,23 @@
+# H29 same-source placement on recovered xbabe1 registered —Nov2local
+
+Fresh capacity10 finds xbabe3IOfull73.94%/memoryfull38.24%, no ownedjob; leave
+sharedwork alone. xbabe1recovered:42.38GBavailable/IO.14%/memory.02%/noJoxingjobs.
+Readonly discovery verifies13runtime/stdlib files EXACTLY equal pinned hashes,
+Python3.12.3; explicit kernel6.8.0-134header profile, not xbabe3kernel147. No heavy
+imports/native/source evaluation in discovery. Retained faults: remoteRTKabsent
+(exit127), first discovery mapped deployment rather than runtime prefix (missing
+file,exit1); second corrected path read succeeds. No host/package changes.
+
+Prospective placement-only protocol 9b8e4128f997,
+experiments/v0.0.11/portable-linux-source-readiness-xbabe1-protocol.json. All803
+scientificsourcebytes,413nodes,8fixtureinputs, runtimeversions and finite120s/
+setup60/source30/audit15/caps/fixedadmission unchanged. Fresh new xbabe1root,
+existing H27runtime READ-ONLY. Old cd43c45e xbabe3profile/admission1 retained;
+0sourceattempts/413not_run at freeze. This is H29continuation, no new researchID/
+tag/nativework. Publish+anonymousverify BOTHfixedfreshsamples before launch:
+`rtk proxy python3 artifacts/v0.0.11/development/deploy-portable-source-readiness-xbabe1-01.py`.
+Runner source is frozen: do not edit executing code, reuse oldroot or duplicate.
+
 # H29 published; Linux launch deferred by shared-host I/O —Nov2local
 
 Source b80dc3abf6e1ee252e3b224757e046ae38a2301d/protocol cd43c45e4c0c
