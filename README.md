@@ -1,5 +1,11 @@
 # Joxing
 
+**Native paired PPO completed two training seeds:** 4,096 actor samples and 16
+updates on xbabe4. All 16 evaluations still score **0–0**, with no completed
+guard cycle or three-second survival. A recording timeout invalidated the full
+attempt; [saved results](artifacts/v0.0.11/native-pair-motor-pilot-03/summary.json)
+will be independently replayed without retraining. Boxing improvement remains unproven.
+
 **Native two-humanoid PPO now executes:** 32 joint transitions, 64 actor samples,
 four updates, and independent bit-exact replay of every transition. Both humans
 retain 700 muscles and causal own/opponent motion history.

@@ -1,5 +1,9 @@
 # Research memory
 
+Latest:H31native2seedtrainingcompleted, recordingtimeout invalidatesattempt.
+[H32](H32.md) registeredread-only replay/export is current;0retraining.
+Originalnegativecriteria/faults retained. NextunusedIDH33.
+
 Latest H31continuation: lossless native streaming source55+39controls pass;
 synthetic-teacher nativefixture16jointsteps/2updates exact/43.4%smaller evidence.
 No new released-policy outcome. Two-seed1024step behavioral pilot is registered with checkpoint/eval/owner guards;

@@ -1,3 +1,22 @@
+# Native PPO completed; recordingtimeout invalidates03 — H32post-task next
+
+Two seeds:2048jointtransitions/4096actor samples/16PPOupdates/256minibatches,
+22motortrainingepisodes,16fixed evals;99sourcepass.61937primaryphysics,
+234.888snative stage. Preliminaryall0–0/0guardcycles/0three-secondcompletions;
+no boxingimprovement. Firstrecordingexecutioncutoff27.149s/30sstage halts
+whole319.688s:03INVALID,1nativeattempt/0valid/1invalid,3otherclips+auditnot_run.
+Originalffmpegtailinfinal_livepreserved; laterallownedidentities exited.
+328rawfiles512928374Bretained, summary/smallresults/rawhashes inartifacts/
+v0.0.11/native-pair-motor-pilot-03. No olddeadline extended.
+
+CurrentH32:experiments/v0.0.11/native-pilot-posttask-01.json/290b156e2caf,
+separate read-only2048transition+16eval replay and4compactwholefixedclips.
+0newlearning; ORIGINALfrozenphysicalmodules/runtime; oldinputs unchanged.
+NEW540swhole/setup60/audit300/render4×30/8GiB/1world/thread1/32MiBraw/2MiBtext,
+61700expected/88960maxNEWreplayphysics. Original03remainsinvalid evenif
+postauditpasses. Knownnegativebehaviorcriteria unchanged; no improvement study
+preregistrationclaim. NextunusedresearchIDH33; wholev11untagged.
+
 # H31 xbabe4runtime ready; explicit remote native pilot03 registered
 
 Isolated projectruntime copied in37.088s,1431424230B<2GiB,0physics. All22554

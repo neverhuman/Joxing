@@ -1,0 +1,100 @@
+{
+  "schema": "joxing-native-two-seed-prefix-v1",
+  "status": "invalid_render_timeout",
+  "attempts": 1,
+  "valid": 0,
+  "invalid": 1,
+  "source_cases": 99,
+  "joint_transitions": 2048,
+  "actor_samples": 4096,
+  "rollout_updates": 16,
+  "optimizer_minibatch_steps": 256,
+  "completed_training_motor_episodes": 22,
+  "evaluations_completed": 16,
+  "all_evaluations_candidate_points": [
+    0,
+    0
+  ],
+  "qualified_boxing_games": 0,
+  "entered_primary_physics": 61937,
+  "source_physics_reserved_not_measured": 2048,
+  "old_audit": "not_run",
+  "media_rows": [
+    {
+      "id": "761-before-render",
+      "status": "failed"
+    },
+    {
+      "id": "761-after-render",
+      "status": "not_run"
+    },
+    {
+      "id": "983-before-render",
+      "status": "not_run"
+    },
+    {
+      "id": "983-after-render",
+      "status": "not_run"
+    }
+  ],
+  "native_stage_wall_s": 234.88761004060507,
+  "original_epoch_wall_s": 319.6877096667886,
+  "owner_final_live_observation": [
+    {
+      "command": "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/runtime/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -f rawvideo -vcodec rawvideo -s 800x448 -pix_fmt rgb24 -r 50.00 -i - -an -vcodec libx264 -pix_fmt yuv420p -crf 15 -v warning -threads 1 -maxrate 2M -bufsize 2M /Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo/runs/v0.0.11/native-pair-motor-pilot-03/native/seed-761/before-71000/before.mp4",
+      "parent_pid": 66445,
+      "pid": 66696,
+      "rss_bytes": 100466688,
+      "start": "Tue Nov 3 01:13:55 2026",
+      "state": "S"
+    }
+  ],
+  "later_stable_identity_check": "All owned identities independently observed exited after task; preserve original liveffmpeg tail",
+  "raw_files": 328,
+  "raw_bytes": 512928374,
+  "raw_manifest_sha256": "5b27930cc451b358966a0ed78c9cdf1d3b62638c46d9380287d628b10fb125ca",
+  "raw_location": "xbabe4:/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo/runs/v0.0.11/native-pair-motor-pilot-03",
+  "preliminary_unaudited_behavior": [
+    {
+      "seed": 761,
+      "side": "A",
+      "target_error_improvement_m": -0.012622456847636188,
+      "survival_change_s": 0.02300000000000013,
+      "after_cycle_starts": 0,
+      "after_completed3s": 0
+    },
+    {
+      "seed": 761,
+      "side": "B",
+      "target_error_improvement_m": 0.0031255833476442896,
+      "survival_change_s": 0.00924999999999998,
+      "after_cycle_starts": 0,
+      "after_completed3s": 0
+    },
+    {
+      "seed": 983,
+      "side": "A",
+      "target_error_improvement_m": -0.004912972169325236,
+      "survival_change_s": 0.01200000000000001,
+      "after_cycle_starts": 0,
+      "after_completed3s": 0
+    },
+    {
+      "seed": 983,
+      "side": "B",
+      "target_error_improvement_m": 0.0014760578112180678,
+      "survival_change_s": 0.01550000000000007,
+      "after_cycle_starts": 0,
+      "after_completed3s": 0
+    }
+  ],
+  "performance_improvement_claimed": false,
+  "faults": [
+    "First renderer executioncutoff27.149s/30sstageinclcleanup; originaltaskhalt319.688s.3otherclips/auditnot_run.",
+    "Original final_live includes ffmpeg tail; later independentPID/start checks showall exited. No lifecyclepromotion.",
+    "Livecollector asserted ownerrunning afterit exited; metadataonly.",
+    "rsync--relative rejectedfilelist; explicit--files-from succeeded.",
+    "Metadata collector initially asserted final_live empty; corrected to retain originaltail andlater exitproof."
+  ],
+  "next": "H32separateread-only replay/export;0retraining,no oldbudgetextension/reclassification."
+}

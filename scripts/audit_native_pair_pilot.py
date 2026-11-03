@@ -15,10 +15,17 @@ sys.path.insert(0, str(ROOT / "src"))
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--packet", required=True)
+    ap.add_argument("--input-root")
+    ap.add_argument("--report-root")
     a = ap.parse_args()
     p = json.loads((ROOT / a.packet).read_text())
-    out = ROOT / p["output"]
+    out = Path(a.input_root) if a.input_root else ROOT / p["output"]
+    report = Path(a.report_root) if a.report_root else out
     native = out / "native"
+    # Post-task replay imports the ORIGINAL frozen physical modules so even
+    # any absolute asset paths in compiled scene identities remain unchanged.
+    if a.input_root:
+        sys.path.insert(0, str(out.parents[2] / "src"))
     import mujoco
     import numpy as np
     import torch
@@ -40,13 +47,13 @@ def main():
     torch.set_num_threads(1)
     torch.use_deterministic_algorithms(True)
     budget = EvidenceBudget(
-        out, raw_limit=p["raw_bytes"], text_limit=p["receipt_bytes"]
+        report, raw_limit=p["raw_bytes"], text_limit=p["receipt_bytes"]
     )
     primary = json.loads((out / "physics-final.json").read_text())["entered_physics"]
     started = time.monotonic()
     entered = 0
     world = None
-    ledger = (out / "audit-entered.bin").open("xb+", buffering=0)
+    ledger = (report / "audit-entered.bin").open("xb+", buffering=0)
     result = {
         "schema": "joxing-native-pair-motor-pilot-audit-v1",
         "passed": False,
@@ -352,7 +359,7 @@ def main():
         reserve = budget.reserve
         budget.reserve = 0
         try:
-            budget.write_json(out / "independent-audit.json", result)
+            budget.write_json(report / "independent-audit.json", result)
         finally:
             budget.reserve = reserve
     print(

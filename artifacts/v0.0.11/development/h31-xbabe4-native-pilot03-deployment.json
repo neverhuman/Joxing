@@ -1,0 +1,29 @@
+{
+  "schema": "joxing-native-pair-motor-pilot-v1",
+  "status": "launched",
+  "host": "xbabe4",
+  "root": "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo",
+  "output": "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo/runs/v0.0.11/native-pair-motor-pilot-03",
+  "source_commit": "7d02424ac4343e124bbb561387cad38ec8ebd3eb",
+  "protocol_sha256": "ca5fcf3d97c6b00302cd8c1eb48f3213bffeb3f60e439a37ed5d149a02305a64",
+  "runtime_manifest_sha256": "4063ea6ab4021af711cee44f78701ba0d85e858c559a0b0abb482b648d5a6d52",
+  "runtime_regular_files": 22554,
+  "source_files_verified": 834,
+  "pid": 57235,
+  "start": "Tue Nov  3 01:08:59 2026",
+  "command": [
+    "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/runtime/bin/python",
+    "scripts/qualify_native_pair_pilot.py",
+    "--packet",
+    "experiments/v0.0.11/native-pair-motor-pilot-03.json",
+    "--source-sha",
+    "7d02424ac4343e124bbb561387cad38ec8ebd3eb",
+    "--protocol-sha256",
+    "ca5fcf3d97c6b00302cd8c1eb48f3213bffeb3f60e439a37ed5d149a02305a64",
+    "--epoch-start-monotonic",
+    "8772491.032472165"
+  ],
+  "original_epoch": 8772491.032472165,
+  "setup_s": 3.8681672513484955,
+  "physics": "not_yet_observed"
+}
