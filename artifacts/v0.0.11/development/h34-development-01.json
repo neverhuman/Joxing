@@ -1,0 +1,122 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "command": [
+        "rtk",
+        "proxy",
+        "env",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "VECLIB_MAXIMUM_THREADS=1",
+        "NUMEXPR_NUM_THREADS=1",
+        "PYTHONDONTWRITEBYTECODE=1",
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_native_reset_placement.py",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=artifacts/v0.0.11/development/h34-source-dev-01.xml",
+        "--basetemp=runs/v0.0.11/h34-source-dev-01"
+      ],
+      "errors": 0,
+      "failed_cases": [
+        {
+          "message": "KeyError: \"Invalid name 'A_pelvis'. Valid names: ['world']\"",
+          "name": "test_distance_oracle_positive_clipped_and_negative_control"
+        }
+      ],
+      "failures": 1,
+      "fixture_physics_static": 674,
+      "junit": "artifacts/v0.0.11/development/h34-source-dev-01.xml",
+      "junit_sha256": "96c2c1b91c20895edd3bb68a7210f13f6f9020b35e0f826c09886249db63609c",
+      "tests": 27,
+      "wall_s": 33.027
+    },
+    {
+      "attempt": 2,
+      "command": [
+        "rtk",
+        "proxy",
+        "env",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "VECLIB_MAXIMUM_THREADS=1",
+        "NUMEXPR_NUM_THREADS=1",
+        "PYTHONDONTWRITEBYTECODE=1",
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_native_reset_placement.py",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=artifacts/v0.0.11/development/h34-source-dev-02.xml",
+        "--basetemp=runs/v0.0.11/h34-source-dev-02"
+      ],
+      "errors": 0,
+      "failed_cases": [],
+      "failures": 0,
+      "fixture_physics_static": 674,
+      "junit": "artifacts/v0.0.11/development/h34-source-dev-02.xml",
+      "junit_sha256": "a8fc0424e44df6fad3209b9eee7fb131fa4e65a47ff0dd36eaf8ebdf00dfbef0",
+      "tests": 27,
+      "wall_s": 32.198
+    },
+    {
+      "attempt": 3,
+      "command": [
+        "rtk",
+        "proxy",
+        "env",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1",
+        "VECLIB_MAXIMUM_THREADS=1",
+        "NUMEXPR_NUM_THREADS=1",
+        "PYTHONDONTWRITEBYTECODE=1",
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_native_pair_motor_rl.py",
+        "tests/test_native_pair_motor_pilot.py",
+        "tests/test_native_pair_guarded_stage.py",
+        "tests/test_native_pair_motor_evidence.py",
+        "tests/test_native_pair_motor_vec.py",
+        "tests/test_history.py",
+        "tests/test_rules.py",
+        "tests/test_match_referee.py",
+        "tests/test_native_tape_storage.py",
+        "tests/test_native_stance_reference.py",
+        "tests/test_native_stance_probe.py",
+        "tests/test_native_reset_placement.py",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=artifacts/v0.0.11/development/h34-source-dev-03.xml",
+        "--basetemp=runs/v0.0.11/h34-source-dev-03"
+      ],
+      "errors": 0,
+      "failed_cases": [],
+      "failures": 0,
+      "fixture_physics_static": 3348,
+      "junit": "artifacts/v0.0.11/development/h34-source-dev-03.xml",
+      "junit_sha256": "0f4fca138e086b8219882a63abdf0977f2861c809696c76943970846b6d201c1",
+      "tests": 163,
+      "wall_s": 74.838
+    }
+  ],
+  "faults": [
+    "dev01: sphere distance test lacked A_pelvis/B_pelvis fixture bodies required by the geometry report.26/27pass. Corrected fixture model; no native/rule/replay criteria changed.",
+    "Final Ruff pass.",
+    "Zero-physics API/type inspection confirmed nativeCCD enabled, capsule/mesh/ellipsoid/sphere collider types. Signed distances use0.05mcutoff and are lowerbounds when clipped, never exact minimum claims."
+  ],
+  "limits": "Source successful loop counts static3348; final target packet reserves4096. No new pretrained optimization or scientific rollout. All prior failed H33stance outcomes unchanged.",
+  "official_api": "https://mujoco.readthedocs.io/en/3.8.0/APIreference/APIfunctions.html#mj-geomdistance",
+  "scope": "Local development native engine/synthetic teacher; no pretrained physical outcomes",
+  "static_fixture_physics_total": 4696
+}

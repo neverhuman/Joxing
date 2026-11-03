@@ -1,6 +1,7 @@
 # H34: phase-independent, non-overlapping native boxing starts
 
-Status: worker-ready prospective plan. NOTimplemented, registered or run.
+Status: implemented;163local controls pass. Prospective protocol registered;
+publicsource/target qualification pending, no pretrained outcomes yet.
 Primary next mission after H33. One integration owner; no agents/concurrent writers.
 
 ## Objective, evidence and completion boundary
@@ -150,3 +151,33 @@ failure mechanism: it removes uncontrolled initial overlap and separates arm
 skill learning from unqualified stopping. It is still motor learning, not a
 competitive bout. Only later qualify stop/turn/guard under interaction, legal
 strikes and frozen historical-opponent self-play before parallel game scaling.
+
+
+## Implemented2026-11-03; target outcome pending
+
+NativeResetPlacementSpec/build_reset_scene preserve original compiled constants,
+measure source reset in scratch only, and translate two fixed root XYframes.
+PlacedNativePairMotorEnv binds one seed/model identity and checks immutable frames
+before decisions/steps/snapshot/restore. ResetPlacementFactory loads the actual
+frozen controller once and constructs serial fixed-seed worlds. The existing
+H33lossless recorder/replay format is reused; reset-specific geometry and gates
+are retained separately in the new study wrapper, not relabelled old outcomes.
+
+Signed clearance queries enumerate729cross-player physical pairs per reset,
+including meshes; NativeCCD is mandatory. Queries capped at.05m return a lower
+bound, not an exact minimum. Analytic clipped/near/penetrating sphere controls
+and the original native-overlap control test signs/coverage. See
+[official3.8API](https://mujoco.readthedocs.io/en/3.8.0/APIreference/APIfunctions.html#mj-geomdistance).
+
+Development:27cases/1fixturefailure (missing A/Bpelvis body names), then27/27,
+thenall163/163pass74.840s.674+674+3348=4696static sourcefixture steps across ALL
+attempts; no scientific pretrained rollout/optimization. All source/fault receipts:
+artifacts/v0.0.11/development/h34-development-01.json. No old criteria altered.
+
+Success source loops3348 fit4096reserve; native max24474 primary and24474audit,
+total53044. Exact maximal tape bytes78229424; source64MiB/text16MiB/media32MiB/
+temp-fault16MiB reserves give212447152B<256MiB. Final protocol is
+experiments/v0.0.11/native-reset-placement-01.json. Render derives a bounding
+sphere from all visible athlete geoms and fits verticalFOV with1.6margin/min5m,
+leaving HUD bands clear and preserving all archived frames. Target/source/run
+must remain within the prospectively stated firstlimits; no extension on failure.

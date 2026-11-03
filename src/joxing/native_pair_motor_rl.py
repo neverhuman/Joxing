@@ -86,6 +86,14 @@ class NativePairMotorCore(SharedMotorTask):
                 "pretrained-opposed-separated-lanes-1ms-v1",
                 {"A": 0.0, "B": float(np.pi)},
             ),
+            "reset-centered-opposed-v1": (
+                "pretrained-reset-centered-opposed-v1",
+                {"A": 0.0, "B": float(np.pi)},
+            ),
+            "reset-centered-lanes-v1": (
+                "pretrained-reset-centered-lanes-v1",
+                {"A": 0.0, "B": float(np.pi)},
+            ),
         }
         if (
             placement not in expected
@@ -168,7 +176,14 @@ class PairMotorConfig:
 
     def __post_init__(self):
         if (
-            self.placement not in ("parallel", "opposed", "opposed-separated-lanes-v1")
+            self.placement
+            not in (
+                "parallel",
+                "opposed",
+                "opposed-separated-lanes-v1",
+                "reset-centered-opposed-v1",
+                "reset-centered-lanes-v1",
+            )
             or type(self.horizon_ticks) is not int
             or not 20 <= self.horizon_ticks <= 20000
             or self.horizon_ticks % 20
@@ -365,6 +380,10 @@ class NativePairMotorEnv:
         from .wave import canonical_actor_hash
 
         config = config or PairMotorConfig()
+        if config.placement.startswith("reset-centered-"):
+            raise ValueError(
+                "Seed-bound placement requires native_reset_placement factory"
+            )
         # Reject before loading weights or constructing a donor.
         if reference_profile is not None:
             from .native_stance_reference import PROFILE

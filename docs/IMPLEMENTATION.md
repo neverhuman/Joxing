@@ -1,3 +1,20 @@
+# H34 actual reset placement implemented; bounded target study next
+
+All163local regression/source checks pass (136prior+27new),74.840s. Corrected
+actual starts preserve native joint qpos/qvel/activation and ALLother compiled
+numeric arrays; only two fixed root XYpositions change before evaluation.
+All eight seed/placement geometry cases pass; original overlap negative control
+and both203+17held/next-decision replays pass. First fixture had a missingbody
+name; all3attempts/4696static sourcefixture steps retained, no physical gate eased.
+
+Prospective native-reset-placement-01packet: publicsource before target163gate,
+eight fixed pretrained3strials, fresh independent replay, two wholefixedclips
+with full-body camera fit.600s/one world/thread1/8GiB/60000TOTALphysics/256MiBraw/
+16MiBtext, firstlimit. No pretrained outcomes or newtraining yet. CurrentH34;
+H33failedstance/H31failedmotor and recording-invalid history remain unchanged.
+See docs/NATIVE_RESET_PLACEMENT_MISSION.md and research/H34.md. No task launched
+until protocol/sourcepublication; no oldjob/duplicate. Wholev11untagged.
+
 # H33 concluded: walking control passes; stopping fails; H34reset placement next
 
 Both native700-muscle walkers complete4/4fixed three-second separated trials.
