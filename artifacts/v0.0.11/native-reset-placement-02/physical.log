@@ -1,0 +1,4 @@
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+{"stage": "physical", "status": "completed", "entered_physics": 20234, "conclusions": {"reset-centered-opposed-v1": {"all_four_geometry_qualified": true, "all_four_first100ms_clear": true, "paired_three_second_completions": 0, "denominator": 4}, "reset-centered-lanes-v1": {"all_four_geometry_qualified": true, "all_four_first100ms_clear": true, "paired_three_second_completions": 4, "denominator": 4}}, "initialization_qualified": true, "walking_control_qualified": true}

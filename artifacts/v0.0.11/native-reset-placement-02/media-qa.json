@@ -1,0 +1,31 @@
+{
+  "limits": "Fulltemporal sequence retained. Bounding-sphere camera fit visualonly; physics/nativeposes/muscles unchanged. No prior croppedvideo replaced.",
+  "scope": "Independent transferred-byte/hash verification and fullvideo decode;0physics",
+  "verified_original_files": 17,
+  "videos": [
+    {
+      "bytes": 170533,
+      "condition": "reset-centered-lanes-v1",
+      "decoded_frames": 151,
+      "first_mid_last_reviewed": true,
+      "fps": 50.0,
+      "physics_end_s": 3.0,
+      "presentation_duration_s": 3.02,
+      "sha256": "af7559195ef7a2e7c185bff48c817f9467a2ca341a021b0659dfce1ef716a2f6"
+    },
+    {
+      "bytes": 135878,
+      "condition": "reset-centered-opposed-v1",
+      "decoded_frames": 81,
+      "first_mid_last_reviewed": true,
+      "fps": 50.0,
+      "physics_end_s": 1.6,
+      "presentation_duration_s": 1.62,
+      "sha256": "2ee994e40a3a599f4dc96d8ffef647af4406037e70e8057a2698058f474de514"
+    }
+  ],
+  "visual_qa": {
+    "lanes": "Both fully framed throughout sampled first/mid/last, including formerlycropped3s endpoint. Upright walking withlowhands, not guard/boxing.",
+    "opposed": "Both fully in frame at first/mid/last; approach/contact, lowhands, finalpostureloss. No boxing/punch/points established."
+  }
+}

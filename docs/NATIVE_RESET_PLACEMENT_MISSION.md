@@ -1,8 +1,9 @@
 # H34: phase-independent, non-overlapping native boxing starts
 
-Status: implemented; formal01INVALIDon sourceRSS before scientific work.
-Sourcefixture repair validated; prospective packet02 registered, target pending.
-Primary next mission after H33. One integration owner; no agents/concurrent writers.
+Status: CONCLUDED.02qualifies initialization/walking control;01sourceRSSinvalid
+retained. [Results](NATIVE_RESET_PLACEMENT_RESULTS.md). Current next mission:
+[NATIVE_ARM_GUARD_RL_MISSION.md](NATIVE_ARM_GUARD_RL_MISSION.md)/H35.
+Original packet/failed attempt/repair intent below retained for history.
 
 ## Objective, evidence and completion boundary
 

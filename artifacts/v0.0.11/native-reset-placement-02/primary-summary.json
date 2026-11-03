@@ -1,0 +1,2481 @@
+{
+  "boxing_qualified": false,
+  "conclusions": {
+    "reset-centered-lanes-v1": {
+      "all_four_first100ms_clear": true,
+      "all_four_geometry_qualified": true,
+      "denominator": 4,
+      "paired_three_second_completions": 4
+    },
+    "reset-centered-opposed-v1": {
+      "all_four_first100ms_clear": true,
+      "all_four_geometry_qualified": true,
+      "denominator": 4,
+      "paired_three_second_completions": 0
+    }
+  },
+  "curation": "Compressed summary; full contracts/original result/tapes retained outsideGit with raw-manifest authentication; no attempts omitted.",
+  "entered_physics": 20234,
+  "initialization_qualified": true,
+  "proof_rows": [
+    {
+      "id": "reset-centered-opposed-v1",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1",
+      "status": "completed"
+    }
+  ],
+  "proofs": [
+    {
+      "actor_decisions_unchanged": 22,
+      "actual_checkpoint": {
+        "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+        "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+        "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+      },
+      "condition": "reset-centered-opposed-v1",
+      "passed": true,
+      "physics": 237,
+      "remaining": 17,
+      "sample_tick": 203,
+      "snapshot_sha256": "dd4e71a1dabf48248bcc4f8596ccaf260a9c4d6dd4d9dcc4d29776a23c98b79f"
+    },
+    {
+      "actor_decisions_unchanged": 22,
+      "actual_checkpoint": {
+        "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+        "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+        "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+      },
+      "condition": "reset-centered-lanes-v1",
+      "passed": true,
+      "physics": 237,
+      "remaining": 17,
+      "sample_tick": 203,
+      "snapshot_sha256": "2f7dfd1ea61317975b18b0660d942fa932828ebf0177cfcb843866638bcd4fae"
+    }
+  ],
+  "protocol_sha256": "5162874c7aa184e9cedc0ebfb00c09316ea655ccef36c685f25eb21766732f55",
+  "rows": [
+    {
+      "id": "reset-centered-opposed-v1/71000",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-opposed-v1/71016",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-opposed-v1/71032",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-opposed-v1/71048",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71000",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71016",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71032",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71048",
+      "status": "completed"
+    }
+  ],
+  "schema": "joxing-native-reset-placement-study-v1",
+  "scientific_optimizer_updates": 0,
+  "stage": "physical",
+  "status": "completed",
+  "trials": [
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-opposed-v1",
+      "contract_hash": "95f044d61a77da01de4a7968236e3073f9acda001aa53243dd015ac755c8fcb2",
+      "core_contract_hash": "d5816c207449193332fd1e380c9f8e65242f8443033dc6537a9f0bdfc1d3dc04",
+      "final_tick": 1600,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 2036508,
+        "arrays": {
+          "activation": {
+            "bytes": 907200,
+            "dtype": "<f8",
+            "sha256": "aede052ac49ff75f95a1239a4a436eea2a9340c789da6acfc22724578253300d",
+            "shape": [
+              81,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 907200,
+            "dtype": "<f8",
+            "sha256": "7ea699b576306dc9583570210bca0a6bcb58c534a10b3d520343df3574730cc1",
+            "shape": [
+              81,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 110160,
+            "dtype": "<f8",
+            "sha256": "b41e7d864cd1e1dde6ddf05611a841dc5b0f2544bace1c31fbe7f40988d9a1c7",
+            "shape": [
+              81,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 110160,
+            "dtype": "<f8",
+            "sha256": "f67f8e2f534098ecb6b5995b4d9e50e212778082a25bd398093b11c83118e151",
+            "shape": [
+              81,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 648,
+            "dtype": "<f8",
+            "sha256": "1f973d958e66f5ce3c8a838ce1bb6bb41ea1fc06ef3fb2e8fe975455d201a50c",
+            "shape": [
+              81
+            ]
+          }
+        },
+        "payload_bytes": 2035368,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "d98717207098fdd14829511f15d85a9b139b3281cdb0bfb9bda3ac0dc14fb26b"
+      },
+      "frames": 81,
+      "initial_snapshot_sha256": "096ce29bc65f9111e6fff6e13a691ced01ed35ffab4422ff81378d4b2ca311af",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": 1589,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 1.1386911817044874,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.5349545798054978,
+              "reach_return_cycles": 0,
+              "survival_s": 1.589
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": 1586,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 1.1514304267816318,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.5335777813786367,
+              "reach_return_cycles": 0,
+              "survival_s": 1.586
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": {
+          "approach_mps": 2.679824793960885,
+          "interval_start_tick": 588,
+          "normal_force_N": 814.536102226989,
+          "point_world_m": [
+            5.537237335317968e-15,
+            -8.187894806610529e-16,
+            0.48869625028238994
+          ],
+          "surfaces": [
+            "A_femur_skin_r",
+            "B_femur_skin_r"
+          ],
+          "tick": 589
+        }
+      },
+      "motor_failures": {
+        "A": {
+          "reason": "pelvis_drop",
+          "tick": 1589
+        },
+        "B": {
+          "reason": "pelvis_drop",
+          "tick": 1586
+        }
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-opposed-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            4.435082938467844e-20,
+            0.9320600674244468
+          ],
+          "B": [
+            0.8,
+            -1.1443235893455e-18,
+            0.9320600674244468
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            0.0
+          ],
+          "B": [
+            0.8,
+            0.0
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.2260540708821196,
+            0.018139670954243552
+          ],
+          "B": [
+            0.22605407088211948,
+            -0.018139670954243573
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.0260540708821195,
+            0.018139670954243552,
+            0.95
+          ],
+          "B": [
+            1.0260540708821195,
+            -0.018139670954243573,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.0260540708821195,
+            0.018139670954243552,
+            0.0
+          ],
+          "B": [
+            1.0260540708821195,
+            -0.018139670954243573,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.7999999999999999,
+              4.435082938467844e-20,
+              0.9320600674244468
+            ],
+            "B": [
+              0.8,
+              -1.1443235893455e-18,
+              0.9320600674244468
+            ]
+          }
+        },
+        "mode": "reset-centered-opposed-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "4420d741aad6536dfa91c2e58b085789b515f782e7907187ffc7fb2e9f6a8195",
+            "qvel": "5cba9ea1fd5a7d9797de1a1d893fdcd7bbe308d6ba73fc0ee4c7810259e8600c"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "4420d741aad6536dfa91c2e58b085789b515f782e7907187ffc7fb2e9f6a8195",
+            "qvel": "5cba9ea1fd5a7d9797de1a1d893fdcd7bbe308d6ba73fc0ee4c7810259e8600c"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71000
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71000,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 3191610,
+        "arrays": {
+          "commands": {
+            "bytes": 448000,
+            "dtype": "<f4",
+            "sha256": "f1788e92b84bde8db96f98899750b17f121cda0026e159a010f3a71a6d47ce61",
+            "shape": [
+              80,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 51200,
+            "dtype": "|u1",
+            "sha256": "84756a9a8288d4be277b6b2da2a0179f7284c61074ecb2c0ed7f7a479f4ae3ca",
+            "shape": [
+              1600,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 2560,
+            "dtype": "|u1",
+            "sha256": "c9790c8fb95aa4793d83f9474b1def7ccde0c2899c96f95d6f072ebe7200182a",
+            "shape": [
+              80,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 384000,
+            "dtype": "<f8",
+            "sha256": "3b6bf7b8d7e5849eadf50440ca376adb0b2e47e2ad60e288a31b8adfd8d36a27",
+            "shape": [
+              1600,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 2304640,
+            "dtype": "<f4",
+            "sha256": "17a0a8483faa30297fa3abfaa2d3bb1de115e6efa5b57bbddac6d1888d9670ac",
+            "shape": [
+              80,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 3190400,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "dcc12aa03ef74aa0599c9de4f8d5eee9caa941fbecaba00db729b077c69e4d6b"
+      }
+    },
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-opposed-v1",
+      "contract_hash": "462ea57b48cd89ff30c18c8661b7d3cd8d2552a28452b0c47eade304a9dd9f99",
+      "core_contract_hash": "7a65c85e2e615cfc9aa4bcede46b9e67eb8ff675669b4de7f384482361fd0475",
+      "final_tick": 2020,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 2564196,
+        "arrays": {
+          "activation": {
+            "bytes": 1142400,
+            "dtype": "<f8",
+            "sha256": "1da55df3d6bd8fa7541f3ed18029197ca2aba99998c1b0af801f9a2350efbb80",
+            "shape": [
+              102,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 1142400,
+            "dtype": "<f8",
+            "sha256": "ba9efa48c1020d86e262c140cae522cb91c3df289eae3ed3fe03d36208cc4f96",
+            "shape": [
+              102,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 138720,
+            "dtype": "<f8",
+            "sha256": "9c79505de74f7c9774fc5adf3bdbe70c37a77ebff11ce71ea9cf64713376a99c",
+            "shape": [
+              102,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 138720,
+            "dtype": "<f8",
+            "sha256": "0a3929d77470633eca80afe889fa3a503b863ef7a0db32a8657c5e535cb72bae",
+            "shape": [
+              102,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 816,
+            "dtype": "<f8",
+            "sha256": "7c6ae938912f8ffb45fd8f94254969fb3e363976705f1397d77faad4ca76ca0c",
+            "shape": [
+              102
+            ]
+          }
+        },
+        "payload_bytes": 2563056,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "8db23fe192ec5559429d1ed47a99d8816d2ff15f317c5a046f3a740439ccb3ca"
+      },
+      "frames": 102,
+      "initial_snapshot_sha256": "dc11d8b886bf88bc489d06ea8dc3aabf2f3b3cb415b9c938166f599bf696fba0",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": 2012,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 1.2132236966111312,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.5137793626274019,
+              "reach_return_cycles": 0,
+              "survival_s": 2.012
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 1.2281609370779134,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.5126984911233436,
+              "reach_return_cycles": 0,
+              "survival_s": 2.02
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": {
+          "approach_mps": 1.3249685463084104,
+          "interval_start_tick": 547,
+          "normal_force_N": 232.6720897434848,
+          "point_world_m": [
+            -2.8567035889603964e-13,
+            6.75032946206855e-14,
+            0.08866899925770877
+          ],
+          "surfaces": [
+            "A_calcn_skin_3_r",
+            "B_calcn_skin_3_r"
+          ],
+          "tick": 548
+        }
+      },
+      "motor_failures": {
+        "A": {
+          "reason": "excess_tilt",
+          "tick": 2012
+        },
+        "B": null
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-opposed-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            1.0577275123572363e-18,
+            0.9041697184374404
+          ],
+          "B": [
+            0.8000000000000002,
+            -5.856073832672807e-19,
+            0.9041697184374404
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            0.0
+          ],
+          "B": [
+            0.8,
+            0.0
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.3966893091531814,
+            0.011531362793071128
+          ],
+          "B": [
+            0.39668930915318124,
+            -0.011531362793071155
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.1966893091531814,
+            0.011531362793071128,
+            0.95
+          ],
+          "B": [
+            1.1966893091531814,
+            -0.011531362793071155,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.1966893091531814,
+            0.011531362793071128,
+            0.0
+          ],
+          "B": [
+            1.1966893091531814,
+            -0.011531362793071155,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.8,
+              1.0577275123572363e-18,
+              0.9041697184374404
+            ],
+            "B": [
+              0.8000000000000002,
+              -5.856073832672807e-19,
+              0.9041697184374404
+            ]
+          }
+        },
+        "mode": "reset-centered-opposed-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "8204f24f6a9bf6c5792f78da2c8d80b978ac4c1d96341ea893d8bcaa3890aa53",
+            "qvel": "69f1b06cdc626c2a7a1e28bc1df813c182ea7dd93169a2014669a9e6f0723e1a"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "8204f24f6a9bf6c5792f78da2c8d80b978ac4c1d96341ea893d8bcaa3890aa53",
+            "qvel": "69f1b06cdc626c2a7a1e28bc1df813c182ea7dd93169a2014669a9e6f0723e1a"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71016
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71016,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 4029090,
+        "arrays": {
+          "commands": {
+            "bytes": 565600,
+            "dtype": "<f4",
+            "sha256": "01e91246f32913b5645d64e9307c3023b1a6f13f7ea277d15fef0b38e746b166",
+            "shape": [
+              101,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 64640,
+            "dtype": "|u1",
+            "sha256": "47c246006e1a4887071900ba96364902bc9f989fdde60fa21999047f473f3f63",
+            "shape": [
+              2020,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 3232,
+            "dtype": "|u1",
+            "sha256": "ee520a40414e65c4150484c7da30892a4296947ebe63131e3ea90fd250e95efc",
+            "shape": [
+              101,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 484800,
+            "dtype": "<f8",
+            "sha256": "6004e97d374075b613058236296fd7e30f2fd836019281d92af755426716dced",
+            "shape": [
+              2020,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 2909608,
+            "dtype": "<f4",
+            "sha256": "b0236954fbd5a68d04bfa9c86cc80d9bf34fcdf9f03ea382eba5d0ef6cc87525",
+            "shape": [
+              101,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 4027880,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "393e5df18dccf1df0ad0c42ba1d66a309e46b873640c69e00f7e5ead5913f36c"
+      }
+    },
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-opposed-v1",
+      "contract_hash": "3967b0c3f773c9dbd1c8acffdd9ed536ca1f6f46dd31657d49bc10ee20a976c5",
+      "core_contract_hash": "2677cd8f1d5667e653771c3da8be79eb1fbcd966381196c974f4a1154d19bd74",
+      "final_tick": 1760,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 2237532,
+        "arrays": {
+          "activation": {
+            "bytes": 996800,
+            "dtype": "<f8",
+            "sha256": "3d54ae12f7e027f06a13e0d56b25d5d6efeeda30adf22fd7a61d29ab50d8c024",
+            "shape": [
+              89,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 996800,
+            "dtype": "<f8",
+            "sha256": "620de2c7294d6ba708c513295bd1eee479fcd50e2ed4af946cd34655f7724de0",
+            "shape": [
+              89,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 121040,
+            "dtype": "<f8",
+            "sha256": "637f4a3564a6edcfd9775ff50e25848e79c01a433f6ddf6b4dab06c410cfbda8",
+            "shape": [
+              89,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 121040,
+            "dtype": "<f8",
+            "sha256": "718e5cd8473148a040b76a1a4e5fda3ea4edc26ce4afa61b102caf1caa5c9cb5",
+            "shape": [
+              89,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 712,
+            "dtype": "<f8",
+            "sha256": "32232b5ad6ba74827d33a1ffe6b39cf2594e7de298edd0cd676d298ddcbfbd23",
+            "shape": [
+              89
+            ]
+          }
+        },
+        "payload_bytes": 2236392,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "50795be3a4383cddfd0fe5ce017be561de9ef20187a3968bd01423543df01296"
+      },
+      "frames": 89,
+      "initial_snapshot_sha256": "f32617f16960bee94f5e8a3535fcd543957980dbe9badb9602c2ec16a356654f",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": 1752,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 0.7306896551328865,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.531422229994846,
+              "reach_return_cycles": 0,
+              "survival_s": 1.752
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": 1751,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 0.7306896085620359,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.5313924056007616,
+              "reach_return_cycles": 0,
+              "survival_s": 1.7510000000000001
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": {
+          "approach_mps": 2.0369966839871148,
+          "interval_start_tick": 648,
+          "normal_force_N": 263.1303311030979,
+          "point_world_m": [
+            -0.06434246115430914,
+            -0.3829909526699061,
+            0.8443269134742982
+          ],
+          "surfaces": [
+            "A_glove_r",
+            "B_glove_l"
+          ],
+          "tick": 649
+        }
+      },
+      "motor_failures": {
+        "A": {
+          "reason": "excess_tilt",
+          "tick": 1752
+        },
+        "B": {
+          "reason": "excess_tilt",
+          "tick": 1751
+        }
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-opposed-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            1.3015078359754063e-18,
+            0.9221840716571065
+          ],
+          "B": [
+            0.7999999999999999,
+            1.5923083879526122e-18,
+            0.9221840716571065
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            0.0
+          ],
+          "B": [
+            0.8,
+            0.0
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.6627711925315871,
+            -0.02882260145198791
+          ],
+          "B": [
+            0.6627711925315868,
+            0.028822601451987843
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.4627711925315872,
+            -0.02882260145198791,
+            0.95
+          ],
+          "B": [
+            1.4627711925315867,
+            0.028822601451987843,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.4627711925315872,
+            -0.02882260145198791,
+            0.0
+          ],
+          "B": [
+            1.4627711925315867,
+            0.028822601451987843,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.8,
+              1.3015078359754063e-18,
+              0.9221840716571065
+            ],
+            "B": [
+              0.7999999999999999,
+              1.5923083879526122e-18,
+              0.9221840716571065
+            ]
+          }
+        },
+        "mode": "reset-centered-opposed-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "160732ab0d4ca96a4c9f8d73eb316c6829bac9f1da5c45ef9cf1c4577728e7dc",
+            "qvel": "e17ac06fb9d73061ccc68d22b4ba42639bb20d8962467a59821d262aae5fd8a7"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "160732ab0d4ca96a4c9f8d73eb316c6829bac9f1da5c45ef9cf1c4577728e7dc",
+            "qvel": "e17ac06fb9d73061ccc68d22b4ba42639bb20d8962467a59821d262aae5fd8a7"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71032
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71032,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 3510650,
+        "arrays": {
+          "commands": {
+            "bytes": 492800,
+            "dtype": "<f4",
+            "sha256": "997965f431405e4c1ba84345c1d8c7c21f12833d73d24a79e21fc522d18c183d",
+            "shape": [
+              88,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 56320,
+            "dtype": "|u1",
+            "sha256": "ee3577ef868e0b7bd35dd67a15f9285bb476d84ec2c4564171aa6df7f67168ea",
+            "shape": [
+              1760,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 2816,
+            "dtype": "|u1",
+            "sha256": "dbb309f56fa57b81675e231358c35a544dfc6fd5031eaf42461efb9f149fa342",
+            "shape": [
+              88,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 422400,
+            "dtype": "<f8",
+            "sha256": "e6d1100b2f96361fedcedd6c4e3fc8da592615cabb148eaf84841cfccf899c78",
+            "shape": [
+              1760,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 2535104,
+            "dtype": "<f4",
+            "sha256": "4561f6f9854c0eb27053f278514a920094daa3fb826424dadb44d8b267fe3f8e",
+            "shape": [
+              88,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 3509440,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "b152f5112a462d91a71973a27caece7204ceabbedc6326f9c86a9005cddd1572"
+      }
+    },
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-opposed-v1",
+      "contract_hash": "fe313eef6c0aa0b4e5e9ce5555ee5ac024cac52f0005b306dd6acfee80fc944a",
+      "core_contract_hash": "be48b42d85b6d306804f069aecef153fcf1c688245ce713608bf0eaf995c5915",
+      "final_tick": 2380,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 3016500,
+        "arrays": {
+          "activation": {
+            "bytes": 1344000,
+            "dtype": "<f8",
+            "sha256": "9c1d87445e26969eaee76b89dcd0f83e04f746f8997daf7595f88ba7c6e8b610",
+            "shape": [
+              120,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 1344000,
+            "dtype": "<f8",
+            "sha256": "937b29d97e2dc316544a9923fefaeb3b5b5f3913d7a7dfa762d53d3268f5b6a9",
+            "shape": [
+              120,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 163200,
+            "dtype": "<f8",
+            "sha256": "aac66bfcad87034a2a9748e7e2e893b414a7ff85e97e8123af62b5e92dc581ed",
+            "shape": [
+              120,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 163200,
+            "dtype": "<f8",
+            "sha256": "9446a14c4d1aa8930df48848b2161f4466a76308ac5b1b577ccc0b9253f7c828",
+            "shape": [
+              120,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 960,
+            "dtype": "<f8",
+            "sha256": "845f844036b49f0353da69f82fe4b175caa2f82837145161f54e1d0f6e1baf13",
+            "shape": [
+              120
+            ]
+          }
+        },
+        "payload_bytes": 3015360,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "1545c31e930b79b4d3d136a75ee2993032d9d6ad65c4a96feb0eeeb599d09901"
+      },
+      "frames": 120,
+      "initial_snapshot_sha256": "955007d3a4425cc968ccd14810a7e103fd43349275952514208ffe6caa5a59f3",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": 2361,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 1.5099408367508733,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.5203427052626052,
+              "reach_return_cycles": 0,
+              "survival_s": 2.361
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": null,
+            "maximum_root_xy_excursion_m": 1.4307064734537824,
+            "motor": {
+              "completed_3s": false,
+              "mean_target_error_m": 0.5230824813274678,
+              "reach_return_cycles": 0,
+              "survival_s": 2.38
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": {
+          "approach_mps": 2.2816775539483656,
+          "interval_start_tick": 1246,
+          "normal_force_N": 525.5393149209706,
+          "point_world_m": [
+            0.08558596871626398,
+            0.22290755415146032,
+            0.8069645718929885
+          ],
+          "surfaces": [
+            "A_glove_l",
+            "B_femur_skin_r"
+          ],
+          "tick": 1247
+        }
+      },
+      "motor_failures": {
+        "A": {
+          "reason": "pelvis_drop",
+          "tick": 2361
+        },
+        "B": null
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-opposed-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            -5.190836310776908e-18,
+            0.9361189261487032
+          ],
+          "B": [
+            0.8,
+            -1.5044641448329721e-18,
+            0.9361189261487032
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            0.0
+          ],
+          "B": [
+            0.8,
+            0.0
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.7889103158955731,
+            -0.04074637462365933
+          ],
+          "B": [
+            0.7889103158955728,
+            0.04074637462365923
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.588910315895573,
+            -0.04074637462365933,
+            0.95
+          ],
+          "B": [
+            1.5889103158955729,
+            0.04074637462365923,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.588910315895573,
+            -0.04074637462365933,
+            0.0
+          ],
+          "B": [
+            1.5889103158955729,
+            0.04074637462365923,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.7999999999999999,
+              -5.190836310776908e-18,
+              0.9361189261487032
+            ],
+            "B": [
+              0.8,
+              -1.5044641448329721e-18,
+              0.9361189261487032
+            ]
+          }
+        },
+        "mode": "reset-centered-opposed-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "85e9d4a645ef7c3ce948d9da11cd376c8fd9f8d3128fffdc7fe2221df4de87ed",
+            "qvel": "0df51addf865ac5e8202c177e4af7e0569e7ad9b7e9e683bfe252f6f9ec16267"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "85e9d4a645ef7c3ce948d9da11cd376c8fd9f8d3128fffdc7fe2221df4de87ed",
+            "qvel": "0df51addf865ac5e8202c177e4af7e0569e7ad9b7e9e683bfe252f6f9ec16267"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71048
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71048,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 4746930,
+        "arrays": {
+          "commands": {
+            "bytes": 666400,
+            "dtype": "<f4",
+            "sha256": "a153f120c3dc228c2679cc76d6fb1897af9ba577aad7eaaf19db006c0672bf5d",
+            "shape": [
+              119,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 76160,
+            "dtype": "|u1",
+            "sha256": "5dc96df1c5ec43433a43dc0426bc038724815c083b4c42abdddc83dd5e621c3f",
+            "shape": [
+              2380,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 3808,
+            "dtype": "|u1",
+            "sha256": "3eee2f566d22dce0ec9cf88cd930207d4d1fdadf09d07dae2f74b497549e7629",
+            "shape": [
+              119,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 571200,
+            "dtype": "<f8",
+            "sha256": "ff5846cf43f0290c65bb366dd8b106b0cb1cc447d1fe936fe9998f4f5536c6b2",
+            "shape": [
+              2380,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 3428152,
+            "dtype": "<f4",
+            "sha256": "e50e513c21e4a01d6e97eb323873a171e22981cf5d58c0ed968b01446e413a71",
+            "shape": [
+              119,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 4745720,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "c26b813e4a281970f7ee56268ece699c77865fb8958d081ca488c24a77ce9635"
+      }
+    },
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-lanes-v1",
+      "contract_hash": "742268204f25336f5a6246ee1daf65c6950eba9cd66e8a1af9f38301a0d6bd50",
+      "core_contract_hash": "6f66f14b8164f45723665026bbd36794fa13c5d1d1afd61d222cb02af36952fe",
+      "final_tick": 3000,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 3795468,
+        "arrays": {
+          "activation": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "a5b7326ef38bfa869d54506ae44278faa27ef6bf2534f607208326dfd558b444",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "982abeaa20dc2cbe268bd81811dada7a9f836c4623cfd43db15c292388147bc7",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "920e1d0c43e6a8ce038dd44eb7809b8226f677495dcfb71d969b4d8d55cf4896",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "81679912ecb93fb9a56959014b5471e4b6757a4977be1ee4c09154de530b3325",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 1208,
+            "dtype": "<f8",
+            "sha256": "466cdc4cdc4c5d4a26eccddc32b22d04bc6791c1d71c3c3c4320b929c8c44469",
+            "shape": [
+              151
+            ]
+          }
+        },
+        "payload_bytes": 3794328,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "494eab3e0f316d9d2f6fe4c33db4ef74491fe9733b00e0acb2b25b7746cb6b68"
+      },
+      "frames": 151,
+      "initial_snapshot_sha256": "88074cb5e08d9493425d9fca693c24d45ba42b0296578a0ab4931c033bebd4bf",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.003610258195545,
+            "maximum_root_xy_excursion_m": 3.190659007465104,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.6037361647420554,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.0068360576926274,
+            "maximum_root_xy_excursion_m": 3.194877784077111,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.6033621215989449,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": null
+      },
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-lanes-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            -1.25,
+            0.9320600674244468
+          ],
+          "B": [
+            0.8,
+            1.25,
+            0.9320600674244468
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            -1.25
+          ],
+          "B": [
+            0.8,
+            1.25
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.2260540708821196,
+            -1.2318603290457564
+          ],
+          "B": [
+            0.22605407088211948,
+            1.2318603290457564
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.0260540708821195,
+            -1.2318603290457564,
+            0.95
+          ],
+          "B": [
+            1.0260540708821195,
+            1.2318603290457564,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.0260540708821195,
+            -1.2318603290457564,
+            0.0
+          ],
+          "B": [
+            1.0260540708821195,
+            1.2318603290457564,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.7999999999999999,
+              -1.25,
+              0.9320600674244468
+            ],
+            "B": [
+              0.8,
+              1.25,
+              0.9320600674244468
+            ]
+          }
+        },
+        "mode": "reset-centered-lanes-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "4420d741aad6536dfa91c2e58b085789b515f782e7907187ffc7fb2e9f6a8195",
+            "qvel": "5cba9ea1fd5a7d9797de1a1d893fdcd7bbe308d6ba73fc0ee4c7810259e8600c"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "4420d741aad6536dfa91c2e58b085789b515f782e7907187ffc7fb2e9f6a8195",
+            "qvel": "5cba9ea1fd5a7d9797de1a1d893fdcd7bbe308d6ba73fc0ee4c7810259e8600c"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71000
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71000,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 5983210,
+        "arrays": {
+          "commands": {
+            "bytes": 840000,
+            "dtype": "<f4",
+            "sha256": "ce93f3777d847943b51892a506cc8e04ffcc21825246fd0d57c2cb43b4439054",
+            "shape": [
+              150,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 96000,
+            "dtype": "|u1",
+            "sha256": "8108fcb1185bac0494fa60d3d45bd7d8c4438b4464f0421f1ffdf38259ba9227",
+            "shape": [
+              3000,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 4800,
+            "dtype": "|u1",
+            "sha256": "afc35276bc06f9d247a896e67c40a5aa2a5b8713bb2075f28da5028ca7dd8f1b",
+            "shape": [
+              150,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 720000,
+            "dtype": "<f8",
+            "sha256": "6033da4de09c0c8d21607827699fd1bd1deb3b8d5ec9f657d08ed23c098d5ea6",
+            "shape": [
+              3000,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 4321200,
+            "dtype": "<f4",
+            "sha256": "cef490f573139402e522ea60de10664dbb8ebcaa6d9892716cec395697d03aa6",
+            "shape": [
+              150,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 5982000,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "6e2b6a0e17cbecf8dd6478c77e67debc3d3a0fd2e46a8771814580251fc357fb"
+      }
+    },
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-lanes-v1",
+      "contract_hash": "abdb535b63b77dd93714c6bd423cc0800357d43572d33707fa46d9256ae7d6f4",
+      "core_contract_hash": "ba18b331153f19359d9cf59cb95f438f5287251c445f60ee88619bc912601c27",
+      "final_tick": 3000,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 3795468,
+        "arrays": {
+          "activation": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "27e93ddd983ca5352d73300b04baa0e342e34581edeb01b7782d4ff255a0049c",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "f40a7a2e882b764cfc7e9a4805a82be799326bc5e4197c11b50ad0183b3f7038",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "dc292e65169e1e63c2a473378a7e3d2f14e0d684abef19109e82126a27d89df1",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "ed401db6de1986391a5075f0c03c131ac0c71b892d75ea742d67ec8328d6747f",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 1208,
+            "dtype": "<f8",
+            "sha256": "466cdc4cdc4c5d4a26eccddc32b22d04bc6791c1d71c3c3c4320b929c8c44469",
+            "shape": [
+              151
+            ]
+          }
+        },
+        "payload_bytes": 3794328,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "0e518d2d682f979fb349d78f3ebdbfb7f89a54a5b80899b74c074e6e6d2446c2"
+      },
+      "frames": 151,
+      "initial_snapshot_sha256": "408a0fda89373926daab8251d92e383bbc5ccc8f636240d1c0e0ed0e9db82580",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.0824987606999121,
+            "maximum_root_xy_excursion_m": 2.9658082950028306,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.5975882820077199,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.0859685457161976,
+            "maximum_root_xy_excursion_m": 2.9699487713888897,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.597472199397549,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": null
+      },
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-lanes-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            -1.25,
+            0.9041697184374404
+          ],
+          "B": [
+            0.8000000000000002,
+            1.25,
+            0.9041697184374404
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            -1.25
+          ],
+          "B": [
+            0.8,
+            1.25
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.3966893091531814,
+            -1.238468637206929
+          ],
+          "B": [
+            0.39668930915318124,
+            1.238468637206929
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.1966893091531814,
+            -1.238468637206929,
+            0.95
+          ],
+          "B": [
+            1.1966893091531814,
+            1.238468637206929,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.1966893091531814,
+            -1.238468637206929,
+            0.0
+          ],
+          "B": [
+            1.1966893091531814,
+            1.238468637206929,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.8,
+              -1.25,
+              0.9041697184374404
+            ],
+            "B": [
+              0.8000000000000002,
+              1.25,
+              0.9041697184374404
+            ]
+          }
+        },
+        "mode": "reset-centered-lanes-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "8204f24f6a9bf6c5792f78da2c8d80b978ac4c1d96341ea893d8bcaa3890aa53",
+            "qvel": "69f1b06cdc626c2a7a1e28bc1df813c182ea7dd93169a2014669a9e6f0723e1a"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "8204f24f6a9bf6c5792f78da2c8d80b978ac4c1d96341ea893d8bcaa3890aa53",
+            "qvel": "69f1b06cdc626c2a7a1e28bc1df813c182ea7dd93169a2014669a9e6f0723e1a"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71016
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71016,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 5983210,
+        "arrays": {
+          "commands": {
+            "bytes": 840000,
+            "dtype": "<f4",
+            "sha256": "1020683e74b50499163f47d3cadaa4f24670c314db7b6e59a4822e7da837afdf",
+            "shape": [
+              150,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 96000,
+            "dtype": "|u1",
+            "sha256": "8a1e4c02e8959d23dac156c4caf3f556788eafec35040a4121ef4736e8ad6c82",
+            "shape": [
+              3000,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 4800,
+            "dtype": "|u1",
+            "sha256": "5fac6a038033708a28affbb59e7e796fca9abdc7eea939593b87abf7b3a1041d",
+            "shape": [
+              150,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 720000,
+            "dtype": "<f8",
+            "sha256": "83a0852a5810c6cd8b722694e08ed8e5ea2a2c668386277636754c784a4996f5",
+            "shape": [
+              3000,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 4321200,
+            "dtype": "<f4",
+            "sha256": "a9c2753faf981df00ebd50208c3d52d0cdb7d7ed5112dd0c4dc0e3a9ce65990c",
+            "shape": [
+              150,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 5982000,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "9e09acf679588f65259d516c9db98929713bc3db7e2c16195745bfb75fd1539e"
+      }
+    },
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-lanes-v1",
+      "contract_hash": "fd31781ea8b47bd471571faf3a82f9f003df43b6148c6b7f8159690a5b4467bf",
+      "core_contract_hash": "ccaef2be66faae6b1a312ad79612de2aab752c217a22d886db9d015eeddec27d",
+      "final_tick": 3000,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 3795468,
+        "arrays": {
+          "activation": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "19c5a2852e4fc31ef6dc4a97f5e8b02e3b129fef44e21407c58975fa41d1cf0a",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "2c0e45bab9829d2a3c811de3aa04140bf53d6fe81dca76ac399c92b5c8205005",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "3465fc1d6707812ff1fd4c834c17bcbc125f0b9771ce4729d9d6786e6459c83d",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "b99d08b53f8f1c3991bf345ea3f893fb39b85878127f87d2ccfd66dba92d579e",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 1208,
+            "dtype": "<f8",
+            "sha256": "466cdc4cdc4c5d4a26eccddc32b22d04bc6791c1d71c3c3c4320b929c8c44469",
+            "shape": [
+              151
+            ]
+          }
+        },
+        "payload_bytes": 3794328,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "e9a2a999ae5a9ccc7b53c198d5003ac64d65c5ac9fdbe977e21b2065e39e6d84"
+      },
+      "frames": 151,
+      "initial_snapshot_sha256": "6b464bd64d9ae58b9a5c88e6428269b0ee585588e3d0f99e28dcd604247a8b7f",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.0087752577583466,
+            "maximum_root_xy_excursion_m": 3.082351562032698,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.5938528699094577,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.0061753825882334,
+            "maximum_root_xy_excursion_m": 3.07982533435345,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.5938470580959987,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": null
+      },
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-lanes-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            -1.25,
+            0.9221840716571065
+          ],
+          "B": [
+            0.7999999999999999,
+            1.25,
+            0.9221840716571065
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            -1.25
+          ],
+          "B": [
+            0.8,
+            1.25
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.6627711925315871,
+            -1.278822601451988
+          ],
+          "B": [
+            0.6627711925315868,
+            1.278822601451988
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.4627711925315872,
+            -1.278822601451988,
+            0.95
+          ],
+          "B": [
+            1.4627711925315867,
+            1.278822601451988,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.4627711925315872,
+            -1.278822601451988,
+            0.0
+          ],
+          "B": [
+            1.4627711925315867,
+            1.278822601451988,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.8,
+              -1.25,
+              0.9221840716571065
+            ],
+            "B": [
+              0.7999999999999999,
+              1.25,
+              0.9221840716571065
+            ]
+          }
+        },
+        "mode": "reset-centered-lanes-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "160732ab0d4ca96a4c9f8d73eb316c6829bac9f1da5c45ef9cf1c4577728e7dc",
+            "qvel": "e17ac06fb9d73061ccc68d22b4ba42639bb20d8962467a59821d262aae5fd8a7"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "160732ab0d4ca96a4c9f8d73eb316c6829bac9f1da5c45ef9cf1c4577728e7dc",
+            "qvel": "e17ac06fb9d73061ccc68d22b4ba42639bb20d8962467a59821d262aae5fd8a7"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71032
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71032,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 5983210,
+        "arrays": {
+          "commands": {
+            "bytes": 840000,
+            "dtype": "<f4",
+            "sha256": "5d8d569a622bf192f84a79b0b4d482a105fd207a55e29d24274d44f6a236e27e",
+            "shape": [
+              150,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 96000,
+            "dtype": "|u1",
+            "sha256": "188e062d074fbf76850faa9380b98fdc4ec3385ef6c91a39710cdd97e46979af",
+            "shape": [
+              3000,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 4800,
+            "dtype": "|u1",
+            "sha256": "6b9973b67ef17d250012c0e52493e70f1279ba2925e2af60c58439d433a58db0",
+            "shape": [
+              150,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 720000,
+            "dtype": "<f8",
+            "sha256": "2ba5923d12fdeff7e260701edc9612a6347073d2a0d948a57d6242932a785e53",
+            "shape": [
+              3000,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 4321200,
+            "dtype": "<f4",
+            "sha256": "13e9886b44855552fe2966e0b9a7e10e72191161f3a056d8f25a2a1ac5bbba30",
+            "shape": [
+              150,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 5982000,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "e9fd82e2399f3a1f7008f01f109ddae07988c100c3f64372758843ec5797098c"
+      }
+    },
+    {
+      "candidate_points": [
+        0,
+        0
+      ],
+      "condition": "reset-centered-lanes-v1",
+      "contract_hash": "a9f8bfc45ed4931070328199f670de8dd31c8b44260d05b843a9fec7f7d6653e",
+      "core_contract_hash": "b37af971935d16286b641b3f8a54009c54661c89ba487b9bd4f356058f207bc6",
+      "final_tick": 3000,
+      "first100ms_no_interactor_force": true,
+      "frame_tape": {
+        "archive_bytes": 3795468,
+        "arrays": {
+          "activation": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "d1c1b31782d37dbe6f5434529a9af90154f39870cfc38aa6d2ecbc31c196bb01",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "control": {
+            "bytes": 1691200,
+            "dtype": "<f8",
+            "sha256": "c75420d9251ad4aa0efea81f4eb2001d4a094647932f863f88310fd8cffc3737",
+            "shape": [
+              151,
+              1400
+            ]
+          },
+          "qpos": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "ef9b1b4b561588c7be71ee078ef4d913390a93d6acdb7a83d2effc31952fd8be",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "qvel": {
+            "bytes": 205360,
+            "dtype": "<f8",
+            "sha256": "486ebdeec19c93894ef8d52f2e2b80684430beaffe3a8ff73e8001a069fa73c5",
+            "shape": [
+              151,
+              170
+            ]
+          },
+          "time": {
+            "bytes": 1208,
+            "dtype": "<f8",
+            "sha256": "466cdc4cdc4c5d4a26eccddc32b22d04bc6791c1d71c3c3c4320b929c8c44469",
+            "shape": [
+              151
+            ]
+          }
+        },
+        "payload_bytes": 3794328,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "f286e0474d6f22b685f47283c138de081f6dfb648bea0c48cfb5586e7bec4859"
+      },
+      "frames": 151,
+      "initial_snapshot_sha256": "aedddf483360d3a360d9e18dcfe32ec0e19599ee9bda82897c566a417e1f792c",
+      "metric_columns": [
+        "tilt_rad",
+        "pelvis_drop_m",
+        "up_world_z",
+        "floor_right_N",
+        "floor_left_N",
+        "floor_nonfoot_N",
+        "root_world_x_m",
+        "root_world_y_m",
+        "root_drift_xy_m",
+        "root_speed_xy_mps",
+        "right_glove_target_m",
+        "left_glove_target_m",
+        "right_face_cos_positive",
+        "root_yaw_cos_world_x",
+        "root_yaw_sin_world_x"
+      ],
+      "metrics": {
+        "actors": {
+          "A": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.101077717589848,
+            "maximum_root_xy_excursion_m": 2.5789241968119807,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.5881605980214433,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          },
+          "B": {
+            "first_failure_tick": null,
+            "last_full_second_mean_speed_xy_mps": 1.1015347006840517,
+            "maximum_root_xy_excursion_m": 2.598799127119811,
+            "motor": {
+              "completed_3s": true,
+              "mean_target_error_m": 0.5883431269801546,
+              "reach_return_cycles": 0,
+              "survival_s": 3.0
+            },
+            "stance_candidate": false
+          }
+        },
+        "first_interactor_contact": null
+      },
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "optimizer_updates": 0,
+      "placement": "reset-centered-lanes-v1",
+      "reference_profile": null,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            -1.25,
+            0.9361189261487032
+          ],
+          "B": [
+            0.8,
+            1.2499999999999998,
+            0.9361189261487032
+          ]
+        }
+      },
+      "reset_placement": {
+        "actual_target_xy_m": {
+          "A": [
+            -0.8,
+            -1.25
+          ],
+          "B": [
+            0.8,
+            1.25
+          ]
+        },
+        "fixed_frame_offset_xy_m": {
+          "A": [
+            -0.7889103158955731,
+            -1.2907463746236594
+          ],
+          "B": [
+            0.7889103158955728,
+            1.2907463746236592
+          ]
+        },
+        "fixed_root_positions": {
+          "A": [
+            -1.588910315895573,
+            -1.2907463746236594,
+            0.95
+          ],
+          "B": [
+            1.5889103158955729,
+            1.2907463746236592,
+            0.95
+          ]
+        },
+        "fixed_spec_frame_positions": {
+          "A": [
+            -1.588910315895573,
+            -1.2907463746236594,
+            0.0
+          ],
+          "B": [
+            1.5889103158955729,
+            1.2907463746236592,
+            0.0
+          ]
+        },
+        "initial_geometry": {
+          "all_cross_player_pairs_queried": 729,
+          "clearance_qualified": true,
+          "closest_below_query_max_surfaces": null,
+          "minimum_signed_clearance_lower_bound_m": 0.05,
+          "penetrating_pair_count": 0,
+          "physical_surface_counts": {
+            "A": 27,
+            "B": 27
+          },
+          "query_max_m": 0.05,
+          "world_pelvis_xyz_m": {
+            "A": [
+              -0.7999999999999999,
+              -1.25,
+              0.9361189261487032
+            ],
+            "B": [
+              0.8,
+              1.2499999999999998,
+              0.9361189261487032
+            ]
+          }
+        },
+        "mode": "reset-centered-lanes-v1",
+        "native_axes_sha256": "c213f2d2f859ae909d671205351bffec3e2a5f95488f401c34cd9e6eb05245a9",
+        "native_reset_sha256": {
+          "A": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "85e9d4a645ef7c3ce948d9da11cd376c8fd9f8d3128fffdc7fe2221df4de87ed",
+            "qvel": "0df51addf865ac5e8202c177e4af7e0569e7ad9b7e9e683bfe252f6f9ec16267"
+          },
+          "B": {
+            "activation": "1677f96c3d965a44953cb644796fd1137be5df37e38513fd5587e55751f23880",
+            "qpos": "85e9d4a645ef7c3ce948d9da11cd376c8fd9f8d3128fffdc7fe2221df4de87ed",
+            "qvel": "0df51addf865ac5e8202c177e4af7e0569e7ad9b7e9e683bfe252f6f9ec16267"
+          }
+        },
+        "recipe": "compile original opposed constants; translate only fixed root XY to actual reset targets; no mj_setConst/XML-only rebuild",
+        "schema": "joxing-native-reset-placement-v1",
+        "seed": 71048
+      },
+      "schema": "joxing-native-stance-probe-v1",
+      "seed": 71048,
+      "sporting_qualified": false,
+      "trace_tape": {
+        "archive_bytes": 5983210,
+        "arrays": {
+          "commands": {
+            "bytes": 840000,
+            "dtype": "<f4",
+            "sha256": "0f37f69f9cd130cd3c72b534aebd639b4bb3c83c0ad582eb744aabda10fed9e3",
+            "shape": [
+              150,
+              2,
+              700
+            ]
+          },
+          "contact_sha256_1ms": {
+            "bytes": 96000,
+            "dtype": "|u1",
+            "sha256": "b28615f8bdbcbd20473da8b24bb60c675a7d38a38370f80d16eea9535753ef01",
+            "shape": [
+              3000,
+              32
+            ]
+          },
+          "engine_sha256": {
+            "bytes": 4800,
+            "dtype": "|u1",
+            "sha256": "6d0d284e9a993d44fc69f499eb6c249b2d6a1d8eb9d0885be49a66e9f45e45c1",
+            "shape": [
+              150,
+              32
+            ]
+          },
+          "metrics_1ms": {
+            "bytes": 720000,
+            "dtype": "<f8",
+            "sha256": "eec21f25884a5315b4e7b476944b9a11c3a957e5d7c19d1ba91bc49b413e94ac",
+            "shape": [
+              3000,
+              2,
+              15
+            ]
+          },
+          "teacher_inputs": {
+            "bytes": 4321200,
+            "dtype": "<f4",
+            "sha256": "80a561a13f515328080c9a22b1a68acbf88637ac84f5ce95abdfcf3ba1f8676a",
+            "shape": [
+              150,
+              2,
+              3601
+            ]
+          }
+        },
+        "payload_bytes": 5982000,
+        "schema": "joxing-native-stored-tape-v1",
+        "sha256": "f19eca88bf928d5db58dbf29c5aa7941cf7642608b9276d7d3cefdd63297983e"
+      }
+    }
+  ],
+  "walking_control_qualified": true,
+  "wall_s": 82.34233704209328
+}

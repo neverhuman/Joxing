@@ -1,0 +1,4 @@
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+{"profile": "reset512x288-fullbody-fit1.6-no-tendon-shadow-reflection-v1", "camera": "allvisibleathletegeom bounding sphere / sin(verticalfov/2),1.6margin,min5m; per actual archived frame", "source_frames_sha256": "d98717207098fdd14829511f15d85a9b139b3281cdb0bfb9bda3ac0dc14fb26b", "physics_muscles_unchanged": 1400, "frames": 81, "fps": 50, "sha256": "2ee994e40a3a599f4dc96d8ffef647af4406037e70e8057a2698058f474de514", "bytes": 135878, "render_physics": 0, "selection": "Entire first fixed reset71000 of each registered condition, including falls", "reference_profile": null, "placement": "reset-centered-opposed-v1", "source_commit": "6be3ddeb626bbacd3c3f2e1ca1da712b355bc675"}

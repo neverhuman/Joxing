@@ -1,0 +1,15 @@
+{
+  "profile": "reset512x288-fullbody-fit1.6-no-tendon-shadow-reflection-v1",
+  "camera": "allvisibleathletegeom bounding sphere / sin(verticalfov/2),1.6margin,min5m; per actual archived frame",
+  "source_frames_sha256": "494eab3e0f316d9d2f6fe4c33db4ef74491fe9733b00e0acb2b25b7746cb6b68",
+  "physics_muscles_unchanged": 1400,
+  "frames": 151,
+  "fps": 50,
+  "sha256": "af7559195ef7a2e7c185bff48c817f9467a2ca341a021b0659dfce1ef716a2f6",
+  "bytes": 170533,
+  "render_physics": 0,
+  "selection": "Entire first fixed reset71000 of each registered condition, including falls",
+  "reference_profile": null,
+  "placement": "reset-centered-lanes-v1",
+  "source_commit": "6be3ddeb626bbacd3c3f2e1ca1da712b355bc675"
+}

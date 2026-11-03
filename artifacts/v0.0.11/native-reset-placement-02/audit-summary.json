@@ -1,0 +1,375 @@
+{
+  "boxing_qualified": false,
+  "conclusions": {
+    "reset-centered-lanes-v1": {
+      "all_four_first100ms_clear": true,
+      "all_four_geometry_qualified": true,
+      "denominator": 4,
+      "paired_three_second_completions": 4
+    },
+    "reset-centered-opposed-v1": {
+      "all_four_first100ms_clear": true,
+      "all_four_geometry_qualified": true,
+      "denominator": 4,
+      "paired_three_second_completions": 0
+    }
+  },
+  "curation": "Compressed summary; full contracts/original result/tapes retained outsideGit with raw-manifest authentication; no attempts omitted.",
+  "entered_physics": 20234,
+  "initialization_qualified": true,
+  "proof_rows": [
+    {
+      "id": "reset-centered-opposed-v1",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1",
+      "status": "completed"
+    }
+  ],
+  "proofs": [
+    {
+      "actor_decisions_unchanged": 22,
+      "actual_checkpoint": {
+        "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+        "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+        "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+      },
+      "condition": "reset-centered-opposed-v1",
+      "passed": true,
+      "physics": 237,
+      "remaining": 17,
+      "sample_tick": 203,
+      "snapshot_sha256": "dd4e71a1dabf48248bcc4f8596ccaf260a9c4d6dd4d9dcc4d29776a23c98b79f"
+    },
+    {
+      "actor_decisions_unchanged": 22,
+      "actual_checkpoint": {
+        "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+        "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+        "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+      },
+      "condition": "reset-centered-lanes-v1",
+      "passed": true,
+      "physics": 237,
+      "remaining": 17,
+      "sample_tick": 203,
+      "snapshot_sha256": "2f7dfd1ea61317975b18b0660d942fa932828ebf0177cfcb843866638bcd4fae"
+    }
+  ],
+  "protocol_sha256": "5162874c7aa184e9cedc0ebfb00c09316ea655ccef36c685f25eb21766732f55",
+  "rows": [
+    {
+      "id": "reset-centered-opposed-v1/71000",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-opposed-v1/71016",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-opposed-v1/71032",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-opposed-v1/71048",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71000",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71016",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71032",
+      "status": "completed"
+    },
+    {
+      "id": "reset-centered-lanes-v1/71048",
+      "status": "completed"
+    }
+  ],
+  "schema": "joxing-native-reset-placement-study-v1",
+  "scientific_optimizer_updates": 0,
+  "stage": "audit",
+  "status": "completed",
+  "trials": [
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-opposed-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 1600,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            4.435082938467844e-20,
+            0.9320600674244468
+          ],
+          "B": [
+            0.8,
+            -1.1443235893455e-18,
+            0.9320600674244468
+          ]
+        }
+      },
+      "seed": 71000,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-opposed-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 2020,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            1.0577275123572363e-18,
+            0.9041697184374404
+          ],
+          "B": [
+            0.8000000000000002,
+            -5.856073832672807e-19,
+            0.9041697184374404
+          ]
+        }
+      },
+      "seed": 71016,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-opposed-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 1760,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            1.3015078359754063e-18,
+            0.9221840716571065
+          ],
+          "B": [
+            0.7999999999999999,
+            1.5923083879526122e-18,
+            0.9221840716571065
+          ]
+        }
+      },
+      "seed": 71032,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-opposed-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 2380,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            -5.190836310776908e-18,
+            0.9361189261487032
+          ],
+          "B": [
+            0.8,
+            -1.5044641448329721e-18,
+            0.9361189261487032
+          ]
+        }
+      },
+      "seed": 71048,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-lanes-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 3000,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            -1.25,
+            0.9320600674244468
+          ],
+          "B": [
+            0.8,
+            1.25,
+            0.9320600674244468
+          ]
+        }
+      },
+      "seed": 71000,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-lanes-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 3000,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            -1.25,
+            0.9041697184374404
+          ],
+          "B": [
+            0.8000000000000002,
+            1.25,
+            0.9041697184374404
+          ]
+        }
+      },
+      "seed": 71016,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-lanes-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 3000,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.8,
+            -1.25,
+            0.9221840716571065
+          ],
+          "B": [
+            0.7999999999999999,
+            1.25,
+            0.9221840716571065
+          ]
+        }
+      },
+      "seed": 71032,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "reset-centered-lanes-v1",
+      "first100ms_no_interactor_force": true,
+      "new_replay_physics": 3000,
+      "reset_geometry": {
+        "all_cross_player_pairs_queried": 729,
+        "clearance_qualified": true,
+        "closest_below_query_max_surfaces": null,
+        "minimum_signed_clearance_lower_bound_m": 0.05,
+        "penetrating_pair_count": 0,
+        "physical_surface_counts": {
+          "A": 27,
+          "B": 27
+        },
+        "query_max_m": 0.05,
+        "world_pelvis_xyz_m": {
+          "A": [
+            -0.7999999999999999,
+            -1.25,
+            0.9361189261487032
+          ],
+          "B": [
+            0.8,
+            1.2499999999999998,
+            0.9361189261487032
+          ]
+        }
+      },
+      "seed": 71048,
+      "status": "pass"
+    }
+  ],
+  "walking_control_qualified": true,
+  "wall_s": 79.0009200014174
+}

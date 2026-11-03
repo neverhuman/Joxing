@@ -1,3 +1,27 @@
+# H34 actual starts/walking qualify; H35upper-only guardRL ready
+
+Attempt02passes all163target checks, all8native trials and independent replay.
+All8actualstarts meet declaredXY(maxerror2.22e-16m),≥.05mclearance lowerbound,
+zero initialpenetration and first100msnointeractorforce. BOTHseparated walkers
+retain4/4three-second survival; opposedwalking stillends1.60–2.38s aftercontact.
+Allpoints0–0, no guard/strike/bout/RLwin. Actual203+17held proofs exact; nextdecision
+sourcefixtures pass but no extraactual-checkpoint nextdecision proof claimed.
+
+Formal02whole299.794s<600, peak4.236GB<unchanged8GiB; all32observedidentities
+exited.40468primary+auditphysics+8192current/prior sourcecharge=48660<60000.
+Raw214files120494631B<256MiBoutsideGit. Twoentirefixedclips decoded/hashchecked;
+all6QAframes seen, bothbodies fullyframed. See NATIVE_RESET_PLACEMENT_RESULTS.md
+and artifacts/v0.0.11/native-reset-placement-02. Invalid01sourceRSSattempt retained:
+all8not_run, no oldclock/cap extended. Twoformalattempts1valid/1invalid;16registered
+trialslots8valid/8not_run;0invalid scientific trials. Alllocaldevelopment separate.
+
+PRIMARYready:H35/docs/NATIVE_ARM_GUARD_RL_MISSION.md. Learn46arm-group guard while
+preserving578teacher commands/700muscles perbody and qualified walking. Fixed
+trainingnativephase71000, two optimizerseeds, unseen evaluation phases; causal
+four-frame state, raw46policy actions, strict continuation/evidence and independent
+error/guard gates. No more stoppingTtune or unchangedfullbodyPPOsweep. H35NOTcoded/
+registered/run; prerequisites/publicprotocol first. No ownedtask now. Wholev11untagged.
+
 # H34attempt01 sourceRSS invalid; bounded fixture repair/attempt02 next
 
 Formal01stopped in source at98.605s when sampled ownedRSS8655896576B exceeded

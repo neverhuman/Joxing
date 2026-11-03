@@ -1,0 +1,296 @@
+{
+  "all8_first100ms_clear": true,
+  "all8_geometry_cases": true,
+  "all_candidate_points": "0\u20130",
+  "all_current_source_cases": {
+    "failed": 0,
+    "passed": 163,
+    "skipped": 0,
+    "xfail": 0
+  },
+  "all_current_trials": [
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-opposed-v1",
+      "failure": {
+        "A": {
+          "reason": "pelvis_drop",
+          "tick": 1589
+        },
+        "B": {
+          "reason": "pelvis_drop",
+          "tick": 1586
+        }
+      },
+      "final_tick": 1600,
+      "first_positive_interactor_force_tick": 589,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.7999999999999999,
+          4.435082938467844e-20,
+          0.9320600674244468
+        ],
+        "B": [
+          0.8,
+          -1.1443235893455e-18,
+          0.9320600674244468
+        ]
+      },
+      "seed": 71000
+    },
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-opposed-v1",
+      "failure": {
+        "A": {
+          "reason": "excess_tilt",
+          "tick": 2012
+        },
+        "B": null
+      },
+      "final_tick": 2020,
+      "first_positive_interactor_force_tick": 548,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.8,
+          1.0577275123572363e-18,
+          0.9041697184374404
+        ],
+        "B": [
+          0.8000000000000002,
+          -5.856073832672807e-19,
+          0.9041697184374404
+        ]
+      },
+      "seed": 71016
+    },
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-opposed-v1",
+      "failure": {
+        "A": {
+          "reason": "excess_tilt",
+          "tick": 1752
+        },
+        "B": {
+          "reason": "excess_tilt",
+          "tick": 1751
+        }
+      },
+      "final_tick": 1760,
+      "first_positive_interactor_force_tick": 649,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.8,
+          1.3015078359754063e-18,
+          0.9221840716571065
+        ],
+        "B": [
+          0.7999999999999999,
+          1.5923083879526122e-18,
+          0.9221840716571065
+        ]
+      },
+      "seed": 71032
+    },
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-opposed-v1",
+      "failure": {
+        "A": {
+          "reason": "pelvis_drop",
+          "tick": 2361
+        },
+        "B": null
+      },
+      "final_tick": 2380,
+      "first_positive_interactor_force_tick": 1247,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.7999999999999999,
+          -5.190836310776908e-18,
+          0.9361189261487032
+        ],
+        "B": [
+          0.8,
+          -1.5044641448329721e-18,
+          0.9361189261487032
+        ]
+      },
+      "seed": 71048
+    },
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-lanes-v1",
+      "failure": {
+        "A": null,
+        "B": null
+      },
+      "final_tick": 3000,
+      "first_positive_interactor_force_tick": null,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.7999999999999999,
+          -1.25,
+          0.9320600674244468
+        ],
+        "B": [
+          0.8,
+          1.25,
+          0.9320600674244468
+        ]
+      },
+      "seed": 71000
+    },
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-lanes-v1",
+      "failure": {
+        "A": null,
+        "B": null
+      },
+      "final_tick": 3000,
+      "first_positive_interactor_force_tick": null,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.8,
+          -1.25,
+          0.9041697184374404
+        ],
+        "B": [
+          0.8000000000000002,
+          1.25,
+          0.9041697184374404
+        ]
+      },
+      "seed": 71016
+    },
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-lanes-v1",
+      "failure": {
+        "A": null,
+        "B": null
+      },
+      "final_tick": 3000,
+      "first_positive_interactor_force_tick": null,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.8,
+          -1.25,
+          0.9221840716571065
+        ],
+        "B": [
+          0.7999999999999999,
+          1.25,
+          0.9221840716571065
+        ]
+      },
+      "seed": 71032
+    },
+    {
+      "clearance_lower_bound_m": 0.05,
+      "condition": "reset-centered-lanes-v1",
+      "failure": {
+        "A": null,
+        "B": null
+      },
+      "final_tick": 3000,
+      "first_positive_interactor_force_tick": null,
+      "points": [
+        0,
+        0
+      ],
+      "reset_pelvis_xyz_m": {
+        "A": [
+          -0.7999999999999999,
+          -1.25,
+          0.9361189261487032
+        ],
+        "B": [
+          0.8,
+          1.2499999999999998,
+          0.9361189261487032
+        ]
+      },
+      "seed": 71048
+    }
+  ],
+  "all_model_arrays_except2fixed_rootXY": "full-byte identical via source receipts; actual qpos/qvel/activation untouched",
+  "clearance_query_is_clipped_lower_bound": true,
+  "closed_raw_bytes": 120494631,
+  "closed_raw_files": 214,
+  "combined_formal_charge": 48660,
+  "execution_qualified": true,
+  "formal_execution_attempts": 2,
+  "formal_physics_limit": 60000,
+  "fresh_independent_replay_physics": 20234,
+  "guard_current_source_reserve": 4096,
+  "guard_prior_failed_source_charge": 4096,
+  "initialization_qualified": true,
+  "invalid_formal_attempts": 1,
+  "later_live": [],
+  "limits": [
+    "New correct start does not make a standing/guard/boxing policy. Both still fall after closecontact.",
+    "No sporting win, legalpunch, empiricalforcecalibration, RFjitter/league or throughput speedup inferred.",
+    "Firstinvalidsource attempt retained; no deadlines/caps/native criteria loosened.",
+    "All252production source files unchanged between invalid01 and repaired02."
+  ],
+  "local_development_static_fixture_steps_separately_reported": 12066,
+  "maximum_actual_reset_xy_error_m": 2.220446049250313e-16,
+  "media": "2wholefirst71000clips decoded/hashverified; all6QAframes visually reviewed, both athletes fully framed; visualonly camera repair, no oldvideo replaced",
+  "minimum_cross_player_clearance_lower_bound_m": 0.05,
+  "native_replay": "all8trials/all2heldproofs independently exact, all1400commands/1mscontact+metrics/engineframes",
+  "next": "H35/docs/NATIVE_ARM_GUARD_RL_MISSION.md; realupperonlyguardPPO, source/registration prerequisites pending",
+  "observed_identities_including_owner": 32,
+  "original_whole_s": 299.79415874928236,
+  "paired_3s_completions": {
+    "corrected_opposed_walk": 0,
+    "corrected_separated_walk": 4
+  },
+  "peak_sampled_owned_rss_bytes": 4235542528,
+  "previous_invalid_attempt": "../native-reset-placement-01/summary.json",
+  "primary_physics": 20234,
+  "protocol_sha256": "5162874c7aa184e9cedc0ebfb00c09316ea655ccef36c685f25eb21766732f55",
+  "registered_trial_slots": 16,
+  "schema": "joxing-h34-conclusion-v1",
+  "scientific_native_entries_total": 40468,
+  "scientific_optimizer_updates": 0,
+  "scientific_trials_attempted": 8,
+  "scientific_trials_invalid": 0,
+  "scientific_trials_not_run_prior_attempt": 8,
+  "scientific_trials_valid": 8,
+  "source_commit": "6be3ddeb626bbacd3c3f2e1ca1da712b355bc675",
+  "stationary_guard_or_boxing_qualified": false,
+  "unchanged_rss_limit_bytes": 8589934592,
+  "valid_formal_attempts": 1,
+  "walking_control_qualified": true
+}

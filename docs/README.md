@@ -1,3 +1,6 @@
+Current: [H34actual reset placement results](NATIVE_RESET_PLACEMENT_RESULTS.md) ·
+[H35upper-only guard RL mission](NATIVE_ARM_GUARD_RL_MISSION.md).
+
 Current: [H33pretrained walking/stopping results](NATIVE_STANCE_REFERENCE_RESULTS.md) ·
 [H34actual reset placement mission](NATIVE_RESET_PLACEMENT_MISSION.md).
 
