@@ -24,7 +24,7 @@ class Scene:
 def build_scene(dt: float = 0.001, shells: bool = True, *, spawn_variant=None) -> Scene:
     if dt <= 0 or not np.isfinite(dt):
         raise ValueError("dt must be finite and positive")
-    if spawn_variant not in (None, "parallel-walk-v1"):
+    if spawn_variant not in (None, "parallel-walk-v1", "opposed-separated-lanes-v1"):
         raise ValueError("Unknown explicit scene spawn variant")
     source = mujoco.MjModel.from_xml_path(str(SOURCE))
     base = mujoco.MjData(source)
@@ -43,7 +43,7 @@ def build_scene(dt: float = 0.001, shells: bool = True, *, spawn_variant=None) -
             ("A", [-0.8, 0, 0], 0.0, [1.0, 0.18, 0.12, 1.0]),
             ("B", [0.8, 0, 0], np.pi, [0.15, 0.4, 1.0, 1.0]),
         )
-        if spawn_variant is None
+        if spawn_variant in (None, "opposed-separated-lanes-v1")
         else (
             ("A", [0, -1.25, 0], 0.0, [1.0, 0.18, 0.12, 1.0]),
             ("B", [0, 1.25, 0], 0.0, [0.15, 0.4, 1.0, 1.0]),
@@ -146,6 +146,15 @@ def build_scene(dt: float = 0.001, shells: bool = True, *, spawn_variant=None) -
         )
         frame.attach_body(child.body("pelvis"), prefix=actor + "_")
     model = world.compile()
+    if spawn_variant == "opposed-separated-lanes-v1":
+        # Translation is a symmetry of each isolated athlete's native dynamics.
+        # Compile at the original opposed frames FIRST so rest-length/inertia
+        # constants remain bit-exact, then translate only two fixed root frames.
+        # No joint state or evaluated pose is written. Do not mj_setConst here:
+        # that would recompute the unchanged constants with translated rounding.
+        for actor, offset in (("A", -1.25), ("B", 1.25)):
+            model.body_pos[model.body(actor + "_pelvis").id, 1] += offset
+            world.frame(actor + "_spawn").pos[1] += offset
     ids = {
         a: np.array(
             [
@@ -217,7 +226,7 @@ def build_scene(dt: float = 0.001, shells: bool = True, *, spawn_variant=None) -
             "foul/fall/exit adjudication",
         ],
     }
-    if spawn_variant is not None:
+    if spawn_variant == "parallel-walk-v1":
         report.update(
             profile="pretrained-parallel-walk-1ms-v1",
             motor_variant={
@@ -228,6 +237,25 @@ def build_scene(dt: float = 0.001, shells: bool = True, *, spawn_variant=None) -
                 "physics_dt_s": dt,
                 "classification": "separated locomotion transfer; not boxing",
             },
+        )
+    if spawn_variant == "opposed-separated-lanes-v1":
+        report.update(
+            profile="pretrained-opposed-separated-lanes-1ms-v1",
+            motor_variant={
+                "name": spawn_variant,
+                "spawn_xyz_m": {"A": [-0.8, -1.25, 0], "B": [0.8, 1.25, 0]},
+                "spawn_yaw_rad": {"A": 0.0, "B": float(np.pi)},
+                "control_dt_s": 0.02,
+                "physics_dt_s": dt,
+                "classification": "separated opposed-yaw transfer diagnostic; not boxing",
+                "construction": "compile original opposed constants; translate only fixed root frames",
+            },
+        )
+        report["scene_hash"] = digest(
+            {
+                "xml": world.to_xml(),
+                "construction": report["motor_variant"]["construction"],
+            }
         )
     return Scene(world, model, report, ids)
 

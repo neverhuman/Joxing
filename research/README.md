@@ -1,6 +1,7 @@
 # Research memory
 
-CURRENT:H33pretrained stopping/stance/interaction diagnostic, planonly.
+CURRENT:H33pretrained stopping/stance diagnostic sourceimplemented;136localpass;
+publicprotocol/targetsourcegate/pretrainedtrials next. No stanceoutcome yet.
 H31trained4096actor samples/16updates but allmotorcriteriafail; originalpipeline
 invalidrecordingtimeout retained. H32allnative replay/fourfullclips qualified.
 Read [H33packet](../docs/NATIVE_STANCE_REFERENCE_MISSION.md) before moretraining.

@@ -1,3 +1,20 @@
+# H33 stopping/stance source implemented; pretrained test next
+
+The three explicit conditions and exact continuation are implemented. All136local
+controls pass (old99plus37new),41.764s. Offset placement changes ONLYtwo fixed
+root positions; allother compiled numeric arrays remain bit-exact. The separate
+own-reference profile slows desired motion over400ms; actual reset velocities,
+all1400muscles, rules, unassisted physics and oldwalking/defaultcontracts remain.
+Two earlier source failures and all6,367synthetic fixture steps are retained in
+artifacts/v0.0.11/development/h33-development-01.json. No pretrained stance result.
+
+Current packet:docs/NATIVE_STANCE_REFERENCE_MISSION.md / research/H33.md.
+Next freeze protocol/source publicly, then dedicated xbabe4source136gate plus
+12finite pretrained trials/3midholds/all-trial audit/3wholefixedclips. One world,
+thread1/8GiB/1200s/100kTOTALphysics/384MiBraw/16MiBtext, firstlimit. No new PPO.
+Fourhost inventory found no owned jobs, xbabe4load3.97/32CPUs; xbabe2I/O busy.
+Current primary task unlaunched pending final registration; wholev11untagged.
+
 # H32 audit/export qualified; H31 motor objective failed — H33stance next
 
 Actual two-seed nativePPO:2048jointtransitions/4096actor samples/16rolloutupdates/

@@ -13,6 +13,8 @@ demonstrated:** every evaluation scores 0–0, with no guard cycle or three-seco
 These are complete motor evaluations, including falls. The original recording
 timeout remains a failed attempt; the separate audit/export is preserved in Git.
 [Next: stopping and stance using the pretrained motor](docs/NATIVE_STANCE_REFERENCE_MISSION.md).
+The new controls pass136local tests, including exact held-command replay; the
+finite pretrained stopping study is next. No standing or boxing gain is assumed.
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 

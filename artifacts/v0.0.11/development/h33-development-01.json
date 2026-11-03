@@ -1,0 +1,82 @@
+{
+  "scope": "Development/native engine with synthetic teacher, never real pretrained stopping outcomes",
+  "env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "attempts": [
+    {
+      "id": 1,
+      "junit": "artifacts/v0.0.11/development/h33-source-dev-01.xml",
+      "sha256": "f8db335a49c424ff49980d53545485427b4f59129109ba00b0c4efdb57a26b21",
+      "tests": 30,
+      "failures": 2,
+      "errors": 0,
+      "wall_s": 19.16,
+      "command": ".venv/bin/python -m pytest -q tests/test_native_stance_reference.py tests/test_native_stance_probe.py --junitxml=artifacts/v0.0.11/development/h33-source-dev-01.xml",
+      "synthetic_teacher_fixture_physics_static": 831,
+      "failed_cases": [
+        {
+          "name": "test_phase_seconds_endpoints_monotone_future_order_and_hold",
+          "message": "assert (np.float64(0.0) == 0 and np.float64(0.19999999999999998) == 0.2)"
+        },
+        {
+          "name": "test_lanes_preserve_all_native_physics_except_fixed_spawn",
+          "message": "AssertionError: assert ['actuator_ac...'dof_M0', ...] == ['body_pos']\n  \n  At index 0 diff: 'actuator_acc0' != 'body_pos'\n  Left contains 11 more items, first extra item: 'actuator_length0'\n  Use -v to get more diff"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "junit": "artifacts/v0.0.11/development/h33-source-dev-02.xml",
+      "sha256": "454271974156d63c7317941106446ddc6ad89fc9d21a4c0daa83faee37f20ecf",
+      "tests": 37,
+      "failures": 1,
+      "errors": 0,
+      "wall_s": 21.108,
+      "command": ".venv/bin/python -m pytest -q tests/test_native_stance_reference.py tests/test_native_stance_probe.py --junitxml=artifacts/v0.0.11/development/h33-source-dev-02.xml --basetemp=runs/v0.0.11/h33-source-dev-02",
+      "synthetic_teacher_fixture_physics_static": 1431,
+      "failed_cases": [
+        {
+          "name": "test_lanes_preserve_all_native_physics_except_fixed_spawn",
+          "message": "AssertionError: assert np.float64(2.848514756368027e-14) <= (128 * np.float64(2.220446049250313e-16))\n +  where np.float64(2.848514756368027e-14) = <function max at 0x104e297f0>((array([2.22044605e-15, 2.22044605e-15, 2.66453526e-15, ...,\\n       4.23454302e-17, 4.13956891e-17, 3.62149098e-17], shape=(1400,)) / array([1.        , 1.10294594, 1.        , ..., 1.        , 1.        ,\\n       1.        ], shape=(1400,))))\n +    where <function max at 0x104e297f0> = np.max\n +    and   array([2.22044605e-15, 2.22044605e-15, 2.66453526e-15, ...,\\n       4.23454302e-17, 4.13956891e-17, 3.62149098e-17], shape=(1400,)) = abs((array([8.99270217e-01, 1.10294594e+00, 7.26337731e-01, ...,\\n       2.84860949e-16, 3.71731458e-16, 3.22035909e-16], shape=(1400,)) - array([8.99270217e-01, 1.10294594e+00, 7.26337731e-01, ...,\\n       3.27206380e-16, 3.30335769e-16, 3.58250819e-16], shape=(1400,))))\n +    and   array([1.        , 1.10294594, 1.        , ..., 1.        , 1.        ,\\n       1.        ], shape=(1400,)) = <ufunc 'maximum'>(1, array([8.99270217e-01, 1.10294594e+00, 7.26337731e-01, ...,\\n       2.84860949e-16, 3.71731458e-16, 3.22035909e-16], shape=(1400,)))\n +      where <ufunc 'maximum'> = np.maximum\n +      and   array([8.99270217e-01, 1.10294594e+00, 7.26337731e-01, ...,\\n       2.84860949e-16, 3.71731458e-16, 3.22035909e-16], shape=(1400,)) = abs(array([8.99270217e-01, 1.10294594e+00, 7.26337731e-01, ...,\\n       2.84860949e-16, 3.71731458e-16, 3.22035909e-16], shape=(1400,)))\n +  and   np.float64(2.220446049250313e-16) = finfo(resolution=1e-15, min=-1.7976931348623157e+308, max=1.7976931348623157e+308, dtype=float64).eps\n +    where finfo(resolution=1e-15, min=-1.7976931348623157e+308, max=1.7976931348623157e+308, dtype=float64) = <class 'numpy.finfo'>(<class 'numpy.float64'>)\n +      where <class 'numpy.finfo'> = np.finfo\n +      and   <class 'numpy.float64'> = np.float64"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "junit": "artifacts/v0.0.11/development/h33-source-dev-03.xml",
+      "sha256": "a307c80eb69bbe606cf1f83e558bc8cbe293e816b90e3c0b48b0439efc2af92d",
+      "tests": 37,
+      "failures": 0,
+      "errors": 0,
+      "wall_s": 20.95,
+      "command": ".venv/bin/python -m pytest -q tests/test_native_stance_reference.py tests/test_native_stance_probe.py --junitxml=artifacts/v0.0.11/development/h33-source-dev-03.xml --basetemp=runs/v0.0.11/h33-source-dev-03",
+      "synthetic_teacher_fixture_physics_static": 1431,
+      "failed_cases": []
+    },
+    {
+      "id": 4,
+      "junit": "artifacts/v0.0.11/development/h33-source-dev-04.xml",
+      "sha256": "df59939356d9baf55bac9f2c3c94a2a01f5005677a1200229714d0c3ff330690",
+      "tests": 136,
+      "failures": 0,
+      "errors": 0,
+      "wall_s": 41.764,
+      "command": ".venv/bin/python -m pytest -q tests/test_native_pair_motor_rl.py tests/test_native_pair_motor_pilot.py tests/test_native_pair_guarded_stage.py tests/test_native_pair_motor_evidence.py tests/test_native_pair_motor_vec.py tests/test_history.py tests/test_rules.py tests/test_match_referee.py tests/test_native_tape_storage.py tests/test_native_stance_reference.py tests/test_native_stance_probe.py -p no:cacheprovider --junitxml=artifacts/v0.0.11/development/h33-source-dev-04.xml --basetemp=runs/v0.0.11/h33-source-dev-04",
+      "synthetic_teacher_fixture_physics_static": 2674,
+      "failed_cases": []
+    }
+  ],
+  "total_fixture_physics_static": 6367,
+  "faults_and_resolution": [
+    "dev01: exact .2s phase endpoint rounded down; clamp completed phase exactly to T/2.",
+    "dev01/dev02: translating before compilation changes eleven derived rest-length/inertia/light/camera arrays. The attempted128epsilon cache check also fails; no tolerance promoted. Replaced construction: compile original opposed constants, then translate ONLY two fixed root frames before first MjData. Every other compiled numeric array must be BIT EXACT. Named source recipe+XML hash; not an evaluated pose write.",
+    "Ruff import/fixture issues fixed; final check required before registration."
+  ],
+  "limits": "Source loops are static counted, source validation is local Mac3.12.12, not formal target/source or pretrained physical outcome. Two additional zero-physics compile-only inspections diagnosed cache differences. Old700muscle/rules/replay gates unchanged."
+}

@@ -82,6 +82,10 @@ class NativePairMotorCore(SharedMotorTask):
                 "composition-smoke-not-competition",
                 {"A": 0.0, "B": float(np.pi)},
             ),
+            "opposed-separated-lanes-v1": (
+                "pretrained-opposed-separated-lanes-1ms-v1",
+                {"A": 0.0, "B": float(np.pi)},
+            ),
         }
         if (
             placement not in expected
@@ -164,7 +168,7 @@ class PairMotorConfig:
 
     def __post_init__(self):
         if (
-            self.placement not in ("parallel", "opposed")
+            self.placement not in ("parallel", "opposed", "opposed-separated-lanes-v1")
             or type(self.horizon_ticks) is not int
             or not 20 <= self.horizon_ticks <= 20000
             or self.horizon_ticks % 20
@@ -279,7 +283,14 @@ class NativePairMotorEnv:
         *,
         config=None,
         guard=None,
+        reference_profile=None,
     ):
+        if reference_profile is not None:
+            from .native_stance_reference import PROFILE
+
+            if reference_profile != PROFILE:
+                raise ValueError("Unknown named native reference profile")
+        self.reference_profile = reference_profile
         self.config = config or PairMotorConfig()
         self.scene, self.driver_factory, self.teacher = scene, driver_factory, teacher
         self.groups = validate_groups(groups)
@@ -300,6 +311,10 @@ class NativePairMotorEnv:
             "timing": "zero-delay;both before either action;20held1ms;four samples",
             "competition": False,
         }
+        if reference_profile is not None:
+            from .native_stance_reference import reference_contract
+
+            self.contract["reference_profile"] = reference_contract()
         self.contract_hash = digest(self.contract)
         self.scale = feature_scale()
         self.actor_dimension = 4 * DIMENSION + 12 + 9
@@ -338,7 +353,7 @@ class NativePairMotorEnv:
         self.floor = scene.model.geom("floor").id
 
     @classmethod
-    def from_inputs(cls, inputs, *, config=None, guard=None):
+    def from_inputs(cls, inputs, *, config=None, guard=None, reference_profile=None):
         import json
 
         from .motor_residual import reference_hash
@@ -350,6 +365,12 @@ class NativePairMotorEnv:
         from .wave import canonical_actor_hash
 
         config = config or PairMotorConfig()
+        # Reject before loading weights or constructing a donor.
+        if reference_profile is not None:
+            from .native_stance_reference import PROFILE
+
+            if reference_profile != PROFILE:
+                raise ValueError("Unknown named native reference profile")
         model, normalizer = load_controller(inputs)
         model.actor.eval()
         model.actor.requires_grad_(False)
@@ -360,10 +381,19 @@ class NativePairMotorEnv:
         )
 
         def drivers(seed):
-            return {p: NativeReferenceDriver(donor, seed) for p in PLAYERS}
+            driver = NativeReferenceDriver
+            if reference_profile is not None:
+                from .native_stance_reference import WalkToHoldReferenceDriver
+
+                driver = WalkToHoldReferenceDriver
+            return {p: driver(donor, seed) for p in PLAYERS}
 
         scene = build_scene(
-            spawn_variant="parallel-walk-v1" if config.placement == "parallel" else None
+            spawn_variant={
+                "parallel": "parallel-walk-v1",
+                "opposed": None,
+                "opposed-separated-lanes-v1": "opposed-separated-lanes-v1",
+            }[config.placement]
         )
         bundle = {
             "actor": canonical_actor_hash(model.actor),
@@ -378,6 +408,7 @@ class NativePairMotorEnv:
             bundle,
             config=config,
             guard=guard,
+            reference_profile=reference_profile,
         )
         env.donor = donor
         return env
@@ -484,9 +515,15 @@ class NativePairMotorEnv:
         self.episode_seed = seed
         self.episode_serial += 1
         self.decoder.pending = self.decoder.record = None
+        drivers = self.driver_factory(seed)
+        if set(drivers) != set(PLAYERS) or any(
+            getattr(d, "profile", None) != self.reference_profile
+            for d in drivers.values()
+        ):
+            raise ValueError("Reference factory/profile mismatch")
         self.core = NativePairMotorCore(
             self.scene,
-            self.driver_factory(seed),
+            drivers,
             self.decoder,
             horizon_ticks=self.config.horizon_ticks,
             bundle_hash=self.contract_hash,

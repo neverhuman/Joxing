@@ -1,6 +1,7 @@
 # H33 implementation packet: stop the pretrained walker before more boxing RL
 
-Status: worker-ready PLAN, not implemented, registered or run. One owner; no agents.
+Status: implemented/source-validated locally; prospective physical protocol registered; target execution pending.
+One owner; no agents. No pretrained stopping outcome yet.
 Read current STATUS/MISSION before executing in case a newer mission supersedes it.
 
 ## Objective and reason
@@ -107,11 +108,13 @@ heading and unchanged candidate points. Record first contact relative to failure
 correlation alone is not causal proof. Preserve all starts, numerical faults,
 not_run rows and ends. No omission of poor starts or choosing a favorable phase.
 
-Proposed caps to reconcile in final protocol:1200swhole/setup60/source120/
+Frozen task caps:1200swhole/setup60/source120/
 physical360/audit300/render3×30; first limit;8GiB/12process/1worker/thread1,
 100000TOTALphysics including source reserve/prep/holds/replays and baseline
 contact replay,384MiBraw/16MiBtext.12×3000primary+12×3000independent replay+
-4×3000baseline replay+3×237holds+2048source reserve=86759≤100000.
+6×237primary/audit holds+4096source reserve=77518≤100000. The optional four old baseline
+contact replays are NOT part of this packet; prior audited motor results/video
+remain prior evidence. Do not infer a causal contact effect without those traces.
 Forecast exact native evidence/media/text/temporary/fault bytes before launch;
 reuse H31/H32bounded writers, do not accumulate unbounded overlapping tapes.
 Export the ENTIREfirst reset for each NEWcondition with H32compact renderer,
@@ -142,3 +145,46 @@ manifests, all owned PIDs/start/exit, and source/runtime/model/config hashes.
 Publish small receipts, all negative outcomes and fixed clips in Git; weights/
 tapes stay outside. Update README/MISSION/STATUS/IMPLEMENTATION/book/H33/index;
 leave the next measured question. No tag until its full micro-version scope ends.
+
+
+## Implemented source and exact placement recipe (2026-11-03)
+
+The driver preserves the upstream reset convention: at tick0 current target is
+init_time+f(0), future rows init_time+f(j*.02), j=1..5. At later controls use the
+source next-control .02s lead, then warp all six own-reference times. Actual
+walking reset qpos/qvel/activation remain byte-identical. Driver snapshots bind
+mode, T, formula, reset/later conventions, trajectory content and native axes.
+Default walking arithmetic and old default environment contracts are unchanged.
+
+The first direct translated MjSpec changed eleven compiler-derived arrays by
+rounding; an attempted128epsilon comparison also failed. Both failures remain.
+The adopted named scene compiles the ORIGINALopposed frames, then translates
+ONLY the two fixed root body frames before creating live MjData. It keeps every
+other compiled numeric array BIT EXACT, including all rest-length/inertia caches.
+The spec records matching fixed offsets; scene hash binds XML PLUS this recipe.
+Reconstruct with build_scene(spawn_variant="opposed-separated-lanes-v1"); loading
+only XML would recompute derived constants and does not reproduce this profile.
+No translation occurs after scene construction or during evaluated motion.
+
+StanceMetrics measures every completed1ms. Root means pelvis body origin, in
+world meters; drift is MAXIMUM XYexcursion since reset, not final displacement.
+Speed is the norm of its world-XYpoint velocity (mj_jac times completed qvel);
+last full second is all1000samples t=2.001..3.000s. Each corner must independently
+pass survival+drift+speed on≥3/4fixedstarts. Pair episode stops at the original
+first physical failure/control boundary. Missing/invalid/short trials cannot pass.
+All staged contacts are hashed every1ms; first positive-normal-force interactor
+surface pair/tick is retained. This is simulated force, not calibrated impact.
+
+Local development:30cases/2fail;37/1fail;37/0fail; full136/0fail (41.764s).
+All old99controls remain; three new actual203+17held/nextdecision replays pass.
+6,367static-counted synthetic-teacher fixture physics across all four attempts;
+additional compile/forecast inspections0physics. This is no pretrained outcome.
+[All faults/commands](../artifacts/v0.0.11/development/h33-development-01.json).
+
+Task source fixture reserve4096 covers2674static successful loop steps. Primary
+max36711 (12×3000+3×237), independent replay max36711; total reserve77518.
+Exact archive forecast117344136B plus explicit source/text/media/temp/fault
+reserves=268339080B<384MiB. No weights/checkpoints enter the output or Git.
+Use scripts/qualify_native_stance_probe.py with the committed protocol, which
+requires ALL136fresh target cases before native proof/trials. Actual teacher,
+normalizer, reference and runtime hashes remain H31's; no new optimization.
