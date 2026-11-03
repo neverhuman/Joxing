@@ -1,0 +1,121 @@
+{
+  "scope": "Read-only fresh capacity; no reservation/native work",
+  "hosts": [
+    {
+      "host": "xbabe1",
+      "returncode": 255,
+      "result": null,
+      "stderr": "Connection timed out during banner exchange\nConnection to 162.218.217.123 port 696 timed out\n"
+    },
+    {
+      "host": "xbabe2",
+      "returncode": 0,
+      "result": {
+        "samples": [
+          {
+            "utc": "2026-11-03T02:30:37Z",
+            "monotonic_s": 24743.351612163,
+            "load": [
+              49.353515625,
+              45.68505859375,
+              54.43896484375
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 50055000064,
+            "workspace_exists": false,
+            "disk_free_bytes": 790019944448,
+            "psi": {
+              "cpu": "some avg10=0.89 avg60=0.32 avg300=0.23 total=536325221\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=10.01 avg60=10.35 avg300=9.83 total=3062731082\nfull avg10=8.16 avg60=9.10 avg300=8.77 total=2703781556\n",
+              "memory": "some avg10=2.62 avg60=1.07 avg300=1.62 total=351777568\nfull avg10=2.62 avg60=1.07 avg300=1.61 total=344776275\n"
+            },
+            "jobs": []
+          },
+          {
+            "utc": "2026-11-03T02:30:47Z",
+            "monotonic_s": 24753.666293799,
+            "load": [
+              52.0126953125,
+              46.37158203125,
+              54.56884765625
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 42425630720,
+            "workspace_exists": false,
+            "disk_free_bytes": 789962924032,
+            "psi": {
+              "cpu": "some avg10=0.96 avg60=0.42 avg300=0.26 total=536490385\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=11.28 avg60=10.48 avg300=9.87 total=3063907107\nfull avg10=9.14 avg60=9.08 avg300=8.77 total=2704732186\n",
+              "memory": "some avg10=3.40 avg60=1.47 avg300=1.69 total=352269954\nfull avg10=3.40 avg60=1.46 avg300=1.68 total=345255231\n"
+            },
+            "jobs": []
+          }
+        ]
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe3",
+      "returncode": 0,
+      "result": {
+        "samples": [
+          {
+            "utc": "2026-11-03T02:30:37Z",
+            "monotonic_s": 24348.17585818,
+            "load": [
+              12.07666015625,
+              11.84716796875,
+              12.1962890625
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 108579139584,
+            "workspace_exists": true,
+            "disk_free_bytes": 42761908224,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=23081032\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=0.34 avg60=0.81 avg300=0.83 total=1298571426\nfull avg10=0.34 avg60=0.81 avg300=0.81 total=1273805110\n",
+              "memory": "some avg10=0.00 avg60=0.00 avg300=0.01 total=69120690\nfull avg10=0.00 avg60=0.00 avg300=0.01 total=68173096\n"
+            },
+            "jobs": []
+          },
+          {
+            "utc": "2026-11-03T02:30:47Z",
+            "monotonic_s": 24358.272166394,
+            "load": [
+              12.13232421875,
+              11.8681640625,
+              12.19921875
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 108792217600,
+            "workspace_exists": true,
+            "disk_free_bytes": 42771922944,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=23092456\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=1.61 avg60=1.08 avg300=0.89 total=1298871989\nfull avg10=1.61 avg60=1.08 avg300=0.87 total=1274097046\n",
+              "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=69120692\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=68173097\n"
+            },
+            "jobs": []
+          }
+        ]
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe4",
+      "returncode": 0,
+      "result": {
+        "utc": "2026-11-03T02:30:36Z",
+        "load": [
+          15.10986328125,
+          8.98583984375,
+          8.2822265625
+        ],
+        "jobs": [],
+        "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    11025.\nPages active:                               15198291.\nPages inactive:                             15263110.\nPages speculative:                            808787.\nPages throttled:                                   0.\nPages wired down:                             634814.\nPages purgeable:                               11843.\n\"Translation faults\":                    21154481476.\nPages copy-on-write:                      3786974809.\nPages zero filled:                       52248014550.\nPages reactivated:                          27683578.\nPages purged:                                8534967.\nFile-backed pages:                           9564979.\nAnonymous pages:                            21705209.\nPages stored in compressor:                  7688676.\nPages occupied by compressor:                1562213.\nDecompressions:                             16247648.\nCompressions:                               35099833.\nPageins:                                   196377769.\nPageouts:                                     280755.\nSwapins:                                           0.\nSwapouts:                                          0.\n",
+        "cpu_count": 32
+      },
+      "stderr": ""
+    }
+  ]
+}

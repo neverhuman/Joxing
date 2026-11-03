@@ -1,3 +1,26 @@
+# H29 published; Linux launch deferred by shared-host I/O —Nov2local
+
+Source b80dc3abf6e1ee252e3b224757e046ae38a2301d/protocol cd43c45e4c0c
+public before target outcomes. Local399pass/14Linux-only skips, all378old IDs +
+35new=413. Admission check1 on xbabe3 at02:28:38–49UTC: firstIOfull2.58%>
+fixed1%; second0.95%. Both samples required: deferred before checkout/runtime/
+source.0source attempts/all413nodes not_run;0newphysics/models/actors/updates;
+all4H28formalprobes remain not_run. Memory109.36–111.38GB, noJoxingjobs; no other
+jobs/services changed. Follow-up4hostinventory09: xbabe3IOfull1.61%stillhigh,
+xbabe2IO9.14%/memory3.40%busy; xbabe1SSHbanner timeout; xbabe4Mac/noJoxingjobs
+requires separate H26profile, cannot stand in for exact Linuxqualification. Exact initialepoch/fullwall/bootstrapRSS absent from
+frozen deferral receipt; observed10.111931s sample interval is NOTfullwall.
+
+[Receipt](../artifacts/v0.0.11/portable-source-admission-deferred-01/summary.json),
+[all admissions](../artifacts/v0.0.11/development/h29-admission-history.json).
+Ready current mission: PORTABLE_LINUX_SOURCE_READINESS_MISSION.md, no new tag.
+Next hourly check: inspect actualjobs/freshpressure; only after measured capacity
+change and BOTHfixed admission samples pass, use fresh finite120s source-only
+epoch/new root with frozen803source-file hashes + cd43c45e protocol. Public
+b80dc3a or a verified documentation-only descendant is eligible; record actual
+GitSHA and anonymous byte verification. Retain this deferral;
+no oldH28clock reset or source-job duplication. Do not call readiness qualified.
+
 # H29 portable Linux source readiness registered —Nov2local
 
 All378old nodes retained;35new nodes,413total. Local399pass/14Linux-only skips,

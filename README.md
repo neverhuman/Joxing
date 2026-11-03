@@ -1,9 +1,10 @@
 # Joxing
 
-Current wave: H29portable exact receipt inputs/startup readiness, source-only.
-Local399pass/14Linux-only skips; target413cases NOT_RUN at freeze.
-[Registered mission](docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md);
-[latest status](docs/STATUS.md). No trained/unassisted scoring bout yet.
+Current wave: H29 portable receipt/startup repair is public. Local checks:
+399 passed, 14 Linux-only skips. The Linux launch deferred on shared-host I/O;
+all 413 target checks remain unrun. [Current status](docs/STATUS.md) and
+[ready mission](docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md).
+No trained, unassisted scoring bout yet.
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 

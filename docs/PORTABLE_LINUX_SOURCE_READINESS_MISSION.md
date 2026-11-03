@@ -1,7 +1,12 @@
 # H29: portable exact receipt fixtures and explicit worker startup readiness
 
 Status: implemented/preregistered before outcomes;413registered source nodes,
-local399pass/14Linux-only skips. Formal target NOT_RUN at source freeze. Same v0.0.11
+local399pass/14Linux-only skips. Formal target NOT_RUN: publicb80dc3a/protocolcd43c45e; first fixed host
+admission deferred on IOfull2.58% (second0.95%), before checkout/source.
+Retain admission history; only a measured capacity change plus BOTHfresh samples
+permits a new finite source-only task.0source attempts,413not_run.
+Use frozen803file identities/protocolcd43c45e on publicb80dc3a or a verified
+documentation-only descendant; actual launched GitSHA must be recorded. Same v0.0.11
 project, no new release tag. One integration owner, no agents/concurrent writers.
 
 ## Objective and evidence
