@@ -1,0 +1,353 @@
+{
+  "schema": "joxing-native-pair-mac-prototype-v1",
+  "status": "completed",
+  "source_commit": "21012335dec35772279dfeb9eb4bb9748321c583",
+  "protocol_sha256": "7fd7abe99e2a1e6d89d5b2e7fca52584ebd3d0073836798b6c91b8412bc3a87a",
+  "owner": {
+    "pid": 32675,
+    "parent_pid": 1,
+    "rss_bytes": 35946496,
+    "state": "Ss",
+    "start": "Mon Nov 2 22:48:52 2026",
+    "command": "/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/Resources/Python.app/Contents/MacOS/Python scripts/qualify_native_pair_prototype.py --packet experiments/v0.0.11/native-pair-mac-prototype-protocol.json --source-sha 21012335dec35772279dfeb9eb4bb9748321c583 --protocol-sha256 7fd7abe99e2a1e6d89d5b2e7fca52584ebd3d0073836798b6c91b8412bc3a87a --epoch-start-monotonic 26297.881351791"
+  },
+  "original_epoch": 26297.881351791,
+  "stages": [
+    {
+      "name": "source",
+      "command": [
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml",
+        "/Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01/runs/v0.0.11/native-pair-mac-prototype-01/source.xml",
+        "--basetemp",
+        "/Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01/runs/v0.0.11/native-pair-mac-prototype-01/source-fixtures",
+        "tests/test_native_pair_motor_rl.py",
+        "tests/test_native_pair_motor_vec.py"
+      ],
+      "started_monotonic_s": 26311.6524815,
+      "elapsed_s": 12.877791249997244,
+      "peak_sampled_rss_bytes": 2484699136,
+      "peak_processes": 3,
+      "bytes": 6861679,
+      "returncode": 0,
+      "wall_s": 12.878415415998461
+    },
+    {
+      "name": "native-ppo",
+      "command": [
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/bin/python",
+        "scripts/run_native_pair_prototype.py",
+        "--packet",
+        "experiments/v0.0.11/native-pair-mac-prototype-protocol.json",
+        "--source-sha",
+        "21012335dec35772279dfeb9eb4bb9748321c583",
+        "--protocol-sha256",
+        "7fd7abe99e2a1e6d89d5b2e7fca52584ebd3d0073836798b6c91b8412bc3a87a"
+      ],
+      "started_monotonic_s": 26324.534627416,
+      "elapsed_s": 14.51972187499996,
+      "peak_sampled_rss_bytes": 2696052736,
+      "peak_processes": 3,
+      "bytes": 129274485,
+      "returncode": 0,
+      "wall_s": 14.520587416998751
+    },
+    {
+      "name": "before-render",
+      "command": [
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/bin/python",
+        "scripts/render_native_pair_motor.py",
+        "--folder",
+        "/Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01/runs/v0.0.11/native-pair-mac-prototype-01/native/before-eval",
+        "--label",
+        "before",
+        "--source-sha",
+        "21012335dec35772279dfeb9eb4bb9748321c583"
+      ],
+      "started_monotonic_s": 26339.055548958,
+      "elapsed_s": 17.746689625000727,
+      "peak_sampled_rss_bytes": 2143059968,
+      "peak_processes": 3,
+      "bytes": 129722163,
+      "returncode": 0,
+      "wall_s": 17.747681542001374
+    },
+    {
+      "name": "after-render",
+      "command": [
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/bin/python",
+        "scripts/render_native_pair_motor.py",
+        "--folder",
+        "/Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01/runs/v0.0.11/native-pair-mac-prototype-01/native/after-eval",
+        "--label",
+        "after",
+        "--source-sha",
+        "21012335dec35772279dfeb9eb4bb9748321c583"
+      ],
+      "started_monotonic_s": 26356.803617833,
+      "elapsed_s": 17.68020583299949,
+      "peak_sampled_rss_bytes": 2143027200,
+      "peak_processes": 3,
+      "bytes": 130166523,
+      "returncode": 0,
+      "wall_s": 17.681091708000167
+    },
+    {
+      "name": "audit",
+      "command": [
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/bin/python",
+        "scripts/audit_native_pair_prototype.py",
+        "--packet",
+        "experiments/v0.0.11/native-pair-mac-prototype-protocol.json"
+      ],
+      "started_monotonic_s": 26374.484990666,
+      "elapsed_s": 9.832073625002522,
+      "peak_sampled_rss_bytes": 2689171456,
+      "peak_processes": 2,
+      "bytes": 130169330,
+      "returncode": 0,
+      "wall_s": 9.833116249999875
+    }
+  ],
+  "rows": [
+    {
+      "id": "source",
+      "status": "completed"
+    },
+    {
+      "id": "native-ppo",
+      "status": "completed"
+    },
+    {
+      "id": "before-render",
+      "status": "completed"
+    },
+    {
+      "id": "after-render",
+      "status": "completed"
+    },
+    {
+      "id": "audit",
+      "status": "completed"
+    }
+  ],
+  "admission": [
+    {
+      "monotonic_s": 26301.604249125,
+      "physical_memory_bytes": 38654705664,
+      "free_percentage": 59,
+      "available_pressure_estimate_bytes": 22806276341,
+      "cpu_count": 14,
+      "load": [
+        4.41259765625,
+        4.423828125,
+        4.52880859375
+      ],
+      "free_disk_bytes": 224666701824,
+      "definition": "Mac memory_pressure free percentage times physical memory; not Linux MemAvailable/PSI"
+    },
+    {
+      "monotonic_s": 26311.651581541,
+      "physical_memory_bytes": 38654705664,
+      "free_percentage": 59,
+      "available_pressure_estimate_bytes": 22806276341,
+      "cpu_count": 14,
+      "load": [
+        5.40283203125,
+        4.62548828125,
+        4.59814453125
+      ],
+      "free_disk_bytes": 224663957504,
+      "definition": "Mac memory_pressure free percentage times physical memory; not Linux MemAvailable/PSI"
+    }
+  ],
+  "source_gate": {
+    "qualified": true,
+    "counts": {
+      "passed": 22,
+      "xfail": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "rows": [
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_zero_residual_matches_unchanged_shared_native_task",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_bad_pair_is_atomic_before_teacher_or_engine[missing]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_bad_pair_is_atomic_before_teacher_or_engine[shape]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_bad_pair_is_atomic_before_teacher_or_engine[nan]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_bad_pair_is_atomic_before_teacher_or_engine[bounds]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_causal_own_opponent_velocity_history_and_atomic_pair",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_actual_native_midhold_replay_no_new_teacher_decision",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_resigned_bad_snapshot_rejected_before_engine_commit[cache]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_resigned_bad_snapshot_rejected_before_engine_commit[history]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_resigned_bad_snapshot_rejected_before_engine_commit[command]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_resigned_bad_snapshot_rejected_before_engine_commit[clock]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_resigned_bad_snapshot_rejected_before_engine_commit[failure]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_resigned_bad_snapshot_rejected_before_engine_commit[bundle]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_opposed_native_yaw_constructor_is_explicit_and_unassisted",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_opponent_limb_velocity_enters_actor_features_without_private_activation",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_rl.py::test_actual_native_fixture_ppo_rollout_audited_update_and_tape",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_vec.py::test_pair_vec_one_world_joint_reset_real_terminal_observations",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_vec.py::test_pair_vec_bad_actions_do_not_step_or_queue[bad0]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_vec.py::test_pair_vec_bad_actions_do_not_step_or_queue[bad1]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_vec.py::test_pair_vec_bad_actions_do_not_step_or_queue[bad2]",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_vec.py::test_pair_vec_no_reset_over_pending_or_mutation_one_corner",
+        "status": "passed"
+      },
+      {
+        "node": "tests/test_native_pair_motor_vec.py::test_paired_ppo_fixture_updates_both_slots_not_native_proof",
+        "status": "passed"
+      }
+    ]
+  },
+  "original_epoch_elapsed_s": 86.47208866700021,
+  "owned_observed_identities": [
+    {
+      "pid": 32808,
+      "parent_pid": 32675,
+      "rss_bytes": 0,
+      "state": "Z",
+      "start": "Mon Nov 2 22:49:02 2026",
+      "command": "<defunct>"
+    },
+    {
+      "pid": 32977,
+      "parent_pid": 32808,
+      "rss_bytes": 3751936,
+      "state": "R",
+      "start": "Mon Nov 2 22:49:08 2026",
+      "command": "(Python)"
+    },
+    {
+      "pid": 33119,
+      "parent_pid": 32675,
+      "rss_bytes": 2642132992,
+      "state": "Rs",
+      "start": "Mon Nov 2 22:49:15 2026",
+      "command": "(Python)"
+    },
+    {
+      "pid": 33227,
+      "parent_pid": 33119,
+      "rss_bytes": 1884160,
+      "state": "R",
+      "start": "Mon Nov 2 22:49:22 2026",
+      "command": "(Python)"
+    },
+    {
+      "pid": 33301,
+      "parent_pid": 32675,
+      "rss_bytes": 0,
+      "state": "Z",
+      "start": "Mon Nov 2 22:49:30 2026",
+      "command": "<defunct>"
+    },
+    {
+      "pid": 33344,
+      "parent_pid": 33301,
+      "rss_bytes": 101842944,
+      "state": "R",
+      "start": "Mon Nov 2 22:49:33 2026",
+      "command": "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -f rawvideo -vcodec rawvideo -s 800x448 -pix_fmt rgb24 -r 50.00 -i - -an -vcodec libx264 -pix_fmt yuv420p -crf 15 -v warning -threads 1 -maxrate 2M -bufsize 2M /Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01/runs/v0.0.11/native-pair-mac-prototype-01/native/before-eval/before.mp4"
+    },
+    {
+      "pid": 33556,
+      "parent_pid": 32675,
+      "rss_bytes": 0,
+      "state": "Z",
+      "start": "Mon Nov 2 22:49:47 2026",
+      "command": "<defunct>"
+    },
+    {
+      "pid": 33581,
+      "parent_pid": 33556,
+      "rss_bytes": 245760,
+      "state": "R",
+      "start": "Mon Nov 2 22:49:50 2026",
+      "command": "(file)"
+    },
+    {
+      "pid": 33591,
+      "parent_pid": 33556,
+      "rss_bytes": 104300544,
+      "state": "R",
+      "start": "Mon Nov 2 22:49:51 2026",
+      "command": "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-macos-aarch64-v7.1 -y -f rawvideo -vcodec rawvideo -s 800x448 -pix_fmt rgb24 -r 50.00 -i - -an -vcodec libx264 -pix_fmt yuv420p -crf 15 -v warning -threads 1 -maxrate 2M -bufsize 2M /Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01/runs/v0.0.11/native-pair-mac-prototype-01/native/after-eval/after.mp4"
+    },
+    {
+      "pid": 33759,
+      "parent_pid": 32675,
+      "rss_bytes": 0,
+      "state": "Z",
+      "start": "Mon Nov 2 22:50:05 2026",
+      "command": "<defunct>"
+    }
+  ],
+  "final_live": [],
+  "final_bytes": 130169386
+}

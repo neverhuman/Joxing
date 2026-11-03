@@ -1,3 +1,31 @@
+# H31 actual native PPO witness passes; longer motor training next —Nov2local
+
+Public2101233/7fd7abe9:22fresh source cases and actual released motor/native loop
+pass.32joint20ms transitions/64actor samples/4PPOrollout updates/8epochs; actor
+hash changes, pretrained teacher unchanged. Independent640physics replay matches
+all32engine endpoints bit-exact, every700command per body reconstructs, all four
+behavior value/logprob checks0error. Actual203+17pretrained midhold replay exact.
+Both complete1s before/after evalclips retained/visually checked first-mid-last:
+upright, approachingbodycontact/mostlylowgloves,0–0. This is native motor RL,
+not a working boxing bout, skill improvement or league/self-play qualification.
+Training itself is.64s/0completedtrainingepisodes;2fixed motor evalepisodes only.
+
+Prototype finishes original86.472089s<240, peak sampledRSS2696052736B<8GiB;
+11observedPIDs exited.2877primary+640independent=3517exact guardednativephysics;
+plus768sourcefixture reserve(not measured; fixedloops563)=4285<4608. Raw130172115B/
+53files, outsideGit; small receipts/full fixed clips in artifacts/v0.0.11/
+native-pair-mac-prototype-01. Explicit Mac3.12.12/NP2.5.4/Torch2.14.1/SB32.9.2,
+not Linux/cross-host/100msnative lifetime promotion. Full oldcosts/faults retained.
+
+PRIMARYnext worker-ready native continuation:
+docs/NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md (same H31, notimplemented/run).
+Two seeds/2048jointsteps each/3s fixed evals, guard/reach-return behavioral gates.
+Stream latest causal frames/native states/chunks and bounded checkpoint cadence
+BEFOREscale; old smoke recorder would exceed1GiB. Freeze all numerical criteria/
+source/protocol/budgets prospectively. No H30detour, duplicate job, unbounded sweep,
+newtag or competitive promotion. No active job now; explicit ready mission left.
+See docs/NATIVE_PAIR_MAC_PROTOTYPE_RESULTS.md and research/H31.md. Wholev11inprogress.
+
 # H31native bridge implemented; small Mac PPO witness registered —Nov2local
 
 Implemented explicit native1400muscle core/teacher residual bridge, paired PPOVecEnv,

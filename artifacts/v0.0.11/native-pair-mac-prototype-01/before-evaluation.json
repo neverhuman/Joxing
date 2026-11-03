@@ -1,0 +1,109 @@
+{
+  "seed": 71000,
+  "frames": 51,
+  "physics": 1000,
+  "final_tick": 1000,
+  "candidate_points": [
+    0,
+    0
+  ],
+  "motor_failures": {
+    "A": null,
+    "B": null
+  },
+  "returns": {
+    "A": 0.7228156828355009,
+    "B": 0.7228509245044249
+  },
+  "final_metrics": {
+    "A": {
+      "tilt_rad": 0.2854607139528743,
+      "drop_m": -0.010076844387641781,
+      "up_world_z": 0.9595320176536011,
+      "floor_loads_N": {
+        "right": 0.0,
+        "left": 542.3055398787734,
+        "nonfoot": 0.0
+      },
+      "hand_target_distance_m": [
+        0.5321891719665406,
+        0.4849957772548861
+      ],
+      "reach": 0.016982488345244427,
+      "face_cos_positive": 0.0,
+      "residual_effort": 0.0,
+      "phase": 0
+    },
+    "B": {
+      "tilt_rad": 0.2816535896799182,
+      "drop_m": -0.010913311055645858,
+      "up_world_z": 0.9605971457356632,
+      "floor_loads_N": {
+        "right": 0.0,
+        "left": 554.0258552673708,
+        "nonfoot": 0.0
+      },
+      "hand_target_distance_m": [
+        0.5308613886331456,
+        0.4839665464371974
+      ],
+      "reach": 0.01729200508568953,
+      "face_cos_positive": 0.0,
+      "residual_effort": 0.0,
+      "phase": 0
+    }
+  },
+  "sporting_qualified": false,
+  "frame_tape": {
+    "schema": "joxing-native-stored-tape-v1",
+    "payload_bytes": 1281528,
+    "archive_bytes": 1282668,
+    "arrays": {
+      "activation": {
+        "dtype": "<f8",
+        "shape": [
+          51,
+          1400
+        ],
+        "bytes": 571200,
+        "sha256": "1ccef9effe4b7e9febab820de85a290523ea8189188013803f033b2e811a292a"
+      },
+      "control": {
+        "dtype": "<f8",
+        "shape": [
+          51,
+          1400
+        ],
+        "bytes": 571200,
+        "sha256": "24ec8f009d169be4bc8857885d4359045ac364c68115c978eb0150af389fb87f"
+      },
+      "qpos": {
+        "dtype": "<f8",
+        "shape": [
+          51,
+          170
+        ],
+        "bytes": 69360,
+        "sha256": "18b98f5feeeafefa39ae6da7d7899bfce2a888e20a6595e8004c5708ab32dc56"
+      },
+      "qvel": {
+        "dtype": "<f8",
+        "shape": [
+          51,
+          170
+        ],
+        "bytes": 69360,
+        "sha256": "eada58bbd8571ac228ed4853ba9cfe8e42f6b79436c7e90316fbc66453a9cda3"
+      },
+      "time": {
+        "dtype": "<f8",
+        "shape": [
+          51
+        ],
+        "bytes": 408,
+        "sha256": "858b3a622ff587ef42317ab4003a205f121cbb2a2c31c54c476d560a028de225"
+      }
+    },
+    "sha256": "88d18d8d330f5ade2b04004502c3a54a03ea13ff1eeb3ca77893be3c55877cd2"
+  }
+}

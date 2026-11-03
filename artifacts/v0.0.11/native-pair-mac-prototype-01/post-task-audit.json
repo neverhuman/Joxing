@@ -1,0 +1,27 @@
+{
+  "scope": "Post-task source/exit/file/visual audit; no new physics or clock extension",
+  "source817hashes": "exact",
+  "source_HEAD_clean": true,
+  "all_observed_owner_and_child_identities_exited": true,
+  "raw_file_count": 53,
+  "raw_bytes": 130172115,
+  "manifest_sha256": "27aead242777b21bdd49ab7c809422cc92a14dd1db2a37b782057621c70e8538",
+  "exact_native_entries": {
+    "native_primary": 2877,
+    "independent_training_replay": 640,
+    "exact_guarded_native_total": 3517,
+    "source_fixture_reserved_not_measured": 768,
+    "source_fixture_static_loop_count": 563,
+    "conservative_budget_charge": 4285,
+    "hard_cap": 4608
+  },
+  "visual_selection": "First/middle/last of both entire fixed clips, no selection based on rewards",
+  "no_competitive_or_improvement_claim": true,
+  "receipt_cap_postcheck": {
+    "final_all_json_jsonl_xml_logs_bytes": 840148,
+    "conservative_atomic_owner_temporary_reserve": 32768,
+    "physical_text_upper_bound": 872916,
+    "limit": 1048576,
+    "enforcement": "Aggregate raw/RSS/wall guarded online; separate text ceiling verified after task using append-only artifacts plus bounded atomic owner replacement. Future pilot needs explicit online typed receipt check."
+  }
+}

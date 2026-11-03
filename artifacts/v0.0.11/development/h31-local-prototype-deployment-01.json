@@ -1,0 +1,91 @@
+{
+  "schema": "joxing-native-pair-mac-prototype-v1",
+  "status": "launched",
+  "source_commit": "21012335dec35772279dfeb9eb4bb9748321c583",
+  "protocol_sha256": "7fd7abe99e2a1e6d89d5b2e7fca52584ebd3d0073836798b6c91b8412bc3a87a",
+  "root": "/Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01",
+  "pid": 32675,
+  "start": "Mon Nov  2 22:48:52 2026",
+  "original_epoch": 26297.881351791,
+  "setup_elapsed_s": 3.3164871250010037,
+  "public_verified": [
+    {
+      "path": "experiments/v0.0.11/native-pair-mac-prototype-protocol.json",
+      "bytes": 142659,
+      "sha256": "9a90adf54da980cf8a51b72898647bd3fc78697c2b76d69254d64bacff00cbe4"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_rl.py",
+      "bytes": 30172,
+      "sha256": "1ec4d6484f7f2490598f79d534e9479fc006339648461801e1f86af3d365f134"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_vec.py",
+      "bytes": 6213,
+      "sha256": "95457f7c36dee49df8d92d943744841f9f2940ddef0f2e433fd5088109af178d"
+    },
+    {
+      "path": "src/joxing/native_pair_motor_train.py",
+      "bytes": 14737,
+      "sha256": "cbd7b6eba489979f08d3e10057882e5ce7ee858a3b2e99cf995c5918f537ceae"
+    },
+    {
+      "path": "scripts/qualify_native_pair_prototype.py",
+      "bytes": 12066,
+      "sha256": "22ac26bb9bcdd94d1d327688af8b8f6a9a5530cdb505d1324f143d32705053f7"
+    },
+    {
+      "path": "scripts/run_native_pair_prototype.py",
+      "bytes": 3201,
+      "sha256": "e0faa8aee6815116d11a6f57daf704b52ffe57a8c12d36305389e387f2634ce3"
+    },
+    {
+      "path": "scripts/audit_native_pair_prototype.py",
+      "bytes": 12010,
+      "sha256": "62bf6baafb4b8ed20420e8b2acfb39e22f57d3d0ad611dd29357200e0d27fde8"
+    },
+    {
+      "path": "scripts/render_native_pair_motor.py",
+      "bytes": 3787,
+      "sha256": "12b0dff6292c951b78b124db83f9a7d8a89c9e7f1e1441f83e3cafd0a07cc840"
+    },
+    {
+      "path": "tests/test_native_pair_motor_rl.py",
+      "bytes": 10416,
+      "sha256": "defd867c9b0098ccf5eb64f781047ecacd9ba43f72acde15b2a045141ed5d59f"
+    },
+    {
+      "path": "tests/test_native_pair_motor_vec.py",
+      "bytes": 3423,
+      "sha256": "2477ee30674bac6e4d7e3eb44bc106cb41b5fd787c103b79efdc71703ced416e"
+    }
+  ],
+  "command": [
+    "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/bin/python",
+    "scripts/qualify_native_pair_prototype.py",
+    "--packet",
+    "experiments/v0.0.11/native-pair-mac-prototype-protocol.json",
+    "--source-sha",
+    "21012335dec35772279dfeb9eb4bb9748321c583",
+    "--protocol-sha256",
+    "7fd7abe99e2a1e6d89d5b2e7fca52584ebd3d0073836798b6c91b8412bc3a87a",
+    "--epoch-start-monotonic",
+    "26297.881351791"
+  ],
+  "checkout_commands": [
+    [
+      "git",
+      "clone",
+      "--no-hardlinks",
+      "/Users/bentaylor/Documents/ChatGPT/JOXING",
+      "/Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01"
+    ],
+    [
+      "git",
+      "checkout",
+      "--detach",
+      "21012335dec35772279dfeb9eb4bb9748321c583"
+    ]
+  ],
+  "native_physics": "not_yet_observed"
+}

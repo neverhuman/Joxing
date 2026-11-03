@@ -1,10 +1,14 @@
 # Joxing
 
-Current work: native two-humanoid RL bridge and paired PPO interface implemented;
-22 development checks pass, including exact native replay and opponent motion
-history. A small real-checkpoint PPO/recording witness is registered and unrun at
-source freeze. [Current status](docs/STATUS.md) · [native RL mission](docs/NATIVE_PAIR_RL_PILOT_MISSION.md).
-No working competitive boxing bout or performance improvement claimed yet.
+**Native two-humanoid PPO now executes:** 32 joint transitions, 64 actor samples,
+four updates, and independent bit-exact replay of every transition. Both humans
+retain 700 muscles and causal own/opponent motion history.
+[Results](docs/NATIVE_PAIR_MAC_PROTOTYPE_RESULTS.md) ·
+[Before recording](artifacts/v0.0.11/native-pair-mac-prototype-01/before.mp4) ·
+[After recording](artifacts/v0.0.11/native-pair-mac-prototype-01/after.mp4).
+The fixed one-second evaluations stay upright but score **0–0**, with no convincing
+punch sequence or demonstrated improvement. [Next: longer guard/reach training](docs/NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md).
+Competitive boxing and historical-opponent self-play remain unqualified.
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 

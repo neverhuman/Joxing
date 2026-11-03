@@ -1,0 +1,135 @@
+{
+  "schema": "joxing-first-native-paired-ppo-conclusion-v1",
+  "source_commit": "21012335dec35772279dfeb9eb4bb9748321c583",
+  "protocol_sha256": "7fd7abe99e2a1e6d89d5b2e7fca52584ebd3d0073836798b6c91b8412bc3a87a",
+  "status": "prototype_witness_passed",
+  "independent_audit_passed": true,
+  "attempts": 1,
+  "valid": 1,
+  "invalid": 0,
+  "not_run": 0,
+  "scope": "Small explicit local Mac real-checkpoint PPO/replay witness, not the larger two-seed H31pilot or competitive boxing",
+  "runtime": {
+    "gymnasium": "1.4.0",
+    "imageio": "2.38.1",
+    "imageio-ffmpeg": "0.6.0",
+    "mujoco": "3.8.0",
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "python": "3.12.12",
+    "stable-baselines3": "2.9.2",
+    "torch": "2.14.1"
+  },
+  "native_bodies": 2,
+  "muscles_per_body": 700,
+  "joint_transitions": 32,
+  "actor_samples": 64,
+  "rollout_updates": 4,
+  "optimizer_epochs": 8,
+  "actor_before": "b0ae0890db848ea6c6e598841c2ada0d273bbd26b84b6468005751b30e222ab4",
+  "actor_after": "8cc642c20e3bd0840f8fd03e1d789d660c3dd92d741cc5daa88af2ca4c903d19",
+  "teacher_hash_unchanged": true,
+  "teacher_bundle": {
+    "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+    "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+    "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+  },
+  "physical_entries": {
+    "native_primary": 2877,
+    "independent_training_replay": 640,
+    "exact_guarded_native_total": 3517,
+    "source_fixture_reserved_not_measured": 768,
+    "source_fixture_static_loop_count": 563,
+    "conservative_budget_charge": 4285,
+    "hard_cap": 4608
+  },
+  "source_cases": {
+    "passed": 22,
+    "xfail": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "native_midhold_replay": "actual released checkpoint203+17exact, no teacher resampling",
+  "all32_native_training_transitions": "independent20step engine replay bit-exact, all700teacher/decoder outputs reconstructed",
+  "all4_behavior_recomputations_max_error": 0.0,
+  "evaluations": {
+    "before": {
+      "final_tick": 1000,
+      "frames": 51,
+      "candidate_points": [
+        0,
+        0
+      ],
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "returns": {
+        "A": 0.7228156828355009,
+        "B": 0.7228509245044249
+      },
+      "video_sha256": "b8d00bd8a5fdd3562da45f1ca019ddab029ec9035eb7e653804dce7c230ccafc"
+    },
+    "after": {
+      "final_tick": 1000,
+      "frames": 51,
+      "candidate_points": [
+        0,
+        0
+      ],
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "returns": {
+        "A": 0.7237889770048552,
+        "B": 0.7238590997048788
+      },
+      "video_sha256": "c00b2dac416eaf983d82e281574fb307202ecf964707f62dbee65807e9e4e241"
+    }
+  },
+  "original_epoch_wall_s": 86.47208866700021,
+  "native_stage_wall_s": 12.65481649999856,
+  "sampled_peak_owned_rss_bytes": 2696052736,
+  "sampled_peak_owned_processes": 3,
+  "final_raw_bytes": 130172115,
+  "raw_files": 53,
+  "link_metadata_count": 1,
+  "owned_observed_identities": 11,
+  "all_owned_exited": true,
+  "raw_path": "/Users/bentaylor/joxing/native-pair-mac-prototype-20261102-01/runs/v0.0.11/native-pair-mac-prototype-01",
+  "visual_qa": {
+    "frames_checked": [
+      "before0",
+      "before25",
+      "before50",
+      "after0",
+      "after25",
+      "after50"
+    ],
+    "complete_clip_frames": 51,
+    "fps": 50,
+    "observation": "Both athletes remain upright for fixed1s; approach to close body contact with gloves mostly low; no convincing punch or guard sequence. No visible meaningful before/after skill improvement established."
+  },
+  "limitations": [
+    "One training seed and1s evaluation, only64actor samples; no performance improvement/statistical strength claim",
+    "Candidate points0-0 before andafter; no legal-strike or qualified bout result",
+    "Shared motor PPO reward, not competitive/self-play match utility or historical-opponent league",
+    "Explicit Mac3.12.12/NP2.5.4/Torch2.14.1/SB32.9.2 profile; no Linux/cross-platform/native100msretirement qualification",
+    "Zero-delay4frame actor history; reaction/jitter robustness not demonstrated",
+    "Large two-seed/2048joint-step motor pilot remains not_run; v11untagged/incomplete",
+    "All checkpoint/raw tapes outside Git, complete small hashes/summary/entire fixed clips in Git",
+    "Prototype did not have a separate online text-receipt guard; all finaltext840148B plus conservative atomic-owner reserve32768B remain below1MiB. Futurecollector must enforce typed receipt cap directly."
+  ],
+  "next_action": "H31continued native motor training with two seeds,3s fixed evaluations and explicit guard/reach-return metrics; streaming evidence needed to fit1GiB. No H30detour or100k-game sweep.",
+  "training_simulated_seconds": 0.64,
+  "training_completed_motor_episodes": 0,
+  "fixed_evaluation_motor_episodes": 2,
+  "text_receipts": {
+    "final_all_json_jsonl_xml_logs_bytes": 840148,
+    "conservative_atomic_owner_temporary_reserve": 32768,
+    "physical_text_upper_bound": 872916,
+    "limit": 1048576,
+    "enforcement": "Aggregate raw/RSS/wall guarded online; separate text ceiling verified after task using append-only artifacts plus bounded atomic owner replacement. Future pilot needs explicit online typed receipt check."
+  }
+}

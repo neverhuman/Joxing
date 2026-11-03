@@ -1,0 +1,85 @@
+{
+  "schema": "joxing-native-pair-independent-prototype-audit-v1",
+  "passed": true,
+  "audit_physics": 640,
+  "source_counts": {
+    "passed": 22,
+    "xfail": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "actual_native_joint_transitions": 32,
+  "actor_samples": 64,
+  "rollout_updates": 4,
+  "optimizer_epochs": 8,
+  "native_physics": 2877,
+  "source_physics_reserved_not_measured": 768,
+  "replay_passed": true,
+  "full700decoder_reconstruction": true,
+  "updates": [
+    {
+      "number": 0,
+      "max_value_logprob_error": 0.0,
+      "actor_changed": true
+    },
+    {
+      "number": 1,
+      "max_value_logprob_error": 0.0,
+      "actor_changed": true
+    },
+    {
+      "number": 2,
+      "max_value_logprob_error": 0.0,
+      "actor_changed": true
+    },
+    {
+      "number": 3,
+      "max_value_logprob_error": 0.0,
+      "actor_changed": true
+    }
+  ],
+  "evaluations": {
+    "before": {
+      "final_tick": 1000,
+      "frames": 51,
+      "candidate_points": [
+        0,
+        0
+      ],
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "returns": {
+        "A": 0.7228156828355009,
+        "B": 0.7228509245044249
+      },
+      "video_sha256": "b8d00bd8a5fdd3562da45f1ca019ddab029ec9035eb7e653804dce7c230ccafc"
+    },
+    "after": {
+      "final_tick": 1000,
+      "frames": 51,
+      "candidate_points": [
+        0,
+        0
+      ],
+      "motor_failures": {
+        "A": null,
+        "B": null
+      },
+      "returns": {
+        "A": 0.7237889770048552,
+        "B": 0.7238590997048788
+      },
+      "video_sha256": "c00b2dac416eaf983d82e281574fb307202ecf964707f62dbee65807e9e4e241"
+    }
+  },
+  "teacher_bundle": {
+    "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+    "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+    "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+  },
+  "boxing_qualified": false,
+  "performance_improvement_claimed": false,
+  "platform_scope": "Local Mac prototype only; not pinned Linux parity or100kboxinggames"
+}

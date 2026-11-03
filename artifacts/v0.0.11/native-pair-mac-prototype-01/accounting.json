@@ -1,0 +1,137 @@
+{
+  "scope": "Separate completed240s Mac prototype; prior clocks/costs retained, no ongoing extension",
+  "source_commit": "21012335dec35772279dfeb9eb4bb9748321c583",
+  "protocol_sha256": "7fd7abe99e2a1e6d89d5b2e7fca52584ebd3d0073836798b6c91b8412bc3a87a",
+  "prototype": {
+    "original_epoch_wall_s": 86.47208866700021,
+    "native_stage_wall_s": 12.65481649999856,
+    "physics": {
+      "native_primary": 2877,
+      "independent_training_replay": 640,
+      "exact_guarded_native_total": 3517,
+      "source_fixture_reserved_not_measured": 768,
+      "source_fixture_static_loop_count": 563,
+      "conservative_budget_charge": 4285,
+      "hard_cap": 4608
+    },
+    "raw_bytes": 130172115,
+    "raw_cap": 268435456,
+    "sampled_peak_rss": 2696052736,
+    "rss_cap": 8589934592,
+    "observed_processes_exited": 11,
+    "source_cases": 22,
+    "joint_transitions": 32,
+    "actor_samples": 64,
+    "rollout_updates": 4,
+    "optimizer_epochs": 8,
+    "motor_evaluation_episodes": 2,
+    "training_completed_motor_episodes": 0,
+    "qualified_boxing_games": 0
+  },
+  "earlier_H31development": {
+    "dev01": 403,
+    "dev02": 403,
+    "dev03": 403,
+    "dev04": 403,
+    "dev05": 403,
+    "dev06": 563,
+    "total": 2578,
+    "measurement": "Static entered-interval count from fixed successful/failed fixture loops; no formal/training/game count credit"
+  },
+  "prior_studies": {
+    "scope": "Immutable prior studies and separate H29 source-only accounting; units/envelopes not merged or rebased",
+    "prior_studies": {
+      "H15": {
+        "active_wall_s": 430.17124089665054,
+        "candidate_not_run": 9,
+        "fixture_bytes": 37722366,
+        "invalid_learner_references": 3,
+        "packets": 15,
+        "physics_used": 17458,
+        "receipt_bytes": 4169108,
+        "remaining_receipts": 25196,
+        "scope": "Sunk oldH15 study, reported alongside new study; no costs deleted, no old cap extension."
+      },
+      "H27": {
+        "fixtures": 13385957,
+        "invalid": 1,
+        "not_run": 3,
+        "original_epoch_through_forensics_s": 231.40746937319636,
+        "physics": 5086,
+        "protocol": "4577f17af1ccbfe89e0fe3186705530252b664aae15b3a2b2f79760270d133cf",
+        "receipts": 136572,
+        "source": "fd1ed5bfc303592f98bd13387036bfa4da218c7c",
+        "source_wall_s": 88.93701716698706
+      },
+      "H28": {
+        "controller_wall_s": 83.455039,
+        "failed": 3,
+        "fixtures_including_inputs": 2349586,
+        "formal_not_run": 4,
+        "passed": 375,
+        "physics": 0,
+        "protocol": "dbaa06ae77ff925942ce6fc7936e2aac334cf6cbb47beca0c0e1c166db61390e",
+        "receipts": 214432,
+        "source": "3ffbd18760afea69360acba226d4a6a618108951",
+        "source_wall_s": 82.496061,
+        "supplement_original_epoch_s": 284.729664
+      },
+      "H29-xbabe3": {
+        "admission_deferred": 1,
+        "bootstrap_rss": null,
+        "full_admission_wall_s": null,
+        "limitations": "Initial deferral omitted original epoch/end/RSS; not zero",
+        "observed_sample_interval_s": 10.111931238,
+        "physics": 0,
+        "source_attempts": 0,
+        "source_not_run": 413
+      },
+      "scope": "All sunk costs retained alongside distinct120s H29; no expired300s H28budget rebase"
+    },
+    "H29": {
+      "xbabe3_profile_sha256": "cd43c45e4c0c3d6b730831e46dbad9e092d4092a448fdcbdf5cda796bc9bd2a0",
+      "xbabe3_admission_deferred": 1,
+      "xbabe3_source_attempts": 0,
+      "xbabe1_profile_sha256": "9b8e4128f9975baf306e43c110bec89bbb2f83abe307b6c001c6734fab9d30c3",
+      "xbabe1_source_attempts": 1,
+      "valid_source": 1,
+      "invalid_source": 0,
+      "source_passed": 413,
+      "all_H28_formal_probes_not_run": 4,
+      "physics_added": 0,
+      "native_models_added": 0,
+      "optimizer_updates_added": 0,
+      "original_epoch": {
+        "bootstrap_to_launch_s": 42.43973214738071,
+        "source_final_s": 73.483886661008,
+        "independent_audit_final_s": 74.93810198456049,
+        "controller_final_s": 75.0452089831233,
+        "hard_limit_s": 120,
+        "runtime_stage_s": 5.5080070327967405,
+        "source_tests_s": 23.75648088566959,
+        "independent_audit_s": 0.9614768400788307
+      },
+      "resources": {
+        "peak_sampled_controller_inclusive_source_rss": 1179213824,
+        "peak_source_processes": 10,
+        "bootstrap_peak_rss": 38817792,
+        "controller_peak_rss": 38817792,
+        "audit_peak_rss": 43184128,
+        "fixture_bytes_charged": 3219553,
+        "regular_fixture_bytes": 3219480,
+        "regular_final_receipt_bytes": 546712,
+        "source_receipt_bytes_before_independent_audit": 87758,
+        "controller_receipt_bytes_before_final_owner_publish": 546365
+      },
+      "post_task_transfer_regular_bytes": 3766192,
+      "post_task_transfer_files": 1937,
+      "post_task_link_metadata": 76,
+      "scope_limits": [
+        "75.0452089831233s is full registered controller epoch through completed audit/final owner publication, not later Git/transfer wall",
+        "Original xbabe3 admission completewall/RSS unmeasured; original sample interval10.111931238s retained",
+        "Discovery/preflight/posttask publications are separate read-only work, no source/native run or clock-reset credit"
+      ]
+    }
+  },
+  "post_task": "Raw hashing, file curation, visual QA and Git publication are later read-only/publication work, not an extension of the completed240s compute envelope"
+}

@@ -1,3 +1,10 @@
+Completed checkpoint2026-11-02: the small actual native PPO/replay/recording
+witness passes on its explicit Macprofile.32joint transitions/64actor samples/
+4updates, all32independent engine replays exact, points0–0. No skill or competitive
+qualification. Read NATIVE_PAIR_MAC_PROTOTYPE_RESULTS.md; CURRENTnext is
+NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md. Larger H31pilot remains pending.
+Original prospective plan below retained.
+
 Implementation update2026-11-02: native bridge/paired PPOVecEnv and small witness
 implemented;22Mac development checks pass. Initial prototype uses EXPLICITlocal
 Mac runtime/profile and fresh dedicated checkout; protocol native-pair-mac-

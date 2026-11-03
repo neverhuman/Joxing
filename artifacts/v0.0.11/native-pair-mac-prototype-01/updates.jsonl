@@ -1,0 +1,8 @@
+{"actor_hash": "b0ae0890db848ea6c6e598841c2ada0d273bbd26b84b6468005751b30e222ab4", "num_timesteps": 16, "number": 0, "phase": "entered"}
+{"actor_after": "06bfa78e6d969764c765943a463c0075906066558f3d6bbd88977963113e2409", "actor_before": "b0ae0890db848ea6c6e598841c2ada0d273bbd26b84b6468005751b30e222ab4", "actor_samples": 16, "number": 0, "optimizer_epochs": 2, "phase": "completed"}
+{"actor_hash": "06bfa78e6d969764c765943a463c0075906066558f3d6bbd88977963113e2409", "num_timesteps": 32, "number": 1, "phase": "entered"}
+{"actor_after": "45a4ea4c001c83a066456b877552e56cb74169d89d8a04731bd2421d0eba7fa1", "actor_before": "06bfa78e6d969764c765943a463c0075906066558f3d6bbd88977963113e2409", "actor_samples": 32, "number": 1, "optimizer_epochs": 4, "phase": "completed"}
+{"actor_hash": "45a4ea4c001c83a066456b877552e56cb74169d89d8a04731bd2421d0eba7fa1", "num_timesteps": 48, "number": 2, "phase": "entered"}
+{"actor_after": "0334cb5dae1fec1291fb6db84d34e22eccb3d2ecff16896a100da765fb388d83", "actor_before": "45a4ea4c001c83a066456b877552e56cb74169d89d8a04731bd2421d0eba7fa1", "actor_samples": 48, "number": 2, "optimizer_epochs": 6, "phase": "completed"}
+{"actor_hash": "0334cb5dae1fec1291fb6db84d34e22eccb3d2ecff16896a100da765fb388d83", "num_timesteps": 64, "number": 3, "phase": "entered"}
+{"actor_after": "8cc642c20e3bd0840f8fd03e1d789d660c3dd92d741cc5daa88af2ca4c903d19", "actor_before": "0334cb5dae1fec1291fb6db84d34e22eccb3d2ecff16896a100da765fb388d83", "actor_samples": 64, "number": 3, "optimizer_epochs": 8, "phase": "completed"}

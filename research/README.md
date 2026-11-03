@@ -44,9 +44,11 @@ remain the authority for measurements, budgets, criteria and denominators.
 
 |[H30](H30.md)|Can portable lean-worker qualification preserve lifetime and reduce childRSS?|Secondarypartialdraft/CLIdisabled;4not_run; native H31priority|
 
-|[H31](H31.md)|Can a native shared-world muscle-residual PPOpilot learn balance/reach toward boxing?|Nativebridge/pairedPPOimplemented;22sourcechecks; smallMacwitness registered,notrun|
+|[H31](H31.md)|Can a native shared-world muscle-residual PPOpilot learn balance/reach toward boxing?|Actualnative32jointsteps/64samples/4updates+exact replay/video pass;0–0; longer motortraining next|
 
-**Latest: H31native bridge/PPOimplemented;22development checks pass. Released model hashes load; small real-checkpoint32joint-step/4update witness preregistered, NOT_RUN at freeze. Larger nativepilot/competitiveboxing unqualified.**
+**Latest: H31actual native paired PPOwitness passes:32jointsteps/64samples/4updates, bit-exact32transition replay and fixed before/after clips. Upright1s/0–0, no skill claim. Two-seed longer motor training next; H30secondary.**
+
+**Prior checkpoint: H31native bridge/PPOimplemented;22development checks pass. Released model hashes load; small real-checkpoint32joint-step/4update witness preregistered, NOT_RUN at freeze. Larger nativepilot/competitiveboxing unqualified.**
 
 **Prior checkpoint: User prioritizes real two-humanoid RL ASAP. H31native paired motor learning primary; H30fakeworker draft secondary/dispatch-disabled. H29source-only413cases/audit pass. Next unused ID:H32.**
 
