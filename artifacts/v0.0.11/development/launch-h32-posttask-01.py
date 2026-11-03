@@ -20,9 +20,8 @@ with (run/'posttask-launch.log').open('x') as log:
  child=subprocess.Popen(cmd,cwd=root,env=env,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
 start=subprocess.check_output(['ps','-p',str(child.pid),'-o','lstart='],text=True).strip()
 result={'status':'launched','source_commit':commit,'host':'xbabe4','root':str(root),'output':str(root/p['output']),'pid':child.pid,'start':start,'original_epoch':epoch,'setup_s':time.monotonic()-epoch,'command':cmd,'new_learning':0,'original_attempt_stays_invalid':True}
-(run/'posttask-deployment.json').write_text(json.dumps(result,indent=2)+'
-');print(json.dumps(result))
+(run/'posttask-deployment.json').write_text(json.dumps(result,indent=2)+chr(10));print(json.dumps(result))
 """.replace('COMMIT',repr(commit))
 r=subprocess.run(['ssh','-o','ConnectTimeout=15','xbabe4','python3 -'],input=script,text=True,capture_output=True,timeout=65,check=False)
 if r.returncode:raise RuntimeError(r.stderr+r.stdout)
-v=json.loads(r.stdout.strip().splitlines()[-1]);p=repo/'artifacts/v0.0.11/development/h32-posttask-deployment-01.json';assert not p.exists();p.write_text(json.dumps(v,indent=2)+'\n');print(json.dumps(v))
+v=json.loads(r.stdout.strip().splitlines()[-1]);p=repo/'artifacts/v0.0.11/development/h32-posttask-deployment-01.json';assert not p.exists();p.write_text(json.dumps(v,indent=2)+chr(10));print(json.dumps(v))

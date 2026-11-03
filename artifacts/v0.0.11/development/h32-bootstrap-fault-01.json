@@ -1,0 +1,6 @@
+{
+  "scope": "Bootstrap transport only;0remoteactions/0physics/0newlearning",
+  "error": "Embedded remote script newline escaping caused compile-time SyntaxError before any command/rootcreation",
+  "fix": "Use chr(10), parse both outer and embedded script beforelaunch",
+  "original_native_attempt_stays_invalid": true
+}
