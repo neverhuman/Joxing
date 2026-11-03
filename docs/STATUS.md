@@ -1,3 +1,32 @@
+# H31native bridge implemented; small Mac PPO witness registered —Nov2local
+
+Implemented explicit native1400muscle core/teacher residual bridge, paired PPOVecEnv,
+four causal own/opponent history frames and goal/clock features, native held/replay,
+objective-specific balance/reach-return reward, unchanged candidate sporting points.
+22development controls pass: actual native engine with synthetic actor; zero vs
+unchanged shared motor is bit-exact, midhold203+17physical replay exact, pair actions
+atomic, opponent limbvelocity changes observations while private activations do not.
+A native FIXTUREPPO160physics/16actor samples/oneupdate/tape/RNGcheckpoint passes;
+this is not a released-controller training outcome. Initial12/14cache/failure
+validation faults repaired and retained. Real released actor/normalizer/reference
+load hashes match in a0step preflight. No formal real-checkpoint PPO task yet.
+
+Prospective small H31native witness protocol 7fd7abe99e2a:
+experiments/v0.0.11/native-pair-mac-prototype-protocol.json. Explicit local Mac
+Py3.12.12/NP2.5.4/Torch2.14.1/SB32.9.2 profile, not pinned Linux parity. Fresh
+~/joxing/native-pair-mac-prototype-20261102-01, readonly workspace runtime/inputs.
+One actual checkpoint pair, native203+17replay gate,32joint transitions/64actor
+samples/4PPOrollout updates/8epochs, fixed entire1s before/after evalclips and
+independent640physics replay/all700command/behaviorlogprob audit. Motor reward,
+not competitive learning; no improvement/boxing qualification from this tiny run.
+New240soriginalepoch inclsetup60/source30/native80/render2x20/audit30,8GiBRSS/
+12process/oneworld/thread1/256MiBraw/1MiBreceipts;4608physics cap includes768source
+fixture reserve(not measured; actual fixedfixtureloops563) and countednative/audit
+entries (max2877+640), firstlimit. Source/protocol/public verify BEFOREoutcomes.
+
+Currentmission NATIVE_PAIR_RL_PILOT_MISSION.md/H31 remains primary. Larger two-seed
+2048joint-step/Linuxqualification still pending; H30secondary/disabled. No tag.
+
 # User priority: native two-humanoid RL pilot next —Nov2local
 
 User clarified: actual two-humanoid boxing RL ASAP; fake-worker benchmarking must

@@ -1,3 +1,11 @@
+Implementation update2026-11-02: native bridge/paired PPOVecEnv and small witness
+implemented;22Mac development checks pass. Initial prototype uses EXPLICITlocal
+Mac runtime/profile and fresh dedicated checkout; protocol native-pair-mac-
+prototype-protocol.json freezes32jointsteps/64actor samples/4updates/native replay/
+fixed clips. Source/protocol public before formal outcomes. This is a small
+prequalification witness, not the larger two-seed Linuxpilot or competitive
+boxing qualification. See current STATUS.md for exact caps/hashes/outcomes.
+
 # H31 — Native two-humanoid motor RL is the critical path
 
 Status: prospective worker-ready implementation mission, NOTimplemented/run.

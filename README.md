@@ -1,11 +1,10 @@
 # Joxing
 
-Current priority: [native two-humanoid motor RL](docs/NATIVE_PAIR_RL_PILOT_MISSION.md),
-using the pretrained motor, learned muscle residuals, opponent-aware history and
-fixed before/after clips. Implementation is next; no trained boxing bout yet.
-H29's 413 Linux source checks/audit passed. The fake-worker memory benchmark is
-secondary and will not delay native work without a measured resource blocker.
-[Current status](docs/STATUS.md).
+Current work: native two-humanoid RL bridge and paired PPO interface implemented;
+22 development checks pass, including exact native replay and opponent motion
+history. A small real-checkpoint PPO/recording witness is registered and unrun at
+source freeze. [Current status](docs/STATUS.md) · [native RL mission](docs/NATIVE_PAIR_RL_PILOT_MISSION.md).
+No working competitive boxing bout or performance improvement claimed yet.
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 
