@@ -1,0 +1,23 @@
+{
+  "scope": "Read-only pinned installed source identity, not probe outcome",
+  "runtime": "Linux SB3 2.7.1",
+  "files": {
+    "common/vec_env/subproc_vec_env.py": "e3acbeb465d5ca1288a7b9fa812eeacb9b03e3c52e757a1130b5d57a04baf942",
+    "common/vec_env/base_vec_env.py": "3af7d0b55d4de0ba1bed29649e9a5d588fb4cff6e74cad70e1e989368879533f",
+    "common/env_util.py": "5b5c7fa9f06f2dd4ae65e2e5ed164c0df0b7b5f65a9a249ed56d57c2a1cc2e60",
+    "common/vec_env/patch_gym.py": "8669d9c71cb5894903a8e87ed86855b8e4207c73b82635e8996a06061bb8fe11"
+  },
+  "worker_body_without_helper_import_annotation_normalized_sha256": "3c3e397ecebd33f9b19602d7c11ba448c4659b692ad8d515d9ef92573d176be3",
+  "helper_changes": [
+    "Gymnasium-only identity patch, reject other environment backends",
+    "is_wrapped/unwrap_wrapper body retained; local delayed Gymnasium import",
+    "CloudpickleWrapper methods retain dumps/loads, delayed cloudpickle import"
+  ],
+  "original_license_sha256": "70ce62350972c431a030ea84e31a2f3904a439309cbf1b57db9922af1e8ec472",
+  "ast_tool_runtime": {
+    "python": "3.12.3",
+    "body_sha256": "3c3e397ecebd33f9b19602d7c11ba448c4659b692ad8d515d9ef92573d176be3",
+    "source_sha256": "e3acbeb465d5ca1288a7b9fa812eeacb9b03e3c52e757a1130b5d57a04baf942"
+  },
+  "development_fault": "Initial AST receipt was generated with local system Python3.14; ast.dump representation differed from3.12 despite identical normalized operations. Failed source check retained; recaptured exact pinned source under target Python3.12.3 before protocol/outcomes. Candidate operation bodies unchanged."
+}

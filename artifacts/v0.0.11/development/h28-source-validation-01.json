@@ -1,0 +1,128 @@
+{
+  "scope": "Local Mac development, not formal Linux RSS/import/native qualification",
+  "protocol_sha256": "dbaa06ae77ff925942ce6fc7936e2aac334cf6cbb47beca0c0e1c166db61390e",
+  "commands": [
+    [
+      ".venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=runs/v0.0.11/h28-all-development.xml",
+      "tests/test_host_admission.py",
+      "tests/test_runtime_import_check.py",
+      "tests/test_receipt_encoding_v2.py",
+      "tests/test_receipt_encoding.py",
+      "tests/test_four_native_context.py",
+      "tests/test_native_context_transfer.py",
+      "tests/test_live_resource_release.py",
+      "tests/test_native_teardown.py",
+      "tests/test_watchdog_publication.py",
+      "tests/test_trial_rss_watchdog.py",
+      "tests/test_terminal_rss_reader.py",
+      "tests/test_process_exit_probe.py",
+      "tests/test_serial_retirement.py",
+      "tests/test_serial_native_teardown.py",
+      "tests/test_deferred_trial.py",
+      "tests/test_deferred_qualification.py",
+      "tests/test_physics_credit.py",
+      "tests/test_training_context.py",
+      "tests/test_training_context_audit.py",
+      "tests/test_lean_rollout_worker.py",
+      "tests/test_lean_worker_probe.py",
+      "tests/test_historical_input_mirror.py",
+      "tests/test_lean_probe_controller.py"
+    ],
+    [
+      "uv",
+      "tool",
+      "run",
+      "--offline",
+      "ruff",
+      "check",
+      "[new/changed Python files]"
+    ]
+  ],
+  "env": {
+    "PYTHONPATH": "src:.:scripts",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "results": {
+    "passed": 364,
+    "skipped_linux_only": 14,
+    "registered": 378,
+    "new": 63,
+    "failed": 0,
+    "wall_s": 9.07,
+    "junit_sha256": "1ab4f7fbd8b69c672ec0f60343700c1fa842009202e40ad55d4dde1e7bab4753"
+  },
+  "local_runtime": "Python3.12.12,SB32.9.2,Gymnasium1.4.0; NOTformal profile",
+  "target_runtime": {
+    "mujoco": "3.8.0",
+    "numpy": "2.4.2",
+    "python": "3.12.3",
+    "sb3": "2.7.1",
+    "torch": "2.10.0+cpu"
+  },
+  "pinned_source_AST_metadata": "artifacts/v0.0.11/development/lean-worker-pinned-source-01.json",
+  "unchanged": [
+    "src/joxing/wave.py",
+    "src/joxing/deferred_trial.py",
+    "src/joxing/stance_env.py",
+    "scripts/trial_rss_watchdog.py",
+    "scripts/terminal_rss_reader.py",
+    "src/joxing/serial_retirement.py"
+  ],
+  "all_formal_rows": [
+    {
+      "arm": "none",
+      "id": "sb3A",
+      "method": "forkserver",
+      "profile": "sb3",
+      "seed": 1097,
+      "variant": "fake-ipc-sb3-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "none",
+      "id": "leanA",
+      "method": "forkserver",
+      "profile": "lean",
+      "seed": 1097,
+      "variant": "fake-ipc-lean-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "none",
+      "id": "sb3B",
+      "method": "forkserver",
+      "profile": "sb3",
+      "seed": 1098,
+      "variant": "fake-ipc-sb3-v1",
+      "status": "not_run"
+    },
+    {
+      "arm": "none",
+      "id": "leanB",
+      "method": "forkserver",
+      "profile": "lean",
+      "seed": 1098,
+      "variant": "fake-ipc-lean-v1",
+      "status": "not_run"
+    }
+  ],
+  "native_physics": 0,
+  "native_models": 0,
+  "policy_actors": 0,
+  "updates": 0,
+  "development_faults": "artifacts/v0.0.11/development/h28-development-faults-01.json",
+  "next_action": "Publicfreeze+anonymoussourceverify, originalfixedadmission onxbabe3; one bounded4probe packet only after all369Linuxcontrols pass.",
+  "followup_controller_checks": {
+    "passed": 9,
+    "wall_s": 0.02,
+    "reason": "Controller-inclusive accounting/final-publication clock edits followed final full development run; focused clock/command controls rerun, no native or probe."
+  },
+  "target_host": "xbabe3",
+  "mirrored_fixture_bytes": 262515
+}

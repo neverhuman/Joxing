@@ -1,0 +1,26 @@
+{
+  "scope": "Immutable historical codec INPUT bytes only; not reproduction of historical execution",
+  "decoded_archive_bytes": 350719,
+  "decoded_archive_sha256": "a1c7ec88025e7921d3d143f765fbd4c401c0e803fd69e8357252eed77b86231e",
+  "encoded_bytes": 102457,
+  "encoded_sha256": "4de2439ac50306d2f7ec3dbc40fa312b08631c6e8ddc226ee5c7d39233050fe7",
+  "files": {
+    "/home/ubuntu/joxing/four-native-context-20261102-01/runs/v0.0.11/four-native-context-01/result.json": {
+      "bytes": 2413,
+      "sha256": "a3300cf9b99755706786224168b43772e10ebd8ac316daff6144c2852843be66"
+    },
+    "/home/ubuntu/joxing/native-context-transfer-20261102-01/runs/v0.0.11/native-context-deployment.json": {
+      "bytes": 181508,
+      "sha256": "412ddbed8c779f1639a83ce8ecc41e36124ad8a41e9b81363a8a33dfc4ece9ef"
+    },
+    "/home/ubuntu/joxing/native-context-transfer-20261102-01/runs/v0.0.11/native-context-launch.log": {
+      "bytes": 11419,
+      "sha256": "1976535d9953f907ed669fc5557276828355f5c0af9b5d2e2b63dc322321f59b"
+    },
+    "/home/ubuntu/joxing/native-context-transfer-20261102-01/runs/v0.0.11/native-context-transfer-01/result.json": {
+      "bytes": 66977,
+      "sha256": "fe610139563f760d69cca73044f13554b805d3c997bf4f4c7a4c589af409b53c"
+    }
+  },
+  "raw_input_bytes": 262317
+}

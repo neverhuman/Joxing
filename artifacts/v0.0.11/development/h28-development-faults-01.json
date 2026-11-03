@@ -1,0 +1,37 @@
+{
+  "scope": "Development-only faults before protocol/public freeze; no formal H28 target outcomes",
+  "faults": [
+    {
+      "fault": "AST metadata generated under systemPython3.14 differs from Python3.12 ast.dump format.",
+      "source_test_result": "1failed/27passed in6.47s; exact failedJUnit kept ignored runs/v0.0.11/h28-development-failed-01.xml",
+      "repair": "Recaptured locked unchanged SB3source on xbabe1Python3.12.3; strict normalized body3c3e397e matches candidate. No operations/gates changed."
+    },
+    {
+      "fault": "Existing development inventory05 overwritten by same collector path during heartbeat recheck before publication. No native/source outcome modified. Earlier full raw inventory unavailable.",
+      "retained_prior_summary": {
+        "xbabe1": {
+          "load1": 6.701171875,
+          "available_bytes": 33687220224,
+          "jobs": [],
+          "cpu_some_avg10": 0,
+          "io_full_avg10": 0,
+          "memory_full_avg10": 0.22
+        },
+        "xbabe2": "disk_usage(/home/ubuntu/joxing)failed; no completed snapshot",
+        "xbabe3": {
+          "load1": 30.43115234375,
+          "available_bytes": 102763962368,
+          "jobs": [],
+          "io_full_avg10": 8.2,
+          "memory_full_avg10": 2.63
+        },
+        "xbabe4": {
+          "load1": 4.765625,
+          "jobs": []
+        }
+      },
+      "recheck_receipt": "four-host-capacity-20261103-06.json",
+      "repair": "Collector now requires a fresh caller-named output and opens it exclusively; missing workspace queries home disk, reports existence, creates nothing."
+    }
+  ]
+}

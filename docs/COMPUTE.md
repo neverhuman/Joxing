@@ -1,3 +1,19 @@
+## Spare xbabe3 selected for H28; isolation and pins before launch —Nov2local
+
+[Fresh capacity07](../artifacts/v0.0.11/development/four-host-capacity-20261103-07.json):
+all detected Joxingjobs empty. xbabe1available15.05GB<16GiBfloor; xbabe2IO9.05%/
+memory2.05% busy; xbabe3available102.29GB/IO0%/memory0%/load14.04, candidate.
+xbabe4load10.36; independent Mac tests remain secondary. No resources reserved.
+
+H28uses1fakeworker/thread1 onNEW~/joxing/lean-worker-probe-20261102-01,0native
+physics/actors/updates. ExistingUVmatcheshash/version, stdlib3.12.3samehashes;
+explicitkernel6.8.0-147header/PF_EXITING=4. Fixedadmission still required atlaunch.
+Read-only historical codec byte fixtures hydrated undernewcheckout and labelled
+INPUT_MIRROR_NOT_EXECUTION; no existingroot overwritten, originals onxbabe1
+untouched. All262515mirrorbytes counted in16MiBfixturecap. Full378Linuxcontrols
+then4fake source/IPC/import/RSS/exit probes,300soriginalepoch/30sslot/8GiBhard.
+No GPUjob, otheruserstop, driver/service/globalpackage changes or nativeclaim.
+
 ## H27used quietxbabe1; bounded packet stopped and alljobs exited —20:36UTC
 
 [Audited H27result](NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md):315Linuxcontrols and

@@ -1,7 +1,7 @@
 # H28: qualify a Torch-free rollout command worker before more native RL
 
-Status: worker-ready NEXT mission. NOTimplemented, machine protocol pending,
-0formal outcomes. One integration owner, no agents or other chats. Primary after
+Status: implemented/prospectively registered; target4rows NOT_RUN at freeze.
+Local364passed/14Linux-only skips,378registered nodes.0formal outcomes. One integration owner, no agents or other chats. Primary after
 [H27negative result](NATIVE_LEARNER_CONTEXT_PARITY_RESULTS.md); H26Mac-local replay
 remains an independent secondary mission. Do not rerun unchanged H27.
 
@@ -148,3 +148,56 @@ snapshot rewrite,8worldconcurrency or self-play until those gates pass.
 Final handoff: public commit/protocol, source tests/full case table, exact module
 and measured perworkerRSS evidence, first fault if any, all PIDs/exits/rawhashes,
 old/new sunk budgets and next smallest question. Link future results here.
+
+## Implemented execution profile and current commands
+
+Machine protocol: experiments/v0.0.11/lean-rollout-worker-protocol.json.
+Exact63new source controls include a real fresh fake forkserver pair, typed
+command-state/RNG mutation faults, known termination/autoreset oracle, cold
+imports/serialization, explicit caps, module proof, and8read-only input-mirror
+ownership/fault checks. All315prior controls remain in the378node manifest.
+Development uses localSB32.9.2/Python3.12.12; formal Linux is exact locked
+SB32.7.1/Python3.12.3, with installed source hashes checked. Initial AST receipt
+used systemPython3.14and failed1/28checks; exact target3.12normalized source
+recapture fixes representation only, operations remain identical. Failure and
+earlier inventory overwrite fault retained in development/h28-development-faults-01.json.
+
+1msrequested monitor profile is a new thin wrapper around UNCHANGED monitor
+implementation. It increases sampling frequency for fast fake exits; all100ms/
+positive retirement/whole2s/resource gates remain. No added fake delay, dropped
+finalizer or forced fast exit. A missed positive retirement still fails H28.
+Receipt projection uses old saved report shapes, not new target measurements;
+653910bytes<768KiBreserve. Actualheadroom is checked aftersource beforeprobes.
+
+Selected host: xbabe3, original source bytes/runtime pins/stdlib identical to
+xbabe1, explicit kernel6.8.0-147variant (headerhash+PF_EXITING=4), no native claim.
+xbabe1currently lacks16GiBheadroom; no workload on otherusers is stopped.
+Historical codec JSONinputs are mirrored from exact bytes in a small Git archive.
+New `scripts/historical_input_mirror.py` refuses any existing alias/root, validates
+every original byte hash and ownership path, labels INPUT_MIRROR_NOT_EXECUTION,
+sets read-only files, creates two explicit aliases to NEWcheckout-generated
+inputdirs. Original xbabe1execution roots remain untouched. Their262515bytes
+INCLUDINGmarker stay charged against fixture16MiB, on source and audit. These
+are byte fixtures, never claimed reproductions of H21/H22execution on xbabe3.
+ExistingUVbinary hash/version pinned; new local runtime/checkout only, no host
+services, drivers, third_party edits or global package installs.
+
+After public freeze/anonymous checks, from local checkout:
+`rtk proxy python3 artifacts/v0.0.11/development/deploy-lean-worker-probe-01.py`
+performs original fixed two-sample admission, public byte verification, new full
+Git checkout/submodule pins, input hydration/proof then explicit bounded entry.
+Source CLI: `python3 scripts/qualify_lean_worker_probe.py --packet experiments/v0.0.11/lean-rollout-worker-protocol.json --source-sha FROZEN_SHA --protocol-sha256 CANONICAL_SHA --epoch-start-monotonic ORIGINAL_HOST_START`.
+Auditor: `experiments/v0.0.11/runtime/.venv/bin/python scripts/audit_lean_worker_probe.py --packet experiments/v0.0.11/lean-rollout-worker-protocol.json --folder FRESH_OUTPUT --source-sha FROZEN_SHA`, maththreads1/PYTHONPATHsrc:scripts.
+Run auditor in fresh process AFTERall sourcewriters exit and within original300s;
+never rebase clock. Preserve complete valid/invalid/not_run, partial proof/fault
+chain, actors/models/physics=0, resource/bytes/PIDs/rawhashes/public receipts.
+On prerequisite/ownership/memory/monitor failure stop, no identical retry.
+
+Detached owner `scripts/control_lean_worker_probe.py` now owns the source process
+and automatically starts a fresh audit after every source writer exits. It
+preserves original host epoch, records exact controller/source/audit PID/start,
+checks controller-inclusive source process count and audit RSS, waits for explicit
+audit readiness before independent inventory, and retains failure/cleanup/output
+receipts. No concurrent controller writer during audit evidence inventory. Source
+270sdeadline/audit30s and whole300s remain; final publication overrun fails.
+This continues if the chat is interrupted. It does not authorize a second run.

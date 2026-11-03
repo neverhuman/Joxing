@@ -30,7 +30,9 @@ All315Linux checks pass and the first native trial reaches64transitions/12update
 but worker shutdown exceeds the unchanged100ms limit at100.58ms.1invalid/3not_run;
 no lifecycle parity or boxing gain. Every prefix, fault and audit is retained.
 [Next: lean rollout worker import/IPC proof](docs/LEAN_ROLLOUT_WORKER_MISSION.md),
-with0nativephysics before another training packet.
+with0nativephysics before another training packet. Adapter/auditor implemented;
+364localchecks pass with14Linux-only skips. Four formal fake probes pending
+public freeze and admission on sparexbabe3; no native performance claim.
 
 **Spare compute:** [xbabe4 source-validation mission](docs/MAC_SOURCE_READINESS_MISSION.md)
 uses the large Mac for independent history, action-delay, opponent-observation and

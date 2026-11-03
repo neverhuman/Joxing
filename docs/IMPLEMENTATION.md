@@ -1,3 +1,26 @@
+# H28lean worker proof implemented; spare xbabe3 selected —Nov2(local)
+
+New opt-in SB3Gymnasium pipe worker avoids Torch/SB3/MuJoCo child imports;
+original2.7.1 command-loop operations match normalized AST, license retained.
+Local364pass/14Linux-only skips,378exact registered nodes (all315H27plus63new).
+Fresh forkserver fake source pair validates flags/autoreset/reset-info/reward/
+state/RNG/typed arrays; target4rows NOT_RUN at freeze. Independent saved-evidence
+auditor,1msrequested sampling adapter (same100ms gates), exactcodec/headroom and
+original300sclock/270stask+30saudit implemented. All4actualpositive retirement
+charges still required; missingfast observation fails, no syntheticdelay or exit.
+Protocol experiments/v0.0.11/lean-rollout-worker-protocol.json; mission
+ docs/LEAN_ROLLOUT_WORKER_MISSION.md/research/H28.md.
+
+Fresh capacity07: xbabe1available15.05GB<16GiBfloor; xbabe3~102.29GB/lowpressure/
+noJoxingjobs. Use dedicated new xbabe3checkout, unchanged pinned3.12.3runtime/
+stdlib hashes; kernel6.8.0-147header/PF_EXITING=4registered, no driver changes.
+Old codec input bytes mirrored read-only via labelled aliases underNEWcheckout,
+never overwrite old root;262515bytes INCLUDEDin16MiBfixturecap. ExistingUVexact
+hash/version retained; no hostservice/globalpackage changes. Fournew sequentialfake
+probes,1worker/thread1,0nativephysics/actors/updates,<=12processes/8GiBhard/
+2sclose/1MiBreceipts. Commit+anonymousverify then fixedadmission beforelaunch.
+Native motor/boxing/scoring/history/self-play unchanged and unqualified; no tag.
+
 # H27native learner runs but retirement gate fails; H28lean worker next —Nov2
 
 Publicfd1ed5b/4577f17a passes315/315Linuxcontrols. FreshlegacyA reaches64transitions/

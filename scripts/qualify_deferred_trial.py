@@ -47,6 +47,7 @@ def runner_module(schema):
         "joxing-native-context-transfer-v1": "joxing.context_native_teardown",
         "joxing-four-native-context-v1": "joxing.four_native_context",
         "joxing-native-learner-context-parity-v1": "joxing.training_context",
+        "joxing-lean-rollout-worker-probe-v1": "joxing.lean_worker_probe",
     }[schema]
 
 
@@ -75,6 +76,7 @@ def main():
             "joxing-native-context-transfer-v1",
             "joxing-four-native-context-v1",
             "joxing-native-learner-context-parity-v1",
+            "joxing-lean-rollout-worker-probe-v1",
         )
         or canonical(p) != args.protocol_sha256
     ):
@@ -145,7 +147,9 @@ def main():
     serial_constructor = p["schema"] == "joxing-serial-native-teardown-v1"
     four_context = p["schema"] == "joxing-four-native-context-v1"
     learner_context = p["schema"] == "joxing-native-learner-context-parity-v1"
-    if learner_context:
+    lean_probe = p["schema"] == "joxing-lean-rollout-worker-probe-v1"
+    bounded_epoch = learner_context or lean_probe
+    if bounded_epoch:
         epoch = args.epoch_start_monotonic
         if (
             epoch is None
@@ -157,7 +161,7 @@ def main():
     four_constructor = serial_constructor or four_context
     process_probe = p["schema"] == "joxing-process-exit-probe-v1"
     publication_smoke = p["schema"] == "joxing-watch-publication-v1"
-    zero_work_probe = process_probe or publication_smoke
+    zero_work_probe = process_probe or publication_smoke or lean_probe
     if p.get("watchdog_output_backend", "disk") not in ("disk", "private-tmpfs-v1"):
         raise ValueError("Unknown watchdog publication backend")
     publication = None
@@ -202,6 +206,8 @@ def main():
         )
         disk = shutil.disk_usage(ROOT).free
         raw, receipts = partition_usage(out.parent, fixtures)
+        if lean_probe:
+            raw += p.get("mirrored_input_bytes", 0)
         if memory < p["minimum_memory_bytes"] or disk < p["minimum_disk_bytes"]:
             raise RuntimeError("Shared-host capacity floor")
         if raw > p["fixture_bytes"] or receipts > p["receipt_bytes"]:
@@ -226,7 +232,7 @@ def main():
         "formal_boxing_games": 0,
         "competitive_training_runs": 0,
     }
-    if learner_context:
+    if bounded_epoch:
         report.update(
             started_monotonic_s=began,
             boot_id=Path("/proc/sys/kernel/random/boot_id").read_text().strip(),
@@ -261,8 +267,8 @@ def main():
         nonlocal active, guard, row
         # H27 retains time for its separate zero-physics audit within the SAME
         # original host epoch. Older registered routes are unchanged.
-        task_wall = p["whole_wall_s"] - (30 if learner_context else 0)
-        if learner_context and time.monotonic() - began >= task_wall - 2:
+        task_wall = p["whole_wall_s"] - (30 if bounded_epoch else 0)
+        if bounded_epoch and time.monotonic() - began >= task_wall - 2:
             raise TimeoutError("Original epoch audit reserve")
         row = {"stage": name, "command": command, "status": "running"}
         report["stages"].append(row)
@@ -293,7 +299,9 @@ def main():
                 remaining = min(limit, task_wall - (time.monotonic() - began)) - 2
                 guard_command = [
                     "python3",
-                    "scripts/trial_rss_watchdog.py",
+                    "scripts/lean_probe_watchdog.py"
+                    if lean_probe
+                    else "scripts/trial_rss_watchdog.py",
                     "--root-pid",
                     str(root["pid"]),
                     "--root-start",
@@ -435,7 +443,7 @@ def main():
                 "experiments/v0.0.11/runtime",
                 "--locked",
             ],
-            min(180, 180 - (time.monotonic() - began)) if learner_context else 180,
+            min(180, 180 - (time.monotonic() - began)) if bounded_epoch else 180,
         )
         if p.get("runtime_import_provenance"):
             try:
@@ -476,7 +484,7 @@ def main():
             15,
         )
         verify_runtime_files()
-        if learner_context and time.monotonic() - began > 180:
+        if bounded_epoch and time.monotonic() - began > 180:
             raise TimeoutError("Learner context setup epoch limit")
         stage(
             "controls",
@@ -506,6 +514,10 @@ def main():
             raise ValueError("Native prerequisite controls incomplete")
         if learner_context:
             from qualify_native_learner_context import receipt_headroom
+
+            report["receipt_preflight"] = receipt_headroom(p, capacity())
+        elif lean_probe:
+            from qualify_lean_worker_probe import receipt_headroom
 
             report["receipt_preflight"] = receipt_headroom(p, capacity())
         if zero_work_probe:
@@ -545,6 +557,20 @@ def main():
                     facts[k] != 0 for k in ("physics", "actors", "updates", "inference")
                 ):
                     raise ValueError("Import-only work counters")
+                if lean_probe:
+                    worker = facts["worker"]
+                    retirement = row["watchdog"]["retirement_records"].get(
+                        f"{worker['pid']}:{worker['start']}"
+                    )
+                    if (
+                        retirement is None
+                        or not retirement["released"]
+                        or retirement["highwater_charge_bytes"] <= 0
+                        or retirement["max_hold_s"] > 0.1
+                    ):
+                        raise ValueError(
+                            "Actual positive fake-worker retirement required"
+                        )
                 slot.update(status="completed", facts=facts)
                 continue
             if constructor_only:
@@ -604,7 +630,13 @@ def main():
             report["physics_credit"] = ledger.snapshot()
             if report["physics_credit"]["pending"]:
                 raise ValueError("Unknown physics work cannot qualify")
-        if process_probe:
+        if lean_probe:
+            from joxing.lean_worker_probe import conclude
+
+            report["comparison"] = conclude(
+                {s["id"]: str(fixtures / s["id"]) for s in report["rows"]}
+            )
+        elif process_probe:
             from joxing.process_exit_probe import conclude
 
             report["comparison"] = conclude(
@@ -622,7 +654,7 @@ def main():
             )
         verify_runtime_files()
         verify()
-        if (publication_smoke or learner_context) and time.monotonic() - began > p[
+        if (publication_smoke or bounded_epoch) and time.monotonic() - began > p[
             "whole_wall_s"
         ]:
             raise TimeoutError("Publication whole wall credit")

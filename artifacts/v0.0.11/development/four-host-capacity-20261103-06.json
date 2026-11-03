@@ -1,0 +1,117 @@
+{
+  "scope": "Read-only fresh capacity; no reservation/native work",
+  "hosts": [
+    {
+      "host": "xbabe1",
+      "returncode": 0,
+      "result": {
+        "samples": [
+          {
+            "utc": "2026-11-03T01:13:58Z",
+            "monotonic_s": 9605289.07231094,
+            "load": [
+              15.8037109375,
+              24.728515625,
+              28.99365234375
+            ],
+            "affinity": 102,
+            "available_memory_bytes": 28100550656,
+            "disk_free_bytes": 295783952384,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.05 total=605752289762\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=1.81 avg60=1.68 avg300=1.03 total=54863567182\nfull avg10=1.79 avg60=1.66 avg300=1.02 total=53298905004\n",
+              "memory": "some avg10=0.04 avg60=0.21 avg300=0.32 total=74233838729\nfull avg10=0.03 avg60=0.19 avg300=0.31 total=72899188396\n"
+            },
+            "jobs": []
+          },
+          {
+            "utc": "2026-11-03T01:14:09Z",
+            "monotonic_s": 9605299.166511383,
+            "load": [
+              15.95263671875,
+              24.458984375,
+              28.85986328125
+            ],
+            "affinity": 102,
+            "available_memory_bytes": 26678992896,
+            "disk_free_bytes": 295775318016,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.05 total=605752308191\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=1.50 avg60=1.62 avg300=1.04 total=54863751923\nfull avg10=1.50 avg60=1.60 avg300=1.03 total=53299089421\n",
+              "memory": "some avg10=0.01 avg60=0.17 avg300=0.30 total=74233838860\nfull avg10=0.00 avg60=0.15 avg300=0.29 total=72899188526\n"
+            },
+            "jobs": []
+          }
+        ]
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe2",
+      "returncode": 1,
+      "result": null,
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\nTraceback (most recent call last):\n  File \"<stdin>\", line 14, in <module>\n  File \"<stdin>\", line 13, in sample\n  File \"/usr/lib/python3.12/shutil.py\", line 1407, in disk_usage\n    st = os.statvfs(path)\n         ^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing'\n"
+    },
+    {
+      "host": "xbabe3",
+      "returncode": 0,
+      "result": {
+        "samples": [
+          {
+            "utc": "2026-11-03T01:13:58Z",
+            "monotonic_s": 19750.065582085,
+            "load": [
+              13.88623046875,
+              12.3056640625,
+              12.18115234375
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 96853708800,
+            "disk_free_bytes": 41193902080,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=20546289\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=0.33 avg60=0.35 avg300=0.41 total=1268050495\nfull avg10=0.30 avg60=0.32 avg300=0.40 total=1243891987\n",
+              "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=67962890\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67019338\n"
+            },
+            "jobs": []
+          },
+          {
+            "utc": "2026-11-03T01:14:09Z",
+            "monotonic_s": 19760.14949766,
+            "load": [
+              13.82373046875,
+              12.34521484375,
+              12.19580078125
+            ],
+            "affinity": 128,
+            "available_memory_bytes": 99135791104,
+            "disk_free_bytes": 41119498240,
+            "psi": {
+              "cpu": "some avg10=0.00 avg60=0.00 avg300=0.00 total=20551301\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+              "io": "some avg10=0.12 avg60=0.29 avg300=0.39 total=1268053216\nfull avg10=0.11 avg60=0.27 avg300=0.39 total=1243894659\n",
+              "memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=67962891\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67019338\n"
+            },
+            "jobs": []
+          }
+        ]
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe4",
+      "returncode": 0,
+      "result": {
+        "utc": "2026-11-03T01:13:58Z",
+        "load": [
+          3.64453125,
+          4.7099609375,
+          5.2890625
+        ],
+        "jobs": [],
+        "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                   147665.\nPages active:                               15006050.\nPages inactive:                             15153901.\nPages speculative:                           1055908.\nPages throttled:                                   0.\nPages wired down:                             551450.\nPages purgeable:                               12263.\n\"Translation faults\":                    21070496541.\nPages copy-on-write:                      3774823218.\nPages zero filled:                       52191269002.\nPages reactivated:                          27668340.\nPages purged:                                8518797.\nFile-backed pages:                           9621287.\nAnonymous pages:                            21594572.\nPages stored in compressor:                  7688868.\nPages occupied by compressor:                1562238.\nDecompressions:                             16226319.\nCompressions:                               35099833.\nPageins:                                   196072385.\nPageouts:                                     280741.\nSwapins:                                           0.\nSwapouts:                                          0.\n",
+        "cpu_count": 32
+      },
+      "stderr": ""
+    }
+  ]
+}

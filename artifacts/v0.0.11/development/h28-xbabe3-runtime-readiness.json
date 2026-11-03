@@ -1,0 +1,58 @@
+{
+  "scope": "Read-only host/prerequisite identity before formal outcome; no runtime installed or fake/native model run yet",
+  "system": {
+    "files": {
+      "/usr/lib/python3.12/gzip.py": {
+        "bytes": 24859,
+        "sha256": "31e7275c5c20d1b414063c28088b68e7a3e657af60c9c23435bf92e77a1fd1e5"
+      },
+      "/usr/lib/python3.12/multiprocessing/forkserver.py": {
+        "bytes": 12134,
+        "sha256": "e99f0aa2e4dc41af9d259f220c5eb2632e2ace89b6851e712223bf2682016f29"
+      },
+      "/usr/lib/python3.12/multiprocessing/popen_forkserver.py": {
+        "bytes": 2230,
+        "sha256": "0588ad0e5a36718b4377dc2a2a97864a10986c25a33dc3bfed12595711b0cdab"
+      },
+      "/usr/lib/python3.12/multiprocessing/popen_spawn_posix.py": {
+        "bytes": 2029,
+        "sha256": "97b5d25aa479516894489877e6a7921252ee35f51e118c2f1f91f32919e7caa8"
+      },
+      "/usr/lib/python3.12/multiprocessing/process.py": {
+        "bytes": 12139,
+        "sha256": "67f0c2a7a3a83c92dd024705bac18619a2e123c9df77c414beb81035ea4a0e18"
+      },
+      "/usr/lib/python3.12/multiprocessing/resource_tracker.py": {
+        "bytes": 10332,
+        "sha256": "b0099f5e2285fe2462b77c47bbf29220b57c778741a34f386c10c1e9940884c8"
+      },
+      "/usr/lib/python3.12/multiprocessing/spawn.py": {
+        "bytes": 9644,
+        "sha256": "ebf9fa40eb622384c37690d8c78e7208744df031155ab4ceedab0fc791a1669b"
+      },
+      "/usr/lib/python3.12/multiprocessing/util.py": {
+        "bytes": 14261,
+        "sha256": "6752c4515ec69f82e9df64e017da490c3754e51d818c270ea1ad2d64e09268be"
+      },
+      "/usr/src/linux-headers-6.8.0-147-generic/include/linux/sched.h": {
+        "bytes": 62492,
+        "sha256": "fa2ceb3a0388d0335a25e7acc56b922594589cd065e39cccd2204b5978ad6e42"
+      }
+    },
+    "uv_local": true,
+    "git": "/usr/bin/git",
+    "kernel": "6.8.0-147-generic",
+    "cache_exists": false,
+    "owned_space_free": 39833915392
+  },
+  "tools": {
+    "uv": {
+      "bytes": 65794424,
+      "sha256": "1cb9cd0a1749debf6049d7d2bb933882cc52d81016326ee6d99a786d6c988b03",
+      "version": "uv 0.11.28 (x86_64-unknown-linux-gnu)"
+    },
+    "kernel_pf_exiting": "#define PF_EXITING\t\t0x00000004\t/* Getting shut down */"
+  },
+  "mirror_charge_bytes": 262515,
+  "basis": "xbabe1newmemorybelow16GiB; xbabe3quiet/spare memory. ExistingUVavailableoutsidePATH; common source uses exact fallback path. Dedicated fresh checkout only, immutable small inputs as labelled read-only aliases, no prior root overwritten."
+}

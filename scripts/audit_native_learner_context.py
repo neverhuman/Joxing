@@ -118,7 +118,7 @@ def check_credit(path, maximum, completed):
     return credit | {"charged": used + sum(r["reserved"] for r in pending.values())}
 
 
-def verify_wire(root, out, packet, report):
+def verify_wire(root, out, packet, report, prefix="native-learner-context"):
     blob = (out / "result.json.gz").read_bytes()
     raw = gunzip(blob, 512 * 1024)
     require(
@@ -130,7 +130,7 @@ def verify_wire(root, out, packet, report):
         ).encode(),
         "Canonical main receipt",
     )
-    terminal = read(root / "runs/v0.0.11/native-learner-context-launch.log")
+    terminal = read(root / f"runs/v0.0.11/{prefix}-launch.log")
     encoded = base64.b64decode(terminal["data_base64"], validate=True)
     decoded = gunzip(encoded, 512 * 1024)
     require(
@@ -171,11 +171,9 @@ def verify_wire(root, out, packet, report):
         },
         "Final main byte binding",
     )
-    bootstrap_blob = (
-        root / "runs/v0.0.11/native-learner-context-deployment.json.gz"
-    ).read_bytes()
+    bootstrap_blob = (root / f"runs/v0.0.11/{prefix}-deployment.json.gz").read_bytes()
     bootstrap_raw = gunzip(bootstrap_blob, 1048576)
-    meta = read(root / "runs/v0.0.11/native-learner-context-deployment.encoding.json")
+    meta = read(root / f"runs/v0.0.11/{prefix}-deployment.encoding.json")
     require(
         len(bootstrap_blob) == meta["encoded_bytes"]
         and hashlib.sha256(bootstrap_blob).hexdigest() == meta["encoded_sha256"]
