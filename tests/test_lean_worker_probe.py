@@ -34,9 +34,9 @@ def test_nonfinite_or_unsupported_semantics_fail_closed(value):
 def test_full_fresh_forkserver_pair_matches_and_candidate_import_isolation(tmp_path):
     result = tmp_path / "proof.json"
     code = r"""
-import multiprocessing as mp,json,sys
+import multiprocessing as mp,json,sys,time
 from pathlib import Path
-from joxing.lean_worker_probe import make_fake,exercise,digest,transact
+from joxing.lean_worker_probe import make_fake,exercise,digest,transact,initialize,portable
 from joxing.lean_rollout_worker import lean_pipe_worker,LeanCloudpickleWrapper
 from functools import partial
 mp.set_forkserver_preload([])
@@ -44,10 +44,11 @@ from multiprocessing import forkserver
 forkserver.ensure_running()
 from stable_baselines3.common.vec_env.base_vec_env import CloudpickleWrapper
 from stable_baselines3.common.vec_env.subproc_vec_env import _worker
-ctx=mp.get_context('forkserver');results=[];imports=[]
+ctx=mp.get_context('forkserver');results=[];imports=[];initialization=[];readiness=[]
 for target,wrapper in ((_worker,CloudpickleWrapper),(lean_pipe_worker,LeanCloudpickleWrapper)):
- a,b=ctx.Pipe();p=ctx.Process(target=target,args=(b,a,wrapper(partial(make_fake,1097))));p.start();b.close()
+ a,b=ctx.Pipe();p=ctx.Process(target=target,args=(b,a,wrapper(partial(make_fake,1097,init_events=str(Path(sys.argv[1]).with_name(target.__name__+'-init.jsonl'))))));p.start();b.close()
  try:
+  before_ready=time.monotonic();initialization.append(portable(initialize(a)));readiness.append(time.monotonic()-before_ready)
   rows=exercise(a,1097);results.append(rows)
   imports.append(transact(a,('env_method',('import_snapshot',(),{}))))
   a.send(('close',None));p.join(timeout=3);assert p.exitcode==0
@@ -55,9 +56,11 @@ for target,wrapper in ((_worker,CloudpickleWrapper),(lean_pipe_worker,LeanCloudp
   a.close()
   if p.is_alive():p.terminate();p.join(timeout=1)
 assert results[0]==results[1] and digest(results[0])==digest(results[1])
+assert initialization[0]==initialization[1]==results[0][0]['response']
+assert results[0][0]['before']==portable(make_fake(1097).unwrapped.snapshot())
 assert imports[0]['torch'] and imports[0]['stable_baselines3'] and not imports[0]['mujoco']
 assert not any(imports[1].values())
-Path(sys.argv[1]).write_text(json.dumps({'rows':results[1],'imports':imports,'native_physics':0}))
+Path(sys.argv[1]).write_text(json.dumps({'rows':results[1],'peer_rows':results[0],'imports':imports,'initialization':initialization,'readiness_wall_s':readiness,'native_physics':0}))
 """
     env = os.environ | {
         k: "1" for k in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS")
@@ -66,6 +69,22 @@ Path(sys.argv[1]).write_text(json.dumps({'rows':results[1],'imports':imports,'na
         [sys.executable, "-c", code, str(result)], env=env, check=True, timeout=15
     )
     v = json.loads(result.read_text())
+    for target in ("_worker", "lean_pipe_worker"):
+        events = [
+            json.loads(line)
+            for line in (tmp_path / (target + "-init.jsonl")).read_text().splitlines()
+        ]
+        assert [e["phase"] for e in events] == [
+            "factory_entered",
+            "factory_ready",
+            "managed_finalizer",
+        ]
+        assert all(e["identity"] == events[0]["identity"] for e in events)
+        assert (
+            events[0]["monotonic_s"]
+            <= events[1]["monotonic_s"]
+            <= events[2]["monotonic_s"]
+        )
     rows = v["rows"]
     assert len(rows) == 26
 
@@ -342,3 +361,27 @@ def test_receipt_first_limit_blocks_before_probe(tmp_path, monkeypatch, fault):
     else:
         with pytest.raises(ValueError):
             entry.receipt_headroom(p, usage)
+
+
+def test_initializer_uses_existing_eight_seconds_and_ordinary_stays_three():
+    class DelayedPipe:
+        def __init__(self):
+            self.sent = []
+            self.waits = []
+
+        def send(self, value):
+            self.sent.append(value)
+
+        def poll(self, seconds):
+            self.waits.append(seconds)
+            return seconds >= 4
+
+        def recv(self):
+            return "initialized-spaces"
+
+    conn = DelayedPipe()
+    assert probe.initialize(conn) == "initialized-spaces"
+    assert conn.sent == [("get_spaces", None)] and conn.waits == [8]
+    with pytest.raises(TimeoutError):
+        probe.transact(conn, ("get_attr", "value"))
+    assert conn.waits == [8, 3]

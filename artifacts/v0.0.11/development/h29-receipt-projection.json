@@ -1,0 +1,33 @@
+{
+  "scope": "prospective stored-evidence sizing; zero native work",
+  "retained_inputs": {
+    "controls.log": 13692,
+    "lean-worker-probe-controller.log": 151,
+    "summary.json": 3826,
+    "prerequisite-failure-audit.json": 47312,
+    "lean-worker-probe-controller.json": 6607,
+    "source-stdout.txt": 957,
+    "lean-worker-probe-launch.log": 957,
+    "raw-manifest-encoding.json": 319,
+    "transfer.json": 19993,
+    "lean-worker-probe-deployment.encoding.json": 260,
+    "accounting.json": 1128,
+    "lean-worker-probe-deployment.json.gz": 73786,
+    "controls.xml": 64306,
+    "controls-output.txt": 13692,
+    "controller-output.txt": 151,
+    "independent-audit.json": 1285,
+    "raw-manifest.json.gz": 26416,
+    "result.json.gz": 2183
+  },
+  "source_nodes": 413,
+  "maximum_raw_manifest_entries": 2500,
+  "maximum_manifest_entry_bytes": 220,
+  "maximum_case_bytes": 240,
+  "bootstrap_wire_reserve": 160000,
+  "main_stdout_logs_controller_reserve": 131072,
+  "fixture_inputs_charged_bytes": 403961,
+  "projected_peak_receipt_bytes": 940192,
+  "limit_bytes": 1048576,
+  "stop_on_actual_bytes": true
+}

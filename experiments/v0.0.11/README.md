@@ -1,3 +1,23 @@
+# H29 portable Linux source readiness registered —Nov2local
+
+All378old nodes retained;35new nodes,413total. Local399pass/14Linux-only skips,
+0fail. Exact8original receipt files recovered from retained SHA-audited evidence,
+not regenerated;403961decoded fixture/marker bytes charged. New explicit portable
+root fails closed; old default paths/aliases unchanged. Same8s get_spaces startup
+witness before unchanged3s ordinary calls; both complete26command histories,
+state/RNG and startup/finalizer events saved. Raw failed and gzip successful JUnit
+reader preserves every registered case, producer return code and failure kind.
+
+Prospective source-only protocol cd43c45e4c0c:
+experiments/v0.0.11/portable-linux-source-readiness-protocol.json. Dedicated
+xbabe3new checkout, exact READ-ONLY H28runtime;120soriginal epoch includes fixed
+admission/setup<=60/source<=30/audit<=15/controller publication.1fakeworker,
+thread1,<=12processes,7GiBplanned/8GiBhard,8MiBfixturesinclinputs/1MiBreceipts;
+0nativephysics/models/actors/updates/formalprobes. Detached owner independently
+audits failures too. Formal Linux NOT_RUN at source freeze; publish/anonymous
+byte verify/fresh admission precede single launch. H28costs/failures immutable;
+no RSS/native/game/default promotion or tag. Mission docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md.
+
 # H28source prerequisite stops; portable Linux readiness H29next —Nov2local
 
 Public3ffbd18/dbaa06ae onsparexbabe3passes375/378Linuxcases,3fail/0skip. Two

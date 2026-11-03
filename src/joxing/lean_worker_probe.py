@@ -143,7 +143,23 @@ def witness(folder, server, profile, phase):
     return value
 
 
-def make_fake(seed, *, folder=None, server=None, profile=None):
+def init_event(path, phase):
+    with Path(path).open("a") as stream:
+        stream.write(
+            json.dumps(
+                {
+                    "phase": phase,
+                    "identity": process_identity(),
+                    "monotonic_s": time.monotonic(),
+                }
+            )
+            + "\n"
+        )
+
+
+def make_fake(seed, *, folder=None, server=None, profile=None, init_events=None):
+    if init_events is not None:
+        init_event(init_events, "factory_entered")
     import gymnasium as gym
     import numpy as np
 
@@ -229,6 +245,11 @@ def make_fake(seed, *, folder=None, server=None, profile=None):
                 )
 
     env = gym.Wrapper(gym.Wrapper(Fake()))
+    if init_events is not None:
+        init_event(init_events, "factory_ready")
+        Finalize(
+            None, init_event, args=(init_events, "managed_finalizer"), exitpriority=5
+        )
     if folder is not None:
         witness(folder, server, profile, "fake_initialized")
         Finalize(
@@ -270,6 +291,12 @@ def commands(seed):
 def transact(conn, command):
     conn.send(command)
     return recv(conn, 3)
+
+
+def initialize(conn):
+    """Preparation handshake: existing8s initializer cap, ordinary calls stay3s."""
+    conn.send(("get_spaces", None))
+    return recv(conn, 8)
 
 
 def exercise(conn, seed):

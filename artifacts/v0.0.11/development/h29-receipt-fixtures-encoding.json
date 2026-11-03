@@ -1,0 +1,64 @@
+{
+  "schema": "joxing-receipt-bundle-v1",
+  "archive": "artifacts/v0.0.11/development/h29-receipt-fixtures.json.gz",
+  "encoded_bytes": 245211,
+  "encoded_sha256": "aee68ead0dedfb16591837bd366d5c3ceb49359568e04f21149f3294d01c9f39",
+  "decoded_bytes": 537643,
+  "decoded_sha256": "950e948bf4f656a44b1aaf103a752257ca3a597b259653753cc099107ac6259c",
+  "manifest": {
+    "schema": "joxing-portable-receipt-fixtures-v1",
+    "scope": "INPUT_ONLY_NOT_EXECUTION",
+    "files": {
+      "four-native-context-20261102-01/runs/v0.0.11/four-native-context-01/result.json": {
+        "bytes": 2413,
+        "sha256": "a3300cf9b99755706786224168b43772e10ebd8ac316daff6144c2852843be66"
+      },
+      "four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment.encoding.json": {
+        "bytes": 260,
+        "sha256": "16f2bb60c68024dc278a9a711aa1f7163857578415ca7f50a51b4014f871ffb6"
+      },
+      "four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment.json.gz": {
+        "bytes": 68058,
+        "sha256": "a43269367816155e89d1af6ab04491f362adcddaa1673a2a5e6702e2ff63e6dd"
+      },
+      "native-context-transfer-20261102-01/runs/v0.0.11/native-context-deployment.json": {
+        "bytes": 181508,
+        "sha256": "412ddbed8c779f1639a83ce8ecc41e36124ad8a41e9b81363a8a33dfc4ece9ef"
+      },
+      "native-context-transfer-20261102-01/runs/v0.0.11/native-context-launch.log": {
+        "bytes": 11419,
+        "sha256": "1976535d9953f907ed669fc5557276828355f5c0af9b5d2e2b63dc322321f59b"
+      },
+      "native-context-transfer-20261102-01/runs/v0.0.11/native-context-transfer-01/result.json": {
+        "bytes": 66977,
+        "sha256": "fe610139563f760d69cca73044f13554b805d3c997bf4f4c7a4c589af409b53c"
+      },
+      "resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment.encoding.json": {
+        "bytes": 260,
+        "sha256": "821b57b9988a7fd861fbb73acc17b6864a0006fdc1b303a41d4c531ee95f30ee"
+      },
+      "resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment.json.gz": {
+        "bytes": 71119,
+        "sha256": "c8d9dbba27966763c3646196785d6c2110875c16c9395f343c8457da0db84598"
+      }
+    },
+    "prefixes": [
+      "four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment",
+      "resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment"
+    ],
+    "absent": [
+      "four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment.json",
+      "resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment.json"
+    ]
+  },
+  "manifest_sha256": "385ef40419898c5302e379027bfeda083c1a8fa3f9970de9eaa5bfc9ce4091ec",
+  "charged_bytes": 403961,
+  "origin": "Retained original hash-audited H22/H23byte artifacts, not regenerated. xbabe1SSHbanner timeout prevented fresh read; no original host data modified.",
+  "additional_payload_origins": {
+    "four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment.json.gz": "runs/v0.0.11/four-native-context-prerequisite-failed-01-evidence/runs/v0.0.11/four-native-context-deployment.json.gz",
+    "four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment.encoding.json": "runs/v0.0.11/four-native-context-prerequisite-failed-01-evidence/runs/v0.0.11/four-native-context-deployment.encoding.json",
+    "resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment.json.gz": "runs/v0.0.11/resource-admitted-native-01-safe-evidence/runs/v0.0.11/resource-admitted-four-context-deployment.json.gz",
+    "resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment.encoding.json": "runs/v0.0.11/resource-admitted-native-01-safe-evidence/runs/v0.0.11/resource-admitted-four-context-deployment.encoding.json"
+  },
+  "original_transfer_manifests_verified": true
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "Static source comparison, no target execution",
+  "base": "1fed88ca9f42ea85e3719336e4fb490251beec40",
+  "proof": {
+    "tests/test_receipt_encoding.py": {
+      "assertions": 16,
+      "normalized_assertions_exact": true,
+      "only_new_input_provider": true
+    },
+    "tests/test_receipt_encoding_v2.py": {
+      "assertions": 18,
+      "normalized_assertions_exact": true,
+      "only_new_input_provider": true
+    },
+    "src/joxing/wave.py": {
+      "sha256": "8c1f9b4d084d7e56e09e3681845a7320d01ff6b9dc3fa05fab93da17ff6e78c9",
+      "unchanged": true
+    },
+    "src/joxing/deferred_trial.py": {
+      "sha256": "4fcc2d178243bc359c3bfcce60a6eefbfeb11ef58f41cfa98e49c3b6f5b52f0e",
+      "unchanged": true
+    },
+    "src/joxing/lean_rollout_worker.py": {
+      "sha256": "7086a5cf5252e7d49d0e5d0ed96d40c5c83bb0b858ef6330fab940ac09c37ad6",
+      "unchanged": true
+    },
+    "src/joxing/serial_retirement.py": {
+      "sha256": "e2c6c6d47b6d61da102f04483282e67716741eedde8d3b9d3b9934c0de4f003b",
+      "unchanged": true
+    }
+  }
+}

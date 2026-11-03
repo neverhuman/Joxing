@@ -1,6 +1,7 @@
 # H29: portable exact receipt fixtures and explicit worker startup readiness
 
-Status: worker-ready next mission; NOTimplemented/preregistered/run. Same v0.0.11
+Status: implemented/preregistered before outcomes;413registered source nodes,
+local399pass/14Linux-only skips. Formal target NOT_RUN at source freeze. Same v0.0.11
 project, no new release tag. One integration owner, no agents/concurrent writers.
 
 ## Objective and evidence
@@ -27,7 +28,8 @@ Verify all installed file hashes/versions before using it; do not mutate it.
 New dedicated ~/joxing/portable-source-readiness-YYYYMMDD-01 checkout with full
 Git history/upstream pins, fixed fresh host admission and no other owned job.
 Use new checkout/src via explicit PYTHONPATH, not its old installed editable path.
-Historical original byte inputs remain available on xbabe1; only read them.
+Historical original bytes recovered from retained SHA-audited transfer evidence;
+xbabe1SSHbanner timeout retained. No old host data regenerated or modified.
 
 Proposed separate finite SOURCE-ONLYstudy, public register before outcomes:
 120soriginal host epoch including setup/source/audit/publication, setup<=60s,

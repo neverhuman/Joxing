@@ -1,5 +1,10 @@
 # Joxing
 
+Current wave: H29portable exact receipt inputs/startup readiness, source-only.
+Local399pass/14Linux-only skips; target413cases NOT_RUN at freeze.
+[Registered mission](docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md);
+[latest status](docs/STATUS.md). No trained/unassisted scoring bout yet.
+
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.

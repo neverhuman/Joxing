@@ -6,6 +6,8 @@ from pathlib import Path
 
 import pytest
 
+from joxing.receipt_fixture_paths import receipt_path
+
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 from receipt_encoding import (
@@ -115,7 +117,9 @@ def test_saved_h21_receipt_fidelity(tmp_path, kind):
         Path("experiments/v0.0.11/four-native-context-protocol.json").read_text()
     )
     path, meta = next(
-        (Path(n), v) for n, v in p["receipt_input_files"].items() if v["kind"] == kind
+        (receipt_path(n), v)
+        for n, v in p["receipt_input_files"].items()
+        if v["kind"] == kind
     )
     raw = path.read_bytes()
     assert (
@@ -158,7 +162,10 @@ def test_actual_bootstrap_and_size_preflight(tmp_path):
     p = json.loads(
         Path("experiments/v0.0.11/four-native-context-protocol.json").read_text()
     )
-    prefix = Path(p["deployment_root"]) / "runs/v0.0.11/four-native-context-deployment"
+    prefix = (
+        receipt_path(p["deployment_root"])
+        / "runs/v0.0.11/four-native-context-deployment"
+    )
     blob = prefix.with_suffix(".json.gz").read_bytes()
     metadata = json.loads(prefix.with_suffix(".encoding.json").read_text())
     raw = decode_bootstrap(blob)

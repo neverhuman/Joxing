@@ -5,6 +5,8 @@ from pathlib import Path
 
 import pytest
 
+from joxing.receipt_fixture_paths import receipt_path
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from receipt_encoding import (
     MODE,
@@ -76,7 +78,7 @@ def test_saved_main_terminal_complete_fidelity(tmp_path, kind):
     name, meta = next(
         (n, v) for n, v in p["codec_input_files"].items() if v["kind"] == kind
     )
-    raw = Path(name).read_bytes()
+    raw = receipt_path(name).read_bytes()
     assert (
         len(raw) == meta["bytes"] and hashlib.sha256(raw).hexdigest() == meta["sha256"]
     )
@@ -106,7 +108,7 @@ def test_actual_admitted_bootstrap_and_storage_preflight(tmp_path):
         ).read_text()
     )
     prefix = (
-        Path(p["deployment_root"])
+        receipt_path(p["deployment_root"])
         / "runs/v0.0.11/resource-admitted-four-context-deployment"
     )
     blob = prefix.with_suffix(".json.gz").read_bytes()

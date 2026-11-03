@@ -1,0 +1,50 @@
+{
+  "scope": "Mac development only; Linux-only cases remain unqualified",
+  "test_count": 413,
+  "passed": 399,
+  "skipped": 14,
+  "failures": 0,
+  "errors": 0,
+  "wall_s": 8.447,
+  "protocol_sha256": "cd43c45e4c0c3d6b730831e46dbad9e092d4092a448fdcbdf5cda796bc9bd2a0",
+  "all_old_node_ids_retained": 378,
+  "new_node_ids": 35,
+  "junit_sha256": "2e6d1ce2261a9e1cd0f70460d99f21a39e8f319c1b60c985abf10ce3c728549e",
+  "junit_path": "runs/v0.0.11/h29-local-source-final.xml",
+  "formal_linux": "NOT_RUN",
+  "development_attempts": [
+    {
+      "tests": 93,
+      "passed": 86,
+      "skipped": 7,
+      "failures": 0,
+      "receipt": "runs/v0.0.11/h29-development.xml"
+    },
+    {
+      "tests": 93,
+      "passed": 86,
+      "skipped": 7,
+      "failures": 0,
+      "receipt": "runs/v0.0.11/h29-development-02.xml"
+    },
+    {
+      "tests": 413,
+      "passed": 399,
+      "skipped": 14,
+      "failures": 0,
+      "receipt": "runs/v0.0.11/h29-local-source.xml"
+    },
+    {
+      "tests": 413,
+      "passed": 399,
+      "skipped": 14,
+      "failures": 0,
+      "receipt": "runs/v0.0.11/h29-local-source-final.xml"
+    }
+  ],
+  "limitations": [
+    "Ruff found unused binding, import order, pairwise and dict-literal issues; repaired before freeze; not scientific target failures",
+    "Exact Linux runtime and strict Linux source outcome still NOT_RUN",
+    "Final runner projection-only guard added after local suite; lint/import checked; no scientific test behavior changed"
+  ]
+}
