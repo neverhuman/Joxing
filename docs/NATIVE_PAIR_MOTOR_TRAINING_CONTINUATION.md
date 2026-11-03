@@ -1,3 +1,25 @@
+# H31 xbabe4runtime ready; explicit remote native pilot03 registered
+
+Isolated projectruntime copied in37.088s,1431424230B<2GiB,0physics. All22554
+regular copiedruntime files/728065844B match exactly (manifest4063ea6ab402).
+ExistingremotePython3.12.3; otherpackageversionssame. No systemsoftwarechanges.
+Actualreleasedteacher LOADpasses8.875s/2.291GBpeak/0physics; actor963d2f56/
+normalizer34f38e6e/reference89f78fe4 unchanged. No cross-platform parity claim.
+xbabe4healthy32CPU/512GiB/free93% withsparecapacity; bothlocaldeferralsretained.
+
+Currentfrozenprotocol:experiments/v0.0.11/native-pair-motor-pilot-03.json,
+shaca5fcf3d97c6b00302cd8c1eb48f3213bffeb3f60e439a37ed5d149a02305a64. Changed ONLYruntime/inputpaths,
+explicitPython3.12.3hostprofile and priorcosts. SAME834sourcehashes/99fresh
+controls/2×1024steps/behaviorcriteria/allcaps. Dedicatedpreparedworkspace
+/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo; no priorphysical
+run there.0physics prep remains separateprerequisite, never gamecountcredit.
+
+Nextpublish03source/protocol, verifyreadonlyruntime/input/source bytes, launch
+boundedowner once after SAMEtwo-sampleadmission on32CPUhost (loadlimit16).
+Fresh99sourceguardedcases and actual237stepmidhold replay gate native PPO.
+Follow currentnativecontinuation for full2seed/16eval/fourfixedclip audit,
+retainallfalls/faults and pushresults. No active nativejob at registration.
+
 # H31 admission01 deferred; fresh same-limit admission02 registered
 
 Public607cfe9/05845df8 owner exited after3.713s before source/native stages:

@@ -1,0 +1,153 @@
+{
+  "schema": "joxing-xbabe4-readonly-runtime-copy-v1",
+  "status": "prepared_not_training",
+  "source_commit": "c830cde955b80cf76b75b73c08c4bdc76099920a",
+  "target": "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01",
+  "physics": 0,
+  "stages": [
+    {
+      "name": "capacity-clone-isolated-venv",
+      "command": [
+        "ssh",
+        "-o",
+        "ConnectTimeout=15",
+        "xbabe4",
+        "python3 -"
+      ],
+      "start_elapsed_s": 0.010593625003821217,
+      "returncode": 0,
+      "stdout": "{\"pid\": 45091, \"cpu\": 32, \"load\": [4.341796875, 4.51220703125, 4.40380859375], \"memory_bytes\": 549755813888, \"free_percent\": 93, \"root\": \"/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01\"}\n",
+      "stderr": "Cloning into '/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo'...\n",
+      "end_elapsed_s": 13.222558790999756
+    },
+    {
+      "name": "copy-pinned-runtime",
+      "command": [
+        "rsync",
+        "-a",
+        "--exclude",
+        "__pycache__",
+        "--exclude",
+        "__editable__*",
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/.venv/lib/python3.12/site-packages/",
+        "xbabe4:/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/runtime/lib/python3.12/site-packages/"
+      ],
+      "start_elapsed_s": 13.223636750000878,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "end_elapsed_s": 22.339594999997644
+    },
+    {
+      "name": "copy-pinned-ms-human-700",
+      "command": [
+        "rsync",
+        "-a",
+        "--exclude",
+        "__pycache__",
+        "/Users/bentaylor/joxing/native-pair-motor-pilot-20261103-02/third_party/ms-human-700/",
+        "xbabe4:/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo/third_party/ms-human-700/"
+      ],
+      "start_elapsed_s": 22.340027791004104,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "end_elapsed_s": 23.1681152079982
+    },
+    {
+      "name": "copy-pinned-msgym",
+      "command": [
+        "rsync",
+        "-a",
+        "--exclude",
+        "__pycache__",
+        "/Users/bentaylor/joxing/native-pair-motor-pilot-20261103-02/third_party/msgym/",
+        "xbabe4:/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/repo/third_party/msgym/"
+      ],
+      "start_elapsed_s": 23.169159416000184,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "end_elapsed_s": 23.710565540997777
+    },
+    {
+      "name": "copy-input-model.zip",
+      "command": [
+        "rsync",
+        "-a",
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.6/native-01/inputs/model.zip",
+        "xbabe4:/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/inputs/model.zip"
+      ],
+      "start_elapsed_s": 23.71251495800243,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "end_elapsed_s": 26.439002666003944
+    },
+    {
+      "name": "copy-input-normalizer.pkl",
+      "command": [
+        "rsync",
+        "-a",
+        "/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.6/native-01/inputs/normalizer.pkl",
+        "xbabe4:/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/inputs/normalizer.pkl"
+      ],
+      "start_elapsed_s": 26.440123749998747,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "end_elapsed_s": 26.628865500002576
+    },
+    {
+      "name": "import-version-input-cap-preflight",
+      "command": [
+        "ssh",
+        "-o",
+        "ConnectTimeout=15",
+        "xbabe4",
+        "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 /Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/runtime/bin/python -"
+      ],
+      "start_elapsed_s": 26.6302536660005,
+      "returncode": 0,
+      "stdout": "{\"versions\": {\"python\": \"3.12.3\", \"numpy\": \"2.5.4\", \"mujoco\": \"3.8.0\", \"torch\": \"2.14.1\", \"stable-baselines3\": \"2.9.2\", \"gymnasium\": \"1.4.0\", \"imageio\": \"2.38.1\", \"imageio-ffmpeg\": \"0.6.0\", \"pillow\": \"13.0.0\"}, \"project_bytes\": 1431424230, \"files\": 25583, \"input_files\": {\"model.zip\": {\"bytes\": 290542461, \"sha256\": \"0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829\"}, \"normalizer.pkl\": {\"bytes\": 1025170, \"sha256\": \"e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086\"}}, \"physics\": 0, \"cpu\": 32, \"load\": [7.2822265625, 5.20849609375, 4.66015625]}\n",
+      "stderr": "",
+      "end_elapsed_s": 37.086101166001754
+    }
+  ],
+  "deadline_s": 300,
+  "maximum_project_bytes": 2147483648,
+  "system_packages_changed": false,
+  "preflight": {
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.5.4",
+      "mujoco": "3.8.0",
+      "torch": "2.14.1",
+      "stable-baselines3": "2.9.2",
+      "gymnasium": "1.4.0",
+      "imageio": "2.38.1",
+      "imageio-ffmpeg": "0.6.0",
+      "pillow": "13.0.0"
+    },
+    "project_bytes": 1431424230,
+    "files": 25583,
+    "input_files": {
+      "model.zip": {
+        "bytes": 290542461,
+        "sha256": "0a3607c0a9d745a6bb5a5ffceb7539a7405d455943abf283d4f8107f22a47829"
+      },
+      "normalizer.pkl": {
+        "bytes": 1025170,
+        "sha256": "e359b32fa026a02746cffcba6ee3ef9cab4389d37c74b19bd21caa0f3abc0086"
+      }
+    },
+    "physics": 0,
+    "cpu": 32,
+    "load": [
+      7.2822265625,
+      5.20849609375,
+      4.66015625
+    ]
+  },
+  "wall_s": 37.08790841600421
+}
