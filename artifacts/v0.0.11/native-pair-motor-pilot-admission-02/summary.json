@@ -1,0 +1,37 @@
+{
+  "status": "capacity_deferred_before_source",
+  "native_attempts": 0,
+  "physics": 0,
+  "seed_rows": [
+    {
+      "seed": 761,
+      "status": "not_run"
+    },
+    {
+      "seed": 983,
+      "status": "not_run"
+    }
+  ],
+  "source_commit": "a3fc0f34ed4efeecc67a35e305cd25352749b7c0",
+  "protocol_sha256": "3e25e0291a68a0cf60dd02b2edec0a4cf110008a1a40f85a7a5319c14374dcf2",
+  "admission": [
+    {
+      "available_pressure_estimate_bytes": 21646635171,
+      "cpu_count": 14,
+      "definition": "Mac memory_pressure free percentage times physical memory; not Linux MemAvailable/PSI",
+      "free_disk_bytes": 221331111936,
+      "free_percentage": 56,
+      "load": [
+        6.8193359375,
+        6.181640625,
+        5.65869140625
+      ],
+      "monotonic_s": 33691.824165833,
+      "physical_memory_bytes": 38654705664
+    }
+  ],
+  "error": "RuntimeError: Local Mac capacity admission first limit: {\"monotonic_s\": 33701.848160666, \"physical_memory_bytes\": 38654705664, \"free_percentage\": 56, \"available_pressure_estimate_bytes\": 21646635171, \"cpu_count\": 14, \"load\": [8.68212890625, 6.58935546875, 5.80859375], \"free_disk_bytes\": 221330825216, \"definition\": \"Mac memory_pressure free percentage times physical memory; not Linux MemAvailable/PSI\"}",
+  "owner_exited": true,
+  "old_root_sealed": true,
+  "next": "No third local retry. Prepare isolated pinned runtime on eligible512GiBxbabe4; explicitPy3.12.3Macprofile withfresh99source/nativegates before formal nativepilot."
+}

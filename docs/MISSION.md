@@ -1,3 +1,15 @@
+# H31 local capacity deferred twice; larger-Mac port is current
+
+Admission01and02halted before source/native:0physics/0nativeattempts, all2seeds/
+16evals not_run. Oldroots/epochs sealed; CPUgates unchanged, no unrelated jobs
+changed. xbabe4is spare32CPU/512GiBARM64; existingPython3.12.3runtime lacksTorch/
+SB3/media/teacher inputs. Current packet:docs/NATIVE_PAIR_XBABE4_PORT_MISSION.md.
+Next bounded0physics task copies exact pinned projectdependencies/inputs into a
+new isolated venv; no systempackages/services/drivers/oldcheckouts modified.
+Then register explicitremoteMacprofile/fresh99sourceandactualreplay gates before
+nativepilot. No third localretry, no nativegainclaim or tag. Two-seed pilot code
+and behaviorcriteria remain ready/unchanged; frozen publicsource607cfe9/a3fc0f3.
+
 # H31 admission01 deferred; fresh same-limit admission02 registered
 
 Public607cfe9/05845df8 owner exited after3.713s before source/native stages:
