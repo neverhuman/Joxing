@@ -1,3 +1,26 @@
+# H33 concluded: walking control passes; stopping fails; H34reset placement next
+
+Both native700-muscle walkers complete4/4fixed three-second separated trials.
+All12diagnostic trials valid/allpoints0–0; ALLstationary stance gates FAIL.
+The400msown-reference warp causes falls evenwithoutcontact.136fresh target
+sourcechecks pass; all12trials/3heldproofs independently replay bit-exact.
+Oneformalattempt/1valid/0invalid;47742primary+auditphysics (+4096source reserve),
+257.957s<1200, sampledpeak5.575GB<8GiB. All19observedidentities exited.
+Threewholefixedclips decoded/hashchecked/all9QAframes seen; walkingfinalred
+partlycropped, temporal sequencecomplete. No stopping/guard/boxing/RLwin claimed.
+
+Post-hoc0physicsreset audit finds native roottravel shrinks actualopposed gaps
+from1.148m to.084m acrossphases; seed71048alreadyoverlaps up to.119m andcontacts
+at1ms. This is a concreteinitialization defect, not causalproofallfalls.
+See docs/NATIVE_STANCE_REFERENCE_RESULTS.md and artifacts/v0.0.11/native-stance-probe-01.
+Allfaileddevelopment/physicaloutcomes and sealed H31/H32evidence remain unchanged.
+
+PRIMARYready:H34/docs/NATIVE_RESET_PLACEMENT_MISSION.md. Construct phase-independent
+ACTUALpelvis starts with immutable fixedframe transforms before evaluation;
+retain native qpos/qvel/activation/700muscles/reference. Qualify geometry/replay/
+walkingcontrols before upper-only guardRL. H34NOTimplemented/registered/run;
+newsource/protocolbefore outcomes. No current ownedjob. Wholev11untagged.
+
 # H33 stopping/stance source implemented; pretrained test next
 
 The three explicit conditions and exact continuation are implemented. All136local

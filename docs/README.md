@@ -1,3 +1,6 @@
+Current: [H33pretrained walking/stopping results](NATIVE_STANCE_REFERENCE_RESULTS.md) ·
+[H34actual reset placement mission](NATIVE_RESET_PLACEMENT_MISSION.md).
+
 Current: [H16 exit-memory results](EXIT_MEMORY_RESULTS.md) and
 [exit-aware reader/native teardown mission](EXIT_AWARE_RSS_READER_MISSION.md).
 

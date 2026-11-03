@@ -1,0 +1,258 @@
+{
+  "boxing_qualified": false,
+  "conclusions": {
+    "lanes-stop400ms": {
+      "boxing_qualified": false,
+      "qualifying_starts": {
+        "A": 0,
+        "B": 0
+      },
+      "stance_candidate_only": false,
+      "starts": 4
+    },
+    "lanes-walk": {
+      "boxing_qualified": false,
+      "qualifying_starts": {
+        "A": 0,
+        "B": 0
+      },
+      "stance_candidate_only": false,
+      "starts": 4
+    },
+    "opposed-stop400ms": {
+      "boxing_qualified": false,
+      "qualifying_starts": {
+        "A": 0,
+        "B": 0
+      },
+      "stance_candidate_only": false,
+      "starts": 4
+    }
+  },
+  "curation": "Compressed textual summary; full original result/contracts retained outsideGit, authenticated by raw-manifest.json. No outcomes/attempts omitted.",
+  "entered_physics": 23871,
+  "optimizer_updates": 0,
+  "proof_rows": [
+    {
+      "id": "lanes-walk",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-stop400ms",
+      "status": "completed"
+    },
+    {
+      "id": "opposed-stop400ms",
+      "status": "completed"
+    }
+  ],
+  "proofs": [
+    {
+      "actor_decisions_unchanged": 22,
+      "actual_checkpoint": {
+        "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+        "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+        "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+      },
+      "condition": "lanes-walk",
+      "passed": true,
+      "physics": 237,
+      "remaining": 17,
+      "sample_tick": 203,
+      "snapshot_sha256": "b652c1511464090fa63cd5be46f8eeb16d32cd3480b0888b8f4103d7036f209a"
+    },
+    {
+      "actor_decisions_unchanged": 22,
+      "actual_checkpoint": {
+        "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+        "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+        "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+      },
+      "condition": "lanes-stop400ms",
+      "passed": true,
+      "physics": 237,
+      "remaining": 17,
+      "sample_tick": 203,
+      "snapshot_sha256": "d2efe906a540877e73f48c951762b47a9fc3ee29a1909929e2597f9a11fee34f"
+    },
+    {
+      "actor_decisions_unchanged": 22,
+      "actual_checkpoint": {
+        "actor": "963d2f56c5887f79e094ddf998316730475f979efb100073237cda81817e272e",
+        "normalizer": "34f38e6e87544d77b87b9a155fe6b9996629fd671f235b773c27f004d6fd5df8",
+        "reference": "89f78fe457e9ce1bca7344721138ced2a2cff5fd2807eb7126ba2fe14ae790a7"
+      },
+      "condition": "opposed-stop400ms",
+      "passed": true,
+      "physics": 237,
+      "remaining": 17,
+      "sample_tick": 203,
+      "snapshot_sha256": "67b0915b3a98e6b695e6b59c23a63bf28945b84927423939ec8f8bb579a4f6fd"
+    }
+  ],
+  "protocol_sha256": "15902121a164e528409772c5792c79bc63f879797d4a878d112e58c09c7ba026",
+  "rows": [
+    {
+      "id": "lanes-walk/71000",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-walk/71016",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-walk/71032",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-walk/71048",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-stop400ms/71000",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-stop400ms/71016",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-stop400ms/71032",
+      "status": "completed"
+    },
+    {
+      "id": "lanes-stop400ms/71048",
+      "status": "completed"
+    },
+    {
+      "id": "opposed-stop400ms/71000",
+      "status": "completed"
+    },
+    {
+      "id": "opposed-stop400ms/71016",
+      "status": "completed"
+    },
+    {
+      "id": "opposed-stop400ms/71032",
+      "status": "completed"
+    },
+    {
+      "id": "opposed-stop400ms/71048",
+      "status": "completed"
+    }
+  ],
+  "schema": "joxing-native-stance-probe-v1",
+  "stage": "audit",
+  "status": "completed",
+  "trials": [
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-walk",
+      "new_replay_physics": 3000,
+      "seed": 71000,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-walk",
+      "new_replay_physics": 3000,
+      "seed": 71016,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-walk",
+      "new_replay_physics": 3000,
+      "seed": 71032,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-walk",
+      "new_replay_physics": 3000,
+      "seed": 71048,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-stop400ms",
+      "new_replay_physics": 1280,
+      "seed": 71000,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-stop400ms",
+      "new_replay_physics": 1280,
+      "seed": 71016,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-stop400ms",
+      "new_replay_physics": 1300,
+      "seed": 71032,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "lanes-stop400ms",
+      "new_replay_physics": 1640,
+      "seed": 71048,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "opposed-stop400ms",
+      "new_replay_physics": 2060,
+      "seed": 71000,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "opposed-stop400ms",
+      "new_replay_physics": 1700,
+      "seed": 71016,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "opposed-stop400ms",
+      "new_replay_physics": 1120,
+      "seed": 71032,
+      "status": "pass"
+    },
+    {
+      "all1400commands_exact": true,
+      "all1ms_contacts_metrics_exact": true,
+      "all_frames_engine_exact": true,
+      "condition": "opposed-stop400ms",
+      "new_replay_physics": 780,
+      "seed": 71048,
+      "status": "pass"
+    }
+  ],
+  "wall_s": 76.36595775000751
+}

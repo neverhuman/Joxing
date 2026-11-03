@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "bytes": 117862,
+      "condition": "lanes-stop400ms",
+      "first_mid_last_visually_reviewed": true,
+      "fps": 50.0,
+      "frames": 65,
+      "physics_end_time_s": 1.28,
+      "presentation_duration_s": 1.3,
+      "sha256": "f0476121a0833c235a762766072a7ac7ab06e16da9a454811ef5a18f52c73ae2"
+    },
+    {
+      "bytes": 254829,
+      "condition": "lanes-walk",
+      "first_mid_last_visually_reviewed": true,
+      "fps": 50.0,
+      "frames": 151,
+      "physics_end_time_s": 3.0,
+      "presentation_duration_s": 3.02,
+      "sha256": "5bd0b047b5a27106f07144bc94bc950b3262eca53c13df8e0c845d9f486d5b58"
+    },
+    {
+      "bytes": 146566,
+      "condition": "opposed-stop400ms",
+      "first_mid_last_visually_reviewed": true,
+      "fps": 50.0,
+      "frames": 104,
+      "physics_end_time_s": 2.06,
+      "presentation_duration_s": 2.08,
+      "sha256": "b314f4f3008862a7e6e017e455bea52e3697f9a8531b8fb9d3389e85eeab4716"
+    }
+  ],
+  "scope": "Independent decode and transferred-byte verification, all3complete fixed recordings;0physics",
+  "visual_findings": {
+    "lanes-stop400ms": "First upright, mid leaning/stepping, final both lose support/tilt. No punch or points.",
+    "lanes-walk": "Both walk upright in sampled first/mid/last. Red athlete partly cropped at final frame as distance grows; entire151frame time sequence retained. Dynamic full-body framing is next visual fix. Not standing/boxing.",
+    "opposed-stop400ms": "Approach and body/head contact, final blue crouched/falling and red tilted. No legal punch/points."
+  }
+}

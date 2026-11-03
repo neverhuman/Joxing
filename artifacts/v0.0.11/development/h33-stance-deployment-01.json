@@ -1,0 +1,26 @@
+{
+  "status": "launched",
+  "source_commit": "e788c5dbb4537761ca4e414a14003372c5cc170c",
+  "host": "xbabe4",
+  "root": "/Users/agent/joxing/native-stance-probe-20261103-01/repo",
+  "output": "/Users/agent/joxing/native-stance-probe-20261103-01/repo/runs/v0.0.11/native-stance-probe-01",
+  "pid": 28373,
+  "start": "Tue Nov  3 03:08:02 2026",
+  "original_epoch": 8779634.60175975,
+  "setup_s": 3.828944915905595,
+  "command": [
+    "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/runtime/bin/python",
+    "scripts/qualify_native_stance_probe.py",
+    "--packet",
+    "experiments/v0.0.11/native-stance-probe-01.json",
+    "--source-sha",
+    "e788c5dbb4537761ca4e414a14003372c5cc170c",
+    "--protocol-sha256",
+    "15902121a164e528409772c5792c79bc63f879797d4a878d112e58c09c7ba026",
+    "--epoch-start-monotonic",
+    "8779634.60175975"
+  ],
+  "new_learning": 0,
+  "original_attempt_stays_invalid": true,
+  "protocol_sha256": "15902121a164e528409772c5792c79bc63f879797d4a878d112e58c09c7ba026"
+}

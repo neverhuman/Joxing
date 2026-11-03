@@ -1,0 +1,212 @@
+{
+  "execution": {
+    "command": [
+      "ssh",
+      "-o",
+      "ConnectTimeout=15",
+      "xbabe4",
+      "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/runtime/bin/python -"
+    ],
+    "recorded_after_outcome": true,
+    "stdin_python": "\nimport sys,json\nfrom pathlib import Path\nimport mujoco,numpy as np\nrepo=Path('/Users/agent/joxing/native-stance-probe-20261103-01/repo');sys.path.insert(0,str(repo/'src'))\nfrom joxing.scene import build_scene\nfrom joxing.env import INTEGRATION\nout=repo/'runs/v0.0.11/native-stance-probe-01';s=build_scene();rows=[]\nfor seed in [71000,71016,71032,71048]:\n snap=json.loads((out/'physical/opposed-stop400ms'/f'seed-{seed}'/'initial-snapshot.json').read_text());d=mujoco.MjData(s.model);mujoco.mj_setState(s.model,d,np.asarray(snap['core']['engine'],np.float64),INTEGRATION);mujoco.mj_forward(s.model,d)\n positions={p:d.xpos[s.model.body(p+'_pelvis').id].tolist() for p in 'AB'};contacts=[]\n for c in d.contact:\n  a,b=s.model.geom(c.geom1).name,s.model.geom(c.geom2).name\n  if {a[:2],b[:2]}=={'A_','B_'}:contacts.append({'surface1':a,'surface2':b,'signed_distance_m':float(c.dist)})\n rows.append({'seed':seed,'source_init_time':snap['core']['references']['A']['init_time'],'world_pelvis_xyz_m':positions,'pelvis_xy_gap_m':float(np.linalg.norm(np.array(positions['A'])[:2]-np.array(positions['B'])[:2])),'interactor_contacts_at_reset':contacts})\nprint(json.dumps({'scope':'Post-hoc scratch-only reset geometry audit of sealed H33snapshots;0physics, no live evaluated writes; not preregistered criterion','rows':rows,'new_physics':0,'source_commit':'e788c5dbb4537761ca4e414a14003372c5cc170c'}))\n",
+    "stdin_sha256": "db2f44e243f3f60876e66daa7b135f4c97e9ee3a8f24881b5c7832b2447146f8"
+  },
+  "new_physics": 0,
+  "rows": [
+    {
+      "interactor_contacts_at_reset": [],
+      "pelvis_xy_gap_m": 1.1484650229124358,
+      "seed": 71000,
+      "source_init_time": 0.22,
+      "world_pelvis_xyz_m": {
+        "A": [
+          -0.5739459291178804,
+          -0.018139670954243552,
+          0.9320600674244468
+        ],
+        "B": [
+          0.5739459291178806,
+          0.018139670954243573,
+          0.9320600674244468
+        ]
+      }
+    },
+    {
+      "interactor_contacts_at_reset": [],
+      "pelvis_xy_gap_m": 0.8069510163057076,
+      "seed": 71016,
+      "source_init_time": 0.38,
+      "world_pelvis_xyz_m": {
+        "A": [
+          -0.40331069084681864,
+          -0.011531362793071128,
+          0.9041697184374404
+        ],
+        "B": [
+          0.4033106908468188,
+          0.011531362793071155,
+          0.9041697184374404
+        ]
+      }
+    },
+    {
+      "interactor_contacts_at_reset": [],
+      "pelvis_xy_gap_m": 0.28044598733918746,
+      "seed": 71032,
+      "source_init_time": 0.62,
+      "world_pelvis_xyz_m": {
+        "A": [
+          -0.13722880746841293,
+          0.02882260145198791,
+          0.9221840716571065
+        ],
+        "B": [
+          0.13722880746841323,
+          -0.028822601451987843,
+          0.9221840716571065
+        ]
+      }
+    },
+    {
+      "interactor_contacts_at_reset": [
+        {
+          "signed_distance_m": -0.02220525807418544,
+          "surface1": "B_shell_abdomen",
+          "surface2": "A_r_pelvis"
+        },
+        {
+          "signed_distance_m": -0.10382507809143786,
+          "surface1": "A_femur_skin_r",
+          "surface2": "B_femur_skin_l"
+        },
+        {
+          "signed_distance_m": -0.04540337998065529,
+          "surface1": "A_femur_skin_r",
+          "surface2": "B_tibia_skin_l"
+        },
+        {
+          "signed_distance_m": -0.07232520073691405,
+          "surface1": "A_tibia_skin_r",
+          "surface2": "B_femur_skin_l"
+        },
+        {
+          "signed_distance_m": -0.07299147450420942,
+          "surface1": "A_tibia_skin_r",
+          "surface2": "B_tibia_skin_l"
+        },
+        {
+          "signed_distance_m": -0.005837187257173915,
+          "surface1": "A_calcn_skin_3_r",
+          "surface2": "B_calcn_skin_1_l"
+        },
+        {
+          "signed_distance_m": -0.01945348843319341,
+          "surface1": "A_toes_skin_1_r",
+          "surface2": "B_calcn_skin_1_l"
+        },
+        {
+          "signed_distance_m": -0.001361927157676808,
+          "surface1": "A_toes_skin_2_r",
+          "surface2": "B_calcn_skin_1_l"
+        },
+        {
+          "signed_distance_m": -0.10382507809143789,
+          "surface1": "A_femur_skin_l",
+          "surface2": "B_femur_skin_r"
+        },
+        {
+          "signed_distance_m": -0.07232520073691409,
+          "surface1": "A_femur_skin_l",
+          "surface2": "B_tibia_skin_r"
+        },
+        {
+          "signed_distance_m": -0.04540337998065537,
+          "surface1": "A_tibia_skin_l",
+          "surface2": "B_femur_skin_r"
+        },
+        {
+          "signed_distance_m": -0.07299147450420948,
+          "surface1": "A_tibia_skin_l",
+          "surface2": "B_tibia_skin_r"
+        },
+        {
+          "signed_distance_m": -0.005837187257174012,
+          "surface1": "A_calcn_skin_1_l",
+          "surface2": "B_calcn_skin_3_r"
+        },
+        {
+          "signed_distance_m": -0.019453488433193507,
+          "surface1": "A_calcn_skin_1_l",
+          "surface2": "B_toes_skin_1_r"
+        },
+        {
+          "signed_distance_m": -0.0013619271576767178,
+          "surface1": "A_calcn_skin_1_l",
+          "surface2": "B_toes_skin_2_r"
+        },
+        {
+          "signed_distance_m": -0.022205258074185413,
+          "surface1": "A_shell_abdomen",
+          "surface2": "B_r_pelvis"
+        },
+        {
+          "signed_distance_m": -0.11916475870868226,
+          "surface1": "A_shell_abdomen",
+          "surface2": "B_shell_abdomen"
+        },
+        {
+          "signed_distance_m": -0.08322854826041906,
+          "surface1": "A_shell_chest",
+          "surface2": "B_shell_chest"
+        },
+        {
+          "signed_distance_m": 0.0014916469333768733,
+          "surface1": "B_shell_humerus_r",
+          "surface2": "A_shell_chest"
+        },
+        {
+          "signed_distance_m": -0.011680881478220759,
+          "surface1": "A_skull",
+          "surface2": "B_skull"
+        },
+        {
+          "signed_distance_m": -0.008766163509563085,
+          "surface1": "A_shell_head",
+          "surface2": "B_skull"
+        },
+        {
+          "signed_distance_m": -0.007464020892334514,
+          "surface1": "A_shell_head",
+          "surface2": "B_shell_head"
+        },
+        {
+          "signed_distance_m": -0.008766163509563175,
+          "surface1": "B_shell_head",
+          "surface2": "A_skull"
+        },
+        {
+          "signed_distance_m": 0.001491646933286175,
+          "surface1": "A_shell_humerus_r",
+          "surface2": "B_shell_chest"
+        }
+      ],
+      "pelvis_xy_gap_m": 0.08445704561509519,
+      "seed": 71048,
+      "source_init_time": 0.76,
+      "world_pelvis_xyz_m": {
+        "A": [
+          -0.0110896841044269,
+          0.04074637462365933,
+          0.9361189261487032
+        ],
+        "B": [
+          0.01108968410442725,
+          -0.04074637462365923,
+          0.9361189261487032
+        ]
+      }
+    }
+  ],
+  "scope": "Post-hoc scratch-only reset geometry audit of sealed H33snapshots;0physics, no live evaluated writes; not preregistered criterion",
+  "source_commit": "e788c5dbb4537761ca4e414a14003372c5cc170c"
+}

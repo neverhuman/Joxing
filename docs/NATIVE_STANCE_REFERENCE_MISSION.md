@@ -1,8 +1,9 @@
 # H33 implementation packet: stop the pretrained walker before more boxing RL
 
-Status: implemented/source-validated locally; prospective physical protocol registered; target execution pending.
-One owner; no agents. No pretrained stopping outcome yet.
-Read current STATUS/MISSION before executing in case a newer mission supersedes it.
+Status: CONCLUDED. Execution/replay qualified; all stance criteria FAILED.
+[Results](NATIVE_STANCE_REFERENCE_RESULTS.md). Current next mission:
+[NATIVE_RESET_PLACEMENT_MISSION.md](NATIVE_RESET_PLACEMENT_MISSION.md)/H34.
+The original implementation/preregistered intent below is retained for history.
 
 ## Objective and reason
 

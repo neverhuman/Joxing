@@ -1,5 +1,11 @@
 # Joxing
 
+**Latest pretrained test:** both700-muscle athletes complete4/4three-second
+separated walking trials, with exact replay. The stopping reference fails;
+all12trials score0–0. A reset audit found phase-dependent starting overlap.
+[Results and recordings](docs/NATIVE_STANCE_REFERENCE_RESULTS.md) ·
+[Next: correct actual starting positions](docs/NATIVE_RESET_PLACEMENT_MISSION.md).
+
 **Native paired PPO and exact replay now work:** two intact 700-muscle humans,
 4,096 actor samples and 16 PPO updates on xbabe4. All training transitions and
 16 fixed evaluations independently replay exactly. Policies receive causal own/
@@ -12,15 +18,14 @@ demonstrated:** every evaluation scores 0–0, with no guard cycle or three-seco
 [Second trained seed](artifacts/v0.0.11/native-pilot-posttask-01/983-after/after.mp4).
 These are complete motor evaluations, including falls. The original recording
 timeout remains a failed attempt; the separate audit/export is preserved in Git.
-[Next: stopping and stance using the pretrained motor](docs/NATIVE_STANCE_REFERENCE_MISSION.md).
-The new controls pass136local tests, including exact held-command replay; the
-finite pretrained stopping study is next. No standing or boxing gain is assumed.
+[The stopping study is concluded](docs/NATIVE_STANCE_REFERENCE_RESULTS.md);
+[phase-independent starting positions are next](docs/NATIVE_RESET_PLACEMENT_MISSION.md).
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H33 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H34 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 

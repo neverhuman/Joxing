@@ -1,0 +1,88 @@
+{
+  "actual_closed_raw_bytes": 132887715,
+  "actual_closed_raw_file_count": 234,
+  "all_native_engine_frames_commands_contacts_metrics_replay": "bit-exact; all12trials and all3held proofs in fresh independent audit",
+  "all_per_corner_stance_counts": {
+    "lanes-stop400ms": {
+      "boxing_qualified": false,
+      "qualifying_starts": {
+        "A": 0,
+        "B": 0
+      },
+      "stance_candidate_only": false,
+      "starts": 4
+    },
+    "lanes-walk": {
+      "boxing_qualified": false,
+      "qualifying_starts": {
+        "A": 0,
+        "B": 0
+      },
+      "stance_candidate_only": false,
+      "starts": 4
+    },
+    "opposed-stop400ms": {
+      "boxing_qualified": false,
+      "qualifying_starts": {
+        "A": 0,
+        "B": 0
+      },
+      "stance_candidate_only": false,
+      "starts": 4
+    }
+  },
+  "all_points": "0\u20130 in all12trials",
+  "all_trial_denominator": {
+    "attempted": 12,
+    "incomplete": 0,
+    "invalid": 0,
+    "not_run": 0,
+    "valid": 12
+  },
+  "boxing_qualified": false,
+  "decisions": [
+    "Retain pretrained walking as short separated-lane motor prior; bothcorners4/4three-second completions.",
+    "Decline400mswalk-to-hold as stance controller; allstancecriteria fail, noTretune.",
+    "Fix phase-dependent actual reset placement before further opposed training; new H34mission.",
+    "No claimed causal contact effect, legal punch, stationary guard or selfplay/learning improvement.",
+    "Original H31recording-invalid attempt and H31failedmotorcriteria remain unchanged."
+  ],
+  "execution_qualified": true,
+  "formal_attempts": 1,
+  "independent_replay_entered_physics": 23871,
+  "invalid_formal_attempts": 0,
+  "later_live": [],
+  "media_qa": "3fixedwholeclips decoded/hashverified; all9first/mid/lastPNGs visually reviewed. Walking red body partly cropped at end; temporal sequence complete.",
+  "new_primary_plus_replay_physics": 47742,
+  "next_mission": "docs/NATIVE_RESET_PLACEMENT_MISSION.md",
+  "owned_identities_including_owner": 19,
+  "owner_final_sample_note": "Final manifest includes owner final publication growth after sampled final_usage; both remain below all ceilings.",
+  "owner_final_sampled_usage": [
+    132883435,
+    5451330
+  ],
+  "paired_3s_completions": {
+    "lanes-stop400ms": 0,
+    "lanes-walk": 4,
+    "opposed-stop400ms": 0
+  },
+  "peak_sampled_owned_rss_bytes": 5575065600,
+  "posthoc_reset_diagnosis": "Not preregistered. Native walking root translation changes actual spawn with phase. Four actual pelvis XYgaps1.148465/.806951/.280446/.084457m; seed71048already interpenetrating up to.119165m. Valid H33diagnostic, unqualified boxing reset.",
+  "primary_entered_physics": 23871,
+  "protocol_sha256": "15902121a164e528409772c5792c79bc63f879797d4a878d112e58c09c7ba026",
+  "schema": "joxing-h33-conclusion-v1",
+  "scientific_training_updates": 0,
+  "source_cases": {
+    "failed": 0,
+    "passed": 136,
+    "skipped": 0,
+    "xfail": 0
+  },
+  "source_commit": "e788c5dbb4537761ca4e414a14003372c5cc170c",
+  "source_fixture_physics_static": 2674,
+  "source_reserved_physics": 4096,
+  "stance_gate_qualified": false,
+  "total_primary_replay_plus_source_reserve": 51838,
+  "valid_formal_attempts": 1,
+  "whole_original_epoch_s": 257.95736495777965
+}

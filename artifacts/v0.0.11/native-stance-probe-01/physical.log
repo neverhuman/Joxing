@@ -1,0 +1,10 @@
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+Observation space shape: (3601,)
+Action space shape: (700,)
+Loaded 1 trajectories.
+{"stage": "physical", "status": "completed", "entered_physics": 23871, "conclusions": {"lanes-walk": {"starts": 4, "qualifying_starts": {"A": 0, "B": 0}, "stance_candidate_only": false, "boxing_qualified": false}, "lanes-stop400ms": {"starts": 4, "qualifying_starts": {"A": 0, "B": 0}, "stance_candidate_only": false, "boxing_qualified": false}, "opposed-stop400ms": {"starts": 4, "qualifying_starts": {"A": 0, "B": 0}, "stance_candidate_only": false, "boxing_qualified": false}}}
