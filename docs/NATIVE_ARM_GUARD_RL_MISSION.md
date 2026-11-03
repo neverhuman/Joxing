@@ -1,6 +1,8 @@
 # H35: learn an upper-body guard while preserving the pretrained walking motor
 
-Status: worker-ready prospective plan; NOTimplemented, registered or run.
+Status2026-11-03: core/Vec/full-training-trace/checkpoint source implemented;
+236development checks pass. Formal protocol/actual pretrained study NOTregistered
+or run. [Allsource attempts/results](NATIVE_ARM_GUARD_SOURCE_RESULTS.md).
 Depends on H34's qualified actual-start and separated-walking controls. This is
 the next real learning experiment. Single integration owner; no agents.
 
@@ -42,6 +44,48 @@ No third_party, sealed H31–H34roots, raw credentials, services/drivers/package
 One writer for wrapper/episode/trace contracts. Raw tapes/weights stay outsideGit.
 
 ## Ordered implementation and hard interfaces
+
+Current handoff: steps1–7 and the learner/checkpoint portion of8are implemented
+in the four named source modules. All163prior+47upper+26new controls pass. Source
+teacher is synthetic; do not mistake this for actual-checkpoint qualification.
+Continue in this order, keeping existing reward/skill/cap criteria unchanged:
+
+1.Add `evaluate_guard` and `audit_guard_evaluation` in native_arm_guard_pilot.py.
+   Accept a fixed-seed GuardMotorWorld, zero deterministic baseline/final policy,
+   budget and entered-step guard. Store a bounded BINARY initial snapshot (not
+   raw full arrays as JSON),150max raw/applied46pairs, frozen3601inputs/raw700/
+   composed700commands, full1msmetrics/contact hashes, endpoint engine hashes,
+   final counters/failures/points and complete media frames. Each of eight evals
+   perseed≤10MiB, all≤80MiB incl snapshots. Validate exact shapes/bytes prospectively
+   using native_tape_storage.plan before writing. Use the H34camera exporter.
+2.Add `audit_guard_training`: use read_guard_chunk plus authenticated boundary
+   checkpoints and GuardMotorWorld to reconstruct EVERYrow in order, both46
+   behavior densities, raw teacher/protected578/composed commands, all1msmetrics/
+   contacts, rewards and ending/reset ownership. Validate metadata continuity
+   across chunks/episodes; fail on skipped/duplicate/corrupt rows. No tail-only
+   audit or teacher calls inside held restore. Synthetic source tests must include
+   resumption across a terminal and corrupted evaluation/reward metadata.
+3.Add run/audit scripts and one explicit `run_seed` finite worker. SAME2048joint
+   steps/64×64/128rollout/64batch/4epochs perseed, meanweights EXACTzero, CPU1thread.
+   Preserve initial+all16boundary checkpoints, allbefore/after fixed phases,
+   initial zero parity and actual203+17+NEXTdecision. Never evaluate by changing
+   a live training scene; close/reconstruct contexts and restore its continuation.
+4.Add one bounded coordinator/qualifier following qualified guarded owner/identity
+   and write-protection APIs. Check fresh shared capacity and isolated qualified
+   runtime/input/source hashes. Source gate currently236cases/static5374physics;
+   collect exact node IDs after any further test additions, inside the12288reserve.
+   Serial32control oracle plus TWOoverlapping32control processes=1920entries;
+   compare physical bytes independent of their validated distinct ownershipnonces.
+   Allmustexit/fitcaps BEFOREeither optimizer starts. Disjoint seedwriter roots;
+   first global fault stops ONLYregistered owned peer and retains allprefixes.
+5.Reconcile/freeze the whole prospective protocol and public source BEFOREactual
+   pretrained outcomes. Forecast903489728Braw/perseed currently fits896MiB only
+   with compact evals;6MiBtext includes65536Bunspent reserve. Aggregate1800s/
+   300kphysics/2GiBraw/16MiBtext/16GiBRSS caps remain. Launch once, independently
+   conclude every attempt and all16evals, export four fixed UNSEEN71016clips,
+   update results/H35/README/book, push small public receipts; no wholev11tag.
+
+Read the remaining original interfaces/criteria below in full before implementing.
 
 1.Build UpperResidualSpec from the ACTUALcanonical native model/source, checking
 122selected/578protected/46groups/0mixed and all original bundle/source hashes.

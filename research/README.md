@@ -1,6 +1,7 @@
 # Research memory
 
-CURRENT:H35upper-only guardRL worker-ready; not coded/registered/run.
+CURRENT:H35guard core/Vec/evidence/checkpoint implemented;236sourcechecks pass.
+Syntheticteacher PPOexactreplay qualified; actualpretrained study not registered/run.
 H34correctactualstarts/clearance/first100ms qualify8/8; walkingBOTH4/4survives3s;
 all8native exactreplay, still0–0/fallsinclosecontact.01sourceRSSinvalid retained.
 H33stopping/stancefailed; H31realpairedPPOmotorfailed. Read
@@ -51,7 +52,7 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H32](H32.md)|Can sealed native PPO evidence replay and export completely?|2048trainingtransitions/16evals exact, behaviorerror0, fourwholeclips; originalH31staysinvalid|
 |[H33](H33.md)|Can the pretrained motor stop/hold stance before more boxing RL?|12/12valid/exactreplay; walking4/4survives3s, allstancegatesfail; resetoverlap found|
 |[H34](H34.md)|Can native gait phase stop corrupting actual boxing starts?|02init/walkingqualify8valid+8priornot_run; closecontactmotor stillfails|
-|[H35](H35.md)|Can upper-only PPO acquire guard while preserving pretrained walking?|Currentworker-ready guarded46action/causalhistory/nativePPO packet; not implemented/run|
+|[H35](H35.md)|Can upper-only PPO acquire guard while preserving pretrained walking?|236sourcechecks pass; syntheticteacher PPO/replay exact; actualguard study not_run|
 
 Research IDs are global and independent of old packet names such as
 experiments/v0.0.9/H1–H3. Next unused ID: **H36**. Prior protocols, failed

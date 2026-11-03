@@ -1,3 +1,26 @@
+# H35 guard learner/source replay implemented; finite pretrained study next
+
+All236development checks pass111.574s:163prior+47upper+26new. New46action guard
+world preserves578teacher channels/all700muscles perbody, fixed nativephase with
+unique logicalepoch, causal four-frame currentgoal and separate1msguard reward.
+Zeroactionwalking parity and nonzero203+17held+NEXTdecision exact; bothVecslots
+retain genuine endings/autoreset. Real PPOsourcefixture16joint/32actor samples/
+2rolloutupdates/8minibatches/5episodes replays allrows exactly, value/logprob error0.
+Checkpoint actor/critic/Adam/threeRNGstreams restore nextactions/physics bit-exact.
+
+This uses a SYNTHETICteacher/nativeengine, not a new pretrained skill result.
+Fourdevelopment attempts3pass/1fail retained:02wrong game-ID reader rejected first
+20ms beforeupdate, repaired to inherited motor-ID schema. Static source8392total
+entries incl allattempts/oracles/replay; fullsuccess5374. No pretrained attempts,
+BOTHformal seeds/all16evals not_run, no guard/points/self-play gain or v11tag.
+
+CURRENT:H35/docs/NATIVE_ARM_GUARD_RL_MISSION.md, remaining ordered packet. Next
+compact fixed-eval writer+independent allrow audit, bounded two-worker startup/
+coordinator, exact public protocol then actual2×2048jointstep seeds on admitted
+xbabe4. Perseed forecast903489728B<896MiB requires compact evals; allcaps/gates
+unchanged. No ownedjob now. See NATIVE_ARM_GUARD_SOURCE_RESULTS.md and development/
+h35-development-01.json. Old H31/H33negative results/H34qualified starts unchanged.
+
 # H34 actual starts/walking qualify; H35upper-only guardRL ready
 
 Attempt02passes all163target checks, all8native trials and independent replay.

@@ -1,0 +1,123 @@
+{
+  "schema": "joxing-h35-development-source-01",
+  "scope": "Source fixtures: real native engine, synthetic frozen teacher. No new pretrained-controller trial, skill, scored bout, formal experiment or parallel throughput result.",
+  "base_commit": "72cad3033f4669263ca5332386229eb07e6a5d37",
+  "source_files": {
+    "src/joxing/native_arm_guard.py": "3df5ab11f9248fa4398af456bf93b77adea6e7c01c58cbb8424b19f46e14f59a",
+    "src/joxing/native_arm_guard_evidence.py": "87ae8f528af93f8445ff7c34ba6e6deffcbc4882457a68372c554978a56db7e7",
+    "src/joxing/native_arm_guard_pilot.py": "2352c1b82cc0ffd2fd49e79fd3ef0b0603b5429af6a608052f6e0ecd1e2ecd7f",
+    "src/joxing/native_arm_guard_vec.py": "3b8998f7ea88399393d801a1b308d2a99b59f878dead3d171cfa7acc52b90bfe",
+    "tests/test_native_arm_guard.py": "446c3b5b0e7f9147afdc566e61ac633f68511fbdabdf9f1cefe6b02d9e8486d6"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "junit": "artifacts/v0.0.11/development/h35-source-01.xml",
+      "junit_sha256": "cafce7f6d7274ae94e35740f2d52e4ef47b3fce8c4934beaf3618f29169706cc",
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "wall_s": 13.199,
+      "static_native_fixture_entries": 746,
+      "faults": []
+    },
+    {
+      "attempt": 2,
+      "junit": "artifacts/v0.0.11/development/h35-source-02.xml",
+      "junit_sha256": "0125fbd2934eca08384ada7a90883de17821e660668202981ebe9a23a91d48c0",
+      "tests": 21,
+      "failures": 1,
+      "errors": 0,
+      "wall_s": 16.971,
+      "static_native_fixture_entries": 786,
+      "faults": [
+        {
+          "node": "tests.test_native_arm_guard::test_guard_real_ppo_full_trace_replay_and_checkpoint_rng",
+          "message": "ValueError: Guard trace ownership digest"
+        }
+      ]
+    },
+    {
+      "attempt": 3,
+      "junit": "artifacts/v0.0.11/development/h35-source-03.xml",
+      "junit_sha256": "a43231178741584484df3f54d2f3c9ba2f1af251284f38561cdc15408a7ec166",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "wall_s": 19.511,
+      "static_native_fixture_entries": 1486,
+      "faults": []
+    },
+    {
+      "attempt": 4,
+      "junit": "artifacts/v0.0.11/development/h35-source-04.xml",
+      "junit_sha256": "8db70030a2004738e89786738ce2a3d3cba25d12bd76901e67c367ac799e6829",
+      "tests": 236,
+      "failures": 0,
+      "errors": 0,
+      "wall_s": 111.574,
+      "static_native_fixture_entries": 5374,
+      "faults": []
+    }
+  ],
+  "source_attempt_count": 4,
+  "passed_attempts": 3,
+  "failed_attempts": 1,
+  "all_development_static_native_entries": 8392,
+  "static_physics_accounting": {
+    "prior_163_controls": 3348,
+    "upper_task_controls": 540,
+    "new_26_controls": 1486,
+    "full_successful_suite": 5374,
+    "reserve_note": "Static loop counts include both reference and replay fixture worlds. Not measured game throughput or formal training credit."
+  },
+  "learning_fixture": {
+    "scope": "Native engine/synthetic teacher source fixture; not released-controller skill",
+    "joint_transitions": 16,
+    "actor_samples": 32,
+    "rollout_updates": 2,
+    "optimizer_minibatches": 8,
+    "episodes": 5,
+    "physics": 720,
+    "behavior_max_error": 0.0,
+    "all_native_replay_bytes_exact": true,
+    "checkpoint_sizes": [
+      {
+        "boundary": 0,
+        "policy_bytes": 1227405,
+        "continuation_bytes": 379049
+      },
+      {
+        "boundary": 1,
+        "policy_bytes": 3270715,
+        "continuation_bytes": 521129
+      },
+      {
+        "boundary": 2,
+        "policy_bytes": 3270867,
+        "continuation_bytes": 477929
+      }
+    ],
+    "trace_bytes_before_deliberate_corruption": 3919395
+  },
+  "negative_control_note": "Source fixture intentionally appends corruption bytes to one checkpoint and one trace JSON AFTER successful replay. They are rejected before engine mutation. Raw fixture files remain outsideGit; their original receipt hashes are not intact-run claims.",
+  "limits": {
+    "threads": 1,
+    "source_full_timeout_s": 180,
+    "source_full_exitcode": 0,
+    "formal_pretrained_attempts": 0,
+    "formal_seed_status": {
+      "761": "not_run",
+      "983": "not_run"
+    }
+  },
+  "remaining": [
+    "compact eight fixed before/after evals per seed with binary initial snapshots",
+    "independent full training/eval reward, command, metrics, likelihood audit",
+    "two-worker serial/parallel startup proof and bounded coordinator",
+    "freeze public source/protocol, exact forecast, fresh admission, then launch"
+  ],
+  "health_refresh_fault": "h35-inventory-fault-02.json: xbabe3 read-only SSH inventory timedout30s; no combined02snapshot or capacity inferred. Single-sample bounded per-host03inventory follows; no simulation launched.",
+  "source_hash_scope": "source_files hashes apply to final04tested files. Earlier uncommitted development source preimages were not separately archived; their JUnit failures/denominators and patch history are retained. No frozen-source formal-registration claim.",
+  "post_source_inventory": "h35-host-capacity-03.json: xbabe1/2/4 no owned jobs; xbabe3 ps exceeded5s, unavailable. xbabe4load4.54/32CPU/93percentfree/38.14GBdisk. No reservation; fresh two-sample launch admission still required."
+}

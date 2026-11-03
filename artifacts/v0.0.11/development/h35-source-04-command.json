@@ -1,0 +1,53 @@
+{
+  "argv": [
+    ".venv/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_native_pair_motor_rl.py",
+    "tests/test_native_pair_motor_pilot.py",
+    "tests/test_native_pair_guarded_stage.py",
+    "tests/test_native_pair_motor_evidence.py",
+    "tests/test_native_pair_motor_vec.py",
+    "tests/test_history.py",
+    "tests/test_rules.py",
+    "tests/test_match_referee.py",
+    "tests/test_native_tape_storage.py",
+    "tests/test_native_stance_reference.py",
+    "tests/test_native_stance_probe.py",
+    "tests/test_native_reset_placement.py",
+    "tests/test_upper_residual.py",
+    "tests/test_upper_residual_task.py",
+    "tests/test_native_arm_guard.py",
+    "-q",
+    "--basetemp=runs/v0.0.11/h35-development-04",
+    "--junitxml=artifacts/v0.0.11/development/h35-source-04.xml"
+  ],
+  "scope": "Development source; native engine with explicitly synthetic teacher, not a registered pretrained trial",
+  "threads_per_process": 1,
+  "modules": [
+    "tests/test_native_pair_motor_rl.py",
+    "tests/test_native_pair_motor_pilot.py",
+    "tests/test_native_pair_guarded_stage.py",
+    "tests/test_native_pair_motor_evidence.py",
+    "tests/test_native_pair_motor_vec.py",
+    "tests/test_history.py",
+    "tests/test_rules.py",
+    "tests/test_match_referee.py",
+    "tests/test_native_tape_storage.py",
+    "tests/test_native_stance_reference.py",
+    "tests/test_native_stance_probe.py",
+    "tests/test_native_reset_placement.py",
+    "tests/test_upper_residual.py",
+    "tests/test_upper_residual_task.py",
+    "tests/test_native_arm_guard.py"
+  ],
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "timeout_s": 180
+}

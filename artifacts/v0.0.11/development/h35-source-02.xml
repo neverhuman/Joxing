@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="21" time="16.971" timestamp="2026-11-03T05:09:05.515461-07:00" hostname="Jepsons-MacBook-Pro-2.local"><testcase classname="tests.test_native_arm_guard" name="test_zero_arm_action_exact_native_walking_and_signed_zero" time="10.560" /><testcase classname="tests.test_native_arm_guard" name="test_guard_bad_pair_atomic_before_inference[missing]" time="0.033" /><testcase classname="tests.test_native_arm_guard" name="test_guard_bad_pair_atomic_before_inference[shape]" time="0.033" /><testcase classname="tests.test_native_arm_guard" name="test_guard_bad_pair_atomic_before_inference[nan]" time="0.032" /><testcase classname="tests.test_native_arm_guard" name="test_guard_bad_pair_atomic_before_inference[bounds]" time="0.033" /><testcase classname="tests.test_native_arm_guard" name="test_upper_commands_and_next_decision_exact_after_native_midhold" time="0.852" /><testcase classname="tests.test_native_arm_guard" name="test_fixed_native_phase_has_unique_reset_ownership" time="0.124" /><testcase classname="tests.test_native_arm_guard" name="test_resigned_bad_guard_snapshot_atomic[goal]" time="0.099" /><testcase classname="tests.test_native_arm_guard" name="test_resigned_bad_guard_snapshot_atomic[counter]" time="0.070" /><testcase classname="tests.test_native_arm_guard" name="test_resigned_bad_guard_snapshot_atomic[metric]" time="0.100" /><testcase classname="tests.test_native_arm_guard" name="test_resigned_bad_guard_snapshot_atomic[hold]" time="0.097" /><testcase classname="tests.test_native_arm_guard" name="test_resigned_bad_guard_snapshot_atomic[nonce]" time="0.066" /><testcase classname="tests.test_native_arm_guard" name="test_resigned_bad_guard_snapshot_atomic[anchor]" time="0.080" /><testcase classname="tests.test_native_arm_guard" name="test_guard_goal_matches_world_fk_and_causal_cache" time="0.795" /><testcase classname="tests.test_native_arm_guard" name="test_reward_linear_signal_units_effort_and_no_early_exit_incentive" time="0.001" /><testcase classname="tests.test_native_arm_guard" name="test_continuous_hold_resets_on_each_gate[distances_m-value0]" time="0.001" /><testcase classname="tests.test_native_arm_guard" name="test_continuous_hold_resets_on_each_gate[face_cos-0.49]" time="0.000" /><testcase classname="tests.test_native_arm_guard" name="test_continuous_hold_resets_on_each_gate[tilt_rad-0.3508111796508603]" time="0.000" /><testcase classname="tests.test_native_arm_guard" name="test_continuous_hold_resets_on_each_gate[head_drop_m-0.1001]" time="0.000" /><testcase classname="tests.test_native_arm_guard" name="test_vec46_joint_terminal_capture_and_autoreset" time="1.636" /><testcase classname="tests.test_native_arm_guard" name="test_guard_real_ppo_full_trace_replay_and_checkpoint_rng" time="1.950"><failure message="ValueError: Guard trace ownership digest">guard_factory = &lt;function guard_factory.&lt;locals&gt;.make at 0x1100463e0&gt;
+tmp_path = PosixPath('/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.11/h35-development-02/test_guard_real_ppo_full_trace0')
+
+    def test_guard_real_ppo_full_trace_replay_and_checkpoint_rng(guard_factory, tmp_path):
+        import random
+    
+        import torch
+        from stable_baselines3.common.callbacks import BaseCallback
+    
+        from joxing.native_arm_guard_evidence import GuardTraceWriter, read_guard_chunk
+        from joxing.native_arm_guard_pilot import GuardTransitions, restore_guard_checkpoint
+        from joxing.native_arm_guard_vec import GuardPairVec
+        from joxing.native_pair_motor_evidence import EvidenceBudget
+        from joxing.native_pair_motor_pilot import (
+            CheckpointBook,
+            PilotAuditedPPO,
+            optimizer_steps,
+        )
+        from joxing.native_pair_motor_train import actor_hash
+    
+        world, actor = guard_factory(horizon=60)
+        vec = GuardPairVec(world, seed=761)
+        budget = EvidenceBudget(tmp_path, raw_limit=32 * 1024**2, text_limit=2 * 1024**2)
+        writer = GuardTraceWriter(
+            tmp_path / "chunks",
+            contract_hash=world.contract_hash,
+            budget=budget,
+            chunk_rows=5,
+        )
+        model = PilotAuditedPPO(
+            "MlpPolicy",
+            vec,
+            n_steps=8,
+            batch_size=8,
+            n_epochs=2,
+            seed=761,
+            device="cpu",
+            policy_kwargs={"net_arch": [16, 16], "log_std_init": -2},
+            verbose=0,
+        )
+        with torch.no_grad():
+            model.policy.action_net.weight.zero_()
+            model.policy.action_net.bias.zero_()
+        before_hash = actor_hash(model.policy)
+        model.pilot = CheckpointBook(tmp_path / "checkpoints", budget)
+    
+        class Golden(BaseCallback):
+            def __init__(self):
+                super().__init__()
+                self.rows = []
+    
+            def _on_step(self):
+                self.rows.append(copy.deepcopy(vec.last_transition))
+                return True
+    
+        golden = Golden()
+&gt;       model.learn(
+            total_timesteps=32,
+            callback=[GuardTransitions(vec, writer, lambda n: None), golden],
+        )
+
+tests/test_native_arm_guard.py:387: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/stable_baselines3/ppo/ppo.py:311: in learn
+    return super().learn(
+.venv/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py:324: in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py:224: in collect_rollouts
+    if not callback.on_step():
+           ^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/stable_baselines3/common/callbacks.py:115: in on_step
+    return self._on_step()
+           ^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/stable_baselines3/common/callbacks.py:224: in _on_step
+    continue_training = callback.on_step() and continue_training
+                        ^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/stable_baselines3/common/callbacks.py:115: in on_step
+    return self._on_step()
+           ^^^^^^^^^^^^^^^
+src/joxing/native_arm_guard_pilot.py:36: in _on_step
+    self.writer.append(
+src/joxing/native_arm_guard_evidence.py:160: in append
+    checked_metadata(meta)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+meta = {'episode_id': 'motor-d3924daeb618c95ca44e4371e04a138b', 'native_seed': 71000, 'tick': 20, 'behavior': {'boundary': 0,...7a7423055dfe369a309d811f593c7', 'actor_hash': '093b1343b5722aa1a18af21e4d39ea15c9d7b936ace74f8218a3e37df3de1c69'}, ...}
+
+    def checked_metadata(meta):
+        if (
+            type(meta) is not dict
+            or set(meta) != META
+            or len(encode(meta)) &gt; MAX_ROW_TEXT
+            or any(
+                type(meta[k]) is not int or meta[k] &lt; 0
+                for k in ("tick", "logical_seed", "native_seed", "episode_serial")
+            )
+            or meta["tick"] &lt; 20
+            or meta["tick"] % 20
+            or meta["episode_serial"] &lt; 1
+        ):
+            raise ValueError("Guard trace metadata/clock")
+        for k in ("episode_id", "nonce"):
+            value = meta[k]
+            if (
+                type(value) is not str
+                or len(value) != 64
+                or any(c not in "0123456789abcdef" for c in value)
+            ):
+&gt;               raise ValueError("Guard trace ownership digest")
+E               ValueError: Guard trace ownership digest
+
+src/joxing/native_arm_guard_evidence.py:90: ValueError</failure></testcase></testsuite></testsuites>

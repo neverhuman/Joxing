@@ -1,0 +1,185 @@
+{
+  "scope": "Prospective per-seed exact full-training layout plus explicit reservations; no formal native outcome",
+  "joint_steps": 2048,
+  "chunk_rows": 64,
+  "chunks": 32,
+  "chunk_payload_bytes": 15549056,
+  "chunk_archive_bytes": 15552838,
+  "row_arrays": {
+    "applied_actions": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        46
+      ],
+      "bytes": 23552,
+      "sha256": "2e6c31cbc5f0f6ea215b56ca1c3284b2e6c80799aca74d4fc6d66469d5e5e69d"
+    },
+    "commands": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        700
+      ],
+      "bytes": 358400,
+      "sha256": "11001dd97006a44b5bccaaafeb04f0a089ad1a7b3781f58362cb62cc814de4ce"
+    },
+    "contact_sha256_1ms": {
+      "dtype": "|u1",
+      "shape": [
+        64,
+        20,
+        32
+      ],
+      "bytes": 40960,
+      "sha256": "02b1c2234680617802901a77eae606ad02e4ddb4282ccbc60061eac5b2d90bba"
+    },
+    "engine_after": {
+      "dtype": "<f8",
+      "shape": [
+        64,
+        4555
+      ],
+      "bytes": 2332160,
+      "sha256": "f2931fc13ac281cf07b5495683f75921afffedc135f86a570d6a8b3f1aca40bd"
+    },
+    "engine_before": {
+      "dtype": "<f8",
+      "shape": [
+        64,
+        4555
+      ],
+      "bytes": 2332160,
+      "sha256": "f2931fc13ac281cf07b5495683f75921afffedc135f86a570d6a8b3f1aca40bd"
+    },
+    "log_probs": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2
+      ],
+      "bytes": 512,
+      "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+    },
+    "metrics_1ms": {
+      "dtype": "<f8",
+      "shape": [
+        64,
+        20,
+        2,
+        7
+      ],
+      "bytes": 143360,
+      "sha256": "805f89516ae3725e591d02cc0594f250fbc9ab74461f1e03faeed1649f24e9a2"
+    },
+    "next_obs": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        7901
+      ],
+      "bytes": 4045312,
+      "sha256": "d9f032146c1ffa443f254e0bd18a9288152352d59f9f6b7d4bcb01d8059f3919"
+    },
+    "raw_policy_actions": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        46
+      ],
+      "bytes": 23552,
+      "sha256": "2e6c31cbc5f0f6ea215b56ca1c3284b2e6c80799aca74d4fc6d66469d5e5e69d"
+    },
+    "rewards": {
+      "dtype": "<f8",
+      "shape": [
+        64,
+        2
+      ],
+      "bytes": 1024,
+      "sha256": "5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+    },
+    "source_obs": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        7901
+      ],
+      "bytes": 4045312,
+      "sha256": "d9f032146c1ffa443f254e0bd18a9288152352d59f9f6b7d4bcb01d8059f3919"
+    },
+    "teacher_commands": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        700
+      ],
+      "bytes": 358400,
+      "sha256": "11001dd97006a44b5bccaaafeb04f0a089ad1a7b3781f58362cb62cc814de4ce"
+    },
+    "teacher_inputs": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        3601
+      ],
+      "bytes": 1843712,
+      "sha256": "5f66f5e9a2fb6d869e011fe0935e92a46fcb2b014cce2acbd9fb17f8c4423216"
+    },
+    "terminated": {
+      "dtype": "|b1",
+      "shape": [
+        64
+      ],
+      "bytes": 64,
+      "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+    },
+    "truncated": {
+      "dtype": "|b1",
+      "shape": [
+        64
+      ],
+      "bytes": 64,
+      "sha256": "f5a5fd42d16a20302798ef6ed309979b43003d2320d9f0e8ea9831a92759fb4b"
+    },
+    "values": {
+      "dtype": "<f4",
+      "shape": [
+        64,
+        2,
+        1
+      ],
+      "bytes": 512,
+      "sha256": "076a27c79e5ace2a3d47f9dd2e83e4ff6ea8872b3c2218f66c92b89b55f36560"
+    }
+  },
+  "chunk_metadata_bound": 163840,
+  "training_raw_and_metadata_bytes": 502933696,
+  "checkpoint_count": 17,
+  "checkpoint_bytes_bound": 249561088,
+  "other_reservations": {
+    "evaluation_compact_raw_and_initial_snapshots": 83886080,
+    "whole_fixed_media": 33554432,
+    "temporary_and_fault_reserve": 33554432
+  },
+  "worst_raw_bytes": 903489728,
+  "raw_limit_bytes": 939524096,
+  "worst_text_bytes": 6291456,
+  "text_limit_bytes": 6291456,
+  "fits": true,
+  "evaluation_note": "Eval requires a separate bounded compact replayable command/metric/state-hash tape. Reusing full train trace for all16evals will not fit; eval writer not implemented.",
+  "text_reservations": {
+    "chunk_manifests": 5242880,
+    "other_writable_text": 983040,
+    "unspent_fault_reserve": 65536
+  },
+  "raw_fault_reserve_note": "32MiB temporary/fault reservation includes EvidenceBudget 65536B unspent reserve; do not add an unregistered writer.",
+  "text_bound_note": "Other1MiB includes65536B unspent fault reserve; available ordinary other text983040B. Eval snapshots must remain binary. This is an allocation proof, not an implemented whole-study guard."
+}

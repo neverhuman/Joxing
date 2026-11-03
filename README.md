@@ -1,5 +1,12 @@
 # Joxing
 
+**Guard-specific RL source is implemented:** 46 arm actions preserve the walking
+controller’s other578muscle commands. All236source/regression checks pass; a
+native-engine/synthetic-teacher PPOfixture trains and replays exactly, including
+checkpoints and random state. The released-controller guard experiment is next;
+**new guard skill and boxing points remain unproved.**
+[Source results and remaining launch work](docs/NATIVE_ARM_GUARD_SOURCE_RESULTS.md).
+
 **Starting-position bug fixed:** all eight starts meet placement, clearance and
 first-100-ms contact gates, with exact native replay. Both pretrained walkers
 retain four-of-four three-second separated trials. Close contact still causes

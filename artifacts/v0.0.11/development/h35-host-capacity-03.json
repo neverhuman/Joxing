@@ -1,0 +1,67 @@
+{
+  "utc": "2026-11-03T12:18:32.564896+00:00",
+  "scope": "One-sample read-only post-source health inventory, not formal admission or reservation",
+  "hosts": [
+    {
+      "host": "xbabe1",
+      "returncode": 0,
+      "result": {
+        "load": [
+          2.69677734375,
+          2.548828125,
+          2.82568359375
+        ],
+        "available_memory_bytes": 15313416192,
+        "jobs": [],
+        "psi": {
+          "cpu": "some avg10=0.41 avg60=0.14 avg300=0.14 total=607630992520\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+          "io": "some avg10=34.80 avg60=23.01 avg300=10.78 total=56514414409\nfull avg10=34.52 avg60=22.87 avg300=10.74 total=54214565850\n",
+          "memory": "some avg10=0.31 avg60=0.58 avg300=0.51 total=77337562163\nfull avg10=0.31 avg60=0.58 avg300=0.51 total=75987017057\n"
+        }
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe2",
+      "returncode": 0,
+      "result": {
+        "load": [
+          41.32568359375,
+          36.33544921875,
+          33.48681640625
+        ],
+        "available_memory_bytes": 54279176192,
+        "jobs": [],
+        "psi": {
+          "cpu": "some avg10=0.00 avg60=0.05 avg300=0.06 total=1051841859\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+          "io": "some avg10=10.68 avg60=10.15 avg300=10.10 total=7280673031\nfull avg10=9.66 avg60=9.27 avg300=9.22 total=6534937049\n",
+          "memory": "some avg10=1.15 avg60=1.17 avg300=0.97 total=961091969\nfull avg10=1.15 avg60=1.16 avg300=0.96 total=946520008\n"
+        }
+      },
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\n"
+    },
+    {
+      "host": "xbabe3",
+      "returncode": 1,
+      "result": null,
+      "stderr": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\nTraceback (most recent call last):\n  File \"<stdin>\", line 4, in <module>\n  File \"/usr/lib/python3.12/subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/subprocess.py\", line 550, in run\n    stdout, stderr = process.communicate(input, timeout=timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/subprocess.py\", line 1209, in communicate\n    stdout, stderr = self._communicate(input, endtime, timeout)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/subprocess.py\", line 2116, in _communicate\n    self._check_timeout(endtime, orig_timeout, stdout, stderr)\n  File \"/usr/lib/python3.12/subprocess.py\", line 1253, in _check_timeout\n    raise TimeoutExpired(\nsubprocess.TimeoutExpired: Command '['ps', '-eo', 'pid=,args=']' timed out after 5 seconds\n"
+    },
+    {
+      "host": "xbabe4",
+      "returncode": 0,
+      "result": {
+        "load": [
+          4.5390625,
+          4.681640625,
+          4.595703125
+        ],
+        "cpu_count": 32,
+        "disk_free_bytes": 38138077184,
+        "jobs": [],
+        "memory_pressure": "System-wide memory free percentage: 93%"
+      },
+      "stderr": ""
+    }
+  ],
+  "earlier_failed_refresh": "h35-inventory-fault-02.json"
+}
