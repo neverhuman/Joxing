@@ -29,6 +29,7 @@ controls and62/63new controls. Failures:
 |receipt_encoding::test_actual_bootstrap_and_size_preflight|Missing H22deployment.json.gz|Same fixture-closure omission; its encoding metadata also needed|
 |lean_worker_probe::test_full_fresh_forkserver_pair_matches_and_candidate_import_isolation|First snapshot response exceeds3s; subprocess exits1|Source harness sends command without constructor-ready witness; cold import plausible, actual delayed phase unmeasured|
 
+[Exact source failure console](../artifacts/v0.0.11/lean-worker-source-failed-01/controls-output.txt) retains the child traceback.
 The source harness's first ordinary deadline starts while its fresh child may
 still be initializing. Formal runner already has separate8sinitialization, but
 none of its four rows executes. Do not increase ordinary3s or constructor8s to

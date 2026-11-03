@@ -1,0 +1,226 @@
+............................................F.................F......... [ 19%]
+........................................................................ [ 38%]
+........................................................................ [ 57%]
+........................................................................ [ 76%]
+...........................................F............................ [ 95%]
+..................                                                       [100%]
+=================================== FAILURES ===================================
+_____________ test_actual_admitted_bootstrap_and_storage_preflight _____________
+
+tmp_path = PosixPath('/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_admitted_bootstrap0')
+
+    @pytest.mark.skipif(
+        sys.platform != "linux", reason="Actual admitted bootstrap and receipt projection"
+    )
+    def test_actual_admitted_bootstrap_and_storage_preflight(tmp_path):
+        import hashlib
+    
+        from receipt_encoding import encode_bootstrap
+    
+        p = json.loads(
+            Path(
+                "experiments/v0.0.11/resource-admitted-four-context-protocol.json"
+            ).read_text()
+        )
+        prefix = (
+            Path(p["deployment_root"])
+            / "runs/v0.0.11/resource-admitted-four-context-deployment"
+        )
+>       blob = prefix.with_suffix(".json.gz").read_bytes()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_receipt_encoding_v2.py:112: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.12/pathlib.py:1021: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment.json.gz')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing/resource-admitted-four-context-20261102-01/runs/v0.0.11/resource-admitted-four-context-deployment.json.gz'
+
+/usr/lib/python3.12/pathlib.py:1015: FileNotFoundError
+___________________ test_actual_bootstrap_and_size_preflight ___________________
+
+tmp_path = PosixPath('/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_actual_bootstrap_and_size0')
+
+    @pytest.mark.skipif(
+        sys.platform != "linux",
+        reason="Actual new deployment wire and registered sizing preflight",
+    )
+    def test_actual_bootstrap_and_size_preflight(tmp_path):
+        p = json.loads(
+            Path("experiments/v0.0.11/four-native-context-protocol.json").read_text()
+        )
+        prefix = Path(p["deployment_root"]) / "runs/v0.0.11/four-native-context-deployment"
+>       blob = prefix.with_suffix(".json.gz").read_bytes()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_receipt_encoding.py:162: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/usr/lib/python3.12/pathlib.py:1021: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/home/ubuntu/joxing/four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment.json.gz')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/joxing/four-native-context-20261102-01/runs/v0.0.11/four-native-context-deployment.json.gz'
+
+/usr/lib/python3.12/pathlib.py:1015: FileNotFoundError
+____ test_full_fresh_forkserver_pair_matches_and_candidate_import_isolation ____
+
+tmp_path = PosixPath('/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_full_fresh_forkserver_pai0')
+
+    def test_full_fresh_forkserver_pair_matches_and_candidate_import_isolation(tmp_path):
+        result = tmp_path / "proof.json"
+        code = r"""
+    import multiprocessing as mp,json,sys
+    from pathlib import Path
+    from joxing.lean_worker_probe import make_fake,exercise,digest,transact
+    from joxing.lean_rollout_worker import lean_pipe_worker,LeanCloudpickleWrapper
+    from functools import partial
+    mp.set_forkserver_preload([])
+    from multiprocessing import forkserver
+    forkserver.ensure_running()
+    from stable_baselines3.common.vec_env.base_vec_env import CloudpickleWrapper
+    from stable_baselines3.common.vec_env.subproc_vec_env import _worker
+    ctx=mp.get_context('forkserver');results=[];imports=[]
+    for target,wrapper in ((_worker,CloudpickleWrapper),(lean_pipe_worker,LeanCloudpickleWrapper)):
+     a,b=ctx.Pipe();p=ctx.Process(target=target,args=(b,a,wrapper(partial(make_fake,1097))));p.start();b.close()
+     try:
+      rows=exercise(a,1097);results.append(rows)
+      imports.append(transact(a,('env_method',('import_snapshot',(),{}))))
+      a.send(('close',None));p.join(timeout=3);assert p.exitcode==0
+     finally:
+      a.close()
+      if p.is_alive():p.terminate();p.join(timeout=1)
+    assert results[0]==results[1] and digest(results[0])==digest(results[1])
+    assert imports[0]['torch'] and imports[0]['stable_baselines3'] and not imports[0]['mujoco']
+    assert not any(imports[1].values())
+    Path(sys.argv[1]).write_text(json.dumps({'rows':results[1],'imports':imports,'native_physics':0}))
+    """
+        env = os.environ | {
+            k: "1" for k in ("OMP_NUM_THREADS", "OPENBLAS_NUM_THREADS", "MKL_NUM_THREADS")
+        }
+>       subprocess.run(
+            [sys.executable, "-c", code, str(result)], env=env, check=True, timeout=15
+        )
+
+tests/test_lean_worker_probe.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+input = None, capture_output = False, timeout = 15, check = True
+popenargs = (['/home/ubuntu/joxing/lean-worker-probe-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python', '-c', "\nimport mu...er-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_full_fresh_forkserver_pai0/proof.json'],)
+kwargs = {'env': {'SHELL': '/bin/bash', 'PWD': '/home/ubuntu', 'LOGNAME': 'ubuntu', 'XDG_SESSION_TYPE': 'tty', ...}}
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+    
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+    
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+    
+        If timeout is given, and the process takes too long, a TimeoutExpired
+        exception will be raised.
+    
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+    
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+    
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+    
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+    
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['/home/ubuntu/joxing/lean-worker-probe-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python', '-c', "\nimport multiprocessing as mp,json,sys\nfrom pathlib import Path\nfrom joxing.lean_worker_probe import make_fake,exercise,digest,transact\nfrom joxing.lean_rollout_worker import lean_pipe_worker,LeanCloudpickleWrapper\nfrom functools import partial\nmp.set_forkserver_preload([])\nfrom multiprocessing import forkserver\nforkserver.ensure_running()\nfrom stable_baselines3.common.vec_env.base_vec_env import CloudpickleWrapper\nfrom stable_baselines3.common.vec_env.subproc_vec_env import _worker\nctx=mp.get_context('forkserver');results=[];imports=[]\nfor target,wrapper in ((_worker,CloudpickleWrapper),(lean_pipe_worker,LeanCloudpickleWrapper)):\n a,b=ctx.Pipe();p=ctx.Process(target=target,args=(b,a,wrapper(partial(make_fake,1097))));p.start();b.close()\n try:\n  rows=exercise(a,1097);results.append(rows)\n  imports.append(transact(a,('env_method',('import_snapshot',(),{}))))\n  a.send(('close',None));p.join(timeout=3);assert p.exitcode==0\n finally:\n  a.close()\n  if p.is_alive():p.terminate();p.join(timeout=1)\nassert results[0]==results[1] and digest(results[0])==digest(results[1])\nassert imports[0]['torch'] and imports[0]['stable_baselines3'] and not imports[0]['mujoco']\nassert not any(imports[1].values())\nPath(sys.argv[1]).write_text(json.dumps({'rows':results[1],'imports':imports,'native_physics':0}))\n", '/home/ubuntu/joxing/lean-worker-probe-20261102-01/runs/v0.0.11/lean-worker-probe-01/fixtures/controls/test_full_fresh_forkserver_pai0/proof.json']' returned non-zero exit status 1.
+
+/usr/lib/python3.12/subprocess.py:571: CalledProcessError
+----------------------------- Captured stderr call -----------------------------
+Traceback (most recent call last):
+  File "<string>", line 16, in <module>
+  File "/home/ubuntu/joxing/lean-worker-probe-20261102-01/src/joxing/lean_worker_probe.py", line 278, in exercise
+    before = transact(conn, ("env_method", ("snapshot", (), {})))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/joxing/lean-worker-probe-20261102-01/src/joxing/lean_worker_probe.py", line 272, in transact
+    return recv(conn, 3)
+           ^^^^^^^^^^^^^
+  File "/home/ubuntu/joxing/lean-worker-probe-20261102-01/src/joxing/process_exit_probe.py", line 216, in recv
+    raise TimeoutError("Probe response deadline")
+TimeoutError: Probe response deadline
+=========================== short test summary info ============================
+FAILED tests/test_receipt_encoding_v2.py::test_actual_admitted_bootstrap_and_storage_preflight
+FAILED tests/test_receipt_encoding.py::test_actual_bootstrap_and_size_preflight
+FAILED tests/test_lean_worker_probe.py::test_full_fresh_forkserver_pair_matches_and_candidate_import_isolation
+3 failed, 375 passed in 20.88s

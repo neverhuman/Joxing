@@ -44,7 +44,7 @@ In order: AGENTS.md,/Users/bentaylor/.codex/RTK.md,README.md,docs/GAME.md,
 docs/MISSION.md,STATUS.md,IMPLEMENTATION.md,research/README.md,H28.md,H29.md,
 docs/LEAN_ROLLOUT_WORKER_MISSION.md,LEAN_ROLLOUT_WORKER_RESULTS.md,
 artifacts/v0.0.11/lean-worker-source-failed-01/{summary,accounting,controls.xml,
-controls.log,prerequisite-failure-audit,lean-worker-probe-controller}.json/XML/log.
+controls-output.txt,prerequisite-failure-audit,lean-worker-probe-controller}.json/XML/log.
 Then tests/test_receipt_encoding.py lines105–205, test_receipt_encoding_v2.py
 lines65–150, test_lean_worker_probe.py and original protocols
 four-native-context/resource-admitted-four-context/lean-rollout-worker JSONs.
