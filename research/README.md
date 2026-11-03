@@ -2,8 +2,8 @@
 
 Latest H31continuation: lossless native streaming source55+39controls pass;
 synthetic-teacher nativefixture16jointsteps/2updates exact/43.4%smaller evidence.
-No new released-policy outcome. Next2×1024step behavioral pilot awaits full
-checkpoint/eval/owner guards;2×2048worst-reset forecast exceeds samecaps.
+No new released-policy outcome. Two-seed1024step behavioral pilot is registered with checkpoint/eval/owner guards;
+99source controls pass under actualguard. Formaloutcome pending;2048scope declined.
 Read [current packet](../docs/NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md) before repeating work.
 
 Small, versioned summaries of ideas, tests, outcomes and lessons. **No raw runs,

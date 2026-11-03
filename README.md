@@ -13,8 +13,9 @@ Competitive boxing and historical-opponent self-play remain unqualified.
 **Longer training preparation:** [lossless streaming evidence](docs/NATIVE_PAIR_STREAMING_SOURCE_RESULTS.md)
 passes 55 paired controls plus 39 regressions. A native-engine fixture with a
 synthetic teacher preserves every value using **43.4% fewer evidence bytes**.
-The next bounded pilot is two 1,024-step runs with fixed three-second evaluations;
-checkpoint and evaluation guards remain to finish before launch.
+The next bounded pilot is registered: two 1,024-step runs with fixed three-second
+evaluations, complete checkpoints, and independent physics replay. Its 99 source
+checks pass under the task write guard; formal training results remain pending.
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 

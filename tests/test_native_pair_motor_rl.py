@@ -414,3 +414,120 @@ def test_native_streaming_evidence_exact_against_original_ppo_tape(factory, tmp_
         + "\n"
     )
     vec.close()
+
+
+def test_native_pilot_full_checkpoint_rng_optimizer_and_next_hold(factory, tmp_path):
+    import torch
+
+    from joxing.native_pair_motor_evidence import CausalChunkWriter, EvidenceBudget
+    from joxing.native_pair_motor_pilot import (
+        CheckpointBook,
+        PilotAuditedPPO,
+        PilotTransitions,
+        optimizer_steps,
+        restore_checkpoint,
+    )
+    from joxing.native_pair_motor_vec import NativePairMotorVecEnv
+
+    world, _ = factory[0](horizon=60)
+    vec = NativePairMotorVecEnv(world, seed=71000, record_history=True)
+    budget = EvidenceBudget(tmp_path, raw_limit=32 * 1024**2, text_limit=2 * 1024**2)
+    model = PilotAuditedPPO(
+        "MlpPolicy",
+        vec,
+        n_steps=8,
+        batch_size=16,
+        n_epochs=1,
+        seed=3,
+        device="cpu",
+        policy_kwargs={"net_arch": [16, 16], "log_std_init": -3.0},
+        verbose=0,
+    )
+    model.pilot = CheckpointBook(tmp_path / "checkpoints", budget)
+    writer = CausalChunkWriter(
+        tmp_path / "chunks",
+        contract_hash=world.contract_hash,
+        state_dimension=4555,
+        budget=budget,
+        chunk_rows=8,
+    )
+    model.learn(
+        total_timesteps=16, callback=PilotTransitions(vec, writer, lambda n: None)
+    )
+    writer.close()
+    book = model.pilot
+    assert len(book.checkpoints) == 2 and len(book.updates) == 1
+    assert book.updates[0]["optimizer_minibatch_steps"] == optimizer_steps(model) == 1
+    for receipt in book.checkpoints:
+        restored = restore_checkpoint(book.output, receipt, vec)
+        observations = restored._last_obs.copy()
+        with torch.no_grad():
+            a, v, log = restored.policy(torch.as_tensor(observations))
+        expected_random = (torch.rand(3).numpy().tobytes(), np.random.rand(3).tobytes())
+        actual_action = np.clip(a.numpy(), -1, 1)
+        expected = vec.step(actual_action)
+        engine = world.core.state().tobytes()
+        again = restore_checkpoint(book.output, receipt, vec)
+        assert optimizer_steps(again) == (0 if receipt["number"] == 0 else 1)
+        assert observations.tobytes() == again._last_obs.tobytes()
+        with torch.no_grad():
+            a2, v2, log2 = again.policy(torch.as_tensor(again._last_obs))
+        assert (a.numpy().tobytes(), v.numpy().tobytes(), log.numpy().tobytes()) == (
+            a2.numpy().tobytes(),
+            v2.numpy().tobytes(),
+            log2.numpy().tobytes(),
+        )
+        assert expected_random == (
+            torch.rand(3).numpy().tobytes(),
+            np.random.rand(3).tobytes(),
+        )
+        actual = vec.step(np.clip(a2.numpy(), -1, 1))
+        assert actual[0].tobytes() == expected[0].tobytes()
+        assert actual[1].tobytes() == expected[1].tobytes()
+        assert actual[2].tobytes() == expected[2].tobytes()
+        assert world.core.state().tobytes() == engine
+    assert world.physics_total == 240
+    vec.close()
+
+
+def test_native_pilot_fixed_evaluation_trace_is_complete_and_replayable(
+    factory, tmp_path
+):
+    import hashlib
+
+    from joxing.native_pair_motor_evidence import EvidenceBudget
+    from joxing.native_pair_motor_pilot import MotorMetrics, evaluate_pilot
+    from joxing.native_tape_storage import load
+
+    world, _ = factory[0](horizon=60)
+    budget = EvidenceBudget(tmp_path, raw_limit=8 * 1024**2, text_limit=1024**2)
+    result = evaluate_pilot(
+        world,
+        None,
+        seed=71000,
+        output=tmp_path / "eval",
+        budget=budget,
+        guard=lambda n: None,
+    )
+    a = load(tmp_path / "eval/evaluation-trace.npz", result["trace_tape"])
+    snapshot = json.loads((tmp_path / "eval/initial-snapshot.json").read_text())
+    assert a["metrics_1ms"].shape == (60, 2, 7) and a["actions"].shape == (3, 2, 138)
+    world.reset(seed=71000)
+    world.restore(snapshot)
+    metrics = MotorMetrics()
+    for i in range(3):
+        world.begin_control({p: a["actions"][i, j] for j, p in enumerate("AB")})
+        assert (
+            np.stack([world.core.commands[p] for p in "AB"]).tobytes()
+            == a["commands"][i].tobytes()
+        )
+        for _ in range(20):
+            world.advance_substep()
+            metrics.observe(world)
+        assert (
+            hashlib.sha256(world.core.state().tobytes()).digest()
+            == a["engine_sha256"][i].tobytes()
+        )
+    assert np.array(metrics.rows, np.float64).tobytes() == a["metrics_1ms"].tobytes()
+    assert world.physics_total == 120
+    world.close()

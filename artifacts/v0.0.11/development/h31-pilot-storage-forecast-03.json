@@ -1,0 +1,20 @@
+{
+  "scope": "Worst-reset storage reservation only; no native training outcome",
+  "joint_steps_per_seed": 1024,
+  "seeds": 2,
+  "chunk_rows": 128,
+  "chunks": 16,
+  "maximum_reset_rows_per_chunk": 127,
+  "chunk_archive_bytes": 18823880,
+  "manifest_text_upper_bytes": 6815744,
+  "checkpoint_count": 18,
+  "checkpoint_reservation_bytes": 264241152,
+  "other_raw_bytes": 251658240,
+  "other_text_bytes": 8388608,
+  "raw_upper_bytes": 823897216,
+  "text_upper_bytes": 15204352,
+  "raw_limit": 1073741824,
+  "text_limit": 16777216,
+  "fits": true,
+  "checkpoint_and_other_writes_guarded": false
+}

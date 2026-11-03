@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="99" time="29.014" timestamp="2026-11-03T00:37:44.789242-07:00" hostname="Jepsons-MacBook-Pro-2.local"><testcase classname="tests.test_native_pair_motor_rl" name="test_zero_residual_matches_unchanged_shared_native_task" time="6.848" /><testcase classname="tests.test_native_pair_motor_rl" name="test_bad_pair_is_atomic_before_teacher_or_engine[missing]" time="0.013" /><testcase classname="tests.test_native_pair_motor_rl" name="test_bad_pair_is_atomic_before_teacher_or_engine[shape]" time="0.014" /><testcase classname="tests.test_native_pair_motor_rl" name="test_bad_pair_is_atomic_before_teacher_or_engine[nan]" time="0.012" /><testcase classname="tests.test_native_pair_motor_rl" name="test_bad_pair_is_atomic_before_teacher_or_engine[bounds]" time="0.013" /><testcase classname="tests.test_native_pair_motor_rl" name="test_causal_own_opponent_velocity_history_and_atomic_pair" time="0.053" /><testcase classname="tests.test_native_pair_motor_rl" name="test_actual_native_midhold_replay_no_new_teacher_decision" time="0.483" /><testcase classname="tests.test_native_pair_motor_rl" name="test_resigned_bad_snapshot_rejected_before_engine_commit[cache]" time="0.037" /><testcase classname="tests.test_native_pair_motor_rl" name="test_resigned_bad_snapshot_rejected_before_engine_commit[history]" time="0.036" /><testcase classname="tests.test_native_pair_motor_rl" name="test_resigned_bad_snapshot_rejected_before_engine_commit[command]" time="0.037" /><testcase classname="tests.test_native_pair_motor_rl" name="test_resigned_bad_snapshot_rejected_before_engine_commit[clock]" time="0.036" /><testcase classname="tests.test_native_pair_motor_rl" name="test_resigned_bad_snapshot_rejected_before_engine_commit[failure]" time="0.037" /><testcase classname="tests.test_native_pair_motor_rl" name="test_resigned_bad_snapshot_rejected_before_engine_commit[bundle]" time="0.032" /><testcase classname="tests.test_native_pair_motor_rl" name="test_opposed_native_yaw_constructor_is_explicit_and_unassisted" time="0.044" /><testcase classname="tests.test_native_pair_motor_rl" name="test_opponent_limb_velocity_enters_actor_features_without_private_activation" time="0.013" /><testcase classname="tests.test_native_pair_motor_rl" name="test_actual_native_fixture_ppo_rollout_audited_update_and_tape" time="1.991"><failure message="TypeError: Path &lt;__main__.main.&lt;locals&gt;.Checked object at 0x327d98470&gt; parameter has invalid type: expected one of (&lt;class '_io.BufferedWriter'&gt;, &lt;class '_io.BufferedReader'&gt;, &lt;class '_io.BytesIO'&gt;, &lt;class '_io.BufferedRandom'&gt;).">factory = (&lt;function factory.&lt;locals&gt;.make at 0x10cc680e0&gt;, &lt;joxing.upstream_motor.NativeTask object at 0x10ac68320&gt;, [[0, 1, 5]..., 1391, 1392,
+       1393, 1394, 1395, 1396, 1397, 1398, 1399])})}, &lt;function factory.&lt;locals&gt;.drivers at 0x1016bfce0&gt;)
+tmp_path = PosixPath('/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.11/h31-pilot-guarded-dev-03/fixtures/test_actual_native_fixture_ppo0')
+
+    def test_actual_native_fixture_ppo_rollout_audited_update_and_tape(factory, tmp_path):
+        import torch
+    
+        from joxing.native_pair_motor_train import AuditedPPO, NativeTransitions, actor_hash
+        from joxing.native_pair_motor_vec import NativePairMotorVecEnv
+    
+        world, _ = factory[0](horizon=40)
+        vec = NativePairMotorVecEnv(world, seed=71000)
+        model = AuditedPPO(
+            "MlpPolicy",
+            vec,
+            n_steps=8,
+            batch_size=16,
+            n_epochs=1,
+            seed=1,
+            device="cpu",
+            policy_kwargs={"net_arch": [16, 16], "log_std_init": -3.0},
+            verbose=0,
+        )
+        model.native_update_rows = []
+        model.native_output = tmp_path
+        before = actor_hash(model.policy)
+        cb = NativeTransitions(vec, tmp_path, lambda n: None)
+&gt;       model.learn(total_timesteps=16, callback=cb)
+
+tests/test_native_pair_motor_rl.py:303: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/stable_baselines3/ppo/ppo.py:311: in learn
+    return super().learn(
+.venv/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py:337: in learn
+    self.train()
+src/joxing/native_pair_motor_train.py:53: in train
+    self.save(self.native_output / f"update-{number:03d}-before")
+.venv/lib/python3.12/site-packages/stable_baselines3/common/base_class.py:867: in save
+    save_to_zip_file(path, data=data, params=params_to_save, pytorch_variables=pytorch_variables)
+.venv/lib/python3.12/site-packages/stable_baselines3/common/save_util.py:312: in save_to_zip_file
+    file = open_path(save_path, "w", verbose=0, suffix="zip")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/functools.py:912: in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/stable_baselines3/common/save_util.py:279: in open_path_pathlib
+    return open_path(path.open("wb"), mode, verbose, suffix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/functools.py:912: in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = &lt;__main__.main.&lt;locals&gt;.Checked object at 0x327d98470&gt;, mode = 'w'
+verbose = 0, suffix = 'zip'
+
+    @functools.singledispatch
+    def open_path(
+        path: str | pathlib.Path | io.BufferedIOBase, mode: str, verbose: int = 0, suffix: str | None = None
+    ) -&gt; io.BufferedWriter | io.BufferedReader | io.BytesIO | io.BufferedRandom:
+        """
+        Opens a path for reading or writing with a preferred suffix and raises debug information.
+        If the provided path is a derivative of io.BufferedIOBase it ensures that the file
+        matches the provided mode, i.e. If the mode is read ("r", "read") it checks that the path is readable.
+        If the mode is write ("w", "write") it checks that the file is writable.
+    
+        If the provided path is a string or a pathlib.Path, it ensures that it exists. If the mode is "read"
+        it checks that it exists, if it doesn't exist it attempts to read path.suffix if a suffix is provided.
+        If the mode is "write" and the path does not exist, it creates all the parent folders. If the path
+        points to a folder, it changes the path to path_2. If the path already exists and verbose &gt;= 2,
+        it raises a warning.
+    
+        :param path: the path to open.
+            if save_path is a str or pathlib.Path and mode is "w", single dispatch ensures that the
+            path actually exists. If path is a io.BufferedIOBase the path exists.
+        :param mode: how to open the file. "w"|"write" for writing, "r"|"read" for reading.
+        :param verbose: Verbosity level: 0 for no output, 1 for info messages, 2 for debug messages
+        :param suffix: The preferred suffix. If mode is "w" then the opened file has the suffix.
+            If mode is "r" then we attempt to open the path. If an error is raised and the suffix
+            is not None, we attempt to open the path with the suffix.
+        :return:
+        """
+        # Note(antonin): the true annotation should be IO[bytes]
+        # but there is not easy way to check that
+        allowed_types = (io.BufferedWriter, io.BufferedReader, io.BytesIO, io.BufferedRandom)
+        if not isinstance(path, allowed_types):
+&gt;           raise TypeError(f"Path {path} parameter has invalid type: expected one of {allowed_types}.")
+E           TypeError: Path &lt;__main__.main.&lt;locals&gt;.Checked object at 0x327d98470&gt; parameter has invalid type: expected one of (&lt;class '_io.BufferedWriter'&gt;, &lt;class '_io.BufferedReader'&gt;, &lt;class '_io.BytesIO'&gt;, &lt;class '_io.BufferedRandom'&gt;).
+
+.venv/lib/python3.12/site-packages/stable_baselines3/common/save_util.py:211: TypeError</failure></testcase><testcase classname="tests.test_native_pair_motor_rl" name="test_native_streaming_evidence_exact_against_original_ppo_tape" time="0.406"><failure message="TypeError: Path &lt;__main__.main.&lt;locals&gt;.Checked object at 0x39c0f4fb0&gt; parameter has invalid type: expected one of (&lt;class '_io.BufferedWriter'&gt;, &lt;class '_io.BufferedReader'&gt;, &lt;class '_io.BytesIO'&gt;, &lt;class '_io.BufferedRandom'&gt;).">factory = (&lt;function factory.&lt;locals&gt;.make at 0x10cc680e0&gt;, &lt;joxing.upstream_motor.NativeTask object at 0x10ac68320&gt;, [[0, 1, 5]..., 1391, 1392,
+       1393, 1394, 1395, 1396, 1397, 1398, 1399])})}, &lt;function factory.&lt;locals&gt;.drivers at 0x1016bfce0&gt;)
+tmp_path = PosixPath('/Users/bentaylor/Documents/ChatGPT/JOXING/runs/v0.0.11/h31-pilot-guarded-dev-03/fixtures/test_native_streaming_evidence0')
+
+    def test_native_streaming_evidence_exact_against_original_ppo_tape(factory, tmp_path):
+        import torch
+    
+        from joxing.native_pair_motor_evidence import (
+            CausalChunkWriter,
+            EvidenceBudget,
+            read_chunk,
+        )
+        from joxing.native_pair_motor_train import (
+            AuditedPPO,
+            NativeTransitions,
+            StreamingNativeTransitions,
+        )
+        from joxing.native_pair_motor_vec import NativePairMotorVecEnv
+        from joxing.native_tape_storage import load
+    
+        world, _ = factory[0](horizon=60)
+        vec = NativePairMotorVecEnv(world, seed=71000, record_history=True)
+        candidate = tmp_path / "candidate"
+        budget = EvidenceBudget(candidate, raw_limit=8 * 1024**2, text_limit=1024**2)
+        writer = CausalChunkWriter(
+            candidate / "chunks",
+            contract_hash=world.contract_hash,
+            state_dimension=4555,
+            budget=budget,
+            chunk_rows=5,
+        )
+        golden = tmp_path / "original"
+        golden.mkdir()
+        model = AuditedPPO(
+            "MlpPolicy",
+            vec,
+            n_steps=8,
+            batch_size=16,
+            n_epochs=1,
+            seed=2,
+            device="cpu",
+            policy_kwargs={"net_arch": [16, 16], "log_std_init": -3.0},
+            verbose=0,
+        )
+        model.native_update_rows, model.native_output = [], golden
+        reference = NativeTransitions(vec, golden, lambda n: None)
+        callback = StreamingNativeTransitions(vec, writer, lambda n: None)
+&gt;       model.learn(total_timesteps=32, callback=[reference, callback])
+
+tests/test_native_pair_motor_rl.py:360: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/stable_baselines3/ppo/ppo.py:311: in learn
+    return super().learn(
+.venv/lib/python3.12/site-packages/stable_baselines3/common/on_policy_algorithm.py:337: in learn
+    self.train()
+src/joxing/native_pair_motor_train.py:53: in train
+    self.save(self.native_output / f"update-{number:03d}-before")
+.venv/lib/python3.12/site-packages/stable_baselines3/common/base_class.py:867: in save
+    save_to_zip_file(path, data=data, params=params_to_save, pytorch_variables=pytorch_variables)
+.venv/lib/python3.12/site-packages/stable_baselines3/common/save_util.py:312: in save_to_zip_file
+    file = open_path(save_path, "w", verbose=0, suffix="zip")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/functools.py:912: in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/stable_baselines3/common/save_util.py:279: in open_path_pathlib
+    return open_path(path.open("wb"), mode, verbose, suffix)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/opt/homebrew/Cellar/python@3.12/3.12.12_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/functools.py:912: in wrapper
+    return dispatch(args[0].__class__)(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = &lt;__main__.main.&lt;locals&gt;.Checked object at 0x39c0f4fb0&gt;, mode = 'w'
+verbose = 0, suffix = 'zip'
+
+    @functools.singledispatch
+    def open_path(
+        path: str | pathlib.Path | io.BufferedIOBase, mode: str, verbose: int = 0, suffix: str | None = None
+    ) -&gt; io.BufferedWriter | io.BufferedReader | io.BytesIO | io.BufferedRandom:
+        """
+        Opens a path for reading or writing with a preferred suffix and raises debug information.
+        If the provided path is a derivative of io.BufferedIOBase it ensures that the file
+        matches the provided mode, i.e. If the mode is read ("r", "read") it checks that the path is readable.
+        If the mode is write ("w", "write") it checks that the file is writable.
+    
+        If the provided path is a string or a pathlib.Path, it ensures that it exists. If the mode is "read"
+        it checks that it exists, if it doesn't exist it attempts to read path.suffix if a suffix is provided.
+        If the mode is "write" and the path does not exist, it creates all the parent folders. If the path
+        points to a folder, it changes the path to path_2. If the path already exists and verbose &gt;= 2,
+        it raises a warning.
+    
+        :param path: the path to open.
+            if save_path is a str or pathlib.Path and mode is "w", single dispatch ensures that the
+            path actually exists. If path is a io.BufferedIOBase the path exists.
+        :param mode: how to open the file. "w"|"write" for writing, "r"|"read" for reading.
+        :param verbose: Verbosity level: 0 for no output, 1 for info messages, 2 for debug messages
+        :param suffix: The preferred suffix. If mode is "w" then the opened file has the suffix.
+            If mode is "r" then we attempt to open the path. If an error is raised and the suffix
+            is not None, we attempt to open the path with the suffix.
+        :return:
+        """
+        # Note(antonin): the true annotation should be IO[bytes]
+        # but there is not easy way to check that
+        allowed_types = (io.BufferedWriter, io.BufferedReader, io.BytesIO, io.BufferedRandom)
+        if not isinstance(path, allowed_types):
+&gt;           raise TypeError(f"Path {path} parameter has invalid type: expected one of {allowed_types}.")
+E           TypeError: Path &lt;__main__.main.&lt;locals&gt;.Checked object at 0x39c0f4fb0&gt; parameter has invalid type: expected one of (&lt;class '_io.BufferedWriter'&gt;, &lt;class '_io.BufferedReader'&gt;, &lt;class '_io.BytesIO'&gt;, &lt;class '_io.BufferedRandom'&gt;).
+
+.venv/lib/python3.12/site-packages/stable_baselines3/common/save_util.py:211: TypeError</failure></testcase><testcase classname="tests.test_native_pair_motor_rl" name="test_native_pilot_full_checkpoint_rng_optimizer_and_next_hold" time="0.767" /><testcase classname="tests.test_native_pair_motor_rl" name="test_native_pilot_fixed_evaluation_trace_is_complete_and_replayable" time="0.287" /><testcase classname="tests.test_native_pair_motor_pilot" name="test_checkpoint_serialization_and_output_bounds_precede_disk_write" time="0.002" /><testcase classname="tests.test_native_pair_motor_pilot" name="test_motor_cycles_require_true_persistent_order_and_new_guard" time="0.001" /><testcase classname="tests.test_native_pair_guarded_stage" name="test_bounded_stage_guards_python_and_cpp_torch_writes_without_physics" time="1.382" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_lossless_history_native_endpoint_reset_and_chunk_continuity[1]" time="0.928" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_lossless_history_native_endpoint_reset_and_chunk_continuity[2]" time="0.663" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_lossless_history_native_endpoint_reset_and_chunk_continuity[3]" time="0.482" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_lossless_history_native_endpoint_reset_and_chunk_continuity[4]" time="0.530" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_lossless_history_native_endpoint_reset_and_chunk_continuity[7]" time="0.415" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_lossless_history_native_endpoint_reset_and_chunk_continuity[128]" time="0.300" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[clock]" time="0.178" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[corner]" time="0.261" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[schema]" time="0.196" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[history]" time="0.203" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[future]" time="0.214" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[delay]" time="0.220" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[rounded]" time="0.230" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[dtype]" time="0.236" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[obs]" time="0.258" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[state]" time="0.262" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[mask]" time="0.268" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_bad_row_rejected_without_accepting_it[raw_clipping]" time="0.281" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_cannot_cross_an_unfinished_episode_or_skip_chunk" time="0.251" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_preallocated_raw_and_text_first_limits_before_accepting_row[raw]" time="0.007" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_preallocated_raw_and_text_first_limits_before_accepting_row[text]" time="0.009" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_file_ownership_existing_outputs_and_symlink_refused" time="0.003" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_corrupt_or_resigned_evidence_rejected[manifest]" time="0.354" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_corrupt_or_resigned_evidence_rejected[truncate]" time="0.362" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_corrupt_or_resigned_evidence_rejected[crc]" time="0.377" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_corrupt_or_resigned_evidence_rejected[shape]" time="0.683" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_corrupt_or_resigned_evidence_rejected[row_order]" time="0.383" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_corrupt_or_resigned_evidence_rejected[reset]" time="0.719" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_corrupt_or_resigned_evidence_rejected[signed_zero]" time="0.757" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_maximum_chunk_and_partial_close_are_bounded_and_lossless" time="2.766" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_oversized_scalar_receipt_is_rejected_before_row_acceptance" time="0.007" /><testcase classname="tests.test_native_pair_motor_evidence" name="test_worst_reset_forecast_declines_oversized_scope_without_raising_caps" time="0.016" /><testcase classname="tests.test_native_pair_motor_vec" name="test_pair_vec_one_world_joint_reset_real_terminal_observations" time="0.001" /><testcase classname="tests.test_native_pair_motor_vec" name="test_pair_vec_bad_actions_do_not_step_or_queue[bad0]" time="0.000" /><testcase classname="tests.test_native_pair_motor_vec" name="test_pair_vec_bad_actions_do_not_step_or_queue[bad1]" time="0.000" /><testcase classname="tests.test_native_pair_motor_vec" name="test_pair_vec_bad_actions_do_not_step_or_queue[bad2]" time="0.000" /><testcase classname="tests.test_native_pair_motor_vec" name="test_pair_vec_no_reset_over_pending_or_mutation_one_corner" time="0.000" /><testcase classname="tests.test_native_pair_motor_vec" name="test_paired_ppo_fixture_updates_both_slots_not_native_proof" time="0.007" /><testcase classname="tests.test_history" name="test_history_preserves_delay_order_and_excludes_future_arrivals" time="0.009" /><testcase classname="tests.test_history" name="test_cross_corner_episode_future_and_conflicting_packets_rejected" time="0.000" /><testcase classname="tests.test_history" name="test_bounded_owned_history_restores_exactly_and_rejects_corruption" time="0.000" /><testcase classname="tests.test_rules" name="test_contact_window_scores_once_despite_held_pressure[head-2]" time="0.001" /><testcase classname="tests.test_rules" name="test_contact_window_scores_once_despite_held_pressure[torso-1]" time="0.001" /><testcase classname="tests.test_rules" name="test_contact_window_scores_once_despite_held_pressure[guard-0]" time="0.001" /><testcase classname="tests.test_rules" name="test_contact_window_scores_once_despite_held_pressure[illegal-0]" time="0.001" /><testcase classname="tests.test_rules" name="test_guard_brush_then_direct_target_uses_target_onset" time="0.000" /><testcase classname="tests.test_rules" name="test_target_cannot_inherit_guard_speed_or_impulse" time="0.000" /><testcase classname="tests.test_rules" name="test_onset_is_latched_before_deceleration" time="0.000" /><testcase classname="tests.test_rules" name="test_stationary_guard_rejects_opponent_running_into_it" time="0.000" /><testcase classname="tests.test_rules" name="test_manifold_sum_duplicate_delivery_and_dominant_zone_tie" time="0.000" /><testcase classname="tests.test_rules" name="test_subthreshold_zones_cannot_pool_impulse" time="0.000" /><testcase classname="tests.test_rules" name="test_clearance_and_retraction_required_after_contact" time="0.001" /><testcase classname="tests.test_rules" name="test_gap_and_recontact_cannot_restart_window" time="0.000" /><testcase classname="tests.test_rules" name="test_bell_cannot_collect_new_impulse" time="0.000" /><testcase classname="tests.test_rules" name="test_restore_mid_hit_reproduces_ledger" time="0.000" /><testcase classname="tests.test_rules" name="test_shaping_telescopes_to_terminal_match_utility" time="0.000" /><testcase classname="tests.test_rules" name="test_invalid_and_missing_samples_fail_loudly" time="0.000" /><testcase classname="tests.test_match_referee" name="test_all_four_gloves_finalize_prior_impulses_before_bell_and_order_is_irrelevant" time="2.711" /><testcase classname="tests.test_native_tape_storage" name="test_two_decoders_exact_for_nan_payload_endian_strides_empty_and_scalar" time="0.136" /><testcase classname="tests.test_native_tape_storage" name="test_deterministic_bytes_across_input_order" time="0.087" /><testcase classname="tests.test_native_tape_storage" name="test_rejects_unsafe_input_before_output[arrays0]" time="0.001" /><testcase classname="tests.test_native_tape_storage" name="test_rejects_unsafe_input_before_output[arrays1]" time="0.001" /><testcase classname="tests.test_native_tape_storage" name="test_rejects_unsafe_input_before_output[arrays2]" time="0.001" /><testcase classname="tests.test_native_tape_storage" name="test_rejects_unsafe_input_before_output[arrays3]" time="0.001" /><testcase classname="tests.test_native_tape_storage" name="test_rejects_unsafe_input_before_output[arrays4]" time="0.001" /><testcase classname="tests.test_native_tape_storage" name="test_rejects_unsafe_input_before_output[arrays5]" time="0.000" /><testcase classname="tests.test_native_tape_storage" name="test_huge_view_and_archive_limit_fail_before_allocation_or_output" time="0.001" /><testcase classname="tests.test_native_tape_storage" name="test_credit_preflight_preserves_fault_reserve" time="0.001" /><testcase classname="tests.test_native_tape_storage" name="test_previous_final_or_temporary_is_never_overwritten[x.npz]" time="0.004" /><testcase classname="tests.test_native_tape_storage" name="test_previous_final_or_temporary_is_never_overwritten[x.npz.tmp]" time="0.004" /><testcase classname="tests.test_native_tape_storage" name="test_interrupted_write_has_temporary_but_no_final_or_receipt" time="0.009" /><testcase classname="tests.test_native_tape_storage" name="test_external_hash_and_logical_receipt_mismatch_rejected" time="0.029" /><testcase classname="tests.test_native_tape_storage" name="test_crc_corruption_rejected_even_with_rebound_container_hash" time="0.032" /><testcase classname="tests.test_native_tape_storage" name="test_truncated_and_forged_central_directory_rejected_before_zip_allocation" time="0.034" /><testcase classname="tests.test_native_tape_storage" name="test_malicious_shape_object_and_compressed_members_rejected[shape]" time="0.053" /><testcase classname="tests.test_native_tape_storage" name="test_malicious_shape_object_and_compressed_members_rejected[object]" time="0.060" /><testcase classname="tests.test_native_tape_storage" name="test_malicious_shape_object_and_compressed_members_rejected[compressed]" time="0.061" /></testsuite></testsuites>

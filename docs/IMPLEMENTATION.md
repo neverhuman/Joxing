@@ -1,3 +1,39 @@
+# H31 two-seed native motor pilot registered — source ready, formal task pending
+
+Implemented full policy/optimizer/RNG/native/VecEnv boundary checkpoints,
+bounded serialization (13MiBmodel/1MiBcontinuation), fixed evaluation1msmetrics,
+alltraining+all16evaluation independent replay, typed write guard and bounded
+Macowner with capturedlogs/durable entered counters.99fresh development source
+checks pass UNDERthe actual write guard; prior97/99SB3file-adapter failure retained
+and repaired using its public singledispatch extension. Native fixture initial/
+postupdate next-action/hold restoration and evaluation traces match exactly.
+
+Frozen prospective protocol:experiments/v0.0.11/native-pair-motor-pilot-01.json,
+sha05845df8010d4c8aca881e3f584f1e5905abe8b323667e0140a6e66bec50a2a5.
+Two seeds761/983×1024JOINTsteps=4096actor samples/16rollout updates/256optimizer
+minibatch steps, four SAME3s resets before/after eachseed, first fixedwholeclips.
+Shared1400muscle world/frozen released motor/causal4frame own+opponent features;
+motor reward only. Competition remains false. Alloriginalproposed behavioral
+criteria frozen unchanged:perseed/side targeterrorimprove>=.05m, survivaldelta
+>=−.1s, fullguard→reach→returncycle on>=2/4starts and3ssurvival on>=3/4starts.
+Measure40mscontinuous1msdistance<=.15m/facecos>=.5perphase; nocycleacrossschedule.
+
+Newdedicated~/joxing/native-pair-motor-pilot-20261103-01. Original1800swhole incl
+setup60/source120/native600/render4×30/audit300(firstlimit); one world/thread1/
+8GiB/12process/1GiBraw/16MiBtext/200000physics. Max89197primary+88960audit+
+2048source reserve=180205. Audit300s prospectively covers88960replayintervals,
+versus old prototype640; no old failed budget is extended. Rawworstforecast
+823897216B/text15204352B with240MiBotherraw allocation(source64/eval100/media64/
+fault12), not a hard-cap increase. Freshcapacity/source/input/runtime checks
+and publicsource verification precede launch. Allresults/falls/invalid/not_run
+must be retained; changedactor/return/videoalone doesnotpassbehavior gates.
+
+Next: publish frozen source/protocol, prepare fresh dedicatedroot and start once.
+On healthyjob verify durable physicscounter/checkpoint/chunk growth and ownedPIDs;
+no sourcechanges orduplicates. Oncompletion read independent-audit+ownerstatus,
+audit everyseed/eval/fixedclip/exit/resource/sourcehash, recordnegativeoutcomes,
+push smallreceipts/README/docs/H31book. No tag/competitive claim. Wholev11pending.
+
 # H31 lossless native training evidence ready — source checkpoint Nov2local
 
 55paired motor/evidence controls +39history/rules/referee/stored-tape regressions

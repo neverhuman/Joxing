@@ -1,0 +1,57 @@
+{
+  "scope": "Development source controls, synthetic teacher/native engine; no new formal released-model pilot result",
+  "checks": [
+    {
+      "attempt": "dev01",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "245f355ab7bbf834657c517950086c69d3073020aec9c728ea83be1c962316c7"
+    },
+    {
+      "attempt": "dev02",
+      "tests": 99,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "f516477bc4c8fe5884db64bd8c44e885a708f5eb333bba8faf75c9c9636cbf9d"
+    },
+    {
+      "attempt": "guarded-dev03",
+      "tests": 99,
+      "failures": 2,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "4ca5099815a6cb1b150f8e465e5c92a08fc550d8e148a30c39ea9921838623d7"
+    },
+    {
+      "attempt": "guarded-dev04",
+      "tests": 99,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "60c72e9a98b76625b26ed35ca95de524933244055e1c02fa4826d32a672bbf7b"
+    }
+  ],
+  "faults": [
+    "guarded-dev03:97/99pass. Old SB3path saving rejected the checked file adapter. Fixed with the exposed open_path singledispatch registration; no unguarded fallback. guarded-dev04:99/99pass.",
+    "Ruff import/catch/explicit-subprocess-check findings corrected before freeze."
+  ],
+  "source_physics": {
+    "dev01": 1243,
+    "dev02": 1243,
+    "guarded-dev03": 1083,
+    "guarded-dev04": 1243,
+    "total_static": 4812,
+    "scope": "Fixed source fixture intervals, including320physical prefix intervals before the2guarded serialization failures; no formal physics credit. Successful full99case source stage1243reserved2048."
+  },
+  "proofs": [
+    "Initial+postupdate native policy/optimizer/RNG/VecEnv/fullsnapshot restore and subsequent joint muscle hold exact",
+    "Continuous1ms motor metrics+all fixed evaluation engine hashes exact source fixture replay",
+    "All99sourcecases pass under actual task write guard inclraw/text/Torch bounds",
+    "Legacy smoke sources/protocols, physics/rules/700muscles per body unchanged"
+  ],
+  "protocol": "../experiments/v0.0.11/native-pair-motor-pilot-01.json",
+  "formal_native_attempts": 0
+}
