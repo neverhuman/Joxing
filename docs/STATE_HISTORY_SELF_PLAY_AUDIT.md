@@ -1,3 +1,21 @@
+# Current implementation checkpoint —2026-11-03
+
+H31now implements a native muscle-residual PPOactor with four causal20msframes
+of own joints/velocities/700activations plus visible opponent body/limb positions,
+linear/angular velocities, public clock/points/ring and task goals. A/Bobserve
+the same completed state and stage both actions before physics. The frozen walking
+teacher still sees own native/reference inputs; the learned actor has the new
+opponent/history path. All700muscles peractor remain. No futureopponent state
+or private opponent activations enter that actor.
+
+Two training seeds/4096actor samples/16updates executed; H32independently replays
+all2048trainingtransitions/16evals exactly with behaviorerror0.0. Motorbehavior
+gates FAILED(all0–0/no guardcycles/no3ssurvival). This demonstrates implementation,
+not boxing improvement. Currenttimingprofile is zero-delay; RFjitter/recurrent
+memory/historical-opponent league/competitive rules remain unqualified.
+See NATIVE_PAIR_TWO_SEED_RESULTS.md and current H33stance packet. The original
+code audit/gaps below are historical; use current source/results for deliveredstatus.
+
 # Game state, temporal memory, muscle feedback and repeated self-play
 
 Code review requested during v0.0.5: the athletes must observe their own and their opponent’s motion, retain relevant history, change muscle commands continuously, tolerate timing/command jitter, and improve through many short games. This is a review and implementation handoff. Features described as missing or proposed are not implemented by this document. The separately frozen v0.0.5 experiments are complete; their contracts were not changed during this review. See [final results](V0.0.5_RESULTS.md).

@@ -1,3 +1,12 @@
+# This pilot has concluded — read the stance mission next
+
+BothnativePPOseeds completed; all16evals failed guard/survival criteria,0–0.
+Original03pipeline remainsinvalid due recordingtimeout; separateH32independent
+replay/export now passes with all4completefixedclips. See
+NATIVE_PAIR_TWO_SEED_RESULTS.md. CurrentreadyNEXTpacket is
+NATIVE_STANCE_REFERENCE_MISSION.md / H33, not another unchanged training sweep.
+Oldprospectiveplans/negativeoutcomes below retained. No activejob or release tag.
+
 # H31 xbabe4runtime ready; explicit remote native pilot03 registered
 
 Isolated projectruntime copied in37.088s,1431424230B<2GiB,0physics. All22554

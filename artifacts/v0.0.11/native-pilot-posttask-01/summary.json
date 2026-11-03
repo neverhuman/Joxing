@@ -1,0 +1,128 @@
+{
+  "schema": "joxing-native-posttask-conclusion-v1",
+  "status": "qualified_replay_and_export_only",
+  "attempts": 1,
+  "valid": 1,
+  "invalid": 0,
+  "not_run": 0,
+  "source_commit": "9b589c9540d622e156d3acc9141240446d7b790e",
+  "protocol_sha256": "290b156e2caf7649c843081b5aefc8d1a8b281fe5dada7fc0bea9948f72301b1",
+  "original_H31_attempt_still_invalid": true,
+  "whole_wall_s": 181.13503641821444,
+  "peak_sampled_owned_rss_bytes": 2425913344,
+  "new_replay_physics": 61700,
+  "new_optimizer_updates": 0,
+  "all2048training_transitions_bitexact": true,
+  "all16evals_bitexact": true,
+  "all1400muscle_outputs_reconstruct": true,
+  "all_behavior_recompute_max_error": 0.0,
+  "behavioral_criteria_passed": false,
+  "seed_side_results": [
+    {
+      "seed": 761,
+      "gates": {
+        "A": {
+          "completed_3s_starts": 0,
+          "full_cycle_starts": 0,
+          "passed": false,
+          "survival_change_s": 0.02300000000000013,
+          "target_error_improvement_m": -0.012622456847636243
+        },
+        "B": {
+          "completed_3s_starts": 0,
+          "full_cycle_starts": 0,
+          "passed": false,
+          "survival_change_s": 0.009249999999999758,
+          "target_error_improvement_m": 0.003125583347644345
+        }
+      }
+    },
+    {
+      "seed": 983,
+      "gates": {
+        "A": {
+          "completed_3s_starts": 0,
+          "full_cycle_starts": 0,
+          "passed": false,
+          "survival_change_s": 0.01200000000000001,
+          "target_error_improvement_m": -0.0049129721693252915
+        },
+        "B": {
+          "completed_3s_starts": 0,
+          "full_cycle_starts": 0,
+          "passed": false,
+          "survival_change_s": 0.01550000000000007,
+          "target_error_improvement_m": 0.0014760578112181233
+        }
+      }
+    }
+  ],
+  "clips": [
+    {
+      "seed": 761,
+      "phase": "before",
+      "frames": 80,
+      "duration_s": 1.6,
+      "bytes": 118412,
+      "sha256": "01fe3536a025ce3d48c0c378a9802b52178e3ea32056696cb6fe7c1d0b091e07",
+      "render_physics": 0,
+      "visual_qa": "First/mid/last seen: lowhands, bodycontact/lean/fall; no convincing guard/punch or skill improvement. All sourceframes retained."
+    },
+    {
+      "seed": 761,
+      "phase": "after",
+      "frames": 82,
+      "duration_s": 1.64,
+      "bytes": 127640,
+      "sha256": "4bd5a6792c05f49f04c0f72cd836a0027650724118acac4b7f1cc6f6f2abb1a5",
+      "render_physics": 0,
+      "visual_qa": "First/mid/last seen: lowhands, bodycontact/lean/fall; no convincing guard/punch or skill improvement. All sourceframes retained."
+    },
+    {
+      "seed": 983,
+      "phase": "before",
+      "frames": 80,
+      "duration_s": 1.6,
+      "bytes": 118412,
+      "sha256": "01fe3536a025ce3d48c0c378a9802b52178e3ea32056696cb6fe7c1d0b091e07",
+      "render_physics": 0,
+      "visual_qa": "First/mid/last seen: lowhands, bodycontact/lean/fall; no convincing guard/punch or skill improvement. All sourceframes retained."
+    },
+    {
+      "seed": 983,
+      "phase": "after",
+      "frames": 66,
+      "duration_s": 1.32,
+      "bytes": 102441,
+      "sha256": "a6228e8b972a0b32c615642caad8c1a24afd0c7154a40b48a5930280489a38ab",
+      "render_physics": 0,
+      "visual_qa": "First/mid/last seen: lowhands, bodycontact/lean/fall; no convincing guard/punch or skill improvement. All sourceframes retained."
+    }
+  ],
+  "raw_regular_files": 29,
+  "raw_regular_bytes_before_local_postcheck": 895108,
+  "exit_audit": {
+    "all_recorded_identities_exited": true,
+    "identities": 11,
+    "sample_monotonic_s": 8776955.177733708,
+    "oldinputs_rechecked_after_all_stages": true
+  },
+  "input_bytes_unchanged": true,
+  "original_primary_plus_postreplay_plus_reserved_source_physics": 125685,
+  "qualified_boxing_games": 0,
+  "all_points": [
+    0,
+    0
+  ],
+  "metadata_faults": [
+    "First local collector used systemPython lacking imageio_ffmpeg, failed before writes; projectvenv collector succeeds. No native task/data changes."
+  ],
+  "limitations": [
+    "Original03invalid onrecordingdeadline/finalffmpegtail; posttaskneverreclassifiesit",
+    "No completedguardcycle/3ssurvival in16evals, no demonstratedboxing improvement",
+    "512x288no-tendon-shadow-reflectionVISUALprofile; all1400physicsmuscles retained andwholefixedclips exported",
+    "ExplicitMacPy3.12.3profile, noLinux/crosshost/native100msretirement/league/RFjitterqualification"
+  ],
+  "next": "H33explicit pretrained walk-to-stance/reference andinteraction diagnostic, not unchangedlarger training.",
+  "curation": "Rawmanifestincludesoriginalemptyruntimecreditlock; this ephemeral0byte lock is omitted from Git. Fullcounter/receipts/media retained."
+}

@@ -1,6 +1,6 @@
 # Joxing game contract: candidate v0
 
-Status: design selected for implementation; referee fixtures exist; full game is not yet playable. v10motor pilot concluded with both improvement gates failed; v11shared-loop/diagnostic-recording implementation is active.
+Status: candidate rules/referee fixtures exist; competitive play remains disabled. H31native paired PPO trained two seeds but failed its motor criteria. H32independent replay/recordings pass; H33pretrained stopping/stance is next. No working boxing bout is claimed.
 
 Repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing), public. [v7](V0.0.7_RESULTS.md) confirms native joint-tracking termination can occur with sampled foot support still present; [v8](V0.0.8_RESULTS.md) measures persistent physical failure around5s with all40attempts valid and all12replays exact. Neither defines a sporting loss or changes the points below. The [v0.0.6 native walking qualification](V0.0.6_RESULTS.md) establishes a frozen motor dependency with no opponent/game integration or new learning. The completed [v0.0.5 motor experiments](V0.0.5_RESULTS.md) measure one athlete’s moving-start fall recovery before competitive play; the [training guide](TRAINING.md) describes later stance/recovery gates. Motor rewards and failure criteria do not change the sporting points or resolve provisional match fall/foul rules below.
 
@@ -46,7 +46,7 @@ An independently valid sporting end terminates both actors. The task's 60-second
 
 ## Where RL appears
 
-[The executable-code audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) distinguishes current single-athlete feedback from the proposed opponent-aware temporal game below. It specifies missing state/history, timing-jitter, simultaneous action and league interfaces. The current policy observes its own velocities and muscle activation but has no opponent input or recurrent actor memory.
+[The executable-code audit](STATE_HISTORY_SELF_PLAY_AUDIT.md) distinguishes current single-athlete feedback from the proposed opponent-aware temporal game below. It specifies missing state/history, timing-jitter, simultaneous action and league interfaces. The frozen walking teacher observes its own native state/reference. The H31learned residual actor now observes four causal frames of own state and visible opponent motion; both players act simultaneously. Its real two-seed PPOtraining is independently replayable, but all motor criteria failed. The zero-delay profile does not qualify RFjitter, recurrent memory or the historical-opponent league.
 
 1. **Motor training:** muscle commands learn stance, independent arm reach/return, footwork and perturbation recovery. Goals and imitation rewards may be dense. The first executable experiment is a separate fixed-pelvis, zero-gravity reach rig using all 700 native muscle actuators and learned right-arm excitation pulses. Its results do not count as boxing competence.
 2. **Skill compression:** distill competent motor behavior into a state-conditioned deterministic decoder; test 32/64/128 latent dimensions. Motor policy outputs remain muscle excitations, not torque or animation.

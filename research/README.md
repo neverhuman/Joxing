@@ -1,15 +1,9 @@
 # Research memory
 
-Latest:H31native2seedtrainingcompleted, recordingtimeout invalidatesattempt.
-[H32](H32.md) registeredread-only replay/export is current;0retraining.
-Originalnegativecriteria/faults retained. NextunusedIDH33.
-
-Latest H31continuation: lossless native streaming source55+39controls pass;
-synthetic-teacher nativefixture16jointsteps/2updates exact/43.4%smaller evidence.
-No new released-policy outcome. Two-seed1024step behavioral pilot is registered with checkpoint/eval/owner guards;
-99source controls pass under actualguard. Localadmissiondeferredtwicewith0physics; xbabe4pinnedruntime nowready, explicit
-MacPy3.12.3protocol03registered, formaloutcome pending;2048scope declined.
-Read [current packet](../docs/NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md) before repeating work.
+CURRENT:H33pretrained stopping/stance/interaction diagnostic, planonly.
+H31trained4096actor samples/16updates but allmotorcriteriafail; originalpipeline
+invalidrecordingtimeout retained. H32allnative replay/fourfullclips qualified.
+Read [H33packet](../docs/NATIVE_STANCE_REFERENCE_MISSION.md) before moretraining.
 
 Small, versioned summaries of ideas, tests, outcomes and lessons. **No raw runs,
 checkpoints, videos, archives, credentials or binary objects.** Link to existing
@@ -22,10 +16,10 @@ remain the authority for measurements, budgets, criteria and denominators.
 
 | ID | Question | Current conclusion |
 |---|---|---|
-|[H1](H1.md)|Can we reuse the released native motor?|Short walking works; guard/boxing and full shared replay remain unqualified|
+|[H1](H1.md)|Can we reuse the released native motor?|Releasedwalking works; H32Macpairedreplay passes; stance/boxing unqualified|
 |[H2](H2.md)|Does residual RL improve physical survival?|Two-seed v10 pilot failed both improvement gates|
 |[H3](H3.md)|Which CPU optimizations preserve trajectories?|16-worker scalar scaling qualifies; batching/collector promotions declined|
-|[H4](H4.md)|Does the shared loop retain causal state/history and replay?|Engine/timing controls pass; existing actors do not learn opponent history|
+|[H4](H4.md)|Does the shared loop retain causal state/history and replay?|Engine/timing controls pass; H31native actor trains causal own/opponenthistory, no skillgain|
 |[H5](H5.md)|Can the contact adapter award legal points?|Rigid controls score2/1; native striking remains unproved|
 |[H6](H6.md)|Can compression preserve all native evidence?|23-array codec exact;31% smaller, with earlier memory failure retained|
 |[H7](H7.md)|Can saving be faster without changing values?|Qualified offline:28.7× reference save speed; larger files, not integrated|
@@ -48,29 +42,17 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H24](H24.md)|Can spare xbabe4 qualify independent game-contract source checks?|29/29Mac source/forward checks pass,0physics; dynamic replay unqualified|
 |[H25](H25.md)|Can spare Mac preserve native boundary/mid-command/contact replay?|21Mac source controls pass; strict archived decode fails385/1400values;0physics/6native not_run|
 |[H26](H26.md)|Can a separate Mac-native profile preserve strict local replay?|Worker-ready5case/116step plan; not implemented/run|
-
 |[H27](H27.md)|Does qualified process lifetime preserve exact native SAC lifecycle parity?|315Linuxcontrols;64transitions/12updates prefix invalid on100.58ms hold,3not_run|
 |[H28](H28.md)|Can a Torch-free pipe worker preserve rollout semantics and reduce footprint?|375/378Linuxsource pass; missingfixtures/startup3fail;4formalprobesnot_run|
 |[H29](H29.md)|Can portable byte fixtures/startup readiness unblock Linux source checks?|413/413Linux+audit pass/42exits; source readiness only|
-
 |[H30](H30.md)|Can portable lean-worker qualification preserve lifetime and reduce childRSS?|Secondarypartialdraft/CLIdisabled;4not_run; native H31priority|
+|[H31](H31.md)|Can native paired PPO learn balance/reach toward boxing?|4096actor samples/16updates executed; allmotorcriteria fail; originalrecordingtimeout invalidatespipeline|
+|[H32](H32.md)|Can sealed native PPO evidence replay and export completely?|2048trainingtransitions/16evals exact, behaviorerror0, fourwholeclips; originalH31staysinvalid|
+|[H33](H33.md)|Can the pretrained motor stop/hold stance before more boxing RL?|Current worker-ready reference/interaction diagnosis; not implemented/run|
 
-|[H31](H31.md)|Can a native shared-world muscle-residual PPOpilot learn balance/reach toward boxing?|Actualnative32jointsteps/64samples/4updates+exact replay/video pass;0–0; longer motortraining next|
-
-**Latest: H31actual native paired PPOwitness passes:32jointsteps/64samples/4updates, bit-exact32transition replay and fixed before/after clips. Upright1s/0–0, no skill claim. Two-seed longer motor training next; H30secondary.**
-
-**Prior checkpoint: H31native bridge/PPOimplemented;22development checks pass. Released model hashes load; small real-checkpoint32joint-step/4update witness preregistered, NOT_RUN at freeze. Larger nativepilot/competitiveboxing unqualified.**
-
-**Prior checkpoint: User prioritizes real two-humanoid RL ASAP. H31native paired motor learning primary; H30fakeworker draft secondary/dispatch-disabled. H29source-only413cases/audit pass. Next unused ID:H32.**
-
-**Prior checkpoint: H29qualifies source-only413Linuxcases/audit/42exits. H30portable lean4row mission primary next;0formal attempts,0nativegain. Next unused ID:H31.**
-
-**Prior checkpoint: H29same-source recoveredxbabe1placement registered;803sourcefiles/413cases/limits unchanged,0sourceattempts. xbabe3nowpressured, no jobstarted there.**
-
-**Prior checkpoint: H29sourceb80dc3a/protocolcd43c45e public; admission1I/Odeferred before checkout,0sourceattempts/413not_run. Current ready source-only mission remains H29.**
-
-**Prior checkpoint: H28sparexbabe3 runtime prepared;375/378Linuxsource pass,3prerequisite failures,all4formal probes not_run. H29portable fixture/startup/rawXML source mission implemented/preregistered, Linux next, no blindretry/clockreset. H27native teardown stays failed. H26Mac-local replay secondary. Next unused ID: H30.** These are global research-note
-IDs, separate from older packet names such as experiments/v0.0.9/H1–H3.
+Research IDs are global and independent of old packet names such as
+experiments/v0.0.9/H1–H3. Next unused ID: **H34**. Prior protocols, failed
+gates and costs remain in their numbered notes and experiment books.
 
 ## Update rule
 

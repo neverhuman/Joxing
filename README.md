@@ -1,33 +1,24 @@
 # Joxing
 
-**Native paired PPO completed two training seeds:** 4,096 actor samples and 16
-updates on xbabe4. All 16 evaluations still score **0–0**, with no completed
-guard cycle or three-second survival. A recording timeout invalidated the full
-attempt; [saved results](artifacts/v0.0.11/native-pair-motor-pilot-03/summary.json)
-will be independently replayed without retraining. Boxing improvement remains unproven.
+**Native paired PPO and exact replay now work:** two intact 700-muscle humans,
+4,096 actor samples and 16 PPO updates on xbabe4. All training transitions and
+16 fixed evaluations independently replay exactly. Policies receive causal own/
+opponent motion history and act simultaneously in one physical world. **Boxing skill has not been
+demonstrated:** every evaluation scores 0–0, with no guard cycle or three-second survival.
 
-**Native two-humanoid PPO now executes:** 32 joint transitions, 64 actor samples,
-four updates, and independent bit-exact replay of every transition. Both humans
-retain 700 muscles and causal own/opponent motion history.
-[Results](docs/NATIVE_PAIR_MAC_PROTOTYPE_RESULTS.md) ·
-[Before recording](artifacts/v0.0.11/native-pair-mac-prototype-01/before.mp4) ·
-[After recording](artifacts/v0.0.11/native-pair-mac-prototype-01/after.mp4).
-The fixed one-second evaluations stay upright but score **0–0**, with no convincing
-punch sequence or demonstrated improvement. [Next: longer guard/reach training](docs/NATIVE_PAIR_MOTOR_TRAINING_CONTINUATION.md).
-Competitive boxing and historical-opponent self-play remain unqualified.
-
-**Longer training preparation:** [lossless streaming evidence](docs/NATIVE_PAIR_STREAMING_SOURCE_RESULTS.md)
-passes 55 paired controls plus 39 regressions. A native-engine fixture with a
-synthetic teacher preserves every value using **43.4% fewer evidence bytes**.
-The next bounded pilot is registered: two 1,024-step runs with fixed three-second
-evaluations, complete checkpoints, and independent physics replay. Its 99 source
-checks pass under the task write guard; formal training results remain pending.
+[Results and limitations](docs/NATIVE_PAIR_TWO_SEED_RESULTS.md) ·
+[Before training](artifacts/v0.0.11/native-pilot-posttask-01/761-before/before.mp4) ·
+[After training](artifacts/v0.0.11/native-pilot-posttask-01/761-after/after.mp4) ·
+[Second trained seed](artifacts/v0.0.11/native-pilot-posttask-01/983-after/after.mp4).
+These are complete motor evaluations, including falls. The original recording
+timeout remains a failed attempt; the separate audit/export is preserved in Git.
+[Next: stopping and stance using the pretrained motor](docs/NATIVE_STANCE_REFERENCE_MISSION.md).
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H31 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H33 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 

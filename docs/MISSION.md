@@ -1,3 +1,28 @@
+# H32 audit/export qualified; H31 motor objective failed — H33stance next
+
+Actual two-seed nativePPO:2048jointtransitions/4096actor samples/16rolloutupdates/
+256minibatches/22completed motortrainingepisodes. H32independently replays ALL
+trainingstates/16fixed evals bit-exact, reconstructs all1400commands; behavior
+value/logprob maxerror0.0. H31motorcriteria fail all4seed/corner combinations:
+all0–0/0guardcycles/0three-secondcompletions. No boxing improvement claimed.
+
+Original03staysINVALID on30srecordingdeadline and ffmpegretirementtail; later
+alloldidentitiesexited. SeparateH32passes1attempt/1valid/0invalid:181.135s<540,
+61700NEWreplayphysics, peak sampledRSS2425913344B<8GiB,11identitiesexited.
+All4WHOLEfixed recordings decoded/hash-checked andfirst/mid/last visuallyseen:
+lowhands/approach/bodycontact/lean/fall. Compact512x288exports5.64–5.78s<same30s;
+visualtendons/shadows/reflectionsdisabled, physics/all700muscles peractorunchanged.
+No retraining, oldsource/data untouched; oldattempt not reclassified or extended.
+
+See docs/NATIVE_PAIR_TWO_SEED_RESULTS.md and artifacts/v0.0.11/
+native-pilot-posttask-01/summary.json. Four full clips/smallreceipts public;512MB
+weights/native tapes remain onxbabe4outsideGit. No activeownedtask now.
+PRIMARYnext worker-ready:docs/NATIVE_STANCE_REFERENCE_MISSION.md / researchH33.
+Diagnose contact vswalking transfer and test an EXPLICITpretrained walk-to-hold
+reference goal, before morePPOvolume. Newvariant/source/protocol requiredbefore
+physicaloutcomes; no actualpose/velocityassistance, anatomy/rulechanges or assumed
+standingqualification fromgaitfreeze. All700muscles remain. Wholev11untagged.
+
 # Native PPO completed; recordingtimeout invalidates03 — H32post-task next
 
 Two seeds:2048jointtransitions/4096actor samples/16PPOupdates/256minibatches,
