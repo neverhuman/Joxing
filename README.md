@@ -1,16 +1,16 @@
 # Joxing
 
-Current wave: H29 portable receipt/startup repair is public. Local checks:
-399 passed, 14 Linux-only skips. The same 413-case Linux source check now has
-an explicitly registered xbabe1 placement because xbabe3 is busy.
-[Current status](docs/STATUS.md) · [ready mission](docs/PORTABLE_LINUX_SOURCE_READINESS_MISSION.md).
-No trained, unassisted scoring bout yet.
+Current wave: H29 passed all **413 Linux source checks** and the independent
+audit; all 42 owned processes exited. This clears portable source/startup
+readiness. [Results and receipts](docs/PORTABLE_LINUX_SOURCE_READINESS_RESULTS.md).
+Next: [four paired lean-worker memory tests](docs/PORTABLE_LEAN_WORKER_QUALIFICATION_MISSION.md).
+Native balance, legal scoring and self-play remain unqualified.
 
 **Public repository: [neverhuman/Joxing](https://github.com/neverhuman/Joxing).** Clone and read the source, tests, plans and published evidence without GitHub credentials.
 
 Muscle-driven boxing research using two [MS-Human-700](https://github.com/LNSGroup/MS-Human-700) humans in one MuJoCo world and the [msgym](https://github.com/LNSGroup/msgym) control ecosystem.
 
-**Research memory:** [H1–H29 ideas and compressed outcomes](research/README.md).
+**Research memory:** [H1–H30 ideas and compressed outcomes](research/README.md).
 Small text notes link to the original protocols, receipts, failures and next
 actions. H9 has concluded; H10 command isolation is qualified; physical integration is next. H13 records a separate QFlex research lead.
 

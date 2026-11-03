@@ -1,3 +1,8 @@
+Completed source-only on2026-11-02:413/413Linuxcases and independent audit pass;
+42owned exits,0nativephysics/learning. [Results](PORTABLE_LINUX_SOURCE_READINESS_RESULTS.md).
+Current next mission [H30](PORTABLE_LEAN_WORKER_QUALIFICATION_MISSION.md).
+Original prospective mission/placement record retained below.
+
 # H29: portable exact receipt fixtures and explicit worker startup readiness
 
 Status: implemented/preregistered before outcomes;413registered source nodes,

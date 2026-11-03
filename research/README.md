@@ -40,9 +40,13 @@ remain the authority for measurements, budgets, criteria and denominators.
 
 |[H27](H27.md)|Does qualified process lifetime preserve exact native SAC lifecycle parity?|315Linuxcontrols;64transitions/12updates prefix invalid on100.58ms hold,3not_run|
 |[H28](H28.md)|Can a Torch-free pipe worker preserve rollout semantics and reduce footprint?|375/378Linuxsource pass; missingfixtures/startup3fail;4formalprobesnot_run|
-|[H29](H29.md)|Can portable byte fixtures/startup readiness unblock Linux source checks?|Same-source xbabe1placement registered; xbabe3pressured;413Linuxnot_run|
+|[H29](H29.md)|Can portable byte fixtures/startup readiness unblock Linux source checks?|413/413Linux+audit pass/42exits; source readiness only|
 
-**Latest: H29same-source recoveredxbabe1placement registered;803sourcefiles/413cases/limits unchanged,0sourceattempts. xbabe3nowpressured, no jobstarted there.**
+|[H30](H30.md)|Can portable lean-worker qualification preserve lifetime and reduce childRSS?|Worker-ready4row/300s/0native plan; notimplemented/run|
+
+**Latest: H29qualifies source-only413Linuxcases/audit/42exits. H30portable lean4row mission primary next;0formal attempts,0nativegain. Next unused ID:H31.**
+
+**Prior checkpoint: H29same-source recoveredxbabe1placement registered;803sourcefiles/413cases/limits unchanged,0sourceattempts. xbabe3nowpressured, no jobstarted there.**
 
 **Prior checkpoint: H29sourceb80dc3a/protocolcd43c45e public; admission1I/Odeferred before checkout,0sourceattempts/413not_run. Current ready source-only mission remains H29.**
 

@@ -1,0 +1,27 @@
+{
+  "scope": "Independent post-transfer saved-evidence check; zero simulation and no continuous-clock extension",
+  "checks": {
+    "full_main_terminal_bootstrap_wire": "pass",
+    "all413_junit_nodes_counts_and_sha": "pass",
+    "runtime_events_versions_and_process_binding": {
+      "status": "qualified",
+      "events": 11,
+      "wall_s": 5.5080070327967405
+    },
+    "exact8inputs_and_negative_siblings": "pass",
+    "complete26peer_state_rng_histories_and2readinessresponses": "pass",
+    "all_final1937payload_lengths_hashes": "pass",
+    "all_owned42identities_exit_remote_query": "pass"
+  },
+  "raw_manifest_file": "raw-manifest.json.gz",
+  "unique_owned_identities": 42,
+  "publication_faults": [
+    {
+      "stage": "manifest collector01",
+      "status": "failed_before_manifest",
+      "exit_code": 1,
+      "limitation": "First collector required symlink targets to remain under owned run. Source negative fixtures deliberately include escaping symlinks; original stderr was not retained. Corrected collector stores symlink metadata without following targets. No formal source rerun or task-clock rebase."
+    }
+  ],
+  "qualified_source_only": true
+}

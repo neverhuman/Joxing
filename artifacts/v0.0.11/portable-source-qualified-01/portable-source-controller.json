@@ -1,0 +1,302 @@
+{
+  "status": "audited",
+  "controller": {
+    "pid": 1527062,
+    "parent_pid": 1,
+    "start_ticks": 961289489,
+    "state": "R"
+  },
+  "source_command": [
+    "/usr/bin/python3",
+    "/home/ubuntu/joxing/portable-source-readiness-20261103-01/scripts/qualify_linux_fixture_readiness.py",
+    "--source",
+    "--packet",
+    "experiments/v0.0.11/portable-linux-source-readiness-xbabe1-protocol.json",
+    "--source-sha",
+    "a159900147fd97b30c02f236939258e3947057f6",
+    "--protocol-sha256",
+    "9b8e4128f9975baf306e43c110bec89bbb2f83abe307b6c001c6734fab9d30c3",
+    "--epoch-start-monotonic",
+    "9612852.456823116",
+    "--controller-pid",
+    "1527062",
+    "--controller-start",
+    "961289489"
+  ],
+  "original_epoch": 9612852.456823116,
+  "source_process": {
+    "pid": 1527075,
+    "parent_pid": 1527062,
+    "start_ticks": 961289494,
+    "state": "R"
+  },
+  "source_returncode": 0,
+  "owned_identities": [
+    {
+      "pid": 1527075,
+      "parent_pid": 1527062,
+      "start_ticks": 961289494,
+      "state": "R"
+    },
+    {
+      "pid": 1527077,
+      "parent_pid": 1527075,
+      "start_ticks": 961289499,
+      "state": "S"
+    },
+    {
+      "pid": 1527217,
+      "parent_pid": 1527075,
+      "start_ticks": 961289599,
+      "state": "Z"
+    },
+    {
+      "pid": 1529307,
+      "parent_pid": 1527075,
+      "start_ticks": 961290150,
+      "state": "Z"
+    },
+    {
+      "pid": 1530851,
+      "parent_pid": 1529307,
+      "start_ticks": 961290700,
+      "state": "R"
+    },
+    {
+      "pid": 1530961,
+      "parent_pid": 1529307,
+      "start_ticks": 961290716,
+      "state": "S"
+    },
+    {
+      "pid": 1531371,
+      "parent_pid": 1529307,
+      "start_ticks": 961290821,
+      "state": "Z"
+    },
+    {
+      "pid": 1531380,
+      "parent_pid": 1529307,
+      "start_ticks": 961290836,
+      "state": "S"
+    },
+    {
+      "pid": 1531381,
+      "parent_pid": 1529307,
+      "start_ticks": 961290836,
+      "state": "Z"
+    },
+    {
+      "pid": 1531382,
+      "parent_pid": 1529307,
+      "start_ticks": 961290836,
+      "state": "R"
+    },
+    {
+      "pid": 1531430,
+      "parent_pid": 1529307,
+      "start_ticks": 961290888,
+      "state": "S"
+    },
+    {
+      "pid": 1531431,
+      "parent_pid": 1529307,
+      "start_ticks": 961290888,
+      "state": "S"
+    },
+    {
+      "pid": 1531432,
+      "parent_pid": 1529307,
+      "start_ticks": 961290888,
+      "state": "S"
+    },
+    {
+      "pid": 1531924,
+      "parent_pid": 1529307,
+      "start_ticks": 961291012,
+      "state": "S"
+    },
+    {
+      "pid": 1531925,
+      "parent_pid": 1529307,
+      "start_ticks": 961291012,
+      "state": "S"
+    },
+    {
+      "pid": 1531926,
+      "parent_pid": 1529307,
+      "start_ticks": 961291012,
+      "state": "S"
+    },
+    {
+      "pid": 1532089,
+      "parent_pid": 1529307,
+      "start_ticks": 961291036,
+      "state": "S"
+    },
+    {
+      "pid": 1532090,
+      "parent_pid": 1529307,
+      "start_ticks": 961291036,
+      "state": "S"
+    },
+    {
+      "pid": 1532109,
+      "parent_pid": 1529307,
+      "start_ticks": 961291100,
+      "state": "Z"
+    },
+    {
+      "pid": 1532335,
+      "parent_pid": 1529307,
+      "start_ticks": 961291134,
+      "state": "Z"
+    },
+    {
+      "pid": 1532409,
+      "parent_pid": 1529307,
+      "start_ticks": 961291176,
+      "state": "S"
+    },
+    {
+      "pid": 1532410,
+      "parent_pid": 1529307,
+      "start_ticks": 961291176,
+      "state": "Z"
+    },
+    {
+      "pid": 1532411,
+      "parent_pid": 1529307,
+      "start_ticks": 961291176,
+      "state": "Z"
+    },
+    {
+      "pid": 1532452,
+      "parent_pid": 1532410,
+      "start_ticks": 961291181,
+      "state": "R"
+    },
+    {
+      "pid": 1532453,
+      "parent_pid": 1532410,
+      "start_ticks": 961291181,
+      "state": "R"
+    },
+    {
+      "pid": 1532454,
+      "parent_pid": 1532410,
+      "start_ticks": 961291181,
+      "state": "R"
+    },
+    {
+      "pid": 1532455,
+      "parent_pid": 1532410,
+      "start_ticks": 961291181,
+      "state": "S"
+    },
+    {
+      "pid": 1532603,
+      "parent_pid": 1529307,
+      "start_ticks": 961291273,
+      "state": "R"
+    },
+    {
+      "pid": 1532717,
+      "parent_pid": 1529307,
+      "start_ticks": 961291330,
+      "state": "S"
+    },
+    {
+      "pid": 1532718,
+      "parent_pid": 1529307,
+      "start_ticks": 961291330,
+      "state": "R"
+    },
+    {
+      "pid": 1532719,
+      "parent_pid": 1529307,
+      "start_ticks": 961291330,
+      "state": "R"
+    },
+    {
+      "pid": 1532720,
+      "parent_pid": 1529307,
+      "start_ticks": 961291330,
+      "state": "R"
+    },
+    {
+      "pid": 1532721,
+      "parent_pid": 1529307,
+      "start_ticks": 961291330,
+      "state": "R"
+    },
+    {
+      "pid": 1532749,
+      "parent_pid": 1529307,
+      "start_ticks": 961291364,
+      "state": "R"
+    },
+    {
+      "pid": 1532827,
+      "parent_pid": 1529307,
+      "start_ticks": 961291444,
+      "state": "R"
+    },
+    {
+      "pid": 1532830,
+      "parent_pid": 1532827,
+      "start_ticks": 961291452,
+      "state": "S"
+    },
+    {
+      "pid": 1532831,
+      "parent_pid": 1532827,
+      "start_ticks": 961291452,
+      "state": "S"
+    },
+    {
+      "pid": 1538372,
+      "parent_pid": 1532831,
+      "start_ticks": 961291849,
+      "state": "R"
+    },
+    {
+      "pid": 1543872,
+      "parent_pid": 1532831,
+      "start_ticks": 961292268,
+      "state": "R"
+    },
+    {
+      "pid": 1545791,
+      "parent_pid": 1527075,
+      "start_ticks": 961292526,
+      "state": "R"
+    }
+  ],
+  "audit_command": [
+    "/home/ubuntu/joxing/native-learner-context-parity-20261102-01/experiments/v0.0.11/runtime/.venv/bin/python",
+    "scripts/audit_linux_fixture_readiness.py",
+    "--packet",
+    "experiments/v0.0.11/portable-linux-source-readiness-xbabe1-protocol.json",
+    "--folder",
+    "/home/ubuntu/joxing/portable-source-readiness-20261103-01/runs/v0.0.11/portable-source-01",
+    "--source-sha",
+    "a159900147fd97b30c02f236939258e3947057f6",
+    "--ready-file",
+    "/home/ubuntu/joxing/portable-source-readiness-20261103-01/runs/v0.0.11/portable-source-01/independent-audit.ready"
+  ],
+  "audit_process": {
+    "pid": 1545968,
+    "parent_pid": 1527062,
+    "start_ticks": 961292638,
+    "state": "R"
+  },
+  "audit_returncode": 0,
+  "original_epoch_elapsed_s": 75.0452089831233,
+  "final_live": [],
+  "controller_peak_rss_bytes": 38817792,
+  "final_usage": {
+    "fixture_bytes": 3219553,
+    "receipt_bytes_before_final": 546365
+  }
+}

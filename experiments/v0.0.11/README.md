@@ -1,3 +1,32 @@
+# H29 source readiness qualifies; H30formal lean-worker test next —Nov2local
+
+H29publica159900/9b8e4128 on recoveredxbabe1passes413/413Linuxcases,0skip/fail.
+All378old+35new nodes, exact8byte-input/negative siblings, startup/26command peer
+state/RNG and source/input/runtime/ownership gates pass. Independent fresh audit
+and post-transfer check pass;42owned identities exited. Original controller
+75.045209s<120, sourcecontrols23.756481s;0nativephysics/models/actors/updates/games.
+Source readiness baseline4.146103s/lean.298220s fits SAME8sinitializer, ordinary3s
+unchanged; no formal speed/RSS/native claim. Largest curated receipt75387B.
+
+Chargedfixtures3219553B incl403961inputs, finalregularreceipts546712B;
+sampled controller-inclusive sourcepeak1179213824B/10processes.1937payloads/
+3766192B+76linkmetadata hashes verify. Prior xbabe3deferral/H28failures and
+H15/H27costs retained; discovery127/1 and posttaskcollector1 faults retained.
+See docs/PORTABLE_LINUX_SOURCE_READINESS_RESULTS.md and artifacts/v0.0.11/
+portable-source-qualified-01/{summary,accounting,post-transfer-audit}.json.
+
+Current PRIMARYworker-ready: docs/PORTABLE_LEAN_WORKER_QUALIFICATION_MISSION.md
+and research/H30.md. NOTimplemented/preregistered/run. Four NEWsequential fake
+sb3A/leanA/sb3B/leanB seed1097/1098 rows; exact26command histories/imports,
+<=75% paired childRSS, all4positive actual retirement<=100ms/close2s required.
+New proposed300soriginalepoch inclsetup60/source30/4x30/audit30,1worker/thread1,
+12process/7planned-8GiBhard/16MiBfixturesinclinputs/1MiBreceipts,0native/learning.
+Implement explicit portable/readonly-runtime entry/controller/audit in NEWfiles;
+old H28entry lacks hydration, hardcodes venv and installs runtime: do not rerun it.
+Freeze/source/protocol BEFOREformal outcomes; inspect sharedcapacity/nooverlap.
+Old clocks/gates/defaults remain. No job currently running; H30ready mission left.
+v0.0.11uncompleted/untagged; nativebalance/points/self-play still unqualified.
+
 # H29 same-source placement on recovered xbabe1 registered —Nov2local
 
 Fresh capacity10 finds xbabe3IOfull73.94%/memoryfull38.24%, no ownedjob; leave
