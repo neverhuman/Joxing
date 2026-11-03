@@ -1,7 +1,7 @@
 # H34: phase-independent, non-overlapping native boxing starts
 
-Status: implemented;163local controls pass. Prospective protocol registered;
-publicsource/target qualification pending, no pretrained outcomes yet.
+Status: implemented; formal01INVALIDon sourceRSS before scientific work.
+Sourcefixture repair validated; prospective packet02 registered, target pending.
 Primary next mission after H33. One integration owner; no agents/concurrent writers.
 
 ## Objective, evidence and completion boundary
@@ -181,3 +181,21 @@ experiments/v0.0.11/native-reset-placement-01.json. Render derives a bounding
 sphere from all visible athlete geoms and fits verticalFOV with1.6margin/min5m,
 leaving HUD bands clear and preserving all archived frames. Target/source/run
 must remain within the prospectively stated firstlimits; no extension on failure.
+
+
+## Attempt01failure and prospective02 (2026-11-03)
+
+01remainsINVALID: source RSS8655896576B>8589934592B at98.605s,0scientific
+entries, all8trials not_run. No completed sourceJUnit. All identities exited.
+[Retained fault](../artifacts/v0.0.11/native-reset-placement-01/summary.json).
+The eager fixture held8native models. Repair retains2at most and full-byte SHA/
+dtype/shape/solver/bodyposition receipts captured during ALL8geometry cases;
+no model-array criterion is weakened. The numeric oracle also passes standalone.
+All252production src/scripts files match the original74906d5 byte-for-byte.
+
+New02root/protocol, SAME163sourcecases/scientificgates/resourcecaps. Keep failed
+sourcecost4096 and currentsource4096 in combined guardreserve8192, so theoretical
+formal total57140<60000. All local development12066static fixtureentries remain
+separately reported as preregistration development, never called scientific data.
+No oldclock/cap/result changes or native rerun of unexecuted data. See
+[repair receipts](../artifacts/v0.0.11/development/h34-memory-development-01.json).

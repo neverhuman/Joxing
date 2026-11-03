@@ -1,0 +1,66 @@
+{
+  "decision": "Retain invalidattempt; reduce sourcefixture model retention, no capincrease. Newexplicitprotocol/rootbeforeany newattempt.",
+  "final_live_recorded": [],
+  "formal_attempts": 1,
+  "heldproofs": "both not_run",
+  "independent_audit": "not_run",
+  "invalid": 1,
+  "later_live": [],
+  "owner_error": "RuntimeError: Owned RSS/process/raw/text first limit",
+  "protocol_sha256": "30120ad4efb20c9ec103abff239f354efd9a1673be320206e2c1056325275fc5",
+  "raw_bytes": 52201503,
+  "raw_files": 155,
+  "recordings": "bothnot_run",
+  "sampled_peak_owned_rss_bytes": 8655896576,
+  "scientific_native_physics": 0,
+  "source_commit": "74906d5e8c7e2cb53a5e8bf0e2119d69f254da27",
+  "source_fixture_entered_not_measured": true,
+  "source_fixture_reserve": 4096,
+  "source_gate": "incomplete; no final JUnit; markerprefix retained, no claimed fullsuite pass",
+  "status": "invalid_source_rss_firstlimit",
+  "trial_rows": [
+    {
+      "condition": "reset-centered-opposed-v1",
+      "seed": 71000,
+      "status": "not_run"
+    },
+    {
+      "condition": "reset-centered-opposed-v1",
+      "seed": 71016,
+      "status": "not_run"
+    },
+    {
+      "condition": "reset-centered-opposed-v1",
+      "seed": 71032,
+      "status": "not_run"
+    },
+    {
+      "condition": "reset-centered-opposed-v1",
+      "seed": 71048,
+      "status": "not_run"
+    },
+    {
+      "condition": "reset-centered-lanes-v1",
+      "seed": 71000,
+      "status": "not_run"
+    },
+    {
+      "condition": "reset-centered-lanes-v1",
+      "seed": 71016,
+      "status": "not_run"
+    },
+    {
+      "condition": "reset-centered-lanes-v1",
+      "seed": 71032,
+      "status": "not_run"
+    },
+    {
+      "condition": "reset-centered-lanes-v1",
+      "seed": 71048,
+      "status": "not_run"
+    }
+  ],
+  "unchanged_rss_limit_bytes": 8589934592,
+  "valid": 0,
+  "whole_s": 113.28456908464432
+}

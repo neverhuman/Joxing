@@ -1,4 +1,6 @@
 import copy
+import gc
+import hashlib
 
 import mujoco
 import numpy as np
@@ -32,20 +34,61 @@ def native_factory():
     yield from native_fixtures.factory.__wrapped__()
 
 
+def numeric_model_receipt(model):
+    # Full-byte identities, including signed zero. No eight-model cache or
+    # exported NumPy view may retain its original native allocation.
+    arrays = {}
+    for name in dir(model):
+        a = getattr(model, name)
+        if isinstance(a, np.ndarray) and name != "body_pos":
+            arrays[name] = (
+                a.dtype.str,
+                a.shape,
+                hashlib.sha256(a.tobytes()).hexdigest(),
+            )
+    solver = {}
+    for name in dir(model.opt):
+        a = getattr(model.opt, name)
+        if isinstance(a, np.ndarray):
+            solver[name] = hashlib.sha256(a.tobytes()).hexdigest()
+        elif isinstance(a, (int, float)):
+            solver[name] = a
+    return {
+        "arrays": arrays,
+        "solver": solver,
+        "dimensions": (model.nq, model.nv, model.nu, model.na),
+        "body_pos": model.body_pos.copy(),
+        "root_ids": [model.body(p + "_pelvis").id for p in "AB"],
+    }
+
+
 @pytest.fixture(scope="module")
 def placed_factory(native_factory):
     donor, groups = native_factory[1:3]
-    scenes = {}
+    # Keep every case, but only a pinned common replay scene and one rolling
+    # scene. The target's8GiB limit caught the eager eight-model fixture.
+    cache = {}
+    receipts = {}
     initial = {}
     for seed in SEEDS:
         initial[seed] = {p: NativeReferenceDriver(donor, seed).initial for p in "AB"}
-        for mode in MODES:
-            scenes[(mode, seed)] = build_reset_scene(
+
+    def scene_for(mode, seed):
+        key = (mode, seed)
+        if key not in cache:
+            for previous in list(cache):
+                if previous != (MODES[0], SEEDS[0]):
+                    del cache[previous]
+            gc.collect()
+            cache[key] = build_reset_scene(
                 donor.model,
                 initial[seed],
                 spec=NativeResetPlacementSpec(mode),
                 seed=seed,
             )
+            receipts[key] = numeric_model_receipt(cache[key].model)
+        assert len(cache) <= 2
+        return cache[key]
 
     def make(mode=MODES[0], seed=71000, horizon=300):
         actor = FixtureActor()
@@ -56,7 +99,7 @@ def placed_factory(native_factory):
             return {p: NativeReferenceDriver(donor, seed) for p in "AB"}
 
         env = PlacedNativePairMotorEnv(
-            scenes[(mode, seed)],
+            scene_for(mode, seed),
             drivers,
             FrozenPairTeacher(actor, FixtureNormalizer()),
             groups,
@@ -65,7 +108,7 @@ def placed_factory(native_factory):
         )
         return env, actor
 
-    return make, scenes, initial
+    return make, receipts, initial
 
 
 @pytest.mark.parametrize("seed", SEEDS)
@@ -110,25 +153,25 @@ def test_all_phases_actual_positions_clearance_and_native_bits(
 def test_all_other_compiled_numeric_arrays_and_solver_remain_bit_exact(
     placed_factory, native_factory
 ):
-    original = native_factory[3]["opposed"].model
-    for scene in placed_factory[1].values():
-        model = scene.model
-        assert (model.nq, model.nv, model.nu, model.na) == (170, 170, 1400, 1400)
-        for name in dir(model):
-            a, b = getattr(original, name), getattr(model, name)
-            if isinstance(a, np.ndarray) and name != "body_pos":
-                assert a.tobytes() == b.tobytes(), name
-        changed = np.any(original.body_pos != model.body_pos, axis=1)
-        assert set(np.flatnonzero(changed)) == {
-            model.body(p + "_pelvis").id for p in "AB"
-        }
-        assert original.body_pos[:, 2].tobytes() == model.body_pos[:, 2].tobytes()
-        for name in dir(model.opt):
-            a, b = getattr(original.opt, name), getattr(model.opt, name)
-            if isinstance(a, np.ndarray):
-                assert a.tobytes() == b.tobytes(), name
-            elif isinstance(a, (int, float)):
-                assert a == b, name
+    original = numeric_model_receipt(native_factory[3]["opposed"].model)
+    receipts = placed_factory[1]
+    # Also works in isolation or a reordered source shard. The normal fullsuite
+    # already has these receipts from its eight geometry cases, so no rebuild.
+    for mode in MODES:
+        for seed in SEEDS:
+            if (mode, seed) not in receipts:
+                env, _ = placed_factory[0](mode, seed)
+                env.close()
+    assert set(receipts) == {(mode, seed) for mode in MODES for seed in SEEDS}
+    for receipt in receipts.values():
+        assert receipt["dimensions"] == (170, 170, 1400, 1400)
+        assert receipt["arrays"] == original["arrays"]
+        assert receipt["solver"] == original["solver"]
+        changed = np.any(original["body_pos"] != receipt["body_pos"], axis=1)
+        assert set(np.flatnonzero(changed)) == set(receipt["root_ids"])
+        assert (
+            original["body_pos"][:, 2].tobytes() == receipt["body_pos"][:, 2].tobytes()
+        )
 
 
 def test_distance_oracle_positive_clipped_and_negative_control():

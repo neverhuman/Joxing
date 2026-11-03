@@ -1,7 +1,7 @@
 # Research memory
 
-CURRENT:H34actual-start fix implemented;163localpass. Frozen publicsource/
-target163gate/eightpretrainedtrials next; no physical outcome yet.
+CURRENT:H34actual-start fix:01sourceRSSinvalid, all8native not_run. Bounded
+fixture repair retains163cases; NEW02samecaps/sourcegate next. No physicaloutcome.
 H33all12valid/replayexact; separatedwalking4/4bothcorners survives3s;400msstop
 fails allstancegates. Post-hocroottravel exposes initialoverlap; fix beforeopposedRL.
 H31trained4096samples/16updates but motorfailed; originalrecordinginvalid retained.
@@ -51,7 +51,7 @@ remain the authority for measurements, budgets, criteria and denominators.
 |[H31](H31.md)|Can native paired PPO learn balance/reach toward boxing?|4096actor samples/16updates executed; allmotorcriteria fail; originalrecordingtimeout invalidatespipeline|
 |[H32](H32.md)|Can sealed native PPO evidence replay and export completely?|2048trainingtransitions/16evals exact, behaviorerror0, fourwholeclips; originalH31staysinvalid|
 |[H33](H33.md)|Can the pretrained motor stop/hold stance before more boxing RL?|12/12valid/exactreplay; walking4/4survives3s, allstancegatesfail; resetoverlap found|
-|[H34](H34.md)|Can native gait phase stop corrupting actual boxing starts?|163localpass; fixed-frame placement implemented, target study pending|
+|[H34](H34.md)|Can native gait phase stop corrupting actual boxing starts?|01sourceRSSinvalid/8not_run; boundedfixture repair/02samecaps next|
 
 Research IDs are global and independent of old packet names such as
 experiments/v0.0.9/H1–H3. Next unused ID: **H35**. Prior protocols, failed

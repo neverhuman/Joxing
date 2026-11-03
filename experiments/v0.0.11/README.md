@@ -1,3 +1,23 @@
+# H34attempt01 sourceRSS invalid; bounded fixture repair/attempt02 next
+
+Formal01stopped in source at98.605s when sampled ownedRSS8655896576B exceeded
+unchanged8GiB(8589934592B).0scientific native entries; all8trials/2heldproofs/
+audit/recordings not_run. Whole113.285s; allownedidentities exited. Raw155files/
+52201503B and sourceprefix retained in artifacts/v0.0.11/native-reset-placement-01.
+No missing JUnit/fullsource qualification inferred from136printed passmarkers.
+
+Repair keeps at most2compiled sourcefixture models (pinned replay+rolling) and
+small full-byte SHA/dtype/shape/solver receipts for ALL8geometry cases. No tolerance,
+case removal, sourceclock extension or productionphysics edit:252src/scripts
+files match74906d5. Full163dev suites pass113.834/86.352s; final27focused controls
+pass36.293s and standalone numericoracle passes30.871s/0physics. All7development
+attempts/12066static fixturesteps retained, separate from formal scientific work.
+
+Currentprospectivepacket02 uses NEWroot, same163fresh targetcases, same8trials/
+allgates,600s/source120/8GiB/60000physics/256MiBraw limits. Combined sourcecharge
+8192=4096priorfailed+4096current, tightening remaining work; maxformal charge57140.
+No pretrained outcome yet. CurrentH34; no oldjob/duplicate. Wholev11untagged.
+
 # H34 actual reset placement implemented; bounded target study next
 
 All163local regression/source checks pass (136prior+27new),74.840s. Corrected

@@ -1,0 +1,26 @@
+{
+  "status": "launched",
+  "source_commit": "74906d5e8c7e2cb53a5e8bf0e2119d69f254da27",
+  "host": "xbabe4",
+  "root": "/Users/agent/joxing/native-reset-placement-20261103-01/repo",
+  "output": "/Users/agent/joxing/native-reset-placement-20261103-01/repo/runs/v0.0.11/native-reset-placement-01",
+  "pid": 4322,
+  "start": "Tue Nov  3 04:00:36 2026",
+  "original_epoch": 8782788.03781129,
+  "setup_s": 3.925586959347129,
+  "command": [
+    "/Users/agent/joxing/native-pair-pilot-xbabe4-20261103-01/runtime/bin/python",
+    "scripts/qualify_native_reset_placement.py",
+    "--packet",
+    "experiments/v0.0.11/native-reset-placement-01.json",
+    "--source-sha",
+    "74906d5e8c7e2cb53a5e8bf0e2119d69f254da27",
+    "--protocol-sha256",
+    "30120ad4efb20c9ec103abff239f354efd9a1673be320206e2c1056325275fc5",
+    "--epoch-start-monotonic",
+    "8782788.03781129"
+  ],
+  "new_learning": 0,
+  "original_attempt_stays_invalid": true,
+  "protocol_sha256": "30120ad4efb20c9ec103abff239f354efd9a1673be320206e2c1056325275fc5"
+}
